@@ -55,21 +55,71 @@ The data reveals that normal cephalic furrow formation requires the coordinated
 specification of both initiator cells and neighbouring cells.
 
 The interplay between molecular patterning and tissue morphogenesis suggests
-that the cephalic furrow has a buffering role alleviating the tissue tensions
-during Drosophila gastrulation.
+that the cephalic furrow buffers the tissue tensions during Drosophila
+gastrulation.
 
 
 # Results
 
+<!--Figure 1--> ![Early slp and eve territories demarcate the head-trunk
+boundary. Whole-mount HCR in situs for slp1, eve and btd from the earliest
+zygotic expression until the striped
+pattern.](figures/early-slp.png){#fig:early-slp width=100%}
 
-<!--Figure 1
-- TODO: include other channel combinations?
-- TODO: rectangular crop with line intensity profiles?
--->
+<!--TODO: include channel combinations?-->
+<!--TODO: rectangular crop with line intensity profiles?-->
+<!--TODO: grayscale channels instead?-->
 
-![Early slp and eve territories demarcate the head-trunk boundary. Whole-mount
-HCR in situs for slp1, eve and btd from the earliest zygotic expression until
-the striped pattern. Show merged and individual channels.](figures/fig1.png){#fig:early width=100%}
+<!--Figure 2--> ![Overlap of btd-eve resolves to a single row of initiator
+cells. Whole-mount HCR in situs for btd and eve showing a progression of stages
+until the initiator cells.](figures/btd-eve.png){#fig:btd-eve width=100%}
+
+<!--TODO: include merge and separate channels.-->
+<!--TODO: include crop and profiles.-->
+<!--TODO: y-axis is time.-->
+
+<!--Figure 3--> ![Initiator cells are bound by prd-slp adjacent
+cells. Whole mount HCR in situs showing the relative expression between eve
+initiator cells and prd and slp in the adjacent
+cells.](figures/adjacent.png){#fig:adjacent width=100%}
+
+<!--Figure 4--> ![Outer invagination area is demarcated by slp
+stripes. Whole mount HCR in situs showing an overview of the molecular of the
+cephalic furrow with its outer edges defined by slp
+stripes.](figures/edge.png){#fig:edge width=100%}
+
+<!--Figure 5--> ![Overlap of btd-eve and cephalic furrow are shifted anteriorly
+in slp mutants. Whole mount HCR in situs showing the shift of btd-eve overlap
+with close-up detailed, and the quantifications for the relative furrow
+position in movies of slp mutants.](figures/slp-mutant.png){#fig:slp-mutant
+width=100%}
+
+<!--Figure 6--> ![Molecular arrangements in the cephalic furrow are disrupted
+in btd mutants. Whole mount HCR in situs showing the altered patterning of eve,
+slp and prd in the adjacent cells, and the narrower invagination area between
+slp-positive cells in the outer edges.](figures/btd-mutant.png){#fig:btd-mutant
+width=100%}
+
+<!--Figure 7--> ![Row of initiator cells is wider in prd mutants. Whole mount
+HCR in situs showing the disrupted patterning of adjacent cells and wider row
+of eve-expressing cells.](figures/prd-mutant.png){#fig:prd-mutant width=100%}
+
+<!--TODO: count and compare the number of eve-expressing cells.-->
+
+<!--Figure 8--> ![Initiator cells are observed in all mutants, except eve.
+Cartographic projections showing the initiator cell behavior in wild type and
+mutants, and plots with quantifications.](figures/initiator.png){#fig:initiator
+width=100%}
+
+<!--Figure 9--> ![Invagination process is disrupted in mutants, but the tissue
+still buckles. Timelapse frames showing comparing the wild type invagination to
+the mutants, and the
+quantifications.](figures/invagination.png){#fig:invagination width=100%}
+
+<!--Figure 10--> ![Tissue tension increases at the head-trunk boundary
+interface in cephalic furrow mutants. Cartographic projections of wild type,
+btd and eve mutants showing the tissue tension levels measured by cell
+shapes.](figures/tension.png){#fig:tension width=100%}
 
 
 # Discussion
