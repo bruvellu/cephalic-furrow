@@ -26,32 +26,33 @@ Pfotenhauerstr. 108, 01307 Dresden, Germany.
 
 # Results
 
+
+<!--TODO: early slp-eve-btd patterns for fig 1.-->
 <!--Figure 1--> ![Early slp and eve territories demarcate the head-trunk
 boundary. Whole-mount HCR in situs for slp1, eve and btd from the earliest
 zygotic expression until the striped
 pattern.](figures/early-slp.png){#fig:early-slp width=100%}
-
 <!--TODO: include channel combinations?-->
 <!--TODO: rectangular crop with line intensity profiles?-->
 <!--TODO: grayscale channels instead?-->
 
+
+<!--TODO: late slp-eve-btd patterns for fig 2.-->
 <!--Figure 2--> ![Overlap of btd-eve resolves to a single row of initiator
 cells. Whole-mount HCR in situs for btd and eve showing a progression of stages
 until the initiator cells.](figures/btd-eve.png){#fig:btd-eve width=100%}
 
-<!--TODO: include merge and separate channels.-->
-<!--TODO: include crop and profiles.-->
-<!--TODO: y-axis is time.-->
 
+<!--TODO: furrow molecular map for fig3.-->
 <!--Figure 3--> ![Initiator cells are bound by prd-slp adjacent
 cells. Whole mount HCR in situs showing the relative expression between eve
 initiator cells and prd and slp in the adjacent
 cells.](figures/adjacent.png){#fig:adjacent width=100%}
-
 <!--Figure 4--> ![Outer invagination area is demarcated by slp
 stripes. Whole mount HCR in situs showing an overview of the molecular of the
 cephalic furrow with its outer edges defined by slp
 stripes.](figures/edge.png){#fig:edge width=100%}
+
 
 <!--Figure 5--> ![Overlap of btd-eve and cephalic furrow are shifted anteriorly
 in slp mutants. Whole mount HCR in situs showing the shift of btd-eve overlap
