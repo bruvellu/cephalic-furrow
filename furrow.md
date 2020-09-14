@@ -36,15 +36,13 @@ cells. Whole-mount HCR in situs for slp1, eve and btd showing the narrowing of
 expression domains until the single row of initiator
 cells.](figures/furrow-onset.png){#fig:furrow-onset width=100%}
 
-<!--TODO: furrow molecular map for fig3.-->
 <!--Figure 3--> ![Initiator cells are bound by prd-slp adjacent
-cells. Whole mount HCR in situs showing the relative expression between eve
-initiator cells and prd and slp in the adjacent
-cells.](figures/adjacent.png){#fig:adjacent width=100%}
-<!--Figure 4--> ![Outer invagination area is demarcated by slp
-stripes. Whole mount HCR in situs showing an overview of the molecular of the
-cephalic furrow with its outer edges defined by slp
-stripes.](figures/edge.png){#fig:edge width=100%}
+cells. Outer invagination area is demarcated by slp
+stripes. Whole mount HCR in situs showing the relative expression between eve
+initiator cells and prd and slp in the adjacent cells and outer edges defined
+by slp stripes](figures/invagination-map.png){#fig:invagination-map width=100%}
+<!--TODO: how to accomodate prd data?-->
+
 
 <!--Figure 5--> ![Overlap of btd-eve and cephalic furrow are shifted anteriorly
 in slp mutants. Whole mount HCR in situs showing the shift of btd-eve overlap
