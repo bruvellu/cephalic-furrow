@@ -41,22 +41,22 @@ cells. Outer invagination area is demarcated by slp
 stripes. Whole mount HCR in situs showing the relative expression between eve
 initiator cells and prd and slp in the adjacent cells and outer edges defined
 by slp stripes](figures/invagination-map.png){#fig:invagination-map width=100%}
-<!--TODO: how to accomodate prd data?-->
 
+<!--TODO: Continue from here.-->
 
-<!--Figure 5--> ![Overlap of btd-eve and cephalic furrow are shifted anteriorly
+<!--Figure 4--> ![Overlap of btd-eve and cephalic furrow are shifted anteriorly
 in slp mutants. Whole mount HCR in situs showing the shift of btd-eve overlap
 with close-up detailed, and the quantifications for the relative furrow
 position in movies of slp mutants.](figures/slp-mutant.png){#fig:slp-mutant
 width=100%}
 
-<!--Figure 6--> ![Molecular arrangements in the cephalic furrow are disrupted
+<!--Figure 5--> ![Molecular arrangements in the cephalic furrow are disrupted
 in btd mutants. Whole mount HCR in situs showing the altered patterning of eve,
 slp and prd in the adjacent cells, and the narrower invagination area between
 slp-positive cells in the outer edges.](figures/btd-mutant.png){#fig:btd-mutant
 width=100%}
 
-<!--Figure 7--> ![Row of initiator cells is wider in prd mutants. Whole mount
+<!--Figure 6--> ![Row of initiator cells is wider in prd mutants. Whole mount
 HCR in situs showing the disrupted patterning of adjacent cells and wider row
 of eve-expressing cells.](figures/prd-mutant.png){#fig:prd-mutant width=100%}
 
