@@ -1,9 +1,8 @@
 FILE=furrow
-STYLE=elife
 TEMPLATE=template
-OUTDIR=output
+OUTDIR=3-versions
 
 all:
-	pandoc $(FILE).md --filter pandoc-fignos --bibliography=$(FILE).bib --csl=$(STYLE).csl --reference-doc=$(TEMPLATE).odt -o $(OUTDIR)/$(FILE).odt
-	pandoc $(FILE).md --filter pandoc-fignos --bibliography=$(FILE).bib --csl=$(STYLE).csl --reference-doc=$(TEMPLATE).docx -o $(OUTDIR)/$(FILE).docx
-	pandoc $(FILE).md --filter pandoc-fignos --bibliography=$(FILE).bib --csl=$(STYLE).csl -o $(OUTDIR)/$(FILE).pdf
+	pandoc $(FILE).md --filter pandoc-citeproc --filter pandoc-fignos --reference-doc=$(TEMPLATE).odt -o $(OUTDIR)/$(FILE).odt
+	pandoc $(FILE).md --filter pandoc-citeproc --filter pandoc-fignos --reference-doc=$(TEMPLATE).docx -o $(OUTDIR)/$(FILE).docx
+	pandoc $(FILE).md --filter pandoc-citeproc --filter pandoc-fignos --pdf-engine=xelatex -o $(OUTDIR)/$(FILE).pdf
