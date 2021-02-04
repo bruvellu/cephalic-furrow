@@ -1,6 +1,6 @@
 FILE=furrow
 TEMPLATE=template
-OUTDIR=3-versions
+OUTDIR=../4-versions
 
 all:
 	pandoc $(FILE).md --filter pandoc-citeproc --filter pandoc-fignos --reference-doc=$(TEMPLATE).odt -o $(OUTDIR)/$(FILE).odt
