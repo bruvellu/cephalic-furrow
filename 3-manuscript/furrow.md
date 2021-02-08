@@ -47,12 +47,27 @@ the global role of the cephalic furrow during gastrulation.
 
 # Results
 
-## Weak cephalic furrow mutants disrupt invagination but not tissue buckling
+<!--TODO: Put together molecular patterning figure.-->
 
-In addition, I found that prd and gt mutants, which have a weak phenotype of
-delayed cephalic furrow formation, in fact do not show a normal process of
-invagination. Instead, the tissue buckles abruptly during germ band elongation,
-having a similar outcome (an epithelial fold).
+![Molecular patterning of the cephalic furrow. Whole mount HCR in situs
+showing the wild type and disrupted patterning in btd, eve, prd and gt
+embryos.](../2-figures/patterning.png){#fig:patterning width=100%}
+
+## The invagination process is disrupted but the tissue still buckles in cephalic furrow weak phenotypes
+
+The cephalic furrow of prd mutants is delayed but forms at the expected
+position in the body axis that matches the eve stripe 1 [@prdpaper]. We
+analyzed cell and tissue behaviors in prd mutants. We found that initiator cell
+behavior is present, timely and possibly expanded. However, the process of
+cephalic furrow invagination does not progress normally. The tissue halts
+midway only to buckle abruptly when the mitotic domains appear. Despite the
+similar outcome, a cephalic epithelial fold, we note that this fold is not
+formed through the usual process of invagination (which is disrupted). We
+observe a similar phenomenon in gt mutants.
+
+<!--TODO: ROI showing initiator cell behavior in prd and gt-->
+
+<!--TODO: Plot showing interrupted invagination and subsequent buckling.-->
 
 ![Disrupted invagination process in weak cephalic furrow
 mutants.](../2-figures/invagination-mutants.png){#fig:invagination-mutants
@@ -62,50 +77,54 @@ width=100%}
 showing the disrupted patterning of adjacent cells and wider row of
 eve-expressing cells.](../2-figures/prd-mutant.png){#fig:prd-mutant width=100%}
 
-## btd mutants exhibit reminiscent initiator cell behavior
+## The head-trunk boundary is a tissue shearing zone in cephalic furrow strong phenotypes
 
-The live-imaging data revealed that btd mutants, which lack the cephalic
-furrow, still exhibit reminiscent initiator cell behaviors at the head-trunk
-interface.
+We analyzed the tissue flows and cell shape changes in mutants that fail to
+initiate the cephalic furrow. We observe opposite tissue flows from the head
+and trunk with a clear boundary region characterized by cells with low
+circularity and greater distance to neighbors.
+
+<!--TODO: Tissue flow in btd and eve mutants-->
+
+![Tissue flow and cell shape analysis at the head-trunk boundary interface in
+cephalic furrow mutants.](../2-figures/shear-zone.png){#fig:shear-zone width=100%}
+
+<!--TODO: Cell shape changes in btd mutant-->
+
+We observe cell shape changes as well. The live-imaging data revealed that btd
+mutants exhibit reminiscent initiator cell behaviors at the head-trunk
+interface which occur before any of the tissue flows. After the tissue flows,
+we see a range of cell shape changes with compression on both sides and a
+shearing effect at the boundary.
+
+<!--TODO: Initiator cell behavior in btd mutant-->
 
 ![Reminiscent initiator cell behavior in btd
 mutants.](../2-figures/reminiscent-initiators.png){#fig:reminiscent-initiators
 width=100%}
 
-![Molecular arrangements in the cephalic furrow are disrupted
-in btd mutants. Whole mount HCR in situs showing the altered patterning of eve,
-slp and prd in the adjacent cells, and the narrower invagination area between
-slp-positive cells in the outer edges.](../2-figures/btd-mutant.png){#fig:btd-mutant
+![Molecular arrangements in the cephalic furrow are disrupted in btd mutants.
+Whole mount HCR in situs showing the altered patterning of eve, slp and prd in
+the adjacent cells, and the narrower invagination area between slp-positive
+cells in the outer edges.](../2-figures/btd-mutant.png){#fig:btd-mutant
 width=100%}
 
-## Head-trunk boundary is a tissue shearing zone
+## Mutants that fail to initiate the cephalic furrow invariably show stochastic ectopic epithelial folding preferably between mitotic domains
 
-We analyzed the cell shape changes happening at the presumptive cephalic furrow
-invagination site. We observe relative opposite tissue flows from the head and
-trunk. Cell shape changes indicate compression forces on both sides with a
-boundary zone in between exchanging neighbours.
-
-![Tissue flow and cell shape analysis at the head-trunk boundary interface in
-cephalic furrow mutants.](../2-figures/shear-zone.png){#fig:shear-zone width=100%}
-
-## Strong cephalic furrow mutants show ectopic epithelial folds
-
-In the absence of the cephalic furrow in btd and eve mutants, the embryos
+Once the gastrulation progresses, the germ band elongates and mitotic domains
+appear in the head epithelia. We found that in btd and eve mutants, the embryos
 invariably form ectopic epithelial folds throughout the head-trunk interface
 during the process of germ band elongation.
 
 ![Ectopic folding in btd and eve
 mutants.](../2-figures/ectopic-folding.png){#fig:ectopic-folding width=100%}
 
-## Ectopic folding is variable between individual embryos
-
-These folding events are variable between individual embryos.
+We also observe that the folding events are variable between individual
+embryos.
 
 ![Variability of ectopic folding between individual mutant
 embryos.](../2-figures/ectopic-variability.png){#fig:ectopic-variability
 width=100%}
-
-## Ectopic occurs by tissue buckling between mitotic domains
 
 Ectopic folds occur preferably between mitotic domains.
 
@@ -113,16 +132,20 @@ Ectopic folds occur preferably between mitotic domains.
 domains.](../2-figures/mitotic-domains.png){#fig:mitotic-domains
 width=100%}
 
-## Area and number of infolded epithelial cells is constant
+## Area and number of invaginated epithelial cells is roughly constant between individual mutant embryos
 
-We observed that mutant embryos that have a deep anterior fold, do not show
-other folds. While mutant embryos with a shallower anterior fold have
-additional folds more posterior.
+We noticed that individual mutant embryos that have a deep anterior fold, do
+not show other folds, while mutant embryos with a shallower anterior fold have
+additional folds more posterior. Suggesting some sort of compensation in the
+amount of invaginated tissue. We decided to measure the total amount of
+invaginated tissue to test with there is a constant amount of epithelia that
+needs to be invaginated. We found that the invaginated area is roughly the same
+between embryos, but higher in wild type or heterozygote embryos.
 
 ![Map and measurement of ectopic folding
 area.](../2-figures/ectopic-area.png){#fig:ectopic-area width=100%}
 
-## Blocking the germ band extension suppresses ectopic folding in cephalic furrow mutants
+## Blocking the germ band extension suppresses ectopic folding in mutants and impacts the cephalic furrow invagination in wild type embryogenesis
 
 We tested whether mitotic domains are sufficient to cause ectopic epithelial
 folds by mechanically blocking the germ band elongation in eve mutants using
@@ -132,8 +155,6 @@ elongating, the ectopic folds are no longer formed.
 ![Cauterization blocking the germ band extension in btd and eve
 mutants.](../2-figures/cauterization-mutants.png){#fig:cauterization-mutants
 width=100%}
-
-## Blocking the germ band extension impacts the cephalic furrow invagination in normal embryogenesis
 
 We also tested the impact of blocking the germ band elongation in wild type
 embryos. When the germ band extension is blocked, the cephalic furrow
@@ -148,33 +169,36 @@ invagination in normal embryogenesis, suggesting the cephalic furrow
 morphogenesis is governed by the orchestration of genetic patterning with
 mechanical forces in the embryo.
 
-## Blocking the cephalic furrow in wild type causes ectopic buckling
+<!--TODO: Injection of cell division inhibitor in mutants-->
 
-If an excess of epithelia in association with mitotic domains and germ band
-compression, we expect that by blocking the cephalic furrow, we would find
-ectopic folding occurring in the epithelia. We blocked the cephalic furrow
+**Supplementary:** *Inhibiting cell divisions does not prevent ectopic
+buckling.* To test if the mitotic domains are required or only facilitators of
+ectopic folding, we inhibited cell divisions in btd and eve mutants by
+injecting XXX. We found that the epithelia will buckle anyway, even without
+mitotic domains.
+
+<!--TODO: Cauterization of initiator cells to block the cephalic furrow-->
+
+**Supplementary:** *Blocking the cephalic furrow in wild type causes ectopic
+buckling.* If an excess of epithelia in association with mitotic domains and
+germ band compression, we expect that by blocking the cephalic furrow, we would
+find ectopic folding occurring in the epithelia. We blocked the cephalic furrow
 invagination by cauterizing the row of initiator cells. We find the prediction
 holds.
 
-![Cauterization of initiator cells to block the cephalic
-furrow.](../2-figures/cauterization-initiators.png){#fig:cauterization-initiators
-width=100%}
+<!--TODO: Figure with laser ablations around the cephalic furrow area-->
 
-## Cephalic furrow invagination actively increases tissue tension
+**Supplementary:** *Cephalic furrow invagination actively increases tissue
+tension.* Using laser ablations near the initiator cells we identified that
+there is an increase in tension in an area of about 40 µm anterior and
+posterior.
 
-Using laser ablations near the initiator cells we identified that there is an
-increase in tension in an area of about 40 µm anterior and posterior.
+## Model predicts ectopic folding given mitotic domains and germ band compression in normal embryogenesis
 
-![Laser ablations around the cephalic furrow
-area.](../2-figures/ablation-furrow.png){#fig:ablation-furrow
-width=100%}
-
-## Mathematical model predicts ectopic folding and germ band compression
-
-To better understand the forces at play we developed a model to compare to our
-in vivo observations. The model is in line with the amount of excess tissue,
-calculates the force needed for the epithelia to buckle, and the compression
-from the germ band driving the folding.
+We developed a model to compare to our in vivo observations. The model is in
+line with the amount of excess tissue, calculates the force needed for the
+epithelia to buckle, and the compression from the germ band driving the
+folding.
 
 ![Analytical model predicting the interactions between the head-trunk epithelia
 and the germ band extension.](../2-figures/math-model.png){#fig:math-model
@@ -206,10 +230,9 @@ sufficient to cause the tissue to buckle.
 By cauterization experiments we show the germ band extension causes epithelial
 compression at the head-trunk boundary. While in strong phenotypes, embryos
 that fail to initiate the furrow, the compression results in ectopic folds, in
-wild type embryos the compression further deepens the furrow.
-
-This shows evidence of the long range global impact the germ band extension
-exerts during gastrulation.
+wild type embryos the compression further deepens the furrow. This shows
+evidence of the long range global impact the germ band extension exerts during
+gastrulation.
 
 ## Cephalic furrow invagination anticipates and primes folding position
 
