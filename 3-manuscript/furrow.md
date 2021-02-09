@@ -32,18 +32,48 @@ Pfotenhauerstr. 108, 01307 Dresden, Germany.
 
 # Introduction
 
-I investigated the development of the cephalic furrow, a prominent but poorly
-understood epithelial invagination that demarcates the head-trunk boundary of
-Drosophila during gastrulation. Using multiplexed in situ hybridization and
-lightsheet microscopy, I analyzed known and newly-identified cephalic furrow
-genes to uncover the interplay between molecular patterning and morphogenesis
-of this invagination. My work extends the current knowledge on the cascade of
-genetic interactions patterning the head-trunk boundary of Drosophila, and
-provides insights about the role that the cephalic furrow plays in the complex
-tissue dynamics of gastrulation. Next, I investigated the embryogenesis of
-cephalic furrow mutants under high-temporal resolution to uncover further
-details about the function of individual genes, and to reveal insights about
-the global role of the cephalic furrow during gastrulation.
+The head-trunk boundary is an ancient and essential trait for the evolution of
+bilaterians.
+
+The head-trunk boundary in Drosophila is demarcated by a deep, but transient,
+invagination formed during gastrulation, known as the cephalic furrow.
+
+Despite being a prominent trait, the development of the cephalic furrow remains
+poorly understood compared to the other gastrulation movements in Drosophila.
+
+We know relatively little about the genetic interactions that specify this
+boundary, about the molecules involved in downstream signaling, about the
+morphogenetic processes involved, and about the role that the cephalic furrow
+might play during gastrulation.
+
+We investigate the role of the cephalic furrow in Drosophila gastrulation by
+analyzing known and newly-identified cephalic furrow mutants under lightsheet
+microscopy.
+
+We find that mutants that fail to initiate the furrow show ectopic
+epithelial folding at stage 7 when the mitotic domains appear and the germ band
+begin to elongate.
+
+Folding events vary between individuals occurring preferably between mitotic
+domains, but are ultimately driven by the tissue compression caused by the germ
+band extension.
+
+We also find the germ band contributes to the cephalic furrow invagination in
+wild type embryos.
+
+Our data suggests that under normal embryogenesis, given the expansions of cell
+area of mitotic domains in the head and the epithelial compression of the germ
+band elongation in the trunk, the epithelia will inevitably buckle. We estimate
+this threshold of “excess” tissue in vivo and in silico.
+
+Therefore, what the cephalic furrow accomplishes during gastrulation is to
+prime the timing and position of the folding. The result is a predictable
+structure for an inevitable invagination, possibly avoiding the potential
+negative effects of erratic epithelial buckling.
+
+Overall, the morphogenesis of the cephalic furrow is a two-step composite
+process integrating an active, genetically-defined process of invagination, and
+a passive tissue buckling driven by the germ band extension.
 
 # Results
 
@@ -132,15 +162,16 @@ Ectopic folds occur preferably between mitotic domains.
 domains.](../2-figures/mitotic-domains.png){#fig:mitotic-domains
 width=100%}
 
-## Area and number of invaginated epithelial cells is roughly constant between individual mutant embryos
+Area of invaginated epithelial cells is roughly constant between individual
+mutant embryos. We noticed that individual mutant embryos that have a deep
+anterior fold, do not show other folds, while mutant embryos with a shallower
+anterior fold have additional folds more posterior. Suggesting some sort of
+compensation in the amount of invaginated tissue.
 
-We noticed that individual mutant embryos that have a deep anterior fold, do
-not show other folds, while mutant embryos with a shallower anterior fold have
-additional folds more posterior. Suggesting some sort of compensation in the
-amount of invaginated tissue. We decided to measure the total amount of
-invaginated tissue to test with there is a constant amount of epithelia that
-needs to be invaginated. We found that the invaginated area is roughly the same
-between embryos, but higher in wild type or heterozygote embryos.
+We decided to measure the total amount of invaginated tissue to test with there
+is a constant amount of epithelia that needs to be invaginated. We found that
+the invaginated area is roughly the same between embryos, but higher in wild
+type or heterozygote embryos.
 
 ![Map and measurement of ectopic folding
 area.](../2-figures/ectopic-area.png){#fig:ectopic-area width=100%}
