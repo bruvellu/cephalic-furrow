@@ -162,16 +162,12 @@ Ectopic folds occur preferably between mitotic domains.
 domains.](../2-figures/mitotic-domains.png){#fig:mitotic-domains
 width=100%}
 
-Area of invaginated epithelial cells is roughly constant between individual
-mutant embryos. We noticed that individual mutant embryos that have a deep
-anterior fold, do not show other folds, while mutant embryos with a shallower
-anterior fold have additional folds more posterior. Suggesting some sort of
-compensation in the amount of invaginated tissue.
-
-We decided to measure the total amount of invaginated tissue to test with there
-is a constant amount of epithelia that needs to be invaginated. We found that
-the invaginated area is roughly the same between embryos, but higher in wild
-type or heterozygote embryos.
+We measured the total area of invaginated tissue and total number of
+invaginated blastoderm cells. The invaginated area in btd and eve mutants is
+roughly half the size of a regular wild type cephalic furrow. Nevertheless the
+minimum value of invaginated tissues in mutant embryos did not go below X. We
+also observe that individual mutant embryos can have the same total invaginated
+area either having one deep fold or two shallower folds.
 
 ![Map and measurement of ectopic folding
 area.](../2-figures/ectopic-area.png){#fig:ectopic-area width=100%}
@@ -246,9 +242,11 @@ buckling.
 
 ## Cell proliferation crosses physical threshold for epithelial stability
 
-Suggesting that mechanical forces acting in the monolayer epithelia, such as
-the expansion of dividing cells, or the compression exerted by the germ band,
-might be causally connected to the tissue buckling.
+The invaginated area analysis suggests some sort of compensation in the amount
+of invaginated tissue. Suggesting that mechanical forces acting in the
+monolayer epithelia, such as the expansion of dividing cells, or the
+compression exerted by the germ band, might be causally connected to the tissue
+buckling.
 
 ## Mitotic domains facilitate but are not sufficient to cause tissue buckling
 
