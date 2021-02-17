@@ -83,7 +83,7 @@ a passive tissue buckling driven by the germ band extension.
 showing the wild type and disrupted patterning in btd, eve, prd and gt
 embryos.](../2-figures/patterning.png){#fig:patterning width=100%}
 
-## The head-trunk boundary is a shear zone
+## The head-trunk boundary is a shear zone of tissue flow
 
 We analyzed the tissue flows and cell shape changes in mutants that fail to
 initiate the cephalic furrow. We observe opposite tissue flows from the head
@@ -114,30 +114,6 @@ Whole mount HCR in situs showing the altered patterning of eve, slp and prd in
 the adjacent cells, and the narrower invagination area between slp-positive
 cells in the outer edges.](../2-figures/btd-mutant.png){#fig:btd-mutant
 width=100%}
-
-## The cephalic furrow invagination is disrupted in weak phenotypes
-
-The cephalic furrow of prd mutants is delayed but forms at the expected
-position in the body axis that matches the eve stripe 1 [@prdpaper]. We
-analyzed cell and tissue behaviors in prd mutants. We found that initiator cell
-behavior is present, timely and possibly expanded. However, the process of
-cephalic furrow invagination does not progress normally. The tissue halts
-midway only to buckle abruptly when the mitotic domains appear. Despite the
-similar outcome, a cephalic epithelial fold, we note that this fold is not
-formed through the usual process of invagination (which is disrupted). We
-observe a similar phenomenon in gt mutants.
-
-<!--TODO: ROI showing initiator cell behavior in prd and gt-->
-
-<!--TODO: Plot showing interrupted invagination and subsequent buckling.-->
-
-![Disrupted invagination process in weak cephalic furrow
-mutants.](../2-figures/invagination-mutants.png){#fig:invagination-mutants
-width=100%}
-
-![Row of initiator cells is wider in prd mutants. Whole mount HCR in situs
-showing the disrupted patterning of adjacent cells and wider row of
-eve-expressing cells.](../2-figures/prd-mutant.png){#fig:prd-mutant width=100%}
 
 ## Cephalic furrow mutants show ectopic epithelial folds
 
@@ -172,7 +148,7 @@ area either having one deep fold or two shallower folds.
 ![Map and measurement of ectopic folding
 area.](../2-figures/ectopic-area.png){#fig:ectopic-area width=100%}
 
-## Blocking the germ band extension suppresses ectopic folding in cephalic furrow mutants
+## Blocking the germ band extension suppresses tissue buckling
 
 We tested whether mitotic domains are sufficient to cause ectopic epithelial
 folds by mechanically blocking the germ band elongation in eve mutants using
@@ -220,7 +196,7 @@ tension.* Using laser ablations near the initiator cells we identified that
 there is an increase in tension in an area of about 40 µm anterior and
 posterior.
 
-## Model predicts ectopic folding given mitotic domains and germ band compression in normal embryogenesis
+## Modeling combined effects of head area expansion and trunk tissue compression
 
 We developed a model to compare to our in vivo observations. The model is in
 line with the amount of excess tissue, calculates the force needed for the
@@ -230,6 +206,31 @@ folding.
 ![Analytical model predicting the interactions between the head-trunk epithelia
 and the germ band extension.](../2-figures/math-model.png){#fig:math-model
 width=100%}
+
+## The cephalic furrow invagination is disrupted in weak phenotypes
+
+The cephalic furrow of prd mutants is delayed but forms at the expected
+position in the body axis that matches the eve stripe 1 [@prdpaper]. We
+analyzed cell and tissue behaviors in prd mutants. We found that initiator cell
+behavior is present, timely and possibly expanded. However, the process of
+cephalic furrow invagination does not progress normally. The tissue halts
+midway only to buckle abruptly when the mitotic domains appear. Despite the
+similar outcome, a cephalic epithelial fold, we note that this fold is not
+formed through the usual process of invagination (which is disrupted). We
+observe a similar phenomenon in gt mutants.
+
+<!--TODO: ROI showing initiator cell behavior in prd and gt-->
+
+<!--TODO: Plot showing interrupted invagination and subsequent buckling.-->
+
+![Disrupted invagination process in weak cephalic furrow
+mutants.](../2-figures/invagination-mutants.png){#fig:invagination-mutants
+width=100%}
+
+![Row of initiator cells is wider in prd mutants. Whole mount HCR in situs
+showing the disrupted patterning of adjacent cells and wider row of
+eve-expressing cells.](../2-figures/prd-mutant.png){#fig:prd-mutant width=100%}
+
 
 # Discussion
 
