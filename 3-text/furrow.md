@@ -21,7 +21,7 @@ tablenos-plus-name: Table
 ...
 
 
-Bruno C. Vellutini, Marina B. Cuenca and Pavel Tomancak
+Bruno C. Vellutini, Marina B. Cuenca, Carl D. Modes, and Pavel Tomancak
 
 Max Planck Institute of Molecular Cell Biology and Genetics,
 Pfotenhauerstr. 108, 01307 Dresden, Germany.
