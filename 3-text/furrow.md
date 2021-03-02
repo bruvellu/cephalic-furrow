@@ -1,5 +1,5 @@
 ---
-title: Cephalic furrow balances germ band extension forces during gastrulation in *Drosophila*
+title: Cephalic furrow invagination prevents epithelial instability at the head-trunk boundary
 documentclass: article
 bibliography: furrow.bib
 csl: elife.csl
@@ -19,6 +19,17 @@ fignos-plus-name: Figure
 tablenos-cleveref: True
 tablenos-plus-name: Table
 ...
+
+<!--Alternative titles:
+
+- Cephalic furrow invagination prevents epithelial instability at the
+  head-trunk boundary during *Drosophila* gastrulation 
+- Global role of cephalic furrow formation for *Drosophila* gastrulation
+- Genetic and mechanical Integration of genetic and mechanical forces in the
+  cephalic furrow morphogenesis
+- Integration of mechanical and morphogenetic forces driving cephalic furrow
+  formation gastrulation in *Drosophila*
+-->
 
 
 Bruno C. Vellutini, Marina B. Cuenca, Carl D. Modes, and Pavel Tomancak
@@ -79,9 +90,7 @@ a passive tissue buckling driven by the germ band extension.
 
 <!--TODO: Put together molecular patterning figure.-->
 
-![Molecular patterning of the cephalic furrow. Whole mount HCR in situs
-showing the wild type and disrupted patterning in btd, eve, prd and gt
-embryos.](../2-figures/patterning.png){#fig:patterning width=100%}
+<!--![Molecular patterning of the cephalic furrow. Whole mount HCR in situs showing the wild type and disrupted patterning in btd, eve, prd and gt embryos.](../2-figures/patterning.png){#fig:patterning width=100%}-->
 
 ## The head-trunk boundary is a shear zone of tissue flow
 
@@ -107,7 +116,7 @@ shearing effect at the boundary.
 
 ![Reminiscent initiator cell behavior in btd
 mutants.](../2-figures/reminiscent-initiators.png){#fig:reminiscent-initiators
-width=100%}
+width=30%}
 
 ![Molecular arrangements in the cephalic furrow are disrupted in btd mutants.
 Whole mount HCR in situs showing the altered patterning of eve, slp and prd in
