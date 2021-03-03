@@ -92,56 +92,32 @@ a passive tissue buckling driven by the germ band extension.
 
 <!--![Molecular patterning of the cephalic furrow. Whole mount HCR in situs showing the wild type and disrupted patterning in btd, eve, prd and gt embryos.](../2-figures/patterning.png){#fig:patterning width=100%}-->
 
-## The head-trunk boundary is a shear zone of tissue flow
+## Ectopic folding at the head--trunk region of btd and eve mutants
 
-We analyzed the tissue flows and cell shape changes in mutants that fail to
-initiate the cephalic furrow. We observe opposite tissue flows from the head
-and trunk with a clear boundary region characterized by cells with low
-circularity and greater distance to neighbors.
+<!--Qualitative description of ectopic folding-->
 
-<!--TODO: Tissue flow in btd and eve mutants-->
-
-![Tissue flow and cell shape analysis at the head-trunk boundary interface in
-cephalic furrow mutants.](../2-figures/shear-zone.png){#fig:shear-zone width=100%}
-
-<!--TODO: Cell shape changes in btd mutant-->
-
-We observe cell shape changes as well. The live-imaging data revealed that btd
-mutants exhibit reminiscent initiator cell behaviors at the head-trunk
-interface which occur before any of the tissue flows. After the tissue flows,
-we see a range of cell shape changes with compression on both sides and a
-shearing effect at the boundary.
-
-<!--TODO: Initiator cell behavior in btd mutant-->
-
-![Reminiscent initiator cell behavior in btd
-mutants.](../2-figures/reminiscent-initiators.png){#fig:reminiscent-initiators
-width=30%}
-
-![Molecular arrangements in the cephalic furrow are disrupted in btd mutants.
-Whole mount HCR in situs showing the altered patterning of eve, slp and prd in
-the adjacent cells, and the narrower invagination area between slp-positive
-cells in the outer edges.](../2-figures/btd-mutant.png){#fig:btd-mutant
-width=100%}
-
-## Cephalic furrow mutants show ectopic epithelial folds
-
-Once the gastrulation progresses, the germ band elongates and mitotic domains
-appear in the head epithelia. We found that in btd and eve mutants, the embryos
-invariably form ectopic epithelial folds throughout the head-trunk interface
-during the process of germ band elongation.
+We analyzed btd and eve mutants under live-imaging to understand the
+consequences of the lack of the cephalic furrow invagination to the embryo. We
+found these mutants invariably form ectopic epithelial folds at the head--trunk
+interface region. The folding is delayed compared to wild type cephalic furrow
+formation.
 
 ![Ectopic folding in btd and eve
 mutants.](../2-figures/ectopic-folding.png){#fig:ectopic-folding width=100%}
 
-We also observe that the folding events are variable between individual
-embryos.
+To understand the variability of ectopic folding in btd and eve mutants, we
+imaged and analyzed several mutant individuals. We found that ectopic folding
+can occur near the canonical cephalic furrow position, but that the position
+and timing of the formation of these ectopic folds is variable between
+individual mutant embryos.
 
 ![Variability of ectopic folding between individual mutant
 embryos.](../2-figures/ectopic-variability.png){#fig:ectopic-variability
 width=100%}
 
-Ectopic folds occur preferably between mitotic domains.
+To understand what influences the position and timing of ectopic folding, we
+analyzed the placement of these events in relation to epithelial features. We
+found that cctopic folds occur preferably between mitotic domains.
 
 ![Map of ectopic folds in relation to mitotic
 domains.](../2-figures/mitotic-domains.png){#fig:mitotic-domains
@@ -156,6 +132,29 @@ area either having one deep fold or two shallower folds.
 
 ![Map and measurement of ectopic folding
 area.](../2-figures/ectopic-area.png){#fig:ectopic-area width=100%}
+
+<!--Initiator cell behavior in btd mutant-->
+
+We observe cell shape changes as well. The live-imaging data revealed that btd
+mutants exhibit reminiscent initiator cell behaviors at the head-trunk
+interface which occur before any of the tissue flows. After the tissue flows,
+we see a range of cell shape changes with compression on both sides and a
+shearing effect at the boundary.
+
+![Reminiscent initiator cell behavior in btd
+mutants.](../2-figures/reminiscent-initiators.png){#fig:reminiscent-initiators
+width=30%}
+
+<!--TODO: Cell shape changes in btd mutant-->
+
+![Molecular arrangements in the cephalic furrow are disrupted in btd mutants.
+Whole mount HCR in situs showing the altered patterning of eve, slp and prd in
+the adjacent cells, and the narrower invagination area between slp-positive
+cells in the outer edges.](../2-figures/btd-mutant.png){#fig:btd-mutant
+width=100%}
+
+
+
 
 ## Blocking the germ band extension suppresses tissue buckling
 
@@ -215,6 +214,19 @@ folding.
 ![Analytical model predicting the interactions between the head-trunk epithelia
 and the germ band extension.](../2-figures/math-model.png){#fig:math-model
 width=100%}
+
+## The head-trunk boundary is a shear zone of tissue flow
+
+<!--TODO: Tissue flow in btd and eve mutants-->
+
+We analyzed the tissue flows and cell shape changes in mutants that fail to
+initiate the cephalic furrow. We observe opposite tissue flows from the head
+and trunk with a clear boundary region characterized by cells with low
+circularity and greater distance to neighbors.
+
+![Tissue flow and cell shape analysis at the head-trunk boundary interface in
+cephalic furrow mutants.](../2-figures/shear-zone.png){#fig:shear-zone width=100%}
+
 
 ## The cephalic furrow invagination is disrupted in weak phenotypes
 
