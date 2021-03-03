@@ -1,10 +1,32 @@
 # *sloppy paired* controls the cephalic furrow position in *Drosophila*
 
+# Abstract
+
+The cephalic furrow is a major morphogenetic process in Drosophila
+gastrulation. However, the cascade of genetic interactions that regulate the
+patterning and morphogenesis of this invagination have not been resolved. While
+btd is required for eve expression in stripe 1, it does not regulate the
+position of eve stripe 1, where the initiator cells will form the cephalic
+furrow. Here we show that the repressor activity of sloppy-paired is required
+for the proper positioning of the cephalic furrow along the anteroposterior
+axis. slp acts upstream of btd, interacting with eve at the onset of zygotic
+activation and restricting eve anterior expression. The cephalic furrow
+formation in slp mutants is delayed and displaced anteriorly. This anterior
+shift is followed by a correspondent shift in the molecular patterning of eve
+stripe 1, without changes in the relative position between btd and eve, which
+still overlap. slp is expressed in stripes of cells adjacent to the initiator
+cells, as well as at the outer edges of the invagination. The initiator cell
+cell behavior in slp is different than wild type, suggesting that slp identity
+is important to a normal invagination process. Our work bring a more
+integrative view of the genetic interactions that pattern the cephalic furrow
+formation in Drosophila.
+
 # Results
 
 ## slp and eve demarcate the head-trunk boundary early
 
-I analyzed the colocalization of slp, eve and btd expression from the onset of zygotic activation until gastrulation.
+I analyzed the colocalization of slp, eve and btd expression from the onset of
+zygotic activation until gastrulation.
 
 I discovered that slp and eve are expressed early in broad juxtaposing domains
 that demarcate the head and trunk regions of the embryo, respectively, while
