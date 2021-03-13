@@ -43,39 +43,58 @@ Pfotenhauerstr. 108, 01307 Dresden, Germany.
 
 # Introduction
 
-The head-trunk boundary is an ancient and essential trait for the evolution of
+The head--trunk boundary is an ancient and essential trait for the evolution of
 bilaterians.
 
-The head-trunk boundary in Drosophila is demarcated by a deep, but transient,
-invagination formed during gastrulation, known as the cephalic furrow.
+In Drosophila, the head--trunk boundary is demarcated by a deep yet transient
+invagination that forms during gastrulation---the cephalic furrow.
 
-Despite being a prominent trait, the development of the cephalic furrow remains
-poorly understood compared to the other gastrulation movements in Drosophila.
+Despite being a prominent embryonic trait, the cephalic furrow remains an
+enigmatic trait of Drosophila gastrulation.
 
-We know relatively little about the genetic interactions that specify this
-boundary, about the molecules involved in downstream signaling, about the
-morphogenetic processes involved, and about the role that the cephalic furrow
-might play during gastrulation.
+First, the developmental mechanisms that regulate the cephalic furrow
+morphogenesis remain poorly understood.
 
-We investigate the role of the cephalic furrow in Drosophila gastrulation by
-analyzing known and newly-identified cephalic furrow mutants under lightsheet
+Second, it is unclear whether the cephalic furrow plays a mechanical role in
+the complex morphogenetic movements of gastrulation.
+
+Here, we investigate the morphogenesis and developmental role of the cephalic
+furrow by analyzing known and newly-identified mutants under lightsheet
 microscopy.
 
-We find that mutants that fail to initiate the furrow show ectopic
-epithelial folding at stage 7 when the mitotic domains appear and the germ band
-begin to elongate.
+We find that embryos that fail to initiate the cephalic furrow---*btd* and
+*eve* mutants---invariably form late ectopic folds at the head--trunk
+interface.
 
-Folding events vary between individuals occurring preferably between mitotic
-domains, but are ultimately driven by the tissue compression caused by the germ
-band extension.
+These ectopic folds are variable between individual mutant embryos, but the
+position and timing of folding events is not random.
+
+Ectopic folds occur preferably between mitotic domains in regions compressed by
+the expansion of dividing cells.
+
+In contrast to the cephalic furrow, which forms by a progressive invagination
+of the tissue, the ectopic folds form by an abrupt buckling of the epithelium.
+
+The total area of folded tissue is similar between mutant embryos, independent
+of the number of folds.
+
+These observations suggest that local and global mechanical forces acting on
+the epithelia might regulate ectopic folding.
+
+We find that that mitotic domains facilitate but are not sufficient to drive
+ectopic folding, and that the global tissue compression caused by the germ band
+extension is the main force that leads to ectopic folding. 
+
+<!--Ectopic folds without mitotic domains suggests that folding is inevitable (no need for excess theory).-->
+
+<!--No ectopic folding without mitotic domains suggests that it is the coordinated expansion of dividing cells and tissue compression from the germ band that lead to ectopic folding.-->
 
 We also find the germ band contributes to the cephalic furrow invagination in
 wild type embryos.
 
 Our data suggests that under normal embryogenesis, given the expansions of cell
 area of mitotic domains in the head and the epithelial compression of the germ
-band elongation in the trunk, the epithelia will inevitably buckle. We estimate
-this threshold of “excess” tissue in vivo and in silico.
+band elongation in the trunk, the epithelia will inevitably buckle.
 
 Therefore, what the cephalic furrow accomplishes during gastrulation is to
 prime the timing and position of the folding. The result is a predictable
@@ -117,7 +136,6 @@ width=100%}
 
 ## Ectopic folds vary between individual mutant embryos
 
-
 <!--Variability of tissue buckling events-->
 
 To understand the variability of ectopic folding in btd and eve mutants, we
@@ -133,7 +151,6 @@ embryos.](../2-figures/ectopic-variability.png){#fig:ectopic-variability
 width=100%}
 
 ## Ectopic folds form between mitotic domains
-
 
 <!--Correlation between buckling events and mitotic domains-->
 
