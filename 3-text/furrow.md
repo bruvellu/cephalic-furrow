@@ -66,33 +66,48 @@ We find that embryos that fail to initiate the cephalic furrow---*btd* and
 *eve* mutants---invariably form late ectopic folds at the head--trunk
 interface.
 
-These ectopic folds are variable between individual mutant embryos, but the
-position and timing of folding events is not random.
+These ectopic folds are variable between individual mutant embryos.
 
-Ectopic folds occur preferably between mitotic domains in regions compressed by
-the expansion of dividing cells.
+We find the position and timing of folding events correlates with mitotic
+domains. The epithelium folds in regions compressed between the expanding 
+dividing cells.
 
-In contrast to the cephalic furrow, which forms by a progressive invagination
-of the tissue, the ectopic folds form by an abrupt buckling of the epithelium.
+Instead of a progressive invagination of the tissue, the ectopic folds form by
+an abrupt buckling of the epithelium, suggesting that local tissue forces might
+cause the tissue to buckle.
 
-The total area of folded tissue is similar between mutant embryos, independent
-of the number of folds.
+Interestingly, the total area of folded tissue is similar between mutant
+embryos, independent of the number of folds, suggesting that global mechanical
+forces might also regulate ectopic folding.
 
-These observations suggest that local and global mechanical forces acting on
-the epithelia might regulate ectopic folding.
+We tested whether local forces caused by mitotic domains are sufficient to
+cause ectopic foldings in cephalic furrow mutants by blocking the germ band
+extension.
 
-We find that that mitotic domains facilitate but are not sufficient to drive
-ectopic folding, and that the global tissue compression caused by the germ band
-extension is the main force that leads to ectopic folding. 
+Cauterized mutants do not form ectopic folds, suggesting that the global tissue
+compression caused by the germ band extension is the main force that leads to
+ectopic folding.
+
+We then tested whether the mitotic domains, either by area expansion or by
+destabilizing the epithelia, are required or simply facilitate ectopic folding
+events, by analysing double mutants.
+
+Double mutants do not form ectopic folds, suggesting that it is the
+coordination of local and global mechanical forces that lead to the formation
+of ectopic folds.
 
 <!--Ectopic folds without mitotic domains suggests that folding is inevitable (no need for excess theory).-->
 
 <!--No ectopic folding without mitotic domains suggests that it is the coordinated expansion of dividing cells and tissue compression from the germ band that lead to ectopic folding.-->
 
-We also find the germ band contributes to the cephalic furrow invagination in
-wild type embryos.
+Next we asked whether the germ band extension (and mitotic domains) contribute
+to the normal process of invagination of the cephalic furrow.
 
-Our data suggests that under normal embryogenesis, given the expansions of cell
+We find that cauterized wild type embryos have a shallower cephalic furrow,
+indicating that the tissue compression from the germ band influences the amount
+of invaginated cephalic tissue.
+
+Our data shows that under normal embryogenesis, given the expansions of cell
 area of mitotic domains in the head and the epithelial compression of the germ
 band elongation in the trunk, the epithelia will inevitably buckle.
 
