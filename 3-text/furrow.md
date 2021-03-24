@@ -1,5 +1,5 @@
 ---
-title: Cephalic furrow invagination prevents epithelial instability at the head-trunk boundary
+title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
 documentclass: article
 bibliography: furrow.bib
 csl: elife.csl
@@ -141,71 +141,45 @@ usually appear at the head--trunk region and have a less-structured and
 symmetric appearance compared to wild type invagination (@fig:ectopic-folding).
 
 ![Ectopic folding in btd and eve
-mutants.](../2-figures/ectopic-folding.png){#fig:ectopic-folding width=100%}
-
-Supplementary: ![Molecular arrangements in the cephalic furrow are disrupted in btd mutants.
-Whole mount HCR in situs showing the altered patterning of eve, slp and prd in
-the adjacent cells, and the narrower invagination area between slp-positive
-cells in the outer edges.](../2-figures/btd-mutant.png){#fig:btd-mutant
+mutants.](../2-figures/ectopic-folding/figure.png){#fig:ectopic-folding
 width=100%}
+
+### Supplementary: Molecular arrangements of btd, eve, prd and gt
+
+<!--TODO: Include slp or not?-->
+
+![Molecular arrangements in the cephalic furrow are
+disrupted in btd mutants. Whole mount HCR in situs showing the altered
+patterning of eve, slp and prd in the adjacent cells, and the narrower
+invagination area between slp-positive cells in the outer
+edges.](../2-figures/btd-mutant.png){#fig:btd-mutant width=100%}
 
 ## Ectopic folds vary between individual mutant embryos
 
 <!--Variability of tissue buckling events-->
 
 To understand the variability of ectopic folding in btd and eve mutants, we
-imaged and analyzed several mutant individuals. We found that the position
-and timing of the formation of these ectopic folds is variable between
-individual mutant embryos. In btd mutants, we identified ectopic folding can
-occur near the canonical cephalic furrow position, but also more anterior and
-posterior at the head or trunk regions. In eve mutants we observe a similar
-phenomena.
+imaged and analyzed different mutant individuals. We found that the formation
+dynamics and position of these ectopic folds is variable between individual
+mutant embryos (@fig:buckling-variability). While the cephalic furrow shows a
+dorsal posterior shift, a ventral anterior shift, and a shape bending, the
+ectopic folds are mostly straight and show no shifts
+(@fig:buckling-variability).
+
+In btd mutants, we identified ectopic folding can occur near the canonical
+cephalic furrow position. This is associated with the reminiscent initiator
+cell behavior present in btd mutants (@fig:reminiscent-initiators). However,
+ectopic folding occurs also more anterior and posterior in the head--trunk
+interface (@fig:reminiscent-initiators).
+
+The ectopic folds in eve mutants also occur in the anterior and canonical
+positions, but the more posterior folds occur more dorsally compared to btd.
 
 ![Variability of ectopic folding between individual mutant
-embryos.](../2-figures/ectopic-variability.png){#fig:ectopic-variability
+embryos.](../2-figures/buckling-variability/figure.png){#fig:buckling-variability
 width=100%}
 
-## Ectopic folds form between mitotic domains
-
-<!--Correlation between buckling events and mitotic domains-->
-
-The variable ectopic folding, however, is not random. To understand what
-influences the position and timing of ectopic folding, we analyzed the
-placement of these events in relation to epithelial features. We found that
-ectopic folds occur preferably between mitotic domains.
-
-![Map of ectopic folds in relation to mitotic
-domains.](../2-figures/mitotic-domains.png){#fig:mitotic-domains
-width=100%}
-
-## Ectopic folds form by abrupt tissue buckling rather than progressive invagination
-
-<!--Description of the buckling process-->
-
-Even though ectopic folds might be similar to the cephalic furrow, the
-morphogenetic process forming the fold are rather different. While the cephalic
-furrow forms by a progressive invagination, the ectopic folds form by abrupt
-buckling of the tissue. The buckling correlates with the expansion of area in
-dividing cells in the mitotic domains.
-
-![Description of the process of tissue buckling of ectopic
-folds.](../2-figures/buckling-process.png){#fig:buckling-process width=100%}
-
-## The total area of folded tissue is roughly constant
-
-<!--Quantification of tissue buckling area-->
-
-We measured the total area of invaginated tissue and total number of
-invaginated blastoderm cells. The invaginated area in btd and eve mutants is
-roughly half the size of a regular wild type cephalic furrow. Nevertheless the
-minimum value of invaginated tissues in mutant embryos did not go below X. We
-also observe that individual mutant embryos can have the same total invaginated
-area either having one deep fold or two shallower folds.
-
-![Map and measurement of ectopic folding
-area.](../2-figures/ectopic-area.png){#fig:ectopic-area width=100%}
-
-## btd mutants show initiator cell behaviors
+### Supplementary: btd mutants show initiator cell behaviors
 
 <!--Initiator cell behavior in btd mutant-->
 
@@ -242,6 +216,49 @@ mutants exhibit reminiscent initiator cell behaviors at the head-trunk
 interface which occur before any of the tissue flows. After the tissue flows,
 we see a range of cell shape changes with compression on both sides and a
 shearing effect at the boundary.
+
+## Ectopic folds form between mitotic domains
+
+<!--Correlation between buckling events and mitotic domains-->
+
+To understand what influences the position and timing of ectopic folding, we
+analyzed the placement of these events in relation to epithelial features. We
+find the ectopic folds at the head--trunk interface correlates with the mitotic
+domains. When ectopic folds appear, it is often between mitotic domains
+(@fig:mitotic-domains). The folded tissue is centered between the regions where
+the area of dividing cells are expanding during mitosis (@fig:mitotic-domains).
+
+![Map of ectopic folds in relation to mitotic
+domains.](../2-figures/mitotic-domains/figure.png){#fig:mitotic-domains
+width=100%}
+
+## Ectopic folds form by abrupt tissue buckling rather than progressive invagination
+
+<!--Description of the buckling process-->
+
+Even though ectopic folds might be similar to the cephalic furrow, the
+morphogenetic process forming the fold are rather different. While the cephalic
+furrow forms by a progressive invagination, the ectopic folds form by abrupt
+buckling of the tissue. The buckling correlates with the expansion of area in
+dividing cells in the mitotic domains.
+
+![Description of the process of tissue buckling of ectopic
+folds.](../2-figures/buckling-process.png){#fig:buckling-process width=100%}
+
+## The total area of folded tissue is roughly constant
+
+<!--Quantification of tissue buckling area-->
+
+We measured the total area of invaginated tissue and total number of
+invaginated blastoderm cells. The invaginated area in btd and eve mutants is
+roughly half the size of a regular wild type cephalic furrow. Nevertheless the
+minimum value of invaginated tissues in mutant embryos did not go below X. We
+also observe that individual mutant embryos can have the same total invaginated
+area either having one deep fold or two shallower folds.
+
+![Map and measurement of ectopic folding
+area.](../2-figures/ectopic-area.png){#fig:ectopic-area width=100%}
+
 
 ## Blocking the germ band extension suppresses tissue buckling
 
