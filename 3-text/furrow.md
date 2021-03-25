@@ -223,10 +223,12 @@ shearing effect at the boundary.
 
 To understand what influences the position and timing of ectopic folding, we
 analyzed the placement of these events in relation to epithelial features. We
-find the ectopic folds at the head--trunk interface correlates with the mitotic
-domains. When ectopic folds appear, it is often between mitotic domains
-(@fig:mitotic-domains). The folded tissue is centered between the regions where
-the area of dividing cells are expanding during mitosis (@fig:mitotic-domains).
+find a correlation between the formation of ectopic folds with the position and
+timing of mitotic domains at the head--trunk interface (@fig:mitotic-domains).
+
+The ectopic folds in btd and eve mutants are positioned between two mitotic
+domains (@fig:mitotic-domains). The fold appears between the regions where the
+area of dividing cells are expanding during mitosis (@fig:mitotic-domains).
 
 ![Map of ectopic folds in relation to mitotic
 domains.](../2-figures/mitotic-domains/figure.png){#fig:mitotic-domains
