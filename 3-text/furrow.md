@@ -150,7 +150,7 @@ invagination. While the cephalic furrow initiates as a straight lateral line
 and progressively performs a dorsal posterior shift, a ventral anterior shift,
 and a shape bending into a curved line, the ectopic folds are mostly straight
 and do not undergo a determined patterned shift or shape change
-(@fig:buckling-variability).
+(@fig:ectopic-folding).
 
 <!--Ectopic folding area smaller than CF invagination area-->
 
