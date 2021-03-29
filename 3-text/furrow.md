@@ -238,6 +238,16 @@ rather different.
 ![Description of the process of tissue buckling of ectopic
 folds.](../2-figures/buckling-process.png){#fig:buckling-process width=100%}
 
+
+## Inhibiting mitotic domains does (not) suppress tissue buckling
+
+<!--TODO: Blocking mitotic domains on cycle 14-->
+
+To investigate whether mitotic domains are required to cause tissue buckling,
+we generated double mutants for btd and stg and eve and stg. We imaged double
+mutants and found that without the mitotic domains, the tissue does (not)
+buckle.
+
 ## Blocking the germ band extension suppresses tissue buckling
 
 <!--Compensation of tissue compression-->
@@ -293,17 +303,6 @@ tension.* Using laser ablations near the initiator cells we identified that
 there is an increase in tension in an area of about 40 µm anterior and
 posterior.
 
-## Modeling combined effects of head area expansion and trunk tissue compression
-
-We developed a model to compare to our in vivo observations. The model is in
-line with the amount of excess tissue, calculates the force needed for the
-epithelia to buckle, and the compression from the germ band driving the
-folding.
-
-![Analytical model predicting the interactions between the head-trunk epithelia
-and the germ band extension.](../2-figures/math-model.png){#fig:math-model
-width=100%}
-
 ## The head-trunk boundary is a shear zone of tissue flow
 
 <!--TODO: Tissue flow in btd and eve mutants-->
@@ -316,6 +315,16 @@ circularity and greater distance to neighbors.
 ![Tissue flow and cell shape analysis at the head-trunk boundary interface in
 cephalic furrow mutants.](../2-figures/shear-zone.png){#fig:shear-zone width=100%}
 
+## Modeling combined effects of head area expansion and trunk tissue compression
+
+We developed a model to compare to our in vivo observations. The model is in
+line with the amount of excess tissue, calculates the force needed for the
+epithelia to buckle, and the compression from the germ band driving the
+folding.
+
+![Analytical model predicting the interactions between the head-trunk epithelia
+and the germ band extension.](../2-figures/math-model.png){#fig:math-model
+width=100%}
 
 ## The cephalic furrow invagination is disrupted in weak phenotypes
 
