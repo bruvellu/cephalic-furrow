@@ -184,7 +184,7 @@ and analyzed different mutant individuals to see if ectopic folds form at
 regular positions and timing, which suggest they are driven by patterning, or
 if they are stochastic, which suggest they are driven by mechanical forces. We
 find that the formation dynamics and position of these ectopic folds is
-variable between individual mutant embryos (@fig:buckling-variability).
+variable between individual mutant embryos (@fig:ectopic-variability).
 
 <!--Position of ectopic folding is biased-->
 
@@ -192,12 +192,12 @@ The ectopic folds can occur near the canonical cephalic furrow position, but it
 also forms in at least one more anterior site and two more posterior positions.
 In btd mutants, the ectopic folds near the canonical cephalic furrow position
 are associated with the reminiscent initiator cell behavior present in btd
-mutants (@fig:reminiscent-initiators). The ectopic folds in eve mutants also
-occur in the anterior and canonical positions, but the more posterior folds
-occur more dorsally compared to btd.
+mutants (Supplementary @fig:initiator-behaviors). The ectopic folds in eve
+mutants also occur in the anterior and canonical positions, but the more
+posterior folds occur more dorsally compared to btd.
 
 ![Variability of ectopic folding between individual mutant
-embryos.](../2-figures/buckling-variability/figure.png){#fig:buckling-variability
+embryos.](../2-figures/ectopic-variability/figure.png){#fig:ectopic-variability
 width=100%}
 
 <!--Ectopic folds appear between mitotic domains-->
