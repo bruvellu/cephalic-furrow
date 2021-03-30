@@ -169,8 +169,6 @@ invagination. The ectopic folds are not perfectly symmetric, the apices of
 invaginated cells are not facing each other, and the fold depth is smaller
 (@fig:ectopic-folding).
 
-<!--TODO: Include representative trace for the ectopic folding figure.-->
-
 ![Ectopic folding in btd and eve
 mutants.](../2-figures/ectopic-folding/figure.png){#fig:ectopic-folding
 width=100%}
