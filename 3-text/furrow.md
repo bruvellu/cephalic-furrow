@@ -179,10 +179,11 @@ width=100%}
 
 To understand the causes of ectopic folding in btd and eve mutants, we imaged
 and analyzed different mutant individuals to see if ectopic folds form at
-regular positions and timing, which suggest they are driven by patterning, or
-if they are stochastic, which suggest they are driven by mechanical forces. We
-find that the formation dynamics and position of these ectopic folds is
-variable between individual mutant embryos (@fig:ectopic-variability).
+regular positions and timing. We find that the formation dynamics and position
+of these ectopic folds is variable between individual mutant embryos
+(@fig:ectopic-variability). Even between left and right side of the same embryo
+(@fig:ectopic-variability). This suggest they are driven by patterning, or if
+they are stochastic, which suggest they are driven by mechanical forces. 
 
 <!--Position of ectopic folding is biased-->
 
@@ -193,6 +194,11 @@ are associated with the reminiscent initiator cell behavior present in btd
 mutants (Supplementary @fig:initiator-behaviors). The ectopic folds in eve
 mutants also occur in the anterior and canonical positions, but the more
 posterior folds occur more dorsally compared to btd.
+
+<!--Compensation of tissue compression-->
+
+We also observe that individual mutant embryos can have the same total
+invaginated area either having one deep fold or two shallower folds.
 
 ![Variability of ectopic folding between individual mutant
 embryos.](../2-figures/ectopic-variability/figure.png){#fig:ectopic-variability
@@ -236,7 +242,6 @@ rather different.
 ![Description of the process of tissue buckling of ectopic
 folds.](../2-figures/buckling-process.png){#fig:buckling-process width=100%}
 
-
 ## Inhibiting mitotic domains does (not) suppress tissue buckling
 
 <!--TODO: Blocking mitotic domains on cycle 14-->
@@ -247,11 +252,6 @@ mutants and found that without the mitotic domains, the tissue does (not)
 buckle.
 
 ## Blocking the germ band extension suppresses tissue buckling
-
-<!--Compensation of tissue compression-->
-
-We also observe that individual mutant embryos can have the same total
-invaginated area either having one deep fold or two shallower folds.
 
 <!--Are mitotic domains sufficient-->
 
