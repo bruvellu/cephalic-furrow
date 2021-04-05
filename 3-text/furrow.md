@@ -14,10 +14,10 @@ geometry:
 link-citations: true
 colorlinks: true
 fignos-warning-level: 0
-fignos-cleveref: True
-fignos-plus-name: Figure
-tablenos-cleveref: True
-tablenos-plus-name: Table
+#fignos-cleveref: True
+#fignos-plus-name: Figure
+#tablenos-cleveref: True
+#tablenos-plus-name: Table
 ...
 
 <!--Alternative titles:
@@ -119,7 +119,7 @@ extension.
 We analyzed mutant embryos under live-imaging to understand the impact cephalic
 furrow disruptions to the gastrulating embryo. We find that btd and eve
 mutants, which fail to initiate the cephalic furrow, invariably form ectopic
-epithelial folds at the head--trunk region (@fig:ectopic-folding).
+epithelial folds at the head--trunk region (Figure @fig:ectopic-folding).
 
 <!--Ectopic folds are delayed relative to CF formation-->
 
@@ -127,7 +127,7 @@ The ectopic folds are delayed in relation to the cephalic furrow. While the
 cephalic furrow initiates at the onset of gastrulation in wild type embryos
 (stage 6), the ectopic folds in btd and eve mutants appear later in development
 after some progression of the germ band and cycle 14 mitotic domains (stage 8)
-(@fig:ectopic-folding).
+(Figure @fig:ectopic-folding).
 
 <!--Progression of ectopic folds differ from CF formation-->
 
@@ -136,7 +136,7 @@ invagination. While the cephalic furrow initiates as a straight lateral line
 and progressively performs a dorsal posterior shift, a ventral anterior shift,
 and a shape bending into a curved line, the ectopic folds are mostly straight
 and do not undergo a determined patterned shift or shape change
-(@fig:ectopic-folding).
+(Figure @fig:ectopic-folding).
 
 <!--Ectopic folding area smaller than CF invagination area-->
 
@@ -153,7 +153,7 @@ area.](../2-figures/ectopic-area.png){#fig:ectopic-area width=100%}
 Finally, the morphology of the ectopic folds differ from the wild type
 invagination. The ectopic folds are not perfectly symmetric, the apices of
 invaginated cells are not facing each other, and the fold depth is smaller
-(@fig:ectopic-folding).
+(Figure @fig:ectopic-folding).
 
 ![Ectopic folding in btd and eve
 mutants.](../2-figures/ectopic-folding/figure.png){#fig:ectopic-folding
@@ -167,8 +167,8 @@ To understand the causes of ectopic folding in btd and eve mutants, we imaged
 and analyzed different mutant individuals to see if ectopic folds form at
 regular positions and timing. We find that the formation dynamics and position
 of these ectopic folds is variable between individual mutant embryos
-(@fig:ectopic-variability). Even between left and right side of the same embryo
-(@fig:ectopic-variability). This suggest they are driven by patterning, or if
+(Figure @fig:ectopic-variability). Even between left and right side of the same embryo
+(Figure @fig:ectopic-variability). This suggest they are driven by patterning, or if
 they are stochastic, which suggest they are driven by mechanical forces. 
 
 <!--Position of ectopic folding is biased-->
@@ -177,7 +177,7 @@ The ectopic folds can occur near the canonical cephalic furrow position, but it
 also forms in at least one more anterior site and two more posterior positions.
 In btd mutants, the ectopic folds near the canonical cephalic furrow position
 are associated with the reminiscent initiator cell behavior present in btd
-mutants (Supplementary @fig:initiator-behaviors). The ectopic folds in eve
+mutants (Supplementary Figure @fig:initiator-behaviors). The ectopic folds in eve
 mutants also occur in the anterior and canonical positions, but the more
 posterior folds occur more dorsally compared to btd.
 
@@ -195,15 +195,15 @@ width=100%}
 To understand what influences the position and timing of ectopic folding, we
 analyzed the placement of these events in relation to epithelial features. We
 find a correlation between the formation of ectopic folds with the position and
-timing of mitotic domains at the head--trunk interface (@fig:mitotic-domains).
+timing of mitotic domains at the head--trunk interface (Figure @fig:mitotic-domains).
 The ectopic folds in btd and eve mutants are often positioned between adjacent
-mitotic domains (@fig:mitotic-domains).
+mitotic domains (Figure @fig:mitotic-domains).
 
 <!--Ectopic folding coincides with area expansion of dividing cells-->
 
 The epithelial cells that fold are being compressed by the expansion of
 dividing cells. The ectopic folding coincides in position and timing with the
-expansion in the area of dividing cells during mitosis (@fig:mitotic-domains).
+expansion in the area of dividing cells during mitosis (Figure @fig:mitotic-domains).
 The apical area of epithelial cells about to fold inwards diminishes at the
 same time that the apical area of dividing cells increase.
 
@@ -216,7 +216,7 @@ width=100%}
 The process of ectopic fold formation differs from the cephalic furrow
 invagination. While the cephalic furrow forms by a progressive invagination,
 the ectopic folds form by abrupt buckling of the tissue
-(@fig:buckling-process). The ectopic folds can be initiated by reminiscent
+(Figure @fig:buckling-process). The ectopic folds can be initiated by reminiscent
 initiator cell behavior in btd mutants. In this case, the epithelium bulges,
 but does not invaginate, until it buckles with the expansion of area in
 dividing cells in the mitotic domains. In other ectopic folds, the epithelium
