@@ -1,5 +1,29 @@
 # Supplementary data
 
+## The cephalic furrow invagination is disrupted in weak phenotypes
+
+The cephalic furrow of prd mutants is delayed but forms at the expected
+position in the body axis that matches the eve stripe 1 [@prdpaper]. We
+analyzed cell and tissue behaviors in prd mutants. We found that initiator cell
+behavior is present, timely and possibly expanded. However, the process of
+cephalic furrow invagination does not progress normally. The tissue halts
+midway only to buckle abruptly when the mitotic domains appear. Despite the
+similar outcome, a cephalic epithelial fold, we note that this fold is not
+formed through the usual process of invagination (which is disrupted). We
+observe a similar phenomenon in gt mutants.
+
+<!--TODO: ROI showing initiator cell behavior in prd and gt-->
+
+<!--TODO: Plot showing interrupted invagination and subsequent buckling.-->
+
+![Disrupted invagination process in weak cephalic furrow
+mutants.](../2-figures/invagination-mutants.png){#fig:invagination-mutants
+width=100%}
+
+![Row of initiator cells is wider in prd mutants. Whole mount HCR in situs
+showing the disrupted patterning of adjacent cells and wider row of
+eve-expressing cells.](../2-figures/prd-mutant.png){#fig:prd-mutant width=100%}
+
 
 ## btd mutants show initiator cell behaviors
 
@@ -50,4 +74,13 @@ patterning of eve, slp and prd in the adjacent cells, and the narrower
 invagination area between slp-positive cells in the outer
 edges.](../2-figures/btd-mutant.png){#fig:btd-mutant width=100%}
 
+
+## Cauterization of initiator cells to block the cephalic furrow
+
+**Supplementary:** *Blocking the cephalic furrow in wild type causes ectopic
+buckling.* If an excess of epithelia in association with mitotic domains and
+germ band compression, we expect that by blocking the cephalic furrow, we would
+find ectopic folding occurring in the epithelia. We blocked the cephalic furrow
+invagination by cauterizing the row of initiator cells. We find the prediction
+holds.
 
