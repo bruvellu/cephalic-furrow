@@ -1,6 +1,6 @@
 ---
 title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
-author: #TODO: Use proper filter https://github.com/pandoc/lua-filters/tree/master/scholarly-metadata
+author: #TODO: Use author filter https://github.com/pandoc/lua-filters/tree/master/scholarly-metadata
 - Bruno C. Vellutini, Marina B. Cuenca, Carl D. Modes, Pavel Tomancak
 - Max Planck Institute of Molecular Cell Biology and Genetics
 - Pfotenhauerstraße 108, 01307 Dresden, Germany
@@ -278,12 +278,19 @@ width=100%}
 
 <!--Impact of germ band cauterization in wild type-->
 
-We also tested the impact of blocking the germ band elongation in wild type
-embryos. When the germ band extension is blocked, the cephalic furrow
-invagination is 30% shallower compared to control embryos.
+Next, we asked whether the germ band elongation could be contributing to the
+invagination of the cephalic furrow by exerting forces on the epithelium. To
+test this hypothesis, we blocked the germ band elongation in wild type embryos
+by cauterization prior to gastrulation.
 
-This indicates the germ band extension also impacts the cephalic furrow
-invagination in normal embryogenesis, suggesting the cephalic furrow
+<!--TODO: Normalize CF length by the GB length.-->
+
+We found that in embryos with a successful cauterization the cephalic furrow
+invagination is about 10% shallower compared to control embryos
+(@fig:cauterization-experiments). The cephalic furrow length and germ band
+extension show a weak but significant correlation. This indicates the physical
+force exerted by the germ band extension also contributes to the cephalic
+furrow invagination in normal embryogenesis, suggesting the cephalic furrow
 morphogenesis is governed by the orchestration of genetic patterning with
 mechanical forces in the embryo.
 
