@@ -316,35 +316,45 @@ external forces from the germ band (@fig:cauterization-experiments).
 
 # Discussion
 
-## The head-trunk boundary is a tissue shear zone
+## Cephalic furrow cryptic mutants due to ectopic folding
 
-These data suggest that the head-trunk interface is under conflicting forces
-and cannot accommodate the expansion of head tissues caused by the mitotic
-domains, and the compression of trunk tissues caused by the germ band, without
-buckling. 
+The cephalic furrow has not been as studied as other morphogenetic movements in
+Drosophila gastrulation. Only a few cephalic furrow mutants have been
+identified and the mechanisms of patterning and morphogenesis remain
+understudied to this day. Part of the reason is that the cephalic furrow is a
+transient structure and to identify mutant phenotypes one has to image its
+formation, since there are no known consequences of not forming the cephalic
+furrow. Therefore, live-imaging is a key approach to be able to investigate the
+cephalic furrow formation.
 
-## Cell proliferation crosses physical threshold for epithelial stability
+Using live-imaging, we found that cephalic furrow mutants with a delayed furrow
+in fact fail to form the invagination, but still form a ectopic fold at the
+canonical cephalic furrow position. We describe this for gt and there are
+likely other genes that might be affecting the cephalic furrow development, but
+are cryptic because it requires live-imaging.
 
+# The head-trunk boundary is a shear zone prone to epithelial instability
+
+Our tissue flow suggest that the head-trunk interface is characterized by a
+boundary of tissue movements. The forces involved are a relatively static head
+tissues that undergo expansion due to mitotic domains, and an anterior and
+ventral flow of trunk tissues driven by the germ band elongation.
 The invaginated area analysis suggests some sort of compensation in the amount
 of invaginated tissue. Suggesting that mechanical forces acting in the
 monolayer epithelia, such as the expansion of dividing cells, or the
 compression exerted by the germ band, might be causally connected to the tissue
 buckling.
 
-## Mitotic domains facilitate but are not sufficient to cause tissue buckling
+## Ectopic folding is facilitated by mitotic domains but ultimately driven by germ band elongation
 
 This indicates the germ band extension is the driving force underlying the
 ectopic epithelial folding, and that mitotic domains facilitate but are not
-sufficient to cause the tissue to buckle.
-
-## Germ band extension drives compression in the head-trunk boundary
-
-By cauterization experiments we show the germ band extension causes epithelial
-compression at the head-trunk boundary. While in strong phenotypes, embryos
-that fail to initiate the furrow, the compression results in ectopic folds, in
-wild type embryos the compression further deepens the furrow. This shows
-evidence of the long range global impact the germ band extension exerts during
-gastrulation.
+sufficient to cause the tissue to buckle. By cauterization experiments we show
+the germ band extension causes epithelial compression at the head-trunk
+boundary. While in strong phenotypes, embryos that fail to initiate the furrow,
+the compression results in ectopic folds, in wild type embryos the compression
+further deepens the furrow. This shows evidence of the long range global impact
+the germ band extension exerts during gastrulation.
 
 ## Cephalic furrow invagination anticipates and primes folding position
 
@@ -356,7 +366,7 @@ as the compromise of cell-to-cell interactions or short-range signaling in the
 epithelia, and thus ensure a stereotypical balance of forces required for the
 precise patterning of embryonic tissues during gastrulation.
 
-## Cephalic furrow morphogenesis is driven by two independent processes
+## Cephalic furrow morphogenesis requires coordination of genetic and mechanical processes
 
 The cephalic furrow invagination is the combination of an active movement
 initiated by the initiator cells pulling the tissue in around 40 µm wide, as

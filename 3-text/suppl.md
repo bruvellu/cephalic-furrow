@@ -1,4 +1,4 @@
-# Supplementary data
+# Supplementary results
 
 ## The cephalic furrow invagination is disrupted in weak phenotypes
 
@@ -102,3 +102,5 @@ find ectopic folding occurring in the epithelia. We blocked the cephalic furrow
 invagination by cauterizing the row of initiator cells. We find the prediction
 holds.
 
+
+# Supplementary discussion
