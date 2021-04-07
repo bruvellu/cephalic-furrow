@@ -18,11 +18,16 @@ geometry:
 link-citations: true
 colorlinks: true
 fignos-warning-level: 0
+...
+
+<!--TODO: Add auto naming for figures, if needed
+
 #fignos-cleveref: True
 #fignos-plus-name: Figure
 #tablenos-cleveref: True
 #tablenos-plus-name: Table
-...
+
+-->
 
 <!--TODO: Consider alternative titles.
 
@@ -154,6 +159,10 @@ folding.](../2-figures/placeholder.png){#fig:ectopic-area width=100%}
 
 <!--Morphology of ectopic folds differ from CF invagination-->
 
+<!--TODO: Take measurements to show differences-->
+
+<!--TODO: Local curvature of the fold might work well-->
+
 Finally, the morphology of the ectopic folds differ from the wild type
 invagination. The ectopic folds are not perfectly symmetric, the apices of
 invaginated cells are not facing each other, and the fold depth is smaller
@@ -190,6 +199,11 @@ also forms in at least one more anterior site and two more posterior positions.
 In btd mutants, the ectopic folds near the canonical cephalic furrow position.
 The ectopic folds in eve mutants also occur in the anterior and canonical
 positions, but the more posterior folds occur more dorsally compared to btd.
+
+<!--Compensation of tissue compression-->
+
+We observe that individual mutant embryos can have the same total invaginated
+area either having one deep fold or two shallower folds.
 
 <!--Ectopic folds appear between mitotic domains-->
 
@@ -244,46 +258,43 @@ folds.](../2-figures/buckling-process.png){#fig:buckling-process width=100%}
 To investigate whether mitotic domains are required to cause tissue buckling,
 we generated double mutants for btd and stg and eve and stg. We imaged double
 mutants and found that without the mitotic domains, the tissue does (not)
-buckle.
+buckle. That means that other mechanical forces could be contributing to the
+tissue buckling.
 
 ## Blocking the germ band extension suppresses tissue buckling in mutants and wild type
 
-<!--Compensation of tissue compression-->
-
-We observe that individual mutant embryos can have the same total invaginated
-area either having one deep fold or two shallower folds.
-
-<!--Are mitotic domains sufficient-->
-
-We tested whether mitotic domains are sufficient to cause ectopic epithelial
-folds by mechanically blocking the germ band elongation in eve mutants using
-laser cauterizations. We found that when the germ band is prevented from
-elongating, the ectopic folds are no longer formed (Figure
+We tested whether the elongation of the germ band could be the external force
+causing the ectopic  epithelial folds in cephalic furrow mutants. To test that
+we physically blocked the germ band extension using laser cauterizations at the
+posterior dorsal of the embryo at the onset of gastrulation (Figure
 @fig:cauterization-experiments).
 
 ![Cauterization blocking the germ band extension in btd and eve
 mutants.](../2-figures/cauterization-mutants.png){#fig:cauterization-experiments
 width=100%}
 
-<!--Model shows expansion combined with compression is important-->
+We find that when the germ band is mechanically prevented from elongating in
+cephalic furrow mutants, the ectopic folds no longer appear in the head-trunk
+interface (Figure @fig:cauterization-experiments, Videos). The mitotic domains
+and associated apical area expansion occur normally and compress apically
+non-dividing cells (Figure @fig:cauterization-experiments, Video). This
+response is consistent in both btd and eve mutants (Supplemental figure)
 
-We developed a model to compare to our in vivo observations. The model is in
-line with the amount of excess tissue, calculates the force needed for the
-epithelia to buckle, and the compression from the germ band driving the
-folding.
+<!--TODO: Create video for eve cauterization and comparison to control-->
 
-![Analytical model predicting the interactions between the head-trunk epithelia
-and the germ band extension.](../2-figures/math-model.png){#fig:math-model
-width=100%}
+<!--TODO: Create video for crop non-dividing cells-->
+
+<!--TODO: Replace dorsal view of surface by lateral in non-dividing panel-->
 
 <!--Impact of germ band cauterization in wild type-->
 
 Next, we asked whether the germ band elongation could be contributing to the
-invagination of the cephalic furrow by exerting forces on the epithelium. To
-test this hypothesis, we blocked the germ band elongation in wild type embryos
-by cauterization prior to gastrulation.
+invagination of the cephalic furrow by exerting forces on the epithelium in
+wild type embryos (see He ventral furrow). To test this hypothesis, we blocked
+the germ band elongation in wild type embryos by cauterization prior to
+gastrulation.
 
-<!--TODO: Normalize CF length by the GB length.-->
+<!--TODO: Fix panels for the cauterization figure-->
 
 We found that in embryos with a successful cauterization the cephalic furrow
 invagination is about 10% shallower compared to control embryos
@@ -294,23 +305,14 @@ furrow invagination in normal embryogenesis, suggesting the cephalic furrow
 morphogenesis is governed by the orchestration of genetic patterning with
 mechanical forces in the embryo.
 
-## Cephalic furrow directs flow in tissue shear zone of the head-trunk boundary
+<!--Model shows expansion combined with compression is important-->
 
-<!--TODO: Tissue flow in btd and eve mutants-->
+To understand the interplay of epithelial forces at the head-trunk boundary in
+vivo, we developed an in silico model. Modelling the tissue forces and
+compressions we obtain ectopic folding in variable stochastic positions, and
+the tissue only buckles when the expansion of apical area is coordinated with
+external forces from the germ band (@fig:cauterization-experiments).
 
-We analyzed the tissue flows and cell shape changes in mutants that fail to
-initiate the cephalic furrow. We observe opposite tissue flows from the head
-and trunk with a clear boundary region characterized by cells with low
-circularity and greater distance to neighbors.
-
-<!--TODO: Figure with laser ablations around the cephalic furrow area-->
-
-Cephalic furrow invagination actively increases tissue tension. Using laser
-ablations near the initiator cells we identified that there is an increase in
-tension in an area of about 40 µm anterior and posterior.
-
-![Tissue flow and cell shape analysis at the head-trunk boundary interface in
-cephalic furrow mutants.](../2-figures/shear-zone.png){#fig:shear-zone width=100%}
 
 # Discussion
 

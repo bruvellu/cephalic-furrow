@@ -24,6 +24,24 @@ width=100%}
 showing the disrupted patterning of adjacent cells and wider row of
 eve-expressing cells.](../2-figures/prd-mutant.png){#fig:prd-mutant width=100%}
 
+## Cephalic furrow directs flow in tissue shear zone of the head-trunk boundary
+
+<!--TODO: Tissue flow in btd and eve mutants-->
+
+We analyzed the tissue flows and cell shape changes in mutants that fail to
+initiate the cephalic furrow. We observe opposite tissue flows from the head
+and trunk with a clear boundary region characterized by cells with low
+circularity and greater distance to neighbors.
+
+<!--TODO: Figure with laser ablations around the cephalic furrow area-->
+
+Cephalic furrow invagination actively increases tissue tension. Using laser
+ablations near the initiator cells we identified that there is an increase in
+tension in an area of about 40 µm anterior and posterior.
+
+![Tissue flow and cell shape analysis at the head-trunk boundary interface in
+cephalic furrow mutants.](../2-figures/shear-zone.png){#fig:shear-zone width=100%}
+
 
 ## btd mutants show initiator cell behaviors
 
