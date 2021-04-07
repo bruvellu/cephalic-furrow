@@ -104,3 +104,5 @@ holds.
 
 
 # Supplementary discussion
+
+Head-trunk boundary is a tissue shear zone of conflict tissue flow

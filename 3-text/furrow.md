@@ -267,17 +267,17 @@ We tested whether the elongation of the germ band could be the external force
 causing the ectopic  epithelial folds in cephalic furrow mutants. To test that
 we physically blocked the germ band extension using laser cauterizations at the
 posterior dorsal of the embryo at the onset of gastrulation (Figure
-@fig:cauterization-experiments).
+@fig:germband-cauterizations).
 
-![Cauterization blocking the germ band extension in btd and eve
-mutants.](../2-figures/cauterization-mutants.png){#fig:cauterization-experiments
+![Cauterization experiments to block the germ band
+extension.](../2-figures/germband-cauterizations/figure.png){#fig:germband-cauterizations
 width=100%}
 
 We find that when the germ band is mechanically prevented from elongating in
 cephalic furrow mutants, the ectopic folds no longer appear in the head-trunk
-interface (Figure @fig:cauterization-experiments, Videos). The mitotic domains
+interface (Figure @fig:germband-cauterizations, Videos). The mitotic domains
 and associated apical area expansion occur normally and compress apically
-non-dividing cells (Figure @fig:cauterization-experiments, Video). This
+non-dividing cells (Figure @fig:germband-cauterizations, Video). This
 response is consistent in both btd and eve mutants (Supplemental figure)
 
 <!--TODO: Create video for eve cauterization and comparison to control-->
@@ -298,7 +298,7 @@ gastrulation.
 
 We found that in embryos with a successful cauterization the cephalic furrow
 invagination is about 10% shallower compared to control embryos
-(@fig:cauterization-experiments). The cephalic furrow length and germ band
+(@fig:germband-cauterizations). The cephalic furrow length and germ band
 extension show a weak but significant correlation. This indicates the physical
 force exerted by the germ band extension also contributes to the cephalic
 furrow invagination in normal embryogenesis, suggesting the cephalic furrow
@@ -311,7 +311,7 @@ To understand the interplay of epithelial forces at the head-trunk boundary in
 vivo, we developed an in silico model. Modelling the tissue forces and
 compressions we obtain ectopic folding in variable stochastic positions, and
 the tissue only buckles when the expansion of apical area is coordinated with
-external forces from the germ band (@fig:cauterization-experiments).
+external forces from the germ band (@fig:germband-cauterizations).
 
 
 # Discussion
