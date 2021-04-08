@@ -1,0 +1,157 @@
+---
+title: "Measurements for cauterization experiments"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: April 06, 2021
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+```
+
+## Directories
+
+- `0-data`: Timelapse stacks of cauterization experiments
+- `1-wt`: Processed stacks for the analysis of wild type phenotypes
+- `2-mutants`: Processed stacks for the analysis of mutant phenotypes
+
+## Wild type analysis
+
+We have evidence that the germ band compresses the head-trunk interface and
+causes tissue buckling. This led to the hypothesis the germ band is also
+pushing the cephalic furrow invagination in normal conditions. We cauterized
+the posterodorsal portion of wild type (Gap43 and heterozygotes) embryos to
+block the germ band from elongating.
+
+We measured the length of the cephalic furrow invagination in both conditions
+and found the cauterized have 10% shorter invagination in average. It is
+unclear if the difference is significant or not. There is also a weak
+correlation between furrow length and amount of germ band extension. But this
+also needs further analysis.
+
+Factors that might be contributing to variation are the position of the frontal
+slice, either more dorsal or more ventral will have an impact in the depth of
+the furrow. The invagination on a dorsal slice will appear shorter since it is
+only cutting the invagination tangentially. A more ventral cut, closer to the
+mid section of the embryo will capture the actual length of the furrow. The
+differences we see in our embryos could be due the slice position in the
+dorsoventral axis.
+
+Another aspect to consider is the partial block of the germ band extension.
+There is at least one embryo that seems to show that, where the germ band is
+only blocked on the surface and unevenly. The germ band actually dives into the
+yolk. The cephalic furrow invaginations have unequal lengths accordingly.
+
+### Load measurements
+
+```{r load}
+# Load raw ROI measurements from ImageJ
+results <- read.csv("1-wt/Lengths.csv")
+
+# Add CF by GB index
+results$CFbyGB <- results$Length / results$Distance
+
+# Calculate summaries per sample
+summary(results[results$Sample == "control", c("Length")])
+summary(results[results$Sample == "cauterized", c("Length")])
+
+# Sum total CF length per embryo
+totalcf <- aggregate(results$Length, list(results$Embryo), sum)
+colnames(totalcf) <- c("Embryo", "Length")
+
+# Sum total GB length per embryo
+totalgb <- aggregate(results$Distance, list(results$Embryo), sum)
+colnames(totalgb) <- c("Embryo", "Distance")
+
+# Sum total CF by GB per embryo
+totalby <- aggregate(results$CFbyGB, list(results$Embryo), sum)
+colnames(totalby) <- c("Embryo", "CFbyGB")
+
+# Get sample information
+samples <- unique(results[, c("Embryo", "Sample")])
+
+# Merge datasets
+total <- merge(totalcf, totalgb, by = "Embryo", all.x = TRUE)
+total <- merge(total, totalby, by = "Embryo", all.x = TRUE)
+total <- merge(total, samples, by = "Embryo", all.x = TRUE)
+```
+
+### Area plot
+
+```{r area}
+# Load ggplot
+library(ggplot2)
+
+# Plot length of cephalic furrow invaginations
+ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15, aes(colour = Embryo)) +
+  labs(title = "Length of CF invagination", x = "sample", y = "length (µm)")
+ggsave("wt-cf-length.png")
+
+# Plot total length of cephalic furrow invagination per embryo
+ggplot(total, aes(factor(Sample, level = c("control", "cauterized")), Length, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Total length of CF invaginations per embryo", x = "sample", y = "length (µm)")
+ggsave("wt-total-length.png")
+
+# Plot distance of cephalic furrow invaginations to germ band
+ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Distance)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15, aes(colour = Embryo)) +
+  labs(title = "Distance of CF invagination to germ band", x = "sample", y = "distance (µm)")
+ggsave("wt-gb-distance.png")
+
+# Plot total distance of cephalic furrow invagination per embryo
+ggplot(total, aes(factor(Sample, level = c("control", "cauterized")), Distance, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Total distance of CF invaginations to germ band per embryo", x = "sample", y = "distance (µm)")
+ggsave("wt-total-distance.png")
+
+# Correlation between CF length and GB distance
+ggplot(results, aes(Distance, Length)) + geom_point(alpha = 0.8, aes(colour = Sample)) +
+  labs(title = "CF length by GB distance", x = "Distance to GB", y = "Length of CF")
+with(results, cor(Length, Distance))
+ggsave("wt-cfgb-correlation.png")
+ggplot(total, aes(Distance, Length)) + geom_point(alpha = 0.8, aes(colour = Sample)) +
+  labs(title = "Total CF length by total GB distance per embryo", x = "Distance to GB", y = "Length of CF")
+with(total, cor(Length, Distance))
+ggsave("wt-total-correlation.png")
+
+# Plot CF to GB index
+ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), CFbyGB)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15, aes(colour = Embryo)) +
+  labs(title = "Distance of CF invagination to germ band", x = "sample", y = "CF by GB index")
+#ggsave("wt-cfgb-index.png")
+
+# Plot total distance of cephalic furrow invagination per embryo
+ggplot(total, aes(factor(Sample, level = c("control", "cauterized")), CFbyGB, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Total distance of CF invaginations to germ band per embryo", x = "sample", y = "CF by GB index")
+#ggsave("wt-total-distance.png")
+```
+
+## Mutant analysis
+
+We also tested whether the germ band could be compressing the head-trunk tissue
+and causing the ectopic buckling. We have a lightsheet dataset convincingly
+suggesting that and repeated the experiments in the confocal. Due to
+limitations of the system, we can only acquire one surface slice and a mid
+section slice.
+
+Unfortunately with a single slice it is more difficult to see the ectopic folds
+in homozygous embryos. We have only a single uncauterized homozygous for btd
+and eve and, while it is possible to see the rugging of the epithelium, the
+folds are not completely clear. This makes the comparison to the cauterized
+embryos less obvious. Nevertheless there are differences between the
+conditions.
+
+Interestingly, one of the cauterized eve homozygous embryo shows a clear
+ectopic fold, even more obvious than controls. At first I thought the blocking
+was not preventing the ectopic folding entirely, but looking more carefully, in
+fact the germ band extension was not blocked evenly. One side actually pushes
+the trunk tissue and that corresponds to the side where the large ectopic fold
+is formed. I performed a PIV analysis to visualize the flows and one can
+clearly see the tissue remains static as a block which could be the reason a
+fold is formed there with the displacement of the head tissues.
+
+![](2-mutants/PIV_OVERLAY_eve_dorsal_cauterized_homozygous_2021-02-22_E4_surface.png)
+
+
+
+
