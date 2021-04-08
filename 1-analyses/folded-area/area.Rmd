@@ -1,0 +1,125 @@
+---
+title: "Invaginated area during ectopic folding"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: February 18, 2021
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+```
+
+## Analysis
+
+We think the ectopic folding in cephalic furrow mutants occur because the
+epithelial tissue is under compression, and buckles once the forces caused by
+the mitotic domains and germ band extension cross a certain threshold. We
+notice there is some sort of compensation in the ectopic folding events---when
+an anterior fold is deep, no other folds form; when the anterior fold is
+shallow, other folds form. We thus expect the total invaginated area would be
+similar between mutant embryos, despite the variability in the folding events.
+
+To estimate the invaginated area we used the cartographic projections of btd
+and eve embryos (see 0-data), both heterozygotes and homozygotes, and visually
+annotate the blastoderm cells that are invaginated into ectopic folding events.
+This is done by tracking the cells that delimit the borders of ectopic
+folds. We use ImageJ/Fiji selection brush to delineate the area of invagination
+and save it as a ROI (see 1-rois). Using a script we compute the measurements
+for individual folds, correct for the cartographic projection area and export
+the data as csv file.
+
+## Directories
+
+- `0-data`: single-slice, cropped imsane projections
+- `1-rois`: imagej rois for individual folds visually annotated (>1 per embryo)
+- `2-cylinder`: correction matrix for imsane projections
+- `3-tracking`: in case we need actual cell tracking
+
+Filenames contain all the information from the original projection. For
+example: `eve-Gap1_t60s_z3_E4_CARE_s20_0x334_w1850_h1040_fliph_f15-84.tif`
+
+- `s20` = slice 20 in Z
+- `0x334` = XY origin for cropping
+- `w1850` = width of crop window (=projection width)
+- `h1040` = height of crop window
+- `fliph` = crop was flipped horizontally (flipn means no flipping)
+- `f15-84` = subset of frames for this analysis (=70 frames)
+
+## Load measurements
+
+```{r load}
+# Load raw ROI measurements from ImageJ
+results <- read.delim("results.txt")
+
+# Remove slice number from the label
+results$Label <- gsub(":1", "", results$Label)
+
+# Split label to get embryo and sapply to get all first elements of the split...
+results$Embryo <- sapply(strsplit(results$Label, "_CARE"), "[", 1)
+
+# Add columns with sample information (needs manual update for new ROIs)
+results$Stock <- substring(results$Label, 1, 3)
+
+# Load sample info and merge with results
+samples <- read.delim("samples.csv", sep = ",")
+results <- merge(results, samples, by = "Label", all.x = TRUE)
+
+# Load corrected area measurements for cartographic projections
+corrected <- read.delim("corrected_results.txt", sep = "")
+colnames(corrected) <- c("Label", "AreaCorr")
+
+#corrected_area$Embryo <- sapply(strsplit(corrected_area$File, "_CARE"), "[", 1)
+results <- merge(results, corrected, by = "Label", all.x = TRUE)
+
+# Sum total folded area
+area <- aggregate(results$Area, list(results$Embryo), sum)
+colnames(area) <- c("Embryo", "Area")
+
+# Sum total folded area corrected
+areacorr <- aggregate(results$AreaCorr, list(results$Embryo), sum)
+colnames(areacorr) <- c("Embryo", "AreaCorr")
+
+# Count number of folds
+nfold <- data.frame(table(results$Embryo))
+colnames(nfold) <- c("Embryo", "Folds")
+
+# Get sample information
+embryos <- unique(results[, c("Embryo", "Stock", "Sample", "Genotype")])
+
+# Merge datasets
+total <- merge(area, areacorr, by = "Embryo", all.x = TRUE)
+total <- merge(total, nfold, by = "Embryo", all.x = TRUE)
+total <- merge(total, embryos, by = "Embryo", all.x = TRUE)
+
+```
+
+## Area plot
+
+```{r area}
+# Load ggplot
+library(ggplot2)
+
+# Plot raw area of individual folds
+ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve")), Area, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
+
+# Plot corrected area of individual folds
+ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, colour = Sample)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Invaginated area of cephalic furrow compared to ectopic folds", x = "sample", y = expression(micrometers^2))
+ggsave("folded-area.png")
+
+# Plot raw area of folding per embryo
+ggplot(total, aes(factor(Sample, level = c("control", "btd", "eve")), Area, colour = Sample)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
+
+# Plot corrected area of folding per embryo
+ggplot(total, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Total area of folded tissue", x = "sample", y = expression(micrometers^2))
+
+# Plot correlation between raw area and number of folds
+ggplot(total, aes(Folds, Area, colour = Sample)) + geom_point()
+# Plot correlation between corrected area and number of folds
+ggplot(total, aes(Folds, AreaCorr, colour = Sample)) + geom_point()
+
+```
+
