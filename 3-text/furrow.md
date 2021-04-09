@@ -114,10 +114,16 @@ extension.
 
 <!--Ectopic folds occur in CF mutants-->
 
-We analyzed mutant embryos under live-imaging to understand the impact cephalic
-furrow disruptions to the gastrulating embryo. We find that btd and eve
+We analyzed embryos that fail to initiate the cephalic furrow under
+live-imaging to understand how the absence of the cephalic furrow impacts
+gastrulation. btd and eve are two key genes required for the specification of
+the initiator cells [@Vincent]. It was known that eve mutants form a late fold,
+but its origins remain unclear. We find that not only eve mutants, but also btd
 mutants, which fail to initiate the cephalic furrow, invariably form ectopic
-epithelial folds at the head--trunk interface (Figure @fig:ectopic-folding).
+epithelial folds at the head--trunk interface (Figure @fig:ectopic-folding). We
+analyzed them to understand what is causing the formation of this folds, a
+reminiscent activity from the cephalic furrow patterning or a consequence of
+mechanical forces during gastrulation.
 
 ![Formation of ectopic folds in *btd* and *eve* mutants. (A,B,C) Timing of
 ectopic folds compared to sibling control. (D,E,F) Line tracing of ectopic
@@ -127,13 +133,33 @@ width=100%}
 
 <!--Ectopic folds are delayed relative to CF formation-->
 
-The ectopic folds are delayed in relation to the cephalic furrow. While the
-cephalic furrow initiates at the onset of gastrulation in wild type embryos
-(stage 6), the ectopic folds in btd and eve mutants appear later in development
-after some progression of the germ band and cycle 14 mitotic domains (stage 8)
-(Figure @fig:ectopic-folding, Video 1).
+The formation of ectopic folds is delayed in relation to the native cephalic
+furrow. While the cephalic furrow initiates at the onset of gastrulation in
+wild type embryos (stage 6), the ectopic folds in btd and eve mutants appear
+once the germ band has already progressed about X% (stage 8) (Figure
+@fig:ectopic-folding, Video 1 and 2).
 
-<!--TODO: Video 1: Lateral view of control, btd and eve embryos.-->
+![Video 1: Formation of ectopic folds in *btd*
+mutants.](../2-figures/ectopic-folding/video1.png){width=25%}
+
+![Video 2: Formation of ectopic folds in *eve*
+mutants.](../2-figures/ectopic-folding/video2.png){width=25%}
+
+<!--Morphology of ectopic folds differ from CF invagination-->
+
+<!--TODO: Local curvature of the fold might work well-->
+
+The morphology of the ectopic folds differ from the wild type invagination. The
+ectopic folds are not perfectly symmetric, the apices of invaginated cells are
+not facing each other, and the fold depth is smaller (Figure
+@fig:ectopic-folding, Video 3).
+
+![Video 3: Formation of ectopic folds in *btd*
+mutants in profile view.](../2-figures/ectopic-folding/video2.png){width=25%}
+
+<!--TODO: Video 2: Profile view of control+btd and control+eve embryos-->
+
+## Ectopic folding differs from cephalic furrow formation as is variable among individual mutant embryos
 
 <!--Progression of ectopic folds differ from CF formation-->
 
@@ -141,8 +167,13 @@ The progression of ectopic fold formation differs from the cephalic furrow
 invagination. While the cephalic furrow initiates as a straight lateral line
 and progressively performs a dorsal posterior shift, a ventral anterior shift,
 and a shape bending into a curved line, the ectopic folds are mostly straight
-and do not undergo a determined patterned shift or shape change
-(Figure @fig:ectopic-folding).
+and do not undergo a determined patterned shift or shape change (Figure
+@fig:ectopic-variability).
+
+![Ectopic folding characterization. Dynamics, total area, variability between
+individual mutant
+embryos.](../2-figures/ectopic-variability/figure.png){#fig:ectopic-variability
+width=100%}
 
 <!--Ectopic folding area smaller than CF invagination area-->
 
@@ -150,27 +181,7 @@ The area of folded tissue in ectopic folds differ from the cephalic furrow
 invagination. We measured the total area of folded tissue and find it is
 roughly half the size of a regular wild type cephalic furrow. There is a
 minimum value of invaginated tissues in mutant embryos (Figure
-@fig:ectopic-area).
-
-<!--TODO: Create a representative image of folded area with plots-->
-
-![Map of folded tissue and measurements of total area of ectopic
-folding.](../2-figures/placeholder.png){#fig:ectopic-area width=100%}
-
-<!--Morphology of ectopic folds differ from CF invagination-->
-
-<!--TODO: Take measurements to show differences-->
-
-<!--TODO: Local curvature of the fold might work well-->
-
-Finally, the morphology of the ectopic folds differ from the wild type
-invagination. The ectopic folds are not perfectly symmetric, the apices of
-invaginated cells are not facing each other, and the fold depth is smaller
-(Figure @fig:ectopic-folding, Video 2).
-
-<!--TODO: Video 2: Profile view of control+btd and control+eve embryos-->
-
-## Ectopic folding is variable between but coincides with the formation of mitotic domains
+@fig:ectopic-variability).
 
 <!--Ectopic folds vary between individual mutant embryos-->
 
@@ -182,13 +193,7 @@ of these ectopic folds is variable between individual mutant embryos (Figure
 This suggest they are driven by patterning, or if they are stochastic, which
 suggest they are driven by mechanical forces. 
 
-<!--TODO: Condense variability panels and plots-->
-
 <!--TODO: Include panel with left-right differences-->
-
-![Variability of ectopic folding between individual mutant
-embryos.](../2-figures/ectopic-variability/figure.png){#fig:ectopic-variability
-width=100%}
 
 <!--Position of ectopic folding is biased-->
 
@@ -200,6 +205,8 @@ In btd mutants, the ectopic folds near the canonical cephalic furrow position.
 The ectopic folds in eve mutants also occur in the anterior and canonical
 positions, but the more posterior folds occur more dorsally compared to btd.
 
+## Ectopic folding coincides with the formation of mitotic domains
+
 <!--Compensation of tissue compression-->
 
 We observe that individual mutant embryos can have the same total invaginated
@@ -210,9 +217,9 @@ area either having one deep fold or two shallower folds.
 To understand what influences the position and timing of ectopic folding, we
 analyzed the placement of these events in relation to epithelial features. We
 find a correlation between the formation of ectopic folds with the position and
-timing of mitotic domains at the head--trunk interface (Figure @fig:mitotic-domains).
-The ectopic folds in btd and eve mutants are often positioned between adjacent
-mitotic domains (Figure @fig:mitotic-domains).
+timing of mitotic domains at the head--trunk interface (Figure
+@fig:mitotic-domains). The ectopic folds in btd and eve mutants are often
+positioned between adjacent mitotic domains (Figure @fig:mitotic-domains).
 
 <!--TODO: Merge variability with mitotic domains?-->
 
@@ -224,16 +231,17 @@ width=100%}
 
 The epithelial cells that fold are being compressed by the expansion of
 dividing cells. The ectopic folding coincides in position and timing with the
-expansion in the area of dividing cells during mitosis (Figure @fig:mitotic-domains).
-The apical area of epithelial cells about to fold inwards diminishes at the
-same time that the apical area of dividing cells increase.
+expansion in the area of dividing cells during mitosis (Figure
+@fig:mitotic-domains). The apical area of epithelial cells about to fold
+inwards diminishes at the same time that the apical area of dividing cells
+increase.
 
 <!--Ectopic folds form by tissue buckling rather than invagination-->
 
 The process of ectopic fold formation differs from the cephalic furrow
 invagination. While the cephalic furrow forms by a progressive invagination,
-the ectopic folds form by abrupt buckling of the tissue
-(Figure @fig:buckling-process). The ectopic folds can be initiated by reminiscent
+the ectopic folds form by abrupt buckling of the tissue (Figure
+@fig:buckling-process). The ectopic folds can be initiated by reminiscent
 initiator cell behavior in btd mutants. In this case, the epithelium bulges,
 but does not invaginate, until it buckles with the expansion of area in
 dividing cells in the mitotic domains. In other ectopic folds, the epithelium
@@ -246,8 +254,7 @@ rather different.
 
 <!--TODO: Also add side view of canonical and other folds-->
 
-![Description of the process of tissue buckling of ectopic
-folds.](../2-figures/buckling-process.png){#fig:buckling-process width=100%}
+<!--![Description of the process of tissue buckling of ectopic folds.](../2-figures/buckling-process.png){#fig:buckling-process width=100%}-->
 
 <!--TODO: Video of tissue buckling en-face and profile view-->
 
