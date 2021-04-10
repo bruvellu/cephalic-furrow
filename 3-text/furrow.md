@@ -20,7 +20,7 @@ colorlinks: true
 fignos-warning-level: 0
 ...
 
-<!--TODO: Add auto naming for figures, if needed
+<!--TODO: Auto naming for figures, if needed
 
 #fignos-cleveref: True
 #fignos-plus-name: Figure
@@ -126,8 +126,7 @@ reminiscent activity from the cephalic furrow patterning or a consequence of
 mechanical forces during gastrulation.
 
 ![Formation of ectopic folds in *btd* and *eve* mutants. (A,B,C) Timing of
-ectopic folds compared to sibling control. (D,E,F) Line tracing of ectopic
-folds formation dynamics. (G,H,I) Morphology of ectopic
+ectopic folds compared to sibling control. (D,E,F) Morphology of ectopic
 folds.](../2-figures/ectopic-folding/figure.png){#fig:ectopic-folding
 width=100%}
 
@@ -140,30 +139,29 @@ once the germ band has already progressed about X% (stage 8) (Figure
 @fig:ectopic-folding, Video 1 and 2).
 
 ![Video 1: Formation of ectopic folds in *btd*
-mutants.](../2-figures/ectopic-folding/video1.png){width=25%}
+mutants.](../2-figures/ectopic-folding/video1.png){width=50%}
 
-![Video 2: Formation of ectopic folds in *eve*
-mutants.](../2-figures/ectopic-folding/video2.png){width=25%}
+<!--TODO: Replace this video with the correct one-->
+
+![Video 2: Formation of ectopic folds in *btd* mutants in profile
+view.](../2-figures/ectopic-folding/video2.png){width=50%}
+
+<!--![Video 2: Formation of ectopic folds in *eve* mutants.](../2-figures/ectopic-folding/video2.png){width=50%}-->
+
+## Ectopic fold formation and morphology differs from the cephalic furrow
 
 <!--Morphology of ectopic folds differ from CF invagination-->
 
-<!--TODO: Local curvature of the fold might work well-->
-
 The morphology of the ectopic folds differ from the wild type invagination. The
-ectopic folds are not perfectly symmetric, the apices of invaginated cells are
-not facing each other, and the fold depth is smaller (Figure
-@fig:ectopic-folding, Video 3).
-
-![Video 3: Formation of ectopic folds in *btd*
-mutants in profile view.](../2-figures/ectopic-folding/video2.png){width=25%}
-
-<!--TODO: Video 2: Profile view of control+btd and control+eve embryos-->
-
-## Ectopic folding differs from cephalic furrow formation as is variable among individual mutant embryos
+folded tissue is less symmetric than the cephalic furrow, the cleft at the
+leading edges of the fold is wider, and the typical cell type structure is
+absent, for example, wedge shape at the invagination tip, the orthogonal
+position of middle cells, and the elongated morphology at the leading edges are
+absent (Figure @fig:ectopic-folding).
 
 <!--Progression of ectopic folds differ from CF formation-->
 
-The progression of ectopic fold formation differs from the cephalic furrow
+The dynamics of ectopic fold formation also differs from the cephalic furrow
 invagination. While the cephalic furrow initiates as a straight lateral line
 and progressively performs a dorsal posterior shift, a ventral anterior shift,
 and a shape bending into a curved line, the ectopic folds are mostly straight
@@ -182,6 +180,16 @@ invagination. We measured the total area of folded tissue and find it is
 roughly half the size of a regular wild type cephalic furrow. There is a
 minimum value of invaginated tissues in mutant embryos (Figure
 @fig:ectopic-variability).
+
+<!--Depth of ectopic folds is smaller than CF depth-->
+
+In addition, we measured the depth of ectopic folds compared to the cephalic
+furrow. We found similarly that the maximum depth of ectopic folds is about
+half of the cephalic furrow invagination @fig:ectopic-variability).
+
+<!--The shape of folds is different as evidenced by a local curvature plot.-->
+
+## Ectopic folding is variable among individual mutant embryos
 
 <!--Ectopic folds vary between individual mutant embryos-->
 
@@ -205,12 +213,12 @@ In btd mutants, the ectopic folds near the canonical cephalic furrow position.
 The ectopic folds in eve mutants also occur in the anterior and canonical
 positions, but the more posterior folds occur more dorsally compared to btd.
 
-## Ectopic folding coincides with the formation of mitotic domains
-
 <!--Compensation of tissue compression-->
 
 We observe that individual mutant embryos can have the same total invaginated
 area either having one deep fold or two shallower folds.
+
+## Ectopic folding coincides with the formation of mitotic domains
 
 <!--Ectopic folds appear between mitotic domains-->
 
