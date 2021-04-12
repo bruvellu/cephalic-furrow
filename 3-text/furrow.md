@@ -67,15 +67,64 @@ priming a predictable position of folding at the head--trunk boundary.
 
 # Introduction
 
-The head--trunk boundary is an ancient and essential trait for the evolution of
-bilaterians. In Drosophila, the head--trunk boundary is demarcated by a deep
-yet transient invagination that forms during gastrulation---the cephalic
-furrow. Despite being a prominent embryonic trait, the cephalic furrow remains
-an enigmatic trait of Drosophila gastrulation. The developmental mechanisms of
-cephalic furrow morphogenesis and the role this deep invagination plays in
-gastrulation remain poorly understood. Here, we investigate the morphogenesis
-and developmental role of the cephalic furrow by analyzing known and
-newly-identified mutants under lightsheet microscopy.
+<!--The head--trunk boundary is an ancient and essential trait for the evolution of bilaterians.-->
+
+<!--- What is the cephalic furrow-->
+<!--- The physical role of the cephalic furrow-->
+<!--- Late folds in eve mutants is the trigger-->
+<!--- What we did, what we found.-->
+
+<!--The cephalic furrow-->
+
+The cephalic furrow is a unique morphogenetic movement of Drosophila
+gastrulation. It is a deep invagination that appear as lateral indentations at
+the onset of Drosophila gastrulation [@ClassicalFurrow]. Unlike the ventral
+furrow, it begins with a single row of initiator cells that sink into the yolk
+[@Cite]. The process occurs through a coordinated series of cell shape changes
+and tissue movements, beginning with the shortening of initiator cells, basal
+expansion and tissue invagination [@Spencer]. This process is highly
+stereotypic and coordinated in time and space suggesting precise regulation.
+
+<!--Cephalic furrow patterning-->
+
+Indeed, the cephalic furrow position is highly stereotypic with 1% precision
+[@CFprecision]. A patterning that could be achieved with only four genes
+[@CFgenes]. Insofar, only two genes have been implicated in the patterning of
+the cephalic furrow---buttonhead (btd) and even-skipped (eve) [@Vincent]. The
+overlap between btd and eve stripe 1 demarcates and specifies the initiator
+cells that initiate the cephalic furrow [@Vincent]. The genetic patterning,
+however, is noisy and the tight coupling of morphogenetic feedback is necessary
+to achieve a single precise row of initiator cells [@Eritano].
+
+<!--Cephalic furrow mechanics-->
+
+The cephalic furrow is a prominent invagination covering from dorsal to ventral
+and subdividing the yolk from head and trunk almost entirely. Because the
+cephalic furrow is a transient structure that unfolds after a couple of hours,
+and because it is not associated with any particular cell or tissue fate in the
+embryo, its function has remained elusive. Modeling simulations have suggested
+the cephalic furrow can act as an anchor to the tissue separating the head from
+trunk [@ModelSimulation]. But it is not clear and the interactions with other
+gastrulation movements have not been investigated [@Kong].
+
+<!--Late ectopic fold spark-->
+
+We decided to investigate the putative developmental roles of the cephalic
+furrow by analyzing the consequences of the absence of the cephalic furrow to
+gastrulation as a whole by analyzing cephalic furrow mutant which fail to
+initiate the cephalic furrow. One intriguing observation is the finding that
+eve mutants which fail to specify initiator cells, and to form a cephalic
+furrow, form late ectopic folds near the native cephalic furrow position
+[@Vincent]. To better understand the origin of these late folds, and
+investigate whether these feature was common to other cephalic furrow mutants,
+we analyzed btd and eve mutants that fail to initiate the furrow under
+live-imaging lightsheet microscopy.
+
+<!--Here, we investigate the morphogenesis and developmental role of the cephalic furrow by analyzing known and newly-identified mutants under lightsheet microscopy. -->
+
+<!--Summary of findings end of intro-->
+
+<!--TODO: Continue from here.-->
 
 We find that embryos that fail to initiate the cephalic furrow---*btd* and
 *eve* mutants---invariably form late ectopic folds at the head--trunk
@@ -393,6 +442,8 @@ ImageJ macros, imsane projections, matlab, ilastik, R, Python, Fiji, Inkscape.
 
 LoPaTs, Akanksha, Vlado, Lemke, LMF, EMBO.
 
+\pagebreak
+
 # Figures
 
 ![Ectopic folds in *btd* and *eve* mutants. Timing of ectopic folds compared to sibling control. Morphology of ectopic folds.](../2-figures/ectopic-folding/figure.png){#fig:ectopic-folding width=100%}
@@ -414,6 +465,8 @@ LoPaTs, Akanksha, Vlado, Lemke, LMF, EMBO.
 
 -->
 
+\pagebreak
+
 # Videos
 
 <!--TODO: Include eve mutant too-->
@@ -426,5 +479,7 @@ LoPaTs, Akanksha, Vlado, Lemke, LMF, EMBO.
 <!--TODO: Video eve cauterization lightsheet-->
 <!--TODO: Video non-dividing cells in eve cauterized-->
 <!--TODO: Video tissue buckling en-face and profile view-->
+
+\pagebreak
 
 # References
