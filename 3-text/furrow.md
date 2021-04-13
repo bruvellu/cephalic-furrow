@@ -52,18 +52,19 @@ formation gastrulation in *Drosophila*-->
 # Abstract
 
 The cephalic furrow is a deep invagination that demarcates the head--trunk
-boundary of Drosophila during gastrulation. Despite being a prominent trait,
-the cephalic furrow is transient and does not give rise to specific tissues in
-the embryo, and its function in gastrulation remains elusive. Here, we
-investigate the morphogenesis and developmental role of the cephalic furrow by
-analyzing known and newly-identified mutants under lightsheet microscopy. We
-find that embryos that fail to initiate the cephalic furrow---*btd* and *eve*
-mutants---invariably form late ectopic folds at the head--trunk interface. This
-stochastic tissue buckling is driven by a conjunction of local and global
-tissue forces---the expansion of apical area in mitotic domains and the
-compression of tissues adjacent to the elongating germ band, respectively. Our
-findings suggest the cephalic furrow can prevent epithelial instability by
-priming a predictable position of folding at the head--trunk boundary.
+boundary of *Drosophila melanogaster* during gastrulation. Despite being a
+prominent trait, its developmental role remains elusive, since the cephalic
+furrow is transient and not associated with a specific cellular fate in the
+embryo. Here, we investigate the morphogenesis and developmental role of the
+cephalic furrow by analyzing known and newly-identified mutants under
+lightsheet microscopy. We find that embryos that fail to initiate the cephalic
+furrow invariably form late ectopic folds at the head--trunk interface. This
+stochastic tissue buckling results from the interactions between local and
+global forces on the blastoderm, mainly the expansion of apical cell areas in
+mitotic domains, and the compression of tissues by the elongating germ band,
+respectively. Our findings suggest the cephalic furrow counteracts such
+epithelial instability by priming the position of folding at a predictable
+position at the head--trunk boundary.
 
 # Introduction
 
