@@ -75,109 +75,125 @@ position at the head--trunk boundary.
 <!--- Late folds in eve mutants is the trigger-->
 <!--- What we did, what we found.-->
 
-<!--The cephalic furrow-->
+<!--The cephalic furrow background-->
 
-The cephalic furrow is a unique morphogenetic movement of Drosophila
+The cephalic furrow is a prominent morphogenetic movement of *Drosophila*
 gastrulation. It is a deep invagination that appear as lateral indentations at
-the onset of Drosophila gastrulation [@ClassicalFurrow]. Unlike the ventral
-furrow, it begins with a single row of initiator cells that sink into the yolk
-[@Cite]. The process occurs through a coordinated series of cell shape changes
-and tissue movements, beginning with the shortening of initiator cells, basal
-expansion and tissue invagination [@Spencer]. This process is highly
-stereotypic and coordinated in time and space suggesting precise regulation.
+the onset of gastrulation [@ClassicalFurrow]. It covers from dorsal to ventral
+and subdivides the yolk from head and trunk almost entirely. Unlike the ventral
+furrow, however, the cephalic furrow is a transient structure that unfolds
+after a couple of hours, and the invaginated tissue is not associated with any
+particular fate in the embryo. This prominent but ephemeral nature makes the
+cephalic furrow one of the most enigmatic traits of gastrulation, both in terms
+of the processes controlling its formation and its physical developmental role.
 
-<!--Cephalic furrow patterning-->
+<!--The morphogenesis of the cephalic furrow-->
 
-Indeed, the cephalic furrow position is highly stereotypic with 1% precision
-[@CFprecision]. A patterning that could be achieved with only four genes
-[@CFgenes]. Insofar, only two genes have been implicated in the patterning of
-the cephalic furrow---buttonhead (btd) and even-skipped (eve) [@Vincent]. The
-overlap between btd and eve stripe 1 demarcates and specifies the initiator
-cells that initiate the cephalic furrow [@Vincent]. The genetic patterning,
-however, is noisy and the tight coupling of morphogenetic feedback is necessary
-to achieve a single precise row of initiator cells [@Eritano].
+The morphogenesis of the cephalic furrow is poorly understood [@Gilmour]. The
+cephalic furrow begins with a single row of initiator cells that sink into the
+yolk [@ClassicalFurrow]. The process occurs through a coordinated series of
+cell shape changes and tissue movements, beginning with the shortening of
+initiator cells and basal expansion, and a second step which develops into a
+progressive invagination [@Spencer]. This process differs from other movements
+and remains poorly known [@Gilmour; @Vincent], but is highly stereotypic. The
+cephalic furrow is positioned with 1% precision [@CFprecision], a patterning
+that could be achieved with only four genes [@CFgenes], suggesting there is
+precise genetic patterning coordinating the cephalic furrow formation in space
+and time.
 
 <!--Cephalic furrow mechanics-->
 
-The cephalic furrow is a prominent invagination covering from dorsal to ventral
-and subdividing the yolk from head and trunk almost entirely. Because the
-cephalic furrow is a transient structure that unfolds after a couple of hours,
-and because it is not associated with any particular cell or tissue fate in the
-embryo, its function has remained elusive. Modeling simulations have suggested
-the cephalic furrow can act as an anchor to the tissue separating the head from
-trunk [@ModelSimulation]. But it is not clear and the interactions with other
-gastrulation movements have not been investigated [@Kong].
+The physical role that the deep invagination of the cephalic furrow play in the
+complex morphogenetic movements of Drosophila gastrulation remain elusive.
+Modeling simulations have suggested the cephalic furrow can act as an anchor to
+the tissue [@ModelSimulation]. Others have speculated that the cephalic furrow
+might balance the germ band extension [@PhysicalHypotheses]. However, the
+interactions of the cephalic furrow with other gastrulation movements have not
+been investigated [@Kong], and its role in the global context of gastrulation
+and the interplay between patterning and morphogenesis remain open.
 
-<!--Late ectopic fold spark-->
+<!--Cephalic furrow patterning-->
 
-We decided to investigate the putative developmental roles of the cephalic
-furrow by analyzing the consequences of the absence of the cephalic furrow to
-gastrulation as a whole by analyzing cephalic furrow mutant which fail to
-initiate the cephalic furrow. One intriguing observation is the finding that
-eve mutants which fail to specify initiator cells, and to form a cephalic
-furrow, form late ectopic folds near the native cephalic furrow position
-[@Vincent]. To better understand the origin of these late folds, and
-investigate whether these feature was common to other cephalic furrow mutants,
-we analyzed btd and eve mutants that fail to initiate the furrow under
-live-imaging lightsheet microscopy.
+Two genes are known to be required to specify the cephalic furrow---buttonhead
+(btd) and even-skipped (eve). Loss of function exhibit strong phenotypes where
+the cephalic furrow fails to initiate [@Vincent]. In addition, paired (prd)
+embryos exhibit weak phenotypes where the formation of the cephalic furrow is
+delayed, but a fold is still formed [@Blankenship]. Intriguingly, however, eve
+mutants still form a late fold near the cephalic furrow position [@Vincent].
+However, the origin of such ectopic folds, either genetic as reminiscent of the
+cephalic furrow patterning, or simply mechanical remained unknown.
 
-<!--Here, we investigate the morphogenesis and developmental role of the cephalic furrow by analyzing known and newly-identified mutants under lightsheet microscopy. -->
+<!--The overlap between btd and eve stripe 1 specifies the initiator cells that begin the cephalic furrow [@Vincent]. The patterning is inherently noisy, but a tight coupling of morphogenetic feedback achieves a single precise row of initiator cells [@Eritano]. -->
 
-<!--Summary of findings end of intro-->
+<!--This study-->
 
-<!--TODO: Continue from here.-->
+To investigate the developmental roles of the cephalic furrow morphogenesis to
+Drosophila gastrulation, we analyzed effects of disruptions in cephalic furrow
+formation to other gastrulation movements using live-imaging and laser
+cauterizations in cephalic furrow mutants.
 
-We find that embryos that fail to initiate the cephalic furrow---*btd* and
-*eve* mutants---invariably form late ectopic folds at the head--trunk
-interface. These ectopic folds are variable between individual mutant embryos.
-We find the position and timing of folding events correlates with mitotic
-domains. The epithelium folds in regions compressed between the expanding
-dividing cells. Instead of a progressive invagination of the tissue, the
-ectopic folds form by an abrupt buckling of the epithelium, suggesting that
-local tissue forces might cause the tissue to buckle. Interestingly, the total
-area of folded tissue is similar between mutant embryos, independent of the
-number of folds, suggesting that global mechanical forces might also regulate
-ectopic folding.
+<!--Summary of findings-->
 
-We tested whether local forces caused by mitotic domains are sufficient to
-cause ectopic foldings in cephalic furrow mutants by blocking the germ band
-extension. Cauterized mutants do not form ectopic folds, suggesting that the
-global tissue compression caused by the germ band extension is the main force
-that leads to ectopic folding. We then tested whether the mitotic domains,
-either by area expansion or by destabilizing the epithelia, are required or
-simply facilitate ectopic folding events, by analysing double mutants. Double
-mutants do not form ectopic folds, suggesting that it is the coordination of
-local and global mechanical forces that lead to the formation of ectopic folds.
+We find that embryos that fail to initiate the cephalic furrow---not only *eve*
+mutants but also *btd* mutants---invariably form late ectopic folds at the
+head--trunk interface. These ectopic folds differ in timing, formation
+dynamics, folded area, and morphology to the cephalic furrow, suggesting they
+are indeed formed by different processes. The position and timing of folding
+events varies between individual mutant embryos, but correlates with the
+position of mitotic domains, and the epithelium often buckles abruptly between
+the dividing cells with expanded apical areas, suggesting that local tissue
+forces might cause the tissue to buckle.
 
-<!--Ectopic folds without mitotic domains suggests that folding is inevitable (no need for excess theory).-->
+To tested whether the local tissue forces driven by mitotic domains are causing
+the ectopic folds, we analyzed double mutant embryos for stg btd and stg eve
+which form neither the cephalic furrow nor the mitotic domains in cycle 14. We
+find that ectopic folds are still formed in stg btd and stg eve double mutants,
+suggesting that mitotic domains might influence the position, or facilitate the
+folding, but are not required, suggesting that other tissue forces might be the
+driving force for ectopic folds.
 
-<!--No ectopic folding without mitotic domains suggests that it is the coordinated expansion of dividing cells and tissue compression from the germ band that lead to ectopic folding.-->
+Next we asked whether the compression of tissues caused by the elongating germ
+band could be driving ectopic fold formation. We tested this hypothesis by
+blocking the germ band extension by cauterizing the posterodorsal region in
+mutant embryos. We find the ectopic folds are absent when the germ band is
+mechanically blocked by the cauterization, suggesting that the global tissue
+compression caused by the germ band extension is the main force contributing to
+the formation of ectopic folds.
 
-Next we asked whether the germ band extension (and mitotic domains) contribute
-to the normal process of invagination of the cephalic furrow. We find that
-cauterized wild type embryos have a shallower cephalic furrow, indicating that
-the tissue compression from the germ band influences the amount of invaginated
-cephalic tissue.
+Given the unexpected finding that the germ band influences head tissues, we
+then tested whether the germ band extension and its resulting tissue
+compression also contributes to the normal process of cephalic furrow
+formation. We find that cauterized wild type embryos have a shallower cephalic
+furrow, indicating that the tissue compression from the germ band extension
+affects the amount of invaginated cephalic furrow tissue.
 
-Our data shows that under normal embryogenesis, given the expansions of cell
-area of mitotic domains in the head and the epithelial compression of the germ
-band elongation in the trunk, the epithelia will inevitably buckle. Therefore,
-what the cephalic furrow accomplishes during gastrulation is to prime the
-timing and position of the folding. The result is a predictable structure for
-an inevitable invagination, possibly avoiding the potential negative effects of
-erratic epithelial buckling. Overall, the morphogenesis of the cephalic furrow
-is a two-step composite process integrating an active, genetically-defined
-process of invagination, and a passive tissue buckling driven by the germ band
-extension.
+Our data reveals long-range interaction during gastrulation where the extension
+of the germ band compresses tissues at the head--trunk interface. This
+interaction under normal embryogenesis pushes the cephalic furrow invagination
+deeper in the yolk, providing a previously unknown physical component to the
+cephalic furrow morphogenesis initiated independently by genetic means. Thus
+revealing a global interaction between morphogenetic movements in Drosophila
+gastrulation.
+
+Moreover, the germ band extension exerts pressure at the head--trunk boundary,
+to the extent the epithelium becomes unstable and buckles when the cephalic
+furrow is absent. This raises the hypothesis that what the cephalic furrow
+accomplishes during gastrulation is to counteract the pressure from the germ
+band, by priming the timing and position of folding, generating a predictable
+invagination that contains part of the epithelia under compression, thus
+preventing erratic epithelial buckling.
+
+Overall, overall our data reveals the morphogenesis of the cephalic furrow is a
+two-step composite process integrating an active, genetically-defined process
+of invagination, and a passive tissue buckling driven by the germ band
+extension, and reveals global physical interactions that contribute to
+orchestrate the morphogenetic movements of Drosophila gastrulation.
 
 # Results
 
 ## Cephalic furrow mutants form ectopic folds at the head--trunk boundary
 
 <!--Ectopic folds occur in CF mutants-->
-
-
-
 
 We analyzed embryos that fail to initiate the cephalic furrow under
 live-imaging to understand how the absence of the cephalic furrow impacts
