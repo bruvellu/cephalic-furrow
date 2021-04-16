@@ -34,6 +34,9 @@ fignos-warning-level: 0
 - Cephalic furrow buffers epithelial compression at the head-trunk boundary of
   *Drosophila*
 
+- Cephalic furrow buffers tissue interactions at the head-trunk boundary of
+  *Drosophila* during gastrulation
+
 - Cephalic furrow invagination prevents epithelial instability at the
   head-trunk boundary during *Drosophila* gastrulation
 
@@ -198,43 +201,26 @@ orchestrate the morphogenetic movements of Drosophila gastrulation.
 
 ## Cephalic furrow mutants form ectopic folds at the head--trunk boundary
 
-<!--Context-->
+<!--Context about approach and mutants-->
 
-We find that embryos that fail to initiate the cephalic furrow---not only *eve*
-mutants but also *btd* mutants---invariably form late ectopic folds at the
-head--trunk interface. These ectopic folds differ in timing, formation
-dynamics, folded area, and morphology to the cephalic furrow, suggesting they
-are indeed formed by different processes. The position and timing of folding
-events varies between individual mutant embryos, but correlates with the
-position of mitotic domains, and the epithelium often buckles abruptly between
-the dividing cells with expanded apical areas, suggesting that local tissue
-forces might cause the tissue to buckle.
+To uncover putative roles of the cephalic furrow for *Drosophila* development,
+we analyzed the dynamics of gastrulation in mutant embryos where the cephalic
+furrow formation is perturbed. The genes *buttonhead* (*btd*) and *even
+skipped* (*eve*) are required to specify the cells that initiate the cephalic
+furrow formation [@Vincent1997-fa]. Both *btd* and *eve* mutant embryos fail to
+initiate the process of invagination. However, a late fold of unclear origins
+still appears in the cephalic furrow region of *eve* mutants [@Vincent1997-fa].
+In addition, the gene *paired* (*prd*) is involved in cephalic furrow
+patterning and the lack of *prd* activity leads to a delay in cephalic furrow
+formation [@Blankenship2001-tm]. We re-investigate the *btd*, *eve* and *prd*
+mutants using high temporal- and spatial-resolution *in toto* lightsheet
+microscopy.
 
-Two genes are known to be required to specify the cephalic furrow---buttonhead
-(btd) and even-skipped (eve). Loss of function exhibit strong phenotypes where
-the cephalic furrow fails to initiate [@Vincent1997-fa]. In addition, paired
-(prd) embryos exhibit weak phenotypes where the formation of the cephalic
-furrow is delayed, but a fold is still formed [@Blankenship2001-tm].
-Intriguingly, however, eve mutants still form a late fold near the cephalic
-furrow position [@Vincent1997-fa]. However, the origin of such ectopic folds,
-either genetic as reminiscent of the cephalic furrow patterning, or simply
-mechanical remained unknown.
-
-<!--The overlap between btd and eve stripe 1 specifies the initiator cells that begin the cephalic furrow [@Vincent]. The patterning is inherently noisy, but a tight coupling of morphogenetic feedback achieves a single precise row of initiator cells [@Eritano]. -->
+Our data We find that not only eve mutants, but also btd mutants, which fail to
+initiate the cephalic furrow, invariably form ectopic epithelial folds at the
+head--trunk interface (Figure @fig:ectopic-folding).
 
 <!--Ectopic folds occur in CF mutants-->
-
-We analyzed embryos that fail to initiate the cephalic furrow under
-live-imaging to understand how the absence of the cephalic furrow impacts
-gastrulation. btd and eve are two key genes required for the specification of
-the initiator cells [@Vincent1997-fa]. It was known that eve mutants form a
-late fold, but its origins remain unclear. We find that not only eve mutants,
-but also btd mutants, which fail to initiate the cephalic furrow, invariably
-form ectopic epithelial folds at the head--trunk interface (Figure
-@fig:ectopic-folding). We also analyzed prd mutants which still forms a
-cephalic furrow but delayed. We analyzed them to understand what is causing the
-formation of this folds, a reminiscent activity from the cephalic furrow
-patterning or a consequence of mechanical forces during gastrulation.
 
 <!--Ectopic folds are delayed relative to CF formation-->
 
@@ -243,6 +229,35 @@ furrow. While the cephalic furrow initiates at the onset of gastrulation in
 wild type embryos (stage 6), the ectopic folds in btd and eve mutants appear
 once the germ band has already progressed about X% (stage 8) (Figure
 @fig:ectopic-folding, Video 1 and 2).
+
+
+We also analyzed prd mutants which still forms a cephalic furrow but delayed.
+
+We analyzed them to understand what is causing the formation of this folds, a
+reminiscent activity from the cephalic furrow patterning or a consequence of
+mechanical forces during gastrulation.
+
+However, the origin of such ectopic folds, either genetic as reminiscent of the
+cephalic furrow patterning, or simply mechanical remained unknown.
+
+
+<!--Context-->
+
+We find that embryos that fail to initiate the cephalic furrow---not only *eve*
+mutants but also *btd* mutants---invariably form late ectopic folds at the
+head--trunk interface.
+
+These ectopic folds differ in timing, formation dynamics, folded area, and
+morphology to the cephalic furrow, suggesting they are indeed formed by
+different processes. 
+
+The position and timing of folding events varies between individual mutant
+embryos, but correlates with the position of mitotic domains, and the
+epithelium often buckles abruptly between the dividing cells with expanded
+apical areas, suggesting that local tissue forces might cause the tissue to
+buckle.
+
+<!--The overlap between btd and eve stripe 1 specifies the initiator cells that begin the cephalic furrow [@Vincent]. The patterning is inherently noisy, but a tight coupling of morphogenetic feedback achieves a single precise row of initiator cells [@Eritano]. -->
 
 <!--## Ectopic fold formation and morphology differs from the cephalic furrow-->
 
