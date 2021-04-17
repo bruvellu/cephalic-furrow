@@ -553,19 +553,28 @@ LoPaTs, Akanksha, Vlado, Lemke, LMF, EMBO.
 
 # Figures
 
-![Ectopic folds in *btd* and *eve* mutants. Timing of ectopic folds compared to sibling control. Morphology of ectopic folds.](../2-figures/ectopic-folding/figure.png){#fig:ectopic width=100%}
+![Ectopic folds in *btd* and *eve* mutants. Timing of ectopic folds compared to
+sibling control. Morphology of ectopic folds.](figures/Fig1.png){#fig:ectopic
+width=100%}
 
-![Analyses of ectopic fold formation. Dynamics, total folded area, fold depth and variability between mutant embryos.](../2-figures/ectopic-variability/figure.png){#fig:variability width=100%}
+![Analyses of ectopic fold formation. Dynamics, total folded area, fold depth
+and variability between mutant embryos.](figures/Fig2.png){#fig:variability
+width=100%}
 
-![Position of ectopic folds in relation to mitotic domains.](../2-figures/mitotic-domains/figure.png){#fig:mitotic width=100%}
+![Position of ectopic folds in relation to mitotic
+domains.](figures/Fig3.png){#fig:mitotic width=100%}
 
-![Ectopic folds in *stg* *btd* and *stg* *eve* double mutants.](../2-figures/placeholder.png){#fig:double width=100%}
+![Ectopic folds in *stg* *btd* and *stg* *eve* double
+mutants.](figures/Fig4.png){#fig:double width=100%}
 
-![Cauterization experiments in mutant embryos.](../2-figures/mutant-cauterizations/figure.png){#fig:mutcauts width=100%}
+![Cauterization experiments in mutant embryos.](figures/Fig5.png){#fig:mutcauts
+width=100%}
 
-![Cauterization experiments in wild type embryos.](../2-figures/wildtype-cauterizations/figure.png){#fig:wildcauts width=100%}
+![Cauterization experiments in wild type
+embryos.](figures/Fig6.png){#fig:wildcauts width=100%}
 
-![Summary figure with cephalic furrow primes folding and buffers head--trunk tissue interactions.](../2-figures/placeholder.png){#fig:summary width=100%} 
+![Summary figure with cephalic furrow primes folding and buffers head--trunk
+tissue interactions.](figures/Fig7.png){#fig:summary width=100%} 
 
 <!--Additional figures:
 
