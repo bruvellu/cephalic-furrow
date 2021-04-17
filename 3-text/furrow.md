@@ -390,34 +390,43 @@ head tissues to buckle, given certain epithelial properties such as
 cell-to-cell adhesion and rigidity remain constant (Figure
 {@fig:germband-cauterizations}G).
 
-## Mitotic domains and germ band plays a minor role in cephalic furrow formation during normal embryogenesis
+## Mitotic domains and germ band contributions to cephalic furrow formation during normal embryogenesis
 
-the unexpected finding that the germ band influences head tissues, we
-then tested whether the germ band extension and its resulting tissue
-compression also contributes to the normal process of cephalic furrow
-formation. We find that cauterized wild type embryos have a shallower cephalic
-furrow, indicating that the tissue compression from the germ band extension
-affects the amount of invaginated cephalic furrow tissue.
+<!--Mitotic domains and germ band interactions in wild type-->
 
-The dynamics of CF formation is largely influenced by other gastrulation events
-such as the mitotic domains and the germ band extension (trace CF in cauterized
-embryos, the furrow should be shifted posteriorly, and in stg mutants probably
-more anterior).
+The finding that the germ band extension interacts with head tissues, led us to
+ask whether the invagination of the cephalic furrow in wild type embryogenesis
+is also pushed by the germ band elongation. The idea that mitotic domains and
+the germ band could contribute to the cephalic furrow invagination has been
+previously suggested [@Hartenstein], and some recent work shows the completion
+of the ventral furrow depends on the physical push from the ectoderm [@BingHe].
 
-Next, we asked whether the germ band elongation could be contributing to the
-invagination of the cephalic furrow by exerting forces on the epithelium in
-wild type embryos (see He ventral furrow). To test this hypothesis, we blocked
-the germ band elongation in wild type embryos by cauterization prior to
-gastrulation.
+<!--Cauterization of wild type-->
 
-We found that in embryos with a successful cauterization the cephalic furrow
-invagination is about 10% shallower compared to control embryos
-(@fig:germband-cauterizations). The cephalic furrow length and germ band
-extension show a weak but significant correlation. This indicates the physical
-force exerted by the germ band extension also contributes to the cephalic
-furrow invagination in normal embryogenesis, suggesting the cephalic furrow
-morphogenesis is governed by the orchestration of genetic patterning with
-mechanical forces in the embryo.
+To test this hypothesis, we blocked the germ band elongation in wild type
+embryos by cauterization prior to gastrulation. We find that cauterized wild
+type embryos do have a cephalic furrow about 10% shallower than controls, but
+the relation is hardly significant (Figure @fig:wildcauts). Curiously, if the
+cauterization is unequal, the depth of the cephalic furrow on the left and
+right side are different. In addition, we observe a posterior shift in the
+dorsal position of the cephalic furrow when the germ band is blocked from
+extending (Figure @fig:wildcauts).
+
+<!--Analyses of mitotic domain single mutants-->
+
+[Hypothetical outcome] In addition we measured the cephalic furrow depth in stg
+mutants to evaluate if the expansion of mitotic domains contributed to increase
+the depth of the invagination. Similar to the cauterization experiment, we
+found a minor effect of the absence of mitotic domains to the cephalic furrow
+depth, but an anterior shift in the cephalic furrow position.
+
+<!--Cephalic furrow is mostly autonomous but interactions matter-->
+
+These experiments suggest the mitotic domains and germ band extension play a
+minor role in pushing the cephalic furrow into the yolk, but they can affect
+the positional dynamics of cephalic furrow formation, suggesting the cephalic
+furrow morphogenesis is governed by the orchestration of genetic patterning
+with mechanical forces in the embryo.
 
 # Discussion
 
