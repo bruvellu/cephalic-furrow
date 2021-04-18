@@ -205,7 +205,7 @@ orchestrate the morphogenetic movements of Drosophila gastrulation.
 
 # Results
 
-## Cephalic furrow mutants form ectopic folds at the head--trunk boundary
+## Cephalic furrow mutants form variable ectopic folds at the head--trunk boundary
 
 We studied cephalic furrow mutants to understand how defects in cephalic furrow
 formation impact the tissue interactions at the head--trunk boundary during
@@ -217,7 +217,7 @@ imaging data of mutant embryos using lightsheet microscopy.
 <!--Late ectopic folds form in CF mutants-->
 
 In *btd* and *eve* mutant embryos, the cephalic furrow fails to invaginate and
-is entirely absent [@Vincent1997-fa]. However, an intriguing late fold has been
+is entirely absent [@Vincent1997-fa]. However, an intriguing late fold was
 observed in the cephalic region of *eve* mutants [@Vincent1997-fa]. Our live
 imaging data corroborate this observation in *eve* mutants, and reveals that
 *btd* embryos also form late ectopic folds at the head--trunk interface during
@@ -225,45 +225,68 @@ gastrulation (@fig:ectopic).
 
 <!--Motivation to analyze ectopic fold formation-->
 
-To understand what is causing the tissue to fold, we analyzed ectopic fold
-formation in comparison to the cephalic furrow.
-
-<!--a reminiscent activity from the cephalic furrow patterning or a consequence of mechanical forces during gastrulation.-->
-
-<!--the origin of such ectopic folds, either genetic as reminiscent of the cephalic furrow patterning, or simply mechanical remained unknown.-->
+To understand the origin of these ectopic folds in *btd* and *eve* mutants, we
+analyzed how the pattern, dynamics, and variability of folding events compared
+to the cephalic furrow formation. 
 
 <!--Ectopic folds form late-->
 
-Ectopic folds form late and differ from the typical cephalic furrow morphology.
-While the cephalic furrow in wild type embryos initiates in stage 6, at the
-onset of gastrulation, the ectopic folds in mutant embryos appear in stage 8,
-when the germ band has already extended at least a third of the embryo length
-({@fig:ectopic}A, Video 1 and 2). Unlike the cephalic furrow, the ectopic folds
-are often asymmetric, have a looser cleft between edges, and lack the typical
-cell shape morphologies at the invagination tip and edges ({@fig:ectopic}B).
+We first detect ectopic folds late during gastrulation. While the cephalic
+furrow in wild type embryos forms in stage 6, at the onset of gastrulation, the
+ectopic folds in mutant embryos only appear in stage 8, when the germ band has
+already extended at least a third of the embryo length ({@fig:ectopic}A, Video
+1 and 2). Unlike the stereotypic morphology of the cephalic furrow, the ectopic
+folds are often asymmetric, have a looser cleft between edges, and lack the
+typical cell shapes at the invagination tip and edges ({@fig:ectopic}B). The
+number of ectopic folds on each side of the embryo varies between one to four.
+Mutant embryos without ectopic folds were rare.
 
-<!--wedge shape at the invagination tip, the orthogonal position of middle cells, and the elongated morphology at the leading edges are absent-->
+<!--Dynamics are different-->
 
-<!--The dynamics of ectopic fold formation also differs from the cephalic furrow invagination. -->
-
-We traced the dynamics of ectopic fold formation on the blastoderm. The
-cephalic furrow initiates as a straight dorsoventral line which progressively
-bends into a curved line, while its dorsal portion shifts to the posterior end
-and its ventral portion shifts to the anterior end ({@fig:variability}A). In
-contrast the ectopic folds are mostly straight through time
-({@fig:variability}B,C).
+The dynamics of ectopic folding differs from the canonical cephalic furrow
+formation. By tracing the position of the ectopic folds in the blastoderm
+across time, we find the starting angle of ectopic folds is generally tilted in
+relation to the cephalic furrow (TODO). The cephalic furrow initiates as a
+straight dorsoventral line which progressively bends into a curved line, while
+its dorsal portion shifts to the posterior end and its ventral portion shifts
+to the anterior end ({@fig:variability}A). In contrast the ectopic folds are
+mostly straight over time and do not extend as far dorsal or ventral as the
+cephalic furrow ({@fig:variability}B,C).
 
 <!--Ectopic folding area and depth smaller than CF invagination-->
 
-We measured the area of folded tissue and the depth of ectopic folds
-({@fig:variability}D--F). The total area of folded tissue is roughly half of a
-regular wild type cephalic furrow ({@fig:variability}G). Similarly, we find
-that the depth of ectopic folds is about half of the cephalic furrow
-invagination ({@fig:variability}H). We observe that individual mutant embryos
-can have the same total invaginated area either having one deep fold or two
-shallower folds.
+To estimate the area of epithelial tissue folded inside ectopic folds, we
+created a cartographic projection of the embryos by fitting its surface to a
+cylinder and unwrapping the cylinder as a flat surface. We then tracked the
+infolded cells backwards and demarcated the folded region on the blastoderm
+before gastrulation ({@fig:variability}D--F). We find the total area of folded
+tissue contained in the ectopic folds of *btd* and *eve* embryos is roughly
+half that of cephalic furrow in sibling controls ({@fig:variability}G). We also
+measured the depth of the ectopic folds and found a similar result
+({@fig:variability}H).
 
-In addition, we also analyzed *prd* embryos where the formation of the cephalic
+<!--Ectopic folds vary between individual mutant embryos-->
+
+We noticed that individual mutant embryos not only have different numbers of
+ectopic folds, but that the position of these folds in the blastoderm vary from
+embryo to embryo. We compiled the tracing data normalized by embryo length to
+understand the distribution of ectopic folds along the head--trunk interface.
+The data reveals the position of ectopic folds vary greatly compared to the
+position of the cephalic furrow formation on the lateral blastoderm
+({@fig:variability}I). The ectopic folds, either in *btd* or in *eve* mutants,
+can occur near the canonical cephalic furrow region, but also occur in more
+anterior or more posterior positions. The formation of ectopic folds can even
+differ between the left and right side of the same embryo
+({@fig:variability}J). This variability is in stark contrast to the stereotypic
+formation of the cephalic furrow in wild type embryogenesis, suggesting the
+process of ectopic fold formation might be driven by stochastic events and
+mechanical forces in the epithelial tissue.
+
+<!--TODO: We observe that individual mutant embryos can have the same total invaginated area either having one deep fold or two shallower folds.-->
+
+<!--Sidenote for paired-->
+
+In addition, we analyzed *prd* embryos where the formation of the cephalic
 furrow is delayed [@Blankenship2001-tm]. Although *prd* embryos seem to form a
 cephalic furrow at the expected position, our live imaging reveals the process
 of invagination initiates but halts mid way through (Figure X). Analyses of the
@@ -274,31 +297,16 @@ patterning of the cephalic furrow than previously thought.
 
 <!--Concluding differentness of ectopic folds-->
 
-Overall these analyses suggest that ectopic folds have different properties
-compared to the cephalic furrow and their formation is driven by different
-developmental mechanisms acting in the embryo.
+Overall these analyses show that ectopic folds forming in embryos lacking the
+cephalic furrow have have different properties and dynamics compared to the
+cephalic furrow, suggesting their formation is driven by different
+developmental mechanisms.
 
 <!--TODO: Analyses of tissue flow in the absence of the cephalic furrow-->
 
 <!--We analyzed the tissue flow in cephalic furrow mutants using particle image velocimetry. We find that without the cephalic furrow the head--trunk boundary region remains static against the movement of the trunk tissues.-->
 
-## Position of ectopic folds is variable but coincides with mitotic domains
-
-<!--Ectopic folds vary between individual mutant embryos-->
-
-To understand the origin of ectopic folds in *btd* and *eve* mutants, we
-analyzed how the folding events vary among mutants and individual embryos. We
-find the formation of ectopic folds is variable between individual embryos,
-either in *btd* or in *eve* mutants. The folds are distributed in diverse
-positions along the head--trunk interface ({@fig:variability}I).
-In both mutants the ectopic folds can occur near the canonical cephalic furrow
-region, but also in more anterior or more posterior positions. The formation of
-ectopic folds can even differ between the left and right side of the same
-embryo ({@fig:variability}J). This variability is in stark
-contrast to the stereotypic formation of the cephalic furrow in wild type
-embryogenesis ({@fig:variability}I), suggesting the process of
-ectopic fold formation is driven by stochastic events and mechanical forces in
-the epithelial tissue.
+## Position of ectopic folds coincides with mitotic domains
 
 <!--Ectopic folds appear between mitotic domains-->
 
@@ -306,35 +314,33 @@ To uncover what controls the position and formation of ectopic folds, we
 analyzed how their formation correlates with the tissue dynamics at the
 head--trunk boundary. We identified a correlation between ectopic folds and
 mitotic domains (MD). In most cases, the ectopic folds in *btd* and *eve*
-mutants often occur between adjacent mitotic domains (Figure
-@fig:mitotic). The most common position is near the canonical cephalic
-furrow position. In btd embryos which lack MD2 [@CiteMD2btd], this ectopic fold
-forms between MD5 and MD7, while in eve embryos which have an expanded MD2
-[@CiteMD2eve], an ectopic fold forms between MD5 and MD2. Other positions are
-more anterior between MD1 and MD9/MD5, a less common and shallower fold between
-MD7 and MD6, and the most posterior ectopic fold which forms posterior to MD6
-({@fig:mitotic}A--C). Thus ectopic folds occur adjacent to
-mitotic domains.
+mutants often occur between adjacent mitotic domains (@fig:mitotic). The most
+common position is near the canonical cephalic furrow position. In *btd* embryos
+which lack MD2 [@CiteMD2btd], this ectopic fold forms between MD5 and MD7,
+while in eve embryos which have an expanded MD2 [@CiteMD2eve], an ectopic fold
+forms between MD5 and MD2. Other positions are more anterior between MD1 and
+MD9/MD5, a less common and shallower fold between MD7 and MD6, and the most
+posterior ectopic fold which forms posterior to MD6 ({@fig:mitotic}A--C). Thus
+ectopic folds occur adjacent to mitotic domains.
 
 <!--Ectopic folding coincides with area expansion of dividing cells-->
 
 The analysis of the apical area of cells at the head--trunk interface revealed
 the infolding of epithelial cells is preceded by the compression of cell apices
-by the expansion of dividing cells in mitotic domains (Figure
-{@fig:mitotic}D). The apical area of epithelial cells about to fold
-inwards diminishes at the same time that the apical area of dividing cells
-increase. The only exception occurs in *btd* where we identified a reminiscent
-initiator cell behavior with a narrow row of cells contracting their apices at
-the canonical cephalic furrow position before the mitotic domains (Figure S).
-However, in this case the tissue still only folds when the cells in adjacent
-mitotic domains undergo area expansion during mitosis. 
+by the expansion of dividing cells in mitotic domains ({@fig:mitotic}D). The
+apical area of epithelial cells about to fold inwards diminishes at the same
+time that the apical area of dividing cells increase. The only exception occurs
+in *btd* where we identified a reminiscent initiator cell behavior with a
+narrow row of cells contracting their apices at the canonical cephalic furrow
+position before the mitotic domains (Figure S). However, in this case the
+tissue still only folds when the cells in adjacent mitotic domains undergo area
+expansion during mitosis. 
 
 <!--Ectopic folds form by tissue buckling rather than invagination-->
 
 The dynamics of ectopic fold formation differs from the cephalic furrow
 invagination. While the cephalic furrow forms by a progressive invagination,
-the ectopic folds form by abrupt buckling of the tissue (Figure
-{@fig:mitotic}E). The epithelium simply buckles when compressed by
+the ectopic folds form by abrupt buckling of the tissue ({@fig:mitotic}E). The epithelium simply buckles when compressed by
 adjacent dividing cells. Therefore, even though the end result of ectopic folds
 might appear similar to the cephalic furrow, the dynamics and formation process
 are rather different.
@@ -375,8 +381,7 @@ ectopic folds at the head--trunk boundary in cephalic furrow mutants. Evidence
 for this came from the observation of ectopic folds forming posterior to the
 MD6 which often showed compressed epithelial cells in the dorsal region (Figure
 S). We tested this hypothesis by physically blocking the germ band from
-extending in *btd* and *eve* mutants using laser cauterizations (Figure
-@fig:mutcauts).
+extending in *btd* and *eve* mutants using laser cauterizations (@fig:mutcauts).
 
 <!--Blocking the germ band extension suppresses ectopic folds-->
 
@@ -421,10 +426,10 @@ of the ventral furrow depends on the physical push from the ectoderm [@BingHe].
 
 To test this hypothesis, we blocked the germ band elongation in wild type
 embryos by cauterization prior to gastrulation. We find that cauterized wild
-type embryos do have a cephalic furrow about 10% shallower than controls, but
-the relation is hardly significant (@fig:wildcauts). Curiously, if the
-cauterization is unequal, the depth of the cephalic furrow on the left and
-right side are different. In addition, we observe a posterior shift in the
+type embryos do have a cephalic furrow about 10% shallower than sibling
+controls, but the relation is hardly significant (@fig:wildcauts). Curiously,
+if the cauterization is unequal, the depth of the cephalic furrow on the left
+and right side are different. In addition, we observe a posterior shift in the
 dorsal position of the cephalic furrow when the germ band is blocked from
 extending (@fig:wildcauts).
 
