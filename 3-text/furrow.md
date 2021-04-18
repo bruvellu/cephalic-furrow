@@ -315,13 +315,13 @@ analyzed how their formation correlates with the tissue dynamics at the
 head--trunk boundary. We identified a correlation between ectopic folds and
 mitotic domains (MD). In most cases, the ectopic folds in *btd* and *eve*
 mutants often occur between adjacent mitotic domains (@fig:mitotic). The most
-common position is near the canonical cephalic furrow position. In *btd* embryos
-which lack MD2 [@CiteMD2btd], this ectopic fold forms between MD5 and MD7,
-while in eve embryos which have an expanded MD2 [@CiteMD2eve], an ectopic fold
-forms between MD5 and MD2. Other positions are more anterior between MD1 and
-MD9/MD5, a less common and shallower fold between MD7 and MD6, and the most
-posterior ectopic fold which forms posterior to MD6 ({@fig:mitotic}A--C). Thus
-ectopic folds occur adjacent to mitotic domains.
+common position is near the canonical cephalic furrow position. In *btd*
+embryos which lack MD2 [@Edgar1994-pi], this ectopic fold forms between MD5 and
+MD7, while in *eve* embryos which have an expanded MD2 [@Vincent1997-fa], an
+ectopic fold forms between MD5 and MD2. Other positions are more anterior
+between MD1 and MD9/MD5, a less common and shallower fold between MD7 and MD6,
+and the most posterior ectopic fold which forms posterior to MD6
+({@fig:mitotic}A--C). Thus ectopic folds occur adjacent to mitotic domains.
 
 <!--Ectopic folding coincides with area expansion of dividing cells-->
 
