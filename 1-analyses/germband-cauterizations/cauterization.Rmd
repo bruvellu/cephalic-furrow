@@ -57,7 +57,7 @@ summary(results[results$Sample == "cauterized", c("Length")])
 
 # Sum total CF length per embryo
 totalcf <- aggregate(results$Length, list(results$Embryo), sum)
-colnames(totalcf) <- c("Embryo", "Length")
+colnames(totalcf) <- c("Embryo", "Total")
 
 # Sum total GB length per embryo
 totalgb <- aggregate(results$Distance, list(results$Embryo), sum)
@@ -67,13 +67,30 @@ colnames(totalgb) <- c("Embryo", "Distance")
 totalby <- aggregate(results$CFbyGB, list(results$Embryo), sum)
 colnames(totalby) <- c("Embryo", "CFbyGB")
 
+# Mean of CF length per embryo
+meancf <- aggregate(results$Length, list(results$Embryo), mean)
+colnames(meancf) <- c("Embryo", "Mean")
+
+# Standard deviation of CF length per embryo
+sdcf <- aggregate(results$Length, list(results$Embryo), sd)
+colnames(sdcf) <- c("Embryo", "SD")
+
 # Get sample information
 samples <- unique(results[, c("Embryo", "Sample")])
 
 # Merge datasets
 total <- merge(totalcf, totalgb, by = "Embryo", all.x = TRUE)
 total <- merge(total, totalby, by = "Embryo", all.x = TRUE)
+total <- merge(total, meancf, by = "Embryo", all.x = TRUE)
+total <- merge(total, sdcf, by = "Embryo", all.x = TRUE)
 total <- merge(total, samples, by = "Embryo", all.x = TRUE)
+
+# Summary of total
+total.mean <- aggregate(total$Mean, list(total$Sample), mean)
+colnames(total.mean) <- c("Sample", "Mean")
+total.sd <- aggregate(total$Mean, list(total$Sample), sd)
+colnames(total.sd) <- c("Sample", "SD")
+total.summary <- merge(total.mean, total.sd, by = "Sample", all.x = TRUE)
 ```
 
 ### Area plot
@@ -88,7 +105,14 @@ ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length))
 ggsave("wt-cf-length.png")
 
 # Plot total length of cephalic furrow invagination per embryo
-ggplot(total, aes(factor(Sample, level = c("control", "cauterized")), Length, colour = Sample)) +
+ggplot(total, aes(factor(Sample, level = c("control", "cauterized")), Mean, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), color = "black", alpha = 0.5, data = total.summary) +
+  labs(title = "Mean CF length per sample", x = "sample", y = "length (µm)")
+ggsave("wt-mean-length.png")
+
+# Plot total length of cephalic furrow invagination per embryo
+ggplot(total, aes(factor(Sample, level = c("control", "cauterized")), Total, colour = Sample)) +
   geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
   labs(title = "Total length of CF invaginations per embryo", x = "sample", y = "length (µm)")
 ggsave("wt-total-length.png")
@@ -109,9 +133,9 @@ ggplot(results, aes(Distance, Length)) + geom_point(alpha = 0.8, aes(colour = Sa
   labs(title = "CF length by GB distance", x = "Distance to GB", y = "Length of CF")
 with(results, cor(Length, Distance))
 ggsave("wt-cfgb-correlation.png")
-ggplot(total, aes(Distance, Length)) + geom_point(alpha = 0.8, aes(colour = Sample)) +
+ggplot(total, aes(Distance, Total)) + geom_point(alpha = 0.8, aes(colour = Sample)) +
   labs(title = "Total CF length by total GB distance per embryo", x = "Distance to GB", y = "Length of CF")
-with(total, cor(Length, Distance))
+with(total, cor(Total, Distance))
 ggsave("wt-total-correlation.png")
 
 # Plot CF to GB index
