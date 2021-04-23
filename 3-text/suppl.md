@@ -81,6 +81,11 @@ interface which occur before any of the tissue flows. After the tissue flows,
 we see a range of cell shape changes with compression on both sides and a
 shearing effect at the boundary.
 
+## prd is a key cephalic furrow gene
+
+In addition, we analyzed *prd* embryos where the formation of the cephalic furrow is delayed [@Blankenship2001-tm]. Although *prd* embryos seem to form a cephalic furrow at the expected position, our live imaging reveals the process of invagination initiates but halts mid way through (Figure X). Analyses of the dynamics and area of folded tissue shows the folding is *prd* embryos is more similar to the ectopic folds than to the cephalic furrow invagination (Figure X). This suggests the lack of *prd* activity is more important to the patterning of the cephalic furrow than previously thought.
+
+
 
 ## Molecular arrangements of btd, eve, prd and gt
 
