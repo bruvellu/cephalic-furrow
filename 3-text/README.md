@@ -13,15 +13,13 @@ your initials appended to the filename (or email me).
 **2021-04-23:**
 
 - Updates the introduction text to a more coherent story line.
-
 - Adds key missing modelling paper on the global role of the CF.
+- Revises the text of the first results section about ectopic folds.
 
 **2021-04-21:**
 
 - Incorporates Marina's suggestions to manuscript.
-
 - Updates wild type cauterization figure with MD annotations.
-
 - Updates the CF length plot control vs cauterized.
 
 **2021-04-20:**
@@ -32,6 +30,7 @@ your initials appended to the filename (or email me).
 
 - First draft of results with core figures.
 - Some data are still missing and need to export remaining videos.
-- Introduction contains some paragraphs with key references and a summary paragraph, but needs to be steered the final story line.
+- Introduction contains some paragraphs with key references and a summary
+paragraph, but needs to be steered the final story line.
 - Discussion is outdated from an early outline.
 - Molecular data is on a standalone manuscript, for now.
