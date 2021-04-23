@@ -10,6 +10,12 @@ your initials appended to the filename (or email me).
 
 ## Notes
 
+**2021-04-23:**
+
+- Updates the introduction text to a more coherent story line.
+
+- Adds key missing modelling paper on the global role of the CF.
+
 **2021-04-21:**
 
 - Incorporates Marina's suggestions to manuscript.
