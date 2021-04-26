@@ -12,6 +12,8 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 - Revises the section about mitotic domains and mutant cauterizations.
 - Moves the modelling results to own section, for now.
+- Revises the last section about wild type cauterizations.
+- Just drafted the modelling paragraph.
 
 **2021-04-23:**
 
