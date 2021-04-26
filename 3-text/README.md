@@ -4,33 +4,37 @@
 - `versions/`: daily versions of the manuscript compiled to different formats.
 - `figures/`: figures and movies with latest changes.
 
-Take a timestamped document in the `versions` directory, for example
-`2021-04-19_furrow.md` or `2021-04-19_furrow.docx`, revise and save as with
-your initials appended to the filename (or email me).
+Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-04-26:**
+
+- Revises the section about mitotic domains and mutant cauterizations.
+- Moves the modelling results to own section, for now.
+
 **2021-04-23:**
 
-- Updates the introduction text to a more coherent story line.
-- Adds key missing modelling paper on the global role of the CF.
-- Revises the text of the first results section about ectopic folds.
+- Updates the introduction to make it more coherent and up-to-date.
+- Adds one key modelling paper about the global role of the CF.
+- Revises the first section of the results about ectopic folds.
 
 **2021-04-21:**
 
 - Incorporates Marina's suggestions to manuscript.
-- Updates wild type cauterization figure with MD annotations.
-- Updates the CF length plot control vs cauterized.
+- Updates figure of wild type cauterization with MD annotations.
+- Updates the plot about CF length control vs cauterized.
 
 **2021-04-20:**
 
-- Includes paragraph on laser ablations and active pull of the cephalic furrow.
+- Includes a paragraph about the laser ablations and the active pull around the
+  cephalic furrow.
 
 **2021-04-19:**
 
-- First draft of results with core figures.
-- Some data are still missing and need to export remaining videos.
-- Introduction contains some paragraphs with key references and a summary
-paragraph, but needs to be steered the final story line.
-- Discussion is outdated from an early outline.
-- Molecular data is on a standalone manuscript, for now.
+- First draft of results with core figures. Some data still missing; need to
+  export remaining videos.
+- Introduction has paragraphs with key references and a summary paragraph, but
+  needs to be steered the final story line.
+- Discussion is outdated from an early outline, not for reading.
+- Molecular data is on a standalone manuscript about slp, for now.
