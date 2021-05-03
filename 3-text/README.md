@@ -8,6 +8,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-05-03:**
+
+- Updates panel with compiled traces for btd.
+
 **2021-04-26:**
 
 - Revises the section about mitotic domains and mutant cauterizations.
