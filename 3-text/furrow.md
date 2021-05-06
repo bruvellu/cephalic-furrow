@@ -44,18 +44,18 @@ tablenos-plus-name: Table
   during *Drosophila* gastrulation
 
 - Cephalic furrow morphogenesis requires coordinated genetic and physical
-interactions during *Drosophila* gastrulation
+  interactions during *Drosophila* gastrulation
 
 - Physical role of the cephalic furrow during *Drosophila* gastrulation
 
 - Physical interplay between cephalic furrow and germ band during *Drosophila*
-gastrulation
+  gastrulation
 
-- Genetic and mechanical Integration of genetic and mechanical forces in the
-cephalic furrow morphogenesis
+- Genetic and mechanical integration of genetic and mechanical forces in the
+  cephalic furrow morphogenesis
 
 - Integration of mechanical and morphogenetic forces driving cephalic furrow
-formation gastrulation in *Drosophila*-->
+  formation gastrulation in *Drosophila*-->
 
 
 # Abstract

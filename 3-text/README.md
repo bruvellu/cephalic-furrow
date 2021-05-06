@@ -8,6 +8,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-05-06**
+
+- Updates the figure for mutant cauterizations. Removed placeholder for model, re-ordered panels, and replaced MZ2 panels.
+
 **2021-05-03:**
 
 - Updates panel with compiled traces for btd.
