@@ -11,6 +11,7 @@ Use the latest timestamped-document in the `versions` directory for revising.
 **2021-05-06**
 
 - Updates the figure for mutant cauterizations. Removed placeholder for model, re-ordered panels, and replaced MZ2 panels.
+- Updates the CF length plot with a couple of new control embryos in the figure for wildtype cauterizations.
 
 **2021-05-03:**
 
