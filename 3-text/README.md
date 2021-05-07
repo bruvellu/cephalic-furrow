@@ -8,6 +8,16 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-05-07**
+
+- Adds placeholder paragraph for tissue flow analysis in cephalic furrow mutants.
+
+- Merges the analysis of mitotic domains in the ectopic folding section.
+
+- Removes wild type cauterizations from results and moved to the supplement for now. The observations are still crude and would add another level of complexity to the paper. They can fit a broader paper about the interactions of the cephalic furrow with other gastrulation movements.
+
+- Revises the discussion section removing older paragraphs. Still requires some proper writing with references.
+
 **2021-05-06**
 
 - Updates the figure for mutant cauterizations. Removed placeholder for model, re-ordered panels, and replaced MZ2 panels.

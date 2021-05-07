@@ -393,7 +393,7 @@ the dividing cells increase the local tissue interactions creating areas prone
 to buckling, which bias the formation of ectopic folds. However, the germ band
 extension is what drives the formation of ectopic folds.
 
-## Local tissue strain and global stiffness modulate ectopic folding
+<!--Local tissue strain and global stiffness modulate ectopic folding-->
 
 **[Hypothetical outcome]** To complement our in vivo observations and
 understand the interplay between local and global tissue interactions, we
