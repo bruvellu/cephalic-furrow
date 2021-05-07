@@ -196,7 +196,8 @@ ventral head tissues move anteriorly and dorsally. The center of the hurricane
 sits at the ventral portion of the head region just anterior to the cephalic
 furrow. In the absence of the cephalic furrow, the ventral flow is restricted
 to more posterior trunk tissues, while head tissues show more variable
-directions despite also flowing dorsally. These analysis the flow pattern is
+directions despite also flowing dorsally. We also observe shear effects to
+epithelial cells in cephalic furrow mutants. These analysis the flow pattern is
 disrupted in cephalic furrow mutants.
 
 <!--Late ectopic folds form in CF mutants-->
