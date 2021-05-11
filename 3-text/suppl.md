@@ -198,3 +198,13 @@ patterning with a minor role of the mechanical forces in the embryo.
 # Supplementary discussion
 
 Head-trunk boundary is a tissue shear zone of conflict tissue flow
+
+<!--Possible CF interactions in normal embryogenesis-->
+
+The interactions of the cephalic furrow with other morphogenetic movements are
+not well studied. Our data reveals evidence that the germ band could have a
+role in the cephalic furrow formation during normal embryogenesis while pushing
+the tissue deeper in the yolk, similar to what has been described for ventral
+furrow [@ref]. Thus suggesting a global interaction between morphogenetic
+movements in gastrulation.
+
