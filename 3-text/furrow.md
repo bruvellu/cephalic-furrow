@@ -174,10 +174,20 @@ morphogenetic movements of *Drosophila* gastrulation.
 We studied cephalic furrow mutants to understand how defects in cephalic furrow
 formation impact the tissue interactions at the head--trunk boundary during
 gastrulation. We generated flies with a fluorescent background and the
-loss-of-function alleles for *btd* or *eve*. We then acquired *in toto* live
-imaging data of mutant embryos using lightsheet microscopy, and analyzed the
-pattern, dynamics, and variability of folding events compared to the cephalic
-furrow formation. 
+loss-of-function alleles for *btd* or *eve*, and imaged mutant embryos *in
+toto* using lightsheet microscopy.
+
+<!--General description-->
+
+As previously described the cephalic furrow fails to initiate at the onset of
+gastrulation in *btd* and *eve* mutants (@fig:ectopic). In later stages of
+gastrulation, however, we detect the occurrence of late folds at the
+head--trunk interface in both *btd* and *eve* mutants, and reveal that *btd*
+embryos also form late ectopic folds at the  during gastrulation
+(@fig:ectopic). While the cephalic furrow in wild type embryos forms in stage
+6, at the onset of gastrulation, the ectopic folds in mutant embryos only
+appear in stage 8, when the germ band has already extended at least a third of
+the embryo length ({@fig:ectopic}A, Video 1 and 2).
 
 <!--TODO: Tissue flow analyses without CF-->
 
@@ -202,17 +212,10 @@ in cephalic furrow mutants and the head--trunk boundary as a convergent zone.
 
 <!--Late ectopic folds form in CF mutants-->
 
-At later gastrulation stages we observe the presence of late folds in *eve*
-mutants, and reveal that *btd* embryos also form late ectopic folds at the
-head--trunk interface during gastrulation (@fig:ectopic). We first detect
-ectopic folds late during gastrulation. While the cephalic furrow in wild type
-embryos forms in stage 6, at the onset of gastrulation, the ectopic folds in
-mutant embryos only appear in stage 8, when the germ band has already extended
-at least a third of the embryo length ({@fig:ectopic}A, Video 1 and 2). Unlike
-the stereotypic morphology of the cephalic furrow, the ectopic folds are often
-asymmetric, have a looser cleft between edges, and lack the typical cell shapes
-at the invagination tip and edges ({@fig:ectopic}B). Ectopic folds thus form
-late and have irregular morphology.
+Unlike the stereotypic morphology of the cephalic furrow, the ectopic folds are
+often asymmetric, have a looser cleft between edges, and lack the typical cell
+shapes at the invagination tip and edges ({@fig:ectopic}B). Ectopic folds thus
+form late and have irregular morphology.
 
 <!--TODO: Figure with shape analysis of ectopic folds.-->
 
