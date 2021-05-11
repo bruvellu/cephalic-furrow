@@ -8,7 +8,7 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
-2021-05-11
+**2021-05-11**
 
 - Incorporates notes from yesterday and revised discussion draft paragraphs.
 
