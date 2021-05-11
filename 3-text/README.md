@@ -8,6 +8,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+2021-05-11
+
+- Incorporates notes from yesterday and revised discussion draft paragraphs.
+
 **2021-05-07**
 
 - Adds placeholder paragraph for tissue flow analysis in cephalic furrow mutants.
