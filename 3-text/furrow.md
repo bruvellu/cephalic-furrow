@@ -179,6 +179,8 @@ toto* using lightsheet microscopy.
 
 <!--General description-->
 
+<!--Late ectopic folds form in CF mutants-->
+
 As previously described the cephalic furrow fails to initiate at the onset of
 gastrulation in *btd* and *eve* mutants (@fig:ectopic). In later stages of
 gastrulation, however, we detect the occurrence of late folds at the
@@ -187,7 +189,11 @@ embryos also form late ectopic folds at the  during gastrulation
 (@fig:ectopic). While the cephalic furrow in wild type embryos forms in stage
 6, at the onset of gastrulation, the ectopic folds in mutant embryos only
 appear in stage 8, when the germ band has already extended at least a third of
-the embryo length ({@fig:ectopic}A, Video 1 and 2).
+the embryo length ({@fig:ectopic}A, Video 1 and 2). Unlike the stereotypic
+morphology of the cephalic furrow, the ectopic folds are often asymmetric, have
+a looser cleft between edges, and lack the typical cell shapes at the
+invagination tip and edges ({@fig:ectopic}B). Ectopic folds thus form late and
+have irregular morphology.
 
 <!--TODO: Tissue flow analyses without CF-->
 
@@ -209,13 +215,6 @@ epithelial cells in cephalic furrow mutants. Once gastrulation proceeds we
 observe an increased flow and a stronger tissue flow towards the anterior due
 to the germ band elongation. These analysis show the flow pattern is disrupted
 in cephalic furrow mutants and the head--trunk boundary as a convergent zone.
-
-<!--Late ectopic folds form in CF mutants-->
-
-Unlike the stereotypic morphology of the cephalic furrow, the ectopic folds are
-often asymmetric, have a looser cleft between edges, and lack the typical cell
-shapes at the invagination tip and edges ({@fig:ectopic}B). Ectopic folds thus
-form late and have irregular morphology.
 
 <!--TODO: Figure with shape analysis of ectopic folds.-->
 
@@ -530,11 +529,10 @@ mutants.](figures/Fig4.png){#fig:double width=100%}
 ![Cauterization experiments in mutant embryos.](figures/Fig5.png){#fig:mutcauts
 width=100%}
 
-![Cauterization experiments in wild type
-embryos.](figures/Fig6.png){#fig:wildcauts width=100%}
-
 ![Summary figure with cephalic furrow primes folding and buffers head--trunk
 tissue interactions.](figures/Fig7.png){#fig:summary width=100%} 
+
+<!--![Cauterization experiments in wild type embryos.](figures/Fig6.png){#fig:wildcauts width=100%}-->
 
 <!--Additional figures:
 
