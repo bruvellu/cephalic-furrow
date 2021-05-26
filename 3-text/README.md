@@ -8,6 +8,11 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+2021-05-26
+
+- Includes example plot for tortuosity analysis in cauterized mutants.
+- Replaces example plot for real tortuosity analysis in cauterized mutants.
+
 **2021-05-17**
 
 - Removes wild type cauterization figure from compilation.
