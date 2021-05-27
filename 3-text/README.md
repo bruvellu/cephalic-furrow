@@ -8,7 +8,11 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
-2021-05-26
+**2021-05-27**
+
+- Edits paragraph about germ band cauterizations to include tortuosity results. 
+
+**2021-05-26**
 
 - Includes example plot for tortuosity analysis in cauterized mutants.
 - Replaces example plot for real tortuosity analysis in cauterized mutants.

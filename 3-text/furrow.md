@@ -344,13 +344,14 @@ the cephalic furrow and the mitotic domains. We combined our fluorescent lines
 carrying the loss of function alleles for *btd* and *eve* with a loss of
 function allele for *stg*, a gene that regulates the formation of mitotic
 domains in the nuclear cycle 14 [@Edgar1989-hv]. We then imaged *stg*--*btd*
-and *stg*--*eve* double mutants using our lightsheet pipeline as before.
-
-**[Hypothetical outcome]** We find the ectopic folds are still present in
-double mutant embryos which lack mitotic domains (@fig:double). We observe,
-however, a different distribution of folding events when compared to the single
-mutant embryos. This indicates that mitotic domains are not required but bias
-the position and formation of ectopic folds in cephalic furrow mutants.
+and *stg*--*eve* double mutants using our lightsheet pipeline, and find
+**[hypothetical outcome]** the ectopic folds are still present in double mutant
+embryos which lack mitotic domains (@fig:double). We observe, however, a
+different distribution of folding events when compared to the single mutant
+embryos (@fig:double). This indicates the expansion forces exerted in mitotic
+domains are not required for the formation of ectopic folds, but their
+presence, as observed in single *btd* and *eve* mutants, bias the position of
+buckling events in the absence of the cephalic furrow.
 
 <!--In both *stg*--*btd* and *stg*--*eve* double mutants, the ectopic folds are absent, suggesting the presence of mitotic domains is necessary for the formation of ectopic folds. This indicates they play a key role in the balance of local forces that lead to the formation of ectopic folds. -->
 
@@ -358,51 +359,49 @@ the position and formation of ectopic folds in cephalic furrow mutants.
 
 The presence of ectopic folds in double mutants indicate that other mechanical
 forces acting during gastrulation are driving the formation of ectopic folds at
-the head--trunk interface. Our data on tissue flows and the formation of
-ectopic fold posterior to MD6 against compressed epithelial cells in the dorsal
-trunk region (Figure x), suggested the germ band extension could driving the
-formation of ectopic folds at the head--trunk boundary in the absence of the
-cephalic furrow. We thus tested this hypothesis by mechanically blocking the
-germ band from extending in *btd* and *eve* mutants by cauterizing the
-blastoderm tissue to the vitelline envelope, and by analyzing the epithelial
-morphology (@fig:mutcauts).
+the head--trunk interface. The tissue flows during germ band extension and the
+formation of a ectopic fold posterior to MD6 against compressed epithelial
+cells in the dorsal trunk region (@fig:comp), suggests the germ band extension
+could driving the formation of ectopic folds at the head--trunk boundary in the
+absence of the cephalic furrow. We tested this hypothesis by mechanically
+blocking the germ band extension in *btd* and *eve* mutants by cauterizing the
+blastoderm tissue to the vitelline envelope (@fig:mutcauts).
 
 <!--Blocking the germ band extension suppresses ectopic folds-->
 
-Cauterized the mutant embryos show no ectopic folds at the head--trunk
-boundary. In contrast to non-cauterized embryos, cauterized embryos show a
-regular epithelium outline without deformations ({@fig:mutcauts}A,D,E). The
-main tissue movements are driven by the mitotic domains which are still present
-({@fig:mutcauts}A). The dividing cells still expand their apical area and
-compress the non-dividing surrounding cells in cauterized mutant embryos.
-However, this compression is insufficient to cause the tissue to buckle
-({@fig:mutcauts}B,C and Video X). Thus, the germ band extension is required for
-the formation of ectopic folds in *btd* and *eve* mutants.
-
-<!--TODO: Measure epithelial straightness in cauterization experiments-->
+We find that cauterized mutant embryos show no ectopic folds at the head--trunk
+boundary. While the epithelium of *btd* and *eve* mutants folds in different
+positions ({@fig:ectopic}D and {@fig:mutcauts}B,C}), the epithelium in
+cauterized embryos is regular with most cell apices facing the vitelline
+envelope ({@fig:mutcauts}B,C). We quantified the epithelial deformations during
+50 min from the onset of gastrulation and find the tortuosity in non-cauterized
+mutants is significantly larger than in cauterized mutants
+({@fig:mutcauts}D,E). While the expansion of dividing cells in mitotic domains
+still displace and compress non-dividing cells at the head--trunk boundary
+({@fig:mutcauts}D), this compression is insufficient to cause the tissue to
+buckle ({@fig:mutcauts}B,C and Video X). These experiments reveal the main
+driving force for the formation of ectopic folds in cephalic furrow mutants is
+the compression of trunk tissues caused by the elongating germ band. 
 
 <!--TODO: Estimate the expansion of head tissues in cauterized embryo-->
 
 <!--These experiments indicate that neither the expansion of head tissues caused by the mitotic domains, nor the compression of head tissues driven by the germ band extension alone are sufficient to cause the epithelium to buckle. But when both processes occur concomitantly, the blastoderm will inevitably buckle.-->
 
-These experiments show the main driving force for the formation of ectopic
-folds in cephalic furrow mutants comes from the global compression of trunk
-tissues caused by the elongating germ band. When mitotic domains are present,
-the dividing cells increase the local tissue interactions creating areas prone
-to buckling, which bias the formation of ectopic folds. However, the germ band
-extension is what drives the formation of ectopic folds.
+<!--When mitotic domains are present, the dividing cells generate areas prone to buckling, which bias the formation of ectopic folds. However, the germ band extension is what drives the formation of ectopic folds.-->
 
 <!--Local tissue strain and global stiffness modulate ectopic folding-->
 
-**[Hypothetical outcome]** To complement our in vivo observations and
-understand the interplay between local and global tissue interactions, we
+We tested how the mitotic strain might bias the position of folding and how the
+mechanical force from the germ band leads to tissue buckling by developing a 1D
+linear model. **[Hypothetical outcome]** To complement our in vivo observations
+and understand the interplay between local and global tissue interactions, we
 developed a 1D linear model that represents the epithelium of a gastrulating
 embryo. We adapted a previous model and reached the set of parameters that
 reproduced epithelial behavior in different conditions in vivo. We first tested
 whether local tissue strain generated by mitotic expansion would cause ectopic
 folds and found it does. However, the formation of ectopic folds depend on
 global stiffness of the tissue, and below a certain threshold no ectopic folds
-form (Figure X).
+form (@fig:model).
 
 # Discussion
 
