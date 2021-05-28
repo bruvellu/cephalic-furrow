@@ -18,7 +18,7 @@ all:
 	cp ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
 	cp ${FIGUREIN}/placeholder.png ${FIGUREOUT}/Fig4.png
 	cp ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig5.png
-	cp ${FIGUREIN}/placeholder.png ${FIGUREOUT}/Fig7.png
+	cp ${FIGUREIN}/placeholder.png ${FIGUREOUT}/Fig6.png
 	#cp ${FIGUREIN}/wildtype-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
 	# Compile timestamped documents to output directory
 	pandoc ${FILE}.md --filter pandoc-fignos --filter pandoc-citeproc --reference-doc=${TEMPLATE}.odt -o ${OUTDIR}/${TIMESTAMPED}.odt
