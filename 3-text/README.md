@@ -8,6 +8,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-05-28**
+
+- Re-placing paragraph about tissue flows.
+
 **2021-05-27**
 
 - Edits paragraph about germ band cauterizations to include tortuosity results. 

@@ -1,7 +1,7 @@
 ---
 title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
 author:
-- Bruno C. Vellutini, Marina B. Cuenca, Carl D. Modes, Pavel Tomancak
+- Bruno C. Vellutini, Marina B. Cuenca, Carl D. Modes et al., Pavel Tomancak
 - Max Planck Institute of Molecular Cell Biology and Genetics
 - Pfotenhauerstraße 108, 01307 Dresden, Germany
 documentclass: article
@@ -185,36 +185,14 @@ As previously described the cephalic furrow fails to initiate at the onset of
 gastrulation in *btd* and *eve* mutants (@fig:ectopic). In later stages of
 gastrulation, however, we detect the occurrence of late folds at the
 head--trunk interface in both *btd* and *eve* mutants, and reveal that *btd*
-embryos also form late ectopic folds at the  during gastrulation
-(@fig:ectopic). While the cephalic furrow in wild type embryos forms in stage
-6, at the onset of gastrulation, the ectopic folds in mutant embryos only
-appear in stage 8, when the germ band has already extended at least a third of
-the embryo length ({@fig:ectopic}A, Video 1 and 2). Unlike the stereotypic
-morphology of the cephalic furrow, the ectopic folds are often asymmetric, have
-a looser cleft between edges, and lack the typical cell shapes at the
-invagination tip and edges ({@fig:ectopic}B). Ectopic folds thus form late and
-have irregular morphology.
-
-<!--TODO: Tissue flow analyses without CF-->
-
-We analyzed the tissue flows in cephalic furrow mutants (homozygotes) in
-comparison to sibling controls (heterozygotes) using PIV analysis. In wild type
-embryogenesis the region of the head--trunk boundary shows a characteristic
-pattern at the onset of gastrulation (before germ band extension and mitotic
-domains). There is a strong flow towards the ventral region at the lateral
-epithelium due to the ventral furrow invagination, while the head tissues and
-dorsal trunk tissues have no direction. Once the cephalic furrow initiates it
-directs the flow towards ventral of the dorsal tissues and a clockwise flow
-pattern in the head, with dorsal tissues moving posteriorly and ventrally while
-ventral head tissues move anteriorly and dorsally. The center of the hurricane
-sits at the ventral portion of the head region just anterior to the cephalic
-furrow. In the absence of the cephalic furrow, the ventral flow is restricted
-to more posterior trunk tissues, while head tissues show more variable
-directions despite also flowing dorsally. We also observe shear effects to
-epithelial cells in cephalic furrow mutants. Once gastrulation proceeds we
-observe an increased flow and a stronger tissue flow towards the anterior due
-to the germ band elongation. These analysis show the flow pattern is disrupted
-in cephalic furrow mutants and the head--trunk boundary as a convergent zone.
+embryos also form late ectopic folds at the during gastrulation (@fig:ectopic).
+While the cephalic furrow in wild type embryos forms in stage 6, at the onset
+of gastrulation, the ectopic folds in mutant embryos only appear in stage 8,
+when the germ band has already extended at least a third of the embryo length
+({@fig:ectopic}A, Video 1 and 2). Unlike the stereotypic morphology of the
+cephalic furrow, the ectopic folds are often asymmetric, have a wider cleft,
+and lack the typical cell morphologies at the invagination tip and edges
+({@fig:ectopic}B). Ectopic folds thus form late and have irregular morphology.
 
 <!--TODO: Figure with shape analysis of ectopic folds.-->
 
@@ -354,6 +332,30 @@ presence, as observed in single *btd* and *eve* mutants, bias the position of
 buckling events in the absence of the cephalic furrow.
 
 <!--In both *stg*--*btd* and *stg*--*eve* double mutants, the ectopic folds are absent, suggesting the presence of mitotic domains is necessary for the formation of ectopic folds. This indicates they play a key role in the balance of local forces that lead to the formation of ectopic folds. -->
+
+
+<!--TODO: Tissue flow analyses before MD-->
+
+<!--TODO: Place this paragraph correctly-->
+
+We analyzed the tissue flows in cephalic furrow mutants in using PIV analysis.
+In wild type embryogenesis the region of the head--trunk boundary shows a
+characteristic pattern at the onset of gastrulation (before germ band extension
+and mitotic domains). There is a strong flow towards the ventral region at the
+lateral epithelium due to the ventral furrow invagination, while the head
+tissues and dorsal trunk tissues have no direction. Once the cephalic furrow
+initiates it directs the flow towards ventral of the dorsal tissues and a
+clockwise flow pattern in the head, with dorsal tissues moving posteriorly and
+ventrally while ventral head tissues move anteriorly and dorsally. The center
+of the hurricane sits at the ventral portion of the head region just anterior
+to the cephalic furrow. In the absence of the cephalic furrow, the ventral flow
+is restricted to more posterior trunk tissues, while head tissues show more
+variable directions despite also flowing dorsally. We also observe shear
+effects to epithelial cells in cephalic furrow mutants. Once gastrulation
+proceeds we observe an increased flow and a stronger tissue flow towards the
+anterior due to the germ band elongation. These analysis show the flow pattern
+is disrupted in cephalic furrow mutants and the head--trunk boundary as a
+convergent zone.
 
 <!--Cauterization experiment to test germ band influence-->
 
@@ -511,9 +513,11 @@ LoPaTs, Akanksha, Vlado, Lemke, LMF, EMBO.
 
 # Figures
 
-![Ectopic folds in *btd* and *eve* mutants. Timing of ectopic folds compared to
-sibling control. Morphology of ectopic folds.](figures/Fig1.png){#fig:ectopic
-width=100%}
+![Formation of late ectopic folds in *btd* and *eve*
+mutants.](figures/Fig1.png){#fig:ectopic width=100%}
+
+<!--TODO: Add timeline of events on the left side for reference.-->
+<!--TODO: Change panel D to later stage to match MD phase.-->
 
 ![Analyses of ectopic fold formation. Dynamics, total folded area, fold depth
 and variability between mutant embryos.](figures/Fig2.png){#fig:variability
@@ -529,7 +533,7 @@ mutants.](figures/Fig4.png){#fig:double width=100%}
 width=100%}
 
 ![Summary figure with cephalic furrow primes folding and buffers head--trunk
-tissue interactions.](figures/Fig7.png){#fig:summary width=100%} 
+tissue interactions.](figures/Fig6.png){#fig:summary width=100%} 
 
 <!--![Cauterization experiments in wild type embryos.](figures/Fig6.png){#fig:wildcauts width=100%}-->
 
@@ -544,16 +548,25 @@ tissue interactions.](figures/Fig7.png){#fig:summary width=100%}
 
 # Videos
 
-<!--TODO: Include eve mutant too-->
 ![Video 1: Formation of ectopic folds in *btd* mutants.](../2-figures/ectopic-folding/video1.png){width=50%}
 
 <!--TODO: Include eve mutant too-->
-<!--TODO: Replace video with the correct one-->
+
 ![Video 2: Formation of ectopic folds in *btd* mutants in profile view.](../2-figures/ectopic-folding/video2.png){width=50%}
+
+<!--TODO: Include eve mutant too-->
+<!--TODO: Replace video with the correct one-->
 
 <!--TODO: Video eve cauterization lightsheet-->
 <!--TODO: Video non-dividing cells in eve cauterized-->
 <!--TODO: Video tissue buckling en-face and profile view-->
+
+\pagebreak
+
+# Supplementary
+
+![Supplementary: Tissue flow in *btd* and *eve* mutants before mitotic
+domains.](figures/Supp1.png){#fig:flows width=100%}
 
 \pagebreak
 
