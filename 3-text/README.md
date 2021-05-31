@@ -10,8 +10,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 **2021-05-31**
 
-- Revised the introduction outline to a more direct storyline about the
+- Revises the introduction outline to a more direct storyline about the
   mechanical role of the cephalic furrow.
+- Adds plot with maximum depth of cephalic furrows and ectopic folds in btd and
+  eve mutant embryos.
 
 **2021-05-28**
 
