@@ -8,6 +8,11 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-05-31**
+
+- Revised the introduction outline to a more direct storyline about the
+  mechanical role of the cephalic furrow.
+
 **2021-05-28**
 
 - Re-placing paragraph about tissue flows.
