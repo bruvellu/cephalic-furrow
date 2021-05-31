@@ -75,6 +75,53 @@ of folding at the head--trunk boundary early in gastrulation.
 
 # Introduction
 
+- Cephalic furrow is prominent feature
+
+- Deep invagination extending from dorsal to ventral
+
+- Formation is genetically-defined
+
+- Narrow row of cells, mechanical coupling
+
+- Stereotypic position and timing precision
+
+- Suggest some role for gastrulation
+
+- However, it is transient and not associated to tissue fates
+
+- Suggests a putative mechanical/physical role
+
+- The global role has been investigated in silico but not in vivo
+
+- We investigate the role of the CF
+
+- Analyze how the lack of CF impacts tissue dynamics
+
+- Find the head--trunk is a convergent zone of tissue flows
+
+- Expansion of mitotic domains and compression of germband are players
+
+- Without CF the head--trunk epithelia suffers from stochastic deformations
+
+- Without CF the tissue inevitably buckles due to mechanical tissue forces
+
+- The CF anticipates and primes the folding position at HTB
+
+- CF thus buffers tissue interactions by directing tissue flows
+
+- CF thus prevents epithelial instability at HTB during gastrulation
+
+
+Cephalic furrow is genetically-defined with a precise stereotypic timing and
+position. The invagination is large extending from dorsal to ventral and deep
+sinking almost the whole yolk invagination at an important anatomical landmark
+of the embryo, the head--trunk boundary. Yet, the cephalic furrow, unlike the
+ventral furrow, does not give rise to a particular cell fates and is transient,
+this massive structure progressively unfolds before germ band retraction. These
+features, being a major but transient structure make the cephalic furrow one of
+the most enigmatic morphogenetic movements in *Drosophila* gastrulation
+(@fig:headtrunk).
+
 <!--The cephalic furrow background-->
 
 The cephalic furrow is a prominent epithelial invagination that forms at the
@@ -138,6 +185,8 @@ interactions at the head--trunk boundary and the global gastrulation dynamics
 we used live-imaging and laser cauterizations in cephalic furrow mutants.
 
 <!--Summary of findings-->
+
+<!--Cephalic furrow directs convergent tissue flow preventing epithelial deformations at the head--trunk boundary.-->
 
 We find that embryos that fail to initiate the cephalic furrow form late
 ectopic folds at the head--trunk interface. These ectopic folds differ from the
