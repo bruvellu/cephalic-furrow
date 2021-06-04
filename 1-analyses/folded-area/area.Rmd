@@ -106,10 +106,15 @@ ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve")), Area, co
 # Plot corrected area of individual folds
 ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, colour = Sample)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
   labs(title = "Invaginated area of cephalic furrow compared to ectopic folds", x = "sample", y = expression(micrometers^2))
-ggsave("folded-area.png")
+ggsave("folded-area_mutants.png")
+
+# Plot corrected area of individual folds by genotype
+ggplot(results, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(draw_quantiles = c("0.5")) + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(x = "Genotype", y = expression(micrometers^2))
+ggsave("folded-area_all.png", width = 5, height = 3)
 
 # Plot raw area of folding per embryo
-ggplot(total, aes(factor(Sample, level = c("control", "btd", "eve")), Area, colour = Sample)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
+ggplot(total, aes(factor(Genotype, level = c("control", "btd", "eve")), Area, colour = Sample)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
 
 # Plot corrected area of folding per embryo
 ggplot(total, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, colour = Sample)) +
