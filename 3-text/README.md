@@ -8,6 +8,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-06-04**
+
+- Changed area plot for furrow presentation.
+
 **2021-05-31**
 
 - Revises the introduction outline to a more direct storyline about the
