@@ -25,3 +25,13 @@ all:
 	pandoc ${FILE}.md --filter pandoc-fignos --filter pandoc-citeproc --reference-doc=${TEMPLATE}.docx -o ${OUTDIR}/${TIMESTAMPED}.docx
 	pandoc ${FILE}.md --filter pandoc-fignos --filter pandoc-citeproc --pdf-engine=pdflatex -o ${OUTDIR}/${TIMESTAMPED}.pdf
 	cp ${FILE}.md ${OUTDIR}/${TIMESTAMPED}.md 
+	# Sync bib file from Paperpile
+	wget --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
+
+bib:
+	# Start bib syncing from Paperpile
+	./syncbib.sh > syncbib.out 2>&1 &
+
+stop:
+	# Stop bib syncing from Paperpile
+	killall syncbib.sh
