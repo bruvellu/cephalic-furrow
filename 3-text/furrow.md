@@ -170,32 +170,32 @@ during gastrulation.
 
 # Results
 
-<!--## Cephalic furrow mutants form variable ectopic folds at the head--trunk boundary-->
+<!--Cephalic furrow mutants form late ectopic folds at the head--trunk boundary-->
 
-<!--Context for late folds in CF mutants-->
-
-We studied cephalic furrow mutants to understand how defects in cephalic furrow
-formation impact the tissue interactions at the head--trunk boundary during
-gastrulation. We generated flies with a fluorescent background and the
-loss-of-function alleles for *btd* or *eve*, and imaged mutant embryos *in
-toto* using lightsheet microscopy.
-
-<!--General description-->
+The cephalic furrow formation is a dynamic and transient process that occurs
+concomitantly with other complex morphogenetic movements of gastrulation. To
+understand how the tissue dynamics at the head--trunk boundary is affected by
+the lack of the cephalic furrow, we studied cephalic furrow mutants under
+live-imaging. We used flies with loss-of-function alleles for *btd* or *eve*,
+which fail to initiate the cephalic furrow, to establish stocks with a green
+balancer over the mutant allele, and a fluorescent membrane marker for the
+imaging. We then imaged the embryos using lightsheet microscopy under
+high-temporal resolution.
 
 <!--Late ectopic folds form in CF mutants-->
 
-As previously described the cephalic furrow fails to initiate at the onset of
-gastrulation in *btd* and *eve* mutants (@fig:ectopic). In later stages of
-gastrulation, however, we detect the occurrence of late folds at the
-head--trunk interface in both *btd* and *eve* mutants, and reveal that *btd*
-embryos also form late ectopic folds at the during gastrulation (@fig:ectopic).
-While the cephalic furrow in wild type embryos forms in stage 6, at the onset
-of gastrulation, the ectopic folds in mutant embryos only appear in stage 8,
-when the germ band has already extended at least a third of the embryo length
-({@fig:ectopic}A, Video 1 and 2). Unlike the stereotypic morphology of the
-cephalic furrow, the ectopic folds are often asymmetric, have a wider cleft,
-and lack the typical cell morphologies at the invagination tip and edges
-({@fig:ectopic}B). Ectopic folds thus form late and have irregular morphology.
+The cephalic furrow fails to initiate at the onset of gastrulation in *btd* and
+*eve* mutants (@fig:ectopic). In later stages of gastrulation, however, we
+detect the occurrence of late folds at the head--trunk interface in both *btd*
+and *eve* mutants, and reveal that *btd* embryos also form late ectopic folds
+at the during gastrulation (@fig:ectopic). While the cephalic furrow in wild
+type embryos forms in stage 6, at the onset of gastrulation, the ectopic folds
+in mutant embryos only appear in stage 8, when the germ band has already
+extended at least a third of the embryo length ({@fig:ectopic}A, Video 1 and
+2). Unlike the stereotypic morphology of the cephalic furrow, the ectopic folds
+are often asymmetric, have a wider cleft, and lack the typical cell
+morphologies at the invagination tip and edges ({@fig:ectopic}B). Ectopic folds
+thus form late and have irregular morphology.
 
 <!--TODO: Figure with shape analysis of ectopic folds.-->
 
@@ -498,9 +498,16 @@ embryonic tissues during gastrulation.
 
 # Methods
 
-## Fly stocks
+## Fly stocks and genetics
 
-btd^XA^, eve^3^, prd^4^, GAP43, ICMT.
+We used the mutant alleles btd^XA^ (FlyBase: FBal0030657, BDSC: #26815) and
+eve^3^ (FlyBase: FBal0003885, BDSC #299), the balancers FM7c-KrGFP (BDSC:
+#5193) and CyO-twiGFP (gift from Akanksha Jain), and the membrane fluorescent
+marker GAP43-mCherry (@Martin2010-pb, gift from Kassiani Skouloudaki), to
+establish the imaging stocks. We imaged the final genotypes
+btd^XA^/FM7c-KrGFP;; GAP43-mCherry/MKRS and eve^3^/CyO-twiGFP;
+GAP43-mCherry/MKRS. We identified homozygous embryos by the absence of GFP
+signal.
 
 ## Live-imaging
 
