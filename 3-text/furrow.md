@@ -525,8 +525,8 @@ LoPaTs, Akanksha, Vlado, Lemke, LMF, EMBO.
 
 # Figures
 
-![Formation of late ectopic folds in *btd* and *eve*
-mutants.](figures/Fig1.png){#fig:ectopic width=100%}
+![Formation of late ectopic folds in *btd* and *eve* mutants. Staging after
+[@Ashburner2005-ym].](figures/Fig1.png){#fig:ectopic width=100%}
 
 <!--TODO: Add timeline of events on the left side for reference.-->
 <!--TODO: Change panel D to later stage to match MD phase.-->
