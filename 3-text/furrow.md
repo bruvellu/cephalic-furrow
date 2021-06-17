@@ -203,6 +203,8 @@ and lack the typical cell morphologies at the invagination tip and edges
 
 <!--Dynamics of ectopic folds is different from CF-->
 
+<!--TODO: Mention the ectopic folds unfold overtime quicker than CF-->
+
 We traced the formation of ectopic folds at the head--trunk epithelia to
 analyze the dynamics, their position, and the area of folded tissue in ectopic
 folds. The number of ectopic in mutants range from one to four on each side of
