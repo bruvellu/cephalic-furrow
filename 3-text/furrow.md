@@ -78,12 +78,14 @@ of folding at the head--trunk boundary early in gastrulation.
 <!--Cephalic furrow is a prominent landmark-->
 
 The cephalic furrow is a prominent epithelial invagination that forms at the
-head--trunk boundary of *Drosophila* during gastrulation. It is one of the
-first morphogenetic movements in the embryo [@Hartenstein1985-zs; @Foe1989-cw]
-and begins as narrow lateral indentations. The invagination quickly extends to
-the dorsal and ventral sides, and invaginate deep into the yolk sac, becoming a
-significant structure at an important landmark of the embryo, the head--trunk
-boundary.
+head--trunk boundary of *Drosophila* during gastrulation. It begins as lateral
+indentations that extend to the dorsal and ventral sides and, in a matter of
+minutes, invaginate deep into the yolk sac [@Hartenstein1985-zs; @Foe1989-cw].
+Together with the ventral furrow and posterior midgut invagination, the
+cephalic furrow is one of the first morphogenetic movements in the embryo, but
+one whose developmental mechanisms and role remain poorly understood.
+
+<!--A significant structure at an important landmark of the embryo, the head--trunk boundary.-->
 
 <!--Cephalic furrow formation is precisely patterned-->
 
@@ -170,7 +172,7 @@ during gastrulation.
 
 # Results
 
-<!--Cephalic furrow mutants form late ectopic folds at the head--trunk boundary-->
+<!--Cephalic furrow mutants show late ectopic folds at the head--trunk boundary-->
 
 The cephalic furrow formation is a dynamic and transient process that occurs
 concomitantly with other complex morphogenetic movements of gastrulation. To
