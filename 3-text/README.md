@@ -10,6 +10,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 **2021-06-17**
 
+- Revamps the first paragraphs of results compiling information.
+
+**2021-06-17**
+
 - Adds fly stock and staging information, and few edits to results.
 
 **2021-06-04**
