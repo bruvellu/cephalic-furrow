@@ -8,9 +8,15 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
-**2021-06-17**
+**2021-06-19**
 
-- Revamps the first paragraphs of results compiling information.
+- Major cleanup in the results revising the story and including the list of
+  supporting Figures, Videos, Tables and Supplementary material.
+
+**2021-06-18**
+
+- Revamps the first paragraphs of results compiling information about the
+  dynamics and properties of ectopic folds.
 
 **2021-06-17**
 
