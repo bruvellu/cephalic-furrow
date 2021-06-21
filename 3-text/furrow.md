@@ -471,11 +471,19 @@ LoPaTs, Akanksha, Vlado, Lemke, LMF, EMBO.
 
 # Figures
 
-![Late epithelial folds in *btd* and *eve* mutants. Developmental staging based on
+![Late ectopic folds folds in *btd* and *eve* mutants. (A) Lateral views of a
+btd heterozygote (control), a btd homozygote, and an eve homozygote showing the
+late formation of ectopic folds around 35--45% germ band extension after the
+appearance of mitotic domains. (B) Profile views of control, btd and eve
+embryos showing the morphology of the ectopic folds compared to the cephalic
+furrow. (C) Illustration showing the timing of developmental events in wild
+type compared to cephalic furrow mutants. (D) Length of cephalic furrow
+compared to ectopic folds in btd and eve embryos. Arrows indicate the cephalic
+furrow. Arrowheads indicate ectopic folds. Asterisks indicate the position of
+mitotic domains. Developmental staging based on
 @Ashburner2005-ym.](figures/Fig1.png){#fig:ectopic width=100%}
 
-<!--TODO: Add timeline of events on the left side for reference-->
-<!--TODO: Change panel D to later stage to match MD phase-->
+<!--TODO: Improve timeline of developmental events-->
 
 ![Characterization of ectopic fold formation in *btd* and *eve*
 mutants.](figures/Fig2.png){#fig:dynamics width=100%}

@@ -8,6 +8,14 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-06-21**
+
+- Adjusted and improved Figure 1. Added more annotations, rearranged panels,
+  added draft for illustration of developmental events, and moved panel of fold
+  depth from Figure 2 to Figure 1.
+- Wrote draft legend for Figure 1.
+
+
 **2021-06-19**
 
 - Major cleanup in the results revising the story and including the list of
