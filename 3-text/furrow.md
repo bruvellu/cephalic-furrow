@@ -488,10 +488,9 @@ mitotic domains. Developmental staging based on
 ![Characterization of ectopic fold formation in *btd* and *eve*
 mutants.](figures/Fig2.png){#fig:dynamics width=100%}
 
-<!--TODO: Include panel with individual mutant embryos-->
-<!--TODO: Move panel I (fold variability) to Fig3-->
-<!--TODO: Add panel with left-right or in supplementary?-->
-<!--TODO: Angle and tortuosity analysis from fold traces-->
+<!--TODO: Add angle and tortuosity analysis from fold traces-->
+<!--TODO: Move panel I (fold variability) to Fig3?-->
+<!--TODO: Move panel left-right to supplementary?-->
 
 ![Position of ectopic folds in relation to mitotic
 domains.](figures/Fig3.png){#fig:mitotic width=100%}

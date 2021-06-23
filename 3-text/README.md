@@ -11,6 +11,7 @@ Use the latest timestamped-document in the `versions` directory for revising.
 **2021-06-23**
 
 - Made illustration for Figure 1 and adjusted the plot of fold depth.
+- Re-plot folded area with latest theme and made adjustments to Figure 2.
 
 **2021-06-21**
 
