@@ -483,13 +483,12 @@ furrow. Arrowheads indicate ectopic folds. Asterisks indicate the position of
 mitotic domains. Developmental staging based on
 @Ashburner2005-ym.](figures/Fig1.png){#fig:ectopic width=100%}
 
-<!--TODO: Improve timeline of developmental events-->
+<!--TODO: Adjust colorscheme.-->
 
 ![Characterization of ectopic fold formation in *btd* and *eve*
 mutants.](figures/Fig2.png){#fig:dynamics width=100%}
 
 <!--TODO: Include panel with individual mutant embryos-->
-<!--TODO: Move panel H (fold depth plot) to Fig1-->
 <!--TODO: Move panel I (fold variability) to Fig3-->
 <!--TODO: Add panel with left-right or in supplementary?-->
 <!--TODO: Angle and tortuosity analysis from fold traces-->

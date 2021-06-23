@@ -8,6 +8,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-06-23**
+
+- Made illustration for Figure 1 and adjusted the plot of fold depth.
+
 **2021-06-21**
 
 - Adjusted and improved Figure 1. Added more annotations, rearranged panels,

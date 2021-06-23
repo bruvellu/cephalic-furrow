@@ -1,0 +1,41 @@
+---
+title: "Depth measurements cephalic furrow mutants"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: May 31, 2021
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+library(ggplot2)
+```
+
+
+## Load measurements
+
+```{r load}
+# Load raw ROI measurements from ImageJ
+results <- read.delim("results.txt")
+
+# Replace label by filename
+results$Label <- sapply(strsplit(results$Label, ":"), "[", 1)
+
+# Load sample info and merge with results
+samples <- read.delim("samples.csv", sep = ",")
+results <- merge(results, samples, by = "Label", all.x = TRUE)
+
+```
+
+```{r plot}
+# Plot stocks together
+ggplot(results, aes(Genotype, Length, color = Genotype)) + geom_violin(draw_quantiles = c("0.5")) + geom_jitter(width = 0.1) + theme_classic()
+ggsave("depth_all.png", width = 5, height = 3)
+
+# Plot stocks separately
+ggplot(results, aes(Genotype, Length, color = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(width = 0.1, show.legend = FALSE) + facet_wrap(~Sample) + labs(x = "Mutant", y = "Depth") + scale_color_manual(values=c("#d55e00", "#e69f03")) + theme_classic()
+ggsave("depth_facet.png")
+
+
+```
+
+
