@@ -14,7 +14,7 @@ all:
 	# Cleanup and copy updated figures to figure directory
 	rm ${FIGUREOUT}/*
 	cp ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
-	cp ${FIGUREIN}/ectopic-variability/figure.png ${FIGUREOUT}/Fig2.png
+	cp ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig2.png
 	cp ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
 	cp ${FIGUREIN}/placeholder.png ${FIGUREOUT}/Fig4.png
 	cp ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig5.png
