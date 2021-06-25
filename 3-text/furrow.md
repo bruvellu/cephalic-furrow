@@ -483,7 +483,7 @@ furrow. Arrowheads indicate ectopic folds. Asterisks indicate the position of
 mitotic domains. Developmental staging based on
 @Ashburner2005-ym.](figures/Fig1.png){#fig:ectopic width=100%}
 
-<!--TODO: Adjust colorscheme.-->
+<!--TODO: Adjust colorscheme-->
 
 ![Characterization of ectopic fold formation in *btd* and *eve*
 mutants.](figures/Fig2.png){#fig:dynamics width=100%}
@@ -495,15 +495,14 @@ mutants.](figures/Fig2.png){#fig:dynamics width=100%}
 ![Position of ectopic folds in relation to mitotic
 domains.](figures/Fig3.png){#fig:mitotic width=100%}
 
-<!--TODO: Remove panel C with eve embryo-->
 <!--TODO: Include a better view of tissue compression-->
-<!--TODO: Include a PIV with the mitotic expansion-->
+<!--TODO: PIV of CF vs EF and video-->
 
 ![Ectopic folds in *stg* *btd* and *stg* *eve* double
 mutants.](figures/Fig4.png){#fig:double width=100%}
 
-![Cauterization experiments in mutant embryos.](figures/Fig5.png){#fig:cauterization
-width=100%}
+![Cauterization experiments in mutant
+embryos.](figures/Fig5.png){#fig:cauterization width=100%}
 
 ![Summary figure with cephalic furrow primes folding and buffers head--trunk
 tissue interactions.](figures/Fig6.png){#fig:summary width=100%} 

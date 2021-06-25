@@ -8,6 +8,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-06-25**
+
+- Included a PIV analysis of the tissue displacement during tissue buckling.
+
 **2021-06-23**
 
 - Made illustration for Figure 1 and adjusted the plot of fold depth.
