@@ -501,6 +501,8 @@ domains.](figures/Fig3.png){#fig:mitotic width=100%}
 ![Ectopic folds in *stg* *btd* and *stg* *eve* double
 mutants.](figures/Fig4.png){#fig:double width=100%}
 
+<!--TODO: Needs RNAi or double mutants-->
+
 ![Cauterization experiments in mutant
 embryos.](figures/Fig5.png){#fig:cauterization width=100%}
 

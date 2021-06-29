@@ -8,6 +8,12 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-06-29**
+
+- Drafted illustration of germ band cauterization.
+- Changed plot coloring.
+- Added tortuosity analysis files.
+
 **2021-06-25**
 
 - Included a PIV analysis of the tissue displacement during tissue buckling.

@@ -66,17 +66,15 @@ for (d in 1:length(datafiles)) {
 
 ```{r plot}
 # Plot stocks together
-ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(alpha = 0.8, position = position_dodge(width = 2), show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#009966", "#d55e00")) + theme_classic()
+ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(alpha = 0.8, position = position_dodge(width = 2), show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#d55e00")) + theme_classic()
 ggsave("tortuosity_all_boxplot.png")
-ggplot(datasets, aes(minute, tortuosity, color = sample)) + geom_smooth(span = 0.3)
+ggplot(datasets, aes(minute, tortuosity, color = sample)) + geom_smooth(span = 0.3, show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#d55e00")) + theme_classic()
 ggsave("tortuosity_all_smooth.png", width = 7, height = 3)
 
-ggplot(results, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = expression(micrometers^2)) + facet_wrap(~Stock) + scale_color_manual(values=c("#d55e00", "#e69f03")) + theme_classic()
-
 # Plot stocks separately
-ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot() + geom_point(position = position_dodge(width = 2)) + facet_wrap(~stock)
+ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(position = position_dodge(width = 2), show.legend = FALSE) + facet_wrap(~stock) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#d55e00")) + theme_classic()
 ggsave("tortuosity_facet_boxplot.png")
-ggplot(datasets, aes(minute, tortuosity, color = sample)) + geom_smooth(span = 0.3) +facet_wrap(~stock)
+ggplot(datasets, aes(minute, tortuosity, color = sample)) + geom_smooth(span = 0.3, show.legend = FALSE) + facet_wrap(~stock) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#d55e00")) + theme_classic()
 ggsave("tortuosity_facet_smooth.png")
 
 ```
