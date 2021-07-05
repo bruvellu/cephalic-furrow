@@ -28,11 +28,11 @@ results <- merge(results, samples, by = "Label", all.x = TRUE)
 
 ```{r plot}
 # Plot stocks together
-ggplot(results, aes(Genotype, Length, color = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = "depth") + scale_color_manual(values=c("#009966", "#d55e00")) + theme_classic()
+ggplot(results, aes(Genotype, Length, color = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = "depth") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("depth_all.png")
 
 # Plot stocks separately
-ggplot(results, aes(Genotype, Length, color = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + facet_wrap(~Sample) + labs(x = "mutant", y = "depth") + scale_color_manual(values=c("#009966", "#d55e00")) + theme_classic()
+ggplot(results, aes(Genotype, Length, color = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + facet_wrap(~Sample) + labs(x = "mutant", y = "depth") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("depth_facet.png")
 
 

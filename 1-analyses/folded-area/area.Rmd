@@ -109,7 +109,7 @@ ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr
 ggsave("folded-area_mutants.png")
 
 # Plot corrected area of individual folds
-ggplot(results, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = expression(micrometers^2)) + facet_wrap(~Stock) + scale_color_manual(values=c("#d55e00", "#e69f03")) + theme_classic()
+ggplot(results, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = expression(micrometers^2)) + facet_wrap(~Stock) + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("folded-area_mutants_facet.png")
 
 # Plot corrected area of individual folds by genotype
@@ -126,7 +126,7 @@ ggplot(total, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, 
   labs(title = "Total area of folded tissue", x = "sample", y = expression(micrometers^2))
 
 # Plot corrected area of folding per embryo
-ggplot(total, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = expression(micrometers^2)) + facet_wrap(~Stock) + scale_color_manual(values=c("#d55e00", "#e69f03")) + theme_classic()
+ggplot(total, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = expression(micrometers^2)) + facet_wrap(~Stock) + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("folded-area_all_facet.png")
 
 # Plot correlation between raw area and number of folds
