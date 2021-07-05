@@ -8,6 +8,16 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-07-05**
+
+- Drafted summary figure with illustrations.
+
+**2021-07-03**
+
+- Finished illustrations for core figures.
+- Included plots from Marina.
+
+
 **2021-06-29**
 
 - Drafted illustration of germ band cauterization.
