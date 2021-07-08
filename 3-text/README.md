@@ -8,6 +8,15 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-07-08**
+
+- Incorporated revisions to abstract.
+
+**2021-07-07**
+
+- Revised the text in print and developed better the outline for the discussion
+  and introduction.
+
 **2021-07-05**
 
 - Drafted summary figure with illustrations.
