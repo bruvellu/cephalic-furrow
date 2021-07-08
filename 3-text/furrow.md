@@ -1,9 +1,14 @@
 ---
 title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
 author:
-- Bruno C. Vellutini, Marina B. Cuenca, Carl D. Modes et al., Pavel Tomancak
-- Max Planck Institute of Molecular Cell Biology and Genetics
-- Pfotenhauerstraße 108, 01307 Dresden, Germany
+- Bruno C. Vellutini
+- Marina B. Cuenca
+- Abhijeet Krishna
+- Alicja Szalapak
+- Carl D. Modes
+- Pavel Tomancak
+institute:
+- Max Planck Institute of Molecular Cell Biology and Genetics, Pfotenhauerstraße 108, 01307 Dresden, Germany
 documentclass: article
 bibliography: furrow.bib
 csl: elife.csl
@@ -23,8 +28,6 @@ fignos-plus-name: Figure
 tablenos-cleveref: True
 tablenos-plus-name: Table
 ...
-
-<!--TODO: Use author filter https://github.com/pandoc/lua-filters/tree/master/scholarly-metadata-->
 
 <!--TODO: Consider alternative titles.
 
@@ -71,8 +74,9 @@ folds. We show these ectopic folds are the result of mechanical interactions
 between head and trunk tissues, which are associated with the expansion of
 mitotic domains and the extension of the germ band. We thus propose that, by
 priming the position of folding and storing epithelia out-of-plane, the
-cephalic furrow counteracts and buffers these opposing physical interactions at
-the head--trunk boundary during gastrulation.
+cephalic furrow counteracts and buffers these opposing physical interactions
+preventing epithelial instability at the head--trunk boundary during
+gastrulation.
 
 # Introduction
 
