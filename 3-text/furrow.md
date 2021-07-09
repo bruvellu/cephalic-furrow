@@ -77,44 +77,71 @@ the position of folding and storing epithelia out-of-plane, the cephalic furrow
 counteracts and buffers these opposing physical interactions preventing
 epithelial instability at the head--trunk boundary during gastrulation.
 
+<!--TODO: Needs to improve key finding-->
+
 # Introduction
+
+<!--Drosophila gastrulation is complex-->
+
+Gastrulation is a key moment in development. Some animals do it simply, others
+have an elaborate orchestration of tissue movements. The fly *Drosophila
+melanogaster* has a derived and complex gastrulation process with several
+concomitant invaginations, cell and morphogenetic processes, and tissue flows
+across the embryo [@RefFlyGastrulation].
+
+<!--Other movements have a clear role; the cephalic furrow not so.-->
+
+When Drosophila embryos gastrulate, a ventral invagination segregates
+mesodermal tissues and gives rise to muscles, anterior and posterior
+invaginations give rise to the foregut and hindgut at both ends of the
+digestive tube, and the germ band extension quickly performs the axis
+elongation of the embryo. Among these processes, however, there is one whose
+function remains mysterious despite its prominent position in the embryo---the
+cephalic furrow.
+
+<!--In this dynamic puzzle, however, a significant element is missing.-->
 
 <!--Cephalic furrow is a prominent landmark-->
 
-The cephalic furrow is a prominent epithelial invagination that forms at the
-head--trunk boundary of *Drosophila* during gastrulation. It begins as lateral
-indentations that extend to the dorsal and ventral sides and, in a matter of
-minutes, invaginate deep into the yolk sac [@Hartenstein1985-zs; @Foe1989-cw].
-Together with the ventral furrow and posterior midgut invagination, the
-cephalic furrow is one of the first morphogenetic movements in the embryo, but
-one whose developmental mechanisms and role remain poorly understood.
-
-<!--A significant structure at an important landmark of the embryo, the head--trunk boundary.-->
+The cephalic furrow is a deep invagination that forms in the gastrulating
+*Drosophila* embryo. It is one of the first morphogenetic movements in the
+embryo initiating at the onset of gastrulation together with the ventral
+furrow. The cephalic furrow begins as lateral indentations that invaginate deep
+into the yolk sac, extending completely to the dorsal and ventral sides in a
+matter of minutes [@Hartenstein1985-zs; @Foe1989-cw]. The structure demarcates
+a major landmark in the embryo, the position between the procephalon and the
+germ band, or in other words, the head--trunk boundary of *Drosophila*.
 
 <!--Cephalic furrow formation is precisely patterned-->
 
-The formation of the cephalic furrow is determined genetically. The position is
-determined by the overlap between the zygotic expression of *buttonhead*
-(*btd*) and *even skipped* (*eve*) stripe 1 [@Vincent1997-fa]. This narrow row
-of initiator cells undergo a coordinated series of cell shape changes, sink
-below the epithelial basal lamina and progressively invaginate into the yolk
-[@Spencer2015-td; @Eritano2020-mi]. A mechanical coupling between epithelial
-cells ensures the precision of the fold [@Eritano2020-mi] and the cephalic
-furrow is positioned with 1% accuracy along the embryo length [@Liu2013-lc].
-This reveals there is a precise stereotypic genetic patterning in place
-coordinating the timing and position of cephalic furrow formation during
-gastrulation, suggesting it must be good for something.
+This position is specified genetically by the zygotic expression of
+*buttonhead* (*btd*) and *even skipped* (*eve*) stripe 1 [@Vincent1997-fa],
+with an impressive 1% accuracy along the body length [@Liu2013-lc]. The
+specified initiator cells then undergo a coordinated series of cell shape
+changes which drive epithelial cells below the basal lamina [@Spencer2015-td],
+while mechanical coupling mechanisms between epithelial cells ensure the
+precision of the fold [@Eritano2020-mi].
 
-<!--Cephalic furrow developmental role is unclear-->
+<!--Genetics control CF specification and morphogenesis-->
 
-However, unlike the ventral furrow, however, the invaginated cells do not give
-rise to any particular tissue. It is a dead end of folded cells. In addition,
-the cephalic furrow is transient, unfolding after a couple of hours of
-gastrulation before germ band retraction [@Gilmour2017-um; @Vincent1997-fa].
-This prominent but ephemeral existence makes the cephalic furrow one of the
-most enigmatic traits of gastrulation (@fig:headtrunk), raising the question if
-the cephalic furrow has a mechanical/physical rather than patterning/regulatory
-role during gastrulation.
+<!--Cephalic furrow is transient and leaves no trace-->
+
+The invaginated cells of the cephalic furrow, however, unlike the ventral
+furrow and other invaginations, do not give rise to any particular tissue in
+the embryo. In fact, the cephalic furrow is a transient invagination, and
+unfolds entirely in a couple of hours after gastrulation [@Gilmour2017-um; @Vincent1997-fa]. 
+
+<!--The cephalic furrow paradox-->
+
+The cephalic furrow thus leaves us with a paradox. Even though its patterning
+and morphogenesis is under precise genetic control, and it prominently
+demarcates a significant anatomical landmark of the body, the cephalic furrow
+is not associated with fate specification, and vanishes leaving no
+morphological traces in the embryo. This prominent but ephemeral existence
+makes the cephalic furrow one of the most enigmatic traits of *Drosophila*
+gastrulation (@fig:headtrunk).
+
+<!--raising the question if the cephalic furrow has a mechanical/physical rather than patterning/regulatory role during gastrulation.-->
 
 <!--Cephalic furrow physical role-->
 
