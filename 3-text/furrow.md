@@ -81,16 +81,15 @@ epithelial instability at the head--trunk boundary during gastrulation.
 
 # Introduction
 
-<!--Drosophila gastrulation is complex-->
-
+<!--Gastrulation is a fundamental event in animal development-->
 Gastrulation is a key moment in development. Some animals do it simply, others
 have an elaborate orchestration of tissue movements. The fly *Drosophila
 melanogaster* has a derived and complex gastrulation process with several
 concomitant invaginations, cell and morphogenetic processes, and tissue flows
 across the embryo [@RefFlyGastrulation].
+<!--Fly gastrulation is highly derived, complex and fascinating-->
 
-<!--Other movements have a clear role; the cephalic furrow not so.-->
-
+<!--Invaginations and movements are well-understood-->
 When Drosophila embryos gastrulate, a ventral invagination segregates
 mesodermal tissues and gives rise to muscles, anterior and posterior
 invaginations give rise to the foregut and hindgut at both ends of the
@@ -98,11 +97,11 @@ digestive tube, and the germ band extension quickly performs the axis
 elongation of the embryo. Among these processes, however, there is one whose
 function remains mysterious despite its prominent position in the embryo---the
 cephalic furrow.
+<!--Except for the cephalic furrow which remains mysterious-->
 
-<!--In this dynamic puzzle, however, a significant element is missing.-->
+<!--Other movements have a clear role; the cephalic furrow not so.-->
 
-<!--Cephalic furrow is a prominent landmark-->
-
+<!--Cephalic furrow is an early and deep invagination-->
 The cephalic furrow is a deep invagination that forms in the gastrulating
 *Drosophila* embryo. It is one of the first morphogenetic movements in the
 embryo initiating at the onset of gastrulation together with the ventral
@@ -111,56 +110,38 @@ into the yolk sac, extending completely to the dorsal and ventral sides in a
 matter of minutes [@Hartenstein1985-zs; @Foe1989-cw]. The structure demarcates
 a major landmark in the embryo, the position between the procephalon and the
 germ band, or in other words, the head--trunk boundary of *Drosophila*.
+<!--Demarcates a significant morphological landmark in the embryo-->
 
-<!--Cephalic furrow formation is precisely patterned-->
+<!--Cephalic furrow formation is stereotypic and controlled genetically-->
+Cephalic furrow formation is controlled genetically. This position is specified
+by the zygotic expression of *buttonhead* (*btd*) and *even skipped* (*eve*)
+stripe 1 [@Vincent1997-fa], with 1% accuracy along the body length
+[@Liu2013-lc]. The specified initiator cells then undergo a coordinated series
+of cell shape changes [@Spencer2015-td] driven by lateral myosin contractility
+[@Eritano2020-mi], which triggers the infolding of epithelial cells below the
+basal lamina, while mechanical coupling mechanisms between epithelial cells
+ensure the precision of the fold. Thus, flies evolved precise developmental
+mechanisms in place to initiate and drive cephalic furrow formation at the
+onset of gastrulation.
+<!--Developmental mechanisms are in place for formation-->
 
-This position is specified genetically by the zygotic expression of
-*buttonhead* (*btd*) and *even skipped* (*eve*) stripe 1 [@Vincent1997-fa],
-with an impressive 1% accuracy along the body length [@Liu2013-lc]. The
-specified initiator cells then undergo a coordinated series of cell shape
-changes which drive epithelial cells below the basal lamina [@Spencer2015-td],
-while mechanical coupling mechanisms between epithelial cells ensure the
-precision of the fold [@Eritano2020-mi].
-
-<!--Genetics control CF specification and morphogenesis-->
-
-<!--Cephalic furrow is transient and leaves no trace-->
-
-The invaginated cells of the cephalic furrow, however, unlike the ventral
-furrow and other invaginations, do not give rise to any particular tissue in
-the embryo. In fact, the cephalic furrow is a transient invagination, and
-unfolds entirely in a couple of hours after gastrulation [@Gilmour2017-um; @Vincent1997-fa]. 
-
-<!--The cephalic furrow paradox-->
-
-The cephalic furrow thus leaves us with a paradox. Even though its patterning
-and morphogenesis is under precise genetic control, and it prominently
-demarcates a significant anatomical landmark of the body, the cephalic furrow
-is not associated with fate specification, and vanishes leaving no
-morphological traces in the embryo. This prominent but ephemeral existence
-makes the cephalic furrow one of the most enigmatic traits of *Drosophila*
-gastrulation (@fig:headtrunk).
-
-<!--raising the question if the cephalic furrow has a mechanical/physical rather than patterning/regulatory role during gastrulation.-->
-
-<!--Cephalic furrow physical role-->
-
-The physical role of the cephalic furrow has been investigated in silico.
-Numerical approaches suggest the cephalic furrow might play a global role to
-the complex morphogenetic movements of gastrulation [@Allena2012-pb;
-@Dicko2017-wz]. One hypothesis is that the cephalic furrow act as a barrier to
-the tissue flows and orients the germ band extension towards the posterior
-[@Dicko2017-wz]. However, the interactions of the cephalic furrow with other
-gastrulation movements have not been investigated *in vivo* [@Kong2017-ac].
+<!--Enigmatic because transient and leaves no trace-->
+Despite the patterning and morphogenesis being under genetic control, and
+demarcating a significant anatomical landmark of the body, the role of the
+cephalic furrow remains enigmatic. Unlike the ventral furrow, the invaginated
+cells of the cephalic furrow do not give rise to any particular tissue in the
+embryo. More intriguingly, the cephalic furrow is transient and unfolds and
+vanishes entirely after gastrulation leaving no morphological traces
+[@Gilmour2017-um; @Vincent1997-fa]. This raises the question whether the
+cephalic furrow might play a physical role during gastrulation.
+<!--Might have a physical rather than regulatory role-->
 
 <!--Approach of this study-->
-
-Here we investigate the mechanical role of the cephalic furrow by analyzing how
-defects in cephalic furrow formation impact the local tissue interactions at
-the head--trunk boundary and the global dynamics of gastrulation.
+Here we investigate this hypothesis by analyzing how defects in cephalic furrow
+formation impact the local tissue interactions at the head--trunk boundary and
+the global dynamics of gastrulation.
 
 <!--Summary of findings-->
-
 We find that when the cephalic furrow fails to invaginate, the epithelia at the
 head--trunk interface shows unpredictable deformations and buckling events. We
 show the tissue buckling is the result of mechanical forces acting on the
@@ -205,50 +186,62 @@ during gastrulation.
 
 <!--Live-imaging of cephalic furrow mutants to capture tissue dynamics-->
 
-The cephalic furrow formation is a dynamic and transient process that occurs
-concomitantly with other morphogenetic movements during gastrulation. To
-understand how the tissue dynamics at the head--trunk boundary is affected by
-the lack of the cephalic furrow, we studied cephalic furrow mutants using
-live-imaging. We generated fluorescent strains containing the loss-of-function
-alleles for the genes *btd* and *eve*, and imaged the embryos using lightsheet
-microscopy under high-temporal resolution.
+The formation of the cephalic furrow is a dynamic and transient process that
+occurs within a short window of time during gastrulation. To understand how the
+tissue dynamics at the head--trunk boundary is affected by the lack of the
+cephalic furrow, we studied cephalic furrow mutants using live-imaging. We
+generated fly strains containing the loss-of-function alleles *btd^XA* and
+*eve^3* and the fluorescent membrane marker Gap43-mCherry, and imaged the
+embryos using lightsheet microscopy under high-temporal resolution.
 
 <!--Mutants show late ectopic folds at the head--trunk boundary-->
 
-While the cephalic furrow in wild type embryos is fully invaginated by stage 7
-({@fig:ectopic}A), the cephalic furrow in *btd* and *eve* mutants fails to
-initiate [@Vincent1997-fa], and no indentation is visible at the onset of
-gastrulation ({@fig:ectopic}B--C). Interestingly, in the subsequent stage 8 we
-detect the formation of epithelial folds at the head--trunk interface of both
-mutants ({@fig:ectopic}A--C, Video 1). These late ectopic folds have been
-observed in *eve* mutants but their developmental origin remained unclear
-[@Vincent1997-fa]. The finding that both *btd* and *eve* mutants exhibit late
-ectopic folds suggests they might be a consequence for the lack of a cephalic
-furrow. This led us to analyze the formation of ectopic folds in greater detail
-to understand what is driving their formation.
-
-<!--We traced the formation of ectopic folds at the head--trunk epithelia to analyze the dynamics, their position, and the area of folded tissue in ectopic folds. -->
+In wild type embryos and sibling controls (i.e. *btd* and *eve* heterozygotes),
+the cephalic furrow begins to invaginate in stage 6 and is fully invaginated by
+stage 8 ({@fig:ectopic}A). In *btd* and *eve* mutants, the cephalic furrow
+fails to initiate [@Vincent1997-fa], and no indentation is visible in stages 6
+and 7a ({@fig:ectopic}A). In subsequent stages 7b and 8, however, we detect the
+formation of epithelial folds at the head--trunk interface of *btd* and *eve*
+mutants ({@fig:ectopic}A,C, Video 1). These late folds lack the stereotypic
+cell morphologies, such as wedge-shaped apex cells, have a wider, often
+asymmetric cleft, and are shallower compared to the cephalic furrow
+({@fig:ectopic}B,D, Video 2). To understand the processes driving ectopic fold
+formation in *btd* and *eve* mutants, and uncover their developmental origins,
+we analyzed how the formation of ectopic folds compares to the cephalic furrow
+formation.
 
 <!--Ectopic fold shape, dynamics and size-->
 
-The ectopic folds have an irregular appearance due to the lack of the
-stereotypic cell morphologies at the apex and edges, and to the wider, often
-asymmetric open cleft when compared to the cephalic furrow ({@fig:ectopic}B,
-Video 2). They are also shallower than the cephalic furrow invagination
-({@fig:dynamics}H). The number of folds forming on each side of individual
-embryos varies between one and four, and mutants without ectopic folds are rare
-(Table X). In general, the ectopic folds form in a straight line tilted with an
-angle to the anteroposterior axis ({@fig:dynamics}B,C). Compared to the
-cephalic furrow, the ectopic folds do not bend, do not extend as far dorsal or
-ventral, and unfold earlier than the cephalic furrow ({@fig:dynamics}A,
-Video 3). We then estimated the area of folded epithelial tissue contained in
-ectopic folds by backtracking the infolded cells in cartographic projections of
-our recordings ({@fig:dynamics}D--F). We find the total area of folded
-tissue per embryo in *btd* and *eve* mutants is roughly half of the total area
-of the cephalic furrow invagination in sibling controls ({@fig:dynamics}G).
-These data reveal significant differences between the dynamics and properties
-of ectopic folds and the formation of the cephalic furrow, suggesting the two
-are formed by distinct developmental mechanisms.
+<!--TODO: Include tortuosity of dorsal views around here-->
+
+<!--TODO: How long does the cephalic and ectopic lasts (get numbers)-->
+
+We traced the formation of ectopic folds at the head--trunk epithelia and
+measured how their shape, angle, area, and position changed over time. The
+number of ectopic folds on each side of the embryo varies between one and four,
+and mutants without ectopic folds are rare (Table X). The dynamics of ectopic
+fold formation differs from cephalic furrow formation. The cephalic furrow
+forms as a straight line almost orthogonal to the anteroposterior axis, and
+progressively tilts from ~80° to ~60°, and becomes curved in the first 15 min
+after gastrulation ({@fig:dynamics}E,F). In contrast, ectopic folds form with
+variable angles (between 80°--50°) and tortuosity values without any particular
+trend ({@fig:dynamics}E,F). While controls show a consistent shift in angle,
+btd shifts are more variable ({@fig:dynamics}H). Ectopic folds remain mostly
+straight without extending as far dorsal or ventral, and unfold earlier
+compared to the cephalic furrow (Video 3).
+
+We then estimated the area of folded epithelial tissue contained in ectopic
+folds by backtracking the infolded cells in cartographic projections of our
+recordings ({@fig:dynamics}D--F). We find the total area of folded tissue per
+embryo in *btd* and *eve* mutants is roughly half of the total area of the
+cephalic furrow invagination in sibling controls ({@fig:dynamics}G). These data
+reveal significant differences between the dynamics and properties of ectopic
+folds and the formation of the cephalic furrow, suggesting the two are formed
+by distinct developmental mechanisms.
+
+<!--TODO: Move to discussion-->
+<!--The formation of ectopic folds might be a common effect for the lack of the cephalic furrow.-->
+<!--These late ectopic folds have been observed in *eve* mutants but their developmental origin remained unclear [@Vincent1997-fa].-->
 
 <!--We observe that individual mutant embryos can have the same total invaginated area either having one deep fold or two shallower folds.-->
 
@@ -389,6 +382,11 @@ form (@fig:model).
 
 # Discussion
 
+<!--TODO: Physical in silico role of the cephalic furrow-->
+
+<!--The physical role of the cephalic furrow has been investigated in silico. Numerical approaches suggest the cephalic furrow might play a global role to the complex morphogenetic movements of gastrulation [@Allena2012-pb; @Dicko2017-wz]. One hypothesis is that the cephalic furrow act as a barrier to the tissue flows and orients the germ band extension towards the posterior [@Dicko2017-wz]. However, the interactions of the cephalic furrow with other gastrulation movements have not been investigated *in vivo* [@Kong2017-ac].-->
+
+
 <!--General introduction to cephalic furrow topic-->
 
 The cephalic furrow remains the least understood morphogenetic movements of
@@ -519,7 +517,8 @@ mitotic domains. Developmental staging based on
 ![Characterization of ectopic fold formation in *btd* and *eve*
 mutants.](figures/Fig2.png){#fig:dynamics width=100%}
 
-<!--TODO: Add angle and tortuosity analysis from fold traces-->
+<!--TODO: Move panels D,E,H to same row-->
+<!--TODO: Move panel C down and F,G to the right-->
 <!--TODO: Move panel I (fold variability) to Fig3?-->
 <!--TODO: Move panel left-right to supplementary?-->
 
