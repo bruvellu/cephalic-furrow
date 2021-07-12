@@ -230,6 +230,8 @@ btd shifts are more variable ({@fig:dynamics}H). Ectopic folds remain mostly
 straight without extending as far dorsal or ventral, and unfold earlier
 compared to the cephalic furrow (Video 3).
 
+<!--TODO: Continue from here-->
+
 We then estimated the area of folded epithelial tissue contained in ectopic
 folds by backtracking the infolded cells in cartographic projections of our
 recordings ({@fig:dynamics}D--F). We find the total area of folded tissue per

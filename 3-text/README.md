@@ -8,6 +8,13 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-07-12**
+
+- Simplified introduction.
+- Edited first couple of paragraphs from results to match the in print comments
+  from last week.
+- Incorporated the angle/tortuosity new panels into results’ text.
+
 **2021-07-08**
 
 - Incorporated revisions to abstract.
