@@ -42,7 +42,6 @@ tension in an area of about 40 µm anterior and posterior.
 ![Tissue flow and cell shape analysis at the head-trunk boundary interface in
 cephalic furrow mutants.](../2-figures/shear-zone.png){#fig:shear-zone width=100%}
 
-
 ## btd mutants show initiator cell behaviors
 
 <!--Initiator cell behavior in btd mutant-->

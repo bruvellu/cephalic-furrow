@@ -113,7 +113,7 @@ germ band, or in other words, the head--trunk boundary of *Drosophila*.
 <!--Demarcates a significant morphological landmark in the embryo-->
 
 <!--Cephalic furrow formation is stereotypic and controlled genetically-->
-Cephalic furrow formation is controlled genetically. This position is specified
+Cephalic furrow formation is controlled genetically. Its position is specified
 by the zygotic expression of *buttonhead* (*btd*) and *even skipped* (*eve*)
 stripe 1 [@Vincent1997-fa], with 1% accuracy along the body length
 [@Liu2013-lc]. The specified initiator cells then undergo a coordinated series
@@ -145,18 +145,18 @@ the global dynamics of gastrulation.
 We find that when the cephalic furrow fails to invaginate, the epithelia at the
 head--trunk interface shows unpredictable deformations and buckling events. We
 show the tissue buckling is the result of mechanical forces acting on the
-monolayer epithelia and influenced by two key players, the expansion of apical
-cell area by mitotic domains and the tissue compression by germ band extension.
-These events create a convergent flow at the head--trunk boundary. Without the
-formation of the cephalic furrow, the tissue interactions at the head--trunk
-boundary inevitably cause the epithelia to buckle unpredictably. During normal
-embryogenesis, the genetically-determined cephalic furrow predictably
-anticipates these conflicting tissue interactions and primes the position of
-folding at the head--trunk boundary. The cephalic furrow invagination directs
-tissue flow storing a significant amount of epithelial area thus preventing
-epithelial instability. We thus propose the cephalic furrow acts as a temporary
-buffer for the conflicting tissue interactions at the head--trunk boundary
-during gastrulation.
+monolayer epithelia and is influenced by two key players, the expansion of
+apical cell area by mitotic domains and the tissue compression by germ band
+extension. These events create a convergent flow at the head--trunk boundary.
+Without the formation of the cephalic furrow, the tissue interactions at the
+head--trunk boundary inevitably cause the epithelia to buckle unpredictably.
+During normal embryogenesis, the genetically-determined cephalic furrow
+predictably anticipates these conflicting tissue interactions and primes the
+position of folding at the head--trunk boundary. The cephalic furrow
+invagination directs tissue flow storing a significant amount of epithelial
+area thus preventing epithelial instability. We thus propose the cephalic
+furrow acts as a temporary buffer for the conflicting tissue interactions at
+the head--trunk boundary during gastrulation.
 
 <!--Overall, this work contributes to our understanding about the global physical interactions that orchestrate the intricate and fascinating morphogenetic movements of *Drosophila* gastrulation.-->
 
@@ -186,29 +186,55 @@ during gastrulation.
 
 <!--Live-imaging of cephalic furrow mutants to capture tissue dynamics-->
 
-The formation of the cephalic furrow is a dynamic and transient process that
-occurs within a short window of time during gastrulation. To understand how the
-tissue dynamics at the head--trunk boundary is affected by the lack of the
-cephalic furrow, we studied cephalic furrow mutants using live-imaging. We
-generated fly strains containing the loss-of-function alleles *btd^XA* and
-*eve^3* and the fluorescent membrane marker Gap43-mCherry, and imaged the
-embryos using lightsheet microscopy under high-temporal resolution.
+The cephalic furrow is a highly-dynamic structure present for a brief period
+during embryogenesis. It forms at the onset of gastrulation and unfolds
+completely less than three hours later [@Hartenstein1985-zs]. To understand the
+role of this prominent invagination during gastrulation, our study analyzes the
+tissue interactions at the head--trunk boundary during normal embryogenesis and
+how these interactions are affected when the cephalic furrow is absent in
+mutant embryos. To capture the cell shape changes and tissue dynamics occurring
+of cephalic furrow mutants, we generated flies containing loss-of-function
+alleles known to disrupt cephalic furrow formation [*btd^XA^* and *eve^3^*,
+@Vincent1997-fa] and a fluorescent membrane marker [GAP43-mCherry,
+@Martin2010-pb], and imaged the embryos *in toto* under high-temporal
+resolution using lightsheet microscopy for a period of two hours after
+gastrulation.
 
 <!--Mutants show late ectopic folds at the head--trunk boundary-->
 
-In wild type embryos and sibling controls (i.e. *btd* and *eve* heterozygotes),
-the cephalic furrow begins to invaginate in stage 6 and is fully invaginated by
-stage 8 ({@fig:ectopic}A). In *btd* and *eve* mutants, the cephalic furrow
-fails to initiate [@Vincent1997-fa], and no indentation is visible in stages 6
-and 7a ({@fig:ectopic}A). In subsequent stages 7b and 8, however, we detect the
-formation of epithelial folds at the head--trunk interface of *btd* and *eve*
-mutants ({@fig:ectopic}A,C, Video 1). These late folds lack the stereotypic
-cell morphologies, such as wedge-shaped apex cells, have a wider, often
-asymmetric cleft, and are shallower compared to the cephalic furrow
-({@fig:ectopic}B,D, Video 2). To understand the processes driving ectopic fold
-formation in *btd* and *eve* mutants, and uncover their developmental origins,
-we analyzed how the formation of ectopic folds compares to the cephalic furrow
-formation.
+In both wild type and embryos heterozygote for the *btd* or *eve* alleles (i.e.
+sibling controls), the cephalic furrow initiates when the cellularization is
+complete invaginating for the first 15 minutes, and beginning to unfold its
+distal end at 30 minutes after gastrulation ({@fig:ectopic}A). In embryos
+homozygote for the *btd* or *eve* alleles (i.e. mutants), the cephalic furrow
+fails to invaginate and no indentation is visible in the lateral surface in
+Stages 6 and 7a ({@fig:ectopic}A). In the subsequent Stages 7b and 8, however,
+we observe the formation of epithelial folds in the head--trunk region of *btd*
+and *eve* mutant embryos ({@fig:ectopic}A, Video 1). These folds appear soon
+after the appearance of the mitotic domains on the head region in Stage 7b and
+becoming notable in Stage 8. Unlike the cephalic furrow, however, these late
+folds have an even shorter existence, folding and unfolding in a span of 20 min
+({@fig:ectopic}A, Video 1).
+
+<!--TODO: Get numbers for timing of CF and EF folding/unfolding-->
+
+<!--TODO: Include additional stages and timeline of events-->
+
+@Vincent1997-fa described the formation of a late fold in *eve* mutants but not
+in *btd* mutants, even though it has been depicted in *btd* embryos in later
+works [see Figure 8F in @Blankenship2001-tm and Figure S5B in @Eritano2020-mi].
+These folds do not seem to form via the cephalic furrow program, but but their
+developmental origin and the processes underlying their formation has remained
+unanswered. The fact that both *btd* and *eve* embryos form late folds at the
+head--trunk interface raised the question whether this folding is associated
+with the absence of the cephalic furrow in these embryos. We thus decided to
+investigate how the formation of ectopic folds compares to the formation of the
+cephalic furrow to understand the processes driving ectopic fold formation in
+*btd* and *eve* mutants.
+
+These late folds lack the stereotypic cell morphologies, such as wedge-shaped
+apex cells, have a wider, often asymmetric cleft, and are shallower compared to
+the cephalic furrow ({@fig:ectopic}B,D, Video 2). 
 
 <!--Ectopic fold shape, dynamics and size-->
 
@@ -383,6 +409,9 @@ global stiffness of the tissue, and below a certain threshold no ectopic folds
 form (@fig:model).
 
 # Discussion
+
+<!--The mechanical interactions during gastrulation seem to make the folding at the head--trunk interface inevitable. This might partly explain why so few cephalic furrow mutants have been identified. Because even though the cephalic furrow is disrupted, it will still fold, though more irregular.-->
+
 
 <!--TODO: Physical in silico role of the cephalic furrow-->
 

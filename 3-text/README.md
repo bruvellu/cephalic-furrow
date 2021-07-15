@@ -8,6 +8,10 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-07-15**
+
+- Put the first paragraphs of results into better shape.
+
 **2021-07-12**
 
 - Simplified introduction.
