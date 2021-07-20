@@ -210,14 +210,11 @@ homozygote for the *btd* or *eve* alleles (i.e. mutants), the cephalic furrow
 fails to invaginate and no indentation is visible in the lateral surface in
 Stages 6 and 7a ({@fig:ectopic}A). In the subsequent Stages 7b and 8, however,
 we observe the formation of epithelial folds in the head--trunk region of *btd*
-and *eve* mutant embryos ({@fig:ectopic}A, Video 1). These folds appear soon
+and *eve* mutant embryos ({@fig:ectopic}A, Video 1 and 2). These folds appear soon
 after the appearance of the mitotic domains on the head region in Stage 7b and
 becoming notable in Stage 8. Unlike the cephalic furrow, however, these late
 folds have an even shorter existence, folding and unfolding in a span of 20 min
-({@fig:ectopic}A, Video 1). These late folds lack the stereotypic cell
-morphologies, such as wedge-shaped apex cells, have a wider, often asymmetric
-cleft, and are shallower compared to the cephalic furrow ({@fig:ectopic}B,D,
-Video 2). 
+({@fig:ectopic}A).
 
 <!--TODO: How long does the cephalic and ectopic lasts (get numbers)-->
 <!--TODO: Insert mid-paragraph above note about initiator cells in btd?-->
@@ -234,8 +231,20 @@ ectopic folds in *btd* and *eve* mutants to understand the processes driving
 these folding events at the head--trunk interface.
 
 <!--Ectopic fold shape, dynamics and size-->
-
 <!--TODO: Include tortuosity of dorsal views around here-->
+
+The late ectopic folds lack the stereotypic cell morphologies, such as
+wedge-shaped apex cells, have a wider, often asymmetric cleft
+({@fig:dynamics}A, Video 3 and 4). The progression of ectopic buckling differs
+from the progressive invagination in sibling controls with the epithelia being
+unchanged for a period and then buckling late in development. We identified a
+difference between *btd* and *eve* embryos. While eve mutants show no initiator
+cell behavior, we observe cell shape changes in btd mutants that are
+reminiscent of initiator cell behaviors ({@fig:dynamics}B). Either mutant can
+form one or more ectopic folds. Despite the unorganized shape of the ectopic
+folds, they buckle reasonably deep into the yolk but are shallower, reaching in
+average 75% of the length of the cephalic furrow in sibling controls
+({@fig:dynamics}C).
 
 To characterize the dynamics of ectopic fold formation we manually traced
 individual folds and extracted tortuosity measurements, angle displacement,
@@ -575,9 +584,18 @@ tissue interactions.](figures/Fig6.png){#fig:summary width=100%}
 # Videos
 
 - **Video 1:** [Lateral view of ectopic fold formation in *btd*
-  mutant](../2-figures/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E3_f58_E14_f32_label.avi).
-- TODO **Video 2:** [Profile view of ectopic fold formation in *btd*
-  mutant](../2-figures/ectopic-folding/).
+  mutant](../2-figures/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.avi).
+- **Video 2:** [Lateral view of ectopic fold formation in *eve*
+  mutant](../2-figures/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.avi).
+
+- **Video 3:** [Profile view of ectopic fold formation in *btd*
+  mutant](../2-figures/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.avi).
+- **Video 4:** [Profile view of ectopic fold formation in *eve*
+  mutants](../2-figures/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.avi).
+
+<!--COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_crop_label.avi-->
+<!--COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
+
 - TODO **Video 3:** [Lateral view of ectopic fold dynamics in *btd*
   mutant](../2-figures/ectopic-folding/).
 - TODO **Video 4:** [Epithelial view of ectopic fold formation between mitotic
@@ -597,9 +615,6 @@ tissue interactions.](figures/Fig6.png){#fig:summary width=100%}
 
 # Supplementary
 
-- **Video:** [Lateral view of ectopic fold formation in *eve*
-  mutant](../2-figures/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.avi).
-- TODO **Video:** [Profile view of ectopic fold formation in eve mutants]().
 - TODO **Figure:** Analysis of fold depth with raw data, measurements and plots.
 - TODO **Figure:** Analysis of fold trace with raw data, measurements and plots.
 - TODO **Figure:** Analysis of fold angle with raw data, measurements and plots.

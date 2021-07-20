@@ -8,9 +8,15 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-07-20**
+
+- Finished illustrations for Fig1.
+- Arranged panels on Fig2 to match the latest text.
+
 **2021-07-15**
 
 - Put the first paragraphs of results into better shape.
+- Edited results until mitotic domains.
 
 **2021-07-12**
 
