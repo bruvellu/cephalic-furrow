@@ -3,25 +3,33 @@
 # Variables
 FILE=furrow
 TEMPLATE=templates/template
-FIGUREIN=../2-figures
-FIGUREOUT=figures
+FIGUREIN=`realpath ../2-figures`
+FIGUREOUT=`realpath figures`
 OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
 
 # Main rule
 all:
-	# Cleanup and copy updated figures to figure directory
+	# Cleanup figure directory
 	rm ${FIGUREOUT}/*
-	cp ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
-	cp ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig2.png
-	cp ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
-	cp ${FIGUREIN}/placeholder.png ${FIGUREOUT}/Fig4.png
-	cp ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig5.png
-	cp ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig6.png
-	#cp ${FIGUREIN}/wildtype-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
+	# Link figure files to figure directory with official naming
+	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
+	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig2.png
+	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
+	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig4.png
+	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig5.png
+	# Link video files to figure directory with official naming
+	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.avi ${FIGUREOUT}/Vid1.avi
+	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.avi ${FIGUREOUT}/Vid2.avi
+	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.avi ${FIGUREOUT}/Vid3.avi
+	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.avi ${FIGUREOUT}/Vid4.avi
+	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.avi ${FIGUREOUT}/Vid5.avi
+	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGUREOUT}/Vid6.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid7.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid8.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid9.avi
 	# Compile timestamped documents to output directory
-	 
 	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --reference-doc=${TEMPLATE}.odt -o ${OUTDIR}/${TIMESTAMPED}.odt
 	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --reference-doc=${TEMPLATE}.docx -o ${OUTDIR}/${TIMESTAMPED}.docx
 	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --pdf-engine=pdflatex -o ${OUTDIR}/${TIMESTAMPED}.pdf

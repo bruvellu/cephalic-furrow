@@ -8,6 +8,17 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-08-04**
+
+- Several updates to mitotic domains figure.
+- Adjusts to mutant cauterization figure.
+- Fixing paragraphs in between.
+- Added paragraphs about modeling of folding.
+
+**2021-07-20**
+
+- Fixing the paragraphs after updates on Fig1 and Fig2.
+
 **2021-07-20**
 
 - Finished illustrations for Fig1.
