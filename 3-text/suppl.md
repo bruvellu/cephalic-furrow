@@ -327,3 +327,23 @@ folds and found it does. However, the formation of ectopic folds depend on
 global stiffness of the tissue, and below a certain threshold no ectopic folds
 form (@fig:model).
 
+# Intro random paragraphs
+
+<!--Gastrulation is a fundamental event in animal development-->
+Gastrulation is a key moment in development. Some animals do it simply, others
+have an elaborate orchestration of tissue movements. The fly *Drosophila
+melanogaster* has a derived and complex gastrulation process with several
+concomitant invaginations, cell and morphogenetic processes, and tissue flows
+across the embryo [@RefFlyGastrulation].
+<!--Fly gastrulation is highly derived, complex and fascinating-->
+
+<!--Invaginations and movements are well-understood-->
+When Drosophila embryos gastrulate, a ventral invagination segregates
+mesodermal tissues and gives rise to muscles, anterior and posterior
+invaginations give rise to the foregut and hindgut at both ends of the
+digestive tube, and the germ band extension quickly performs the axis
+elongation of the embryo. Among these processes, however, there is one whose
+function remains mysterious despite its prominent position in the embryo---the
+cephalic furrow.
+<!--Except for the cephalic furrow which remains mysterious-->
+
