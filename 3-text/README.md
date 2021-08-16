@@ -8,6 +8,15 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-08-16**
+
+- Continue consolidating results up to mutant cauterizations.
+
+**2021-08-15**
+
+- Improves abstract and consolidates background sections.
+- Consolidating the beginning of the results.
+
 **2021-08-04**
 
 - Several updates to mitotic domains figure.
