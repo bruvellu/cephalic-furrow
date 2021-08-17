@@ -218,6 +218,19 @@ dynamics at the head--trunk boundary are affected. We thus suggest the cephalic
 furrow morphogenesis is largely governed by the orchestration of genetic
 patterning with a minor role of the mechanical forces in the embryo.
 
+<!--Independent paragraph about wild type cauterizations-->
+
+Next we asked whether the germ band also had a mechanical push in wild type
+embryos. We mechanically blocked the germ band and measured the depth of
+invagination. We find that indeed, the cephalic furrow is 10% smaller in
+cauterized embryos. However that most of the cephalic furrow invagination
+occurs autonomously. Using laser ablations we estimated the area under the
+active pull of the cephalic furrow to be 40 µm in each direction. The
+invagination is mostly autonomous with a weak interaction with the germ band,
+but that this interaction might be stronger when the cephalic furrow does not
+invaginate and the epithelial tissue remains in plane.
+
+
 # Head-trunk boundary is a tissue shear zone of conflict tissue flow
 
 <!--Possible CF interactions in normal embryogenesis-->
