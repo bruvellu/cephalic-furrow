@@ -360,3 +360,13 @@ function remains mysterious despite its prominent position in the embryo---the
 cephalic furrow.
 <!--Except for the cephalic furrow which remains mysterious-->
 
+The evolution of bilateral symmetry revolutionized animal diversity. A major
+aspect of bilaterian success was the separation between anterior and posterior
+body domains, which provided the grounds for the functional specialization of
+sensory structures in the head and locomotory appendages in the trunk. The head
+and trunk identities are specified early in embryonic development through a
+remarkably conserved regulatory landscape [@Holland1988-ii; @McGinnis1992-qj;
+@Simeone1992-ny], suggesting that the mechanisms establishing the head--trunk
+distinction are ancient and crucial to understand the evolution of bilaterians
+[@Bruce1998-ek]. 
+

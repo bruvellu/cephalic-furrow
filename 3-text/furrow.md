@@ -51,8 +51,6 @@ instability at the head--trunk boundary during gastrulation.
 
 # Background
 
-<!--The evolution of bilateral symmetry revolutionized animal diversity. A major aspect of bilaterian success was the separation between anterior and posterior body domains, which provided the grounds for the functional specialization of sensory structures in the head and locomotory appendages in the trunk. The head and trunk identities are specified early in embryonic development through a remarkably conserved regulatory landscape [@Holland1988-ii; @McGinnis1992-qj; @Simeone1992-ny], suggesting that the mechanisms establishing the head--trunk distinction are ancient and crucial to understand the evolution of bilaterians [@Bruce1998-ek]. -->
-
 The head--trunk boundary in the fruit fly *Drosophila melanogaster* is
 demarcated by an invagination known as the cephalic furrow. Beginning as
 bilateral indentations in the anterior portion of the blastoderm, the cephalic
@@ -122,7 +120,6 @@ stress at the head--trunk boundary.
 <!--Cephalic furrow directs convergent tissue flow preventing epithelial deformations at the head--trunk boundary.-->
 
 <!--We find that embryos that fail to initiate the cephalic furrow form late ectopic folds at the head--trunk interface. These ectopic folds differ from the cephalic furrow in timing, formation dynamics, folded area, and morphology. The number and position of ectopic folds across the anteroposterior axis varies between individual mutant embryos. We show the timing and position of ectopic folds correlates with the formation of mitotic domains, suggesting that local tissue interactions are causing the tissue to buckle. These local interactions, however, are not sufficient to generate ectopic folds. Using laser cauterizations to mechanically block the germ band extension, we show the occurrence of ectopic folds at the head--trunk boundary depends on the global tissue compression caused by the germ band extension, and that this interaction also contributes to the cephalic furrow formation in normal embryogenesis.-->
-
 
 # Results
 
