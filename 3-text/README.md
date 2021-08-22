@@ -8,6 +8,11 @@ Use the latest timestamped-document in the `versions` directory for revising.
 
 ## Notes
 
+**2021-08-22**
+
+- Incorporates feedback from Ju to results.
+- Consolidates discussion paragraphs.
+
 **2021-08-16**
 
 - Continue consolidating results up to mutant cauterizations.
