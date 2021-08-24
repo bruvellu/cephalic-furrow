@@ -37,10 +37,10 @@ all:
 	# Sync bib file from Paperpile
 	wget --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
 
-bib:
+bibstart:
 	# Start bib syncing from Paperpile
 	./syncbib.sh > syncbib.out 2>&1 &
 
-stop:
+bibstop:
 	# Stop bib syncing from Paperpile
 	killall syncbib.sh
