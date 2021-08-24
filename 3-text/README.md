@@ -1,12 +1,14 @@
 # Cephalic furrow manuscript
 
-- `furrow.md`: main source file in markdown format with latest changes.
-- `versions/`: daily versions of the manuscript compiled to different formats.
-- `figures/`: figures and movies with latest changes.
-
-Use the latest timestamped-document in the `versions` directory for revising.
+- `furrow.md`: main source file in markdown with latest changes.
+- `versions/`: daily versions compiled in different formats.
+- `figures/`: latest figures and videos.
 
 ## Notes
+
+**2021-08-23**
+
+- Incorporates feedback from Ju to discussion.
 
 **2021-08-22**
 
