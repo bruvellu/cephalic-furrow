@@ -74,8 +74,34 @@ ggsave("tortuosity_all_smooth.png", width = 7, height = 3)
 # Plot stocks separately
 ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(position = position_dodge(width = 2), show.legend = FALSE) + facet_wrap(~stock) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("tortuosity_facet_boxplot.png")
-ggplot(datasets, aes(minute, tortuosity, color = sample)) + geom_smooth(span = 0.3, show.legend = FALSE) + facet_wrap(~stock) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
-ggsave("tortuosity_facet_smooth.png")
+
+ggplot(datasets, aes(minute, tortuosity, color = sample)) +
+  geom_smooth(span = 0.3, show.legend = FALSE) +
+  facet_wrap(~stock, strip.position = "top") +
+  labs(x = "minutes", y = "tortuosity") +
+  scale_color_manual(values=c("#0072b2", "#e69f03")) +
+  scale_fill_manual(values=c("#0072b2", "#e69f03")) +
+  theme_classic() +
+  theme(text =  element_text(size = 25),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("tortuosity_facet_smooth.png", width = 10, height = 4)
+
+ggplot(results, aes(Genotype, Length, fill = Genotype)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  facet_wrap(~Sample, strip.position = "top") +
+  labs(x = "mutants", y = "depth") +
+  scale_color_manual(values=c("#0072b2", "#e69f03")) +
+  scale_fill_manual(values=c("#0072b2", "#e69f03")) +
+  theme_classic() +
+  theme(text =  element_text(size = 25),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
 
 ```
 
