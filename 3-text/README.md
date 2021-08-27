@@ -6,6 +6,15 @@
 
 ## Notes
 
+**2021-08-26**
+
+- Revised draft summary figure.
+- More text cleaning up.
+
+**2021-08-26**
+
+- Updates to plot appearance to improve readability.
+
 **2021-08-23**
 
 - Incorporates feedback from Ju to discussion.

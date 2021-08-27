@@ -29,6 +29,13 @@ tablenos-cleveref: True
 tablenos-plus-name: Table
 ---
 
+<!--TODO: Alternative titles
+
+- Cephalic furrow buffers mechanical stress at the head--trunk boundary of
+  *Drosophila*
+
+-->
+
 # Abstract
 
 The cephalic furrow is a deep epithelial invagination that demarcates the
@@ -329,7 +336,9 @@ Taken together, our analyses reveal that the absence of the cephalic furrow
 invariably leads to the accumulation of tissue stresses and the formation of
 ectopic folds in the head--trunk epithelium. The cephalic furrow anticipates
 and buffers these tissue interactions and we propose it accomplishes a
-mechanical role during *Drosophila* gastrulation.
+mechanical role during *Drosophila* gastrulation [^closure].
+
+[^closure]: Ending paragraph of results needs proper closure.
 
 <!--TODO: Write-up a closing paragraph for the results-->
 
@@ -474,6 +483,8 @@ essential imaging support, EMBO for funding.
 
 # Figures
 
+<!--Fig1-->
+
 ![Late ectopic folds folds in *btd* and *eve* mutants. (A) Lateral views of a
 btd heterozygote (control), a btd homozygote, and an eve homozygote showing the
 late formation of ectopic folds around 35--45% germ band extension after the
@@ -486,21 +497,29 @@ furrow. Arrowheads indicate ectopic folds. Asterisks indicate the position of
 mitotic domains. Developmental staging based on
 @Ashburner2005-ym.](){#fig:ectopic width=100%}
 
+<!--Fig2-->
+
 ![Characterization of ectopic fold formation in *btd* and *eve*
 mutants.](){#fig:dynamics width=100%}
+
+<!--Fig3-->
 
 ![Position of ectopic folds in relation to mitotic domains.](){#fig:mitotic
 width=100%}
 
+<!--Fig4-->
+
 ![Cauterization experiments in mutant embryos.](){#fig:cauterization
 width=100%}
 
-![Fold model simulations.](){#fig:model width=100%}
-
-![Cauterization experiments in wild type embryos.](){#fig:wtcaut width=100%}
+<!--Fig5-->
 
 ![Summary figure with cephalic furrow primes folding and buffers head--trunk
 tissue interactions.](){#fig:summary width=100%} 
+
+<!--TODO: ![Fold model simulations.](){#fig:model width=100%}-->
+
+<!--TODO: ![Cauterization experiments in wild type embryos.](){#fig:wtcaut width=100%}-->
 
 # Videos
 
@@ -530,19 +549,19 @@ COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 
 # Tables
 
-- **Table 1:** Live-imaging datasets.
+- **Table 1:** Main annotated table for live-imaging datasets.
 
-# Supplementary
+<!--# Supplementary-->
 
-- TODO **Figure:** Analysis of fold depth with raw data, measurements and plots.
-- TODO **Figure:** Analysis of fold trace with raw data, measurements and plots.
-- TODO **Figure:** Analysis of fold angle with raw data, measurements and plots.
-- TODO **Figure:** Analysis of folded area with raw data, measurements and plots.
-- TODO **Figure:** Fold position relative to mitotic domains in btd and eve.
-- TODO **Figure:** Tissue flows in lateral view showing convergent zone.
-- TODO **Figure:** Compressed epithelial cells in posterior ectopic fold.
-- TODO **Video:** [Dorsal view of cauterization experiment in eve mutants]().
-- TODO **Figure:** Analysis of tortuosity in cauterization experiments.
-- TODO **Video:** [Detail of mitotic domains in cauterization of eve mutants]().
+<!--TODO **Figure:** Analysis of fold depth with raw data, measurements and plots.-->
+<!--TODO **Figure:** Analysis of fold trace with raw data, measurements and plots.-->
+<!--TODO **Figure:** Analysis of fold angle with raw data, measurements and plots.-->
+<!--TODO **Figure:** Analysis of folded area with raw data, measurements and plots.-->
+<!--TODO **Figure:** Fold position relative to mitotic domains in btd and eve.-->
+<!--TODO **Figure:** Tissue flows in lateral view showing convergent zone.-->
+<!--TODO **Figure:** Compressed epithelial cells in posterior ectopic fold.-->
+<!--TODO **Video:** [Dorsal view of cauterization experiment in eve mutants]().-->
+<!--TODO **Figure:** Analysis of tortuosity in cauterization experiments.-->
+<!--TODO **Video:** [Detail of mitotic domains in cauterization of eve mutants]().-->
 
 # References
