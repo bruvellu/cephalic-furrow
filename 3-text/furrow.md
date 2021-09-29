@@ -481,9 +481,14 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections,
 Vlado for projections, Lemke for discussions, Ju for text suggestions, LMF for
 essential imaging support, EMBO for funding.
 
-# Figures
+# References
 
-<!--Fig1-->
+::: {#refs}
+:::
+
+\clearpage
+
+# Figures
 
 ![Late ectopic folds folds in *btd* and *eve* mutants. (A) Lateral views of a
 btd heterozygote (control), a btd homozygote, and an eve homozygote showing the
@@ -495,31 +500,25 @@ type compared to cephalic furrow mutants. (D) Length of cephalic furrow
 compared to ectopic folds in btd and eve embryos. Arrows indicate the cephalic
 furrow. Arrowheads indicate ectopic folds. Asterisks indicate the position of
 mitotic domains. Developmental staging based on
-@Ashburner2005-ym.](){#fig:ectopic width=100%}
-
-<!--Fig2-->
+@Ashburner2005-ym.](figures/Fig1.jpg){#fig:ectopic width=100%}
 
 ![Characterization of ectopic fold formation in *btd* and *eve*
-mutants.](){#fig:dynamics width=100%}
+mutants.](figures/Fig2.jpg){#fig:dynamics width=100%}
 
-<!--Fig3-->
-
-![Position of ectopic folds in relation to mitotic domains.](){#fig:mitotic
+![Position of ectopic folds in relation to mitotic domains.](figures/Fig3.jpg){#fig:mitotic
 width=100%}
 
-<!--Fig4-->
-
-![Cauterization experiments in mutant embryos.](){#fig:cauterization
+![Cauterization experiments in mutant embryos.](figures/Fig4.jpg){#fig:cauterization
 width=100%}
-
-<!--Fig5-->
 
 ![Summary figure with cephalic furrow primes folding and buffers head--trunk
-tissue interactions.](){#fig:summary width=100%} 
+tissue interactions.](figures/Fig5.jpg){#fig:summary width=100%}
 
 <!--TODO: ![Fold model simulations.](){#fig:model width=100%}-->
 
 <!--TODO: ![Cauterization experiments in wild type embryos.](){#fig:wtcaut width=100%}-->
+
+\clearpage
 
 # Videos
 
@@ -543,15 +542,16 @@ tissue interactions.](){#fig:summary width=100%}
 
 <!--TODO: Video 4 Add
 COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_crop_label.avi-->
-
 <!--TODO: Video 5 Add
 COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 
 # Tables
 
-- **Table 1:** Main annotated table for live-imaging datasets.
+- **Table 1:** Live-imaging datasets.
 
-<!--# Supplementary-->
+# Supplementary material
+
+TODO.
 
 <!--TODO **Figure:** Analysis of fold depth with raw data, measurements and plots.-->
 <!--TODO **Figure:** Analysis of fold trace with raw data, measurements and plots.-->
@@ -564,4 +564,3 @@ COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 <!--TODO **Figure:** Analysis of tortuosity in cauterization experiments.-->
 <!--TODO **Video:** [Detail of mitotic domains in cauterization of eve mutants]().-->
 
-# References
