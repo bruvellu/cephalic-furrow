@@ -5,20 +5,32 @@ FILE=furrow
 TEMPLATE=templates/template
 FIGUREIN=`realpath ../2-figures`
 FIGUREOUT=`realpath figures`
+MODES=`realpath modes`
 OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
 
 # Main rule
-all:
+all: clean figures syncbib compile modes
+
+clean:
 	# Cleanup figure directory
-	rm ${FIGUREOUT}/*
+	rm -r ${FIGUREOUT}/*
+
+figures: linkimg linkvid
+
+linkimg:
 	# Link figure files to figure directory with official naming
 	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
 	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig2.png
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
 	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig4.png
 	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig5.png
+	mogrify -format jpg -quality 50 -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
+	mkdir ${FIGUREOUT}/source
+	mv ${FIGUREOUT}/*.png ${FIGUREOUT}/source/
+
+linkvid:
 	# Link video files to figure directory with official naming
 	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.avi ${FIGUREOUT}/Vid1.avi
 	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.avi ${FIGUREOUT}/Vid2.avi
@@ -29,18 +41,27 @@ all:
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid7.avi
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid8.avi
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid9.avi
+
+compile:
 	# Compile timestamped documents to output directory
 	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --reference-doc=${TEMPLATE}.odt -o ${OUTDIR}/${TIMESTAMPED}.odt
 	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --reference-doc=${TEMPLATE}.docx -o ${OUTDIR}/${TIMESTAMPED}.docx
 	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --pdf-engine=pdflatex -o ${OUTDIR}/${TIMESTAMPED}.pdf
 	cp ${FILE}.md ${OUTDIR}/${TIMESTAMPED}.md 
+
+syncbib:
 	# Sync bib file from Paperpile
 	wget --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
 
-bibstart:
+startbib:
 	# Start bib syncing from Paperpile
 	./syncbib.sh > syncbib.out 2>&1 &
 
-bibstop:
+stopbib:
 	# Stop bib syncing from Paperpile
 	killall syncbib.sh
+
+modes:
+	# Copy figures to shared folder with Modes
+	cp ${FIGUREOUT}/Fig*.jpg ${MODES}/
+
