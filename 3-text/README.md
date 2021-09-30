@@ -6,6 +6,14 @@
 
 ## Notes
 
+**2021-09-30**
+
+- Updated legends for the current figures.
+
+**2021-09-27**
+
+- Resume work fixing figure referencing.
+
 **2021-08-26**
 
 - Revised draft summary figure.
