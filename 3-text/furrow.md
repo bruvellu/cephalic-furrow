@@ -29,14 +29,7 @@ tablenos-cleveref: True
 tablenos-plus-name: Table
 ---
 
-<!--TODO: Alternative titles
-
-- Cephalic furrow buffers mechanical stress at the head--trunk boundary of
-  *Drosophila*
-
--->
-
-# Abstract
+# Abstract[^titles]
 
 The cephalic furrow is a deep epithelial invagination that demarcates the
 head--trunk boundary of *Drosophila* during gastrulation. Unlike other
@@ -55,6 +48,9 @@ mechanical stress in the monolayer epithelium. We thus propose that the
 cephalic furrow buffers these physical interactions by priming the position of
 folding and storing epithelial tissue out-of-plane, preventing epithelial
 instability at the head--trunk boundary during gastrulation.
+
+[^titles]: Alternative title: Cephalic furrow buffers mechanical stress at the
+head--trunk boundary of *Drosophila*
 
 # Background
 
@@ -488,37 +484,67 @@ essential imaging support, EMBO for funding.
 
 \clearpage
 
+\newpage
+
 # Figures
 
-![Late ectopic folds folds in *btd* and *eve* mutants. (A) Lateral views of a
-btd heterozygote (control), a btd homozygote, and an eve homozygote showing the
-late formation of ectopic folds around 35--45% germ band extension after the
-appearance of mitotic domains. (B) Profile views of control, btd and eve
-embryos showing the morphology of the ectopic folds compared to the cephalic
-furrow. (C) Illustration showing the timing of developmental events in wild
-type compared to cephalic furrow mutants. (D) Length of cephalic furrow
-compared to ectopic folds in btd and eve embryos. Arrows indicate the cephalic
-furrow. Arrowheads indicate ectopic folds. Asterisks indicate the position of
-mitotic domains. Developmental staging based on
-@Ashburner2005-ym.](figures/Fig1.jpg){#fig:ectopic width=100%}
+![Formation of late ectopic folds in *btd* and *eve* mutants *Drosophila*
+embryos. (A) Overview of the epithelial dynamics in control (*btd*
+heterozygote) and mutant embryos (*btd* and *eve* homozygotes). (B) Timing of
+key developmental events comparing wild type development and cephalic furrow
+mutants. Ectopic folds in *btd* and *eve* form later and unfold quicker than
+the cephalic furrow in normal development, and their formation coincides with
+the appearance of mitotic domains. Arrows indicate the cephalic furrow,
+arrowheads indicate the ectopic folds, and asterisks indicate the position of
+mitotic domains. Developmental staging based on @Ashburner2005-ym.
+](figures/Fig1.jpg){#fig:ectopic width=100%}
 
-![Characterization of ectopic fold formation in *btd* and *eve*
-mutants.](figures/Fig2.jpg){#fig:dynamics width=100%}
+![Characterization of ectopic fold formation in *btd* and *eve* mutants. (A)
+Profile views of control, *btd* and *eve* embryos showing the divergent
+morphology of the ectopic folds compared to the cephalic furrow. (B) Dynamics
+of cephalic furrow invagination and ectopic fold formation. (C) Fold maximum
+depth relative to the vitelline envelope in cephalic furrow mutants. (D)
+Profile view of *btd* mutant embryo showing two ectopic folds. (E) Variability
+in the position of folding events between individual *btd* and *eve* mutant
+embryos. (F,G) Comparison of the folding dynamics during development in a
+single embryo. (H,I) Dynamics of folding angle and tortuosity across
+development between *btd* heterozygote (control) and *btd* homozygote embryos.
+(K) Comparison of the total folded aread between sibling controls and mutant
+embryos. (J) Cartographic projections showing the area of folded epithelial
+cells in the cephalic furrow and ectopic folds.
+](figures/Fig2.jpg){#fig:dynamics width=100%}
 
-![Position of ectopic folds in relation to mitotic domains.](figures/Fig3.jpg){#fig:mitotic
-width=100%}
 
-![Cauterization experiments in mutant embryos.](figures/Fig4.jpg){#fig:cauterization
-width=100%}
+![Correlation between the position of mitotic domains and ectopic folds. (A)
+Map of representative position of ectopic folds relative to mitotic domains in
+*btd* and *eve* mutants. (B) Relation between apical area expansion of dividing
+cells and the position of the folded area.
+](figures/Fig3.jpg){#fig:mitotic width=100%}
 
-![Summary figure with cephalic furrow primes folding and buffers head--trunk
-tissue interactions.](figures/Fig5.jpg){#fig:summary width=100%}
+![Blocking of germ band extension in cephalic furrow mutants by cauterization.
+(A) Schematic drawings of the experiment and cauterization site. (B) Cauterized
+*eve* mutant in lateral (top) and dorsal view (bottom) at the highest mitotic
+domain expansion. (C) Non-dividing cells being compressed by the apical area
+expansion in mitotic domains of the *eve* embryo in (B). (D,E) Profile view and
+trace of the epithelial outline between non-cauterized (control) and cauterized
+*btd* and *eve* embryos. The trace shows the dynamics of epithelial
+deformations in time. (F) Quantification of the tortuosity of the epithelial
+traces in non-cauterized and cauterized mutant embryos.
+](figures/Fig4.jpg){#fig:cauterization width=100%}
+
+![Summary of head--trunk tissue interactions in cephalic furrow mutants. (A,B)
+Schematic drawings of lateral and profile views showing the tissue invaginated
+in the cephalic furrow buffers the interactions while the excess of epithelial
+tissue in cephalic furrow mutants increases the epithelial
+instability.](figures/Fig5.jpg){#fig:summary width=100%}
 
 <!--TODO: ![Fold model simulations.](){#fig:model width=100%}-->
 
 <!--TODO: ![Cauterization experiments in wild type embryos.](){#fig:wtcaut width=100%}-->
 
 \clearpage
+
+\newpage
 
 # Videos
 
@@ -549,9 +575,7 @@ COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 
 - **Table 1:** Live-imaging datasets.
 
-# Supplementary material
-
-TODO.
+<!--# Supplementary material-->
 
 <!--TODO **Figure:** Analysis of fold depth with raw data, measurements and plots.-->
 <!--TODO **Figure:** Analysis of fold trace with raw data, measurements and plots.-->
