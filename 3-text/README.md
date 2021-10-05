@@ -6,6 +6,10 @@
 
 ## Notes
 
+**2021-10-05**
+
+- Incorporates Abhijeet’s comments to manuscript.
+
 **2021-09-30**
 
 - Updated legends for the current figures.
