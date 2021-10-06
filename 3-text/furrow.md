@@ -595,4 +595,5 @@ COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 <!--TODO **Video:** [Dorsal view of cauterization experiment in eve mutants]().-->
 <!--TODO **Figure:** Analysis of tortuosity in cauterization experiments.-->
 <!--TODO **Video:** [Detail of mitotic domains in cauterization of eve mutants]().-->
+<!--TODO **Figure:** Strain analysis in cauterization experiments.-->
 
