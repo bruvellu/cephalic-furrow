@@ -1,67 +1,20 @@
-# Dorsal datasets
+# Maximum depth of folding in dorsal views
 
-# Heterozygous
+Comparison between cephalic furrow and ectopic folds maximum depths. We
+measured the length between the vitelline envelope and the infolded tip at the
+moment of maximum extension.
 
-## 2020-09-24_btd-gap_dorsal
-btd-gap_dorsal1_z3_t51s_E1.tif
-btd-gap_dorsal1_z3_t51s_E3.tif
-btd-gap_dorsal1_z3_t51s_E4.tif
-btd-gap_dorsal1_z3_t51s_E5.tif
-btd-gap_dorsal1_z3_t51s_E6.tif
-btd-gap_dorsal1_z3_t51s_E7.tif
-btd-gap_dorsal1_z3_t51s_E8.tif
-btd-gap_dorsal1_z3_t51s_E9.tif
-btd-gap_dorsal1_z3_t51s_E10.tif
-btd-gap_dorsal1_z3_t51s_E11.tif
-btd-gap_dorsal1_z3_t51s_E13.tif
-## 2020-10-13_btd-gap_dorsal
-btd-gap_dorsal_1_z1.5_t51s_E1.tif
-btd-gap_dorsal_1_z1.5_t51s_E4.tif
-btd-gap_dorsal_1_z1.5_t51s_E5.tif
-btd-gap_dorsal_1_z1.5_t51s_E8.tif
-btd-gap_dorsal_1_z1.5_t51s_E13.tif
-## 2020-10-14_btd-gap_dorsal
-btd-gap_dorsal_1_z3_t45s_E1.tif
-btd-gap_dorsal_1_z3_t45s_E2.tif
-btd-gap_dorsal_1_z3_t45s_E3.tif
-btd-gap_dorsal_1_z3_t45s_E6.tif
-btd-gap_dorsal_1_z3_t45s_E7.tif
-btd-gap_dorsal_1_z3_t45s_E8.tif
-btd-gap_dorsal_1_z3_t45s_E10.tif
-btd-gap_dorsal_1_z3_t45s_E12.tif
-## 2020-11-03_eve-gap_dorsal
-eve-gap_dorsal_1_z3_t52s_E1.tif
-eve-gap_dorsal_1_z3_t52s_E2.tif
-eve-gap_dorsal_1_z3_t52s_E4.tif
-eve-gap_dorsal_1_z3_t52s_E8.tif
-eve-gap_dorsal_1_z3_t52s_E10.tif
-eve-gap_dorsal_1_z3_t52s_E11.tif
-eve-gap_dorsal_1_z3_t52s_E12.tif
-eve-gap_dorsal_1_z3_t52s_E17.tif
-## 2020-11-04_eve-gap_dorsal
-eve-gap_dorsal_2_z3_t53s_E2.tif
-eve-gap_dorsal_2_z3_t53s_E3.tif
-eve-gap_dorsal_2_z3_t53s_E5.tif
-eve-gap_dorsal_2_z3_t53s_E6.tif
-eve-gap_dorsal_2_z3_t53s_E12.tif
-eve-gap_dorsal_2_z3_t53s_E19.tif
+Steps:
 
-# Homozygous
-
-## 2020-09-24_btd-gap_dorsal
-btd-gap_dorsal1_z3_t51s_E12.tif
-## 2020-10-13_btd-gap_dorsal
-btd-gap_dorsal_1_z1.5_t51s_E2.tif
-btd-gap_dorsal_1_z1.5_t51s_E6.tif
-btd-gap_dorsal_1_z1.5_t51s_E10.tif
-## 2020-10-14_btd-gap_dorsal
-btd-gap_dorsal_1_z3_t45s_E5.tif
-btd-gap_dorsal_1_z3_t45s_E14.tif
-## 2020-11-03_eve-gap_dorsal
-eve-gap_dorsal_1_z3_t52s_E9.tif
-eve-gap_dorsal_1_z3_t52s_E13.tif
-eve-gap_dorsal_1_z3_t52s_E19.tif
-## 2020-11-04_eve-gap_dorsal
-eve-gap_dorsal_2_z3_t53s_E4.tif
-eve-gap_dorsal_2_z3_t53s_E14.tif
+1. We imaged the anterior region of mutant stocks from a dorsal view, capturing
+   slices around the mid section of the body. We symlinked the datasets to
+   `0-data` using the `0-load.sh` script.
+2. We opened each dataset in Fiji, used the straight line tool to mark the
+   distance between the vitelline envelope and the infolded tip at the moment of
+   maximum extension, and saved the lines as ROISets per embryo to `1-rois`. 
+3. We then run the macro `1-measure.ijm` to open the stack, load each line ROI, measure
+   its length, take a snapshot and save to `2-snaps`, and to finally output all
+   measurements to `results.txt`.
+4. We loaded `results.txt` and sample metadata from `samples.csv` into R to
+   generate the plots using `depth.Rmd`.
 
