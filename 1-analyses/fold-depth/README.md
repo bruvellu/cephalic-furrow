@@ -1,8 +1,8 @@
-# Maximum depth of folding in dorsal views
+# Maximum folding depth between the cephalic furrow and ectopic folds
 
-Comparison between cephalic furrow and ectopic folds maximum depths. We
-measured the length between the vitelline envelope and the infolded tip at the
-moment of maximum extension.
+We measured the distance between the vitelline envelope and the infolded tip at
+the moment of maximum extension to determine differences between the cephalic
+furrow and the ectopic folds.
 
 Steps:
 
