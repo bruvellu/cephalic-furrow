@@ -84,6 +84,9 @@ for (i=0; i<dataList.length; i++) {
 	close(stackFile);
 	}
 
+// Measurements should have one decimal values
+run("Set Measurements...", "display redirect=None decimal=1");
+
 // Save results to file
 resName = "results.txt";
 saveAs("Results", dirWork + resName);
