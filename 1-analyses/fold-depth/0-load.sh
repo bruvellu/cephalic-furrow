@@ -53,12 +53,12 @@ ln -s ${BASEDIR}/2020-11-03_eve-gap_dorsal/eve-gap_dorsal_1_z3_t52s_E17.tif ./0-
 ln -s ${BASEDIR}/2020-11-03_eve-gap_dorsal/eve-gap_dorsal_1_z3_t52s_E19.tif ./0-data/
 
 # 2020-11-04_eve-gap_dorsal
-ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E2.tif
-ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E3.tif
-ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E4.tif
-ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E5.tif
-ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E6.tif
-ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E12.tif
-ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E14.tif
-ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E19.tif
+ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E2.tif ./0-data/
+ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E3.tif ./0-data/
+ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E4.tif ./0-data/
+ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E5.tif ./0-data/
+ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E6.tif ./0-data/
+ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E12.tif ./0-data/
+ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E14.tif ./0-data/
+ln -s ${BASEDIR}/2020-11-04_eve-gap_dorsal/eve-gap_dorsal_2_z3_t53s_E19.tif ./0-data/
 
