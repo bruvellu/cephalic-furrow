@@ -14,6 +14,7 @@ run("ROI Manager...");
 
 // Loop over data file list
 for (i=0; i<dataList.length; i++) {
+//for (i=0; i<5; i++) {
 
 	// Get stack name
 	stackFile = dataList[i];
@@ -42,6 +43,9 @@ for (i=0; i<dataList.length; i++) {
 	run("Grays");
 	resetMinAndMax();
 
+	// Rename stack for better measurement labels
+	rename(stackName);
+
 	// Load ROIs
 	roiManager("Open", dirRois + roiName);
 
@@ -51,7 +55,7 @@ for (i=0; i<dataList.length; i++) {
 	// Loop over individual ROIs
 	for (s=0; s<roiCount; s++){
 		// Focus stack window
-		selectWindow(stackFile);
+		selectWindow(stackName);
 		// Select ROI
 		roiManager("select", s);
 		// Get ROI slice and frame
@@ -62,7 +66,7 @@ for (i=0; i<dataList.length; i++) {
 		// Measure
 		run("Measure");
 		// Create snap name
-		snapName = foldName + "_f" + frame + "_s" + slice + ".png";
+		snapName = stackName + "_" + foldName + "_f" + frame + "_s" + slice + ".png";
 		// Duplicate snap to avoid naming issues
 		run("Duplicate...", "title=tmpdup duplicate channels=2 slices=" + slice + " frames=" + frame);
 		// Select ROI again
@@ -81,7 +85,7 @@ for (i=0; i<dataList.length; i++) {
 	run("Select None");
 
 	// Close
-	close(stackFile);
+	close(stackName);
 	}
 
 // Measurements should have one decimal values
