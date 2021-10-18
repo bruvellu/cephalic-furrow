@@ -1,5 +1,6 @@
 ---
 title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
+#title: Alternative title: Cephalic furrow buffers mechanical stress at the head--trunk boundary of *Drosophila*
 author:
 - Bruno C. Vellutini
 - Marina B. Cuenca
@@ -29,7 +30,7 @@ tablenos-cleveref: True
 tablenos-plus-name: Table
 ---
 
-# Abstract[^titles]
+# Abstract
 
 The cephalic furrow is a deep epithelial invagination that demarcates the
 head--trunk boundary of *Drosophila* during gastrulation. Unlike other
@@ -47,9 +48,6 @@ the opposing flows between head and trunk increase the mechanical stress in the
 monolayer epithelium. We thus propose that the formation of the cephalic furrow
 buffers these physical interactions at the head--trunk boundary, and thus
 prevent epithelial instabilities during *Drosophila* gastrulation.
-
-[^titles]: Alternative title: Cephalic furrow buffers mechanical stress at the
-head--trunk boundary of *Drosophila*
 
 # Background
 
@@ -105,9 +103,6 @@ folding, and thus preventing mechanical stress at the head--trunk boundary.
 <!--TODO AK: Vitelline envelope could be mentioned.-->
 
 <!--TODO AK: Mentioning tissue is confined between vitelline and germband can set stage for model.-->
-
-
-
 
 
 <!--Its transient nature makes the cephalic furrow particularly challenging to investigate, and partly the reason why only a few mutants have been identified. -->
@@ -472,13 +467,14 @@ btd^XA^/FM7c-KrGFP;; GAP43-mCherry/MKRS and eve^3^/CyO-twiGFP;
 GAP43-mCherry/MKRS. We identified homozygous embryos by the absence of GFP
 signal.
 
-## Live-imaging
+## Imaging
 
 Coverslip mounting, Z.1 imaging, Luxendo, MZ2.
 
 ## Image processing and analyses
 
-ImageJ macros, imsane projections, matlab, ilastik, R, Python, Fiji, Inkscape.
+ImageJ macros, imsane projections, matlab, ilastik, 3Dscript, R, Python, Fiji,
+Inkscape.
 
 # Acknowledgements
 
@@ -579,11 +575,14 @@ COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_crop_label.avi-->
 <!--TODO: Video 5 Add
 COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 
-# Tables
+# Tables {-}
 
 - **Table 1:** Live-imaging datasets.
 
-<!--# Supplementary material-->
+# Supplementary material
+
+![Strain analysis at the head--trunk boundary of cephalic furrow
+mutants.](figures/FigS1.jpg){#fig:strain tag=S1 width=100%}
 
 <!--TODO **Figure:** Analysis of fold depth with raw data, measurements and plots.-->
 <!--TODO **Figure:** Analysis of fold trace with raw data, measurements and plots.-->
@@ -595,5 +594,4 @@ COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 <!--TODO **Video:** [Dorsal view of cauterization experiment in eve mutants]().-->
 <!--TODO **Figure:** Analysis of tortuosity in cauterization experiments.-->
 <!--TODO **Video:** [Detail of mitotic domains in cauterization of eve mutants]().-->
-<!--TODO **Figure:** Strain analysis in cauterization experiments.-->
 
