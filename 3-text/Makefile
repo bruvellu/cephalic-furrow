@@ -9,6 +9,7 @@ MODES=`realpath modes`
 OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
+FILTERS=--lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc
 
 # Main rule
 all: clean figures syncbib compile modes
@@ -26,6 +27,9 @@ linkimg:
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
 	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig4.png
 	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig5.png
+	# Supplementary
+	ln -s ${FIGUREIN}/tissue-strain/figure.png ${FIGUREOUT}/FigS1.png
+	# Convert to jpg for lightness
 	mogrify -format jpg -quality 50 -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	mkdir ${FIGUREOUT}/source
 	mv ${FIGUREOUT}/*.png ${FIGUREOUT}/source/
@@ -44,9 +48,9 @@ linkvid:
 
 compile:
 	# Compile timestamped documents to output directory
-	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --reference-doc=${TEMPLATE}.odt -o ${OUTDIR}/${TIMESTAMPED}.odt
-	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --reference-doc=${TEMPLATE}.docx -o ${OUTDIR}/${TIMESTAMPED}.docx
-	pandoc ${FILE}.md --lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc --pdf-engine=pdflatex -o ${OUTDIR}/${TIMESTAMPED}.pdf
+	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.odt -o ${OUTDIR}/${TIMESTAMPED}.odt
+	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.docx -o ${OUTDIR}/${TIMESTAMPED}.docx
+	pandoc ${FILE}.md ${FILTERS} --pdf-engine=pdflatex -o ${OUTDIR}/${TIMESTAMPED}.pdf
 	cp ${FILE}.md ${OUTDIR}/${TIMESTAMPED}.md 
 
 syncbib:
