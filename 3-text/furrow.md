@@ -1,6 +1,6 @@
 ---
 title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
-#title: Alternative title: Cephalic furrow buffers mechanical stress at the head--trunk boundary of *Drosophila*
+#title: Cephalic furrow buffers mechanical stress at the head--trunk boundary of *Drosophila*
 author:
 - Bruno C. Vellutini
 - Marina B. Cuenca
@@ -455,25 +455,73 @@ dynamics around the head--trunk boundary of bilaterians.
 
 # Methods
 
-## Fly stocks and genetics
+## Fly genetics
 
-We used the mutant alleles btd^XA^ (FlyBase: FBal0030657, BDSC: #26815) and
-eve^3^ (FlyBase: FBal0003885, BDSC #299), the balancers FM7c-KrGFP (BDSC:
-#5193) and CyO-twiGFP (gift from Akanksha Jain), and the membrane fluorescent
-marker GAP43-mCherry (@Martin2010-pb, gift from Kassiani Skouloudaki), to
-establish the imaging stocks. We imaged the final genotypes
-btd^XA^/FM7c-KrGFP;; GAP43-mCherry/MKRS and eve^3^/CyO-twiGFP;
-GAP43-mCherry/MKRS. We identified homozygous embryos by the absence of GFP
-signal.
+We generated fluorescent cephalic furrow mutant strains by genetic crossing. We
+mated flies carrying the loss-of-function alleles *btd^XA^* (FlyBase:
+[FBal0030657](https://flybase.org/reports/FBal0030657), BDSC:
+[#26815](https://bdsc.indiana.edu/Home/Search?presearch=26815)) and *eve^3^*
+(FlyBase: [FBal0003885](https://flybase.org/reports/FBal0003885), BDSC
+[#299](https://bdsc.indiana.edu/Home/Search?presearch=299)), with flies
+carrying the fluorescent membrane marker GAP43-mCherry [@Martin2010-pb, gift
+from Kassiani Skouloudaki]. The mutant alleles were balanced over the
+fluorescent balancers FM7c-KrGFP (BDSC:
+[#5193](https://bdsc.indiana.edu/Home/Search?presearch=5193)) and CyO-twiGFP
+(gift from Akanksha Jain). We imaged the progeny of the established stable
+lines *btd^XA^/FM7c-KrGFP;;GAP43-mCherry/MKRS;* and
+*;eve^3^/CyO-twiGFP;GAP43-mCherry/MKRS;*, and used the lack of GFP signal to
+distinguish homozygous embryos.
 
-## Imaging
+<!--TODO: Add prd and stg alleles.-->
+<!--TODO: Add Gap,stg recombination.-->
+<!--TODO: Add TM3-KrGFP balancer.-->
 
-Coverslip mounting, Z.1 imaging, Luxendo, MZ2.
+## Live-imaging
+
+We collected embryos on apple juice agar plates at 25°C and immersed in 20%
+sodium hypochlorite solution (Merck 1.05614.2500) for 1.5 min to remove the
+chorion. We oriented the embryos on an agar pad and attached them to a
+coverslip previously covered with a thin layer of heptane glue. Using silicone
+glue we attached the coverslip to a sample holder and mounted the samples in a
+Zeiss Lightsheet Z.1 microscope. For imaging lateral views, we used a Zeiss
+20x/1NA Plan-Apochromat Water objective and acquired z-stacks of 0.X pixel size
+and 3µm z-step covering one side of the embryo. For imaging dorsal views, we
+used a Zeiss 40x/?NA Plan-Apochromat Water objective acquiring z-stacks of 0.X
+pixel size and 1.5--3µm z-step covering the middle section of the embryo. The
+time resolution was adjusted according to the number of embryos on the
+coverslip, ranging between 45--60s. We acquired two channels simultaneously
+using 488 and 561nm lasers, and an image splitter cube containing a LP560
+dichromatic mirror and a LP585 emission filter. All recordings were performed
+at 25°C.
+
+<!--TODO: Add multiview description?-->
+
+## Cauterization experiments
+
+The embryos were collected and dechorionated as described above. TODO: Mounting
+in Luxendo. TODO: Cauterization in Luxendo. TODO: Mounting in MZ2. TODO:
+Cauterization in MZ2.
 
 ## Image processing and analyses
 
-ImageJ macros, imsane projections, matlab, ilastik, 3Dscript, R, Python, Fiji,
-Inkscape.
+We converted the raw microscopy datasets into individual TIFF stacks for
+downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di;
+@Rueden2017-ky]. We generated 3D renderings of the lateral surface of the
+embryos using the ImageJ/Fiji plugin 3Dscript [@Schmid2019-bm]. We improved the
+signal-to-noise ratio and restored the z-resolution of lateral datasets from
+3µm to 1µm by training a deep learning upsampling model using CARE
+[@Weigert2018-ti]. We generated cartographic projections by segmenting the
+surface of the embryo with ilastik [@Berg2019-ab] and using the ImSAnE toolbox
+[@Heemskerk2015-kv]. We manually traced the fold outlines and areas of lateral
+3D renderings and lateral cartographic projections, respectively, using Fiji.
+We used the ImageJ Temporal-Color Code script with the mpl-viridis colorscheme
+to visualize the fold dynamics. To segment membranes and quantify apical cell
+areas we used MorphoLibJ plugin in ImageJ [@Legland2016-cp]. To analyze the
+tortuosity of the epithelium we straightened the vitelline envelope using the
+Straighten tool in ImageJ, and applied gaussian blur and thresholding to
+extract the outline of the epithelium in dorsal views. We used custom Python
+and R scripts to generate plots, and Inkscape to assemble the figure plates and
+illustrations.
 
 # Acknowledgements
 
@@ -574,7 +622,7 @@ COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_crop_label.avi-->
 <!--TODO: Video 5 Add
 COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 
-# Tables {-}
+# Tables
 
 - **Table 1:** Live-imaging datasets.
 
