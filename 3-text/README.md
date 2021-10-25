@@ -6,6 +6,21 @@
 
 ## Notes
 
+**2021-10-25**
+
+- Made figure for strain analysis with updated files from Marina.
+
+**2021-10-22**
+
+- Added text to genetics, live-imaging and processing in Methods.
+- Incorporated key references in Methods.
+
+**2021-10-15**
+
+- Updated fold depth measurements.
+- Added annotations to dataset table.
+- Incorporated shear analysis.
+
 **2021-10-05**
 
 - Incorporates Abhijeet’s comments to manuscript.
@@ -91,7 +106,6 @@
 - Finished illustrations for core figures.
 - Included plots from Marina.
 
-
 **2021-06-29**
 
 - Drafted illustration of germ band cauterization.
@@ -113,7 +127,6 @@
   added draft for illustration of developmental events, and moved panel of fold
   depth from Figure 2 to Figure 1.
 - Wrote draft legend for Figure 1.
-
 
 **2021-06-19**
 
