@@ -28,7 +28,9 @@ linkimg:
 	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig4.png
 	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig5.png
 	# Supplementary
-	ln -s ${FIGUREIN}/tissue-strain/figure.png ${FIGUREOUT}/FigS1.png
+	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
+	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS2.png
+	ln -s ${FIGUREIN}/tissue-strain/figure.png ${FIGUREOUT}/FigS3.png
 	# Convert to jpg for lightness
 	mogrify -format jpg -quality 50 -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	mkdir ${FIGUREOUT}/source
