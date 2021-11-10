@@ -6,6 +6,18 @@
 
 ## Notes
 
+**2021-11-10**
+
+- Fix video processing/copying to folder.
+- Include figure and video for initiator behavior.
+- Organizing the videos and figures.
+
+**2021-11-08**
+
+- Added some supplementary material.
+- Small adjustments in the mitotic domain figures.
+- Some cleaning up in the text.
+
 **2021-10-25**
 
 - Made figure for strain analysis with updated files from Marina.
