@@ -28,7 +28,7 @@ linkimg:
 	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig4.png
 	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig5.png
 	# Supplementary
-	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
+	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
 	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS2.png
 	ln -s ${FIGUREIN}/tissue-strain/figure.png ${FIGUREOUT}/FigS3.png
 	# Convert to jpg for lightness
@@ -47,6 +47,9 @@ linkvid:
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid7.avi
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid8.avi
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid9.avi
+	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGUREOUT}/Vid10.avi
+	# Create video snapshot
+	for i in ${FIGUREOUT}/*.avi; do ffmpeg -ss 00:00:01 -i $${i} -vframes 1 ${FIGUREOUT}/`basename $${i} .avi`.jpg; done
 
 compile:
 	# Compile timestamped documents to output directory
