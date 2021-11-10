@@ -21,13 +21,13 @@ geometry:
 - bindingoffset=2mm
 - hmargin=25mm
 - vmargin=25mm
-link-citations: true
-colorlinks: true
+link-citations: True
+colorlinks: True
 fignos-warning-level: 1
 fignos-cleveref: True
 fignos-plus-name: Figure
-tablenos-cleveref: True
-tablenos-plus-name: Table
+#tablenos-cleveref: True
+#tablenos-plus-name: Table
 ---
 
 # Abstract
@@ -100,8 +100,6 @@ folding, and thus preventing mechanical stress at the head--trunk boundary.
 
 # Results
 
-<!--Ectopic folds form in the absence of the cephalic furrow-->
-
 To analyze how cephalic furrow defects impact gastrulation, we generated
 fluorescent lines containing the loss-of-function alleles *btd^XA^* and
 *eve^3^* [@Vincent1997-fa], and imaged the mutant embryos *in toto* under
@@ -113,17 +111,18 @@ In homozygote embryos for the *btd* or *eve* alleles (i.e. mutants), the
 cephalic furrow fails to initiate and no invagination is visible in the lateral
 surface of stages 6 and 7a ({@fig:ectopic}A). In the subsequent stages 7b and
 8, however, we observe the formation of epithelial folds at the head--trunk
-interface of both *btd* and *eve* mutant embryos ({@fig:ectopic}A, Videos 1 and
-2). These folds, from now on referred as ectopic folds, appear simultaneously
-with the mitotic domains, and reach their fullest extension in stage 8. They
-have, however, an even shorter existence than the cephalic furrow, folding and
-unfolding entirely in about 20 min ({@fig:ectopic}A).
+interface of both *btd* and *eve* mutant embryos ({@fig:ectopic}A,
+{!@fig:vid-lateral-btd} and {!@fig:vid-lateral-eve}). These folds, from now on
+referred as ectopic folds, appear simultaneously with the mitotic domains, and
+reach their fullest extension in stage 8. They have, however, an even shorter
+existence than the cephalic furrow, folding and unfolding entirely in about 20
+min ({@fig:ectopic}A).
 
 To understand the origin of the ectopic folds forming in the absence of the
 cephalic furrow, we analysed their morphology and distribution, and
 characterized their dynamics throughout development. We find that *btd* and
 *eve* mutant embryos invariably form between one and four ectopic folds on each
-side of the body (Table 1, {@fig:dynamics}A,D). The ectopic folds form by an
+side of the body (Table S1, {@fig:dynamics}A,D). The ectopic folds form by an
 abrupt epithelial buckling, instead of the progressive invagination as it
 occurs with the cephalic furrow ({@fig:dynamics}B), and lack the stereotypic
 cell morphologies present in the cephalic furrow, such as wedge-shaped
@@ -147,7 +146,10 @@ variable. This suggests that ectopic fold formation might be driven by
 extrinsic mechanical forces acting in the monolayer epithelium rather than by
 intrinsic mechanisms under the genetic control.
 
-<!--We identified a difference between *btd* and *eve* embryos. While *eve* mutants show no initiator cell behavior, we observe cell shape changes in *btd* mutants that are reminiscent of initiator cell behaviors ({@fig:dynamics}B).-->
+We identified a difference between *btd* and *eve* embryos. While *eve* mutants
+show no initiator cell behavior, we observe cell shape changes in *btd* mutants
+that are reminiscent of initiator cell behaviors ({@fig:initiator},
+{@fig:vid-initiator}).
 
 <!--it can even differ between the left and right side of the same embryo ({@fig:dynamics}H).-->
 
@@ -182,8 +184,8 @@ loss-of-function allele for the cephalic furrow (*btd^XA^* or *eve^3^*) and a
 loss-of-function allele for the mitotic domains (*stg^2^*). The gene that
 regulates the formation of mitotic domains in cycle 14 [@Edgar1989-hv]. In this
 manner, homozygote embryos to both *btd* and *stg* alleles (or *eve* and *stg*)
-lack both the cephalic furrow and the mitotic domains. __TODO: WE FIND THAT
-DOUBLE-MUTANTS STILL FORM ECTOPIC FOLDS__ ({@fig:mitotic}C). Therefore,
+lack both the cephalic furrow and the mitotic domains. <mark>WE FIND THAT
+DOUBLE-MUTANTS STILL FORM ECTOPIC FOLDS</mark> ({@fig:mitotic}C). Therefore,
 although mitotic domains might prime the position of folding events along the
 epithelia, they are not the sole drivers for the formation of ectopic folds,
 suggesting that other extrinsic forces are involved.
@@ -351,6 +353,8 @@ the extending germ band that drives the formation of ectopic folds in cephalic
 furrow mutants, revealing an unexpected long-range tissue interaction between
 the germ band and the head--trunk boundary.
 
+<!--TODO: Formation of ectopic folds depend on germ band extension driven by the posterior midgut invagination and not by cell intercalation because eve mutants have no cell intercalation and still form ectopic folds [@Collinet2015].-->
+
 In fact, the simultaneous expansion of mitotic domains in the head and the
 extension of the germ band from the trunk generate a convergent zone of tissue
 interactions that seem to make the folding at the head--trunk interface
@@ -500,8 +504,42 @@ mutants. Ectopic folds in *btd* and *eve* form later and unfold quicker than
 the cephalic furrow in normal development, and their formation coincides with
 the appearance of mitotic domains. Arrows indicate the cephalic furrow,
 arrowheads indicate the ectopic folds, and asterisks indicate the position of
-mitotic domains. Developmental staging based on @Ashburner2005-ym.
-](figures/Fig1.jpg){#fig:ectopic width=100%}
+mitotic domains. Developmental staging based on
+@Ashburner2005-ym.](figures/Fig1.jpg){#fig:ectopic width=100%}
+
+![Lateral view of ectopic fold formation in *btd* mutants. [OPEN
+FILE](figures/Vid1.avi)](figures/Vid1.jpg){#fig:vid-lateral-btd tag="Video 1"
+width=100%}
+
+![Lateral view of ectopic fold formation in *eve* mutants. [OPEN
+FILE](figures/Vid2.avi)](figures/Vid2.jpg){#fig:vid-lateral-eve tag="Video 2"
+width=100%}
+
+
+![Reminiscent initiator cell behavior in *btd*
+mutants.](figures/FigS1.jpg){#fig:initiator tag="S1" width=100%}
+
+![Reminiscent initiator cell behavior in *btd* mutants. [OPEN
+FILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-initiator tag="Video 10"
+width=100%}
+
+
+<!--TODO: Video variability for four btd embryos at /home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/ectopic-variability/5-combined -->
+
+
+- **Video 3:** [Profile view of ectopic fold formation in *btd*
+  mutant](figures/Vid3.avi).
+- **Video 4:** [Profile view of ectopic fold formation in *eve*
+  mutants](figures/Vid4.avi).
+- **Video 5:** [Combined lateral view of ectopic fold dynamics in *btd*
+  mutant](figures/Vid5.avi).
+- **Video 6:** [Lateral view of ectopic fold formation between mitotic domains
+  in *btd* mutant](figures/Vid6.avi).
+- **Video 7:** [Lateral views of control and cauterized *eve* mutant
+  embryos](figures/Vid7.avi).
+- **Video 8:** [Dorsal views of cauterized *eve* mutant](figures/Vid8.avi).
+- **Video 9:** [Dorsal view of control and cauterized *btd*
+  mutant embryos](figures/Vid9.avi).
 
 ![Characterization of ectopic fold formation in *btd* and *eve* mutants. (A)
 Profile views of control, *btd* and *eve* embryos showing the divergent
@@ -524,6 +562,9 @@ Map of representative position of ectopic folds relative to mitotic domains in
 cells and the position of the folded area.
 ](figures/Fig3.jpg){#fig:mitotic width=100%}
 
+![Convergent tissue flows in the head--trunk boundary of cephalic furrow
+mutants.](figures/FigS2.jpg){#fig:flows tag=S2 width=100%}
+
 ![Blocking of germ band extension in cephalic furrow mutants by cauterization.
 (A) Schematic drawings of the experiment and cauterization site. (B) Cauterized
 *eve* mutant in lateral (top) and dorsal view (bottom) at the highest mitotic
@@ -535,24 +576,28 @@ deformations in time. (F) Quantification of the tortuosity of the epithelial
 traces in non-cauterized and cauterized mutant embryos.
 ](figures/Fig4.jpg){#fig:cauterization width=100%}
 
+![Strain analysis at the head--trunk boundary of cephalic furrow
+mutants.](figures/FigS3.jpg){#fig:strain tag=S3 width=100%}
+
+![Fold model simulations.](){#fig:model width=100%}
+
+![Ablation experiments in wild type embryos.](){#fig:ablation width=100%}
+
+![Cauterization experiments in wild type embryos.](){#fig:wildtype width=100%}
+
 ![Summary of head--trunk tissue interactions in cephalic furrow mutants. (A,B)
 Schematic drawings of lateral and profile views showing the tissue invaginated
 in the cephalic furrow buffers the interactions while the excess of epithelial
 tissue in cephalic furrow mutants increases the epithelial
 instability.](figures/Fig5.jpg){#fig:summary width=100%}
 
-<!--TODO: ![Fold model simulations.](){#fig:model width=100%}-->
-
-<!--TODO: ![Cauterization experiments in wild type embryos.](){#fig:wtcaut width=100%}-->
-
 \clearpage
 
 \newpage
 
-# Videos
+<!--# Videos-->
 
-- **Video 1:** [Lateral view of ectopic fold formation in *btd*
-  mutant](figures/Vid1.avi).
+- **Video 1:** [Lateral view of ectopic fold formation in *btd* mutant](figures/Vid1.avi).
 - **Video 2:** [Lateral view of ectopic fold formation in *eve*
   mutant](figures/Vid2.avi).
 - **Video 3:** [Profile view of ectopic fold formation in *btd*
@@ -574,20 +619,9 @@ COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_crop_label.avi-->
 <!--TODO: Video 5 Add
 COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
 
-# Tables
-
-- **Table 1:** Live-imaging datasets.
-
 # Supplementary material
 
-![Reminiscent initiator cell behavior in *btd*
-mutants.](figures/FigS1.jpg){#fig:strain tag=S1 width=100%}
-
-![Convergent tissue flows in the head--trunk boundary of cephalic furrow
-mutants.](figures/FigS2.jpg){#fig:strain tag=S2 width=100%}
-
-![Strain analysis at the head--trunk boundary of cephalic furrow
-mutants.](figures/FigS3.jpg){#fig:strain tag=S3 width=100%}
+- **Table S1:** Live-imaging datasets (`datasets.ods`).
 
 <!--TODO **Figure:** Tissue flows in lateral view showing convergent zone.-->
 <!--TODO **Figure:** Compressed epithelial cells in posterior ectopic fold.-->
