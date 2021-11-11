@@ -6,6 +6,11 @@
 
 ## Notes
 
+**2021-11-11**
+
+- Moved invagination panel from ectopic features to initiator behavior figure.
+- Incorporated all video files so far with references in the text.
+
 **2021-11-10**
 
 - Fix video processing/copying to folder.
