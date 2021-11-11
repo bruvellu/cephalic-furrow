@@ -24,14 +24,14 @@ linkimg:
 	# Link figure files to figure directory with official naming
 	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
 	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig2.png
-	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
-	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig4.png
-	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig5.png
+	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/Fig3.png
+	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig4.png
+	#ln -s ${FIGUREIN}/tissue-flows/figure.png ${FIGUREOUT}/Fig5.png
+	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
+	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig7.png
 	# Supplementary
-	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
-	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS2.png
-	ln -s ${FIGUREIN}/tissue-strain/figure.png ${FIGUREOUT}/FigS3.png
-	# Convert to jpg for lightness
+	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
+	# Convert to JPG for smaller file sizes
 	mogrify -format jpg -quality 50 -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	mkdir ${FIGUREOUT}/source
 	mv ${FIGUREOUT}/*.png ${FIGUREOUT}/source/
@@ -43,11 +43,12 @@ linkvid:
 	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.avi ${FIGUREOUT}/Vid3.avi
 	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.avi ${FIGUREOUT}/Vid4.avi
 	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.avi ${FIGUREOUT}/Vid5.avi
-	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGUREOUT}/Vid6.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid7.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid8.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid9.avi
-	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGUREOUT}/Vid10.avi
+	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.avi ${FIGUREOUT}/Vid6.avi
+	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGUREOUT}/Vid7.avi
+	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGUREOUT}/Vid8.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid9.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid10.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid11.avi
 	# Create video snapshot
 	for i in ${FIGUREOUT}/*.avi; do ffmpeg -ss 00:00:01 -i $${i} -vframes 1 ${FIGUREOUT}/`basename $${i} .avi`.jpg; done
 
