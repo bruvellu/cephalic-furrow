@@ -10,6 +10,9 @@
 
 - Fixed references and moved folders.
 - Included strain analysis of control/btd to mitotic domains figure.
+- Added ablation plots to the wildtype cauterization figure.
+- Swapped wildtype with model sections so that model is the last.
+- Fixed-up all figure/video references.
 
 **2021-11-11**
 

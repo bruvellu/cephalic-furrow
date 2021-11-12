@@ -28,7 +28,9 @@ linkimg:
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig4.png
 	ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig5.png
 	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
-	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig7.png
+	ln -s ${FIGUREIN}/wildtype-cauterizations/figure.png ${FIGUREOUT}/Fig7.png
+	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig8.png
+	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig9.png
 	# Supplementary
 	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
 	# Convert to JPG for smaller file sizes
