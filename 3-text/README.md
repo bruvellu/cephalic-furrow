@@ -6,6 +6,11 @@
 
 ## Notes
 
+**2021-11-12**
+
+- Fixed references and moved folders.
+- Included strain analysis of control/btd to mitotic domains figure.
+
 **2021-11-11**
 
 - Moved invagination panel from ectopic features to initiator behavior figure.
