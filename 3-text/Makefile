@@ -27,7 +27,6 @@ linkimg:
 	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/Fig3.png
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig4.png
 	ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig5.png
-	#ln -s ${FIGUREIN}/tissue-flows/figure.png ${FIGUREOUT}/Fig5.png
 	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
 	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig7.png
 	# Supplementary
@@ -47,7 +46,7 @@ linkvid:
 	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.avi ${FIGUREOUT}/Vid6.avi
 	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGUREOUT}/Vid7.avi
 	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGUREOUT}/Vid8.avi
-	ln -s ${FIGUREIN}/mitotic-strain/videos/Strain_E10_E14_label_loop.avi ${FIGUREOUT}/Vid9.avi
+	ln -s ${FIGUREIN}/mitotic-strain/videos/Strain_btd_E10_E14_label_loop.avi ${FIGUREOUT}/Vid9.avi
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid10.avi
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid11.avi
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid12.avi
