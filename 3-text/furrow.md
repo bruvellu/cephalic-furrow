@@ -499,12 +499,6 @@ arrowheads indicate the ectopic folds, and asterisks indicate the position of
 mitotic domains. Developmental staging based on
 @Ashburner2005-ym.](figures/Fig1.jpg){#fig:ectopic width=100%}
 
-![Lateral view of ectopic fold formation in *btd* mutants. [VIDEOFILE](figures/Vid1.avi)](figures/Vid1.jpg){#fig:vid-lateral-btd tag="Video 1"
-width=50%}
-
-![Lateral view of ectopic fold formation in *eve* mutants. [VIDEOFILE](figures/Vid2.avi)](figures/Vid2.jpg){#fig:vid-lateral-eve tag="Video 2"
-width=50%}
-
 ![Characterization of ectopic fold formation in *btd* and *eve* mutants. (A)
 Profile views of control, *btd* and *eve* embryos showing the divergent
 morphology of the ectopic folds compared to the cephalic furrow. (B) Dynamics
@@ -519,6 +513,57 @@ development between *btd* heterozygote (control) and *btd* homozygote embryos.
 embryos. (J) Cartographic projections showing the area of folded epithelial
 cells in the cephalic furrow and ectopic folds.
 ](figures/Fig2.jpg){#fig:dynamics width=100%}
+
+![Reminiscent initiator cell behaviors in *btd*
+mutants.](figures/Fig3.jpg){#fig:initiator width=100%}
+
+![Correlation between the position of mitotic domains and ectopic folds. (A)
+Map of representative position of ectopic folds relative to mitotic domains in
+*btd* and *eve* mutants. (B) Relation between apical area expansion of dividing
+cells and the position of the folded area. ](figures/Fig4.jpg){#fig:mitotic
+width=100%}
+
+![Ectopic fold formation in *btd--stg* and *eve--stg* double
+mutants.](figures/Fig5.jpg){#fig:doubles width=100%}
+
+![Blocking of germ band extension in cephalic furrow mutants by cauterization.
+(A) Schematic drawings of the experiment and cauterization site. (B) Cauterized
+*eve* mutant in lateral (top) and dorsal view (bottom) at the highest
+mitotic domain expansion. (C) Non-dividing cells being compressed by the
+apical area expansion in mitotic domains of the *eve* embryo in (B). (D,E)
+Profile view and trace of the epithelial outline between non-cauterized
+(control) and cauterized *btd* and *eve* embryos. The trace shows the
+dynamics of epithelial deformations in time. (F) Quantification of the
+tortuosity of the epithelial traces in non-cauterized and cauterized mutant
+embryos.](figures/Fig6.jpg){#fig:cauterization width=100%}
+
+![Cauterization and ablation experiments in wild type
+embryos.](figures/Fig7.jpg){#fig:wildtype width=100%}
+
+![Folding model simulations.](figures/Fig8.jpg){#fig:model width=100%}
+
+![Summary of head--trunk tissue interactions in cephalic furrow mutants. (A,B)
+Schematic drawings of lateral and profile views showing the tissue invaginated
+in the cephalic furrow buffers the interactions while the excess of epithelial
+tissue in cephalic furrow mutants increases the epithelial
+instability.](figures/Fig9.jpg){#fig:summary width=100%}
+
+<!--FIXME:  “and lower tissue strain ({@fig:strain}B)” but cauterized eve embryos n = 1... ![Strain analysis of cauterized eve embryos.](figures/FigS3.jpg){#fig:strain tag=S3 width=100%}-->
+
+
+\clearpage
+
+\newpage
+
+# Videos
+
+![Lateral view of ectopic fold formation in *btd* mutants.
+[VIDEOFILE](figures/Vid1.avi)](figures/Vid1.jpg){#fig:vid-lateral-btd
+tag="Video 1" width=50%}
+
+![Lateral view of ectopic fold formation in *eve* mutants.
+[VIDEOFILE](figures/Vid2.avi)](figures/Vid2.jpg){#fig:vid-lateral-eve
+tag="Video 2" width=50%}
 
 ![Profile view of ectopic fold formation in *btd* mutant.
 [VIDEOFILE](figures/Vid3.avi)](figures/Vid3.jpg){#fig:vid-profile-btd
@@ -536,18 +581,9 @@ tag="Video 5" width=50%}
 [VIDEOFILE](figures/Vid6.avi)](figures/Vid6.jpg){#fig:vid-variability-btd
 tag="Video 6" width=50%}
 
-![Reminiscent initiator cell behaviors in *btd*
-mutants.](figures/Fig3.jpg){#fig:initiator width=100%}
-
 ![Reminiscent initiator cell behavior in *btd* mutants.
 [VIDEOFILE](figures/Vid7.avi)](figures/Vid7.jpg){#fig:vid-initiator tag="Video
 7" width=50%}
-
-![Correlation between the position of mitotic domains and ectopic folds. (A)
-Map of representative position of ectopic folds relative to mitotic domains in
-*btd* and *eve* mutants. (B) Relation between apical area expansion of dividing
-cells and the position of the folded area. ](figures/Fig4.jpg){#fig:mitotic
-width=100%}
 
 ![Lateral view of ectopic fold formation between mitotic domains in *btd*
 mutant. [VIDEOFILE](figures/Vid8.avi)](figures/Vid8.jpg){#fig:vid-mitotic-fold
@@ -556,20 +592,6 @@ tag="Video 8" width=50%}
 ![Strain analysis during ectopic fold formation in *btd* mutant.
 [VIDEOFILE](figures/Vid9.avi)](figures/Vid9.jpg){#fig:vid-mitotic-strain
 tag="Video 9" width=50%}
-
-![Ectopic fold formation in *btd--stg* and *eve--stg* double
-mutants.](figures/Fig5.jpg){#fig:doubles width=100%}
-
-![Blocking of germ band extension in cephalic furrow mutants by cauterization.
-(A) Schematic drawings of the experiment and cauterization site. (B) Cauterized
-*eve* mutant in lateral (top) and dorsal view (bottom) at the highest
-mitotic domain expansion. (C) Non-dividing cells being compressed by the
-apical area expansion in mitotic domains of the *eve* embryo in (B). (D,E)
-Profile view and trace of the epithelial outline between non-cauterized
-(control) and cauterized *btd* and *eve* embryos. The trace shows the
-dynamics of epithelial deformations in time. (F) Quantification of the
-tortuosity of the epithelial traces in non-cauterized and cauterized mutant
-embryos.](figures/Fig6.jpg){#fig:cauterization width=100%}
 
 ![Lateral views of control and cauterized *eve* mutant embryos.
 [VIDEOFILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-cautlat-eve
@@ -583,22 +605,6 @@ tag="Video 11" width=50%}
 [VIDEOFILE](figures/Vid12.avi)](figures/Vid12.jpg){#fig:vid-cautdor-btd
 tag="Video 12" width=50%}
 
-<!--FIXME:  “and lower tissue strain ({@fig:strain}B)” but cauterized eve embryos n = 1... ![Strain analysis of cauterized eve embryos.](figures/FigS3.jpg){#fig:strain tag=S3 width=100%}-->
-
-![Cauterization and ablation experiments in wild type
-embryos.](figures/Fig7.jpg){#fig:wildtype width=100%}
-
-![Folding model simulations.](figures/Fig8.jpg){#fig:model width=100%}
-
-![Summary of head--trunk tissue interactions in cephalic furrow mutants. (A,B)
-Schematic drawings of lateral and profile views showing the tissue invaginated
-in the cephalic furrow buffers the interactions while the excess of epithelial
-tissue in cephalic furrow mutants increases the epithelial
-instability.](figures/Fig9.jpg){#fig:summary width=100%}
-
-<!--\clearpage-->
-
-<!--\newpage-->
 
 <!--# Supplementary material-->
 
@@ -611,4 +617,3 @@ instability.](figures/Fig9.jpg){#fig:summary width=100%}
 <!--TODO **Video:** [Detail of mitotic domains in cauterization of eve mutants]().-->
 <!--TODO: Video COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_crop_label.avi-->
 <!--TODO: Video COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
-
