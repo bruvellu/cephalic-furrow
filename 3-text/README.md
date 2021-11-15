@@ -9,6 +9,7 @@
 **2021-11-15**
 
 - Fixed plots for new figure dimensions.
+- Imported laser ablation data to repository.
 
 **2021-11-12**
 
