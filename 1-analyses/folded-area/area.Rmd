@@ -7,6 +7,7 @@ creation: February 18, 2021
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/folded-area")
 # Load ggplot
 library(ggplot2)
 ```
@@ -122,7 +123,7 @@ ggplot(results, aes(Genotype, AreaCorr, fill = Genotype)) +
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("folded-area_mutants_facet.png", width = 10, height = 7)
+ggsave("folded-area_mutants_facet.png", width = 14, height = 5)
 
 
 # Plot corrected area of individual folds by genotype
