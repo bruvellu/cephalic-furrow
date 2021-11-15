@@ -6,6 +6,10 @@
 
 ## Notes
 
+**2021-11-15**
+
+- Fixed plots for new figure dimensions.
+
 **2021-11-12**
 
 - Fixed references and moved folders.

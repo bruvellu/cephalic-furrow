@@ -7,6 +7,7 @@ creation: April 06, 2021
   
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
 ```
 
 ## Directories
@@ -105,11 +106,20 @@ ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length))
 ggsave("wt-cf-length.png")
 
 # Plot total length of cephalic furrow invagination per embryo
-ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Mean, colour = Sample)) +
-  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
-  geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), color = "black", alpha = 0.5, data = summary_samples) +
-  labs(title = "Mean CF length per sample", x = "sample", y = "length (µm)")
-ggsave("wt-mean-length.png")
+ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  labs(x = "sample", y = "length (µm)") +
+  scale_color_manual(values=c("#0072b2", "#e69f03")) +
+  scale_fill_manual(values=c("#0072b2", "#e69f03")) +
+  theme_classic() +
+  theme(text =  element_text(size = 25),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("wt-mean-length.png", width = 6, height = 5)
+
 
 # Plot total length of cephalic furrow invagination per embryo
 ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Total, colour = Sample)) +
