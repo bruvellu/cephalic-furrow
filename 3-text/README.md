@@ -10,6 +10,7 @@
 
 - Fixed plots for new figure dimensions.
 - Imported laser ablation data to repository.
+- Made drawing of ablation experiment.
 
 **2021-11-12**
 
