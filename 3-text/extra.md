@@ -386,15 +386,53 @@ occurrence of ectopic folds at the head--trunk boundary depends on the global
 tissue compression caused by the germ band extension, and that this interaction
 also contributes to the cephalic furrow formation in normal embryogenesis.
 
-<!--*Drosophila* gastrulation is complex and highly dynamic. The various morphogenetic movements begin almost simultaneously. The ventral furrow, the midgut invaginations, and the cephalic furrow. To capture the consequences-->
+*Drosophila* gastrulation is complex and highly dynamic. The various
+morphogenetic movements begin almost simultaneously. The ventral furrow, the
+midgut invaginations, and the cephalic furrow. To capture the consequences
 
-<!--In normal development, the overlap between *btd* and *eve* is required to specify the initiator cells of the cephalic furrow; in mutants, the invagination fails to form [@Vincent1997-fa].-->
+In normal development, the overlap between *btd* and *eve* is required to
+specify the initiator cells of the cephalic furrow; in mutants, the
+invagination fails to form [@Vincent1997-fa].
 
-<!--To gain insight into the role of the cephalic furrow during gastrulation, we analyzed the head-trunk boundary in mutants that lack this invagination. For this, we generated fluorescent fly lines with loss-of-function alleles of genes known to play a role in cephalic furrow formation, and imaged the embryos *in toto* under high-temporal resolution using lightsheet microscopy.-->
+To gain insight into the role of the cephalic furrow during gastrulation, we
+analyzed the head-trunk boundary in mutants that lack this invagination. For
+this, we generated fluorescent fly lines with loss-of-function alleles of genes
+known to play a role in cephalic furrow formation, and imaged the embryos *in
+toto* under high-temporal resolution using lightsheet microscopy.
 
-<!--and a fluorescent membrane marker [GAP43-mCherry, @Martin2010-pb].-->
+and a fluorescent membrane marker [GAP43-mCherry, @Martin2010-pb].
 
-<!--The presence of ectopic folds in both *btd* and *eve* raised the possibility that this phenotype is associated with the absence of the cephalic furrow in these embryos. We thus characterize the distribution and dynamics of ectopic fold formation to understand the processes causing the head--trunk tissue to fold in cephalic furrow mutants.-->
+The presence of ectopic folds in both *btd* and *eve* raised the possibility
+that this phenotype is associated with the absence of the cephalic furrow in
+these embryos. We thus characterize the distribution and dynamics of ectopic
+fold formation to understand the processes causing the head--trunk tissue to
+fold in cephalic furrow mutants.
 
-<!--We manually traced individual folds and extracted tortuosity measurements, angle displacement, folded area, and location along the anteroposterior axis.-->
+We manually traced individual folds and extracted tortuosity measurements,
+angle displacement, folded area, and location along the anteroposterior axis.
+
+
+The cephalic furrow is an enigmatic tissue fold that forms at the head--trunk
+boundary of *Drosophila* during gastrulation.
+
+It forms at a key anatomical landmark in the embryo, the head--trunk boundary.
+
+The cephalic furrow is a deep tissue fold that forms at the head--trunk
+boundary of *Drosophila* during gastrulation.
+
+Its formation is under strict genetic control.
+
+It divides the head--trunk boundary.
+
+It forms at the onset of gastrulation.
+
+Its function remains a mystery.
+
+The cephalic furrow invaginates.
+
+The ectopic folds buckle.
+
+it can even differ between the left and right side of the same embryo ({@fig:dynamics}H).
+
+The difference can be related to the fact that *btd* embryos lack MD2 [@Edgar1994-pi] while *eve* mutants have an expanded MD2 [@Vincent1997-fa].
 
