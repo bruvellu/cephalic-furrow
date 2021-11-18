@@ -322,45 +322,50 @@ influence in the depth of the invagination.
 
 <!--TODO: AK will write one/two paragraphs here.-->
 
-To complement our *in vivo* observations and uncover the interplay of forces
-between mitotic domains and the germ band, we modeled the physical interactions
-occurring in the monolayer epithelium of the head--trunk boundary in cephalic
-furrow mutants using a 1D representation. We first analyzed how the tissue
-strain caused by the expansion of mitotic domains affects the probability of
-folding events in the epithelium. Our simulations reveal that when the
-expansion is greater than 1.25 times, the probability of folding is increased
-({@fig:model}). The folds occur mostly at the edges of the mitotic domains with
-a portion of “dividing cells” also folding inwards, a pattern that we also
-observe *in vivo* ({@fig:model} and {@fig:mitotic}B). We next tested how the
-distance between adjacent mitotic domains interferes with the folding patterns.
-The simulations show that below a critical distance of separation, the
-probability of folding between mitotic domains increases significantly, but
-when mitotic domains are too close, the folding events are inhibited
-({@fig:model}). Moreover, a folding event decreases the probability of other
-folds forming in the neighborhood. This inhibitory effect is evident when we
-introduce a region with a negative intrinsic curvature parameter to simulate
-the invagination of the cephalic furrow. The presence of a “cephalic furrow”
-greatly decreases the probability of folds originating from nearby mitotic
-domains, especially in simulations where we include a delay in the formation of
-mitotic domains to match the timing of these developmental events *in vivo*
-({@fig:model} and {@fig:ectopic}). Finally, we incorporated the germ band
-extension in our model by introducing a terminal unidirectional expansion from
-the side opposite of the mitotic domains. A parameter sweep shows THE
-MINIMAL RATE OF EXPANSION AND CRITIC COMPRESSION THRESHOLD REQUIRED FOR THE
-GERM BAND TO CAUSE ECTOPIC FOLDS ON THE HEAD ({@fig:model}). Our
-model thus uncovers the principles on how localized expansions in a monolayer
-epithelium can induce the formation of folds. It reveals how the buckling
-events can interact, and demonstrates the compression exerted by the germ band
-is essential for the formation of ectopic folds observed *in vivo* in cephalic
-furrow mutants.
+To complement our *in vivo* observations, we built a model of the physical
+interactions occurring between mitotic domains, ectopic folds, the germ band
+and the cephalic furrow. Our model consists of series of particles connected by
+springs with $\kappa/\lambda$ rigidity to represent the monolayer epithelium of
+the blastoderm ({@fig:model}A). The particles are arranged on an elliptical arc
+the approximates the curvature of the lateral side of the embryo in a
+dorsal/frontal section. The particles are contained on one side by an
+incompressible layer representing the vitelline envelope. The extension of the
+germ band occurs by the displacement of the posterior end of the epithelium
+towards the anterior end. Mitotic domains are represented by regions of
+compressed particles to maintain constant rigidity. The cephalic furrow is
+simulated by a region of intrinsic negative curvature. We determined the
+rigidity value by a parameter sweep using as a reference the cauterization in
+mutants (i.e. MD without GB = no ectopic folds), and the double mutant
+observation (i.e. GB without MD = [no] ectopic folds).
 
-Taken together, our analyses reveal that the absence of the cephalic furrow
-invariably leads to the accumulation of tissue stresses and the formation of
-ectopic folds in the head--trunk epithelium. The cephalic furrow anticipates
-and buffers these tissue interactions and we propose it accomplishes a
-mechanical role during *Drosophila* gastrulation [^closure].
+<!--In our initial simulations we saw that ectopic folds were forming within a mitotic domain, something we have not observed *in vivo*. This suggests the physical properties of dividing cells must be change the properties of the -->
 
-[^closure]: Ending paragraph of results needs proper closure.
+We analyzed how the mitotic expansions influence the probability and
+distribution of buckling events. This probability is increased when the mitotic
+expansion is greater than 1.25 times in width ({@fig:model}B). Folds occur
+mostly at the edges of mitotic domains which also partially buckle inwards, a
+pattern we observe *in vivo* ({@fig:mitotic}B and {@fig:model}B). The
+probability of folding between mitotic domains increases significantly below a
+critical distance of separation. But when too close to each other, the folding
+is inhibited ({@fig:model}B). We also found that a folding event decreases the
+probability of other folds to form in the neighborhood. This inhibitory effect
+is evident in simulations that include the cephalic furrow ({@fig:model}C).
+With our model we are able to calculate the amount of extra tissue required to
+obtain ectopic folds. We also quantified the impact of germ band compression
+for the cephalic furrow depth. These correlate well with our *in vivo*
+observations and experiments. Our model reveals how the highly-dynamic tissue
+events at the head--trunk boundary can be explained by an interplay of physical
+interactions.
+
+Taken together, our analyses reveal that the formation of ectopic folds in
+cephalic furrow mutants is a direct consequence of the tissue that remains on
+the blastoderm surface. This excess of tissue increases the mechanical stress
+at the head--trunk boundary with the concomitant expansion of mitotic domains
+in the head collide with the compression of trunk tissues by the extension of
+the germ band. The cephalic furrow actively invaginates before mitotic domains
+and germ band extension. By anticipating and storing tissues away the cephalic
+furrow buffers these opposed interactions playing a mechanical role during
+gastrulation.
 
 <!--TODO: Write-up a closing paragraph for the results-->
 
