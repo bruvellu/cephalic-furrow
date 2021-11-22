@@ -436,3 +436,51 @@ it can even differ between the left and right side of the same embryo ({@fig:dyn
 
 The difference can be related to the fact that *btd* embryos lack MD2 [@Edgar1994-pi] while *eve* mutants have an expanded MD2 [@Vincent1997-fa].
 
+The invagination unfolds and vanishes without a trace.
+
+The function of the cephalic furrow during embryogenesis remains a mystery.
+
+Because it vanishes without a trace, the function of the cephalic furrow
+remains a mystery.
+
+
+# Abstract
+
+The cephalic furrow is a deep epithelial fold that forms at the head--trunk
+boundary of *Drosophila* during gastrulation. Its formation is under strict
+genetic control but, unlike other embryonic invaginations, the cephalic furrow
+does not give rise to any precursor tissues or larval structures. It unfolds
+and vanishes without a trace. Here we investigate if the cephalic furrow plays
+a mechanical role in gastrulation. We imaged mutant embryos live to understand
+how the lack of the cephalic furrow impacts the tissue dynamics at the
+head--trunk interface. We find that without the cephalic furrow, the monolayer
+epithelium will buckle erratically, forming ectopic folds during gastrulation.
+We show that ectopic folds are caused by extrinsic tissue forces which are
+driven by the concomitant expansion of mitotic domains in the head, and by the
+extension of the germ band in the trunk. Our experimental and modeling data
+suggests that these opposed tissue flows inevitably increase the mechanical
+stress at the head--trunk boundary, a condition exacerbated in cephalic furrow
+mutants due to the excess of tissue on the blastoderm surface. The cephalic
+furrow counteracts these physical interactions by priming the position of
+folding, and creating a predictable temporary storage of epithelial tissue
+before the mitotic expansions and germ band extension. We thus propose the
+cephalic furrow plays a mechanical role in *Drosophila* gastrulation acting as
+a buffer and preventing epithelial instability at the head--trunk boundary.
+
+
+The cephalic furrow is a deep epithelial invagination that demarcates the
+head--trunk boundary of *Drosophila* during gastrulation. Unlike other
+embryonic invaginations, the cephalic furrow is a transient structure that
+vanishes without giving rise to any particular tissues. It thus remains unclear
+what role this prominent embryonic landmark plays in the embryo. Here we
+investigate whether the cephalic furrow plays a physical role in *Drosophila*
+embryogenesis. Using live-imaging of mutant embryos we analyze how defects in
+cephalic furrow formation impact the tissue flows during gastrulation. We find
+that, in the absence of the cephalic furrow, the head--trunk interface becomes
+deformed and forms erratic ectopic folds. We show that these folds are the
+result of extrinsic forces driven by the formation of mitotic domains and the
+extension of the germ band, and that, in the absence of the cephalic furrow,
+the opposing flows between head and trunk increase the mechanical stress in the
+monolayer epithelium. We thus propose that the formation of the cephalic furrow
+buffers these physical interactions at the head--trunk boundary, and thus
+prevent epithelial instabilities during *Drosophila* gastrulation.
