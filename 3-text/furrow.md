@@ -465,9 +465,21 @@ at 25°C.
 
 ## Cauterization experiments
 
-The embryos were collected and dechorionated as described above. TODO: Mounting
-in Luxendo. TODO: Cauterization in Luxendo. TODO: Mounting in MZ2. TODO:
-Cauterization in MZ2.
+Embryos were collected and dechorionated as described above. Movies were
+obtained in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor
+iXon DU-888), a 60× 1.2 NA water immersion objective, and the software AndorIQ
+for image acquisition. The time resolution was set in 200 ms and pixel size was
+0.180556 um. Embryos were mounted laterally on MatTek glass-bottom Petri dishes
+and covered in water. Experiments were performed under temperature control at
+28 degrees Celsius. For laser ablations, a Titanium Sapphire Chameleon Ultra II
+(Coherent) laser at 800 nm was tuned down from 80 MHz to 20 kHz using a
+pulse-picker. Laser power measured before microscope port was 6 mW and pixel
+dwell time for scanning was 2 us. Each scan was repeated 10 consecutive times
+to make a cut along a single cell. Embryos were ablated just once each. For
+analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph
+(https://github.com/fiji/Multi_Kymograph) on cell edges in the direction
+perpendicular to the cuts. The kymographs were binarized and distance between
+edges versus time was linearly fitted to obtain the recoil velocity. 
 
 ## Image processing and analyses
 
@@ -542,7 +554,7 @@ Map of representative position of ectopic folds relative to mitotic domains in
 cells and the position of the folded area. ](figures/Fig4.jpg){#fig:mitotic
 width=100%}
 
-![Ectopic fold formation in *btd--stg* and *eve--stg* double
+![**TODO** Ectopic fold formation in *btd--stg* and *eve--stg* double
 mutants.](figures/Fig5.jpg){#fig:doubles width=100%}
 
 ![Blocking of germ band extension in cephalic furrow mutants by cauterization.
@@ -557,9 +569,9 @@ tortuosity of the epithelial traces in non-cauterized and cauterized mutant
 embryos.](figures/Fig6.jpg){#fig:cauterization width=100%}
 
 ![Cauterization and ablation experiments in wild type
-embryos.](figures/Fig7.jpg){#fig:wildtype width=100%}
+embryos. (A) Control embryo showing the dorsal surface and a mid body optical section. (B) Cauterized embryo.](figures/Fig7.jpg){#fig:wildtype width=100%}
 
-![Folding model simulations.](figures/Fig8.jpg){#fig:model width=100%}
+![**TODO** Folding model simulations.](figures/Fig8.jpg){#fig:model width=100%}
 
 ![Summary of head--trunk tissue interactions in cephalic furrow mutants. (A,B)
 Schematic drawings of lateral and profile views showing the tissue invaginated
