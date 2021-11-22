@@ -1,6 +1,6 @@
 ---
-#title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
-title: Cephalic furrow plays a mechanical role in *Drosophila* gastrulation
+title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
+#title: Cephalic furrow plays a mechanical role in *Drosophila* gastrulation
 #title: Cephalic furrow buffers mechanical stress at the head--trunk boundary of *Drosophila*
 #title: The mechanical role of the cephalic furrow in buffering tissue stress at the head--trunk boundary of *Drosophila* during gastrulation  
 author:
