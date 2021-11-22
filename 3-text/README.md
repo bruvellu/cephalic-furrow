@@ -8,6 +8,11 @@
 
 **2021-11-17**
 
+- Updated the abstract.
+- Changed the title to the mechanical function.
+
+**2021-11-17**
+
 - Revised background text.
 - Integrated initiator behavior sentences to results.
 
