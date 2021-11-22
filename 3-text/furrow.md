@@ -1,7 +1,8 @@
 ---
-title: Cephalic furrow plays a mechanical role in *Drosophila* gastrulation
-#title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
+title: Mechanical role of the cephalic furrow in *Drosophila* gastrulation
 #title: Cephalic furrow buffers mechanical stress at the head--trunk boundary of *Drosophila*
+#title: Cephalic furrow plays a mechanical role in *Drosophila* gastrulation
+#title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
 #title: The mechanical role of the cephalic furrow in buffering tissue stress at the head--trunk boundary of *Drosophila* during gastrulation  
 author:
 - Bruno C. Vellutini
@@ -48,12 +49,13 @@ driven by the concomitant expansion of mitotic domains in the head, and by the
 extension of the germ band in the trunk. Our experimental and modeling data
 suggests that these opposed tissue flows inevitably increase the mechanical
 stress at the head--trunk boundary, a condition exacerbated in cephalic furrow
-mutants due to the excess of tissue on the blastoderm surface. The cephalic
-furrow counteracts these physical interactions by priming the position of
-folding, and creating a predictable temporary storage of epithelial tissue
-before the mitotic expansions and germ band extension. We thus propose the
-cephalic furrow plays a mechanical role in *Drosophila* gastrulation acting as
-a buffer and preventing epithelial instability at the head--trunk boundary.
+mutants due to the excess of tissue on the blastoderm surface. In normal
+development, these physical interactions are counteracted by the cephalic
+furrow, which primes the position of folding, and creates a predictable
+temporary storage of epithelial tissue before the mitotic expansions and germ
+band extension. We thus propose the cephalic furrow plays a mechanical role in
+*Drosophila* gastrulation acting as a buffer and preventing epithelial
+instability at the head--trunk boundary.
 
 # Background
 
