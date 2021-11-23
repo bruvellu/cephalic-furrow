@@ -5,7 +5,7 @@ FILE=furrow
 TEMPLATE=templates/template
 FIGUREIN=`realpath ../2-figures`
 FIGUREOUT=`realpath figures`
-MODES=`realpath modes`
+CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
 OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
@@ -34,7 +34,7 @@ linkimg:
 	# Supplementary
 	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
 	# Convert to JPG for smaller file sizes
-	mogrify -format jpg -quality 50 -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
+	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	mkdir ${FIGUREOUT}/source
 	mv ${FIGUREOUT}/*.png ${FIGUREOUT}/source/
 
@@ -54,6 +54,7 @@ linkvid:
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid12.avi
 	# Create video snapshot
 	for i in ${FIGUREOUT}/*.avi; do ffmpeg -ss 00:00:01 -i $${i} -vframes 1 ${FIGUREOUT}/`basename $${i} .avi`.jpg; done
+	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/Vid*.jpg
 
 compile:
 	# Compile timestamped documents to output directory
@@ -74,7 +75,9 @@ stopbib:
 	# Stop bib syncing from Paperpile
 	killall syncbib.sh
 
-modes:
-	# Copy figures to shared folder with Modes
-	cp ${FIGUREOUT}/Fig*.jpg ${MODES}/
-
+share:
+	# Updates shared manuscript folder
+	rsync -ahu --progress --exclude 'Vid*.jpg' --exclude 'source' --copy-links --delete ${FIGUREOUT}/ ${CLOUD}/figures/
+	cp ${OUTDIR}/${TIMESTAMPED}.docx ${CLOUD}/
+	cp ${OUTDIR}/${TIMESTAMPED}.pdf ${CLOUD}/
+	
