@@ -12,7 +12,7 @@ TIMESTAMPED=${DATE}_${FILE}
 FILTERS=--lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc
 
 # Main rule
-all: clean figures syncbib compile modes
+all: clean figures syncbib compile share
 
 clean:
 	# Cleanup figure directory
