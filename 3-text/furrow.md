@@ -1,7 +1,8 @@
 ---
-title: Mechanical role of the cephalic furrow in *Drosophila* gastrulation
+title: Cephalic furrow plays a mechanical role in *Drosophila* gastrulation
+#title: Mechanical role of the cephalic furrow in *Drosophila* gastrulation
+#title: A physical role for the cephalic furrow in *Drosophila* gastrulation
 #title: Cephalic furrow buffers mechanical stress at the head--trunk boundary of *Drosophila*
-#title: Cephalic furrow plays a mechanical role in *Drosophila* gastrulation
 #title: Cephalic furrow prevents epithelial instability at the head--trunk boundary of *Drosophila*
 #title: The mechanical role of the cephalic furrow in buffering tissue stress at the head--trunk boundary of *Drosophila* during gastrulation  
 author:
@@ -106,6 +107,8 @@ cephalic furrow with other morphogenetic movements have not been investigated
 
 <!--TODO: Fix sentence and reference about CF roles.-->
 
+<!--TODO: Move original description of ectopic folds to intro. Because both mutants exhibit such intriguing ectopic folds, we wondered if their formation could be causally linked to the absence of the cephalic furrow. A late head fold was previously described in *eve* mutants [@Vincent1997-fa], but the processes that drive the formation of these ectopic folds has not been studied. Therefore, to understand the origin of ectopic folds in cephalic furrow mutants, we analyzed their morphology and dynamics throughout development.-->
+
 In this study we investigate whether the cephalic furrow has a mechanical role
 during gastrulation by examining how the tissue interactions at the head--trunk
 boundary are impacted by defects in cephalic furrow formation. We find that
@@ -119,9 +122,47 @@ folding, and thus preventing mechanical stress at the head--trunk boundary.
 
 # Results
 
+<!--TODO: Fix this mess.-->
+
+We wanted to understand the function of the cephalic furrow. Our studied aimed
+to uncover a potential function of the cephalic furrow to
+
+The cephalic furrow is a deep. A large number of epithelial cells invaginate
+the surface.
+
+To uncover the function of the cephalic furrow, we analyzed how the tissues
+reacted 
+
+contains a significant portion of epithelial cells.
+
+To understand the function of the 
+
+First is that we are interested in understanding what’s the function of the
+cephalic furrow. One way to test this is to remove the cephalic furrow, or
+prevent it from invaginating, and analyze the consequences to the embryonic
+tissues. That’s what we did. We first tried to determine if there is any
+general, observable consequence. Because the cephalic furrow is highly-dynamic
+and has a short life-span, we decided to go for live-imaging to be able to
+capture the small and large scale dynamics.
+
+We asked whether the lack of a cephalic furrow has any observable effect in the
+tissue properties 
+
+We asked whether the lack of the cephalic furrow has any direct
+consequences to the dynamics of embryonic tissues during gastrulation.
+
+To understand the role of the cephalic furrow, we asked whether embryos which
+lack the cephalic furrow show any consequences.
+
+To understand how the absence of the cephalic furrow impacts the dynamics of
+embryonic tissues, we imaged cephalic furrow mutants under high-temporal
+resolution. We generated fluorescent flies containing the loss-of-function
+alleles *btd^XA^* and *eve^3^* [@Vincent1997-fa]. *btd* and eve mutants
+
+To analyze how the embryonic tissues behave without the cephalic furrow we
+
 To analyze how defects in cephalic furrow formation impact the gastrulation
-processes, we generated fluorescent mutant lines containing the
-loss-of-function alleles *btd^XA^* and *eve^3^* [@Vincent1997-fa], and imaged
+processes, , and imaged
 the mutant embryos *in toto* under high-temporal resolution using lightsheet
 microscopy.
 
@@ -189,26 +230,16 @@ expansion of mitotic mitotic domains, and with the peak of strain in the tissue
 that mitotic expansions can induce or facilitate buckling events in the
 head--trunk interface of *btd* and *eve* mutants.
 
-To test whether these local tissue expansions caused by mitotic domains are
-required for the formation of ectopic folds in cephalic furrow mutants, we
-generated double-mutant flies carrying a loss-of-function allele for *string*
-(*stg*), the gene that regulates the formation of mitotic domains in cycle 14
-[@Edgar1989-hv]. The double-mutant embryos *btd*--*stg* and *eve*--*stg* thus
-lack both the cephalic furrow and the mitotic domains.
+To test if the mitotic expansions are required for the formation of ectopic
+folds, we generated double-mutant flies combining *btd* with a loss-of-function
+allele of *string* (*stg*), a phosphatase that regulates the formation of
+mitotic domains in cycle 14 [@Edgar1989-hv]. Double-mutant *btd*--*stg* embryos
+lack both the cephalic furrow and the mitotic domains ({@fig:double-mutant}).
+No ectopic folds form at the head--trunk interface of double-mutants
+({@fig:double-mutant}). This indicates that the presence of mitotic domains is
+needed for the formation of ectopic folds in cephalic furrow mutants.
 
-**Outcome 1:** Double-mutant embryos lacking both the cephalic furrow and the
-mitotic domains still show ectopic folds at the head--trunk interface
-({@fig:doubles}). The distribution of buckling events is different than single
-mutant embryos. This suggests that mitotic expansions affect where the buckling
-events will occur, but that other tissue forces are driving the formation of
-ectopic folds.
-
-**Outcome 2:** Double-mutant embryos lacking both the cephalic furrow and the
-mitotic domains also lack ectopic folds at the head--trunk interface
-({@fig:doubles}). This suggests that the presence of mitotic domains is
-required for the formation of ectopic folds.
-
-<!--Our observations led us to consider the germ band as the putative driver for the formation of ectopic folds in cephalic furrow mutants.-->
+<!--TODO: Put some mitotic domain modeling here?-->
 
 Concomitant to the formation of mitotic domains in the head, the germ band
 extension is reaching a third of the embryo length ({@fig:ectopic}A). We noted
