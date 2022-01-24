@@ -232,12 +232,24 @@ head--trunk interface of *btd* and *eve* mutants.
 
 To test if the mitotic expansions are required for the formation of ectopic
 folds, we generated double-mutant flies combining *btd* with a loss-of-function
-allele of *string* (*stg*), a phosphatase that regulates the formation of
-mitotic domains in cycle 14 [@Edgar1989-hv]. Double-mutant *btd*--*stg* embryos
-lack both the cephalic furrow and the mitotic domains ({@fig:double-mutant}).
-No ectopic folds form at the head--trunk interface of double-mutants
-({@fig:double-mutant}). This indicates that the presence of mitotic domains is
-needed for the formation of ectopic folds in cephalic furrow mutants.
+allele of *string* (*stg*), a phosphatase that regulates the cell divisions in
+cycle 14 [@Edgar1989-hv]. Embryos mutant for *stg* have no mitotic domains in
+cycle 14 but the embryo still gastrulates seemingly normal [@Edgar1989-hv;
+{@fig:double-mutants}A; {@fig:vid-string-lateral}]. The cephalic furrow
+invaginates as usual, and the fold is even organized compared to embryos with
+mitotic domains ({@fig:double-mutants}B and {@fig:vid-string-dorsal}). As
+expected, *btd*--*stg* double-mutants lack both the cephalic furrow and the
+mitotic domains ({@fig:double-mutants}A,B). None of the *btd*--*stg*
+double-mutants we analyzed formed ectopic folds at the head--trunk interface
+({@fig:double-mutants}A,B, {@fig:vid-double-lateral} and
+{@fig:vid-double-dorsal}). This indicates that the presence of mitotic domains
+is needed for the formation of ectopic folds in cephalic furrow mutants.
+
+<!--TODO: For stg, include distribution, dynamics, angle, and tortuosity?-->
+
+<!--TODO: For stg, include dorsal depth estimation?-->
+
+<!--TODO: For stg, include measure of invaginated area?-->
 
 <!--TODO: Put some mitotic domain modeling here?-->
 
@@ -585,8 +597,8 @@ Map of representative position of ectopic folds relative to mitotic domains in
 cells and the position of the folded area. ](figures/Fig4.jpg){#fig:mitotic
 width=100%}
 
-![**TODO** Ectopic fold formation in *btd--stg* and *eve--stg* double
-mutants.](figures/Fig5.jpg){#fig:doubles width=100%}
+![Analysis of *stg* and *btd--stg* double
+mutants.](figures/Fig5.jpg){#fig:double-mutants width=100%}
 
 ![Blocking of germ band extension in cephalic furrow mutants by cauterization.
 (A) Schematic drawings of the experiment and cauterization site. (B) Cauterized
