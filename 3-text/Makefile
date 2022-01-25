@@ -49,9 +49,10 @@ linkvid:
 	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGUREOUT}/Vid7.avi
 	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGUREOUT}/Vid8.avi
 	ln -s ${FIGUREIN}/mitotic-strain/videos/Strain_btd_E10_E14_label_loop.avi ${FIGUREOUT}/Vid9.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid10.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid11.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid12.avi
+	ln -s ${FIGUREIN}/double-mutants/3-dorsal/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.avi ${FIGUREOUT}/Vid10.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid11.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid12.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid13.avi
 	# Create video snapshot
 	for i in ${FIGUREOUT}/*.avi; do ffmpeg -ss 00:00:01 -i $${i} -vframes 1 ${FIGUREOUT}/`basename $${i} .avi`.jpg; done
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/Vid*.jpg
