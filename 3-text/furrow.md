@@ -235,9 +235,9 @@ folds, we generated double-mutant flies combining *btd* with a loss-of-function
 allele of *string* (*stg*), a phosphatase that regulates the cell divisions in
 cycle 14 [@Edgar1989-hv]. Embryos mutant for *stg* have no mitotic domains in
 cycle 14 but the embryo still gastrulates seemingly normal [@Edgar1989-hv;
-{@fig:double-mutants}A; {@fig:vid-string-lateral}]. The cephalic furrow
+{@fig:double-mutants}A; {@fig:vid-stg-lateral}]. The cephalic furrow
 invaginates as usual, and the fold is even organized compared to embryos with
-mitotic domains ({@fig:double-mutants}B and {@fig:vid-string-dorsal}). As
+mitotic domains ({@fig:double-mutants}B and {@fig:vid-stg-dorsal}). As
 expected, *btd*--*stg* double-mutants lack both the cephalic furrow and the
 mitotic domains ({@fig:double-mutants}A,B). None of the *btd*--*stg*
 double-mutants we analyzed formed ectopic folds at the head--trunk interface
@@ -667,17 +667,21 @@ tag="Video 8" width=50%}
 [VIDEOFILE](figures/Vid9.avi)](figures/Vid9.jpg){#fig:vid-mitotic-strain
 tag="Video 9" width=50%}
 
-![Lateral views of control and cauterized *eve* mutant embryos.
-[VIDEOFILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-cautlat-eve
+![Dorsal view of cephalic furrow formation in *stg* mutant.
+[VIDEOFILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-stg-dorsal
 tag="Video 10" width=50%}
 
-![Dorsal views of cauterized *eve* mutant.
-[VIDEOFILE](figures/Vid11.avi)](figures/Vid11.jpg){#fig:vid-cautdor-eve
+![Lateral views of control and cauterized *eve* mutant embryos.
+[VIDEOFILE](figures/Vid11.avi)](figures/Vid11.jpg){#fig:vid-cautlat-eve
 tag="Video 11" width=50%}
 
-![Dorsal view of control and cauterized *btd* mutant embryos.
-[VIDEOFILE](figures/Vid12.avi)](figures/Vid12.jpg){#fig:vid-cautdor-btd
+![Dorsal views of cauterized *eve* mutant.
+[VIDEOFILE](figures/Vid12.avi)](figures/Vid12.jpg){#fig:vid-cautdor-eve
 tag="Video 12" width=50%}
+
+![Dorsal view of control and cauterized *btd* mutant embryos.
+[VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-cautdor-btd
+tag="Video 13" width=50%}
 
 
 <!--# Supplementary material-->
