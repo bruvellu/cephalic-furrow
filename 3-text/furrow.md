@@ -667,22 +667,25 @@ tag="Video 8" width=50%}
 [VIDEOFILE](figures/Vid9.avi)](figures/Vid9.jpg){#fig:vid-mitotic-strain
 tag="Video 9" width=50%}
 
-![Dorsal view of cephalic furrow formation in *stg* mutant.
-[VIDEOFILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-stg-dorsal
+![Lateral view of cephalic furrow formation in *stg* mutant.
+[VIDEOFILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-stg-lateral
 tag="Video 10" width=50%}
 
-![Lateral views of control and cauterized *eve* mutant embryos.
-[VIDEOFILE](figures/Vid11.avi)](figures/Vid11.jpg){#fig:vid-cautlat-eve
+![Dorsal view of cephalic furrow formation in *stg* mutant.
+[VIDEOFILE](figures/Vid11.avi)](figures/Vid11.jpg){#fig:vid-stg-dorsal
 tag="Video 11" width=50%}
 
-![Dorsal views of cauterized *eve* mutant.
-[VIDEOFILE](figures/Vid12.avi)](figures/Vid12.jpg){#fig:vid-cautdor-eve
+![Lateral views of control and cauterized *eve* mutant embryos.
+[VIDEOFILE](figures/Vid12.avi)](figures/Vid12.jpg){#fig:vid-cautlat-eve
 tag="Video 12" width=50%}
 
-![Dorsal view of control and cauterized *btd* mutant embryos.
-[VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-cautdor-btd
+![Dorsal views of cauterized *eve* mutant.
+[VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-cautdor-eve
 tag="Video 13" width=50%}
 
+![Dorsal view of control and cauterized *btd* mutant embryos.
+[VIDEOFILE](figures/Vid14.avi)](figures/Vid14.jpg){#fig:vid-cautdor-btd
+tag="Video 14" width=50%}
 
 <!--# Supplementary material-->
 
