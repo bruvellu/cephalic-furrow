@@ -122,49 +122,14 @@ folding, and thus preventing mechanical stress at the head--trunk boundary.
 
 # Results
 
-<!--TODO: Fix this mess.-->
+<!--The cephalic furrow is a deep invagination that holds in a large number of epithelial cells invaginate the surface.-->
 
-We wanted to understand the function of the cephalic furrow. Our studied aimed
-to uncover a potential function of the cephalic furrow to
-
-The cephalic furrow is a deep. A large number of epithelial cells invaginate
-the surface.
-
-To uncover the function of the cephalic furrow, we analyzed how the tissues
-reacted 
-
-contains a significant portion of epithelial cells.
-
-To understand the function of the 
-
-First is that we are interested in understanding what’s the function of the
-cephalic furrow. One way to test this is to remove the cephalic furrow, or
-prevent it from invaginating, and analyze the consequences to the embryonic
-tissues. That’s what we did. We first tried to determine if there is any
-general, observable consequence. Because the cephalic furrow is highly-dynamic
-and has a short life-span, we decided to go for live-imaging to be able to
-capture the small and large scale dynamics.
-
-We asked whether the lack of a cephalic furrow has any observable effect in the
-tissue properties 
-
-We asked whether the lack of the cephalic furrow has any direct
-consequences to the dynamics of embryonic tissues during gastrulation.
-
-To understand the role of the cephalic furrow, we asked whether embryos which
-lack the cephalic furrow show any consequences.
-
-To understand how the absence of the cephalic furrow impacts the dynamics of
-embryonic tissues, we imaged cephalic furrow mutants under high-temporal
-resolution. We generated fluorescent flies containing the loss-of-function
-alleles *btd^XA^* and *eve^3^* [@Vincent1997-fa]. *btd* and eve mutants
-
-To analyze how the embryonic tissues behave without the cephalic furrow we
-
-To analyze how defects in cephalic furrow formation impact the gastrulation
-processes, , and imaged
-the mutant embryos *in toto* under high-temporal resolution using lightsheet
-microscopy.
+We first asked whether the absence of the cephalic furrow has any direct
+consequences to developing embryos. For that, we analyzed the tissue dynamics
+in *btd* and *eve* mutants which lack the cephalic furrow [@Vincent1997-fa]. To
+capture the tissue dynamics *in vivo*, We generated fluorescent flies
+containing the loss-of-function alleles *btd^XA^* and *eve^3^*, and imaged the
+embryos *in toto* under high-temporal resolution using lightsheet microscopy.
 
 The cephalic furrow first appears at the onset of cellularization (stage 6). It
 invaginates for 15 min and begins to unfold about 30 min after the start of
