@@ -243,8 +243,9 @@ forces between.
 
 <!--TODO: Two ways: 1) Both mitotic domains and germ band as players 2) First mitotic domains model and cauterization, then germ band model and double mutant. The issue with 1 is that we need some more evidence for the participation of the germ band, possibly tissue flows is enough. The issue with 2 is that the model parameter sweep already includes the germ band and that feels unjustified if it has not been mentioned before.-->
 
-<!--AK paragraph-->
+<!--Bending rigidity modulates mitotic domains induced-buckling-->
 
+<!--AK paragraph-->
 In order to test this hypothesis, we built a model of a monolayer confined
 inside a rigid shell, similar to @Trushko2020-gf. We modified this model to
 capture the physical interactions occurring between mitotic domains, ectopic
@@ -261,7 +262,6 @@ compressed springs and positive intrinsic curvature which captures the
 thickness mismatch between mitotic domains and non-mitotic cells. 
 
 <!--AK paragraph-->
-
 The main control parameter of this model is the ratio  while the germ band push
 represents the progression of the development. We observe a buckling transition
 in the phase space of  and germ band push (g). The phase diagram shows that for
@@ -272,6 +272,8 @@ intermediate values however, (),  both mitotic domains and germ band extension
 is required to form ectopic folds. The blastoderm could fall in either of the
 latter two regimes.
 
+<!--Mitotic expansions alone are insufficient to induce buckling in vivo-->
+<!--Germ band extension required to induce buckling in vivo-->
 
 To determine in which regime the blastoderm tissue falls, we cauterized a patch
 of dorsal tissue at the onset of gastrulation, attaching the epithelium to the
@@ -288,6 +290,9 @@ support the hypothesis that mitotic expansions are insufficient to cause tissue
 buckling at the head--trunk interface.
 
 <!--AK paragraph-->
+
+<!--Mitotic expansions required to induce buckling in vivo-->
+<!--Germ band extension insufficient to induce buckling in vivo-->
 
 Next, we asked whether germ band extension alone is enough to cause ectopic folds. Thus, we removed the mitotic domains in our model and did a parameter sweep. We observed that, as expected, ectopic folds occur for low values of bending rigidity () and high germ band extension (). However, for the value of bending rigidity in the model corresponding to the blastoderm (), we see no ectopic fold formation predicting that germ band extension alone is not sufficient to form ectopic folds.
 
@@ -306,6 +311,8 @@ mitotic domains, no ectopic folds form at the head--trunk interface
 {@fig:vid-double-dorsal}) as was predicted by the model. This observation
 corroborates that mitotic domains are required for the formation of ectopic
 folds in cephalic furrow mutants.
+
+<!--TODO: Define how to proceed from here.-->
 
 <!--TODO: For stg, include distribution, dynamics, angle, and tortuosity?-->
 
