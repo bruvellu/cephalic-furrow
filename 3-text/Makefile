@@ -9,7 +9,7 @@ CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
 OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
-FILTERS=--lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-citeproc
+FILTERS=--lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-citeproc
 
 # Main rule
 all: clean figures syncbib compile share
@@ -23,8 +23,8 @@ figures: linkimg linkvid
 linkimg:
 	# Link figure files to figure directory with official naming
 	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
-	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig3.png
-	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig4.png
+	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig2.png
+	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
 	ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig5.png
 	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
 	ln -s ${FIGUREIN}/wildtype-cauterizations/figure.png ${FIGUREOUT}/Fig7.png
