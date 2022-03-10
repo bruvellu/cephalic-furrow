@@ -205,7 +205,7 @@ epithelial area invaginated in the cephalic furrow of sibling controls
 folds differs significantly from that of the cephalic furrow, suggesting that
 different morphogenetic mechanisms are involved.
 
-<!--TODO: Continue from here.-->
+<!--TODO: Continue from here.
 
 1. Explain correlation with the position of mitotic domains
 2. Mention initiator cell behaviors in the canonical CF position
@@ -213,6 +213,8 @@ different morphogenetic mechanisms are involved.
 4. Show that ectopic folding correlates with head--trunk peak strain
 5. Show that strain gradually increases at the trunk--germ
 6. Show image of compressed epithelial cells in btd mutant
+
+-->
 
 <!--Location and timing of ectopic folding correlates with mitotic domains-->
 
@@ -229,36 +231,38 @@ region under compression is the first to buckle inwards, followed by a portion
 of the dividing cells within mitotic domains ({@fig:mitotic}B). Unlike the
 progressive invagination of the cephalic furrow, the buckling of ectopic folds
 occurs abruptly ({@fig:initiator}B and {!@fig:vid-mitotic-fold}). Importantly,
-the mitotic expansions always precedes the formation of ectopic folds,
-suggesting that the local stresses may be inducing the epithelial buckling.
+the mitotic expansions always precede the formation of ectopic folds,
+suggesting these local stresses may be inducing the epithelial buckling.
 
-<!--Ectopic folding correlates with peak tissue strain-->
+<!--Ectopic folding at peak strain and germ band compression-->
 
-The formation of ectopic folds coincides with the maximum expansion of mitotic
-domains, and with the peak of strain in the tissue ({@fig:mitotic}C and
-{!@fig:vid-mitotic-strain}). These observations suggest that mitotic domains
-can induce or facilitate buckling events in the head--trunk interface of *btd*
-and *eve* mutants.
+To infer the mechanical stress, we measured the epithelial strain in two sites,
+one more anterior at the head--trunk interface, and one more posterior at the
+trunk--germ interface. The strain is higher where the tissues are moving,
+invaginating or buckling, therefore in control and *btd* embryos the strain
+localizes to the cephalic furrow and ectopic folds, respectively
+({@fig:strain}A, {!@fig:vid-strain-analysis}). At the head--trunk region, the
+peak strain of control embryos occurs when the cephalic furrow has already
+invaginated, around 10 min after gastrulation, while the peak strain of *btd*
+embryos occurs around 16 min after gastrulation, and coincides with the maximum
+expansion of mitotic domains and the formation of ectopic folds
+({@fig:strain}A). At the trunk--germ region, the tissue strain is lower than at
+the head--trunk region, but it steadily increases over time ({@fig:strain}A).
+Our live-imaging data indicates that this increase in strain may result from
+the extending germ band. We observe that dorsal epithelial cells between the
+MD6 mitotic domain and the germ band are more compressed in *btd* mutants
+compared to sibling controls ({@fig:strain}B, {!@fig:vid-trunk-germ}). These
+analysis suggests that both mitotic domains, via local stress, and the germ
+band extension, via global compression, might be involved in the formation of
+ectopic folds.
 
-<!--Germ band extension compresses tissues at the head--trunk boundary-->
-
-Our imaging data reveal that ectopic folds form when the germ band extension reaches a third of the embryo length ({@fig:ectopic}A), and that the dorsal epithelial cells between mitotic domains and germ band are more compressed compared to sibling controls ({@fig:cauterization}A). This suggested that the mechanical stress caused by the germ band could contribute to the formation of ectopic folds. To test this we prevented the extension of the germ band in *btd* and *eve* mutants *in vivo*.
-
-
+<!--This suggested that the mechanical stress caused by the germ band could contribute to the formation of ectopic folds. To test this we prevented the extension of the germ band in *btd* and *eve* mutants *in vivo*. These observations suggest that mitotic domains can induce or facilitate buckling events in the head--trunk interface of *btd* and *eve* mutants. But it is unclear how and what is the balance of forces between.-->
 
 <!--TODO: Mention reminiscent initiator cell behavior as primer for ectopic folding-->
 
 <!--In *btd* mutants, epithelial cells near the canonical cephalic furrow position undergo some degree of apical constriction ({@fig:initiator}A and {!@fig:vid-initiator}). This creates an indentation that resembles the early cephalic furrow ({@fig:initiator}B). This indentation, however, forms delayed and does not extend along the dorsoventral axis. In addition, the cells at the center of the indentation, in contrast to initiator cells, do not shorten along the apical-basal axis ({@fig:initiator}B). In *eve* mutants no apical constriction or indentation occurs ({@fig:initiator}A,B). This reveals that remnants of initiator cell behavior are present in *btd* mutants.-->
 
-<!--TODO: Maybe a concluding sentence for both paragraphs above-->
-
-We hypothesize that mitotic domains and germ band extension are involved in the
-formation of ectopic folds. But it is unclear how and what is the balance of
-forces between.
-
 <!--TODO: Include reference on mitotic rounding forces here?-->
-
-<!--TODO: Two ways: 1) Both mitotic domains and germ band as players 2) First mitotic domains model and cauterization, then germ band model and double mutant. The issue with 1 is that we need some more evidence for the participation of the germ band, possibly tissue flows is enough. The issue with 2 is that the model parameter sweep already includes the germ band and that feels unjustified if it has not been mentioned before.-->
 
 <!--Bending rigidity modulates mitotic domains induced-buckling-->
 
@@ -651,14 +655,20 @@ single embryo. (H,I) Dynamics of folding angle and tortuosity across
 development between *btd* heterozygote (control) and *btd* homozygote embryos.
 (K) Comparison of the total folded aread between sibling controls and mutant
 embryos. (J) Cartographic projections showing the area of folded epithelial
-cells in the cephalic furrow and ectopic folds.
-](figures/Fig2.jpg){#fig:dynamics width=100%}
+cells in the cephalic furrow and ectopic
+folds.](figures/Fig2.jpg){#fig:dynamics width=100%}
 
 ![Correlation between the position of mitotic domains and ectopic folds. (A)
 Map of representative position of ectopic folds relative to mitotic domains in
 *btd* and *eve* mutants. (B) Relation between apical area expansion of dividing
-cells and the position of the folded area. ](figures/Fig3.jpg){#fig:mitotic
+cells and the position of the folded area.](figures/Fig3.jpg){#fig:mitotic
 width=100%}
+
+![Strain analysis at the head--trunk interface in *btd* mutants. (A) Heatmap
+showing strain levels. Plots for the more anterior head--trunk region and for
+the more posterior trunk--germ region. (B) Increased compression of epithelial
+cells on the laterodorsal side adjacent to the germ band
+edge.](figures/Fig4.jpg){#fig:strain width=100%}
 
 ![Analysis of *stg* and *btd--stg* double
 mutants.](figures/Fig5.jpg){#fig:double-mutants width=100%}
@@ -718,48 +728,53 @@ tag="Video 5" width=50%}
 [VIDEOFILE](figures/Vid6.avi)](figures/Vid6.jpg){#fig:vid-variability-btd
 tag="Video 6" width=50%}
 
-![Reminiscent initiator cell behavior in *btd* mutants.
-[VIDEOFILE](figures/Vid7.avi)](figures/Vid7.jpg){#fig:vid-initiator tag="Video
-7" width=50%}
-
 ![Lateral view of ectopic fold formation between mitotic domains in *btd*
 mutant. [VIDEOFILE](figures/Vid8.avi)](figures/Vid8.jpg){#fig:vid-mitotic-fold
 tag="Video 8" width=50%}
 
 ![Strain analysis during ectopic fold formation in *btd* mutant.
-[VIDEOFILE](figures/Vid9.avi)](figures/Vid9.jpg){#fig:vid-mitotic-strain
+[VIDEOFILE](figures/Vid9.avi)](figures/Vid9.jpg){#fig:vid-strain-analysis
 tag="Video 9" width=50%}
 
-![Lateral view of cephalic furrow formation in *stg* mutant.
-[VIDEOFILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-stg-lateral
+![Increased compression at the trunk--germ interface in *btd* mutant.
+[VIDEOFILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-trunk-germ
 tag="Video 10" width=50%}
 
-![Dorsal view of cephalic furrow formation in *stg* mutant.
-[VIDEOFILE](figures/Vid11.avi)](figures/Vid11.jpg){#fig:vid-stg-dorsal
+![Lateral view of cephalic furrow formation in *stg* mutant.
+[VIDEOFILE](figures/Vid11.avi)](figures/Vid11.jpg){#fig:vid-stg-lateral
 tag="Video 11" width=50%}
 
-![Lateral view of *btd*--*stg* double mutant.
-[VIDEOFILE](figures/Vid12.avi)](figures/Vid12.jpg){#fig:vid-double-lateral
+![Dorsal view of cephalic furrow formation in *stg* mutant.
+[VIDEOFILE](figures/Vid12.avi)](figures/Vid12.jpg){#fig:vid-stg-dorsal
 tag="Video 12" width=50%}
+
+![Lateral view of *btd*--*stg* double mutant.
+[VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-double-lateral
+tag="Video 13" width=50%}
 
 <!--![Dorsal view of *btd*--*stg* double mutant. [VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-double-dorsal tag="Video 13" width=50%}-->
 
 ![Lateral views of control and cauterized *eve* mutant embryos.
-[VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-cautlat-eve
-tag="Video 13" width=50%}
-
-![Dorsal views of cauterized *eve* mutant.
-[VIDEOFILE](figures/Vid14.avi)](figures/Vid14.jpg){#fig:vid-cautdor-eve
+[VIDEOFILE](figures/Vid14.avi)](figures/Vid14.jpg){#fig:vid-cautlat-eve
 tag="Video 14" width=50%}
 
-![Dorsal view of control and cauterized *btd* mutant embryos.
-[VIDEOFILE](figures/Vid15.avi)](figures/Vid15.jpg){#fig:vid-cautdor-btd
+![Dorsal views of cauterized *eve* mutant.
+[VIDEOFILE](figures/Vid15.avi)](figures/Vid15.jpg){#fig:vid-cautdor-eve
 tag="Video 15" width=50%}
 
-# Supplementary material
+![Dorsal view of control and cauterized *btd* mutant embryos.
+[VIDEOFILE](figures/Vid16.avi)](figures/Vid16.jpg){#fig:vid-cautdor-btd
+tag="Video 16" width=50%}
+
+# Supplementary
 
 ![Reminiscent initiator cell behavior in *btd*
 mutants.](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
+
+![Reminiscent initiator cell behavior in *btd* mutants.
+[VIDEOFILE](figures/VidS1.avi)](figures/VidS1.jpg){#fig:vid-initiator
+tag="Video S1" width=50%}
+
 
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
