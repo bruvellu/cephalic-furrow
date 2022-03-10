@@ -32,8 +32,8 @@ colorlinks: True
 fignos-warning-level: 1
 fignos-cleveref: True
 fignos-plus-name: Figure
-#tablenos-cleveref: True
-#tablenos-plus-name: Table
+tablenos-cleveref: True
+tablenos-plus-name: Table
 ---
 
 # Abstract
@@ -207,46 +207,48 @@ different morphogenetic mechanisms are involved.
 
 <!--TODO: Continue from here.-->
 
-<!--TODO (maybe): Join paragraphs about germ band and mitotic domains.-->
-
-<!--Germ band extension compresses tissues at the head--trunk boundary-->
-
-<!--Our imaging data reveal that ectopic folds form when the germ band extension reaches a third of the embryo length ({@fig:ectopic}A), and that the dorsal epithelial cells between mitotic domains and germ band are more compressed compared to sibling controls ({@fig:cauterization}A). This suggested that the mechanical stress caused by the germ band could contribute to the formation of ectopic folds. To test this we prevented the extension of the germ band in *btd* and *eve* mutants *in vivo*.-->
+1. Explain correlation with the position of mitotic domains
+2. Mention initiator cell behaviors in the canonical CF position
+3. Explain correlation with the timing of mitotic domains
+4. Show that ectopic folding correlates with head--trunk peak strain
+5. Show that strain gradually increases at the trunk--germ
+6. Show image of compressed epithelial cells in btd mutant
 
 <!--Location and timing of ectopic folding correlates with mitotic domains-->
 
-The formation of ectopic folds coincides with the appearance of mitotic
-domains---groups of blastoderm cells that divide in synchrony during mitotic
-cycle 14 [@Foe1989-cw] ({@fig:ectopic}A,B). Ectopic folds often form adjacent
-to or in between mitotic domains ({@fig:mitotic}A). There are four distinct
-locations, between MD1 and MD5/MD9, between MD5 and MD7, between MD7 and MD6,
-and posterior to MD6 ({@fig:mitotic}A). When the dividing cells round up for
-mitosis, they are displaced apically in the monolayer epithelium increasing
-their apical area. The simultaneous cell rounding in mitotic domains causes a
-local tissue expansion that compresses adjacent non-dividing cells
-({@fig:mitotic}B). This expansion always precedes the formation of ectopic
-folds. The region of non-dividing cells under compression is the first to
-buckle towards the yolk, followed by a portion of the mitotic domains
-({@fig:mitotic}B). The buckling occurs abruptly ({@fig:initiator}B and
-{!@fig:vid-mitotic-fold}). Unlike the early, progressive invagination of the
-cephalic furrow, the formation of ectopic folds coincides with the maximum
-expansion of mitotic domains, and with the peak of strain in the tissue
-({@fig:mitotic}C and {!@fig:vid-mitotic-strain}). These observations suggest
-that mitotic domains can induce or facilitate buckling events in the
-head--trunk interface of *btd* and *eve* mutants.
+We observe a correlation between ectopic folding and the formation of mitotic
+domains---groups of blastoderm cells that divide in synchrony in cleavage cycle
+14 [@Foe1989-cw] ({@fig:ectopic}A,B). Ectopic folds appear in three distinct
+locations of the anteroposterior axis, but always next to or in between mitotic
+domains (MD1--MD5/MD9, MD5--MD7, MD7--MD6, and MD6--trunk) ({@fig:mitotic}A).
+The dividing cells lose their basal attachment, round up at the apical side,
+and more than double their apical area during during anaphase elongation
+({@fig:cell-area-post-mitosis}). This synchronous expansion of apical areas in
+mitotic domains compresses adjacent non-dividing cells ({@fig:mitotic}B). The
+region under compression is the first to buckle inwards, followed by a portion
+of the dividing cells within mitotic domains ({@fig:mitotic}B). Unlike the
+progressive invagination of the cephalic furrow, the buckling of ectopic folds
+occurs abruptly ({@fig:initiator}B and {!@fig:vid-mitotic-fold}). Importantly,
+the mitotic expansions always precedes the formation of ectopic folds,
+suggesting that the local stresses may be inducing the epithelial buckling.
+
+<!--Ectopic folding correlates with peak tissue strain-->
+
+The formation of ectopic folds coincides with the maximum expansion of mitotic
+domains, and with the peak of strain in the tissue ({@fig:mitotic}C and
+{!@fig:vid-mitotic-strain}). These observations suggest that mitotic domains
+can induce or facilitate buckling events in the head--trunk interface of *btd*
+and *eve* mutants.
+
+<!--Germ band extension compresses tissues at the head--trunk boundary-->
+
+Our imaging data reveal that ectopic folds form when the germ band extension reaches a third of the embryo length ({@fig:ectopic}A), and that the dorsal epithelial cells between mitotic domains and germ band are more compressed compared to sibling controls ({@fig:cauterization}A). This suggested that the mechanical stress caused by the germ band could contribute to the formation of ectopic folds. To test this we prevented the extension of the germ band in *btd* and *eve* mutants *in vivo*.
+
+
 
 <!--TODO: Mention reminiscent initiator cell behavior as primer for ectopic folding-->
 
-In *btd* mutants, epithelial cells near the canonical cephalic furrow position
-undergo some degree of apical constriction ({@fig:initiator}A and
-{!@fig:vid-initiator}). This creates an indentation that resembles the early
-cephalic furrow ({@fig:initiator}B). This indentation, however, forms delayed
-and does not extend along the dorsoventral axis. In addition, the cells at the
-center of the indentation, in contrast to initiator cells, do not shorten along
-the apical-basal axis ({@fig:initiator}B). In *eve* mutants no apical
-constriction or indentation occurs ({@fig:initiator}A,B). This reveals that
-remnants of initiator cell behavior are present in *btd* mutants.
-
+<!--In *btd* mutants, epithelial cells near the canonical cephalic furrow position undergo some degree of apical constriction ({@fig:initiator}A and {!@fig:vid-initiator}). This creates an indentation that resembles the early cephalic furrow ({@fig:initiator}B). This indentation, however, forms delayed and does not extend along the dorsoventral axis. In addition, the cells at the center of the indentation, in contrast to initiator cells, do not shorten along the apical-basal axis ({@fig:initiator}B). In *eve* mutants no apical constriction or indentation occurs ({@fig:initiator}A,B). This reveals that remnants of initiator cell behavior are present in *btd* mutants.-->
 
 <!--TODO: Maybe a concluding sentence for both paragraphs above-->
 
@@ -650,12 +652,12 @@ development between *btd* heterozygote (control) and *btd* homozygote embryos.
 (K) Comparison of the total folded aread between sibling controls and mutant
 embryos. (J) Cartographic projections showing the area of folded epithelial
 cells in the cephalic furrow and ectopic folds.
-](figures/Fig3.jpg){#fig:dynamics width=100%}
+](figures/Fig2.jpg){#fig:dynamics width=100%}
 
 ![Correlation between the position of mitotic domains and ectopic folds. (A)
 Map of representative position of ectopic folds relative to mitotic domains in
 *btd* and *eve* mutants. (B) Relation between apical area expansion of dividing
-cells and the position of the folded area. ](figures/Fig4.jpg){#fig:mitotic
+cells and the position of the folded area. ](figures/Fig3.jpg){#fig:mitotic
 width=100%}
 
 ![Analysis of *stg* and *btd--stg* double
