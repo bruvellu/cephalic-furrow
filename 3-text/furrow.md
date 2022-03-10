@@ -652,9 +652,6 @@ embryos. (J) Cartographic projections showing the area of folded epithelial
 cells in the cephalic furrow and ectopic folds.
 ](figures/Fig3.jpg){#fig:dynamics width=100%}
 
-![Reminiscent initiator cell behaviors in *btd*
-mutants.](figures/Fig2.jpg){#fig:initiator width=100%}
-
 ![Correlation between the position of mitotic domains and ectopic folds. (A)
 Map of representative position of ectopic folds relative to mitotic domains in
 *btd* and *eve* mutants. (B) Relation between apical area expansion of dividing
@@ -757,7 +754,11 @@ tag="Video 14" width=50%}
 [VIDEOFILE](figures/Vid15.avi)](figures/Vid15.jpg){#fig:vid-cautdor-btd
 tag="Video 15" width=50%}
 
-<!--# Supplementary material-->
+# Supplementary material
+
+![Reminiscent initiator cell behavior in *btd*
+mutants.](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
+
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
 
