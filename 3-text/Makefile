@@ -23,7 +23,6 @@ figures: linkimg linkvid
 linkimg:
 	# Link figure files to figure directory with official naming
 	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
-	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/Fig2.png
 	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig3.png
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig4.png
 	ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig5.png
@@ -32,7 +31,7 @@ linkimg:
 	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig8.png
 	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig9.png
 	# Supplementary
-	#ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
+	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
 	# Convert to JPG for smaller file sizes
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	mkdir ${FIGUREOUT}/source
