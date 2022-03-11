@@ -319,31 +319,28 @@ embryonic blastoderm within the bending rigidity of X in the model.
 
 <!--Germ band extension insufficient to induce buckling in vivo-->
 
-<!--TODO: Continue here.-->
-
 Next, we asked whether germ band extension alone is enough to cause ectopic
-folds. Thus, we removed the mitotic domains in our model and did a parameter
-sweep. We observed that, as expected, ectopic folds occur for low values of
-bending rigidity () and high germ band extension (). However, for the value of
-bending rigidity in the model corresponding to the blastoderm (), we see no
-ectopic fold formation predicting that germ band extension alone is not
-sufficient to form ectopic folds.
+folds. We performed simulations using the same sweep parameters but without
+mitotic domains. We find that for most of the parameter space, including the
+bending rigidity values obtained with the cauterization experiments, no ectopic
+folds appear in the blastoderm ({@fig:double-mutants}A). Ectopic folds only
+occur when the bending rigidity is low and the germ band is at maximum
+extension. These simulations predict that the germ band extension alone is
+insufficient to induce ectopic folding.
 
-To test this prediction, we generated double-mutant flies combining *btd*
-mutants with a loss-of-function allele of *string* (*stg*), a phosphatase that
-regulates cell divisions from cleavage cycle 14 in *Drosophila*
-[@Edgar1989-hv]. *stg* mutants, despite completely lacking mitotic domains,
-show a fairly normal initial development and morphogenetic movements after
-gastrulation [@Edgar1989-hv] ({@fig:double-mutants}A; {@fig:vid-stg-lateral}).
-The formation and morphology of the cephalic furrow is indistinguishable from
-control embryos until the appearance of mitotic domains in the latter
-({@fig:double-mutants}B and {@fig:vid-stg-dorsal}). Interestingly, in
-*btd*--*stg* double-mutants, which lack both the cephalic furrow and the
-mitotic domains, no ectopic folds form at the head--trunk interface
-({@fig:double-mutants}C,D, {@fig:vid-double-lateral} and
-{@fig:vid-double-dorsal}) as was predicted by the model. This observation
-corroborates that mitotic domains are required for the formation of ectopic
-folds in cephalic furrow mutants.
+To test this prediction, we generated double-mutant flies lacking both the
+cephalic furrow and the mitotic domains by combining *btd* mutants with a
+loss-of-function allele of *string* (*stg*), a phosphatase that regulates cell
+divisions in cleavage cycle 14 [@Edgar1989-hv]. Regular *stg* mutants have
+normal morphogenetic movements and cephalic furrow formation [@Edgar1989-hv]
+({@fig:stg}A,B, {@fig:vid-stg-lateral}, {@fig:vid-stg-dorsal}). We find that,
+as predicted by our model, *btd*--*stg* double-mutant embryos show no
+ectopic folds at the head--trunk interface ({@fig:double-mutants}B,C,
+{@fig:vid-double-lateral} and {@fig:vid-double-dorsal}). This observation
+corroborates that the hypothesis that the germ band extension is insufficient
+to induce ectopic epithelial buckling in cephalic furrow mutants.
+
+<!--mitotic domains are required for the formation of ectopic folds in cephalic furrow mutants.-->
 
 <!--Mitotic expansions required to induce buckling in vivo-->
 <!--Germ band extension required to induce buckling in vivo-->
@@ -721,78 +718,74 @@ instability.](figures/Fig9.jpg){#fig:summary width=100%}
 
 # Videos
 
-![Lateral view of ectopic fold formation in *btd* mutants.
-[VIDEOFILE](figures/Vid1.avi)](figures/Vid1.jpg){#fig:vid-lateral-btd
-tag="Video 1" width=50%}
+![Lateral view of ectopic fold formation in *btd*
+mutants.](figures/Vid1.jpg){#fig:vid-lateral-btd tag="Video 1" width=50%}
 
-![Lateral view of ectopic fold formation in *eve* mutants.
-[VIDEOFILE](figures/Vid2.avi)](figures/Vid2.jpg){#fig:vid-lateral-eve
-tag="Video 2" width=50%}
+![Lateral view of ectopic fold formation in *eve*
+mutants.](figures/Vid2.jpg){#fig:vid-lateral-eve tag="Video 2" width=50%}
 
-![Profile view of ectopic fold formation in *btd* mutant.
-[VIDEOFILE](figures/Vid3.avi)](figures/Vid3.jpg){#fig:vid-profile-btd
-tag="Video 3" width=50%}
+![Profile view of ectopic fold formation in *btd*
+mutant.](figures/Vid3.jpg){#fig:vid-profile-btd tag="Video 3" width=50%}
 
-![Profile view of ectopic fold formation in *eve* mutant.
-[VIDEOFILE](figures/Vid4.avi)](figures/Vid4.jpg){#fig:vid-profile-eve
-tag="Video 4" width=50%}
+![Profile view of ectopic fold formation in *eve*
+mutant.](figures/Vid4.jpg){#fig:vid-profile-eve tag="Video 4" width=50%}
 
-![Lateral view of ectopic fold dynamics in *btd* mutant.
-[VIDEOFILE](figures/Vid5.avi)](figures/Vid5.jpg){#fig:vid-dynamics-btd
-tag="Video 5" width=50%}
+![Lateral view of ectopic fold dynamics in *btd*
+mutant.](figures/Vid5.jpg){#fig:vid-dynamics-btd tag="Video 5" width=50%}
 
-![Variability of ectopic folds in *btd* mutants.
-[VIDEOFILE](figures/Vid6.avi)](figures/Vid6.jpg){#fig:vid-variability-btd
-tag="Video 6" width=50%}
+![Variability of ectopic folds in *btd*
+mutants.](figures/Vid6.jpg){#fig:vid-variability-btd tag="Video 6" width=50%}
 
 ![Lateral view of ectopic fold formation between mitotic domains in *btd*
-mutant. [VIDEOFILE](figures/Vid8.avi)](figures/Vid8.jpg){#fig:vid-mitotic-fold
-tag="Video 8" width=50%}
+mutant.](figures/Vid7.jpg){#fig:vid-mitotic-fold tag="Video 7" width=50%}
 
-![Strain analysis during ectopic fold formation in *btd* mutant.
-[VIDEOFILE](figures/Vid9.avi)](figures/Vid9.jpg){#fig:vid-strain-analysis
-tag="Video 9" width=50%}
+![Strain analysis during ectopic fold formation in *btd*
+mutant.](figures/Vid8.jpg){#fig:vid-strain-analysis tag="Video 8" width=50%}
 
-![Increased compression at the trunk--germ interface in *btd* mutant.
-[VIDEOFILE](figures/Vid10.avi)](figures/Vid10.jpg){#fig:vid-trunk-germ
-tag="Video 10" width=50%}
+![Increased compression at the trunk--germ interface in *btd*
+mutant.](figures/Vid9.jpg){#fig:vid-trunk-germ tag="Video 9" width=50%}
 
+![Lateral views of control and cauterized *eve* mutant
+embryos.](figures/Vid10.jpg){#fig:vid-cautlat-eve tag="Video 10" width=50%}
 
+![Dorsal views of cauterized *eve*
+mutant.](figures/Vid11.jpg){#fig:vid-cautdor-eve tag="Video 11" width=50%}
 
-![Lateral view of cephalic furrow formation in *stg* mutant.
-[VIDEOFILE](figures/Vid11.avi)](figures/Vid11.jpg){#fig:vid-stg-lateral
-tag="Video 11" width=50%}
+![Dorsal view of control and cauterized *btd* mutant
+embryos.](figures/Vid12.jpg){#fig:vid-cautdor-btd tag="Video 12" width=50%}
 
-![Dorsal view of cephalic furrow formation in *stg* mutant.
-[VIDEOFILE](figures/Vid12.avi)](figures/Vid12.jpg){#fig:vid-stg-dorsal
-tag="Video 12" width=50%}
-
-![Lateral view of *btd*--*stg* double mutant.
-[VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-double-lateral
-tag="Video 13" width=50%}
+![Lateral view of *btd*--*stg* double
+mutant.](figures/Vid13.jpg){#fig:vid-double-lateral tag="Video 13" width=50%}
 
 <!--![Dorsal view of *btd*--*stg* double mutant. [VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-double-dorsal tag="Video 13" width=50%}-->
 
-![Lateral views of control and cauterized *eve* mutant embryos.
-[VIDEOFILE](figures/Vid14.avi)](figures/Vid14.jpg){#fig:vid-cautlat-eve
-tag="Video 14" width=50%}
-
-![Dorsal views of cauterized *eve* mutant.
-[VIDEOFILE](figures/Vid15.avi)](figures/Vid15.jpg){#fig:vid-cautdor-eve
-tag="Video 15" width=50%}
-
-![Dorsal view of control and cauterized *btd* mutant embryos.
-[VIDEOFILE](figures/Vid16.avi)](figures/Vid16.jpg){#fig:vid-cautdor-btd
-tag="Video 16" width=50%}
 
 # Supplementary
+
+## Figures
 
 ![Reminiscent initiator cell behavior in *btd*
 mutants.](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
 
+![Lateral and dorsal views of *stg* mutant
+embryos.](figures/FigS2.jpg){#fig:stg tag=S2 width=100%}
+
+## Videos
+
 ![Reminiscent initiator cell behavior in *btd* mutants.
 [VIDEOFILE](figures/VidS1.avi)](figures/VidS1.jpg){#fig:vid-initiator
 tag="Video S1" width=50%}
+
+![Lateral view of cephalic furrow formation in *stg* mutant embryos.
+[VIDEOFILE](figures/VidS2.avi)](figures/VidS2.jpg){#fig:vid-stg-lateral
+tag="Video S2" width=50%}
+
+![Dorsal view of cephalic furrow formation in *stg* mutant embryos.
+[VIDEOFILE](figures/VidS3.avi)](figures/VidS3.jpg){#fig:vid-stg-dorsal
+tag="Video S3" width=50%}
+
+
+
 
 
 
