@@ -271,7 +271,7 @@ rigid shell. We modified the model of @Trushko2020-gf to capture the physical
 interactions occurring between mitotic domains, ectopic folds, and the germ
 band. Our model represents the monolayer epithelium of *Drosophila* blastoderm
 using a series of particles connected by springs, with a spring constant
-rigidity and a bending rigidity ({@fig:fold-model}A). The particles are
+rigidity and a bending rigidity ({@fig:model}A). The particles are
 distributed in an equidistant manner from the anterior pole to the posterior
 pole of an elliptical arc. The dimensions of this ellipse is matched with the
 typical dimensions of an embryo ({@fig:fly-dimensions}). The particles are
@@ -280,21 +280,23 @@ envelope. The extension of the germ band occurs by the placement of the
 posterior end of the epithelium towards the anterior end. Mitotic domains are
 represented by regions of compressed springs and positive intrinsic curvature
 which captures the thickness mismatch between mitotic domains and non-dividing
-cells ({@fig:fold-model}A). 
+cells ({@fig:model}B).
 
 <!--Bending rigidity modulates mitotic domains induced-buckling-->
 
-The main control parameter of our model is the ratio RATIO. The position of the
-germ band represents the progression of the development. We performed a
-parameter sweep and observe a buckling transition in the phase space of
-RIGIDITY and germ band push (g). The phase diagram shows that for high values
-of bending rigidity neither mitotic domains nor the germ band is sufficient to
-cause ectopic folds. For intermediate values, however, both mitotic domains and
-germ band extension are required to form ectopic folds. Finally, below a
-certain threshold of bending rigidity, the mitotic domains alone are sufficient
-to cause the formation of ectopic folds. The embryo could fall in either of the
-latter two regimes. We thus performed *in vivo* experiments to determine in
-which regime of the parameter space the embryonic tissue falls.
+The main control parameter of our model is the ratio $\kappa/\lambda R^2$ while
+the germ band position ($g$) represents the progression of the development. We
+performed a parameter sweep and observe a buckling transition in the phase
+space of $\kappa/\lambda R^2$ and $g$. The phase diagram shows that for high
+values of bending rigidity ($\kappa/\lambda R^2>1.2\times{10}^{-4}$) neither
+mitotic domains nor the germ band are sufficient to cause ectopic folds. For
+intermediate values ($\kappa/\lambda R^2 \sim1\times{10}^{-4}$), however, both
+mitotic domains and germ band extension are required to form ectopic folds.
+Finally, we observe that for low values of bending rigidity ($\kappa/\lambda
+R^2<8\times{10}^{-5}$), the mitotic domains alone are sufficient to cause the
+formation of ectopic folds. The embryo could fall in either of the latter two
+regimes. We thus performed *in vivo* experiments to determine in which regime
+of the parameter space the embryonic tissue falls.
 
 <!--Mitotic expansions insufficient to induce buckling in vivo-->
 
@@ -317,7 +319,7 @@ embryonic blastoderm within the bending rigidity of X in the model.
 
 <!--Germ band extension insufficient to induce buckling in vivo-->
 
-TODO: Continue here.
+<!--TODO: Continue here.-->
 
 Next, we asked whether germ band extension alone is enough to cause ectopic
 folds. Thus, we removed the mitotic domains in our model and did a parameter
