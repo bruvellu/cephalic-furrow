@@ -38,27 +38,31 @@ tablenos-plus-name: Table
 
 # Abstract
 
-The cephalic furrow is a deep epithelial fold that forms at the head--trunk
-boundary of *Drosophila* during gastrulation. Its formation is under strict
-genetic control but, unlike other embryonic invaginations, the cephalic furrow
-does not give rise to any precursor tissues or larval structures. It unfolds
-and vanishes without a trace. Here we investigate if the cephalic furrow plays
-a mechanical role in gastrulation. We imaged mutant embryos live to understand
-how the lack of the cephalic furrow impacts the tissue dynamics at the
-head--trunk interface. We find that without the cephalic furrow, the monolayer
-epithelium will buckle erratically, forming ectopic folds during gastrulation.
-We show that ectopic folds are caused by extrinsic tissue forces which are
-driven by the concomitant expansion of mitotic domains in the head, and by the
-extension of the germ band in the trunk. Our experimental and modeling data
-suggests that these opposed tissue flows inevitably increase the mechanical
-stress at the head--trunk boundary, a condition exacerbated in cephalic furrow
-mutants due to the excess of tissue on the blastoderm surface. In normal
-development, these physical interactions are counteracted by the cephalic
-furrow, which primes the position of folding, and creates a predictable
-temporary storage of epithelial tissue before the mitotic expansions and germ
-band extension. We thus propose the cephalic furrow plays a mechanical role in
-*Drosophila* gastrulation acting as a buffer and preventing epithelial
-instability at the head--trunk boundary.
+<!--Programmed epithelial invagination prevents mechanical instability during gastrulation-->
+
+The cephalic furrow is a deep epithelial fold that demarcates the head--trunk
+boundary of *Drosophila* during gastrulation. It forms under a controlled
+morphogenetic program where genetic determinants set the fold's position and
+timing, and local cell shape changes actively drive the tissue to invaginate.
+But unlike other embryonic invaginations, the cephalic furrow doesn't specify
+any precursor tissues or cell fates---it simply unfolds leaving no trace. It
+thus remains unclear what is the function of the cephalic furrow during
+*Drosophila* development. Our work investigates whether the cephalic furrow
+plays a mechanical role in gastrulation by integrating live-imaging, mechanical
+and genetic perturbations in vivo, and in silico simulations. We find that
+mutant embryos lacking the cephalic furrow exhibit variable buckling events at
+the head--trunk epithelium during gastrulation. We show this tissue buckling is
+driven by two concomitant extrinsic forces, the local expansions of mitotic
+domains in the head, and the global compression of the germ band extension from
+the trunk. These processes increase the compressive stresses at the head--trunk
+interface early in gastrulation and undermine the mechanical stability of the
+epithelium when the cephalic furrow is absent. This suggests that in normal
+development, the cephalic furrow absorbs the mechanical stresses at the
+head--trunk boundary by priming the position of folding, and by removing cells
+from the surface before other morphogenetic movements take place. We propose
+the cephalic furrow invagination prevents epithelial instabilities at the
+head--trunk boundary, and therefore, plays a mechanical role in *Drosophila*
+gastrulation.
 
 # Background
 
@@ -344,7 +348,6 @@ to induce ectopic epithelial buckling in cephalic furrow mutants.
 
 <!--Mitotic expansions required to induce buckling in vivo-->
 <!--Germ band extension required to induce buckling in vivo-->
-
 
 <!--TODO: Define how to proceed from here.-->
 
