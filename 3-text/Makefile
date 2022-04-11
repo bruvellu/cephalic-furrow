@@ -22,11 +22,13 @@ figures: linkimg linkvid
 
 linkimg:
 	# Link figure files to figure directory with official naming
-	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
-	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig2.png
-	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
-	ln -s ${FIGUREIN}/strain-analysis/figure.png ${FIGUREOUT}/Fig4.png
-	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig5.png
+	ln -s ${FIGUREIN}/furrow-intro/figure.png ${FIGUREOUT}/Fig1.png
+	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig2.png
+	#ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/Fig2.png
+	#ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig3.png
+	#ln -s ${FIGUREIN}/strain-analysis/figure.png ${FIGUREOUT}/Fig4.png
+	#ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig5.png
+	ln -s ${FIGUREIN}/mitogerm-model/figure.png ${FIGUREOUT}/Fig3.png
 	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
 	ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig7.png
 	ln -s ${FIGUREIN}/wildtype-cauterizations/figure.png ${FIGUREOUT}/Fig8.png
