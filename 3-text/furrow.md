@@ -229,6 +229,8 @@ the formation of ectopic folds occurs abruptly ({@fig:initiator}B,
 formation of ectopic folds suggests they may induce the epithelium to buckle by
 exerting mechanical stresses in neighboring tissues.
 
+<!--TODO: Add profile video of mitotic domain generating ectopic fold-->
+
 <!--Ectopic folding at peak strain and germ band compression-->
 
 To understand how mechanical stresses relate to ectopic folding, we measured
