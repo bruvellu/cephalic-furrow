@@ -29,8 +29,9 @@ linkimg:
 	#ln -s ${FIGUREIN}/strain-analysis/figure.png ${FIGUREOUT}/Fig4.png
 	#ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig5.png
 	ln -s ${FIGUREIN}/mitogerm-model/figure.png ${FIGUREOUT}/Fig3.png
-	ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
-	ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig7.png
+	ln -s ${FIGUREIN}/mutant-analyses/figure.png ${FIGUREOUT}/Fig4.png
+	#ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
+	#ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig7.png
 	ln -s ${FIGUREIN}/wildtype-cauterizations/figure.png ${FIGUREOUT}/Fig8.png
 	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig9.png
 	# Supplementary
