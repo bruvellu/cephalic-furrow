@@ -366,6 +366,23 @@ head--trunk boundary.
 
 <!--Early head--trunk invagination prevents ectopic buckling in silico-->
 
+<!--TODO: See how all of this can fit in
+
+
+There are some aspects to explore.
+
+1. Germ band pushes the cephalic furrow deeper (wildtype cauterization).
+2. The prevention of ectopic folds depending on the relative timing between
+   mitotic domains, cephalic furrow, germ band (prd mutants with partial
+   invagination?).
+3. The region of influence of the cephalic furrow invagination (laser
+   ablations).
+4. The position of the cephalic furrow (slp mutant) [for revision].
+5. Priming potential of cephalic furrow (would a dent be enough, prd mutants
+   can give light).
+
+-->
+
 To explore the role of the cephalic furrow as a mechanical buffer, we asked
 whether a programmed head--trunk invagination could prevent the formation of
 ectopic folds in silico. We expect that an invagination provides a mechanical
