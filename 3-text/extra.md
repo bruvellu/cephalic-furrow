@@ -301,6 +301,28 @@ form (@fig:model).
 
 # Background discarded paragraphs and sentences
 
+Tissue morphogenesis is driven by active and passive mechanisms. When embryos
+gastrulate tissues usually actively change shape. The key morphogenetic
+movements of gastrulation are usually active. For example, in the fly
+*Drosophila melanogaster* the ventral furrow invaginates by apical constriction
+while the anterior and posterior midgut which invaginate by .... Active
+invaginations are usually associated with an embryonic role, for example the
+ventral furrow segregates the mesodermal tissues, and the midguts give rise to
+the digestive tube. In *Drosophila* gastrulation, however, there is one active
+invagination whose function remains mysterious despite its prominent position
+in the embryo---the cephalic furrow.
+
+In this study we investigate whether the cephalic furrow has a mechanical role
+during gastrulation by examining how the tissue interactions at the head--trunk
+boundary are impacted by defects in cephalic furrow formation. We find that
+cephalic furrow mutants show increased strain and ectopic buckling events in
+the monolayer epithelium at the head--trunk interface. We show this epithelial
+instability is the result of extrinsic forces and is caused by the simultaneous
+expansion of mitotic domains in the head, and the extension of the germ band in
+the trunk. Our data suggests that the role of the cephalic furrow in normal
+development is to buffer these opposing tissue flows by priming the position of
+folding, and thus preventing mechanical stress at the head--trunk boundary.
+
 <!--Gastrulation is a fundamental event in animal development-->
 Gastrulation is a key moment in development. Some animals do it simply, others
 have an elaborate orchestration of tissue movements. The fly *Drosophila
