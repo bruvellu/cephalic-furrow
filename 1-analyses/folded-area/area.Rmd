@@ -94,113 +94,170 @@ total <- merge(area, areacorr, by = "Embryo", all.x = TRUE)
 total <- merge(total, nfold, by = "Embryo", all.x = TRUE)
 total <- merge(total, embryos, by = "Embryo", all.x = TRUE)
 
-```
+# Print n btd embryos
+length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "btd",]$Embryo)
+length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "btd",]$Embryo)
 
-## Area plot btd+eve
+# Print n eve embryos
+length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "eve",]$Embryo)
+length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "eve",]$Embryo)
 
-```{r area}
-# Plot raw area of individual folds
-ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve")), Area, colour = Sample)) +
-  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
+# Print n btd folds
+length(results[results$Genotype == "heterozygote" & results$Stock == "btd",]$Label)
+length(results[results$Genotype == "homozygote" & results$Stock == "btd",]$Label)
 
-# Plot corrected area of individual folds
-ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, colour = Sample)) +
-  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(title = "Invaginated area of cephalic furrow compared to ectopic folds", x = "sample", y = expression(micrometers^2))
-ggsave("folded-area_mutants.png")
-
-# Plot corrected area of individual folds
-ggplot(results, aes(Genotype, AreaCorr, fill = Genotype)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) +
-  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  labs(x = "mutants", y = expression(paste("folded area ", (µm^2)))) +
-  facet_wrap(~Stock, strip.position = "top") +
-  scale_color_manual(values=c("#0072b2", "#e69f03")) +
-  scale_fill_manual(values=c("#0072b2", "#e69f03")) +
-  theme_classic() +
-  theme(text =  element_text(size = 25),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text.x = element_text(face = "italic"),
-        panel.background = element_rect(colour = "black", size=1))
-ggsave("folded-area_mutants_facet.png", width = 14, height = 5)
-
-
-# Plot corrected area of individual folds by genotype
-ggplot(results, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(draw_quantiles = c("0.5")) + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(x = "Genotype", y = expression(micrometers^2))
-ggsave("folded-area_all.png", width = 5, height = 3)
-
-# Plot raw area of folding per embryo
-ggplot(total, aes(factor(Genotype, level = c("control", "btd", "eve")), Area, colour = Sample)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
-
-# Plot corrected area of folding per embryo
-ggplot(total, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, colour = Sample)) +
-  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(title = "Total area of folded tissue", x = "sample", y = expression(micrometers^2))
-
-# Plot corrected area of folding per embryo
-ggplot(total, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = expression(micrometers^2)) + facet_wrap(~Stock) + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
-ggsave("folded-area_all_facet.png")
-
-# Plot correlation between raw area and number of folds
-ggplot(total, aes(Folds, Area, colour = Sample)) + geom_point()
-# Plot correlation between corrected area and number of folds
-ggplot(total, aes(Folds, AreaCorr, colour = Sample)) + geom_point()
+# Print n eve folds
+length(results[results$Genotype == "heterozygote" & results$Stock == "eve",]$Label)
+length(results[results$Genotype == "homozygote" & results$Stock == "eve",]$Label)
 
 ```
 
-## Area plots btd+eve+prd
+## Area plots for all genes
 
-```{r area}
+```{r area-all}
 # Plot raw area of individual folds
 ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve", "prd")), Area, colour = Sample)) +
-  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Raw folded area of individual folds", x = "sample", y = expression(paste("folded area ", (µm^2))))
+ggsave("4-plots/area_raw_folds.png")
 
 # Plot corrected area of individual folds
 ggplot(results, aes(factor(Sample, level = c("control", "btd", "eve", "prd")), AreaCorr, colour = Sample)) +
   geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(title = "Invaginated area of cephalic furrow compared to ectopic folds", x = "sample", y = expression(micrometers^2))
-ggsave("folded-area_mutants_prd.png")
+  labs(title = "Corrected folded area of individual folds", x = "sample", y = expression(paste("folded area ", (µm^2))))
+ggsave("4-plots/area_corrected_folds.png")
 
 # Plot corrected area of individual folds
 ggplot(results, aes(Genotype, AreaCorr, fill = Genotype)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
   geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
   labs(x = "mutants", y = expression(paste("folded area ", (µm^2)))) +
   facet_wrap(~Stock, strip.position = "top") +
-  scale_color_manual(values=c("#0072b2", "#e69f03")) +
-  scale_fill_manual(values=c("#0072b2", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
   theme_classic() +
   theme(text =  element_text(size = 25),
         strip.background = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("folded-area_mutants_facet_prd.png", width = 14, height = 5)
+ggsave("4-plots/area_corrected_folds_facet.png", width = 14, height = 5)
+ggsave("4-plots/area_corrected_folds_facet.svg", width = 14, height = 5)
 
+# Plot raw area of individual folds
+ggplot(total, aes(factor(Sample, level = c("control", "btd", "eve", "prd")), Area, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Raw folded area per embryo", x = "sample", y = expression(paste("folded area ", (µm^2))))
+ggsave("4-plots/area_raw_embryos.png")
 
-# Plot corrected area of individual folds by genotype
-ggplot(results, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(draw_quantiles = c("0.5")) + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(x = "Genotype", y = expression(micrometers^2))
-ggsave("folded-area_all_prd.png", width = 5, height = 3)
-
-# Plot raw area of folding per embryo
-ggplot(total, aes(factor(Genotype, level = c("control", "btd", "eve", "prd")), Area, colour = Sample)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
-
-# Plot corrected area of folding per embryo
+# Plot corrected area of individual folds
 ggplot(total, aes(factor(Sample, level = c("control", "btd", "eve", "prd")), AreaCorr, colour = Sample)) +
   geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(title = "Total area of folded tissue", x = "sample", y = expression(micrometers^2))
+  labs(title = "Corrected folded area of individual folds", x = "sample", y = expression(paste("folded area ", (µm^2))))
+ggsave("4-plots/area_corrected_embryos.png")
 
-# Plot corrected area of folding per embryo
-ggplot(total, aes(Genotype, AreaCorr, colour = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(alpha = 0.8, width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = expression(micrometers^2)) + facet_wrap(~Stock) + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
-ggsave("folded-area_all_facet_prd.png")
+# Plot corrected area of individual folds
+ggplot(total, aes(Genotype, AreaCorr, fill = Genotype)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  labs(x = "mutants", y = expression(paste("folded area ", (µm^2)))) +
+  facet_wrap(~Stock, strip.position = "top") +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  theme_classic() +
+  theme(text =  element_text(size = 25),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("4-plots/area_corrected_embryos_facet.png", width = 14, height = 5)
+ggsave("4-plots/area_corrected_embryos_facet.svg", width = 14, height = 5)
 
 # Plot correlation between raw area and number of folds
 ggplot(total, aes(Folds, Area, colour = Sample)) + geom_point()
+ggsave("4-plots/area_raw_by_nfolds.png")
 # Plot correlation between corrected area and number of folds
 ggplot(total, aes(Folds, AreaCorr, colour = Sample)) + geom_point()
+ggsave("4-plots/area_corrected_by_nfolds.png")
 
 ```
+
+## Area plot btd+eve
+
+```{r area-btd-eve}
+# Subset results
+results_btdeve <- results[results$Stock != "prd",]
+total_btdeve <- total[total$Stock != "prd",]
+
+# Plot raw area of individual folds
+ggplot(results_btdeve, aes(factor(Sample, level = c("control", "btd", "eve")), Area, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Raw folded area of individual folds", x = "sample", y = expression(paste("folded area ", (µm^2))))
+ggsave("4-plots/btdeve_area_raw_folds.png")
+
+# Plot corrected area of individual folds
+ggplot(results_btdeve, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Corrected folded area of individual folds", x = "sample", y = expression(paste("folded area ", (µm^2))))
+ggsave("4-plots/btdeve_area_corrected_folds.png")
+
+# Plot corrected area of individual folds
+ggplot(results_btdeve, aes(Genotype, AreaCorr, fill = Genotype)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  labs(x = "mutants", y = expression(paste("folded area ", (µm^2*10^3)))) +
+  facet_wrap(~Stock, strip.position = "top") +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_y_continuous(labels = function(x) x/1000) +
+  theme_classic() +
+  theme(text =  element_text(size = 30),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("4-plots/btdeve_area_corrected_folds_facet.png", width = 12, height = 6)
+ggsave("4-plots/btdeve_area_corrected_folds_facet.svg", width = 12, height = 6)
+
+# Plot raw area of folding per embryo
+ggplot(total_btdeve, aes(factor(Sample, level = c("control", "btd", "eve")), Area, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Raw folded area per embryo", x = "sample", y = expression(paste("folded area ", (µm^2))))
+ggsave("4-plots/btdeve_area_raw_embryos.png")
+
+# Plot corrected area of folding per embryo
+ggplot(total_btdeve, aes(factor(Sample, level = c("control", "btd", "eve")), AreaCorr, colour = Sample)) +
+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
+  labs(title = "Corrected folded area of individual folds", x = "sample", y = expression(paste("folded area ", (µm^2))))
+ggsave("4-plots/btdeve_area_corrected_embryos.png")
+
+# Plot corrected area of folding per embryo
+ggplot(total_btdeve, aes(Genotype, AreaCorr, fill = Genotype)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  labs(x = "mutants", y = expression(paste("folded area ", (µm^2*10^3)))) +
+  facet_wrap(~Stock, strip.position = "top") +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_y_continuous(labels = function(x) x/1000) +
+  theme_classic() +
+  theme(text =  element_text(size = 30),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("4-plots/btdeve_area_corrected_embryos_facet.png", width = 12, height = 6)
+ggsave("4-plots/btdeve_area_corrected_embryos_facet.svg", width = 12, height = 6)
+
+# Plot correlation between raw area and number of folds
+ggplot(total_btdeve, aes(Folds, Area, colour = Sample)) + geom_point()
+ggsave("4-plots/btdeve_area_raw_by_nfolds.png")
+
+# Plot correlation between corrected area and number of folds
+ggplot(total_btdeve, aes(Folds, AreaCorr, colour = Sample)) + geom_point()
+ggsave("4-plots/btdeve_area_corrected_by_nfolds.png")
+
+```
+
+
 
