@@ -24,29 +24,42 @@ results$Label <- sapply(strsplit(results$Label, ":"), "[", 1)
 samples <- read.delim("samples.csv", sep = ",")
 results <- merge(results, samples, by = "Label", all.x = TRUE)
 
+# Print n btd embryos
+length(samples[samples$Genotype == "heterozygote" & samples$Sample == "btd",]$Label)
+length(samples[samples$Genotype == "homozygote" & samples$Sample == "btd",]$Label)
+
+# Print n eve embryos
+length(samples[samples$Genotype == "heterozygote" & samples$Sample == "eve",]$Label)
+length(samples[samples$Genotype == "homozygote" & samples$Sample == "eve",]$Label)
+
+# Print n btd folds
+length(results[results$Genotype == "heterozygote" & results$Sample == "btd",]$Label)
+length(results[results$Genotype == "homozygote" & results$Sample == "btd",]$Label)
+
+# Print n eve folds
+length(results[results$Genotype == "heterozygote" & results$Sample == "eve",]$Label)
+length(results[results$Genotype == "homozygote" & results$Sample == "eve",]$Label)
+
 ```
 
 ```{r plot}
-# Plot stocks together
-ggplot(results, aes(Genotype, Length, color = Genotype)) + geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) + geom_jitter(width = 0.1, show.legend = FALSE) + labs(x = "mutant", y = "depth") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
-ggsave("depth_all.png")
 
 # Plot stocks separately
 ggplot(results, aes(Genotype, Length, fill = Genotype)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
   geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  facet_wrap(~Sample, strip.position = "top") +
   labs(x = "mutants", y = "depth") +
-  scale_color_manual(values=c("#0072b2", "#e69f03")) +
-  scale_fill_manual(values=c("#0072b2", "#e69f03")) +
+  facet_wrap(~Sample, strip.position = "top") +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
   theme_classic() +
-  theme(text =  element_text(size = 25),
+  theme(text =  element_text(size = 30),
         strip.background = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("depth_facet.png", width = 14, height = 5)
-
+ggsave("3-plots/depth_facet.png", width = 12, height = 6)
+ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
 
 ```
 
