@@ -655,8 +655,9 @@ illustrations.
 # Acknowledgements
 
 LoPaTs for discussions, Akanksha fly pushing and cartographic projections,
-Vlado for projections, Lemke for discussions, Ju for text suggestions, LMF for
-essential imaging support, EMBO for funding.
+Vlado for projections, Lemke for discussions, Ju for text suggestions, Jan
+Brugués and Keisuke Ishihara for the laser ablation setup, LMF for essential
+imaging support, EMBO for funding.
 
 # References
 
