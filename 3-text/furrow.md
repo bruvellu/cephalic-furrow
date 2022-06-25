@@ -93,30 +93,40 @@ mechanical role, and which may have evolved to solve a mechanical problem.
 
 # Main
 
+<!--
+
+- CF early movement and prominent landmark
+- Position determined genetically
+- Intrinsic mechanisms drive formation
+- But invaginated cells acquire no new fates
+- And fold temporary unfolding without trace
+- So the function remains a mystery
+
+-->
+
 <!--CF formation-->
 
 The cephalic furrow is one of the earliest morphogenetic movements of
-*Drosophila* gastrulation. It initiates at the onset of cellularization as
-bilateral indentations on the anterior blastoderm which quickly invaginate deep
-into the yolk sac [@Hartenstein1985-zs; @Spencer2015-td]. The resulting
-epithelial fold divides the posterior portion of the head (procephalon) from
-the segmented trunk (germ band) being a prominent anatomical landmark for the
-head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].
+*Drosophila* gastrulation. It begins at the onset of blastoderm cellularization
+as a lateral indentation that quickly invaginates deep into the yolk
+[@Hartenstein1985-zs; @Spencer2015-td]. The resulting epithelial fold divides
+the head (procephalon) from the segmented trunk (germ band) being a prominent
+anatomical landmark for the embryonic head--trunk boundary
+[@Hartenstein1985-zs; @Foe1989-cw].
 
 <!--Control of cephalic furrow formation-->
 
-The formation of the cephalic furrow is under strict genetic control. The
-position of the cephalic furrow is specified with remarkable accuracy
-[@Liu2013-lc]. Its initiation is regulated the zygotic expression of
-*buttonhead* (*btd*) and *even skipped* (*eve*), where the overlap between the
-two determines the row of initiator cells [@Vincent1997-fa]. The activation of
-lateral myosin contractility cause the shortening of initiator cells which
-initiates the invagination, while the mechanical coupling between the
-epithelial cells lining the furrow ensures the precision of the tissue fold
-during morphogenesis [@Eritano2020-mi]. Although the mechanisms controlling the
-formation of the cephalic furrow remain poorly understood [@Gilmour2017-um],
-the process is under precise genetic control and safeguarding mechanisms are in
-place that ensure the accuracy of morphogenesis.
+The position of the cephalic furrow is specified with remarkable accuracy
+[@Liu2013-lc] under strict genetic control. Its initiation is regulated the
+zygotic expression of *buttonhead* (*btd*) and *even skipped* (*eve*), where
+the overlap between the two determines the row of initiator cells
+[@Vincent1997-fa]. The activation of lateral myosin contractility cause the
+shortening of initiator cells which initiates the invagination, while the
+mechanical coupling between the epithelial cells lining the furrow ensures the
+precision of the tissue fold during morphogenesis [@Eritano2020-mi]. Although
+the mechanisms controlling the formation of the cephalic furrow remain poorly
+understood [@Gilmour2017-um], the process is under precise genetic control and
+safeguarding mechanisms are in place that ensure the accuracy of morphogenesis.
 
 <!--Putative roles of the cephalic furrow-->
 
