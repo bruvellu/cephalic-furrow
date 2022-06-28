@@ -7,6 +7,8 @@ creation: May 26, 2021
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
+setwd("~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
 library(ggplot2)
 ```
 
@@ -65,43 +67,34 @@ for (d in 1:length(datafiles)) {
 ```
 
 ```{r plot}
-# Plot stocks together
+# Plot stocks together using bars
 ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(alpha = 0.8, position = position_dodge(width = 2), show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("tortuosity_all_boxplot.png")
+
+# Plot stocks together using lines
 ggplot(datasets, aes(minute, tortuosity, color = sample)) + geom_smooth(span = 0.3, show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("tortuosity_all_smooth.png", width = 7, height = 3)
 
-# Plot stocks separately
+# Plot stocks separately using bars side by side
 ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(position = position_dodge(width = 2), show.legend = FALSE) + facet_wrap(~stock) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("tortuosity_facet_boxplot.png")
 
+# Plot stocks separately using lines vertically
 ggplot(datasets, aes(minute, tortuosity, color = sample)) +
-  geom_smooth(span = 0.3, show.legend = FALSE) +
-  facet_wrap(~stock, strip.position = "top") +
+  geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = sample)) +
+  facet_wrap(~stock, ncol = 1, strip.position = "top") +
   labs(x = "minutes", y = "tortuosity") +
   scale_color_manual(values=c("#0072b2", "#e69f03")) +
   scale_fill_manual(values=c("#0072b2", "#e69f03")) +
   theme_classic() +
-  theme(text =  element_text(size = 25),
+  theme(text =  element_text(size = 35),
         strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text.x = element_text(face = "italic"),
+        strip.text.x = element_blank(),
+        #strip.placement = "outside",
+        #strip.text.x = element_text(face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("tortuosity_facet_smooth.png", width = 10, height = 4)
-
-ggplot(results, aes(Genotype, Length, fill = Genotype)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) +
-  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  facet_wrap(~Sample, strip.position = "top") +
-  labs(x = "mutants", y = "depth") +
-  scale_color_manual(values=c("#0072b2", "#e69f03")) +
-  scale_fill_manual(values=c("#0072b2", "#e69f03")) +
-  theme_classic() +
-  theme(text =  element_text(size = 25),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text.x = element_text(face = "italic"),
-        panel.background = element_rect(colour = "black", size=1))
+ggsave("tortuosity_facet_smooth.png", width = 7, height = 11)
+ggsave("tortuosity_facet_smooth.svg", width = 7, height = 11)
 
 ```
 
