@@ -38,6 +38,8 @@ fname = []
 totarea = []
 
 for i, name in enumerate(anames):
+
+    print(name) #print dataset name for reference @bruno
     
     pngn = pfiles[pfiles.str.contains(name)].values #finds image for that projection
     
@@ -46,14 +48,13 @@ for i, name in enumerate(anames):
         png = Image.open(pngn[0]) #opens png file
         size = png.size[::-1] #grabs dimensions of image
         
-        
         cut = [int(crop[i].split('x')[0]), int(crop[i].split('x')[1])] #origin of image relative to projection matrix
         flipbol = flip[i] == 'fliph'
 
         area = []
         with open(afiles[i], 'r') as f: #open the projection
             for j, line in enumerate(f):
-                if j >= cut[1] and j<size[0]+cut[1]: #crops y axis // increments y to retain size
+                if j >= cut[1] and j < size[0] + cut[1]: #crops y axis // FIXED: needs to increment y to retain size @bruno
                     area_list = [float(elt) for elt in line.split(' ')]#copies each line of text
                     
                     if flipbol == True: #If the cropped image was flipped horizontally
@@ -61,13 +62,12 @@ for i, name in enumerate(anames):
                     
                     area.append(np.asarray(area_list[cut[0]:size[1]+cut[0]])) #crops the x axis
 
-
         r = rnames[rnames.str.startswith(name)].values #finds all rois for that image in the roi folder
         
         for roiname in r:
             fname.append(roiname)
             img = np.zeros(size, dtype=np.uint8) #creates zero image with same dimensions
-            roi = read_roi_file(path + '/1-rois/' + roiname)[roiname.strip('.roi')] #reads roi
+            roi = read_roi_file(path + '/1-rois/' + roiname)[roiname[:-4]] #reads roi // FIXED: strip removes all instances of characters, simply remove the last four characters. @bruno
 
             paths = roi['paths'][0] #contours of roi
 
@@ -77,7 +77,7 @@ for i, name in enumerate(anames):
             maska = img*area ##mask applied to pixel area values
             totarea.append(sum(sum(maska))) ##total area of roi
         
-        
+
 dataf = pd.DataFrame({'File': fname, 'ROI Area': totarea}) #table with data. Area is in squared microns
 dataf.to_csv(path + '/corrected_results.txt', index=None, sep=' ')
 
