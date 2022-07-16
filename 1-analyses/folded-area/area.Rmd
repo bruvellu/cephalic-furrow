@@ -54,14 +54,17 @@ example: `eve-Gap1_t60s_z3_E4_CARE_s20_0x334_w1850_h1040_fliph_f15-84.tif`
 # Load raw ROI measurements from ImageJ
 results <- read.delim("results.txt")
 
-# Remove slice number from the label
+# Remove slice number from the labels
 results$Label <- gsub(":1", "", results$Label)
 
-# Split label to get embryo and sapply to get all first elements of the split...
-results$Embryo <- sapply(strsplit(results$Label, "_CARE"), "[", 1)
+# Split label at "_s" to get the embryo name. sapply gets all first elements of the split.
+results$Embryo <- sapply(strsplit(results$Label, "_s"), "[", 1)
+
+# Remove "_CARE" from embryo name
+results$Embryo <- gsub("_CARE", "", results$Embryo)
 
 # Add columns with sample information (needs manual update for new ROIs)
-results$Stock <- substring(results$Label, 1, 3)
+#results$Stock <- substring(results$Label, 1, 3)
 
 # Load sample info and merge with results
 samples <- read.delim("samples.csv", sep = ",")
@@ -71,7 +74,7 @@ results <- merge(results, samples, by = "Label", all.x = TRUE)
 corrected <- read.delim("corrected_results.txt", sep = "")
 colnames(corrected) <- c("Label", "AreaCorr")
 
-#corrected_area$Embryo <- sapply(strsplit(corrected_area$File, "_CARE"), "[", 1)
+# Merge corrected area to results
 results <- merge(results, corrected, by = "Label", all.x = TRUE)
 
 # Sum total folded area
@@ -94,21 +97,75 @@ total <- merge(area, areacorr, by = "Embryo", all.x = TRUE)
 total <- merge(total, nfold, by = "Embryo", all.x = TRUE)
 total <- merge(total, embryos, by = "Embryo", all.x = TRUE)
 
-# Print n btd embryos
-length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "btd",]$Embryo)
-length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "btd",]$Embryo)
+# Print btd embryos
+sprintf("btd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
+        length(embryos[embryos$Stock == "btd",]$Embryo), # total embryos
+        length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "btd",]$Embryo), # het embryos
+        length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "btd",]$Embryo), # hom embryos
+        
+        length(results[results$Stock == "btd",]$Label), # total folds
+        length(results[results$Genotype == "heterozygote" & results$Stock == "btd",]$Label), # het folds
+        length(results[results$Genotype == "homozygote" & results$Stock == "btd",]$Label) # het folds
+        )
 
-# Print n eve embryos
-length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "eve",]$Embryo)
-length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "eve",]$Embryo)
+# Print eve embryos
+sprintf("eve: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
+        length(embryos[embryos$Stock == "eve",]$Embryo), # total embryos
+        length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "eve",]$Embryo), # het embryos
+        length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "eve",]$Embryo), # hom embryos
+        
+        length(results[results$Stock == "eve",]$Label), # total folds
+        length(results[results$Genotype == "heterozygote" & results$Stock == "eve",]$Label), # het folds
+        length(results[results$Genotype == "homozygote" & results$Stock == "eve",]$Label) # het folds
+        )
 
-# Print n btd folds
-length(results[results$Genotype == "heterozygote" & results$Stock == "btd",]$Label)
-length(results[results$Genotype == "homozygote" & results$Stock == "btd",]$Label)
+# Print prd embryos
+sprintf("prd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
+        length(embryos[embryos$Stock == "prd",]$Embryo), # total embryos
+        length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "prd",]$Embryo), # het embryos
+        length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "prd",]$Embryo), # hom embryos
+        
+        length(results[results$Stock == "prd",]$Label), # total folds
+        length(results[results$Genotype == "heterozygote" & results$Stock == "prd",]$Label), # het folds
+        length(results[results$Genotype == "homozygote" & results$Stock == "prd",]$Label) # het folds
+        )
 
-# Print n eve folds
-length(results[results$Genotype == "heterozygote" & results$Stock == "eve",]$Label)
-length(results[results$Genotype == "homozygote" & results$Stock == "eve",]$Label)
+# Print wt embryos
+sprintf("wt: embryos=%s, folds=%s",
+        length(embryos[embryos$Stock == "wt",]$Embryo), # total embryos
+        length(results[results$Stock == "wt",]$Label) # total folds
+        )
+
+
+```
+
+## Overview plots for all genes
+```{r area-overview}
+# Corrected area of individual folds per position
+ggplot(results, aes(Stock, AreaCorr, colour = Genotype)) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2) +
+  labs(x = "stock", y = expression(paste("folded area ", (µm^2)))) +
+  facet_wrap(~Position, strip.position = "top") +
+  theme_minimal() +
+  theme(text =  element_text(size = 15),
+        panel.background = element_rect(colour = "gray", size=1)
+  )
+
+# Plot corrected area of individual folds
+ggplot(results, aes(Genotype, AreaCorr, fill = Genotype)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  labs(x = "mutants", y = expression(paste("folded area ", (µm^2)))) +
+  facet_wrap(~Stock, strip.position = "top") +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  theme_classic() +
+  theme(text =  element_text(size = 25),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+
 
 ```
 
