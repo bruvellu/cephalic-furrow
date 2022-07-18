@@ -131,7 +131,7 @@ sprintf("prd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         )
 
 # Print wt embryos
-sprintf("wt: embryos=%s, folds=%s",
+sprintf(" wt: embryos=%s, folds=%s",
         length(embryos[embryos$Stock == "wt",]$Embryo), # total embryos
         length(results[results$Stock == "wt",]$Label) # total folds
         )
