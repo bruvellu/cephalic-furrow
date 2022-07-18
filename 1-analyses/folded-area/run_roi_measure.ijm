@@ -11,6 +11,9 @@ fileList = getFileList(dirRois);
 // Open ROI Manager
 run("ROI Manager...");
 
+// Set measurements to take
+run("Set Measurements...", "area standard centroid center perimeter bounding fit shape feret's integrated median skewness kurtosis display redirect=None decimal=3");
+
 // Loop over file list skipping non-roi files
 for (i=0; i<fileList.length; i++) {
 	if (endsWith(fileList[i], ".roi")) {
