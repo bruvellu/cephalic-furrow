@@ -160,12 +160,12 @@ ggplot(total, aes(factor(Stock, level = c("wt", "btd", "eve", "prd")), AreaCorr,
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1),
         axis.text.x = element_text(face = "italic"),
-        legend.position = c(0.9,0.9),
+        legend.position = c(0.93,0.9),
         legend.text = element_text(size = 15),
         legend.title = element_text(size = 15),
         )
-ggsave("4-plots/total-area-per-embryo.png", width = 15, height = 10)
-ggsave("4-plots/total-area-per-embryo.svg", width = 15, height = 10)
+ggsave("4-plots/total-area-per-embryo.png", width = 15, height = 9)
+ggsave("4-plots/total-area-per-embryo.svg", width = 15, height = 9)
 
 ```
 
@@ -182,18 +182,18 @@ ggplot(results, aes(factor(Stock, level = c("wt", "btd", "eve", "prd")), AreaCor
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("area of individual folds ", (µm^2)~x~10^3))) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  #facet_grid(~Position) +
+  facet_grid(~Position) +
   theme_classic() +
   theme(text = element_text(size = 30),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1),
         axis.text.x = element_text(face = "italic"),
-        legend.position = c(0.9,0.9),
+        legend.position = c(0.93,0.9),
         legend.text = element_text(size = 15),
         legend.title = element_text(size = 15),
         )
-ggsave("4-plots/area-individual-folds.png", width = 15, height = 6)
-ggsave("4-plots/area-individual-folds.svg", width = 15, height = 6)
+ggsave("4-plots/area-individual-folds.png", width = 15, height = 8)
+ggsave("4-plots/area-individual-folds.svg", width = 15, height = 8)
 ```
 
 ## Area plots for all genes
