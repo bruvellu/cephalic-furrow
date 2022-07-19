@@ -139,34 +139,61 @@ sprintf(" wt: embryos=%s, folds=%s",
 
 ```
 
-## Overview plots for all genes
-```{r area-overview}
-# Corrected area of individual folds per position
-ggplot(results, aes(Stock, AreaCorr, colour = Genotype)) +
-  geom_jitter(alpha = 0.8, width = 0.1, size = 2) +
-  labs(x = "stock", y = expression(paste("folded area ", (µm^2)))) +
-  facet_wrap(~Position, strip.position = "top") +
-  theme_minimal() +
-  theme(text =  element_text(size = 15),
-        panel.background = element_rect(colour = "gray", size=1)
-  )
+## Total folded area per embryo
 
-# Plot corrected area of individual folds
-ggplot(results, aes(Genotype, AreaCorr, fill = Genotype)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
-  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  labs(x = "mutants", y = expression(paste("folded area ", (µm^2)))) +
-  facet_wrap(~Stock, strip.position = "top") +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+Plot with the total area of folded tissue in embryos with and without the
+cephalic furrow. The values are the per embryo sum of the corrected areas of
+individual folds positioned anterior, middle, and posterior.
+
+It shows that homozygote mutants have a smaller area than heterozygote mutants,
+which in turn are slightly smaller than wildtype total folded area.
+
+```{r total-area-per-embryo}
+ggplot(total, aes(factor(Stock, level = c("wt", "btd", "eve", "prd")), AreaCorr, fill = Genotype)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 1) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.05)) +
+  scale_y_continuous(labels = function(x) x / 1000) +
+  labs(x = "stocks", y = expression(paste("total folded area per embryo ", (µm^2)~x~10^3))) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   theme_classic() +
-  theme(text =  element_text(size = 25),
+  theme(text =  element_text(size = 30),
         strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text.x = element_text(face = "italic"),
-        panel.background = element_rect(colour = "black", size=1))
+        panel.background = element_rect(colour = "black", size=1),
+        axis.text.x = element_text(face = "italic"),
+        legend.position = c(0.9,0.9),
+        legend.text = element_text(size = 15),
+        legend.title = element_text(size = 15),
+        )
+ggsave("4-plots/total-area-per-embryo.png", width = 15, height = 10)
+ggsave("4-plots/total-area-per-embryo.svg", width = 15, height = 10)
 
+```
 
+## Area of individual folds
+
+This plots shows the total area of folded tissue in embryos with and without
+the cephalic furrow. Values are the sum of corrected areas of individual folds
+per embryo.
+
+```{r area-individual-folds}
+ggplot(results, aes(factor(Stock, level = c("wt", "btd", "eve", "prd")), AreaCorr, fill = Genotype)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 1) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.05)) +
+  scale_y_continuous(labels = function(x) x / 1000) +
+  labs(x = "stocks", y = expression(paste("area of individual folds ", (µm^2)~x~10^3))) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  #facet_grid(~Position) +
+  theme_classic() +
+  theme(text = element_text(size = 30),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1),
+        axis.text.x = element_text(face = "italic"),
+        legend.position = c(0.9,0.9),
+        legend.text = element_text(size = 15),
+        legend.title = element_text(size = 15),
+        )
+ggsave("4-plots/area-individual-folds.png", width = 15, height = 6)
+ggsave("4-plots/area-individual-folds.svg", width = 15, height = 6)
 ```
 
 ## Area plots for all genes
@@ -189,7 +216,8 @@ ggplot(results, aes(Genotype, AreaCorr, fill = Genotype)) +
   geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
   geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
   labs(x = "mutants", y = expression(paste("folded area ", (µm^2)))) +
-  facet_wrap(~Stock, strip.position = "top") +
+  facet_grid(~Stock) 
+  facet_grid(~Stock, strip.position = "top") 
   scale_color_manual(values=c("#56b4e9", "#e69f03")) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
   theme_classic() +
@@ -234,7 +262,7 @@ ggsave("4-plots/area_corrected_embryos_facet.svg", width = 14, height = 5)
 ggplot(total, aes(Folds, Area, colour = Sample)) + geom_point()
 ggsave("4-plots/area_raw_by_nfolds.png")
 # Plot correlation between corrected area and number of folds
-ggplot(total, aes(Folds, AreaCorr, colour = Sample)) + geom_point()
+ggplot(results, aes(Perim., AreaCorr, colour = Stock)) + geom_point()
 ggsave("4-plots/area_corrected_by_nfolds.png")
 
 ```
