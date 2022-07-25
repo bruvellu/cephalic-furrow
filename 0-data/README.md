@@ -11,44 +11,44 @@ defects, and embryos in improper orientation.
 - [dorsal](dorsal): single view, dorsal side, head region, coverslip-mounted, 40x objective
 - [imsane](imsane): cartographic projections of `lateral` datasets
 
-## *buttonhead*
+## buttonhead
 
 ### Lateral
 
-- **2020-02-10_btd-hisgap:** btd-hisgap1
-- **2020-09-16_btd-gap:** btd-gap_z3_t55s
-- **2020-09-17_btd-gap:** btd-gap2_z3_t55s
+- **2020-02-10_btd-hisgap:** `btd-hisgap1`
+- **2020-09-16_btd-gap:** `btd-gap_z3_t55s`
+- **2020-09-17_btd-gap:** `btd-gap2_z3_t55s`
 
 ### Dorsal
 
-- **2020-09-24_btd-gap_dorsal:** btd-gap_dorsal1_z3_t51s
-- **2020-10-13_btd-gap_dorsal:** btd-gap_dorsal_1_z1.5_t51s
-- **2020-10-14_btd-gap_dorsal:** btd-gap_dorsal_1_z3_t45s
+- **2020-09-24_btd-gap_dorsal:** `btd-gap_dorsal1_z3_t51s`
+- **2020-10-13_btd-gap_dorsal:** `btd-gap_dorsal_1_z1.5_t51s`
+- **2020-10-14_btd-gap_dorsal:** `btd-gap_dorsal_1_z3_t45s`
 
-## *even-skipped*
+## even-skipped
 
 ### Lateral
 
-- **2020-01-17_eve-Gap:** eve-Gap_1_t45s_z3
-- **2020-01-22_eve-Gap:** eve-Gap1_t60s_z3
+- **2020-01-17_eve-Gap:** `eve-Gap_1_t45s_z3`
+- **2020-01-22_eve-Gap:** `eve-Gap1_t60s_z3`
 
 ### Dorsal
 
-- **2020-11-03_eve-gap_dorsal:** eve-gap_dorsal_1_z3_t52s
-- **2020-11-04_eve-gap_dorsal:** eve-gap_dorsal_2_z3_t53s
+- **2020-11-03_eve-gap_dorsal:** `eve-gap_dorsal_1_z3_t52s`
+- **2020-11-04_eve-gap_dorsal:** `eve-gap_dorsal_2_z3_t53s`
 
-## *paired*
+## paired
 
 ### Lateral
 
-- **2019-10-03_prd-Gap:** prd-Gap_1_t60s
+- **2019-10-03_prd-Gap:** `prd-Gap_1_t60s`
 
 ### Dorsal
 
-- **2020-10-19_prd-gap_dorsal:** prd-gap_dorsal_1_z3_t41s
-- **2020-10-21_prd-gap_dorsal:** prd-gap_1_z3_t52s
+- **2020-10-19_prd-gap_dorsal:** `prd-gap_dorsal_1_z3_t41s`
+- **2020-10-21_prd-gap_dorsal:** `prd-gap_1_z3_t52s`
 
-## *string*
+## string
 
 ### Lateral
 
@@ -59,7 +59,7 @@ defects, and embryos in improper orientation.
 
 - **2021-10-26_Gap,stg[2]:** `Gap,stg[2]_dorsal_1_z3_t60`
 
-## *buttonhead--string*
+## buttonhead + string
 
 ### Lateral
 
@@ -73,9 +73,9 @@ TODO: btd--stg dorsal datasets
 
 ### Lateral
 
-- **2022-02-21_rgap:** rgap_1b_z3_t60s
+- **2022-02-21_rgap:** `rgap_1b_z3_t60s`
 
 ### Dorsal
 
-- **2022-02-22_rgap_dorsal:** rgap_dorsal_1_z3_t60s
+- **2022-02-22_rgap_dorsal:** `rgap_dorsal_1_z3_t60s`
 
