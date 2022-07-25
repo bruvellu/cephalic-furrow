@@ -1,157 +1,78 @@
-# Imaging datasets
+# Live-imaging datasets
 
-Overview of the cephalic furrow live-imaging datasets. The data is compiled in
-the spreadsheet `datasets.ods`.
+Overview of the cephalic furrow live-imaging datasets. Everything acquired with
+the Zeiss Z.1 Lightsheet. The spreadsheet `datasets.ods` compiles the metadata
+and annotations for each dataset.
 
-- `lateral` lateral views using 20x
-- `imsane` lateral views after care and cartographic projection
-- `dorsal` dorsal views using 40x
+## Types of data
 
-## Lateral and imsane datasets
+- `lateral`: single view, lateral side, whole-body, coverslip-mounted, 20x objective
+- `dorsal`: single view, dorsal side, head region, coverslip-mounted, 40x objective
+- `imsane`: cartographic projections of `lateral` datasets
 
-### Heterozygotes
+## *buttonhead*
 
-2020-02-10_btd-hisgap:
+### Lateral
 
-- btd-hisgap1_E7
+- 2020-02-10_btd-hisgap: btd-hisgap1
+- 2020-09-16_btd-gap: btd-gap_z3_t55s
+- 2020-09-17_btd-gap: btd-gap2_z3_t55s
 
-2020-09-16_btd-gap:
+### Dorsal
 
-- btd-gap_z3_t55s_E3
-- btd-gap_z3_t55s_E10
-- btd-gap_z3_t55s_E12
+- 2020-09-24_btd-gap_dorsal: btd-gap_dorsal1_z3_t51s
+- 2020-10-13_btd-gap_dorsal: btd-gap_dorsal_1_z1.5_t51s
+- 2020-10-14_btd-gap_dorsal: btd-gap_dorsal_1_z3_t45s
 
-2020-09-17_btd-gap:
+## *even-skipped*
 
-- btd-gap2_z3_t55s_E8
-- btd-gap2_z3_t55s_E12
+### Lateral
 
-2020-01-17_eve-Gap:
+- 2020-01-17_eve-Gap: eve-Gap_1_t45s_z3
+- 2020-01-22_eve-Gap: eve-Gap1_t60s_z3
 
-- eve-Gap_1_t45s_z3_E1
-- eve-Gap_1_t45s_z3_E4
+### Dorsal
 
-2020-01-22_eve-Gap:
+- 2020-11-03_eve-gap_dorsal: eve-gap_dorsal_1_z3_t52s
+- 2020-11-04_eve-gap_dorsal: eve-gap_dorsal_2_z3_t53s
 
-- eve-Gap1_t60s_z3_E4
-- eve-Gap1_t60s_z3_E5
-- eve-Gap1_t60s_z3_E9
-- eve-Gap1_t60s_z3_E11
-- eve-Gap1_t60s_z3_E16
+## *paired*
 
-### Homozygotes
+### Lateral
 
-2020-02-10_btd-hisgap:
+2019-10-03_prd-Gap: prd-Gap_1_t60s
 
-- btd-hisgap1_E8
+### Dorsal
 
-2020-09-16_btd-gap:
+TODO: prd dorsal datasets
 
-- btd-gap_z3_t55s_E6
-- btd-gap_z3_t55s_E8
-- btd-gap_z3_t55s_E14
+## *string*
 
-2020-09-17_btd-gap:
+### Lateral
 
-- btd-gap2_z3_t55s_E7
-- btd-gap2_z3_t55s_E14
+TODO: stg lateral datasets
 
-2020-01-15_eve-Gap:
+### Dorsal
 
-- eve-Gap_1_E13
+TODO: stg dorsal datasets
 
-2020-01-17_eve-Gap:
+## *buttonhead--string*
 
-- eve-Gap_1_t45s_z3_E11
+### Lateral
 
-2020-01-22_eve-Gap:
+TODO: btd--stg lateral datasets
 
-- eve-Gap1_t60s_z3_E2
-- eve-Gap1_t60s_z3_E3
-- eve-Gap1_t60s_z3_E12
+### Dorsal
 
-## Dorsal datasets
+TODO: btd--stg dorsal datasets
 
-### Heterozygous
+## wildtype
 
-2020-09-24_btd-gap_dorsal:
+### Lateral
 
-- btd-gap_dorsal1_z3_t51s_E1.tif
-- btd-gap_dorsal1_z3_t51s_E3.tif
-- btd-gap_dorsal1_z3_t51s_E4.tif
-- btd-gap_dorsal1_z3_t51s_E5.tif
-- btd-gap_dorsal1_z3_t51s_E6.tif
-- btd-gap_dorsal1_z3_t51s_E7.tif
-- btd-gap_dorsal1_z3_t51s_E8.tif
-- btd-gap_dorsal1_z3_t51s_E9.tif
-- btd-gap_dorsal1_z3_t51s_E10.tif
-- btd-gap_dorsal1_z3_t51s_E11.tif
-- btd-gap_dorsal1_z3_t51s_E13.tif
+TODO: wt lateral datasets
 
-2020-10-13_btd-gap_dorsal:
+### Dorsal
 
-- btd-gap_dorsal_1_z1.5_t51s_E1.tif 
-- btd-gap_dorsal_1_z1.5_t51s_E4.tif
-- btd-gap_dorsal_1_z1.5_t51s_E5.tif
-- btd-gap_dorsal_1_z1.5_t51s_E8.tif
-- btd-gap_dorsal_1_z1.5_t51s_E13.tif
-
-2020-10-14_btd-gap_dorsal:
-
-- btd-gap_dorsal_1_z3_t45s_E1.tif
-- btd-gap_dorsal_1_z3_t45s_E2.tif
-- btd-gap_dorsal_1_z3_t45s_E3.tif
-- btd-gap_dorsal_1_z3_t45s_E6.tif
-- btd-gap_dorsal_1_z3_t45s_E7.tif
-- btd-gap_dorsal_1_z3_t45s_E8.tif
-- btd-gap_dorsal_1_z3_t45s_E10.tif
-- btd-gap_dorsal_1_z3_t45s_E12.tif
-
-2020-11-03_eve-gap_dorsal:
-
-- eve-gap_dorsal_1_z3_t52s_E1.tif
-- eve-gap_dorsal_1_z3_t52s_E2.tif
-- eve-gap_dorsal_1_z3_t52s_E4.tif
-- eve-gap_dorsal_1_z3_t52s_E8.tif
-- eve-gap_dorsal_1_z3_t52s_E10.tif
-- eve-gap_dorsal_1_z3_t52s_E11.tif
-- eve-gap_dorsal_1_z3_t52s_E12.tif
-- eve-gap_dorsal_1_z3_t52s_E17.tif
-
-2020-11-04_eve-gap_dorsal:
-
-- eve-gap_dorsal_2_z3_t53s_E2.tif
-- eve-gap_dorsal_2_z3_t53s_E3.tif
-- eve-gap_dorsal_2_z3_t53s_E5.tif
-- eve-gap_dorsal_2_z3_t53s_E6.tif
-- eve-gap_dorsal_2_z3_t53s_E12.tif
-- eve-gap_dorsal_2_z3_t53s_E19.tif
-
-### Homozygous
-
-2020-09-24_btd-gap_dorsal:
-
-- btd-gap_dorsal1_z3_t51s_E12.tif
-
-2020-10-13_btd-gap_dorsal:
-
-- btd-gap_dorsal_1_z1.5_t51s_E2.tif
-- btd-gap_dorsal_1_z1.5_t51s_E6.tif
-- btd-gap_dorsal_1_z1.5_t51s_E10.tif
-
-2020-10-14_btd-gap_dorsal:
-
-- btd-gap_dorsal_1_z3_t45s_E5.tif
-- btd-gap_dorsal_1_z3_t45s_E14.tif
-
-2020-11-03_eve-gap_dorsal:
-
-- eve-gap_dorsal_1_z3_t52s_E9.tif
-- eve-gap_dorsal_1_z3_t52s_E13.tif
-- eve-gap_dorsal_1_z3_t52s_E19.tif
-
-2020-11-04_eve-gap_dorsal:
-
-- eve-gap_dorsal_2_z3_t53s_E4.tif
-- eve-gap_dorsal_2_z3_t53s_E14.tif
+TODO: wt dorsal datasets
 
