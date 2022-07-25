@@ -1,8 +1,9 @@
 # Live-imaging datasets
 
 Overview of the cephalic furrow live-imaging data acquired with the Zeiss Z.1
-Lightsheet. The spreadsheet `datasets.ods` compiles the metadata and
-annotations for each dataset.
+Lightsheet. The spreadsheet `datasets.ods` compiles metadata and annotations
+for each dataset. We discarded embryos with major cleavage or epithelial
+defects, and embryos in improper orientation.
 
 ## Types of data
 
@@ -44,11 +45,14 @@ annotations for each dataset.
 
 ### Dorsal
 
-TODO: prd dorsal datasets
+- **2020-10-19_prd-gap_dorsal:** prd-gap_dorsal_1_z3_t41s
+- **2020-10-21_prd-gap_dorsal:** prd-gap_1_z3_t52s
 
 ## *string*
 
 ### Lateral
+
+- **2021-08-25_Gap,stg[2]:** Gap,stg[2]_2_z3_t50s_E1
 
 TODO: stg lateral datasets
 
@@ -70,9 +74,9 @@ TODO: btd--stg dorsal datasets
 
 ### Lateral
 
-TODO: wt lateral datasets
+- **2022-02-21_rgap:** rgap_1b_z3_t60s
 
 ### Dorsal
 
-TODO: wt dorsal datasets
+- **2022-02-22_rgap_dorsal:** rgap_dorsal_1_z3_t60s
 
