@@ -52,13 +52,12 @@ defects, and embryos in improper orientation.
 
 ### Lateral
 
-- **2021-08-25_Gap,stg[2]:** Gap,stg[2]_2_z3_t50s_E1
-
-TODO: stg lateral datasets
+- **2021-08-25_Gap,stg[2]:** `Gap,stg[2]_2_z3_t50s`
+- **2021-10-25_Gap,stg[2]:** `Gap,stg[2]_green_1_z3_t52`
 
 ### Dorsal
 
-TODO: stg dorsal datasets
+- **2021-10-26_Gap,stg[2]:** `Gap,stg[2]_dorsal_1_z3_t60`
 
 ## *buttonhead--string*
 
