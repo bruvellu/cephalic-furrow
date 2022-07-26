@@ -11,7 +11,7 @@ defects, and embryos in improper orientation.
 - [dorsal](dorsal): single view, dorsal side, head region, coverslip-mounted, 40x objective
 - [imsane](imsane): cartographic projections of `lateral` datasets
 
-## buttonhead
+## Buttonhead
 
 ### Lateral
 
@@ -25,7 +25,7 @@ defects, and embryos in improper orientation.
 - **2020-10-13_btd-gap_dorsal:** `btd-gap_dorsal_1_z1.5_t51s`
 - **2020-10-14_btd-gap_dorsal:** `btd-gap_dorsal_1_z3_t45s`
 
-## even-skipped
+## Even-skipped
 
 ### Lateral
 
@@ -37,7 +37,7 @@ defects, and embryos in improper orientation.
 - **2020-11-03_eve-gap_dorsal:** `eve-gap_dorsal_1_z3_t52s`
 - **2020-11-04_eve-gap_dorsal:** `eve-gap_dorsal_2_z3_t53s`
 
-## paired
+## Paired
 
 ### Lateral
 
@@ -48,7 +48,7 @@ defects, and embryos in improper orientation.
 - **2020-10-19_prd-gap_dorsal:** `prd-gap_dorsal_1_z3_t41s`
 - **2020-10-21_prd-gap_dorsal:** `prd-gap_1_z3_t52s`
 
-## string
+## String
 
 ### Lateral
 
@@ -59,17 +59,21 @@ defects, and embryos in improper orientation.
 
 - **2021-10-26_Gap,stg[2]:** `Gap,stg[2]_dorsal_1_z3_t60`
 
-## buttonhead + string
+## Buttonhead + String
 
 ### Lateral
 
-TODO: btd--stg lateral datasets
+- **2021-12-29_btd-gap-stg:** `btd-gap-stg_1_z3_t45s`
+- **2022-01-12_btd-gap-stg:** `btd-gap-stg_3_z3_t53s_E2`
+- **2022-01-13_btd-gap-stg:** `btd-gap-stg_4_z3_t59s_E1`
+- **2022-01-18_btd-gap-stg:** `btd-gap-stg_7_z3_60s_E1`
+- **2022-01-31_btd-gap-stg:** `btd-gap-stg_8_z3_45s_E3`
 
 ### Dorsal
 
-TODO: btd--stg dorsal datasets
+- **2022-01-27_btd-gap-stg_dorsal:** `btd-gap-stg_dorsal_1_z3_t50s_E1`
 
-## wildtype
+## Wildtype
 
 ### Lateral
 
