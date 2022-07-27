@@ -13,9 +13,11 @@ btd-gap_z3_t55s_E14_CARE_s24_0x0_w1685_h998_flipn_f18-87.2.roi,btd,mutant,homozy
 btd-gap2_z3_t55s_E7_CARE_s20_0x0_w1721_h1029_flipn_f23-92.1.roi,btd,mutant,homozygote,mid
 btd-gap2_z3_t55s_E7_CARE_s20_0x0_w1721_h1029_flipn_f23-92.2.roi,btd,mutant,homozygote,ant
 btd-gap2_z3_t55s_E8_CARE_s23_0x0_w1643_h1016_flipn_f41-110.1.roi,btd,control,heterozygote,mid
+btd-gap2_z3_t55s_E12_CARE_s24_0x0_w1724_h1106_fliph_f48-117.1.roi,btd,control,heterozygote,mid
 btd-hisgap1_E7_CARE_s27_0x0_w1698_h918_fliph_f34-103.1.roi,btd,control,heterozygote,mid
 btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.1.roi,btd,mutant,homozygote,mid
-btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.2.roi,btd,mutant,homozygote,post
+btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.2.roi,btd,mutant,homozygote,mid
+btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.3.roi,btd,mutant,homozygote,post
 eve-Gap_1_E13_CARE_s14_0x0_w1867_h1068_fliph_f11-80.1.roi,eve,mutant,homozygote,post
 eve-Gap_1_t45s_z3_E1_CARE_s21_0x0_w1845_h974_flipn_f51-120.1.roi,eve,control,heterozygote,mid
 eve-Gap_1_t45s_z3_E4_CARE_s15_0x398_w1798_h960_fliph_f76-145.1.roi,eve,control,heterozygote,mid
