@@ -1,34 +1,40 @@
 # Analysis of ectopic folding dynamics and variability
 
-Use 3D lateral views instead of projections because it is more organic and
-easier to understand the morphology in relation to the embryo shape.
+The goal of this analysis is to visualize the differences in dynamics and
+variability between the cephalic furrow and the ectopic folds. We’re using the
+3D lateral views because it’s easier to understand the morphology of the folds
+in relation to the embryo shape.
 
-Trace folded tissue from the moment of buckling to the unfolding using the
-segmented line tool from Fiji.
+The data consists of manual line tracing of the folded tissue, from the moment
+of buckling to the unfolding. To trace we use the segmented line tool from
+Fiji. We begin the tracing when the fold is the deepest---because it’s easier
+to see---and then trace it backwards and forwards. We re-use the same line,
+just re-shaping it to follow the fold outline, and add as a new ROI for each
+individual timepoint.
 
-Begin with the deepest (and largest) moment of the folding because, it is
-clearer to see. Then trace backwards and forwards by re-using the line and
-adding individual timepoints to the ROI manager.
+A fold is defined by the region where the epithelial cells are no longer
+visible, or when the epithelium is clearly bent away from the vitelline. This
+can be discerned well in the 3D renderings. A fold is unfolded when the hidden
+epithelial cells reappear at the surface. This is straightforward to determine
+by comparing the previous and following frames. Once we have traced the whole
+timecourse of one particular fold, we save the data as a ROI set.
 
-A fold is considered a fold when an epithelial cell is no longer visible due to
-buckling, or when the ephitelium has clearly bent away from the vitelline.
-These can be discerned well in the 3D renderings.
+We then run the script [`1-run_trace.ijm`](1-run_trace.ijm) to process and analyse the data, and
+generate the output files. This will create an empty copy (black background) of
+the original stack using the ROI set, and draw the traces per timepoint in
+white. The script also generates a temporal color-code projection
+(`mpl-viridis`) from the first frame with a trace, to the last frame with
+a trace. This is useful to visualize the fold dynamics in time. Finally, we can
+indicate which are the representative frames to be saved as individual files,
+and used in the figures.
 
-A fold has unfold when the hidden (folded) cells reappear at the epithelial
-surface, and the tissue unbents. Although this is hard to tell from still
-frames, by comparing the previous and following frames in the timelapse, it is
-straightforward to determine when the ectopic folding is occuring.
-
-Save individual fold tracing as roi sets for reference and measurements. Create
-an empty copy (black background) of the original stack using the ROI set, and
-draw traces in white using ctrl+D in Fiji.
-
-To visualize the dynamics of these folds, run a temporal color-code projection
-from the first frame with a trace to the last frame with a trace using the
-colormap mpl-viridis.
-
-Select still frames from the original stack and from the stack with traces,
-where the folding is deeper, and used that for the figure.
-
-There is a script that automates this process for stacks where the tracing is
-done.
+To visualize the variability, we decided to overlap the traces of different
+embryos. This is challenging because embryos have different sizes and there’s
+not a universal way they can be aligned without deforming the shape of the
+traces as well. We use the ImageJ plugin
+[`bUnwarpJ`](https://imagej.net/plugins/bunwarpj/) to perform an elastic
+transform using one embryo as a reference. This works relatively well, but it
+needs to be done for each individual stock. We run it with
+[`2-run_transform_gene.ijm`](2-run_transform_gene.ijm) macros, and compile the
+registered traces into a single stack using
+[`3-run_compile_gene.ijm`](3-run_compile_gene.ijm).
