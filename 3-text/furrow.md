@@ -96,17 +96,14 @@ Our findings suggest a unique case of pre-patterned and active morphogenetic mov
 
 <!--CF formation-->
 
-The cephalic furrow is one of the earliest morphogenetic movements of
-*Drosophila* gastrulation.
+The cephalic furrow is one of the earliest morphogenetic movements of *Drosophila* gastrulation.
 It begins at the onset of blastoderm cellularization as a lateral indentation that quickly invaginates deep into the yolk [@Hartenstein1985-zs; @Spencer2015-td].
 The resulting epithelial fold divides the head (procephalon) from the segmented trunk (germ band) being a prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].
 
 <!--Control of cephalic furrow formation-->
 
-The position of the cephalic furrow is specified with remarkable accuracy
-[@Liu2013-lc] under strict genetic control.
-Its initiation is regulated the zygotic expression of *buttonhead* (*btd*) and *even skipped* (*eve*), where the overlap between the two determines the row of initiator cells
-[@Vincent1997-fa].
+The position of the cephalic furrow is specified with remarkable accuracy [@Liu2013-lc] under strict genetic control.
+Its initiation is regulated the zygotic expression of *buttonhead* (*btd*) and *even skipped* (*eve*), where the overlap between the two determines the row of initiator cells [@Vincent1997-fa].
 The activation of lateral myosin contractility cause the shortening of initiator cells which initiates the invagination, while the mechanical coupling between the epithelial cells lining the furrow ensures the precision of the tissue fold during morphogenesis [@Eritano2020-mi].
 Although the mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um], the process is under precise genetic control and safeguarding mechanisms are in place that ensure the accuracy of morphogenesis.
 
@@ -570,7 +567,7 @@ emryos. (a) Lateral view of epithelial dynamics in sibling controls
 (heterozygotes) and mutant embryos (*btd* and *eve* homozygotes). Arrows
 indicate the cephalic furrow, arrowheads indicate the ectopic folds, and
 asterisks indicate the position of mitotic domains. Developmental staging based
-on REF[@Ashburner2005-ym]. (b) Profile views of control, *btd* and *eve*
+on @Ashburner2005-ym. (b) Profile views of control, *btd* and *eve*
 embryos showing the divergent morphology of the ectopic folds compared to the
 cephalic furrow. (c) Timing of key developmental events comparing wild type
 development and cephalic furrow mutants. Ectopic folds in *btd* and *eve* form
@@ -611,15 +608,7 @@ embryo showing the dorsal surface and a mid body optical section. (B)
 Cauterized embryo. Analysis of *stg* and *btd--stg* double
 mutants.](figures/Fig5.jpg){#fig:wildtype width=100%}
 
-<!--![](figures/Fig6.jpg){#fig:cauterization width=100%}-->
-
-<!--![](figures/Fig7.jpg){#fig:double-mutants width=100%}-->
-
-<!--![](figures/Fig8.jpg){#fig:wildtype width=100%}-->
-
 <!--![Summary of head--trunk tissue interactions in cephalic furrow mutants. (A,B) Schematic drawings of lateral and profile views showing the tissue invaginated in the cephalic furrow buffers the interactions while the excess of epithelial tissue in cephalic furrow mutants increases the epithelial instability.](figures/Fig9.jpg){#fig:summary width=100%}-->
-
-<!--FIXME:  “and lower tissue strain ({@fig:strain}B)” but cauterized eve embryos n = 1... ![Strain analysis of cauterized eve embryos.](figures/FigS3.jpg){#fig:strain tag=S3 width=100%}-->
 
 \clearpage
 
