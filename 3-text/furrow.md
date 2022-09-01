@@ -1,5 +1,5 @@
 ---
-title: Epithelial folding prevents mechanical instability in fly gastrulation
+title: Epithelial invagination prevents mechanical instability in fly gastrulation
 #title: Cephalic furrow prevents mechanical instability in fly gastrulation
 #title: Programmed epithelial invagination prevents mechanical instability in fly gastrulation
 #title: Programmed invagination prevents mechanical instability in fly gastrulation
