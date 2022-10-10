@@ -45,25 +45,25 @@ linkimg:
 
 linkvid:
 	# Link video files to figure directory with official naming
-	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.avi ${FIGUREOUT}/Vid1.avi
-	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.avi ${FIGUREOUT}/Vid2.avi
-	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.avi ${FIGUREOUT}/Vid3.avi
-	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.avi ${FIGUREOUT}/Vid4.avi
-	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.avi ${FIGUREOUT}/Vid5.avi
-	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.avi ${FIGUREOUT}/Vid6.avi
-	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGUREOUT}/Vid7.avi
-	ln -s ${FIGUREIN}/strain-analysis/videos/Strain_btd_E10_E14_label_loop.avi ${FIGUREOUT}/Vid8.avi
-	ln -s ${FIGUREIN}/strain-analysis/videos/LABEL_COMBINE_3D_btd-gap_z3_t55s_E12_E8.avi ${FIGUREOUT}/Vid9.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/Vid10.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/Vid11.avi
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/Vid12.avi
-	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-gap-stg_7_z3_60s_E18_E3.avi ${FIGUREOUT}/Vid13.avi
+	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.m4v ${FIGUREOUT}/Vid1.m4v
+	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.m4v ${FIGUREOUT}/Vid2.m4v
+	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.m4v ${FIGUREOUT}/Vid3.m4v
+	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.m4v ${FIGUREOUT}/Vid4.m4v
+	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.m4v ${FIGUREOUT}/Vid5.m4v
+	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.m4v ${FIGUREOUT}/Vid6.m4v
+	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.m4v ${FIGUREOUT}/Vid7.m4v
+	ln -s ${FIGUREIN}/strain-analysis/videos/Strain_btd_E10_E14_label_loop.m4v ${FIGUREOUT}/Vid8.m4v
+	ln -s ${FIGUREIN}/strain-analysis/videos/LABEL_COMBINE_3D_btd-gap_z3_t55s_E12_E8.m4v ${FIGUREOUT}/Vid9.m4v
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.m4v ${FIGUREOUT}/Vid10.m4v
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.m4v ${FIGUREOUT}/Vid11.m4v
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.m4v ${FIGUREOUT}/Vid12.m4v
+	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-gap-stg_7_z3_60s_E18_E3.m4v ${FIGUREOUT}/Vid13.m4v
 	#Supplementary
-	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGUREOUT}/VidS1.avi
-	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.avi ${FIGUREOUT}/VidS2.avi
-	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.avi ${FIGUREOUT}/VidS3.avi
+	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.m4v ${FIGUREOUT}/VidS1.m4v
+	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.m4v ${FIGUREOUT}/VidS2.m4v
+	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.m4v ${FIGUREOUT}/VidS3.m4v
 	# Create video snapshot
-	for i in ${FIGUREOUT}/*.avi; do ffmpeg -ss 00:00:01 -i $${i} -vframes 1 ${FIGUREOUT}/`basename $${i} .avi`.jpg; done
+	for i in ${FIGUREOUT}/*.m4v; do ffmpeg -ss 00:00:01 -i $${i} -vframes 1 ${FIGUREOUT}/`basename $${i} .m4v`.jpg; done
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/Vid*.jpg
 
 compile:
