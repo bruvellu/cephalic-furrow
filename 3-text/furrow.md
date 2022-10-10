@@ -563,15 +563,16 @@ imaging support, EMBO for funding.
 
 <!--![Cephalic furrow patterning and morphogenesis. (a) Embryonic invaginations during *Drosophila* gastrulation. (b) Morphogenesis of the cephalic furrow. (c) Molecular patterning of the cephalic furrow.](figures/Fig1.jpg){#fig:intro width=50%}-->
 
-![Formation of late ectopic folds in *btd* and *eve* mutants *Drosophila* embryos.
-(a) Lateral view of epithelial dynamics in sibling controls (heterozygotes) and mutant embryos (*btd* and *eve* homozygotes). Arrows indicate the cephalic furrow, arrowheads indicate the ectopic folds, and asterisks indicate the position of mitotic domains. Developmental staging based on @Ashburner2005-ym.
-(b) Profile views of control, *btd* and *eve* embryos showing the divergent morphology of the ectopic folds compared to the cephalic furrow.
-(c) Timing of key developmental events comparing wild type development and cephalic furrow mutants. Ectopic folds in *btd* and *eve* form later and unfold quicker than the cephalic furrow in normal development, and their formation coincides with the appearance of mitotic domains.
-(d) Variability in the position of folding events between individual *btd* and *eve* mutant embryos.
-(e) Dynamics of cephalic furrow invagination and ectopic fold formation in a single embryo. Quantification of folding angle across development between *btd* heterozygote (control) and *btd* homozygote embryos.
-(f) Cartographic projections showing the area of folded epithelial cells in the cephalic furrow and ectopic folds.
-(g) Fold maximum depth relative to the vitelline envelope in cephalic furrow mutants.
-(h) Comparison of the total folded aread between sibling controls and mutant embryos.
+![Formation of late ectopic folds in cephalic furrow mutants.
+**a**, Lateral view of sibling controls (heterozygotes) and mutant embryos (*btd* or *eve* homozygotes). Arrows indicate epithelial folds and asterisks indicate mitotic domains. Developmental staging based on **ref.** @Ashburner2005-ym.
+**b**, Profile view of wildtype, *btd* and *eve* embryos (stage 8) showing the divergent morphology of ectopic folds.
+**c**, Timing of developmental events in wildtype and cephalic furrow mutants (*btd* and *eve*). Ectopic folds form later and unfold quicker compared to the cephalic furrow, and their formation coincides with the appearance of mitotic domains and early phase of the germ band extension.
+**d**, Variability in the distribution of ectopic folds between individual *btd* mutant embryos.
+**e**, Dynamics of cephalic furrow invagination and ectopic fold formation in a single representative embryo.
+**f**, Angle analyses between sibling control and *btd* embryos based on the fold tracing in a lateral view as in (**d**,**e**).
+**g**, Maximum depth relative to the vitelline envelope in cephalic furrow mutants.
+**h**, Total folded area of the epithelial surface in cephalic furrow mutants.
+**i**, Region of epithelial cells folded in the cephalic furrow and ectopic folds visualized in cartographic projections of *btd* embryos.
 ](figures/Fig1.jpg){#fig:ectopic width=100%}
 
 ![Correlation between mitotic domains and ectopic folds.
