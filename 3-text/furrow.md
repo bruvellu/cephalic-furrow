@@ -575,12 +575,14 @@ imaging support, EMBO for funding.
 **i**, Region of epithelial cells folded in the cephalic furrow and ectopic folds visualized in cartographic projections of *btd* embryos.
 ](figures/Fig1.jpg){#fig:ectopic width=100%}
 
-![Correlation between mitotic domains and ectopic folds.
-(a) Map of representative position of ectopic folds relative to mitotic domains in *btd* and *eve* mutants.
-(b) Relation between apical area expansion of dividing cells and the position of the folded area. Strain analysis at the head--trunk interface in *btd* mutants.
-(c) Mitotic domain in *eve*.
-(d) Heatmap showing strain levels. Plots for the more anterior head--trunk region and for the more posterior trunk--germ region.
-(e) Increased compression of epithelial cells on the laterodorsal side adjacent to the germ band edge.
+![Correlation of mitotic domains and germ band extension in ectopic folding.
+**a**, Position of ectopic folds (black lines) in relation to the mitotic domains (colored areas) in *btd* and *eve* mutants.
+**b**, Expansion in the apical area of dividing cells in MD5 and MD7/6 (top). The infolded area is highlighted in the last frame (4.6 min). Detail of a cell subset in between mitotic domains (bottom) showing non-dividing cells (orange) and adjacent dividing cells (blue).
+**c**, Ectopic folding forming adjacent to MD2 at the head--trunk interface of *eve* mutant.
+**d**, Heatmap overlay showing the strain rate at the head--trunk region in *btd* mutants.
+**e**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions. The head--trunk shows higher strain rates that coincide with ectopic folds while the trunk--germ strain rates gradually increase.
+**f**, Compressed epithelial cells between MD6 and the tip of the germ band.
+**g**, Model of the embryonic blastoderm with mitotic domains, cephalic furrow, and the germ band using particles connected by springs with a dimensionless bending rigidity.
 ](figures/Fig2.jpg){#fig:mitogerm width=100%}
 
 ![Blocking of germ band extension in cephalic furrow mutants by cauterization.
