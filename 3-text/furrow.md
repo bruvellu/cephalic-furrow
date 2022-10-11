@@ -139,7 +139,7 @@ Compared to the cephalic furrow which stays folded for about two hours, these ec
 Their position varies between individual mutant embryos.
 They form either anterior or posterior to the head--trunk boundary ({@fig:ectopic}d, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}).
 Differently than the cephalic furrow which initiates as a straight line almost orthogonal to the anteroposterior axis and progressively declines posteriorly, the ectopic folds form already tilted and have no obvious trend in angle direction over time ({@fig:ectopic}e,f). 
-While the cephalic furrow shows stereotypic cell morphologies in the different regions of the fold [@Spencer2015-td] ({@fig:intro}b and {@fig:ectopic}b), ectopic folds lack wedge-shaped initiators, and have a wider and often asymmetric cleft ({@fig:ectopic}b, {!@fig:vid-profile-btd} and {!@fig:vid-profile-eve}).
+While the cephalic furrow shows stereotypic cell morphologies in the different regions of the fold [@Spencer2015-td] ({@fig:ectopic}b), ectopic folds lack wedge-shaped initiators, and have a wider and often asymmetric cleft ({@fig:ectopic}b, {!@fig:vid-profile-btd} and {!@fig:vid-profile-eve}).
 In addition, ectopic folds are nearly 25% shorter, and contain about half of the epithelial area invaginated in the cephalic furrow of sibling controls ({@fig:ectopic}g--i).
 Overall, these analyses reveal the formation of ectopic folds differs significantly from that of the cephalic furrow, suggesting that different morphogenetic mechanisms are involved in their formation.
 
@@ -186,7 +186,7 @@ To test this hypothesis and get further insights into the tissue mechanics of th
 We modified a previous model [@Trushko2020-gf] to capture the physical interactions occurring between mitotic domains, ectopic folds, germ band, and the cephalic furrow.
 Our model represents the monolayer epithelium of *Drosophila* blastoderm using a series of particles connected by springs, with a spring constant rigidity and a bending rigidity ({@fig:mitogerm}g).
 The particles are equidistant along the anterior to the posterior pole of an elliptical arc.
-The dimensions and shape of this ellipse matches the typical dimensions of an embryo ({@fig:fly-dimensions}).
+The dimensions and shape of this ellipse matches the typical dimensions of an embryo ({@fig:fold-model}a).
 The particles are surrounded on one side by a rigid elliptical shell representing the vitelline envelope.
 The extension of the germ band occurs by the placement of the posterior end of the epithelium towards the anterior end.
 Mitotic domains are represented by regions of compressed springs and positive intrinsic curvature which captures the thickness mismatch between mitotic domains and non-dividing cells ({@fig:mitogerm}g).
@@ -585,7 +585,7 @@ imaging support, EMBO for funding.
 **g**, Model of the embryonic blastoderm with mitotic domains, cephalic furrow, and the germ band using particles connected by springs with a dimensionless bending rigidity.
 ](figures/Fig2.jpg){#fig:mitogerm width=100%}
 
-![Blocking of germ band extension in cephalic furrow mutants by cauterization.
+![Analyses of ectopic folding in cephalic furrow mutants.
 (a) Schematic drawings of the experiment and cauterization site.
 (b) Cauterized *eve* mutant in lateral (top) and dorsal view (bottom) at the highest mitotic domain expansion.
 (c) Non-dividing cells being compressed by the apical area expansion in mitotic domains of the *eve* embryo in (b).
@@ -593,7 +593,7 @@ imaging support, EMBO for funding.
 (f) Quantification of the tortuosity of the epithelial traces in non-cauterized and cauterized mutant embryos. Folding model simulations.
 ](figures/Fig3.jpg){#fig:mutant width=100%}
 
-![Cauterization and ablation experiments in wild type embryos.
+![Analyses of cephalic furrow formation in wildtype embryos.
 (a) Control embryo showing the dorsal surface and a mid body optical section.
 (b) Cauterized embryo. Analysis of *stg* and *btd--stg* double mutants.
 ](figures/Fig4.jpg){#fig:wildtype width=100%}
@@ -654,8 +654,12 @@ imaging support, EMBO for funding.
 ![Reminiscent initiator cell behavior in *btd* mutants.
 ](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
 
+![Model of epithelial dynamics in *Drosophila* blastoderm.
+**a**, Dimensions and proportions of the embryo used as a reference for the model.
+](figures/FigS2.jpg){#fig:fold-model tag=S2 width=100%}
+
 ![Lateral and dorsal views of *stg* mutant embryos.
-](figures/FigS2.jpg){#fig:stg tag=S2 width=100%}
+](figures/FigS3.jpg){#fig:stg tag=S3 width=100%}
 
 ## Videos
 
