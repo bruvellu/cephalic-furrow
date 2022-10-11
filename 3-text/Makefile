@@ -37,7 +37,8 @@ linkimg:
 	#ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig9.png
 	# Supplementary
 	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
-	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS2.png
+	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/FigS2.png
+	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS3.png
 	# Convert to JPG for smaller file sizes
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	mkdir ${FIGUREOUT}/source
