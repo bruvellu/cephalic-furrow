@@ -463,20 +463,10 @@ selection.
 
 ## Fly genetics
 
-We generated fluorescent cephalic furrow mutant strains by genetic crossing. We
-mated flies carrying the loss-of-function alleles *btd^XA^* (FlyBase:
-[FBal0030657](https://flybase.org/reports/FBal0030657), BDSC:
-[#26815](https://bdsc.indiana.edu/Home/Search?presearch=26815)) and *eve^3^*
-(FlyBase: [FBal0003885](https://flybase.org/reports/FBal0003885), BDSC
-[#299](https://bdsc.indiana.edu/Home/Search?presearch=299)), with flies
-carrying the fluorescent membrane marker GAP43-mCherry [@Martin2010-pb, gift
-from Kassiani Skouloudaki]. The mutant alleles were balanced over the
-fluorescent balancers FM7c-KrGFP (BDSC:
-[#5193](https://bdsc.indiana.edu/Home/Search?presearch=5193)) and CyO-twiGFP
-(gift from Akanksha Jain). We imaged the progeny of the established stable
-lines *btd^XA^/FM7c-KrGFP;;GAP43-mCherry/MKRS;* and
-*;eve^3^/CyO-twiGFP;GAP43-mCherry/MKRS;*, and used the lack of GFP signal to
-distinguish homozygous embryos.
+We generated fluorescent cephalic furrow mutant strains by genetic crossing.
+We mated flies carrying the loss-of-function alleles *btd^XA^* (FlyBase: [FBal0030657](https://flybase.org/reports/FBal0030657), BDSC: [#26815](https://bdsc.indiana.edu/Home/Search?presearch=26815)) and *eve^3^* (FlyBase: [FBal0003885](https://flybase.org/reports/FBal0003885), BDSC [#299](https://bdsc.indiana.edu/Home/Search?presearch=299)), with flies carrying the fluorescent membrane marker GAP43-mCherry [@Martin2010-pb, gift from Kassiani Skouloudaki].
+The mutant alleles were balanced over the fluorescent balancers FM7c-KrGFP (BDSC: [#5193](https://bdsc.indiana.edu/Home/Search?presearch=5193)) and CyO-twiGFP (gift from Akanksha Jain).
+We imaged the progeny of the established stable lines *btd^XA^/FM7c-KrGFP;;GAP43-mCherry/MKRS;* and *;eve^3^/CyO-twiGFP;GAP43-mCherry/MKRS;*, and used the lack of GFP signal to distinguish homozygous embryos.
 
 <!--TODO: Add prd and stg alleles.-->
 
@@ -486,69 +476,46 @@ distinguish homozygous embryos.
 
 ## Live-imaging
 
-We collected embryos on apple juice agar plates at 25°C and immersed in 20%
-sodium hypochlorite solution (Merck 1.05614.2500) for 1.5 min to remove the
-chorion. We oriented the embryos on an agar pad and attached them to a
-coverslip previously covered with a thin layer of heptane glue. Using silicone
-glue we attached the coverslip to a sample holder and mounted the samples in a
-Zeiss Lightsheet Z.1 microscope. For imaging lateral views, we used a Zeiss
-20x/1NA Plan-Apochromat Water objective and acquired z-stacks of 0.X pixel size
-and 3µm z-step covering one side of the embryo. For imaging dorsal views, we
-used a Zeiss 40x/?NA Plan-Apochromat Water objective acquiring z-stacks of 0.X
-pixel size and 1.5--3µm z-step covering the middle section of the embryo. The
-time resolution was adjusted according to the number of embryos on the
-coverslip, ranging between 45--60s. We acquired two channels simultaneously
-using 488 and 561nm lasers, and an image splitter cube containing a LP560
-dichromatic mirror and a LP585 emission filter. All recordings were performed
-at 25°C.
+We collected embryos on apple juice agar plates at 25°C and immersed in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 1.5 min to remove the chorion.
+We oriented the embryos on an agar pad and attached them to a coverslip previously covered with a thin layer of heptane glue.
+Using silicone glue we attached the coverslip to a sample holder and mounted the samples in a Zeiss Lightsheet Z.1 microscope.
+For imaging lateral views, we used a Zeiss 20x/1NA Plan-Apochromat Water objective and acquired z-stacks of 0.X pixel size and 3µm z-step covering one side of the embryo.
+For imaging dorsal views, we used a Zeiss 40x/?NA Plan-Apochromat Water objective acquiring z-stacks of 0.X pixel size and 1.5--3µm z-step covering the middle section of the embryo.
+The time resolution was adjusted according to the number of embryos on the coverslip, ranging between 45--60s.
+We acquired two channels simultaneously using 488 and 561nm lasers, and an image splitter cube containing a LP560 dichromatic mirror and a LP585 emission filter.
+All recordings were performed at 25°C.
 
 <!--TODO: Add multiview description?-->
 
 ## Cauterization experiments
 
-Embryos were collected and dechorionated as described above. Movies were
-obtained in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor
-iXon DU-888), a 60× 1.2 NA water immersion objective, and the software AndorIQ
-for image acquisition. The time resolution was set in 200 ms and pixel size was
-0.180556 um. Embryos were mounted laterally on MatTek glass-bottom Petri dishes
-and covered in water. Experiments were performed under temperature control at
-28 degrees Celsius. For laser ablations, a Titanium Sapphire Chameleon Ultra II
-(Coherent) laser at 800 nm was tuned down from 80 MHz to 20 kHz using a
-pulse-picker. Laser power measured before microscope port was 6 mW and pixel
-dwell time for scanning was 2 us. Each scan was repeated 10 consecutive times
-to make a cut along a single cell. Embryos were ablated just once each. For
-analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph
-(https://github.com/fiji/Multi_Kymograph) on cell edges in the direction
-perpendicular to the cuts. The kymographs were binarized and distance between
-edges versus time was linearly fitted to obtain the recoil velocity. 
+Embryos were collected and dechorionated as described above.
+Movies were obtained in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), a 60× 1.2 NA water immersion objective, and the software AndorIQ for image acquisition.
+The time resolution was set in 200 ms and pixel size was 0.180556 um.
+Embryos were mounted laterally on MatTek glass-bottom Petri dishes and covered in water.
+Experiments were performed under temperature control at 28 degrees Celsius.
+For laser ablations, a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800 nm was tuned down from 80 MHz to 20 kHz using a pulse-picker.
+Laser power measured before microscope port was 6 mW and pixel dwell time for scanning was 2 us.
+Each scan was repeated 10 consecutive times to make a cut along a single cell.
+Embryos were ablated just once each.
+For analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts.
+The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity. 
 
 ## Image processing and analyses
 
-We converted the raw microscopy datasets into individual TIFF stacks for
-downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di;
-@Rueden2017-ky]. We generated 3D renderings of the lateral surface of the
-embryos using the ImageJ/Fiji plugin 3Dscript [@Schmid2019-bm]. We improved the
-signal-to-noise ratio and restored the z-resolution of lateral datasets from
-3µm to 1µm by training a deep learning upsampling model using CARE
-[@Weigert2018-ti]. We generated cartographic projections by segmenting the
-surface of the embryo with ilastik [@Berg2019-ab] and using the ImSAnE toolbox
-[@Heemskerk2015-kv]. We manually traced the fold outlines and areas of lateral
-3D renderings and lateral cartographic projections, respectively, using Fiji.
-We used the ImageJ Temporal-Color Code script with the mpl-viridis colorscheme
-to visualize the fold dynamics. To segment membranes and quantify apical cell
-areas we used MorphoLibJ plugin in ImageJ [@Legland2016-cp]. To analyze the
-tortuosity of the epithelium we straightened the vitelline envelope using the
-Straighten tool in ImageJ, and applied gaussian blur and thresholding to
-extract the outline of the epithelium in dorsal views. We used custom Python
-and R scripts to generate plots, and Inkscape to assemble the figure plates and
-illustrations.
+We converted the raw microscopy datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
+We generated 3D renderings of the lateral surface of the embryos using the ImageJ/Fiji plugin 3Dscript [@Schmid2019-bm].
+We improved the signal-to-noise ratio and restored the z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
+We generated cartographic projections by segmenting the surface of the embryo with ilastik [@Berg2019-ab] and using the ImSAnE toolbox [@Heemskerk2015-kv].
+We manually traced the fold outlines and areas of lateral 3D renderings and lateral cartographic projections, respectively, using Fiji.
+We used the ImageJ Temporal-Color Code script with the mpl-viridis colorscheme to visualize the fold dynamics.
+To segment membranes and quantify apical cell areas we used MorphoLibJ plugin in ImageJ [@Legland2016-cp].
+To analyze the tortuosity of the epithelium we straightened the vitelline envelope using the Straighten tool in ImageJ, and applied gaussian blur and thresholding to extract the outline of the epithelium in dorsal views.
+We used custom Python and R scripts to generate plots, and Inkscape to assemble the figure plates and illustrations.
 
 # Acknowledgements
 
-LoPaTs for discussions, Akanksha fly pushing and cartographic projections,
-Vlado for projections, Lemke for discussions, Ju for text suggestions, Jan
-Brugués and Keisuke Ishihara for the laser ablation setup, LMF for essential
-imaging support, EMBO for funding.
+LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado for projections, Lemke for discussions, Ju for text suggestions, Jan Brugués and Keisuke Ishihara for the laser ablation setup, LMF for essential imaging support, EMBO for funding.
 
 # References
 
