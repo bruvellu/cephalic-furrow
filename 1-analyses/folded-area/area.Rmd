@@ -96,7 +96,10 @@ embryos <- unique(results[, c("Embryo", "Stock", "Sample", "Genotype")])
 total <- merge(area, areacorr, by = "Embryo", all.x = TRUE)
 total <- merge(total, nfold, by = "Embryo", all.x = TRUE)
 total <- merge(total, embryos, by = "Embryo", all.x = TRUE)
+```
 
+
+```{r print-info}
 # Print btd embryos
 sprintf("btd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         length(embryos[embryos$Stock == "btd",]$Embryo), # total embryos
@@ -131,12 +134,13 @@ sprintf("prd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         )
 
 # Print wt embryos
-sprintf(" wt: embryos=%s, folds=%s",
+sprintf(" wt: embryos=%s, folds=%s, ant=%s, mid=%s, post=%s",
         length(embryos[embryos$Stock == "wt",]$Embryo), # total embryos
-        length(results[results$Stock == "wt",]$Label) # total folds
+        length(results[results$Stock == "wt",]$Label), # total folds
+        length(results[results$Stock == "wt" & results$Position == "ant",]$Label), # anterior folds
+        length(results[results$Stock == "wt" & results$Position == "mid",]$Label), # middle folds
+        length(results[results$Stock == "wt" & results$Position == "post",]$Label) # posterior folds
         )
-
-
 ```
 
 ## Total folded area per embryo
