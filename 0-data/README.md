@@ -30,6 +30,7 @@ defects, and embryos in improper orientation.
 
 ### Lateral
 
+- **2020-01-15_eve-Gap:** `eve-Gap_1`
 - **2020-01-17_eve-Gap:** `eve-Gap_1_t45s_z3`
 - **2020-01-22_eve-Gap:** `eve-Gap1_t60s_z3`
 
