@@ -16,6 +16,7 @@ defects, and embryos in improper orientation.
 ### Lateral
 
 - **2020-02-10_btd-hisgap:** `btd-hisgap1`
+- **2020-07-27_btd-HisGap:** `btd-HisGap_z3_t51s`
 - **2020-09-16_btd-gap:** `btd-gap_z3_t55s`
 - **2020-09-17_btd-gap:** `btd-gap2_z3_t55s`
 
