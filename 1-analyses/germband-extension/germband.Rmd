@@ -51,9 +51,29 @@ processed, and compiled in a single data frame.
 
 ```{r preprocess}
 # List all txt files in ROIs folder
+files = list.files(path = "1-rois", pattern="*.txt", full.names = TRUE)
+
+# TODO: Transpose and convert (individual?) data before merging
+
+# Use row bind to build a novel data frame with the compiled data
+landmarks = do.call(rbind, lapply(files, function(x) read.delim(x, stringsAsFactors = FALSE)))
+
+# Split Label at ":" to get the embryo name. sapply gets all first elements of the split.
+landmarks$embryo <- sapply(strsplit(landmarks$Label, ":"), "[", 1)
+
+# Remove "3D_" and ".tif" from embryo name
+landmarks$embryo <- gsub("3D_", "", landmarks$embryo)
+landmarks$embryo <- gsub(".tif", "", landmarks$embryo)
+
+# Import main dataset
+datasets <- read.delim2("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv")
+
+# Merge landmarks with datasets
+merged <- merge(landmarks, datasets, by = "embryo", all.x = TRUE)
+
 # Function to get and process data from individual files imported as dataframes
 # Loop to iterate and actually process the data
-# Use row bind to build a novel data frame with the compiled data
+
 ```
 
 
