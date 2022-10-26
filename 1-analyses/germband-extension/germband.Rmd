@@ -47,35 +47,139 @@ Here is a sample file:
 ```
 
 For extracting information and plotting, these raw files need to be parsed,
-processed, and compiled in a single data frame.
+processed, and compiled in a single data frame. The next block reads, process,
+and creates an initial data frame.
 
 ```{r preprocess}
 # List all txt files in ROIs folder
 files = list.files(path = "1-rois", pattern="*.txt", full.names = TRUE)
 
-# TODO: Transpose and convert (individual?) data before merging
+# Function for pre-processing
+process <- function(txtfile) {
+  # Read txt file
+  df <- read.delim(txtfile)
+  # Get label and clean up embryo name
+  label <- df$Label[1]
+  embryo <- strsplit(df$Label[1], ":")[[1]][1]
+  embryo <- gsub("3D_", "", embryo)
+  embryo <- gsub(".tif", "", embryo)
+  # Get X positions
+  x_ant <- df$X[1]
+  x_post <- df$X[2]
+  x_buck <- df$X[3]
+  x_deep <- df$X[4]
+  # Get sizes
+  size <- x_post - x_ant
+  gb_pos_buck <- x_buck - x_ant
+  gb_pos_deep <- x_deep - x_ant
+  # Get percentages
+  gb_pct_buck <- 100 - ((gb_pos_buck / size) * 100)
+  gb_pct_deep <- 100 - ((gb_pos_deep / size) * 100)
+  # Get frames
+  frame_gastr <- df$Slice[1]
+  frame_buck <- df$Slice[3]
+  frame_deep <- df$Slice[4]
+  # Save as vector
+  mv <- c(label, embryo, x_ant, x_post, x_buck, x_deep,
+          size, gb_pos_buck, gb_pos_deep, gb_pct_buck, gb_pct_deep,
+          frame_gastr, frame_buck, frame_deep)
+  return(mv)
+}
 
-# Use row bind to build a novel data frame with the compiled data
-landmarks = do.call(rbind, lapply(files, function(x) read.delim(x, stringsAsFactors = FALSE)))
+# Define empty data frame
+landmarks <- data.frame()
 
-# Split Label at ":" to get the embryo name. sapply gets all first elements of the split.
-landmarks$embryo <- sapply(strsplit(landmarks$Label, ":"), "[", 1)
+# Loop over files binding rows to data frame
+for (txtfile in files) {
+  gbrow <- process(txtfile)
+  landmarks <- rbind(landmarks, gbrow)
+}
 
-# Remove "3D_" and ".tif" from embryo name
-landmarks$embryo <- gsub("3D_", "", landmarks$embryo)
-landmarks$embryo <- gsub(".tif", "", landmarks$embryo)
+# Define column names
+colnames(landmarks) <- c("label", "embryo", "x_ant", "x_post", "x_buck", "x_deep",
+                         "size", "gb_pos_buck", "gb_pos_deep", "gb_pct_buck", "gb_pct_deep",
+                         "frame_gastr", "frame_buck", "frame_deep")
+```
 
+Next, we need to import the master dataset file to get some metadata. Most
+important is the stock, zygosity, timestep, and gastrulation frame.
+
+```{r merge}
 # Import main dataset
 datasets <- read.delim2("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv")
 
 # Merge landmarks with datasets
-merged <- merge(landmarks, datasets, by = "embryo", all.x = TRUE)
+germband <- merge(landmarks, datasets, by = "embryo", all.x = TRUE)
 
-# Function to get and process data from individual files imported as dataframes
-# Loop to iterate and actually process the data
+# Properly convert column types before any calculations
+germband <- as.data.frame(lapply(germband, type.convert))
 
+# Create columns with times (min)
+germband$time_buck <- ((germband$frame_buck - germband$frame_gastr) * germband$timestep) / 60
+germband$time_deep <- ((germband$frame_deep - germband$frame_gastr) * germband$timestep) / 60
+
+# Make smaller dataset for plotting
+columns <- c("embryo", "size", "status", "gb_pct", "gb_time", "stock", "zygosity", "folds_left")
+gblong <- data.frame(
+  c(germband$embryo, germband$embryo),
+  c(germband$size, germband$size),
+  c(rep("buck", length(germband$embryo)), rep("deep", length(germband$embryo))),
+  c(germband$gb_pct_buck, germband$gb_pct_deep),
+  c(germband$time_buck, germband$time_deep),
+  c(germband$stock, germband$stock),
+  c(germband$zygosity, germband$zygosity),
+  c(germband$folds_left, germband$folds_left)
+  )
+colnames(gblong) <- columns
+```
+
+## Plotting
+
+
+
+```{r plot-gbpct}
+ggplot(gblong, aes(zygosity, gb_pct, color = zygosity, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "btd embryos", y = "germ band extension (%)") +
+  facet_grid(~status) +
+  theme_classic() +
+   theme(text = element_text(size = 20),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1),
+        legend.position = "none"
+        #axis.text.x = element_text(face = "italic"),
+        #legend.position = c(0.80,0.3),
+        #legend.text = element_text(size = 15),
+        #legend.title = element_text(size = 15),
+        )
+ggsave("2-plots/gb_pct-btd.png", width = 15, height = 8)
+ggsave("2-plots/gb_pct-btd.svg", width = 15, height = 8)
 ```
 
 
+```{r plot-gbtime}
+ggplot(gblong, aes(zygosity, gb_time, color = zygosity, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "btd embryos", y = "time after gastrulation (min)") +
+  facet_grid(~status) +
+  theme_classic() +
+   theme(text = element_text(size = 20),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1),
+        legend.position = "none"
+        #axis.text.x = element_text(face = "italic"),
+        #legend.position = c(0.80,0.3),
+        #legend.text = element_text(size = 15),
+        #legend.title = element_text(size = 15),
+        )
+ggsave("2-plots/gb_pct-btd.png", width = 15, height = 8)
+ggsave("2-plots/gb_pct-btd.svg", width = 15, height = 8)
+```
 
 
