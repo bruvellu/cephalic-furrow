@@ -161,7 +161,7 @@ ggsave("2-plots/gb_pct-btd.png", width = 15, height = 8)
 ggsave("2-plots/gb_pct-btd.svg", width = 15, height = 8)
 ```
 
-Second, we plot the time after gastrulation (%).
+Second, we plot the time after gastrulation (min).
 
 ```{r plot-gbtime}
 ggplot(gblong, aes(zygosity, gb_time, color = zygosity, fill = zygosity)) +
