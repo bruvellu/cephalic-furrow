@@ -15,7 +15,7 @@ experiment	stock	genotype	zygosity	view	embryo	timestep	folds_left	folds_right
 2019-10-03_prd-Gap	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	prd-Gap_1_t60s_E15	60	1	
 2019-10-03_prd-Gap	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	prd-Gap_1_t60s_E16	60	1	
 								
-2020-01-15_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap_1_E13		1	
+2020-01-15_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap_1_E13	60	1	
 								
 2020-01-17_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap_1_t45s_z3_E1	45	1	
 2020-01-17_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap_1_t45s_z3_E4	45	1	
