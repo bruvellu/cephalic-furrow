@@ -143,7 +143,7 @@ First, we plot the germ band extension (%) for homozygotes and heterozygotes at
 two different moments: initial infolding/buckling (buck) and deepest point
 (deep).
 
-```{r plot-gbpct}
+```{r plot-gb-pct}
 ggplot(gblong, aes(zygosity, gb_pct, color = zygosity, fill = zygosity)) +
   geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
@@ -163,7 +163,7 @@ ggsave("2-plots/gb_pct-btd.svg", width = 15, height = 8)
 
 Second, we plot the time after gastrulation (min).
 
-```{r plot-gbtime}
+```{r plot-gb-time}
 ggplot(gblong, aes(zygosity, gb_time, color = zygosity, fill = zygosity)) +
   geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
