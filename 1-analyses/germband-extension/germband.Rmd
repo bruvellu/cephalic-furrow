@@ -147,8 +147,8 @@ two different moments: initial infolding/buckling (buck) and deepest point
 ggplot(gblong, aes(zygosity, gb_pct, color = zygosity, fill = zygosity)) +
   geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(x = "stocks", y = "germ band extension (%)") +
   facet_grid(rows = vars(status), cols = vars(stock)) +
   theme_classic() +
@@ -167,8 +167,8 @@ Second, we plot the time after gastrulation (min).
 ggplot(gblong, aes(zygosity, gb_time, color = zygosity, fill = zygosity)) +
   geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(x = "stocks", y = "time after gastrulation (min)") +
   facet_grid(rows = vars(status), cols = vars(stock)) +
   theme_classic() +
