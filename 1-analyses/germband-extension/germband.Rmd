@@ -157,7 +157,7 @@ capture.output(print_stats(germband, "wt"),
                file = "stats.txt")
 ```
 
-## Plotting
+## Descriptive plots
 
 We want to identify the difference between the cephalic furrow and the ectopic
 folds in the percentage of germ band extension, and the timing of formation
@@ -209,6 +209,8 @@ ggsave("2-plots/gb_time.png", width = 15, height = 8)
 ggsave("2-plots/gb_time.svg", width = 15, height = 8)
 ```
 
+## Main figure plots
+
 The above are nice descriptive plots. But for the figure, the most interesting
 is the initial buckling/infolding relative to GB position and time after
 gastrulation. First the germ band extension percentage:
@@ -251,4 +253,46 @@ ggplot(gblong[gblong$status == "buck",], aes(factor(stock, level = c("wt", "btd"
         )
 ggsave("2-plots/gb_time_buck.png", width = 15, height = 8)
 ggsave("2-plots/gb_time_buck.svg", width = 15, height = 8)
+```
+
+## Supplementary figure plots
+
+The deepest point goes into the supplementary.
+
+```{r plot-gb-pct-deep}
+ggplot(gblong[gblong$status == "deep",], aes(factor(stock, level = c("wt", "btd", "eve", "prd")), gb_time, color = zygosity, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  labs(x = "stocks", y = "germ band extension (%)") +
+  facet_grid(rows = vars(status)) +
+  theme_classic() +
+  theme(text = element_text(size = 20),
+        title = element_text(size = 15),
+        legend.text = element_text(size = 15),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_pct_deep.png", width = 15, height = 8)
+ggsave("2-plots/gb_pct_deep.svg", width = 15, height = 8)
+```
+
+```{r plot-gb-time-deep}
+ggplot(gblong[gblong$status == "deep",], aes(factor(stock, level = c("wt", "btd", "eve", "prd")), gb_time, color = zygosity, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  labs(x = "stocks", y = "time after gastrulation (min)") +
+  facet_grid(rows = vars(status)) +
+  theme_classic() +
+  theme(text = element_text(size = 20),
+        title = element_text(size = 15),
+        legend.text = element_text(size = 15),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_time_deep.png", width = 15, height = 8)
+ggsave("2-plots/gb_time_deep.svg", width = 15, height = 8)
 ```
