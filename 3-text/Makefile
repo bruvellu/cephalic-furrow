@@ -9,7 +9,7 @@ CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
 OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
-FILTERS=--lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-citeproc
+FILTERS=--lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
 
 # Main rule
 all: clean figures syncbib compile share
