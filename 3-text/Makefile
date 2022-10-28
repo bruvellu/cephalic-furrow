@@ -2,14 +2,15 @@
 
 # Variables
 FILE=furrow
-TEMPLATE=templates/template
+RESOURCES=resources
+TEMPLATE=${RESOURCES}/template
 FIGUREIN=`realpath ../2-figures`
 FIGUREOUT=`realpath figures`
 CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
 OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
-FILTERS=--lua-filter=scholarly-metadata.lua --lua-filter=author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
+FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
 
 # Main rule
 all: clean figures syncbib compile share
@@ -77,14 +78,6 @@ compile:
 syncbib:
 	# Sync bib file from Paperpile
 	wget --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
-
-startbib:
-	# Start bib syncing from Paperpile
-	./syncbib.sh > syncbib.out 2>&1 &
-
-stopbib:
-	# Stop bib syncing from Paperpile
-	killall syncbib.sh
 
 share:
 	# Updates shared manuscript folder
