@@ -133,6 +133,30 @@ gblong <- data.frame(
 colnames(gblong) <- columns
 ```
 
+```{r values}
+print_stats <- function(dataframe, stock) {
+  # Subset data frame
+  gb <- dataframe[dataframe$stock == stock,]
+  # Select relevant columns
+  cols <- c("embryo", "gb_pct_buck", "gb_pct_deep", "time_buck", "time_deep")
+  # Summarize data
+  print(stock)
+  print(by(gb[,cols], gb$zygosity, summary))
+  }
+
+# Print summary statistics
+print_stats(germband, "wt")
+print_stats(germband, "btd")
+print_stats(germband, "eve")
+print_stats(germband, "prd")
+
+capture.output(print_stats(germband, "wt"),
+               print_stats(germband, "btd"),
+               print_stats(germband, "eve"),
+               print_stats(germband, "prd"),
+               file = "stats.txt")
+```
+
 ## Plotting
 
 We want to identify the difference between the cephalic furrow and the ectopic
