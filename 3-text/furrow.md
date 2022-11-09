@@ -50,7 +50,9 @@ tablenos-plus-name: Table
   - What are the previous hypotheses > we test role in gastrulation
   - Live-imaging approach in mutants > CF absence leads to ectopic folds
   - EF characterization > suggests distinct formation mechanisms
-  - EFs correlate with MDs > compressive stress induce buckling
+  - EFs correlate with MDs > MD/GB compressive stresses induce buckling
+  - Model to understand forces
+  - How model matches experiments > GB/MD alone when softer, together maximize
 - Discussion
 
 - CF early movement and prominent landmark
@@ -272,8 +274,14 @@ The particles are confined on one side by a rigid barrier representing the vitel
 The extension of the germ band is simulated by the placement of the right end (posterior) of the arc towards the left end (anterior).
 Mitotic domains are represented by regions of compressed springs and positive intrinsic curvature which captures the thickness mismatch between mitotic domains and non-dividing cells ({@fig:mitogerm}g).
 
-<!--TODO: Replace dimensions by proportions above-->
+<!--TODO: The description of the model needs structuring. First what the model wants to model: the monolayer in a rigid shell, then the basic elements: particles connected by springs arranged in an elliptical arc that matches the proportions and are enclosed on one side by a rigid barrier, the edges have a stretching energy and vertices a bending energy, the sum of these give the main control parameter of our model known as the bending rigidity, there is a ground level of random noise which makes particles move but limited by the vitelline, to code for MDs we made regions of compressed strings where the advantage is that it keeps the X parameter constant, to code for GB extension we used the placement of the right end at different percentages of extension per body length, CF is encoded by an intrinsic negative curvature, and time or iterations in our simulations represent the equalization of the total energy towards an equilibrium.-->
+<!--TODO: How much of our model was based on the published one? Was some of the code used or it was written from scratch?-->
+<!--TODO: Explain better the ratio k/yR2-->
+<!--TODO: Understand interactions between MD, GB and CF (EFs are not encoded) and test how these morphogenetic events of gastrulation contribute to the formation of EFs-->
+<!--TODO: Replace dimensions by proportions-->
+<!--TODO: It is missing how time is encoded and what the iterations in the simulations mean-->
 <!--TODO: Intrinsic curvature and thickness mismatch are no longer in the model-->
+<!--TODO: Integrate what the progression means with what the iterations mean-->
 
 The main control parameter of our model is the ratio $\kappa/\lambda R^2$ while the germ band position ($g$) represents the progression of the development.
 To obtain a realistic value of the main control parameter where the model matches experimental observations, we performed a parameter sweep.
@@ -285,9 +293,14 @@ Conversely, when mitotic domains or the germ band extension are removed from the
 Thus, the simulations predict that the mitotic domains alone or the germ band extension alone is insufficient to induce ectopic folding.
 We next performed *in vivo* perturbation experiments in the cephalic furrow mutant embryos that test the predictions of the model.
 
+<!--TODO: Begin with parameter sweep as topic sentence and how MD and GB may influence EFs formation-->
+<!--TODO: How we define what is a fold in the model, we use the intrinsic noise level seed where particles move in any(?) direction, calculate the avg distance to vitelline, and we define and count a fold in the tissue as when the distance of the particle relative to the vitelline envelope becomes greater than the max sd for the distance under only noise-->
+<!--TODO: Structure better the observations because it’s hard to understand. First under a simple no MD/GB situation (only noise) we see no folds for any BR, second we added GB and observe the probability of buckling increase with the extension of GB and as a factor of the bending rigidity where the softer the tissue is the easier the tissue buckles with less GB extension, the GB alone is sufficient to drive the formation of at least one EF (at max GB ext) when the bending rigidity is below 8-5, we then added the MD domains and EF probability increases as a factor of MD alone where the softer the more EFs, when combined with GB the probability of folding with low and high GB values increases between 0.5 and 10 fold-->
+<!--TODO: Conclusion is that GB/MD own their own (alone) can only induce EF in softer values of bending rigidity below 8. When both events are present there is a left shift in the phase diagram and the probability of EF increases even in low GB values, MD/GB together maximize the probability of EF.-->
+
 <!--to determine where the embryo is located in the parameter space, and to test the relative contributions of mitotic domains and germ band extension in driving epithelial buckling.-->
 
-<!--TODO: Explain better the ratio k/yR2-->
+<!--TODO: We performed a parameter sweep across values of bending rigidity-->
 <!--TODO: Fix sentence about parameter space-->
 <!--TODO: The conclusion that the simulations predict that neither MD or GB alone can induce EFs is incomplete since they can induce folds depending on the value of bending rigidity.-->
 
