@@ -57,7 +57,8 @@ tablenos-plus-name: Table
   - Do MDs alone in vivo > MDs alone insufficient
   - Concomitant MD and GB leads to EFs
   - (Experiments suggest compression > our laser cuts support this)
-  - HT is under compression > we propose CF’s role is buffering
+  - HT is under compression > we propose CF’s role is mechanical buffering
+  - CF model by intrinsic curvature > 
 - Discussion
 
 - CF early movement and prominent landmark
@@ -358,6 +359,7 @@ This experiment indicates that the germ band extension is insufficient to induce
 Overall, our *in silico* modeling and *in vivo* experiments suggest that epithelial buckling at the head--trunk interface in cephalic furrow mutants only occurs when both the mitotic domain formation and the rapid phase of the germ band extension happen concomitantly.
 
 <!--TODO: Sounds ok, think if there’s any other information to add-->
+<!--TODO: Add as conclusion from the simulations that the embryo must lie between 7.5 and 9.0 bending rigidity.-->
 <!--TODO: Consider adding here the results from the laser cutting. The reasoning would almost the same as the one from the next paragraph: we observe that when MD and GB generate opposing flows at the same time the epithelial undergoes a buckling transition forming ectopic folds, we observe that the first epithelial cells to buckle are usually non-dividing between MDs and between MD/GB that become compressed immediately before the formation of the EF, these observations in combination with our models suggested that compressive stresses are driving a buckling transition in CF mutants, which in addition in a mutant situation there’s an excess of tissue in the surface due to the absence of the CF and the threshold for a buckling transition is even lower and these compressive forces are even more effective, if that’s the case, if these epithelial cells are being compressed and are under pressure we expect that a cut orthogonal to the predicted forces would show no recoil and possibly the tissue would collapse in itself. To test this hypothesis in vivo we performed painstaking laser cuts in cephalic furrow mutants and saw just that, if non-dividing cells between MDs or between MD/GB are cut we see no recoil, this supports our view that compressive forces are the essential driving forces underlying EF formation in cephalic furrow mutants and additionally it reveals that the HT is under compressive stresses from at least these two opposing morphogenetic events at gastrulation the MD and GB-->
 
 <!--
@@ -428,6 +430,10 @@ Therefore, we hypothesize that the cephalic furrow may act as a mechanical buffe
 To explore the role of the cephalic furrow as a mechanical buffer, we asked whether a programmed head--trunk invagination could prevent the formation of ectopic folds in our *in silico* model.
 We simulated the cephalic furrow as a region with a negative spontaneous curvature.
 This led to a sharp fold at the position of the negative curvature recapitulating the cephalic furrow ({@fig:wildtype}a).
+
+<!--TODO: Tentative outline for this section.-->
+<!--TODO: To explore mechanical role, we programmed CF in the model. We did that by establishing an intrinsic negative curvature to a narrow region of the particle--string blastoderm that matches the real embryo proportions to simulate the CF formation. We ran a parameter sweep using the in vivo bending rigidity range established in previous simulations (7.5--9.0) of different values of K by the germ band position without mitotic domains. To determine the value of K that matches the in vivo situation, we used what we named the region of influence. This is the region adjacent to the initiator cells that is being pulled in the CF invagination. We determined this region of influence for each value of K at each GB position in the model and compared to the region of influence in vivo. To measure the region of influence in vivo we measured the recoil velocity of the cell membranes around the initiator cells using laser ablation in wildtype embryos. The measurements indicate that the average tension increases over time from early to late stage 6 and decreases with distance to initiators. The tension zeros around 40 µm anterior and posterior to the initiator cells. This suggests that the region of influence of the CF in vivo totals a 80 µm width centered at the initiator cells.-->
+<!--TODO: Once we established the region of influence, we added the MDs to the simulations to quantify how the presence of the CF affects the formation of EFs. We observe that the number of EFs is affected by the presence of an active invagination, but only when the values of K are enormous which make the region of influence several orders of magnitude larger than what we measured in vivo. This suggests that the expansion forces of MDs dominate over the infolding force of the CF when both initiate at the same time. However, that is not what happens in vivo. In wildtype embryos the MDs appear about 15--20 min after the CF initiates its invagination. We thus wondered whether the relative timing between CF and MD would be a crucial component. To recapitulate the relative timing of events in wildtype, we added a delay to MD formation in our model. Our simulation now show that the effectively prevents the formation of EFs even for lower K values which are in the wildtype range.-->
 
 <!--We expect that an invagination provides a mechanical sink directing all mechanical stresses and preventing the build up of stress in the epithelium.-->
 
