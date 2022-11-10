@@ -41,7 +41,6 @@ tablenos-plus-name: Table
 
 <!--TODO: Add CSBD and proper affiliations-->
 
-
 <!--# Outline
 
 - Abstract
@@ -63,7 +62,8 @@ tablenos-plus-name: Table
   - Coded as intrinsic curvature with K > determined K based on ROI
   - Can CF prevent EF > Only with enormous K
   - Does relative timing matters > Yes CF early is effective
-  - xxx > If early, CF buffers EFs within ROI
+  - Does GB push > yes GB is pushing mildly
+  - CF early buffers EFs within ROI > supports idea of a mechanical role
 - Discussion
 
 - CF early movement and prominent landmark
@@ -293,6 +293,7 @@ Mitotic domains are represented by regions of compressed springs and positive in
 <!--TODO: It is missing how time is encoded and what the iterations in the simulations mean-->
 <!--TODO: Intrinsic curvature and thickness mismatch are no longer in the model-->
 <!--TODO: Integrate what the progression means with what the iterations mean-->
+<!--TODO: Explain how the iterations are stopped (based on the peak of bending energy)-->
 
 The main control parameter of our model is the ratio $\kappa/\lambda R^2$ while the germ band position ($g$) represents the progression of the development.
 To obtain a realistic value of the main control parameter where the model matches experimental observations, we performed a parameter sweep.
@@ -451,7 +452,11 @@ We observe that when the cephalic furrow is present at the beginning, before mit
 When ectopic folding nevertheless does occur, it happens within a limited region of the curved embryo surface far away from the simulated cephalic furrow (Figure 4X).
 The modeling suggests that the cephalic furrow invagination creates a regions within the blastoderm where its mechanical influence suppresses ectopic folding.
 
-<!--TODO: Edit these simulation results (before/after) when the actual results come-->
+<!--TODO: Edit these simulation results when the actual results come. It’s actually just at the same time or MD with a delay-->
+<!--TODO: Describe what happens in both situations specially on the frequency and location of EFs-->
+<!--TODO: The current argument is: we did simulation with CF and found that it affects the most close by EFs and less what is far away, or we can even say that EF probability varies with K. But the issue here is that we have no way of determining where the real K is. The only option seems to be using the ROI, so it makes sense to keep it as drafted above and work from there.-->
+<!--TODO: Two key ideas of this part: 1) CF has a region of influence which is measured by the pull the initiator cells exert on the surrounding tissues. 2) CF can buffer EFs but can only do so effectively if its formation precedes the formation of MDs. These support the main message that priming an invagination before other morphogenetic events will transiently store tissue below the surface and buffer compressive forces coming from anterior MD expansions and posterior GB extension.-->
+<!--TODO: The way we hypothesize the CF to buffer these mechanical forces is to accommodate compressed tissue as part of the CF possibly pushing the furrow deeper. In our model we observe a clear correlation between the GB and the deepness of the CF, suggesting that indeed the GB pushes the CF after the CF autonomously invaginated. To test this hypothesis in vivo we mechanically block the germ band extension in wildtype and measured the depth of the CF. We find that indeed, the CF of cauterized embryos is about 10% shallower than that of non-cauterized embryos. This indicates that the GB extension is indeed exerting pressure over the head--trunk interface-->
 
 To determine the extent of this hypothetical region of influence in the embryo, we determined tissue tension around the furrow using laser ablations of wild type blastoderm epithelium.
 We performed lateral cuts of several cells along the dorsal ventral axis of the embryo at different stages and at different positions relative to the furrow and monitored the recoil velocity.
@@ -463,6 +468,10 @@ To test if this happens also *in vivo*, we blocked the germ band extension by ca
 We find that the maximum depth of the cephalic furrow in cauterized embryos is about 10% shallower than in non-cauterized embryos ({@fig:wildtype}f).
 These experiments rule out the global germ band push as the main driver of cephalic furrow invagination.
 Taken together, the cephalic furrow suppresses the mechanical instability of the blastoderm by internalizing excess tissue and counteracting the build up of compressive stresses from concurrent gastrulation processes in the area of the head--trunk boundary.
+
+<!--TODO: Ablations should probably fit better beforehand as described above-->
+<!--TODO: GB push informs on different fronts. First, it shows that CF is autonomous because without GB the CF forms normally. Second, it shows that there is compressive stress because with the GB the CFs are deeper. Define where the description of the experiment actually fits best.-->
+<!--TODO: Conclusion is fine but needs to emphasize the timing and region of influence-->
 
 <!--TODO: AND NOW BACK TO EVOLUTION… ;-) I didn’t get the right idea yet, feel free to give it a try.-->
 
