@@ -1,9 +1,10 @@
 ---
 title: Pre-patterned invagination prevents mechanical instability in gastrulation
+#title: Head invagination buffers mechanical stresses in fly gastrulation
 #title: Cephalic furrow prevents mechanical instability in fly gastrulation
 #title: Programmed epithelial invagination prevents mechanical instability in fly gastrulation
 #title: Programmed invagination prevents mechanical instability in fly gastrulation
-#title: Head invagination prevents epithelial instability in fly gastrulation
+#title: Head invagination prevents mechanical instability in fly gastrulation
 #title: Head folding prevents mechanical instability in fly gastrulation
 #title: Programmed folding prevents epithelial instability in fly gastrulation
 #title: Programmed epithelial folding prevents mechanical instability in fly gastrulation
@@ -65,13 +66,12 @@ tablenos-plus-name: Table
   - Does GB push > yes GB is pushing mildly
   - CF early buffers EFs within ROI > supports idea of a mechanical role
 - Discussion
-
-- CF early movement and prominent landmark
-- Position determined genetically
-- Intrinsic mechanisms drive formation
-- But invaginated cells acquire no new fates
-- And fold temporary unfolding without trace
-- So the function remains a mystery
+  - A new view of the CF
+  - Mechanics involved: MD and GB
+  - Head--trunk as shear stress
+  - CF solves mechanical problem
+  - CF is evolutionary novelty
+  - Perhaps mechanics is selective pressure for morphogenesis
 
 -->
 
@@ -484,7 +484,7 @@ Taken together, the cephalic furrow suppresses the mechanical instability of the
 
 <!--TODO: slp mutant shows that moving CF anteriorly diminishes its capacity to absorb mechanical stress and an ectopic dorsal fold appears.-->
 
-<!--TODO: prd mutant shows that partially perturbing CF is enough to prime the position of folding.-->
+<!--TODO: prd mutant shows partially perturbing CF is enough to prime the position of folding.-->
 
 <!--TODO: Include such sentence after laser ablations or keep it for the sloppy paper? The region under influence of the cephalic furrow is molecularly patterned. It is defined by the stripes of slp which delimit the outer edges of the invagination.-->
 
@@ -508,6 +508,13 @@ Taken together, the cephalic furrow suppresses the mechanical instability of the
 
 # Discussion
 
+<!--TODO: Outline a discussion here to organize my thoughts-->
+<!--TODO: First paragraph should reinforce the main point by revisiting points raised in the introduction. For example, Our works provide a novel view on the developmental role of the cephalic furrow. This pre-patterned furrow that autonomously invaginates early on gastrulation primes the position of folding, making a predictable and stereotypic infolding point where a significant portion of the head epithelial cells is stored under the surface before any of the upcoming morphogenetic events take place. When they happen, the expansion of MDs and the compression from GB are geared toward the CF which act as a mechanical sink for these concomitant compressive forces of gastrulation. The invagination prevents the otherwise erratic epithelial buckling and solves a mechanical problem of epithelial instability in the embryo. Mechanical instability is known to perturb patterning and even lose ATP, and it at least may cause developmental delays from all the tissue ruffling, which could have a negative evolutionary effect in the long term-->
+<!--TODO: Search for examples of how mechanical instability might perturb development-->
+
+
+
+
 <!--Outline
 
 1. Lack of CF = instability
@@ -516,6 +523,12 @@ Taken together, the cephalic furrow suppresses the mechanical instability of the
 4. GB (compression) and epithelial buckling
 5. Head--trunk shear compressive zone
 6. CF role in preventing instability
+
+TODO: Ideas to discuss
+
+- MD can cause tissue buckling due to forces or imbalance
+- External compressive forces cause buckling under confinement
+- Rapid phase of GB extension because eve has no cell intercalation
 
 -->
 
