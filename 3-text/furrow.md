@@ -119,18 +119,18 @@ We propose the cephalic furrow prevents epithelial instabilities at the head–t
 
 # Main
 
-<!--What is the cephalic furrow and what makes it interesting-->
-
 The cephalic furrow is one of the earliest morphogenetic events of *Drosophila* gastrulation.
-It appears when the blastoderm cellularizes as a lateral indentation that quickly invaginates deep into the yolk [@Hartenstein1985-zs; @Spencer2015-td].
-The positioning of the cephalic furrow within the cellular blastoderm is under strict genetic control.
-Its initiation is determined by the zygotic expression domains of two transcription factors, *buttonhead* (*btd*) and *even skipped* (*eve*), that overlap by precisely one row of blastoderm cells in the area where the furrow will form [@Vincent1997-fa].
-These so-called initiator cells shorten along the apical-basal axis by activating lateral myosin contractility [@Eritano2020-mi].
-This cellular behavior initiates the cephalic furrow invagination on the tissue level where the mechanical coupling between the cells ensures the precision of the tissue fold during morphogenesis [@Eritano2020-mi].
-The resulting fold coincides with the boundary between the head (procephalon) and the segmented trunk (germ band) of the *Drosophila* embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
+It appears as lateral indentations near the head which quickly extend dorsoventrally and invaginate into the yolk, forming a deep epithelial fold at the boundary between the head (procephalon) and the segmented trunk (germ band) of the embryo [@Hartenstein1985-zs; @Foe1989-cw; @Spencer2015-td].
+The formation of the cephalic furrow is under strict genetic control.
+While maternal inputs position the site of invagination, the zygotic expression of two transcription factors, *buttonhead* (*btd*) and *even skipped* (*eve*), specifies a narrow row of the so-called initiator cells which are responsible for triggering the process [@Vincent1997-fa].
+The initiator cells actively shorten along their apical--basal axis mediated by lateral myosin contractility and, because the cells are mechanically coupled, this localized cellular behavior drives a tissue-scale invagination of the cephalic furrow with great precision [@Eritano2020-mi].
+
+
 However, a couple of hours after gastrulation it unfolds without leaving morphological traces [@Hartenstein1985-zs].
 This behavior is in stark contrast with other embryonic invaginations, such as the ventral furrow or midgut invaginations, which lead to the formation of mesoderm and endoderm.
 The cephalic furrow does not give rise to any precursor tissues or larval structures and thus its function remains unknown.
+
+<!--This cellular behavior drives the tissue to invaginate while the mechanical coupling between the cells ensures the precision of the fold during morphogenesis [@Eritano2020-mi].-->
 
 <!--TODO: Move HT earlier and improve the build up towards the big question about its function-->
 <!--TODO: Use the contrast between tight genetic control and no associated fates-->
@@ -147,7 +147,7 @@ However, given the discontinuity of the cephalic furrow during gastrulation and 
 What if the gene regulatory network positioning the furrow has been utilized by evolution for a different purpose?
 To answer this question, we investigated the morphogenetic consequences of removing the cephalic furrow
 
-<!--TODO: Paragraph is unclear because the hypotheses don’t really care about the HT boundary, and the point of gene regulatory network being coopted for other purposes needs a lot of explanation, and I think we don’t even have evidence for that. Alsot reads as a research proposal.-->
+<!--TODO: Paragraph is unclear because the hypotheses don’t really care about the HT boundary, and the point of gene regulatory network being coopted for other purposes needs a lot of explanation, and I think we don’t even have evidence for that. Also reads as a research proposal.-->
 <!--TODO: Suggestion: Discuss the suggestions in a bit more detail (it has been proposed the CF is a temporary storage and indeed it stores 20% of cells, the question is what for and why does it need such tight control), and point out that a transient role is compatible with a transient mechanical role (a physical role as barrier has been proposed in simulations, but not in vivo), and how we investigated if the cephalic furrow has a mechanical role and what is its relevance for fly gastrulation.-->
 
 <!--TODO: When to bring the information that the CF is an evolutionary novelty? More or less here would be appropriate but in this context it really needs to be just a mention citing.-->
