@@ -72,7 +72,6 @@ tablenos-plus-name: Table
   - CF solves mechanical problem
   - CF is evolutionary novelty
   - Perhaps mechanics is selective pressure for morphogenesis
-
 -->
 
 # Abstract
@@ -247,6 +246,7 @@ Local expansion of the mitotic domains is one potential source of this stress.
 
 <!--TODO: Initial sentence may not be accurate-->
 <!--TODO: Describe exactly what the strain rate analysis can tell-->
+<!--TODO: Checked Blanchard paper and what we did is not the same. Their pipeline is based on cell segmentation and tracking and ours is simply based on PIV, much more simplified. So what it tell us is not the strain rate but the rate of convergent flows in the tissue. It shows the difference in dynamics between CF where the rate of invagination slowly raises to a peak whereas the EFs have a steeper climb to a higher peak. This data supports the view that EFs are buckle abruptly as it is expected to happen in tissue buckling under external compressive stresses.-->
 <!--TODO: What does it mean that the strain rate is higher?-->
 <!--TODO: Try here and below also alternative ways of measuring stress or strain rate (all are valid to try). For example, shape index, density, tissue analyzer measures, strain inference, t1 transitions, neighbour exchange, tissue flows via piv, etc. It can help give better support for this section-->
 
@@ -511,8 +511,8 @@ Taken together, the cephalic furrow suppresses the mechanical instability of the
 <!--TODO: Outline a discussion here to organize my thoughts-->
 <!--TODO: First paragraph should reinforce the main point by revisiting points raised in the introduction. For example, Our works provide a novel view on the developmental role of the cephalic furrow. This pre-patterned furrow that autonomously invaginates early on gastrulation primes the position of folding, making a predictable and stereotypic infolding point where a significant portion of the head epithelial cells is stored under the surface before any of the upcoming morphogenetic events take place. When they happen, the expansion of MDs and the compression from GB are geared toward the CF which act as a mechanical sink for these concomitant compressive forces of gastrulation. The invagination prevents the otherwise erratic epithelial buckling and solves a mechanical problem of epithelial instability in the embryo. Mechanical instability is known to perturb patterning and even lose ATP, and it at least may cause developmental delays from all the tissue ruffling, which could have a negative evolutionary effect in the long term-->
 <!--TODO: Search for examples of how mechanical instability might perturb development-->
-
-
+<!--TODO: Relations between cell divisions and epithelial buckling. Cell divisions lead to buckling in different systems. Dividing cells exert force on the elongation phase, and their basal side moves apically causing an imbalance in the epithelium. We think EFs form adjacent to MDs due to both the local stresses and imbalance coupled with the compression of neighbouring tissues by the GB which increases the global stresses.-->
+<!--TODO: Discuss the idea of cell divisions fluidizing tissue in contrast to what we think it’s happening in the MDs. Because MD cells divided at the same time the tissue is not fluidized but becomes more rigid when expanding.-->
 
 
 <!--Outline
