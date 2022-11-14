@@ -119,27 +119,22 @@ We propose the cephalic furrow prevents epithelial instabilities at the head–t
 
 # Main
 
-The cephalic furrow is one of the earliest morphogenetic events of *Drosophila* gastrulation.
-It appears as lateral indentations near the head which quickly extend dorsoventrally and invaginate into the yolk, forming a deep epithelial fold at the boundary between the head (procephalon) and the segmented trunk (germ band) of the embryo [@Hartenstein1985-zs; @Foe1989-cw; @Spencer2015-td].
-The formation of the cephalic furrow is under strict genetic control.
-While maternal inputs position the site of invagination, the zygotic expression of two transcription factors, *buttonhead* (*btd*) and *even skipped* (*eve*), specifies a narrow row of the so-called initiator cells which are responsible for triggering the process [@Vincent1997-fa].
-The initiator cells actively shorten along their apical--basal axis mediated by lateral myosin contractility and, because the cells are mechanically coupled, this localized cellular behavior drives a tissue-scale invagination of the cephalic furrow with great precision [@Eritano2020-mi].
+One of the earliest events in *Drosophila* gastrulation is the formation of the cephalic furrow.
+It first appears as a lateral indentation near the head which quickly invaginates and forms a deep epithelial fold at the boundary between head (procephalon) and trunk (germ band) [@Hartenstein1985-zs; @Foe1989-cw; @Spencer2015-td].
+Similar to other embryonic invaginations, the formation of the cephalic furrow is under strict genetic control and follows a stereotypic morphogenetic program.
+The site of invagination is determined by the zygotic expression of two transcription factors, *buttonhead* (*btd*) and *even skipped* (*eve*), whose domains overlap at the head--trunk boundary by a narrow row of blastoderm cells [@Vincent1997-fa].
+These so-called initiator cells shorten along the apical--basal axis by activating lateral myosin contractility and drive the infolding of the tissue [@Eritano2020-mi].
+Once inititated, the mechanical coupling between invaginating cells ensures the precision of the tissue fold during morphogenesis [@Eritano2020-mi].
+The resulting head--trunk fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
+However, this prominence is only transient.
+A couple of hours after gastrulation, the cephalic furrow completely unfolds without giving rise to any specific embryonic tissue or larval structure; it disappears, leaving no trace [@Hartenstein1985-zs].
+This is in stark contrast to other embryonic invaginations.
+While the ventral furrow and midgut invaginations fulfil clear roles in development---giving rise to mesoderm and endoderm precursors, respectively---the cephalic furrow has no obvious function despite its tightly regulated formation.
 
-
-However, a couple of hours after gastrulation it unfolds without leaving morphological traces [@Hartenstein1985-zs].
-This behavior is in stark contrast with other embryonic invaginations, such as the ventral furrow or midgut invaginations, which lead to the formation of mesoderm and endoderm.
-The cephalic furrow does not give rise to any precursor tissues or larval structures and thus its function remains unknown.
-
-<!--This cellular behavior drives the tissue to invaginate while the mechanical coupling between the cells ensures the precision of the fold during morphogenesis [@Eritano2020-mi].-->
-
-<!--TODO: Move HT earlier and improve the build up towards the big question about its function-->
-<!--TODO: Use the contrast between tight genetic control and no associated fates-->
-<!--TODO: Either build up in one paragraph, culminating in what is the function, or split by setting it apart or raising the question that despite such controlled development, its function remain a mystery and tackle the reasons (transient, no associated fates) and hypothesis on the next paragraph-->
-
-<!--being a prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
-<!--between the two determines the row of initiator cells [@Vincent1997-fa].-->
+<!--a prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
+<!--the two determines the row of initiator cells [@Vincent1997-fa].-->
 <!--specified with remarkable accuracy [@Liu2013-lc] -->
-<!--Although the mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um], the process is under precise genetic control and safeguarding mechanisms are in place that ensure the accuracy of morphogenesis.-->
+<!--the mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um]-->
 
 It has been proposed that the cephalic furrow acts as temporary storage of anterior surface cells until a later time in development [@Turner1977-ol], or that it functions as an anchor to the anterior ventral cells and a barrier to the tissue flows making the germ band extend posteriorly [@Vincent1997-fa; @Dicko2017-wz].
 These hypotheses focus on the suggestive positioning of the cephalic furrow at the head--trunk boundary.
