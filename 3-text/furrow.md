@@ -129,14 +129,15 @@ The resulting head--trunk fold spans the entire lateral surface, from dorsal to 
 However, this prominence is only transient.
 A couple of hours after gastrulation, the cephalic furrow completely unfolds without giving rise to any specific embryonic tissue or larval structure; it disappears, leaving no trace [@Hartenstein1985-zs].
 This is in stark contrast to other embryonic invaginations.
-While the ventral furrow and midgut invaginations fulfil clear roles in development---giving rise to mesoderm and endoderm precursors, respectively---the cephalic furrow has no obvious function despite its tightly regulated formation.
+While the ventral furrow and midgut invaginations fulfil clear roles in development---giving rise to mesoderm and endoderm precursors, respectively---the function of the cephalic furrow has remained enigmatic for decades.
 
-<!--a prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
+<!--prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
 <!--the two determines the row of initiator cells [@Vincent1997-fa].-->
 <!--specified with remarkable accuracy [@Liu2013-lc] -->
 <!--the mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um]-->
 
 It has been proposed that the cephalic furrow acts as temporary storage of anterior surface cells until a later time in development [@Turner1977-ol], or that it functions as an anchor to the anterior ventral cells and a barrier to the tissue flows making the germ band extend posteriorly [@Vincent1997-fa; @Dicko2017-wz].
+
 These hypotheses focus on the suggestive positioning of the cephalic furrow at the head--trunk boundary.
 However, given the discontinuity of the cephalic furrow during gastrulation and the head--trunk boundary later in development, we wondered whether the furrow may also serve a function independent of the head-trunk boundary.
 What if the gene regulatory network positioning the furrow has been utilized by evolution for a different purpose?
