@@ -140,52 +140,34 @@ While the ventral furrow and midgut invaginations fulfil clear roles in developm
 <!--specified with remarkable accuracy [@Liu2013-lc] -->
 <!--the mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um]-->
 
-<!--TODO: Discuss the suggestions in a bit more detail-->
+The ephemeral nature of the cephalic furrow suggests it may have a more immediate, physical purpose during the complex morphogenetic movements of *Drosophila* gastrulation.
+Because a significant number of blastoderm cells invaginate with the cephalic furrow (about 10% according to recent estimates [@Stern2021-zv]), it can act as a temporary storage for anterior surface cells until later in development [@Turner1977-ol].
+The reasons, however, are unclear.
+One hypothesis is that the cephalic furrow can act as an anchor for the anterior ventral cells during gastrulation, forcing the germ band to extend posteriorly [@Costa1993-qj].
+Numerical simulations provided some support for this, suggesting that the cephalic furrow provides a barrier that orients tissue flows [@Dicko2017-wz].
+However, the physical consequences of removing the cephalic furrow have not yet been investigated *in vivo*.
 
-Because the cephalic furrow has such tight genetic control, it suggests that it may have a role important enough to have been fixed during evolution.
-Because it is a transient structure, it is probably accomplishing something during its short existence.
+<!--DIFF: Elaborated a bit more the hypothesis on the function of the furrow to introduce the idea of a physical role. I removed the story about the relation between patterning and furrow because it was not connected with the rest.-->
 
-It has been proposed that the cephalic furrow acts as temporary storage of anterior surface cells until a later time in development [@Turner1977-ol].
-Indeed, recent data suggests the cephalic furrow stores about 20% of epithelial cells [].
-But why would the embryo need that?
-One hypothesis is that the cephalic furrow functions as an anchor or barrier to the anterior ventral cells and tissue flows, making the germ band extend posteriorly [@Vincent1997-fa; @Dicko2017-wz].
+<!--TODO: Insert the idea that the CF is unique that is has a tightly regulated formation, suggesting it must be somewhat useful for the embryo, with genetic traits fixed by evolution, but it has no obvious permanent consequence to the embryo. The fact that it is transient, but prominent suggests it may have a important but transient function.-->
 
-- it has been proposed the CF is a temporary storage and indeed it stores 20% of cells
-- the question is what for and why does it need such tight control
-- and point out that a transient role is compatible with a transient mechanical role
-- a physical role as barrier has been proposed in simulations, but not in vivo
-- and how we investigated if the cephalic furrow has a mechanical role and its relevance for fly gastrulation.
-
-To answer this question, we investigated the morphogenetic consequences of removing the cephalic furrow
-
-<!--These hypotheses focus on the suggestive positioning of the cephalic furrow at the head--trunk boundary.-->
-<!--However, given the discontinuity of the cephalic furrow during gastrulation and the head--trunk boundary later in development, we wondered whether the furrow may also serve a function independent of the head-trunk boundary.-->
-<!--What if the gene regulatory network positioning the furrow has been utilized by evolution for a different purpose?-->
-
-<!--TODO: Paragraph is unclear because the hypotheses don’t really care about the HT boundary, and the point of gene regulatory network being coopted for other purposes needs a lot of explanation, and I think we don’t even have evidence for that. Also reads as a research proposal.-->
-<!--TODO: Suggestion: Discuss the suggestions in a bit more detail (it has been proposed the CF is a temporary storage and indeed it stores 20% of cells, the question is what for and why does it need such tight control), and point out that a transient role is compatible with a transient mechanical role (a physical role as barrier has been proposed in simulations, but not in vivo), and how we investigated if the cephalic furrow has a mechanical role and what is its relevance for fly gastrulation.-->
+<!--The cephalic furrow retains hundreds of epithelial cells below the embryo’s surface during gastrulation [@Stern2021-zv].-->
+<!--We asked whether the absence of a cephalic furrow and the permanence of these epithelial cells on the surface has any consequences to the embryo.-->
 
 <!--TODO: When to bring the information that the CF is an evolutionary novelty? More or less here would be appropriate but in this context it really needs to be just a mention citing.-->
 <!--TODO: The alternative is to put it from the beginning that we know it’s a novelty. Not only it’s mysterious but it is a new unique morphogenetic trait that evolved within the dipteran lineage-->
 
-<!--Despite genetic control and active invagination mechanisms, the function of the cephalic furrow remains a mystery.-->
-<!--Unlike other embryonic invaginations, such as the ventral furrow or midgut invaginations, which are associated with mesoderm and endoderm formation, the cephalic furrow does not give rise to any precursor tissues or larval structures.-->
-<!--It unfolds a couple of hours after gastrulation without leaving morphological traces [@Vincent1997-fa].-->
-
-<!--But these hypotheses or the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].-->
+<!--But the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].-->
 
 <!--Our study investigates the role of the cephalic furrow by integrating live-imaging of mutant embryos, *in vivo* mechanical perturbations, and *in silico* simulations. -->
 
 <!--# Ectopic folding in cephalic furrow mutants-->
 
-<!--The cephalic furrow retains hundreds of epithelial cells below the embryo’s surface during gastrulation [@Stern2021-zv].-->
-<!--We asked whether the absence of a cephalic furrow and the permanence of these epithelial cells on the surface has any consequences to the embryo.-->
 <!--Previous work revealed that in *eve* mutants, where the cephalic furrow fails to invaginate, a late irregular fold would often form in the head region [@Vincent1997-fa]. -->
 <!--Despite seemingly not being formed through the cephalic furrow morphogenetic program [@Vincent1997-fa], the origin of these late folds remained unclear.-->
 <!--Only recently, it was revealed that *btd* mutants also display late irregular folds [@Eritano2020-mi Figure S5B], suggesting this phenotype might be a direct consequence of the lack of the cephalic furrow in *btd* and *eve* mutants.-->
 <!--To investigate the developmental origins of these folds and the impact of the absence of the cephalic furrow, we generated fluorescent *btd* and *eve* lines and imaged mutant embryos *in toto* using lightsheet microscopy under high-temporal resolution to capture the tissue dynamics of gastrulation.-->
-
-<!--But the developmental processes driving formation of ectopic folds have remained obscure and led us to ask what was driving the formation of such fold. -->
+<!--But the developmental processes driving formation of ectopic folds have remained obscure and led us to ask what was driving the formation of such fold.-->
 
 <!--Ectopic folds were first described in *eve* mutants [@Vincent1997-fa]. The authors observed that a late fold would frequently form near the cephalic furrow region *eve* embryos. Because it was irregular, variable in position, and only formed after the appearance of mitotic domains, they suggested that these late folds were not the result of the cephalic furrow program [@Vincent1997-fa]. In *btd* mutants, the presence of ectopic folds was only observed recently [@Eritano2020-mi; see Figure S5B]. Our analyses indicate that ectopic folds appear in *btd* and *eve* mutants because they lack a cephalic furrow.-->
 
