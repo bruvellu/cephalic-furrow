@@ -131,17 +131,36 @@ A couple of hours after gastrulation, the cephalic furrow completely unfolds wit
 This is in stark contrast to other embryonic invaginations.
 While the ventral furrow and midgut invaginations fulfil clear roles in development---giving rise to mesoderm and endoderm precursors, respectively---the function of the cephalic furrow has remained enigmatic for decades.
 
+<!--DIFF: Moved the head--trunk information further up and tried to build up the expectations to culminate in the question of what is the function, the transition to the next paragraph.-->
+
+<!--TODO: The paragraph is ok, but it’s also too specialized to people familiar with Drosophila. Perhaps we need a more general opening statement and some kind of introduction to fly terms like blastoderm, ventral furrow, germ band, etc.-->
+
 <!--prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
 <!--the two determines the row of initiator cells [@Vincent1997-fa].-->
 <!--specified with remarkable accuracy [@Liu2013-lc] -->
 <!--the mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um]-->
 
-It has been proposed that the cephalic furrow acts as temporary storage of anterior surface cells until a later time in development [@Turner1977-ol], or that it functions as an anchor to the anterior ventral cells and a barrier to the tissue flows making the germ band extend posteriorly [@Vincent1997-fa; @Dicko2017-wz].
+<!--TODO: Discuss the suggestions in a bit more detail-->
 
-These hypotheses focus on the suggestive positioning of the cephalic furrow at the head--trunk boundary.
-However, given the discontinuity of the cephalic furrow during gastrulation and the head--trunk boundary later in development, we wondered whether the furrow may also serve a function independent of the head-trunk boundary.
-What if the gene regulatory network positioning the furrow has been utilized by evolution for a different purpose?
+Because the cephalic furrow has such tight genetic control, it suggests that it may have a role important enough to have been fixed during evolution.
+Because it is a transient structure, it is probably accomplishing something during its short existence.
+
+It has been proposed that the cephalic furrow acts as temporary storage of anterior surface cells until a later time in development [@Turner1977-ol].
+Indeed, recent data suggests the cephalic furrow stores about 20% of epithelial cells [].
+But why would the embryo need that?
+One hypothesis is that the cephalic furrow functions as an anchor or barrier to the anterior ventral cells and tissue flows, making the germ band extend posteriorly [@Vincent1997-fa; @Dicko2017-wz].
+
+- it has been proposed the CF is a temporary storage and indeed it stores 20% of cells
+- the question is what for and why does it need such tight control
+- and point out that a transient role is compatible with a transient mechanical role
+- a physical role as barrier has been proposed in simulations, but not in vivo
+- and how we investigated if the cephalic furrow has a mechanical role and its relevance for fly gastrulation.
+
 To answer this question, we investigated the morphogenetic consequences of removing the cephalic furrow
+
+<!--These hypotheses focus on the suggestive positioning of the cephalic furrow at the head--trunk boundary.-->
+<!--However, given the discontinuity of the cephalic furrow during gastrulation and the head--trunk boundary later in development, we wondered whether the furrow may also serve a function independent of the head-trunk boundary.-->
+<!--What if the gene regulatory network positioning the furrow has been utilized by evolution for a different purpose?-->
 
 <!--TODO: Paragraph is unclear because the hypotheses don’t really care about the HT boundary, and the point of gene regulatory network being coopted for other purposes needs a lot of explanation, and I think we don’t even have evidence for that. Also reads as a research proposal.-->
 <!--TODO: Suggestion: Discuss the suggestions in a bit more detail (it has been proposed the CF is a temporary storage and indeed it stores 20% of cells, the question is what for and why does it need such tight control), and point out that a transient role is compatible with a transient mechanical role (a physical role as barrier has been proposed in simulations, but not in vivo), and how we investigated if the cephalic furrow has a mechanical role and what is its relevance for fly gastrulation.-->
