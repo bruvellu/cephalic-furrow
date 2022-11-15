@@ -82,6 +82,8 @@ syncbib:
 share:
 	# Updates shared manuscript folder
 	rsync -ahu --progress --exclude 'Vid*.jpg' --exclude 'source' --copy-links --delete ${FIGUREOUT}/ ${CLOUD}/figures/
-	cp ${OUTDIR}/${TIMESTAMPED}.docx ${CLOUD}/
-	cp ${OUTDIR}/${TIMESTAMPED}.pdf ${CLOUD}/
+	cp ${OUTDIR}/${TIMESTAMPED}.docx ${CLOUD}/versions/
+	cp ${OUTDIR}/${TIMESTAMPED}.pdf ${CLOUD}/versions/
+	cp ${OUTDIR}/${TIMESTAMPED}.docx ${CLOUD}/latest_furrow.docx
+	cp ${OUTDIR}/${TIMESTAMPED}.pdf ${CLOUD}/latest_furrow.pdf
 	
