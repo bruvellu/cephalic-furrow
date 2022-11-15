@@ -243,7 +243,7 @@ Local expansion of the mitotic domains is one potential source of this stress.
 
 <!--TODO: Initial sentence may not be accurate-->
 <!--TODO: Describe exactly what the strain rate analysis can tell-->
-<!--TODO: Checked Blanchard paper and what we did is not the same. Their pipeline is based on cell segmentation and tracking and ours is simply based on PIV, much more simplified. So what it tell us is not the strain rate but the rate of convergent flows in the tissue. It shows the difference in dynamics between CF where the rate of invagination slowly raises to a peak whereas the EFs have a steeper climb to a higher peak. This data supports the view that EFs are buckle abruptly as it is expected to happen in tissue buckling under external compressive stresses.-->
+<!--TODO: Checked Blanchard paper and what we did is not the same. Their pipeline is based on cell segmentation and tracking and ours is simply based on PIV, much more simplified. So what it tell us is not the strain rate but the rate of convergent flows in the tissue. It shows the difference in dynamics between CF where the rate of invagination slowly raises to a peak whereas the EFs have a steeper climb to a higher peak. This data supports the view that EFs buckle abruptly as it is expected to happen in tissue buckling under external compressive stresses.-->
 <!--TODO: What does it mean that the strain rate is higher?-->
 <!--TODO: Try here and below also alternative ways of measuring stress or strain rate (all are valid to try). For example, shape index, density, tissue analyzer measures, strain inference, t1 transitions, neighbour exchange, tissue flows via piv, etc. It can help give better support for this section-->
 
@@ -504,6 +504,16 @@ Taken together, the cephalic furrow suppresses the mechanical instability of the
 <!--Some predictions that can be taken from the models: what is the minimum/maximum area that needs to be invaginated so that the germ band does not causes ectopic folds. It suggests how much of the mitotic expansion and extension are needed to create instability in an epithelial monolayer. Finally, it suggests that the germ band is also pushing the epithelium in vivo.-->
 
 # Discussion
+
+<!--Outline for discussion:
+
+1. We find and propose a CF role which makes sense for a prepatterned/transient structure with no associated fates
+2. CF solves a mechanical instability problem created by standard gastrulation events MD/GB
+3. Is mechanical instability a known issue? if yes, it could have detrimental effects
+4. Suggests the CF might have been selected for solving this problem and canalize development5. If that's the case we expect that the stressors MD/GB to have evolved before the CF
+6. That's the case from Lemke's data
+7. Our scenario suggests that accumulation of concomitant morphogenetic events in gastrulation, probably due to increase in dev speed, increased head-trunk stress leading to mechanical instability which was selected against leading to the evolution of the CF
+-->
 
 <!--TODO: Outline a discussion here to organize my thoughts-->
 <!--TODO: First paragraph should reinforce the main point by revisiting points raised in the introduction. For example, Our works provide a novel view on the developmental role of the cephalic furrow. This pre-patterned furrow that autonomously invaginates early on gastrulation primes the position of folding, making a predictable and stereotypic infolding point where a significant portion of the head epithelial cells is stored under the surface before any of the upcoming morphogenetic events take place. When they happen, the expansion of MDs and the compression from GB are geared toward the CF which act as a mechanical sink for these concomitant compressive forces of gastrulation. The invagination prevents the otherwise erratic epithelial buckling and solves a mechanical problem of epithelial instability in the embryo. Mechanical instability is known to perturb patterning and even lose ATP, and it at least may cause developmental delays from all the tissue ruffling, which could have a negative evolutionary effect in the long term-->
