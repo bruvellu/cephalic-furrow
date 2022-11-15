@@ -131,6 +131,8 @@ A couple of hours after gastrulation, the cephalic furrow completely unfolds wit
 This is in stark contrast to other embryonic invaginations.
 While the ventral furrow and midgut invaginations fulfil clear roles in development---giving rise to mesoderm and endoderm precursors, respectively---the function of the cephalic furrow has remained enigmatic for decades.
 
+<!--TODO: Add the contrast between tightly regulated and function unknown-->
+
 <!--DIFF: Moved the head--trunk information further up and tried to build up the expectations to culminate in the question of what is the function, the transition to the next paragraph.-->
 
 <!--TODO: The paragraph is ok, but it’s also too specialized to people familiar with Drosophila. Perhaps we need a more general opening statement and some kind of introduction to fly terms like blastoderm, ventral furrow, germ band, etc.-->
@@ -147,7 +149,17 @@ One hypothesis is that the cephalic furrow can act as an anchor for the anterior
 Numerical simulations provided some support for this, suggesting that the cephalic furrow provides a barrier that orients tissue flows [@Dicko2017-wz].
 However, the physical consequences of removing the cephalic furrow have not yet been investigated *in vivo*.
 
+<!--TODO: put refs somewhere.-->
+
+<!--TODO: The reason for the storage sentence is unclear.-->
+
+<!--TODO: Convergent flow, zero velocity regions where the tissue is converging, we used this++-->
+
 <!--DIFF: Elaborated a bit more the hypothesis on the function of the furrow to introduce the idea of a physical role. I removed the story about the relation between patterning and furrow because it was not connected with the rest.-->
+
+<!--TODO: Wildtype expression with slp and ectopic folds-->
+<!--TODO: Ask whether the EFs previously described are genetically patterned > GRN not in register with EFs.-->
+
 
 <!--TODO: Insert the idea that the CF is unique that is has a tightly regulated formation, suggesting it must be somewhat useful for the embryo, with genetic traits fixed by evolution, but it has no obvious permanent consequence to the embryo. The fact that it is transient, but prominent suggests it may have a important but transient function.-->
 
