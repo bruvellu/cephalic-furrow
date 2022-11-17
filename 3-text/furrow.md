@@ -128,12 +128,8 @@ Once inititated, the mechanical coupling between invaginating cells ensures the 
 The resulting head--trunk fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
 However, this prominence is only transient.
 A couple of hours after gastrulation, the cephalic furrow completely unfolds without giving rise to any specific embryonic tissue or larval structure; it disappears, leaving no trace [@Hartenstein1985-zs].
-This is in stark contrast to other embryonic invaginations.
-While the ventral furrow and midgut invaginations fulfil clear roles in development---giving rise to mesoderm and endoderm precursors, respectively---the function of the cephalic furrow has remained enigmatic for decades.
-
-<!--TODO: Add the contrast between tightly regulated and function unknown-->
-
-<!--DIFF: Moved the head--trunk information further up and tried to build up the expectations to culminate in the question of what is the function, the transition to the next paragraph.-->
+This is in stark contrast to other embryonic invaginations, such as the ventral furrow and midgut invaginations which fulfil clear roles in development---giving rise to mesoderm and endoderm precursors, respectively.
+The cephalic furrow is, therefore, a puzzling invagination because it has a finely regulated formation but has no obvious function.
 
 <!--TODO: The paragraph is ok, but it’s also too specialized to people familiar with Drosophila. Perhaps we need a more general opening statement and some kind of introduction to fly terms like blastoderm, ventral furrow, germ band, etc.-->
 
