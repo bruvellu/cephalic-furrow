@@ -132,6 +132,7 @@ This is in stark contrast to other embryonic invaginations, such as the ventral 
 The cephalic furrow is, therefore, a puzzling invagination because it has a finely regulated formation but has no obvious function.
 
 <!--TODO: The paragraph is ok, but it’s also too specialized to people familiar with Drosophila. Perhaps we need a more general opening statement and some kind of introduction to fly terms like blastoderm, ventral furrow, germ band, etc.-->
+<!--TODO: Insert the idea that the CF is unique that is has a tightly regulated formation, suggesting it must be somewhat useful for the embryo, with genetic traits fixed by evolution, but it has no obvious permanent consequence to the embryo. The fact that it is transient, but prominent suggests it may have a important but transient function.-->
 
 <!--prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
 <!--the two determines the row of initiator cells [@Vincent1997-fa].-->
@@ -143,7 +144,9 @@ Because a significant number of blastoderm cells invaginate with the cephalic fu
 One hypothesis is that these cells stored beneath the surface provide an anchoring point or barrier to anterior tissues that help directing the germ band to the posterior end during gastrulation [@Costa1993-qj; @Dicko2017-wz].
 But the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].
 The analysis of *eve* mutants, however, revealed a puzzling phenotype---embryos lacking the cephalic furrow still form, later in development, a tissue fold at the same site whose origins and mechanisms of formation remained unclear [@Vincent1997-fa].
-Intrigued by this observation, we set to understand what causes the formation of a late fold in *eve* mutants, genetics or mechanics, and whether it is a gene-specific phenotype or a general consequence of disrupting the formation of the cephalic furrow.
+Intrigued by this observation, we set to understand the underlying mechanisms for the formation of a late fold in *eve* mutants, and whether this phenotype is specific to *eve* or a general consequence of disrupting the formation of the cephalic furrow.
+
+<!--TODO: Figure out how to make the connection with genes-->
 
 <!--physical consequences of perturbing the formation of the cephalic furrow *in vivo*-->
 <!--This idea of a barrier that orients tissue flows is supported by numerical simulations.-->
@@ -155,10 +158,6 @@ Intrigued by this observation, we set to understand what causes the formation of
 
 <!--Ectopic folds were first described in *eve* mutants [@Vincent1997-fa]. The authors observed that a late fold would frequently form near the cephalic furrow region *eve* embryos. Because it was irregular, variable in position, and only formed after the appearance of mitotic domains, they suggested that these late folds were not the result of the cephalic furrow program [@Vincent1997-fa]. In *btd* mutants, the presence of ectopic folds was only observed recently [@Eritano2020-mi; see Figure S5B]. Our analyses indicate that ectopic folds appear in *btd* and *eve* mutants because they lack a cephalic furrow.-->
 
-<!--DIFF: Elaborated a bit more the hypothesis on the function of the furrow to introduce the idea of a physical role. I removed the story about the relation between patterning and furrow because it was not connected with the rest.-->
-
-<!--TODO: Insert the idea that the CF is unique that is has a tightly regulated formation, suggesting it must be somewhat useful for the embryo, with genetic traits fixed by evolution, but it has no obvious permanent consequence to the embryo. The fact that it is transient, but prominent suggests it may have a important but transient function.-->
-
 <!--TODO: When to bring the information that the CF is an evolutionary novelty? More or less here would be appropriate but in this context it really needs to be just a mention citing.-->
 <!--TODO: The alternative is to put it from the beginning that we know it’s a novelty. Not only it’s mysterious but it is a new unique morphogenetic trait that evolved within the dipteran lineage-->
 
@@ -166,8 +165,7 @@ Intrigued by this observation, we set to understand what causes the formation of
 <!--Our study investigates the role of the cephalic furrow by integrating live-imaging of mutant embryos, *in vivo* mechanical perturbations, and *in silico* simulations. -->
 
 <!--TODO: Wildtype expression with slp and ectopic folds-->
-
-<!--TODO: Ask whether the EFs previously described are genetically patterned > GRN not in register with EFs.-->
+<!--TODO: Ask if eve EFs are genetically patterned > GRN not in register with EFs.-->
 
 To investigate the impact of the absence of the cephalic furrow, we generated fluorescent *btd* and *eve* mutant lines carrying fluorescent markers of cell shape (see Methods).
 We then imaged mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation.
