@@ -70,9 +70,12 @@ linkvid:
 
 compile:
 	# Compile timestamped documents to output directory
-	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.odt -o ${OUTDIR}/${TIMESTAMPED}.odt
-	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.docx -o ${OUTDIR}/${TIMESTAMPED}.docx
-	pandoc ${FILE}.md ${FILTERS} --pdf-engine=pdflatex -o ${OUTDIR}/${TIMESTAMPED}.pdf
+	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.odt -o ${FILE}.odt
+	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.docx -o ${FILE}.docx
+	pandoc ${FILE}.md ${FILTERS} --pdf-engine=pdflatex -o ${FILE}.pdf
+	cp ${FILE}.odt ${OUTDIR}/${TIMESTAMPED}.odt
+	cp ${FILE}.docx ${OUTDIR}/${TIMESTAMPED}.docx
+	cp ${FILE}.pdf ${OUTDIR}/${TIMESTAMPED}.pdf
 	cp ${FILE}.md ${OUTDIR}/${TIMESTAMPED}.md 
 
 syncbib:
