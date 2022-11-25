@@ -143,8 +143,10 @@ The ephemeral nature of the cephalic furrow suggests it may have a more immediat
 Because a significant number of blastoderm cells invaginate with the cephalic furrow (about 10% according to recent estimates [@Stern2021-zv]), it can act as a temporary storage for anterior cells until later in development [@Turner1977-ol].
 One hypothesis is that these cells stored beneath the surface provide an anchoring point or barrier to anterior tissues that help directing the germ band to the posterior end during gastrulation [@Costa1993-qj; @Dicko2017-wz].
 But the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].
-The analysis of *eve* mutants, however, revealed a puzzling phenotype---embryos lacking the cephalic furrow still form, later in development, a tissue fold at the same site whose origins and mechanisms of formation remained unclear [@Vincent1997-fa].
+The analysis of *eve* mutants, however, revealed a puzzling phenotype---embryos lacking the cephalic furrow still form, later in development, a late fold at the same site whose origins and mechanisms of formation remained unclear [@Vincent1997-fa].
 Intrigued by this observation, we set to understand the underlying mechanisms for the formation of a late fold in *eve* mutants, and whether this phenotype is specific to *eve* or a general consequence of disrupting the formation of the cephalic furrow.
+
+<!--This corroborates a recent observation in *btd* embryos [@Eritano2020-mi].-->
 
 <!--TODO: Figure out how to make the connection with genes-->
 
@@ -167,10 +169,20 @@ Intrigued by this observation, we set to understand the underlying mechanisms fo
 <!--TODO: Wildtype expression with slp and ectopic folds-->
 <!--TODO: Ask if eve EFs are genetically patterned > GRN not in register with EFs.-->
 
-To investigate the impact of the absence of the cephalic furrow, we generated fluorescent *btd* and *eve* mutant lines carrying fluorescent markers of cell shape (see Methods).
-We then imaged mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation.
-The results revealed that in the absence of cephalic furrow, ectopic epithelial folds appear on the head--trunk interface of both mutants about 15 min after the cephalic furrow would have formed ({@fig:ectopic}a,b, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
-This corroborates previous observations of irregular folds in *eve* and *btd* mutant backgrounds [@Vincent1997-fa; @Eritano2020-mi].
+To investigate the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and loss of function alleles for the three genes known to affect cephalic furrow formation (see Methods): *btd* and *eve* where it fails to initiate [@Vincent1997-fa], and *prd* where it is delayed [@Blankenship2001-tm].
+We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics and to characterize the relative timing of events during gastrulation within the different genetic backgrounds ({@fig:ectopic}a).
+Our recordings show that a late fold as described for *eve* mutants [@Vincent1997-fa], also appears near the head--trunk interface of *btd* mutants ({@fig:ectopic}b).
+These ectopic folds in *btd* and *eve* mutants appear about 15 min after the cephalic furrow would have formed ({@fig:ectopic}a,c,d, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
+
+
+, corroborating a more recent observation in *btd* embryos [@Eritano2020-mi].
+
+
+Compared to the cephalic furrow which stays folded for about two hours, these ectopic folds disappear within 20 min ({@fig:ectopic}c).
+
+Our high-resolution imaging revealed that both *btd* and *eve* homozygous embryos can exhibit one to four epithelial folds on each side (*btd*=2.3±0.9 n=12, *eve*=1.8±0.7 n=9, see Table S1) while sibling controls (heterozygote embryos for *btd* or *eve*) invariably show a single invagination---the cephalic furrow.
+
+They form either anterior or posterior to the head--trunk boundary and their position varies between individual mutant embryos ({@fig:ectopic}d, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}).
 
 <!--TODO: Put more emphasis on the causality between the CF absence and EF formation-->
 <!--TODO: Probably transfer some of the basic data from below to above (most mutants form EFs, they are delayed, they are quick to disappear-->
@@ -181,9 +193,6 @@ This corroborates previous observations of irregular folds in *eve* and *btd* mu
 
 <!--TODO: Update count of ectopic folds adding dorsal experiments-->
 
-Our high-resolution imaging revealed that both *btd* and *eve* homozygous embryos can exhibit one to four epithelial folds on each side (*btd*=2.3±0.9 n=12, *eve*=1.8±0.7 n=9, see Table S1) while sibling controls (heterozygote embryos for *btd* or *eve*) invariably show a single invagination---the cephalic furrow.
-Compared to the cephalic furrow which stays folded for about two hours, these ectopic folds disappear within 20 min ({@fig:ectopic}c).
-They form either anterior or posterior to the head--trunk boundary and their position varies between individual mutant embryos ({@fig:ectopic}d, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}).
 In contrast to the cephalic furrow which initiates as a straight line almost orthogonal to the anteroposterior axis and progressively declines posteriorly, the ectopic folds form already tilted and show no obvious trend in angular direction over time ({@fig:ectopic}e,f). 
 While the cephalic furrow shows stereotypic cell morphologies in the different regions of the fold [@Spencer2015-td] ({@fig:ectopic}b), ectopic folds lack wedge-shaped initiators, and have a wider and often asymmetric cleft ({@fig:ectopic}b, {!@fig:vid-profile-btd} and {!@fig:vid-profile-eve}).
 In addition, ectopic folds are nearly 25% shorter, and invaginate only half of the epithelial area compared to the cephalic furrow in sibling controls ({@fig:ectopic}g--i).
@@ -799,6 +808,20 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 ![Dorsal view of cephalic furrow formation in *stg* mutant embryos.
 ](figures/VidS3.jpg){#fig:vid-stg-dorsal tag="Video S3" width=50%}
+
+## Tables
+
+Table: Timing and percentage of germ band extension in cephalic furrow mutants. {#tbl:gbtable}
+
+| stock | zygosity | time  | pct    | n  |
+| ----- | -------- | ----- | ------ | -- |
+| wt    | wt       | 7.25  | 8.691  | 16 |
+| btd   | het      | 8.236 | 9.766  | 6  |
+|       | hom      | 21.35 | 36.34  | 5  |
+| eve   | het      | 12.18 | 8.833  | 7  |
+|       | hom      | 22.6  | 28.49  | 5  |
+| prd   | het      | 11.30 | 17.993 | 10 |
+|       | hom      | 18.2  | 33.03  | 5  |
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
 
