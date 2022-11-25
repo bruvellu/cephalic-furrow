@@ -171,16 +171,16 @@ two different moments: initial infolding/buckling (buck) and deepest point
 (deep).
 
 ```{r plot-gb-pct}
-ggplot(gblong, aes(stock, gb_pct, color = zygosity, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
-  geom_point(alpha = 0.8, size = 2, show.legend = TRUE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+ggplot(gblong, aes(stock, gb_pct, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_point(alpha = 0.8, size = 2, show.legend = TRUE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(title = "Ectopic folding by germ band position",
        x = "stocks", y = "germ band extension (%)") +
   facet_grid(rows = vars(status), cols = vars(stock), scales = "free") +
   theme_classic() +
-  theme(text = element_text(size = 20),
+  theme(text = element_text(size = 35),
         title = element_text(size = 15),
         legend.text = element_text(size = 15),
         strip.background = element_blank(),
@@ -193,16 +193,16 @@ ggsave("2-plots/gb_pct.svg", width = 15, height = 8)
 Second, we plot the time after gastrulation (min).
 
 ```{r plot-gb-time}
-ggplot(gblong, aes(stock, gb_time, color = zygosity, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
-  geom_point(alpha = 0.8, size = 2, show.legend = TRUE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+ggplot(gblong, aes(stock, gb_time, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_point(alpha = 0.8, size = 2, show.legend = TRUE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(title = "Ectopic folding by time after gastrulation",
        x = "stocks", y = "time after gastrulation (min)") +
   facet_grid(rows = vars(status), cols = vars(stock), scales = "free") +
   theme_classic() +
-  theme(text = element_text(size = 20),
+  theme(text = element_text(size = 35),
         title = element_text(size = 15),
         legend.text = element_text(size = 15),
         strip.background = element_blank(),
@@ -219,43 +219,43 @@ is the initial buckling/infolding relative to GB position and time after
 gastrulation. First the germ band extension percentage:
 
 ```{r plot-gb-pct-buck}
-ggplot(gblong[gblong$status == "buck",], aes(stock, gb_pct, color = zygosity, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
+ggplot(gblong[gblong$status == "buck",], aes(stock, gb_pct, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(x = "stocks", y = "germ band extension (%)") +
   facet_grid(cols = vars(stock), scales = "free") +
   theme_classic() +
-  theme(text = element_text(size = 20),
-        title = element_text(size = 15),
-        legend.text = element_text(size = 15),
+  theme(text = element_text(size = 35),
+        #title = element_text(size = 15),
+        #legend.text = element_text(size = 15),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_pct_buck.png", width = 15, height = 8)
-ggsave("2-plots/gb_pct_buck.svg", width = 15, height = 8)
+ggsave("2-plots/gb_pct_buck.png", width = 12, height = 4)
+ggsave("2-plots/gb_pct_buck.svg", width = 12, height = 4)
 ```
 
 Then the time after gastrulation:
 
 ```{r plot-gb-time-buck}
-ggplot(gblong[gblong$status == "buck",], aes(stock, gb_time, color = zygosity, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+ggplot(gblong[gblong$status == "buck",], aes(stock, gb_time, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(x = "stocks", y = "time after gastrulation (min)") +
   facet_grid(cols = vars(stock), scales = "free") +
   theme_classic() +
-  theme(text = element_text(size = 20),
-        title = element_text(size = 15),
-        legend.text = element_text(size = 15),
+  theme(text = element_text(size = 35),
+        #title = element_text(size = 15),
+        #legend.text = element_text(size = 15),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_time_buck.png", width = 15, height = 8)
-ggsave("2-plots/gb_time_buck.svg", width = 15, height = 8)
+ggsave("2-plots/gb_time_buck.png", width = 12, height = 4)
+ggsave("2-plots/gb_time_buck.svg", width = 12, height = 4)
 ```
 
 ## Supplementary figure plots
@@ -263,39 +263,39 @@ ggsave("2-plots/gb_time_buck.svg", width = 15, height = 8)
 The deepest point goes into the supplementary.
 
 ```{r plot-gb-pct-deep}
-ggplot(gblong[gblong$status == "deep",], aes(stock, gb_pct, color = zygosity, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
+ggplot(gblong[gblong$status == "deep",], aes(stock, gb_pct, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(x = "stocks", y = "germ band extension (%)") +
   facet_grid(cols = vars(stock), scales = "free") +
   theme_classic() +
-  theme(text = element_text(size = 20),
-        title = element_text(size = 15),
-        legend.text = element_text(size = 15),
+  theme(text = element_text(size = 35),
+        #title = element_text(size = 15),
+        #legend.text = element_text(size = 15),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_pct_deep.png", width = 15, height = 8)
-ggsave("2-plots/gb_pct_deep.svg", width = 15, height = 8)
+ggsave("2-plots/gb_pct_deep.png", width = 12, height = 4)
+ggsave("2-plots/gb_pct_deep.svg", width = 12, height = 4)
 ```
 
 ```{r plot-gb-time-deep}
-ggplot(gblong[gblong$status == "deep",], aes(stock, gb_time, color = zygosity, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.3, scale = "area", adjust = 1) +
+ggplot(gblong[gblong$status == "deep",], aes(stock, gb_time, fill = zygosity)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(x = "stocks", y = "time after gastrulation (min)") +
   facet_grid(cols = vars(stock), scales = "free") +
   theme_classic() +
-  theme(text = element_text(size = 20),
-        title = element_text(size = 15),
-        legend.text = element_text(size = 15),
+  theme(text = element_text(size = 35),
+        #title = element_text(size = 15),
+        #legend.text = element_text(size = 15),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_time_deep.png", width = 15, height = 8)
-ggsave("2-plots/gb_time_deep.svg", width = 15, height = 8)
+ggsave("2-plots/gb_time_deep.png", width = 12, height = 4)
+ggsave("2-plots/gb_time_deep.svg", width = 12, height = 4)
 ```
