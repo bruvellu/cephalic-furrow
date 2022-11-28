@@ -173,11 +173,10 @@ To investigate the impact of cephalic furrow defects, we generated fluorescent l
 We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation, and were able to characterize in detail the relative timing of developmental events in the different genetic backgrounds ({@fig:ectopic}a).
 
 Our recordings show that a late fold as described for *eve* mutants [@Vincent1997-fa], also appears near the head--trunk interface of *btd* mutants ({@fig:ectopic}b).
-These ectopic folds in *btd* and *eve* mutants appear about 15 min after the cephalic furrow would have formed ({@fig:ectopic}a,c,d, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
 
+These ectopic folds in *btd* and *eve* mutants appear about 15 min after the cephalic furrow would have formed ({@fig:ectopic}a,c,d, {@tbl:gbtime}, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
 
 corroborating a more recent observation in *btd* embryos [@Eritano2020-mi].
-
 
 Compared to the cephalic furrow which stays folded for about two hours, these ectopic folds disappear within 20 min ({@fig:ectopic}c).
 
@@ -825,7 +824,7 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 <!--|          | −/−          | CF   | 18.2      | 33.0    | 5  |-->
 
 
-Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (tag) and the percentage of germ band extension (gbe) at the time of infolding/buckling. {#tbl:gbtableh}
+Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (tag) and the percentage of germ band extension (gbe) at the time of infolding/buckling. {#tbl:gbtime}
 
 |           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
 | --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
