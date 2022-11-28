@@ -169,13 +169,14 @@ Intrigued by this observation, we set to understand the underlying mechanisms fo
 <!--TODO: Wildtype expression with slp and ectopic folds-->
 <!--TODO: Ask if eve EFs are genetically patterned > GRN not in register with EFs.-->
 
-To investigate the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and loss of function alleles for the three genes known to affect cephalic furrow formation (see Methods): *btd* and *eve* where it fails to initiate [@Vincent1997-fa], and *prd* where it is delayed [@Blankenship2001-tm].
-We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics and to characterize the relative timing of events during gastrulation within the different genetic backgrounds ({@fig:ectopic}a).
+To investigate the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and a loss of function allele for three genes known to affect cephalic furrow formation (see Methods)---*btd* and *eve* where the cephalic furrow fails to initiate [@Vincent1997-fa], and *prd* where the cephalic furrow is delayed [@Blankenship2001-tm].
+We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation, and were able to characterize in detail the relative timing of developmental events within the different genetic backgrounds ({@fig:ectopic}a).
+
 Our recordings show that a late fold as described for *eve* mutants [@Vincent1997-fa], also appears near the head--trunk interface of *btd* mutants ({@fig:ectopic}b).
 These ectopic folds in *btd* and *eve* mutants appear about 15 min after the cephalic furrow would have formed ({@fig:ectopic}a,c,d, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
 
 
-, corroborating a more recent observation in *btd* embryos [@Eritano2020-mi].
+corroborating a more recent observation in *btd* embryos [@Eritano2020-mi].
 
 
 Compared to the cephalic furrow which stays folded for about two hours, these ectopic folds disappear within 20 min ({@fig:ectopic}c).
@@ -811,17 +812,18 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 ## Tables
 
-Table: Timing and percentage of germ band extension in cephalic furrow mutants. {#tbl:gbtable}
+Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (tag) and the percentage of germ band extension (gbe) at the time of infolding/buckling. {#tbl:gbtable}
 
-| stock | zygosity | time  | pct    | n  |
-| ----- | -------- | ----- | ------ | -- |
-| wt    | wt       | 7.25  | 8.691  | 16 |
-| btd   | het      | 8.236 | 9.766  | 6  |
-|       | hom      | 21.35 | 36.34  | 5  |
-| eve   | het      | 12.18 | 8.833  | 7  |
-|       | hom      | 22.6  | 28.49  | 5  |
-| prd   | het      | 11.30 | 17.993 | 10 |
-|       | hom      | 18.2  | 33.03  | 5  |
+| stock    | zygosity     | type | tag (min) | gbe (%) | n  |
+| -------- | ------------ | ---- | --------- | ------- | -- |
+| wildtype | -            | CF   | 7.2       | 8.7     | 16 |
+| *btd*    | heterozygote | CF   | 8.2       | 9.8     | 6  |
+|          | homozygote   | EFs  | 21.3      | 36.3    | 5  |
+| *eve*    | heterozygote | CF   | 12.2      | 8.8     | 7  |
+|          | homozygote   | EFs  | 22.6      | 28.5    | 5  |
+| *prd*    | heterozygote | CF   | 11.3      | 18.0    | 10 |
+|          | homozygote   | CF   | 18.2      | 33.0    | 5  |
+
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
 
