@@ -143,8 +143,15 @@ print_stats <- function(dataframe, stock) {
   # Select relevant columns
   cols <- c("embryo", "gb_pct_buck", "gb_pct_deep", "time_buck", "time_deep")
   # Summarize data
+  print("-------------------")
   print(stock)
   print(by(gb[,cols], gb$zygosity, summary))
+  print("-------------------")
+  print("SD: gb_pct_buck")
+  print(by(gb[,"gb_pct_buck"], gb$zygosity, sd))
+  print("-------------------")
+  print("SD: time_buck")
+  print(by(gb[,"time_buck"], gb$zygosity, sd))
   }
 
 # Print summary statistics
