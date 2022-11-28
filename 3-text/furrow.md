@@ -170,7 +170,7 @@ Intrigued by this observation, we set to understand the underlying mechanisms fo
 <!--TODO: Ask if eve EFs are genetically patterned > GRN not in register with EFs.-->
 
 To investigate the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and a loss of function allele for three genes known to affect cephalic furrow formation (see Methods)---*btd* and *eve* where the cephalic furrow fails to initiate [@Vincent1997-fa], and *prd* where the cephalic furrow is delayed [@Blankenship2001-tm].
-We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation, and were able to characterize in detail the relative timing of developmental events within the different genetic backgrounds ({@fig:ectopic}a).
+We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation, and were able to characterize in detail the relative timing of developmental events in the different genetic backgrounds ({@fig:ectopic}a).
 
 Our recordings show that a late fold as described for *eve* mutants [@Vincent1997-fa], also appears near the head--trunk interface of *btd* mutants ({@fig:ectopic}b).
 These ectopic folds in *btd* and *eve* mutants appear about 15 min after the cephalic furrow would have formed ({@fig:ectopic}a,c,d, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
@@ -812,17 +812,28 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 ## Tables
 
-Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (tag) and the percentage of germ band extension (gbe) at the time of infolding/buckling. {#tbl:gbtable}
+<!--Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (tag) and the percentage of germ band extension (gbe) at the time of infolding/buckling. {#tbl:gbtable}-->
 
-| stock    | zygosity     | type | tag (min) | gbe (%) | n  |
-| -------- | ------------ | ---- | --------- | ------- | -- |
-| wildtype | -            | CF   | 7.2       | 8.7     | 16 |
-| *btd*    | heterozygote | CF   | 8.2       | 9.8     | 6  |
-|          | homozygote   | EFs  | 21.3      | 36.3    | 5  |
-| *eve*    | heterozygote | CF   | 12.2      | 8.8     | 7  |
-|          | homozygote   | EFs  | 22.6      | 28.5    | 5  |
-| *prd*    | heterozygote | CF   | 11.3      | 18.0    | 10 |
-|          | homozygote   | CF   | 18.2      | 33.0    | 5  |
+<!--| stock    | zygosity     | type | tag (min) | gbe (%) | n  |-->
+<!--| -------- | ------------ | ---- | --------- | ------- | -- |-->
+<!--| wildtype | +/+          | CF   | 7.2       | 8.7     | 16 |-->
+<!--| *btd*    | +/−          | CF   | 8.2       | 9.8     | 6  |-->
+<!--|          | −/−          | EFs  | 21.3      | 36.3    | 5  |-->
+<!--| *eve*    | +/−          | CF   | 12.2      | 8.8     | 7  |-->
+<!--|          | −/−          | EFs  | 22.6      | 28.5    | 5  |-->
+<!--| *prd*    | +/−          | CF   | 11.3      | 18.0    | 10 |-->
+<!--|          | −/−          | CF   | 18.2      | 33.0    | 5  |-->
+
+
+Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (tag) and the percentage of germ band extension (gbe) at the time of infolding/buckling. {#tbl:gbtableh}
+
+|           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
+| --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
+| Zygosity  | +/+      | +/−     | −/−      | +/−      | −/−      | +/−       | −/−      |
+| Type      | CF       | CF      | EFs      | CF       | EFs      | CF        | CF       |
+| TAG (min) | 7.2±2.2  | 8.2±1.7 | 21.3±4.7 | 12.2±1.7 | 22.6±2.6 | 11.3±6.2  | 18.2±5.4 |
+| GBE (%)   | 8.7±1.7  | 9.8±1.9 | 36.3±2.4 | 8.8±2.3  | 28.5±3.9 | 18.0±12.2 | 33.0±9.5 |
+| n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
 
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
