@@ -72,7 +72,7 @@ compile:
 	# Compile timestamped documents to output directory
 	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.odt -o ${FILE}.odt
 	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.docx -o ${FILE}.docx
-	pandoc ${FILE}.md ${FILTERS} --pdf-engine=pdflatex -o ${FILE}.pdf
+	pandoc ${FILE}.md ${FILTERS} --pdf-engine=xelatex -o ${FILE}.pdf
 	cp ${FILE}.odt ${OUTDIR}/${TIMESTAMPED}.odt
 	cp ${FILE}.docx ${OUTDIR}/${TIMESTAMPED}.docx
 	cp ${FILE}.pdf ${OUTDIR}/${TIMESTAMPED}.pdf
