@@ -14,66 +14,66 @@ experiment	stock	genotype	zygosity	view	embryo	xres	yres	zres	timestep	channels	
 2019-10-03_prd-Gap	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	prd-Gap_1_t60s_E15	0.2853696	0.2853696	3.0000000	60			170	1		FALSE
 2019-10-03_prd-Gap	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	prd-Gap_1_t60s_E16	0.2853696	0.2853696	3.0000000	60			170	1		FALSE
 															
-2020-01-15_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap_1_E13				60				1		
+2020-01-15_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap_1_E13				60				1		TRUE
 															
-2020-01-17_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap_1_t45s_z3_E1				45				1		
-2020-01-17_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap_1_t45s_z3_E4				45				1		
-2020-01-17_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap_1_t45s_z3_E11				45				2		
+2020-01-17_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap_1_t45s_z3_E1				45				1		FALSE
+2020-01-17_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap_1_t45s_z3_E4				45				1		FALSE
+2020-01-17_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap_1_t45s_z3_E11				45				2		TRUE
 															
-2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap1_t60s_z3_E2				60				2		
-2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap1_t60s_z3_E3				60				2		
-2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E4				60				1		
-2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E5				60				1		
-2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E9				60				1		
-2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E11				60				1		
-2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap1_t60s_z3_E12				60				2		
+2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap1_t60s_z3_E2				60				2		TRUE
+2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap1_t60s_z3_E3				60				2		TRUE
+2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E4				60				1		FALSE
+2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E5				60				1		FALSE
+2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E9				60				1		FALSE
+2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E11				60				1		FALSE
+2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	lateral	eve-Gap1_t60s_z3_E12				60				2		TRUE
 2020-01-22_eve-Gap	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	lateral	eve-Gap1_t60s_z3_E16				60				1		
 															
-2020-02-10_btd-hisgap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-hisgap1_E7	0.2853696	0.2853696	3.0000000	60			300	1		
-2020-02-10_btd-hisgap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-hisgap1_E8	0.2853696	0.2853696	3.0000000	60			300	3		
+2020-02-10_btd-hisgap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-hisgap1_E7	0.2853696	0.2853696	3.0000000	60			300	1		FALSE
+2020-02-10_btd-hisgap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-hisgap1_E8	0.2853696	0.2853696	3.0000000	60			300	3		TRUE
 															
-2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap_z3_t55s_E3	0.2853696	0.2853696	3.0000000	55			150	1		
-2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap_z3_t55s_E6	0.2853696	0.2853696	3.0000000	55			150	4		
-2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap_z3_t55s_E8	0.2853696	0.2853696	3.0000000	55			150	2		
-2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap_z3_t55s_E10	0.2853696	0.2853696	3.0000000	55			150	1		
-2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap_z3_t55s_E12	0.2853696	0.2853696	3.0000000	55			150	1		
-2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap_z3_t55s_E14	0.2853696	0.2853696	3.0000000	55			150	2		
+2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap_z3_t55s_E3	0.2853696	0.2853696	3.0000000	55			150	1		FALSE
+2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap_z3_t55s_E6	0.2853696	0.2853696	3.0000000	55			150	4		TRUE
+2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap_z3_t55s_E8	0.2853696	0.2853696	3.0000000	55			150	2		TRUE
+2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap_z3_t55s_E10	0.2853696	0.2853696	3.0000000	55			150	1		FALSE
+2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap_z3_t55s_E12	0.2853696	0.2853696	3.0000000	55			150	1		FALSE
+2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap_z3_t55s_E14	0.2853696	0.2853696	3.0000000	55			150	2		TRUE
 															
-2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap2_z3_t55s_E7	0.2853718	0.2853718	3.0000000	55			195	1		
-2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap2_z3_t55s_E8	0.2853718	0.2853718	3.0000000	55			195	1		
-2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap2_z3_t55s_E12	0.2853718	0.2853718	3.0000000	55			195	1		
-2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap2_z3_t55s_E14	0.2853718	0.2853718	3.0000000	55			195	1		
+2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap2_z3_t55s_E7	0.2853718	0.2853718	3.0000000	55			195	1		TRUE
+2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap2_z3_t55s_E8	0.2853718	0.2853718	3.0000000	55			195	1		FALSE
+2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap2_z3_t55s_E12	0.2853718	0.2853718	3.0000000	55			195	1		FALSE
+2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap2_z3_t55s_E14	0.2853718	0.2853718	3.0000000	55			195	1		TRUE
 															
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E1				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E3				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E4				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E5				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E6				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E8				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E9				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E10				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E11				51				1	1	
-2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal1_z3_t51s_E12				51				2	2	
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E1				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E3				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E4				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E5				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E6				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E8				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E9				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E10				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E11				51				1	1	FALSE
+2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal1_z3_t51s_E12				51				2	2	TRUE
 															
-2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E1				51				1	1	
-2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E2				51				4	3	
-2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E4				51				1	1	
-2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E5				51				1	1	
-2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E6				51				2	2	
-2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E8				51				1	1	
-2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E10				51				2	2	
-2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E13				51				1	1	
+2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E1				51				1	1	FALSE
+2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E2				51				4	3	TRUE
+2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E4				51				1	1	FALSE
+2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E5				51				1	1	FALSE
+2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E6				51				2	2	TRUE
+2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E8				51				1	1	FALSE
+2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E10				51				2	2	TRUE
+2020-10-13_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z1.5_t51s_E13				51				1	1	FALSE
 															
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E1				45				1	1	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E2				45				1	1	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E3				45				1	1	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E5				45				2	2	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E6				45				1	1	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E7				45				1	1	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E8				45				1	1	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E10				45				1	1	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E12				45				1	1	
-2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E14				45				2	2	
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E1				45				1	1	FALSE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E2				45				1	1	FALSE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E3				45				1	1	FALSE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E5				45				2	2	TRUE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E6				45				1	1	FALSE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E7				45				1	1	FALSE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E8				45				1	1	FALSE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E10				45				1	1	FALSE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E12				45				1	1	FALSE
+2020-10-14_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	dorsal	btd-gap_dorsal_1_z3_t45s_E14				45				2	2	TRUE
 															
 2020-10-19_prd-gap_dorsal	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	prd-gap_dorsal_1_z3_t41s_E3				41						
 2020-10-19_prd-gap_dorsal	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	prd-gap_dorsal_1_z3_t41s_E4				41						
@@ -105,25 +105,25 @@ experiment	stock	genotype	zygosity	view	embryo	xres	yres	zres	timestep	channels	
 2020-10-21_prd-gap_dorsal	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	prd-gap_1_z3_t52s_E18				52						
 2020-10-21_prd-gap_dorsal	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	prd-gap_1_z3_t52s_E19				52						
 															
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E1				52				1	1	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E2				52				1	1	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E4				52				1	1	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E8				52				1	2	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E9				52				3	3	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E10				52				1	1	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E11				52				1	1	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E12				52				1	1	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E17				52				1	1	
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E19				52				1	1	
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E1				52				1	1	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E2				52				1	1	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E4				52				1	1	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E8				52				1	2	TRUE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E9				52				3	3	TRUE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E10				52				1	1	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E11				52				1	1	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E12				52				1	1	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E17				52				1	1	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E19				52				1	1	TRUE
 															
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E2				53				1	1	
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E3				53				1	1	
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E4				53				2	1	
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E5				53				1	1	
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E6				53				1	1	
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E12				53				1	1	
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E14				53				2	2	
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E19				53				1	1	
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E2				53				1	1	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E3				53				1	1	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E4				53				2	1	TRUE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E5				53				1	1	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E6				53				1	1	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E12				53				1	1	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E14				53				2	2	TRUE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E19				53				1	1	FALSE
 															
 2021-08-25_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3	homozygote	lateral	Gap,stg[2]_2_z3_t50s_E1				50						
 2021-08-25_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3	homozygote	lateral	Gap,stg[2]_2_z3_t50s_E2				50						
@@ -216,22 +216,22 @@ experiment	stock	genotype	zygosity	view	embryo	xres	yres	zres	timestep	channels	
 2022-01-31_btd-gap-stg	btd-stg	btd[XA]/FM7cG;;Gap,stg[2]/Gap	btd homozygote	lateral	btd-gap-stg_8_z3_45s_E3				45						
 2022-01-31_btd-gap-stg	btd-stg	btd[XA]/FM7cG;;Gap,stg[2]/Gap	stg homozygote	lateral	btd-gap-stg_8_z3_45s_E8				45						
 															
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E1	0.2858705	0.2858705	3.0000000	60			142	2		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E2	0.2858705	0.2858705	3.0000000	60			142	1		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E3	0.2858705	0.2858705	3.0000000	60			142	3		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E4	0.2858705	0.2858705	3.0000000	60			142	2		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E5	0.2858705	0.2858705	3.0000000	60			142	3		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E6	0.2858705	0.2858705	3.0000000	60			142	2		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E7	0.2858705	0.2858705	3.0000000	60			142	2		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E8	0.2858705	0.2858705	3.0000000	60			142	2		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E9	0.2858705	0.2858705	3.0000000	60			142	1		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E11	0.2858705	0.2858705	3.0000000	60			142	3		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E12	0.2858705	0.2858705	3.0000000	60			142	1		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E13	0.2858705	0.2858705	3.0000000	60			142	1		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E14	0.2858705	0.2858705	3.0000000	60			142	2		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E15	0.2858705	0.2858705	3.0000000	60			142	2		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E16	0.2858705	0.2858705	3.0000000	60			142	3		
-2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E17	0.2858705	0.2858705	3.0000000	60			142	2		
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E1	0.2858705	0.2858705	3.0000000	60			142	2		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E2	0.2858705	0.2858705	3.0000000	60			142	1		FALSE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E3	0.2858705	0.2858705	3.0000000	60			142	3		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E4	0.2858705	0.2858705	3.0000000	60			142	2		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E5	0.2858705	0.2858705	3.0000000	60			142	3		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E6	0.2858705	0.2858705	3.0000000	60			142	2		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E7	0.2858705	0.2858705	3.0000000	60			142	2		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E8	0.2858705	0.2858705	3.0000000	60			142	2		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E9	0.2858705	0.2858705	3.0000000	60			142	1		FALSE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E11	0.2858705	0.2858705	3.0000000	60			142	3		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E12	0.2858705	0.2858705	3.0000000	60			142	1		FALSE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E13	0.2858705	0.2858705	3.0000000	60			142	1		FALSE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E14	0.2858705	0.2858705	3.0000000	60			142	2		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E15	0.2858705	0.2858705	3.0000000	60			142	2		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E16	0.2858705	0.2858705	3.0000000	60			142	3		TRUE
+2022-02-21_rgap	wt	Recombined-Gap43-mCherry	wildtype	lateral	rgap_1b_z3_t60s_E17	0.2858705	0.2858705	3.0000000	60			142	2		TRUE
 															
 2022-02-22_rgap_dorsal	wt	Recombined-Gap43-mCherry	wildtype	dorsal	rgap_dorsal_1_z3_t60s_E4				60						
 2022-02-22_rgap_dorsal	wt	Recombined-Gap43-mCherry	wildtype	dorsal	rgap_dorsal_1_z3_t60s_E5				60						
