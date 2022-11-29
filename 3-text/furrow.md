@@ -170,19 +170,21 @@ Intrigued by this phenotype, we set to investigate in a systematic manner the ph
 <!--TODO: Wildtype expression with slp and ectopic folds-->
 <!--TODO: Ask if eve EFs are genetically patterned > GRN not in register with EFs.-->
 
-To investigate the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and a loss of function allele for three genes known to affect cephalic furrow formation (see Methods)---*btd* and *eve* where the cephalic furrow fails to initiate [@Vincent1997-fa], and *prd* where the cephalic furrow is delayed [@Blankenship2001-tm].
-We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation, and were able to characterize in detail the relative timing of developmental events in the different genetic backgrounds ({@fig:ectopic}a).
-Our recordings show that a late fold as described for *eve* mutants [@Vincent1997-fa], also appears near the head--trunk interface of *btd* mutants ({@fig:ectopic}b).
+<!--TODO: Incorporate previous observations of folds. Corroborating a recent observation in *btd* embryos [@Eritano2020-mi].-->
 
-These ectopic folds in *btd* and *eve* mutants appear about 15 min after the cephalic furrow would have formed ({@fig:ectopic}a,c,d, {@tbl:gbtime}, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
-
-corroborating a more recent observation in *btd* embryos [@Eritano2020-mi].
-
-Compared to the cephalic furrow which stays folded for about two hours, these ectopic folds disappear within 20 min ({@fig:ectopic}c).
+To investigate the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and a loss of function allele for three genes known to affect cephalic furrow formation (see Methods)---*prd* where the cephalic furrow is delayed [@Blankenship2001-tm], and *btd* and *eve* where the cephalic furrow is absent [@Vincent1997-fa].
+We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture and characterize in detail the tissue dynamics during gastrulation and the relative timing of developmental events in the different genetic backgrounds ({@fig:ectopic}a).
+Our recordings show that both *btd* and *eve* embryos form a late fold at the head--trunk interface ({@fig:ectopic}b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
+These ectopic folds appear 15 min after the cephalic furrow would have formed, when the germ band is extended around 35% of the egg length, and disappear in only 20 min, quicker than the cephalic furrow which stays folded for about two hours ({@fig:ectopic}a,b,d, {@tbl:gbtime}).
 
 Our high-resolution imaging revealed that both *btd* and *eve* homozygous embryos can exhibit one to four epithelial folds on each side (*btd*=2.3±0.9 n=12, *eve*=1.8±0.7 n=9, see Table S1) while sibling controls (heterozygote embryos for *btd* or *eve*) invariably show a single invagination---the cephalic furrow.
 
 They form either anterior or posterior to the head--trunk boundary and their position varies between individual mutant embryos ({@fig:ectopic}d, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}).
+
+In contrast to the cephalic furrow which initiates as a straight line almost orthogonal to the anteroposterior axis and progressively declines posteriorly, the ectopic folds form already tilted and show no obvious trend in angular direction over time ({@fig:ectopic}e,f). 
+While the cephalic furrow shows stereotypic cell morphologies in the different regions of the fold [@Spencer2015-td] ({@fig:ectopic}b), ectopic folds lack wedge-shaped initiators, and have a wider and often asymmetric cleft ({@fig:ectopic}b, {!@fig:vid-profile-btd} and {!@fig:vid-profile-eve}).
+In addition, ectopic folds are nearly 25% shorter, and invaginate only half of the epithelial area compared to the cephalic furrow in sibling controls ({@fig:ectopic}g--i).
+Taken together, these analyses reveal that in the absence of the genetically determined cephalic furrow, ectopic folds with distinct positioning and dynamics appear in the area of the head--trunk boundary.
 
 <!--TODO: Put more emphasis on the causality between the CF absence and EF formation-->
 <!--TODO: Probably transfer some of the basic data from below to above (most mutants form EFs, they are delayed, they are quick to disappear-->
@@ -192,11 +194,6 @@ They form either anterior or posterior to the head--trunk boundary and their pos
 <!--We find that late epithelial folds appear on the head--trunk interface of both mutants in a consistent matter ({@fig:ectopic}a,b, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).-->
 
 <!--TODO: Update count of ectopic folds adding dorsal experiments-->
-
-In contrast to the cephalic furrow which initiates as a straight line almost orthogonal to the anteroposterior axis and progressively declines posteriorly, the ectopic folds form already tilted and show no obvious trend in angular direction over time ({@fig:ectopic}e,f). 
-While the cephalic furrow shows stereotypic cell morphologies in the different regions of the fold [@Spencer2015-td] ({@fig:ectopic}b), ectopic folds lack wedge-shaped initiators, and have a wider and often asymmetric cleft ({@fig:ectopic}b, {!@fig:vid-profile-btd} and {!@fig:vid-profile-eve}).
-In addition, ectopic folds are nearly 25% shorter, and invaginate only half of the epithelial area compared to the cephalic furrow in sibling controls ({@fig:ectopic}g--i).
-Taken together, these analyses reveal that in the absence of the genetically determined cephalic furrow, ectopic folds with distinct positioning and dynamics appear in the area of the head--trunk boundary.
 
 <!--EFs differ significantly from CF, suggesting they form via different mechanisms-->
 
