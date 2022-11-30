@@ -42,7 +42,7 @@ experiment	stock	genotype	zygosity	view	embryo	xres	yres	zres	timestep	frames	fo
 2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap2_z3_t55s_E7	0.2853718	0.2853718	3.0000000	55	195	1		TRUE
 2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap2_z3_t55s_E8	0.2853718	0.2853718	3.0000000	55	195	1		FALSE
 2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap2_z3_t55s_E12	0.2853718	0.2853718	3.0000000	55	195	1		FALSE
-2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap2_z3_t55s_E14	0.2853718	0.2853718	3.0000000	55	195	1		TRUE
+2020-09-17_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap2_z3_t55s_E14	0.2853718	0.2853718	3.0000000	55	195	0		FALSE
 													
 2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E1				51		1	1	FALSE
 2020-09-24_btd-gap_dorsal	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	dorsal	btd-gap_dorsal1_z3_t51s_E3				51		1	1	FALSE
