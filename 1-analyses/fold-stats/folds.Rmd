@@ -1,0 +1,115 @@
+---
+title: "Foldin statistics"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: November 30, 2022
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/fold-stats")
+library(ggplot2)
+```
+
+## Analysis
+
+The aim is to give a general
+
+
+```{r import}
+# Import main dataset
+datasets <- read.delim("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv", stringsAsFactors=TRUE)
+
+# Filter out NAs
+datasets <- datasets[!is.na(datasets$folds_left),]
+
+# Transform data frame to order the stock for plotting
+datasets <- transform(datasets, stock=factor(stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg")))
+
+# Function to print statistics
+print_stats <- function(dataframe, stock, zygosity) {
+  # Filtering parameters
+  filter_df <- (dataframe$stock == stock & dataframe$zygosity == zygosity)
+  # Subset data frame
+  df <- dataframe[filter_df,]
+  df <- droplevels(df)
+  
+  # Select relevant columns
+  #cols <- c("view", "folds_left", "folds_right", "folds_avg", "ectopic_folds")
+  #print(by(df[,cols], df$zygosity, summary))
+  
+  # Define row
+  row <- c(stock,
+           zygosity,
+           mean(df$folds_avg), sd(df$folds_avg),
+           (length(df[df$ectopic_folds == TRUE,]$ectopic_folds) / length(df$folds_avg)) * 100,
+           length(df$folds_avg),
+           length(df[df$view == "lateral",]$view),
+           length(df[df$view == "dorsal",]$view)
+           )
+  
+  # Summarize data
+  print(sprintf("%s %s / avg_folds=%.3f±%.3f / pct_ef=%.1f%% / n=%i / lat=%i / dor=%i",
+                stock, zygosity,
+                mean(df$folds_avg), sd(df$folds_avg),
+                (length(df[df$ectopic_folds == TRUE,]$ectopic_folds) / length(df$folds_avg)) * 100,
+                length(df$folds_avg),
+                length(df[df$view == "lateral",]$view),
+                length(df[df$view == "dorsal",]$view)
+                ))
+  return(row)
+  
+}
+
+# Save stats to data frame
+stats <- data.frame()
+
+# Bind row by row
+stats <- rbind(stats, print_stats(datasets, "wt", "wildtype"))
+stats <- rbind(stats, print_stats(datasets, "btd", "heterozygote"))
+stats <- rbind(stats, print_stats(datasets, "btd", "homozygote"))
+stats <- rbind(stats, print_stats(datasets, "eve", "heterozygote"))
+stats <- rbind(stats, print_stats(datasets, "eve", "homozygote"))
+stats <- rbind(stats, print_stats(datasets, "prd", "heterozygote"))
+stats <- rbind(stats, print_stats(datasets, "prd", "homozygote"))
+
+#print_stats(datasets, "stg", "heterozygote")
+#print_stats(datasets, "stg", "homozygote")
+#print_stats(datasets, "btd-stg")
+
+# Add column names
+colnames(stats) <- c("stock", "zygosity", "avg_folds", "sd_folds", "pct_ef", "n", "lateral", "dorsal")
+
+# Convert columns to numeric
+stats[, 3:8] <- apply(stats[, 3:8], 2, as.numeric)
+
+# Round up
+stats[, 3:8] <- round(stats[, 3:8], digits=1)
+
+# Write table to file
+write.table(format(stats, digits=2), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+```
+
+```{r plot}
+ggplot(datasets, aes(folds_avg, colour = zygosity, fill = zygosity)) +
+  geom_dotplot(binaxis = "x", show.legend = FALSE, binwidth = 0.35) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  facet_grid(cols = vars(stock), scales = "free_y") +
+  theme_classic() +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+
+ggplot(datasets, aes(folds_avg, fill = zygosity)) +
+  geom_histogram(show.legend = FALSE) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  facet_grid(cols = vars(stock), scales = "free_y") +
+  theme_classic() +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+```
