@@ -160,23 +160,23 @@ experiment	stock	genotype	zygosity	view	embryo	xres	yres	zres	slices	timestep	fr
 2021-10-25_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	lateral	Gap,stg[2]_green_1_z3_t52_E15	0.2853696	0.2853696	3.0000000		52	180	1		1.0	FALSE
 2021-10-25_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	lateral	Gap,stg[2]_green_1_z3_t52_E16	0.2853696	0.2853696	3.0000000		52	180	1		1.0	FALSE
 															
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E1					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E2					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E3					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E4					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E5					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E6					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E7					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E8					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E9					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E10					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E11					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E12					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E13					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E14					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E15					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E16					60				0.0	
-2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E17					60				0.0	
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E1	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E2	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E3	0.1426848	0.1426848	3.0000000	20	60	180	2	1	1.5	TRUE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E4	0.1426848	0.1426848	3.0000000	20	60	180	1	2	1.5	TRUE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E5	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E6	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E7	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E8	0.1426848	0.1426848	3.0000000	20	60	180	2	2	2.0	TRUE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E9	0.1426848	0.1426848	3.0000000	20	60	180	1	2	1.5	TRUE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E10	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E11	0.1426848	0.1426848	3.0000000	20	60	180	1	2	1.5	TRUE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E12	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E13	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E14	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E15	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	heterozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E16	0.1426848	0.1426848	3.0000000	20	60	180	2	1	1.5	TRUE
+2021-10-26_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3G	homozygote	dorsal	Gap,stg[2]_dorsal_1_z3_t60_E17	0.1426848	0.1426848	3.0000000	20	60	180	1	1	1.0	FALSE
 															
 2021-12-29_btd-gap-stg	btd-stg	btd[XA]/FM7cG;;Gap,stg[2]/Gap	btd homozygote	lateral	btd-gap-stg_1_z3_t45s_E3					45				0.0	
 2021-12-29_btd-gap-stg	btd-stg	btd[XA]/FM7cG;;Gap,stg[2]/Gap	double heterozygote	lateral	btd-gap-stg_1_z3_t45s_E8					45				0.0	
