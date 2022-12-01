@@ -106,25 +106,25 @@ experiment	stock	genotype	zygosity	view	embryo	xres	yres	zres	timestep	frames	fo
 2020-10-21_prd-gap_dorsal	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	prd-gap_1_z3_t52s_E18				52				0.0	
 2020-10-21_prd-gap_dorsal	prd	prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	prd-gap_1_z3_t52s_E19				52				0.0	
 														
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E1				52		1	1	1.0	FALSE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E2				52		1	1	1.0	FALSE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E4				52		1	1	1.0	FALSE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E8				52		1	2	1.5	TRUE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E9				52		3	3	3.0	TRUE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E10				52		1	1	1.0	FALSE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E11				52		1	1	1.0	FALSE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E12				52		1	1	1.0	FALSE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E17				52		1	1	1.0	FALSE
-2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E19				52		1	1	1.0	TRUE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E1	0.1426848	0.1426848	3.0000000	52	174	1	1	1.0	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E2	0.1426848	0.1426848	3.0000000	52	174	1	1	1.0	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E4	0.1426848	0.1426848	3.0000000	52	174	1	1	1.0	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E8	0.1426848	0.1426848	3.0000000	52	174	1	2	1.5	TRUE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E9	0.1426848	0.1426848	3.0000000	52	174	3	3	3.0	TRUE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E10	0.1426848	0.1426848	3.0000000	52	174	1	1	1.0	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E11	0.1426848	0.1426848	3.0000000	52	174	1	1	1.0	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E12	0.1426848	0.1426848	3.0000000	52	174	1	1	1.0	FALSE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E13	0.1426848	0.1426848	3.0000000	52	174	1	1	1.0	TRUE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E17	0.1426848	0.1426848	3.0000000	52	174	1	2	1.5	TRUE
+2020-11-03_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_1_z3_t52s_E19	0.1426848	0.1426848	3.0000000	52	174	1	2	1.5	TRUE
 														
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E2				53		1	1	1.0	FALSE
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E3				53		1	1	1.0	FALSE
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E4				53		2	1	1.5	TRUE
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E5				53		1	1	1.0	FALSE
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E6				53		1	1	1.0	FALSE
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E12				53		1	1	1.0	FALSE
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E14				53		2	2	2.0	TRUE
-2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E19				53		1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E2	0.1426848	0.1426848	3.0000000	53	175	1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E3	0.1426848	0.1426848	3.0000000	53	175	1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E4	0.1426848	0.1426848	3.0000000	53	175	1	2	1.5	TRUE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E5	0.1426848	0.1426848	3.0000000	53	175	1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E12	0.1426848	0.1426848	3.0000000	53	175	1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E14	0.1426848	0.1426848	3.0000000	53	175	2	2	2.0	TRUE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E19	0.1426848	0.1426848	3.0000000	53	175	1	1	1.0	FALSE
 														
 2021-08-25_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3	homozygote	lateral	Gap,stg[2]_2_z3_t50s_E1				50				0.0	
 2021-08-25_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3	homozygote	lateral	Gap,stg[2]_2_z3_t50s_E2				50				0.0	
