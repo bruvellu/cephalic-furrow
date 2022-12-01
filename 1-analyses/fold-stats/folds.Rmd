@@ -72,9 +72,9 @@ stats <- rbind(stats, print_stats(datasets, "eve", "heterozygote"))
 stats <- rbind(stats, print_stats(datasets, "eve", "homozygote"))
 stats <- rbind(stats, print_stats(datasets, "prd", "heterozygote"))
 stats <- rbind(stats, print_stats(datasets, "prd", "homozygote"))
+stats <- rbind(stats, print_stats(datasets, "stg", "heterozygote"))
+stats <- rbind(stats, print_stats(datasets, "stg", "homozygote"))
 
-#print_stats(datasets, "stg", "heterozygote")
-#print_stats(datasets, "stg", "homozygote")
 #print_stats(datasets, "btd-stg")
 
 # Add column names
@@ -91,7 +91,7 @@ write.table(format(stats, digits=2), file = "stats.txt", quote = FALSE, row.name
 ```
 
 ```{r plot}
-ggplot(datasets, aes(folds_avg, colour = zygosity, fill = zygosity)) +
+ggplot(datasets[datasets$stock != "btd-stg",], aes(folds_avg, colour = zygosity, fill = zygosity)) +
   geom_dotplot(binaxis = "x", show.legend = FALSE, binwidth = 0.35) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
@@ -102,7 +102,7 @@ ggplot(datasets, aes(folds_avg, colour = zygosity, fill = zygosity)) +
         panel.background = element_rect(colour = "black", size=1)
         )
 
-ggplot(datasets, aes(folds_avg, fill = zygosity)) +
+ggplot(datasets[datasets$stock != "btd-stg",], aes(folds_avg, fill = zygosity)) +
   geom_histogram(show.legend = FALSE) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
