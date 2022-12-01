@@ -120,8 +120,13 @@ experiment	stock	genotype	zygosity	view	embryo	xres	yres	zres	slices	timestep	fr
 2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E3	0.1426848	0.1426848	3.0000000		53	175	1	1	1.0	FALSE
 2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E4	0.1426848	0.1426848	3.0000000		53	175	1	2	1.5	TRUE
 2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E5	0.1426848	0.1426848	3.0000000		53	175	1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E9	0.1426848	0.1426848	3.0000000		53	175	1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E11	0.1426848	0.1426848	3.0000000		53	175	2	2	2.0	TRUE
 2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E12	0.1426848	0.1426848	3.0000000		53	175	1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E13	0.1426848	0.1426848	3.0000000		53	175	1	1	1.0	FALSE
 2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	homozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E14	0.1426848	0.1426848	3.0000000		53	175	2	2	2.0	TRUE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E15	0.1426848	0.1426848	3.0000000		53	175	1	1	1.0	FALSE
+2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E17	0.1426848	0.1426848	3.0000000		53	175	1	1	1.0	FALSE
 2020-11-04_eve-gap_dorsal	eve	eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS	heterozygote	dorsal	eve-gap_dorsal_2_z3_t53s_E19	0.1426848	0.1426848	3.0000000		53	175	1	1	1.0	FALSE
 															
 2021-08-25_Gap,stg[2]	stg	Gap43-mCherry,stg[2]/TM3	homozygote	lateral	Gap,stg[2]_2_z3_t50s_E1					50				0.0	
