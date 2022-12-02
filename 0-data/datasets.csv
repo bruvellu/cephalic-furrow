@@ -35,7 +35,7 @@ experiment	stock	genotype	zygosity	view	embryo	xres	yres	zres	slices	timestep	fr
 2020-07-27_btd-HisGap	btd	btd[XA]/FM7c,Kr-GFP;;His-GFP,Gap43-mCherry/MKRS	heterozygote	lateral	btd-HisGap_z3_t51s_E4	0.2853696	0.2853696	3.0000000		51	234	1		1.0	FALSE
 2020-07-27_btd-HisGap	btd	btd[XA]/FM7c,Kr-GFP;;His-GFP,Gap43-mCherry/MKRS	heterozygote	lateral	btd-HisGap_z3_t51s_E7	0.2853696	0.2853696	3.0000000		51	234	1		1.0	FALSE
 2020-07-27_btd-HisGap	btd	btd[XA]/FM7c,Kr-GFP;;His-GFP,Gap43-mCherry/MKRS	homozygote	lateral	btd-HisGap_z3_t51s_E11	0.2853696	0.2853696	3.0000000		51	234	2		2.0	TRUE
-2020-07-27_btd-HisGap	btd	btd[XA]/FM7c,Kr-GFP;;His-GFP,Gap43-mCherry/MKRS	homozygote	lateral	btd-HisGap_z3_t51s_E14	0.2853696	0.2853696	3.0000000		51	234	1		1.0	FALSE
+2020-07-27_btd-HisGap	btd	btd[XA]/FM7c,Kr-GFP;;His-GFP,Gap43-mCherry/MKRS	heterozygote	lateral	btd-HisGap_z3_t51s_E14	0.2853696	0.2853696	3.0000000		51	234	1		1.0	FALSE
 															
 2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	heterozygote	lateral	btd-gap_z3_t55s_E3	0.2853696	0.2853696	3.0000000		55	150	1		1.0	FALSE
 2020-09-16_btd-gap	btd	btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS	homozygote	lateral	btd-gap_z3_t55s_E6	0.2853696	0.2853696	3.0000000		55	150	4		4.0	TRUE
