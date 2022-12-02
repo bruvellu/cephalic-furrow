@@ -1,7 +1,7 @@
 stock	zygosity	avg_folds	sd_folds	pct_ef	n	lateral	dorsal
 wt	wildtype	1.8	0.6	 81	36	16	20
-btd	heterozygote	1.1	0.2	 14	28	 6	22
-btd	homozygote	2.0	1.0	 92	13	 6	 7
+btd	heterozygote	1.1	0.2	 13	31	 9	22
+btd	homozygote	2.0	1.0	 93	14	 7	 7
 eve	heterozygote	1.1	0.2	 12	25	 7	18
 eve	homozygote	1.8	0.6	100	10	 5	 5
 prd	heterozygote	1.2	0.4	 23	26	 9	17
