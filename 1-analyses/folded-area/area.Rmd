@@ -80,6 +80,17 @@ results <- merge(results, corrected, by = "Label", all.x = TRUE)
 # Transform data frame to order the stock for plotting
 results <- transform(results, Stock=factor(Stock, levels = c("wt", "btd", "eve", "prd")))
 
+# Quick fix to add type of fold
+results$Type <- "EF"
+results[results$Stock == "wt" & results$Position == "mid",]$Type <- "CF"
+results[results$Stock == "btd" & results$Genotype == "heterozygote",]$Type <- "CF"
+results[results$Stock == "eve" & results$Genotype == "heterozygote",]$Type <- "CF"
+results[results$Stock == "prd" & results$Genotype == "heterozygote",]$Type <- "CF"
+results[results$Stock == "prd" & results$Position == "mid",]$Type <- "CF"
+
+# Transform data frame to order the stock for plotting
+results <- transform(results, Sample=factor(Sample, levels = c("wildtype", "control", "mutant")))
+
 # Sum total folded area
 area <- aggregate(results$Area, list(results$Embryo), sum)
 colnames(area) <- c("Embryo", "Area")
@@ -188,6 +199,34 @@ ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
 This plots shows the total area of folded tissue in embryos with and without
 the cephalic furrow. Values are the sum of corrected areas of individual folds
 per embryo.
+
+```{r individual-area-per-fold-type}
+
+#ggplot(results[results$Stock != "prd",], aes(Stock, AreaCorr, fill = Type)) +
+ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, AreaCorr, fill = Sample)) +
+  #geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
+  scale_y_continuous(labels = function(x) x / 1000) +
+  labs(x = "stocks", y = expression(paste("total folded area per embryo ", (µm^2)~x~10^3))) +
+  #facet_grid(cols = vars(Type), scales = "free_x") +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  #scale_x_discrete(labels = c("wildtype", "heterozygote", "homozygote", "heterozygote", "homozygote")) +
+  theme_classic() +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1),
+        #axis.text.x = element_text(face = "italic"),
+        #legend.position = c(0.93,0.9),
+        #legend.text = element_text(size = 20),
+        #legend.title = element_text(size = 20),
+        )
+ggsave("4-plots/individual-area-per-fold-type.png", width = 5, height = 7)
+ggsave("4-plots/individual-area-per-fold-type.svg", width = 5, height = 7)
+
+```
+
+
 
 ```{r area-individual-folds}
 ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
