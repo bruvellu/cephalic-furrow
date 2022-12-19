@@ -132,7 +132,6 @@ This is in stark contrast to other embryonic invaginations, such as the ventral 
 The cephalic furrow is, therefore, a puzzling invagination because it has a finely regulated formation but has no obvious function.
 
 <!--TODO: The paragraph is ok, but it’s also too specialized to people familiar with Drosophila. Perhaps we need a more general opening statement and some kind of introduction to fly terms like blastoderm, ventral furrow, germ band, etc.-->
-<!--TODO: Insert the idea that the CF is unique that is has a tightly regulated formation, suggesting it must be somewhat useful for the embryo, with genetic traits fixed by evolution, but it has no obvious permanent consequence to the embryo. The fact that it is transient, but prominent suggests it may have a important but transient function.-->
 
 <!--prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
 <!--the two determines the row of initiator cells [@Vincent1997-fa].-->
@@ -174,10 +173,15 @@ Intrigued by this phenotype, we set to investigate in a systematic manner the ph
 
 To investigate the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and a loss of function allele for three genes known to affect cephalic furrow formation (see Methods)---*prd* where the cephalic furrow is delayed [@Blankenship2001-tm], and *btd* and *eve* where the cephalic furrow is absent [@Vincent1997-fa].
 We then imaged the mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture and characterize in detail the tissue dynamics during gastrulation and the relative timing of developmental events in the different genetic backgrounds ({@fig:ectopic}a).
-Our recordings show that both *btd* and *eve* embryos form a late fold at the head--trunk interface ({@fig:ectopic}b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
-These ectopic folds appear 15 min after the cephalic furrow would have formed, when the germ band is extended around 35% of the egg length, and disappear in only 20 min, quicker than the cephalic furrow which stays folded for about two hours ({@fig:ectopic}a,b,d, {@tbl:gbtime}).
+
+Our recordings show that in embryos where the cephalic furrow fails to initiate (*btd* and *eve* mutants), ectopic folds appear at the head--trunk interface near the original site of invagination ({@fig:ectopic}b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
+
+Nearly in every embryo homozygous for *btd* or *eve*, one to four ectopic folds appear on each side
+({@tbl:stats}).
 
 Our high-resolution imaging revealed that both *btd* and *eve* homozygous embryos can exhibit one to four epithelial folds on each side (*btd*=2.3±0.9 n=12, *eve*=1.8±0.7 n=9, see Table S1) while sibling controls (heterozygote embryos for *btd* or *eve*) invariably show a single invagination---the cephalic furrow.
+
+These ectopic folds appear 15 min after the wildtype cephalic furrow would have formed, when the germ band is extended around 35% of the egg length, and disappear earlier, in about 20 min, when compared to the two hours the cephalic furrow takes to unfold completely ({@fig:ectopic}a,b,d, {@tbl:gbtime}).
 
 They form either anterior or posterior to the head--trunk boundary and their position varies between individual mutant embryos ({@fig:ectopic}d, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}).
 
@@ -808,7 +812,7 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 ## Tables
 
-Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (tag) and the percentage of germ band extension (gbe) at the time of infolding/buckling. {#tbl:gbtime}
+Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of infolding/buckling. {#tbl:gbtime}
 
 |           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
 | --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
@@ -817,6 +821,17 @@ Table: Relative timing differences between the formation of the cephalic furrow 
 | TAG (min) | 7.2±2.2  | 8.2±1.7 | 21.3±4.7 | 12.2±1.7 | 22.6±2.6 | 11.3±6.2  | 18.2±5.4 |
 | GBE (%)   | 8.7±1.7  | 9.8±1.9 | 36.3±2.4 | 8.8±2.3  | 28.5±3.9 | 18.0±12.2 | 33.0±9.5 |
 | n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
+
+
+Table: Statistics for ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (PEF) and the average number of ectopic folds per embryo side (AEF). The *n* includes datasets imaged from the lateral and dorsal sides (LAT+DOR). {#tbl:stats}
+
+|           | wildtype | *btd*   |         | *eve*   |         | *prd*   |         | *stg*   |         |
+| --------  | -------- | -----   | -----   | -----   | -----   | -----   | -----   | -----   | -----   |
+| Zygosity  | +/+      | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     |
+| PEF (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 23.1    | 42.9    | 27.3    | 23.1    |
+| AEF       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.2±0.4 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
+| n         | 36       | 31      | 14      | 25      | 10      | 26      | 14      | 33      | 13      |
+| (LAT+DOR) | (16+20)  | (9+22)  | (7+7)   | (7+18)  | (5+5)   | (9+17)  | (5+9)   | (21+12) | (8+5)   |
 
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
@@ -834,3 +849,4 @@ Table: Relative timing differences between the formation of the cephalic furrow 
 <!--TODO: Video COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_crop_label.avi-->
 
 <!--TODO: Video COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_crop_label.avi-->
+
