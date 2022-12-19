@@ -13,9 +13,6 @@ library(ggplot2)
 
 ## Analysis
 
-The aim is to give a general
-
-
 ```{r import}
 # Import main dataset
 datasets <- read.delim("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv", stringsAsFactors=TRUE)
