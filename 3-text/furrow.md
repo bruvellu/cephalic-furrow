@@ -170,6 +170,15 @@ We then imaged the mutant embryos *in toto* using lightsheet microscopy with tem
 <!--TODO: Begin with a paragraph on initiator behavior? It’ll give more context and novelty to the finding of ectopic folds-->
 <!--TODO: Crop of ImSAnE projections and profile views of initiator behavior in wt/prd/btd/eve-->
 
+Based on our recordings, we determined the relative timing of developmental events in the different genetic backgrounds from gastrulation to ({@fig:ectopic}a).
+The cephalic furrow is delayed in *prd* mutants [@Blankenship2001-tm] and absent in *btd* and *eve*  mutants [@Vincent1997-fa].
+We observe differences between the behavior of initiator cells of the three mutants.
+In wildtype, the initiator cells undergo cell shortening and anisotropic apical constriction simultaneously [@Spencer2015-td] ({@fig:ectopic-ext}).
+In *prd* embryos, the initiator cells perform both cell shortening and apical constriction, but the behavior is delayed and is more variable than sibling controls and wildtype embryos ({@fig:ectopic-ext}).
+In *btd* embryos, cells near the original initiator row do not under cell shortening but show a limited degree of anisotropic apical constriction ({@fig:ectopic-ext}).
+The movement is sufficient to cause a small bulge in the epithelium.
+In contrast, *eve* embryos show neither cell shortening nor apical constriction and the epithelium remains flat after gastrulation until the appearance of mitotic domains ({@fig:ectopic-ext}).
+While the base of the epithelium remains flat in both *btd* and *eve*, interesting difference between the two with the reminiscent initiator cell behavior in *btd* suggests there are other factors involved in controlling the initiator cell behavior.
 
 Our recordings show that in embryos where the cephalic furrow fails to initiate (*btd* and *eve* mutants), a late fold appear at the head--trunk interface at the site of cephalic furrow invagination ({@fig:ectopic}b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
 These ectopic folds appear 15 min after the wildtype cephalic furrow would have formed, when the germ band is extended around 35% of the egg length, and disappear in about 20 min, much earlier than the cephalic furrow which takes two hours to unfold completely ({@fig:ectopic}a,b,d, {@tbl:gbtime}).
