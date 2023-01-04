@@ -9,7 +9,13 @@ We observed differences in the behavior of initiator cells between *prd*, *btd*,
 
 ## Profile view
 
-Crop of the initiator cell region from dorsal recordings from the onset of gastrulation to the formation of mitotic domains.
+Crop of the initiator cell region from dorsal recordings from the onset of gastrulation to the formation of mitotic domains. Image processing steps:
+
+1. Select pairs of heterozygote and homozygote with similar embryos.
+2. Synchronize and combine full stacks using the `SyncAndCombine.ijm` macro.
+3. Crop the right or left side of each embryo for better view.
+4. Crop a square around the cephalic furrow or ectopic fold. They shift posterior during the movie, so it's necessary to set ROIs to different positions for each frame. For that, add a ROI to key frames and use the `Interpolate ROIs` function from the `ROI Manager` to generate a ROI for every frame. For actual cropping use the `Multi Crop` function.
+5. Combine the crops from each embryo horizontally for movie and vertically for the montage.
 
 ## Surface view
 
