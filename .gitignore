@@ -1,2 +1,6 @@
+.Rhistory
+.owncloudsync*
+.sync*
 *.tif
 *.avi
+*.png
