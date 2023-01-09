@@ -174,23 +174,18 @@ In *prd* mutants, both processes are present but delayed in relation to sibling 
 In *btd* mutants, epithelial cells near the canonical cephalic furrow position undergo some degree of apical constriction ({@fig:initiator}A and {!@fig:vid-initiator}). This creates an indentation that resembles the early cephalic furrow ({@fig:initiator}B). This indentation, however, forms delayed and does not extend along the dorsoventral axis. In addition, the cells at the center of the indentation, in contrast to initiator cells, do not shorten along the apical-basal axis ({@fig:initiator}B). In *eve* mutants no apical constriction or indentation occurs ({@fig:initiator}A,B). This reveals that remnants of initiator cell behavior are present in *btd* mutants.
 In contrast, *eve* embryos show neither cell shortening nor apical constriction and the epithelium remains flat after gastrulation until the appearance of mitotic domains---groups of blastoderm cells that divide in synchrony in cleavage cycle 14 [@Foe1989-cw]---({@fig:initiator}).
 
-In embryos where the cephalic furrow fails to initiate (*i.e.*, *btd* and *eve* mutants), ectopic folds appear on the head--trunk surface near the canonical site of invagination for the cephalic furrow ({@fig:ectopic}a,b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
-These ectopic folds appear 15 min after the wildtype cephalic furrow would have formed, when the germ band is extended around 35% of the egg length, and they disappear in about 20 min, quicker than the cephalic furrow which takes two hours to unfold ({@fig:ectopic}a,c,d, {@tbl:gbtime}).
-The penetrance of the ectopic folding phenotype is high (>93%) in *btd* and *eve* homozygote embryos 
-with an average of 2.0±1.0 and 1.8 ± 0.6 folds per side, respectively, while sibling controls mainly show a single invagination with a low (13%) frequency of ectopic folds ({@tbl:stats}).
-Our recordings corroborate previous observations of late folds in cephalic furrow mutants [@Vincent1997-fa; [@Eritano2020-mi].
-
-<!--The fact that both mutants lacking a cephalic furrow formed late ectopic folds led us to ask whether these events are causally linked, and which morphogenetic processes drive ectopic fold formation.-->
-<!--Because both mutants exhibit such intriguing ectopic folds, we wondered if their formation could be causally linked to the absence of the cephalic furrow. A late head fold was previously described in *eve* mutants [@Vincent1997-fa], but the processes that drive the formation of these ectopic folds has not been studied. Therefore, to understand the origin of ectopic folds in cephalic furrow mutants, we analyzed their morphology and dynamics throughout development.-->
-
-The position of ectopic folds varies between individual mutant embryos; they can form anterior, posterior, or at the site of cephalic furrow formation ({@fig:ectopic}d, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}).
-In *prd* mutants and wildtype embryos, ectopic folds can appear anterior or posterior to the cephalic furrow, but their frequency is lower and the folded area is smaller compared to the ectopic folds in cephalic furrow mutants ({@fig:ectopic-ext})
-In addition, while the cephalic furrow initiates as a straight line, almost orthogonal to the anteroposterior axis, and progressively declines posteriorly, the ectopic folds form already tilted and show no obvious trend in angular direction over time ({@fig:ectopic}e,f). 
+In embryos where the cephalic furrow fails to initiate (*i.e.*, *btd* and *eve* mutants), ectopic folds appear near the canonical site for cephalic furrow invagination ({@fig:ectopic}a,b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
+They appear 15 min after the cephalic furrow would have formed, when the germ band is extended around 35% of the egg length, and they disappear in about 20 min, quicker than the cephalic furrow which takes two hours to unfold ({@fig:ectopic}a,c,d, {@tbl:gbtime}).
+The penetrance of this phenotype is high (>93%).
+Nearly every *btd* and *eve* homozygote embryos show ectopic folds with an average of 2.0±1.0 and 1.8±0.6 folds per side, respectively, while sibling controls show a low (13%) frequency of ectopic folding with an average of 1.1±0.2 ({@tbl:stats}).
 Ectopic folds have a wider and often asymmetric cleft, and lack wedge-shaped initiators and other stereotypic cell morphologies present in the cephalic furrow [@Spencer2015-td] ({@fig:ectopic}b, {!@fig:vid-profile-btd} and {!@fig:vid-profile-eve}).
-They are nearly 25% shallower, invaginating only half of the surface area infolded by the cephalic furrow in sibling controls ({@fig:ectopic}g--i).
-Taken together, these analyses reveal that in the absence of the cephalic furrow, ectopic folds consistently appear, and that their formation dynamics differs substantially from the formation of the cephalic furrow suggesting that they form via different mechanisms.
+The position of ectopic folds also varies between individual mutant embryos.
+They can form anterior, posterior, or near the site of cephalic furrow formation ({@fig:ectopic}f, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}) and show different formation kinetics with no obvious trend in angular direction over time ({@fig:ectopic-ext}c). 
+Ectopic folds have an area 50% smaller and a depth 25% shallower when compared to the cephalic furrow ({@fig:ectopic}g,h and {@fig:ectopic-ext}d).
+While the incidence of ectopic folds in sibling controls is low, wildtype embryos show a relatively high frequency of embryos with ectopic folds (80%) ({@tbl:stats}).
+These, however, only appear anterior or posterior to the cephalic furrow and their folded area is smaller compared to the ectopic folds in cephalic furrow mutants ({@fig:ectopic-ext}e).
+Our data corroborate previous observations of a late fold appearing in cephalic furrow mutants [@Vincent1997-fa; @Eritano2020-mi] and suggest that the formation of ectopic folds is a phenotype causally linked to the absence of the cephalic furrow and that they form via different mechanisms.
 
-<!--EFs differ significantly from CF, suggesting they form via different mechanisms-->
 <!--Location and timing of ectopic folding correlates with mitotic domains-->
 <!--The dividing cells lose their basal attachment, round up at the apical side, and more than double their apical area during during anaphase elongation ({@fig:cell-area-post-mitosis}). -->
 
@@ -692,6 +687,9 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 **h**, Total folded area of the epithelial surface in cephalic furrow mutants.
 **i**, Region of epithelial cells folded in the cephalic furrow and ectopic folds visualized in cartographic projections of *btd* embryos.
 ](figures/Fig1.jpg){#fig:ectopic width=100%}
+
+
+<!--In addition, while the cephalic furrow initiates as a straight line, almost orthogonal to the anteroposterior axis, and progressively declines posteriorly, the ectopic folds form already tilted and show no obvious trend in angular direction over time ({@fig:ectopic}e,f). -->
 
 ![Correlation of mitotic domains and germ band extension in ectopic folding.
 **a**, Position of ectopic folds (black lines) in relation to the mitotic domains (colored areas) in *btd* and *eve* mutants.
