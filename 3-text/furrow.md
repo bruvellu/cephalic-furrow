@@ -185,10 +185,10 @@ The penetrance of this phenotype is high (>93%).
 Nearly every *btd* and *eve* homozygote embryos show one or more ectopic folds (2.0±1.0 and 1.8±0.6 folds per side, respectively ({@fig:ectopic}b, {@fig:features}a), while sibling controls show a low (13%) frequency of ectopic folding with an average of 1.1±0.2 ({@tbl:stats}).
 Ectopic folds have a wider and often asymmetric cleft, and lack wedge-shaped initiators and other stereotypic cell morphologies present in the cephalic furrow [@Spencer2015-td] ({@fig:ectopic}b, {!@fig:vid-profile-btd} and {!@fig:vid-profile-eve}).
 The position of ectopic folds also varies between individual mutant embryos.
-They can form anterior, posterior, or near the site of cephalic furrow formation ({@fig:ectopic}f, {@fig:features}b, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}) and show different formation kinetics with no obvious trend in angular direction over time ({@fig:features}a). 
-Ectopic folds have an area 50% smaller and a depth 25% shallower when compared to the cephalic furrow ({@fig:ectopic}g,h and {@fig:features}d).
+They can form anterior, posterior, or near the site of cephalic furrow formation ({@fig:ectopic}f, {@fig:features}b, {!@fig:vid-dynamics-btd} and {!@fig:vid-variability-btd}) and show different formation kinetics with no obvious trend in angular direction over time ({@fig:features}d,e). 
+Ectopic folds have an area 50% smaller and a depth 25% shallower when compared to the cephalic furrow ({@fig:ectopic}g,h and {@fig:features}c,f).
 While the incidence of ectopic folds in sibling controls is low, wildtype embryos show a relatively high frequency of embryos with ectopic folds (80%) ({@tbl:stats}).
-These, however, only appear anterior or posterior to the cephalic furrow and their folded area is smaller compared to the ectopic folds in cephalic furrow mutants ({@fig:features}e).
+These, however, only appear anterior or posterior to the cephalic furrow and their folded area is smaller compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g).
 Our data corroborate previous observations of a late fold appearing in cephalic furrow mutants [@Vincent1997-fa; @Eritano2020-mi] and suggest that the formation of ectopic folds is a phenotype causally linked to the absence of the cephalic furrow and that they form via different mechanisms.
 
 <!--Location and timing of ectopic folding correlates with mitotic domains-->
