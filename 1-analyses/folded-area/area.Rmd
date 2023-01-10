@@ -194,13 +194,10 @@ ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
 
 ```
 
-## Area of individual folds
+## Area of ectopic folds
 
-This plots shows the total area of folded tissue in embryos with and without
-the cephalic furrow. Values are the sum of corrected areas of individual folds
-per embryo.
 
-```{r individual-area-per-fold-type}
+```{r individual-area-per-ectopic-fold}
 
 #ggplot(results[results$Stock != "prd",], aes(Stock, AreaCorr, fill = Type)) +
 ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, AreaCorr, fill = Sample)) +
@@ -208,7 +205,7 @@ ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, Area
   geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
   scale_y_continuous(labels = function(x) x / 1000) +
-  labs(x = "stocks", y = expression(paste("total folded area per embryo ", (µm^2)~x~10^3))) +
+  labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
   #facet_grid(cols = vars(Type), scales = "free_x") +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   #scale_x_discrete(labels = c("wildtype", "heterozygote", "homozygote", "heterozygote", "homozygote")) +
@@ -221,12 +218,15 @@ ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, Area
         #legend.text = element_text(size = 20),
         #legend.title = element_text(size = 20),
         )
-ggsave("4-plots/individual-area-per-fold-type.png", width = 5, height = 7)
-ggsave("4-plots/individual-area-per-fold-type.svg", width = 5, height = 7)
+ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
+ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
 
 ```
 
 
+This plots shows the total area of folded tissue in embryos with and without
+the cephalic furrow. Values are the sum of corrected areas of individual folds
+per embryo.
 
 ```{r area-individual-folds}
 ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
