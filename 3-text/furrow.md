@@ -170,7 +170,7 @@ We then imaged mutant embryos *in toto* using lightsheet microscopy with tempora
 Our recordings show that the formation of the cephalic furrow in *prd* mutants is delayed relative to wildtype embryos [@Blankenship2001-tm] while in *btd* and *eve* mutants the invagination is absent [@Vincent1997-fa] ({@fig:ectopic}a).
 We find differences between the three mutants at the cellular level.
 In wildtype, the initiator cells undergo cell shortening and anisotropic apical constriction simultaneously [@Spencer2015-td] ({@fig:initiator}).
-In *prd* mutants, both processes are present but delayed in relation to sibling controls and wildtype embryos ({@fig:initiator}).
+In *prd* mutants, both processes are present but delayed in relation to sibling controls and wildtype embryos although the cephalic furrow is different ({@fig:initiator}).
 In *btd* mutants, epithelial cells near the canonical cephalic furrow position undergo some degree of apical constriction ({@fig:initiator}b and {!@fig:vid-initiator}).
 This creates an indentation that resembles the early cephalic furrow ({@fig:initiator}a).
 This indentation, however, forms delayed and does not extend along the dorsoventral axis.
@@ -191,27 +191,23 @@ While the incidence of ectopic folds in sibling controls is low, wildtype embryo
 These, however, only appear anterior or posterior to the cephalic furrow and their folded area is smaller compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g).
 Our data corroborate previous observations of a late fold appearing in cephalic furrow mutants [@Vincent1997-fa; @Eritano2020-mi] and suggest that the formation of ectopic folds is a phenotype causally linked to the absence of the cephalic furrow and that they form via different mechanisms.
 
+The variability of ectopic fold formation in cephalic furrow mutants and the occurrence of smaller ectopic folds in *prd* and wildtype embryos suggests that they are not under genetic control comparable to the cephalic furrow.
+Therefore, we investigated two concurrent gastrulation processes that could be driving their formation: cell divisions in mitotic domains and the extension of the germ band.
+The first mitotic domains in *Drosophila* appear in the head around 20 min after gastrulation [@Foe1989-cw] which coincides with the formation of ectopic folds ({@fig:ectopic}a,c,d).
+Ectopic folds also always appear in between or adjacent to mitotic domains ({@fig:mitogerm}a).
+The dividing cells synchronously expand their apical area during anaphase elongation about 2.3 times ({@fig:mitotic}a).
+This expansion compresses the adjacent non-dividing cells which are the first to buckle inwards, followed by a portion of the dividing cells within mitotic domains ({@fig:mitogerm}b).
+The mitotic expansions always precede the formation of ectopic folds ({@fig:mitogerm}c) and ectopic folds buckle abruptly ({@fig:initiator}b, {!@fig:vid-mitotic-fold}).
+These observations suggest a possible role of mitotic domains in inducing the buckling of the epithelium.
+
 <!--Location and timing of ectopic folding correlates with mitotic domains-->
+
 <!--The dividing cells lose their basal attachment, round up at the apical side, and more than double their apical area during during anaphase elongation ({@fig:cell-area-post-mitosis}). -->
 
-The ectopic folds appear in a situation where one or the other component necessary for specifying the initiator cell behavior is missing, meaning that they are not under genetic control comparable to the cephalic furrow.
-Therefore, we looked for concurrent gastrulation processes that may influence their formation.
-Two gastrulation processes temporally coincide with the appearance of the ectopic folds: 
-the appearance of mitotic domains ({@fig:ectopic}a,c) and the rapid phase of the germ band elongation [@Campos-Ortega1985-ma].
-
-<!--TODO: Here the data from prd mutants would fit as a weaker CF phenotype and it connects with the timing of MD/GB-->
-<!--TODO: Add data from prd mutant after the main description saying that in a situation where the CF initiates but halts, CF formation is delayed and coincides with MD/GB-->
-<!--TODO: Add prd data here or supplemental-->
-
-<!--TODO: I don’t fully understand the first sentence. Is it implying that EFs don’t form using the standard CF toolkit because one of the genes is missing anyway? Unsure if that’s the best reasoning-->
 <!--TODO: Perhaps start off with MD stating that EFs form between MDs, that dividing cells expand and compress non-dividing cells which buckle, expansion precedes buckling-->
 <!--TODO: Additionally, buckling occurs quicker and with a higher strain rate than the cephalic furrow-->
 
-Indeed, our analysis of the position of the ectopic folds revealed that they appear always in between or adjacent to mitotic domains ({@fig:mitogerm}a).
-Dividing cells expand their apical area during anaphase elongation and compress adjacent non-dividing cells ({@fig:mitogerm}b).
-The compressed region is the first to buckle inwards, followed by a portion of the dividing cells within mitotic domains ({@fig:mitogerm}b).
-The mitotic expansions always precede the formation of ectopic folds ({@fig:mitogerm}c) and ectopic folds buckle abruptly ({@fig:initiator}b, {!@fig:vid-mitotic-fold}).
-These observations suggest a possible role of mitotic domains in inducing the buckling of the epithelium.
+<!--the rapid phase of the germ band elongation [@Campos-Ortega1985-ma].-->
 
 <!--TODO: Quantify the expansion of mitotic domains (make ROI around it, or segment individual cells and sum the area) in relation to the ectopic folding measured as distance of the center cell to the vitelline envelope-->
 <!--TODO: Merge paragraph below with above? It’ll put less weight on the strain rate analysis which is not super informative as evidence for compressive stress but gives a good description of the process-->
@@ -777,12 +773,15 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 ![Ectopic folding features in cephalic furrow mutants.
 ](figures/FigS2.jpg){#fig:features tag=S2 width=100%}
 
+![Mitotic domains in cephalic furrow mutants.
+](figures/FigS3.jpg){#fig:mitotic tag=S3 width=100%}
+
 ![Model of epithelial dynamics in *Drosophila* blastoderm.
 **a**, Dimensions and proportions of the embryo used as a reference for the model.
-](figures/FigS3.jpg){#fig:fold-model tag=S3 width=100%}
+](figures/FigS4.jpg){#fig:fold-model tag=S4 width=100%}
 
 ![Lateral and dorsal views of *stg* mutant embryos.
-](figures/FigS4.jpg){#fig:stg tag=S4 width=100%}
+](figures/FigS5.jpg){#fig:stg tag=S5 width=100%}
 
 ## Videos
 
