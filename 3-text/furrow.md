@@ -195,54 +195,27 @@ The variability of ectopic fold formation in cephalic furrow mutants and the occ
 Therefore, we investigated two concurrent gastrulation processes that could be driving their formation: cell divisions in mitotic domains and the extension of the germ band.
 The first mitotic domains in *Drosophila* appear in the head around 20 min after gastrulation [@Foe1989-cw] which coincides with the formation of ectopic folds ({@fig:ectopic}a,c,d).
 Ectopic folds also always appear in between or adjacent to mitotic domains ({@fig:mitogerm}a).
-The dividing cells synchronously expand their apical area during anaphase elongation about 2.3 times ({@fig:mitotic}a).
-This expansion compresses the adjacent non-dividing cells which are the first to buckle inwards, followed by a portion of the dividing cells within mitotic domains ({@fig:mitogerm}b).
-The mitotic expansions always precede the formation of ectopic folds ({@fig:mitogerm}c) and ectopic folds buckle abruptly ({@fig:initiator}b, {!@fig:vid-mitotic-fold}).
-These observations suggest a possible role of mitotic domains in inducing the buckling of the epithelium.
-
-<!--Location and timing of ectopic folding correlates with mitotic domains-->
-
-<!--The dividing cells lose their basal attachment, round up at the apical side, and more than double their apical area during during anaphase elongation ({@fig:cell-area-post-mitosis}). -->
-
-<!--TODO: Perhaps start off with MD stating that EFs form between MDs, that dividing cells expand and compress non-dividing cells which buckle, expansion precedes buckling-->
-<!--TODO: Additionally, buckling occurs quicker and with a higher strain rate than the cephalic furrow-->
+The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during during anaphase elongation ({@fig:mitotic}a)
+This expansion compresses the adjacent non-dividing cells which are the first infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitogerm}b).
+Mitotic expansions always precede ectopic folding ({@fig:mitogerm}c, {@fig:initiator}a).
+Compared to the progressive invagination of the cephalic furrow (about 14 min), the process of ectopic fold formation is abrupt (about 4 min) ({@fig:initiator}a, {!@fig:vid-mitotic-fold}).
+We measured the rate of non-uniform tissue deformation at the head--trunk interface using particle image velocimetry and find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak coinciding with the maximum expansion of mitotic domains and the appearance of the ectopic folds ({@fig:mitogerm}d,e, {!@fig:vid-strain-analysis}).
+The strain rate at the trunk--germ band interface steadily increases over time likely due to the movement of the germ band tip ({@fig:mitogerm}d).
+The epithelial cells between MD6 and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls ({@fig:mitogerm}e, {!@fig:vid-trunk-germ}), a region where ectopic folds appear quite frequently ({@fig:mitogerm}a,c).
+Taken together, these analyses suggests that ectopic folds in cephalic furrow mutants form by tissue buckling due to increased in-plane mechanical forces acting on the monolayer epithelium with excess tissue, and that the both the local expansion of mitotic domains and the global extension of the germ band are the potential sources of mechanical stress.
 
 <!--the rapid phase of the germ band elongation [@Campos-Ortega1985-ma].-->
 
 <!--TODO: Quantify the expansion of mitotic domains (make ROI around it, or segment individual cells and sum the area) in relation to the ectopic folding measured as distance of the center cell to the vitelline envelope-->
-<!--TODO: Merge paragraph below with above? It’ll put less weight on the strain rate analysis which is not super informative as evidence for compressive stress but gives a good description of the process-->
-
-<!--suggesting they may be inducing the epithelium to buckle.-->
 
 <!--The formation of ectopic folds occurs during the rapid phase of the germ band elongation [@Campos-Ortega1985-ma] with around 40% of the total egg length, and coincides with the appearance of mitotic domains---groups of blastoderm cells that divide in synchrony in cleavage cycle 14 [@Foe1989-cw] ({@fig:ectopic}a,c).-->
-<!--Ectopic folds appear in variable positions along the anteroposterior axis, but always in between or adjacent to mitotic domains ({@fig:mitogerm}a).-->
 
-If mitotic domain expansion contributes to the formation of the ectopic folds in btd and eve mutants, then one would expect the cells in between domains to experience compressive stress.
-To evaluate if *btd* mutants show increased tissue strain, we estimated the strain rate using a particle image velocimetry approach [@Blanchard2009-ns].
-The results show that in sibling controls, the cephalic furrow appears before the gradual increase in the tissue strain rate.
-In contrast, in *btd* mutants the peak strain rate in the tissue is 1.3x higher than in sibling controls ({@fig:mitogerm}d,e, {!@fig:vid-strain-analysis}), and coincides with the maximum expansion of mitotic domains and the appearance of the ectopic folds.
-Thus, the strain analysis suggests that the mutant tissue is under increased compressive stress at the time the epithelium buckles.
-Local expansion of the mitotic domains is one potential source of this stress.
-
-<!--TODO: Convergent flow, zero velocity regions where the tissue is converging, we used this++-->
-
-<!--TODO: Initial sentence may not be accurate-->
-<!--TODO: Describe exactly what the strain rate analysis can tell-->
-<!--TODO: Checked Blanchard paper and what we did is not the same. Their pipeline is based on cell segmentation and tracking and ours is simply based on PIV, much more simplified. So what it tell us is not the strain rate but the rate of convergent flows in the tissue. It shows the difference in dynamics between CF where the rate of invagination slowly raises to a peak whereas the EFs have a steeper climb to a higher peak. This data supports the view that EFs buckle abruptly as it is expected to happen in tissue buckling under external compressive stresses.-->
-<!--TODO: What does it mean that the strain rate is higher?-->
 <!--TODO: Try here and below also alternative ways of measuring stress or strain rate (all are valid to try). For example, shape index, density, tissue analyzer measures, strain inference, t1 transitions, neighbour exchange, tissue flows via piv, etc. It can help give better support for this section-->
 
 <!--TODO: How the absence of CF affects the tissue flows of gastrulation?-->
 
-Interestingly, we noticed that ectopic folds could also form between mitotic domain 6 (MD6) and the posterior tip of the extending germ band. 
-Dorsal epithelial cells between MD6 and the germ band are indeed more compressed in *btd* mutants compared to sibling controls ({@fig:mitogerm}f, {!@fig:vid-trunk-germ}).
-We measured the strain rate at this trunk--germ band region and find that it steadily increases over time ({@fig:mitogerm}g).
-This points towards germ band extension as another global source of compressive stress.
-
 <!--TODO: Dorsal cells are more compressed in btd mutants needs quantification-->
 <!--TODO: We noticed sounds like anecdotal evidence, replace by something better-->
-
-Taken together, these analyses suggest that both the formation of mitotic domains, and the extension of the germ band cause mechanical stress in the blastoderm epithelium which may lead to the formation of ectopic folds in the cephalic furrow mutants.
 
 <!--TODO: This ending fits and it’s a good connection with the next section-->
 
