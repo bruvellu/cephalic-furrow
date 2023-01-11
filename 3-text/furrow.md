@@ -131,7 +131,7 @@ A couple of hours after gastrulation, the cephalic furrow completely unfolds wit
 This is in stark contrast to other embryonic invaginations.
 The ventral furrow and midgut invaginations give rise to the mesodermal and endodermal precursors, respectively, and fulfil clear roles during development, while the cephalic furrow, despite being finely regulated, has no obvious function.
 
-<!--TODO: The paragraph is ok, but it’s also too specialized to people familiar with Drosophila. Perhaps we need a more general opening statement and some kind of introduction to fly terms like blastoderm, ventral furrow, germ band, etc.-->
+<!--TODO: The initial paragraph is too specialized for Drosophila. We need a more general opening and an intro to fly terms like blastoderm, ventral furrow, germ band, etc.-->
 
 <!--prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
 <!--the two determines the row of initiator cells [@Vincent1997-fa].-->
@@ -199,34 +199,16 @@ The dividing cells synchronously lose their basal attachment, round up at the ap
 This expansion compresses the adjacent non-dividing cells which are the first infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitogerm}b).
 Mitotic expansions always precede ectopic folding ({@fig:mitogerm}c, {@fig:initiator}a).
 Compared to the progressive invagination of the cephalic furrow (about 14 min), the process of ectopic fold formation is abrupt (about 4 min) ({@fig:initiator}a, {!@fig:vid-mitotic-fold}).
-We measured the rate of non-uniform tissue deformation at the head--trunk interface using particle image velocimetry and find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak coinciding with the maximum expansion of mitotic domains and the appearance of the ectopic folds ({@fig:mitogerm}d,e, {!@fig:vid-strain-analysis}).
+We measured the rate of non-uniform tissue deformation at the head--trunk interface using particle image velocimetry and find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak coinciding with the maximum expansion of mitotic domains and the appearance of the ectopic folds ({@fig:mitogerm}d,e, {@fig:mitotic}b, {!@fig:vid-strain-analysis}).
 The strain rate at the trunk--germ band interface steadily increases over time likely due to the movement of the germ band tip ({@fig:mitogerm}d).
 The epithelial cells between MD6 and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls ({@fig:mitogerm}e, {!@fig:vid-trunk-germ}), a region where ectopic folds appear quite frequently ({@fig:mitogerm}a,c).
 Taken together, these analyses suggests that ectopic folds in cephalic furrow mutants form by tissue buckling due to increased in-plane mechanical forces acting on the monolayer epithelium with excess tissue, and that the both the local expansion of mitotic domains and the global extension of the germ band are the potential sources of mechanical stress.
 
 <!--the rapid phase of the germ band elongation [@Campos-Ortega1985-ma].-->
 
-<!--TODO: Quantify the expansion of mitotic domains (make ROI around it, or segment individual cells and sum the area) in relation to the ectopic folding measured as distance of the center cell to the vitelline envelope-->
-
 <!--The formation of ectopic folds occurs during the rapid phase of the germ band elongation [@Campos-Ortega1985-ma] with around 40% of the total egg length, and coincides with the appearance of mitotic domains---groups of blastoderm cells that divide in synchrony in cleavage cycle 14 [@Foe1989-cw] ({@fig:ectopic}a,c).-->
 
-<!--TODO: Try here and below also alternative ways of measuring stress or strain rate (all are valid to try). For example, shape index, density, tissue analyzer measures, strain inference, t1 transitions, neighbour exchange, tissue flows via piv, etc. It can help give better support for this section-->
-
-<!--TODO: How the absence of CF affects the tissue flows of gastrulation?-->
-
 <!--TODO: Dorsal cells are more compressed in btd mutants needs quantification-->
-<!--TODO: We noticed sounds like anecdotal evidence, replace by something better-->
-
-<!--TODO: This ending fits and it’s a good connection with the next section-->
-
-<!--TODO: Place for Fig2-->
-
-<!--To understand how mechanical stresses relate to ectopic folding, we measured the magnitude of strain rate in two locations. At the head--trunk interface where the cephalic furrow and ectopic folds appear, and at the trunk--germ interface more posteriorly. The strain rate is higher where tissues are being displaced, such as invaginating and buckling cephalic furrow and ectopic folds, respectively ({@fig:strain}A, {!@fig:vid-strain-analysis}).-->
-
-<!--At the head--trunk region, the peak strain of control embryos occurs when the cephalic furrow has already invaginated, around 10 min after gastrulation, while the peak strain of *btd* embryos occurs around 16 min after gastrulation, and coincides with the maximum expansion of mitotic domains and the formation of ectopic folds ({@fig:strain}A).-->
-
-
-<!--# Modelling tissue interactions in the head--trunk interface-->
 
 <!--Model using particles connected by strings-->
 
