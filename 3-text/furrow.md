@@ -219,10 +219,15 @@ The blastoderm consists of an elliptical arc of equidistant particles connected 
 In this 1D elastic model under confinement, the sum of the stretching energy ($\Kappa_{s}$) of springs (edges) with the bending energy ($\Kappa_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelop ($\Kappa_{b}/\Kappa_{s} R_{vit}^2$) defines a dimensionless bending rigidity, the main parameter of our model ({@fig:mitogerm}h).
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we then coded the mitotic domains as regions of compressed strings and the cephalic furrow as a narrow region with an intrinsic negative curvature making the particles invaginate ({@fig:mitogerm}g).
 The extension of the germ band was defined by the static placement of the posterior end of the blastoderm at different percentages of egg length ({@fig:mitogerm}g).
-We did not encoded ectopic folds in the model.
+We did not encode ectopic folds in the model.
 Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system using the peak of bending energy as a reference point to stop the iterations ({@fig:model}b).
 
-To obtain a realistic value of the main control parameter where the model matches experimental observations, we performed a parameter sweep.
+To obtain a realistic bending rigidity value where the model matches experimental observations, we performed a sweep across the parameter space of our variables.
+We measured the distance of each particle to the vitelline envelope and defined that the tissue has folded when this distance is greater than the maximum standard deviation of the average particle depth under the ground noise levels ({@fig:model}c).
+
+<!--TODO: Continue from here-->
+
+
 We observe a buckling transition in the phase space of $\kappa/\lambda R^2$ and $g$ ({@fig:mutant}a,b).
 The phase diagram shows that for high values of bending rigidity ($\kappa/\lambda R^2>1.2\times{10}^{-4}$) neither mitotic domains nor the germ band are sufficient to cause ectopic folds.
 For intermediate values ($\kappa/\lambda R^2 \sim1\times{10}^{-4}$), however, both mitotic domains and germ band extension are required to form ectopic folds.
@@ -232,12 +237,16 @@ Thus, the simulations predict that the mitotic domains alone or the germ band ex
 
 We next performed *in vivo* perturbation experiments in the cephalic furrow mutant embryos that test the predictions of the model.
 
-<!--TODO: Begin with parameter sweep as topic sentence and how MD and GB may influence EFs formation-->
-<!--TODO: How we define what is a fold in the model, we use the intrinsic noise level seed where particles move in any(?) direction, calculate the avg distance to vitelline, and we define and count a fold in the tissue as when the distance of the particle relative to the vitelline envelope becomes greater than the max sd for the distance under only noise-->
-<!--TODO: Structure better the observations because it’s hard to understand. First under a simple no MD/GB situation (only noise) we see no folds for any BR, second we added GB and observe the probability of buckling increase with the extension of GB and as a factor of the bending rigidity where the softer the tissue is the easier the tissue buckles with less GB extension, the GB alone is sufficient to drive the formation of at least one EF (at max GB ext) when the bending rigidity is below 8-5, we then added the MD domains and EF probability increases as a factor of MD alone where the softer the more EFs, when combined with GB the probability of folding with low and high GB values increases between 0.5 and 10 fold-->
+
+- Structure better the observations because it’s hard to understand.
+- First under a simple no MD/GB situation (only noise) we see no folds for any BR
+- second we added GB and observe the probability of buckling increase with the extension of GB and as a factor of the bending rigidity where the softer the tissue is the easier the tissue buckles with less GB extension,
+- the GB alone is sufficient to drive the formation of at least one EF (at max GB ext) when the bending rigidity is below 8-5,
+- we then added the MD domains and EF probability increases as a factor of MD alone where the softer the more EFs,
+- when combined with GB the probability of folding with low and high GB values increases between 0.5 and 10 fold
+
 <!--TODO: Conclusion is that GB/MD own their own (alone) can only induce EF in softer values of bending rigidity below 8. When both events are present there is a left shift in the phase diagram and the probability of EF increases even in low GB values, MD/GB together maximize the probability of EF.-->
-<!--TODO: We performed a parameter sweep across values of bending rigidity-->
-<!--TODO: Fix sentence about parameter space-->
+
 <!--TODO: The conclusion that the simulations predict that neither MD or GB alone can induce EFs is incomplete since they can induce folds depending on the value of bending rigidity.-->
 <!--TODO: Move last sentence as first of the next paragraph-->
 
@@ -245,13 +254,19 @@ We next performed *in vivo* perturbation experiments in the cephalic furrow muta
 
 <!--to determine where the embryo is located in the parameter space, and to test the relative contributions of mitotic domains and germ band extension in driving epithelial buckling.-->
 
-<!--TODO: Place for Fig3-->
+We asked whether germ band extension alone can cause ectopic folds.
+To that end, we generated double-mutant flies lacking both the cephalic furrow and the mitotic domains by combining *btd* mutants with a loss-of-function allele of *string* (*stg*), a phosphatase that regulates cell divisions in cleavage cycle 14 [@Edgar1989-hv].
+Regular *stg* mutants have normal morphogenetic movements and cephalic furrow formation [@Edgar1989-hv] ({@fig:stg}a,b, {@fig:vid-stg-lateral}, {@fig:vid-stg-dorsal}).
+As predicted by our model, *btd*--*stg* double-mutant embryos show no ectopic folds at the head--trunk interface ({@fig:mutant}e,h, {@fig:vid-double-lateral} and {@fig:vid-double-dorsal}).
+This experiment indicates that the germ band extension is insufficient to induce ectopic epithelial buckling in cephalic furrow mutants.
 
-<!--Bending rigidity modulates mitotic domains induced-buckling-->
-
-<!--# Concomitant formation of mitotic domains and germ band extension drive ectopic folding-->
-
-<!--Mitotic expansions insufficient to induce buckling in vivo-->
+<!--TODO: Swap cauterization with double mutant-->
+<!--TODO: Improve topic sentence, we asked whether the GB alone can cause ectopic folds in vivo-->
+<!--TODO: Explain a bit better that in the stg mutant, the lack of this phosphatase, inhibits the formation of all mitotic domains at cycle 14. Yet, the formation of the CF and other morphogenetic movements early in gastrulation occur normally without being affected.-->
+<!--TODO: Is there any trait of the stg mutant that’s worth including here such as the folded area or GB extension measurements? Could be somewhat informative-->
+<!--TODO: Put more emphasis on the result and move the agreement with the model prediction to later in the paragraph, perhaps as a closing sentence?-->
+<!--TODO: What else can we say about the double mutant? Is there any difference in the dynamics of GB or any other trait worth mentioning?-->
+<!--TODO: Frame better the conclusion-->
 
 To test if mitotic domains alone are sufficient to induce ectopic buckling *in vivo*, we mechanically blocked the extension of the germ band in cephalic furrow mutants.
 For that we cauterized a patch of dorsal tissue, attaching it to the vitelline envelope, at the onset of gastrulation ({@fig:mutant}d).
@@ -267,21 +282,6 @@ These experiments reveal that *in vivo*, the local stresses generated by the mit
 <!--TODO: Is there any other quantification possible here?-->
 <!--TODO: Concluding sentence seems appropriate-->
 
-<!--Germ band extension insufficient to induce buckling in silico-->
-
-Next, we asked whether germ band extension alone can cause ectopic folds.
-To that end, we generated double-mutant flies lacking both the cephalic furrow and the mitotic domains by combining *btd* mutants with a loss-of-function allele of *string* (*stg*), a phosphatase that regulates cell divisions in cleavage cycle 14 [@Edgar1989-hv].
-Regular *stg* mutants have normal morphogenetic movements and cephalic furrow formation [@Edgar1989-hv] ({@fig:stg}a,b, {@fig:vid-stg-lateral}, {@fig:vid-stg-dorsal}).
-As predicted by our model, *btd*--*stg* double-mutant embryos show no ectopic folds at the head--trunk interface ({@fig:mutant}e,h, {@fig:vid-double-lateral} and {@fig:vid-double-dorsal}).
-This experiment indicates that the germ band extension is insufficient to induce ectopic epithelial buckling in cephalic furrow mutants.
-
-<!--TODO: Swap cauterization with double mutant-->
-<!--TODO: Improve topic sentence, we asked whether the GB alone can cause ectopic folds in vivo-->
-<!--TODO: Explain a bit better that in the stg mutant, the lack of this phosphatase, inhibits the formation of all mitotic domains at cycle 14. Yet, the formation of the CF and other morphogenetic movements early in gastrulation occur normally without being affected.-->
-<!--TODO: Is there any trait of the stg mutant that’s worth including here such as the folded area or GB extension measurements? Could be somewhat informative-->
-<!--TODO: Put more emphasis on the result and move the agreement with the model prediction to later in the paragraph, perhaps as a closing sentence?-->
-<!--TODO: What else can we say about the double mutant? Is there any difference in the dynamics of GB or any other trait worth mentioning?-->
-<!--TODO: Frame better the conclusion-->
 
 <!--We performed simulations without mitotic domains and find that for most of the parameter space, including the bending rigidity values obtained with the cauterization experiments, no ectopic folds appear in the blastoderm ({@fig:mutant}c).-->
 <!--Ectopic folds only occur when the bending rigidity is low and the germ band is at maximum extension.-->
