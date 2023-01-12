@@ -208,30 +208,20 @@ Taken together, these analyses suggests that ectopic folds in cephalic furrow mu
 
 <!--The formation of ectopic folds occurs during the rapid phase of the germ band elongation [@Campos-Ortega1985-ma] with around 40% of the total egg length, and coincides with the appearance of mitotic domains---groups of blastoderm cells that divide in synchrony in cleavage cycle 14 [@Foe1989-cw] ({@fig:ectopic}a,c).-->
 
+<!--We modified a previously established model of buckling under confinement [@Trushko2020-gf]-->
+
 <!--TODO: Dorsal cells are more compressed in btd mutants needs quantification-->
-
-<!--Model using particles connected by strings-->
-
-To better understand the contribution of local and global sources of stress on the tissue mechanics of the head--trunk boundary, we built a model of a monolayer confined inside a rigid shell.
-We modified a previously established model of buckling under confinement [@Trushko2020-gf] to capture the physical interactions occurring between mitotic domains, ectopic folds, germ band, and the cephalic furrow.
-Our simple model represents the lateral cross-section of the monolayer epithelium of *Drosophila* blastoderm using a series of particles connected by springs.
-Each spring is characterized by a constant stretching rigidity and a bending rigidity ({@fig:mitogerm}g).
-The particles are equidistant along an elliptical arc with dimensions and shape that matches the typical dimensions of a fly embryo ({@fig:fold-model}a).
-The particles are confined on one side by a rigid barrier representing the vitelline envelope.
-The extension of the germ band is simulated by the placement of the right end (posterior) of the arc towards the left end (anterior).
-Mitotic domains are represented by regions of compressed springs and positive intrinsic curvature which captures the thickness mismatch between mitotic domains and non-dividing cells ({@fig:mitogerm}g).
-
-<!--TODO: The description of the model needs structuring. First what the model wants to model: the monolayer in a rigid shell, then the basic elements: particles connected by springs arranged in an elliptical arc that matches the proportions and are enclosed on one side by a rigid barrier, the edges have a stretching energy and vertices a bending energy, the sum of these give the main control parameter of our model known as the bending rigidity, there is a ground level of random noise which makes particles move but limited by the vitelline, to code for MDs we made regions of compressed strings where the advantage is that it keeps the X parameter constant, to code for GB extension we used the placement of the right end at different percentages of extension per body length, CF is encoded by an intrinsic negative curvature, and time or iterations in our simulations represent the equalization of the total energy towards an equilibrium.-->
-<!--TODO: How much of our model was based on the published one? Was some of the code used or it was written from scratch?-->
-<!--TODO: Explain better the ratio k/yR2-->
 <!--TODO: Understand interactions between MD, GB and CF (EFs are not encoded) and test how these morphogenetic events of gastrulation contribute to the formation of EFs-->
-<!--TODO: Replace dimensions by proportions-->
-<!--TODO: It is missing how time is encoded and what the iterations in the simulations mean-->
-<!--TODO: Intrinsic curvature and thickness mismatch are no longer in the model-->
-<!--TODO: Integrate what the progression means with what the iterations mean-->
-<!--TODO: Explain how the iterations are stopped (based on the peak of bending energy)-->
 
-The main control parameter of our model is the ratio $\kappa/\lambda R^2$ while the germ band position ($g$) represents the progression of the development.
+To better understand the contribution of local and global sources of stress on the tissue mechanics of the head--trunk boundary, we created a model of an epithelial monolayer confined inside a rigid shell.
+Our model represents one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:mitogerm}f, {@fig:model}a).
+The blastoderm consists of an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:mitogerm}g).
+In this 1D elastic model under confinement, the sum of the stretching energy ($\Kappa_{s}$) of springs (edges) with the bending energy ($\Kappa_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelop ($\Kappa_{b}/\Kappa_{s} R_{vit}^2$) defines a dimensionless bending rigidity, the main parameter of our model ({@fig:mitogerm}h).
+To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we then coded the mitotic domains as regions of compressed strings and the cephalic furrow as a narrow region with an intrinsic negative curvature making the particles invaginate ({@fig:mitogerm}g).
+The extension of the germ band was defined by the static placement of the posterior end of the blastoderm at different percentages of egg length ({@fig:mitogerm}g).
+We did not encoded ectopic folds in the model.
+Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system using the peak of bending energy as a reference point to stop the iterations ({@fig:model}b).
+
 To obtain a realistic value of the main control parameter where the model matches experimental observations, we performed a parameter sweep.
 We observe a buckling transition in the phase space of $\kappa/\lambda R^2$ and $g$ ({@fig:mutant}a,b).
 The phase diagram shows that for high values of bending rigidity ($\kappa/\lambda R^2>1.2\times{10}^{-4}$) neither mitotic domains nor the germ band are sufficient to cause ectopic folds.
@@ -239,6 +229,7 @@ For intermediate values ($\kappa/\lambda R^2 \sim1\times{10}^{-4}$), however, bo
 Mitotic domains alone are sufficient to cause the formation of ectopic folds only for low values of bending rigidity ($\kappa/\lambda R^2<8\times{10}^{-5}$) ({@fig:mutant}a,b).
 Conversely, when mitotic domains or the germ band extension are removed from the simulation for most of the parameter space no ectopic folds appear ({@fig:mutant}c).
 Thus, the simulations predict that the mitotic domains alone or the germ band extension alone is insufficient to induce ectopic folding.
+
 We next performed *in vivo* perturbation experiments in the cephalic furrow mutant embryos that test the predictions of the model.
 
 <!--TODO: Begin with parameter sweep as topic sentence and how MD and GB may influence EFs formation-->
@@ -733,7 +724,7 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 ![Model of epithelial dynamics in *Drosophila* blastoderm.
 **a**, Dimensions and proportions of the embryo used as a reference for the model.
-](figures/FigS4.jpg){#fig:fold-model tag=S4 width=100%}
+](figures/FigS4.jpg){#fig:model tag=S4 width=100%}
 
 ![Lateral and dorsal views of *stg* mutant embryos.
 ](figures/FigS5.jpg){#fig:stg tag=S5 width=100%}
