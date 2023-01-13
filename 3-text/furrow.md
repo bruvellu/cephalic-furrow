@@ -226,20 +226,15 @@ To obtain realistic values where the model matches experimental observations, we
 We defined that the tissue has folded when this distance is greater than the maximum standard deviation of the average particle depth under the ground noise levels ({@fig:model}c).
 Under the baseline conditions without mitotic domains or germ band extension (only noise), we observe no ectopic fold formation for any bending rigidity values ({@fig:mutant}a).
 The probability of buckling increases with the germ band extension and as a factor of the bending rigidity.
-We observe a buckling transition in the phase space in softer conditions ($5.0\times10^{−5}$) already at 10% germ band extension, but in stiffer conditions $>8.0\times10^{−5}$ the germ band alone cannot drive the formation ectopic folds even at its maximum extension ({@fig:mutant}a).
+We observe a buckling transition in the phase space in softer conditions ($5.0\times10^{−5}$) already at 10% germ band extension, but in stiffer conditions ($>8.0\times10^{−5}$) the germ band alone cannot drive the formation ectopic folds even at its maximum extension ({@fig:mutant}a).
 When we added mitotic domains to the simulations, there was a left shift in the phase diagram with the probability of ectopic fold formation increasing even in low values of germ band extension and higher values of bending rigidity ({@fig:mutant}a).
-Mitotic domains alone can induce ectopic folds in softer conditions $<6.5\times10^{−5}$, and above $9.0\times10^{−5}$, neither mitotic domains nor the germ band are sufficient to cause ectopic folds.
+Mitotic domains alone can induce ectopic folds in softer conditions ($<6.5\times10^{−5}$).
+But above ($>9.0\times10^{−5}$), neither mitotic domains nor the germ band are sufficient to cause ectopic folds.
 But for most phase space, the combined action of mitotic domains and germ band maximizes the probability of ectopic fold formation, increasing the number of folds up to 10 times ({@fig:mutant}a).
 These simulations show that depending on the bending rigidity, mitotic domains alone can drive ectopic folds when $<6.5\times10^{−5}$, and germ band alone can drive ectopic folds when $<8.0\times10^{−5}$.
-We thus set to perform perturbation experiments to test this conditions *in vivo*.
+We thus set to perform perturbation experiments to test these conditions *in vivo*.
 
-
-<!--TODO: The conclusion that the simulations predict that neither MD or GB alone can induce EFs is incomplete since they can induce folds depending on the value of bending rigidity.-->
-<!--TODO: Move last sentence as first of the next paragraph-->
-
-<!--TODO: Additional data/results from the model like the quantification of stress in particles/regions in between mitotic domains or between MD and GB that represent non-dividing cells under stress-->
-
-<!--to determine where the embryo is located in the parameter space, and to test the relative contributions of mitotic domains and germ band extension in driving epithelial buckling.-->
+<!--TODO: Quantify stress between mitotic domains to represent non-dividing cells under stress-->
 
 We asked whether germ band extension alone can cause ectopic folds.
 To that end, we generated double-mutant flies lacking both the cephalic furrow and the mitotic domains by combining *btd* mutants with a loss-of-function allele of *string* (*stg*), a phosphatase that regulates cell divisions in cleavage cycle 14 [@Edgar1989-hv].
