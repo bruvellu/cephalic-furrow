@@ -66,35 +66,41 @@ for (d in 1:length(datafiles)) {
 
 ```
 
-```{r plot}
+```{r all-boxplot}
 # Plot stocks together using bars
 ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(alpha = 0.8, position = position_dodge(width = 2), show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("tortuosity_all_boxplot.png")
+```
 
+```{r all-smooth}
 # Plot stocks together using lines
 ggplot(datasets, aes(minute, tortuosity, color = sample)) + geom_smooth(span = 0.3, show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("tortuosity_all_smooth.png", width = 7, height = 3)
+```
 
+```{r facet-boxplot}
 # Plot stocks separately using bars side by side
 ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(position = position_dodge(width = 2), show.legend = FALSE) + facet_wrap(~stock) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#0072b2", "#e69f03")) + theme_classic()
 ggsave("tortuosity_facet_boxplot.png")
+```
 
+```{r facet-smooth}
 # Plot stocks separately using lines vertically
 ggplot(datasets, aes(minute, tortuosity, color = sample)) +
   geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = sample)) +
-  facet_wrap(~stock, ncol = 1, strip.position = "top") +
+  facet_wrap(~stock, ncol = 2, strip.position = "top") +
   labs(x = "minutes", y = "tortuosity") +
   scale_color_manual(values=c("#0072b2", "#e69f03")) +
   scale_fill_manual(values=c("#0072b2", "#e69f03")) +
   theme_classic() +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
-        strip.text.x = element_blank(),
-        #strip.placement = "outside",
-        #strip.text.x = element_text(face = "italic"),
+        #strip.text.x = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("tortuosity_facet_smooth.png", width = 7, height = 11)
-ggsave("tortuosity_facet_smooth.svg", width = 7, height = 11)
+ggsave("tortuosity_facet_smooth.png", width = 18, height = 8)
+ggsave("tortuosity_facet_smooth.svg", width = 18, height = 8)
 
 ```
 
