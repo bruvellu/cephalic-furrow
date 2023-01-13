@@ -216,36 +216,23 @@ Taken together, these analyses suggests that ectopic folds in cephalic furrow mu
 To better understand the contribution of local and global sources of stress on the tissue mechanics of the head--trunk boundary, we created a model of an epithelial monolayer confined inside a rigid shell.
 Our model represents one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:mitogerm}f, {@fig:model}a).
 The blastoderm consists of an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:mitogerm}g).
-In this 1D elastic model under confinement, the sum of the stretching energy ($\Kappa_{s}$) of springs (edges) with the bending energy ($\Kappa_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelop ($\Kappa_{b}/\Kappa_{s} R_{vit}^2$) defines a dimensionless bending rigidity, the main parameter of our model ({@fig:mitogerm}h).
+In this 1D elastic model under confinement, the sum of the stretching energy ($\Kappa_{s}$) of springs (edges) with the bending energy ($\Kappa_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope ($\Kappa_{b}/\Kappa_{s} R_{vit}^2$) defines a dimensionless bending rigidity, the main parameter of our model ({@fig:mitogerm}h).
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we then coded the mitotic domains as regions of compressed strings and the cephalic furrow as a narrow region with an intrinsic negative curvature making the particles invaginate ({@fig:mitogerm}g).
 The extension of the germ band was defined by the static placement of the posterior end of the blastoderm at different percentages of egg length ({@fig:mitogerm}g).
 We did not encode ectopic folds in the model.
 Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system using the peak of bending energy as a reference point to stop the iterations ({@fig:model}b).
 
-To obtain a realistic bending rigidity value where the model matches experimental observations, we performed a sweep across the parameter space of our variables.
-We measured the distance of each particle to the vitelline envelope and defined that the tissue has folded when this distance is greater than the maximum standard deviation of the average particle depth under the ground noise levels ({@fig:model}c).
+To obtain realistic values where the model matches experimental observations, we performed a sweep across the parameter space for the bending rigidity parameter and quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope.
+We defined that the tissue has folded when this distance is greater than the maximum standard deviation of the average particle depth under the ground noise levels ({@fig:model}c).
+Under the baseline conditions without mitotic domains or germ band extension (only noise), we observe no ectopic fold formation for any bending rigidity values ({@fig:mutant}a).
+The probability of buckling increases with the germ band extension and as a factor of the bending rigidity.
+We observe a buckling transition in the phase space in softer conditions ($5.0\times10^{−5}$) already at 10% germ band extension, but in stiffer conditions $>8.0\times10^{−5}$ the germ band alone cannot drive the formation ectopic folds even at its maximum extension ({@fig:mutant}a).
+When we added mitotic domains to the simulations, there was a left shift in the phase diagram with the probability of ectopic fold formation increasing even in low values of germ band extension and higher values of bending rigidity ({@fig:mutant}a).
+Mitotic domains alone can induce ectopic folds in softer conditions $<6.5\times10^{−5}$, and above $9.0\times10^{−5}$, neither mitotic domains nor the germ band are sufficient to cause ectopic folds.
+But for most phase space, the combined action of mitotic domains and germ band maximizes the probability of ectopic fold formation, increasing the number of folds up to 10 times ({@fig:mutant}a).
+These simulations show that depending on the bending rigidity, mitotic domains alone can drive ectopic folds when $<6.5\times10^{−5}$, and germ band alone can drive ectopic folds when $<8.0\times10^{−5}$.
+We thus set to perform perturbation experiments to test this conditions *in vivo*.
 
-<!--TODO: Continue from here-->
-
-
-We observe a buckling transition in the phase space of $\kappa/\lambda R^2$ and $g$ ({@fig:mutant}a,b).
-The phase diagram shows that for high values of bending rigidity ($\kappa/\lambda R^2>1.2\times{10}^{-4}$) neither mitotic domains nor the germ band are sufficient to cause ectopic folds.
-For intermediate values ($\kappa/\lambda R^2 \sim1\times{10}^{-4}$), however, both mitotic domains and germ band extension are required to form ectopic folds.
-Mitotic domains alone are sufficient to cause the formation of ectopic folds only for low values of bending rigidity ($\kappa/\lambda R^2<8\times{10}^{-5}$) ({@fig:mutant}a,b).
-Conversely, when mitotic domains or the germ band extension are removed from the simulation for most of the parameter space no ectopic folds appear ({@fig:mutant}c).
-Thus, the simulations predict that the mitotic domains alone or the germ band extension alone is insufficient to induce ectopic folding.
-
-We next performed *in vivo* perturbation experiments in the cephalic furrow mutant embryos that test the predictions of the model.
-
-
-- Structure better the observations because it’s hard to understand.
-- First under a simple no MD/GB situation (only noise) we see no folds for any BR
-- second we added GB and observe the probability of buckling increase with the extension of GB and as a factor of the bending rigidity where the softer the tissue is the easier the tissue buckles with less GB extension,
-- the GB alone is sufficient to drive the formation of at least one EF (at max GB ext) when the bending rigidity is below 8-5,
-- we then added the MD domains and EF probability increases as a factor of MD alone where the softer the more EFs,
-- when combined with GB the probability of folding with low and high GB values increases between 0.5 and 10 fold
-
-<!--TODO: Conclusion is that GB/MD own their own (alone) can only induce EF in softer values of bending rigidity below 8. When both events are present there is a left shift in the phase diagram and the probability of EF increases even in low GB values, MD/GB together maximize the probability of EF.-->
 
 <!--TODO: The conclusion that the simulations predict that neither MD or GB alone can induce EFs is incomplete since they can induce folds depending on the value of bending rigidity.-->
 <!--TODO: Move last sentence as first of the next paragraph-->
