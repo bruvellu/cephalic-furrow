@@ -25,20 +25,20 @@ linkimg:
 	# Link figure files to figure directory with official naming
 	#ln -s ${FIGUREIN}/furrow-intro/figure.png ${FIGUREOUT}/Fig1.png
 	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
+	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig2.png
+	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig3.png
 	#ln -s ${FIGUREIN}/strain-analysis/figure.png ${FIGUREOUT}/Fig4.png
 	#ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig5.png
-	ln -s ${FIGUREIN}/mitogerm-model/figure.png ${FIGUREOUT}/Fig2.png
-	ln -s ${FIGUREIN}/mutant-analyses/figure.png ${FIGUREOUT}/Fig3.png
+	#ln -s ${FIGUREIN}/mitogerm-model/figure.png ${FIGUREOUT}/Fig2.png
+	ln -s ${FIGUREIN}/mutant-analyses/figure.png ${FIGUREOUT}/Fig4.png
 	#ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
 	#ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig7.png
 	#ln -s ${FIGUREIN}/wildtype-cauterizations/figure.png ${FIGUREOUT}/Fig8.png
-	ln -s ${FIGUREIN}/wildtype-analyses/figure.png ${FIGUREOUT}/Fig4.png
+	ln -s ${FIGUREIN}/wildtype-analyses/figure.png ${FIGUREOUT}/Fig5.png
 	#ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig9.png
 	# Supplementary
 	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
 	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/FigS2.png
-	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/FigS3.png
-	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/FigS4.png
 	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS5.png
 	# Convert to JPG for smaller file sizes
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
