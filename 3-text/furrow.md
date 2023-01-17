@@ -214,7 +214,7 @@ Taken together, these analyses suggests that ectopic folds in cephalic furrow mu
 <!--TODO: Understand interactions between MD, GB and CF (EFs are not encoded) and test how these morphogenetic events of gastrulation contribute to the formation of EFs-->
 
 To better understand the contribution of local and global sources of stress on the tissue mechanics of the head--trunk boundary, we created a model of an epithelial monolayer confined inside a rigid shell.
-Our model represents one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:mitogerm}f, {@fig:model}a).
+Our model represents one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:mitogerm}f, {@fig:proportions}).
 The blastoderm consists of an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:mitogerm}g).
 In this 1D elastic model under confinement, the sum of the stretching energy ($\Kappa_{s}$) of springs (edges) with the bending energy ($\Kappa_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope ($\Kappa_{b}/\Kappa_{s} R_{vit}^2$) defines a dimensionless bending rigidity, the main parameter of our model ({@fig:mitogerm}h).
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we then coded the mitotic domains as regions of compressed strings and the cephalic furrow as a narrow region with an intrinsic negative curvature making the particles invaginate ({@fig:mitogerm}g).
@@ -680,9 +680,9 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 ![Mitotic domains in cephalic furrow mutants.
 ](figures/FigS3.jpg){#fig:mitotic tag=S3 width=100%}
 
-![Model of epithelial dynamics in *Drosophila* blastoderm.
-**a**, Dimensions and proportions of the embryo used as a reference for the model.
-](figures/FigS4.jpg){#fig:model tag=S4 width=100%}
+![*Drosophila* proportions in wild type embryos and cephalic furrow mutants.
+Dimensions used as a reference for the model.
+](figures/FigS4.jpg){#fig:proportions tag=S4 width=70%}
 
 ![Lateral and dorsal views of *stg* mutant embryos.
 ](figures/FigS5.jpg){#fig:stg tag=S5 width=100%}

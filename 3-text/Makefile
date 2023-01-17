@@ -27,7 +27,7 @@ linkimg:
 	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig2.png
 	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig3.png
-	ln -s ${FIGUREIN}/invivo-experiments/figure.png ${FIGUREOUT}/Fig4.png
+	ln -s ${FIGUREIN}/live-experiments/figure.png ${FIGUREOUT}/Fig4.png
 	#ln -s ${FIGUREIN}/strain-analysis/figure.png ${FIGUREOUT}/Fig4.png
 	#ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig5.png
 	#ln -s ${FIGUREIN}/mitogerm-model/figure.png ${FIGUREOUT}/Fig2.png
@@ -40,6 +40,7 @@ linkimg:
 	# Supplementary
 	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
 	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/FigS2.png
+	ln -s ${FIGUREIN}/embryo-proportions/figure.png ${FIGUREOUT}/FigS4.png
 	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS5.png
 	# Convert to JPG for smaller file sizes
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
