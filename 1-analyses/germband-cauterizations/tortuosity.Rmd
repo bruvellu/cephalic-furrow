@@ -93,14 +93,13 @@ ggplot(datasets, aes(minute, tortuosity, color = sample)) +
   scale_color_manual(values=c("#0072b2", "#e69f03")) +
   scale_fill_manual(values=c("#0072b2", "#e69f03")) +
   theme_classic() +
-  theme(text =  element_text(size = 35),
+  theme(text =  element_text(size = 45),
         strip.background = element_blank(),
-        #strip.text.x = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("tortuosity_facet_smooth.png", width = 18, height = 8)
-ggsave("tortuosity_facet_smooth.svg", width = 18, height = 8)
+ggsave("tortuosity_facet_smooth.png", width = 18, height = 6)
+ggsave("tortuosity_facet_smooth.svg", width = 18, height = 6)
 
 ```
 
