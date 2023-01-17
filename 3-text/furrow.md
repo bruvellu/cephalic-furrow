@@ -195,11 +195,11 @@ The variability of ectopic fold formation in cephalic furrow mutants and the occ
 Therefore, we investigated two concurrent gastrulation processes that could be driving their formation: cell divisions in mitotic domains and the extension of the germ band.
 The first mitotic domains in *Drosophila* appear in the head around 20 min after gastrulation [@Foe1989-cw] which coincides with the formation of ectopic folds ({@fig:ectopic}a,c,d).
 Ectopic folds also always appear in between or adjacent to mitotic domains ({@fig:mitogerm}a).
-The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during during anaphase elongation ({@fig:mitotic}a)
+The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during during anaphase elongation ({@fig:apical})
 This expansion compresses the adjacent non-dividing cells which are the first infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitogerm}b).
 Mitotic expansions always precede ectopic folding ({@fig:mitogerm}c, {@fig:initiator}a).
 Compared to the progressive invagination of the cephalic furrow (about 14 min), the process of ectopic fold formation is abrupt (about 4 min) ({@fig:initiator}a, {!@fig:vid-mitotic-fold}).
-We measured the rate of non-uniform tissue deformation at the head--trunk interface using particle image velocimetry and find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak coinciding with the maximum expansion of mitotic domains and the appearance of the ectopic folds ({@fig:mitogerm}d,e, {@fig:mitotic}b, {!@fig:vid-strain-analysis}).
+We measured the rate of non-uniform tissue deformation at the head--trunk interface using particle image velocimetry and find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak coinciding with the maximum expansion of mitotic domains and the appearance of the ectopic folds ({@fig:mitogerm}d,e, {@fig:strain}, {!@fig:vid-strain-rate}).
 The strain rate at the trunk--germ band interface steadily increases over time likely due to the movement of the germ band tip ({@fig:mitogerm}d).
 The epithelial cells between MD6 and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls ({@fig:mitogerm}e, {!@fig:vid-trunk-germ}), a region where ectopic folds appear quite frequently ({@fig:mitogerm}a,c).
 Taken together, these analyses suggests that ectopic folds in cephalic furrow mutants form by tissue buckling due to increased in-plane mechanical forces acting on the monolayer epithelium with excess tissue, and that the both the local expansion of mitotic domains and the global extension of the germ band are the potential sources of mechanical stress.
@@ -647,8 +647,8 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 ![Lateral view of ectopic fold formation between mitotic domains in *btd* mutant.
 ](figures/Vid7.jpg){#fig:vid-mitotic-fold tag="Video 7" width=50%}
 
-![Strain analysis during ectopic fold formation in *btd* mutant.
-](figures/Vid8.jpg){#fig:vid-strain-analysis tag="Video 8" width=50%}
+![Strain rate analysis during ectopic fold formation in *btd* mutant.
+](figures/Vid8.jpg){#fig:vid-strain-rate tag="Video 8" width=50%}
 
 ![Increased compression at the trunk--germ interface in *btd* mutant.
 ](figures/Vid9.jpg){#fig:vid-trunk-germ tag="Video 9" width=50%}
@@ -677,15 +677,18 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 ![Ectopic folding features in cephalic furrow mutants.
 ](figures/FigS2.jpg){#fig:features tag=S2 width=100%}
 
-![Mitotic domains in cephalic furrow mutants.
-](figures/FigS3.jpg){#fig:mitotic tag=S3 width=100%}
+![Cell apical area in mitotic domains.
+](figures/FigS3.jpg){#fig:apical tag=S3 width=50%}
+
+![Strain rate analysis in cephalic furrow mutants.
+](figures/FigS4.jpg){#fig:strain tag=S4 width=80%}
 
 ![*Drosophila* proportions in wild type embryos and cephalic furrow mutants.
 Dimensions used as a reference for the model.
-](figures/FigS4.jpg){#fig:proportions tag=S4 width=70%}
+](figures/FigS5.jpg){#fig:proportions tag=S5 width=80%}
 
 ![Lateral and dorsal views of *stg* mutant embryos.
-](figures/FigS5.jpg){#fig:stg tag=S5 width=100%}
+](figures/FigS6.jpg){#fig:stg tag=S6 width=100%}
 
 ## Videos
 

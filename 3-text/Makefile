@@ -28,7 +28,7 @@ linkimg:
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig2.png
 	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig3.png
 	ln -s ${FIGUREIN}/live-experiments/figure.png ${FIGUREOUT}/Fig4.png
-	#ln -s ${FIGUREIN}/strain-analysis/figure.png ${FIGUREOUT}/Fig4.png
+	#ln -s ${FIGUREIN}/strain-rate/figure.png ${FIGUREOUT}/Fig4.png
 	#ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig5.png
 	#ln -s ${FIGUREIN}/mitogerm-model/figure.png ${FIGUREOUT}/Fig2.png
 	#ln -s ${FIGUREIN}/mutant-analyses/figure.png ${FIGUREOUT}/Fig4.png
@@ -40,8 +40,10 @@ linkimg:
 	# Supplementary
 	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
 	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/FigS2.png
-	ln -s ${FIGUREIN}/embryo-proportions/figure.png ${FIGUREOUT}/FigS4.png
-	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS5.png
+	ln -s ${FIGUREIN}/apical-area/figure.png ${FIGUREOUT}/FigS3.png
+	ln -s ${FIGUREIN}/strain-rate/figure.png ${FIGUREOUT}/FigS4.png
+	ln -s ${FIGUREIN}/embryo-proportions/figure.png ${FIGUREOUT}/FigS5.png
+	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS6.png
 	# Convert to JPG for smaller file sizes
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	mkdir ${FIGUREOUT}/source
@@ -56,8 +58,8 @@ linkvid:
 	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.m4v ${FIGUREOUT}/Vid5.m4v
 	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.m4v ${FIGUREOUT}/Vid6.m4v
 	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.m4v ${FIGUREOUT}/Vid7.m4v
-	ln -s ${FIGUREIN}/strain-analysis/videos/Strain_btd_E10_E14_label_loop.m4v ${FIGUREOUT}/Vid8.m4v
-	ln -s ${FIGUREIN}/strain-analysis/videos/LABEL_COMBINE_3D_btd-gap_z3_t55s_E12_E8.m4v ${FIGUREOUT}/Vid9.m4v
+	ln -s ${FIGUREIN}/strain-rate/videos/Strain_btd_E10_E14_label_loop.m4v ${FIGUREOUT}/Vid8.m4v
+	ln -s ${FIGUREIN}/strain-rate/videos/LABEL_COMBINE_3D_btd-gap_z3_t55s_E12_E8.m4v ${FIGUREOUT}/Vid9.m4v
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.m4v ${FIGUREOUT}/Vid10.m4v
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.m4v ${FIGUREOUT}/Vid11.m4v
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.m4v ${FIGUREOUT}/Vid12.m4v
