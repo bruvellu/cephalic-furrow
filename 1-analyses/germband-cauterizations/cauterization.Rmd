@@ -94,32 +94,101 @@ colnames(sample_cf_sd) <- c("Sample", "SD")
 summary_samples <- merge(sample_cf_mean, sample_cf_sd, by = "Sample", all.x = TRUE)
 ```
 
-### Area plot
+### Cephalic furrow maximum depth
 
-```{r area}
+```{r depth-ind}
 # Load ggplot
 library(ggplot2)
 
+# Plot mean length of cephalic furrow per embryo (right/left sides)
+ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length, fill = Sample)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  labs(x = "sample", y = "depth (µm)") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_y_continuous(limits = c(20, 70)) +
+  theme_classic() +
+  theme(text =  element_text(size = 35),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("wt-length.png", width = 7, height = 4)
+ggsave("wt-length.svg", width = 7, height = 4)
+
+```
+
+
+```{r depth-mean}
+# Load ggplot
+library(ggplot2)
+
+# Plot mean length of cephalic furrow per embryo (right/left sides)
+ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  labs(x = "sample", y = "depth (µm)") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_y_continuous(limits = c(20, 70)) +
+  theme_classic() +
+  theme(text =  element_text(size = 35),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("wt-mean-length.png", width = 7, height = 4)
+ggsave("wt-mean-length.svg", width = 7, height = 4)
+
+```
+
+```{r stats}
+# Statistical testing
+mean_ctrl <- mean(summary_embryos[summary_embryos$Sample == "control",]$Mean)
+mean_caut <- mean(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)
+diff_micron <- mean(summary_embryos[summary_embryos$Sample == "control",]$Mean) - mean(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)
+diff_pct <- (mean(summary_embryos[summary_embryos$Sample == "control",]$Mean) - mean(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)) / mean(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean) * 100
+
+# Test if distribution is normal
+shapiro.test(summary_embryos[summary_embryos$Sample == "control",]$Mean)
+shapiro.test(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)
+shapiro.test(results[results$Sample == "control",]$Length)
+shapiro.test(results[results$Sample == "cauterized",]$Length)
+
+
+# Test if control is greater than cauterized
+wilcox.test(summary_embryos[summary_embryos$Sample == "control",]$Mean,
+            summary_embryos[summary_embryos$Sample == "cauterized",]$Mean,
+            alternative = "g")
+
+wilcox.test(results[results$Sample == "control",]$Length,
+            results[results$Sample == "cauterized",]$Length,
+            alternative = "g")
+
+ks.test(summary_embryos[summary_embryos$Sample == "control",]$Mean,
+            summary_embryos[summary_embryos$Sample == "cauterized",]$Mean,
+            alternative = "g")
+
+ks.test(results[results$Sample == "control",]$Length,
+            results[results$Sample == "cauterized",]$Length,
+            alternative = "g")
+
+t.test(summary_embryos[summary_embryos$Sample == "control",]$Mean,
+       summary_embryos[summary_embryos$Sample == "cauterized",]$Mean,
+       var.equal = FALSE)
+
+t.test(results[results$Sample == "control",]$Length,
+       results[results$Sample == "cauterized",]$Length,
+       var.equal = FALSE)
+
+# Test if control and cauterized have the same variance
+var.test(summary_embryos[summary_embryos$Sample == "control",]$Mean,
+         summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)
+
+var.test(results[results$Sample == "control",]$Length,
+         results[results$Sample == "cauterized",]$Length)
+
+```
+
+
+```{r length}
 # Plot length of cephalic furrow invaginations
 ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15, aes(colour = Embryo)) +
   labs(title = "Length of CF invagination", x = "sample", y = "length (µm)")
 ggsave("wt-cf-length.png")
-
-# Plot total length of cephalic furrow invagination per embryo
-ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE) +
-  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  labs(x = "sample", y = "length (µm)") +
-  scale_color_manual(values=c("#0072b2", "#e69f03")) +
-  scale_fill_manual(values=c("#0072b2", "#e69f03")) +
-  theme_classic() +
-  theme(text =  element_text(size = 25),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text.x = element_text(face = "italic"),
-        panel.background = element_rect(colour = "black", size=1))
-ggsave("wt-mean-length.png", width = 6, height = 5)
-
 
 # Plot total length of cephalic furrow invagination per embryo
 ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Total, colour = Sample)) +
