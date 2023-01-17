@@ -28,8 +28,6 @@ linkimg:
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig2.png
 	ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig3.png
 	ln -s ${FIGUREIN}/live-experiments/figure.png ${FIGUREOUT}/Fig4.png
-	#ln -s ${FIGUREIN}/strain-rate/figure.png ${FIGUREOUT}/Fig4.png
-	#ln -s ${FIGUREIN}/fold-model/figure.png ${FIGUREOUT}/Fig5.png
 	#ln -s ${FIGUREIN}/mitogerm-model/figure.png ${FIGUREOUT}/Fig2.png
 	#ln -s ${FIGUREIN}/mutant-analyses/figure.png ${FIGUREOUT}/Fig4.png
 	#ln -s ${FIGUREIN}/mutant-cauterizations/figure.png ${FIGUREOUT}/Fig6.png
