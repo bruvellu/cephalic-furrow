@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    width="120mm"
-   height="70mm"
-   viewBox="0 0 119.99999 70.00002"
+   height="60mm"
+   viewBox="0 0 119.99999 60.000017"
    version="1.1"
    id="svg8"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -5013,7 +5013,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
      inkscape:cx="289.91377"
-     inkscape:cy="151.32085"
+     inkscape:cy="152.02795"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -5049,19 +5049,19 @@
        spacingy="0.10000001"
        originx="0"
        originy="0" /><sodipodi:guide
-       position="1.0000001,70.00002"
+       position="1.0000001,60.000019"
        orientation="1,0"
        id="guide9622"
        inkscape:locked="false" /><sodipodi:guide
-       position="0,69.00002"
+       position="0,59.000019"
        orientation="0,-1"
        id="guide9624"
        inkscape:locked="false" /><sodipodi:guide
-       position="179.00003,70.00002"
+       position="179.00003,60.000019"
        orientation="1,0"
        id="guide9626"
        inkscape:locked="false" /><sodipodi:guide
-       position="0.99999998,-99.00003"
+       position="0.99999997,-109.00003"
        orientation="0,-1"
        id="guide109164"
        inkscape:locked="false" /></sodipodi:namedview><metadata
@@ -5261,13 +5261,13 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round"
        x="1.0000001"
-       y="60.70834"
+       y="66.000008"
        id="text2337-7-5-2"><tspan
          sodipodi:role="line"
          id="tspan2335-5-9-6"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.264583"
          x="1.0000001"
-         y="60.70834">b</tspan></text><text
+         y="66.000008">b</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;white-space:pre;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round"
        x="313.47729"
@@ -7822,7 +7822,7 @@
        xlink:href="Equation_inv.png"
        id="image15209"
        x="2.9416671"
-       y="58.817078" /><rect
+       y="64.108742" /><rect
        style="white-space:pre;display:inline;fill:none;fill-opacity:1;stroke:#fefaee;stroke-width:0.132292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect6027-1"
        width="7.9374976"
