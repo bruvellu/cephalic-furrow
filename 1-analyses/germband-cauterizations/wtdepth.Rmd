@@ -1,5 +1,5 @@
 ---
-title: "Measurements for cauterization experiments"
+title: "Cephalic furrow depth in wildtype cauterizations"
 author: "Bruno C. Vellutini"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 creation: April 06, 2021
@@ -8,6 +8,9 @@ creation: April 06, 2021
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
 knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
+setwd("~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
+library(ggplot2)
+library(ggbeeswarm)
 ```
 
 ## Directories
@@ -16,7 +19,7 @@ knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-an
 - `1-wt`: Processed stacks for the analysis of wild type phenotypes
 - `2-mutants`: Processed stacks for the analysis of mutant phenotypes
 
-## Wild type analysis
+## Description
 
 We have evidence that the germ band compresses the head-trunk interface and
 causes tissue buckling. This led to the hypothesis the germ band is also
@@ -43,23 +46,53 @@ There is at least one embryo that seems to show that, where the germ band is
 only blocked on the surface and unevenly. The germ band actually dives into the
 yolk. The cephalic furrow invaginations have unequal lengths accordingly.
 
-### Load measurements
+## Load measurements
 
 ```{r load}
 # Load raw ROI measurements from ImageJ
 results <- read.csv("1-wt/Lengths.csv")
 
-# Add CF by GB index
-results$CFbyGB <- results$Length / results$Distance
-
 # Calculate summaries per sample
-summary(results[results$Sample == "control", c("Length")])
-summary(results[results$Sample == "cauterized", c("Length")])
+by(results[results$Sample == "control", c("Length")], results[results$Sample == "control",]$Stock, summary)
+print("------------------------------------------------------------------------------------")
+by(results[results$Sample == "cauterized", c("Length")], results[results$Sample == "cauterized",]$Stock, summary)
+```
+## Maximum depth of individual folds
 
-# Sum total CF length per embryo
-embryo_cf_sum <- aggregate(results$Length, list(results$Embryo), sum)
-colnames(embryo_cf_sum) <- c("Embryo", "Total")
+The mean of control embryos of different stocks is different. In btd, there's a
+difference but it's only two embryos. In eve, there's no cauterized embryos. For
+wt, there's n=3 in each condition. The mean is different but there's one embryo
+pulling it up in the control, and one embryo where there's a big difference between
+left and right furrow lengths.
 
+```{r depth-ind}
+set.seed(111111)
+# Plot mean length of cephalic furrow per embryo (right/left sides)
+ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length, fill = Sample)) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_quasirandom(size = 2, width = 0.2, alpha = 0.8, show.legend = FALSE) +
+  #geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  labs(x = "sample", y = "depth (µm)") +
+  facet_wrap(~Stock) +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_y_continuous(limits = c(20, 70)) +
+  theme_classic() +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 45, face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("wt-length.png", width = 7, height = 4)
+ggsave("wt-length.svg", width = 7, height = 4)
+```
+
+
+## Mean furrow length by embryo
+
+To attempt to normalize the furrow length per embryo, since their length does not
+seem to be independent of each other, I'll take the length mean per embryo.
+
+```{r mean-length}
 # Mean of CF length per embryo
 embryo_cf_mean <- aggregate(results$Length, list(results$Embryo), mean)
 colnames(embryo_cf_mean) <- c("Embryo", "Mean")
@@ -68,121 +101,97 @@ colnames(embryo_cf_mean) <- c("Embryo", "Mean")
 embryo_cf_sd <- aggregate(results$Length, list(results$Embryo), sd)
 colnames(embryo_cf_sd) <- c("Embryo", "SD")
 
-# Sum total GB length per embryo
-embryo_gb_sum <- aggregate(results$Distance, list(results$Embryo), sum)
-colnames(embryo_gb_sum) <- c("Embryo", "Distance")
-
-# Sum total CF by GB per embryo
-embryo_by_sum <- aggregate(results$CFbyGB, list(results$Embryo), sum)
-colnames(embryo_by_sum) <- c("Embryo", "CFbyGB")
-
 # Get sample information
-samples <- unique(results[, c("Embryo", "Sample")])
+samples <- unique(results[, c("Stock", "Embryo", "Sample")])
 
 # Merge datasets
-summary_embryos <- merge(embryo_cf_sum, embryo_cf_mean, by = "Embryo", all.x = TRUE)
-summary_embryos <- merge(summary_embryos, embryo_cf_sd, by = "Embryo", all.x = TRUE)
-summary_embryos <- merge(summary_embryos, embryo_gb_sum, by = "Embryo", all.x = TRUE)
-summary_embryos <- merge(summary_embryos, embryo_by_sum, by = "Embryo", all.x = TRUE)
-summary_embryos <- merge(summary_embryos, samples, by = "Embryo", all.x = TRUE)
+means <- merge(samples, embryo_cf_mean, by = "Embryo", all.x = TRUE)
+means <- merge(means, embryo_cf_sd, by = "Embryo", all.x = TRUE)
 
 # Summary by sample
-sample_cf_mean <- aggregate(results$Length, list(results$Sample), mean)
-colnames(sample_cf_mean) <- c("Sample", "Mean")
-sample_cf_sd <- aggregate(results$Length, list(results$Sample), sd)
-colnames(sample_cf_sd) <- c("Sample", "SD")
-summary_samples <- merge(sample_cf_mean, sample_cf_sd, by = "Sample", all.x = TRUE)
+by(means[means$Sample == "control", c("Mean", "SD")], means[means$Sample == "control",]$Stock, summary)
+print("------------------------------------------------------------------------------------")
+by(means[means$Sample == "cauterized", c("Mean", "SD")], means[means$Sample == "cauterized",]$Stock, summary)
 ```
 
-### Cephalic furrow maximum depth
+## Maximum depth of mean length by embryo
 
-```{r depth-ind}
-# Load ggplot
-library(ggplot2)
-
-# Plot mean length of cephalic furrow per embryo (right/left sides)
-ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length, fill = Sample)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
-  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  labs(x = "sample", y = "depth (µm)") +
-  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
-  scale_y_continuous(limits = c(20, 70)) +
-  theme_classic() +
-  theme(text =  element_text(size = 35),
-        panel.background = element_rect(colour = "black", size=1))
-ggsave("wt-length.png", width = 7, height = 4)
-ggsave("wt-length.svg", width = 7, height = 4)
-
-```
+Plot pools the different genotypes together and contrasts the cephalic furrow
+maximum length in control and cauterized conditions. There's a small difference
+in length of about 15% (8 microns). This needs more data to be conclusive, but
+it's some evidence the germ band may push the cephalic furrow slightly.
 
 
 ```{r depth-mean}
-# Load ggplot
-library(ggplot2)
-
+set.seed(1234)
 # Plot mean length of cephalic furrow per embryo (right/left sides)
-ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
-  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  labs(x = "sample", y = "depth (µm)") +
+ggplot(means, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
+  #geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_bar(stat = "summary", fun = "mean", alpha = 0.7, width = 0.5, show.legend = FALSE) +
+  #geom_quasirandom(size = 2, width = 0.1, alpha = 0.9, show.legend = FALSE) +
+  #geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), show.legend = FALSE)+
+  #geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  #geom_point(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  #geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), position = position_jitterdodge(jitter.width = 0.3), show.legend = FALSE)+
+  geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), position = position_quasirandom(width = 0.15, bandwidth = 0.1), show.legend = FALSE) +
+  labs(x = "condition", y = "depth (µm)") +
   scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
-  scale_y_continuous(limits = c(20, 70)) +
-  theme_classic() +
-  theme(text =  element_text(size = 35),
+  scale_y_continuous(limits = c(0, 70)) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 30),
         panel.background = element_rect(colour = "black", size=1))
 ggsave("wt-mean-length.png", width = 7, height = 4)
 ggsave("wt-mean-length.svg", width = 7, height = 4)
-
 ```
+
+## Statistics
+
+The low n makes the statistics difficult.
 
 ```{r stats}
 # Statistical testing
-mean_ctrl <- mean(summary_embryos[summary_embryos$Sample == "control",]$Mean)
-mean_caut <- mean(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)
-diff_micron <- mean(summary_embryos[summary_embryos$Sample == "control",]$Mean) - mean(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)
-diff_pct <- (mean(summary_embryos[summary_embryos$Sample == "control",]$Mean) - mean(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)) / mean(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean) * 100
+diff_micron <- mean(means[means$Sample == "control",]$Mean) - mean(means[means$Sample == "cauterized",]$Mean)
+diff_pct <- diff_micron / mean(means[means$Sample == "cauterized",]$Mean) * 100
 
 # Test if distribution is normal
-shapiro.test(summary_embryos[summary_embryos$Sample == "control",]$Mean)
-shapiro.test(summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)
 shapiro.test(results[results$Sample == "control",]$Length)
 shapiro.test(results[results$Sample == "cauterized",]$Length)
+shapiro.test(means[means$Sample == "control",]$Mean)
+shapiro.test(means[means$Sample == "cauterized",]$Mean)
 
-
-# Test if control is greater than cauterized
-wilcox.test(summary_embryos[summary_embryos$Sample == "control",]$Mean,
-            summary_embryos[summary_embryos$Sample == "cauterized",]$Mean,
-            alternative = "g")
-
-wilcox.test(results[results$Sample == "control",]$Length,
-            results[results$Sample == "cauterized",]$Length,
-            alternative = "g")
-
-ks.test(summary_embryos[summary_embryos$Sample == "control",]$Mean,
-            summary_embryos[summary_embryos$Sample == "cauterized",]$Mean,
-            alternative = "g")
-
-ks.test(results[results$Sample == "control",]$Length,
-            results[results$Sample == "cauterized",]$Length,
-            alternative = "g")
-
-t.test(summary_embryos[summary_embryos$Sample == "control",]$Mean,
-       summary_embryos[summary_embryos$Sample == "cauterized",]$Mean,
-       var.equal = FALSE)
-
+# Test if means are different
 t.test(results[results$Sample == "control",]$Length,
        results[results$Sample == "cauterized",]$Length,
        var.equal = FALSE)
+t.test(means[means$Sample == "control",]$Mean,
+       means[means$Sample == "cauterized",]$Mean,
+       var.equal = FALSE)
+
+# Test if means are different only in wt
+t.test(results[(results$Sample == "control" & results$Stock == "wt"),]$Length,
+       results[(results$Sample == "cauterized" & results$Stock == "wt"),]$Length,
+       var.equal = FALSE)
+t.test(means[(means$Sample == "control" & means$Stock == "wt"),]$Mean,
+       means[(means$Sample == "cauterized" & means$Stock == "wt"),]$Mean,
+       var.equal = FALSE)
+
+# Test if control is greater than cauterized
+wilcox.test(results[results$Sample == "control",]$Length,
+            results[results$Sample == "cauterized",]$Length,
+            alternative = "g")
+wilcox.test(means[means$Sample == "control",]$Mean,
+            means[means$Sample == "cauterized",]$Mean,
+            alternative = "g")
 
 # Test if control and cauterized have the same variance
-var.test(summary_embryos[summary_embryos$Sample == "control",]$Mean,
-         summary_embryos[summary_embryos$Sample == "cauterized",]$Mean)
-
 var.test(results[results$Sample == "control",]$Length,
          results[results$Sample == "cauterized",]$Length)
+var.test(means[means$Sample == "control",]$Mean,
+         means[means$Sample == "cauterized",]$Mean)
 
 ```
 
+## Other plots
 
 ```{r length}
 # Plot length of cephalic furrow invaginations
