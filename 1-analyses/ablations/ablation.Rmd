@@ -1,0 +1,84 @@
+---
+title: "Cephalic furrow ablations"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: April 06, 2021
+---
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/ablations")
+setwd("~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/ablations")
+library(ggplot2)
+library(ggbeeswarm)
+```
+
+## Description
+
+Laser ablations around the cephalic furrow surroundings to check if there's an
+active pull force. Experiments and initial plots performed by Marina. I'm using
+the data to re-plot in a different way.
+
+## Load measurements
+
+```{r load}
+# Load raw ROI measurements from ImageJ
+ablations <- read.csv("ablation-data.csv", stringsAsFactors = TRUE)
+levels(ablations$Stage) <- c("early", "mid", "late")
+```
+
+## Summarize
+
+```{r summary}
+# Calculate summaries per sample
+by(ablations[ablations$Position == "A", c("Velocity")], ablations[ablations$Position == "A",]$Stage, summary)
+print("")
+by(ablations[ablations$Position == "P", c("Velocity")], ablations[ablations$Position == "P",]$Stage, summary)
+```
+
+## Plot overview
+
+```{r distance}
+set.seed(111111)
+ggplot(ablations, aes(Distance, Velocity)) +
+  geom_vline(xintercept = 0, size = 0.5, linetype = "dashed", alpha = 0.5, colour = "black") +
+  geom_smooth(span = 0.8, show.legend = FALSE, aes(fill = "#e69f03", colour = "#e69f03")) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE) +
+  labs(x = "distance from initiator (µm)", y = "velocity (µm/s)") +
+  facet_wrap(~Stage) +
+  scale_fill_manual(values=c("#e69f03")) +
+  scale_color_manual(values=c("#e69f03")) +
+  #scale_x_continuous(limits = c(-50, 50)) +
+  scale_y_continuous(limits = c(0, 0.26)) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 40),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 45),
+        panel.background = element_rect(colour = "black", size=1),
+        panel.spacing = unit(3, "lines"))
+ggsave("recoil-velocity.png", width = 13, height = 7)
+ggsave("recoil-velocity.svg", width = 13, height = 7)
+```
+
+```{r stage}
+set.seed(1234)
+# Plot mean length of cephalic furrow per embryo (right/left sides)
+ggplot(ablations[ablations$Velocity > 0,], aes(Stage, Velocity)) +
+  #geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
+  #geom_boxplot(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
+  geom_bar(stat = "summary", fun = "mean", alpha = 0.7, width = 0.5, fill = "#e69f03", show.legend = FALSE) +
+  geom_quasirandom(size = 2, width = 0.1, alpha = 0.9, show.legend = FALSE) +
+  #geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), show.legend = FALSE)+
+  #geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  #geom_point(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  #geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), position = position_jitterdodge(jitter.width = 0.3), show.legend = FALSE)+
+  #geom_pointrange(aes(ymax=Velocity+Error), position = position_quasirandom(width = 0.15, bandwidth = 0.1), show.legend = FALSE) +
+  labs(x = "stage", y = "velocity (µm/s)") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_y_continuous(limits = c(0, 0.3)) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 30),
+        panel.background = element_rect(colour = "black", size=1))
+```
+

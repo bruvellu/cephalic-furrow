@@ -138,10 +138,10 @@ ggplot(means, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill
   scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
   scale_y_continuous(limits = c(0, 70)) +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 30),
+  theme(text = element_text(size = 25),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("wt-mean-length.png", width = 7, height = 4)
-ggsave("wt-mean-length.svg", width = 7, height = 4)
+ggsave("wt-mean-length.png", width = 4, height = 4)
+ggsave("wt-mean-length.svg", width = 4, height = 4)
 ```
 
 ## Statistics
