@@ -234,12 +234,16 @@ But for most phase space, the combined action of mitotic domains and germ band m
 These simulations show that mitotic domains alone can drive ectopic folds when the bending rigidity $<6.5\times10^{−5}$, and that the germ band alone can drive ectopic folds when the bending rigidity $<8.0\times10^{−5}$.
 We thus set to perform perturbation experiments to test these conditions *in vivo*.
 
+<!--TODO: Add the threshold for 1 EF-->
+
+<!--TODO: Add EF sweep supplementary figure here?-->
+
 We first asked whether the extension of the germ band alone can cause ectopic folds during gastrulation.
 To that end, we generated double-mutant flies lacking both the cephalic furrow and the mitotic domains by combining *btd* mutants with a loss-of-function allele of *string* (*stg*), a phosphatase that regulates the cell divisions in cleavage cycle 14 [@Edgar1989-hv].
 In *stg* mutants, the formation of the cephalic furrow and of other morphogenetic movements during early gastrulation occur normally [@Edgar1989-hv] ({@fig:stg}a,b, {@fig:vid-stg-lateral}, {@fig:vid-stg-dorsal}).
 Ectopic folds are less frequent in *stg* mutants compared to wildtype and primarily appear near the trunk--germ interface ({@tbl:stats}).
 In the *btd*--*stg* double-mutant embryos, no ectopic folds are formed at the head--trunk interface ({@fig:experiments}a,b,j, {@fig:vid-double-lateral}).
-This experiment shows that the push from the germ band extension alone is insufficient to induce ectopic buckling in cephalic furrow mutants and that the bending rigidity *in vivo* is $>8.0\times10^{−5}$.
+This experiment shows that the push from the germ band extension alone is insufficient to induce ectopic buckling in cephalic furrow mutants and that the bending rigidity *in vivo* corresponds to a value of $8.0\times10^{−5}$ in our model
 
 To test whether mitotic domains alone are sufficient to induce ectopic buckling *in vivo*, we mechanically blocked the extension of the germ band in cephalic furrow mutants.
 For that we cauterized a patch of dorsal tissue, attaching it to the vitelline envelope at the onset of gastrulation ({@fig:experiments}c).
@@ -261,8 +265,8 @@ Thus, we hypothesize that the cephalic furrow may act as a mechanical buffer to 
 
 To explore the role of the cephalic furrow as a mechanical buffer during gastrulation, we programmed the cephalic furrow in our *in silico* model and analysed how it influences the formation of ectopic folds and interacts with mitotic domains and germ band extension.
 We did that by establishing an intrinsic negative curvature ($K_{CF}$) to a narrow region of the particle--spring blastoderm that matches the span of the initiator cells *in vivo* ({@fig:model}a, {@fig:proportions}).
-We ran a parameter sweep using the bending rigidity established in previous simulations for different values of K by the germ band position without mitotic domains ({@fig:model}?).
-We find that the depth of the cephalic furrow correlates with the germ band position ({@fig:model}?).
+Using the bending rigidity established in previous simulations ($8.0\times10^{−5}$), we ran a parameter sweep for different values of $K_{CF}$ and established a value of $0.3$ as a baseline where the invagination forms in a robust manner with minimal variability as the cephalic furrow *in vivo* ({@fig:cf-sweep}).
+The depth of the cephalic furrow at the maximum bending energy is a function of $K_{CF}$ and of the germ band position ({@fig:cf-sweep}, {@fig:model}).
 Together with our *in vivo* data suggesting that the germ band is compressing the head--trunk tissues, these simulations raised the hypothesis that the germ band could be influencing the cephalic furrow further in.
 To test whether the germ band extension influences the formation and depth of the cephalic furrow *in vivo*, we blocked the germ band extension by cauterization in wild type embryos.
 Cephalic furrow forms normally in cauterized embryos ({@fig:experiments}e,f).
