@@ -279,14 +279,14 @@ These experiments rule out the global germ band push as the main driver of cepha
 
 Next, we asked whether a programmed head--trunk invagination could prevent the formation of ectopic folds in our *in silico* model.
 We ran our simulations with the cephalic furrow, mitotic domains, and germ band extension and quantified the frequency, position, and depth of ectopic folds.
-The presence of an active invagination at the head--trunk region reduced the variability of ectopic fold formation in the neighborhood of the cephalic furrow ({@fig:model}?).
-This influence of the cephalic furrow on ectopic folds correlated with the strength of the pull ($K_{CF}$) with higher values buffering ectopic folds more effectively in conditions without the germ band extension ({@fig:model}?).
-In conditions with extended germ band, the buffering effect was diminished and more ectopic folds formed in the trunk region.
+The presence of an active invagination at the head--trunk region reduced the variability of ectopic fold formation in the neighborhood of the cephalic furrow ({@fig:model}j).
+This influence of the cephalic furrow on ectopic folds correlated with the strength of the pull ($K_{CF}$) with higher values buffering ectopic folds more effectively in conditions without the germ band extension ({@fig:model}j).
+In conditions with extended germ band, the buffering effect was diminished and more ectopic folds formed in the trunk region ({@fig:model}j).
 Only large $K_{CF}$ values (above 1.5) remained partially effective, suggesting that the forces of mitotic expansions and germ band extension dominate over the infolding force of the CF.
 Our simulations, however, these events initiate at the same time.
 In wildtype embryos *in vivo*, the cephalic furrow initiates at least 15--20 min before the mitotic domains.
 We, therefore, asked whether the relative timing between the cephalic furrow and mitotic domains may influence the effectives of the cephalic furrow in preventing the formation of ectopic folds.
-Indeed, when we added a delay to the formation of mitotic domains in our model to recapitulate the relative timing of events in wildtype, the cephalic furrow now effectively prevents the formation of ectopic folds even for lower K values and higher germ band extensions. 
+Indeed, when we added a delay to the formation of mitotic domains in our model to recapitulate the relative timing of events in wildtype, the cephalic furrow now effectively prevents the formation of ectopic folds even for lower K values and higher germ band extensions ({@fig:model}k). 
 Interestingly, in extended germ band simulations, while no ectopic folds form in the surroundings of the cephalic furrow, fewer ectopic folds form in the posterior half of the simulated embryo (trunk region), a position reminiscent of the dorsal folds that typically form around the same time in *Drosophila* in an area that is perhaps the most impacted by the GB compression.
 Taken together, our model provides the theoretical basis that the cephalic furrow can effectively prevent the formation of ectopic folds around the head--trunk region, and thus act as a mechanical buffer for the compressive stresses that build up during gastrulation.
 
