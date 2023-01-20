@@ -226,15 +226,13 @@ To obtain realistic values where the model matches experimental observations, we
 We defined that the tissue has folded when this distance is greater than the maximum standard deviation of the average particle depth under the ground noise levels ({@fig:model}e).
 Under the baseline conditions without mitotic domains or germ band extension (only noise), we observe no ectopic fold formation for any bending rigidity values ({@fig:model}f).
 The probability of buckling increases with the germ band extension and as a factor of the bending rigidity.
-We observe a buckling transition in the phase space in softer conditions ($5.0\times10^{−5}$) already at 10% germ band extension, but in stiffer conditions ($>8.0\times10^{−5}$) the germ band alone cannot drive the formation ectopic folds even at its maximum extension ({@fig:model}f).
+We observe a buckling transition in the phase space in softer conditions ($5.0\times10^{−5}$) already at 10% germ band extension, but in stiffer conditions ($8.0\times10^{−5}$) the germ band alone cannot drive the formation ectopic folds even at its maximum extension ({@fig:model}f).
 When we added mitotic domains to the simulations, there was a left shift in the phase diagram with the probability of ectopic fold formation increasing even in low values of germ band extension and higher values of bending rigidity ({@fig:model}g).
-Mitotic domains alone can induce ectopic folds in softer conditions ($<6.5\times10^{−5}$).
-But above ($>9.0\times10^{−5}$), neither mitotic domains nor the germ band are sufficient to cause ectopic folds.
+Mitotic domains alone can induce ectopic folds in softer conditions (lower than $6.5\times10^{−5}$).
+But above ($9.0\times10^{−5}$), neither mitotic domains nor the germ band are sufficient to cause ectopic folds.
 But for most phase space, the combined action of mitotic domains and germ band maximizes the probability of ectopic fold formation, increasing the number of folds up to 10 times ({@fig:model}f,g).
-These simulations show that mitotic domains alone can drive ectopic folds when the bending rigidity $<6.5\times10^{−5}$, and that the germ band alone can drive ectopic folds when the bending rigidity $<8.0\times10^{−5}$.
-We thus set to perform perturbation experiments to test these conditions *in vivo*.
-
-<!--TODO: Add the threshold for 1 EF-->
+These simulations show that mitotic domains alone can drive ectopic folds when the bending rigidity is lower than $6.5\times10^{−5}$, and that the germ band alone can drive ectopic folds when the bending rigidity is lower than $8.0\times10^{−5}$.
+We thus established a threshold of $8.0\times10^{−5}$ where the maximum standard deviation is lower than a single fold ({@fig:model}h), and set to perform perturbation experiments to test these conditions *in vivo*.
 
 <!--TODO: Add EF sweep supplementary figure here?-->
 
@@ -266,14 +264,13 @@ Thus, we hypothesize that the cephalic furrow may act as a mechanical buffer to 
 To explore the role of the cephalic furrow as a mechanical buffer during gastrulation, we programmed the cephalic furrow in our *in silico* model and analysed how it influences the formation of ectopic folds and interacts with mitotic domains and germ band extension.
 We did that by establishing an intrinsic negative curvature ($K_{CF}$) to a narrow region of the particle--spring blastoderm that matches the span of the initiator cells *in vivo* ({@fig:model}a, {@fig:proportions}).
 Using the bending rigidity established in previous simulations ($8.0\times10^{−5}$), we ran a parameter sweep for different values of $K_{CF}$ and established a value of $0.3$ as a baseline where the invagination forms in a robust manner with minimal variability as the cephalic furrow *in vivo* ({@fig:cf-sweep}).
-The depth of the cephalic furrow at the maximum bending energy is a function of $K_{CF}$ and of the germ band position ({@fig:cf-sweep}, {@fig:model}).
+The depth of the cephalic furrow at the maximum bending energy is a function of $K_{CF}$ and of the germ band position ({@fig:cf-sweep}, {@fig:model}i).
 Together with our *in vivo* data suggesting that the germ band is compressing the head--trunk tissues, these simulations raised the hypothesis that the germ band could be influencing the cephalic furrow further in.
 To test whether the germ band extension influences the formation and depth of the cephalic furrow *in vivo*, we blocked the germ band extension by cauterization in wild type embryos.
 Cephalic furrow forms normally in cauterized embryos ({@fig:experiments}e,f).
 But we observe a small difference in the maximum depth of the cephalic furrow in cauterized embryos, which are about 15% shallower than in non-cauterized embryos, although this difference is barely significant ({@fig:experiments}h).
 In fact, by laser ablating cell membranes at different distances from initiator cells in early wildtype embryos, we found that the recoil velocity increases as the furrow forms and decreases with the distance to initiator cells ({@fig:experiments}i).
-This suggests that the cephalic furrow is actively pulling the surrounding tissues, generating tension
-in the tissues surrounding at least about 40 µm anterior and posterior to the initiator cells ({@fig:experiments}i).
+This suggests that the cephalic furrow is actively pulling the surrounding tissues, generating tension in the tissues surrounding at least about 40 µm anterior and posterior to the initiator cells ({@fig:experiments}i).
 These experiments rule out the global germ band push as the main driver of cephalic furrow invagination, even though it may be exerting mild pressure and small push on late stages when the invagination is already inside, and corroborate the notion that the cephalic furrow forms autonomously by independent active mechanisms deployed before the other gastrulation movements.
 
 <!--These experiments suggest that in normal development the active pull generated by the cephalic furrow is the main driver of the invagination, and the germ band extension only accounts for a mild influence in the depth of the invagination.-->
@@ -282,9 +279,10 @@ These experiments rule out the global germ band push as the main driver of cepha
 
 Next, we asked whether a programmed head--trunk invagination could prevent the formation of ectopic folds in our *in silico* model.
 We ran our simulations with the cephalic furrow, mitotic domains, and germ band extension and quantified the frequency, position, and depth of ectopic folds.
-The presence of an active invagination at the head--trunk region changed the dynamics of ectopic fold formation, reducing the frequency and depth ({@fig:model}?).
-This influence correlated with the strength of the cephalic furrow pull ($K_{CF}$) with higher values buffering ectopic folds more effectively specially in early stages of germ band extension.
-With full germ band extension, only enormous $K_{CF}$ values were effective, suggesting that the forces of mitotic expansions and germ band extension dominate over the infolding force of the CF.
+The presence of an active invagination at the head--trunk region reduced the variability of ectopic fold formation in the neighborhood of the cephalic furrow ({@fig:model}?).
+This influence of the cephalic furrow on ectopic folds correlated with the strength of the pull ($K_{CF}$) with higher values buffering ectopic folds more effectively in conditions without the germ band extension ({@fig:model}?).
+In conditions with extended germ band, the buffering effect was diminished and more ectopic folds formed in the trunk region.
+Only large $K_{CF}$ values (above 1.5) remained partially effective, suggesting that the forces of mitotic expansions and germ band extension dominate over the infolding force of the CF.
 Our simulations, however, these events initiate at the same time.
 In wildtype embryos *in vivo*, the cephalic furrow initiates at least 15--20 min before the mitotic domains.
 We, therefore, asked whether the relative timing between the cephalic furrow and mitotic domains may influence the effectives of the cephalic furrow in preventing the formation of ectopic folds.
@@ -614,6 +612,9 @@ Dimensions used as a reference for the model.
 
 ![Lateral and dorsal views of *stg* mutant embryos.
 ](figures/FigS6.jpg){#fig:stg tag=S6 width=100%}
+
+![Cephalic furrow simulation parameter sweep.
+](figures/FigS7.jpg){#fig:cf-sweep tag=S7 width=100%}
 
 ## Videos
 
