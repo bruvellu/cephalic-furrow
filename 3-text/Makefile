@@ -34,7 +34,7 @@ linkimg:
 	#ln -s ${FIGUREIN}/double-mutants/figure.png ${FIGUREOUT}/Fig7.png
 	#ln -s ${FIGUREIN}/wildtype-cauterizations/figure.png ${FIGUREOUT}/Fig8.png
 	#ln -s ${FIGUREIN}/wildtype-analyses/figure.png ${FIGUREOUT}/Fig5.png
-	#ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig9.png
+	ln -s ${FIGUREIN}/summary/figure.png ${FIGUREOUT}/Fig5.png
 	# Supplementary
 	ln -s ${FIGUREIN}/initiator-behavior/figure.png ${FIGUREOUT}/FigS1.png
 	ln -s ${FIGUREIN}/ectopic-features/figure.png ${FIGUREOUT}/FigS2.png
