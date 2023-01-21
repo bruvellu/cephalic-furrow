@@ -540,8 +540,8 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 ![Mechanical role of the cephalic furrow in development and evolution.
 (a,b) Schematic drawings of lateral and profile views showing the tissue invaginated in the cephalic furrow buffers the interactions while the excess of epithelial tissue in cephalic furrow mutants increases the epithelial instability.
-(c) Scenario for the evolution of the cephalic furrow [Clogmia @Jimenez-Guri2014; Chironomus @Caroti2015; Megaselia Wotton2014].
-](figures/Fig9.jpg){#fig:summary width=100%}
+(c) Scenario for the evolution of the cephalic furrow [Clogmia @Jimenez-Guri2014; Chironomus @Caroti2015; Megaselia @Wotton2014].
+](figures/Fig5.jpg){#fig:summary width=50%}
 
 \clearpage
 
