@@ -333,17 +333,20 @@ Our results provide evidence that the cephalic furrow accomplishes a physical ro
 We found that without the cephalic furrow, the epithelium becomes unstable and subject to erratic buckling events.
 These ectopic folds, unlike the cephalic furrow, form due to extrinsic forces.
 We identified two main sources of mechanical stress acting at the head--trunk boundary during gastrulation, mitotic domains and germ band.
-Cell rounding of mitotic cells can induce epithelial folding in the tracheal placode of flies [@Kondo2013-gy] as well as in intestine villi of mice [@Freddo2016-et].
-Dividing cells in epithelial monolayers generate in-plane outward forces during the elongation phase [@Gupta2021-oo].
-Additionally, dividing cells in the blastoderm undergo basal detachment, shortening along the apical--basal axis and altering the thickness of the epithelium, which leads to an imbalance that can facilitate tissue buckling [@Ko2020-wk].
+Mitotic cells have been shown to induce epithelial folding in the tracheal placode of flies [@Kondo2013-gy] as well as in intestine villi of mice [@Freddo2016-et].
+There are two putative mechanisms involved.
+First, dividing cells in epithelial monolayers generate in-plane outward forces during the elongation phase [@Gupta2021-oo].
+Second, dividing cells can undergo basal detachment and shorten along the apical--basal axis, altering the thickness of the epithelium, which creates an imbalance that facilitates tissue buckling [@Ko2020-wk].
 We believe that both processes, the apical expansion and basal detachment facilitate the formation of ectopic folds in cephalic furrow mutants.
 However, our experiment shows that mitotic domains alone cannot induce buckling and that a concomitant compression from the germ band extension is required.
 Compressive forces generate mechanical instability and are one of the key mechanisms forming epithelial folds in development [@Nelson2016-gz; @Collinet2021-qa], in particular in epithelial monolayers under confinement [@Trushko2020-gf].
 Indeed, in both the tracheal placode and intestine villi cases cited above, an intraepithelial compressive force is required for the tissue to buckle during the mitotic rounding of dividing cells.
 [@Kondo2013-gy; @Freddo2016-et].
 Our data suggest a similar situation happens at the head--trunk boundary epithelium of cephalic furrow mutants.
-The synchronized apical expansion of dividing cells in mitotic domains push the adjacent non-dividing cells outward, forming regions of different epithelial thickness which are potentially unstable, at the same time that the germ band extension generates a global compression over the head--trunk interface ({@fig:summary}a,b).
-In a condition where there is an excess of tissue on the embryonic surface (no cephalic furrow), the increased compressive stresses compromise the stability of the epithelium at the head--trunk boundary.
+The synchronized apical expansion of dividing cells in mitotic domains push the adjacent non-dividing cells outward, forming regions of different epithelial thickness which are potentially unstable.
+At the same time that the germ band extension generates a global compression over the head--trunk interface ({@fig:summary}a,b).
+In a condition where there is an excess of tissue on the embryonic surface (no cephalic furrow), there is an increase in compressive stresses and the tissue buckles.
+Therefore, the absence of the cephalic furrow compromises the stability of the epithelium at the head--trunk boundary during gastrulation.
 
 <!--surprisingly long-range interaction between head and trunk tissues during gastrulation.-->
 
