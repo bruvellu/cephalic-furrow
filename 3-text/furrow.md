@@ -54,46 +54,12 @@ tablenos-cleveref: True
 tablenos-plus-name: Table
 ---
 
-<!--TODO: Add CSBD and proper affiliations-->
-
-<!--# Outline
-
-- Abstract
-- Main
-  - What is and how the CF forms > but role remains enigmatic
-  - What are the previous hypotheses > we test role in gastrulation
-  - Live-imaging approach in mutants > CF absence leads to ectopic folds
-  - EF characterization > suggests distinct formation mechanisms
-  - EFs correlate with MDs > MD/GB compressive stresses induce buckling
-  - Model to understand forces
-  - How model matches experiments > GB/MD alone when softer, together maximize
-  - Does GB alone in vivo > GB alone insufficient
-  - Do MDs alone in vivo > MDs alone insufficient
-  - Concomitant MD and GB leads to EFs
-  - (Experiments suggest compression > our laser cuts support this)
-  - HT is under compression > we propose CF’s role is mechanical buffering
-  - Model with CF
-  - CF active but unknown region > ablations show 80 µm width
-  - Coded as intrinsic curvature with K > determined K based on ROI
-  - Can CF prevent EF > Only with enormous K
-  - Does relative timing matters > Yes CF early is effective
-  - Does GB push > yes GB is pushing mildly
-  - CF early buffers EFs within ROI > supports idea of a mechanical role
-- Discussion
-  - A new view of the CF
-  - Mechanics involved: MD and GB
-  - Head--trunk as shear stress
-  - CF solves mechanical problem
-  - CF is evolutionary novelty
-  - Perhaps mechanics is selective pressure for morphogenesis
--->
-
 # Abstract
 
 <!--TODO: Update abstract to reflect the revised manuscript-->
 
-The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of flies during gastrulation [@Turner1977-ol; @Hartenstein1985-zs; @Spencer2015-td].
-It forms under strict genetic control, following a stereotypical morphogenetic sequence where local cell shape changes actively drive the tissue to invaginate [@Vincent1997-fa; @Eritano2020-mi].
+The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of flies during gastrulation.
+It forms under strict genetic control, following a stereotypical morphogenetic sequence where local cell shape changes actively drive the tissue to invaginate.
 But unlike other embryonic invaginations, the invaginated cells do not give rise to any precursor tissues or structures in the larval or adult stages, and the entire fold simply unfolds leaving no trace.
 For this reason, the function of the cephalic furrow during embryonic development has remained elusive.
 Here we show the cephalic furrow plays a mechanical role during *Drosophila* gastrulation.
@@ -102,6 +68,9 @@ Using *in vivo* perturbations and *in silico* simulations, we demonstrate that e
 These processes increase the compressive stresses in the head–trunk interface, undermining the mechanical stability of the epithelium.
 Our findings suggest that in normal development the cephalic furrow absorbs these compressive stresses by priming the position of folding, and by removing cells from the surface before other morphogenetic movements take place.
 We propose the cephalic furrow prevents epithelial instabilities at the head–trunk boundary, and therefore, plays a mechanical role in fly gastrulation.
+
+<!--The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of flies during gastrulation [@Turner1977-ol; @Hartenstein1985-zs; @Spencer2015-td].-->
+<!--It forms under strict genetic control, following a stereotypical morphogenetic sequence where local cell shape changes actively drive the tissue to invaginate [@Vincent1997-fa; @Eritano2020-mi].-->
 
 <!--Despite forming autonomously via intrinsic cellular mechanisms [@Eritano2020-mi] under strict genetic control [@Vincent1997-fa], this head invagination is transient and vanishes without a trace.-->
 
@@ -132,6 +101,18 @@ We propose the cephalic furrow prevents epithelial instabilities at the head–t
 <!--We propose the cephalic furrow invagination prevents epithelial instabilities at the head--trunk boundary, and therefore, plays a mechanical role in *Drosophila* gastrulation.-->
 
 # Main
+
+The folding of epithelial sheets is a fundamental process of animal embryonic development [@Wang2021-iy].
+Tissues can fold through intrinsic (active) cellular mechanisms or extrinsic (passive) tissue-scale forces [@Denk-Lobnig2020-pr].
+The position and timing of folding morphogenesis can be pre-patterned or self-organized [@Collinet2021-qa].
+Pre-patterned invaginations usually have a clear role in the embryo.
+In flies the embryonic invaginations forming during gastrulation are genetically-determined and give rise to specific precursors tissues.
+The ventral furrow, for example, gives rise to mesoderm, while the midgut invaginations form the endoderm, fulfilling clear developmental roles during development.
+There is, however, an unusual invagination present in flies which despite its formation being finely regulated, the fold is transient and gives rise to nothing, known as the cephalic furrow.
+
+<!--The neural groove in vertebrates is determined by X and gives rise to the neural tube [@Cite].-->
+<!--The invagination of the archenteron in sea urchins and the ventral furrow in flies is pre-patterned and gives rise to the precursors of the mesoderm [@Cite].-->
+<!--Folds that form in an self-organized manner are generally passive, responding to the mechanical forces in the tissues.-->
 
 One of the earliest events in *Drosophila* gastrulation is the formation of the cephalic furrow.
 It first appears as a lateral indentation near the head which quickly invaginates and forms a deep epithelial fold at the boundary between head (procephalon) and trunk (germ band) [@Hartenstein1985-zs; @Foe1989-cw; @Spencer2015-td].
@@ -327,10 +308,6 @@ Taken together, our model provides the theoretical basis that the cephalic furro
 
 # Discussion
 
-<!--TODO: Improve first paragraph-->
-
-<!--CF has physical role / buffer mechanical stress / MD GB as internal stressors-->
-
 <!--Recap-->
 <!--- We investigated the cephalic furrow function > mutant analyses-->
 <!--- We characterized the phenotype of mutants > ectopic folds-->
@@ -365,17 +342,11 @@ These observations suggest that the normal morphogenetic movements of gastrulati
 <!--TODO: Does any of these statements fit within the results as topic sentences?-->
 <!--TODO: Migrate any of these to first paragraph of introduction?-->
 
-<!--Epithelial folding often involves a combination of intrinsic cellular and extrinsic tissue forces [@Denk-Lobnig2020-pr]. -->
-
-<!--surprisingly long-range interaction between head and trunk tissues during gastrulation.-->
-
 <!--The rapid phase of the germ band extension is mainly driven by the posterior midgut invagination [@Collinet2015-af].-->
 
 <!--Ectopic folding depends on the rapid phase of germ band extension driven by the posterior midgut invagination, and not by the late phase driven by cell intercalation, because *eve* mutants have no cell intercalation and still form ectopic folds [@Collinet2015-af].-->
 
 <!--Our experiments reveal that neither the mitotic domains nor the germ band alone are sufficient to drive ectopic folding in cephalic furrow mutants. But when the two events happen concomitantly, they invariably drive tissue buckling at the head--trunk boundary. Our data suggest the buckling is associated with the mechanical stresses generated by the mitotic domains and germ band extension. While the germ band makes a global compressive stress, the mitotic domains make local stresses and possibly force imbalance in the epithelium due to the shortening of dividing cells. In addition, the events generate tissue flow and shear stress that converges at the head--trunk boundary. Without the cephalic furrow, these combined mechanical stresses increase, making the monolayer epithelium unstable, suggesting the underlying mechanism of ectopic folding is buckling morphogenesis. Therefore, cephalic furrow might have a mechanical function that counteracts and buffers these mechanical stresses at the head--trunk boundary.-->
-
-<!--CF stabilizes development from variable folding to invariant invagination-->
 
 Our work indicates that the cephalic furrow buffers these compressive stresses at the head--trunk boundary.
 The presence of the cephalic furrow abolishes the formation of ectopic folds in sibling controls and in our simulations, suggesting that invaginating tissue out-of-plane is an effective way to alleviate compressive stresses.
