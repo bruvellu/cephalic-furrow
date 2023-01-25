@@ -72,6 +72,7 @@ We propose the cephalic furrow prevents epithelial instabilities at the head–t
 <!--The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of flies during gastrulation [@Turner1977-ol; @Hartenstein1985-zs; @Spencer2015-td].-->
 <!--It forms under strict genetic control, following a stereotypical morphogenetic sequence where local cell shape changes actively drive the tissue to invaginate [@Vincent1997-fa; @Eritano2020-mi].-->
 
+
 <!--Despite forming autonomously via intrinsic cellular mechanisms [@Eritano2020-mi] under strict genetic control [@Vincent1997-fa], this head invagination is transient and vanishes without a trace.-->
 
 <!--Our findings reveal a unique case of a pre-patterned invagination which may have evolved in response to mechanical stresses during fly evolution.-->
@@ -119,37 +120,28 @@ It first appears as a lateral indentation near the head which quickly invaginate
 Similar to other embryonic invaginations, the formation of the cephalic furrow is under strict genetic control and follows a stereotypic morphogenetic program.
 The site of invagination is determined by the zygotic expression of two transcription factors, *buttonhead* (*btd*) and *even skipped* (*eve*), whose domains overlap at the head--trunk boundary by a narrow row of blastoderm cells [@Vincent1997-fa].
 These so-called initiator cells shorten along the apical--basal axis by activating lateral myosin contractility and drive the infolding of the tissue [@Eritano2020-mi].
+The position of the cephalic furrow is specified with remarkable accuracy [@Liu2013-lc].
 Once initiated, the mechanical coupling between invaginating cells ensures the precision of the tissue fold during morphogenesis [@Eritano2020-mi].
-The resulting head--trunk fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
-However, this prominent fold is only transient.
-A couple of hours after gastrulation, the cephalic furrow completely unfolds without giving rise to any specific embryonic tissue or larval structure and disappears leaving no trace [@Hartenstein1985-zs].
-This is in stark contrast to other embryonic invaginations.
-The ventral furrow and midgut invaginations give rise to the mesodermal and endodermal precursors, respectively, and fulfil clear roles during development, while the cephalic furrow, despite being finely regulated, has no obvious function.
+The resulting fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
+This prominent fold, however, is only transient.
+A couple of hours after gastrulation, the cephalic furrow unfolds and disappears leaving no trace [@Hartenstein1985-zs].
+The invaginated tissue does not give rise to any specific precursors or larval structures.
+This is in stark contrast to other embryonic invaginations, such as the ventral furrow and midgut invaginations, which fulfil clear roles in development by giving rise to mesodermal and endodermal precursors, respectively.
+Therefore, the cephalic furrow has a finely regulated morphogenesis, invaginates by active cellular mechanisms, and forms a prominent fold at a crucial stage, but it has no obvious function for development.
 
-<!--TODO: The initial paragraph is too specialized for Drosophila. We need a more general opening and an intro to fly terms like blastoderm, ventral furrow, germ band, etc.-->
-
-<!--prominent anatomical landmark for the embryonic head--trunk boundary [@Hartenstein1985-zs; @Foe1989-cw].-->
-<!--the two determines the row of initiator cells [@Vincent1997-fa].-->
-<!--specified with remarkable accuracy [@Liu2013-lc] -->
 <!--the mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um]-->
 
-The ephemeral nature of the cephalic furrow suggests it may have a more immediate, physical role during the morphogenetic movements of *Drosophila* gastrulation.
-The invagination retains a significant number of blastoderm cells beneath the surface (about 10% according to recent estimates [@Stern2021-zv]) and can act as a temporary storage of anterior cells until later in development [@Turner1977-ol], but it is unclear whether such storage has any role.
-One hypothesis is that the invaginated cells may anchor anterior tissues and help to direct the germ band extension to the posterior end during gastrulation [@Costa1993-qj].
-This is supported by numerical simulations which show that in the absence of the cephalic furrow, the flow of tissues during gastrulation would be symmetric and not biased towards the posterior [@Dicko2017-wz].
-However, the physical consequences of perturbing the cephalic furrow have not been investigated in a systematic manner *in vivo*.
+The ephemeral nature and absence of associated fates suggests the cephalic furrow may play a more immediate, physical role during gastrulation.
+One hypothesis is that the invagination functions as a temporary storage of anterior cells until later in development [@Turner1977-ol].
+The cephalic furrow indeed retains a significant number of blastoderm cells beneath the surface (about 10% according to recent estimates [@Stern2021-zv]), but what function such storage accomplishes remains unclear.
+Recent numerical simulations give support to a related idea that the invaginated cells may anchor anterior tissues and help directing tissue flow during gastrulation [@Costa1993-qj; @Dicko2017-wz].
+These hypothesis, however, have not been investigated systematically *in vivo*.
 
-<!--The analysis of *eve* mutants revealed a puzzling phenotype---despite lacking a cephalic furrow, they form an epithelial fold at the same site as the cephalic furrow would form but later in development [@Vincent1997-fa].-->
-<!--Intrigued by this phenotype, we set to investigate in a systematic manner the physical consequences of perturbing the formation of the cephalic furrow *in vivo*, what could be the mechanisms generating this late fold, and what it tells us about the function of the cephalic furrow.-->
 <!--But the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].-->
-<!--This corroborates a recent observation in *btd* embryos [@Eritano2020-mi].-->
 
-<!--Despite seemingly not being formed through the cephalic furrow morphogenetic program [@Vincent1997-fa].-->
-<!--Only recently, it was revealed that *btd* mutants also display late irregular folds [@Eritano2020-mi Figure S5B], suggesting this phenotype might be a direct consequence of the lack of the cephalic furrow in *btd* and *eve* mutants.-->
-<!--But the developmental processes driving formation of ectopic folds have remained obscure and led us to ask what was driving the formation of such fold.-->
-<!--We asked whether the absence of a cephalic furrow and the permanence of these epithelial cells on the surface has any consequences to the embryo.-->
+<!--One hypothesis is that the invaginated cells may anchor anterior tissues and help to direct the germ band extension to the posterior end during gastrulation [@Costa1993-qj].-->
+<!--This is supported by numerical simulations which show that in the absence of the cephalic furrow, the flow of tissues during gastrulation would be symmetric and not biased towards the posterior [@Dicko2017-wz].-->
 
-<!--Ectopic folds were first described in *eve* mutants [@Vincent1997-fa]. The authors observed that a late fold would frequently form near the cephalic furrow region *eve* embryos. Because it was irregular, variable in position, and only formed after the appearance of mitotic domains, they suggested that these late folds were not the result of the cephalic furrow program [@Vincent1997-fa]. In *btd* mutants, the presence of ectopic folds was only observed recently [@Eritano2020-mi; see Figure S5B]. Our analyses indicate that ectopic folds appear in *btd* and *eve* mutants because they lack a cephalic furrow.-->
 
 <!--TODO: Figure out how to make the connection with genes-->
 <!--TODO: When to bring the information that the CF is an evolutionary novelty? More or less here would be appropriate but in this context it really needs to be just a mention citing.-->
@@ -160,19 +152,24 @@ However, the physical consequences of perturbing the cephalic furrow have not be
 <!--TODO: Begin with a paragraph on initiator behavior? It’ll give more context and novelty to the finding of ectopic folds-->
 <!--TODO: Crop of ImSAnE projections and profile views of initiator behavior in wt/prd/btd/eve-->
 
+Our work investigates the physical consequences of perturbing the formation of the cephalic furrow in the gastrulation of *Drosophila*.
 To comprehend the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and a loss of function allele for genes known to affect cephalic furrow formation---*btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
-We then imaged mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation and the relative timing of developmental events in the different genetic backgrounds.
-Our recordings show that the formation of the cephalic furrow in *prd* mutants is delayed relative to wildtype embryos [@Blankenship2001-tm] while in *btd* and *eve* mutants the invagination is absent [@Vincent1997-fa] ({@fig:ectopic}a).
-We find differences between the three mutants at the cellular level.
-In wildtype, the initiator cells undergo cell shortening and anisotropic apical constriction simultaneously [@Spencer2015-td] ({@fig:initiator}).
-In *prd* mutants, both processes are present but delayed in relation to sibling controls and wildtype embryos although the cephalic furrow is different ({@fig:initiator}).
-In *btd* mutants, epithelial cells near the canonical cephalic furrow position undergo some degree of apical constriction ({@fig:initiator}b, {!@fig:vid-initiator}).
-This creates an indentation that resembles the early cephalic furrow ({@fig:initiator}a).
-This indentation, however, forms delayed and does not extend along the dorsoventral axis.
-In addition, the cells at the center of the indentation, in contrast to initiator cells, do not shorten along the apical-basal axis ({@fig:initiator}a).
-In *eve* mutants no apical constriction or indentation occurs ({@fig:initiator}a,b).
-This reveals that remnants of initiator cell behavior are present in *btd* mutants.
-In contrast, *eve* embryos show neither cell shortening nor apical constriction and the epithelium remains flat after gastrulation until the appearance of mitotic domains---groups of blastoderm cells that divide in synchrony in cleavage cycle 14 [@Foe1989-cw]---({@fig:initiator}).
+The formation of the cephalic furrow in *prd* mutants is delayed relative to wildtype embryos [@Blankenship2001-tm] while in *btd* and *eve* mutants the invagination is absent [@Vincent1997-fa].
+We imaged mutant embryos *in toto* using lightsheet microscopy with temporal resolution sufficient to capture the tissue dynamics during gastrulation and the relative timing of developmental events in the different genetic backgrounds.
+
+Our recordings show differences between the three mutants at the cellular and tissue levels ({@fig:ectopic}a).
+In wildtype embryos, the initiator cells undergo cell shortening and anisotropic apical constriction at the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
+These behaviors are delayed but still present in *prd* mutants.
+Around six minutes after gastrulation, the cells have shortened and show apical constriction, and despite lacking the typical arched profile of the wildtype initiators, they still form a clear infolding point in the epithelium ({@fig:initiator}a,b {!@fig:vid-initiator-prd}).
+The putative initiator cells of *btd* mutants do not shorten apico-basally but show a reminiscent degree of apical constriction which creates a small indentation in some embryos ({@fig:initiator}a,b, {!@fig:vid-initiator-btd}, {!@fig:vid-initiator}).
+In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
+These observations suggest the analyzed genes perform slightly different patterning roles, and that the cellular basis for cephalic furrow formation is severely affected in *btd* and *eve* mutants.
+But despite the absence of initiator cell behaviors, the epithelium of *btd* and *eve* mutants still folds in the subsequent minutes after gastrulation ({@fig:initiator}a).
+
+<!--Despite the absence of initiator cell behaviors in *btd* and *eve* mutants, the epithelium still folds in the subsequent minutes after gastrulation ({@fig:initiator}a).-->
+
+The formation of a late fold near the canonical site for cephalic furrow invagination was observed in *eve* mutants [@Vincent1997-fa], and more recently in *btd* mutants [@Eritano2020-mi]
+This puzzling phenotype, 
 
 In embryos where the cephalic furrow fails to initiate (*i.e.*, *btd* and *eve* mutants), ectopic folds appear near the canonical site for cephalic furrow invagination ({@fig:ectopic}a,b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
 They appear 15 min after the cephalic furrow would have formed, when the germ band is extended around 35% of the egg length, and they disappear in about 20 min, quicker than the cephalic furrow which takes two hours to unfold ({@fig:ectopic}a,c,d, {@tbl:gbtime}).
@@ -186,11 +183,29 @@ While the incidence of ectopic folds in sibling controls is low, wildtype embryo
 These, however, only appear anterior or posterior to the cephalic furrow and their folded area is smaller compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g).
 Our data corroborate previous observations of a late fold appearing in cephalic furrow mutants [@Vincent1997-fa; @Eritano2020-mi] and suggest that the formation of ectopic folds is a phenotype causally linked to the absence of the cephalic furrow and that they form via different mechanisms.
 
+<!--mitotic domains---groups of blastoderm cells that divide in synchrony in cleavage cycle 14 [@Foe1989-cw]---({@fig:initiator}).-->
+
 <!--TODO: Decide what to do with these statements-->
 <!--Ectopic folds were first described in *eve* mutants [@Vincent1997-fa]. The authors observed that a late fold would frequently form near the cephalic furrow region *eve* embryos. Because it was irregular, variable in position, and only formed after the appearance of mitotic domains, they suggested that these late folds were not the result of the cephalic furrow program [@Vincent1997-fa]. In *btd* mutants, the presence of ectopic folds was only observed recently [@Eritano2020-mi; see Figure S5B]. Our analyses indicate that ectopic folds appear in *btd* and *eve* mutants because they lack a cephalic furrow.-->
+
 <!--But the developmental processes driving formation of ectopic folds have remained obscure and led us to ask what was driving the formation of such fold. -->
+
 <!--Ectopic folds in *btd* mutants are visible in an earlier SEM image [@Blankenship2001-tm; see Figure 8F].-->
+
+<!--The analysis of *eve* mutants revealed a puzzling phenotype---despite lacking a cephalic furrow, they form an epithelial fold at the same site as the cephalic furrow would form but later in development [@Vincent1997-fa].-->
+
+<!--Intrigued by this phenotype, we set to investigate in a systematic manner the physical consequences of perturbing the formation of the cephalic furrow *in vivo*, what could be the mechanisms generating this late fold, and what it tells us about the function of the cephalic furrow.-->
+
+<!--This corroborates a recent observation in *btd* embryos [@Eritano2020-mi].-->
+
+<!--Despite seemingly not being formed through the cephalic furrow morphogenetic program [@Vincent1997-fa].-->
+
+<!--Only recently, it was revealed that *btd* mutants also display late irregular folds [@Eritano2020-mi Figure S5B], suggesting this phenotype might be a direct consequence of the lack of the cephalic furrow in *btd* and *eve* mutants.-->
+
+<!--We asked whether the absence of a cephalic furrow and the permanence of these epithelial cells on the surface has any consequences to the embryo.-->
+
 <!--Our live-imaging and simulations corroborate an hypothesis raised by @Eritano2020-mi that germ band compression and mitoses could generate buckling instabilities. -->
+
 
 The variability of ectopic fold formation in cephalic furrow mutants and the occurrence of smaller ectopic folds in *prd* and wildtype embryos suggests that they are not under genetic control comparable to the cephalic furrow.
 Therefore, we investigated two concurrent gastrulation processes that could be driving their formation: cell divisions in mitotic domains and the extension of the germ band.
