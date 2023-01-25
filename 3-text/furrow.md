@@ -1,5 +1,5 @@
 ---
-title: Pre-patterned invagination prevents mechanical instability in gastrulation
+title: Pre-patterned invagination prevents mechanical instability in fly gastrulation
 #title: Head invagination buffers mechanical stresses in fly gastrulation
 #title: Cephalic furrow prevents mechanical instability in fly gastrulation
 #title: Programmed epithelial invagination prevents mechanical instability in fly gastrulation
@@ -12,14 +12,28 @@ title: Pre-patterned invagination prevents mechanical instability in gastrulatio
 #title: Cephalic furrow plays a mechanical role in *Drosophila* gastrulation
 #title: Epithelial invagination absorbs mechanical stress of fly gastrulation
 author:
-- Bruno C. Vellutini
-- Marina B. Cuenca
-- Abhijeet Krishna
-- Alicja Szalapak
-- Carl D. Modes
-- Pavel Tomancak
+- Bruno C. Vellutini:
+    institute: [mpicbg]
+    #correspondence: "yes"
+    email: vellutini@mpi-cbg.de
+- Marina B. Cuenca:
+    institute: [mpicbg]
+    #equal_contributor: "yes"
+- Abhijeet Krishna:
+    institute: [mpicbg, csbd, pol]
+    #equal_contributor: "yes"
+- Alicja Szałapak:
+    institute: [mpicbg, csbd, pol]
+- Carl D. Modes:
+    institute: [mpicbg, csbd, pol]
+- Pavel Tomančák:
+    institute: [mpicbg, pol]
+    #correspondence: "yes"
+    email: tomancak@mpi-cbg.de
 institute:
-- Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany
+- mpicbg: Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany
+- csbd: Center for Systems Biology Dresden, Dresden, Germany
+- pol: Cluster of Excellence Physics of Life, Technische Universität Dresden, Dresden, Germany
 documentclass: article
 bibliography: furrow.bib
 csl: nature.csl
@@ -377,7 +391,7 @@ We thus propose the transient storage created by the cephalic furrow has a stres
 
 <!--TODO: Search for examples of how mechanical instability might perturb development-->
 
-It remains unclear, however, whether the increased tissue strain in the monolayer epithelium, or the formation of ectopic folds per se have any adverse effects to the embryogenesis of *Drosophila*.
+It remains unclear, however, whether the increased tissue strain in the monolayer epithelium, or the formation of ectopic folds *per se* have any adverse effects to the embryogenesis of *Drosophila*.
 Variable tissue buckling can, for instance, disrupt cell-to-cell interactions or short-range signaling and lead to patterning defects, specially during early gastrulation when different tissues and precursors are being specified.
 More generally, the formation of variable ectopic folds may also slow down development.
 In this sense, a canalized morphogenetic process which forms a predictable single invagination can improve the developmental robustness and allow for faster development, and may have been an evolutionary advantage for the evolution of the cephalic furrow.
