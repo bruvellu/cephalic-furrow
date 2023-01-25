@@ -284,33 +284,37 @@ Therefore, we hypothesize that the temporary storage of cells invaginated beneat
 
 <!--TODO: Describe maximum bending energy-->
 
-The findings corroborating a bending rigidity around $8.0\times10^{−5}$ fine tuned our model with experimental data.
+To explore the role of the cephalic furrow as a mechanical buffer, we analysed how the it interacts with mitotic domains and germ band, and how it influences the formation of ectopic folds.
+In our model, we programmed the cephalic furrow by establishing an intrinsic negative curvature ($K_{CF}$) to a narrow region of the particle--spring blastoderm that matches the span of the initiator cells *in vivo* ({@fig:model}a, {@fig:proportions}).
+Using the bending rigidity fine-tuned with the previous simulations and experiments, we ran a parameter sweep for different values of $K_{CF}$ and established a baseline ($K_{CF}>0.3$) where the invagination forms in a robust manner with minimal variability, phenocopying the cephalic furrow *in vivo* ({@fig:cf-sweep}a).
+Since our experiments indicate that the germ band is compressing the head--trunk tissues, we first asked whether the extension of the germ band can influence the depth of the cephalic furrow.
+The simulations show that the average depth does not correlate with the extension of the germ band at the maximum bending energy ({@fig:cf-sweep-CFGB}c), but it does when the whole simulation is considered ({@fig:model}i), suggesting that the initial phase of the invagination is independent of the germ band extension but not the late stages.
+To test *in vivo* whether the presence of the germ band impacts the formation of the cephalic furrow, we blocked the germ band extension by cauterization in wildtype embryos.
+The cephalic furrow forms normally in cauterized embryos indicating that the germ band extension is not required for its formation ({@fig:experiments}e,f).
+We then measured the maximum depth of the cephalic furrow between cauterized and non-cauterized embryos.
+The cephalic furrow in cauterized embryos is 15% shallower, but this difference was not significant,  indicating the germ band extension has at most a mild influence on the depth of the cephalic furrow ({@fig:experiments}h).
+In addition, we performed a complementary experiment to determine the size of the region under the influence of the cephalic furrow.
+By laser ablating cell membranes at different distances from initiator cells in early wildtype embryos, we find that the recoil velocity increases with time and scales negatively with distance, with an approximate range of at least 40 µm anterior and posterior to the initiator cells ({@fig:experiments}i).
+This suggests the cephalic furrow actively generates tension by pulling the surrounding tissues.
+These experiments rule out the germ band extension as a driver of cephalic furrow invagination, and give support to the notion that the cephalic furrow forms autonomously by independent active mechanisms which are deployed before the other morphogenetic movements of gastrulation.
 
-To explore the role of the cephalic furrow as a mechanical buffer during gastrulation, we programmed the cephalic furrow in our *in silico* model and analysed how it influences the formation of ectopic folds and interacts with mitotic domains and germ band extension.
-We did that by establishing an intrinsic negative curvature ($K_{CF}$) to a narrow region of the particle--spring blastoderm that matches the span of the initiator cells *in vivo* ({@fig:model}a, {@fig:proportions}).
-Using the bending rigidity established in previous simulations ($8.0\times10^{−5}$), we ran a parameter sweep for different values of $K_{CF}$ and established a value of $0.3$ as a baseline where the invagination forms in a robust manner with minimal variability as the cephalic furrow *in vivo* ({@fig:cf-sweep}a).
-The depth of the cephalic furrow at the maximum bending energy is a function of $K_{CF}$ and of the germ band position ({@fig:cf-sweep}a, {@fig:model}i).
-Together with our *in vivo* data suggesting that the germ band is compressing the head--trunk tissues, these simulations raised the hypothesis that the germ band could be influencing the cephalic furrow further in.
-To test whether the germ band extension influences the formation and depth of the cephalic furrow *in vivo*, we blocked the germ band extension by cauterization in wild type embryos.
-Cephalic furrow forms normally in cauterized embryos ({@fig:experiments}e,f).
-But we observe a small difference in the maximum depth of the cephalic furrow in cauterized embryos, which are about 15% shallower than in non-cauterized embryos, although this difference is barely significant ({@fig:experiments}h).
-In fact, by laser ablating cell membranes at different distances from initiator cells in early wildtype embryos, we found that the recoil velocity increases as the furrow forms and decreases with the distance to initiator cells ({@fig:experiments}i).
-This suggests that the cephalic furrow is actively pulling the surrounding tissues, generating tension in the tissues surrounding at least about 40 µm anterior and posterior to the initiator cells ({@fig:experiments}i).
-These experiments rule out the global germ band push as the main driver of cephalic furrow invagination, even though it may be exerting mild pressure and small push on late stages when the invagination is already inside, and corroborate the notion that the cephalic furrow forms autonomously by independent active mechanisms deployed before the other gastrulation movements.
+<!--TODO: Investigate the effect of the cephalic furrow position to the buffering effectiveness-->
 
-<!--These experiments suggest that in normal development the active pull generated by the cephalic furrow is the main driver of the invagination, and the germ band extension only accounts for a mild influence in the depth of the invagination.-->
+Next, we asked whether a programmed head--trunk invagination could prevent the formation of ectopic folds, and which conditions impact its effectiveness.
+We ran simulations changing the strength of the cephalic furrow, the timing of mitotic domain formation, and the percentage of germ band extension, and quantified the frequency, the position, and the depth of ectopic folds.
+Without the germ band, the presence of an active invagination at the head--trunk region reduced the variability of ectopic folding in the neighborhood of the cephalic furrow ({@fig:model}j).
+This influence of the cephalic furrow on ectopic folds correlates with the strength of the pull, with higher values buffering ectopic folds more effectively ({@fig:model}j, {@fig:cf-sweep}b).
+Curiously, this buffering effect diminished with the extension of the germ band for intermediate values of $K_{CF}$.
+The cephalic furrow becomes shallower and there is an increase in ectopic folds at the posterior region, suggesting that in these conditions, the forces generated by mitotic expansions and germ band dominate over the infolding pull of the cephalic furrow.
+Only larger $K_{CF}$ values remained effective in buffering ectopic folds at high percentages of germ band extension.
+Given that in wildtype embryos the cephalic furrow forms around 15 min before mitotic domains, we 
+asked whether their relative timing of formation may influence the buffering effectiveness of the cephalic furrow.
+Indeed, when we added a delay to the formation of mitotic domains, the cephalic furrow is more effective in preventing ectopic folding even for lower $K_{CF}$ values and for greater percentages of germ band extension ({@fig:model}k, {@fig:cf-sweep}b).
+Ectopic folds only form in the posterior region near the germ band tip, a position notably similar to where the dorsal folds form in the *Drosophila* embryo *in vivo*.
+Taken together, our physical model provides a theoretical basis that a pre-patterned invagination can effectively prevent mechanical instabilities by buffering compressive stresses in the tissue.
 
-Next, we asked whether a programmed head--trunk invagination could prevent the formation of ectopic folds in our *in silico* model.
-We ran our simulations with the cephalic furrow, mitotic domains, and germ band extension and quantified the frequency, position, and depth of ectopic folds.
-The presence of an active invagination at the head--trunk region reduced the variability of ectopic fold formation in the neighborhood of the cephalic furrow ({@fig:model}j).
-This influence of the cephalic furrow on ectopic folds correlated with the strength of the pull ($K_{CF}$) with higher values buffering ectopic folds more effectively in conditions without the germ band extension ({@fig:model}j, {@fig:cf-sweep}b).
-With the germ band extended, the buffering effect diminished; the cephalic furrow became shallower and more ectopic folds formed in the posterior region.
-Only large $K_{CF}$ values (above 1.5) remained partially effective, suggesting that the in these conditions, the forces of mitotic expansions and germ band extension dominate over the infolding force of the CF.
-In wildtype embryos, however, the cephalic furrow initiates at least 15--20 min before the mitotic domains.
-We, therefore, asked whether the relative timing between the cephalic furrow and mitotic domains may influence the effectives of the cephalic furrow in preventing the formation of ectopic folds.
-Indeed, when we added a delay to the formation of mitotic domains in our model to recapitulate the relative timing of events in wildtype, the cephalic furrow effectively prevents the formation of ectopic folds even for lower $K_{CF}$ values and higher germ band extensions ({@fig:model}k, {@fig:cf-sweep}b). 
-Interestingly, in extended germ band simulations, while no ectopic folds form in the surroundings of the cephalic furrow, fewer ectopic folds form in the posterior half of the simulated embryo (trunk region), a position reminiscent of the dorsal folds that typically form around the same time in *Drosophila* in an area that is perhaps the most impacted by the germ band compression.
-Taken together, our model provides the theoretical basis that the cephalic furrow can effectively prevent the formation of ectopic folds around the head--trunk region, and thus act as a mechanical buffer for the compressive stresses that build up during gastrulation.
+
+<!--the cephalic furrow can effectively prevent the formation of ectopic folds around the head--trunk region, and thus act as a mechanical buffer for the compressive stresses that build up during gastrulation.-->
 
 <!--Taken together, the cephalic furrow suppresses the mechanical instability of the blastoderm by internalizing excess tissue and counteracting the build up of compressive stresses from concurrent gastrulation processes in the area of the head--trunk boundary.-->
 
