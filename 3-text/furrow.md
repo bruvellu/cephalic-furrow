@@ -56,30 +56,35 @@ tablenos-plus-name: Table
 
 # Abstract
 
-<!--TODO: Update abstract to reflect the revised manuscript-->
-
-The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of flies during gastrulation.
-It forms under strict genetic control, following a stereotypical morphogenetic sequence where local cell shape changes actively drive the tissue to invaginate.
-But unlike other embryonic invaginations, the invaginated cells do not give rise to any precursor tissues or structures in the larval or adult stages, and the entire fold simply unfolds leaving no trace.
-For this reason, the function of the cephalic furrow during embryonic development has remained elusive.
+The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of fly embryos during gastrulation.
+It forms by active cellular mechanisms following an invariant morphogenetic sequence under strict genetic control.
+But unlike other embryonic invaginations, the cephalic furrow is transient and the invaginated cells do not give rise to any precursor tissues or larval structures.
+The cephalic furrow simply unfolds leaving no trace, and its function in development has remained elusive.
 Here we show the cephalic furrow plays a mechanical role during *Drosophila* gastrulation.
 By live-imaging mutant embryos, we find that without the cephalic furrow, late ectopic folds appear in the head--trunk interface indicating that the epithelial stability has been compromised.
-Using *in vivo* perturbations and *in silico* simulations, we demonstrate that ectopic folding in cephalic furrow mutants occurs due to the concomitant formation of mitotic domains in the head and the extension of the germ band from the trunk.
-These processes increase the compressive stresses in the head–trunk interface, undermining the mechanical stability of the epithelium.
-Our findings suggest that in normal development the cephalic furrow absorbs these compressive stresses by priming the position of folding, and by removing cells from the surface before other morphogenetic movements take place.
-We propose the cephalic furrow prevents epithelial instabilities at the head–trunk boundary, and therefore, plays a mechanical role in fly gastrulation.
+Using *in vivo* perturbations and *in silico* simulations, we demonstrate that ectopic folding in cephalic furrow mutants occurs due to the concomitant formation of mitotic domains and the extension of the germ band which increase the compressive stresses in the head–trunk interface.
+We show by simulations that a pre-patterned invagination can effectively prevent ectopic folding by removing cells from the surface before other morphogenetic movements take place.
+Our findings suggest the cephalic furrow buffers compressive stresses at the head--trunk boundary during fly gastrulation, and raise the hypothesis that mechanical forces may have played a role in the evolution of the cephalic furrow. 
+
+<!--The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of flies during gastrulation.-->
+<!--It forms under strict genetic control, following a stereotypical morphogenetic sequence where local cell shape changes actively drive the tissue to invaginate.-->
+<!--But unlike other embryonic invaginations, the invaginated cells do not give rise to any precursor tissues or structures in the larval or adult stages, and the entire fold simply unfolds leaving no trace.-->
+<!--For this reason, the function of the cephalic furrow during embryonic development has remained elusive.-->
+<!--Here we show the cephalic furrow plays a mechanical role during *Drosophila* gastrulation.-->
+<!--By live-imaging mutant embryos, we find that without the cephalic furrow, late ectopic folds appear in the head--trunk interface indicating that the epithelial stability has been compromised.-->
+<!--Using *in vivo* perturbations and *in silico* simulations, we demonstrate that ectopic folding in cephalic furrow mutants occurs due to the concomitant formation of mitotic domains in the head and the extension of the germ band from the trunk.-->
+<!--These processes increase the compressive stresses in the head–trunk interface, undermining the mechanical stability of the epithelium.-->
+<!--Our findings suggest that in normal development the cephalic furrow absorbs these compressive stresses by priming the position of folding, and by removing cells from the surface before other morphogenetic movements take place.-->
+<!--We propose the cephalic furrow prevents epithelial instabilities at the head–trunk boundary, and therefore, plays a mechanical role in fly gastrulation.-->
 
 <!--The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of flies during gastrulation [@Turner1977-ol; @Hartenstein1985-zs; @Spencer2015-td].-->
 <!--It forms under strict genetic control, following a stereotypical morphogenetic sequence where local cell shape changes actively drive the tissue to invaginate [@Vincent1997-fa; @Eritano2020-mi].-->
 
-
 <!--Despite forming autonomously via intrinsic cellular mechanisms [@Eritano2020-mi] under strict genetic control [@Vincent1997-fa], this head invagination is transient and vanishes without a trace.-->
 
-<!--Our findings reveal a unique case of a pre-patterned invagination which may have evolved in response to mechanical stresses during fly evolution.-->
+
 
 <!--It is a pre-patterned structure forming by active cellular mechanisms under strict genetic control. -->
-
-<!--Our findings suggests that mechanical forces may have act as a selective pressure for morphogenesis in fly gastrulation.-->
 
 <!--We propose the cephalic furrow invagination prevents epithelial instabilities at the head--trunk boundary, and therefore, plays a mechanical role in *Drosophila* gastrulation.-->
 
