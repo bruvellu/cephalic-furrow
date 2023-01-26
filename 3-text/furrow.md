@@ -574,6 +574,33 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 \newpage
 
+## Tables
+
+Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of infolding/buckling. {#tbl:gbtime}
+
+|           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
+| --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
+| Zygosity  | +/+      | +/−     | −/−      | +/−      | −/−      | +/−       | −/−      |
+| Fold      | CF       | CF      | EFs      | CF       | EFs      | CF        | CF       |
+| TAG (min) | 7.2±2.2  | 8.2±1.7 | 21.3±4.7 | 12.2±1.7 | 22.6±2.6 | 11.3±6.2  | 18.2±5.4 |
+| GBE (%)   | 8.7±1.7  | 9.8±1.9 | 36.3±2.4 | 8.8±2.3  | 28.5±3.9 | 18.0±12.2 | 33.0±9.5 |
+| n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
+
+
+Table: Statistics for ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (EFP) and the average number of ectopic folds per embryo side (EFA). The *n* includes datasets imaged from the lateral and dorsal sides (LAT+DOR). {#tbl:stats}
+
+|           | wildtype | *btd*   |         | *eve*   |         | *prd*   |         | *stg*   |         |
+| --------  | -------- | -----   | -----   | -----   | -----   | -----   | -----   | -----   | -----   |
+| Zygosity  | +/+      | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     |
+| EFP (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 23.1    | 42.9    | 27.3    | 23.1    |
+| EFA       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.2±0.4 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
+| n         | 36       | 31      | 14      | 25      | 10      | 26      | 14      | 33      | 13      |
+| (LAT+DOR) | (16+20)  | (9+22)  | (7+7)   | (7+18)  | (5+5)   | (9+17)  | (5+9)   | (21+12) | (8+5)   |
+
+\clearpage
+
+\newpage
+
 # Videos
 
 ![Lateral view of ectopic fold formation in *btd* mutants.
@@ -617,9 +644,11 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 <!--![Dorsal view of *btd*--*stg* double mutant. [VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-double-dorsal tag="Video 13" width=50%}-->
 
-# Supplementary
+\clearpage
 
-## Figures
+\newpage
+
+# Supplementary Figures
 
 ![Initiator cell behaviors in cephalic furrow mutants.
 ](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
@@ -643,7 +672,11 @@ Dimensions used as a reference for the model.
 ![Cephalic furrow simulation parameter sweep.
 ](figures/FigS7.jpg){#fig:cf-sweep tag=S7 width=100%}
 
-## Videos
+\clearpage
+
+\newpage
+
+## Supplementary Videos
 
 ![Reminiscent initiator cell behavior in *btd* mutants.
 ](figures/VidS1.jpg){#fig:vid-initiator tag="Video S1" width=50%}
@@ -653,29 +686,6 @@ Dimensions used as a reference for the model.
 
 ![Dorsal view of cephalic furrow formation in *stg* mutant embryos.
 ](figures/VidS3.jpg){#fig:vid-stg-dorsal tag="Video S3" width=50%}
-
-## Tables
-
-Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of infolding/buckling. {#tbl:gbtime}
-
-|           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
-| --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
-| Zygosity  | +/+      | +/−     | −/−      | +/−      | −/−      | +/−       | −/−      |
-| Fold      | CF       | CF      | EFs      | CF       | EFs      | CF        | CF       |
-| TAG (min) | 7.2±2.2  | 8.2±1.7 | 21.3±4.7 | 12.2±1.7 | 22.6±2.6 | 11.3±6.2  | 18.2±5.4 |
-| GBE (%)   | 8.7±1.7  | 9.8±1.9 | 36.3±2.4 | 8.8±2.3  | 28.5±3.9 | 18.0±12.2 | 33.0±9.5 |
-| n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
-
-
-Table: Statistics for ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (EFP) and the average number of ectopic folds per embryo side (EFA). The *n* includes datasets imaged from the lateral and dorsal sides (LAT+DOR). {#tbl:stats}
-
-|           | wildtype | *btd*   |         | *eve*   |         | *prd*   |         | *stg*   |         |
-| --------  | -------- | -----   | -----   | -----   | -----   | -----   | -----   | -----   | -----   |
-| Zygosity  | +/+      | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     |
-| EFP (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 23.1    | 42.9    | 27.3    | 23.1    |
-| EFA       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.2±0.4 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
-| n         | 36       | 31      | 14      | 25      | 10      | 26      | 14      | 33      | 13      |
-| (LAT+DOR) | (16+20)  | (9+22)  | (7+7)   | (7+18)  | (5+5)   | (9+17)  | (5+9)   | (21+12) | (8+5)   |
 
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
