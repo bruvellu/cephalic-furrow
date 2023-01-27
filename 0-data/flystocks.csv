@@ -1,0 +1,18 @@
+name,flybase,description,genotype,origin,cbglist,comment
+btd[XA],FBal0030657,btd loss of function,"y[1] w[*] btd[XA]/FM7c, P{ry[+t7.2]=ftz-lacC}YH1",BDSC #26815,BCV66,
+eve[3],FBal0003885,eve loss of function,b[1] pr[1] eve[3]/CyO,BDSC #299,BCV1,
+prd[4],FBal0013967,prd loss of function,prd[4] b[1] pr[1] cn[1] sca[1]/CyO,DGRC #101408,BCV4,
+stg[2],FBal0247234,stg loss of function,"y w[67];; stg[7B]/In(3RL)TM3, Sb ri sep l(3)89Aa bx34ee",CBG Knust Lab,EK0082,
+Gap43,FBal0258719,Membrane fluorescent marker,"w; Gap43-mCherry/TM3, Sb[1]",Kassiani Skouloudaki,BCV93,Gap homozygotes die at pupal stage
+"FM7c, Kr-GFP",FBst0005193,Chr 1 green balancer,"Df(1)JA27/FM7c, P{w[+mC]=GAL4-Kr.C}DC1, P{w[+mC]=UAS-GFP.S65T}DC5, sn[+]",BDSC #5193,BCV64,
+"TM3, Kr-GFP",FBst0005195,Chr 2 green balancer,"y[1] w[*];; D[*] gl[3]/TM3, P{w[+mC]=GAL4-Kr.C}DC2, P{w[+mC]=UAS-GFP.S65T}DC10, Sb[1]",BDSC #5195,BCV68,
+ICMT,,Chr 2 and 3 double balancer,"w; Kr[If-1]/CyO, twi-GFP; MKRS, Sb/TM6B, Tb",Akanksha Jain,BCV42,
+btd[XA] Gap,,btd green balancer with membrane,"btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry/MKRS",this study,BCV88,Gap is not balanced by MKRS; recombinants and non-Gap embryos can appear in the stock
+eve[3] Gap,,eve green balancer with membrane,"eve[3]/CyO, twi-GFP; Gap43-mCherry/MKRS",this study,BCV89,Gap is not balanced by MKRS; recombinants and non-Gap embryos can appear in the stock
+prd[4] Gap,,prd green balancer with membrate,"prd[4]/CyO, twi-GFP; Gap43-mCherry/MKRS",this study,BCV45,Gap is not balanced by MKRS; recombinants and non-Gap embryos can appear in the stock
+"Gap,stg[2]",,stg with membrane,"w;; Gap43-mCherry, stg[2]/TM3, Sb ",this study,BCV77,
+"Gap,stg[2] green",,stg green balancer with membrane,"w;; Gap43-mCherry, stg[2]/TM3, Kr-GFP, Sb[1]",this study,BCV78,
+"btd[XA] Gap,stg[2] transient",,btd-stg double mutant with membrane transient,"btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/Gap43-mCherry",this study,,
+"btd[XA] Gap,stg[2]",,btd-stg double mutant with membrane,"btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/TM3, Sb",this study,BCV104,
+Oregon-R,FBsn0000276,wildtype flies,,,,
+RGap43,,Gap recombined with wildtype chr,Gap43-mCherry,this study,BCV101,Gap homozygotes don’t die
