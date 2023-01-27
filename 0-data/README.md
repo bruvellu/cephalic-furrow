@@ -4,12 +4,13 @@
 
 TODO: compile spreadsheet with fly stocks.
 
-The [`flystocks.csv`](flystocks.csv) file contains the details of the fly stocks used and generated during this study.
+- [`flystocks.csv`](flystocks.csv): Fly stocks used and generated in this study.
 
 ## Lightsheet datasets
 
 Overview of the live-imaging data acquired in a Zeiss Z.1 Lightsheet.
-The [`datasets.csv`](datasets.csv) file contains the metadata information for each dataset and general annotations about the embryo (for example, the number of epithelial folds).
+
+- [`datasets.csv`](datasets.csv): Metadata information and general annotations for each dataset.
 
 ### Data types
 
