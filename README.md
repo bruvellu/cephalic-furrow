@@ -6,7 +6,7 @@ Vellutini BC, Cuenca MB, Krishna A, Szałapak A, Modes CD, Tomančák P. **Pre-p
 
 ## Directories
 
-- [0-data](0-data): Datasets used in the study.
-- [1-analyses](1-analyses): Scripts and files of individual analyses.
-- [2-figures](2-figures): Source files for figure plates.
-- [3-text](3-text): Manuscript files with final figures and videos.
+- [`0-data`](0-data): Datasets used in the study.
+- [`1-analyses`](1-analyses): Scripts and files of individual analyses.
+- [`2-figures`](2-figures): Source files for figure plates.
+- [`3-text`](3-text): Manuscript files with final figures and videos.

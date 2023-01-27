@@ -13,7 +13,7 @@ The [`datasets.csv`](datasets.csv) file contains the metadata information for ea
 
 ### Data types
 
-- [lateral](lateral): Lateral view of entire body length using the 20x objective.
-- [dorsal](dorsal): Dorsal view of the head region using the 40x objective.
-- [imsane](imsane): Cartographic projection of the lateral view datasets.
+- [`lateral`](lateral): Lateral view of entire body length using the 20x objective.
+- [`dorsal`](dorsal): Dorsal view of the head region using the 40x objective.
+- [`imsane`](imsane): Cartographic projection of the lateral view datasets.
 
