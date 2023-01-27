@@ -132,107 +132,107 @@ experiment,stock,genotype,zygosity,view,embryo,xres,yres,zres,slices,timestep,fr
 "2021-08-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3",heterozygote,lateral,"Gap,stg[2]_2_z3_t50s_E13",0.5717412,0.5717412,3.0000000,,50,270,2,,2.0,TRUE
 "2021-08-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3",heterozygote,lateral,"Gap,stg[2]_2_z3_t50s_E14",0.5717412,0.5717412,3.0000000,,50,270,1,,1.0,FALSE
 "2021-08-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3",heterozygote,lateral,"Gap,stg[2]_2_z3_t50s_E15",0.5717412,0.5717412,3.0000000,,50,270,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E1",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E2",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E3",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E4",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E5",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E6",0.2853696,0.2853696,3.0000000,,52,180,2,,2.0,TRUE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E7",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E8",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E9",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E10",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E11",0.2853696,0.2853696,3.0000000,,52,180,2,,2.0,TRUE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E12",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E13",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",homozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E14",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E15",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",homozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E16",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E1",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E2",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E3",0.1426848,0.1426848,3.0000000,20,60,180,2,1,1.5,TRUE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E4",0.1426848,0.1426848,3.0000000,20,60,180,1,2,1.5,TRUE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E5",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E6",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E7",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E8",0.1426848,0.1426848,3.0000000,20,60,180,2,2,2.0,TRUE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E9",0.1426848,0.1426848,3.0000000,20,60,180,1,2,1.5,TRUE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E10",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E11",0.1426848,0.1426848,3.0000000,20,60,180,1,2,1.5,TRUE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E12",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E13",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E14",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E15",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E16",0.1426848,0.1426848,3.0000000,20,60,180,2,1,1.5,TRUE
-"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3G",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E17",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
-2021-12-29_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_1_z3_t45s_E3,0.2853696,0.2853696,3.0000000,,45,260,3,,3.0,TRUE
-2021-12-29_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_1_z3_t45s_E8,0.2853696,0.2853696,3.0000000,,45,260,1,,1.0,FALSE
-2021-12-29_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double homozygote,lateral,btd-gap-stg_1_z3_t45s_E9,0.2853696,0.2853696,3.0000000,,45,260,0,,0.0,FALSE
-2021-12-29_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_1_z3_t45s_E12,0.2853696,0.2853696,3.0000000,,45,260,1,,1.0,TRUE
-2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_3_z3_t53s_E2,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,TRUE
-2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_3_z3_t53s_E3,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,FALSE
-2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_3_z3_t53s_E11,0.2853696,0.2853696,3.0000000,,53,203,2,,2.0,TRUE
-2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_3_z3_t53s_E12,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,FALSE
-2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_3_z3_t53s_E13,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,FALSE
-2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_3_z3_t53s_E14,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,FALSE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E1,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E3,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E4,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E6,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_4_z3_t59s_E7,0.2853696,0.2853696,3.0000000,,59,172,2,,2.0,TRUE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_4_z3_t59s_E8,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,TRUE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_4_z3_t59s_E10,0.2853696,0.2853696,3.0000000,,59,172,2,,2.0,TRUE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E11,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E13,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E14,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
-2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E16,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double homozygote,lateral,btd-gap-stg_7_z3_60s_E1,0.2853696,0.2853696,3.0000000,,60,109,0,,0.0,FALSE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_7_z3_60s_E2,0.2853696,0.2853696,3.0000000,,60,109,2,,2.0,TRUE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double homozygote,lateral,btd-gap-stg_7_z3_60s_E3,0.2853696,0.2853696,3.0000000,,60,109,0,,0.0,FALSE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_7_z3_60s_E5,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,FALSE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_7_z3_60s_E6,0.2853696,0.2853696,3.0000000,,60,109,0,,0.0,FALSE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_7_z3_60s_E16,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,TRUE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_7_z3_60s_E17,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,FALSE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_7_z3_60s_E18,0.2853696,0.2853696,3.0000000,,60,109,0,,0.0,FALSE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double heterozygote,lateral,btd-gap-stg_7_z3_60s_E19,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,FALSE
-2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_7_z3_60s_E20,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,TRUE
-2022-01-27_btd-gap-stg_dorsal,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double homozygote,dorsal,btd-gap-stg_dorsal_1_z3_t50s_E1,0.1426848,0.1426848,3.0000000,30,50,181,0,0,0.0,FALSE
-2022-01-27_btd-gap-stg_dorsal,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",double homozygote,dorsal,btd-gap-stg_dorsal_1_z3_t50s_E7,0.1426848,0.1426848,3.0000000,30,50,181,0,0,0.0,FALSE
-2022-01-31_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",btd homozygote,lateral,btd-gap-stg_8_z3_45s_E3,0.2853696,0.2853696,3.0000000,,45,170,0,,0.0,FALSE
-2022-01-31_btd-gap-stg,btd-stg,"btd[XA]/FM7cG;;Gap,stg[2]/Gap",stg homozygote,lateral,btd-gap-stg_8_z3_45s_E8,0.2853696,0.2853696,3.0000000,,45,170,1,,1.0,FALSE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E1,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E2,0.2858705,0.2858705,3.0000000,,60,142,1,,1.0,FALSE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E3,0.2858705,0.2858705,3.0000000,,60,142,3,,3.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E4,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E5,0.2858705,0.2858705,3.0000000,,60,142,3,,3.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E6,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E7,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E8,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E9,0.2858705,0.2858705,3.0000000,,60,142,1,,1.0,FALSE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E11,0.2858705,0.2858705,3.0000000,,60,142,3,,3.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E12,0.2858705,0.2858705,3.0000000,,60,142,1,,1.0,FALSE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E13,0.2858705,0.2858705,3.0000000,,60,142,1,,1.0,FALSE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E14,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E15,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E16,0.2858705,0.2858705,3.0000000,,60,142,3,,3.0,TRUE
-2022-02-21_rgap,wt,Recombined-Gap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E17,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E4,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E5,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E6,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E7,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E8,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E9,0.1429353,0.1429353,3.0000000,20,60,97,1,1,1.0,FALSE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E10,0.1429353,0.1429353,3.0000000,20,60,97,2,1,1.5,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E11,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E12,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E13,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E14,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E15,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E16,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E17,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E18,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E19,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E20,0.1429353,0.1429353,3.0000000,20,60,97,1,1,1.0,FALSE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E21,0.1429353,0.1429353,3.0000000,20,60,97,3,2,2.5,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E22,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
-2022-02-22_rgap_dorsal,wt,Recombined-Gap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E23,0.1429353,0.1429353,3.0000000,20,60,97,1,1,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E1",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E2",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E3",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E4",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E5",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E6",0.2853696,0.2853696,3.0000000,,52,180,2,,2.0,TRUE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E7",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E8",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E9",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E10",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E11",0.2853696,0.2853696,3.0000000,,52,180,2,,2.0,TRUE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E12",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E13",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",homozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E14",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E15",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-25_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",homozygote,lateral,"Gap,stg[2]_green_1_z3_t52_E16",0.2853696,0.2853696,3.0000000,,52,180,1,,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E1",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E2",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E3",0.1426848,0.1426848,3.0000000,20,60,180,2,1,1.5,TRUE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E4",0.1426848,0.1426848,3.0000000,20,60,180,1,2,1.5,TRUE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E5",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E6",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E7",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E8",0.1426848,0.1426848,3.0000000,20,60,180,2,2,2.0,TRUE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E9",0.1426848,0.1426848,3.0000000,20,60,180,1,2,1.5,TRUE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E10",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E11",0.1426848,0.1426848,3.0000000,20,60,180,1,2,1.5,TRUE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E12",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E13",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E14",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E15",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",heterozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E16",0.1426848,0.1426848,3.0000000,20,60,180,2,1,1.5,TRUE
+"2021-10-26_Gap,stg[2]",stg,"Gap43-mCherry,stg[2]/TM3,Kr-GFP",homozygote,dorsal,"Gap,stg[2]_dorsal_1_z3_t60_E17",0.1426848,0.1426848,3.0000000,20,60,180,1,1,1.0,FALSE
+2021-12-29_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_1_z3_t45s_E3,0.2853696,0.2853696,3.0000000,,45,260,3,,3.0,TRUE
+2021-12-29_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_1_z3_t45s_E8,0.2853696,0.2853696,3.0000000,,45,260,1,,1.0,FALSE
+2021-12-29_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double homozygote,lateral,btd-gap-stg_1_z3_t45s_E9,0.2853696,0.2853696,3.0000000,,45,260,0,,0.0,FALSE
+2021-12-29_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_1_z3_t45s_E12,0.2853696,0.2853696,3.0000000,,45,260,1,,1.0,TRUE
+2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_3_z3_t53s_E2,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,TRUE
+2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_3_z3_t53s_E3,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,FALSE
+2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_3_z3_t53s_E11,0.2853696,0.2853696,3.0000000,,53,203,2,,2.0,TRUE
+2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_3_z3_t53s_E12,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,FALSE
+2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_3_z3_t53s_E13,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,FALSE
+2022-01-12_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_3_z3_t53s_E14,0.2853696,0.2853696,3.0000000,,53,203,1,,1.0,FALSE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E1,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E3,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E4,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E6,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_4_z3_t59s_E7,0.2853696,0.2853696,3.0000000,,59,172,2,,2.0,TRUE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_4_z3_t59s_E8,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,TRUE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_4_z3_t59s_E10,0.2853696,0.2853696,3.0000000,,59,172,2,,2.0,TRUE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E11,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E13,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E14,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
+2022-01-13_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_4_z3_t59s_E16,0.2853696,0.2853696,3.0000000,,59,172,1,,1.0,FALSE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double homozygote,lateral,btd-gap-stg_7_z3_60s_E1,0.2853696,0.2853696,3.0000000,,60,109,0,,0.0,FALSE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_7_z3_60s_E2,0.2853696,0.2853696,3.0000000,,60,109,2,,2.0,TRUE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double homozygote,lateral,btd-gap-stg_7_z3_60s_E3,0.2853696,0.2853696,3.0000000,,60,109,0,,0.0,FALSE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_7_z3_60s_E5,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,FALSE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_7_z3_60s_E6,0.2853696,0.2853696,3.0000000,,60,109,0,,0.0,FALSE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_7_z3_60s_E16,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,TRUE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_7_z3_60s_E17,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,FALSE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_7_z3_60s_E18,0.2853696,0.2853696,3.0000000,,60,109,0,,0.0,FALSE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double heterozygote,lateral,btd-gap-stg_7_z3_60s_E19,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,FALSE
+2022-01-18_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_7_z3_60s_E20,0.2853696,0.2853696,3.0000000,,60,109,1,,1.0,TRUE
+2022-01-27_btd-gap-stg_dorsal,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double homozygote,dorsal,btd-gap-stg_dorsal_1_z3_t50s_E1,0.1426848,0.1426848,3.0000000,30,50,181,0,0,0.0,FALSE
+2022-01-27_btd-gap-stg_dorsal,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",double homozygote,dorsal,btd-gap-stg_dorsal_1_z3_t50s_E7,0.1426848,0.1426848,3.0000000,30,50,181,0,0,0.0,FALSE
+2022-01-31_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",btd homozygote,lateral,btd-gap-stg_8_z3_45s_E3,0.2853696,0.2853696,3.0000000,,45,170,0,,0.0,FALSE
+2022-01-31_btd-gap-stg,btd-stg,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry,stg[2]/Gap43-mCherry",stg homozygote,lateral,btd-gap-stg_8_z3_45s_E8,0.2853696,0.2853696,3.0000000,,45,170,1,,1.0,FALSE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E1,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E2,0.2858705,0.2858705,3.0000000,,60,142,1,,1.0,FALSE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E3,0.2858705,0.2858705,3.0000000,,60,142,3,,3.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E4,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E5,0.2858705,0.2858705,3.0000000,,60,142,3,,3.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E6,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E7,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E8,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E9,0.2858705,0.2858705,3.0000000,,60,142,1,,1.0,FALSE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E11,0.2858705,0.2858705,3.0000000,,60,142,3,,3.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E12,0.2858705,0.2858705,3.0000000,,60,142,1,,1.0,FALSE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E13,0.2858705,0.2858705,3.0000000,,60,142,1,,1.0,FALSE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E14,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E15,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E16,0.2858705,0.2858705,3.0000000,,60,142,3,,3.0,TRUE
+2022-02-21_rgap,wt,RGap43-mCherry,wildtype,lateral,rgap_1b_z3_t60s_E17,0.2858705,0.2858705,3.0000000,,60,142,2,,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E4,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E5,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E6,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E7,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E8,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E9,0.1429353,0.1429353,3.0000000,20,60,97,1,1,1.0,FALSE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E10,0.1429353,0.1429353,3.0000000,20,60,97,2,1,1.5,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E11,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E12,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E13,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E14,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E15,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E16,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E17,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E18,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E19,0.1429353,0.1429353,3.0000000,20,60,97,2,2,2.0,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E20,0.1429353,0.1429353,3.0000000,20,60,97,1,1,1.0,FALSE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E21,0.1429353,0.1429353,3.0000000,20,60,97,3,2,2.5,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E22,0.1429353,0.1429353,3.0000000,20,60,97,1,2,1.5,TRUE
+2022-02-22_rgap_dorsal,wt,RGap43-mCherry,wildtype,dorsal,rgap_dorsal_1_z3_t60s_E23,0.1429353,0.1429353,3.0000000,20,60,97,1,1,1.0,FALSE
