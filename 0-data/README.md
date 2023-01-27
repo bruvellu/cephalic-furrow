@@ -1,14 +1,12 @@
 # Materials and datasets
 
-## Fly stocks
+Overview of the fly stocks and live-imaging datasets.
 
-TODO: compile spreadsheet with fly stocks.
+## Fly stocks
 
 - [`flystocks.csv`](flystocks.csv): Fly stocks used and generated in this study.
 
 ## Lightsheet datasets
-
-Overview of the live-imaging data acquired in a Zeiss Z.1 Lightsheet.
 
 - [`datasets.csv`](datasets.csv): Metadata information and general annotations for each dataset.
 

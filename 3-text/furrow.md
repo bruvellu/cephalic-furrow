@@ -362,16 +362,13 @@ Overall, our work proposes that the cephalic furrow plays a mechanical role in b
 
 ## Fly genetics
 
-We generated fluorescent cephalic furrow mutant strains by genetic crossing.
-We mated flies carrying the loss-of-function alleles *btd^XA^* (FlyBase: [FBal0030657](https://flybase.org/reports/FBal0030657), BDSC: [#26815](https://bdsc.indiana.edu/Home/Search?presearch=26815)) and *eve^3^* (FlyBase: [FBal0003885](https://flybase.org/reports/FBal0003885), BDSC [#299](https://bdsc.indiana.edu/Home/Search?presearch=299)), with flies carrying the fluorescent membrane marker GAP43-mCherry [@Martin2010-pb, gift from Kassiani Skouloudaki].
-The mutant alleles were balanced over the fluorescent balancers FM7c-KrGFP (BDSC: [#5193](https://bdsc.indiana.edu/Home/Search?presearch=5193)) and CyO-twiGFP (gift from Akanksha Jain).
-We imaged the progeny of the established stable lines *btd^XA^/FM7c-KrGFP;;GAP43-mCherry/MKRS;* and *;eve^3^/CyO-twiGFP;GAP43-mCherry/MKRS;*, and used the lack of GFP signal to distinguish homozygous embryos.
+To generate fluorescent cephalic furrow mutants, we performed genetic crosses using the loss-of-function alleles *btd^XA^* (FBal0030657), *eve^3^* (FBal0003885), *prd^4^* (FBal0013967), and *stg^2^* (FBal0247234); the membrane fluorescent marker *Gap43-mCherry* (FBal0258719, gift from Kassiani Skouloudaki); and the green fluorescent balancers *FM7c, Kr-GFP* (FBst0005193), *CyO, twi-GFP* (gift from Akanksha Jain), and *TM3, Kr-GFP* (FBst0005195).
+We established stable lines balancing the loss-of-function alleles over fluorescent balancers, and used the lack of GFP signal to identify homozygous embryos in our live-imaging recordings.
+For genes on chromosomes 1 and 2 (*btd*, *eve*, and *prd*), we added the membrane marker on chromosome 3 (*btd^XA^/FM7c, Kr-GFP;; Gap43-mCherry/MKRS* and *eve^3^/CyO, twi-GFP; Gap43-mCherry/MKRS*). For *stg*, which is located on chromosome 3, we recombined the allele with Gap (*Gap43-mCherry, stg[2]/TM3, Kr-GFP*).
+Since the *btd*--*stg* double mutant stable line is tryingly weak, we imaged the progeny of *btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/Gap43-mCherry* flies, identifying *btd* homozygozity by the GFP, and *stg* homozygozity by the lack of cell divisions after gastrulation.
+The wildtype stocks contain the Gap marker in the Oregon-R genetic background.
 
-<!--TODO: Add prd and stg alleles.-->
-
-<!--TODO: Add Gap,stg recombination.-->
-
-<!--TODO: Add TM3-KrGFP balancer.-->
+<!--FlyBase [@Gramates2022-xe]-->
 
 ## Live-imaging
 
@@ -383,6 +380,8 @@ For imaging dorsal views, we used a Zeiss 40x/?NA Plan-Apochromat Water objectiv
 The time resolution was adjusted according to the number of embryos on the coverslip, ranging between 45--60s.
 We acquired two channels simultaneously using 488 and 561nm lasers, and an image splitter cube containing a LP560 dichromatic mirror and a LP585 emission filter.
 All recordings were performed at 25°C.
+
+<!--We discarded embryos with major cleavage or epithelial defects, and embryos in improper orientation.-->
 
 <!--TODO: Add multiview description?-->
 
