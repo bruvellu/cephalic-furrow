@@ -392,35 +392,39 @@ The complete list of FlyBase [@Gramates2022-xe] accession numbers and genotypes 
 We maintained the stocks in 50mL plastic tubes containing fly food and enclosed with a foam lid.
 They were kept in an incubator with a constant 25°C temperature and 65% humidity and a 12:12 light cycle.
 For imaging, we first amplified the stocks in larger 200mL tubes for a few weeks.
-<!--Tubes: 10.0 x 5.0 cm (200ml) and 9.5 x 2.5 cm (50ml)-->
+<!--Tubes: 10.0 x 5.0 cm (200ml, 50ml of food) and 9.5 x 2.5 cm (50ml, 12.5ml of food)-->
 We then narcotized the flies with CO~2~, and transferred them to a cage with a plate attached to one end containing a layer of apple juice agar and a slab of yeast paste on top.
 The flies were left to acclimatise in the cage for two days before the experiments.
 To guarantee the embryos are at a similar developmental stage, we exchanged the agar plate once per hour at least twice (pre-lays), and let the flies lay the eggs on the agar for one hour before collecting the plate.
 After filling the plate with water, we used a brush to release the eggs from the agar and transferred them to a cell strainer with 100µm nylon mesh (VWR).
-To remove the chorion, we immersed the embryos in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 90s, and washed abundantly with water.
+To remove the chorion, we immersed the embryos in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 90s, washed abundantly with water, and proceeded to mounting.
 
-<!--## Sample mounting for live imaging-->
+## Sample mounting for live imaging
 
-## Live-imaging
+### Lightsheet coverslip setup for recording lateral and dorsal views
 
+To mount the samples for imaging, we transferred the embryos from the cell strainer to a apple juice agar pad under a stereomicroscope, and oriented them in a line with the lateral or ventral side up using a blunt cactus spine.
+We attached the embryos to 170µm thick glass coverslips coated with a layer of heptane glue and dried in advance.
+We cut a 22mm coverslip into a 6mm wide strip using a diamond knife, and attached it to a custom made metal holder using silicon glue.
+Carefully lay the coverslip over the aligned embryos for them to stick.
 We oriented the embryos on an agar pad and attached them to a coverslip previously covered with a thin layer of heptane glue.
 Using silicone glue we attached the coverslip to a sample holder and mounted the samples in a Zeiss Lightsheet Z.1 microscope.
 For imaging lateral views, we used a Zeiss 20x/1NA Plan-Apochromat Water objective and acquired z-stacks of 0.X pixel size and 3µm z-step covering one side of the embryo.
 For imaging dorsal views, we used a Zeiss 40x/?NA Plan-Apochromat Water objective acquiring z-stacks of 0.X pixel size and 1.5--3µm z-step covering the middle section of the embryo.
 The time resolution was adjusted according to the number of embryos on the coverslip, ranging between 45--60s.
 We acquired two channels simultaneously using 488 and 561nm lasers, and an image splitter cube containing a LP560 dichromatic mirror and a LP585 emission filter.
+We discarded embryos with major cleavage or epithelial defects, and embryos in improper orientation.
 All recordings were performed at 25°C.
 
-<!--We discarded embryos with major cleavage or epithelial defects, and embryos in improper orientation.-->
+### Lightsheet capillary setup for cauterization experiments
 
-<!--TODO: Add multiview description?-->
+MuVi: Embryos were mounted in glass capillaries embedded in agarose LMP 2% after dechorionation. For full embryo acquisition and cauterisation, a MuVi SPIM PM (Luxxendo) microscope with Pulsed IR laser 1030–1040 nm, 200 fs pulse length 1.5 W for photoablation was used. Embryos were cauterised in the dorso-posterior region in the blastoderm surface and recorded at 4 different angles every 1 minute.
 
-<!--## Cauterization experiments-->
+### Confocal coverslip setup for cauterization experiments
 
-<!--MZ2: After dechorionation, embryos were placed with the dorsal side down in coverslips using embryo glue. Embryos were cauterised and sequentially imaged using a confocal scanning microscope Zeiss LSM 780 NLO, and 25x/0.8 LD LCI Plan-Apochromat glycerol immersion objective. For cauterisations, a 800 nm laser (Coherent, Laser Multiphotonen Chameleon) scanned a single pixel line (210 nm/px, 100 us/px) in the surface of the blastoderm upon gastrulation. Time lapses were recorded at 2 different planes: the blastoderm surface to monitor germ band extension, and 40 um in depth (equatorial region) to monitor folding. Images were obtained every 1 minute.-->
-<!--MuVi: Embryos were mounted in glass capillaries embedded in agarose LMP 2% after dechorionation. For full embryo acquisition and cauterisation, a MuVi SPIM PM (Luxxendo) microscope with Pulsed IR laser 1030–1040 nm, 200 fs pulse length 1.5 W for photoablation was used. Embryos were cauterised in the dorso-posterior region in the blastoderm surface and recorded at 4 different angles every 1 minute.-->
+MZ2: After dechorionation, embryos were placed with the dorsal side down in coverslips using embryo glue. Embryos were cauterised and sequentially imaged using a confocal scanning microscope Zeiss LSM 780 NLO, and 25x/0.8 LD LCI Plan-Apochromat glycerol immersion objective. For cauterisations, a 800 nm laser (Coherent, Laser Multiphotonen Chameleon) scanned a single pixel line (210 nm/px, 100 us/px) in the surface of the blastoderm upon gastrulation. Time lapses were recorded at 2 different planes: the blastoderm surface to monitor germ band extension, and 40 um in depth (equatorial region) to monitor folding. Images were obtained every 1 minute.
 
-## Ablation experiments
+### Confocal petri dish setup for ablation experiments
 
 Embryos were collected and dechorionated as described above.
 Movies were obtained in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), a 60× 1.2 NA water immersion objective, and the software AndorIQ for image acquisition.
@@ -431,8 +435,6 @@ For laser ablations, a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 
 Laser power measured before microscope port was 6 mW and pixel dwell time for scanning was 2 us.
 Each scan was repeated 10 consecutive times to make a cut along a single cell.
 Embryos were ablated just once each.
-For analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts.
-The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity. 
 
 ## Image processing and analyses
 
@@ -444,8 +446,9 @@ We manually traced the fold outlines and areas of lateral 3D renderings and late
 We used the ImageJ Temporal-Color Code script with the mpl-viridis colorscheme to visualize the fold dynamics.
 To segment membranes and quantify apical cell areas we used MorphoLibJ plugin in ImageJ [@Legland2016-cp].
 To analyze the tortuosity of the epithelium we straightened the vitelline envelope using the Straighten tool in ImageJ, and applied gaussian blur and thresholding to extract the outline of the epithelium in dorsal views.
+For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts. The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity.
 We used custom Python and R scripts to generate plots, and Inkscape to assemble the figure plates and illustrations.
-All the data, code, analyses, and figures is available in the repository https://git.mpi-cbg.de/cosserme/cephalic-furrow.
+All the data, code, analyses, and figures is available in the repository [@Vellutini_undated-ou]
 
 # Acknowledgements
 
