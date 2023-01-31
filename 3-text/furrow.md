@@ -377,7 +377,7 @@ Overall, our work proposes that the cephalic furrow plays a mechanical role in b
 
 # Methods
 
-## Fly genetics
+## Fly stocks and genetic crossings
 
 To generate fluorescent cephalic furrow mutants, we performed genetic crosses using the loss-of-function alleles *btd^XA^* (FBal0030657), *eve^3^* (FBal0003885), *prd^4^* (FBal0013967), and *stg^2^* (FBal0247234); the membrane fluorescent marker *Gap43-mCherry* (FBal0258719, gift from Kassiani Skouloudaki); and the green fluorescent balancers *FM7c, Kr-GFP* (FBst0005193), *CyO, twi-GFP* (gift from Akanksha Jain), and *TM3, Kr-GFP* (FBst0005195).
 We established stable lines balancing the loss-of-function alleles over fluorescent balancers, and used the lack of GFP signal to identify homozygous embryos in our live-imaging recordings.
@@ -387,9 +387,22 @@ The wildtype stocks contain the Gap marker in the Oregon-R genetic background.
 We obtained the founder fly stocks from the Bloomington Drosophila Stock Center and the Kyoto Stock Center and deposited the lines in the MPI-CBG stock.
 The complete list of FlyBase [@Gramates2022-xe] accession numbers and genotypes is available in the project’s data repository [@Vellutini_undated-ou].
 
+## Fly husbandry and embryo collection
+
+We maintained the stocks in 50mL plastic tubes containing fly food and enclosed with a foam lid.
+They were kept in an incubator with a constant 25°C temperature and 65% humidity and a 12:12 light cycle.
+For imaging, we first amplified the stocks in larger 200mL tubes for a few weeks.
+<!--Tubes: 10.0 x 5.0 cm (200ml) and 9.5 x 2.5 cm (50ml)-->
+We then narcotized the flies with CO~2~, and transferred them to a cage with a plate attached to one end containing a layer of apple juice agar and a slab of yeast paste on top.
+The flies were left to acclimatise in the cage for two days before the experiments.
+To guarantee the embryos are at a similar developmental stage, we exchanged the agar plate once per hour at least twice (pre-lays), and let the flies lay the eggs on the agar for one hour before collecting the plate.
+After filling the plate with water, we used a brush to release the eggs from the agar and transferred them to a cell strainer with 100µm nylon mesh (VWR).
+To remove the chorion, we immersed the embryos in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 90s, and washed abundantly with water.
+
+<!--## Sample mounting for live imaging-->
+
 ## Live-imaging
 
-We collected embryos on apple juice agar plates at 25°C and immersed in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 1.5 min to remove the chorion.
 We oriented the embryos on an agar pad and attached them to a coverslip previously covered with a thin layer of heptane glue.
 Using silicone glue we attached the coverslip to a sample holder and mounted the samples in a Zeiss Lightsheet Z.1 microscope.
 For imaging lateral views, we used a Zeiss 20x/1NA Plan-Apochromat Water objective and acquired z-stacks of 0.X pixel size and 3µm z-step covering one side of the embryo.
@@ -402,7 +415,12 @@ All recordings were performed at 25°C.
 
 <!--TODO: Add multiview description?-->
 
-## Cauterization experiments
+<!--## Cauterization experiments-->
+
+<!--MZ2: After dechorionation, embryos were placed with the dorsal side down in coverslips using embryo glue. Embryos were cauterised and sequentially imaged using a confocal scanning microscope Zeiss LSM 780 NLO, and 25x/0.8 LD LCI Plan-Apochromat glycerol immersion objective. For cauterisations, a 800 nm laser (Coherent, Laser Multiphotonen Chameleon) scanned a single pixel line (210 nm/px, 100 us/px) in the surface of the blastoderm upon gastrulation. Time lapses were recorded at 2 different planes: the blastoderm surface to monitor germ band extension, and 40 um in depth (equatorial region) to monitor folding. Images were obtained every 1 minute.-->
+<!--MuVi: Embryos were mounted in glass capillaries embedded in agarose LMP 2% after dechorionation. For full embryo acquisition and cauterisation, a MuVi SPIM PM (Luxxendo) microscope with Pulsed IR laser 1030–1040 nm, 200 fs pulse length 1.5 W for photoablation was used. Embryos were cauterised in the dorso-posterior region in the blastoderm surface and recorded at 4 different angles every 1 minute.-->
+
+## Ablation experiments
 
 Embryos were collected and dechorionated as described above.
 Movies were obtained in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), a 60× 1.2 NA water immersion objective, and the software AndorIQ for image acquisition.
