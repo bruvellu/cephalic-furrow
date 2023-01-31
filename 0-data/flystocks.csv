@@ -14,5 +14,5 @@ prd[4] Gap,,prd green balancer with membrate,"prd[4]/CyO, twi-GFP; Gap43-mCherry
 "Gap,stg[2] green",,stg green balancer with membrane,"w;; Gap43-mCherry, stg[2]/TM3, Kr-GFP, Sb[1]",this study,BCV78,
 "btd[XA] Gap,stg[2] transient",,btd-stg double mutant with membrane transient,"btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/Gap43-mCherry",this study,,
 "btd[XA] Gap,stg[2]",,btd-stg double mutant with membrane,"btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/TM3, Sb",this study,BCV104,
-Oregon-R,FBsn0000276,wildtype flies,,,,
 RGap43,,Gap recombined with wildtype chr,Gap43-mCherry,this study,BCV101,Gap homozygotes don’t die
+Oregon-R,FBsn0000276,wildtype flies,,,BCV106,
