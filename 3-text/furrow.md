@@ -384,8 +384,8 @@ We established stable lines balancing the loss-of-function alleles over fluoresc
 For genes on chromosomes 1 and 2 (*btd*, *eve*, and *prd*), we added the membrane marker on chromosome 3 (*btd^XA^/FM7c, Kr-GFP;; Gap43-mCherry/MKRS* and *eve^3^/CyO, twi-GFP; Gap43-mCherry/MKRS*). For *stg*, which is located on chromosome 3, we recombined the allele with Gap (*Gap43-mCherry, stg[2]/TM3, Kr-GFP*).
 Since the *btd*--*stg* double mutant stable line is tryingly weak, we imaged the progeny of *btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/Gap43-mCherry* flies, identifying *btd* homozygozity by the GFP, and *stg* homozygozity by the lack of cell divisions after gastrulation.
 The wildtype stocks contain the Gap marker in the Oregon-R genetic background.
-
-<!--FlyBase [@Gramates2022-xe]-->
+We obtained the founder fly stocks from the Bloomington Drosophila Stock Center and the Kyoto Stock Center and deposited the lines in the MPI-CBG stock.
+The complete list of FlyBase [@Gramates2022-xe] accession numbers and genotypes is available in the project’s data repository [@Vellutini_undated-ou].
 
 ## Live-imaging
 
