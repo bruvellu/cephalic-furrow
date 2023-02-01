@@ -402,41 +402,41 @@ To remove the chorion, we immersed the embryos in 20% sodium hypochlorite soluti
 ## Sample mounting for live imaging
 
 We transferred the embryos from the cell strainer onto an agar pad using a brush, and manually positioned them in a single line with the lateral or ventral sides up using a blunt cactus spine under a stereomicroscope.
-We then attached the embryos to a glass coverslip (0.17mm thickness) coated with a thin layer of heptane glue by carefully lowering the coverslip until it touched the vitelline envelope.
-The coverslips were previously cut using a diamond knife to a size of 6x22mm to fit the chamber of the microscope, and attached to a custom made metal sample holder using silicon glue.
-We mounted the samples in a Zeiss Lightsheet Z.1 microscope with the coverslip orthogonal to the detection objectives and the embryos positioned with the anteroposterior axis vertically to obtain the best optics for recording lateral and dorsal views.
+We then stick the embryos along the long axis of a 6x22mm glass coverslip (0.17mm thickness) coated with a thin layer of heptane glue and attached to a custom made metal sample holder using silicon glue.
+We mounted the samples in a Zeiss Lightsheet Z.1 microscope with the coverslip orthogonal to the detection objective and the embryos positioned with the anteroposterior axis vertically to obtain the best optics for recording lateral and dorsal views.
 This mounting strategy allows to increase the throughput of samples in one imaging session, ideal for screening mutant embryos which have lower frequency.
 
 ## Imaging acquisition
 
-For imaging lateral views, we used a Zeiss 20x/1NA Plan-Apochromat Water objective and acquired z-stacks of 0.X pixel size and 3µm z-step covering one side of the embryo.
-For imaging dorsal views, we used a Zeiss 40x/?NA Plan-Apochromat Water objective acquiring z-stacks of 0.X pixel size and 1.5--3µm z-step covering the middle section of the embryo.
-The time resolution was adjusted according to the number of embryos on the coverslip, ranging between 45--60s.
-We acquired two channels simultaneously using 488 and 561nm lasers, and an image splitter cube containing a LP560 dichromatic mirror and a LP585 emission filter.
-We discarded embryos with major cleavage or epithelial defects, and embryos in improper orientation.
+For lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY resolution and 3µm Z resolution covering half of the embryo’s volume in a single view.
+For dorsal datasets, we used a Zeiss 40x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.14µm XY resolution and 3µm Z resolution covering a volume around in the middle section of the anterior end of the embryo.
+We adjusted the time resolution between 45--60s per frame to maximize the number of embryos acquired in one session.
+To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror and a LP585 emission filter.
 All recordings were performed at 25°C.
 
-### Laser cauterization experiments
+## Laser cauterizations
 
-MuVi: Embryos were mounted in glass capillaries embedded in agarose LMP 2% after dechorionation.
+<!--TODO: Temperature in MuVi and Zeiss?-->
 
-For full embryo acquisition and cauterisation, a MuVi SPIM PM (Luxxendo) microscope with Pulsed IR laser 1030–1040 nm, 200 fs pulse length 1.5 W for photoablation was used. Embryos were cauterised in the dorso-posterior region in the blastoderm surface and recorded at 4 different angles every 1 minute.
+We performed laser cauterization experiments in two microscope setups, a Luxendo MuVi SPIM with a photomanipulation module and a Zeiss LSM 780 NLO with multiphoton excitation.
+For the MuVi SPIM, we embedded dechorionated embryos in 2% low-melting agarose and mounted the samples in glass capillaries to obtain *in toto* recordings.
+We used a pulsed infrared laser 1030--1040nm with 200fs pulse duration and 1.5W power to cauterize the posterior region of the dorsal embryonic surface, attaching the blastoderm to the vitelline envelope.
+Using a Olympus 20x/1.0NA water immersion objective, we acquired stacks with 0.29µm XY resolution and 1µm Z resolution of four different angles every one minute.
+For the Zeiss, we attached the embryos with the dorsal side down onto coverslips using heptane glue and immersing in halocarbon oil.
+We cauterized the embryos sequentially using a near infrared 800 nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100us/px) around the same dorsal region to block the germ band extension.
+We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire two different planes of the blastoderm, the surface to monitor the germ band extension, and 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
+The stacks had 0.21µm XY resolution and one minute time resolution.
 
-MZ2: After dechorionation, embryos were placed with the dorsal side down in coverslips using embryo glue. 
+## Laser ablations
 
-Embryos were cauterised and sequentially imaged using a confocal scanning microscope Zeiss LSM 780 NLO, and 25x/0.8 LD LCI Plan-Apochromat glycerol immersion objective. For cauterisations, a 800 nm laser (Coherent, Laser Multiphotonen Chameleon) scanned a single pixel line (210 nm/px, 100 us/px) in the surface of the blastoderm upon gastrulation. Time lapses were recorded at 2 different planes: the blastoderm surface to monitor germ band extension, and 40 um in depth (equatorial region) to monitor folding. Images were obtained every 1 minute.
+We performed laser ablations in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), and the software AndorIQ for image acquisition.
+We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800 nm tuned down from 80 MHz to 20 kHz with a pulse-picker.
+The laser power measured before the microscope port was 6 mW and the pixel dwell time for scanning was 2us.
+To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY resolution and 200ms time-steps.
+We ablated each embryo just once.
+The temperature was maintained at 28°C.
 
-### Laser ablation experiments
-
-Embryos were collected and dechorionated as described above.
-Movies were obtained in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), a 60× 1.2 NA water immersion objective, and the software AndorIQ for image acquisition.
-The time resolution was set in 200 ms and pixel size was 0.180556 um.
-Embryos were mounted laterally on MatTek glass-bottom Petri dishes and covered in water.
-Experiments were performed under temperature control at 28 degrees Celsius.
-For laser ablations, a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800 nm was tuned down from 80 MHz to 20 kHz using a pulse-picker.
-Laser power measured before microscope port was 6 mW and pixel dwell time for scanning was 2 us.
-Each scan was repeated 10 consecutive times to make a cut along a single cell.
-Embryos were ablated just once each.
+<!--TODO: What is the brand of the objective?-->
 
 ## Image processing and analyses
 
