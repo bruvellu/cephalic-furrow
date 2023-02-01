@@ -6,13 +6,16 @@ Overview of the fly stocks and live-imaging datasets.
 
 - [`flystocks.csv`](flystocks.csv): Fly stocks used and generated in this study.
 
-## Lightsheet datasets
+## Imaging datasets
 
 - [`datasets.csv`](datasets.csv): Metadata information and general annotations for each dataset.
 
-### Imaging setups
+### Experimental setups
 
-- [`lateral`](lateral): Lateral view of entire body length using the 20x objective.
-- [`dorsal`](dorsal): Dorsal view of the head region using the 40x objective.
-- [`imsane`](imsane): Cartographic projection of the lateral view datasets.
+- [`lateral`](lateral): Whole-body lateral views acquired in the Zeiss Lightsheet Z.1 (20x objective).
+- [`dorsal`](dorsal): Anterior region dorsal views acquired in the Zeiss Lightsheet Z.1 (40x objective).
+- [`imsane`](imsane): Cartographic projections of the lateral view datasets above.
+- [`caut-spim`](caut-spim): Whole-body multiview recordings of cauterization experiments acquired in the MuVi SPIM PM (20x objective).
+- [`caut-conf`](caut-conf): Dorsal views of cauterization experiments acquired in the Zeiss LSM 780 NLO (25x objective).
+- [`ablation`](ablation): Lateral views of ablation experiments acquired in the Yokogawa CSU-X1 (60x objective).
 
