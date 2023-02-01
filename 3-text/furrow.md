@@ -424,7 +424,7 @@ We used a pulsed infrared laser 1030--1040nm with 200fs pulse duration and 1.5W 
 Using a Olympus 20x/1.0NA water immersion objective, we acquired stacks with 0.29µm XY resolution and 1µm Z resolution of four different angles every one minute.
 For the Zeiss, we attached the embryos with the dorsal side down onto coverslips using heptane glue and immersing in halocarbon oil.
 We cauterized the embryos sequentially using a near infrared 800 nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100us/px) around the same dorsal region to block the germ band extension.
-We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire two different planes of the blastoderm, the surface to monitor the germ band extension, and 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
+We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, the surface to monitor the germ band extension, and 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
 The stacks had 0.21µm XY resolution and one minute time resolution.
 
 ## Laser ablations
