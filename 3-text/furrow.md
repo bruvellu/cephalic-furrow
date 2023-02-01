@@ -397,18 +397,18 @@ We then narcotized the flies with CO~2~, and transferred them to a cage with a p
 The flies were left to acclimatise in the cage for two days before the experiments.
 To guarantee the embryos are at a similar developmental stage, we exchanged the agar plate once per hour at least twice (pre-lays), and let the flies lay the eggs on the agar for one hour before collecting the plate.
 After filling the plate with water, we used a brush to release the eggs from the agar and transferred them to a cell strainer with 100µm nylon mesh (VWR).
-To remove the chorion, we immersed the embryos in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 90s, washed abundantly with water, and proceeded to mounting.
+To remove the chorion, we immersed the embryos in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 90s, washed abundantly with water, and proceeded to mounting for live imaging.
 
 ## Sample mounting for live imaging
 
-### Lightsheet coverslip setup for recording lateral and dorsal views
+We transferred the embryos from the cell strainer onto an agar pad using a brush, and manually positioned them in a single line with the lateral or ventral sides up using a blunt cactus spine under a stereomicroscope.
+We then attached the embryos to a glass coverslip (0.17mm thickness) coated with a thin layer of heptane glue by carefully lowering the coverslip until it touched the vitelline envelope.
+The coverslips were previously cut using a diamond knife to a size of 6x22mm to fit the chamber of the microscope, and attached to a custom made metal sample holder using silicon glue.
+We mounted the samples in a Zeiss Lightsheet Z.1 microscope with the coverslip orthogonal to the detection objectives and the embryos positioned with the anteroposterior axis vertically to obtain the best optics for recording lateral and dorsal views.
+This mounting strategy allows to increase the throughput of samples in one imaging session, ideal for screening mutant embryos which have lower frequency.
 
-To mount the samples for imaging, we transferred the embryos from the cell strainer to a apple juice agar pad under a stereomicroscope, and oriented them in a line with the lateral or ventral side up using a blunt cactus spine.
-We attached the embryos to 170µm thick glass coverslips coated with a layer of heptane glue and dried in advance.
-We cut a 22mm coverslip into a 6mm wide strip using a diamond knife, and attached it to a custom made metal holder using silicon glue.
-Carefully lay the coverslip over the aligned embryos for them to stick.
-We oriented the embryos on an agar pad and attached them to a coverslip previously covered with a thin layer of heptane glue.
-Using silicone glue we attached the coverslip to a sample holder and mounted the samples in a Zeiss Lightsheet Z.1 microscope.
+## Imaging acquisition
+
 For imaging lateral views, we used a Zeiss 20x/1NA Plan-Apochromat Water objective and acquired z-stacks of 0.X pixel size and 3µm z-step covering one side of the embryo.
 For imaging dorsal views, we used a Zeiss 40x/?NA Plan-Apochromat Water objective acquiring z-stacks of 0.X pixel size and 1.5--3µm z-step covering the middle section of the embryo.
 The time resolution was adjusted according to the number of embryos on the coverslip, ranging between 45--60s.
@@ -416,15 +416,17 @@ We acquired two channels simultaneously using 488 and 561nm lasers, and an image
 We discarded embryos with major cleavage or epithelial defects, and embryos in improper orientation.
 All recordings were performed at 25°C.
 
-### Lightsheet capillary setup for cauterization experiments
+### Laser cauterization experiments
 
-MuVi: Embryos were mounted in glass capillaries embedded in agarose LMP 2% after dechorionation. For full embryo acquisition and cauterisation, a MuVi SPIM PM (Luxxendo) microscope with Pulsed IR laser 1030–1040 nm, 200 fs pulse length 1.5 W for photoablation was used. Embryos were cauterised in the dorso-posterior region in the blastoderm surface and recorded at 4 different angles every 1 minute.
+MuVi: Embryos were mounted in glass capillaries embedded in agarose LMP 2% after dechorionation.
 
-### Confocal coverslip setup for cauterization experiments
+For full embryo acquisition and cauterisation, a MuVi SPIM PM (Luxxendo) microscope with Pulsed IR laser 1030–1040 nm, 200 fs pulse length 1.5 W for photoablation was used. Embryos were cauterised in the dorso-posterior region in the blastoderm surface and recorded at 4 different angles every 1 minute.
 
-MZ2: After dechorionation, embryos were placed with the dorsal side down in coverslips using embryo glue. Embryos were cauterised and sequentially imaged using a confocal scanning microscope Zeiss LSM 780 NLO, and 25x/0.8 LD LCI Plan-Apochromat glycerol immersion objective. For cauterisations, a 800 nm laser (Coherent, Laser Multiphotonen Chameleon) scanned a single pixel line (210 nm/px, 100 us/px) in the surface of the blastoderm upon gastrulation. Time lapses were recorded at 2 different planes: the blastoderm surface to monitor germ band extension, and 40 um in depth (equatorial region) to monitor folding. Images were obtained every 1 minute.
+MZ2: After dechorionation, embryos were placed with the dorsal side down in coverslips using embryo glue. 
 
-### Confocal petri dish setup for ablation experiments
+Embryos were cauterised and sequentially imaged using a confocal scanning microscope Zeiss LSM 780 NLO, and 25x/0.8 LD LCI Plan-Apochromat glycerol immersion objective. For cauterisations, a 800 nm laser (Coherent, Laser Multiphotonen Chameleon) scanned a single pixel line (210 nm/px, 100 us/px) in the surface of the blastoderm upon gastrulation. Time lapses were recorded at 2 different planes: the blastoderm surface to monitor germ band extension, and 40 um in depth (equatorial region) to monitor folding. Images were obtained every 1 minute.
+
+### Laser ablation experiments
 
 Embryos were collected and dechorionated as described above.
 Movies were obtained in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), a 60× 1.2 NA water immersion objective, and the software AndorIQ for image acquisition.
