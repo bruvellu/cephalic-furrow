@@ -33,9 +33,9 @@ levels(ablations$Stage) <- c("early", "mid", "late")
 # Calculate summaries per sample
 capture.output(
   print("ANTERIOR ABLATIONS"),
-  by(ablations[ablations$Position == "A", c("Velocity")], ablations[ablations$Position == "A",]$Stage, summary),
+  by(ablations[ablations$Position == "anterior", c("Velocity")], ablations[ablations$Position == "anterior",]$Stage, summary),
   print("POSTERIOR ABLATIONS"),
-  by(ablations[ablations$Position == "P", c("Velocity")], ablations[ablations$Position == "P",]$Stage, summary),
+  by(ablations[ablations$Position == "anterior", c("Velocity")], ablations[ablations$Position == "posterior",]$Stage, summary),
   file = "summary.txt"
 )
 ```
