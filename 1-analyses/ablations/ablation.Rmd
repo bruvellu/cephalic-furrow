@@ -61,8 +61,8 @@ ggplot(ablations, aes(Distance, Velocity)) +
         strip.text.x = element_text(size = 45),
         panel.background = element_rect(colour = "black", size=1),
         panel.spacing = unit(3, "lines"))
-ggsave("2-plots/recoil-velocity.png", width = 14, height = 7)
-ggsave("2-plots/recoil-velocity.svg", width = 14, height = 7)
+ggsave("3-plots/recoil-velocity.png", width = 14, height = 7)
+ggsave("3-plots/recoil-velocity.svg", width = 14, height = 7)
 ```
 
 ```{r stage}
