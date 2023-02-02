@@ -430,7 +430,7 @@ For the MuVi SPIM, we embedded dechorionated embryos in 2% low-melting agarose a
 We used a pulsed infrared laser 1030--1040nm with 200fs pulse duration and 1.5W power to cauterize the posterior region of the dorsal embryonic surface, attaching the blastoderm to the vitelline envelope.
 Using a Olympus 20x/1.0NA water immersion objective, we acquired stacks with 0.29µm XY resolution and 1µm Z resolution of four different angles every one minute.
 For the Zeiss, we attached the embryos with the dorsal side down onto coverslips using heptane glue and immersing in halocarbon oil.
-We cauterized the embryos sequentially using a near infrared 800 nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100us/px) around the same dorsal region to block the germ band extension.
+We cauterized the embryos sequentially using a near infrared 800 nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100µs/px) around the same dorsal region to block the germ band extension.
 We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, the surface to monitor the germ band extension, and 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
 The stacks had 0.21µm XY resolution and one minute time resolution.
 
@@ -438,7 +438,7 @@ The stacks had 0.21µm XY resolution and one minute time resolution.
 
 We performed laser ablations in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), and the software AndorIQ for image acquisition.
 We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800 nm tuned down from 80 MHz to 20 kHz with a pulse-picker.
-The laser power measured before the microscope port was 6 mW and the pixel dwell time for scanning was 2us.
+The laser power measured before the microscope port was 6 mW and the pixel dwell time for scanning was 2µs.
 To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY resolution and 200ms time-steps.
 We ablated each embryo just once.
 The temperature was maintained at 28°C.
