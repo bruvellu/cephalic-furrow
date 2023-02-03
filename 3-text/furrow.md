@@ -129,8 +129,7 @@ We find that the penetrance of the ectopic folding phenotype is high in cephalic
 Nearly every *btd* and *eve* homozygote embryos show one or more ectopic folds (2.0±1.0 and 1.8±0.6 folds per side, respectively ({@fig:ectopic}b, {@fig:features}a), while sibling controls show a low (13%) frequency of ectopic folding with an average of 1.1±0.2 ({@tbl:stats}).
 The frequency of ectopic folds in *prd* mutants is lower (43%), while in wildtype embryos it is surprisingly high (80%) ({@tbl:stats}).
 <!--TODO:AS: Is there a figure showing these?-->
-<!--TODO:AS: What is the timing of formation of these folds?-->
-The ectopic folds in *prd* and wildtype embryos have a similar timing, but they only form anterior or posterior to the cephalic furrow and have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g).
+The ectopic folds in *prd* and wildtype embryos appear at a similar time compared to the ectopic folds in *btd* and *eve* embryos, but they only form anterior or posterior to the cephalic furrow and have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g).
 <!--TODO:AS: Does it? Could also be that not all gastrulation stresses are buffered by the CF?-->
 The differences in morphology and dynamics between the cephalic furrow and ectopic folds suggest that the latter form via different mechanisms, and that the ectopic folding phenotype is causally linked to the absence of the cephalic furrow in mutant embryos.
 <!--TODO: Revise this last sentence, it probably needs to be split in two.-->
