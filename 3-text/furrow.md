@@ -132,8 +132,7 @@ The frequency of ectopic folds in *prd* mutants is lower (43%), while in wildtyp
 The ectopic folds in *prd* and wildtype embryos appear at a similar time compared to the ectopic folds in *btd* and *eve* embryos, but they only form anterior or posterior to the cephalic furrow and have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g).
 <!--TODO:AS: Does it? Could also be that not all gastrulation stresses are buffered by the CF?-->
 The differences in morphology and dynamics between the cephalic furrow and ectopic folds suggest that the latter form via different mechanisms, and that the ectopic folding phenotype is causally linked to the absence of the cephalic furrow in mutant embryos.
-<!--TODO: Revise this last sentence, it probably needs to be split in two.-->
-
+<!--TODO: Revise this last sentence, and probably split it in two.-->
 
 <!--TODO: Decide what to do with these statements-->
 <!--Ectopic folds were first described in *eve* mutants [@Vincent1997-fa]. The authors observed that a late fold would frequently form near the cephalic furrow region *eve* embryos. Because it was irregular, variable in position, and only formed after the appearance of mitotic domains, they suggested that these late folds were not the result of the cephalic furrow program [@Vincent1997-fa]. In *btd* mutants, the presence of ectopic folds was only observed recently [@Eritano2020-mi; see Figure S5B]. Our analyses indicate that ectopic folds appear in *btd* and *eve* mutants because they lack a cephalic furrow.-->
@@ -147,10 +146,12 @@ Mitotic domains are groups of blastoderm cells that divide in synchrony during t
 The first mitotic domains in *Drosophila* appear in the head around 20 min after gastrulation [@Foe1989-cw] which coincides with the formation of ectopic folds ({@fig:ectopic}a,c,d).
 Ectopic folds also always appear in between or adjacent to mitotic domains ({@fig:mitotic}a).
 The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during anaphase elongation ({@fig:apical}).
-This expansion compresses the adjacent non-dividing cells which are the first to infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitotic}b).
 <!--TODO:AB: Are there force measurements?-->
+This expansion compresses the adjacent non-dividing cells which are the first to infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitotic}b).
 Mitotic expansions always precede ectopic folding ({@fig:mitotic}c, {@fig:initiator}a).
 Compared to the progressive invagination of the cephalic furrow (about 14 min), the process of ectopic fold formation is abrupt (about 4 min) ({@fig:initiator}a, {!@fig:vid-mitotic-fold}).
+<!--TODO:AB: Did we measure isotropic strain rate as well?-->
+<!--TODO:AB: Strain is already non-uniform-->
 To understand the dynamics of tissue strain, we measured the rate of anisotropic tissue deformation (strain rate) at the head--trunk using particle image velocimetry.
 We find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak that coincides with the maximum expansion of mitotic domains and with the appearance of the ectopic folds ({@fig:mitotic}d,e, {@fig:strain}, {!@fig:vid-strain-rate}).
 We have also quantified the strain rate more posterior where the trunk tissue interacts with the tip of the germ band (trunk--germ).
