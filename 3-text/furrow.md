@@ -97,12 +97,6 @@ The cephalic furrow retains a significant number of blastoderm cells beneath the
 
 <!--But the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].-->
 
-<!--TODO: Figure out how to make the connection with genes-->
-<!--TODO: When to bring the information that the CF is an evolutionary novelty? More or less here would be appropriate but in this context it really needs to be just a mention citing.-->
-<!--TODO: The alternative is to put it from the beginning that we know it’s a novelty. Not only it’s mysterious but it is a new unique morphogenetic trait that evolved within the dipteran lineage-->
-<!--TODO: Wildtype expression with slp and ectopic folds-->
-<!--TODO: Ask if eve EFs are genetically patterned > GRN not in register with EFs.-->
-
 Our work investigates the physical consequences of perturbing the formation of the cephalic furrow in *Drosophila*.
 To comprehend the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and a loss of function allele for genes known to affect cephalic furrow formation---*btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
 In *prd* mutants, the formation of the cephalic furrow is delayed relative to wildtype embryos [@Blankenship2001-tm], while in *btd* and *eve* mutants, the cephalic furrow is absent [@Vincent1997-fa].
@@ -114,10 +108,9 @@ These behaviors are delayed but still present in *prd* mutants.
 The initiator cells in *prd* mutants lack the typical arched profile of the wildtype initiators, but they shorten and apically constrict forming a clear infolding point in the epithelium about six minutes after gastrulation ({@fig:initiator}a,b).
 Differently, the putative initiator cells of *btd* mutants do not shorten, but show a reminiscent degree of apical constriction which creates a small indentation in epithelium of some embryos ({@fig:initiator}a,b, {!@fig:vid-initiator}).
 In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
-Overall, the behavior of initiator cells is perturbed in the three mutants, but the cellular basis for cephalic furrow formation---cell shortening---is only severely disrupted in *btd* and *eve* mutants.
-<!--TODO:AB: What about myosin in these mutants? btd has, eve doesn’t, prd is unknown.-->
-<!--TODO:AS: Are these ectopic folds?-->
-Interestingly, the head epithelium in *btd* and *eve* mutants still folds in the subsequent minutes of gastrulation ({@fig:initiator}a).
+These differences may be associated with apical myosin activity which is present in *btd* but not in *eve* mutants [@Eritano2020-mi].
+Overall, while the behavior of initiator cells is perturbed in the three mutants, the cellular basis for cephalic furrow formation---cell shortening---is only severely disrupted in *btd* and *eve* mutants.
+Interestingly, their head epithelium still folds in the subsequent minutes of gastrulation ({@fig:initiator}a).
 The formation of a late fold was first observed in *eve* mutants [@Vincent1997-fa], and more recently in *btd* mutants [@Eritano2020-mi], but the mechanisms driving its formation have not been identified.
 Intrigued by this puzzling phenotype, we asked whether this folding is a direct physical consequence linked to the absence of the cephalic furrow.
 
