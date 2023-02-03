@@ -55,13 +55,13 @@ Date,Name,Embryo,Stage,Position,Distance,Kymograph,Velocity,Error
 2020-09-18,E3posterior5,posterior_2020-09-18_E3pos5_S6a,S6a,posterior,40,,0,
 2020-09-18,E4anterior,anterior_2020-09-18_E4_S6b,S6b,anterior,-20,K1,0.417572839570132,0.0113093053816432
 2020-09-18,E4anterior1,anterior_2020-09-18_E4ant1_S6b,S6b,anterior,-40,,0,
-2020-09-17,E4posterior2,posterior_2020-09-17_E4post2_S6b,S6b,posterior,30,,0.0989994821525373,0.00190720990648839
-2020-09-17,E4posterior2-Sk2,posterior_2020-09-17_E4post2_S6b,S6b,posterior,30,,0.0262912188663442,0.000443581066838942
+2020-09-17,E4posterior2,posterior_2020-09-17_E4post2_S6b,S6b,posterior,30,K1,0.0989994821525373,0.00190720990648839
+2020-09-17,E4posterior2-Sk2,posterior_2020-09-17_E4post2_S6b,S6b,posterior,30,K2,0.0262912188663442,0.000443581066838942
 2020-09-17,E4posterior3,posterior_2020-09-17_E4post3_S6b,S6b,posterior,20,,0,
 2020-09-17,E5anterior1,anterior_2020-09-17_E5ant1_S6a,S6a,anterior,-15,,0,
 2020-09-17,E5anterior2,anterior_2020-09-17_E5ant2_S6a,S6a,anterior,-30,,0,
 2020-09-17,E5anterior21,anterior_2020-09-17_E5ant21_S6a,S6a,anterior,-20,,0,
-2020-09-17,E5posterior1,posterior_2020-09-17_E5pos1_S6a,S6a,posterior,10,,0.115825957587236,0.00290236835914062
+2020-09-17,E5posterior1,posterior_2020-09-17_E5pos1_S6a,S6a,posterior,10,K1,0.115825957587236,0.00290236835914062
 2020-09-18,E5posterior2,posterior_2020-09-18_E5pos2_S6b,S6b,posterior,40,,0,
 2020-09-18,E6anterior,anterior_2020-09-18_E6ant_S6a,S6a,anterior,-10,,0,
 2020-09-18,E6anterior1,anterior_2020-09-18_E6ant1_S6a,S6a,anterior,-25,,0,
