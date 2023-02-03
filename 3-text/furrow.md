@@ -62,16 +62,11 @@ But unlike other embryonic invaginations, the cephalic furrow is transient and t
 The cephalic furrow simply unfolds leaving no trace, and its function in development has remained elusive.
 Here we show the cephalic furrow plays a mechanical role during *Drosophila* gastrulation.
 By live-imaging mutant embryos, we find that without the cephalic furrow, late ectopic folds appear around the head--trunk interface indicating that the epithelial stability has been compromised.
-Using *in vivo* perturbations and *in silico* simulations, we demonstrate that ectopic folding in cephalic furrow mutants occurs due to the concomitant formation of mitotic domains and the extension of the germ band which increase the compressive stresses in the head–trunk interface giving rise to mechanical instabilities.
-<!--TODO:CDM: Is surface defined/understood?-->
-<!--Further, we show by simulations that a pre-patterned invagination can effectively prevent ectopic folding by removing cells from the surface and priming the tissue for folding in a pre-defined region before other morphogenetic movements take place.-->
+Using *in vivo* perturbations and *in silico* simulations, we demonstrate that ectopic folding in cephalic furrow mutants occurs due to the concomitant formation of mitotic domains and the extension of the germ band which increase the tissue strain in the head–trunk interface giving rise to mechanical instabilities.
 Further, we show by simulations that an early pre-patterned invagination can effectively prevent the build up of compressive stresses by retaining a portion of the epithelial monolayer folded out-of-plane before other morphogenetic movements take place.
 Our findings suggest the cephalic furrow absorbs compressive stresses at the head--trunk boundary during fly gastrulation, and raise the hypothesis that mechanical forces may have played a role in the evolution of the cephalic furrow.
 
-<!--TODO:AB: Buffer is not frequently used in tissue mechanics (although it’s used in Yanlan Mao’s recent paper). Consider using absorb or dissipate instead.-->
-
 <!--TODO:AB: Because we don’t have force measurements, we may want to stick with strain. The idea is to say that the CF alleviates tissue strain because we can measure it directly, and only use this as evidence that the CF absorbs compressive stresses because we don’t have force measurements.-->
-
 
 # Main
 
