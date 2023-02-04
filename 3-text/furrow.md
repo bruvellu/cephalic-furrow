@@ -173,15 +173,15 @@ To determine the relative contribution of mitotic domains and germ band as sourc
 Our model represents an epithelial monolayer confined inside a rigid shell.
 It consists of one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:model}a, {@fig:proportions}).
 The blastoderm is modeled by an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:model}b).
-In this 1D elastic model under confinement, the sum of the stretching energy ($K_{s}$) of springs (edges) with the bending energy ($K_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope defines a dimensionless bending rigidity ($\frac{K_{b}}{K_{s} R_{vit}^{2}}$), the main parameter of our model ({@fig:model}c).
 <!--TODO:AB: First time I hear particles have a bending energy. Explain better what it means.-->
+In this 1D elastic model under confinement, the sum of the stretching energy ($K_{s}$) of springs (edges) with the bending energy ($K_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope defines a dimensionless bending rigidity ($\frac{K_{b}}{K_{s} R_{vit}^{2}}$), the main parameter of our model ({@fig:model}c).
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as regions of compressed springs which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the particles to invaginate ({@fig:model}b).
+<!--TODO: as a boundary condition?-->
 In contrast, the germ band in our model is static.
-It is defined by the placement of the posterior end of the blastoderm, and it is positioned at different percentages of egg length in different simulations ({@fig:model}b).
-<!--TODO:AB: It was not clear that the germ band was static. I re-wrote. Revise again.-->
+It is defined by the position of the posterior-most particle which is placed at different percentages of egg length for each simulation ({@fig:model}b).
 We did not directly encode ectopic folds in the model.
-Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system using the peak of bending energy as a reference point to stop the iterations ({@fig:model}d).
 <!--TODO:AB: Reconsider using the maximum bending energy as a threshold to stop the simulations. We should just let it go to equilibrium.-->
+Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system using the peak of bending energy as a reference point to stop the iterations ({@fig:model}d).
 
 To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions without the cephalic furrow.
 We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations.
