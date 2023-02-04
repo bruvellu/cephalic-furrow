@@ -315,12 +315,11 @@ The wildtype stocks contain the Gap marker in the Oregon-R genetic background.
 We obtained the founder fly stocks from the Bloomington Drosophila Stock Center and the Kyoto Stock Center and deposited the lines in the MPI-CBG stock.
 The complete list of FlyBase [@Gramates2022-xe] accession numbers and genotypes is available in the project’s data repository [@Vellutini_undated-ou].
 
-## Fly husbandry and embryo collection
+## Animal husbandry and embryo collection
 
-We maintained the stocks in 50mL plastic tubes containing fly food and enclosed with a foam lid.
+We maintained the stocks in 50mL hard plastic vials containing fly food and enclosed with a foam lid.
 They were kept in an incubator with a constant 25°C temperature and 65% humidity and a 12:12 light cycle.
 For imaging, we first amplified the stocks in larger 200mL tubes for a few weeks.
-<!--Tubes: 10.0 x 5.0 cm (200ml, 50ml of food) and 9.5 x 2.5 cm (50ml, 12.5ml of food)-->
 We then narcotized the flies with CO~2~, and transferred them to a cage with a plate attached to one end containing a layer of apple juice agar and a slab of yeast paste on top.
 The flies were left to acclimatise in the cage for two days before the experiments.
 To guarantee the embryos are at a similar developmental stage, we exchanged the agar plate once per hour at least twice (pre-lays), and let the flies lay the eggs on the agar for one hour before collecting the plate.
@@ -334,7 +333,7 @@ We then stick the embryos along the long axis of a 6x22mm glass coverslip (0.17m
 We mounted the samples in a Zeiss Lightsheet Z.1 microscope with the coverslip orthogonal to the detection objective and the embryos positioned with the anteroposterior axis vertically to obtain the best optics for recording lateral and dorsal views.
 This mounting strategy allows to increase the throughput of samples in one imaging session, ideal for screening mutant embryos which have lower frequency.
 
-## Imaging acquisition
+## Imaging acquisition parameters and conditions
 
 For lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY resolution and 3µm Z resolution covering half of the embryo’s volume in a single view.
 For dorsal datasets, we used a Zeiss 40x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.14µm XY resolution and 3µm Z resolution covering a volume around in the middle section of the anterior end of the embryo.
@@ -342,9 +341,7 @@ We adjusted the time resolution between 45--60s per frame to maximize the number
 To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror and a LP585 emission filter.
 All recordings were performed at 25°C.
 
-## Laser cauterizations
-
-<!--TODO: Temperature in MuVi and Zeiss?-->
+## Laser cauterization experiments
 
 We performed laser cauterization experiments in two microscope setups, a Luxendo MuVi SPIM with a photomanipulation module and a Zeiss LSM 780 NLO with multiphoton excitation.
 For the MuVi SPIM, we embedded dechorionated embryos in 2% low-melting agarose and mounted the samples in glass capillaries to obtain *in toto* recordings.
@@ -354,17 +351,18 @@ For the Zeiss, we attached the embryos with the dorsal side down onto coverslips
 We cauterized the embryos sequentially using a near infrared 800 nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100µs/px) around the same dorsal region to block the germ band extension.
 We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, the surface to monitor the germ band extension, and 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
 The stacks had 0.21µm XY resolution and one minute time resolution.
+<!--TODO: Temperature in MuVi and Zeiss?-->
 
-## Laser ablations
+## Laser ablation experiments
 
 We performed laser ablations in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), and the software AndorIQ for image acquisition.
 We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800 nm tuned down from 80 MHz to 20 kHz with a pulse-picker.
 The laser power measured before the microscope port was 6 mW and the pixel dwell time for scanning was 2µs.
+<!--TODO: What is the brand of the objective?-->
 To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY resolution and 200ms time-steps.
 We ablated each embryo just once.
+<!--TODO: Does a higher temperature affects the quantifications?-->
 The temperature was maintained at 28°C.
-
-<!--TODO: What is the brand of the objective?-->
 
 ## Image processing and analyses
 
