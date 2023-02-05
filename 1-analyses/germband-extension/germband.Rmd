@@ -106,7 +106,7 @@ important is the stock, zygosity, timestep, and gastrulation frame.
 
 ```{r merge}
 # Import main dataset
-datasets <- read.delim2("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv")
+datasets <- read.csv("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv")
 
 # Merge landmarks with datasets
 germband <- merge(landmarks, datasets, by = "embryo", all.x = TRUE)
