@@ -8,8 +8,8 @@ creation: February 18, 2021
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
 knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/folded-area")
-# Load ggplot
 library(ggplot2)
+library(ggbeeswarm)
 ```
 
 ## Analysis
@@ -170,6 +170,24 @@ It shows that homozygote mutants have a smaller area than heterozygote mutants,
 which in turn are slightly smaller than wildtype total folded area.
 
 ```{r total-area-per-embryo}
+ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 5)) +
+  scale_y_continuous(labels = function(x) x / 1000) +
+  labs(x = "stocks", y = expression(paste("total folded area per embryo ", (µm^2)~x~10^3))) +
+  facet_grid(cols = vars(Stock), scales = "free_x") +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  theme_classic() +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1),
+        )
+ggsave("4-plots/total-area-per-embryo.png", width = 12, height = 4)
+ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
+
+```
+
+```{r total-area-per-embryo}
 library(ggbeeswarm)
 ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
   geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
@@ -189,9 +207,8 @@ ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
         #legend.text = element_text(size = 20),
         #legend.title = element_text(size = 20),
         )
-ggsave("4-plots/total-area-per-embryo.png", width = 12, height = 4)
-ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
-
+#ggsave("4-plots/total-area-per-embryo.png", width = 12, height = 4)
+#ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
 ```
 
 ## Area of ectopic folds
