@@ -11,6 +11,7 @@ experiment,author,stock,genotype,zygosity,view,embryo,xres,yres,zres,slices,time
 2019-10-03_prd-Gap,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",homozygote,lateral,prd-Gap_1_t60s_E10,0.2853696,0.2853696,3.0000000,,60,170,1,,1.0,FALSE
 2019-10-03_prd-Gap,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",heterozygote,lateral,prd-Gap_1_t60s_E11,0.2853696,0.2853696,3.0000000,,60,170,2,,2.0,TRUE
 2019-10-03_prd-Gap,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",homozygote,lateral,prd-Gap_1_t60s_E12,0.2853696,0.2853696,3.0000000,,60,170,1,,1.0,TRUE
+2019-10-03_prd-Gap,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",heterozygote,lateral,prd-Gap_1_t60s_E13,0.2853696,0.2853696,3.0000000,,60,170,3,,3.0,TRUE
 2019-10-03_prd-Gap,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",heterozygote,lateral,prd-Gap_1_t60s_E15,0.2853696,0.2853696,3.0000000,,60,170,1,,1.0,FALSE
 2019-10-03_prd-Gap,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",homozygote,lateral,prd-Gap_1_t60s_E16,0.2853696,0.2853696,3.0000000,,60,170,1,,1.0,FALSE
 2020-01-15_eve-Gap,bruno,eve,"eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS",homozygote,lateral,eve-Gap_1_E13,0.2749087,0.2749087,3.0000000,,60,180,1,,1.0,TRUE
