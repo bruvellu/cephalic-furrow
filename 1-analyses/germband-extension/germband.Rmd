@@ -9,6 +9,7 @@ creation: October 24, 2022
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
 knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-extension")
 library(ggplot2)
+library(ggbeeswarm)
 ```
 
 ## Analysis
@@ -225,6 +226,46 @@ gastrulation. First the germ band extension percentage:
 
 ```{r plot-gb-pct-buck}
 ggplot(gblong[gblong$status == "buck",], aes(stock, gb_pct, fill = zygosity)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 5)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  labs(x = "stocks", y = "germ band extension (%)") +
+  facet_grid(cols = vars(stock), scales = "free") +
+  theme_classic() +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_pct_buck.png", width = 12, height = 4)
+ggsave("2-plots/gb_pct_buck.svg", width = 12, height = 4)
+```
+
+Then the time after gastrulation:
+
+```{r plot-gb-time-buck}
+ggplot(gblong[gblong$status == "buck",], aes(stock, gb_time, fill = zygosity)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 5)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  labs(x = "stocks", y = "time after gastrulation (min)") +
+  facet_grid(cols = vars(stock), scales = "free") +
+  theme_classic() +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_time_buck.png", width = 12, height = 4)
+ggsave("2-plots/gb_time_buck.svg", width = 12, height = 4)
+```
+
+## Previous violin plots
+
+Previous version using violin plots.
+
+```{r plot-gb-pct-buck}
+ggplot(gblong[gblong$status == "buck",], aes(stock, gb_pct, fill = zygosity)) +
   geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
@@ -238,11 +279,11 @@ ggplot(gblong[gblong$status == "buck",], aes(stock, gb_pct, fill = zygosity)) +
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_pct_buck.png", width = 12, height = 4)
-ggsave("2-plots/gb_pct_buck.svg", width = 12, height = 4)
+#ggsave("2-plots/gb_pct_buck.png", width = 12, height = 4)
+#ggsave("2-plots/gb_pct_buck.svg", width = 12, height = 4)
 ```
 
-Then the time after gastrulation:
+Previous version violin plots.
 
 ```{r plot-gb-time-buck}
 ggplot(gblong[gblong$status == "buck",], aes(stock, gb_time, fill = zygosity)) +
@@ -259,8 +300,8 @@ ggplot(gblong[gblong$status == "buck",], aes(stock, gb_time, fill = zygosity)) +
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_time_buck.png", width = 12, height = 4)
-ggsave("2-plots/gb_time_buck.svg", width = 12, height = 4)
+#ggsave("2-plots/gb_time_buck.png", width = 12, height = 4)
+#ggsave("2-plots/gb_time_buck.svg", width = 12, height = 4)
 ```
 
 ## Supplementary figure plots
@@ -269,8 +310,8 @@ The deepest point goes into the supplementary.
 
 ```{r plot-gb-pct-deep}
 ggplot(gblong[gblong$status == "deep",], aes(stock, gb_pct, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 5)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(x = "stocks", y = "germ band extension (%)") +
@@ -288,8 +329,8 @@ ggsave("2-plots/gb_pct_deep.svg", width = 12, height = 4)
 
 ```{r plot-gb-time-deep}
 ggplot(gblong[gblong$status == "deep",], aes(stock, gb_time, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 5)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   labs(x = "stocks", y = "time after gastrulation (min)") +
