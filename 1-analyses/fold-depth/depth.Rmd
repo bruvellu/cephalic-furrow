@@ -9,6 +9,7 @@ creation: May 31, 2021
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
 knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/fold-depth")
 library(ggplot2)
+library(ggbeeswarm)
 ```
 
 ## Load measurements
@@ -43,6 +44,26 @@ length(results[results$Genotype == "homozygote" & results$Sample == "eve",]$Labe
 ```
 
 ```{r plot}
+# Plot stocks separately
+ggplot(results, aes(Genotype, Length, fill = Genotype)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 3)) +
+  labs(x = "mutants", y = "depth") +
+  facet_wrap(~Sample, strip.position = "top") +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  theme_classic() +
+  theme(text =  element_text(size = 30),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("3-plots/depth_facet.png", width = 12, height = 6)
+ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
+
+```
+
+```{r plot}
 
 # Plot stocks separately
 ggplot(results, aes(Genotype, Length, fill = Genotype)) +
@@ -62,5 +83,3 @@ ggsave("3-plots/depth_facet.png", width = 12, height = 6)
 ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
 
 ```
-
-
