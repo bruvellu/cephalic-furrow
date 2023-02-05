@@ -146,10 +146,8 @@ print_stats <- function(dataframe, stock) {
   print("-------------------")
   print(stock)
   print(by(gb[,cols], gb$zygosity, summary))
-  print("-------------------")
   print("SD: gb_pct_buck")
   print(by(gb[,"gb_pct_buck"], gb$zygosity, sd))
-  print("-------------------")
   print("SD: time_buck")
   print(by(gb[,"time_buck"], gb$zygosity, sd))
   }
@@ -179,7 +177,7 @@ two different moments: initial infolding/buckling (buck) and deepest point
 
 ```{r plot-gb-pct}
 ggplot(gblong, aes(stock, gb_pct, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = TRUE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
@@ -201,7 +199,7 @@ Second, we plot the time after gastrulation (min).
 
 ```{r plot-gb-time}
 ggplot(gblong, aes(stock, gb_time, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = TRUE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
@@ -227,7 +225,7 @@ gastrulation. First the germ band extension percentage:
 
 ```{r plot-gb-pct-buck}
 ggplot(gblong[gblong$status == "buck",], aes(stock, gb_pct, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
@@ -248,7 +246,7 @@ Then the time after gastrulation:
 
 ```{r plot-gb-time-buck}
 ggplot(gblong[gblong$status == "buck",], aes(stock, gb_time, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
@@ -271,7 +269,7 @@ The deepest point goes into the supplementary.
 
 ```{r plot-gb-pct-deep}
 ggplot(gblong[gblong$status == "deep",], aes(stock, gb_pct, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
@@ -290,7 +288,7 @@ ggsave("2-plots/gb_pct_deep.svg", width = 12, height = 4)
 
 ```{r plot-gb-time-deep}
 ggplot(gblong[gblong$status == "deep",], aes(stock, gb_time, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 2) +
+  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
   geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
