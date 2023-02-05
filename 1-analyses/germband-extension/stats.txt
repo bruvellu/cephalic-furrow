@@ -1,3 +1,4 @@
+[1] "-------------------"
 [1] "wt"
 gb$zygosity: wildtype
     embryo           gb_pct_buck      gb_pct_deep      time_buck       time_deep    
@@ -7,6 +8,13 @@ gb$zygosity: wildtype
                     Mean   : 8.691   Mean   :42.35   Mean   : 7.25   Mean   :27.38  
                     3rd Qu.: 9.681   3rd Qu.:43.51   3rd Qu.: 9.00   3rd Qu.:29.25  
                     Max.   :12.405   Max.   :45.60   Max.   :11.00   Max.   :34.00  
+[1] "SD: gb_pct_buck"
+gb$zygosity: wildtype
+[1] 1.760858
+[1] "SD: time_buck"
+gb$zygosity: wildtype
+[1] 2.236068
+[1] "-------------------"
 [1] "btd"
 gb$zygosity: heterozygote
     embryo           gb_pct_buck      gb_pct_deep      time_buck        time_deep    
@@ -25,6 +33,19 @@ gb$zygosity: homozygote
                     Mean   :36.34   Mean   :44.31   Mean   :21.35   Mean   :28.27  
                     3rd Qu.:37.52   3rd Qu.:45.85   3rd Qu.:25.67   3rd Qu.:31.17  
                     Max.   :39.51   Max.   :46.34   Max.   :27.00   Max.   :35.00  
+[1] "SD: gb_pct_buck"
+gb$zygosity: heterozygote
+[1] 1.944186
+------------------------------------------------------------------------------------ 
+gb$zygosity: homozygote
+[1] 2.398486
+[1] "SD: time_buck"
+gb$zygosity: heterozygote
+[1] 1.721931
+------------------------------------------------------------------------------------ 
+gb$zygosity: homozygote
+[1] 4.679447
+[1] "-------------------"
 [1] "eve"
 gb$zygosity: heterozygote
     embryo           gb_pct_buck      gb_pct_deep      time_buck       time_deep    
@@ -43,6 +64,19 @@ gb$zygosity: homozygote
                     Mean   :28.49   Mean   :37.89   Mean   :22.6   Mean   :32.45  
                     3rd Qu.:31.32   3rd Qu.:40.80   3rd Qu.:24.0   3rd Qu.:34.00  
                     Max.   :33.53   Max.   :41.52   Max.   :26.0   Max.   :35.25  
+[1] "SD: gb_pct_buck"
+gb$zygosity: heterozygote
+[1] 2.272698
+------------------------------------------------------------------------------------ 
+gb$zygosity: homozygote
+[1] 3.956247
+[1] "SD: time_buck"
+gb$zygosity: heterozygote
+[1] 1.712176
+------------------------------------------------------------------------------------ 
+gb$zygosity: homozygote
+[1] 2.607681
+[1] "-------------------"
 [1] "prd"
 gb$zygosity: heterozygote
     embryo           gb_pct_buck      gb_pct_deep      time_buck       time_deep    
@@ -61,3 +95,15 @@ gb$zygosity: homozygote
                     Mean   :33.03   Mean   :41.66   Mean   :18.2   Mean   :27.4  
                     3rd Qu.:36.47   3rd Qu.:43.55   3rd Qu.:21.0   3rd Qu.:28.0  
                     Max.   :44.00   Max.   :46.06   Max.   :23.0   Max.   :34.0  
+[1] "SD: gb_pct_buck"
+gb$zygosity: heterozygote
+[1] 12.18535
+------------------------------------------------------------------------------------ 
+gb$zygosity: homozygote
+[1] 9.524689
+[1] "SD: time_buck"
+gb$zygosity: heterozygote
+[1] 6.201254
+------------------------------------------------------------------------------------ 
+gb$zygosity: homozygote
+[1] 5.449771
