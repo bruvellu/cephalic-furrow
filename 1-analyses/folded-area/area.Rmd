@@ -213,9 +213,24 @@ ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
 
 ## Area of ectopic folds
 
+```{r individual-area-per-ectopic-fold}
+ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, AreaCorr, fill = Sample)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 2)) +
+  scale_y_continuous(labels = function(x) x / 1000) +
+  labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  theme_classic() +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
+ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
+
+```
 
 ```{r individual-area-per-ectopic-fold}
-
 #ggplot(results[results$Stock != "prd",], aes(Stock, AreaCorr, fill = Type)) +
 ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, AreaCorr, fill = Sample)) +
   #geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7) +
@@ -235,15 +250,35 @@ ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, Area
         #legend.text = element_text(size = 20),
         #legend.title = element_text(size = 20),
         )
-ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
-ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
-
+#ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
+#ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
 ```
 
 
 This plots shows the total area of folded tissue in embryos with and without
 the cephalic furrow. Values are the sum of corrected areas of individual folds
 per embryo.
+
+```{r area-individual-folds}
+ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 3)) +
+  scale_y_continuous(labels = function(x) x / 1000) +
+  labs(x = "stocks", y = expression(paste("area of individual folds ", (µm^2)~x~10^3))) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  facet_grid(cols = vars(Position), scales = "free") +
+  theme_classic() +
+  theme(text = element_text(size = 30),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1),
+        axis.text.x = element_text(face = "italic"),
+        legend.text = element_text(size = 15),
+        legend.title = element_text(size = 15),
+        )
+ggsave("4-plots/area-individual-folds.png", width = 15, height = 8)
+ggsave("4-plots/area-individual-folds.svg", width = 15, height = 8)
+```
+
 
 ```{r area-individual-folds}
 ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
@@ -262,29 +297,8 @@ ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
         legend.text = element_text(size = 15),
         legend.title = element_text(size = 15),
         )
-ggsave("4-plots/area-individual-folds.png", width = 15, height = 8)
-ggsave("4-plots/area-individual-folds.svg", width = 15, height = 8)
-```
-
-```{r area-individual-folds}
-ggplot(results, aes(factor(Stock, level = c("wt", "btd", "eve", "prd")), AreaCorr, fill = Genotype)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = TRUE, trim = TRUE, alpha = 0.7, scale = "area", adjust = 1) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.05)) +
-  scale_y_continuous(labels = function(x) x / 1000) +
-  labs(x = "stocks", y = expression(paste("area of individual folds ", (µm^2)~x~10^3))) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  facet_grid(~Position) +
-  theme_classic() +
-  theme(text = element_text(size = 30),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", size=1),
-        axis.text.x = element_text(face = "italic"),
-        legend.position = c(0.93,0.9),
-        legend.text = element_text(size = 15),
-        legend.title = element_text(size = 15),
-        )
-ggsave("4-plots/area-individual-folds.png", width = 15, height = 8)
-ggsave("4-plots/area-individual-folds.svg", width = 15, height = 8)
+#ggsave("4-plots/area-individual-folds.png", width = 15, height = 8)
+#ggsave("4-plots/area-individual-folds.svg", width = 15, height = 8)
 ```
 
 
