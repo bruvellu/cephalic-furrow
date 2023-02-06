@@ -171,12 +171,13 @@ which in turn are slightly smaller than wildtype total folded area.
 
 ```{r total-area-per-embryo}
 ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
-  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 5)) +
+  geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("total folded area per embryo ", (µm^2)~x~10^3))) +
   facet_grid(cols = vars(Stock), scales = "free_x") +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   theme_classic() +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
