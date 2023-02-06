@@ -178,7 +178,7 @@ ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
   facet_grid(cols = vars(Stock), scales = "free_x") +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  theme_classic() +
+  theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1),
@@ -216,12 +216,13 @@ ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
 
 ```{r individual-area-per-ectopic-fold}
 ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, AreaCorr, fill = Sample)) +
-  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 2)) +
+  geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 3)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  theme_classic() +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
@@ -262,13 +263,14 @@ per embryo.
 
 ```{r area-individual-folds}
 ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
-  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 3)) +
+  geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 3)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("area of individual folds ", (µm^2)~x~10^3))) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   facet_grid(cols = vars(Position), scales = "free") +
-  theme_classic() +
+  theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 30),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1),
