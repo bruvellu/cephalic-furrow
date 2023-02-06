@@ -68,13 +68,13 @@ left and right furrow lengths.
 ```{r depth-ind}
 # Plot mean length of cephalic furrow per embryo (right/left sides)
 ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length, fill = Sample)) +
-  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 5)) +
+  geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   labs(x = "sample", y = "depth (µm)") +
   facet_wrap(~Stock) +
-  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
-  scale_y_continuous(limits = c(20, 70)) +
-  theme_classic() +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
+  theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
         strip.placement = "outside",
@@ -119,15 +119,16 @@ maximum length in control and cauterized conditions. There's a small difference
 in length of about 15% (8 microns). This needs more data to be conclusive, but
 it's some evidence the germ band may push the cephalic furrow slightly.
 
-
 ```{r depth-mean}
 # Plot mean length of cephalic furrow per embryo (right/left sides)
 ggplot(means, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
-  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 5)) +
+  geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   #geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), alpha = 0.8, size = 0.5, show.legend = FALSE, position = position_quasirandom(dodge.width = 0.75)) +
+  #facet_wrap(~Stock) +
   labs(x = "condition", y = "depth (µm)") +
-  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 25),
         panel.background = element_rect(colour = "black", size=1))
