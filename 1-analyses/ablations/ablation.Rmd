@@ -45,6 +45,36 @@ capture.output(
 )
 ```
 
+```{r stage}
+# Plot mean length of cephalic furrow per embryo (right/left sides)
+#ggplot(means[means$Velocity > 0,], aes(Stage, Velocity, group = Distance, fill = Position)) +
+ggplot(ablations, aes(Stage, Velocity, )) +
+  geom_boxplot(aes(color = "#e69f03", fill = "#e69f03"), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.9, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
+#ggplot(means, aes(Distance, Velocity, group = Distance)) +
+#ggplot(means, aes(Distance, Velocity, color = Stage)) +
+  #geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
+  #geom_boxplot(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
+  #geom_bar(stat = "summary", fun = "mean", alpha = 0.7, width = 0.5, fill = "#e69f03", show.legend = FALSE) +
+  #geom_smooth(span = 0.8, show.legend = FALSE, aes(fill = "#e69f03", colour = "#e69f03")) +
+  #geom_pointrange(aes(ymin=Velocity-SD, ymax=Velocity+SD), position = position_quasirandom(width = 0.15, bandwidth = 0.1), alpha = 0.5, show.legend = FALSE) +
+  #geom_quasirandom(size = 2, width = 1.0, alpha = 0.8, show.legend = FALSE) +
+  #geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), show.legend = FALSE)+
+  #geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  #geom_point(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
+  #geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), position = position_jitterdodge(jitter.width = 0.3), show.legend = FALSE)+
+  #geom_pointrange(aes(ymax=Velocity+Error), position = position_quasirandom(width = 0.15, bandwidth = 0.1), show.legend = FALSE) +
+  #scale_y_continuous(limits = c(0, 0.26)) +
+  #facet_wrap(~Stage) +
+  labs(x = "stage", y = "velocity (µm/s)") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_y_continuous(limits = c(0, 0.25)) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 30),
+        panel.background = element_rect(colour = "black", size=1))
+```
+
 ```{r means}
 # Mean of CF length per embryo
 embryo_mean <- aggregate(ablations$Velocity, list(ablations$Embryo), mean)
@@ -64,13 +94,11 @@ means <- merge(means, embryo_sd, by = "Embryo", all.x = TRUE)
 
 ```{r outliers}
 # Exclude outliers
-#means <- means[means$Velocity < 0.4,]
-means[means$Distance == 15,]$Distance <- 20
-means[means$Distance == 25,]$Distance <- 30
-#means[means$Distance == 35,]$Distance <- 40
-means[means$Distance == -15,]$Distance <- -20
-means[means$Distance == -25,]$Distance <- -30
-#means[means$Distance == -35,]$Distance <- -40
+means[means$Distance <= 20 & means$Distance > 0,]$Distance <- 20
+means[means$Distance <= 40 & means$Distance > 20,]$Distance <- 40
+means[means$Distance >= -20 & means$Distance < 0,]$Distance <- -20
+means[means$Distance >= -40 & means$Distance < -20,]$Distance <- -40
+means$Distance <- as.factor(means$Distance)
 ```
 
 ## Plot overview
@@ -99,32 +127,23 @@ ggsave("3-plots/recoil-velocity.svg", width = 14, height = 7)
 ```
 
 ```{r stage}
-# Plot mean length of cephalic furrow per embryo (right/left sides)
-#ggplot(means[means$Velocity > 0,], aes(Stage, Velocity, group = Distance, fill = Position)) +
-ggplot(means, aes(Stage, Velocity, )) +
-  geom_boxplot(aes(color = "#e69f03", fill = "#e69f03"), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.9, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
-#ggplot(means, aes(Distance, Velocity, group = Distance)) +
-#ggplot(means, aes(Distance, Velocity, color = Stage)) +
-  #geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
-  #geom_boxplot(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
-  #geom_bar(stat = "summary", fun = "mean", alpha = 0.7, width = 0.5, fill = "#e69f03", show.legend = FALSE) +
-  #geom_smooth(span = 0.8, show.legend = FALSE, aes(fill = "#e69f03", colour = "#e69f03")) +
+ggplot(means, aes(Distance, Velocity, group = Distance, fill = Position)) +
+  #geom_vline(xintercept = 0, size = 0.5, linetype = "dashed", alpha = 0.5, colour = "black") +
+  geom_boxplot(aes(color = Position), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.8, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 5)) +
   #geom_pointrange(aes(ymin=Velocity-SD, ymax=Velocity+SD), position = position_quasirandom(width = 0.15, bandwidth = 0.1), alpha = 0.5, show.legend = FALSE) +
-  #geom_quasirandom(size = 2, width = 1.0, alpha = 0.8, show.legend = FALSE) +
-  #geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), show.legend = FALSE)+
-  #geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  #geom_point(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  #geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), position = position_jitterdodge(jitter.width = 0.3), show.legend = FALSE)+
-  #geom_pointrange(aes(ymax=Velocity+Error), position = position_quasirandom(width = 0.15, bandwidth = 0.1), show.legend = FALSE) +
-  #scale_y_continuous(limits = c(0, 0.26)) +
-  #facet_wrap(~Stage) +
+  scale_y_continuous(limits = c(0, 0.21)) +
+  facet_wrap(~Stage) +
   labs(x = "stage", y = "velocity (µm/s)") +
-  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
-  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
-  #scale_y_continuous(limits = c(0, 0.3)) +
+  scale_fill_manual(values=c("#009966", "#cc79a7")) +
+  scale_color_manual(values=c("#009966", "#cc79a7")) +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 30),
+  theme(text = element_text(size = 45),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 55),
         panel.background = element_rect(colour = "black", size=1))
+ggsave("3-plots/recoil-velocity.png", width = 14, height = 7)
+ggsave("3-plots/recoil-velocity.svg", width = 14, height = 7)
 ```
 
