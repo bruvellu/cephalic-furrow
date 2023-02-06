@@ -31,20 +31,53 @@ levels(ablations$Stage) <- c("early", "mid", "late")
 
 ```{r summary}
 # Calculate summaries per sample
+print("ANTERIOR ABLATIONS")
+by(ablations[ablations$Position == "anterior", c("Velocity")], ablations[ablations$Position == "anterior",]$Stage, summary)
+print("POSTERIOR ABLATIONS")
+by(ablations[ablations$Position == "posterior", c("Velocity")], ablations[ablations$Position == "posterior",]$Stage, summary)
+
 capture.output(
   print("ANTERIOR ABLATIONS"),
   by(ablations[ablations$Position == "anterior", c("Velocity")], ablations[ablations$Position == "anterior",]$Stage, summary),
   print("POSTERIOR ABLATIONS"),
-  by(ablations[ablations$Position == "anterior", c("Velocity")], ablations[ablations$Position == "posterior",]$Stage, summary),
+  by(ablations[ablations$Position == "posterior", c("Velocity")], ablations[ablations$Position == "posterior",]$Stage, summary),
   file = "summary.txt"
 )
+```
+
+```{r means}
+# Mean of CF length per embryo
+embryo_mean <- aggregate(ablations$Velocity, list(ablations$Embryo), mean)
+colnames(embryo_mean) <- c("Embryo", "Velocity")
+
+# Standard deviation of CF length per embryo
+embryo_sd <- aggregate(ablations$Velocity, list(ablations$Embryo), sd)
+colnames(embryo_sd) <- c("Embryo", "SD")
+
+# Get sample information
+samples <- unique(ablations[, c("Embryo", "Stage", "Position", "Distance")])
+
+# Merge datasets
+means <- merge(samples, embryo_mean, by = "Embryo", all.x = TRUE)
+means <- merge(means, embryo_sd, by = "Embryo", all.x = TRUE)
+```
+
+```{r outliers}
+# Exclude outliers
+#means <- means[means$Velocity < 0.4,]
+means[means$Distance == 15,]$Distance <- 20
+means[means$Distance == 25,]$Distance <- 30
+#means[means$Distance == 35,]$Distance <- 40
+means[means$Distance == -15,]$Distance <- -20
+means[means$Distance == -25,]$Distance <- -30
+#means[means$Distance == -35,]$Distance <- -40
 ```
 
 ## Plot overview
 
 ```{r distance}
-set.seed(111111)
-ggplot(ablations, aes(Distance, Velocity)) +
+ggplot(means, aes(Distance, Velocity)) +
+#ggplot(means[means$Velocity > 0,], aes(Distance, Velocity)) +
   geom_vline(xintercept = 0, size = 0.5, linetype = "dashed", alpha = 0.5, colour = "black") +
   geom_smooth(span = 0.8, show.legend = FALSE, aes(fill = "#e69f03", colour = "#e69f03")) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE) +
@@ -53,7 +86,7 @@ ggplot(ablations, aes(Distance, Velocity)) +
   scale_fill_manual(values=c("#e69f03")) +
   scale_color_manual(values=c("#e69f03")) +
   #scale_x_continuous(limits = c(-50, 50)) +
-  scale_y_continuous(limits = c(0, 0.26)) +
+  scale_y_continuous(limits = c(0, 0.4)) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 40),
         strip.background = element_blank(),
@@ -66,22 +99,29 @@ ggsave("3-plots/recoil-velocity.svg", width = 14, height = 7)
 ```
 
 ```{r stage}
-set.seed(1234)
 # Plot mean length of cephalic furrow per embryo (right/left sides)
-#ggplot(ablations[ablations$Velocity > 0,], aes(Distance, Velocity, color = Stage))
-ggplot(ablations, aes(Distance, Velocity, color = Stage)) +
+#ggplot(means[means$Velocity > 0,], aes(Stage, Velocity, group = Distance, fill = Position)) +
+ggplot(means, aes(Stage, Velocity, )) +
+  geom_boxplot(aes(color = "#e69f03", fill = "#e69f03"), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.9, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
+#ggplot(means, aes(Distance, Velocity, group = Distance)) +
+#ggplot(means, aes(Distance, Velocity, color = Stage)) +
   #geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
   #geom_boxplot(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
   #geom_bar(stat = "summary", fun = "mean", alpha = 0.7, width = 0.5, fill = "#e69f03", show.legend = FALSE) +
   #geom_smooth(span = 0.8, show.legend = FALSE, aes(fill = "#e69f03", colour = "#e69f03")) +
-  geom_quasirandom(size = 2, width = 0.1, alpha = 0.9, show.legend = FALSE) +
+  #geom_pointrange(aes(ymin=Velocity-SD, ymax=Velocity+SD), position = position_quasirandom(width = 0.15, bandwidth = 0.1), alpha = 0.5, show.legend = FALSE) +
+  #geom_quasirandom(size = 2, width = 1.0, alpha = 0.8, show.legend = FALSE) +
   #geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), show.legend = FALSE)+
   #geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
   #geom_point(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
   #geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), position = position_jitterdodge(jitter.width = 0.3), show.legend = FALSE)+
   #geom_pointrange(aes(ymax=Velocity+Error), position = position_quasirandom(width = 0.15, bandwidth = 0.1), show.legend = FALSE) +
+  #scale_y_continuous(limits = c(0, 0.26)) +
+  #facet_wrap(~Stage) +
   labs(x = "stage", y = "velocity (µm/s)") +
   scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
   #scale_y_continuous(limits = c(0, 0.3)) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 30),
