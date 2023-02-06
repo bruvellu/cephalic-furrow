@@ -217,7 +217,7 @@ ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
 ```{r individual-area-per-ectopic-fold}
 ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, AreaCorr, fill = Sample)) +
   geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 3)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
