@@ -46,13 +46,13 @@ length(results[results$Genotype == "homozygote" & results$Sample == "eve",]$Labe
 ```{r plot}
 # Plot stocks separately
 ggplot(results, aes(Genotype, Length, fill = Genotype)) +
-  geom_boxplot(show.legend = FALSE, alpha = 0.7, outlier.shape = NA, width = 0.6, position = position_dodge(width = 0.75)) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 0.75, cex = 3)) +
+  geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
   labs(x = "mutants", y = "depth") +
   facet_wrap(~Sample, strip.position = "top") +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  theme_classic() +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 30),
         strip.background = element_blank(),
         strip.placement = "outside",
@@ -79,7 +79,7 @@ ggplot(results, aes(Genotype, Length, fill = Genotype)) +
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("3-plots/depth_facet.png", width = 12, height = 6)
-ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
+#ggsave("3-plots/depth_facet.png", width = 12, height = 6)
+#ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
 
 ```
