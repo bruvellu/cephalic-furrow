@@ -85,7 +85,6 @@ results$Type <- "EF"
 results[results$Stock == "wt" & results$Position == "mid",]$Type <- "CF"
 results[results$Stock == "btd" & results$Genotype == "heterozygote",]$Type <- "CF"
 results[results$Stock == "eve" & results$Genotype == "heterozygote",]$Type <- "CF"
-results[results$Stock == "prd" & results$Genotype == "heterozygote",]$Type <- "CF"
 results[results$Stock == "prd" & results$Position == "mid",]$Type <- "CF"
 
 # Transform data frame to order the stock for plotting
@@ -232,7 +231,22 @@ ggsave("4-plots/area-individual-folds.png", width = 15, height = 8)
 ggsave("4-plots/area-individual-folds.svg", width = 15, height = 8)
 ```
 
-
+```{r individual-area-per-ectopic-fold}
+ggplot(results, aes(Sample, AreaCorr, fill = Sample)) +
+  geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
+  scale_y_continuous(labels = function(x) x / 1000) +
+  labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
+ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
+```
 
 
 
