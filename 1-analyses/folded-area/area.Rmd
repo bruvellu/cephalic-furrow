@@ -132,7 +132,7 @@ total <- transform(total, Stock=factor(Stock, levels = c("wt", "btd", "eve", "pr
 
 ```{r print-info}
 # Print btd embryos
-sprintf("btd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
+print_btd <- sprintf("btd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         length(embryos[embryos$Stock == "btd",]$Embryo), # total embryos
         length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "btd",]$Embryo), # het embryos
         length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "btd",]$Embryo), # hom embryos
@@ -143,7 +143,7 @@ sprintf("btd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         )
 
 # Print eve embryos
-sprintf("eve: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
+print_eve <- sprintf("eve: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         length(embryos[embryos$Stock == "eve",]$Embryo), # total embryos
         length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "eve",]$Embryo), # het embryos
         length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "eve",]$Embryo), # hom embryos
@@ -154,7 +154,7 @@ sprintf("eve: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         )
 
 # Print prd embryos
-sprintf("prd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
+print_prd <- sprintf("prd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         length(embryos[embryos$Stock == "prd",]$Embryo), # total embryos
         length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "prd",]$Embryo), # het embryos
         length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "prd",]$Embryo), # hom embryos
@@ -165,13 +165,21 @@ sprintf("prd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s)",
         )
 
 # Print wt embryos
-sprintf(" wt: embryos=%s, folds=%s, ant=%s, mid=%s, post=%s",
+print_wt <- sprintf(" wt: embryos=%s, folds=%s, ant=%s, mid=%s, post=%s",
         length(embryos[embryos$Stock == "wt",]$Embryo), # total embryos
         length(results[results$Stock == "wt",]$Label), # total folds
         length(results[results$Stock == "wt" & results$Position == "ant",]$Label), # anterior folds
         length(results[results$Stock == "wt" & results$Position == "mid",]$Label), # middle folds
         length(results[results$Stock == "wt" & results$Position == "post",]$Label) # posterior folds
         )
+
+print_btd
+print_eve
+print_prd
+print_wt
+
+# Save nfolds output to files
+capture.output(print_btd, print_eve, print_prd, print_wt, file = "nfolds.txt")
 ```
 
 ## Total folded area per embryo
