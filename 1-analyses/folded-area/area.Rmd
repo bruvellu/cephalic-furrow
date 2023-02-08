@@ -90,25 +90,40 @@ results[results$Stock == "prd" & results$Position == "mid",]$Type <- "CF"
 # Transform data frame to order the stock for plotting
 results <- transform(results, Sample=factor(Sample, levels = c("wildtype", "control", "mutant")))
 
-# Sum total folded area
-area <- aggregate(results$Area, list(results$Embryo), sum)
-colnames(area) <- c("Embryo", "Area")
-
 # Sum total folded area corrected
 areacorr <- aggregate(results$AreaCorr, list(results$Embryo), sum)
 colnames(areacorr) <- c("Embryo", "AreaCorr")
+
+# Sum total folded area corrected for CF
+areacorr_cf <- aggregate(results[results$Type == "CF",]$AreaCorr, list(results[results$Type == "CF",]$Embryo), sum)
+colnames(areacorr_cf) <- c("Embryo", "AreaCorrCF")
+
+# Sum total folded area corrected for EF
+areacorr_ef <- aggregate(results[results$Type == "EF",]$AreaCorr, list(results[results$Type == "EF",]$Embryo), sum)
+colnames(areacorr_ef) <- c("Embryo", "AreaCorrEF")
 
 # Count number of folds
 nfold <- data.frame(table(results$Embryo))
 colnames(nfold) <- c("Embryo", "Folds")
 
+# Count number of CF folds
+nfold_cf <- data.frame(table(results[results$Type == "CF",]$Embryo))
+colnames(nfold_cf) <- c("Embryo", "CFs")
+
+# Count number of EF folds
+nfold_ef <- data.frame(table(results[results$Type == "EF",]$Embryo))
+colnames(nfold_ef) <- c("Embryo", "EFs")
+
 # Get sample information
 embryos <- unique(results[, c("Embryo", "Stock", "Sample", "Genotype")])
 
 # Merge datasets
-total <- merge(area, areacorr, by = "Embryo", all.x = TRUE)
+total <- merge(embryos, areacorr, by = "Embryo", all.x = TRUE)
+total <- merge(total, areacorr_cf, by = "Embryo", all.x = TRUE)
+total <- merge(total, areacorr_ef, by = "Embryo", all.x = TRUE)
 total <- merge(total, nfold, by = "Embryo", all.x = TRUE)
-total <- merge(total, embryos, by = "Embryo", all.x = TRUE)
+total <- merge(total, nfold_cf, by = "Embryo", all.x = TRUE)
+total <- merge(total, nfold_ef, by = "Embryo", all.x = TRUE)
 
 # Transform data frame to order the stock for plotting
 total <- transform(total, Stock=factor(Stock, levels = c("wt", "btd", "eve", "prd")))
