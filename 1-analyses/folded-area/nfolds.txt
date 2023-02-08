@@ -1,0 +1,4 @@
+[1] "btd: embryos=11 (het=6, hom=5), folds=19 (het=6, hom=13)"
+[1] "eve: embryos=11 (het=7, hom=4), folds=14 (het=7, hom=7)"
+[1] "prd: embryos=14 (het=9, hom=5), folds=22 (het=14, hom=8)"
+[1] " wt: embryos=16, folds=32, ant=12, mid=16, post=4"
