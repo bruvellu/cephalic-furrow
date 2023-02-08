@@ -466,9 +466,10 @@ LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado
 
 \newpage
 
-## Tables
+# Tables
 
-Table: Relative timing differences between the formation of the cephalic furrow (CF) and the ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of infolding/buckling. {#tbl:gbtime}
+Table: Relative timing differences between the formation of the cephalic furrow (CF) and ectopic folds (EFs) in different mutant backgrounds.
+We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of infolding/buckling. {#tbl:gbtime}
 
 |           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
 | --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
@@ -479,15 +480,14 @@ Table: Relative timing differences between the formation of the cephalic furrow 
 | n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
 
 
-Table: Statistics for ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (EFP) and the average number of ectopic folds per embryo side (EFA). The *n* includes datasets imaged from the lateral and dorsal sides (LAT+DOR). {#tbl:stats}
+Table: Statistics for ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (PEF) and the average number of ectopic folds per embryo side (AEF). The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:stats}
 
 |           | wildtype | *btd*   |         | *eve*   |         | *prd*   |         | *stg*   |         |
 | --------  | -------- | -----   | -----   | -----   | -----   | -----   | -----   | -----   | -----   |
 | Zygosity  | +/+      | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     |
-| EFP (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 23.1    | 42.9    | 27.3    | 23.1    |
-| EFA       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.2±0.4 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
-| n         | 36       | 31      | 14      | 25      | 10      | 26      | 14      | 33      | 13      |
-| (LAT+DOR) | (16+20)  | (9+22)  | (7+7)   | (7+18)  | (5+5)   | (9+17)  | (5+9)   | (21+12) | (8+5)   |
+| PEF (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 25.9    | 42.9    | 27.3    | 23.1    |
+| AEF       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.3±0.5 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
+| n         | 36       | 31      | 14      | 25      | 10      | 27      | 14      | 33      | 13      |
 
 \clearpage
 
