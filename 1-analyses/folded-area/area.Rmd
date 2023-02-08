@@ -270,4 +270,3 @@ ggplot(results, aes(Type, AreaCorr, fill = Genotype)) +
 ggsave("4-plots/individual-area-per-type.png", width = 12, height = 4)
 ggsave("4-plots/individual-area-per-type.svg", width = 12, height = 4)
 ```
-
