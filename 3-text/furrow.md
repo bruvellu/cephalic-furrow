@@ -132,7 +132,8 @@ We find that the penetrance of the ectopic folding phenotype is high in cephalic
 Nearly every *btd* and *eve* homozygote embryos show one or more ectopic folds (2.0±1.0 and 1.8±0.6 folds per side, respectively ({@fig:ectopic}b, {@fig:features}a), while sibling controls show a low (13%) frequency of ectopic folding with an average of 1.1±0.2 ({@tbl:stats}).
 The frequency of ectopic folds in *prd* mutants is lower (43%), while in wildtype embryos it is surprisingly high (80%) ({@tbl:stats}).
 <!--TODO:AS: Is there a figure showing ectopic folds in prd and wildtype embryos?-->
-The ectopic folds in *prd* and wildtype embryos appear at a similar time compared to the ectopic folds in *btd* and *eve* embryos, but they only form anterior or posterior to the cephalic furrow and have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g).
+<!--TODO: Add figure for wildtype ectopic folds and include new plot with EF areas-->
+The ectopic folds in *prd* and wildtype embryos appear at a similar time compared to the ectopic folds in *btd* and *eve* embryos, but they only form anterior or posterior to the cephalic furrow and have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g, {@tbl:area}).
 <!--TODO:AS: Does it? Could also be that not all gastrulation stresses are buffered by the CF?-->
 The differences in morphology and dynamics between the cephalic furrow and ectopic folds suggest that the latter form via different mechanisms, and that the ectopic folding phenotype is causally linked to the absence of the cephalic furrow in mutant embryos.
 <!--TODO: Revise this last sentence, and probably split it in two.-->
@@ -480,14 +481,23 @@ We measured the time after gastrulation (TAG) and the percentage of germ band ex
 | n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
 
 
-Table: Statistics for ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (PEF) and the average number of ectopic folds per embryo side (AEF). The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:stats}
+Table: Number and frequency of ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (PEF) and the number of ectopic folds per embryo side (NEF). The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:stats}
 
 |           | wildtype | *btd*   |         | *eve*   |         | *prd*   |         | *stg*   |         |
 | --------  | -------- | -----   | -----   | -----   | -----   | -----   | -----   | -----   | -----   |
 | Zygosity  | +/+      | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     |
+| NEF       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.3±0.5 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
 | PEF (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 25.9    | 42.9    | 27.3    | 23.1    |
-| AEF       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.3±0.5 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
 | n         | 36       | 31      | 14      | 25      | 10      | 27      | 14      | 33      | 13      |
+
+
+Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated surface area (µm^2^×10^3^) of folded cells in the cephalic furrow and ectopic folds of different mutant backgrounds. {#tbl:area}
+
+|    | wildtype     | *btd*       | *eve*      | *prd*       |
+| -- | --------     | -----       | -----      | -----       |
+| CF | 11.4±1.2     | 10.3±1.9    | 9.7±1.1    | 6.0±3.4     |
+| EF | 0.7±0.5      | 2.3±1.7     | 3.2±2.1    | 1.0±0.6     |
+| n  | CF=16, EF=16 | CF=6, EF=13 | CF=7, EF=7 | CF=14, EF=8 |
 
 \clearpage
 
