@@ -38,16 +38,9 @@ documentclass: article
 bibliography: furrow.bib
 csl: nature.csl
 papersize: a4
-fontsize: 11pt
-fontfamily: libertine
-linestretch: "1"
-geometry:
-- bindingoffset=2mm
-- hmargin=25mm
-- vmargin=25mm
 link-citations: True
 colorlinks: True
-fignos-warning-level: 1
+fignos-warning-level: 0
 fignos-cleveref: True
 fignos-plus-name: Figure
 tablenos-cleveref: True

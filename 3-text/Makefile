@@ -11,6 +11,10 @@ OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
 FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
+PDFVARS=-V fontfamily:libertine -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt
+HTMLVARS=-c resources/normalize.css --standalone 
+#HTMLVARS=-V toc --embed-resources --standalone 
+ #
 
 # Main rule
 all: clean figures syncbib compile share
@@ -76,7 +80,9 @@ compile:
 	# Compile timestamped documents to output directory
 	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.odt -o ${FILE}.odt
 	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.docx -o ${FILE}.docx
-	pandoc ${FILE}.md ${FILTERS} --pdf-engine=xelatex -o ${FILE}.pdf
+	pandoc ${FILE}.md ${FILTERS} ${PDFVARS} --pdf-engine=xelatex -o ${FILE}.pdf
+	pandoc ${FILE}.md ${FILTERS} ${HTMLVARS} -o ${FILE}.html
+	#quarto render ${FILE}.md ${FILTERS} ${HTMLVARS} --to html --output ${FILE}.html
 	cp ${FILE}.odt ${OUTDIR}/${TIMESTAMPED}.odt
 	cp ${FILE}.docx ${OUTDIR}/${TIMESTAMPED}.docx
 	cp ${FILE}.pdf ${OUTDIR}/${TIMESTAMPED}.pdf
