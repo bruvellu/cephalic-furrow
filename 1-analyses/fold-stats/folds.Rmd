@@ -15,7 +15,7 @@ library(ggplot2)
 
 ```{r import}
 # Import main dataset
-datasets <- read.delim("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv", stringsAsFactors=TRUE)
+datasets <- read.csv("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv", stringsAsFactors=TRUE)
 
 # Filter out NAs
 datasets <- datasets[!is.na(datasets$folds_left),]
