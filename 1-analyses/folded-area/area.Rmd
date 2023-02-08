@@ -182,6 +182,56 @@ print_wt
 capture.output(print_btd, print_eve, print_prd, print_wt, file = "nfolds.txt")
 ```
 
+```{r print-stats}
+print_stats <- function(dataframe, stock, type) {
+  filter_df <- (dataframe$Stock == stock & dataframe$Type == type)
+  df <- dataframe[filter_df,]
+  df <- droplevels(df)
+
+  # Define row
+  row <- c(stock,
+           type,
+           mean(df$AreaCorr) / 1000,
+           sd(df$AreaCorr) / 1000,
+           length(df$AreaCorr)
+           )
+  
+  # Summarize data
+  print(sprintf("%s %s / area=%.3f±%.3f x 10^3 / n=%i",
+                stock, type,
+                mean(df$AreaCorr) / 1000,
+                sd(df$AreaCorr) / 1000,
+                length(df$AreaCorr)
+                ))
+  return(row)
+}
+
+# Save stats to data frame
+stats <- data.frame()
+
+# Bind row by row
+stats <- rbind(stats, print_stats(results, "wt", "CF"))
+stats <- rbind(stats, print_stats(results, "wt", "EF"))
+stats <- rbind(stats, print_stats(results, "btd", "CF"))
+stats <- rbind(stats, print_stats(results, "btd", "EF"))
+stats <- rbind(stats, print_stats(results, "eve", "CF"))
+stats <- rbind(stats, print_stats(results, "eve", "EF"))
+stats <- rbind(stats, print_stats(results, "prd", "CF"))
+stats <- rbind(stats, print_stats(results, "prd", "EF"))
+
+# Add column names
+colnames(stats) <- c("stock", "type", "mean", "sd", "n")
+
+# Convert columns to numeric
+stats[, 3:5] <- apply(stats[, 3:5], 2, as.numeric)
+
+# Round up
+stats[, 3:4] <- round(stats[, 3:4], digits=1)
+
+# Write table to file
+write.table(format(stats, digits=2), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+```
+
 ## Total folded area per embryo
 
 Plot with the total area of folded tissue in embryos with and without the
