@@ -37,7 +37,6 @@ institute:
 documentclass: article
 bibliography: furrow.bib
 csl: nature.csl
-papersize: a4
 link-citations: True
 colorlinks: True
 fignos-warning-level: 0
