@@ -125,7 +125,7 @@ Nearly every *btd* and *eve* homozygote embryos show one or more ectopic folds (
 The frequency of ectopic folds in *prd* mutants is lower (43%), while in wildtype embryos it is surprisingly high (80%) ({@tbl:stats}).
 <!--TODO:AS: Is there a figure showing ectopic folds in prd and wildtype embryos?-->
 <!--TODO: Add figure for wildtype ectopic folds and include new plot with EF areas-->
-The ectopic folds in *prd* and wildtype embryos appear at a similar time compared to the ectopic folds in *btd* and *eve* embryos, but they only form anterior or posterior to the cephalic furrow and have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g, {@tbl:area}).
+The ectopic folds in *prd* and wildtype embryos appear at a similar time compared to the ectopic folds in *btd* and *eve* embryos, but they only form anterior or posterior to the cephalic furrow and have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g--k, {@tbl:area}).
 <!--TODO:AS: Does it? Could also be that not all gastrulation stresses are buffered by the CF?-->
 The differences in morphology and dynamics between the cephalic furrow and ectopic folds suggest that the latter form via different mechanisms, and that the ectopic folding phenotype is causally linked to the absence of the cephalic furrow in mutant embryos.
 <!--TODO: Revise this last sentence, and probably split it in two.-->
