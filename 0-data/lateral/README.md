@@ -2,22 +2,26 @@
 
 ## Acquisition
 
-| key          | value                                         |
-| ---          | -----                                         |
-| mounting     | coverslip                                     |
-| orientation  | lateral                                       |
-| microscope   | Zeiss Lightsheet Z.1                          |
-| objective    | Zeiss 20x/1NA Plan-Apochromat Water Immersion |
-| zoom         | 0.85                                          |
-| multiview    | one embryo per view                           |
-| x-resolution | 0.28 µm                                       |
-| y-resolution | 0.28 µm                                       |
-| z-resolution | 3 µm                                          |
-| t-resolution | 45--60 s                                      |
-| laser lines  | 488 nm, 561 nm                                |
-| laser power  | 3%, 3%                                        |
-| filters      | LP560, LP585                                  |
-| temperature  | 25° C                                         |
+| key          | value                            |
+| ---          | -----                            |
+| mounting     | coverslip                        |
+| orientation  | lateral                          |
+| microscope   | Zeiss Lightsheet Z.1             |
+| objective    | W Plan-Apochromat 20x/1.0 UV-VIS |
+| zoom         | 0.80                             |
+| xy-size      | 1920x800 px
+| x-resolution | 0.28 µm                          |
+| y-resolution | 0.28 µm                          |
+| z-resolution | 3 µm                             |
+| z-slices     | 30--36                           |
+| t-resolution | 45--60 s                         |
+| multiview    | one embryo per view              |
+| laser lines  | 488 nm, 561 nm                   |
+| laser power  | 3%, 3%                           |
+| filters      | LP560 (SP550+LP585)              |
+| temperature  | 25° C                            |
+
+See a sample of the [Original_Metadata.txt](../scripts/Original_Metadata.txt).
 
 ## Pre-processing
 
