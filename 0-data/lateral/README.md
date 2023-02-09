@@ -1,5 +1,39 @@
 # Lateral datasets
 
+## Acquisition
+
+| key          | value                                         |
+| ---          | -----                                         |
+| mounting     | coverslip                                     |
+| orientation  | lateral                                       |
+| microscope   | Zeiss Lightsheet Z.1                          |
+| objective    | Zeiss 20x/1NA Plan-Apochromat Water Immersion |
+| zoom         | 0.85                                          |
+| multiview    | one embryo per view                           |
+| x-resolution | 0.28 µm                                       |
+| y-resolution | 0.28 µm                                       |
+| z-resolution | 3 µm                                          |
+| t-resolution | 45--60 s                                      |
+| laser lines  | 488 nm, 561 nm                                |
+| laser power  | 3%, 3%                                        |
+| filters      | LP560, LP585                                  |
+| temperature  | 25° C                                         |
+
+## Pre-processing
+
+To handle the initial image processing stacks, we used the macro [ProcessZ1Coverslip.ijm](../scripts/ProcessZ1Coverslip.ijm). The macro performs the following steps:
+
+1. Sequentially load individual views (embryos) in Fiji using Bio-Formats importer.
+2. Reset channel levels, lookup tables, and display mode for visualization.
+3. Rotate stack if needed for proper embryo orientation (anterior left, ventral bottom).
+4. Save original data as a new TIFF stack.
+5. Perform a maximum intensity projection for quick access to the recording when needed.
+6. Save projection as a TIFF stack and video.
+
+We used the maximum intensity projections to evaluate the presence of the fluorescent balancer.
+
+## Files
+
 List of files in this directory.
 
 ```

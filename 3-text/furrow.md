@@ -358,10 +358,10 @@ We ablated each embryo just once.
 <!--TODO: Does a higher temperature affects the quantifications?-->
 The temperature was maintained at 28°C.
 
-## Image processing and analyses
+## Image processing
 
-We converted the raw microscopy datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
-We generated 3D renderings of the lateral surface of the embryos using the ImageJ/Fiji plugin 3Dscript [@Schmid2019-bm].
+We first converted the raw lightsheet imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky] (see @Vellutini_undated-ou).
+To visualize the presence and dynamics of ectopic folds, we generated 3D renderings of the surface of embryos in lateral recordings using the plugin 3Dscript in Fiji [@Schmid2019-bm].
 We improved the signal-to-noise ratio and restored the z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
 We generated cartographic projections by segmenting the surface of the embryo with ilastik [@Berg2019-ab] and using the ImSAnE toolbox [@Heemskerk2015-kv].
 We manually traced the fold outlines and areas of lateral 3D renderings and lateral cartographic projections, respectively, using Fiji.
@@ -371,6 +371,8 @@ To analyze the tortuosity of the epithelium we straightened the vitelline envelo
 For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts. The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity.
 We used custom Python and R scripts to generate plots, and Inkscape to assemble the figure plates and illustrations.
 All the data, code, analyses, and figures is available in the repository [@Vellutini_undated-ou]
+
+## Image analyses
 
 # Acknowledgements
 
