@@ -1,5 +1,15 @@
 # ImSAnE datasets
 
+## CARE training
+
+TODO: acquisition of hi-lo datasets and gpu-training.
+
+## ImSAnE workflow
+
+TODO: summarize steps of the tutorial and reference it.
+
+## Files
+
 List of files in this directory.
 
 ```
