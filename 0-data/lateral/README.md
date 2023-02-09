@@ -21,16 +21,30 @@
 
 ## Pre-processing
 
-To handle the initial image processing stacks, we used the macro [ProcessZ1Coverslip.ijm](../scripts/ProcessZ1Coverslip.ijm). The macro performs the following steps:
+To handle the initial image processing stacks, we used the macro [ProcessZ1Coverslip.ijm](../scripts/ProcessZ1Coverslip.ijm).
+The macro performs the following steps:
 
 1. Sequentially load individual views (embryos) in Fiji using Bio-Formats importer.
 2. Reset channel levels, lookup tables, and display mode for visualization.
 3. Rotate stack if needed for proper embryo orientation (anterior left, ventral bottom).
 4. Save original data as a new TIFF stack.
-5. Perform a maximum intensity projection for quick access to the recording when needed.
+5. Run despeckle and subtract background for performing a maximum intensity projection.
 6. Save projection as a TIFF stack and video.
 
-We used the maximum intensity projections to evaluate the presence of the fluorescent balancer.
+We used the maximum intensity projections for quick access to the recordings, and to evaluate the presence of the fluorescence of the green balancer to determine the genotype of the embryos.
+
+## 3D rendering
+
+Maximum intensity projections, however, are not ideal to visualize the epithelial dynamics on the embryo’s surface due to the subtract background step.
+For inspecting the surface, we generated 3D renderings for individual embryo recordings using 3Dscript in Fiji:
+
+1. Open the re-saved original TIFF as a virtual stack in Fiji.
+2. Open 3Dscript and adjust the rendering parameters.
+3. Edit the script [3D_animation.txt](../scripts/3D_animation.txt) with the parameters of the current dataset.
+4. Use the script to render every timepoint.
+5. Save the rendered data as a TIFF stack and video.
+
+We rendered all embryos from one experiment using the same parameters, except for the orientation which was set individually per embryo.
 
 ## Files
 

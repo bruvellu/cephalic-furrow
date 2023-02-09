@@ -1,0 +1,15 @@
+At frame 0:
+- change timepoint to 1
+- rotate by 180 degrees horizontally
+- rotate by 0 degrees around (0, 0, 1)
+- change channel 1 weight to 0
+- change channel 2 min intensity to 200
+- change channel 2 max intensity to 2000
+- change channel 2 min alpha to 100
+- change channel 2 max alpha to 3500
+- change bounding box visibility to off
+- change scalebar length to 50
+- change scalebar width to 10
+- change scalebar offset to 20
+
+From frame 0 to frame 179 change timepoint to 180
