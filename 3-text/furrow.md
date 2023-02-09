@@ -542,7 +542,9 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 
 \newpage
 
-# Supplementary Figures
+# Supplementary information
+
+## Figures
 
 ![Initiator cell behaviors in cephalic furrow mutants.
 ](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
@@ -570,7 +572,7 @@ Dimensions used as a reference for the model.
 
 \newpage
 
-## Supplementary Videos
+## Videos
 
 ![Reminiscent initiator cell behavior in *btd* mutants.
 ](figures/VidS1.jpg){#fig:vid-initiator tag="Video S1" width=50%}
