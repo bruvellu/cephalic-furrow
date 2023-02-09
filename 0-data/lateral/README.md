@@ -21,7 +21,7 @@
 | filters      | LP560 (SP550+LP585)              |
 | temperature  | 25° C                            |
 
-See a sample of the [Original_Metadata.txt](../scripts/Original_Metadata.txt).
+See a sample of the [original metadata](../scripts/OriginalMetadata_Lateral.txt).
 
 ## Pre-processing
 
