@@ -9,7 +9,7 @@
 | microscope   | Zeiss Lightsheet Z.1             |
 | objective    | W Plan-Apochromat 20x/1.0 UV-VIS |
 | zoom         | 0.80                             |
-| xy-size      | 1920x800 px
+| xy-size      | 1920x800 px                      |
 | x-resolution | 0.28 µm                          |
 | y-resolution | 0.28 µm                          |
 | z-resolution | 3 µm                             |
