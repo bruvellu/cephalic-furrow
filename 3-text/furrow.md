@@ -374,7 +374,7 @@ All the data, code, analyses, and figures is available in the repository [@Vellu
 
 # Acknowledgements
 
-LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado for projections, Lemke for discussions, Ju and Anaïs for text suggestions, Jan Brugués and Keisuke Ishihara for the laser ablation setup, LMF for essential imaging support, EMBO for funding, ERC for funding, EU FET OPEN Horizon 2020 to AS.
+LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado for projections, Lemke for discussions, Ju and Anaïs for text suggestions, Michael Akam for the heads up about the lack of data on the cephalic furrow, Jan Brugués and Keisuke Ishihara for the laser ablation setup, LMF for essential imaging support, EMBO for funding, ERC for funding, EU FET OPEN Horizon 2020 to AS.
 
 # References
 
