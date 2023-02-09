@@ -1,0 +1,592 @@
+Key	Value
+ BitsPerPixel	16
+ DimensionOrder	XYCZT
+ IsInterleaved	false
+ IsRGB	false
+ LittleEndian	true
+ PixelType	uint16
+ Series 0 Name	btd-gap-stg_dorsal_1_z3_t50s #01
+ SizeC	2
+ SizeT	1
+ SizeX	1400
+ SizeY	1920
+ SizeZ	30
+Appliance|Data|Lightsheet|Acquisition|Streaming|SeparateFiles	T
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|FocusPosition #1	0
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|FocusPosition #2	0
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|FocusPosition #3	0
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|Id #1	Marker:1
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|Id #2	Marker:2
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|Id #3	Marker:3
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|StageXPosition #1	0
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|StageXPosition #2	0
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|StageXPosition #3	0
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|StageYPosition #1	0
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|StageYPosition #2	0
+Appliance|Data|ShuttleAndFindData|Calibration|Marker|StageYPosition #3	0
+Appliance|Data|ShuttleAndFindData|Calibration|MicroscopeType	LM
+Appliance|Data|ShuttleAndFindData|Calibration|StageOrientation|X	1
+Appliance|Data|ShuttleAndFindData|Calibration|StageOrientation|Y	-1
+Appliance|Id	ShuttleAndFind:1
+DisplaySetting|Channel|ChannelUnit|ChannelType	Unspecified
+DisplaySetting|Channel|ChannelUnit|FactorI	1
+DisplaySetting|Channel|ChannelUnit|OffsetI	0
+DisplaySetting|Channel|ChannelUnit|UnitI	Unknown
+DisplaySetting|Channel|Color	#FF00FF
+DisplaySetting|Channel|ColorMode	Color
+DisplaySetting|Channel|Gamma	1
+DisplaySetting|Channel|High	0.061036087586785692
+DisplaySetting|Channel|Id	2607771310129316712430366998232795960499
+DisplaySetting|Channel|IsSelected	true
+DisplaySetting|Channel|Low	0.0022888532845044642
+DisplaySetting|Channel|Name	Cam2
+Experiment|AcquisitionBlock|AcquisitionModeSetup|AcquisitionMode	OnTheFlyByTrigger
+Experiment|AcquisitionBlock|AcquisitionModeSetup|BiDirectional	true
+Experiment|AcquisitionBlock|AcquisitionModeSetup|BiDirectionalZ	false
+Experiment|AcquisitionBlock|AcquisitionModeSetup|BitsPerSample	16
+Experiment|AcquisitionBlock|AcquisitionModeSetup|CameraBinning	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|CameraFrameHeight	1920
+Experiment|AcquisitionBlock|AcquisitionModeSetup|CameraFrameOffsetX	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|CameraFrameOffsetY	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|CameraFrameWidth	1400
+Experiment|AcquisitionBlock|AcquisitionModeSetup|CameraSuperSampling	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|DimensionT	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|DimensionX	512
+Experiment|AcquisitionBlock|AcquisitionModeSetup|DimensionY	512
+Experiment|AcquisitionBlock|AcquisitionModeSetup|DimensionZ	30
+Experiment|AcquisitionBlock|AcquisitionModeSetup|FilterMethod	Average
+Experiment|AcquisitionBlock|AcquisitionModeSetup|FilterMode	Frame
+Experiment|AcquisitionBlock|AcquisitionModeSetup|FilterSamplingNumber	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|FitFramesizeToRoi	false
+Experiment|AcquisitionBlock|AcquisitionModeSetup|FocusStabilizer	false
+Experiment|AcquisitionBlock|AcquisitionModeSetup|HdrEnabled	false
+Experiment|AcquisitionBlock|AcquisitionModeSetup|HdrImagingMode	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|HdrIntensity	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|HdrNumFrames	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|InterpolationY	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|Objective	W Plan-Apochromat 40x/1.0 DIC VIS-IR_4910000005
+Experiment|AcquisitionBlock|AcquisitionModeSetup|OffsetX	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|OffsetY	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|OffsetZ	-2.9999999997016856e-009
+Experiment|AcquisitionBlock|AcquisitionModeSetup|PixelPeriod	1.5999999999999999e-006
+Experiment|AcquisitionBlock|AcquisitionModeSetup|PreScan	false
+Experiment|AcquisitionBlock|AcquisitionModeSetup|Rotation	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtBinning	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtFrameHeight	512
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtFrameWidth	512
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtLinePeriod	3.0000000000000001e-005
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtOffsetX	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtOffsetY	0
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtRegionHeight	512
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtRegionWidth	512
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtSuperSampling	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|RtZoom	0.80000000000000004
+Experiment|AcquisitionBlock|AcquisitionModeSetup|ScalingX	1.4268475037657129e-007
+Experiment|AcquisitionBlock|AcquisitionModeSetup|ScalingY	1.4268475037657129e-007
+Experiment|AcquisitionBlock|AcquisitionModeSetup|ScalingZ	3.0000000000000001e-006
+Experiment|AcquisitionBlock|AcquisitionModeSetup|SimRotations	3
+Experiment|AcquisitionBlock|AcquisitionModeSetup|TimeSeries	false
+Experiment|AcquisitionBlock|AcquisitionModeSetup|TrackMultiplexType	FrameFast
+Experiment|AcquisitionBlock|AcquisitionModeSetup|UseRois	false
+Experiment|AcquisitionBlock|AcquisitionModeSetup|ZoomX	1
+Experiment|AcquisitionBlock|AcquisitionModeSetup|ZoomY	1
+Experiment|AcquisitionBlock|Laser|LaserName #1	Laser 561-75
+Experiment|AcquisitionBlock|Laser|LaserName #2	Laser 488-100
+Experiment|AcquisitionBlock|Laser|LaserPower #1	0.074999999999999997
+Experiment|AcquisitionBlock|Laser|LaserPower #2	0.10000000000000001
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|ExcitationIntensity #1	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|ExcitationIntensity #2	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|Laser #1	Laser 561-75
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|Laser #2	Laser 488-100
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|LaserSuppression #1	false
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|LaserSuppression #2	false
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|Transmission #1	0.050000000000000003
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|Transmission #2	0.050000000000000003
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|Wavelength #1	5.6100000000000001e-007
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Attenuator|Wavelength #2	4.8800000000000003e-007
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|BeamSplitter|BeamSplitterServoPosition #1	4
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|BeamSplitter|BeamSplitterServoPosition #2	3
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|BeamSplitter|BeamSplitterServoPosition #3	-1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|BeamSplitter|Filter #1	LBF 405/488/561
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|BeamSplitter|Filter #2	SBS LP 560-1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|BeamSplitter|Identifier #1	MainBeamSplitterNonDescanned
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|BeamSplitter|Identifier #2	CameraBeamSplitter
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|BeamSplitter|Identifier #3	BeamSplitterInvalid
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|CameraIntegrationTime	0.029960110000000002
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|CenterWavelength	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|CondensorAperture	-1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|CondensorFrontlensPosition	-1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|AmplifierGain #1	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|AmplifierGain #2	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|AmplifierOffset #1	0.10000000000000001
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|AmplifierOffset #2	0.10000000000000001
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Color #1	#00FF00
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Color #2	#FF00FF
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|DetectorIdentifier #1	CameraMonochrome1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|DetectorIdentifier #2	CameraMonochrome2
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|DetectorMode #1	PhotonCounting
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|DetectorMode #2	PhotonCounting
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|DigitalGain #1	1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|DigitalGain #2	1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|DigitalOffset #1	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|DigitalOffset #2	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Filterset #1	SP 550
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Filterset #2	LP 585
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|ImageChannelName #1	Cam1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|ImageChannelName #2	Cam2
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|LaserSuppression #1	true
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|LaserSuppression #2	true
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Name #1	Camera
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Name #2	Camera
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Palette #1	LsmDetectorPalette_0_0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Palette #2	LsmDetectorPalette_0_1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|PinholeDiameter #1	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|PinholeDiameter #2	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|PureRatioSource #1	false
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|PureRatioSource #2	false
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|SpectralScanChannels #1	32
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|SpectralScanChannels #2	32
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Voltage #1	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Detector|Voltage #2	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|DeviceMode	SPIM
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|FieldStopPosition	-1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|FilterTransmission	-1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|LaserSuppressionMode	None
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|Name	Track1
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|PalmSlider	true
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|ReflectedLightLampIntensity	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|SimGratingPeriod	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|TirfAngle	0
+Experiment|AcquisitionBlock|MultiTrackSetup|TrackSetup|TransmittedLightLampIntensity	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #01	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #02	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #03	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #04	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #05	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #06	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #07	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #08	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #09	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusMode #10	Off
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #01	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #02	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #03	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #04	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #05	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #06	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #07	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #08	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #09	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|AutoFocusOffset #10	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #01	0.000319749
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #02	0.00029389
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #03	0.000263961
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #04	0.000259361
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #05	0.000257556
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #06	0.000266093
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #07	0.00026439
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #08	0.000260701
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #09	0.000260119
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|X #10	0.000265708
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #01	0.0111158
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #02	0.0116178
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #03	0.0126592
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #04	0.0136868
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #05	0.0142038
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #06	0.0146939
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #07	0.0157249
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #08	0.0162012
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #09	0.017208
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Y #10	0.0192717
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #01	0.000149992
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #02	0.000118427
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #03	8.2877e-005
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #04	7.0877e-005
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #05	4.8035e-005
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #06	1.6071e-005
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #07	-1.3139e-005
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #08	-2.4603e-005
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #09	-6.3053e-005
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|Position|Z #10	-0.000130269
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #01	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #02	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #03	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #04	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #05	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #06	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #07	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #08	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #09	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionMode #10	CenteredGrid
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #01	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #02	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #03	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #04	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #05	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #06	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #07	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #08	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #09	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TileAcquisitionOverlap #10	0
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #01	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #02	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #03	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #04	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #05	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #06	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #07	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #08	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #09	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesX #10	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #01	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #02	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #03	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #04	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #05	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #06	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #07	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #08	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #09	5
+Experiment|AcquisitionBlock|TilesSetup|PositionGroup|TilesY #10	5
+Experiment|AcquisitionBlock|ZStackSetup|Extrapolate	false
+Experiment|AcquisitionBlock|ZStackSetup|Interpolation	Cubic
+Experiment|AcquisitionBlock|ZStackSetup|StackBrightnessCorrection	false
+Experiment|ExperimentBlockIndex	0
+Information|Application|Name	AIMApplication
+Information|Application|Version	9.2.10.54
+Information|Document|CreationDate	2022-01-27T18:08:12
+Information|Document|Name	btd-gap-stg_dorsal_1_z3_t50s
+Information|Document|Rating	0
+Information|Document|SubType	Image
+Information|Document|Title	btd-gap-stg_dorsal_1_z3_t50s
+Information|Document|UserName	LMF user
+Information|Image|Channel|AcquisitionMode #1	SPIM
+Information|Image|Channel|AcquisitionMode #2	SPIM
+Information|Image|Channel|Amplitude #1	6
+Information|Image|Channel|Amplitude #2	6
+Information|Image|Channel|Attenuation #1	0.94999999999999996
+Information|Image|Channel|Attenuation #2	0.94999999999999996
+Information|Image|Channel|Attenuation #3	0.94999999999999996
+Information|Image|Channel|Attenuation #4	0.94999999999999996
+Information|Image|Channel|Binning #1	1x1
+Information|Image|Channel|Binning #2	1x1
+Information|Image|Channel|ContrastMethod #1	Fluorescence
+Information|Image|Channel|ContrastMethod #2	Fluorescence
+Information|Image|Channel|DetectionWavelength|SinglePeak #1	498.00000000000006
+Information|Image|Channel|DetectionWavelength|SinglePeak #2	571
+Information|Image|Channel|Detector|Id #1	Detector:0:0
+Information|Image|Channel|Detector|Id #2	Detector:0:1
+Information|Image|Channel|DigitalGain #1	0
+Information|Image|Channel|DigitalGain #2	0
+Information|Image|Channel|EmissionWavelength #1	498.00000000000006
+Information|Image|Channel|EmissionWavelength #2	571
+Information|Image|Channel|FilterSet|Id #1	FilterSet:0:0:0
+Information|Image|Channel|FilterSet|Id #2	FilterSet:0:1:0
+Information|Image|Channel|Gain #1	0
+Information|Image|Channel|Gain #2	0
+Information|Image|Channel|Id #1	222066845125406525625293631051570615939
+Information|Image|Channel|Id #2	2607771310129316712430366998232795960499
+Information|Image|Channel|IlluminationType #1	Oblique
+Information|Image|Channel|IlluminationType #2	Oblique
+Information|Image|Channel|IlluminationWavelength|SinglePeak #1	488.00000000000006
+Information|Image|Channel|IlluminationWavelength|SinglePeak #2	561
+Information|Image|Channel|LightSource|Id #1	LightSource:0
+Information|Image|Channel|LightSource|Id #2	LightSource:1
+Information|Image|Channel|LightSource|Id #3	LightSource:0
+Information|Image|Channel|LightSource|Id #4	LightSource:1
+Information|Image|Channel|NADetection #1	0.99384983202908017
+Information|Image|Channel|NADetection #2	0.99384983202908017
+Information|Image|Channel|NALightSheet #1	0.051198752444920677
+Information|Image|Channel|NALightSheet #2	0.051198752444920677
+Information|Image|Channel|Name #1	Cam1
+Information|Image|Channel|Name #2	Cam2
+Information|Image|Channel|Offset #1	0.10000000000000001
+Information|Image|Channel|Offset #2	0.10000000000000001
+Information|Image|Channel|PhotonConversionFactor #1	0
+Information|Image|Channel|PhotonConversionFactor #2	0
+Information|Image|Channel|Wavelength #1	561
+Information|Image|Channel|Wavelength #2	488.00000000000006
+Information|Image|Channel|Wavelength #3	561
+Information|Image|Channel|Wavelength #4	488.00000000000006
+Information|Image|ComponentBitCount	16
+Information|Image|I|Interval|Increment	180
+Information|Image|I|Interval|Start	90
+Information|Image|I|StartPosition	0
+Information|Image|Medium	Water
+Information|Image|MicroscopeRef|Id	Microscope:0
+Information|Image|ObjectiveRef|Id	Objective:0
+Information|Image|OriginalScanData	true
+Information|Image|PixelType	Gray16
+Information|Image|RefractiveIndex	1.333
+Information|Image|SizeC	2
+Information|Image|SizeT	181
+Information|Image|SizeV	10
+Information|Image|SizeX	1400
+Information|Image|SizeY	1920
+Information|Image|SizeZ	30
+Information|Image|S|Scene|Index	0
+Information|Image|S|Scene|Position|X	-319.749
+Information|Image|S|Scene|Position|Y	11115.8
+Information|Image|S|Scene|Position|Z	149.992
+Information|Image|Track|ChannelRef|Id #1	222066845125406525625293631051570615939
+Information|Image|Track|ChannelRef|Id #2	2607771310129316712430366998232795960499
+Information|Image|Track|Id	Track:0
+Information|Image|T|BinaryList|AttachmentName	TimeStamps
+Information|Image|V|AxisOfRotation	0.00000 1.00000 0.00000
+Information|Image|V|CenterPosition	-166.25894 4982.07200 -718.62201
+Information|Image|V|StartPosition	0
+Information|Image|V|View|IncrementZ #01	3
+Information|Image|V|View|IncrementZ #02	3
+Information|Image|V|View|IncrementZ #03	3
+Information|Image|V|View|IncrementZ #04	3
+Information|Image|V|View|IncrementZ #05	3
+Information|Image|V|View|IncrementZ #06	3
+Information|Image|V|View|IncrementZ #07	3
+Information|Image|V|View|IncrementZ #08	3
+Information|Image|V|View|IncrementZ #09	3
+Information|Image|V|View|IncrementZ #10	3
+Information|Image|V|View|Offset #01	221.99362887059999
+Information|Image|V|View|Offset #02	221.99362887059999
+Information|Image|V|View|Offset #03	221.99362887059999
+Information|Image|V|View|Offset #04	221.99362887059999
+Information|Image|V|View|Offset #05	221.99362887059999
+Information|Image|V|View|Offset #06	221.99362887059999
+Information|Image|V|View|Offset #07	221.99362887059999
+Information|Image|V|View|Offset #08	221.99362887059999
+Information|Image|V|View|Offset #09	221.99362887059999
+Information|Image|V|View|Offset #10	221.99362887059999
+Information|Image|V|View|PositionX #01	319.74899999999974
+Information|Image|V|View|PositionX #02	293.89000000000033
+Information|Image|V|View|PositionX #03	263.96100000000024
+Information|Image|V|View|PositionX #04	259.36099999999988
+Information|Image|V|View|PositionX #05	257.55599999999953
+Information|Image|V|View|PositionX #06	266.09299999999985
+Information|Image|V|View|PositionX #07	264.39000000000033
+Information|Image|V|View|PositionX #08	260.70100000000002
+Information|Image|V|View|PositionX #09	260.11899999999969
+Information|Image|V|View|PositionX #10	265.70799999999957
+Information|Image|V|View|PositionY #01	11115.824000000001
+Information|Image|V|View|PositionY #02	11617.755999999999
+Information|Image|V|View|PositionY #03	12659.221999999998
+Information|Image|V|View|PositionY #04	13686.766
+Information|Image|V|View|PositionY #05	14203.849999999999
+Information|Image|V|View|PositionY #06	14693.871999999998
+Information|Image|V|View|PositionY #07	15724.916000000001
+Information|Image|V|View|PositionY #08	16201.153999999999
+Information|Image|V|View|PositionY #09	17208.009999999998
+Information|Image|V|View|PositionY #10	19271.748
+Information|Image|V|View|PositionZ #01	149.99200000000019
+Information|Image|V|View|PositionZ #02	118.42699999999967
+Information|Image|V|View|PositionZ #03	82.876999999999498
+Information|Image|V|View|PositionZ #04	70.876999999999498
+Information|Image|V|View|PositionZ #05	48.034999999999854
+Information|Image|V|View|PositionZ #06	16.070999999999913
+Information|Image|V|View|PositionZ #07	-13.139000000000122
+Information|Image|V|View|PositionZ #08	-24.603000000000065
+Information|Image|V|View|PositionZ #09	-63.052999999999884
+Information|Image|V|View|PositionZ #10	-130.26900000000023
+Information|Image|V|View|SizeZ #01	30
+Information|Image|V|View|SizeZ #02	30
+Information|Image|V|View|SizeZ #03	30
+Information|Image|V|View|SizeZ #04	30
+Information|Image|V|View|SizeZ #05	30
+Information|Image|V|View|SizeZ #06	30
+Information|Image|V|View|SizeZ #07	30
+Information|Image|V|View|SizeZ #08	30
+Information|Image|V|View|SizeZ #09	30
+Information|Image|V|View|SizeZ #10	30
+Information|Image|V|View|V #01	0
+Information|Image|V|View|V #02	1
+Information|Image|V|View|V #03	2
+Information|Image|V|View|V #04	3
+Information|Image|V|View|V #05	4
+Information|Image|V|View|V #06	5
+Information|Image|V|View|V #07	6
+Information|Image|V|View|V #08	7
+Information|Image|V|View|V #09	8
+Information|Image|V|View|V #10	9
+Information|Image|Z|MultiView|View|Interval|Increment #01	3
+Information|Image|Z|MultiView|View|Interval|Increment #02	3
+Information|Image|Z|MultiView|View|Interval|Increment #03	3
+Information|Image|Z|MultiView|View|Interval|Increment #04	3
+Information|Image|Z|MultiView|View|Interval|Increment #05	3
+Information|Image|Z|MultiView|View|Interval|Increment #06	3
+Information|Image|Z|MultiView|View|Interval|Increment #07	3
+Information|Image|Z|MultiView|View|Interval|Increment #08	3
+Information|Image|Z|MultiView|View|Interval|Increment #09	3
+Information|Image|Z|MultiView|View|Interval|Increment #10	3
+Information|Image|Z|MultiView|View|Interval|Start #01	149.99200000000019
+Information|Image|Z|MultiView|View|Interval|Start #02	118.42699999999967
+Information|Image|Z|MultiView|View|Interval|Start #03	82.876999999999498
+Information|Image|Z|MultiView|View|Interval|Start #04	70.876999999999498
+Information|Image|Z|MultiView|View|Interval|Start #05	48.034999999999854
+Information|Image|Z|MultiView|View|Interval|Start #06	16.070999999999913
+Information|Image|Z|MultiView|View|Interval|Start #07	-13.139000000000122
+Information|Image|Z|MultiView|View|Interval|Start #08	-24.603000000000065
+Information|Image|Z|MultiView|View|Interval|Start #09	-63.052999999999884
+Information|Image|Z|MultiView|View|Interval|Start #10	-130.26900000000023
+Information|Image|Z|MultiView|View|V #01	0
+Information|Image|Z|MultiView|View|V #02	1
+Information|Image|Z|MultiView|View|V #03	2
+Information|Image|Z|MultiView|View|V #04	3
+Information|Image|Z|MultiView|View|V #05	4
+Information|Image|Z|MultiView|View|V #06	5
+Information|Image|Z|MultiView|View|V #07	6
+Information|Image|Z|MultiView|View|V #08	7
+Information|Image|Z|MultiView|View|V #09	8
+Information|Image|Z|MultiView|View|V #10	9
+Information|Image|Z|StartPosition	0
+Information|Instrument|Detector|AmplificationGain #1	0
+Information|Instrument|Detector|AmplificationGain #2	0
+Information|Instrument|Detector|Gain #1	1
+Information|Instrument|Detector|Gain #2	1
+Information|Instrument|Detector|Id #1	Detector:0:0
+Information|Instrument|Detector|Id #2	Detector:0:1
+Information|Instrument|Detector|Manufacturer|Model #1	Edge
+Information|Instrument|Detector|Manufacturer|Model #2	Edge
+Information|Instrument|Detector|Type #1	Camera
+Information|Instrument|Detector|Type #2	Camera
+Information|Instrument|Detector|Zoom #1	0.80000000000000004
+Information|Instrument|Detector|Zoom #2	0.80000000000000004
+Information|Instrument|FilterSet|EmissionFilterRef|Id #1	Filter:0:0:0
+Information|Instrument|FilterSet|EmissionFilterRef|Id #2	Filter:0:1:0
+Information|Instrument|FilterSet|Id #1	FilterSet:0:0:0
+Information|Instrument|FilterSet|Id #2	FilterSet:0:1:0
+Information|Instrument|Filter|Id #1	Filter:0:0:0
+Information|Instrument|Filter|Id #2	Filter:0:1:0
+Information|Instrument|Filter|Name #1	SP 550
+Information|Instrument|Filter|Name #2	LP 585
+Information|Instrument|Id	Instrument:0
+Information|Instrument|Microscope|Id	Microscope:0
+Information|Instrument|Microscope|System	AxioCam1, AxioObserver SPIM
+Information|Instrument|Objective|Id	Objective:0
+Information|Instrument|Objective|Immersion	Water
+Information|Instrument|Objective|LensNA	1
+Information|Instrument|Objective|Manufacturer|Model	W Plan-Apochromat 40x/1.0 DIC VIS-IR_4910000005
+Information|Instrument|Objective|NominalMagnification	40
+Information|User|DisplayName	LMF user
+Location	/home/nelas/Dropbox/Projects/Cephalic_furrow/5-Imaging/btd-stg-gap/btd-gap-stg_dorsal_1_z3_t50s.czi
+LsmTag #01	-0.013200000000000005
+LsmTag #02	10
+LsmTag #03	-0.024600000000000011
+LsmTag #04	-0.02300000000000001
+LsmTag #05	-0.008400000000000003
+LsmTag #06	3.0521446660051716
+LsmTag #07	false
+LsmTag #08	25
+LsmTag #09	37
+LsmTag #10	0
+LsmTag #11	-0.015400000000000006
+LsmTag #12	0
+LsmTag #13	-0.015700000000000006
+LsmTag #14	true
+LsmTag #15	0.0010000000000000005
+LsmTag #16	false
+LsmTag #17	0.011000000000000005
+LsmTag #18	-0.012900000000000005
+LsmTag #19	-0.0082000000000000024
+LsmTag|Name #01	CarlZeissAim.LightSheetOffsetZRight.405
+LsmTag|Name #02	CarlZeissAim.IncubatorState.Actual_CO2_Module
+LsmTag|Name #03	CarlZeissAim.LightSheetOffsetZRight.561
+LsmTag|Name #04	CarlZeissAim.LightSheetOffsetZRight.488
+LsmTag|Name #05	CarlZeissAim.LightSheetOffsetZLeft.445
+LsmTag|Name #06	LightSheetThickness
+LsmTag|Name #07	CarlZeissAim.IncubatorState.Switch_CO2_Module
+LsmTag|Name #08	CarlZeissAim.IncubatorState.Actual_TempChannel1
+LsmTag|Name #09	CarlZeissAim.IncubatorState.Actual_TempChannel4
+LsmTag|Name #10	CarlZeissAim.LightSheetOffsetZRight.514
+LsmTag|Name #11	CarlZeissAim.LightSheetOffsetZLeft.638
+LsmTag|Name #12	CarlZeissAim.LightSheetOffsetZRight.445
+LsmTag|Name #13	CarlZeissAim.LightSheetOffsetZLeft.405
+LsmTag|Name #14	CarlZeissAim.IncubatorState.Switch_TempChannel1
+LsmTag|Name #15	CarlZeissAim.LightSheetOffsetZLeft.561
+LsmTag|Name #16	CarlZeissAim.IncubatorState.Switch_TempChannel4
+LsmTag|Name #17	CarlZeissAim.LightSheetOffsetZLeft.488
+LsmTag|Name #18	CarlZeissAim.LightSheetOffsetZRight.638
+LsmTag|Name #19	CarlZeissAim.LightSheetOffsetZLeft.514
+LsmTag|Type #01	double
+LsmTag|Type #02	double
+LsmTag|Type #03	double
+LsmTag|Type #04	double
+LsmTag|Type #05	double
+LsmTag|Type #06	double
+LsmTag|Type #07	boolean
+LsmTag|Type #08	double
+LsmTag|Type #09	double
+LsmTag|Type #10	double
+LsmTag|Type #11	double
+LsmTag|Type #12	double
+LsmTag|Type #13	double
+LsmTag|Type #14	boolean
+LsmTag|Type #15	double
+LsmTag|Type #16	boolean
+LsmTag|Type #17	double
+LsmTag|Type #18	double
+LsmTag|Type #19	double
+Positions|Series 01| #01	0
+Positions|Series 01| #02	0
+Positions|Series 01| #03	0
+Positions|Series 01| #04	0
+Positions|Series 01| #05	0
+Positions|Series 01| #06	0
+Positions|Series 01| #07	0
+Positions|Series 01| #08	0
+Positions|Series 01| #09	0
+Positions|Series 01| #10	0
+Positions|Series 01| #11	0
+Positions|Series 01| #12	0
+Positions|Series 01| #13	0
+Positions|Series 01| #14	0
+Positions|Series 01| #15	0
+Positions|Series 01| #16	0
+Positions|Series 01| #17	0
+Positions|Series 01| #18	0
+Positions|Series 01| #19	0
+Positions|Series 01| #20	0
+Positions|Series 01| #21	0
+Positions|Series 01| #22	0
+Positions|Series 01| #23	0
+Positions|Series 01| #24	0
+Positions|Series 01| #25	0
+Positions|Series 01| #26	0
+Positions|Series 01| #27	0
+Positions|Series 01| #28	0
+Positions|Series 01| #29	0
+Positions|Series 01| #30	0
+Positions|Series 01| #31	0
+Positions|Series 01| #32	0
+Positions|Series 01| #33	0
+Positions|Series 01| #34	0
+Positions|Series 01| #35	0
+Positions|Series 01| #36	0
+Positions|Series 01| #37	0
+Positions|Series 01| #38	0
+Positions|Series 01| #39	0
+Positions|Series 01| #40	0
+Positions|Series 01| #41	0
+Positions|Series 01| #42	0
+Positions|Series 01| #43	0
+Positions|Series 01| #44	0
+Positions|Series 01| #45	0
+Positions|Series 01| #46	0
+Positions|Series 01| #47	0
+Positions|Series 01| #48	0
+Positions|Series 01| #49	0
+Positions|Series 01| #50	0
+Positions|Series 01| #51	0
+Positions|Series 01| #52	0
+Positions|Series 01| #53	0
+Positions|Series 01| #54	0
+Positions|Series 01| #55	0
+Positions|Series 01| #56	0
+Positions|Series 01| #57	0
+Positions|Series 01| #58	0
+Positions|Series 01| #59	0
+Positions|Series 01| #60	0
+Scaling|Distance|Id #1	X
+Scaling|Distance|Id #2	Y
+Scaling|Distance|Id #3	Z
+Scaling|Distance|Value #1	1.4268475037657129e-007
+Scaling|Distance|Value #2	1.4268475037657129e-007
+Scaling|Distance|Value #3	3.0000000000000001e-006
+Version	1.0
