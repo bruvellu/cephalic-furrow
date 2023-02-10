@@ -25,9 +25,14 @@ Here, we include a template folder with the scripts used to process the stacks a
 
 The workflow, in summary:
 
-1. 
-
-
+1. Our raw data are single lateral view stacks acquired in the lightsheet. The first step is to split the original dataset into individual files, a TIFF stack per timepoint. We did that using the [`SplitTimepoints.ijm`](./template/SplitTimepoints.ijm) ImageJ macro.
+2. Because ImSAnE doesn’t work well with half-cylinders (the lateral views cover only half embryo), we mirrored the data to trick ImSAnE to generate the map projections, and then un-mirrored the data. To mirror the stacks accurately, we used the [`MirrorFlyEmbryosTest.ijm`](./template/MirrorFlyEmbryosTest.ijm) and [`MirrorFlyEmbryosBatch.ijm`](./template/MirrorFlyEmbryosBatch.ijm) ImageJ macros.
+3. We then set up and started ImSAnE in MATLAB and followed the [`TutorialIlastikDetectorSpherelikeFitter.m`](./template/TutorialIlastikDetectorSpherelikeFitter.m) to load the first timepoint and prepare a stack for segmenting the surface of the embryo.
+4. The segmentation was performed in [ilastik](https://www.ilastik.org/). We loaded the sample stack into a Pixel Classification project in ilastik, and annotated the epithelial surface as foreground, and the yolk and outer portions as background. Finally, we exported the probabilities for ImSAnE to read.
+5. Back in MATLAB, we loaded the segmentation probabilities and performed a cylinder fit around the embryo’s surface. We had to adjust the fit parameters from embryo to embryo for optimal results. To extract the onion layers, we defined 10 slices above and 90 slices below the surface with 4 pixels distance, and generated the pull backs for the first timepoint.
+6. After inspecting the projection for any artefactual surface deformations, we batch-generated projections for all timepoints using the [`batch_gen.sh`](./template/batch_gen.sh) and [`batch_submit.sh`](./template/batch_submit.sh) Bash scripts.
+7. To compile stacks for individual timepoints, we used the [`createSequenceOfStacks.py`](./template/createSequenceOfStacks.py) script in Fiji from the [TomancakLab](https://github.com/xulman/TomancakLab). And used the macros [`ResaveStacks.ijm`](./template/ResaveStacks.ijm) or [`Unmirror.ijm`](./template/Unmirror.ijm) to adjust the levels and crop the projections.
+8. Finally, we exported the coordinates with pixel resolutions for the projection using the [exportImSAnE_forFiji.m](./template/exportImSAnE_forFiji.m) also from the [TomancakLab](https://github.com/xulman/TomancakLab) repository. Because the pixel resolutions differ at different locations of the projection, this is crucial to make proper measurements of surface area, for example.
 
 ## Files
 
