@@ -16,7 +16,18 @@ For more details see the [CARE folder](../care/).
 
 ## ImSAnE workflow
 
-TODO: summarize steps of the tutorial and reference it.
+The blastoderm in fly embryos follows the cylinder shape of the egg.
+This curved epithelial monolayer is difficult to analyze and make measurements such as apical area or cell shape.
+One strategy to better visualize and analyze this type of whole-embryo data is to project the 3D coordinates to a 2D surface, known as cartographic projections.
+To generate this type of projections for our lightsheet imaging data, we followed the tutorial [*How to make cartographic projections using ImSAnE*](https://doi.org/10.5281/zenodo.7628300).
+See the tutorial for detailed instructions and videos.
+Here, we include a template folder with the scripts used to process the stacks and generate the cartographic projections.
+
+The workflow, in summary:
+
+1. 
+
+
 
 ## Files
 
