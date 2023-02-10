@@ -329,8 +329,9 @@ This mounting strategy allows to increase the throughput of samples in one imagi
 
 ## Imaging acquisition parameters and conditions
 
-For lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY resolution and 3µm Z resolution covering half of the embryo’s volume in a single view.
-For dorsal datasets, we used a Zeiss 40x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.14µm XY resolution and 3µm Z resolution covering a volume around in the middle section of the anterior end of the embryo.
+For lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY-resolution and 3µm Z-resolution covering half of the embryo’s volume in a single view.
+This Z-resolution was restored to 1µm during image processing (see below).
+For dorsal datasets, we used a Zeiss 40x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.14µm XY-resolution and 3µm Z-resolution covering a volume around in the middle section of the anterior end of the embryo.
 We adjusted the time resolution between 45--60s per frame to maximize the number of embryos acquired in one session.
 To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror and a LP585 emission filter.
 All recordings were performed at 25°C.
@@ -340,11 +341,11 @@ All recordings were performed at 25°C.
 We performed laser cauterization experiments in two microscope setups, a Luxendo MuVi SPIM with a photomanipulation module and a Zeiss LSM 780 NLO with multiphoton excitation.
 For the MuVi SPIM, we embedded dechorionated embryos in 2% low-melting agarose and mounted the samples in glass capillaries to obtain *in toto* recordings.
 We used a pulsed infrared laser 1030--1040nm with 200fs pulse duration and 1.5W power to cauterize the posterior region of the dorsal embryonic surface, attaching the blastoderm to the vitelline envelope.
-Using a Olympus 20x/1.0NA water immersion objective, we acquired stacks with 0.29µm XY resolution and 1µm Z resolution of four different angles every one minute.
+Using a Olympus 20x/1.0NA water immersion objective, we acquired stacks with 0.29µm XY-resolution and 1µm Z-resolution of four different angles every one minute.
 For the Zeiss, we attached the embryos with the dorsal side down onto coverslips using heptane glue and immersing in halocarbon oil.
 We cauterized the embryos sequentially using a near infrared 800 nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100µs/px) around the same dorsal region to block the germ band extension.
 We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, the surface to monitor the germ band extension, and 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
-The stacks had 0.21µm XY resolution and one minute time resolution.
+The stacks had 0.21µm XY-resolution and one minute time resolution.
 <!--TODO: Temperature in MuVi and Zeiss?-->
 
 ## Laser ablation experiments
@@ -353,7 +354,7 @@ We performed laser ablations in a Yokogawa CSU-X1 confocal spinning disk, an EMC
 We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800 nm tuned down from 80 MHz to 20 kHz with a pulse-picker.
 The laser power measured before the microscope port was 6 mW and the pixel dwell time for scanning was 2µs.
 <!--TODO: What is the brand of the objective?-->
-To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY resolution and 200ms time-steps.
+To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY-resolution and 200ms time-steps.
 We ablated each embryo just once.
 <!--TODO: Does a higher temperature affects the quantifications?-->
 The temperature was maintained at 28°C.
@@ -363,7 +364,7 @@ The temperature was maintained at 28°C.
 We converted the raw lightsheet imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky] (see @Vellutini_undated-ou).
 To visualize the presence and dynamics of ectopic folds, we generated 3D renderings of the surface of embryos in lateral recordings using the plugin 3Dscript in Fiji [@Schmid2019-bm].
 For analyzing the entire epithelial surface, we created cartographic projections of the lateral recordings using the ImSAnE toolbox [@Heemskerk2015-kv].
-First, we improved the signal-to-noise ratio and restored the z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
+First, we improved the signal-to-noise ratio and z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
 We loaded the restored data in MATLAB [@Matlab2015-nd], segmented the epithelial surface using ilastik [@Berg2019-ab], and generated 3D cartographic projections of the embryo’s lateral view following an established workflow [@Vellutini2022-ya].
 
 ## Image analyses
