@@ -361,11 +361,12 @@ The temperature was maintained at 28°C.
 
 ## Image processing
 
-We converted the raw lightsheet imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky] (see @Vellutini_undated-ou).
+We converted the raw lightsheet imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
 To visualize the presence and dynamics of ectopic folds, we generated 3D renderings of the surface of embryos in lateral recordings using the plugin 3Dscript in Fiji [@Schmid2019-bm].
 For analyzing the entire epithelial surface, we created cartographic projections of the lateral recordings using the ImSAnE toolbox [@Heemskerk2015-kv].
 First, we improved the signal-to-noise ratio and z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
 We loaded the restored data in MATLAB [@Matlab2015-nd], segmented the epithelial surface using ilastik [@Berg2019-ab], and generated 3D cartographic projections of the embryo’s lateral view following an established workflow [@Vellutini2022-ya].
+The image processing scripts are available in the repository [@Vellutini_undated-ou].
 
 ## Image analyses
 
@@ -375,7 +376,7 @@ To segment membranes and quantify apical cell areas we used MorphoLibJ plugin in
 To analyze the tortuosity of the epithelium we straightened the vitelline envelope using the Straighten tool in ImageJ, and applied gaussian blur and thresholding to extract the outline of the epithelium in dorsal views.
 For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts. The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity.
 We used custom Python and R scripts to generate plots, and Inkscape to assemble the figure plates and illustrations.
-All the data and code for these analyses are available in the repository [@Vellutini_undated-ou].
+The data and code for these analyses are available in the repository [@Vellutini_undated-ou].
 
 # Acknowledgements
 
