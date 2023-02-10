@@ -12,6 +12,7 @@ For that, we used a Gap43-mCherry fly stock to train the model as follows:
 5. Before cartographic projections, we restored the dataset using always the same model.
 
 We performed the testing and optimization of the training/model parameters using a [Jupyter Notebook](../care/exported/CoverCARE.html) ([PDF](../care/exported/CoverCARE.pdf)) and ran the training and predictions to restore the experimental datasets in the MPI-CBG cluster.
+For more details see the [CARE folder](../care/).
 
 ## ImSAnE workflow
 
