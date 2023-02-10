@@ -2,7 +2,16 @@
 
 ## CARE training
 
-TODO: acquisition of hi-lo datasets and gpu-training.
+We opted to subsample the Z-resolution during acquisition (=faster temporal resolution) and restore it during image processing using the upsampling model of [CARE](https://csbdeep.bioimagecomputing.com/tools/care/).
+For that, we used a Gap43-mCherry fly stock to train the model as follows:
+
+1. We acquired three pairs of image stacks with low (3%) and high (50%) laser power in the Zeiss Lightsheet Z.1 with the exact same conditions as for the [lateral view recordings](../lateral/README.md). The stacks had 0.27x0.27x1.0µm of pixel resolution.
+2. We then generated the training data using a patch size of 64px with 1024 patches per image, and a subsample factor of 3µm. This allows to upsample the Z-resolution from 3µm of the experimental datasets to 1µm. We kept the validation data as 10% of the training data.
+3. We trained the data with 100 epochs and 400 steps per epoch until loss stabilization.
+4. We then validated and tested the model to evaluate the quality of the denoising and upsampling taking notice of potential artifacts in the images.
+5. Before cartographic projections, we restored the dataset using always the same model.
+
+We performed the testing and optimization of the training/model parameters using a [Jupyter Notebook](../care/exported/CoverCARE.html) ([PDF](../care/exported/CoverCARE.pdf)) and ran the training and predictions to restore the experimental datasets in the MPI-CBG cluster.
 
 ## ImSAnE workflow
 
