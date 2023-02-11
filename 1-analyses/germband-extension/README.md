@@ -9,7 +9,7 @@ To accomplish that, we annotated the germ band position and the time after gastr
 
 ## Directories
 
-- [`0-data`](0-data): 3D renderings of [lateral views](../../0-data/lateral/README.md).
+- [`0-data`](0-data): 3D renderings of [lateral views](../../0-data/lateral).
 - [`1-rois`](1-rois): Landmarks in RoiSets (.zip) and measurements in tabular format (.txt).
 - [`2-plots`](2-plots): Final plots generated from the measurements.
 
