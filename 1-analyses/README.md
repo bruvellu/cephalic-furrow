@@ -1,6 +1,8 @@
-# Analysis
+# Analyses
 
-## Directories
+Overview of the different analyses we performed.
+
+- [`germband-extension`](germband-extension): Characterization of the timing and percentage of germ band extension relative to the formation of ectopic folds in cephalic furrow mutants.
 
 - [`ablations`](ablations): Laser ablations to measure tension around the cephalic furrow neighborhood.
 - [`apical-area`](apical-area): Measurements of the apical cell area near mitotic domains.
@@ -10,7 +12,6 @@
 - [`folded-area`](folded-area): Analysis of the surface area folded in the cephalic furrow and ectopic folds.
 - [`fold-stats`](fold-stats): General statistics about the number and frequency of ectopic folds.
 - [`germband-cauterizations`](germband-cauterizations): Tortuosity analysis of the blastoderm in cauterized cephalic furrow mutants, and measurements of the cephalic furrow depth in cauterized wildtype embryos.
-- [`germband-extension`](germband-extension): Characterization of the timing and percentage of germ band extension related to the formation of ectopic folds in cephalic furrow mutants.
 - [`initiator-behavior`](initiator-behavior): Analysis of the initiator cell behaviors in different genetic backgrounds.
 - [`strain-rate`](strain-rate): Strain rate analysis in cephalic furrow mutants.
 - [`tissue-flows`](tissue-flows): Analysis of tissue flows in cephalic furrow mutants.

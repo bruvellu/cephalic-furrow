@@ -1,5 +1,5 @@
 ---
-title: "Germ band extension relative to CF and EF"
+title: "Germ band extension relative to ectopic folding"
 author: "Bruno C. Vellutini"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 creation: October 24, 2022
@@ -11,19 +11,6 @@ knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-an
 library(ggplot2)
 library(ggbeeswarm)
 ```
-
-## Analysis
-
-At which percentage of egg length (and how long after gastrulation) do ectopic
-folds form in cephalic furrow mutants? We have a rough estimate based on a few
-embryos but this can be quantified more accurately. A proper characterization of
-this dynamics in mutants is important for the model.
-
-## Directories
-
-- `0-data`: 3D renderings of lateral views
-- `1-rois`: Landmarks in RoiSets (.zip), measurements in tabular format (.txt)
-- `2-plots`: Plotted data from ROIs
 
 ## Pre-processing
 
