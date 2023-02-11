@@ -1,5 +1,5 @@
 ---
-title: "Invaginated area during ectopic folding"
+title: "Folded area during ectopic folding"
 author: "Bruno C. Vellutini"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 creation: February 18, 2021
@@ -26,9 +26,6 @@ results$Embryo <- sapply(strsplit(results$Label, "_s"), "[", 1)
 
 # Remove "_CARE" from embryo name
 results$Embryo <- gsub("_CARE", "", results$Embryo)
-
-# Add columns with sample information (needs manual update for new ROIs)
-#results$Stock <- substring(results$Label, 1, 3)
 
 # Load sample info and merge with results
 samples <- read.delim("samples.csv", sep = ",")
@@ -93,6 +90,7 @@ total <- merge(total, nfold_ef, by = "Embryo", all.x = TRUE)
 total <- transform(total, Stock=factor(Stock, levels = c("wt", "btd", "eve", "prd")))
 ```
 
+## Statistics for number of folds
 
 ```{r print-info}
 # Print btd embryos
@@ -146,6 +144,8 @@ print_wt
 capture.output(print_btd, print_eve, print_prd, print_wt, file = "nfolds.txt")
 ```
 
+## Statistics for folded area
+
 ```{r print-stats}
 print_stats <- function(dataframe, stock, type) {
   filter_df <- (dataframe$Stock == stock & dataframe$Type == type)
@@ -198,12 +198,7 @@ write.table(format(stats, digits=2), file = "stats.txt", quote = FALSE, row.name
 
 ## Total folded area per embryo
 
-Plot with the total area of folded tissue in embryos with and without the
-cephalic furrow. The values are the per embryo sum of the corrected areas of
-individual folds positioned anterior, middle, and posterior.
-
-It shows that homozygote mutants have a smaller area than heterozygote mutants,
-which in turn are slightly smaller than wildtype total folded area.
+Plot the total area of folded tissue per embryo of different genotypes.
 
 ```{r total-area-per-embryo}
 ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
@@ -223,7 +218,7 @@ ggsave("4-plots/total-area-per-embryo.png", width = 12, height = 4)
 ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
 ```
 
-## Area of ectopic folds
+## Area of individual ectopic folds
 
 ```{r individual-area-per-ectopic-fold}
 ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, AreaCorr, fill = Sample)) +
@@ -242,11 +237,9 @@ ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
 ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
 ```
 
-This plots shows the total area of folded tissue in embryos with and without
-the cephalic furrow. Values are the sum of corrected areas of individual folds
-per embryo.
+## Area of individual ectopic folds per position
 
-```{r area-individual-folds}
+```{r area-individual-folds-per-position}
 ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 3)) +
@@ -266,6 +259,8 @@ ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
 ggsave("4-plots/individual-area-per-position.png", width = 9, height = 4)
 ggsave("4-plots/individual-area-per-position.svg", width = 9, height = 4)
 ```
+
+## Area of individual folds per type
 
 ```{r individual-area-per-type}
 ggplot(results, aes(Type, AreaCorr, fill = Genotype)) +
