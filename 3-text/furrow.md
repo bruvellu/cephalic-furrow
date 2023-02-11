@@ -370,6 +370,9 @@ The image processing scripts are available in the repository [@Vellutini_undated
 
 ## Image analyses
 
+To characterize the relative timing of ectopic folding, we annotated the germ band position and the number of frames after the onset of gastrulation at the initial buckling, when the first cells disappear from the surface in the lateral 3D renderings.
+We defined the onset of gastrulation (T=0) as the moment immediately after the end of cellularization, and immediately before the beginning of the ventral furrow invagination.
+
 We manually traced the fold outlines and areas of lateral 3D renderings and lateral cartographic projections, respectively, using Fiji.
 We used the ImageJ Temporal-Color Code script with the mpl-viridis colorscheme to visualize the fold dynamics.
 To segment membranes and quantify apical cell areas we used MorphoLibJ plugin in ImageJ [@Legland2016-cp].
