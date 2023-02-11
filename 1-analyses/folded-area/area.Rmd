@@ -12,42 +12,6 @@ library(ggplot2)
 library(ggbeeswarm)
 ```
 
-## Analysis
-
-We think the ectopic folding in cephalic furrow mutants occur because the
-epithelial tissue is under compression, and buckles once the forces caused by
-the mitotic domains and germ band extension cross a certain threshold. We
-notice there is some sort of compensation in the ectopic folding events---when
-an anterior fold is deep, no other folds form; when the anterior fold is
-shallow, other folds form. We thus expect the total invaginated area would be
-similar between mutant embryos, despite the variability in the folding events.
-
-To estimate the invaginated area we used the cartographic projections of btd
-and eve embryos (see 0-data), both heterozygotes and homozygotes, and visually
-annotate the blastoderm cells that are invaginated into ectopic folding events.
-This is done by tracking the cells that delimit the borders of ectopic
-folds. We use ImageJ/Fiji selection brush to delineate the area of invagination
-and save it as a ROI (see 1-rois). Using a script we compute the measurements
-for individual folds, correct for the cartographic projection area and export
-the data as csv file.
-
-## Directories
-
-- `0-data`: single-slice, cropped imsane projections
-- `1-rois`: imagej rois for individual folds visually annotated (>1 per embryo)
-- `2-cylinder`: correction matrix for imsane projections
-- `3-tracking`: in case we need actual cell tracking
-
-Filenames contain all the information from the original projection. For
-example: `eve-Gap1_t60s_z3_E4_CARE_s20_0x334_w1850_h1040_fliph_f15-84.tif`
-
-- `s20` = slice 20 in Z
-- `0x334` = XY origin for cropping
-- `w1850` = width of crop window (=projection width)
-- `h1040` = height of crop window
-- `fliph` = crop was flipped horizontally (flipn means no flipping)
-- `f15-84` = subset of frames for this analysis (=70 frames)
-
 ## Load measurements
 
 ```{r load}

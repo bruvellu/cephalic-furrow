@@ -29,32 +29,17 @@ For example: `eve-Gap1_t60s_z3_E4_CARE_s20_0x334_w1850_h1040_fliph_f15-84.tif`
 
 ## Workflow
 
-The data consists of cartographic projections of lightsheet lateral views
-available in the [`0-data`](0-data) directory. Time zero in these datasets
-corresponds to the beginning of gastrulation when the cells are orderly
-distributed on the surface. 
+The data consists of [cartographic projections](../../0-data/imsane) of lightsheet lateral views symlinked to the [`0-data`](0-data) directory.
+Time zero in these datasets corresponds to the onset of gastrulation before the cells begin to move.
+For the analysis we:
 
-- We open the stack in Fiji and activate the selection brush.
-- Shifting through time we identify by eye one cell that disappeared from the
-  surface, then go back in time to the first frame and mark this cell with the
-  selection brush.
-- We place the mouse on a cell adjacent to it and move through time visually
-  following the cell to check if it goes below the surface or not. If it does,
-  we mark the cell and check another adjacent cell at the outer edge of the
-  fold.
-- Once the edge is identified we repeat the proceeding walking along the edge
-  to demarcate the fold outline. Once the whole area has been marked with
-  a ROI, we add the selection to the ROI manager pressing “t”.
-- The ROI is renamed to [filename].n.roi where n is the fold number from
-  anterior to posterior, and finally save it in the [`1-rois`](1-rois)
-  directory.
-- We also flatten the first frame with the ROI(s) outline(s) and save as PNG in
-  the same folder for future reference.
-- Once the ROIs have been created, we run the macro `run_roi_measure.ijm`. This
-  macro will iterate over the data and ROIs folder, collect measurements from
-  each ROI, and save the results as a `results.txt` file.
-- Because the cartographic projections have variable pixel dimensions around
-  the image, the measured values need to be corrected. This is done by the
-  script `run_cylinder_measure.py` which takes the cylinder matrix from
-  [`2-cylinder`](2-cylinder) to apply the correction.
-
+1. Open the stack in Fiji and activate the selection brush.
+2. Hover the mouse over a cell and shift through time, following the cell by eye to see if it disappears from the surface. If it does, go back to the first frame and mark the cell with the selection brush. If not, go to the adjacent cell.
+3. Place the mouse on an adjacent cell and repeat. Start from the center of the fold and go outwards until finding the edge of the fold, a cell that does not disappear but is next to one that does.
+4. Once the edge is identified, repeat walking along the edge to demarcate the fold outline.
+5. After the folded area is completely annotated with a ROI, add the selection to the ROI manager pressing “t”.
+6. Rename the ROI to [filename].n.roi where n is the fold number from anterior to posterior, and save it in the [`1-rois`](1-rois) directory.
+7. Flatten the first frame with the ROI(s) outline(s) and save as PNG to the same folder for future reference.
+8. Once all ROIs have been created, run the macro [`run_roi_measure.ijm`](run_roi_measure.ijm). It’ll iterate over the data and ROIs, collect the measurements from each ROI, and save the results in the [`results.txt`](results.txt) file.
+9. Since the cartographic projections have variable pixel resolutions around the image, the direct measurements above need to be corrected. This is done by running the script [`run_cylinder_measure.py`](run_cylinder_measure.py) which takes the cylinder coordinates with pixel values from the folder [`2-cylinder`](2-cylinder) to apply the correction writing to the [`corrected_results.txt`](corrected_results.txt) file.
+10. Process the data in R using the [`area.Rmd`](area.Rmd) and generate plots to [`4-plots`](4-plots).
