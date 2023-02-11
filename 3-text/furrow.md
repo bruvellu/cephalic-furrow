@@ -372,9 +372,10 @@ The image processing scripts are available in the repository [@Vellutini_undated
 
 To characterize the relative timing of ectopic folding, we annotated the germ band position and the number of frames after the onset of gastrulation at the initial buckling, when the first cells disappear from the surface in the lateral 3D renderings.
 We defined the onset of gastrulation (T=0) as the moment immediately after the end of cellularization, and immediately before the beginning of the ventral furrow invagination.
+To visualize the variability of ectopic folding, we manually traced the fold outlines in lateral recordings using Fiji.
+Because embryos have different sizes, we first used the plugin *bUnwarpJ* [@Arganda-Carreras2006-im] ([imagej.net/plugins/bunwarpj](https://imagej.net/plugins/bunwarpj/)) to register individual frames and then applied the same transformation to the fold traces for a standardized comparison.
+We analyzed the dynamics of ectopic folds by measuring the relative angle and tortuosity of the segmented line traces over time, and to visualize the kinetics we generated temporal color-coded projections using the script *Temporal Color Code* ([imagej.net/plugins/temporal-color-code](https://imagej.net/plugins/temporal-color-code)) with the perceptually uniform *mpl-viridis* color map ([bids.github.io/colormap](https://bids.github.io/colormap/)) bundled in Fiji.
 
-We manually traced the fold outlines and areas of lateral 3D renderings and lateral cartographic projections, respectively, using Fiji.
-We used the ImageJ Temporal-Color Code script with the mpl-viridis colorscheme to visualize the fold dynamics.
 To segment membranes and quantify apical cell areas we used MorphoLibJ plugin in ImageJ [@Legland2016-cp].
 To analyze the tortuosity of the epithelium we straightened the vitelline envelope using the Straighten tool in ImageJ, and applied gaussian blur and thresholding to extract the outline of the epithelium in dorsal views.
 For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts. The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity.
