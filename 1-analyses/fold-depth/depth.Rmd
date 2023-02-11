@@ -1,5 +1,5 @@
 ---
-title: "Depth measurements cephalic furrow mutants"
+title: "Maximum depth of folds in cephalic furrow mutants"
 author: "Bruno C. Vellutini"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 creation: May 31, 2021
@@ -43,7 +43,9 @@ length(results[results$Genotype == "homozygote" & results$Sample == "eve",]$Labe
 
 ```
 
-```{r plot}
+## Plot fold depth by stocks
+
+```{r plot-depth}
 # Plot stocks separately
 ggplot(results, aes(Genotype, Length, fill = Genotype)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
@@ -60,26 +62,5 @@ ggplot(results, aes(Genotype, Length, fill = Genotype)) +
         panel.background = element_rect(colour = "black", size=1))
 ggsave("3-plots/depth_facet.png", width = 12, height = 6)
 ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
-
-```
-
-```{r plot}
-
-# Plot stocks separately
-ggplot(results, aes(Genotype, Length, fill = Genotype)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, alpha = 0.7) +
-  geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  labs(x = "mutants", y = "depth") +
-  facet_wrap(~Sample, strip.position = "top") +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  theme_classic() +
-  theme(text =  element_text(size = 30),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text.x = element_text(face = "italic"),
-        panel.background = element_rect(colour = "black", size=1))
-#ggsave("3-plots/depth_facet.png", width = 12, height = 6)
-#ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
 
 ```
