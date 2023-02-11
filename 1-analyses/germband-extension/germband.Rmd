@@ -89,6 +89,8 @@ colnames(landmarks) <- c("label", "embryo", "x_ant", "x_post", "x_buck", "x_deep
                          "frame_gastr", "frame_buck", "frame_deep")
 ```
 
+## Dataset building
+
 Next, we need to import the master dataset file to get some metadata. Most
 important is the stock, zygosity, timestep, and gastrulation frame.
 
@@ -122,7 +124,15 @@ colnames(gblong) <- columns
 
 # Transform data frame to order the stock for plotting
 gblong <- transform(gblong, stock=factor(stock, levels = c("wt", "btd", "eve", "prd")))
+
+# Save both data frames to file
+write.csv(germband, file = "germband.csv")
+write.csv(gblong, file = "gblong.csv")
 ```
+
+## Descriptive statistics
+
+Calculate and print the mean and standard deviation for all variables.
 
 ```{r values}
 print_stats <- function(dataframe, stock) {
@@ -247,53 +257,10 @@ ggsave("2-plots/gb_time_buck.png", width = 12, height = 4)
 ggsave("2-plots/gb_time_buck.svg", width = 12, height = 4)
 ```
 
-## Previous violin plots
+## Supplementary plots
 
-Previous version using violin plots.
-
-```{r plot-gb-pct-buck}
-ggplot(gblong[gblong$status == "buck",], aes(stock, gb_pct, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.10)) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  labs(x = "stocks", y = "germ band extension (%)") +
-  facet_grid(cols = vars(stock), scales = "free") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        #title = element_text(size = 15),
-        #legend.text = element_text(size = 15),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", size=1)
-        )
-#ggsave("2-plots/gb_pct_buck.png", width = 12, height = 4)
-#ggsave("2-plots/gb_pct_buck.svg", width = 12, height = 4)
-```
-
-Previous version violin plots.
-
-```{r plot-gb-time-buck}
-ggplot(gblong[gblong$status == "buck",], aes(stock, gb_time, fill = zygosity)) +
-  geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, scale = "count", adjust = 2) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_jitterdodge(dodge.width = 1, jitter.width = 0.1)) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  labs(x = "stocks", y = "time after gastrulation (min)") +
-  facet_grid(cols = vars(stock), scales = "free") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        #title = element_text(size = 15),
-        #legend.text = element_text(size = 15),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", size=1)
-        )
-#ggsave("2-plots/gb_time_buck.png", width = 12, height = 4)
-#ggsave("2-plots/gb_time_buck.svg", width = 12, height = 4)
-```
-
-## Supplementary figure plots
-
-The deepest point goes into the supplementary.
+The deepest point plots are not super informative and will go into the
+supplementary.
 
 ```{r plot-gb-pct-deep}
 ggplot(gblong[gblong$status == "deep",], aes(stock, gb_pct, fill = zygosity)) +
