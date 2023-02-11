@@ -256,8 +256,8 @@ ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
         legend.text = element_text(size = 15),
         legend.title = element_text(size = 15),
         )
-ggsave("4-plots/individual-area-per-position.png", width = 9, height = 4)
-ggsave("4-plots/individual-area-per-position.svg", width = 9, height = 4)
+ggsave("4-plots/individual-area-per-position.png", width = 12, height = 4)
+ggsave("4-plots/individual-area-per-position.svg", width = 12, height = 4)
 ```
 
 ## Area of individual folds per type
