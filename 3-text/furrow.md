@@ -395,9 +395,9 @@ We thank all current and past members of the laboratory of Pavel Tomancak (LoPaT
 
 BCV and PT conceived the study.
 BCV designed the experiments, generated the fly stocks, performed the live imaging and image processing, and analysed the data.
-MBC performed the laser ablations and cauterizations and data analyses.
+MBC performed the laser ablations and cauterizations and strain rate analyses.
 CDM, AK, and AS designed and created the model.
-AK and AS ran and analyzed the simulations.
+AK and AS ran and analyzed the simulation results.
 BCV wrote the manuscript.
 All authors revised and contributed to the text.
 
