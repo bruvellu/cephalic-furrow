@@ -327,23 +327,35 @@ We then glued the embryos along the long axis of a 6x22mm glass coverslip (0.17m
 We mounted the samples in a Zeiss Lightsheet Z.1 microscope with the coverslip orthogonal to the detection objective and the embryos positioned with the anteroposterior axis vertically to obtain the best optics for recording lateral and dorsal views.
 This mounting strategy allows to increase the throughput of samples in one imaging session, ideal for screening mutant embryos which have lower frequency.
 
-## Lightsheet acquisition parameters and conditions
+## Microscopy and acquisition parameters
 
 For lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY-resolution and 3µm Z-resolution covering half of the embryo’s volume in a single view.
 This Z-resolution was restored to 1µm during image processing (see below).
 For dorsal datasets, we used a Zeiss 40x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.14µm XY-resolution and 3µm Z-resolution covering a volume around in the middle section of the anterior end of the embryo.
 We adjusted the time resolution between 45--60s per frame to maximize the number of embryos acquired in one session.
-To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror with a SP550 and a LP585 emissions filters.
+To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror with SP550 and LP585 emission filters.
 All recordings were performed at 25°C.
 
 ## Lightsheet image processing
 
-We converted the raw lightsheet imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
+We converted the raw imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
 To visualize the presence and dynamics of ectopic folds, we generated 3D renderings of the surface of embryos in lateral recordings using the plugin 3Dscript in Fiji [@Schmid2019-bm].
-For analyzing the entire epithelial surface, we created cartographic projections of the lateral recordings using the ImSAnE toolbox [@Heemskerk2015-kv].
-First, we improved the signal-to-noise ratio and z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
-We loaded the restored data in MATLAB [@Matlab2015-nd], segmented the epithelial surface using ilastik [@Berg2019-ab], and generated 3D cartographic projections of the embryo’s lateral view following an established workflow [@Vellutini2022-ya].
-The image processing scripts are available in the repository [@Vellutini_undated-ou].
+For analyzing the entire epithelial surface, we first improved the signal-to-noise ratio and z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
+Then, we created cartographic projections of the lateral recordings using the ImSAnE toolbox [@Heemskerk2015-kv] by loading the restored data in MATLAB [@Matlab2015-nd], segmenting the epithelial surface using ilastik [@Berg2019-ab], and generating 3D cartographic projections of lateral views following a workflow established for fly embryos [@Vellutini2022-ya].
+
+## Ectopic folding timing and dynamics
+
+To characterize the relative timing of ectopic folding, we annotated the germ band position and the number of frames after the onset of gastrulation at the initial buckling, when the first cells disappear from the surface in the lateral 3D renderings.
+We defined the onset of gastrulation (T=0) as the moment immediately after the end of cellularization, and immediately before the beginning of the ventral furrow invagination.
+To visualize the variability of ectopic folding, we manually traced the fold outlines in lateral recordings using Fiji.
+Because embryos have different sizes, we first used the plugin *bUnwarpJ* [@Arganda-Carreras2006-im] ([imagej.net/plugins/bunwarpj](https://imagej.net/plugins/bunwarpj/)) to register individual frames and then applied the same transformation to the fold traces for a standardized comparison.
+We analyzed the dynamics of ectopic folds by measuring the relative angle and tortuosity of the segmented line traces over time, and to visualize the kinetics we generated temporal color-coded projections using the script *Temporal Color Code* ([imagej.net/plugins/temporal-color-code](https://imagej.net/plugins/temporal-color-code)) with the perceptually uniform *mpl-viridis* color map ([bids.github.io/colormap](https://bids.github.io/colormap/)) bundled in Fiji.
+
+## Ectopic folding area and depth
+
+To estimate the folded area in the cephalic furrow and ectopic folds, we annotated the region of the blastoderm before gastrulation that infolded in the cartographic projections using Fiji, and calculated the area correcting the pixel dimensions according to the coordinates in the projection.
+For the fold depth, we measured the distance between the vitelline envelope to the tip of the fold at the moment of maximum depth.
+To segment cell membranes and quantify apical areas, we used the plugin *MorphoLibJ* [@Legland2016-cp] ([imagej.net/plugins/morpholibj](https://imagej.net/plugins/morpholibj)).
 
 ## Laser cauterization experiments
 
@@ -356,6 +368,7 @@ We cauterized the embryos sequentially using a near infrared 800 nm laser (Chame
 We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, the surface to monitor the germ band extension, and 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
 The stacks had 0.21µm XY-resolution and one minute time resolution.
 <!--TODO: Temperature in MuVi and Zeiss?-->
+To analyze the tortuosity of the epithelium we straightened the vitelline envelope using the Straighten tool in ImageJ, and applied gaussian blur and thresholding to extract the outline of the epithelium in dorsal views.
 
 ## Laser ablation experiments
 
@@ -367,25 +380,12 @@ To ensure the cut, we repeated the scan ten consecutive times along a single cel
 We ablated each embryo just once.
 <!--TODO: Does a higher temperature affects the quantifications?-->
 The temperature was maintained at 28°C.
-
-
-## Image analyses
-
-To characterize the relative timing of ectopic folding, we annotated the germ band position and the number of frames after the onset of gastrulation at the initial buckling, when the first cells disappear from the surface in the lateral 3D renderings.
-We defined the onset of gastrulation (T=0) as the moment immediately after the end of cellularization, and immediately before the beginning of the ventral furrow invagination.
-
-To visualize the variability of ectopic folding, we manually traced the fold outlines in lateral recordings using Fiji.
-Because embryos have different sizes, we first used the plugin *bUnwarpJ* [@Arganda-Carreras2006-im] ([imagej.net/plugins/bunwarpj](https://imagej.net/plugins/bunwarpj/)) to register individual frames and then applied the same transformation to the fold traces for a standardized comparison.
-We analyzed the dynamics of ectopic folds by measuring the relative angle and tortuosity of the segmented line traces over time, and to visualize the kinetics we generated temporal color-coded projections using the script *Temporal Color Code* ([imagej.net/plugins/temporal-color-code](https://imagej.net/plugins/temporal-color-code)) with the perceptually uniform *mpl-viridis* color map ([bids.github.io/colormap](https://bids.github.io/colormap/)) bundled in Fiji.
-
-To estimate the folded area in the cephalic furrow and ectopic folds, we annotated the region of the blastoderm before gastrulation that infolded in the cartographic projections using Fiji, and calculated the area correcting the pixel dimensions according to the coordinates in the projection.
-For the fold depth, we measured the distance between the vitelline envelope to the tip of the fold at the moment of maximum depth.
-To segment cell membranes and quantify apical areas, we used the plugin *MorphoLibJ* [@Legland2016-cp] ([imagej.net/plugins/morpholibj](https://imagej.net/plugins/morpholibj)).
-
-To analyze the tortuosity of the epithelium we straightened the vitelline envelope using the Straighten tool in ImageJ, and applied gaussian blur and thresholding to extract the outline of the epithelium in dorsal views.
 For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts. The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity.
-We used custom Python and R scripts to generate plots, and Inkscape to assemble the figure plates and illustrations.
-The data and code for these analyses are available in the repository [@Vellutini_undated-ou].
+
+## Figure assembly and data availability
+
+We used Inkscape to assemble the figure plates and illustrations.
+All data and analyses pipelines are available in the repository [@Vellutini2023-hg].
 
 # Acknowledgements
 
