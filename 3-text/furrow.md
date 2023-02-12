@@ -389,7 +389,7 @@ All data and analyses pipelines are available in the repository [@Vellutini2023-
 
 # Acknowledgements
 
-LoPaTs for discussions, Akanksha fly pushing and cartographic projections, Vlado for projections, Lemke for discussions, Ju and Anaïs for text suggestions, Michael Akam for the heads up about the lack of data on the cephalic furrow, Jan Brugués and Keisuke Ishihara for the laser ablation setup, LMF for essential imaging support, EMBO for funding, ERC for funding, EU FET OPEN Horizon 2020 to AS.
+We thank all current and past members of the laboratory of Pavel Tomancak (LoPaTs) for the discussions and support during this project. In particular, Akanksha Jain and Vladimir Ulman for the introduction to cartographic projections, Giulia Serafini for helping establishing the Gap homozygous stock, and Anaïs Bailles for important feedback. We thank Jan Brugués and Keisuke Ishihara for the laser ablation setup, the Light Microscopy Facility for the great imaging support, and Sven Ssykor, Cornelia Maas, and Pavel Mejstrik for the help with fly stocks. We thank Juliana Roscito for comments on an earlier version of the manuscript and Steffen Lemke and Yu-Chiun Wang for earlier discussions on the cephalic furrow. We thank Michael Akam for calling attention to the cephalic furrow which sparked off this project. BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018) and by an European Research Council (XXX) granted to PT. AS was supported by an EU FET Open Horizon 2020 (XXX) granted to CDM.
 
 # References
 
