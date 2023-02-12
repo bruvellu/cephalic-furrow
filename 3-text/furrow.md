@@ -379,8 +379,8 @@ We analyzed the dynamics of ectopic folds by measuring the relative angle and to
 
 To estimate the folded area in the cephalic furrow and ectopic folds, we annotated the region of the blastoderm before gastrulation that infolded in the cartographic projections using Fiji, and calculated the area correcting the pixel dimensions according to the coordinates in the projection.
 For the fold depth, we measured the distance between the vitelline envelope to the tip of the fold at the moment of maximum depth.
+To segment cell membranes and quantify apical areas, we used the plugin *MorphoLibJ* [@Legland2016-cp] ([imagej.net/plugins/morpholibj](https://imagej.net/plugins/morpholibj)).
 
-To segment membranes and quantify apical cell areas we used MorphoLibJ plugin in ImageJ [@Legland2016-cp].
 To analyze the tortuosity of the epithelium we straightened the vitelline envelope using the Straighten tool in ImageJ, and applied gaussian blur and thresholding to extract the outline of the epithelium in dorsal views.
 For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts. The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity.
 We used custom Python and R scripts to generate plots, and Inkscape to assemble the figure plates and illustrations.
