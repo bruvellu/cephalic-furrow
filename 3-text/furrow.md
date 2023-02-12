@@ -323,18 +323,27 @@ To remove the chorion, we immersed the embryos in 20% sodium hypochlorite soluti
 ## Sample mounting for live imaging
 
 We transferred the embryos from the cell strainer onto an agar pad using a brush, and manually positioned them in a single line with the lateral or ventral sides up using a blunt cactus spine under a stereomicroscope.
-We then stick the embryos along the long axis of a 6x22mm glass coverslip (0.17mm thickness) coated with a thin layer of heptane glue and attached to a custom made metal sample holder using silicon glue.
+We then glued the embryos along the long axis of a 6x22mm glass coverslip (0.17mm thickness) coated with a thin layer of heptane glue and attached to a custom made metal sample holder using silicon glue.
 We mounted the samples in a Zeiss Lightsheet Z.1 microscope with the coverslip orthogonal to the detection objective and the embryos positioned with the anteroposterior axis vertically to obtain the best optics for recording lateral and dorsal views.
 This mounting strategy allows to increase the throughput of samples in one imaging session, ideal for screening mutant embryos which have lower frequency.
 
-## Imaging acquisition parameters and conditions
+## Lightsheet acquisition parameters and conditions
 
 For lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY-resolution and 3µm Z-resolution covering half of the embryo’s volume in a single view.
 This Z-resolution was restored to 1µm during image processing (see below).
 For dorsal datasets, we used a Zeiss 40x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.14µm XY-resolution and 3µm Z-resolution covering a volume around in the middle section of the anterior end of the embryo.
 We adjusted the time resolution between 45--60s per frame to maximize the number of embryos acquired in one session.
-To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror and a LP585 emission filter.
+To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror with a SP550 and a LP585 emissions filters.
 All recordings were performed at 25°C.
+
+## Lightsheet image processing
+
+We converted the raw lightsheet imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
+To visualize the presence and dynamics of ectopic folds, we generated 3D renderings of the surface of embryos in lateral recordings using the plugin 3Dscript in Fiji [@Schmid2019-bm].
+For analyzing the entire epithelial surface, we created cartographic projections of the lateral recordings using the ImSAnE toolbox [@Heemskerk2015-kv].
+First, we improved the signal-to-noise ratio and z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
+We loaded the restored data in MATLAB [@Matlab2015-nd], segmented the epithelial surface using ilastik [@Berg2019-ab], and generated 3D cartographic projections of the embryo’s lateral view following an established workflow [@Vellutini2022-ya].
+The image processing scripts are available in the repository [@Vellutini_undated-ou].
 
 ## Laser cauterization experiments
 
@@ -359,14 +368,6 @@ We ablated each embryo just once.
 <!--TODO: Does a higher temperature affects the quantifications?-->
 The temperature was maintained at 28°C.
 
-## Image processing
-
-We converted the raw lightsheet imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
-To visualize the presence and dynamics of ectopic folds, we generated 3D renderings of the surface of embryos in lateral recordings using the plugin 3Dscript in Fiji [@Schmid2019-bm].
-For analyzing the entire epithelial surface, we created cartographic projections of the lateral recordings using the ImSAnE toolbox [@Heemskerk2015-kv].
-First, we improved the signal-to-noise ratio and z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
-We loaded the restored data in MATLAB [@Matlab2015-nd], segmented the epithelial surface using ilastik [@Berg2019-ab], and generated 3D cartographic projections of the embryo’s lateral view following an established workflow [@Vellutini2022-ya].
-The image processing scripts are available in the repository [@Vellutini_undated-ou].
 
 ## Image analyses
 
