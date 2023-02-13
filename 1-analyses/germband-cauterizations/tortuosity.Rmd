@@ -141,7 +141,7 @@ ggplot(datasets, aes(minute, tortuosity, color = sample)) +
         strip.text.x = element_text(size = 45, face = "italic"),
         panel.background = element_rect(colour = "black", size=1),
         panel.spacing = unit(4, "lines"))
-ggsave("4-plots/tortuosity_all_smooth.png", width = 18, height = 6)
-ggsave("4-plots/tortuosity_all_smooth.svg", width = 18, height = 6)
+ggsave("4-plots/tortuosity_all_smooth.png", width = 12, height = 6)
+ggsave("4-plots/tortuosity_all_smooth.svg", width = 12, height = 6)
 ```
 
