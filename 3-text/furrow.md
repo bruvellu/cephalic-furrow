@@ -307,7 +307,7 @@ For genes on chromosomes 1 and 2 (*btd*, *eve*, and *prd*), we added the membran
 Since the *btd*--*stg* double mutant stable line is tryingly weak, we imaged the progeny of *btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/Gap43-mCherry* flies, identifying *btd* homozygozity by the GFP, and *stg* homozygozity by the lack of cell divisions after gastrulation.
 The wildtype stocks contain the Gap marker in the Oregon-R genetic background.
 We obtained the founder fly stocks from the Bloomington Drosophila Stock Center and the Kyoto Stock Center and deposited the lines in the MPI-CBG stock.
-The complete list of FlyBase [@Gramates2022-xe] accession numbers and genotypes is available in the project’s data repository [@Vellutini_undated-ou].
+The complete list of FlyBase [@Gramates2022-xe] accession numbers and genotypes is available in the project’s data repository [@Vellutini2023-hg].
 
 ## Animal husbandry and embryo collection
 
@@ -349,7 +349,7 @@ To characterize the relative timing of ectopic folding, we annotated the germ ba
 We defined the onset of gastrulation (T=0) as the moment immediately after the end of cellularization, and immediately before the beginning of the ventral furrow invagination.
 To visualize the variability of ectopic folding, we manually traced the fold outlines in lateral recordings using Fiji.
 Because embryos have different sizes, we first used the plugin *bUnwarpJ* [@Arganda-Carreras2006-im] ([imagej.net/plugins/bunwarpj](https://imagej.net/plugins/bunwarpj/)) to register individual frames and then applied the same transformation to the fold traces for a standardized comparison.
-We analyzed the dynamics of ectopic folds by measuring the relative angle and tortuosity of the segmented line traces over time, and to visualize the kinetics we generated temporal color-coded projections using the script *Temporal Color Code* ([imagej.net/plugins/temporal-color-code](https://imagej.net/plugins/temporal-color-code)) with the perceptually uniform *mpl-viridis* color map ([bids.github.io/colormap](https://bids.github.io/colormap/)) bundled in Fiji.
+We analyzed the dynamics of ectopic folds by measuring the relative angle and tortuosity of the segmented line traces over time, and to visualize the kinetics we generated color-coded temporal projections using the script *Temporal Color Code* ([imagej.net/plugins/temporal-color-code](https://imagej.net/plugins/temporal-color-code)) with the perceptually uniform *mpl-viridis* color map ([bids.github.io/colormap](https://bids.github.io/colormap/)) bundled in Fiji.
 
 ## Ectopic folding area and depth
 
@@ -368,7 +368,11 @@ We cauterized the embryos sequentially using a near infrared 800 nm laser (Chame
 We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, the surface to monitor the germ band extension, and 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
 The stacks had 0.21µm XY-resolution and one minute time resolution.
 <!--TODO: Temperature in MuVi and Zeiss?-->
-To analyze the tortuosity of the epithelium we straightened the vitelline envelope using the Straighten tool in ImageJ, and applied gaussian blur and thresholding to extract the outline of the epithelium in dorsal views.
+To obtain a quantitative measure of ectopic folding, we analyzed the degree by which the tissues deform between non-cauterized and cauterized mutants using as a proxy the tortuosity of the epithelium outline.
+For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({@fig:tortuosity}a).
+We then cropped a 200µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to extract the epithelium outline for individual timepoints covering about 50min after gastrulation ({@fig:tortuosity}a,b).
+We generated color-coded temporal projections of the epithelium outlines as described above.
+<!--TODO: Add pipeline figure and videos for cauterizations-->
 
 ## Laser ablation experiments
 
@@ -592,6 +596,9 @@ Dimensions used as a reference for the model.
 
 ![Cephalic furrow simulation parameter sweep.
 ](figures/FigS7.jpg){#fig:cf-sweep tag=S7 width=100%}
+
+![Tortuosity image processing and analysis pipeline.
+](figures/FigS8.jpg){#fig:tortuosity tag=S8 width=100%}
 
 \clearpage
 

@@ -48,6 +48,7 @@ linkimg:
 	#ln -s ${FIGUREIN}/ef-sweep/figure.png ${FIGUREOUT}/FigS5.png
 	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS6.png
 	ln -s ${FIGUREIN}/cf-sweep/figure.png ${FIGUREOUT}/FigS7.png
+	ln -s ${FIGUREIN}/tortuosity-pipeline/figure.png ${FIGUREOUT}/FigS8.png
 	# Convert to JPG for smaller file sizes
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	mkdir ${FIGUREOUT}/source
