@@ -388,14 +388,15 @@ For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymo
 
 ## Data visualization and figure assembly
 
-Following the best practices of image visualization [@Schmied2020-ip], we only performed minimal linear intensity adjustments for microscopy images to improve their contrast and brightness.
+For microscopy images, we only performed minimal linear intensity adjustments in microscopy images to improve their contrast and brightness [@Schmied2020-ip].
 We created illustrations and assembled the final figure plates using Inkscape v1.2.2 [@The_Inkscape_Project2022-ht].
+For microscopy videos, we exported the original stacks as AVI without compression with 10--15fps using Fiji and post-processed them to MPEG-4 format 1080p resolution using the H.264 encoding at a constant bitrate quality factor of 18 for visualization using HandBrake [handbrake.fr](https://handbrake.fr/).
 All data wrangling, statistical analyses, and plotting performed in R v4.2.1 [@R_Core_Team2022-ki] using RStudio v2022.7.2.576 [@RStudio_Team2022-wr], and Python 3.10.7 using Jupyter notebooks [@Granger2021-zg].
 All data, scripts, notebooks, and analyses pipelines are available in the repository [@Vellutini2023-hg].
 
 # Acknowledgements
 
-We thank all current and past members of the laboratory of Pavel Tomancak (LoPaTs) for the discussions and support during this project. In particular, Akanksha Jain and Vladimir Ulman for the introduction to cartographic projections, Giulia Serafini for helping establishing the Gap homozygous stock, and Anaïs Bailles for important feedback. We thank Jan Brugués and Keisuke Ishihara for the laser ablation setup, the Light Microscopy Facility for the great imaging support, and Sven Ssykor, Cornelia Maas, and Pavel Mejstrik for the help with fly stocks. We thank Juliana Roscito for comments on an earlier version of the manuscript and Steffen Lemke and Yu-Chiun Wang for earlier discussions on the cephalic furrow. We thank Michael Akam for calling attention to the cephalic furrow which sparked off this project. BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018) and by an European Research Council (XXX) granted to PT. AS was supported by an EU FET Open Horizon 2020 (XXX) granted to CDM.
+We thank all current and past members of the laboratory of Pavel Tomancak (LoPaTs) for the discussions and support during this project. In particular, Akanksha Jain and Vladimir Ulman for the introduction to cartographic projections, Giulia Serafini for helping establishing the Gap homozygous stock, and Anaïs Bailles for feedback. We thank Jan Brugués and Keisuke Ishihara for the laser ablation setup, the Light Microscopy Facility for the great imaging support, and Sven Ssykor, Cornelia Maas, and Pavel Mejstrik for the help with fly stocks. We thank Juliana Roscito for comments on an earlier version of the manuscript and Steffen Lemke and Yu-Chiun Wang for earlier discussions on the cephalic furrow. We thank Michael Akam for calling attention to the cephalic furrow which sparked off this project. BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018) and by an European Research Council (XXX) granted to PT. AS was supported by an EU FET Open Horizon 2020 (XXX) granted to CDM.
 
 # Author contributions
 
