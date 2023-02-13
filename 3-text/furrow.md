@@ -370,9 +370,9 @@ The stacks had 0.21µm XY-resolution and one minute time resolution.
 <!--TODO: Temperature in MuVi and Zeiss?-->
 To obtain a quantitative measure of ectopic folding, we analyzed the degree by which the tissues deform between non-cauterized and cauterized mutants using as a proxy the tortuosity of the epithelium outline.
 For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({@fig:tortuosity}a).
-We then cropped a 200µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to extract the epithelium outline for individual timepoints covering about 50min after gastrulation ({@fig:tortuosity}a,b).
-We generated color-coded temporal projections of the epithelium outlines as described above.
-<!--TODO: Add pipeline figure and videos for cauterizations-->
+We then cropped a 200x25µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50min after gastrulation ({@fig:tortuosity}a,b).
+We extracted measurements from the epithelium outlines using the ImageJ plugin *Analyze Skeleton* [@Arganda-Carreras2010-la] ([imagej.net/plugins/analyze-skeleton](https://imagej.net/plugins/analyze-skeleton/)), and generated the color-coded temporal projections as described above.
+<!--TODO: Add pipeline videos for cauterizations-->
 
 ## Laser ablation experiments
 
