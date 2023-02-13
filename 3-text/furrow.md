@@ -386,10 +386,12 @@ We ablated each embryo just once.
 The temperature was maintained at 28°C.
 For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts. The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity.
 
-## Figure assembly and data availability
+## Data visualization and figure assembly
 
-We used Inkscape to assemble the figure plates and illustrations.
-All data and analyses pipelines are available in the repository [@Vellutini2023-hg].
+Following the best practices of image visualization [@Schmied2020-ip], we only performed minimal linear intensity adjustments for microscopy images to improve their contrast and brightness.
+We created illustrations and assembled the final figure plates using Inkscape v1.2.2 [@The_Inkscape_Project2022-ht].
+All data wrangling, statistical analyses, and plotting performed in R v4.2.1 [@R_Core_Team2022-ki] using RStudio v2022.7.2.576 [@RStudio_Team2022-wr], and Python 3.10.7 using Jupyter notebooks [@Granger2021-zg].
+All data, scripts, notebooks, and analyses pipelines are available in the repository [@Vellutini2023-hg].
 
 # Acknowledgements
 
