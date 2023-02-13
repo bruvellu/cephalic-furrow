@@ -8,10 +8,9 @@ creation: May 26, 2021
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
 knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
-setwd("~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
 library(ggplot2)
+library(ggbeeswarm)
 ```
-
 
 ## Load measurements
 
@@ -66,14 +65,37 @@ for (d in 1:length(datafiles)) {
 
 ```
 
+## Plot tortuosity boxplot
+
+```{r facet-boxplot}
+# Plot stocks separately using bars side by side
+ggplot(datasets, aes(minute, tortuosity, fill = sample, group = interaction(minute, sample))) +
+  geom_boxplot(aes(color = sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 1, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 1)) +
+  labs(x = "minutes", y = "tortuosity") +
+  facet_wrap(~stock, strip.position = "top") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 30),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("4-plots/tortuosity_facet_boxplot.png", width = 18, height = 6)
+ggsave("4-plots/tortuosity_facet_boxplot.svg", width = 18, height = 6)
+```
+
+## Plot tortuosity smooth
+
 ```{r facet-smooth}
 # Plot stocks separately using lines vertically
 ggplot(datasets, aes(minute, tortuosity, color = sample)) +
   geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = sample)) +
   facet_wrap(~stock, ncol = 2, strip.position = "top") +
   labs(x = "time after gastrulation (min)", y = "tortuosity") +
-  scale_color_manual(values=c("#e69f03", "#0072b2")) +
-  scale_fill_manual(values=c("#e69f03", "#0072b2")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 40),
         strip.background = element_blank(),
@@ -81,31 +103,45 @@ ggplot(datasets, aes(minute, tortuosity, color = sample)) +
         strip.text.x = element_text(size = 45, face = "italic"),
         panel.background = element_rect(colour = "black", size=1),
         panel.spacing = unit(4, "lines"))
-ggsave("tortuosity_facet_smooth.png", width = 18, height = 6)
-ggsave("tortuosity_facet_smooth.svg", width = 18, height = 6)
+ggsave("4-plots/tortuosity_facet_smooth.png", width = 18, height = 6)
+ggsave("4-plots/tortuosity_facet_smooth.svg", width = 18, height = 6)
 ```
 
-```{r facet-boxplot}
-# Plot stocks separately using bars side by side
-ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(position = position_dodge(width = 2), show.legend = FALSE) + facet_wrap(~stock) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#e69f03", "#0072b2")) + theme_classic()
-ggsave("tortuosity_facet_boxplot.png")
-```
-
+## Plot combined tortuosity
 
 ```{r all-boxplot}
-# Plot stocks together using bars
-ggplot(datasets, aes(minute, tortuosity, color = sample, group = interaction(minute, sample))) + geom_boxplot(show.legend = FALSE) + geom_point(alpha = 0.8, position = position_dodge(width = 2), show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#e69f03", "#0072b2")) + theme_classic()
-ggsave("tortuosity_all_boxplot.png")
+# Plot stocks together using boxplot
+ggplot(datasets, aes(minute, tortuosity, fill = sample, group = interaction(minute, sample))) +
+  geom_boxplot(aes(color = sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 1, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 1)) +
+  labs(x = "minutes", y = "tortuosity") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 30),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("4-plots/tortuosity_all_boxplot.png", width = 18, height = 6)
+ggsave("4-plots/tortuosity_all_boxplot.svg", width = 18, height = 6)
 ```
 
 ```{r all-smooth}
 # Plot stocks together using lines
-ggplot(datasets, aes(minute, tortuosity, color = sample)) + geom_smooth(span = 0.3, show.legend = FALSE) + labs(x = "minutes", y = "tortuosity") + scale_color_manual(values=c("#e69f03", "#0072b2")) + theme_classic()
-ggsave("tortuosity_all_smooth.png", width = 7, height = 3)
+ggplot(datasets, aes(minute, tortuosity, color = sample)) +
+  geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = sample)) +
+  labs(x = "time after gastrulation (min)", y = "tortuosity") +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 40),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 45, face = "italic"),
+        panel.background = element_rect(colour = "black", size=1),
+        panel.spacing = unit(4, "lines"))
+ggsave("4-plots/tortuosity_all_smooth.png", width = 18, height = 6)
+ggsave("4-plots/tortuosity_all_smooth.svg", width = 18, height = 6)
 ```
-
-
-
-
-
 
