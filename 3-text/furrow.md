@@ -390,7 +390,7 @@ For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymo
 
 For microscopy images, we only performed minimal linear intensity adjustments in microscopy images to improve their contrast and brightness [@Schmied2020-ip].
 We created illustrations and assembled the final figure plates using Inkscape v1.2.2 [@The_Inkscape_Project2022-ht].
-For microscopy videos, we exported the original stacks as AVI without compression with 10--15fps using Fiji and post-processed them to MPEG-4 format 1080p resolution using the H.264 encoding at a constant bitrate quality factor of 18 for visualization using HandBrake [handbrake.fr](https://handbrake.fr/).
+For microscopy videos, we exported the original stacks as AVI without compression with 10--15fps using Fiji and post-processed them to MPEG-4 format 1080p resolution using the H.264 encoding at a constant bitrate quality factor of 18 for visualization using HandBrake.
 All data wrangling, statistical analyses, and plotting performed in R v4.2.1 [@R_Core_Team2022-ki] using RStudio v2022.7.2.576 [@RStudio_Team2022-wr], and Python 3.10.7 using Jupyter notebooks [@Granger2021-zg].
 All data, scripts, notebooks, and analyses pipelines are available in the repository [@Vellutini2023-hg].
 
