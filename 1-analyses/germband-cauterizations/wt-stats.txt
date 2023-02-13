@@ -1,0 +1,7 @@
+stock	sample	mean	sd	n_folds	n_embryos
+wt	control	 53	7.7	6	3
+wt	cauterized	 48	1.3	4	2
+btd	control	 66	3.4	2	1
+btd	cauterized	 51	3.2	2	1
+eve	control	 57	2.0	6	3
+eve	cauterized	NaN	 NA	0	0
