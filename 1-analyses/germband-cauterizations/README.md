@@ -51,9 +51,7 @@ yolk. The cephalic furrow invaginations have unequal lengths accordingly.
 
 ## Pipeline
 
-### Ectopic folds in cauterized mutants
-
-To analyze the tortuosity:
+### Analysis of epithelial tortuosity in cauterized mutants
 
 1. We opened the stacks from [`2-mutants`](2-mutants) in Fiji, manually created a segmented line along the vitelline envelope using the `Segmented Line` tool, and saved the line to file as a ROI.
 2. Ran the macro [`1-run_straighten.ijm`](1-run_straighten.ijm) to open the original stacks with their segmented line ROIs, execute the `Straighten...` ImageJ tool, and save the straightened stacks to [3-tortuosity](3-tortuosity).
