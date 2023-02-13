@@ -8,43 +8,9 @@ creation: April 06, 2021
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
 knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
-setwd("~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
 library(ggplot2)
 library(ggbeeswarm)
 ```
-
-## Directories
-
-- `0-data`: Timelapse stacks of cauterization experiments
-- `1-wt`: Processed stacks for the analysis of wild type phenotypes
-- `2-mutants`: Processed stacks for the analysis of mutant phenotypes
-
-## Description
-
-We have evidence that the germ band compresses the head-trunk interface and
-causes tissue buckling. This led to the hypothesis the germ band is also
-pushing the cephalic furrow invagination in normal conditions. We cauterized
-the posterodorsal portion of wild type (Gap43 and heterozygotes) embryos to
-block the germ band from elongating.
-
-We measured the length of the cephalic furrow invagination in both conditions
-and found the cauterized have 10% shorter invagination in average. It is
-unclear if the difference is significant or not. There is also a weak
-correlation between furrow length and amount of germ band extension. But this
-also needs further analysis.
-
-Factors that might be contributing to variation are the position of the frontal
-slice, either more dorsal or more ventral will have an impact in the depth of
-the furrow. The invagination on a dorsal slice will appear shorter since it is
-only cutting the invagination tangentially. A more ventral cut, closer to the
-mid section of the embryo will capture the actual length of the furrow. The
-differences we see in our embryos could be due the slice position in the
-dorsoventral axis.
-
-Another aspect to consider is the partial block of the germ band extension.
-There is at least one embryo that seems to show that, where the germ band is
-only blocked on the surface and unevenly. The germ band actually dives into the
-yolk. The cephalic furrow invaginations have unequal lengths accordingly.
 
 ## Load measurements
 
@@ -52,18 +18,60 @@ yolk. The cephalic furrow invaginations have unequal lengths accordingly.
 # Load raw ROI measurements from ImageJ
 results <- read.csv("1-wt/Lengths.csv")
 
-# Calculate summaries per sample
-by(results[results$Sample == "control", c("Length")], results[results$Sample == "control",]$Stock, summary)
-print("------------------------------------------------------------------------------------")
-by(results[results$Sample == "cauterized", c("Length")], results[results$Sample == "cauterized",]$Stock, summary)
-```
-## Maximum depth of individual folds
+# Discard cauterized embryo where the GB wasn't blocked from extending
+results <- results[results$Embryo != "2021-03-24_E5",]
 
-The mean of control embryos of different stocks is different. In btd, there's a
-difference but it's only two embryos. In eve, there's no cauterized embryos. For
-wt, there's n=3 in each condition. The mean is different but there's one embryo
-pulling it up in the control, and one embryo where there's a big difference between
-left and right furrow lengths.
+print_stats <- function(dataframe, stock, sample) {
+  filter_df <- (dataframe$Stock == stock & dataframe$Sample == sample)
+  df <- dataframe[filter_df,]
+  df <- droplevels(df)
+
+  # Define row
+  row <- c(stock,
+           sample,
+           mean(df$Length),
+           sd(df$Length),
+           length(df$Length),
+           length(unique(df$Embryo))
+           )
+  
+  # Summarize data
+  print(sprintf("%s %s / area=%.3f±%.3f x 10^3 / n_folds=%i / n_embryos=%i",
+                stock, sample,
+                mean(df$Length),
+                sd(df$Length),
+                length(df$Length),
+                length(unique(df$Embryo))
+                ))
+  return(row)
+}
+
+# Save stats to data frame
+stats <- data.frame()
+
+# Bind row by row
+stats <- rbind(stats, print_stats(results, "wt", "control"))
+stats <- rbind(stats, print_stats(results, "wt", "cauterized"))
+stats <- rbind(stats, print_stats(results, "btd", "control"))
+stats <- rbind(stats, print_stats(results, "btd", "cauterized"))
+stats <- rbind(stats, print_stats(results, "eve", "control"))
+stats <- rbind(stats, print_stats(results, "eve", "cauterized"))
+
+# Add column names
+colnames(stats) <- c("stock", "sample", "mean", "sd", "n_folds", "n_embryos")
+
+# Convert columns to numeric
+stats[, 3:5] <- apply(stats[, 3:5], 2, as.numeric)
+
+# Round up
+stats[, 3:4] <- round(stats[, 3:4], digits=1)
+
+# Write table to file
+write.table(format(stats, digits=2), file = "wt-stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+print(stats)
+```
+
+## Maximum depth of individual folds
 
 ```{r depth-ind}
 # Plot mean length of cephalic furrow per embryo (right/left sides)
@@ -80,8 +88,8 @@ ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length, 
         strip.placement = "outside",
         strip.text.x = element_text(size = 45, face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("wt-length.png", width = 7, height = 4)
-ggsave("wt-length.svg", width = 7, height = 4)
+ggsave("4-plots/wt-length.png", width = 7, height = 4)
+ggsave("4-plots/wt-length.svg", width = 7, height = 4)
 ```
 
 
@@ -114,10 +122,9 @@ by(means[means$Sample == "cauterized", c("Mean", "SD")], means[means$Sample == "
 
 ## Maximum depth of mean length by embryo
 
-Plot pools the different genotypes together and contrasts the cephalic furrow
-maximum length in control and cauterized conditions. There's a small difference
-in length of about 15% (8 microns). This needs more data to be conclusive, but
-it's some evidence the germ band may push the cephalic furrow slightly.
+Due to the low n, we pooled the different genotypes together. There's a small
+difference in length of about 15% (8 microns). But this needs more data to be
+conclusive.
 
 ```{r depth-mean}
 # Plot mean length of cephalic furrow per embryo (right/left sides)
@@ -132,13 +139,32 @@ ggplot(means, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 25),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("wt-mean-length.png", width = 4, height = 4)
-ggsave("wt-mean-length.svg", width = 4, height = 4)
+ggsave("4-plots/wt-mean-length.png", width = 4, height = 4)
+ggsave("4-plots/wt-mean-length.svg", width = 4, height = 4)
 ```
 
-## Statistics
+```{r depth-mean-facet}
+# Plot mean length of cephalic furrow per embryo (right/left sides)
+ggplot(means[means$Stock != "eve",], aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
+  geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  #geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), alpha = 0.8, size = 0.5, show.legend = FALSE, position = position_quasirandom(width = 0.1)) +
+  facet_wrap(~Stock) +
+  labs(x = "condition", y = "depth (µm)") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 45, face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("4-plots/wt-mean-length-facet.png", width = 4, height = 4)
+ggsave("4-plots/wt-mean-length-facet.svg", width = 4, height = 4)
+```
 
-The low n makes the statistics difficult.
+
+## Statistics
 
 ```{r stats}
 # Statistical testing
@@ -183,83 +209,6 @@ var.test(means[means$Sample == "control",]$Mean,
 
 ```
 
-## Other plots
-
-```{r length}
-# Plot length of cephalic furrow invaginations
-ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15, aes(colour = Embryo)) +
-  labs(title = "Length of CF invagination", x = "sample", y = "length (µm)")
-ggsave("wt-cf-length.png")
-
-# Plot total length of cephalic furrow invagination per embryo
-ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Total, colour = Sample)) +
-  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(title = "Total length of CF invaginations per embryo", x = "sample", y = "length (µm)")
-ggsave("wt-total-length.png")
-
-# Plot distance of cephalic furrow invaginations to germ band
-ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Distance)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15, aes(colour = Embryo)) +
-  labs(title = "Distance of CF invagination to germ band", x = "sample", y = "distance (µm)")
-ggsave("wt-gb-distance.png")
-
-# Plot total distance of cephalic furrow invagination per embryo
-ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), Distance, colour = Sample)) +
-  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(title = "Total distance of CF invaginations to germ band per embryo", x = "sample", y = "distance (µm)")
-ggsave("wt-total-distance.png")
-
-# Correlation between CF length and GB distance
-ggplot(results, aes(Distance, Length)) + geom_point(alpha = 0.8, aes(colour = Sample)) +
-  labs(title = "CF length by GB distance", x = "Distance to GB", y = "Length of CF")
-with(results, cor(Length, Distance))
-ggsave("wt-cfgb-correlation.png")
-ggplot(summary_embryos, aes(Distance, Total)) + geom_point(alpha = 0.8, aes(colour = Sample)) +
-  labs(title = "Total CF length by total GB distance per embryo", x = "Distance to GB", y = "Length of CF")
-with(summary_embryos, cor(Total, Distance))
-ggsave("wt-total-correlation.png")
-
-# Plot CF to GB index
-ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), CFbyGB)) + geom_violin() + geom_jitter(alpha = 0.8, width = 0.15, aes(colour = Embryo)) +
-  labs(title = "Distance of CF invagination to germ band", x = "sample", y = "CF by GB index")
-#ggsave("wt-cfgb-index.png")
-
-# Plot total distance of cephalic furrow invagination per embryo
-ggplot(summary_embryos, aes(factor(Sample, level = c("control", "cauterized")), CFbyGB, colour = Sample)) +
-  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15) +
-  labs(title = "Total distance of CF invaginations to germ band per embryo", x = "sample", y = "CF by GB index")
-#ggsave("wt-total-distance.png")
-```
-
-### Discarded analyses
-
-```{r discarded}
-```
-
-## Mutant analysis
-
-We also tested whether the germ band could be compressing the head-trunk tissue
-and causing the ectopic buckling. We have a lightsheet dataset convincingly
-suggesting that and repeated the experiments in the confocal. Due to
-limitations of the system, we can only acquire one surface slice and a mid
-section slice.
-
-Unfortunately with a single slice it is more difficult to see the ectopic folds
-in homozygous embryos. We have only a single uncauterized homozygous for btd
-and eve and, while it is possible to see the rugging of the epithelium, the
-folds are not completely clear. This makes the comparison to the cauterized
-embryos less obvious. Nevertheless there are differences between the
-conditions.
-
-Interestingly, one of the cauterized eve homozygous embryo shows a clear
-ectopic fold, even more obvious than controls. At first I thought the blocking
-was not preventing the ectopic folding entirely, but looking more carefully, in
-fact the germ band extension was not blocked evenly. One side actually pushes
-the trunk tissue and that corresponds to the side where the large ectopic fold
-is formed. I performed a PIV analysis to visualize the flows and one can
-clearly see the tissue remains static as a block which could be the reason a
-fold is formed there with the displacement of the head tissues.
-
-![](2-mutants/PIV_OVERLAY_eve_dorsal_cauterized_homozygous_2021-02-22_E4_surface.png)
 
 
 
