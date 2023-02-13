@@ -2,7 +2,7 @@
 
 ## Analysis
 
-### Ectopic folds in cauterized mutants
+### Ectopic folds in cauterized mutant embryos
 
 The [`cauterization-spim`](../../0-data/cauterization-spim) experiments revealed that blocking the germband from extending in cephalic furrow mutants prevents the formation of ectopic folds at the head--trunk boundary.
 To quantify this phenomena beyond the presence or absence of ectopic folds, we analyzed the degree by which the monolayer epithelium deforms between non-cauterized and cauterized mutants.
@@ -10,35 +10,12 @@ For that, we used as a proxy the tortuosity of the epithelium outline.
 The tortuosity of a segment corresponds to its length over the euclidean distance between the beginning and end points.
 With this quantitative measure, we see that the epithelium undergoes less deformation when the germ band in cephalic furrow mutants is cauterized.
 
-### Cephalic furrow depth in cauterized wildtype
+### Cephalic furrow in cauterized wildtype embryos
 
-We found evidence that the germ band is compressing the head--trunk interface and causing tissue buckling in cephalic furrow mutants.
-Does this germ band push contributes to the formation of the cephalic furrow in wildtype embryos?
-
-This must be happening Does this push from the germ band also Is the germ band also  the germ band is also
-pushing the cephalic furrow invagination in normal conditions. We cauterized
-the posterodorsal portion of wild type (Gap43 and heterozygotes) embryos to
-block the germ band from elongating.
-
-We measured the length of the cephalic furrow invagination in both conditions
-and found the cauterized have 10% shorter invagination in average. It is
-unclear if the difference is significant or not. There is also a weak
-correlation between furrow length and amount of germ band extension. But this
-also needs further analysis.
-
-Factors that might be contributing to variation are the position of the frontal
-slice, either more dorsal or more ventral will have an impact in the depth of
-the furrow. The invagination on a dorsal slice will appear shorter since it is
-only cutting the invagination tangentially. A more ventral cut, closer to the
-mid section of the embryo will capture the actual length of the furrow. The
-differences we see in our embryos could be due the slice position in the
-dorsoventral axis.
-
-Another aspect to consider is the partial block of the germ band extension.
-There is at least one embryo that seems to show that, where the germ band is
-only blocked on the surface and unevenly. The germ band actually dives into the
-yolk. The cephalic furrow invaginations have unequal lengths accordingly.
-
+The experiments above indicate the germ band is causing the ectopic folds in cephalic furrow mutants by compressing the head--trunk tissues.
+We therefore asked whether the push of the germ band contributes to cephalic furrow formation in wildtype embryos.
+To test this, we blocked the germ band extension in wildtype embryos.
+We accessed the influence of the germ band to cephalic furrow formation by measuring the maximum length of the invagination.
 
 ## Directories
 
@@ -51,7 +28,7 @@ yolk. The cephalic furrow invaginations have unequal lengths accordingly.
 
 ## Pipeline
 
-### Analysis of epithelial tortuosity in cauterized mutants
+### Epithelial tortuosity in cauterized mutants
 
 1. We opened the stacks from [`2-mutants`](2-mutants) in Fiji, manually created a segmented line along the vitelline envelope using the `Segmented Line` tool, and saved the line to file as a ROI.
 2. Ran the macro [`1-run_straighten.ijm`](1-run_straighten.ijm) to open the original stacks with their segmented line ROIs, execute the `Straighten...` ImageJ tool, and save the straightened stacks to [3-tortuosity](3-tortuosity).
@@ -69,4 +46,14 @@ yolk. The cephalic furrow invaginations have unequal lengths accordingly.
   j. Run `Analyze Skeleton (2D/3D)` and save measurements as text files.
   k. Run `Temporal-Color Code` script to create a color-coded temporal projection.
 5. Finally, we loaded the measurements in R, processed the data, and generated plots of tortuosity over time using [tortuosity.Rmd](tortuosity.Rmd).
+
+### Cephalic furrow depth in cauterized wildtype
+
+1. Open stack from [1-wt](1-wt) in Fiji.
+2. Focusing on the right side of the embryo, go through time to find the frame where the invagination is the deepest.
+3. Make a line from the vitelline envelope at the site of invagination until the basal side of the deepest cell of the cephalic furrow.
+4. Measure the line and repeat the procedure for the left side.
+5. After annotating all stacks, save the ROIs as a RoiSet.
+6. Compile measurements to [Lengths.csv](1-wt/Lengths.csv).
+7. Process and plot in R using [wtdepth.Rmd](wtdepth.Rmd).
 
