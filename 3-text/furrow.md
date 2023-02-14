@@ -384,7 +384,8 @@ To ensure the cut, we repeated the scan ten consecutive times along a single cel
 We ablated each embryo just once.
 <!--TODO: Does a higher temperature affects the quantifications?-->
 The temperature was maintained at 28°C.
-For ablation analysis, kymographs were obtained using the Fiji plugin Multi_Kymograph (https://github.com/fiji/Multi_Kymograph) on cell edges in the direction perpendicular to the cuts. The kymographs were binarized and distance between edges versus time was linearly fitted to obtain the recoil velocity.
+To analyse the ablation data, we generated kymographs perpendicular to the cuts and crossing the edges of the ablated cell using the *Multi Kymograph* Fiji plugin ({@fig:ablation}).
+We then binarized the kymographs, measured the distance between cell edges over time, and performed a linear fit of the data to obtain the recoil velocity ({@fig:ablation}).
 
 ## Data visualization and figure assembly
 
@@ -609,6 +610,9 @@ Dimensions used as a reference for the model.
 
 ![Tortuosity image processing and analysis pipeline.
 ](figures/FigS8.jpg){#fig:tortuosity tag=S8 width=100%}
+
+![Ablation image processing and analysis pipeline.
+](figures/FigS9.jpg){#fig:ablation tag=S9 width=80%}
 
 \clearpage
 
