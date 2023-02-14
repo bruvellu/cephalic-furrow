@@ -140,8 +140,7 @@ The dividing cells synchronously lose their basal attachment, round up at the ap
 This expansion compresses the adjacent non-dividing cells which are the first to infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitotic}b).
 Mitotic expansions always precede ectopic folding ({@fig:mitotic}c, {@fig:initiator}a).
 Compared to the progressive invagination of the cephalic furrow (about 14 min), the process of ectopic fold formation is abrupt (about 4 min) ({@fig:initiator}a, {!@fig:vid-mitotic-fold}).
-<!--TODO:AB: Did we measure isotropic strain rate as well?-->
-To understand the dynamics of tissue strain, we measured the rate of anisotropic tissue deformation (strain rate) at the head--trunk using particle image velocimetry.
+To understand the dynamics of tissue strain, we measured the rate of tissue deformation (strain rate) at the head--trunk using particle image velocimetry.
 We find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak that coincides with the maximum expansion of mitotic domains and with the appearance of the ectopic folds ({@fig:mitotic}d,e, {@fig:strain}, {!@fig:vid-strain-rate}).
 We have also quantified the strain rate more posterior where the trunk tissue interacts with the tip of the germ band (trunk--germ).
 At the trunk--germ interface, the strain rate is lower than at the head--trunk, but it steadily increases over time probably driven by the extending germ band ({@fig:mitotic}d).
@@ -386,6 +385,14 @@ We ablated each embryo just once.
 The temperature was maintained at 28°C.
 To analyse the ablation data, we generated kymographs perpendicular to the cuts and crossing the edges of the ablated cell using the *Multi Kymograph* Fiji plugin ({@fig:ablation}).
 We then binarized the kymographs, measured the distance between cell edges over time, and performed a linear fit of the data to obtain the recoil velocity ({@fig:ablation}).
+
+## Strain rate analysis
+
+<!--TODO:AB: Did we measure anisotropic isotropic strain rate as well?-->
+To estimate the strain rates, we first performed particle image velocimetry on cartographic projections using the ImageJ plugin *iterativePIV* [@Tseng2012-ni] ([sites.google.com/site/qingzongtseng/piv](https://sites.google.com/site/qingzongtseng/piv)).
+Then, we used the equation $E = \frac{1}{2} \left( \vec\nabla . \vec v \right) +\frac{1}{2} \left( \partial_x v _y + \partial _y v_x \right)$ to define and calculate the magnitude of the strain rate, where $v$ is the displacement obtained in the PIV divided by the time in minutes.
+We used these values to create a color-coded overlay for the strain rate ({@fig:strain}).
+To generate the line plots, we averaged the strain rate along the dorsoventral axis in two pre-defined regions, the head--trunk (canonical cephalic furrow position) and the trunk--germ (posterior to the Mitotic Domain 6) ({@fig:strain}).
 
 ## Data visualization and figure assembly
 
