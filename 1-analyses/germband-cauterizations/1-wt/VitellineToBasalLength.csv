@@ -1,0 +1,23 @@
+ ,Label,Stock,Sample,Embryo,Length
+1,DUP_wt_dorsal_control_2021-03-10_E1_equator.tif:0019-0255-0777:z:2/2 t:19/37 - controls #1,wt,control,2021-03-10_E1,61.075
+2,DUP_wt_dorsal_control_2021-03-10_E1_equator.tif:0018-0781-0747:z:2/2 t:18/37 - controls #1,wt,control,2021-03-10_E1,64.661
+3,DUP_wt_dorsal_control_2021-03-10_E2_equator.tif:0017-0279-0745:z:2/2 t:17/37 - controls #2,wt,control,2021-03-10_E2,49.747
+4,DUP_wt_dorsal_control_2021-03-10_E2_equator.tif:0017-0885-0762:z:2/2 t:17/37 - controls #2,wt,control,2021-03-10_E2,50.902
+5,DUP_wt_dorsal_control_2021-03-25_E5_equator.tif:0020-0234-0630:z:2/2 t:20/36 - Image 10 #5,wt,control,2021-03-25_E5,48.987
+6,DUP_wt_dorsal_control_2021-03-25_E5_equator.tif:0019-0819-0587:z:2/2 t:19/36 - Image 10 #5,wt,control,2021-03-25_E5,44.758
+7,DUP_eve_dorsal_control_heterozygous_2021-02-25_E4_equator.tif:0013-0257-0724:z:2/2 t:13/53 - Image 1 #4,eve,control,2021-02-25_E4,55.885
+8,DUP_eve_dorsal_control_heterozygous_2021-02-25_E4_equator.tif:0015-0808-0758:z:2/2 t:15/53 - Image 1 #4,eve,control,2021-02-25_E4,57.132
+9,DUP_btd_dorsal_cauterized_heterozygous_2021-03-03_E5_equator.tif:0027-0283-0712:z:2/2 t:27/50 - Image 15 #5,btd,cauterized,2021-03-03_E5,48.378
+10,DUP_btd_dorsal_cauterized_heterozygous_2021-03-03_E5_equator.tif:0029-0855-0660:z:2/2 t:29/50 - Image 15 #5,btd,cauterized,2021-03-03_E5,52.93
+11,DUP_wt_dorsal_cauterized_2021-03-27_E3_equator.tif:0006-0273-0614:z:2/2 t:6/25 - Image 44 #3,wt,cauterized,2021-03-27_E3,48.81
+12,DUP_wt_dorsal_cauterized_2021-03-27_E3_equator.tif:0006-0811-0671:z:2/2 t:6/25 - Image 44 #3,wt,cauterized,2021-03-27_E3,48.572
+13,DUP_wt_dorsal_cauterized_2021-03-25_E1_equator.tif:0018-0260-0670:z:2/2 t:18/36 - Image 10 #1,wt,cauterized,2021-03-25_E1,46.422
+14,DUP_wt_dorsal_cauterized_2021-03-25_E1_equator.tif:0024-0828-0675:z:2/2 t:24/36 - Image 10 #1,wt,cauterized,2021-03-25_E1,46.569
+15,DUP_wt_dorsal_cauterized_2021-03-24_E5_equator.tif:0012-0229-0672:z:2/2 t:12/37 - Image 22 #5,wt,cauterized,2021-03-24_E5,57.466
+16,DUP_wt_dorsal_cauterized_2021-03-24_E5_equator.tif:0012-0768-0766:z:2/2 t:12/37 - Image 22 #5,wt,cauterized,2021-03-24_E5,40.254
+17,DUP_btd_dorsal_control_heterozygous_2021-04-22_E3_equator.tif:0030-0230-0750:z:2/2 t:30/39 - Image 1 #3,btd,control,2021-04-22_E3,63.951
+18,DUP_btd_dorsal_control_heterozygous_2021-04-22_E3_equator.tif:0030-0765-0643:z:2/2 t:30/39 - Image 1 #3,btd,control,2021-04-22_E3,68.727
+19,DUP_eve_dorsal_control_heterozygous_2021-04-23_E3_equator.tif:0014-0232-0669:z:2/2 t:14/32 - Image 7 #3,eve,control,2021-04-23_E3,55.903
+20,DUP_eve_dorsal_control_heterozygous_2021-04-23_E3_equator.tif:0015-0765-0647:z:2/2 t:15/32 - Image 7 #3,eve,control,2021-04-23_E3,60.316
+21,DUP_eve_dorsal_control_heterozygous_2021-04-23_E4_equator.tif:0025-0301-0677:z:2/2 t:25/32 - Image 7 #4,eve,control,2021-04-23_E4,54.383
+22,DUP_eve_dorsal_control_heterozygous_2021-04-23_E4_equator.tif:0025-0821-0687:z:2/2 t:25/32 - Image 7 #4,eve,control,2021-04-23_E4,56.343

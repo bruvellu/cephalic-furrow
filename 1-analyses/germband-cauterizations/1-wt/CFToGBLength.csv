@@ -1,0 +1,17 @@
+ ,Label,Stock,Sample,Embryo,Length
+1,DUP_wt_dorsal_control_2021-03-10_E1_equator.tif:0019-0402-0992:z:2/2 t:19/37 - controls #1,wt,control,2021-03-10_E1,83.442
+2,DUP_wt_dorsal_control_2021-03-10_E1_equator.tif:0018-0626-0994:z:2/2 t:18/37 - controls #1,wt,control,2021-03-10_E1,98.698
+3,DUP_wt_dorsal_control_2021-03-10_E2_equator.tif:0017-0397-0968:z:2/2 t:17/37 - controls #2,wt,control,2021-03-10_E2,83.234
+4,DUP_wt_dorsal_control_2021-03-10_E2_equator.tif:0017-0764-0972:z:2/2 t:17/37 - controls #2,wt,control,2021-03-10_E2,79.498
+5,DUP_wt_dorsal_control_2021-03-25_E5_equator.tif:0020-0352-0733:z:2/2 t:20/36 - Image 10 #5,wt,control,2021-03-25_E5,43.419
+6,DUP_wt_dorsal_control_2021-03-25_E5_equator.tif:0019-0711-0701:z:2/2 t:19/36 - Image 10 #5,wt,control,2021-03-25_E5,45.637
+7,DUP_eve_dorsal_control_heterozygous_2021-02-25_E4_equator.tif:0013-0365-0904:z:2/2 t:13/53 - Image 1 #4,eve,control,2021-02-25_E4,89.931
+8,DUP_eve_dorsal_control_heterozygous_2021-02-25_E4_equator.tif:0015-0698-0847:z:2/2 t:15/53 - Image 1 #4,eve,control,2021-02-25_E4,41.753
+9,DUP_btd_dorsal_cauterized_heterozygous_2021-03-03_E5_equator.tif:0027-0399-1198:z:2/2 t:27/50 - Image 15 #5,btd,cauterized,2021-03-03_E5,195.009
+10,DUP_btd_dorsal_cauterized_heterozygous_2021-03-03_E5_equator.tif:0029-0731-1145:z:2/2 t:29/50 - Image 15 #5,btd,cauterized,2021-03-03_E5,189.612
+11,DUP_wt_dorsal_cauterized_2021-03-27_E3_equator.tif:0006-0389-1138:z:2/2 t:6/25 - Image 44 #3,wt,cauterized,2021-03-27_E3,208.293
+12,DUP_wt_dorsal_cauterized_2021-03-27_E3_equator.tif:0006-0694-1153:z:2/2 t:6/25 - Image 44 #3,wt,cauterized,2021-03-27_E3,200.613
+13,DUP_wt_dorsal_cauterized_2021-03-25_E1_equator.tif:0018-0372-1251:z:2/2 t:18/36 - Image 10 #1,wt,cauterized,2021-03-25_E1,237.56
+14,DUP_wt_dorsal_cauterized_2021-03-25_E1_equator.tif:0024-0718-1187:z:2/2 t:24/36 - Image 10 #1,wt,cauterized,2021-03-25_E1,203.311
+15,DUP_wt_dorsal_cauterized_2021-03-24_E5_equator.tif:0012-0367-0979:z:2/2 t:12/37 - Image 22 #5,wt,cauterized,2021-03-24_E5,120.907
+16,DUP_wt_dorsal_cauterized_2021-03-24_E5_equator.tif:0012-0672-1022:z:2/2 t:12/37 - Image 22 #5,wt,cauterized,2021-03-24_E5,102.019
