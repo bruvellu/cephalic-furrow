@@ -10,8 +10,8 @@ Overview of the different analyses we performed.
 - [`ablations`](ablations): Laser ablations to measure tension around the cephalic furrow neighborhood.
 - [`strain-rate`](strain-rate): Strain rate analysis in cephalic furrow mutants.
 - [`initiator-behavior`](initiator-behavior): Analysis of the initiator cell behaviors in different genetic backgrounds.
-- [`cell-area-post-mitosis`](cell-area-post-mitosis): Quantification of the increase in apical area of individual cells in mitotic domains.
 - [`fold-stats`](fold-stats): General statistics about the number and frequency of ectopic folds.
+- [`cell-area-post-mitosis`](cell-area-post-mitosis): Quantification of the increase in apical area of individual cells in mitotic domains.
+- [`apical-area`](apical-area): Measurements of the apical cell area near mitotic domains.
 - [`tissue-flows`](tissue-flows): Analysis of tissue flows in cephalic furrow mutants.
 - [`trunk-germ`](trunk-germ): Analysis of the tissue compression in the trunk--germ interface of cephalic furrow mutants.
-- [`apical-area`](apical-area): Measurements of the apical cell area near mitotic domains.
