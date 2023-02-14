@@ -20,7 +20,11 @@ results <- read.csv("1-wt/Lengths.csv")
 
 # Discard cauterized embryo where the GB wasn't blocked from extending
 results <- results[results$Embryo != "2021-03-24_E5",]
+```
 
+## Print summary
+
+```{r summary}
 print_stats <- function(dataframe, stock, sample) {
   filter_df <- (dataframe$Stock == stock & dataframe$Sample == sample)
   df <- dataframe[filter_df,]
