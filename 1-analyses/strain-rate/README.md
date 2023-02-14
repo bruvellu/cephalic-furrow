@@ -1,43 +1,23 @@
-# Strain rate analysis in cephalic furrow mutants
+# Strain rate in cephalic furrow mutants
 
-How the analysis works:
+## Analysis
 
-Cartographic projections movies were cropped in squared window of 896x896
-pixels in the head-trunk boundary area. A PIV analysis was performed using the
-Fiji plugin (https://sites.google.com/site/qingzongtseng/piv). This data was
-further analysed to calculate the magnitud of the strain rate E defined as (See
-figure equation or compile latex formula)
+An expected consequence for the absence of the cephalic furrow is an increase in compressive stresses at the head--trunk interface.
+To estimate this putative increase in stress, we measured the strain rates in the tissue of cephalic furrow mutants using particle image velocimetry.
 
-$E = \frac{1}{2} \left( \vec\nabla . \vec v \right) +\frac{1}{2} \left( \partial_x v _y + \partial _y v_x \right)$
+## Directories
 
-Where v is the velocity calculated as the displacement obtained in the PIV
-analysis divided by the timeframe in minutes. The absolute value of this
-quantity was calculated to obtain a colorcoded map of the strain. 
+- [`0-data`](0-data): Cropped cartographic projections from [imsane](../../0-data/imsane) datasets.
+- [`1-movies`](1-movies): Heatmap overlay stacks and movies.
+- [`2-snaps`](2-snaps): Snapshots of strain rate heatmaps.
+- [`3-plots`](3-plots): Plots with the strain rate data.
 
-To obtain the line plots, the magnitude of strain rate was averaged in 10
-different points in the head-trunk boundary region or the lateral region
-(posterior to the folded area), respectively.
+## Workflow
 
-
-## btd -/-
-
-- btd-gap_z3_t55s_E6_CARE_s25.tif	TIMES 19-44
-- btd-gap_z3_t55s_E14_CARE_s24.tif	TIMES 23-48
-- btd-gap2_z3_t55s_E7_CARE_s20.tif	TIMES 28-53
-
-## btd +/-
-
-- btd-gap2_z3_t55s_E8_CARE_s23.tif	TIMES 45-60
-- btd-gap_z3_t55s_E10_CARE_s21.tif	TIMES 47-74
-- btd-gap_z3_t55s_E3_CARE_s20.tif	TIMES 7-33
-
-## eve -/-
-
-- eve_E12_homozygous_cylinder1-1.tif	TIMES 12-37
-
-## eve -/- CAUT
-
-- LATERAL_eve-gap_cauterized_s16_0x980_w1819_h998_fliphv.tif
-
-
+1. We cropped a 896x896 window around the head--trunk region in a subset of *btd* cartographic projections (see [0-data](0-data)).
+2. Then, performed a particle image velocimetry analysis using the ImageJ plugin [iterativePIV](https://sites.google.com/site/qingzongtseng/piv).
+3. We defined the magnitude of the strain rate as $E = \frac{1}{2} \left( \vec\nabla . \vec v \right) +\frac{1}{2} \left( \partial_x v _y + \partial _y v_x \right)$ where $v$ is the displacement values obtained from the PIV over the time interval in minutes.
+4. We used this absolute values to generate a color-coded overlay of the strain rates on the epithelium.
+5. To obtain the strain rate dynamics over time, we sampled ten points along the dorsoventral axis and averaged the strain rate values. We performed this procedure for two pre-defined positions, the head--trunk boundary (canonical cephalic furrow position) and the trunk--germ position (posterior to MD6).
+6. Finally, we generated the strain rate plots in Python.
 
