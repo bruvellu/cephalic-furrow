@@ -8,19 +8,10 @@ creation: February 11, 2021
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
 knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/cell-area-post-mitosis")
+library(knitr)
+library(ggplot2)
+library(ggbeeswarm)
 ```
-
-## Goal and Approach
-
-Do epithelial cells occupy a larger area after mitosis? How much area is added
-to the surface after cell divisions?
-
-I measured the apical area of individual cells anterior to the cephalic furrow
-at three time points: before gastrulation, immediately before cell division
-(maximum area), and after mitosis (exactly 10 frames = ~9 min).
-
-The dataset is the cartographic projection of a heterozygote btd-gap embryo
-(E10, wild type embryogenesis).
 
 ## Load data Experiment metadata
 
@@ -28,52 +19,26 @@ I edited the `Results.txt` file in a spreadsheet to facilitate plotting before
 loading the data.
 
 ```{r load}
-library(knitr)
-library(ggplot2)
-results <- read.csv("CELLAREA_E10.csv")
+results <- read.csv("cellarea_E10.csv")
+levels(results$Time) <- c("T1", "T2", "T3")
 ```
 
 ## Variation in the apical area of individual cells
 
 ```{r cellarea}
-library(ggbeeswarm)
-set.seed(123)
-#ggplot(results, aes(Time, Area, colour = Lineage)) + geom_jitter(alpha = 0.8, width = 0.1, height = 0)
-#ggplot(results, aes(Time, Perim, colour = Lineage)) + geom_jitter(alpha = 0.8, width = 0.1, height = 0)
-
-ggplot(results, aes(Time, Area, colour = Lineage)) +
-  geom_quasirandom(size = 4, width = 0.3, alpha = 0.8, show.legend = FALSE) +
+ggplot(results, aes(Time, Area)) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(aes(color = Lineage), alpha = 0.8, size = 5, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 0.5, cex = 1)) +
+  labs(x = "time", y = expression(paste("area x ", 10^3, " ", "(", px^2, ")"))) +
   scale_y_continuous(labels = function(x) x / 1000) +
-  labs(x = "time", y = expression(paste("apical area ", (px^2~x~10^3)))) +
-  scale_x_discrete(labels = c("T1", "T2", "T3")) +
-  theme_classic() +
-  theme(text =  element_text(size = 35),
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 30),
         strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", size=1),
-        )
-ggsave("apical-area-per-cell.png", width = 10, height = 5)
-ggsave("apical-area-per-cell.svg", width = 10, height = 5)
-```
-
-## Relative variation in the apical area of individual cells
-
-```{r relativearea}
-ggplot(results, aes(Time, NormArea, colour = Lineage)) + geom_jitter(alpha = 0.8, width = 0.1, height = 0) + ylim(0,3)
-#ggplot(results, aes(Time, NormPerim, colour = Lineage)) + geom_jitter(alpha = 0.8, width = 0.1, height = 0) + ylim(0,3)
-```
-
-## Variation in the total apical area per cell lineage
-
-```{r totalarea}
-ggplot(results, aes(Time, TotalArea, colour = Lineage)) + geom_jitter(alpha = 0.8, width = 0.1, height = 0)
-#ggplot(results, aes(Time, TotalPerim, colour = Lineage)) + geom_jitter(alpha = 0.8, width = 0.1, height = 0)
-```
-
-## Relative variation in the total apical area per cell lineage
-
-```{r relativetotalarea}
-ggplot(results, aes(Time, NormTotalArea, colour = Lineage)) + geom_jitter(alpha = 0.8, width = 0.1, height = 0)
-#ggplot(results, aes(Time, NormTotalPerim, colour = Lineage)) + geom_jitter(alpha = 0.8, width = 0.1, height = 0)
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("3-plots/apical-area-per-cell.png", width = 12, height = 6)
+ggsave("3-plots/apical-area-per-cell.svg", width = 12, height = 6)
 ```
 
 ## Summary
@@ -93,6 +58,12 @@ T3 <- c(mean(results[results$Time == "t3", "Area"]),
         mean(results[results$Time == "t3", "NormArea"]),
         mean(results[results$Time == "t3", "NormTotalArea"]))
 sumtable <- data.frame(T1, T2, T3, row.names = rows)
-kable(round(sumtable[1:2,], digits = 0))
-kable(round(sumtable[3:4,], digits = 2))
+
+# Round up
+sumtable[1:2,] <- round(sumtable[1:2,], digits=0)
+sumtable[3:4,] <- round(sumtable[3:4,], digits=2)
+
+# Write table to file
+write.table(format(sumtable, digits=2), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+print(sumtable)
 ```
