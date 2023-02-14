@@ -1,5 +1,5 @@
 ---
-title: "Cephalic furrow ablations"
+title: "Cephalic furrow laser ablations"
 author: "Bruno C. Vellutini"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 creation: April 06, 2021
@@ -8,16 +8,9 @@ creation: April 06, 2021
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
 knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/ablations")
-setwd("~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/ablations")
 library(ggplot2)
 library(ggbeeswarm)
 ```
-
-## Description
-
-Laser ablations around the cephalic furrow surroundings to check if there's an
-active pull force. Experiments and initial plots performed by Marina. I'm using
-the data to re-plot in a different way.
 
 ## Load measurements
 
@@ -27,45 +20,71 @@ ablations <- read.csv("ablation-data.csv", stringsAsFactors = TRUE)
 levels(ablations$Stage) <- c("early", "mid", "late")
 ```
 
-## Summarize
+## Summarize by stage and position
 
 ```{r summary}
-# Calculate summaries per sample
-print("ANTERIOR ABLATIONS")
-by(ablations[ablations$Position == "anterior", c("Velocity")], ablations[ablations$Position == "anterior",]$Stage, summary)
-print("POSTERIOR ABLATIONS")
-by(ablations[ablations$Position == "posterior", c("Velocity")], ablations[ablations$Position == "posterior",]$Stage, summary)
+print_stats <- function(dataframe, stage, position = NULL, distance = NULL) {
+  if (!is.null(distance)) {
+    filter_df <- (dataframe$Stage == stage & dataframe$Position == position & dataframe$Distance == distance)
+  } else if (!is.null(position)) {
+    filter_df <- (dataframe$Stage == stage & dataframe$Position == position)
+    distance <- "all"
+  } else {
+    filter_df <- (dataframe$Stage == stage)
+    position <- "both"
+    distance <- "all"
+  }
+  
+  df <- dataframe[filter_df,]
+  df <- droplevels(df)
 
-capture.output(
-  print("ANTERIOR ABLATIONS"),
-  by(ablations[ablations$Position == "anterior", c("Velocity")], ablations[ablations$Position == "anterior",]$Stage, summary),
-  print("POSTERIOR ABLATIONS"),
-  by(ablations[ablations$Position == "posterior", c("Velocity")], ablations[ablations$Position == "posterior",]$Stage, summary),
-  file = "summary.txt"
-)
+  # Define row
+  row <- c(stage,
+           position,
+           distance,
+           mean(df$Velocity),
+           sd(df$Velocity),
+           length(df$Velocity),
+           length(unique(df$Embryo))
+           )
+
+  return(row)
+}
+
+# Save stats to data frame
+stats <- data.frame()
+
+# Bind row by row
+stats <- rbind(stats, print_stats(ablations, "early"))
+stats <- rbind(stats, print_stats(ablations, "mid"))
+stats <- rbind(stats, print_stats(ablations, "late"))
+stats <- rbind(stats, print_stats(ablations, "early", "anterior"))
+stats <- rbind(stats, print_stats(ablations, "early", "posterior"))
+stats <- rbind(stats, print_stats(ablations, "mid", "anterior"))
+stats <- rbind(stats, print_stats(ablations, "mid", "posterior"))
+stats <- rbind(stats, print_stats(ablations, "late", "anterior"))
+stats <- rbind(stats, print_stats(ablations, "late", "posterior"))
+
+# Add column names
+colnames(stats) <- c("stage", "position", "distance", "mean", "sd", "n_cuts", "n_embryos")
+
+# Convert columns to numeric
+stats[, 4:7] <- apply(stats[, 4:7], 2, as.numeric)
+
+# Round up
+stats[, 4:5] <- round(stats[, 4:5], digits=10)
+
+# Write table to file
+write.table(format(stats, digits=10), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+print(stats)
 ```
 
-```{r stage}
-# Plot mean length of cephalic furrow per embryo (right/left sides)
-#ggplot(means[means$Velocity > 0,], aes(Stage, Velocity, group = Distance, fill = Position)) +
-ggplot(ablations, aes(Stage, Velocity, )) +
+## Plot velocity by stage
+
+```{r recoil-stage}
+ggplot(ablations, aes(Stage, Velocity)) +
   geom_boxplot(aes(color = "#e69f03", fill = "#e69f03"), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.9, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
-#ggplot(means, aes(Distance, Velocity, group = Distance)) +
-#ggplot(means, aes(Distance, Velocity, color = Stage)) +
-  #geom_violin(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
-  #geom_boxplot(draw_quantiles = c("0.5"), show.legend = FALSE, trim = TRUE, alpha = 0.7, fill = "#e69f03", scale = "area", adjust = 2) +
-  #geom_bar(stat = "summary", fun = "mean", alpha = 0.7, width = 0.5, fill = "#e69f03", show.legend = FALSE) +
-  #geom_smooth(span = 0.8, show.legend = FALSE, aes(fill = "#e69f03", colour = "#e69f03")) +
-  #geom_pointrange(aes(ymin=Velocity-SD, ymax=Velocity+SD), position = position_quasirandom(width = 0.15, bandwidth = 0.1), alpha = 0.5, show.legend = FALSE) +
-  #geom_quasirandom(size = 2, width = 1.0, alpha = 0.8, show.legend = FALSE) +
-  #geom_errorbar(aes(ymin=Mean-SD, ymax=Mean+SD), show.legend = FALSE)+
-  #geom_jitter(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  #geom_point(alpha = 0.8, width = 0.1, size = 2, show.legend = FALSE) +
-  #geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), position = position_jitterdodge(jitter.width = 0.3), show.legend = FALSE)+
-  #geom_pointrange(aes(ymax=Velocity+Error), position = position_quasirandom(width = 0.15, bandwidth = 0.1), show.legend = FALSE) +
-  #scale_y_continuous(limits = c(0, 0.26)) +
-  #facet_wrap(~Stage) +
   labs(x = "stage", y = "velocity (µm/s)") +
   scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
   scale_color_manual(values=c("#e69f03", "#56b4e9")) +
@@ -73,7 +92,32 @@ ggplot(ablations, aes(Stage, Velocity, )) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 30),
         panel.background = element_rect(colour = "black", size=1))
+ggsave("3-plots/recoil-stage.png", width = 14, height = 7)
+ggsave("3-plots/recoil-stage.svg", width = 14, height = 7)
 ```
+
+## Plot velocity by stage
+
+```{r recoil-stage-position}
+ggplot(ablations, aes(Position, Velocity, fill = Position)) +
+  geom_boxplot(aes(color = Position), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.9, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
+  labs(x = "stage", y = "velocity (µm/s)") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
+  facet_wrap(~Stage) +
+  scale_y_continuous(limits = c(0, 0.25)) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 45),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 55),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("3-plots/recoil-stage-position.png", width = 14, height = 7)
+ggsave("3-plots/recoil-stage-position.svg", width = 14, height = 7)
+```
+
+## Calculate means and distance classes
 
 ```{r means}
 # Mean of CF length per embryo
@@ -90,48 +134,51 @@ samples <- unique(ablations[, c("Embryo", "Stage", "Position", "Distance")])
 # Merge datasets
 means <- merge(samples, embryo_mean, by = "Embryo", all.x = TRUE)
 means <- merge(means, embryo_sd, by = "Embryo", all.x = TRUE)
-```
 
-```{r outliers}
-# Exclude outliers
+# Establish near (5-20µm) and far (25-40µm) distance classes.
 means[means$Distance <= 20 & means$Distance > 0,]$Distance <- 20
 means[means$Distance <= 40 & means$Distance > 20,]$Distance <- 40
 means[means$Distance >= -20 & means$Distance < 0,]$Distance <- -20
 means[means$Distance >= -40 & means$Distance < -20,]$Distance <- -40
 means$Distance <- as.factor(means$Distance)
+
+# Save stats to data frame
+dists <- data.frame()
+
+# Bind row by row
+dists <- rbind(dists, print_stats(means, "early", "anterior", "-40"))
+dists <- rbind(dists, print_stats(means, "early", "anterior", "-20"))
+dists <- rbind(dists, print_stats(means, "early", "posterior", "20"))
+dists <- rbind(dists, print_stats(means, "early", "posterior", "40"))
+dists <- rbind(dists, print_stats(means, "mid", "anterior", "-40"))
+dists <- rbind(dists, print_stats(means, "mid", "anterior", "-20"))
+dists <- rbind(dists, print_stats(means, "mid", "posterior", "20"))
+dists <- rbind(dists, print_stats(means, "mid", "posterior", "40"))
+dists <- rbind(dists, print_stats(means, "late", "anterior", "-40"))
+dists <- rbind(dists, print_stats(means, "late", "anterior", "-20"))
+dists <- rbind(dists, print_stats(means, "late", "posterior", "20"))
+dists <- rbind(dists, print_stats(means, "late", "posterior", "40"))
+
+# Add column names
+colnames(dists) <- c("stage", "position", "distance", "mean", "sd", "n_cuts", "n_embryos")
+
+# Convert columns to numeric
+dists[, 4:7] <- apply(dists[, 4:7], 2, as.numeric)
+
+# Round up
+dists[, 4:5] <- round(dists[, 4:5], digits=10)
+
+# Write table to file
+write.table(format(dists, digits=10), file = "means.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+print(dists)
 ```
 
-## Plot overview
+## Plot recoil means by distance classes
 
-```{r distance}
-ggplot(means, aes(Distance, Velocity)) +
-#ggplot(means[means$Velocity > 0,], aes(Distance, Velocity)) +
-  geom_vline(xintercept = 0, size = 0.5, linetype = "dashed", alpha = 0.5, colour = "black") +
-  geom_smooth(span = 0.8, show.legend = FALSE, aes(fill = "#e69f03", colour = "#e69f03")) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE) +
-  labs(x = "distance from initiator (µm)", y = "velocity (µm/s)") +
-  facet_wrap(~Stage) +
-  scale_fill_manual(values=c("#e69f03")) +
-  scale_color_manual(values=c("#e69f03")) +
-  #scale_x_continuous(limits = c(-50, 50)) +
-  scale_y_continuous(limits = c(0, 0.4)) +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text =  element_text(size = 40),
-        strip.background = element_blank(),
-        strip.placement = "outside",
-        strip.text.x = element_text(size = 45),
-        panel.background = element_rect(colour = "black", size=1),
-        panel.spacing = unit(3, "lines"))
-ggsave("3-plots/recoil-velocity.png", width = 14, height = 7)
-ggsave("3-plots/recoil-velocity.svg", width = 14, height = 7)
-```
-
-```{r stage}
+```{r means-stage-classes}
 ggplot(means, aes(Distance, Velocity, group = Distance, fill = Position)) +
-  #geom_vline(xintercept = 0, size = 0.5, linetype = "dashed", alpha = 0.5, colour = "black") +
   geom_boxplot(aes(color = Position), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.8, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 5)) +
-  #geom_pointrange(aes(ymin=Velocity-SD, ymax=Velocity+SD), position = position_quasirandom(width = 0.15, bandwidth = 0.1), alpha = 0.5, show.legend = FALSE) +
   scale_y_continuous(limits = c(0, 0.21)) +
   facet_wrap(~Stage) +
   labs(x = "stage", y = "velocity (µm/s)") +
@@ -143,7 +190,7 @@ ggplot(means, aes(Distance, Velocity, group = Distance, fill = Position)) +
         strip.placement = "outside",
         strip.text.x = element_text(size = 55),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("3-plots/recoil-velocity.png", width = 14, height = 7)
-ggsave("3-plots/recoil-velocity.svg", width = 14, height = 7)
+ggsave("3-plots/recoil-stage-distance.png", width = 14, height = 7)
+ggsave("3-plots/recoil-stage-distance.svg", width = 14, height = 7)
 ```
 
