@@ -1,5 +1,5 @@
 ---
-title: "Foldin statistics"
+title: "Fold statistics"
 author: "Bruno C. Vellutini"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 creation: November 30, 2022
@@ -11,7 +11,7 @@ knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-an
 library(ggplot2)
 ```
 
-## Analysis
+## Load data
 
 ```{r import}
 # Import main dataset
@@ -22,7 +22,11 @@ datasets <- datasets[!is.na(datasets$folds_left),]
 
 # Transform data frame to order the stock for plotting
 datasets <- transform(datasets, stock=factor(stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg")))
+```
 
+## Print statistics
+
+```{r print}
 # Function to print statistics
 print_stats <- function(dataframe, stock, zygosity) {
   # Filtering parameters
@@ -87,20 +91,11 @@ stats[, 3:8] <- round(stats[, 3:8], digits=1)
 write.table(format(stats, digits=2), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
 ```
 
-```{r plot}
-ggplot(datasets[datasets$stock != "btd-stg",], aes(folds_avg, colour = zygosity, fill = zygosity)) +
-  geom_dotplot(binaxis = "x", show.legend = FALSE, binwidth = 0.35) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  facet_grid(cols = vars(stock), scales = "free_y") +
-  theme_classic() +
-  theme(text = element_text(size = 35),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", size=1)
-        )
+## Plot overview
 
+```{r plot}
 ggplot(datasets[datasets$stock != "btd-stg",], aes(folds_avg, fill = zygosity)) +
-  geom_histogram(show.legend = FALSE) +
+  geom_histogram() +
   scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
   facet_grid(cols = vars(stock), scales = "free_y") +
@@ -109,4 +104,6 @@ ggplot(datasets[datasets$stock != "btd-stg",], aes(folds_avg, fill = zygosity)) 
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
+ggsave("folds-average.png", width = 20, height = 7)
+ggsave("folds-average.svg", width = 20, height = 7)
 ```
