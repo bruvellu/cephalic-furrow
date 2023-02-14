@@ -1,5 +1,27 @@
 # Ablation datasets
 
+## Acquisition
+
+| key            | value                                           |
+| ---            | -----                                           |
+| mounting       | MatTek glass-bottom petri dish (water)          |
+| orientation    | lateral                                         |
+| microscope     | Yokogawa CSU-X1 confocal spinning disk          |
+| camera         | EMCCD Andor iXon DU-888                         |
+| objective      | 60x 1.2 NA water immersion                      |
+| software       | AndorIQ                                         |
+| x-resolution   | 0.180556 µm                                     |
+| y-resolution   | 0.180556 µm                                     |
+| t-resolution   | 200 ms                                          |
+| temperature    | 28° C                                           |
+| ablation laser | Titanium Sapphire Chameleon Ultra II (Coherent) |
+| wavelength     | 800 nm                                          |
+| frequency      | 20 kHz (tuned down from 80 MHz)                 |
+| laser power    | 6 mW                                            |
+| pixel dwell    | 2 µs                                            |
+
+# Files
+
 List of files in this directory.
 
 ```
