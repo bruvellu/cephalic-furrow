@@ -353,8 +353,8 @@ We analyzed the dynamics of ectopic folds by measuring the relative angle and to
 ## Ectopic folding area and depth
 
 To estimate the folded area in the cephalic furrow and ectopic folds, we annotated the region of the blastoderm before gastrulation that infolded in the cartographic projections using Fiji, and calculated the area correcting the pixel dimensions according to the coordinates in the projection.
-For the fold depth, we measured the distance between the vitelline envelope to the tip of the fold at the moment of maximum depth.
-To segment cell membranes and quantify apical areas, we used the plugin *MorphoLibJ* [@Legland2016-cp] ([imagej.net/plugins/morpholibj](https://imagej.net/plugins/morpholibj)).
+For the fold depth, we measured the distance between the vitelline envelope to the tip of the fold at the moment of maximum depth in the dorsal recordings.
+For the analysis of the epithelial surface, we used the plugin *MorphoLibJ* [@Legland2016-cp] ([imagej.net/plugins/morpholibj](https://imagej.net/plugins/morpholibj)) to segment, measure, and color-code the cell apical areas, and the plugin *Linear Stack Alignment with SIFT* [imagej.net/plugins/linear-stack-alignment-with-sift](https://imagej.net/plugins/linear-stack-alignment-with-sift) to register cells between timepoints.
 
 ## Laser cauterization experiments
 
