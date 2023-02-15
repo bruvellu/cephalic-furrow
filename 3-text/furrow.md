@@ -496,10 +496,10 @@ All authors revised and contributed to the text.
 ](figures/Fig4.jpg){#fig:experiments width=100%}
 
 ![Mechanical role of the cephalic furrow in development and evolution.
-**a** Schematic drawings of a lateral view comparing wildtype and cephalic furrow mutants. Tissue flows are represented by vermilion arrows, mitotic domains by gray circles, and the folded area by sky blue. In cephalic furrow mutants the excess of epithelial tissue on the surface combined with the formation of mitotic domains and germ band extension leads to mechanical instabilities at the head--trunk boundary.
-**b** Schematic drawings of a profile view comparing the changes in epithelial thickness in cephalic furrow mutants and the correlation with the position of tissue buckling.
-**c** Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in *Clogmia* [@Jimenez-Guri2014-zs] and *Chironomus* [@Caroti2015-cy], and present in the common ancestor of *Megaselia* [@Wotton2014-fr] and *Drosophila*. It is unclear whether mechanical stresses are present in the head--trunk boundary of flies without cephalic furrow.
-**d** Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head--trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head--trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow.
+**a**, Schematic drawings of a lateral view comparing wildtype and cephalic furrow mutants. Tissue flows are represented by vermilion arrows, mitotic domains by gray circles, and the folded area by sky blue. In cephalic furrow mutants the excess of epithelial tissue on the surface combined with the formation of mitotic domains and germ band extension leads to mechanical instabilities at the head--trunk boundary.
+**b**, Schematic drawings of a profile view comparing the changes in epithelial thickness in cephalic furrow mutants and the correlation with the position of tissue buckling.
+**c**, Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in *Clogmia* [@Jimenez-Guri2014-zs] and *Chironomus* [@Caroti2015-cy], and present in the common ancestor of *Megaselia* [@Wotton2014-fr] and *Drosophila*. It is unclear whether mechanical stresses are present in the head--trunk boundary of flies without cephalic furrow.
+**d**, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head--trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head--trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow.
 ](figures/Fig5.jpg){#fig:summary width=50%}
 
 \clearpage
@@ -594,7 +594,12 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ## Figures
 
 ![Initiator cell behaviors in cephalic furrow mutants.
+**a**, Profile view showing the cephalic furrow formation in wildtype, *prd*, *btd*, and *eve* embryos. The first frame (0.0min) corresponds to the end of cellularization in all samples and the arrow marks the moment of infolding. In wildtype, the furrow initiation begins before the cellularization is complete. The initiator cell shortens with the adjacent cells rolling over with their apical sides arched in tight contact, a typical cell arrangement for the cephalic furrow formation (wildtype 0.0min). In *prd*, the initiator cell shortens and an invagination forms, but the movement is delayed and the cell morphologies differ from the wildtype (*prd* 6.1min). In *btd*, no cell undergoes shortening but some embryos exhibit a small degree of anisotropic apical constriction (*btd* 6.0min, see also **b**). This initial bulging primes the buckling of the epithelium in a ectopic fold. In *eve*, the cells show neither shortening nor apical constriction (*eve* 7.9min).
+**b**, Surface view view of cartographic projections showing the head--trunk interface. In wildtype, the cell shortening and apical constriction In *prd* and *btd* embryos, the cells show a certain degree of anisotropic apical constriction; that is not the case for *eve* embryos.
 ](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
+<!--TODO: Add scale bars to a and b.-->
+<!--TODO: Add annotation for apical constriction.-->
+<!--TODO: Add time annotation.-->
 
 ![Ectopic folding features in cephalic furrow mutants.
 ](figures/FigS2.jpg){#fig:features tag=S2 width=100%}
