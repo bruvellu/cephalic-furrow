@@ -11,5 +11,7 @@ This repository contains data, analyses, and supporting information associated w
 
 ## Citation
 
-Vellutini BC, Cuenca MB, Krishna A, Szałapak A, Modes CD, Tomančák P. **Pre-patterned invagination prevents mechanical instability in fly gastrulation**. (*in prep*)
+Note: This work will soon be available as a preprint in bioRxiv. For a preview of the manuscript check [here](https://htmlpreview.github.io/?https://github.com/bruvellu/cephalic-furrow/blob/main/3-text/furrow.html).
+
+Vellutini BC, Cuenca MB, Krishna A, Szałapak A, Modes CD, Tomančák P. **Pre-patterned epithelial invagination prevents mechanical instability during fly gastrulation**. (*in prep*)
 
