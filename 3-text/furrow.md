@@ -1,5 +1,6 @@
 ---
-title: Pre-patterned invagination prevents mechanical instability in fly gastrulation
+title: Pre-patterned epithelial invagination prevents mechanical instability during fly gastrulation
+#title: Pre-patterned invagination prevents mechanical instability in fly gastrulation
 #title: Head invagination buffers mechanical stresses in fly gastrulation
 #title: Cephalic furrow prevents mechanical instability in fly gastrulation
 #title: Programmed epithelial invagination prevents mechanical instability in fly gastrulation
@@ -597,6 +598,7 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 **a**, Profile view showing the cephalic furrow formation in wildtype, *prd*, *btd*, and *eve* embryos. The first frame (0.0min) corresponds to the end of cellularization in all samples and the arrow marks the moment of infolding. In wildtype, the furrow initiation begins before the cellularization is complete. The initiator cell shortens with the adjacent cells rolling over with their apical sides arched in tight contact, a typical cell arrangement for the cephalic furrow formation (wildtype 0.0min). In *prd*, the initiator cell shortens and an invagination forms, but the movement is delayed and the cell morphologies differ from the wildtype (*prd* 6.1min). In *btd*, no cell undergoes shortening but some embryos exhibit a small degree of anisotropic apical constriction (*btd* 6.0min, see also **b**). This initial bulging primes the buckling of the epithelium in a ectopic fold. In *eve*, the cells show neither shortening nor apical constriction (*eve* 7.9min).
 **b**, Surface view view of cartographic projections showing the head--trunk interface. In wildtype, the cell shortening and apical constriction In *prd* and *btd* embryos, the cells show a certain degree of anisotropic apical constriction; that is not the case for *eve* embryos.
 ](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
+
 <!--TODO: Add scale bars to a and b.-->
 <!--TODO: Add annotation for apical constriction.-->
 <!--TODO: Add time annotation.-->
