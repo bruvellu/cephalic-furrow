@@ -6888,8 +6888,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4181667"
-     inkscape:cx="258.78481"
-     inkscape:cy="251.02831"
+     inkscape:cx="277.47091"
+     inkscape:cy="248.20777"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -24021,7 +24021,10 @@
        xlink:href="wtfold/MONTAGE_rgap_1b_z3_t60s_E7_s20_0x50_w1745_h940_fliph_f38-107_crop_sift_crop.png"
        id="image39387"
        x="122.50615"
-       y="117.04293" /><text
+       y="117.04293"
+       inkscape:export-filename="./wtef.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" /><text
        transform="rotate(-90)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.78708px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;display:inline;stroke-width:0.0635841;stroke-linecap:butt;stroke-linejoin:round"
        id="text150403-9"
