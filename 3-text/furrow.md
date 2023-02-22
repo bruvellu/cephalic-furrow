@@ -635,8 +635,7 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 <!--TODO: Add scale bar-->
 <!--TODO: Add n values-->
 
-![*Drosophila* proportions in wild type embryos and cephalic furrow mutants.
-Dimensions used as a reference for the model.
+![Embryonic proportions in wildtype and cephalic furrow mutants. Approximate relative sizes and positions between embryonic features such as mitotic domains, folds, and the germ band. All values are relative to the embryo length. We used these dimensions as a reference for creating the model.
 ](figures/FigS5.jpg){#fig:proportions tag=S5 width=80%}
 
 ![Lateral and dorsal views of *stg* mutant embryos.
