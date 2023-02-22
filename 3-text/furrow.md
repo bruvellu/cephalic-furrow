@@ -629,8 +629,11 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 <!--TODO: Convert area from px to µm-->
 <!--TODO: Add values to plot to be more informative-->
 
-![Strain rate analysis in cephalic furrow mutants.
+![Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top) and homozygote embryos (bottom). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {@fig:mitotic}d.
 ](figures/FigS4.jpg){#fig:strain tag=S4 width=80%}
+
+<!--TODO: Add scale bar-->
+<!--TODO: Add n values-->
 
 ![*Drosophila* proportions in wild type embryos and cephalic furrow mutants.
 Dimensions used as a reference for the model.
