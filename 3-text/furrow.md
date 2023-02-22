@@ -623,10 +623,11 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 <!--TODO: Add n and genotype annotation to (j)-->
 <!--TODO: Add scale bar to (k)-->
 
-![Apical area increase in individual cells within mitotic domains.
+![Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell.
 ](figures/FigS3.jpg){#fig:apical tag=S3 width=50%}
 
 <!--TODO: Convert area from px to µm-->
+<!--TODO: Add values to plot to be more informative-->
 
 ![Strain rate analysis in cephalic furrow mutants.
 ](figures/FigS4.jpg){#fig:strain tag=S4 width=80%}
