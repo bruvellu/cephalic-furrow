@@ -638,10 +638,15 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ![Embryonic proportions in wildtype and cephalic furrow mutants. Approximate relative sizes and positions between embryonic features such as mitotic domains, folds, and the germ band. All values are relative to the embryo length. We used these dimensions as a reference for creating the model.
 ](figures/FigS5.jpg){#fig:proportions tag=S5 width=80%}
 
-![Lateral and dorsal views of *stg* mutant embryos.
+![Lateral and dorsal views of *stg* mutant embryos. Embryos *stg* homozygotes show no cell divisions after gastrulation. Despite of that, the early morphogenetic movements of gastrulation occur normally.
+**a**, Lateral 3D renderings. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head.
+**b**, Profile views. The initiator cell behaviors are not perturbed in *stg* mutants and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos.
 ](figures/FigS6.jpg){#fig:stg tag=S6 width=100%}
 
-![Cephalic furrow simulation parameter sweep.
+<!--TODO: Add scale bars for (a)-->
+<!--TODO: Annotate cell divisions in (b)-->
+
+![Parameter sweep for cephalic furrow simulations.Different conditions Cephalic furrow simulation parameter sweep.
 ](figures/FigS7.jpg){#fig:cf-sweep tag=S7 width=100%}
 
 ![Tortuosity image processing and analysis pipeline.
