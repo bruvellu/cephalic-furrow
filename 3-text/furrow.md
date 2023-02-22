@@ -653,7 +653,10 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 
 <!--TODO: Replace with newer simulations?-->
 
-![Tortuosity image processing and analysis pipeline.
+![Image processing pipeline for the tortuosity analysis in cauterized mutants.
+**a**, We acquired a single slice in profile view of the head--trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window of 1000x120 pixels to standardize the size of the analyzed area for all embryos.
+**b**, Then, we applied a gaussian blur which allows to capture the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing.
+**c**, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ.
 ](figures/FigS8.jpg){#fig:tortuosity tag=S8 width=100%}
 
 ![Ablation image processing and analysis pipeline.
