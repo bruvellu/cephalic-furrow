@@ -646,8 +646,12 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 <!--TODO: Add scale bars for (a)-->
 <!--TODO: Annotate cell divisions in (b)-->
 
-![Parameter sweep for cephalic furrow simulations.Different conditions Cephalic furrow simulation parameter sweep.
+![Parameter sweep for cephalic furrow simulations.
+**a**, Bending rigidity and cephalic furrow depth at different values of KCF and germ band extension. Values above 0.2 exhibit a clear peak in bending energy for most conditions and the depth reaches a plateau across iterations. The cephalic furrow depth at the peak of bending energy (max bend) and at the final iteration is similar for simulations with 0% of germ band extension. At higher percentages of germ band extension the folds (both cephalic furrow and ectopic folds) exhibit a greater depth at the last iteration.
+**b**, Finer-grained parameter sweep of ectopic folding without (TMD=0) and with (TMD=5) a delay in cephalic furrow formation. With simultaneous formation, only higher values of KCF are effective in buffering the formation of ectopic folds around the cephalic furrow region. This is also limited to low percentages of germ band extension since at higher percentages there is an increase in the frequency of ectopic folding. When a delay in mitotic formation is present, even low values of KCF are effective in preventing the formation of ectopic folds. In this condition, the extension of the germ band increases the formation of ectopic folds, but only at the posterior regions close to the germ band tip. This suggests that the initiation of the cephalic furrow is crucial to its ability to buffer the ectopic folding.
 ](figures/FigS7.jpg){#fig:cf-sweep tag=S7 width=100%}
+
+<!--TODO: Replace with newer simulations?-->
 
 ![Tortuosity image processing and analysis pipeline.
 ](figures/FigS8.jpg){#fig:tortuosity tag=S8 width=100%}
