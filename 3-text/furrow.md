@@ -659,7 +659,9 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 **c**, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ.
 ](figures/FigS8.jpg){#fig:tortuosity tag=S8 width=100%}
 
-![Ablation image processing and analysis pipeline.
+![Image processing pipeline for the ablation analysis.
+**a**, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit (bottom right) over the distance between edges extracted from the kymograph. In this case, the distance is increasing over time showing a positive recoil velocity.
+**b**, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time.
 ](figures/FigS9.jpg){#fig:ablation tag=S9 width=80%}
 
 \clearpage
