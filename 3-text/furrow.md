@@ -623,8 +623,10 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 <!--TODO: Add n and genotype annotation to (j)-->
 <!--TODO: Add scale bar to (k)-->
 
-![Cell apical area in mitotic domains.
+![Apical area increase in individual cells within mitotic domains.
 ](figures/FigS3.jpg){#fig:apical tag=S3 width=50%}
+
+<!--TODO: Convert area from px to µm-->
 
 ![Strain rate analysis in cephalic furrow mutants.
 ](figures/FigS4.jpg){#fig:strain tag=S4 width=80%}
