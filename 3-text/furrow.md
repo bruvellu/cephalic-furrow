@@ -603,8 +603,25 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 <!--TODO: Add annotation for apical constriction.-->
 <!--TODO: Add time annotation.-->
 
-![Ectopic folding features in cephalic furrow mutants.
+![Differences between ectopic folding and cephalic furrow formation.
+**a**, Profile view of a *btd* mutant embryo showing the presence of two ectopic folds (arrows) forming next to dividing cells (asterisks).
+**b**, Distribution of ectopic folds in *eve* homozygotes (right) and sibling controls (left).
+**c**, Folded area of the cephalic furrow and ectopic folds in *eve* heterozygotes (left) and homozygotes (right).
+**d**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.
+**e**, Dynamics, angle directionality, and tortuosity measurements comparing the cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no clear trend in the angle directionality or in the tortuosity values.
+**f**, Maximum folding depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. The ectopic folds are generally shallower than the cephalic furrow in both genetic backgrounds.
+**g**, Folded area of ectopic folds in wildtype embryos compared to ectopic folds in *btd*, *eve*, and *prd* embryos.
+**h**, Lateral views of wildtype and *prd* embryos exhibiting ectopic folds.
+**i**, Cartographic projections showing the folded area in the cephalic furrow and ectopic folds of the embryos in **h**.
+**j**, Comparison of folded area between the cephalic furrow and ectopic folds in different genetic backgrounds.
+**k**, Developmental sequence of the wildtype embryo ectopic fold annotated in **i**. Four cells are temporarily infolded during the mitotic expansion of adjacent cells.
 ](figures/FigS2.jpg){#fig:features tag=S2 width=100%}
+
+<!--TODO: Add scale bar to profile (a)-->
+<!--TODO: Add color scale to (d)-->
+<!--TODO: Add stages to (h)-->
+<!--TODO: Add n and genotype annotation to (j)-->
+<!--TODO: Add scale bar to (k)-->
 
 ![Cell apical area in mitotic domains.
 ](figures/FigS3.jpg){#fig:apical tag=S3 width=50%}
