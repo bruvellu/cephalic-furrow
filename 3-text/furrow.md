@@ -384,8 +384,8 @@ To ensure the cut, we repeated the scan ten consecutive times along a single cel
 We ablated each embryo just once.
 <!--TODO: Does a higher temperature affects the quantifications?-->
 The temperature was maintained at 28°C.
-To analyse the ablation data, we generated kymographs perpendicular to the cuts and crossing the edges of the ablated cell using the *Multi Kymograph* Fiji plugin ({@fig:ablation}).
-We then binarized the kymographs, measured the distance between cell edges over time, and performed a linear fit of the data to obtain the recoil velocity ({@fig:ablation}).
+To analyse the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the *Multi Kymograph* Fiji plugin ({@fig:ablation}).
+We then binarized the kymographs, measured the distance between cell edges over the first 30s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({@fig:ablation}).
 
 ## Strain rate analysis
 
