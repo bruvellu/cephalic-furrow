@@ -145,7 +145,7 @@ To understand the dynamics of tissue strain, we measured the rate of tissue defo
 We find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak that coincides with the maximum expansion of mitotic domains and with the appearance of the ectopic folds ({@fig:mitotic}d,e, {@fig:strain}, {!@fig:vid-strain-rate}).
 We have also quantified the strain rate more posterior where the trunk tissue interacts with the tip of the germ band (trunk--germ).
 At the trunk--germ interface, the strain rate is lower than at the head--trunk, but it steadily increases over time probably driven by the extending germ band ({@fig:mitotic}d).
-The epithelial cells between the Mitotic Domain 6 (MD6) and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}e, {!@fig:vid-trunk-germ}), and often form ectopic folds ({@fig:mitotic}a,c).
+The epithelial cells between the Mitotic Domain 6 (MD6) and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}e), and often form ectopic folds ({@fig:mitotic}a,c).
 Taken together, these analyses suggest the expansion of mitotic domains, and the extension of the germ band are potential sources of mechanical stress to the epithelial monolayer, and that they may be involved in the formation of ectopic folds by tissue buckling.
 
 <!--TODO: Include cell shape analyses with density et al. around here-->
@@ -563,17 +563,14 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ![Dynamics of ectopic folding in *btd* mutant. The cephalic furrow in sibling controls (top) and the ectopic folds in *btd* mutants (bottom) are annotated in white to visualize the dynamics in position, extension, and shape during their formation.
 ](figures/Vid5.jpg){#fig:vid-dynamics-btd tag="Video 5" width=50%}
 
-![Variability of ectopic folding in *btd* mutants. The video shows four individual *btd* mutants where each display a different pattern and number of ectopic folds at the head--trunk interface.
+![Variability of ectopic folding in *btd* mutants. The video shows four individual *btd* mutants where each display a different pattern and number of ectopic folds at the head--trunk interface. The video is looped to highlight the dynamics of ectopic folding.
 ](figures/Vid6.jpg){#fig:vid-variability-btd tag="Video 6" width=50%}
 
 ![Ectopic folding between mitotic domains in *btd* mutant. Detailed view of cartographic projections of *btd* embryos showing the formation of the cephalic furrow (left) and of an ectopic fold (right). In sibling controls, the cephalic furrow initiates in a progressive manner from a narrow row of cells before mitotic domains which only appear at about 20min. In *btd* mutants, the ectopic folds appear in an abrupt manner without any preceding changes in epithelial cells and unfold soon after.
 ](figures/Vid7.jpg){#fig:vid-mitotic-fold tag="Video 7" width=50%}
 
-![Strain rate analysis during ectopic fold formation in *btd* mutant.
+![Epithelial strain rate during ectopic folding in *btd* mutant. Video from @fig:vid-mitotic-fold overlayed with the estimated strain rate across the tissues. Increase in strain rates are associated with infolding and mitotic expansions.
 ](figures/Vid8.jpg){#fig:vid-strain-rate tag="Video 8" width=50%}
-
-![Increased compression at the trunk--germ interface in *btd* mutant.
-](figures/Vid9.jpg){#fig:vid-trunk-germ tag="Video 9" width=50%}
 
 ![Lateral views of control and cauterized *eve* mutant embryos.
 ](figures/Vid10.jpg){#fig:vid-cautlat-eve tag="Video 10" width=50%}
