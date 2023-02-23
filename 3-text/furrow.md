@@ -572,17 +572,20 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ![Epithelial strain rate during ectopic folding in *btd* mutant. Video from @fig:vid-mitotic-fold overlayed with the estimated strain rate across the tissues. Increase in strain rates are associated with infolding and mitotic expansions.
 ](figures/Vid8.jpg){#fig:vid-strain-rate tag="Video 8" width=50%}
 
-![Lateral views of control and cauterized *eve* mutant embryos.
+![Lateral views of germ band cauterization in *eve* embryos. Non-cauterized *eve* embryo showing the formation of ectopic folds (top) and a cauterized *eve* embryo where no ectopic folds appear at the head--trunk interface (bottom). The germ band extension is mechanically blocked by cauterizing the tissue to the vitelline envelope. Mitotic domains form normally but the surface remains integer.
 ](figures/Vid9.jpg){#fig:vid-cautlat-eve tag="Video 9" width=50%}
+<!--TODO: Replace eve embryo so that it is not the same used in a previous video?-->
 
-![Dorsal views of cauterized *eve* mutant.
+![Profile views of germ band cauterization in *eve* mutant. Same embryo as @fig:vid-cautlat-eve, but showing a surface and a profile view. The cauterization prevents the extension of the germ band. The mitotic domains compress non-dividing cells but these do not buckle.
 ](figures/Vid10.jpg){#fig:vid-cautdor-eve tag="Video 10" width=50%}
 
-![Dorsal view of control and cauterized *btd* mutant embryos.
+![Profile views of germ band cauterizations in *btd* embryos. A non-cauterized *btd* embryo (top) forming ectopic folds while a cauterized *btd* embryo showing no ectopic folds (bottom).
 ](figures/Vid11.jpg){#fig:vid-cautdor-btd tag="Video 11" width=50%}
 
-![Lateral view of *btd*--*stg* double mutant.
+![Lateral view of *btd*--*stg* double mutant. A sibling control (*btd* homozygote and *stg* heterozygote) (top) and a *btd*--*stg* double mutant.
 ](figures/Vid12.jpg){#fig:vid-double-lateral tag="Video 12" width=50%}
+
+<!--TODO: Replace sibling control by a single btd mutant?-->
 
 <!--![Dorsal view of *btd*--*stg* double mutant. [VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-double-dorsal tag="Video 13" width=50%}-->
 
