@@ -34,17 +34,17 @@ We accessed the influence of the germ band to cephalic furrow formation by measu
 2. Ran the macro [`1-run_straighten.ijm`](1-run_straighten.ijm) to open the original stacks with their segmented line ROIs, execute the `Straighten...` ImageJ tool, and save the straightened stacks to [3-tortuosity](3-tortuosity).
 3. Then opened the straightened stacks in Fiji and manually defined crop region of 1000x120px (about 200x25µm) around the head--trunk interface. We saved the rectangle as a ROI to the same folder, appending to the file name the frame that corresponds to the onset of gastrulation to synchronize the stacks downstream.
 4. We ran the macro [2-run_tortuosity.ijm](2-run_tortuosity.ijm) which performs a series of operations to obtain an outline of the apical surface of the epithelium. It works as follows:
-  a. Open stack and rectangle ROI parsing the initial frame corresponding to the onset of gastrulation.
-  b. Run `Duplicate...` to crop the current ROI keeping the initial frame plus the subsequent 19 frames (about 50min).
-  c. Apply gaussian blur (sigma=3).
-  d. Convert to mask (method=Li).
-  e. Fill holes and edges.
-  f. Invert LUT to obtain a white line with black background.
-  g. Create a one column montage for all frame outlines.
-  h. Run `Skeletonize (2D/3D)` to define lines from the outlines.
-  i. Fix any missing pixels at the edges.
-  j. Run `Analyze Skeleton (2D/3D)` and save measurements as text files.
-  k. Run `Temporal-Color Code` script to create a color-coded temporal projection.
+   1. Open stack and rectangle ROI parsing the initial frame corresponding to the onset of gastrulation.
+   2. Run `Duplicate...` to crop the current ROI keeping the initial frame plus the subsequent 19 frames (about 50min).
+   3. Apply gaussian blur (sigma=3).
+   4. Convert to mask (method=Li).
+   5. Fill holes and edges.
+   6. Invert LUT to obtain a white line with black background.
+   7. Create a one column montage for all frame outlines.
+   8. Run `Skeletonize (2D/3D)` to define lines from the outlines.
+   9. Fix any missing pixels at the edges.
+   10. Run `Analyze Skeleton (2D/3D)` and save measurements as text files.
+   11. Run `Temporal-Color Code` script to create a color-coded temporal projection.
 5. Finally, we loaded the measurements in R, processed the data, and generated plots of tortuosity over time using [tortuosity.Rmd](tortuosity.Rmd).
 
 ### Cephalic furrow depth in cauterized wildtype
