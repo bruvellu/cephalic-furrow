@@ -573,16 +573,16 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ](figures/Vid8.jpg){#fig:vid-strain-rate tag="Video 8" width=50%}
 
 ![Lateral views of control and cauterized *eve* mutant embryos.
-](figures/Vid10.jpg){#fig:vid-cautlat-eve tag="Video 10" width=50%}
+](figures/Vid9.jpg){#fig:vid-cautlat-eve tag="Video 9" width=50%}
 
 ![Dorsal views of cauterized *eve* mutant.
-](figures/Vid11.jpg){#fig:vid-cautdor-eve tag="Video 11" width=50%}
+](figures/Vid10.jpg){#fig:vid-cautdor-eve tag="Video 10" width=50%}
 
 ![Dorsal view of control and cauterized *btd* mutant embryos.
-](figures/Vid12.jpg){#fig:vid-cautdor-btd tag="Video 12" width=50%}
+](figures/Vid11.jpg){#fig:vid-cautdor-btd tag="Video 11" width=50%}
 
 ![Lateral view of *btd*--*stg* double mutant.
-](figures/Vid13.jpg){#fig:vid-double-lateral tag="Video 13" width=50%}
+](figures/Vid12.jpg){#fig:vid-double-lateral tag="Video 12" width=50%}
 
 <!--![Dorsal view of *btd*--*stg* double mutant. [VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-double-dorsal tag="Video 13" width=50%}-->
 

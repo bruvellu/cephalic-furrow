@@ -66,10 +66,10 @@ linkvid:
 	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.m4v ${FIGUREOUT}/Vid7.m4v
 	ln -s ${FIGUREIN}/strain-rate/videos/Strain_btd_E10_E14_label_loop.m4v ${FIGUREOUT}/Vid8.m4v
 	#ln -s ${FIGUREIN}/strain-rate/videos/LABEL_COMBINE_3D_btd-gap_z3_t55s_E12_E8.m4v ${FIGUREOUT}/Vid9.m4v
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.m4v ${FIGUREOUT}/Vid10.m4v
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.m4v ${FIGUREOUT}/Vid11.m4v
-	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.m4v ${FIGUREOUT}/Vid12.m4v
-	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-gap-stg_7_z3_60s_E18_E3.m4v ${FIGUREOUT}/Vid13.m4v
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.m4v ${FIGUREOUT}/Vid9.m4v
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.m4v ${FIGUREOUT}/Vid10.m4v
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.m4v ${FIGUREOUT}/Vid11.m4v
+	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-gap-stg_7_z3_60s_E18_E3.m4v ${FIGUREOUT}/Vid12.m4v
 	#Supplementary
 	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.m4v ${FIGUREOUT}/VidS1.m4v
 	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.m4v ${FIGUREOUT}/VidS2.m4v
