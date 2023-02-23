@@ -660,7 +660,7 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ](figures/FigS8.jpg){#fig:tortuosity tag=S8 width=100%}
 
 ![Image processing pipeline for the ablation analysis.
-**a**, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit (bottom right) over the distance between edges extracted from the kymograph. The position of the laser cut is annotated in vermilion, the edges marked in pink circles, and the edge distance in blue. In this case, the distance is increasing over time showing a positive recoil velocity.
+**a**, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increase over time.
 **b**, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time.
 ](figures/FigS9.jpg){#fig:ablation tag=S9 width=80%}
 
