@@ -551,13 +551,13 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ![Lateral view of ectopic fold formation in *btd* mutant. The cephalic furrow forms normally in sibling controls (top) but is absent in *btd* mutants (bottom). No fold is present at the head--trunk interface until about 20min, when a large ectopic fold appears. The ectopic fold quickly unfolds at about 45min while the cephalic furrow remains partially invaginated in the sibling control for the period shown in the recording (about 110min).
 ](figures/Vid1.jpg){#fig:vid-lateral-btd tag="Video 1" width=50%}
 
-![Lateral view of ectopic fold formation in *eve* mutant. The cephalic furrow forms normally in sibling controls (top) but is absent in *eve* mutants (bottom). There is no invagination at the head--trunk boundary at the onset of gastrulation, but an ectopic fold starts forming near the dorsal region as soon as the mitotic domains begin expanding around 24min. The ectopic folds almost entirely by the end of the recording (about 85min).
+![Lateral view of ectopic fold formation in *eve* mutant. The cephalic furrow forms normally in sibling controls (top) but is absent in *eve* mutants (bottom). There is no invagination at the head--trunk boundary at the onset of gastrulation, but an ectopic fold starts forming near the dorsal region as soon as the mitotic domains begin expanding around 24min. The ectopic folds almost entirely by the end of the recording (about 85min). Additional ectopic folds also appear more posterior, in the trunk region.
 ](figures/Vid2.jpg){#fig:vid-lateral-eve tag="Video 2" width=50%}
 
-![Profile view of ectopic fold formation in *btd* mutant.
+![Profile view of ectopic fold formation in *btd* mutant. In sibling controls (top), the cephalic furrow initiates at the onset of gastrulation (1.5min) and is fully invaginated when the cell divisions start (about 11min). In *btd* mutants (bottom), no invagination initiates but some embryos exhibit a bulging of the epithelium due to a reminiscent apical constriction (about 7min). An ectopic fold forms at this position which differs greatly in morphology from the cephalic furrow (see 10min). Both the cephalic furrow and ectopic folds regress with the extension of the germ band.
 ](figures/Vid3.jpg){#fig:vid-profile-btd tag="Video 3" width=50%}
 
-![Profile view of ectopic fold formation in *eve* mutant.
+![Profile view of ectopic fold formation in *eve* mutant. In sibling controls (top), the cephalic furrow intiates at the onset of gastrulation (1.8min). In *eve* mutants, there are no folds appearing in the epithelium until the formation of mitotic domains (about 10min). Then, a large ectopic fold appears posterior to dividing cells (15min). The epithelium of *eve* mutants show additional folding events along the head and trunk regions.
 ](figures/Vid4.jpg){#fig:vid-profile-eve tag="Video 4" width=50%}
 
 ![Lateral view of ectopic fold dynamics in *btd* mutant.
