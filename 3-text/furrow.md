@@ -674,14 +674,20 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 
 ## Videos
 
-![Reminiscent initiator cell behavior in *btd* mutants.
+![Reminiscent apical constriction in *btd* mutants. Lateral view (left) and cartographic projection (right) of the head--trunk interface in four individual *btd* mutants. Cells exhibit different degrees of apical constriction. The video is looped to highlight the changes in apical cell area.
 ](figures/VidS1.jpg){#fig:vid-initiator tag="Video S1" width=50%}
 
-![Lateral view of cephalic furrow formation in *stg* mutant embryos.
+<!--TODO: Add scale bars-->
+
+![Lateral view of cephalic furrow formation in *stg* mutants. Sibling control (top) and *stg* mutant (bottom) during gastrulation. The formation of the cephalic furrow almost identical to the control embryo. The other morphogenetic movements also occur normally until about 35min. At this point the cells in the *stg* mutant are notably larger than the control.
 ](figures/VidS2.jpg){#fig:vid-stg-lateral tag="Video S2" width=50%}
 
-![Dorsal view of cephalic furrow formation in *stg* mutant embryos.
+<!--TODO: Add values to scale bars-->
+
+![Dorsal view of cephalic furrow formation in *stg* mutants. Sibling control (top) and *stg* mutant (bottom) during gastrulation. The cephalic furrow in *stg* mutants initiates without delay and shows identical morphology to the control until cell divisions begin in the latter. The cells dividing within the cephalic furrow of control embryos alter its morphology, it becomes curved and lengthier. In contrast, the cephalic furrow in the *stg* mutant retains its initial morphology until it unfolds.
 ](figures/VidS3.jpg){#fig:vid-stg-dorsal tag="Video S3" width=50%}
+
+<!--TODO: Fix the time to show countdown to gastrulation-->
 
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
