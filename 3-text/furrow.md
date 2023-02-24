@@ -574,6 +574,7 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 
 ![Lateral views of germ band cauterization in *eve* embryos. Non-cauterized *eve* embryo showing the formation of ectopic folds (top) and a cauterized *eve* embryo where no ectopic folds appear at the head--trunk interface (bottom). The germ band extension is mechanically blocked by cauterizing the tissue to the vitelline envelope. Mitotic domains form normally but the surface remains integer.
 ](figures/Vid9.jpg){#fig:vid-cautlat-eve tag="Video 9" width=50%}
+
 <!--TODO: Replace eve embryo so that it is not the same used in a previous video?-->
 
 ![Profile views of germ band cauterization in *eve* mutant. Same embryo as @fig:vid-cautlat-eve, but showing a surface and a profile view. The cauterization prevents the extension of the germ band. The mitotic domains compress non-dividing cells but these do not buckle.
