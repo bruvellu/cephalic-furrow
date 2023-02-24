@@ -579,13 +579,14 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ![Profile views of germ band cauterization in *eve* mutant. Same embryo as @fig:vid-cautlat-eve, but showing a surface and a profile view. The cauterization prevents the extension of the germ band. The mitotic domains compress non-dividing cells but these do not buckle.
 ](figures/Vid10.jpg){#fig:vid-cautdor-eve tag="Video 10" width=50%}
 
-![Profile views of germ band cauterizations in *btd* embryos. A non-cauterized *btd* embryo (top) forming ectopic folds while a cauterized *btd* embryo showing no ectopic folds (bottom).
+![Profile views of germ band cauterizations in *btd* embryos. A non-cauterized *btd* embryo (top) showing ectopic folds and a cauterized *btd* embryo showing no ectopic folds (bottom).
 ](figures/Vid11.jpg){#fig:vid-cautdor-btd tag="Video 11" width=50%}
 
 ![Lateral view of *btd*--*stg* double mutant. A sibling control (*btd* homozygote and *stg* heterozygote) (top) and a *btd*--*stg* double mutant.
 ](figures/Vid12.jpg){#fig:vid-double-lateral tag="Video 12" width=50%}
 
 <!--TODO: Replace sibling control by a single btd mutant?-->
+<!--TODO: Fix time labeling not appearing before gastrulation-->
 
 <!--![Dorsal view of *btd*--*stg* double mutant. [VIDEOFILE](figures/Vid13.avi)](figures/Vid13.jpg){#fig:vid-double-dorsal tag="Video 13" width=50%}-->
 
