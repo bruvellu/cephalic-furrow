@@ -560,31 +560,25 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ![Profile view of ectopic fold formation in *eve* mutant. In sibling controls (top), the cephalic furrow intiates at the onset of gastrulation (1.8min). In *eve* mutants, there are no folds appearing in the epithelium until the formation of mitotic domains (about 10min). Then, a large ectopic fold appears posterior to dividing cells (15min). The epithelium of *eve* mutants show additional folding events along the head and trunk regions.
 ](figures/Vid4.jpg){#fig:vid-profile-eve tag="Video 4" width=50%}
 
-![Dynamics of ectopic folding in *btd* mutant. The cephalic furrow in sibling controls (top) and the ectopic folds in *btd* mutants (bottom) are annotated in white to visualize the dynamics in position, extension, and shape during their formation.
-](figures/Vid5.jpg){#fig:vid-dynamics-btd tag="Video 5" width=50%}
-
-![Variability of ectopic folding in *btd* mutants. The video shows four individual *btd* mutants where each display a different pattern and number of ectopic folds at the head--trunk interface. The video is looped to highlight the dynamics of ectopic folding.
-](figures/Vid6.jpg){#fig:vid-variability-btd tag="Video 6" width=50%}
-
 ![Ectopic folding between mitotic domains in *btd* mutant. Detailed view of cartographic projections of *btd* embryos showing the formation of the cephalic furrow (left) and of an ectopic fold (right). In sibling controls, the cephalic furrow initiates in a progressive manner from a narrow row of cells before mitotic domains which only appear at about 20min. In *btd* mutants, the ectopic folds appear in an abrupt manner without any preceding changes in epithelial cells and unfold soon after.
-](figures/Vid7.jpg){#fig:vid-mitotic-fold tag="Video 7" width=50%}
+](figures/Vid5.jpg){#fig:vid-mitotic-fold tag="Video 5" width=50%}
 
 ![Epithelial strain rate during ectopic folding in *btd* mutant. Video from @fig:vid-mitotic-fold overlayed with the estimated strain rate across the tissues. Increase in strain rates are associated with infolding and mitotic expansions.
-](figures/Vid8.jpg){#fig:vid-strain-rate tag="Video 8" width=50%}
+](figures/Vid6.jpg){#fig:vid-strain-rate tag="Video 6" width=50%}
 
 ![Lateral views of germ band cauterization in *eve* embryos. Non-cauterized *eve* embryo showing the formation of ectopic folds (top) and a cauterized *eve* embryo where no ectopic folds appear at the head--trunk interface (bottom). The germ band extension is mechanically blocked by cauterizing the tissue to the vitelline envelope. Mitotic domains form normally but the surface remains integer.
-](figures/Vid9.jpg){#fig:vid-cautlat-eve tag="Video 9" width=50%}
+](figures/Vid7.jpg){#fig:vid-cautlat-eve tag="Video 7" width=50%}
 
 <!--TODO: Replace eve embryo so that it is not the same used in a previous video?-->
 
 ![Profile views of germ band cauterization in *eve* mutant. Same embryo as @fig:vid-cautlat-eve, but showing a surface and a profile view. The cauterization prevents the extension of the germ band. The mitotic domains compress non-dividing cells but these do not buckle.
-](figures/Vid10.jpg){#fig:vid-cautdor-eve tag="Video 10" width=50%}
+](figures/Vid8.jpg){#fig:vid-cautdor-eve tag="Video 8" width=50%}
 
 ![Profile views of germ band cauterizations in *btd* embryos. A non-cauterized *btd* embryo (top) showing ectopic folds and a cauterized *btd* embryo showing no ectopic folds (bottom).
-](figures/Vid11.jpg){#fig:vid-cautdor-btd tag="Video 11" width=50%}
+](figures/Vid9.jpg){#fig:vid-cautdor-btd tag="Video 9" width=50%}
 
 ![Lateral view of *btd*--*stg* double mutant. A sibling control (*btd* homozygote and *stg* heterozygote) (top) and a *btd*--*stg* double mutant.
-](figures/Vid12.jpg){#fig:vid-double-lateral tag="Video 12" width=50%}
+](figures/Vid10.jpg){#fig:vid-double-lateral tag="Video 10" width=50%}
 
 <!--TODO: Replace sibling control by a single btd mutant?-->
 <!--TODO: Fix time labeling not appearing before gastrulation-->
@@ -680,16 +674,21 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 
 <!--TODO: Add scale bars-->
 
+![Dynamics of ectopic folding in *btd* mutant. The cephalic furrow in sibling controls (top) and the ectopic folds in *btd* mutants (bottom) are annotated in white to visualize the dynamics in position, extension, and shape during their formation.
+](figures/VidS2.jpg){#fig:vid-dynamics-btd tag="Video S2" width=50%}
+
+![Variability of ectopic folding in *btd* mutants. The video shows four individual *btd* mutants where each display a different pattern and number of ectopic folds at the head--trunk interface. The video is looped to highlight the dynamics of ectopic folding.
+](figures/VidS3.jpg){#fig:vid-variability-btd tag="Video S3" width=50%}
+
 ![Lateral view of cephalic furrow formation in *stg* mutants. Sibling control (top) and *stg* mutant (bottom) during gastrulation. The formation of the cephalic furrow almost identical to the control embryo. The other morphogenetic movements also occur normally until about 35min. At this point the cells in the *stg* mutant are notably larger than the control.
-](figures/VidS2.jpg){#fig:vid-stg-lateral tag="Video S2" width=50%}
+](figures/VidS4.jpg){#fig:vid-stg-lateral tag="Video S4" width=50%}
 
 <!--TODO: Add values to scale bars-->
 
 ![Dorsal view of cephalic furrow formation in *stg* mutants. Sibling control (top) and *stg* mutant (bottom) during gastrulation. The cephalic furrow in *stg* mutants initiates without delay and shows identical morphology to the control until cell divisions begin in the latter. The cells dividing within the cephalic furrow of control embryos alter its morphology, it becomes curved and lengthier. In contrast, the cephalic furrow in the *stg* mutant retains its initial morphology until it unfolds.
-](figures/VidS3.jpg){#fig:vid-stg-dorsal tag="Video S3" width=50%}
+](figures/VidS5.jpg){#fig:vid-stg-dorsal tag="Video S5" width=50%}
 
 <!--TODO: Fix the time to show countdown to gastrulation-->
-
 
 <!--- **Table S1:** Live-imaging datasets. File: `datasets.ods`.-->
 
