@@ -405,12 +405,12 @@ All data, scripts, notebooks, and analyses pipelines are available in the reposi
 
 # Acknowledgements
 
-We thank all current and past members of the laboratory of Pavel Tomancak (LoPaTs) for the discussions and support during this project.
-In particular, Akanksha Jain and Vladimir Ulman for the introduction to cartographic projections, Giulia Serafini for helping establishing the Gap homozygous stock, and Anaïs Bailles for detailed feedback.
-We also thank Michaela Burkon and Pavel Mejstrik for technical support.
-We thank Jan Brugués and Keisuke Ishihara for the laser ablation setup, the MPI-CBG Light Microscopy Facility for the great imaging support, and Sven Ssykor and Cornelia Maas for the help with fly stocks. 
-We thank Juliana Roscito for comments on an earlier version of the manuscript and Steffen Lemke and Yu-Chiun Wang for earlier discussions about the cephalic furrow.
-We thank Michael Akam for drawing BCV’s attention to the cephalic furrow which sparked off this project. 
+We thank all current and former LoPaTs for the discussions and support during this project.
+Akanksha Jain and Vladimir Ulman for initial help with cartographic projections, Giulia Serafini for help with fly crosses, Anaïs Bailles for constructive feedback, and Michaela Burkon and Pavel Mejstrik for technical support.
+Jan Brugués and Keisuke Ishihara for the laser ablation setup, the MPI-CBG Light Microscopy Facility for imaging support, and Sven Ssykor and Cornelia Maas for help with fly stocks.
+Steffen Lemke and Yu-Chiun Wang for cephalic furrow discussions.
+Juliana Roscito for text revisions.
+Michael Akam for drawing BCV’s attention to the cephalic furrow. 
 AS was supported by an EU FET Open Horizon 2020 (XXX) granted to CDM.
 BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018) and by an European Research Council (XXX) granted to PT.
 
@@ -418,9 +418,9 @@ BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018) and by an Europ
 
 BCV and PT conceived the study.
 BCV designed the experiments, generated the fly stocks, performed the live imaging and image processing, and analysed the data.
-MBC performed the laser ablations and cauterizations and strain rate analyses.
-CDM, AK, and AS designed and created the model.
-AK and AS ran and analyzed the simulation results.
+MBC performed the laser ablations and cauterizations and the strain rate analyses.
+CDM, AK, and AS designed the model.
+AK and AS created the model and performed the simulations.
 BCV wrote the manuscript.
 All authors revised and contributed to the text.
 
