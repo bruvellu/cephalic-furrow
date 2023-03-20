@@ -105,9 +105,13 @@ The putative initiator cells of *btd* mutants do not shorten, but show a reminis
 In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
 These differences may be associated with apical myosin activity which is present in *btd* but not in *eve* mutants [@Eritano2020-mi].
 Overall, while the behavior of initiator cells is perturbed in the three mutants, the cellular basis for cephalic furrow formation---cell shortening---is only severely disrupted in *btd* and *eve* mutants.
+
 Interestingly, their head epithelium still folds in the subsequent minutes of gastrulation ({@fig:initiator}a).
 The formation of a late fold was first observed in *eve* mutants [@Vincent1997-fa], and more recently in *btd* mutants [@Eritano2020-mi], but the mechanisms driving its formation have not been identified.
 Intrigued by this puzzling phenotype, we asked whether this folding is a direct physical consequence linked to the absence of the cephalic furrow.
+
+<!--TODO:PT: This is a crucial observation, motivating the entire paper. It is a bit hidden here. I would consider strengthening this transition. But I see that you want to put the emphasis on the analysis of this phenomenon not claim its discovery. That’s why I leave this to you.-->
+TODO: Re-write ending, possibly in a new paragraph, to emphasize the EFs. Put more weight on the discovery aspect, not of the EFs themselves, but as a direct consequence of the absence of the CF, as well as for the investigation of the underlying mechanisms for their formation.
 
 <!--TODO: {!@fig:vid-initiator-prd}-->
 <!--TODO: {!@fig:vid-initiator-btd}-->
@@ -122,14 +126,17 @@ They can form anterior, posterior, or near the site of cephalic furrow formation
 On average, ectopic folds have an area 50% smaller and a depth 25% shallower when compared to the cephalic furrow ({@fig:ectopic}g,h, {@fig:features}c,f).
 We find that the penetrance of the ectopic folding phenotype is high in cephalic furrow mutants (>93%).
 <!--TODO:AK: Fix placement of 13% for sibling controls, confusing in the sentence-->
-Nearly every *btd* and *eve* homozygote embryos show one or more ectopic folds (2.0±1.0 and 1.8±0.6 folds per side, respectively ({@fig:ectopic}b, {@fig:features}a), while sibling controls show a low (13%) frequency of ectopic folding with an average of 1.1±0.2 ({@tbl:stats}).
+Nearly every *btd* and *eve* homozygote embryos show one or more ectopic folds (2.0±1.0 and 1.8±0.6 folds per side, respectively) ({@fig:ectopic}b, {@fig:features}a), while sibling controls show a low (13%) frequency of ectopic folding with an average of 1.1±0.2 ({@tbl:stats}).
 The frequency of ectopic folds in *prd* mutants is lower (43%), while in wildtype embryos it is surprisingly high (80%) ({@tbl:stats}).
 <!--TODO:AS: Is there a figure showing ectopic folds in prd and wildtype embryos?-->
 <!--TODO: Add figure for wildtype ectopic folds and include new plot with EF areas-->
-The ectopic folds in *prd* and wildtype embryos appear at a similar time compared to the ectopic folds in *btd* and *eve* embryos, but they only form anterior or posterior to the cephalic furrow and have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g--k, {@tbl:area}).
+The ectopic folds in *prd* and wildtype embryos appear at a similar time compared to the ectopic folds in *btd* and *eve* embryos, but they have a significantly smaller folded area compared to the ectopic folds in cephalic furrow mutants ({@fig:features}g--k, {@tbl:area}).
 <!--TODO:AS: Does it? Could also be that not all gastrulation stresses are buffered by the CF?-->
 The differences in morphology and dynamics between the cephalic furrow and ectopic folds suggest that the latter form via different mechanisms, and that the ectopic folding phenotype is causally linked to the absence of the cephalic furrow in mutant embryos.
 <!--TODO: Revise this last sentence, and probably split it in two.-->
+
+<!--TODO:PT: This is confusing. I know that’s how it is but it is very surprising observation, which you have made because you were looking for it. I think you need to somehow better emphasize the differences between wild-type ectopic folds and the folds in eve and btd because otherwise the conclusion that they are casually linked to the absence of the furrow in the mutants does not seem to hold.-->
+<!--TODO: Emphasize better the differences between wt and mutant EFs. The higher frequency of anterior and posterior folds in wt should not confuse the reader that EF formation is a direct consequence of CF absence. The position and area of folding matters, need to write in a way that it’s clearer. Use the sentence below stating more clearly the difference between the wt and mutant EFs (less frequent and smaller).-->
 
 The variability in the positioning of ectopic fold formation in cephalic furrow mutants, and the less frequent occurrence of smaller ectopic folds in *prd* and wildtype embryos, suggests that they are not under genetic control comparable to the cephalic furrow and may form as a result of physical interactions in the tissue.
 We investigated two concurrent gastrulation processes that could drive their formation: cell divisions in mitotic domains and the extension of the germ band.
@@ -144,6 +151,7 @@ Compared to the progressive invagination of the cephalic furrow (about 14 min), 
 To understand the dynamics of tissue strain, we measured the rate of tissue deformation (strain rate) at the head--trunk using particle image velocimetry.
 We find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak that coincides with the maximum expansion of mitotic domains and with the appearance of the ectopic folds ({@fig:mitotic}d,e, {@fig:strain}, {!@fig:vid-strain-rate}).
 We have also quantified the strain rate more posterior where the trunk tissue interacts with the tip of the germ band (trunk--germ).
+<!--TODO:PT: I have considered rewriting this in a way that not all folds happen between two adjacent mitotic domains. Some occur posterior to MD6 where the source of compression must be different. We hypothesize it is germ band. But it didn’t work. Maybe think about whether this could be a useful transition. Here it seems forced. We have also looked at strain rate in this region but why?-->
 At the trunk--germ interface, the strain rate is lower than at the head--trunk, but it steadily increases over time probably driven by the extending germ band ({@fig:mitotic}d).
 The epithelial cells between the Mitotic Domain 6 (MD6) and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}e), and often form ectopic folds ({@fig:mitotic}a,c).
 Taken together, these analyses suggest the expansion of mitotic domains, and the extension of the germ band are potential sources of mechanical stress to the epithelial monolayer, and that they may be involved in the formation of ectopic folds by tissue buckling.
@@ -163,12 +171,14 @@ To simulate the physical interactions between mitotic domains, germ band, and ce
 The germ band in our model is defined by the position of the posterior-most particle which is placed at different percentages of egg length for each simulation ({@fig:model}b).
 <!--We did not directly encode ectopic folds in the model.-->
 To run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system, using the peak of bending energy as a reference point for the initial phase of the folding ({@fig:model}d).
+<!--TODO:PT: “as a reference point for the initial phase of the folding” I don’t understand this.-->
 
 To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions without the cephalic furrow.
 We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations.
 When this distance was greater than the maximum standard deviation of the average particle depth under the ground noise levels, we counted it as one fold ({@fig:model}e).
 Under the baseline conditions without mitotic domains or germ band extension (only noise), we observe no ectopic fold formation for any bending rigidity values ({@fig:model}f).
 The probability of buckling increases with the germ band extension and as a factor of the bending rigidity.
+<!--TODO: Abbreviate bending rigidity. BR? or the formula, check AK’s usage.-->
 We observe a buckling transition in the phase space in softer conditions (bending rigidity around $5.0\times10^{−5}$) already at 10% germ band extension, but in stiffer conditions (bending rigidity around $8.0\times10^{−5}$) the germ band alone cannot drive the formation of ectopic folds even at its maximum extension ({@fig:model}f).
 Adding mitotic domains to the simulations caused a shift in the phase diagram, with the probability of ectopic fold formation increasing even in low values of germ band extension and higher values of bending rigidity ({@fig:model}g).
 Mitotic domains alone can induce ectopic folds in softer conditions (bending rigidity lower than $6.5\times10^{−5}$).
@@ -178,8 +188,11 @@ For most of the parameter space, the combined action of mitotic domains and germ
 These simulations show that mitotic domains alone can drive ectopic folds when the bending rigidity is lower than $6.5\times10^{−5}$, and that the germ band alone can drive ectopic folds when the bending rigidity is lower than $8.0\times10^{−5}$.
 <!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 We thus established a threshold of $8.0\times10^{−5}$ where the maximum standard deviation is lower than a single fold ({@fig:model}h).
+<!--TODO:PT: I get it but it is very difficult to decipher. Try to say it in a more plain language. Here I mean this specific sentence.-->
 In this condition, our model predicts that neither the mitotic domains nor the germ band alone can drive the formation of ectopic folds.
 We thus set to perform perturbation experiments to test these predictions *in vivo*.
+<!--TODO:PT: I do not follow this conclusion. As a whole, it does not jump out at me from reading the paragraph and it should.-->
+<!--TODO: Re-write ending to prime the conclusion that MD or GB alone can’t induce EFs-->
 
 We first asked whether the extension of the germ band alone can generate ectopic folds.
 To that end, we generated double-mutant flies lacking both the cephalic furrow and the mitotic domains by combining *btd* mutants with a loss-of-function allele of *cdc25* or *string* (*stg*), a phosphatase that regulates the cell divisions in cleavage cycle 14 of *Drosophila* [@Edgar1989-hv].
@@ -187,6 +200,8 @@ In *stg* mutants, the formation of the cephalic furrow and of other morphogeneti
 Compared to wildtype, the ectopic folds in *stg* mutants are less frequent and primarily appear near the trunk--germ interface ({@tbl:stats}), which suggests that mitotic domains affects ectopic folding.
 Indeed, in *btd*--*stg* double-mutant embryos, we find no ectopic folds forming at the head--trunk interface ({@fig:experiments}a,b,j, {@fig:vid-double-lateral}).
 This suggests that the bending rigidity *in vivo* corresponds to a value close to $8.0\times10^{−5}$ in our model.
+<!--TODO:PT: Since I didn’t get the conclusion of the previous paragraph I don’t get this either.-->
+<!--TODO: Re-write this so that the choice of bending rigidity is clearer-->
 The experiment shows that mitotic domains are required for ectopic folding, and the push from the germ band extension alone is insufficient to induce ectopic buckling in cephalic furrow mutants.
 
 To test whether mitotic domains alone are sufficient to induce ectopic buckling *in vivo*, we mechanically blocked the extension of the germ band in cephalic furrow mutants.
@@ -229,6 +244,8 @@ This influence of the cephalic furrow on ectopic folds correlates with the stren
 Curiously, this buffering effect diminished with the extension of the germ band for intermediate values of $K_{CF}$.
 The cephalic furrow becomes shallower and there is an increase in ectopic folds at the posterior region, suggesting that in these conditions, the forces generated by mitotic expansions and germ band dominate over the infolding pull of the cephalic furrow.
 Only larger $K_{CF}$ values remained effective in preventing ectopic folds at high percentages of germ band extension.
+<!--TODO:PT: What does it mean? Shouldn’t we conclude before we move to another point?-->
+<!--TODO: What does it mean that only larger KCFs are effective?-->
 Given that in wildtype embryos the cephalic furrow forms around 15 min before mitotic domains, we 
 asked whether their relative timing of formation may influence the effectiveness of the cephalic furrow.
 <!--TODO: Update panel with the last iteration showing depth without overlooping.-->
@@ -318,11 +335,13 @@ The flies were left to acclimatize in the cage for two days before the experimen
 To guarantee the embryos are at a similar developmental stage, we exchanged the agar plate once per hour at least twice (pre-lays), and let the flies lay the eggs on the agar for one hour before collecting the plate.
 After filling the plate with water, we used a brush to release the eggs from the agar and transferred them to a cell strainer with 100µm nylon mesh (VWR).
 To remove the chorion, we immersed the embryos in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 90s, washed abundantly with water, and proceeded to mounting for live imaging.
+<!--TODO:PT: This is all fairly standard and usually not described but I like how you do it, full transparency.-->
 
 ## Sample mounting for live imaging
 
 We transferred the embryos from the cell strainer onto an agar pad using a brush, and manually positioned them in a single line with the lateral or ventral sides up using a blunt cactus spine under a stereomicroscope.
 We then glued the embryos along the long axis of a 6x22mm glass coverslip (0.17mm thickness) coated with a thin layer of heptane glue and attached to a custom made metal sample holder using silicon glue.
+<!--TODO:PT: Here on the other hand more detail would be beneficial. Pointing to some protocol in your repo?-->
 We mounted the samples in a Zeiss Lightsheet Z.1 microscope with the coverslip orthogonal to the detection objective and the embryos positioned with the anteroposterior axis vertically to obtain the best optics for recording lateral and dorsal views.
 This mounting strategy allows to increase the throughput of samples in one imaging session, ideal for screening mutant embryos which have lower frequency.
 
@@ -411,7 +430,7 @@ Steffen Lemke and Yu-Chiun Wang for cephalic furrow discussions.
 Juliana Roscito for text revisions.
 Michael Akam for drawing BCV’s attention to the cephalic furrow. 
 AS was supported by an EU FET Open Horizon 2020 (XXX) granted to CDM.
-BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018) and by an European Research Council (ERC-AdG 885504 GHOSTINTHESHELL) granted to PT.
+BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018) and by an European Research Council grant (ERC-AdG 885504 GHOSTINTHESHELL) awarded to PT.
 
 # Author contributions
 
@@ -436,10 +455,12 @@ All authors revised and contributed to the text.
 
 <!--![Cephalic furrow patterning and morphogenesis. (a) Embryonic invaginations during *Drosophila* gastrulation. (b) Morphogenesis of the cephalic furrow. (c) Molecular patterning of the cephalic furrow.](figures/Fig1.jpg){#fig:intro width=50%}-->
 
+<!--TODO:PT: I leave it to you to decide whether to remove these results like sentences from the Figures. If we get into journal like Nature they will for sure go, house style and word limits, But now they do enhance comprehension.-->
+
 ![Formation of ectopic folds in cephalic furrow mutants.
 **a**, Overview of key developmental events using a standard developmental staging [@Ashburner2005-ym]. The formation of the cephalic furrow is delayed in *prd* mutants and absent in *btd* and *eve* mutants. In the latter, ectopic folds form near the canonical invagination site of the cephalic furrow. Wildtype and *prd* embryos form less frequent and smaller ectopic folds more anterior or posterior to the cephalic furrow. Ectopic folds appear later and unfold quicker than the cephalic furrow, and their formation coincides with the appearance of mitotic domains and with the rapid phase of the germ band extension [@Campos-Ortega1985-ma].
 **b**, Profile view of wildtype and *prd* embryos (early stage 8), and *btd* and *eve* embryos (late stage 8) showing the divergent morphology of the cephalic furrow and ectopic folds, respectively.
-**c**, Lateral view of sibling controls (heterozygotes) and mutant embryos (*btd* or *eve* homozygotes). The arrows indicate epithelial folds and asterisks indicate the position of mitotic domains.
+**c**, Lateral view of sibling controls (heterozygotes) and mutant embryos (*btd* or *eve* homozygotes). The arrows indicate epithelial folds, the asterisks indicate the position of mitotic domains, and the percentages indicate the extent of germ band extension relative to the egg length.
 **d**, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about seven minutes after gastrulation in wildtype and *btd* heterozygotes, and is delayed in *eve* and *prd* heterozygotes. Ectopic folds form after 20 min post gastrulation in all genotypes. One dot represents one embryo.
 <!--TODO:AB: Reconsider the use of violin plots with so little data points.-->
 **e**, Percentage of germ band extension at the time of formation of the cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow appears at 10% germ band extension, except in *prd* heterozygotes where it varies up to 40%. Ectopic folds form at 30--35% germ band extension.
@@ -495,6 +516,7 @@ All authors revised and contributed to the text.
 **f**, Profile view of a non-cauterized and a cauterized wildtype embryo showing a small difference in depth.
 **g**, Tortuosity of the epithelial traces in non-cauterized and cauterized mutant embryos from **d**.
 **h**, Maximum depth of the cephalic furrow in control and cauterized wildtype embryos. The cephalic furrow in cauterized embryos is 15% shallower but the difference is not significant.
+<!--TODO:PT: By what statistical test?-->
 <!--TODO:AB: Why bar plots here?-->
 **i**, Recoil velocity of laser ablations around the cephalic furrow at stage 6. The average recoil increases with time, and decreases as a function of the distance to the initiator cells. In late stage 6 the region showing recoil reaches 40µm anterior and posterior of the invagination.
 **j**, Schematic drawings showing the summary of the ectopic folding in double mutants and germ band cauterization experiments.
@@ -506,6 +528,7 @@ All authors revised and contributed to the text.
 **c**, Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in *Clogmia* [@Jimenez-Guri2014-zs] and *Chironomus* [@Caroti2015-cy], and present in the common ancestor of *Megaselia* [@Wotton2014-fr] and *Drosophila*. It is unclear whether mechanical stresses are present in the head--trunk boundary of flies without cephalic furrow.
 **d**, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head--trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head--trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow.
 ](figures/Fig5.jpg){#fig:summary width=50%}
+<!--TODO:PT: You write about the evolution stuff extremely well. We need to do the review ;-)-->
 
 \clearpage
 
