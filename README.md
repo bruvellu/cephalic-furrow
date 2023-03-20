@@ -1,6 +1,6 @@
 # Cephalic furrow project
 
-This repository contains data, analyses, and supporting information associated with our project about the role of the cephalic furrow in the mechanics of *Drosophila* gastrulation.
+This repository contains data, analyses, and supporting information associated with our project on the mechanical role of the cephalic furrow during *Drosophila* gastrulation.
 
 ## Directories
 
