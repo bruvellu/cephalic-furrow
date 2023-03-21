@@ -493,10 +493,9 @@ All authors revised and contributed to the text.
 <!--**d**, Heatmap overlay showing the strain rate at the head--trunk region in *btd* mutants.-->
 
 ![Model and simulations of the tissue mechanics at the head--trunk boundary.
-**a**, Region of interest of the model as a frontal slice of one side of the embryonic blastoderm respecting the embryo proportions and positions of mitotic domains, cephalic furrow, and germ band.
-<!--TODO:AS: Replace final by target-->
-**b**, Components of the model using particles connected by springs and their individual characteristics.
-**c**, Energy equation of the system is the sum of stretching energy and bending energy. The ratio of the two adjusted for the embryo radius gives a dimensionless bending rigidity, the main parameter of the model.
+**a**, Region of interest of the model. One side of a frontal slice across a slightly dorsal plane of the embryonic blastoderm. It follows the embryo shape, its proportions, and the relative positions of mitotic domains, cephalic furrow, and germ band.
+**b**, Characteristics of the individual components of the model based on particles connected by springs. The drawings exemplify the initial and final states for each component.
+**c**, Energy equation with a stretching and a bending component, and the dimensionless bending rigidity. Inital rod length ($L_{o}$), stretching energy ($W_{s}$), stretching rigidity ($K_{s}$), initial spring length ($ds_{o}$), current spring length ($ds$), bending energy ($W_{b}$), bending rigidity ($K_{b}$), initial curvature ($\kappa_{o}$), current curvature ($\kappa$), semi-major embryonic axis ($L$).
 **d**, Plots showing the energy dynamics across iterations in a typical simulation run. The stretching energy dominates and goes down with the iterations. The bending energy, which is a few orders of magnitude lower, increases drastically reaching a peak that diminishes gradually with the iterations. The total energy of the system goes down to equilibrium.
 **e**, Distance of individual particles to the vitelline envelope (depth) at basal noise levels with different bending rigidities. The maximum value of the standard deviation is highlighted in magenta. The dashed line indicates the threshold used to define the minimal distance for considering that the tissue has folded.
 **f**, Mutant parameter sweep without mitotic domains (no cephalic furrow). The heatmap shows the average number of ectopic folds for different bending rigidities and percentages of germ band extension. Ectopic folding frequency increases with lower bending rigidities (softer tissue) and with greater values of germ band extension.
