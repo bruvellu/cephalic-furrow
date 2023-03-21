@@ -505,18 +505,16 @@ interactions between mitotic domains, germ band, and cephalic furrow, we
 defined the mitotic domains as regions of compressed springs which tend
 to expand, and the cephalic furrow as a narrow region having an
 intrinsic negative curvature predisposing the particles to invaginate
-(Figure <a href="#fig:model">3</a>b).
-<!--TODO: Describe GB as a boundary condition?--> The germ band in our
-model is defined by the position of the posterior-most particle which is
-placed at different percentages of egg length for each simulation
-(Figure <a href="#fig:model">3</a>b).
-<!--We did not directly encode ectopic folds in the model.--> To run the
-simulations we added a ground level of random noise, and iterated the
-model towards an equilibrium in the total energy of the system, using
-the peak of bending energy as a reference point for the initial phase of
-the folding (Figure <a href="#fig:model">3</a>d).
+(Figure <a href="#fig:model">3</a>b). The germ band in our model is
+defined by the position of the posterior-most particle which is fixed at
+different percentages of egg length for each simulation (Figure <a
+href="#fig:model">3</a>b). To run the simulations we added a ground
+level of random noise, and iterated the model towards an equilibrium in
+the total energy of the system, using the peak of bending energy as a
+reference point for the initial phase of the folding (Figure <a
+href="#fig:model">3</a>d).
 <!--TODO:PT: “as a reference point for the initial phase of the folding” I don’t understand this.--></p>
-<!--In this 2D elastic model under confinement, the sum of the stretching energy ($K_{s}$) of springs (edges) and the bending energy ($K_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope defines a dimensionless bending rigidity ($\frac{K_{b}}{K_{s} R_{vit}^{2}}$), the main parameter of our model ({@fig:model}c).-->
+<!--TODO: Define L (semi-major axis), g (germ band push), s (embryo length)-->
 <p>To obtain realistic values where the model matches experimental
 observations, we performed a sweep across the bending rigidity parameter
 space in mutant conditions without the cephalic furrow. We quantified
@@ -1076,6 +1074,12 @@ averaged the strain rate along the dorsoventral axis in two pre-defined
 regions, the head–trunk (canonical cephalic furrow position) and the
 trunk–germ (posterior to the Mitotic Domain 6) (Figure <a
 href="#fig:strain">S4</a>).</p>
+<h2 id="model-and-simulations">Model and simulations</h2>
+<p>TODO: Explain these details on model building in the methods. 1)
+Energy equation, 2) Dimensionless bending rigidity, 3) Numerical
+approach, 4) Energy minimization with force, noise and friction, 5)
+Timesteps, 6) GB modeling, 7) MD modeling, 8) CF modeling, 9)
+Confinement regime, 10) Fold definition, 11) Simulation setup</p>
 <h2 id="data-visualization-and-figure-assembly">Data visualization and
 figure assembly</h2>
 <p>For microscopy images, we only performed minimal linear intensity

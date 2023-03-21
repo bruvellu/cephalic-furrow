@@ -167,13 +167,11 @@ The blastoderm is modeled by an elliptical arc of equidistant particles connecte
 This elastic rod of length $L_{o}$ has a stretching energy component ($W_{s}$), defined as the sum of stretching rigidities ($K_{s}$) dependent on the ratio between the current and initial spring lengths ($ds/ds_{o}$), and a bending energy component ($W_{b}$), defined as the sum of bending rigidities ($K_{b}$) dependent on the difference between the current and initial curvatures of the rod ($\kappa-\kappa_{o}$) ({@fig:model}c).
 The sum of stretching and bending energies returns the total energy of the system ($W_{T}$), while the ratio between both rigidities returns a single, physically meaningful parameter of our model---the dimensionless bending rigidity ($K_{b}^*$) ({@fig:model}c).
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as regions of compressed springs which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the particles to invaginate ({@fig:model}b).
-<!--TODO: Describe GB as a boundary condition?-->
-The germ band in our model is defined by the position of the posterior-most particle which is placed at different percentages of egg length for each simulation ({@fig:model}b).
-<!--We did not directly encode ectopic folds in the model.-->
+The germ band in our model is defined by the position of the posterior-most particle which is fixed at different percentages of egg length for each simulation ({@fig:model}b).
 To run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system, using the peak of bending energy as a reference point for the initial phase of the folding ({@fig:model}d).
 <!--TODO:PT: “as a reference point for the initial phase of the folding” I don’t understand this.-->
 
-<!--In this 2D elastic model under confinement, the sum of the stretching energy ($K_{s}$) of springs (edges) and the bending energy ($K_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope defines a dimensionless bending rigidity ($\frac{K_{b}}{K_{s} R_{vit}^{2}}$), the main parameter of our model ({@fig:model}c).-->
+<!--TODO: Define L (semi-major axis), g (germ band push), s (embryo length)-->
 
 To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions without the cephalic furrow.
 We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations.
@@ -414,6 +412,10 @@ To estimate the strain rates, we first performed particle image velocimetry on c
 Then, we used the equation $E = \frac{1}{2} \left( \vec\nabla . \vec v \right) +\frac{1}{2} \left( \partial_x v _y + \partial _y v_x \right)$ to define and calculate the magnitude of the strain rate, where $v$ is the displacement obtained in the PIV divided by the time in minutes.
 We used these values to create a color-coded overlay for the strain rate ({@fig:strain}).
 To generate the line plots, we averaged the strain rate along the dorsoventral axis in two pre-defined regions, the head--trunk (canonical cephalic furrow position) and the trunk--germ (posterior to the Mitotic Domain 6) ({@fig:strain}).
+
+## Model and simulations
+
+TODO: Explain these details on model building in the methods. 1) Energy equation, 2) Dimensionless bending rigidity, 3) Numerical approach, 4) Energy minimization with force, noise and friction, 5) Timesteps, 6) GB modeling, 7) MD modeling, 8) CF modeling, 9) Confinement regime, 10) Fold definition, 11) Simulation setup
 
 ## Data visualization and figure assembly
 
