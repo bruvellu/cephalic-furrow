@@ -434,7 +434,7 @@ Steffen Lemke and Yu-Chiun Wang for cephalic furrow discussions.
 Juliana Roscito for text revisions.
 Michael Akam for drawing BCV’s attention to the cephalic furrow. 
 AS was supported by an EU FET Open Horizon 2020 (XXX) granted to CDM.
-BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018) and by an European Research Council grant (ERC-AdG 885504 GHOSTINTHESHELL) awarded to PT.
+BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018), and by an European Research Council grant (ERC-AdG 885504 GHOSTINTHESHELL) awarded to PT.
 
 # Author contributions
 
