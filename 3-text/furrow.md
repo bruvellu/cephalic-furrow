@@ -161,11 +161,16 @@ Taken together, these analyses suggest the expansion of mitotic domains, and the
 
 To determine the relative contribution of mitotic domains and germ band as sources of mechanical stress on the head--trunk boundary, we created a physical model to simulate these tissue mechanics *in silico* and performed experimental perturbations to test our theoretical predictions *in vivo* (see below).
 
-Our model represents an epithelial monolayer confined inside a rigid shell.
+Our 2D elastic model represents an epithelial monolayer confined inside a rigid shell.
 It consists of one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:model}a, {@fig:proportions}).
 The blastoderm is modeled by an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:model}b).
-<!--TODO:AB: First time I hear particles have a bending energy. Explain better what it means.-->
-In this 1D elastic model under confinement, the sum of the stretching energy ($K_{s}$) of springs (edges) and the bending energy ($K_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope defines a dimensionless bending rigidity ($\frac{K_{b}}{K_{s} R_{vit}^{2}}$), the main parameter of our model ({@fig:model}c).
+This elastic rod of length $L_{0}$ has a stretching energy component ($W_{s}$), defined as the sum of stretching rigidities ($K_{s}$) dependent on the ratio between current/initial spring lengths ($ds$/$ds_{0}$), and a bending energy component ($W_{b}$), defined as the sum of bending rigidities ($K_{b}$) dependent on the difference between current/initial curvature of the rod ($k$/$k_{0}$) ({@fig:model}c).
+The sum of stretching and bending energies returns the total energy ($W_{T}$) of the system ({@fig:model}c).
+
+while the ratio of both energies adjusted by the radius of the vitelline envelope defines a dimensionless bending rigidity ($\frac{K_{b}}{K_{s} R_{vit}^{2}}$), the main parameter of our model ({@fig:model}c).
+
+In this 2D elastic model under confinement, the sum of the stretching energy ($K_{s}$) of springs (edges) and the bending energy ($K_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope defines a dimensionless bending rigidity ($\frac{K_{b}}{K_{s} R_{vit}^{2}}$), the main parameter of our model ({@fig:model}c).
+
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as regions of compressed springs which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the particles to invaginate ({@fig:model}b).
 <!--TODO: Describe GB as a boundary condition?-->
 The germ band in our model is defined by the position of the posterior-most particle which is placed at different percentages of egg length for each simulation ({@fig:model}b).
@@ -528,6 +533,7 @@ All authors revised and contributed to the text.
 **c**, Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in *Clogmia* [@Jimenez-Guri2014-zs] and *Chironomus* [@Caroti2015-cy], and present in the common ancestor of *Megaselia* [@Wotton2014-fr] and *Drosophila*. It is unclear whether mechanical stresses are present in the head--trunk boundary of flies without cephalic furrow.
 **d**, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head--trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head--trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow.
 ](figures/Fig5.jpg){#fig:summary width=50%}
+
 <!--TODO:PT: You write about the evolution stuff extremely well. We need to do the review ;-)-->
 
 \clearpage
