@@ -382,7 +382,7 @@ For the MuVi SPIM, we embedded dechorionated embryos in 2% low-melting agarose a
 We used a pulsed infrared laser 1030--1040nm with 200fs pulse duration and 1.5W power to cauterize the posterior region of the dorsal embryonic surface, attaching the blastoderm to the vitelline envelope.
 Using a Olympus 20x/1.0NA water immersion objective, we acquired stacks with 0.29µm XY-resolution and 1µm Z-resolution of four different angles every one minute.
 For the Zeiss microscope, we attached the embryos with the dorsal side down onto coverslips using heptane glue and immersing in halocarbon oil.
-We cauterized the embryos sequentially using a near infrared 800 nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100µs/px) around the same dorsal region to block the germ band extension.
+We cauterized the embryos sequentially using a near infrared 800nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100µs/px) around the same dorsal region to block the germ band extension.
 We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, (i) the surface to monitor the germ band extension, and (ii) 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
 The stacks had 0.21µm XY-resolution and one minute time resolution.
 <!--TODO: Temperature in MuVi and Zeiss?-->
@@ -395,7 +395,7 @@ We extracted measurements from the epithelium outlines using the ImageJ plugin *
 ## Laser ablation experiments
 
 We performed laser ablations in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), and the software AndorIQ for image acquisition.
-We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800 nm tuned down from 80 MHz to 20 kHz with a pulse-picker.
+We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800nm tuned down from 80MHz to 20kHz with a pulse-picker.
 The laser power measured before the microscope port was 6 mW and the pixel dwell time for scanning was 2µs.
 <!--TODO: What is the brand of the objective?-->
 To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY-resolution and 200ms time-steps.
@@ -420,9 +420,9 @@ TODO: Explain these details on model building in the methods. 1) Energy equation
 ## Data visualization and figure assembly
 
 For microscopy images, we only performed minimal linear intensity adjustments in microscopy images to improve their contrast and brightness [@Schmied2020-ip].
-We created illustrations and assembled the final figure plates using Inkscape v1.2.2 [@The_Inkscape_Project2022-ht].
-For microscopy videos, we exported the original stacks as AVI without compression with 10--15fps using Fiji and post-processed them to MPEG-4 format 1080p resolution using the H.264 encoding at a constant bitrate quality factor of 18 for visualization using HandBrake.
-All data wrangling, statistical analyses, and plotting performed in R v4.2.1 [@R_Core_Team2022-ki] using RStudio v2022.7.2.576 [@RStudio_Team2022-wr], and Python 3.10.7 using Jupyter notebooks [@Granger2021-zg].
+We created illustrations and assembled the final figure plates using Inkscape v1.2.2 [@The_Inkscape_Project2003-ht].
+For microscopy videos, we exported the original stacks as AVI without compression with 10--15fps using Fiji and post-processed them to MPEG-4 format 1080p resolution using the H.264 encoding at a constant bitrate quality factor of 18 for visualization using HandBrake v1.6.1 [@HandBrake_Team2003-fq].
+All data wrangling, statistical analyses, and plotting performed in R v4.2.1 [@R_Core_Team1993-ki] using RStudio v2022.7.2.576 [@RStudio_Team2011-wr], and Python 3.10.7 using Jupyter notebooks [@Granger2021-zg].
 All data, scripts, notebooks, and analyses pipelines are available in the repository [@Vellutini2023-hg].
 
 # Acknowledgements
