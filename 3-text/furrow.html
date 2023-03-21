@@ -473,29 +473,39 @@ created a physical model to simulate these tissue mechanics <em>in
 silico</em> and performed experimental perturbations to test our
 theoretical predictions <em>in vivo</em> (see below).</p>
 <p>Our model represents an epithelial monolayer confined inside a rigid
-shell. It consists of one side of a frontal slice between the midline
-and the dorsal apex of a <em>Drosophila</em> embryo with its typical
+shell. It embodies one side of a frontal slice between the midline and
+the dorsal apex of a <em>Drosophila</em> embryo with its typical
 morphological proportions (Figure <a href="#fig:model">3</a>a, Figure <a
 href="#fig:proportions">S5</a>). The blastoderm is modeled by an
 elliptical arc of equidistant particles connected by springs and
 enclosed on one side by a rigid barrier representing the vitelline
-envelope (Figure <a href="#fig:model">3</a>b).
-<!--TODO:AB: First time I hear particles have a bending energy. Explain better what it means.-->
-In this 1D elastic model under confinement, the sum of the stretching
-energy (<span
-class="math inline"><em>K</em><sub><em>s</em></sub></span>) of springs
-(edges) and the bending energy (<span
-class="math inline"><em>K</em><sub><em>b</em></sub></span>) of particles
-(vertices) gives the total energy (<em>W</em>) of the system, while the
-ratio of both energies adjusted by the radius of the vitelline envelope
-defines a dimensionless bending rigidity (<span
-class="math inline">$\frac{K_{b}}{K_{s} R_{vit}^{2}}$</span>), the main
-parameter of our model (Figure <a href="#fig:model">3</a>c). To simulate
-the physical interactions between mitotic domains, germ band, and
-cephalic furrow, we defined the mitotic domains as regions of compressed
-springs which tend to expand, and the cephalic furrow as a narrow region
-having an intrinsic negative curvature predisposing the particles to
-invaginate (Figure <a href="#fig:model">3</a>b).
+envelope (Figure <a href="#fig:model">3</a>b). This elastic rod of
+length <span class="math inline"><em>L</em><sub><em>o</em></sub></span>
+has a stretching energy component (<span
+class="math inline"><em>W</em><sub><em>s</em></sub></span>), defined as
+the sum of stretching rigidities (<span
+class="math inline"><em>K</em><sub><em>s</em></sub></span>) dependent on
+the ratio between the current and initial spring lengths (<span
+class="math inline"><em>d</em><em>s</em>/<em>d</em><em>s</em><sub><em>o</em></sub></span>),
+and a bending energy component (<span
+class="math inline"><em>W</em><sub><em>b</em></sub></span>), defined as
+the sum of bending rigidities (<span
+class="math inline"><em>K</em><sub><em>b</em></sub></span>) dependent on
+the difference between the current and initial curvatures of the rod
+(<span
+class="math inline"><em>κ</em> − <em>κ</em><sub><em>o</em></sub></span>)
+(Figure <a href="#fig:model">3</a>c). The sum of stretching and bending
+energies returns the total energy of the system (<span
+class="math inline"><em>W</em><sub><em>T</em></sub></span>), while the
+ratio between both rigidities returns a single, physically meaningful
+parameter of our model—the dimensionless bending rigidity (<span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup></span>)
+(Figure <a href="#fig:model">3</a>c). To simulate the physical
+interactions between mitotic domains, germ band, and cephalic furrow, we
+defined the mitotic domains as regions of compressed springs which tend
+to expand, and the cephalic furrow as a narrow region having an
+intrinsic negative curvature predisposing the particles to invaginate
+(Figure <a href="#fig:model">3</a>b).
 <!--TODO: Describe GB as a boundary condition?--> The germ band in our
 model is defined by the position of the posterior-most particle which is
 placed at different percentages of egg length for each simulation
@@ -506,6 +516,7 @@ model towards an equilibrium in the total energy of the system, using
 the peak of bending energy as a reference point for the initial phase of
 the folding (Figure <a href="#fig:model">3</a>d).
 <!--TODO:PT: “as a reference point for the initial phase of the folding” I don’t understand this.--></p>
+<!--In this 2D elastic model under confinement, the sum of the stretching energy ($K_{s}$) of springs (edges) and the bending energy ($K_{b}$) of particles (vertices) gives the total energy (*W*) of the system, while the ratio of both energies adjusted by the radius of the vitelline envelope defines a dimensionless bending rigidity ($\frac{K_{b}}{K_{s} R_{vit}^{2}}$), the main parameter of our model ({@fig:model}c).-->
 <p>To obtain realistic values where the model matches experimental
 observations, we performed a sweep across the bending rigidity parameter
 space in mutant conditions without the cephalic furrow. We quantified
@@ -752,7 +763,7 @@ mutants. The synchronized apical expansion of dividing cells in mitotic
 domains pushes the adjacent non-dividing cells outward, and forms
 potentially unstable regions of different epithelial thickness, while
 the germ band extension generates a global compression on the head–trunk
-interface (Figure ??a,b).
+interface (Figure <a href="#fig:summary">5</a>a,b).
 <!--TODO: The fact that *eve* mutants have no cell intercalation [@Collinet2015-af] suggests that the formation of ectopic folds depends on the rapid phase of germ band extension [@Campos-Ortega1985-ma], driven mainly by the posterior midgut invagination.-->
 In a condition where there is an excess of tissue on the embryonic
 surface (no cephalic furrow), the increased compressive stresses
@@ -803,11 +814,12 @@ the cephalic furrow in the dipteran phylogeny suggests that the cephalic
 furrow is an evolutionary novelty that evolved after the appearance of
 mitotic domains and long germ<span class="citation"
 data-cites="Lemke2023-cx"><sup><a href="#ref-Lemke2023-cx"
-role="doc-biblioref">23</a></sup></span> (Figure ??c, Steffen Lemke
-personal communication). One putative scenario is that selection for
-shorter developmental times concatenated the formation of mitotic
-domains and germ band extension, increasing the mechanical instabilities
-at the head–trunk boundary (Figure ??d). In this case, mechanical stress
+role="doc-biblioref">23</a></sup></span> (Figure <a
+href="#fig:summary">5</a>c, Steffen Lemke personal communication). One
+putative scenario is that selection for shorter developmental times
+concatenated the formation of mitotic domains and germ band extension,
+increasing the mechanical instabilities at the head–trunk boundary
+(Figure <a href="#fig:summary">5</a>d). In this case, mechanical stress
 may have acted as a selective pressure for the evolution of a
 pre-patterned head invagination, averting the potential detrimental
 effects of mechanical instabilities. These speculations, however,
@@ -1654,9 +1666,46 @@ ectopic folding in double mutants and germ band cauterization
 experiments.</figcaption>
 </figure>
 </div>
-<p><img src="figures/Fig5.jpg" id="fig:summary" style="width:50.0%"
-alt="Mechanical role of the cephalic furrow in development and evolution. a, Schematic drawings of a lateral view comparing wildtype and cephalic furrow mutants. Tissue flows are represented by vermilion arrows, mitotic domains by gray circles, and the folded area by sky blue. In cephalic furrow mutants the excess of epithelial tissue on the surface combined with the formation of mitotic domains and germ band extension leads to mechanical instabilities at the head–trunk boundary. b, Schematic drawings of a profile view comparing the changes in epithelial thickness in cephalic furrow mutants and the correlation with the position of tissue buckling. c, Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in Clogmia45 and Chironomus46, and present in the common ancestor of Megaselia47 and Drosophila. It is unclear whether mechanical stresses are present in the head–trunk boundary of flies without cephalic furrow. d, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head–trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head–trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow." />
-<!--TODO:PT: You write about the evolution stuff extremely well. We need to do the review ;-)--></p>
+<div id="fig:summary" class="fignos">
+<figure>
+<img src="figures/Fig5.jpg" style="width:50.0%"
+alt="Figure 5: Mechanical role of the cephalic furrow in development and evolution. a, Schematic drawings of a lateral view comparing wildtype and cephalic furrow mutants. Tissue flows are represented by vermilion arrows, mitotic domains by gray circles, and the folded area by sky blue. In cephalic furrow mutants the excess of epithelial tissue on the surface combined with the formation of mitotic domains and germ band extension leads to mechanical instabilities at the head–trunk boundary. b, Schematic drawings of a profile view comparing the changes in epithelial thickness in cephalic furrow mutants and the correlation with the position of tissue buckling. c, Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in Clogmia45 and Chironomus46, and present in the common ancestor of Megaselia47 and Drosophila. It is unclear whether mechanical stresses are present in the head–trunk boundary of flies without cephalic furrow. d, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head–trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head–trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow." />
+<figcaption aria-hidden="true"><span>Figure 5:</span> Mechanical role of
+the cephalic furrow in development and evolution. <strong>a</strong>,
+Schematic drawings of a lateral view comparing wildtype and cephalic
+furrow mutants. Tissue flows are represented by vermilion arrows,
+mitotic domains by gray circles, and the folded area by sky blue. In
+cephalic furrow mutants the excess of epithelial tissue on the surface
+combined with the formation of mitotic domains and germ band extension
+leads to mechanical instabilities at the head–trunk boundary.
+<strong>b</strong>, Schematic drawings of a profile view comparing the
+changes in epithelial thickness in cephalic furrow mutants and the
+correlation with the position of tissue buckling. <strong>c</strong>,
+Simplified dipteran phylogenetic tree with mapped traits. The germ band
+extension and mitotic domains probably evolved at the base of dipteran
+flies. The cephalic furrow is a late innovation. It is absent in
+<em>Clogmia</em><span class="citation"
+data-cites="Jimenez-Guri2014-zs"><sup><a href="#ref-Jimenez-Guri2014-zs"
+role="doc-biblioref">45</a></sup></span> and <em>Chironomus</em><span
+class="citation" data-cites="Caroti2015-cy"><sup><a
+href="#ref-Caroti2015-cy" role="doc-biblioref">46</a></sup></span>, and
+present in the common ancestor of <em>Megaselia</em><span
+class="citation" data-cites="Wotton2014-fr"><sup><a
+href="#ref-Wotton2014-fr" role="doc-biblioref">47</a></sup></span> and
+<em>Drosophila</em>. It is unclear whether mechanical stresses are
+present in the head–trunk boundary of flies without cephalic furrow.
+<strong>d</strong>, Scenario for the evolution of the cephalic furrow.
+In the ancestral state there was no mechanical instability at the
+head–trunk boundary. With the evolution of the long germ and mitotic
+domains there was an increase in the compressive stresses at the
+head–trunk boundary. Selection for faster developmental times put the
+region under increased strain leading to the genetic stabilization of a
+pre-patterned head invagination that buffers these mechanical forces and
+probably bring a selective advantage to flies with a cephalic
+furrow.</figcaption>
+</figure>
+</div>
+<!--TODO:PT: You write about the evolution stuff extremely well. We need to do the review ;-)-->
 <h1 id="tables">Tables</h1>
 <div id="tbl:gbtime" class="tablenos">
 <table id="tbl:gbtime">
