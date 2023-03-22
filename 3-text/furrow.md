@@ -168,8 +168,13 @@ This elastic rod of length $L_{o}$ has a stretching energy component ($W_{s}$), 
 The sum of stretching and bending energies returns the total energy of the system ($W_{T}$), while the ratio between both rigidities returns a single, physically meaningful parameter of our model---the dimensionless bending rigidity ($K_{b}^*$) ({@fig:model}c).
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as regions of compressed springs which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the particles to invaginate ({@fig:model}b).
 The germ band in our model is defined by the position of the posterior-most particle which is fixed at different percentages of egg length for each simulation ({@fig:model}b).
-To run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system, using the peak of bending energy as a reference point for the initial phase of the folding ({@fig:model}d).
-<!--TODO:PT: “as a reference point for the initial phase of the folding” I don’t understand this.-->
+Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system.
+
+We first characterized the general properties of the model.
+In simulations where folds begin to form, the bending energy increases releasing a larger amount of stretching energy which in turn makes the total energy of the system decrease over the iterations ({@fig:model}d).
+The increase in bending energy coincides with a rapid deepening of the fold.
+Once the bending energy reaches a peak, the fold continues to deepen, though more gradually, but the number of folds stabilizes and there are rarely changes in the overall folding patterns ({@fig:model}d).
+Since folding events are stochastic and can happen at different iterations across different simulations, and because we are mainly interested in analyzing the initial position and dynamics of the folding, we used the peak of bending energy as the reference point to compare and analyze the simulation results.
 
 <!--TODO: Define L (semi-major axis), g (germ band push), s (embryo length)-->
 
