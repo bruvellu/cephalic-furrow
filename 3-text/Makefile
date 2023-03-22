@@ -40,10 +40,11 @@ linkimg:
 	ln -s ${FIGUREIN}/apical-area/figure.png ${FIGUREOUT}/FigS3.png
 	ln -s ${FIGUREIN}/strain-rate/figure.png ${FIGUREOUT}/FigS4.png
 	ln -s ${FIGUREIN}/embryo-proportions/figure.png ${FIGUREOUT}/FigS5.png
-	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS6.png
-	ln -s ${FIGUREIN}/cf-sweep/figure.png ${FIGUREOUT}/FigS7.png
-	ln -s ${FIGUREIN}/tortuosity-pipeline/figure.png ${FIGUREOUT}/FigS8.png
-	ln -s ${FIGUREIN}/ablation-analysis/figure.png ${FIGUREOUT}/FigS9.png
+	ln -s ${FIGUREIN}/model-features/figure.png ${FIGUREOUT}/FigS6.png
+	ln -s ${FIGUREIN}/stg-mutants/figure.png ${FIGUREOUT}/FigS7.png
+	ln -s ${FIGUREIN}/cf-sweep/figure.png ${FIGUREOUT}/FigS8.png
+	ln -s ${FIGUREIN}/tortuosity-pipeline/figure.png ${FIGUREOUT}/FigS9.png
+	ln -s ${FIGUREIN}/ablation-analysis/figure.png ${FIGUREOUT}/FigS10.png
 	# Make JPGs for smaller size for visualization/sharing
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	# Keep original PNGs

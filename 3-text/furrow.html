@@ -354,10 +354,7 @@ formation have not been identified. Intrigued by this puzzling
 phenotype, we asked whether this folding is a direct physical
 consequence linked to the absence of the cephalic furrow.</p>
 <!--TODO:PT: This is a crucial observation, motivating the entire paper. It is a bit hidden here. I would consider strengthening this transition. But I see that you want to put the emphasis on the analysis of this phenomenon not claim its discovery. That’s why I leave this to you.-->
-<p>TODO: Re-write ending, possibly in a new paragraph, to emphasize the
-EFs. Put more weight on the discovery aspect, not of the EFs themselves,
-but as a direct consequence of the absence of the CF, as well as for the
-investigation of the underlying mechanisms for their formation.</p>
+<!--TODO: Re-write ending, possibly in a new paragraph, to emphasize the EFs. Put more weight on the discovery aspect, not of the EFs themselves, but as a direct consequence of the absence of the CF, as well as for the investigation of the underlying mechanisms for their formation.-->
 <!--TODO: {!@fig:vid-initiator-prd}-->
 <!--TODO: {!@fig:vid-initiator-btd}-->
 <p>Our recordings show that in all embryos where the cephalic furrow
@@ -519,62 +516,52 @@ href="#fig:model">3</a>d). The increase in bending energy coincides with
 a rapid deepening of the fold. Once the bending energy reaches a peak,
 the fold continues to deepen, though more gradually, but the number of
 folds stabilizes and there are rarely changes in the overall folding
-patterns (Figure <a href="#fig:model">3</a>d). Since folding events are
-stochastic and can happen at different iterations across different
-simulations, and because we are mainly interested in analyzing the
-initial position and dynamics of the folding, we used the peak of
-bending energy as the reference point to compare and analyze the
-simulation results.</p>
+patterns (Figure <a href="#fig:model">3</a>d, Figure <a
+href="#fig:model-features">S6</a>a). Since folding events are stochastic
+and can happen at different iterations across different simulations, and
+because we are mainly interested in analyzing the initial position and
+dynamics of the folding, we used the peak of bending energy as the
+reference point to compare and analyze the simulation results.</p>
 <!--TODO: Define L (semi-major axis), g (germ band push), s (embryo length)-->
+<!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 <p>To obtain realistic values where the model matches experimental
 observations, we performed a sweep across the bending rigidity parameter
 space in mutant conditions without the cephalic furrow. We quantified
 the tissue dynamics by measuring the distance of each particle to the
-vitelline envelope across iterations. When this distance was greater
-than the maximum standard deviation of the average particle depth under
-the ground noise levels, we counted it as one fold (Figure <a
-href="#fig:model">3</a>e). Under the baseline conditions without mitotic
-domains or germ band extension (only noise), we observe no ectopic fold
-formation for any bending rigidity values (Figure <a
-href="#fig:model">3</a>f). The probability of buckling increases with
-the germ band extension and as a factor of the bending rigidity.
-<!--TODO: Abbreviate bending rigidity. BR? or the formula, check AK’s usage.-->
-We observe a buckling transition in the phase space in softer conditions
-(bending rigidity around <span
-class="math inline">5.0 × 10<sup>−5</sup></span>) already at 10% germ
-band extension, but in stiffer conditions (bending rigidity around <span
-class="math inline">8.0 × 10<sup>−5</sup></span>) the germ band alone
-cannot drive the formation of ectopic folds even at its maximum
-extension (Figure <a href="#fig:model">3</a>f). Adding mitotic domains
-to the simulations caused a shift in the phase diagram, with the
-probability of ectopic fold formation increasing even in low values of
-germ band extension and higher values of bending rigidity (Figure <a
-href="#fig:model">3</a>g). Mitotic domains alone can induce ectopic
-folds in softer conditions (bending rigidity lower than <span
-class="math inline">6.5 × 10<sup>−5</sup></span>). But above <span
-class="math inline">9.0 × 10<sup>−5</sup></span>, neither mitotic
-domains nor the germ band are sufficient to cause ectopic folds.
-<!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
+vitelline envelope across iterations, and defined a fold when this
+distance was greater than the maximum standard deviation of the average
+particle depth under the ground noise levels.
+<!--TODO: Add panel with the threshold for counting folds--> Under the
+baseline condition without mitotic domains or germ band extension (only
+noise), we observe no ectopic fold formation for any bending rigidity
+values (Figure <a href="#fig:model">3</a>e). The probability of buckling
+increases with the germ band extension and inversely with the bending
+rigidity (Figure <a href="#fig:model">3</a>e, Figure <a
+href="#fig:model-features">S6</a>b). We observe a buckling transition in
+the phase space in softer conditions (<span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup> ≈ 0.7 × 10<sup>−4</sup></span>)
+already at 10% germ band extension, but in stiffer conditions (<span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup> ≈ 1.2 × 10<sup>−4</sup></span>)
+the germ band alone cannot drive the formation of ectopic folds even at
+its maximum extension (Figure <a href="#fig:model">3</a>e, Figure <a
+href="#fig:model-features">S6</a>b). Adding mitotic domains to the
+simulations caused a shift in the phase diagram, with the probability of
+ectopic fold formation increasing even in low values of germ band
+extension and higher values of bending rigidity (Figure <a
+href="#fig:model">3</a>f, Figure <a href="#fig:model-features">S6</a>c).
+Mitotic domains alone can induce ectopic folds in softer conditions
+(<span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup> &lt; 1.1 × 10<sup>−4</sup></span>).
 For most of the parameter space, the combined action of mitotic domains
-and germ band maximizes the probability of ectopic fold formation,
-increasing the number of folds up to 10 times (Figure <a
-href="#fig:model">3</a>f,g). These simulations show that mitotic domains
-alone can drive ectopic folds when the bending rigidity is lower than
-<span class="math inline">6.5 × 10<sup>−5</sup></span>, and that the
-germ band alone can drive ectopic folds when the bending rigidity is
-lower than <span class="math inline">8.0 × 10<sup>−5</sup></span>.
-<!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
-We thus established a threshold of <span
-class="math inline">8.0 × 10<sup>−5</sup></span> where the maximum
-standard deviation is lower than a single fold (Figure <a
-href="#fig:model">3</a>h).
-<!--TODO:PT: I get it but it is very difficult to decipher. Try to say it in a more plain language. Here I mean this specific sentence.-->
-In this condition, our model predicts that neither the mitotic domains
-nor the germ band alone can drive the formation of ectopic folds. We
-thus set to perform perturbation experiments to test these predictions
-<em>in vivo</em>.
-<!--TODO:PT: I do not follow this conclusion. As a whole, it does not jump out at me from reading the paragraph and it should.-->
-<!--TODO: Re-write ending to prime the conclusion that MD or GB alone can’t induce EFs--></p>
+and germ band maximizes the probability of ectopic fold formation
+(Figure <a href="#fig:model">3</a>e,f). These simulations show that
+above certain a bending rigidity (<span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup> &gt; 1.0 × 10<sup>−4</sup></span>),
+neither the mitotic domains nor the germ band can drive ectopic folding
+by themselves. We thus set to test these predictions <em>in vivo</em> by
+performing perturbation experiments to individually inhibit the
+formation of mitotic domains and the extension of the germ band.</p>
+<!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
 <p>We first asked whether the extension of the germ band alone can
 generate ectopic folds. To that end, we generated double-mutant flies
 lacking both the cephalic furrow and the mitotic domains by combining
@@ -587,7 +574,7 @@ href="#ref-Edgar1989-hv" role="doc-biblioref">15</a></sup></span>. In
 morphogenetic movements during early gastrulation occur normally<span
 class="citation" data-cites="Edgar1989-hv"><sup><a
 href="#ref-Edgar1989-hv" role="doc-biblioref">15</a></sup></span>
-(Figure <a href="#fig:stg">S6</a>a,b, Figure <a
+(Figure <a href="#fig:stg">S7</a>a,b, Figure <a
 href="#fig:vid-stg-lateral">Video S4</a>, Figure <a
 href="#fig:vid-stg-dorsal">Video S5</a>). Compared to wildtype, the
 ectopic folds in <em>stg</em> mutants are less frequent and primarily
@@ -651,7 +638,7 @@ established a baseline (<span
 class="math inline"><em>K</em><sub><em>C</em><em>F</em></sub> &gt; 0.3</span>)
 where the invagination forms in a robust manner with minimal
 variability, phenocopying the cephalic furrow <em>in vivo</em>
-(Figure <a href="#fig:cf-sweep">S7</a>a). Since our experiments indicate
+(Figure <a href="#fig:cf-sweep">S8</a>a). Since our experiments indicate
 that the germ band is compressing the head–trunk tissues, we first asked
 whether the extension of the germ band can influence the depth of the
 cephalic furrow. The simulations show that the average depth of the
@@ -694,7 +681,7 @@ neighborhood of the cephalic furrow (Figure <a
 href="#fig:model">3</a>j). This influence of the cephalic furrow on
 ectopic folds correlates with the strength of the pull, with higher
 values preventing ectopic folds more effectively (Figure <a
-href="#fig:model">3</a>j, Figure <a href="#fig:cf-sweep">S7</a>b).
+href="#fig:model">3</a>j, Figure <a href="#fig:cf-sweep">S8</a>b).
 Curiously, this buffering effect diminished with the extension of the
 germ band for intermediate values of <span
 class="math inline"><em>K</em><sub><em>C</em><em>F</em></sub></span>.
@@ -717,7 +704,7 @@ cephalic furrow is more effective in preventing ectopic folding even for
 lower <span
 class="math inline"><em>K</em><sub><em>C</em><em>F</em></sub></span>
 values and for greater percentages of germ band extension (Figure <a
-href="#fig:model">3</a>k, Figure <a href="#fig:cf-sweep">S7</a>b).
+href="#fig:model">3</a>k, Figure <a href="#fig:cf-sweep">S8</a>b).
 Ectopic folds only form in the posterior region near the germ band tip,
 a position notably similar to where the dorsal folds form in the
 <em>Drosophila</em> embryo <em>in vivo</em>. Taken together, our
@@ -1033,11 +1020,11 @@ mutants using as a proxy the tortuosity of the epithelium outline. For
 that, we took the profile slices from dorsal recordings and transformed
 the curved vitelline envelope into a straight line using the
 <em>Straighten</em> tool of ImageJ (Figure <a
-href="#fig:tortuosity">S8</a>a). We then cropped a 200x25µm region along
+href="#fig:tortuosity">S9</a>a). We then cropped a 200x25µm region along
 the head–trunk interface and applied gaussian blur, thresholding, and
 edge detection to obtain the epithelium outline for individual
 timepoints covering about 50min after gastrulation (Figure <a
-href="#fig:tortuosity">S8</a>a,b). We extracted measurements from the
+href="#fig:tortuosity">S9</a>a,b). We extracted measurements from the
 epithelium outlines using the ImageJ plugin <em>Analyze
 Skeleton</em><span class="citation"
 data-cites="Arganda-Carreras2010-la"><sup><a
@@ -1063,10 +1050,10 @@ XY-resolution and 200ms time-steps. We ablated each embryo just once.
 temperature was maintained at 28°C. To analyse the ablation data, we
 created a line crossing the edges of the ablated cell perpendicular to
 the cut and generated a kymograph using the <em>Multi Kymograph</em>
-Fiji plugin (Figure <a href="#fig:ablation">S9</a>). We then binarized
+Fiji plugin (Figure <a href="#fig:ablation">S10</a>). We then binarized
 the kymographs, measured the distance between cell edges over the first
 30s after the cut, and performed a linear fit of the data to obtain the
-recoil velocity (Figure <a href="#fig:ablation">S9</a>).</p>
+recoil velocity (Figure <a href="#fig:ablation">S10</a>).</p>
 <h2 id="strain-rate-analysis">Strain rate analysis</h2>
 <!--TODO:AB: Did we measure anisotropic isotropic strain rate as well?-->
 <p>To estimate the strain rates, we first performed particle image
@@ -2215,7 +2202,7 @@ plot in Figure <a href="#fig:mitotic">2</a>d.</figcaption>
 <!--TODO: Add n values-->
 <div id="fig:proportions" class="fignos">
 <figure>
-<img src="figures/FigS5.jpg" data-tag="S5" style="width:80.0%"
+<img src="figures/FigS5.jpg" data-tag="S5" style="width:70.0%"
 alt="Figure S5: Embryonic proportions in wildtype and cephalic furrow mutants. Approximate relative sizes and positions between embryonic features such as mitotic domains, folds, and the germ band. All values are relative to the embryo length. We used these dimensions as a reference for creating the model." />
 <figcaption aria-hidden="true"><span>Figure S5:</span> Embryonic
 proportions in wildtype and cephalic furrow mutants. Approximate
@@ -2225,11 +2212,45 @@ length. We used these dimensions as a reference for creating the
 model.</figcaption>
 </figure>
 </div>
+<div id="fig:model-features" class="fignos">
+<figure>
+<img src="figures/FigS6.jpg" data-tag="S6" style="width:70.0%"
+alt="Figure S6: Characterization of the model features. a, Representative simulation using K_{b}^{*}=7 \times 10^{-5} and g=0.3 showing the shape of the tissue at iteration t=19 (blue) and t=1000 (pink). The respective iterations are marked in dashed lines in the descriptive plots below showing the variation in total energy, bending energy, number of folds, and fold depth over the iterations. One iteration (t=1) corresponds to 10^{5} computational steps and the X axis is in log_{10} scale to improve the visualization. b, Parameter sweep without mitotic domains. Plots show the number of folds by germ band extension (g) using K_{b}^{*}=1 \times 10^{-4} (left), the number of folds by bending rigidity K_{b}^{*} using g=0.3 (center), and the timing of folding by germ band extension (g) using K_{b}^{*}=1 \times 10^{-4} (right). c, Parameter sweep with mitotic domains. Plots show the same parameters as described in b above." />
+<figcaption aria-hidden="true"><span>Figure S6:</span> Characterization
+of the model features. <strong>a</strong>, Representative simulation
+using <span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup> = 7 × 10<sup>−5</sup></span>
+and <span class="math inline"><em>g</em> = 0.3</span> showing the shape
+of the tissue at iteration <span
+class="math inline"><em>t</em> = 19</span> (blue) and <span
+class="math inline"><em>t</em> = 1000</span> (pink). The respective
+iterations are marked in dashed lines in the descriptive plots below
+showing the variation in total energy, bending energy, number of folds,
+and fold depth over the iterations. One iteration (<span
+class="math inline"><em>t</em> = 1</span>) corresponds to <span
+class="math inline">10<sup>5</sup></span> computational steps and the X
+axis is in <span
+class="math inline"><em>l</em><em>o</em><em>g</em><sub>10</sub></span>
+scale to improve the visualization. <strong>b</strong>, Parameter sweep
+without mitotic domains. Plots show the number of folds by germ band
+extension (<span class="math inline"><em>g</em></span>) using <span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup> = 1 × 10<sup>−4</sup></span>
+(left), the number of folds by bending rigidity <span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup></span>
+using <span class="math inline"><em>g</em> = 0.3</span> (center), and
+the timing of folding by germ band extension (<span
+class="math inline"><em>g</em></span>) using <span
+class="math inline"><em>K</em><sub><em>b</em></sub><sup>*</sup> = 1 × 10<sup>−4</sup></span>
+(right). <strong>c</strong>, Parameter sweep with mitotic domains. Plots
+show the same parameters as described in <strong>b</strong>
+above.</figcaption>
+</figure>
+</div>
 <div id="fig:stg" class="fignos">
 <figure>
-<img src="figures/FigS6.jpg" data-tag="S6" style="width:100.0%"
-alt="Figure S6: Lateral and dorsal views of stg mutant embryos. Embryos stg homozygotes show no cell divisions after gastrulation. Despite of that, the early morphogenetic movements of gastrulation occur normally. a, Lateral 3D renderings. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. b, Profile views. The initiator cell behaviors are not perturbed in stg mutants and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos." />
-<figcaption aria-hidden="true"><span>Figure S6:</span> Lateral and
+<img src="figures/FigS7.jpg" data-tag="S7" style="width:100.0%"
+alt="Figure S7: Lateral and dorsal views of stg mutant embryos. Embryos stg homozygotes show no cell divisions after gastrulation. Despite of that, the early morphogenetic movements of gastrulation occur normally. a, Lateral 3D renderings. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. b, Profile views. The initiator cell behaviors are not perturbed in stg mutants and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos." />
+<figcaption aria-hidden="true"><span>Figure S7:</span> Lateral and
 dorsal views of <em>stg</em> mutant embryos. Embryos <em>stg</em>
 homozygotes show no cell divisions after gastrulation. Despite of that,
 the early morphogenetic movements of gastrulation occur normally.
@@ -2249,9 +2270,9 @@ sibling controls or wildtype embryos.</figcaption>
 <!--TODO: Annotate cell divisions in (b)-->
 <div id="fig:cf-sweep" class="fignos">
 <figure>
-<img src="figures/FigS7.jpg" data-tag="S7" style="width:100.0%"
-alt="Figure S7: Parameter sweep for cephalic furrow simulations. a, Bending rigidity and cephalic furrow depth at different values of KCF and germ band extension. Values above 0.2 exhibit a clear peak in bending energy for most conditions and the depth reaches a plateau across iterations. The cephalic furrow depth at the peak of bending energy (max bend) and at the final iteration is similar for simulations with 0% of germ band extension. At higher percentages of germ band extension the folds (both cephalic furrow and ectopic folds) exhibit a greater depth at the last iteration. b, Finer-grained parameter sweep of ectopic folding without (TMD=0) and with (TMD=5) a delay in cephalic furrow formation. With simultaneous formation, only higher values of KCF are effective in buffering the formation of ectopic folds around the cephalic furrow region. This is also limited to low percentages of germ band extension since at higher percentages there is an increase in the frequency of ectopic folding. When a delay in mitotic formation is present, even low values of KCF are effective in preventing the formation of ectopic folds. In this condition, the extension of the germ band increases the formation of ectopic folds, but only at the posterior regions close to the germ band tip. This suggests that the initiation of the cephalic furrow is crucial to its ability to buffer the ectopic folding." />
-<figcaption aria-hidden="true"><span>Figure S7:</span> Parameter sweep
+<img src="figures/FigS8.jpg" data-tag="S8" style="width:100.0%"
+alt="Figure S8: Parameter sweep for cephalic furrow simulations. a, Bending rigidity and cephalic furrow depth at different values of KCF and germ band extension. Values above 0.2 exhibit a clear peak in bending energy for most conditions and the depth reaches a plateau across iterations. The cephalic furrow depth at the peak of bending energy (max bend) and at the final iteration is similar for simulations with 0% of germ band extension. At higher percentages of germ band extension the folds (both cephalic furrow and ectopic folds) exhibit a greater depth at the last iteration. b, Finer-grained parameter sweep of ectopic folding without (TMD=0) and with (TMD=5) a delay in cephalic furrow formation. With simultaneous formation, only higher values of KCF are effective in buffering the formation of ectopic folds around the cephalic furrow region. This is also limited to low percentages of germ band extension since at higher percentages there is an increase in the frequency of ectopic folding. When a delay in mitotic formation is present, even low values of KCF are effective in preventing the formation of ectopic folds. In this condition, the extension of the germ band increases the formation of ectopic folds, but only at the posterior regions close to the germ band tip. This suggests that the initiation of the cephalic furrow is crucial to its ability to buffer the ectopic folding." />
+<figcaption aria-hidden="true"><span>Figure S8:</span> Parameter sweep
 for cephalic furrow simulations. <strong>a</strong>, Bending rigidity
 and cephalic furrow depth at different values of KCF and germ band
 extension. Values above 0.2 exhibit a clear peak in bending energy for
@@ -2278,9 +2299,9 @@ folding.</figcaption>
 <!--TODO: Replace with newer simulations?-->
 <div id="fig:tortuosity" class="fignos">
 <figure>
-<img src="figures/FigS8.jpg" data-tag="S8" style="width:100.0%"
-alt="Figure S8: Image processing pipeline for the tortuosity analysis in cauterized mutants. a, We acquired a single slice in profile view of the head–trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos. b, Then, we applied a gaussian blur which allows to capture the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing. c, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ." />
-<figcaption aria-hidden="true"><span>Figure S8:</span> Image processing
+<img src="figures/FigS9.jpg" data-tag="S9" style="width:100.0%"
+alt="Figure S9: Image processing pipeline for the tortuosity analysis in cauterized mutants. a, We acquired a single slice in profile view of the head–trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos. b, Then, we applied a gaussian blur which allows to capture the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing. c, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ." />
+<figcaption aria-hidden="true"><span>Figure S9:</span> Image processing
 pipeline for the tortuosity analysis in cauterized mutants.
 <strong>a</strong>, We acquired a single slice in profile view of the
 head–trunk epithelium. First, we straightened the epithelial monolayer
@@ -2299,9 +2320,9 @@ the skeletonize plugin in ImageJ.</figcaption>
 </div>
 <div id="fig:ablation" class="fignos">
 <figure>
-<img src="figures/FigS9.jpg" data-tag="S9" style="width:80.0%"
-alt="Figure S9: Image processing pipeline for the ablation analysis. a, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increase over time. b, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time." />
-<figcaption aria-hidden="true"><span>Figure S9:</span> Image processing
+<img src="figures/FigS10.jpg" data-tag="S10" style="width:80.0%"
+alt="Figure S10: Image processing pipeline for the ablation analysis. a, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increase over time. b, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time." />
+<figcaption aria-hidden="true"><span>Figure S10:</span> Image processing
 pipeline for the ablation analysis. <strong>a</strong>, Example of laser
 ablation near the cephalic furrow with the membrane signal (top left),
 the generated kymograph (right), and the linear fit over the distance
