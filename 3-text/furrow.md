@@ -122,18 +122,18 @@ Mitotic domains are groups of blastoderm cells that divide in synchrony during t
 The first mitotic domains in *Drosophila* appear in the head around 20 min after gastrulation [@Foe1989-cw] which coincides with the formation of ectopic folds ({@fig:ectopic}a,c,d).
 Ectopic folds also always appear in between or adjacent to mitotic domains ({@fig:mitotic}a).
 The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during anaphase elongation ({@fig:apical}).
-<!--TODO:AB: Are there force measurements?-->
 This expansion compresses the adjacent non-dividing cells which are the first to infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitotic}b).
 Mitotic expansions always precede ectopic folding ({@fig:mitotic}c, {@fig:initiator}a).
 Compared to the progressive invagination of the cephalic furrow (about 14 min), the process of ectopic fold formation is abrupt (about 4 min) ({@fig:initiator}a, {!@fig:vid-mitotic-fold}).
 To understand the dynamics of tissue strain, we measured the rate of tissue deformation (strain rate) at the head--trunk using particle image velocimetry.
 We find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak that coincides with the maximum expansion of mitotic domains and with the appearance of the ectopic folds ({@fig:mitotic}d,e, {@fig:strain}, {!@fig:vid-strain-rate}).
-We have also quantified the strain rate more posterior where the trunk tissue interacts with the tip of the germ band (trunk--germ).
-<!--TODO:PT: I have considered rewriting this in a way that not all folds happen between two adjacent mitotic domains. Some occur posterior to MD6 where the source of compression must be different. We hypothesize it is germ band. But it didn’t work. Maybe think about whether this could be a useful transition. Here it seems forced. We have also looked at strain rate in this region but why?-->
-At the trunk--germ interface, the strain rate is lower than at the head--trunk, but it steadily increases over time probably driven by the extending germ band ({@fig:mitotic}d).
-The epithelial cells between the Mitotic Domain 6 (MD6) and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}e), and often form ectopic folds ({@fig:mitotic}a,c).
+However, for the ectopic folds that often form posterior to the Mitotic Domain 6 (MD6) ({@fig:mitotic}a,c), the source of compression must be different; we hypothesized the germ band is contributing.
+Therefore, we have also quantified the strain rate at this posterior region where the trunk tissue interacts with the tip of the germ band (trunk--germ).
+At this trunk--germ interface, the strain rate is lower than at the head--trunk, but it steadily increases over time probably driven by the extending germ band ({@fig:mitotic}d).
+The epithelial cells between MD6 and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}e).
 Taken together, these analyses suggest the expansion of mitotic domains, and the extension of the germ band are potential sources of mechanical stress to the epithelial monolayer, and that they may be involved in the formation of ectopic folds by tissue buckling.
 
+<!--TODO:AB: Are there force measurements?-->
 <!--TODO: Include cell shape analyses with density et al. around here-->
 <!--TODO: Quantify compression of trunk-germ cells in btd mutants-->
 
