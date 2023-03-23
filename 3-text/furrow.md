@@ -431,10 +431,12 @@ We thank all current and former LoPaTs for the discussions and support during th
 Akanksha Jain and Vladimir Ulman for initial help with cartographic projections, Giulia Serafini for help with fly crosses, Anaïs Bailles for constructive feedback, and Michaela Burkon and Pavel Mejstrik for technical support.
 Jan Brugués and Keisuke Ishihara for the laser ablation setup, the MPI-CBG Light Microscopy Facility for imaging support, and Sven Ssykor and Cornelia Maas for help with fly stocks.
 Steffen Lemke and Yu-Chiun Wang for cephalic furrow discussions.
-Juliana Roscito for text revisions.
 Michael Akam for drawing BCV’s attention to the cephalic furrow. 
-AS was supported by an EU FET Open Horizon 2020 (XXX) granted to CDM.
-BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018), and by an European Research Council grant (ERC-AdG 885504 GHOSTINTHESHELL) awarded to PT.
+Juliana Roscito for text revisions.
+AS was supported by funding from the European Union's Horizon 2020 Research and Innovation Programme under grant agreement no. 829010 (PRIME).
+BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018), and by an European Research Council Advanced Grant (ERC-AdG 885504 GHOSTINTHESHELL) awarded to PT.
+
+<!--TODO: Ask about MBC, AK, and CDM funding-->
 
 # Author contributions
 
