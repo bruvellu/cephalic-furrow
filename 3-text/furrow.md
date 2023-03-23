@@ -108,8 +108,7 @@ The position of ectopic folds also varies between individual mutant embryos.
 They can form anterior, posterior, or near the site of cephalic furrow formation ({@fig:ectopic}f, {@fig:features}b, {!@fig:vid-dynamics-btd}, {!@fig:vid-variability-btd}) and show different formation kinetics with no obvious trend in angular direction over time ({@fig:features}d,e). 
 On average, ectopic folds have an area 50% smaller and a depth 25% shallower when compared to the cephalic furrow ({@fig:ectopic}g,h, {@fig:features}c,f).
 We find that the penetrance of the ectopic folding phenotype is high in cephalic furrow mutants (>93%).
-<!--TODO:AK: Fix placement of 13% for sibling controls, confusing in the sentence-->
-Nearly every *btd* and *eve* homozygote embryos show one or more ectopic folds (2.0±1.0 and 1.8±0.6 folds per side, respectively) ({@fig:ectopic}b, {@fig:features}a), while sibling controls show a low (13%) frequency of ectopic folding with an average of 1.1±0.2 ({@tbl:stats}).
+Nearly every *btd* and *eve* homozygote embryos show one or more ectopic folds (2.0±1.0 and 1.8±0.6 folds per side, respectively) ({@fig:ectopic}b, {@fig:features}a), while heterozygote sibling controls show a lower average (1.1±0.2) and frequency of ectopic folding (13%) ({@tbl:stats}).
 The frequency of ectopic folds in *prd* mutants is lower (43%), while in wildtype embryos it is surprisingly high (80%) ({@tbl:stats}).
 <!--TODO:AS: Is there a figure showing ectopic folds in prd and wildtype embryos?-->
 <!--TODO: Add figure for wildtype ectopic folds and include new plot with EF areas-->
