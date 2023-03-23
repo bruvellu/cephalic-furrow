@@ -429,7 +429,7 @@ All data, scripts, notebooks, and analyses pipelines are available in the reposi
 
 We thank all current and former LoPaTs for the discussions and support during this project.
 Akanksha Jain and Vladimir Ulman for initial help with cartographic projections, Giulia Serafini for help with fly crosses, Anaïs Bailles for constructive feedback, and Michaela Burkon and Pavel Mejstrik for technical support.
-Jan Brugués and Keisuke Ishihara for the laser ablation setup, the MPI-CBG Light Microscopy Facility for imaging support, and Sven Ssykor and Cornelia Maas for help with fly stocks.
+Jan Brugués and Keisuke Ishihara for the laser ablation setup, the MPI-CBG Light Microscopy Facility and Computer Services Facility for the generous support, and Sven Ssykor and Cornelia Maas for help with fly stocks.
 Steffen Lemke and Yu-Chiun Wang for cephalic furrow discussions.
 Michael Akam for drawing BCV’s attention to the cephalic furrow. 
 Juliana Roscito for text revisions.
