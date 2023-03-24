@@ -173,8 +173,6 @@
       margin-left: 2em;
     }
   </style>
-  <script src="/usr/share/javascript/mathjax/MathJax.js"
-  type="text/javascript"></script>
 </head>
 <body>
 <header id="title-block-header">
@@ -471,29 +469,35 @@ href="#fig:proportions">S5</a>). The blastoderm is modeled by an
 elliptical arc of equidistant particles connected by springs and
 enclosed on one side by a rigid barrier representing the vitelline
 envelope (Figure <a href="#fig:model">3</a>b). This elastic rod of
-length <span class="math inline">\(L_o\)</span> has a stretching energy
-component (<span class="math inline">\(W_s\)</span>), defined as the sum
-of stretching rigidities (<span class="math inline">\(K_s\)</span>)
+length
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>o</mi></msub><annotation encoding="application/x-tex">L_o</annotation></semantics></math>
+has a stretching energy component
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>s</mi></msub><annotation encoding="application/x-tex">W_s</annotation></semantics></math>),
+defined as the sum of stretching rigidities
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>s</mi></msub><annotation encoding="application/x-tex">K_s</annotation></semantics></math>)
 dependent on the ratio between the current and initial spring lengths
-(<span class="math inline">\(ds/ds_o\)</span>), and a bending energy
-component (<span class="math inline">\(W_b\)</span>), defined as the sum
-of bending rigidities (<span class="math inline">\(K_b\)</span>)
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>s</mi><mi>/</mi><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">ds/ds_o</annotation></semantics></math>),
+and a bending energy component
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>b</mi></msub><annotation encoding="application/x-tex">W_b</annotation></semantics></math>),
+defined as the sum of bending rigidities
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>b</mi></msub><annotation encoding="application/x-tex">K_b</annotation></semantics></math>)
 dependent on the difference between the current and initial curvatures
-of the rod (<span class="math inline">\(\kappa-\kappa_o\)</span>)
+of the rod
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>κ</mi><mo>−</mo><msub><mi>κ</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">\kappa-\kappa_o</annotation></semantics></math>)
 (Figure <a href="#fig:model">3</a>c). The sum of stretching and bending
-energies returns the total energy of the system (<span
-class="math inline">\(W_T\)</span>), while the ratio between both
-rigidities returns a single, physically meaningful parameter of our
-model—the dimensionless bending rigidity (<span
-class="math inline">\(K_b^*\)</span>) (Figure <a
-href="#fig:model">3</a>c). To simulate the physical interactions between
-mitotic domains, germ band, and cephalic furrow, we defined the mitotic
-domains as regions of compressed springs which tend to expand, and the
-cephalic furrow as a narrow region having an intrinsic negative
-curvature predisposing the particles to invaginate (Figure <a
-href="#fig:model">3</a>b). The germ band in our model is defined by the
-position of the posterior-most particle which is fixed at different
-percentages of egg length for each simulation (Figure <a
+energies returns the total energy of the system
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>T</mi></msub><annotation encoding="application/x-tex">W_T</annotation></semantics></math>),
+while the ratio between both rigidities returns a single, physically
+meaningful parameter of our model—the dimensionless bending rigidity
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><annotation encoding="application/x-tex">K_b^*</annotation></semantics></math>)
+(Figure <a href="#fig:model">3</a>c). To simulate the physical
+interactions between mitotic domains, germ band, and cephalic furrow, we
+defined the mitotic domains as regions of compressed springs which tend
+to expand, and the cephalic furrow as a narrow region having an
+intrinsic negative curvature predisposing the particles to invaginate
+(Figure <a href="#fig:model">3</a>b). The germ band in our model is
+defined by the position of the posterior-most particle which is fixed at
+different percentages of egg length for each simulation (Figure <a
 href="#fig:model">3</a>b). Finally, to run the simulations we added a
 ground level of random noise, and iterated the model towards an
 equilibrium in the total energy of the system.</p>
@@ -527,28 +531,28 @@ values (Figure <a href="#fig:model">3</a>e). The probability of buckling
 increases with the germ band extension and inversely with the bending
 rigidity (Figure <a href="#fig:model">3</a>e, Figure <a
 href="#fig:model-features">S6</a>b). We observe a buckling transition in
-the phase space in softer conditions (<span class="math inline">\(K_b^*
-\approx 0.7 \times 10^{−4}\)</span>) already at 10% germ band extension,
-but in stiffer conditions (<span class="math inline">\(K_b^* \approx 1.2
-\times 10^{−4}\)</span>) the germ band alone cannot drive the formation
-of ectopic folds even at its maximum extension (Figure <a
-href="#fig:model">3</a>e, Figure <a href="#fig:model-features">S6</a>b).
-Adding mitotic domains to the simulations caused a shift in the phase
-diagram, with the probability of ectopic fold formation increasing even
-in low values of germ band extension and higher values of bending
-rigidity (Figure <a href="#fig:model">3</a>f, Figure <a
-href="#fig:model-features">S6</a>c). Mitotic domains alone can induce
-ectopic folds in softer conditions (<span class="math inline">\(K_b^*
-&lt; 1.1 \times 10^{−4}\)</span>). For most of the parameter space, the
-combined action of mitotic domains and germ band maximizes the
-probability of ectopic fold formation (Figure <a
-href="#fig:model">3</a>e,f). These simulations show that above certain a
-bending rigidity (<span class="math inline">\(K_b^* &gt; 1.0 \times
-10^{−4}\)</span>), neither the mitotic domains nor the germ band can
-drive ectopic folding by themselves. We thus set to test these
-predictions <em>in vivo</em> by performing perturbation experiments to
-individually inhibit the formation of mitotic domains and the extension
-of the germ band.</p>
+the phase space in softer conditions
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>≈</mo><mn>0.7</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^* \approx 0.7 \times 10^{−4}</annotation></semantics></math>)
+already at 10% germ band extension, but in stiffer conditions
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>≈</mo><mn>1.2</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^* \approx 1.2 \times 10^{−4}</annotation></semantics></math>)
+the germ band alone cannot drive the formation of ectopic folds even at
+its maximum extension (Figure <a href="#fig:model">3</a>e, Figure <a
+href="#fig:model-features">S6</a>b). Adding mitotic domains to the
+simulations caused a shift in the phase diagram, with the probability of
+ectopic fold formation increasing even in low values of germ band
+extension and higher values of bending rigidity (Figure <a
+href="#fig:model">3</a>f, Figure <a href="#fig:model-features">S6</a>c).
+Mitotic domains alone can induce ectopic folds in softer conditions
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>&lt;</mo><mn>1.1</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^* &lt; 1.1 \times 10^{−4}</annotation></semantics></math>).
+For most of the parameter space, the combined action of mitotic domains
+and germ band maximizes the probability of ectopic fold formation
+(Figure <a href="#fig:model">3</a>e,f). These simulations show that
+above certain a bending rigidity
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>&gt;</mo><mn>1.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^* &gt; 1.0 \times 10^{−4}</annotation></semantics></math>),
+neither the mitotic domains nor the germ band can drive ectopic folding
+by themselves. We thus set to test these predictions <em>in vivo</em> by
+performing perturbation experiments to individually inhibit the
+formation of mitotic domains and the extension of the germ band.</p>
 <!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
 <p>We first asked whether the extension of the germ band alone can
 generate ectopic folds. To that end, we generated double-mutant flies
@@ -595,10 +599,10 @@ and that the germ band extension is required.</p>
 <!--TODO: Laser cut experiments. Consider adding them here starting with: “MD and GB generate mechanical forces and tissue flows that converge to the head--trunk boundary. If that’s the case, we expect that these tissues are under compression, and thus, would not show any recoil if cut using laser. To test that...”. The reasoning would almost the same as the one from the next paragraph: we observe that when MD and GB generate opposing flows at the same time the epithelial undergoes a buckling transition forming ectopic folds, we observe that the first epithelial cells to buckle are usually non-dividing between MDs and between MD/GB that become compressed immediately before the formation of the EF, these observations in combination with our models suggested that compressive stresses are driving a buckling transition in CF mutants, which in addition in a mutant situation there’s an excess of tissue in the surface due to the absence of the CF and the threshold for a buckling transition is even lower and these compressive forces are even more effective, if that’s the case, if these epithelial cells are being compressed and are under pressure we expect that a cut orthogonal to the predicted forces would show no recoil and possibly the tissue would collapse in itself. To test this hypothesis in vivo we performed painstaking laser cuts in cephalic furrow mutants and saw just that, if non-dividing cells between MDs or between MD/GB are cut we see no recoil, this supports our view that compressive forces are the essential driving forces underlying EF formation in cephalic furrow mutants and additionally it reveals that the HT is under compressive stresses from at least these two opposing morphogenetic events at gastrulation the MD and GB-->
 <p>These <em>in vivo</em> experiments show that neither the mitotic
 domains nor the germ band can promote ectopic folding by themselves. In
-our model, these situations occur around a bending rigidity of <span
-class="math inline">\(K_b^* \approx 1.0 \times 10^{−4}\)</span>. It is
-at this bending rigidity that the number of folds in simulations without
-mitotic domains and maximum germ band extension
+our model, these situations occur around a bending rigidity of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>≈</mo><mn>1.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^* \approx 1.0 \times 10^{−4}</annotation></semantics></math>.
+It is at this bending rigidity that the number of folds in simulations
+without mitotic domains and maximum germ band extension
 (<em>btd</em>–<em>stg</em> double mutant), and in simulations with
 mitotic domains and minimum germ band extension (<em>btd</em> or
 <em>eve</em> mutants), begin to fall below 1 (Figure <a
@@ -621,21 +625,22 @@ germ band extension in wildtype conditions.</p>
 analyzed computationally how it interacts with mitotic domains and with
 the germ band, and how it influences the formation of ectopic folds. In
 our model, we programmed the cephalic furrow by establishing an
-intrinsic negative curvature (<span
-class="math inline">\(\kappa_o^{CF}\)</span>) to a narrow region of the
-particle–spring blastoderm that matches the span of the initiator cells
-<em>in vivo</em> (Figure <a href="#fig:model">3</a>a, Figure <a
-href="#fig:proportions">S5</a>). Using the bending rigidity fine-tuned
-with the previous simulations and experiments, we ran a parameter sweep
-for different values of <span
-class="math inline">\(\kappa_o^{CF}\)</span> and established a baseline
-(<span class="math inline">\(\kappa_o^{CF}&gt;0.3\)</span>) where the
-invagination forms in a robust manner with minimal variability,
-phenocopying the cephalic furrow <em>in vivo</em> (Figure <a
-href="#fig:cf-sweep">S8</a>a). Since our experiments indicate that the
-germ band is compressing the head–trunk tissues, we first asked whether
-the extension of the germ band can influence the depth of the cephalic
-furrow.
+intrinsic negative curvature
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>κ</mi><mi>o</mi><mrow><mi>C</mi><mi>F</mi></mrow></msubsup><annotation encoding="application/x-tex">\kappa_o^{CF}</annotation></semantics></math>)
+to a narrow region of the particle–spring blastoderm that matches the
+span of the initiator cells <em>in vivo</em> (Figure <a
+href="#fig:model">3</a>a, Figure <a href="#fig:proportions">S5</a>).
+Using the bending rigidity fine-tuned with the previous simulations and
+experiments, we ran a parameter sweep for different values of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>κ</mi><mi>o</mi><mrow><mi>C</mi><mi>F</mi></mrow></msubsup><annotation encoding="application/x-tex">\kappa_o^{CF}</annotation></semantics></math>
+and established a baseline
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>κ</mi><mi>o</mi><mrow><mi>C</mi><mi>F</mi></mrow></msubsup><mo>&gt;</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">\kappa_o^{CF}&gt;0.3</annotation></semantics></math>)
+where the invagination forms in a robust manner with minimal
+variability, phenocopying the cephalic furrow <em>in vivo</em>
+(Figure <a href="#fig:cf-sweep">S8</a>a). Since our experiments indicate
+that the germ band is compressing the head–trunk tissues, we first asked
+whether the extension of the germ band can influence the depth of the
+cephalic furrow.
 <!--The simulations show that the average depth of the cephalic furrow correlates with the percentage of germ band extension ({@fig:model}i).-->
 <!--Mitotic activity and germ band elongation contributes to the depth of the cephalic furrow [@Campos-Ortega1997-rd].-->
 To test <em>in vivo</em> whether the presence of the germ band impacts
@@ -675,24 +680,25 @@ ectopic folds correlates with the strength of the pull, with higher
 values preventing ectopic folds more effectively (Figure <a
 href="#fig:model">3</a>g,h, Figure <a href="#fig:cf-sweep">S8</a>b).
 Curiously, this buffering effect diminished with the extension of the
-germ band for intermediate values of <span
-class="math inline">\(\kappa_o^{CF}\)</span> (Figure <a
-href="#fig:cf-sweep">S8</a>b). The cephalic furrow becomes shallower and
-there is an increase in ectopic folds at the posterior region. Only
-larger <span class="math inline">\(\kappa_o^{CF}\)</span> values
-remained effective in preventing ectopic folds at high percentages of
-germ band extension (Figure <a href="#fig:cf-sweep">S8</a>b). This
-suggests that in these conditions, the forces generated by the mitotic
-expansions and by the germ band extension dominate over the infolding
-pull of the cephalic furrow.</p>
+germ band for intermediate values of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>κ</mi><mi>o</mi><mrow><mi>C</mi><mi>F</mi></mrow></msubsup><annotation encoding="application/x-tex">\kappa_o^{CF}</annotation></semantics></math>
+(Figure <a href="#fig:cf-sweep">S8</a>b). The cephalic furrow becomes
+shallower and there is an increase in ectopic folds at the posterior
+region. Only larger
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>κ</mi><mi>o</mi><mrow><mi>C</mi><mi>F</mi></mrow></msubsup><annotation encoding="application/x-tex">\kappa_o^{CF}</annotation></semantics></math>
+values remained effective in preventing ectopic folds at high
+percentages of germ band extension (Figure <a
+href="#fig:cf-sweep">S8</a>b). This suggests that in these conditions,
+the forces generated by the mitotic expansions and by the germ band
+extension dominate over the infolding pull of the cephalic furrow.</p>
 <p>Finally, given that in wildtype embryos the cephalic furrow forms
 around 15 min before mitotic domains, we asked whether their relative
 timing of formation may influence the effectiveness of the cephalic
 furrow. Indeed, when we added a delay to the formation of mitotic
 domains, the cephalic furrow is more effective in preventing ectopic
-folding even for lower <span
-class="math inline">\(\kappa_o^{CF}\)</span> values and for greater
-percentages of germ band extension (Figure <a
+folding even for lower
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>κ</mi><mi>o</mi><mrow><mi>C</mi><mi>F</mi></mrow></msubsup><annotation encoding="application/x-tex">\kappa_o^{CF}</annotation></semantics></math>
+values and for greater percentages of germ band extension (Figure <a
 href="#fig:model">3</a>g,h, Figure <a href="#fig:cf-sweep">S8</a>b).
 Ectopic folds only form in the posterior region near the germ band tip,
 a position notably similar to where the dorsal folds form in the
@@ -1059,12 +1065,12 @@ velocimetry on cartographic projections using the ImageJ plugin
 data-cites="Tseng2012-ni"><sup><a href="#ref-Tseng2012-ni"
 role="doc-biblioref">37</a></sup></span> (<a
 href="https://sites.google.com/site/qingzongtseng/piv">sites.google.com/site/qingzongtseng/piv</a>).
-Then, we used the equation <span class="math display">\[E = \frac{1}{2}
-\left( \vec \nabla . \vec v \right) + \frac{1}{2} \left( \partial_x v_y
-+ \partial_y v_x \right)\]</span> to define and calculate the magnitude
-of the strain rate, where <span class="math inline">\(v\)</span> is the
-displacement obtained in the PIV divided by the time in minutes. The
-measurements combine isotropic and anisotropic strain rate. We used
+Then, we used the equation
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>∇</mi><mo accent="true">⃗</mo></mover><mi>.</mi><mover><mi>v</mi><mo accent="true">⃗</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>∂</mi><mi>x</mi></msub><msub><mi>v</mi><mi>y</mi></msub><mo>+</mo><msub><mi>∂</mi><mi>y</mi></msub><msub><mi>v</mi><mi>x</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E = \frac{1}{2} \left( \vec \nabla . \vec v \right) + \frac{1}{2} \left( \partial_x v_y + \partial_y v_x \right)</annotation></semantics></math>
+to define and calculate the magnitude of the strain rate, where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+is the displacement obtained in the PIV divided by the time in minutes.
+The measurements combine isotropic and anisotropic strain rate. We used
 these values to create a color-coded overlay for the strain rate
 (Figure <a href="#fig:strain">S4</a>). To generate the line plots, we
 averaged the strain rate along the dorsoventral axis in two pre-defined
@@ -1599,35 +1605,45 @@ relative positions of mitotic domains, cephalic furrow, and germ band.
 model based on particles connected by springs. The drawings exemplify
 the initial and final states for each component. <strong>c</strong>,
 Energy equation with a stretching and a bending component, and the
-dimensionless bending rigidity. Inital rod length (<span
-class="math inline">\(L_o\)</span>), stretching energy (<span
-class="math inline">\(W_s\)</span>), stretching rigidity (<span
-class="math inline">\(K_s\)</span>), initial spring length (<span
-class="math inline">\(ds_o\)</span>), current spring length (<span
-class="math inline">\(ds\)</span>), bending energy (<span
-class="math inline">\(W_b\)</span>), bending rigidity (<span
-class="math inline">\(K_b\)</span>), initial curvature (<span
-class="math inline">\(\kappa_o\)</span>), current curvature (<span
-class="math inline">\(\kappa\)</span>), semi-major embryonic axis (<span
-class="math inline">\(L\)</span>). <strong>d</strong>, Plots showing the
-energy dynamics across iterations in a typical simulation run. The
-stretching energy dominates and goes down with the iterations. The
-bending energy, which is a few orders of magnitude lower, increases
-drastically reaching a peak that diminishes gradually with the
-iterations. The total energy of the system goes down to equilibrium.
-<strong>e</strong>, Mutant parameter sweep without mitotic domains (no
-cephalic furrow). The heatmap shows the average number of ectopic folds
-for different bending rigidities and percentages of germ band extension.
-Ectopic folding frequency increases with lower bending rigidities
-(softer tissue) and with greater values of germ band extension. The
-white square outline indicates the <span
-class="math inline">\(K_b^*\)</span> value where the number of folds
-begins to fall below 1 at maximum germ band extension.
-<strong>f</strong>, Mutant parameter sweep with mitotic domains (no
-cephalic furrow). The phase diagram is shifted left in relation to
-<strong>f</strong>. The addition of mitotic domains maximizes the
-formation of ectopic folds even without germ band extension. The white
-square outline indicates the <span class="math inline">\(K_b^*\)</span>
+dimensionless bending rigidity. Inital rod length
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>o</mi></msub><annotation encoding="application/x-tex">L_o</annotation></semantics></math>),
+stretching energy
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>s</mi></msub><annotation encoding="application/x-tex">W_s</annotation></semantics></math>),
+stretching rigidity
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>s</mi></msub><annotation encoding="application/x-tex">K_s</annotation></semantics></math>),
+initial spring length
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">ds_o</annotation></semantics></math>),
+current spring length
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">ds</annotation></semantics></math>),
+bending energy
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>b</mi></msub><annotation encoding="application/x-tex">W_b</annotation></semantics></math>),
+bending rigidity
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>b</mi></msub><annotation encoding="application/x-tex">K_b</annotation></semantics></math>),
+initial curvature
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mi>o</mi></msub><annotation encoding="application/x-tex">\kappa_o</annotation></semantics></math>),
+current curvature
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>),
+semi-major embryonic axis
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>).
+<strong>d</strong>, Plots showing the energy dynamics across iterations
+in a typical simulation run. The stretching energy dominates and goes
+down with the iterations. The bending energy, which is a few orders of
+magnitude lower, increases drastically reaching a peak that diminishes
+gradually with the iterations. The total energy of the system goes down
+to equilibrium. <strong>e</strong>, Mutant parameter sweep without
+mitotic domains (no cephalic furrow). The heatmap shows the average
+number of ectopic folds for different bending rigidities and percentages
+of germ band extension. Ectopic folding frequency increases with lower
+bending rigidities (softer tissue) and with greater values of germ band
+extension. The white square outline indicates the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><annotation encoding="application/x-tex">K_b^*</annotation></semantics></math>
+value where the number of folds begins to fall below 1 at maximum germ
+band extension. <strong>f</strong>, Mutant parameter sweep with mitotic
+domains (no cephalic furrow). The phase diagram is shifted left in
+relation to <strong>f</strong>. The addition of mitotic domains
+maximizes the formation of ectopic folds even without germ band
+extension. The white square outline indicates the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><annotation encoding="application/x-tex">K_b^*</annotation></semantics></math>
 value where the number of folds begins to fall below 1 at minimum germ
 band extension. <strong>g</strong>, Quantification of ectopic folding to
 evaluate the effectiveness of the cephalic furrow. The top row shows a
@@ -2205,27 +2221,40 @@ model.</figcaption>
 alt="Figure S6: Characterization of the model features. a, Representative simulation using K_b^*=7 \times 10^{-5} and g=0.3 showing the shape of the tissue at iteration t=19 (blue) and t=1000 (pink). The respective iterations are marked in dashed lines in the descriptive plots below showing the variation in total energy, bending energy, number of folds, and fold depth over the iterations. One iteration (t=1) corresponds to 10^{5} computational steps and the X axis is in log_{10} scale to improve the visualization. b, Parameter sweep without mitotic domains. Plots show the number of folds by germ band extension (g) using K_b^*=1.0 \times 10^{-4} (left), the number of folds by bending rigidity K_b^* using g=0.3 (center), and the timing of folding by germ band extension (g) using K_b^*=1.0 \times 10^{-4} (right). c, Parameter sweep with mitotic domains. Plots show the same parameters as described in b above." />
 <figcaption aria-hidden="true"><span>Figure S6:</span> Characterization
 of the model features. <strong>a</strong>, Representative simulation
-using <span class="math inline">\(K_b^*=7 \times 10^{-5}\)</span> and
-<span class="math inline">\(g=0.3\)</span> showing the shape of the
-tissue at iteration <span class="math inline">\(t=19\)</span> (blue) and
-<span class="math inline">\(t=1000\)</span> (pink). The respective
-iterations are marked in dashed lines in the descriptive plots below
-showing the variation in total energy, bending energy, number of folds,
-and fold depth over the iterations. One iteration (<span
-class="math inline">\(t=1\)</span>) corresponds to <span
-class="math inline">\(10^{5}\)</span> computational steps and the X axis
-is in <span class="math inline">\(log_{10}\)</span> scale to improve the
-visualization. <strong>b</strong>, Parameter sweep without mitotic
-domains. Plots show the number of folds by germ band extension (<span
-class="math inline">\(g\)</span>) using <span
-class="math inline">\(K_b^*=1.0 \times 10^{-4}\)</span> (left), the
-number of folds by bending rigidity <span
-class="math inline">\(K_b^*\)</span> using <span
-class="math inline">\(g=0.3\)</span> (center), and the timing of folding
-by germ band extension (<span class="math inline">\(g\)</span>) using
-<span class="math inline">\(K_b^*=1.0 \times 10^{-4}\)</span> (right).
-<strong>c</strong>, Parameter sweep with mitotic domains. Plots show the
-same parameters as described in <strong>b</strong> above.</figcaption>
+using
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>=</mo><mn>7</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^*=7 \times 10^{-5}</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">g=0.3</annotation></semantics></math>
+showing the shape of the tissue at iteration
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>19</mn></mrow><annotation encoding="application/x-tex">t=19</annotation></semantics></math>
+(blue) and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">t=1000</annotation></semantics></math>
+(pink). The respective iterations are marked in dashed lines in the
+descriptive plots below showing the variation in total energy, bending
+energy, number of folds, and fold depth over the iterations. One
+iteration
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t=1</annotation></semantics></math>)
+corresponds to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mn>5</mn></msup><annotation encoding="application/x-tex">10^{5}</annotation></semantics></math>
+computational steps and the X axis is in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>10</mn></msub></mrow><annotation encoding="application/x-tex">log_{10}</annotation></semantics></math>
+scale to improve the visualization. <strong>b</strong>, Parameter sweep
+without mitotic domains. Plots show the number of folds by germ band
+extension
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>)
+using
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>=</mo><mn>1.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^*=1.0 \times 10^{-4}</annotation></semantics></math>
+(left), the number of folds by bending rigidity
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><annotation encoding="application/x-tex">K_b^*</annotation></semantics></math>
+using
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">g=0.3</annotation></semantics></math>
+(center), and the timing of folding by germ band extension
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>)
+using
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>=</mo><mn>1.0</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^*=1.0 \times 10^{-4}</annotation></semantics></math>
+(right). <strong>c</strong>, Parameter sweep with mitotic domains. Plots
+show the same parameters as described in <strong>b</strong>
+above.</figcaption>
 </figure>
 </div>
 <div id="fig:stg" class="fignos">
