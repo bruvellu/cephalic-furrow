@@ -12,7 +12,7 @@ DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
 FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
 PDFVARS=-V fontfamily:libertine -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt
-HTMLVARS=--standalone 
+HTMLVARS=--standalone --mathjax
 #HTMLVARS=-c resources/skeleton.css --standalone 
 #HTMLVARS=-V toc --embed-resources --standalone 
 
