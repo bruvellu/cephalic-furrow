@@ -192,6 +192,11 @@ In our model, these situations occur around a bending rigidity of $K_b^* \approx
 It is at this bending rigidity that the number of folds in simulations without mitotic domains and maximum germ band extension (*btd*--*stg* double mutant), and in simulations with mitotic domains and minimum germ band extension (*btd* or *eve* mutants), begin to fall below 1 ({@fig:model-features}b,c).
 This suggests that the bending rigidity regime of the epithelium *in vivo* is around the same order of magnitude.
 
+<!--TODO: Add sentence about correlation between model and real measurements. Here or discussion?
+
+For the characterization of the CF, I chose the bending rigidity of the blastoderm as K_b^* = 10^{-4}. I analyzed how this value compares with the bending rigidity measured for previous studies. In Trushko 2020 and Fouchard 2020 , they estimate K_b \approx 5 \times 10^{-13} Nm and K_s \approx 0.2 Nm^{-1} for MDCK monolayers. By this measure the value of K_b^* for them would be 3.8\times 10^{-5}. This is lower than my estimate of the bending rigidity of the blastoderm. One reason for this mismatch could be different tissue thicknesses between the their study and our study. The thickness of the MDCK monolayer mentioned in Fouchard 2020 is about 18 \mu m while the typical thickness of the blastoderm as measured by my collaborators is about 40 \mu m. It is known that for elastic sheets K_b/K_s \propto h^2, where h is the thickness of the sheet . Thus, the height adjusted value of K^*_b as estimated by Fouchard 2020 should be 1.8 \times 10^{-4}. This is higher than our estimate but in the same order of magnitude.  Still, it must be noted that my model, like any other model, makes several simplifying assumptions.
+-->
+
 Overall, our *in silico* modeling and *in vivo* experiments suggest that the epithelial buckling at the head--trunk interface in cephalic furrow mutants only occurs when both the mitotic domain expansion and the germ band extension happen concomitantly.
 This suggests that the combined activity of mitotic domains and germ band extension increases the compressive stresses at the head--trunk boundary during early gastrulation.
 In conditions where the cephalic furrow formation is perturbed, this leads to more frequent and larger tissue buckling events.
@@ -394,7 +399,24 @@ To generate the line plots, we averaged the strain rate along the dorsoventral a
 
 ## Model and simulations
 
-TODO: Explain these details on model building in the methods. 1) Energy equation, 2) Dimensionless bending rigidity, 3) Numerical approach, 4) Energy minimization with force, noise and friction, 5) Timesteps, 6) GB modeling, 7) MD modeling, 8) CF modeling, 9) Confinement regime, 10) Fold definition, 11) Simulation setup
+Our model follows an approach similar to a previously published model of epithelial buckling under confinement [@Trushko2020-gf].
+It represents the monolayer epithelium of the early *Drosophila* embryo in a cross section as a single line through the apical--basal midline of the epithelial cells.
+The line of length $L_o$ is modeled as an elastic rod with a stretching energy $W_s$ and bending energy $W_b$, so that the total energy $W_T = W_s + W_b$.
+In full, $$W_T = \int_{L_o} \frac{1}{2} K_s \left( \frac{ds}{ds_o} - 1 \right)^2 ds_o + \int_{L_o} \frac{1}{2} K_b \left( \kappa - \kappa_o \right)^2 ds_o$$ where $K_s$ is the stretching rigidity and $K_b$ is the bending rigidity of the tissue; $ds_o$ and $ds$ are the initial and current lengths of the curve, respectively; and $\kappa$ is the curvature of the rod.
+To perform numerics, we discretize the curve into $N$ particles indexed by $i$.
+The total energy $W_T^*$ discretized in a dimensionless form is $$W_T^* = \frac{1}{2} \sum_{i = 2}^{N-3} \left( \frac{\Delta r_i}{\Delta r_o} - 1 \right)^2 + \frac{1}{2} \frac{K_b}{K_sL^2} \sum_{i = 2}^{N-3} \left( \kappa_i - \kappa_{o,i} \right)^2 \Delta r_o$$ where $\Delta r_o$ is the initial length of springs connecting consecutive points (equal for all springs); $\Delta r_i$ is the current length between $i$ and $i+1$; $\kappa_i$ is the discretized curvature at point $i$; $\kappa_{o,i}$ is the preferred curvature at point $i$ (equal to 0, except when specified).
+The first and last two points of the curve are fixed in space.
+To obtain a physically meaningful dimensionless bending rigidity, we divide the bending energy by the factor $K_sL^2$ as $$K_b^* = K_b/K_sL^2$$ where $L$ can be any length scale defined for the system (in our case, the semi-major axis of the embryo).
+To minimize the total energy, we add a ground level of noise to the particles and let the particles move in the direction of the forces from the two connected springs.
+It can be described as $$\frac{\Delta\underline{r}_i}{\Delta t} = - \frac{L^2}{\tau} \frac{\partial W^*}{\partial \underline{r}_i} + \underline{\zeta}_i$$ where $\underline{r}_i$ is the current position of the $i$th particle; $\tau$ represents a friction coefficient to balance dimensions (equals to 1); $\Delta t$ are the timesteps (set to $10^{-5} \times \tau/L$); and  $\underline{\zeta}_i$ is the noise, chosen from a gaussian distribution with mean 0 and standard distribution $10^{-5}\times L$.
+In our model the position of the germ band corresponds to the position of the last particle in the curve on the semi-ellipse that represents the embryonic blastoderm.
+The extent of the germ band is given by $$g = \frac{\text{distance from posterior tip to last particle}}{\text{total embryo length}}$$
+When $g=0$ the tissue is free of stretching stress, but at any other positive $g$, the blastoderm will be differently compressed.
+To find the initial lengths of the springs, we use $$\Delta r_{\text{o}} = \frac{1}{N} \left( L\int_{u'}^{\pi} \sqrt{1 - e^2 \cos^2(u)} du \right)$$ where $e = \sqrt{1 - (0.4)^2}$; and the angle $u' = \cos^{-1}(1 - 2g)$.
+For any simulation, the value of $g$ is constant (=static position).
+To model mitotic domains, we introduced new particles in the mid-points between two particles in specific regions of length $0.5L$.
+The blastoderm is confined by a rigid boundary in the shape of a semi-ellipse and any particle that lands outside this boundary is re-positioned to mid-point between the initial and current position where it intersects with the boundary.
+Finally, we define and count as a *fold* a particle whose distance to the rigid boundary is greater than the maximum distance traveled by particles under ground level noise (equals to 0.035L).
 
 ## Data visualization and figure assembly
 

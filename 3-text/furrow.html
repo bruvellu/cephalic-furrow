@@ -609,6 +609,10 @@ mitotic domains and minimum germ band extension (<em>btd</em> or
 href="#fig:model-features">S6</a>b,c). This suggests that the bending
 rigidity regime of the epithelium <em>in vivo</em> is around the same
 order of magnitude.</p>
+<!--TODO: Add sentence about correlation between model and real measurements. Here or discussion?
+
+For the characterization of the CF, I chose the bending rigidity of the blastoderm as K_b^* = 10^{-4}. I analyzed how this value compares with the bending rigidity measured for previous studies. In Trushko 2020 and Fouchard 2020 , they estimate K_b \approx 5 \times 10^{-13} Nm and K_s \approx 0.2 Nm^{-1} for MDCK monolayers. By this measure the value of K_b^* for them would be 3.8\times 10^{-5}. This is lower than my estimate of the bending rigidity of the blastoderm. One reason for this mismatch could be different tissue thicknesses between the their study and our study. The thickness of the MDCK monolayer mentioned in Fouchard 2020 is about 18 \mu m while the typical thickness of the blastoderm as measured by my collaborators is about 40 \mu m. It is known that for elastic sheets K_b/K_s \propto h^2, where h is the thickness of the sheet . Thus, the height adjusted value of K^*_b as estimated by Fouchard 2020 should be 1.8 \times 10^{-4}. This is higher than our estimate but in the same order of magnitude.  Still, it must be noted that my model, like any other model, makes several simplifying assumptions.
+-->
 <p>Overall, our <em>in silico</em> modeling and <em>in vivo</em>
 experiments suggest that the epithelial buckling at the head–trunk
 interface in cephalic furrow mutants only occurs when both the mitotic
@@ -1078,11 +1082,114 @@ regions, the head–trunk (canonical cephalic furrow position) and the
 trunk–germ (posterior to the Mitotic Domain 6) (Figure <a
 href="#fig:strain">S4</a>).</p>
 <h2 id="model-and-simulations">Model and simulations</h2>
-<p>TODO: Explain these details on model building in the methods. 1)
-Energy equation, 2) Dimensionless bending rigidity, 3) Numerical
-approach, 4) Energy minimization with force, noise and friction, 5)
-Timesteps, 6) GB modeling, 7) MD modeling, 8) CF modeling, 9)
-Confinement regime, 10) Fold definition, 11) Simulation setup</p>
+<p>Our model follows an approach similar to a previously published model
+of epithelial buckling under confinement<span class="citation"
+data-cites="Trushko2020-gf"><sup><a href="#ref-Trushko2020-gf"
+role="doc-biblioref">21</a></sup></span>. It represents the monolayer
+epithelium of the early <em>Drosophila</em> embryo in a cross section as
+a single line through the apical–basal midline of the epithelial cells.
+The line of length
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>o</mi></msub><annotation encoding="application/x-tex">L_o</annotation></semantics></math>
+is modeled as an elastic rod with a stretching energy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>s</mi></msub><annotation encoding="application/x-tex">W_s</annotation></semantics></math>
+and bending energy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>b</mi></msub><annotation encoding="application/x-tex">W_b</annotation></semantics></math>,
+so that the total energy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>T</mi></msub><mo>=</mo><msub><mi>W</mi><mi>s</mi></msub><mo>+</mo><msub><mi>W</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">W_T = W_s + W_b</annotation></semantics></math>.
+In full,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>T</mi></msub><mo>=</mo><msub><mo>∫</mo><msub><mi>L</mi><mi>o</mi></msub></msub><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>K</mi><mi>s</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>d</mi><mi>s</mi></mrow><mrow><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow></mfrac><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub><mo>+</mo><msub><mo>∫</mo><msub><mi>L</mi><mi>o</mi></msub></msub><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>K</mi><mi>b</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>κ</mi><mo>−</mo><msub><mi>κ</mi><mi>o</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">W_T = \int_{L_o} \frac{1}{2} K_s \left( \frac{ds}{ds_o} - 1 \right)^2 ds_o + \int_{L_o} \frac{1}{2} K_b \left( \kappa - \kappa_o \right)^2 ds_o</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>s</mi></msub><annotation encoding="application/x-tex">K_s</annotation></semantics></math>
+is the stretching rigidity and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>b</mi></msub><annotation encoding="application/x-tex">K_b</annotation></semantics></math>
+is the bending rigidity of the tissue;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">ds_o</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">ds</annotation></semantics></math>
+are the initial and current lengths of the curve, respectively; and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
+is the curvature of the rod. To perform numerics, we discretize the
+curve into
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+particles indexed by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>.
+The total energy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>W</mi><mi>T</mi><mo>*</mo></msubsup><annotation encoding="application/x-tex">W_T^*</annotation></semantics></math>
+discretized in a dimensionless form is
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>W</mi><mi>T</mi><mo>*</mo></msubsup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>3</mn></mrow></munderover><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>Δ</mi><msub><mi>r</mi><mi>i</mi></msub></mrow><mrow><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow></mfrac><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><msub><mi>K</mi><mi>b</mi></msub><mrow><msub><mi>K</mi><mi>s</mi></msub><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>3</mn></mrow></munderover><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>κ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>κ</mi><mrow><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">W_T^* = \frac{1}{2} \sum_{i = 2}^{N-3} \left( \frac{\Delta r_i}{\Delta r_o} - 1 \right)^2 + \frac{1}{2} \frac{K_b}{K_sL^2} \sum_{i = 2}^{N-3} \left( \kappa_i - \kappa_{o,i} \right)^2 \Delta r_o</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">\Delta r_o</annotation></semantics></math>
+is the initial length of springs connecting consecutive points (equal
+for all springs);
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>r</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\Delta r_i</annotation></semantics></math>
+is the current length between
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i+1</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\kappa_i</annotation></semantics></math>
+is the discretized curvature at point
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mrow><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><annotation encoding="application/x-tex">\kappa_{o,i}</annotation></semantics></math>
+is the preferred curvature at point
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+(equal to 0, except when specified). The first and last two points of
+the curve are fixed in space. To obtain a physically meaningful
+dimensionless bending rigidity, we divide the bending energy by the
+factor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub><msup><mi>L</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">K_sL^2</annotation></semantics></math>
+as
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>=</mo><msub><mi>K</mi><mi>b</mi></msub><mi>/</mi><msub><mi>K</mi><mi>s</mi></msub><msup><mi>L</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">K_b^* = K_b/K_sL^2</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+can be any length scale defined for the system (in our case, the
+semi-major axis of the embryo). To minimize the total energy, we add a
+ground level of noise to the particles and let the particles move in the
+direction of the forces from the two connected springs. It can be
+described as
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>Δ</mi><msub><munder><mi>r</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac><msup><mi>L</mi><mn>2</mn></msup><mi>τ</mi></mfrac><mfrac><mrow><mi>∂</mi><msup><mi>W</mi><mo>*</mo></msup></mrow><mrow><mi>∂</mi><msub><munder><mi>r</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow></mfrac><mo>+</mo><msub><munder><mi>ζ</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\frac{\Delta\underline{r}_i}{\Delta t} = - \frac{L^2}{\tau} \frac{\partial W^*}{\partial \underline{r}_i} + \underline{\zeta}_i</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><munder><mi>r</mi><mo accent="true">_</mo></munder><mi>i</mi></msub><annotation encoding="application/x-tex">\underline{r}_i</annotation></semantics></math>
+is the current position of the
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>th
+particle;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+represents a friction coefficient to balance dimensions (equals to 1);
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta t</annotation></semantics></math>
+are the timesteps (set to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo>×</mo><mi>τ</mi><mi>/</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">10^{-5} \times \tau/L</annotation></semantics></math>);
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><munder><mi>ζ</mi><mo accent="true">_</mo></munder><mi>i</mi></msub><annotation encoding="application/x-tex">\underline{\zeta}_i</annotation></semantics></math>
+is the noise, chosen from a gaussian distribution with mean 0 and
+standard distribution
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo>×</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">10^{-5}\times L</annotation></semantics></math>.
+In our model the position of the germ band corresponds to the position
+of the last particle in the curve on the semi-ellipse that represents
+the embryonic blastoderm. The extent of the germ band is given by
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><mtext mathvariant="normal">distance from posterior tip to last particle</mtext><mtext mathvariant="normal">total embryo length</mtext></mfrac></mrow><annotation encoding="application/x-tex">g = \frac{\text{distance from posterior tip to last particle}}{\text{total embryo length}}</annotation></semantics></math>
+When
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g=0</annotation></semantics></math>
+the tissue is free of stretching stress, but at any other positive
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
+the blastoderm will be differently compressed. To find the initial
+lengths of the springs, we use
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>r</mi><mtext mathvariant="normal">o</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>L</mi><msubsup><mo>∫</mo><mrow><mi>u</mi><mi>′</mi></mrow><mi>π</mi></msubsup><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mn>2</mn></msup><msup><mo>cos</mo><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta r_{\text{o}} = \frac{1}{N} \left( L\int_{u&#39;}^{\pi} \sqrt{1 - e^2 \cos^2(u)} du \right)</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">e = \sqrt{1 - (0.4)^2}</annotation></semantics></math>;
+and the angle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mi>′</mi><mo>=</mo><msup><mo>cos</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u&#39; = \cos^{-1}(1 - 2g)</annotation></semantics></math>.
+For any simulation, the value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+is constant (=static position). To model mitotic domains, we introduced
+new particles in the mid-points between two particles in specific
+regions of length
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn><mi>L</mi></mrow><annotation encoding="application/x-tex">0.5L</annotation></semantics></math>.
+The blastoderm is confined by a rigid boundary in the shape of a
+semi-ellipse and any particle that lands outside this boundary is
+re-positioned to mid-point between the initial and current position
+where it intersects with the boundary. Finally, we define and count as a
+<em>fold</em> a particle whose distance to the rigid boundary is greater
+than the maximum distance traveled by particles under ground level noise
+(equals to 0.035L).</p>
 <h2 id="data-visualization-and-figure-assembly">Data visualization and
 figure assembly</h2>
 <p>For microscopy images, we only performed minimal linear intensity
