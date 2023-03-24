@@ -437,8 +437,6 @@ Juliana Roscito for text revisions.
 AS was supported by funding from the European Union's Horizon 2020 Research and Innovation Programme under grant agreement no. 829010 (PRIME).
 BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018), and by an European Research Council Advanced Grant (ERC-AdG 885504 GHOSTINTHESHELL) awarded to PT.
 
-<!--TODO: Ask about MBC, AK, and CDM funding-->
-
 # Author contributions
 
 BCV and PT conceived the study.
@@ -464,15 +462,16 @@ All authors revised and contributed to the text.
 
 ![Formation of ectopic folds in cephalic furrow mutants.
 **a**, Overview of key developmental events using a standard developmental staging [@Ashburner2005-ym]. The formation of the cephalic furrow is delayed in *prd* mutants and absent in *btd* and *eve* mutants. In the latter, ectopic folds form near the canonical invagination site of the cephalic furrow. Wildtype and *prd* embryos form less frequent and smaller ectopic folds more anterior or posterior to the cephalic furrow. Ectopic folds appear later and unfold quicker than the cephalic furrow, and their formation coincides with the appearance of mitotic domains and with the rapid phase of the germ band extension [@Campos-Ortega1985-ma].
-**b**, Profile view of wildtype and *prd* embryos (early stage 8), and *btd* and *eve* embryos (late stage 8) showing the divergent morphology of the cephalic furrow and ectopic folds, respectively.
-**c**, Lateral view of sibling controls (heterozygotes) and mutant embryos (*btd* or *eve* homozygotes). The arrows indicate epithelial folds, the asterisks indicate the position of mitotic domains, and the percentages indicate the extent of germ band extension relative to the egg length.
+**b**, Profile view of wildtype and *prd* embryos (early stage 8), and *btd* and *eve* embryos (late stage 8) showing the divergent morphology of the cephalic furrow and ectopic folds, respectively. Scale bars = 20µm.
+**c**, Lateral view of sibling controls (heterozygotes) and mutant embryos (*btd* or *eve* homozygotes). The arrows indicate epithelial folds, the asterisks indicate the position of mitotic domains, and the percentages indicate the extent of germ band extension relative to the egg length. Scale bars = 50µm.
 **d**, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about seven minutes after gastrulation in wildtype and *btd* heterozygotes, and is delayed in *eve* and *prd* heterozygotes. Ectopic folds form after 20 min post gastrulation in all genotypes. One dot represents one embryo.
 **e**, Percentage of germ band extension at the time of formation of the cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow appears at 10% germ band extension, except in *prd* heterozygotes where it varies up to 40%. Ectopic folds form at 30--35% germ band extension.
-**f**, Variability in the distribution of the cephalic furrow in sibling controls (*btd* heterozygotes) and of the ectopic folds in *btd* mutants.
-<!--TODO:AB: Add sampling numbers in the legend here and in the figure panels-->
+**f**, Variability in the distribution of the cephalic furrow in sibling controls (*btd* heterozygotes) and of the ectopic folds in *btd* mutants (n = 6). Scale bars = 50µm.
 **g**, Folded area in a representative *btd* mutant and sibling control visualized in a cartographic projection of the surface of the embryo.
 **h**, Quantification of the total folded area of epithelial surface in cephalic furrow mutants.
 ](figures/Fig1.jpg){#fig:ectopic width=100%}
+
+<!--TODO:AB: Add sampling numbers to the plots-->
 
 <!--**h**, Quantification of the total folded area of epithelial surface in cephalic furrow mutants. Wildtype embryos show a larger folded area compared to the cephalic furrow in heterozygotes and to the ectopic folds in homozygote embryos.-->
 <!--**e**, Dynamics of cephalic furrow invagination and ectopic fold formation in a single representative embryo.-->
