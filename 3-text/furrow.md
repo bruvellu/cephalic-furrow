@@ -315,11 +315,15 @@ To remove the chorion, we immersed the embryos in 20% sodium hypochlorite soluti
 
 ## Sample mounting for live imaging
 
-We transferred the embryos from the cell strainer onto an agar pad using a brush, and manually positioned them in a single line with the lateral or ventral sides up using a blunt cactus spine under a stereomicroscope.
-We then glued the embryos along the long axis of a 6x22mm glass coverslip (0.17mm thickness) coated with a thin layer of heptane glue and attached to a custom made metal sample holder using silicon glue.
-<!--TODO:PT: Here on the other hand more detail would be beneficial. Pointing to some protocol in your repo?-->
-We mounted the samples in a Zeiss Lightsheet Z.1 microscope with the coverslip orthogonal to the detection objective and the embryos positioned with the anteroposterior axis vertically to obtain the best optics for recording lateral and dorsal views.
-This mounting strategy allows to increase the throughput of samples in one imaging session, ideal for screening mutant embryos which have lower frequency.
+We performed most of our live imaging in Zeiss Lightsheet Z.1 microscope using a mounting strategy optimized to increase the throughput of samples in one session.
+First, we cut a 22x22mm glass coverslip (0.17mm thickness) into 6x15mm strips using a diamond knife, and attached a single strip to a custom sample holder using silicon glue, letting it harden for 15min.
+We then coated the coverslip strip with a thin layer of heptane glue and let it dry while preparing the embryos.
+Using a fine brush, we transferred the embryos collected in the cell strainer onto an agar pad, and oriented them manually with a blunt cactus spine under a stereomicroscope.
+We aligned about 20 embryos in a single line (head to tail) along the main axis of the strip with the left or ventral sides up, depending on the experiment.
+To attach the embryos to the coverslip, we carefully lowered the sample holder over the agar pad until the glass coated with heptane glue touched the embryos.
+We placed the sample holder into the microscope chamber filled with water, and rotated it so that the samples are facing the detection objective directly, and the coverslip is orthogonal to the detection objective; this is important to prevent the lightsheet from hitting the glass edges.
+With the embryos oriented vertically along the coverslip, the lightsheet generated from the illumination objectives coming from the sides only needs to pass through the width of the embryo (about 200µm).
+This approach gives the best optics for recording lateral and dorsal views and is ideal for live imaging homozygote embryos since they are only about one fourth of the total number of imaged embryos.
 
 ## Microscopy and acquisition parameters
 
