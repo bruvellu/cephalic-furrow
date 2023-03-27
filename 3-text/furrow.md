@@ -505,12 +505,12 @@ All authors revised and contributed to the text.
 <!--**j**, Quantification of ectopic folding to evaluate the effectiveness of the cephalic furrow. The top row shows a control simulating a cephalic furrow mutant condition with mitotic domains and germ band. The middle row shows an active cephalic furrow invagination with mitotic domains forming at the same time without delay. The bottom row shows the cephalic furrow with a delay in mitotic domain formation. The cephalic furrow prevents ectopic folding most effectively at different percentages of germ band extension when the formation of mitotic domains is delayed relative to the cephalic furrow formation, as observed in wildtype embryos.-->
 
 ![Perturbation experiments *in vivo* using cephalic furrow mutants and wildtype embryos.
-**a**, Lateral view of *btd*--*stg* double mutants showing the absence of ectopic folds at the head--trunk boundary compared to a *btd* mutant.
-**b**, Profile view of a *btd*--*stg* double mutant showing the head--trunk epithelium without mitotic domains or ectopic folds.
-**c**, Cauterized *eve* mutant in lateral (top) and dorsal view (bottom) at the maximum apical expansion of dividing cells in mitotic domains. The cauterization site is marked by a vermilion circle. The boxed outline (right) shows the progressive expansion of mitotic domains compressing the non-dividing cells between MD1 and MD5.
-**d** Profile view and epithelial trace of non-cauterized and cauterized *btd* and *eve* embryos. The trace shows the dynamics of epithelial deformations over time colored from purple to yellow. Cauterized mutants show no ectopic folds and less deformation of the epithelium. 
-**e**, Cauterized wildtype embryo in lateral (top) and dorsal view (bottom). The cauterization site is marked by a vermilion circle. The cephalic furrow invaginates normally.
-**f**, Profile view of a non-cauterized and a cauterized wildtype embryo showing a small difference in depth.
+**a**, Lateral view of *btd*--*stg* double mutants showing the absence of ectopic folds at the head--trunk boundary compared to a *btd* mutant. Scale bar = 50µm.
+**b**, Profile view of a *btd*--*stg* double mutant showing the head--trunk epithelium without mitotic domains or ectopic folds. Scale bar = 20µm.
+**c**, Cauterized *eve* mutant in lateral (top) and dorsal view (bottom) at the maximum apical expansion of dividing cells in mitotic domains. The cauterization site is marked by a vermilion circle. The boxed outline (right) shows the progressive expansion of mitotic domains compressing the non-dividing cells between MD1 and MD5. Scale bars = 50µm.
+**d** Profile view and epithelial trace of non-cauterized and cauterized *btd* and *eve* embryos. The trace shows the dynamics of epithelial deformations over time colored from purple to yellow. Cauterized mutants show no ectopic folds and less deformation of the epithelium. Scale bars = 20µm.
+**e**, Cauterized wildtype embryo in lateral (top) and dorsal view (bottom). The cauterization site is marked by a vermilion circle. The cephalic furrow invaginates normally. Scale bar = 50µm.
+**f**, Profile view of a non-cauterized and a cauterized wildtype embryo showing a small difference in depth. Scale bar = 20µm.
 **g**, Tortuosity of the epithelial traces in non-cauterized and cauterized mutant embryos from **d**.
 **h**, Maximum depth of the cephalic furrow in control and cauterized wildtype embryos. The cephalic furrow in cauterized embryos is 15% shallower but the difference is not significant.
 <!--TODO:PT: By what statistical test?-->
