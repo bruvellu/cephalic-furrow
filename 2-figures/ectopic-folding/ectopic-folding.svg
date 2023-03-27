@@ -1220,9 +1220,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="309.00566"
-     inkscape:cy="160.51324"
+     inkscape:zoom="4"
+     inkscape:cx="573.125"
+     inkscape:cy="448.25"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -1300,14 +1300,6 @@
        d="m 178.4708,105.18568 h -3.01508"
        id="path22471-9-9-7-3-1-4-5-8-9-9-6-6-1-5-0-9-8-5"
        sodipodi:nodetypes="cc" /><g
-       id="g703116"
-       transform="translate(0,-1.5875)"><rect
-         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.0610238;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.122048, 0.122048"
-         id="rect703114"
-         width="27.500004"
-         height="13"
-         x="123.99997"
-         y="94.922363" /></g><g
        id="g703865"
        clip-path="url(#clipPath705312)"
        transform="matrix(0.96296289,0,0,0.96296289,5.0380138,1.9281229)"><image
@@ -7179,10 +7171,25 @@
        x="135.31479"
        y="147.62199">n=16</text><text
        text-anchor="middle"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76389px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.0636574;stroke-linecap:butt;stroke-linejoin:round"
+       id="text67207-3-2-3-9"
+       x="130.97108"
+       y="126.52608">10.3±1.9</text><text
+       text-anchor="middle"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76389px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';display:inline;fill:#b2b2b2;fill-opacity:1;stroke-width:0.0636574;stroke-linecap:butt;stroke-linejoin:round"
        id="text67207-3-6-9-6"
        x="145.26285"
        y="147.62199">n=6</text><text
+       text-anchor="middle"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76389px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.0636574;stroke-linecap:butt;stroke-linejoin:round"
+       id="text67207-3-6-9-6-8"
+       x="126.22599"
+       y="105.30569">n=6</text><text
+       text-anchor="middle"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76389px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.0636574;stroke-linecap:butt;stroke-linejoin:round"
+       id="text67207-3-6-9-6-8-7"
+       x="153.74266"
+       y="105.30569">n=6</text><text
        text-anchor="middle"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76389px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';display:inline;fill:#b2b2b2;fill-opacity:1;stroke-width:0.0636574;stroke-linecap:butt;stroke-linejoin:round"
        id="text67207-3-6-7-1-0"
@@ -7207,7 +7214,12 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76389px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';display:inline;fill:#b2b2b2;fill-opacity:1;stroke-width:0.0636574;stroke-linecap:butt;stroke-linejoin:round"
        id="text67207-3-6-7-3-6-9-1"
        x="174.04131"
-       y="147.62199">n=5</text></g><g
+       y="147.62199">n=5</text><text
+       text-anchor="middle"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.76389px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.0636574;stroke-linecap:butt;stroke-linejoin:round"
+       id="text67207-3-2-3-9-0"
+       x="157.67503"
+       y="123.07973">2.3±1.7</text></g><g
      inkscape:label="Labels"
      inkscape:groupmode="layer"
      id="layer1"
