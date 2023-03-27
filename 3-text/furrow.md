@@ -479,7 +479,7 @@ All authors revised and contributed to the text.
 
 ![Coincidence of mitotic domains and germ band extension with ectopic folding.
 **a**, Position of ectopic folds (black lines) in relation to the mitotic domains (colored areas) in *btd* and *eve* mutants. The ectopic folds appear between mitotic domains and between the germ band and the mitotic domain 6 (MD6). Scale bars = 50µm.
-**b**, Apical cell area between mitotic domains MD5 and MD7/6 (top). The infolded area is highlighted in the last frame (4.6 min). Detail of a cell subset in between mitotic domains (bottom) showing non-dividing cells (orange) and adjacent dividing cells (blue). Scale bars = 20µm.
+**b**, Apical cell area between mitotic domains MD5 and MD7/6 (top). The infolded area is highlighted in the last frame (4.6 min). Detail of a cell subset in between mitotic domains (bottom) showing non-dividing cells (orange) and adjacent dividing cells (blue). Scale bars = 20µm (this is an approximate value because the pixel resolutions vary across the projection).
 **c**, Ectopic folding forming between MD6 and the germ band in a *btd* mutant. Scale bar = 20µm.
 **d**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions. The formation of the cephalic furrow (CF), ectopic folds (EF), and mitotic domains (MD) are annotated. The measurements combine isotropic and anisotropic strain rate.
 **e**, Compressed epithelial cells between MD6 and the tip of the germ band. Scale bars = 50µm.
