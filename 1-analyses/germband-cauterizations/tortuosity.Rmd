@@ -64,6 +64,44 @@ for (d in 1:length(datafiles)) {
 }
 
 ```
+## Print summary
+
+```{r summary}
+print_stats <- function(dataframe, stock, sample) {
+  filter_df <- (dataframe$stock == stock & dataframe$sample == sample)
+  df <- dataframe[filter_df,]
+  df <- droplevels(df)
+
+  # Define row
+  row <- c(stock,
+           sample,
+           length(unique(df[,c("embryo", "side")])$embryo),
+           length(unique(df$embryo))
+           )
+  
+  return(row)
+}
+
+# Save stats to data frame
+stats <- data.frame()
+
+# Bind row by row
+stats <- rbind(stats, print_stats(datasets, "btd", "control"))
+stats <- rbind(stats, print_stats(datasets, "btd", "cauterized"))
+stats <- rbind(stats, print_stats(datasets, "eve", "control"))
+stats <- rbind(stats, print_stats(datasets, "eve", "cauterized"))
+
+# Add column names
+colnames(stats) <- c("stock", "sample", "n_folds", "n_embryos")
+
+# Convert columns to numeric
+stats[, 3:4] <- apply(stats[, 3:4], 2, as.numeric)
+
+# Write table to file
+write.table(format(stats, digits=2), file = "tort-stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+print(stats)
+```
+
 
 ## Plot tortuosity boxplot
 

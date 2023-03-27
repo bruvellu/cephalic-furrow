@@ -511,7 +511,7 @@ All authors revised and contributed to the text.
 **d** Profile view and epithelial trace of non-cauterized and cauterized *btd* and *eve* embryos. The trace shows the dynamics of epithelial deformations over time colored from purple to yellow. Cauterized mutants show no ectopic folds and less deformation of the epithelium. Scale bars = 20µm.
 **e**, Cauterized wildtype embryo in lateral (top) and dorsal view (bottom). The cauterization site is marked by a vermilion circle. The cephalic furrow invaginates normally. Scale bar = 50µm.
 **f**, Profile view of a non-cauterized and a cauterized wildtype embryo showing a small difference in depth. Scale bar = 20µm.
-**g**, Tortuosity of the epithelial traces in non-cauterized and cauterized mutant embryos from **d**.
+**g**, Tortuosity of the epithelial traces in non-cauterized (*btd* n=2, *eve* n=3) and cauterized (*btd* n=3, *eve* n=4) embryos from **d**. For each embryo, the left and right side were measured.
 **h**, Maximum depth of the cephalic furrow in control and cauterized wildtype embryos. The cephalic furrow in cauterized embryos is 15% shallower but the difference is not significant.
 <!--TODO:PT: By what statistical test?-->
 **i**, Recoil velocity of laser ablations around the cephalic furrow at stage 6. The average recoil increases with time, and decreases as a function of the distance to the initiator cells. In late stage 6 the region showing recoil reaches 40µm anterior and posterior of the invagination.
