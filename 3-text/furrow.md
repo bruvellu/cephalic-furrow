@@ -373,7 +373,7 @@ The stacks had 0.21µm XY-resolution and one minute time resolution.
 <!--TODO: Temperature in MuVi and Zeiss?-->
 To obtain a quantitative measure of ectopic folding, we analyzed the degree by which the tissues deform between non-cauterized and cauterized mutants using as a proxy the tortuosity of the epithelium outline.
 For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({@fig:tortuosity}a).
-We then cropped a 200x25µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50min after gastrulation ({@fig:tortuosity}a,b).
+We then cropped a 200×25µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50min after gastrulation ({@fig:tortuosity}a,b).
 We extracted measurements from the epithelium outlines using the ImageJ plugin *Analyze Skeleton* [@Arganda-Carreras2010-la] ([imagej.net/plugins/analyze-skeleton](https://imagej.net/plugins/analyze-skeleton/)), and generated the color-coded temporal projections as described above.
 
 ## Laser ablation experiments
@@ -467,11 +467,9 @@ All authors revised and contributed to the text.
 **d**, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about 7 minutes after gastrulation in wildtype (+/+, n=16) and *btd* heterozygotes (+/−, n=6), and is delayed in *eve* and *prd* heterozygotes (+/−, n=7 and n=10, respectively) and in *prd* homozygotes (−/−, n=5). Ectopic folds form about 20min after gastrulation in *btd* and *eve* homozygotes (−/−, n=5 and n=5, respectively). One dot represents one embryo.
 **e**, Percentage of germ band extension at the time of formation of the cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow appears at 10% germ band extension, except in *prd* heterozygotes where it varies up to 40%. Ectopic folds form at 30--35% germ band extension. The n values are the same as in **d**.
 **f**, Variability in the distribution of the cephalic furrow in sibling controls (*btd* heterozygotes) and of the ectopic folds in *btd* mutants (n=6). Scale bars = 50µm.
-**g**, Folded area of the cephalic furrow in a representative sibling control and of ectopic folds in a *btd* mutant (measure in µm^2^ × 10^3^). The data is visualized in a cartographic projection of the surface of the embryo.
+**g**, Folded area of the cephalic furrow in a representative sibling control and of ectopic folds in a *btd* mutant (measure in µm^2^×10^3^). The data is visualized in a cartographic projection of the surface of the embryo.
 **h**, Quantification of the total folded area of epithelial surface in cephalic furrow mutants.
 ](figures/Fig1.jpg){#fig:ectopic width=100%}
-
-<!--TODO:AB: Add sampling numbers to the plots-->
 
 <!--**h**, Quantification of the total folded area of epithelial surface in cephalic furrow mutants. Wildtype embryos show a larger folded area compared to the cephalic furrow in heterozygotes and to the ectopic folds in homozygote embryos.-->
 <!--**e**, Dynamics of cephalic furrow invagination and ectopic fold formation in a single representative embryo.-->
@@ -480,11 +478,11 @@ All authors revised and contributed to the text.
 <!--In addition, while the cephalic furrow initiates as a straight line, almost orthogonal to the anteroposterior axis, and progressively declines posteriorly, the ectopic folds form already tilted and show no obvious trend in angular direction over time ({@fig:ectopic}e,f). -->
 
 ![Coincidence of mitotic domains and germ band extension with ectopic folding.
-**a**, Position of ectopic folds (black lines) in relation to the mitotic domains (colored areas) in *btd* and *eve* mutants. The ectopic folds appear between mitotic domains and between the germ band and MD6.
-**b**, Apical cell area between mitotic domains MD5 and MD7/6 (top). The infolded area is highlighted in the last frame (4.6 min). Detail of a cell subset in between mitotic domains (bottom) showing non-dividing cells (orange) and adjacent dividing cells (blue).
-**c**, Ectopic folding forming between MD6 and the germ band in a *btd* mutant.
+**a**, Position of ectopic folds (black lines) in relation to the mitotic domains (colored areas) in *btd* and *eve* mutants. The ectopic folds appear between mitotic domains and between the germ band and the mitotic domain 6 (MD6). Scale bars = 50µm.
+**b**, Apical cell area between mitotic domains MD5 and MD7/6 (top). The infolded area is highlighted in the last frame (4.6 min). Detail of a cell subset in between mitotic domains (bottom) showing non-dividing cells (orange) and adjacent dividing cells (blue). Scale bars = 20µm.
+**c**, Ectopic folding forming between MD6 and the germ band in a *btd* mutant. Scale bar = 20µm.
 **d**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions. The formation of the cephalic furrow (CF), ectopic folds (EF), and mitotic domains (MD) are annotated. The measurements combine isotropic and anisotropic strain rate.
-**e**, Compressed epithelial cells between MD6 and the tip of the germ band.
+**e**, Compressed epithelial cells between MD6 and the tip of the germ band. Scale bars = 50µm.
 ](figures/Fig2.jpg){#fig:mitotic width=60%}
 
 <!--**d**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions. The head--trunk shows higher strain rates coinciding with the appearance of ectopic folds. The strain rate at the trunk--germ is lower and gradually increases. The measurements combine isotropic and anisotropic strain rate.-->
