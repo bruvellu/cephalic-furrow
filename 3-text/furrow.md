@@ -370,24 +370,26 @@ For the Zeiss microscope, we attached the embryos with the dorsal side down onto
 We cauterized the embryos sequentially using a near infrared 800nm laser (Chameleon Vision II) through a single pixel line (210nm/px and 100µs/px) around the same dorsal region to block the germ band extension.
 We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, (i) the surface to monitor the germ band extension, and (ii) 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
 The stacks had 0.21µm XY-resolution and one minute time resolution.
-<!--TODO: Temperature in MuVi and Zeiss?-->
 To obtain a quantitative measure of ectopic folding, we analyzed the degree by which the tissues deform between non-cauterized and cauterized mutants using as a proxy the tortuosity of the epithelium outline.
 For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({@fig:tortuosity}a).
 We then cropped a 200×25µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50min after gastrulation ({@fig:tortuosity}a,b).
 We extracted measurements from the epithelium outlines using the ImageJ plugin *Analyze Skeleton* [@Arganda-Carreras2010-la] ([imagej.net/plugins/analyze-skeleton](https://imagej.net/plugins/analyze-skeleton/)), and generated the color-coded temporal projections as described above.
+
+<!--TODO: Temperature in MuVi and Zeiss?-->
 
 ## Laser ablation experiments
 
 We performed laser ablations in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), and the software AndorIQ for image acquisition.
 We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800nm tuned down from 80MHz to 20kHz with a pulse-picker.
 The laser power measured before the microscope port was 6 mW and the pixel dwell time for scanning was 2µs.
-<!--TODO: What is the brand of the objective?-->
 To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY-resolution and 200ms time-steps.
 We ablated each embryo just once.
-<!--TODO: Does a higher temperature affects the quantifications?-->
 The temperature was maintained at 28°C.
 To analyse the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the *Multi Kymograph* Fiji plugin ({@fig:ablation}).
 We then binarized the kymographs, measured the distance between cell edges over the first 30s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({@fig:ablation}).
+
+<!--TODO: What is the brand of the objective?-->
+<!--TODO: Does a higher temperature affects the quantifications?-->
 
 ## Strain rate analysis
 
@@ -524,8 +526,6 @@ All authors revised and contributed to the text.
 **d**, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head--trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head--trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow.
 ](figures/Fig5.jpg){#fig:summary width=50%}
 
-<!--TODO:PT: You write about the evolution stuff extremely well. We need to do the review ;-)-->
-
 \clearpage
 
 \newpage
@@ -617,33 +617,25 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 ## Figures
 
 ![Perturbation of the initiator cell behavior in cephalic furrow mutants.
-**a**, Profile view showing the cephalic furrow formation in wildtype, *prd*, *btd*, and *eve* embryos. The samples are synchronized by the end of cellularization, when the cleavage furrows reach their basal position (frame 0.0min). The arrow indicates the position and timing of the first infolding of the tissue. In wildtype, the shortening of initiator cells begins before cellularization is complete. The apical side of adjacent cells remain in close contact to the initiator row becoming arched in an arrangement typical for the early phase of cephalic furrow formation (wildtype 0.0min). This arrangement is perturbed in mutant embryos to different degrees. In *prd*, the initiator cells shorten and the tissue invaginates, but the infolding is delayed and the adjacent cells do not arch over the initiator row (*prd* 6.1min). In *btd*, there is no cell shortening but some embryos exhibit a certain degree of anisotropic apical constriction which creates a bulge in the epithelium minutes after the end of cellularization (*btd* 6.0min, see also **b**). This initial bulge often primes the position of ectopic buckling. In *eve*, the cells show neither shortening nor apical constriction and ectopic folds appear about ten minutes after the end of cellularization (*eve* 9.7min).
-**b**, Surface view view of cartographic projections showing the head--trunk interface. In wildtype, the anisotropic apical constriction is localized to a narrow stripe adjacent to the initiator row. In *prd* embryos, the apical constriction occurs but it does not form a clear line of infolding cells preceding the invagination as in wildtype embryos. In *btd* embryos, there is a similar degree of anisotropic apical constriction occurring but not all embryos form ectopic folds at this region. In *eve* embryos, we observe no apical constriction behavior.
+**a**, Profile view showing the cephalic furrow formation in wildtype, *prd*, *btd*, and *eve* embryos. The samples are synchronized by the end of cellularization, when the cleavage furrows reach their basal position (frame 0.0min). The arrow indicates the position and timing of the first infolding of the tissue. In wildtype, the shortening of initiator cells begins before cellularization is complete. The apical side of adjacent cells remain in close contact to the initiator row becoming arched in an arrangement typical for the early phase of cephalic furrow formation (wildtype 0.0min). This arrangement is perturbed in mutant embryos to different degrees. In *prd*, the initiator cells shorten and the tissue invaginates, but the infolding is delayed and the adjacent cells do not arch over the initiator row (*prd* 6.1min). In *btd*, there is no cell shortening but some embryos exhibit a certain degree of anisotropic apical constriction which creates a bulge in the epithelium minutes after the end of cellularization (*btd* 6.0min, see also **b**). This initial bulge often primes the position of ectopic buckling. In *eve*, the cells show neither shortening nor apical constriction and ectopic folds appear about ten minutes after the end of cellularization (*eve* 9.7min). Scale bars = 20µm.
+**b**, Surface view view of cartographic projections showing the head--trunk interface. In wildtype, the anisotropic apical constriction is localized to a narrow stripe adjacent to the initiator row. In *prd* embryos, the apical constriction occurs but it does not form a clear line of infolding cells preceding the invagination as in wildtype embryos. In *btd* embryos, there is a similar degree of anisotropic apical constriction occurring but not all embryos form ectopic folds at this region. In *eve* embryos, the mitotic domain 2 (MD) begins expanding and there is no apical constriction behavior. Time betwee frames is about 4min. Scale bars = 20µm (approximate value).
 ](figures/FigS1.jpg){#fig:initiator tag=S1 width=100%}
 
-<!--TODO: Add scale bars to a and b.-->
-<!--TODO: Add annotation for apical constriction.-->
-<!--TODO: Add time annotation.-->
-
 ![Differences between ectopic folding and cephalic furrow formation.
-**a**, Profile view of a *btd* mutant embryo showing the presence of two ectopic folds (arrows) forming next to dividing cells (asterisks).
-**b**, Distribution of ectopic folds in *eve* homozygotes (right) and sibling controls (left).
+**a**, Profile view of a *btd* mutant embryo showing the presence of two ectopic folds (arrows) forming next to dividing cells (asterisks). Scale bar = 20µm.
+**b**, Distribution of ectopic folds in *eve* homozygotes (right) and sibling controls (left). Scale bar = 50µm.
 **c**, Folded area of the cephalic furrow and ectopic folds in *eve* heterozygotes (left) and homozygotes (right).
 **d**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.
 **e**, Dynamics, angle directionality, and tortuosity measurements comparing the cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no obvious trend in angular direction tortuosity values over time.
 **f**, Maximum folding depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. The ectopic folds are generally shallower than the cephalic furrow in both genetic backgrounds.
 **g**, Folded area of ectopic folds in wildtype embryos compared to ectopic folds in *btd*, *eve*, and *prd* embryos.
-**h**, Lateral views of wildtype and *prd* embryos exhibiting ectopic folds.
+**h**, Lateral views of wildtype and *prd* embryos exhibiting ectopic folds. Scale bar = 50µm.
 **i**, Cartographic projections showing the folded area in the cephalic furrow and ectopic folds of the embryos in **h**.
 **j**, Comparison of folded area between the cephalic furrow and ectopic folds in different genetic backgrounds.
-**k**, Developmental sequence of the wildtype embryo ectopic fold annotated in **i**. Four cells are temporarily infolded during the mitotic expansion of adjacent cells.
+**k**, Developmental sequence of the wildtype embryo ectopic fold annotated in **i**. Four cells are temporarily infolded during the mitotic expansion of adjacent cells. Scale bar = 10µm.
 ](figures/FigS2.jpg){#fig:features tag=S2 width=100%}
 
-<!--TODO: Add scale bar to profile (a)-->
-<!--TODO: Add color scale to (d)-->
-<!--TODO: Add stages to (h)-->
 <!--TODO: Add n and genotype annotation to (j)-->
-<!--TODO: Add scale bar to (k)-->
 
 ![Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell.
 ](figures/FigS3.jpg){#fig:apical tag=S3 width=50%}
