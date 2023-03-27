@@ -1,0 +1,52 @@
+[1] "Calculating difference between non-cauterized and cauterized groups"
+[1] "8.01292857142857 microns or 16.482928757297 percent shallower"
+[1] "Testing normality and means difference per fold"
+
+	Shapiro-Wilk normality test
+
+data:  results[results$Sample == "control", ]$Length
+W = 0.98243, p-value = 0.9865
+
+
+	Shapiro-Wilk normality test
+
+data:  results[results$Sample == "cauterized", ]$Length
+W = 0.8421, p-value = 0.1357
+
+
+	Welch Two Sample t-test
+
+data:  results[results$Sample == "control", ]$Length and results[results$Sample == "cauterized", ]$Length
+t = 3.9423, df = 17.74, p-value = 0.0009784
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  3.738185 12.287672
+sample estimates:
+mean of x mean of y 
+ 56.62643  48.61350 
+
+[1] "Testing normality and means difference per embryo"
+
+	Shapiro-Wilk normality test
+
+data:  means[means$Sample == "control", ]$Mean
+W = 0.97915, p-value = 0.9553
+
+
+	Shapiro-Wilk normality test
+
+data:  means[means$Sample == "cauterized", ]$Mean
+W = 0.99896, p-value = 0.9384
+
+
+	Welch Two Sample t-test
+
+data:  means[means$Sample == "control", ]$Mean and means[means$Sample == "cauterized", ]$Mean
+t = 2.8477, df = 7.8086, p-value = 0.0221
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+  1.496405 14.529452
+sample estimates:
+mean of x mean of y 
+ 56.62643  48.61350 
+

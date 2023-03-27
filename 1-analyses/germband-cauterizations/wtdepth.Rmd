@@ -170,40 +170,51 @@ ggsave("4-plots/wt-mean-length-facet.svg", width = 4, height = 4)
 
 ## Statistics
 
+The distribution is normal. Using t-test to compare the means.
+
 ```{r stats}
+sink('tests.txt')
+print("Calculating difference between non-cauterized and cauterized groups")
 # Statistical testing
 diff_micron <- mean(means[means$Sample == "control",]$Mean) - mean(means[means$Sample == "cauterized",]$Mean)
 diff_pct <- diff_micron / mean(means[means$Sample == "cauterized",]$Mean) * 100
+print(sprintf("%s microns or %s percent shallower", diff_micron, diff_pct))
 
-# Test if distribution is normal
+
+print("Testing normality and means difference per fold")
+# Test if distribution is normal per measure (yes)
 shapiro.test(results[results$Sample == "control",]$Length)
 shapiro.test(results[results$Sample == "cauterized",]$Length)
-shapiro.test(means[means$Sample == "control",]$Mean)
-shapiro.test(means[means$Sample == "cauterized",]$Mean)
-
 # Test if means are different
 t.test(results[results$Sample == "control",]$Length,
        results[results$Sample == "cauterized",]$Length,
        var.equal = FALSE)
+
+print("Testing normality and means difference per embryo")
+# Test if distribution is normal per embryo (yes)
+shapiro.test(means[means$Sample == "control",]$Mean)
+shapiro.test(means[means$Sample == "cauterized",]$Mean)
 t.test(means[means$Sample == "control",]$Mean,
        means[means$Sample == "cauterized",]$Mean,
        var.equal = FALSE)
+sink()
+```
 
-# Test if means are different only in wt
-t.test(results[(results$Sample == "control" & results$Stock == "wt"),]$Length,
-       results[(results$Sample == "cauterized" & results$Stock == "wt"),]$Length,
-       var.equal = FALSE)
-t.test(means[(means$Sample == "control" & means$Stock == "wt"),]$Mean,
-       means[(means$Sample == "cauterized" & means$Stock == "wt"),]$Mean,
-       var.equal = FALSE)
+```{r tmp-stats}
 
-# Test if control is greater than cauterized
+# Test if control is greater than cauterized (for comparing distributions)
 wilcox.test(results[results$Sample == "control",]$Length,
             results[results$Sample == "cauterized",]$Length,
             alternative = "g")
 wilcox.test(means[means$Sample == "control",]$Mean,
             means[means$Sample == "cauterized",]$Mean,
             alternative = "g")
+
+# Test if control is greater than cauterized (for comparing distributions)
+wilcox.test(results[results$Sample == "control",]$Length,
+            results[results$Sample == "cauterized",]$Length)
+wilcox.test(means[means$Sample == "control",]$Mean,
+            means[means$Sample == "cauterized",]$Mean)
 
 # Test if control and cauterized have the same variance
 var.test(results[results$Sample == "control",]$Length,

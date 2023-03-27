@@ -206,17 +206,17 @@ To explore the role of the cephalic furrow as a mechanical buffer, we analyzed c
 In our model, we programmed the cephalic furrow by establishing an intrinsic negative curvature ($\kappa_o^{CF}$) to a narrow region of the particle--spring blastoderm that matches the span of the initiator cells *in vivo* ({@fig:model}a, {@fig:proportions}).
 Using the bending rigidity fine-tuned with the previous simulations and experiments, we ran a parameter sweep for different values of $\kappa_o^{CF}$ and established a baseline ($\kappa_o^{CF}>0.3$) where the invagination forms in a robust manner with minimal variability, phenocopying the cephalic furrow *in vivo* ({@fig:cf-sweep}a).
 Since our experiments indicate that the germ band is compressing the head--trunk tissues, we first asked whether the extension of the germ band can influence the depth of the cephalic furrow.
-<!--The simulations show that the average depth of the cephalic furrow correlates with the percentage of germ band extension ({@fig:model}i).-->
-<!--Mitotic activity and germ band elongation contributes to the depth of the cephalic furrow [@Campos-Ortega1997-rd].-->
 To test *in vivo* whether the presence of the germ band impacts the formation of the cephalic furrow, we blocked the germ band extension by cauterization in wildtype embryos.
 The cephalic furrow forms normally in cauterized embryos indicating that the germ band extension is not required for its formation ({@fig:experiments}e,f).
-We then measured the maximum depth of the cephalic furrow between cauterized and non-cauterized embryos.
-The cephalic furrow in cauterized embryos is 15% shallower, but this difference was not significant, indicating the germ band extension has at most a mild influence on the depth of the cephalic furrow ({@fig:experiments}h).
-<!--TODO: Add result of statistical test-->
+We then measured the maximum depth of the cephalic furrow between cauterized and non-cauterized embryos, and found it is 15% shallower after cauterization ({@fig:experiments}h).
+This result needs to be corroborated with a larger sample size, but it provides initial evidence that the germ band extension has a mild influence on the final depth of the cephalic furrow.
 In addition, we performed a complementary experiment to determine the size of the region under the influence of the cephalic furrow.
 By laser ablating cell membranes at different distances from initiator cells in early wildtype embryos, we find that the recoil velocity increases with time and decreases with distance, with an approximate range of at least 40µm anterior and posterior to the initiator cells ({@fig:experiments}i).
 This suggests the cephalic furrow actively generates tension by pulling the surrounding tissues.
 These experiments rule out the germ band extension as a driver of cephalic furrow invagination, and give support to the notion that the cephalic furrow forms autonomously by independent active mechanisms which are deployed before the other morphogenetic movements of gastrulation.
+
+<!--The simulations show that the average depth of the cephalic furrow correlates with the percentage of germ band extension ({@fig:model}i).-->
+<!--Mitotic activity and germ band elongation contributes to the depth of the cephalic furrow [@Campos-Ortega1997-rd].-->
 
 <!--TODO:AB: Is the increase in recoil velocity because CF or epithelial maturation?-->
 
@@ -512,9 +512,8 @@ All authors revised and contributed to the text.
 **e**, Cauterized wildtype embryo in lateral (top) and dorsal view (bottom). The cauterization site is marked by a vermilion circle. The cephalic furrow invaginates normally. Scale bar = 50µm.
 **f**, Profile view of a non-cauterized and a cauterized wildtype embryo showing a small difference in depth. Scale bar = 20µm.
 **g**, Tortuosity of the epithelial traces in non-cauterized (*btd* n=2, *eve* n=3) and cauterized (*btd* n=3, *eve* n=4) embryos from **d**. For each embryo, the left and right side were measured.
-**h**, Maximum depth of the cephalic furrow in control and cauterized wildtype embryos. The cephalic furrow in cauterized embryos is 15% shallower but the difference is not significant.
-<!--TODO:PT: By what statistical test?-->
-**i**, Recoil velocity of laser ablations around the cephalic furrow at stage 6. The average recoil increases with time, and decreases as a function of the distance to the initiator cells. In late stage 6 the region showing recoil reaches 40µm anterior and posterior of the invagination.
+**h**, Maximum depth of the cephalic furrow in cauterized embryos. Control non-cauterized embryos include wildtype (n=2), and *btd* (n=1) and *eve* (n=3) heterozygotes which also form a cephalic furrow. The cauterized group includes wildtype (n=2) and *btd* (n=1). The cephalic furrow in cauterized embryos is 15% shallower (p=0.0221 in Welch Two Sample t-test).
+**i**, Recoil velocity of laser ablations around the cephalic furrow at stage 6. The average recoil increases with time for anterior cuts (early n=11, mid n=13, late n=12), and reaches a peak at mid stage 6 for posterior cuts (early n=7, mid n=14, late n=10). The average recoil velocity is smaller at greater distances (−40 and 40) than at shorter distances (−20 and 20) from the initiator cells. In late stage 6 the region with recoil reaches at least 40µm anterior and posterior of the invagination.
 **j**, Schematic drawings showing the summary of the ectopic folding in double mutants and germ band cauterization experiments.
 ](figures/Fig4.jpg){#fig:experiments width=100%}
 
