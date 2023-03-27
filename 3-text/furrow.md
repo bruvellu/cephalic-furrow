@@ -467,7 +467,7 @@ All authors revised and contributed to the text.
 **d**, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about 7 minutes after gastrulation in wildtype (+/+, n=16) and *btd* heterozygotes (+/−, n=6), and is delayed in *eve* and *prd* heterozygotes (+/−, n=7 and n=10, respectively) and in *prd* homozygotes (−/−, n=5). Ectopic folds form about 20min after gastrulation in *btd* and *eve* homozygotes (−/−, n=5 and n=5, respectively). One dot represents one embryo.
 **e**, Percentage of germ band extension at the time of formation of the cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow appears at 10% germ band extension, except in *prd* heterozygotes where it varies up to 40%. Ectopic folds form at 30--35% germ band extension. The n values are the same as in **d**.
 **f**, Variability in the distribution of the cephalic furrow in sibling controls (*btd* heterozygotes) and of the ectopic folds in *btd* mutants (n=6). Scale bars = 50µm.
-**g**, Folded area of the cephalic furrow in a representative sibling control and of ectopic folds in a *btd* mutant (measure in $µm^2 \times 10^3$). The data is visualized in a cartographic projection of the surface of the embryo.
+**g**, Folded area of the cephalic furrow in a representative sibling control and of ectopic folds in a *btd* mutant (measure in µm^2^ × 10^3^). The data is visualized in a cartographic projection of the surface of the embryo.
 **h**, Quantification of the total folded area of epithelial surface in cephalic furrow mutants.
 ](figures/Fig1.jpg){#fig:ectopic width=100%}
 
