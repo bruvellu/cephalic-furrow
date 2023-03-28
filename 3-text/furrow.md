@@ -7,10 +7,8 @@ author:
     email: vellutini@mpi-cbg.de
 - Marina B. Cuenca:
     institute: [mpicbg]
-    #equal_contributor: "yes"
 - Abhijeet Krishna:
     institute: [mpicbg, csbd, pol]
-    #equal_contributor: "yes"
 - Alicja Szałapak:
     institute: [mpicbg, csbd, pol]
 - Carl D. Modes:
@@ -74,7 +72,7 @@ The cephalic furrow is, therefore, a puzzling structure; it is a prominent fold 
 
 This ephemeral nature and absence of associated fates suggests the cephalic furrow may play a more immediate, physical role during gastrulation.
 Some hypotheses are that the invagination functions as a temporary storage of anterior cells until later in development [@Turner1977-ol], or that the invaginated cells anchor anterior tissues and help directing tissue flow during gastrulation [@Costa1993-qj; @Dicko2017-wz].
-The cephalic furrow retains a significant number of blastoderm cells beneath the surface during gastrulation (about 10% according to recent estimates [@Stern2021-zv]), but what function such storage accomplishes remains unclear, and these hypotheses have not been investigated *in vivo*.
+The cephalic furrow retains a significant number of blastoderm cells beneath the surface of the embryo during gastrulation (about 10% according to recent estimates [@Stern2021-zv]), but what function such storage accomplishes remains unclear, and none of these hypotheses have been investigated *in vivo*.
 
 <!--The mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um]-->
 <!--But the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].-->
@@ -122,7 +120,7 @@ The variable positions and frequency of ectopic folding suggests that they are n
 We investigated two concurrent gastrulation processes that could drive their formation: cell divisions in mitotic domains and the extension of the germ band.
 Mitotic domains are groups of blastoderm cells that divide in synchrony during the cleavage cycle 14 [@Foe1989-cw].
 The first mitotic domains in *Drosophila* appear in the head around 20 min after gastrulation [@Foe1989-cw] which coincides with the formation of ectopic folds ({@fig:ectopic}a,c,d).
-Ectopic folds also always appear in between or adjacent to mitotic domains ({@fig:mitotic}a).
+Ectopic folds always appear in between or adjacent to mitotic domains ({@fig:mitotic}a).
 The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during anaphase elongation ({@fig:apical}).
 This expansion compresses the adjacent non-dividing cells which are the first to infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitotic}b).
 Mitotic expansions always precede ectopic folding ({@fig:mitotic}c, {@fig:initiator}a).
@@ -156,12 +154,11 @@ The increase in bending energy coincides with a rapid deepening of the fold.
 Once the bending energy reaches a peak, the fold continues to deepen, though more gradually, but the number of folds stabilizes and there are rarely changes in the overall folding patterns ({@fig:model}d, {@fig:model-features}a).
 Since folding events are stochastic and can happen at different iterations across different simulations, and because we are mainly interested in analyzing the initial position and dynamics of the folding, we used the peak of bending energy as the reference point to compare and analyze the simulation results.
 
-<!--TODO: Define L (semi-major axis), g (germ band push), s (embryo length)-->
 <!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 
 To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions without the cephalic furrow.
-We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations, and defined a fold when this distance was greater than the maximum standard deviation of the average particle depth under the ground noise levels.
-<!--TODO: Add panel with the threshold for counting folds-->
+We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations.
+We defined a fold when this distance was greater than the maximum particle depth under the ground noise level.
 Under the baseline condition without mitotic domains or germ band extension (only noise), we observe no ectopic fold formation for any bending rigidity values ({@fig:model}e).
 The probability of buckling increases with the germ band extension and inversely with the bending rigidity ({@fig:model}e, {@fig:model-features}b).
 We observe a buckling transition in the phase space in softer conditions ($K_b^* \approx 0.7 \times 10^{−4}$) already at 10% germ band extension, but in stiffer conditions ($K_b^* \approx 1.2 \times 10^{−4}$) the germ band alone cannot drive the formation of ectopic folds even at its maximum extension ({@fig:model}e, {@fig:model-features}b).
@@ -171,6 +168,7 @@ For most of the parameter space, the combined action of mitotic domains and germ
 These simulations show that above certain a bending rigidity ($K_b^* > 1.0 \times 10^{−4}$), neither the mitotic domains nor the germ band can drive ectopic folding by themselves.
 We thus set to test these predictions *in vivo* by performing perturbation experiments to individually inhibit the formation of mitotic domains and the extension of the germ band.
 
+<!--TODO: Add panel with the threshold for counting folds-->
 <!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
 
 We first asked whether the extension of the germ band alone can generate ectopic folds.
@@ -257,17 +255,19 @@ Compressive forces are a key mechanism forming epithelial folds in development [
 In fact, an intraepithelial compressive force is required for tissue buckling during mitotic rounding in the tracheal placode and intestinal villi mentioned above [@Kondo2013-gy; @Freddo2016-et].
 Our data suggest a similar situation is occurring at the head--trunk boundary of cephalic furrow mutants.
 The synchronized apical expansion of dividing cells in mitotic domains pushes the adjacent non-dividing cells outward, and forms potentially unstable regions of different epithelial thickness, while the germ band extension generates a global compression on the head--trunk interface ({@fig:summary}a,b).
-<!--The fact that *eve* mutants have no cell intercalation [@Collinet2015-af] suggests that the formation of ectopic folds depends on the rapid phase of germ band extension [@Campos-Ortega1985-ma], driven mainly by the posterior midgut invagination.-->
 In a condition where there is an excess of tissue on the embryonic surface (no cephalic furrow), the increased compressive stresses compromise the stability of the epithelium during gastrulation.
 This suggests the head--trunk epithelium is under mechanical stress from the morphogenetic movements of gastrulation in normal development.
 
+<!--The fact that *eve* mutants have no cell intercalation [@Collinet2015-af] suggests that the formation of ectopic folds depends on the rapid phase of germ band extension [@Campos-Ortega1985-ma], driven mainly by the posterior midgut invagination.-->
+
 Our findings give support to the idea that the cephalic furrow is preventing the build up of these compressive stresses at the head--trunk boundary.
 The presence of the cephalic furrow abolishes the formation of ectopic folds in sibling controls and in our simulations, suggesting that invaginating tissue out-of-plane is an effective way to alleviate compressive stresses.
-<!--prd mutant shows that partially perturbing CF formation is enough to prime the position of folding.-->
 The pre-patterned position of the initiator cells, and the active cellular mechanisms deployed to drive the cephalic furrow invagination at the onset of gastrulation, anticipates the compressive stresses at the head--trunk boundary.
 When mitotic domains appear, a significant portion of the head epithelium is already invaginated and the mechanical forces in the tissue are directed to a single, predictable fold.
 The relative timing of invagination in respect to the other morphogenetic movements is a crucial factor for preventing mechanical instabilities in the tissue.
 We thus propose that the transient storage created by the cephalic furrow has a stress-absorbing role, contributing to safeguard the integrity of the epithelial monolayer at the head--trunk boundary during gastrulation.
+
+<!--prd mutant shows that partially perturbing CF formation is enough to prime the position of folding.-->
 
 <!--TODO:CDM: No space to discuss the egg shape implications, I guess? Or did we decide to hold that for a follow-up?-->
 
@@ -461,8 +461,6 @@ All authors revised and contributed to the text.
 \newpage
 
 # Figures
-
-<!--![Cephalic furrow patterning and morphogenesis. (a) Embryonic invaginations during *Drosophila* gastrulation. (b) Morphogenesis of the cephalic furrow. (c) Molecular patterning of the cephalic furrow.](figures/Fig1.jpg){#fig:intro width=50%}-->
 
 ![Formation of ectopic folds in cephalic furrow mutants.
 **a**, Overview of key developmental events using a standard developmental staging [@Ashburner2005-ym]. The formation of the cephalic furrow is delayed in *prd* mutants and absent in *btd* and *eve* mutants. In the latter, ectopic folds form near the canonical invagination site of the cephalic furrow. Wildtype and *prd* embryos form less frequent and smaller ectopic folds more anterior or posterior to the cephalic furrow. Ectopic folds appear later and unfold quicker than the cephalic furrow, and their formation coincides with the appearance of mitotic domains and with the rapid phase of the germ band extension [@Campos-Ortega1985-ma].
