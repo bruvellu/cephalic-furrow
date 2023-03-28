@@ -6887,9 +6887,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4181667"
-     inkscape:cx="406.51074"
-     inkscape:cy="243.97696"
+     inkscape:zoom="2.8363334"
+     inkscape:cx="531.84862"
+     inkscape:cy="370.90139"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -23639,7 +23639,7 @@
        textLength="111.12"
        lengthAdjust="spacingAndGlyphs"
        id="text13388"
-       transform="matrix(0.05863107,0,0,0.05863107,125.47896,96.013311)">stocks</text><text
+       transform="matrix(0.05863107,0,0,0.05863107,123.40892,97.258213)">stocks</text><text
        transform="matrix(0,-0.05787037,0.05787037,0,128.94269,101.33183)"
        style="font-size:35px;font-family:Symbol;white-space:pre"
        textLength="21"
@@ -24243,7 +24243,87 @@
        style="display:inline;fill:none;stroke:#f8f8f8;stroke-width:0.176389;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 87.882642,125.5361 -0.05065,-3.20786"
        id="path22471-9-9-7-3-1-4-50-1-2-5-2-6-5-2"
-       sodipodi:nodetypes="cc" /></g><g
+       sodipodi:nodetypes="cc" /><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394;stroke-linecap:butt;stroke-linejoin:round"
+       x="132.07632"
+       y="111.45935"
+       id="text1210-6-2-8-2-7-3-7-1-3-3-0-3-3-9"><tspan
+         sodipodi:role="line"
+         id="tspan1208-4-7-7-7-7-6-5-2-6-5-9-0-6-2"
+         x="132.07632"
+         y="111.45935"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394">n=16</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394;stroke-linecap:butt;stroke-linejoin:round"
+       x="136.58626"
+       y="111.45935"
+       id="text1210-6-2-8-2-7-3-7-1-3-3-0-3-3-9-0"><tspan
+         sodipodi:role="line"
+         id="tspan1208-4-7-7-7-7-6-5-2-6-5-9-0-6-2-6"
+         x="136.58626"
+         y="111.45935"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394">n=16</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394;stroke-linecap:butt;stroke-linejoin:round"
+       x="143.33878"
+       y="111.45935"
+       id="text1210-6-2-8-2-7-3-7-1-3-3-0-3-3-9-8"><tspan
+         sodipodi:role="line"
+         id="tspan1208-4-7-7-7-7-6-5-2-6-5-9-0-6-2-9"
+         x="143.33878"
+         y="111.45935"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394">n=6</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394;stroke-linecap:butt;stroke-linejoin:round"
+       x="159.45822"
+       y="111.45935"
+       id="text1210-6-2-8-2-7-3-7-1-3-3-0-3-3-9-8-6"><tspan
+         sodipodi:role="line"
+         id="tspan1208-4-7-7-7-7-6-5-2-6-5-9-0-6-2-9-4"
+         x="159.45822"
+         y="111.45935"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394">n=7</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394;stroke-linecap:butt;stroke-linejoin:round"
+       x="154.55315"
+       y="111.45935"
+       id="text1210-6-2-8-2-7-3-7-1-3-3-0-3-3-9-8-6-9"><tspan
+         sodipodi:role="line"
+         id="tspan1208-4-7-7-7-7-6-5-2-6-5-9-0-6-2-9-4-5"
+         x="154.55315"
+         y="111.45935"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394">n=7</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394;stroke-linecap:butt;stroke-linejoin:round"
+       x="170.71448"
+       y="111.45935"
+       id="text1210-6-2-8-2-7-3-7-1-3-3-0-3-3-9-8-6-0"><tspan
+         sodipodi:role="line"
+         id="tspan1208-4-7-7-7-7-6-5-2-6-5-9-0-6-2-9-4-4"
+         x="170.71448"
+         y="111.45935"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394">n=8</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394;stroke-linecap:butt;stroke-linejoin:round"
+       x="165.75975"
+       y="111.45935"
+       id="text1210-6-2-8-2-7-3-7-1-3-3-0-3-3-9-8-6-9-8"><tspan
+         sodipodi:role="line"
+         id="tspan1208-4-7-7-7-7-6-5-2-6-5-9-0-6-2-9-4-5-7"
+         x="165.75975"
+         y="111.45935"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394">n=14</tspan></text><text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394;stroke-linecap:butt;stroke-linejoin:round"
+       x="147.92639"
+       y="111.45935"
+       id="text1210-6-2-8-2-7-3-7-1-3-3-0-3-3-9-0-2"><tspan
+         sodipodi:role="line"
+         id="tspan1208-4-7-7-7-7-6-5-2-6-5-9-0-6-2-6-6"
+         x="147.92639"
+         y="111.45935"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.41111px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';text-align:center;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke-width:0.117394">n=13</tspan></text></g><g
      inkscape:label="Labels"
      inkscape:groupmode="layer"
      id="layer1"
