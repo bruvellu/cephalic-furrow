@@ -3,7 +3,7 @@ title: Pre-patterned epithelial invagination prevents mechanical instability dur
 author:
 - Bruno C. Vellutini:
     institute: [mpicbg]
-    #correspondence: "yes"
+    correspondence: "yes"
     email: vellutini@mpi-cbg.de
 - Marina B. Cuenca:
     institute: [mpicbg]
@@ -17,7 +17,7 @@ author:
     institute: [mpicbg, csbd, pol]
 - Pavel Tomančák:
     institute: [mpicbg, pol]
-    #correspondence: "yes"
+    correspondence: "yes"
     email: tomancak@mpi-cbg.de
 institute:
 - mpicbg: Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany
