@@ -165,8 +165,10 @@ We observe a buckling transition in the phase space in softer conditions ($K_b^*
 Adding mitotic domains to the simulations caused a shift in the phase diagram, with the probability of ectopic fold formation increasing even in low values of germ band extension and higher values of bending rigidity ({@fig:model}f, {@fig:model-features}c).
 Mitotic domains alone can induce ectopic folds in softer conditions ($K_b^* < 1.1 \times 10^{−4}$).
 For most of the parameter space, the combined action of mitotic domains and germ band maximizes the probability of ectopic fold formation ({@fig:model}e,f).
-These simulations show that above certain a bending rigidity ($K_b^* > 1.0 \times 10^{−4}$), neither the mitotic domains nor the germ band can drive ectopic folding by themselves.
+These simulations show that above a certain bending rigidity ($K_b^* > 1.0 \times 10^{−4}$), neither the mitotic domains nor the germ band can drive ectopic folding by themselves.
 We thus set to test these predictions *in vivo* by performing perturbation experiments to individually inhibit the formation of mitotic domains and the extension of the germ band.
+
+<!--TODO: Resolve issue with model/experiment reasoning. Which predictions?-->
 
 <!--TODO: Add panel with the threshold for counting folds-->
 <!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
@@ -189,7 +191,7 @@ These experiments reveal that *in vivo*, the local expansions of mitotic domains
 
 These *in vivo* experiments show that neither the mitotic domains nor the germ band can promote ectopic folding by themselves.
 In our model, these situations occur around a bending rigidity of $K_b^* \approx 1.0 \times 10^{−4}$.
-It is at this bending rigidity that the number of folds in simulations without mitotic domains and maximum germ band extension (*btd*--*stg* double mutant), and in simulations with mitotic domains and minimum germ band extension (*btd* or *eve* mutants), begin to fall below 1 ({@fig:model-features}b,c).
+At this bending rigidity the number of folds falls below 1 in germ band only and mitotic domains only conditions ({@fig:model-features}b,c).
 This suggests that the bending rigidity regime of the epithelium *in vivo* is around the same order of magnitude.
 
 <!--TODO: Add sentence about correlation between model and real measurements. Here or discussion?
