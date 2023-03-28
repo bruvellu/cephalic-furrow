@@ -627,15 +627,13 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 **c**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in *eve* embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control *eve* heterozygote (left) and of a *eve* homozygote (right). The numbers indicate the average folded area for the sample type in µm^2^×10^3^.
 **d**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.
 **e**, Dynamics, angle directionality, and tortuosity measurements comparing the cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no obvious trend in angular direction tortuosity values over time. For both angle and tortuosity analysis, n=6.
-**f**, Maximum folding depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. The ectopic folds are generally shallower than the cephalic furrow in both genetic backgrounds.
+**f**, Maximum folding depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. The ectopic folds are shallower than the cephalic furrow in both genetic backgrounds.
 **g**, Folded area of ectopic folds in wildtype embryos compared to ectopic folds in *btd*, *eve*, and *prd* embryos.
 **h**, Lateral views of a wildtype (top) and a *prd* mutant (bottom) exhibiting ectopic folds. Scale bar = 50µm.
 **i**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in the wildtype (top) and *prd* mutant (bottom) shown in **h**. The folded region is outlined in yellow on a cartographic projection. The numbers indicate the average folded area in µm^2^×10^3^ for the CFs and EFs separately.
-**j**, Comparison of folded area between the cephalic furrow and ectopic folds in different genetic backgrounds.
+**j**, Comparison of the folded area between the cephalic furrow and the ectopic folds in different genetic backgrounds.
 **k**, Developmental sequence of the wildtype embryo ectopic fold annotated in **i**. Four cells are temporarily infolded during the mitotic expansion of adjacent cells. Scale bar = 10µm.
 ](figures/FigS2.jpg){#fig:features tag=S2 width=100%}
-
-<!--TODO: Add n and genotype annotation to (j)-->
 
 ![Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell.
 ](figures/FigS3.jpg){#fig:apical tag=S3 width=50%}
