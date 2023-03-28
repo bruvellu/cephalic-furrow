@@ -26,6 +26,8 @@ institute:
 documentclass: article
 bibliography: furrow.bib
 csl: nature.csl
+header-includes:
+- \usepackage[font={small}]{caption}
 link-citations: True
 colorlinks: True
 fignos-warning-level: 0
@@ -90,7 +92,7 @@ The initiator cells in *prd* mutants lack the typical arched profile of the wild
 The putative initiator cells of *btd* mutants do not shorten, but show a reminiscent degree of apical constriction which creates a small indentation in epithelium of some embryos ({@fig:initiator}a,b, {!@fig:vid-initiator}).
 In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
 While the behavior of initiator cells is perturbed in the three mutants, it is only in *btd* and *eve* that the cellular basis for cephalic furrow formation---the cell shortening---is severely disrupted.
-Strikingly, about 10--15 min after the onset of gastrulation, these mutants form a notable epithelial fold near the canonical position of cephalic furrow formation ({@fig:initiator}a).
+Strikingly, about 10--15 min after the onset of gastrulation, these mutants form a notable epithelial fold near the canonical position of cephalic furrow formation ({@fig:ectopic}b,c, {@fig:initiator}a).
 Intrigued by this puzzling phenotype, we asked whether the formation of this late fold is a direct consequence of the absence of the cephalic furrow.
 
 <!--These differences may be associated with apical myosin activity which is present in *btd* but not in *eve* mutants [@Eritano2020-mi].-->
