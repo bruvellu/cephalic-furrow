@@ -74,6 +74,24 @@ linkvid:
 	# Create JPG snapshot for visualization
 	for i in ${FIGUREOUT}/*.m4v; do ffmpeg -ss 00:00:01 -i $${i} -vframes 1 ${FIGUREOUT}/`basename $${i} .m4v`.jpg; done
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/Vid*.jpg
+	# Main link AVIs
+	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.avi ${FIGUREOUT}/source/Vid1.avi
+	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.avi ${FIGUREOUT}/source/Vid2.avi
+	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.avi ${FIGUREOUT}/source/Vid3.avi
+	ln -s ${FIGUREIN}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.avi ${FIGUREOUT}/source/Vid4.avi
+	ln -s ${FIGUREIN}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGUREOUT}/source/Vid5.avi
+	ln -s ${FIGUREIN}/strain-rate/videos/Strain_btd_E10_E14_label_loop.avi ${FIGUREOUT}/source/Vid6.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGUREOUT}/source/Vid7.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGUREOUT}/source/Vid8.avi
+	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGUREOUT}/source/Vid9.avi
+	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.avi ${FIGUREOUT}/source/Vid10.avi
+	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.avi ${FIGUREOUT}/source/Vid11.avi
+	# Supplementary link AVIs
+	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGUREOUT}/source/VidS1.avi
+	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.avi ${FIGUREOUT}/source/VidS2.avi
+	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.avi ${FIGUREOUT}/source/VidS3.avi
+	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.avi ${FIGUREOUT}/source/VidS4.avi
+	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.avi ${FIGUREOUT}/source/VidS5.avi
 
 compile:
 	# Compile timestamped documents to output directory
