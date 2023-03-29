@@ -214,8 +214,10 @@ We then measured the maximum depth of the cephalic furrow between cauterized and
 This result needs to be corroborated with a larger sample size, but it provides initial evidence that the germ band extension has a mild influence on the final depth of the cephalic furrow.
 In addition, we performed a complementary experiment to determine the size of the region under the influence of the cephalic furrow.
 By laser ablating cell membranes at different distances from initiator cells in early wildtype embryos, we find that the recoil velocity increases with time and decreases with distance, with an approximate range of at least 40µm anterior and posterior to the initiator cells ({@fig:experiments}i).
-This suggests the cephalic furrow actively generates tension by pulling the surrounding tissues.
-These experiments rule out the germ band extension as a driver of cephalic furrow invagination, and give support to the notion that the cephalic furrow forms autonomously by independent active mechanisms which are deployed before the other morphogenetic movements of gastrulation.
+This suggests that the cell shortening of initiator cells, which is actively driven by lateral myosin contractility [@Eritano2020-mi], pulls on the adjacent cells and generates tension in the surrounding tissues.
+These experiments corroborate the view that cephalic furrow initiation is autonomous and independent of other morphogenetic movements of gastrulation, such as the germ band extension.
+
+<!--These experiments rule out the germ band extension as a driver of cephalic furrow invagination, and give support to the notion that the cephalic furrow forms autonomously by independent active mechanisms which are .-->
 
 <!--The simulations show that the average depth of the cephalic furrow correlates with the percentage of germ band extension ({@fig:model}i).-->
 <!--Mitotic activity and germ band elongation contributes to the depth of the cephalic furrow [@Campos-Ortega1997-rd].-->
