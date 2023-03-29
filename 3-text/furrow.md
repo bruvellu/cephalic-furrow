@@ -5,18 +5,24 @@ author:
     institute: [mpicbg]
     correspondence: "yes"
     email: vellutini@mpi-cbg.de
+    orcid: 0000-0002-0000-9465
 - Marina B. Cuenca:
     institute: [mpicbg]
+    orcid: 0000-0001-6395-7246
 - Abhijeet Krishna:
     institute: [mpicbg, csbd, pol]
+    orcid: 0000-0002-9291-500X
 - Alicja Szałapak:
     institute: [mpicbg, csbd, pol]
+    orcid: 0000-0001-9091-7004
 - Carl D. Modes:
     institute: [mpicbg, csbd, pol]
+    orcid: 0000-0001-9940-0730
 - Pavel Tomančák:
     institute: [mpicbg, pol]
     correspondence: "yes"
     email: tomancak@mpi-cbg.de
+    orcid: 0000-0002-2222-9370
 institute:
 - mpicbg: Max Planck Institute of Molecular Cell Biology and Genetics, Dresden, Germany
 - csbd: Center for Systems Biology Dresden, Dresden, Germany
