@@ -812,26 +812,24 @@ band extension) to be present in the fly lineage before the evolution of
 the cephalic furrow. Strikingly, that appears to be the case. Mapping
 the cephalic furrow in the dipteran phylogeny suggests that the cephalic
 furrow is an evolutionary novelty that evolved after the appearance of
-mitotic domains and long germ<span class="citation"
-data-cites="Lemke2023-cx"><sup><a href="#ref-Lemke2023-cx"
-role="doc-biblioref">23</a></sup></span> (Figure <a
-href="#fig:summary">5</a>c, Steffen Lemke personal communication). One
-putative scenario is that selection for shorter developmental times
-concatenated the formation of mitotic domains and germ band extension,
-increasing the mechanical instabilities at the head–trunk boundary
-(Figure <a href="#fig:summary">5</a>d). In this case, mechanical stress
-may have acted as a selective pressure for the evolution of a
-pre-patterned head invagination, averting the potential detrimental
-effects of mechanical instabilities. These speculations, however,
-require further testing with experiments that prevent cephalic furrow
-formation without other genetic side effects, as well as a systematic
-comparative analysis of mitotic domains, germ band extension, and tissue
-mechanics across the fly phylogeny. Overall, our work proposes that the
-cephalic furrow plays a mechanical role in absorbing compressive
-stresses in fly gastrulation, and introduces the cephalic furrow
-formation as powerful context to test the hypothesis that mechanical
-interactions within embryonic tissues may play an important role for the
-evolution of morphogenesis in early development.</p>
+mitotic domains and long germ (Steffen Lemke personal communication)
+(Figure <a href="#fig:summary">5</a>c). One putative scenario is that
+selection for shorter developmental times concatenated the formation of
+mitotic domains and germ band extension, increasing the mechanical
+instabilities at the head–trunk boundary (Figure <a
+href="#fig:summary">5</a>d). In this case, mechanical stress may have
+acted as a selective pressure for the evolution of a pre-patterned head
+invagination, averting the potential detrimental effects of mechanical
+instabilities. These speculations, however, require further testing with
+experiments that prevent cephalic furrow formation without other genetic
+side effects, as well as a systematic comparative analysis of mitotic
+domains, germ band extension, and tissue mechanics across the fly
+phylogeny. Overall, our work proposes that the cephalic furrow plays a
+mechanical role in absorbing compressive stresses in fly gastrulation,
+and introduces the cephalic furrow formation as powerful context to test
+the hypothesis that mechanical interactions within embryonic tissues may
+play an important role for the evolution of morphogenesis in early
+development.</p>
 <!--Alternatively, the evolution of the cephalic furrow was in fact the facilitator to allowing for faster development.-->
 <!--Physical interaction of embryonic tissues with the egg shell are important for morphogenesis [@Bailles2019-qs; @Munster2019-ww]-->
 <!--Our simulations also revealed the buckling events are influenced by the roundness of the vitelline envelope. Buckling occurs more easily on straighter shells. This might explain why buckling at the tips is less frequent. Friction plays a role in the shape of the fold [Trushko]. Recent works show how interactions of the embryonic tissues with the shell [@Munster;@Bailles] and between gastrulation movements [@Guo2021] are important to embryonic development. Insect eggs have an outstanding diversity [@Church]. This observation might have implications to how egg shape might have influenced the evolution of development. And reveal a glimpse of the complex mechanical underpinnings of gastrulation dynamics around the head--trunk boundary of bilaterians.-->
@@ -868,10 +866,10 @@ stocks from the Bloomington Drosophila Stock Center and the Kyoto Stock
 Center and deposited the lines in the MPI-CBG stock collection. The
 complete list of FlyBase<span class="citation"
 data-cites="Gramates2022-xe"><sup><a href="#ref-Gramates2022-xe"
-role="doc-biblioref">24</a></sup></span> accession numbers and genotypes
+role="doc-biblioref">23</a></sup></span> accession numbers and genotypes
 is available in the project’s data repository<span class="citation"
 data-cites="Vellutini2023-ng"><sup><a href="#ref-Vellutini2023-ng"
-role="doc-biblioref">25</a></sup></span>.</p>
+role="doc-biblioref">24</a></sup></span>.</p>
 <h2 id="animal-husbandry-and-embryo-collection">Animal husbandry and
 embryo collection</h2>
 <p>We maintained the stocks in 50mL hard plastic vials containing fly
@@ -936,31 +934,31 @@ recordings were performed at 25°C.</p>
 <p>We converted the raw imaging datasets into individual TIFF stacks for
 downstream processing using a custom ImageJ macro in Fiji<span
 class="citation" data-cites="Schindelin2012-di Rueden2017-ky"><sup><a
-href="#ref-Schindelin2012-di" role="doc-biblioref">26</a>,<a
-href="#ref-Rueden2017-ky" role="doc-biblioref">27</a></sup></span>. To
+href="#ref-Schindelin2012-di" role="doc-biblioref">25</a>,<a
+href="#ref-Rueden2017-ky" role="doc-biblioref">26</a></sup></span>. To
 visualize the presence and dynamics of ectopic folds, we generated 3D
 renderings of the surface of embryos in lateral recordings using the
 plugin 3Dscript in Fiji<span class="citation"
 data-cites="Schmid2019-bm"><sup><a href="#ref-Schmid2019-bm"
-role="doc-biblioref">28</a></sup></span>. For analyzing the entire
+role="doc-biblioref">27</a></sup></span>. For analyzing the entire
 epithelial surface, we first improved the signal-to-noise ratio and
 z-resolution of lateral datasets from 3µm to 1µm by training a deep
 learning upsampling model using CARE<span class="citation"
 data-cites="Weigert2018-ti"><sup><a href="#ref-Weigert2018-ti"
-role="doc-biblioref">29</a></sup></span>. Then, we created cartographic
+role="doc-biblioref">28</a></sup></span>. Then, we created cartographic
 projections of the lateral recordings using the ImSAnE toolbox<span
 class="citation" data-cites="Heemskerk2015-kv"><sup><a
-href="#ref-Heemskerk2015-kv" role="doc-biblioref">30</a></sup></span> by
+href="#ref-Heemskerk2015-kv" role="doc-biblioref">29</a></sup></span> by
 loading the restored data in MATLAB<span class="citation"
 data-cites="Matlab2015-nd"><sup><a href="#ref-Matlab2015-nd"
-role="doc-biblioref">31</a></sup></span>, segmenting the epithelial
+role="doc-biblioref">30</a></sup></span>, segmenting the epithelial
 surface using ilastik<span class="citation"
 data-cites="Berg2019-ab"><sup><a href="#ref-Berg2019-ab"
-role="doc-biblioref">32</a></sup></span>, and generating 3D cartographic
+role="doc-biblioref">31</a></sup></span>, and generating 3D cartographic
 projections of lateral views following a workflow established for fly
 embryos<span class="citation" data-cites="Vellutini2022-ya"><sup><a
 href="#ref-Vellutini2022-ya"
-role="doc-biblioref">33</a></sup></span>.</p>
+role="doc-biblioref">32</a></sup></span>.</p>
 <h2 id="ectopic-folding-timing-and-dynamics">Ectopic folding timing and
 dynamics</h2>
 <p>To characterize the relative timing of ectopic folding, we annotated
@@ -975,7 +973,7 @@ Because embryos have different sizes, we first used the plugin
 <em>bUnwarpJ</em><span class="citation"
 data-cites="Arganda-Carreras2006-im"><sup><a
 href="#ref-Arganda-Carreras2006-im"
-role="doc-biblioref">34</a></sup></span> (<a
+role="doc-biblioref">33</a></sup></span> (<a
 href="https://imagej.net/plugins/bunwarpj/">imagej.net/plugins/bunwarpj</a>)
 to register individual frames and then applied the same transformation
 to the fold traces for a standardized comparison. We analyzed the
@@ -998,7 +996,7 @@ vitelline envelope to the tip of the fold at the moment of maximum depth
 in the dorsal recordings. For the analysis of the epithelial surface, we
 used the plugin <em>MorphoLibJ</em><span class="citation"
 data-cites="Legland2016-cp"><sup><a href="#ref-Legland2016-cp"
-role="doc-biblioref">35</a></sup></span> (<a
+role="doc-biblioref">34</a></sup></span> (<a
 href="https://imagej.net/plugins/morpholibj">imagej.net/plugins/morpholibj</a>)
 to segment, measure, and color-code the cell apical areas, and the
 plugin <em>Linear Stack Alignment with SIFT</em> <a
@@ -1041,7 +1039,7 @@ epithelium outlines using the ImageJ plugin <em>Analyze
 Skeleton</em><span class="citation"
 data-cites="Arganda-Carreras2010-la"><sup><a
 href="#ref-Arganda-Carreras2010-la"
-role="doc-biblioref">36</a></sup></span> (<a
+role="doc-biblioref">35</a></sup></span> (<a
 href="https://imagej.net/plugins/analyze-skeleton/">imagej.net/plugins/analyze-skeleton</a>),
 and generated the color-coded temporal projections as described
 above.</p>
@@ -1072,7 +1070,7 @@ recoil velocity (Figure <a href="#fig:ablation">S10</a>).</p>
 velocimetry on cartographic projections using the ImageJ plugin
 <em>iterativePIV</em><span class="citation"
 data-cites="Tseng2012-ni"><sup><a href="#ref-Tseng2012-ni"
-role="doc-biblioref">37</a></sup></span> (<a
+role="doc-biblioref">36</a></sup></span> (<a
 href="https://sites.google.com/site/qingzongtseng/piv">sites.google.com/site/qingzongtseng/piv</a>).
 Then, we used the equation
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>∇</mi><mo accent="true">⃗</mo></mover><mi>.</mi><mover><mi>v</mi><mo accent="true">⃗</mo></mover><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>∂</mi><mi>x</mi></msub><msub><mi>v</mi><mi>y</mi></msub><mo>+</mo><msub><mi>∂</mi><mi>y</mi></msub><msub><mi>v</mi><mi>x</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E = \frac{1}{2} \left( \vec \nabla . \vec v \right) + \frac{1}{2} \left( \partial_x v_y + \partial_y v_x \right)</annotation></semantics></math>
@@ -1200,36 +1198,36 @@ figure assembly</h2>
 <p>For microscopy images, we only performed minimal linear intensity
 adjustments in microscopy images to improve their contrast and
 brightness<span class="citation" data-cites="Schmied2020-ip"><sup><a
-href="#ref-Schmied2020-ip" role="doc-biblioref">38</a></sup></span>. We
+href="#ref-Schmied2020-ip" role="doc-biblioref">37</a></sup></span>. We
 created illustrations and assembled the final figure plates using
 Inkscape v1.2.2<span class="citation"
 data-cites="The_Inkscape_Project2003-ht"><sup><a
 href="#ref-The_Inkscape_Project2003-ht"
-role="doc-biblioref">39</a></sup></span>. For microscopy videos, we
+role="doc-biblioref">38</a></sup></span>. For microscopy videos, we
 exported the original stacks as AVI without compression with 10–15fps
 using Fiji and post-processed them to MPEG-4 format 1080p resolution
 using the H.264 encoding at a constant bitrate quality factor of 18 for
 visualization using HandBrake v1.6.1<span class="citation"
 data-cites="HandBrake_Team2003-fq"><sup><a
 href="#ref-HandBrake_Team2003-fq"
-role="doc-biblioref">40</a></sup></span>. The high-resolution figures
+role="doc-biblioref">39</a></sup></span>. The high-resolution figures
 and videos are available in a Zenodo repository<span class="citation"
 data-cites="Vellutini2023-hu"><sup><a href="#ref-Vellutini2023-hu"
-role="doc-biblioref">41</a></sup></span>. All data wrangling,
+role="doc-biblioref">40</a></sup></span>. All data wrangling,
 statistical analyses, and plotting performed in R v4.2.1<span
 class="citation" data-cites="R_Core_Team1993-ki"><sup><a
-href="#ref-R_Core_Team1993-ki" role="doc-biblioref">42</a></sup></span>
+href="#ref-R_Core_Team1993-ki" role="doc-biblioref">41</a></sup></span>
 using RStudio v2022.7.2.576<span class="citation"
 data-cites="RStudio_Team2011-wr"><sup><a href="#ref-RStudio_Team2011-wr"
-role="doc-biblioref">43</a></sup></span>, and Python 3.10.7 using
+role="doc-biblioref">42</a></sup></span>, and Python 3.10.7 using
 Jupyter notebooks<span class="citation"
 data-cites="Granger2021-zg"><sup><a href="#ref-Granger2021-zg"
-role="doc-biblioref">44</a></sup></span>. The data, scripts, and
+role="doc-biblioref">43</a></sup></span>. The data, scripts, and
 analyses pipelines are available in a Git repository at <a
 href="https://github.com/bruvellu/cephalic-furrow">github.com/bruvellu/cephalic-furrow</a>
 and have been deposited in Zenodo<span class="citation"
 data-cites="Vellutini2023-ng"><sup><a href="#ref-Vellutini2023-ng"
-role="doc-biblioref">25</a></sup></span>.</p>
+role="doc-biblioref">24</a></sup></span>.</p>
 <h1 id="acknowledgements">Acknowledgements</h1>
 <p>We thank all current and former LoPaTs for the discussions and
 support during this project. Akanksha Jain and Vladimir Ulman for
@@ -1428,20 +1426,15 @@ href="https://doi.org/10.1016/j.cell.2013.05.008">Forces in tissue
 morphogenesis and patterning</a>. <em>Cell</em> <strong>153</strong>,
 948–962 (2013).</div>
 </div>
-<div id="ref-Lemke2023-cx" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">23. </div><div
-class="csl-right-inline">Lemke, S. Morphogenetic innovations in early
-fly development. (2023).</div>
-</div>
 <div id="ref-Gramates2022-xe" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">24. </div><div
+<div class="csl-left-margin">23. </div><div
 class="csl-right-inline">Gramates, L. S. <em>et al.</em> <a
 href="https://doi.org/10.1093/genetics/iyac035">Fly base: A guided tour
 of highlighted features</a>. <em>Genetics</em> <strong>220</strong>,
 iyac035 (2022).</div>
 </div>
 <div id="ref-Vellutini2023-ng" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">25. </div><div
+<div class="csl-left-margin">24. </div><div
 class="csl-right-inline">Vellutini, B. C. Repository for: Pre-patterned
 epithelial invagination prevents mechanical instability during fly
 gastrulation. (2023) doi:<a
@@ -1449,14 +1442,14 @@ href="https://doi.org/10.5281/zenodo.7781948">10.5281/zenodo.7781948</a>.</div>
 </div>
 <div id="ref-Schindelin2012-di" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div
+<div class="csl-left-margin">25. </div><div
 class="csl-right-inline">Schindelin, J. <em>et al.</em> <a
 href="https://doi.org/10.1038/nmeth.2019">Fiji: An open-source platform
 for biological-image analysis</a>. <em>Nat. Methods</em>
 <strong>9</strong>, 676–682 (2012).</div>
 </div>
 <div id="ref-Rueden2017-ky" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div
+<div class="csl-left-margin">26. </div><div
 class="csl-right-inline">Rueden, C. T. <em>et al.</em> <a
 href="https://doi.org/10.1186/s12859-017-1934-z"><span>ImageJ2</span>:
 <span>ImageJ</span> for the next generation of scientific image
@@ -1464,48 +1457,48 @@ data</a>. <em>BMC Bioinformatics</em> <strong>18</strong>, 529
 (2017).</div>
 </div>
 <div id="ref-Schmid2019-bm" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">28. </div><div
+<div class="csl-left-margin">27. </div><div
 class="csl-right-inline">Schmid, B. <em>et al.</em> 3Dscript: Animating
 <span>3D/4D</span> microscopy data using a natural-language-based
 syntax. <em>Nat. Methods</em> (2019) doi:<a
 href="https://doi.org/10.1038/s41592-019-0359-1">10.1038/s41592-019-0359-1</a>.</div>
 </div>
 <div id="ref-Weigert2018-ti" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">29. </div><div
+<div class="csl-left-margin">28. </div><div
 class="csl-right-inline">Weigert, M. <em>et al.</em> <a
 href="https://doi.org/10.1038/s41592-018-0216-7">Content-aware image
 restoration: Pushing the limits of fluorescence microscopy</a>. <em>Nat.
 Methods</em> <strong>15</strong>, 1090–1097 (2018).</div>
 </div>
 <div id="ref-Heemskerk2015-kv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">30. </div><div
+<div class="csl-left-margin">29. </div><div
 class="csl-right-inline">Heemskerk, I. &amp; Streichan, S. J. <a
 href="https://doi.org/10.1038/nmeth.3648">Tissue cartography:
 Compressing bio-image data by dimensional reduction</a>. <em>Nat.
 Methods</em> <strong>12</strong>, 1139–1142 (2015).</div>
 </div>
 <div id="ref-Matlab2015-nd" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">31. </div><div
+<div class="csl-left-margin">30. </div><div
 class="csl-right-inline">Matlab. <a
 href="https://www.mathworks.com/products/matlab.html"><span>MATLAB</span></a>.
 (2015).</div>
 </div>
 <div id="ref-Berg2019-ab" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div
+<div class="csl-left-margin">31. </div><div
 class="csl-right-inline">Berg, S. <em>et al.</em> Ilastik: Interactive
 machine learning for (bio)image analysis. <em>Nat. Methods</em> (2019)
 doi:<a
 href="https://doi.org/10.1038/s41592-019-0582-9">10.1038/s41592-019-0582-9</a>.</div>
 </div>
 <div id="ref-Vellutini2022-ya" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">33. </div><div
+<div class="csl-left-margin">32. </div><div
 class="csl-right-inline">Vellutini, B. C. How to make cartographic
 projections using <span>ImSAnE</span>. (2022) doi:<a
 href="https://doi.org/10.5281/ZENODO.7628300">10.5281/ZENODO.7628300</a>.</div>
 </div>
 <div id="ref-Arganda-Carreras2006-im" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">34. </div><div
+<div class="csl-left-margin">33. </div><div
 class="csl-right-inline">Arganda-Carreras, I. <em>et al.</em> Consistent
 and elastic registration of histological sections using vector-spline
 regularization. in <em>Computer vision approaches to medical image
@@ -1513,7 +1506,7 @@ analysis</em> 85–95 (Springer Berlin Heidelberg, 2006). doi:<a
 href="https://doi.org/10.1007/11889762\_8">10.1007/11889762\_8</a>.</div>
 </div>
 <div id="ref-Legland2016-cp" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">35. </div><div
+<div class="csl-left-margin">34. </div><div
 class="csl-right-inline">Legland, D., Arganda-Carreras, I. &amp; Andrey,
 P. <a
 href="https://doi.org/10.1093/bioinformatics/btw413"><span>MorphoLibJ</span>:
@@ -1523,7 +1516,7 @@ Integrated library and plugins for mathematical morphology with
 </div>
 <div id="ref-Arganda-Carreras2010-la" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">36. </div><div
+<div class="csl-left-margin">35. </div><div
 class="csl-right-inline">Arganda-Carreras, I., Fernández-González, R.,
 Muñoz-Barrutia, A. &amp; Ortiz-De-Solorzano, C. <a
 href="https://doi.org/10.1002/jemt.20829"><span>3D</span> reconstruction
@@ -1532,7 +1525,7 @@ of histological sections: Application to mammary gland tissue</a>.
 (2010).</div>
 </div>
 <div id="ref-Tseng2012-ni" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">37. </div><div
+<div class="csl-left-margin">36. </div><div
 class="csl-right-inline">Tseng, Q. <em>et al.</em> <a
 href="https://doi.org/10.1073/pnas.1106377109">Spatial organization of
 the extracellular matrix regulates cell-cell junction positioning</a>.
@@ -1540,7 +1533,7 @@ the extracellular matrix regulates cell-cell junction positioning</a>.
 (2012).</div>
 </div>
 <div id="ref-Schmied2020-ip" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">38. </div><div
+<div class="csl-left-margin">37. </div><div
 class="csl-right-inline">Schmied, C. &amp; Jambor, H. K. <a
 href="https://doi.org/10.12688/f1000research.27140.2">Effective image
 visualization for publications - a workflow using open access tools and
@@ -1548,20 +1541,20 @@ concepts</a>. <em>F1000Res.</em> <strong>9</strong>, 1373 (2020).</div>
 </div>
 <div id="ref-The_Inkscape_Project2003-ht" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">39. </div><div class="csl-right-inline">The
+<div class="csl-left-margin">38. </div><div class="csl-right-inline">The
 Inkscape Project. <a href="https://inkscape.org">Inkscape: Open source
 scalable vector graphics editor</a>. (2003).</div>
 </div>
 <div id="ref-HandBrake_Team2003-fq" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">40. </div><div
+<div class="csl-left-margin">39. </div><div
 class="csl-right-inline">HandBrake Team. <a
 href="https://github.com/HandBrake/HandBrake"><span>HandBrake</span>:
 <span class="nocase">HandBrake’s</span> main development repository</a>.
 (2003).</div>
 </div>
 <div id="ref-Vellutini2023-hu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">41. </div><div
+<div class="csl-left-margin">40. </div><div
 class="csl-right-inline">Vellutini, B. C. Figures and videos for:
 Pre-patterned epithelial invagination prevents mechanical instability
 during fly gastrulation. (2023) doi:<a
@@ -1569,26 +1562,26 @@ href="https://doi.org/10.5281/zenodo.7781917">10.5281/zenodo.7781917</a>.</div>
 </div>
 <div id="ref-R_Core_Team1993-ki" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">42. </div><div class="csl-right-inline">R
+<div class="csl-left-margin">41. </div><div class="csl-right-inline">R
 Core Team. <a href="http://www.r-project.org">R: A language and
 environment for statistical computing</a>. (1993).</div>
 </div>
 <div id="ref-RStudio_Team2011-wr" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">43. </div><div
+<div class="csl-left-margin">42. </div><div
 class="csl-right-inline">RStudio Team. <a
 href="http://www.rstudio.com/"><span>RStudio</span>: Integrated
 development environment for <span>R</span></a>. (2011).</div>
 </div>
 <div id="ref-Granger2021-zg" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">44. </div><div
+<div class="csl-left-margin">43. </div><div
 class="csl-right-inline">Granger, B. E. &amp; Perez, F. <a
 href="https://doi.org/10.1109/mcse.2021.3059263">Jupyter: Thinking and
 storytelling with code and data</a>. <em>Comput. Sci. Eng.</em>
 <strong>23</strong>, 7–14 (2021).</div>
 </div>
 <div id="ref-Ashburner2005-ym" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">45. </div><div
+<div class="csl-left-margin">44. </div><div
 class="csl-right-inline">Ashburner, M., Golic, K. G. &amp; Hawley, R. S.
 <em><a
 href="https://www.worldcat.org/title/drosophila-a-laboratory-handbook/oclc/56324270"><em><span>D</span>rosophila</em>:
@@ -1597,7 +1590,7 @@ A laboratory handbook</a></em>. (Cold Spring Harbor Laboratory Press,
 </div>
 <div id="ref-Campos-Ortega1985-ma" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">46. </div><div
+<div class="csl-left-margin">45. </div><div
 class="csl-right-inline">Campos-Ortega, J. A. &amp; Hartenstein, V.
 <em>The embryonic development of <em><span>D</span>rosophila
 melanogaster</em>:</em> (Springer Berlin Heidelberg, 1985). doi:<a
@@ -1605,7 +1598,7 @@ href="https://doi.org/10.1007/978-3-662-02454-6">10.1007/978-3-662-02454-6</a>.<
 </div>
 <div id="ref-Jimenez-Guri2014-zs" class="csl-entry"
 role="doc-biblioentry">
-<div class="csl-left-margin">47. </div><div
+<div class="csl-left-margin">46. </div><div
 class="csl-right-inline">Jiménez-Guri, E., Wotton, K. R., Gavilán, B.
 &amp; Jaeger, J. <a
 href="https://doi.org/10.1371/journal.pone.0084422">A staging scheme for
@@ -1614,7 +1607,7 @@ albipunctata</em></a>. <em>PLoS One</em> <strong>9</strong>, e84422
 (2014).</div>
 </div>
 <div id="ref-Caroti2015-cy" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">48. </div><div
+<div class="csl-left-margin">47. </div><div
 class="csl-right-inline">Caroti, F., Urbansky, S., Wosch, M. &amp;
 Lemke, S. <a href="https://doi.org/10.1007/s00427-015-0504-5">Germ line
 transformation and in vivo labeling of nuclei in <span>D</span>iptera:
@@ -1624,7 +1617,7 @@ and <em><span>C</span>hironomus riparius</em>
 <strong>225</strong>, 179–186 (2015).</div>
 </div>
 <div id="ref-Wotton2014-fr" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">49. </div><div
+<div class="csl-left-margin">48. </div><div
 class="csl-right-inline">Wotton, K. R., Jiménez-Guri, E., García Matheu,
 B. &amp; Jaeger, J. <a
 href="https://doi.org/10.1371/journal.pone.0084421">A staging scheme for
@@ -1637,12 +1630,12 @@ abdita</em></a>. <em>PLoS One</em> <strong>9</strong>, e84421
 <div id="fig:ectopic" class="fignos">
 <figure>
 <img src="figures/Fig1.jpg" style="width:100.0%"
-alt="Figure 1: Formation of ectopic folds in cephalic furrow mutants. a, Overview of key developmental events using a standard developmental staging45. The formation of the cephalic furrow is delayed in prd mutants and absent in btd and eve mutants. In the latter, ectopic folds form near the canonical invagination site of the cephalic furrow. Wildtype and prd embryos form less frequent and smaller ectopic folds more anterior or posterior to the cephalic furrow. Ectopic folds appear later and unfold quicker than the cephalic furrow, and their formation coincides with the appearance of mitotic domains and with the rapid phase of the germ band extension46. b, Profile view of wildtype and prd embryos (early stage 8), and btd and eve embryos (late stage 8) showing the divergent morphology of the cephalic furrow and ectopic folds, respectively. Membrane marker = Gap43-mCherry. Scale bars = 20µm. c, Lateral view of sibling controls (heterozygotes) and mutant embryos (btd or eve homozygotes). The arrows indicate epithelial folds, the asterisks indicate the position of mitotic domains, and the percentages indicate the extent of germ band extension relative to the egg length. Membrane marker = Gap43-mCherry. Scale bars = 50µm. d, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about 7 minutes after gastrulation in wildtype (+/+, n=16) and btd heterozygotes (+/−, n=6), and is delayed in eve and prd heterozygotes (+/−, n=7 and n=10, respectively) and in prd homozygotes (−/−, n=5). Ectopic folds form about 20min after gastrulation in btd and eve homozygotes (−/−, n=5 and n=5, respectively). One dot represents one embryo. e, Percentage of germ band extension at the time of formation of the cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow appears at 10% germ band extension, except in prd heterozygotes where it varies up to 40%. Ectopic folds form at 30–35% germ band extension. The n values are the same as in d. f, Variability in the distribution of the cephalic furrow in sibling controls (btd heterozygotes) and of the ectopic folds in btd mutants (n=6). Scale bars = 50µm. g, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in btd embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control btd heterozygote (left) and of a btd homozygote (right). The numbers indicate the average folded area for the sample type in µm2×103. h, Quantification of the total folded area of epithelial surface in cephalic furrow mutants." />
+alt="Figure 1: Formation of ectopic folds in cephalic furrow mutants. a, Overview of key developmental events using a standard developmental staging44. The formation of the cephalic furrow is delayed in prd mutants and absent in btd and eve mutants. In the latter, ectopic folds form near the canonical invagination site of the cephalic furrow. Wildtype and prd embryos form less frequent and smaller ectopic folds more anterior or posterior to the cephalic furrow. Ectopic folds appear later and unfold quicker than the cephalic furrow, and their formation coincides with the appearance of mitotic domains and with the rapid phase of the germ band extension45. b, Profile view of wildtype and prd embryos (early stage 8), and btd and eve embryos (late stage 8) showing the divergent morphology of the cephalic furrow and ectopic folds, respectively. Membrane marker = Gap43-mCherry. Scale bars = 20µm. c, Lateral view of sibling controls (heterozygotes) and mutant embryos (btd or eve homozygotes). The arrows indicate epithelial folds, the asterisks indicate the position of mitotic domains, and the percentages indicate the extent of germ band extension relative to the egg length. Membrane marker = Gap43-mCherry. Scale bars = 50µm. d, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about 7 minutes after gastrulation in wildtype (+/+, n=16) and btd heterozygotes (+/−, n=6), and is delayed in eve and prd heterozygotes (+/−, n=7 and n=10, respectively) and in prd homozygotes (−/−, n=5). Ectopic folds form about 20min after gastrulation in btd and eve homozygotes (−/−, n=5 and n=5, respectively). One dot represents one embryo. e, Percentage of germ band extension at the time of formation of the cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow appears at 10% germ band extension, except in prd heterozygotes where it varies up to 40%. Ectopic folds form at 30–35% germ band extension. The n values are the same as in d. f, Variability in the distribution of the cephalic furrow in sibling controls (btd heterozygotes) and of the ectopic folds in btd mutants (n=6). Scale bars = 50µm. g, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in btd embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control btd heterozygote (left) and of a btd homozygote (right). The numbers indicate the average folded area for the sample type in µm2×103. h, Quantification of the total folded area of epithelial surface in cephalic furrow mutants." />
 <figcaption aria-hidden="true"><span>Figure 1:</span> Formation of
 ectopic folds in cephalic furrow mutants. <strong>a</strong>, Overview
 of key developmental events using a standard developmental staging<span
 class="citation" data-cites="Ashburner2005-ym"><sup><a
-href="#ref-Ashburner2005-ym" role="doc-biblioref">45</a></sup></span>.
+href="#ref-Ashburner2005-ym" role="doc-biblioref">44</a></sup></span>.
 The formation of the cephalic furrow is delayed in <em>prd</em> mutants
 and absent in <em>btd</em> and <em>eve</em> mutants. In the latter,
 ectopic folds form near the canonical invagination site of the cephalic
@@ -1653,7 +1646,7 @@ their formation coincides with the appearance of mitotic domains and
 with the rapid phase of the germ band extension<span class="citation"
 data-cites="Campos-Ortega1985-ma"><sup><a
 href="#ref-Campos-Ortega1985-ma"
-role="doc-biblioref">46</a></sup></span>. <strong>b</strong>, Profile
+role="doc-biblioref">45</a></sup></span>. <strong>b</strong>, Profile
 view of wildtype and <em>prd</em> embryos (early stage 8), and
 <em>btd</em> and <em>eve</em> embryos (late stage 8) showing the
 divergent morphology of the cephalic furrow and ectopic folds,
@@ -1841,7 +1834,7 @@ band cauterization experiments.</figcaption>
 <div id="fig:summary" class="fignos">
 <figure>
 <img src="figures/Fig5.jpg" style="width:50.0%"
-alt="Figure 5: Mechanical role of the cephalic furrow in development and evolution. a, Schematic drawings of a lateral view comparing wildtype and cephalic furrow mutants. Tissue flows are represented by black arrows, mitotic domains (MD) by light gray patches, and the cephalic furrow (CF) area by a dark gray band. In cephalic furrow mutants the excess of epithelial tissue on the surface, combined with the formation of mitotic domains and the extension of the germ band (GB), leads to mechanical instabilities and the buckling of ectopic folds (EF) at the head–trunk boundary. b, Schematic drawings of a profile view comparing the changes in epithelial thickness in cephalic furrow mutants and the correlation with the position of tissue buckling. c, Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in Clogmia47 and Chironomus48, and present in the common ancestor of Megaselia49 and Drosophila. It is unclear whether mechanical stresses are present in the head–trunk boundary of flies without cephalic furrow. d, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head–trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head–trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow." />
+alt="Figure 5: Mechanical role of the cephalic furrow in development and evolution. a, Schematic drawings of a lateral view comparing wildtype and cephalic furrow mutants. Tissue flows are represented by black arrows, mitotic domains (MD) by light gray patches, and the cephalic furrow (CF) area by a dark gray band. In cephalic furrow mutants the excess of epithelial tissue on the surface, combined with the formation of mitotic domains and the extension of the germ band (GB), leads to mechanical instabilities and the buckling of ectopic folds (EF) at the head–trunk boundary. b, Schematic drawings of a profile view comparing the changes in epithelial thickness in cephalic furrow mutants and the correlation with the position of tissue buckling. c, Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in Clogmia46 and Chironomus47, and present in the common ancestor of Megaselia48 and Drosophila. It is unclear whether mechanical stresses are present in the head–trunk boundary of flies without cephalic furrow. d, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head–trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head–trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow." />
 <figcaption aria-hidden="true"><span>Figure 5:</span> Mechanical role of
 the cephalic furrow in development and evolution. <strong>a</strong>,
 Schematic drawings of a lateral view comparing wildtype and cephalic
@@ -1859,12 +1852,12 @@ traits. The germ band extension and mitotic domains probably evolved at
 the base of dipteran flies. The cephalic furrow is a late innovation. It
 is absent in <em>Clogmia</em><span class="citation"
 data-cites="Jimenez-Guri2014-zs"><sup><a href="#ref-Jimenez-Guri2014-zs"
-role="doc-biblioref">47</a></sup></span> and <em>Chironomus</em><span
+role="doc-biblioref">46</a></sup></span> and <em>Chironomus</em><span
 class="citation" data-cites="Caroti2015-cy"><sup><a
-href="#ref-Caroti2015-cy" role="doc-biblioref">48</a></sup></span>, and
+href="#ref-Caroti2015-cy" role="doc-biblioref">47</a></sup></span>, and
 present in the common ancestor of <em>Megaselia</em><span
 class="citation" data-cites="Wotton2014-fr"><sup><a
-href="#ref-Wotton2014-fr" role="doc-biblioref">49</a></sup></span> and
+href="#ref-Wotton2014-fr" role="doc-biblioref">48</a></sup></span> and
 <em>Drosophila</em>. It is unclear whether mechanical stresses are
 present in the head–trunk boundary of flies without cephalic furrow.
 <strong>d</strong>, Scenario for the evolution of the cephalic furrow.

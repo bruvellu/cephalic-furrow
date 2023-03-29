@@ -289,7 +289,7 @@ In this sense, a canalized process forming a single predictable invagination may
 This raises an intriguing evolutionary question---if the cephalic furrow has a mechanical role in development, did it first evolve in response to these mechanical stresses of gastrulation?
 If this was the case, we expect the sources of stress (mitotic domains and germ band extension) to be present in the fly lineage before the evolution of the cephalic furrow.
 Strikingly, that appears to be the case.
-Mapping the cephalic furrow in the dipteran phylogeny suggests that the cephalic furrow is an evolutionary novelty that evolved after the appearance of mitotic domains and long germ [@Lemke2023-cx] ({@fig:summary}c, Steffen Lemke personal communication).
+Mapping the cephalic furrow in the dipteran phylogeny suggests that the cephalic furrow is an evolutionary novelty that evolved after the appearance of mitotic domains and long germ (Steffen Lemke personal communication) ({@fig:summary}c).
 One putative scenario is that selection for shorter developmental times concatenated the formation of mitotic domains and germ band extension, increasing the mechanical instabilities at the head--trunk boundary ({@fig:summary}d).
 In this case, mechanical stress may have acted as a selective pressure for the evolution of a pre-patterned head invagination, averting the potential detrimental effects of mechanical instabilities.
 These speculations, however, require further testing with experiments that prevent cephalic furrow formation without other genetic side effects, as well as a systematic comparative analysis of mitotic domains, germ band extension, and tissue mechanics across the fly phylogeny.
