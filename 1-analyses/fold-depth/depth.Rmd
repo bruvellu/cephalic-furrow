@@ -24,24 +24,46 @@ results$Label <- sapply(strsplit(results$Label, ":"), "[", 1)
 # Load sample info and merge with results
 samples <- read.delim("samples.csv", sep = ",")
 results <- merge(results, samples, by = "Label", all.x = TRUE)
-
-# Print n btd embryos
-length(samples[samples$Genotype == "heterozygote" & samples$Sample == "btd",]$Label)
-length(samples[samples$Genotype == "homozygote" & samples$Sample == "btd",]$Label)
-
-# Print n eve embryos
-length(samples[samples$Genotype == "heterozygote" & samples$Sample == "eve",]$Label)
-length(samples[samples$Genotype == "homozygote" & samples$Sample == "eve",]$Label)
-
-# Print n btd folds
-length(results[results$Genotype == "heterozygote" & results$Sample == "btd",]$Label)
-length(results[results$Genotype == "homozygote" & results$Sample == "btd",]$Label)
-
-# Print n eve folds
-length(results[results$Genotype == "heterozygote" & results$Sample == "eve",]$Label)
-length(results[results$Genotype == "homozygote" & results$Sample == "eve",]$Label)
-
 ```
+
+## Print summary
+
+```{r summary}
+print_stats <- function(dataframe, sample, genotype) {
+  filter_df <- (dataframe$Sample == sample & dataframe$Genotype == genotype)
+  df <- dataframe[filter_df,]
+  df <- droplevels(df)
+
+  # Define row
+  row <- c(sample,
+           genotype,
+           length(df$Label),
+           length(unique(df$Label))
+           )
+  
+  return(row)
+}
+
+# Save stats to data frame
+stats <- data.frame()
+
+# Bind row by row
+stats <- rbind(stats, print_stats(results, "btd", "heterozygote"))
+stats <- rbind(stats, print_stats(results, "btd", "homozygote"))
+stats <- rbind(stats, print_stats(results, "eve", "heterozygote"))
+stats <- rbind(stats, print_stats(results, "eve", "homozygote"))
+
+# Add column names
+colnames(stats) <- c("sample", "genotype", "n_folds", "n_embryos")
+
+# Convert columns to numeric
+stats[, 3:4] <- apply(stats[, 3:4], 2, as.numeric)
+
+# Write table to file
+write.table(format(stats, digits=2), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+print(stats)
+```
+
 
 ## Plot fold depth by stocks
 
@@ -63,4 +85,112 @@ ggplot(results, aes(Genotype, Length, fill = Genotype)) +
 ggsave("3-plots/depth_facet.png", width = 12, height = 6)
 ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
 
+```
+
+## Mean furrow length by embryo
+
+To attempt to normalize the furrow length per embryo, since their length does not
+seem to be independent of each other, I'll take the length mean per embryo.
+
+```{r mean-length}
+# Mean of fold length per embryo
+embryo_mean <- aggregate(results$Length, list(results$Label), mean)
+colnames(embryo_mean) <- c("Label", "Mean")
+
+# Standard deviation of fold length per embryo
+embryo_sd <- aggregate(results$Length, list(results$Label), sd)
+colnames(embryo_sd) <- c("Label", "SD")
+
+# Get sample information
+samples <- unique(results[, c("Label", "Sample", "Genotype")])
+
+# Merge datasets
+means <- merge(samples, embryo_mean, by = "Label", all.x = TRUE)
+means <- merge(means, embryo_sd, by = "Label", all.x = TRUE)
+
+# Summary by sample
+by(means[means$Genotype == "heterozygote", c("Mean", "SD")], means[means$Genotype == "heterozygote",]$Sample, summary)
+print("------------------------------------------------------------------------------------")
+by(means[means$Genotype == "homozygote", c("Mean", "SD")], means[means$Genotype == "homozygote",]$Sample, summary)
+```
+
+## Plot mean fold depth by embryo for stocks
+
+```{r plot-mean-depth}
+# Plot stocks separately
+ggplot(means, aes(Genotype, Mean, fill = Genotype)) +
+  geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
+  labs(x = "mutants", y = "depth") +
+  facet_wrap(~Sample, strip.position = "top") +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 30),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("3-plots/depth_facet.png", width = 12, height = 6)
+ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
+
+```
+
+## Statistics
+
+The distribution is normal. Using t-test to compare the means.
+
+```{r stats}
+sink('tests.txt')
+
+print("Testing individual folds")
+print("Testing normality and means difference for btd")
+# Test if distribution is normal per measure (yes)
+shapiro.test(results[(results$Sample == "btd" & results$Genotype == "heterozygote"),]$Length)
+shapiro.test(results[(results$Sample == "btd" & results$Genotype == "homozygote"),]$Length)
+# Test if means are different
+t.test(results[(results$Sample == "btd" & results$Genotype == "heterozygote"),]$Length,
+       results[(results$Sample == "btd" & results$Genotype == "homozygote"),]$Length,
+       var.equal = FALSE)
+
+print("Testing normality and means difference for eve")
+# Test if distribution is normal per measure (yes)
+shapiro.test(results[(results$Sample == "eve" & results$Genotype == "heterozygote"),]$Length)
+shapiro.test(results[(results$Sample == "eve" & results$Genotype == "homozygote"),]$Length)
+# Test if means are different
+t.test(results[(results$Sample == "eve" & results$Genotype == "heterozygote"),]$Length,
+       results[(results$Sample == "eve" & results$Genotype == "homozygote"),]$Length,
+       var.equal = FALSE)
+
+sink()
+```
+
+```{r tmp-stats}
+
+
+
+print("Testing individual embryos")
+print("Testing normality and means difference for btd")
+# Test if distribution is normal per measure (yes)
+shapiro.test(means[(means$Sample == "btd" & means$Genotype == "heterozygote"),]$Mean)
+shapiro.test(means[(means$Sample == "btd" & means$Genotype == "homozygote"),]$Mean)
+# Test if means are different
+t.test(means[(means$Sample == "btd" & means$Genotype == "heterozygote"),]$Mean,
+       means[(means$Sample == "btd" & means$Genotype == "homozygote"),]$Mean,
+       var.equal = FALSE)
+wilcox.test(means[(means$Sample == "btd" & means$Genotype == "heterozygote"),]$Mean,
+       means[(means$Sample == "btd" & means$Genotype == "homozygote"),]$Mean)
+
+print("Testing normality and means difference for eve")
+# Test if distribution is normal per measure (yes)
+shapiro.test(means[(means$Sample == "eve" & means$Genotype == "heterozygote"),]$Mean)
+shapiro.test(means[(means$Sample == "eve" & means$Genotype == "homozygote"),]$Mean)
+# Test if means are different
+t.test(means[(means$Sample == "eve" & means$Genotype == "heterozygote"),]$Mean,
+       means[(means$Sample == "eve" & means$Genotype == "homozygote"),]$Mean,
+       var.equal = FALSE)
+wilcox.test(means[(means$Sample == "eve" & means$Genotype == "heterozygote"),]$Mean,
+       means[(means$Sample == "eve" & means$Genotype == "homozygote"),]$Mean)
+
+sink()
 ```
