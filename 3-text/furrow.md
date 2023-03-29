@@ -437,8 +437,9 @@ Finally, we define and count as a *fold* a particle whose distance to the rigid 
 For microscopy images, we only performed minimal linear intensity adjustments in microscopy images to improve their contrast and brightness [@Schmied2020-ip].
 We created illustrations and assembled the final figure plates using Inkscape v1.2.2 [@The_Inkscape_Project2003-ht].
 For microscopy videos, we exported the original stacks as AVI without compression with 10--15fps using Fiji and post-processed them to MPEG-4 format 1080p resolution using the H.264 encoding at a constant bitrate quality factor of 18 for visualization using HandBrake v1.6.1 [@HandBrake_Team2003-fq].
+The high-resolution figures and videos are available in a Zenodo repository [@Vellutini2023-hu].
 All data wrangling, statistical analyses, and plotting performed in R v4.2.1 [@R_Core_Team1993-ki] using RStudio v2022.7.2.576 [@RStudio_Team2011-wr], and Python 3.10.7 using Jupyter notebooks [@Granger2021-zg].
-The data, scripts, and analyses pipelines are available in a GitHub repository at [github.com/bruvellu/cephalic-furrow](https://github.com/bruvellu/cephalic-furrow) and have been deposited in Zenodo [@Vellutini2023-ng].
+The data, scripts, and analyses pipelines are available in a Git repository at [github.com/bruvellu/cephalic-furrow](https://github.com/bruvellu/cephalic-furrow) and have been deposited in Zenodo [@Vellutini2023-ng].
 
 # Acknowledgements
 
