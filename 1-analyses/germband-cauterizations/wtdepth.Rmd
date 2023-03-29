@@ -180,7 +180,6 @@ diff_micron <- mean(means[means$Sample == "control",]$Mean) - mean(means[means$S
 diff_pct <- diff_micron / mean(means[means$Sample == "cauterized",]$Mean) * 100
 print(sprintf("%s microns or %s percent shallower", diff_micron, diff_pct))
 
-
 print("Testing normality and means difference per fold")
 # Test if distribution is normal per measure (yes)
 shapiro.test(results[results$Sample == "control",]$Length)

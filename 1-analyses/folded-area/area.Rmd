@@ -237,6 +237,28 @@ ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
 ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
 ```
 
+## Statistics
+
+The distribution is not normal. Using Wilcoxon test to compare the samples.
+
+```{r stats}
+sink('tests.txt')
+
+print("Testing normality of distribution")
+shapiro.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr)
+shapiro.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr)
+print("Testing for difference between samples")
+wilcox.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr,
+            results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr)
+
+print("t-test just to get the difference between sample means")
+t.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr,
+       results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr,
+       var.equal = FALSE)
+
+sink()
+```
+
 ## Area of individual ectopic folds per position
 
 ```{r area-individual-folds-per-position}
