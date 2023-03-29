@@ -8,15 +8,19 @@ author:
     orcid: 0000-0002-0000-9465
 - Marina B. Cuenca:
     institute: [mpicbg]
+    email: cuenca@mpi-cbg.de
     orcid: 0000-0001-6395-7246
 - Abhijeet Krishna:
     institute: [mpicbg, csbd, pol]
+    email: krishna@mpi-cbg.de
     orcid: 0000-0002-9291-500X
 - Alicja Szałapak:
     institute: [mpicbg, csbd, pol]
+    email: szalapak@mpi-cbg.de
     orcid: 0000-0001-9091-7004
 - Carl D. Modes:
     institute: [mpicbg, csbd, pol]
+    email: modes@mpi-cbg.de
     orcid: 0000-0001-9940-0730
 - Pavel Tomančák:
     institute: [mpicbg, pol]
