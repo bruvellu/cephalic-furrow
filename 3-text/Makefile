@@ -63,7 +63,8 @@ linkvid:
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.m4v ${FIGUREOUT}/Vid7.m4v
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.m4v ${FIGUREOUT}/Vid8.m4v
 	ln -s ${FIGUREIN}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.m4v ${FIGUREOUT}/Vid9.m4v
-	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-gap-stg_7_z3_60s_E18_E3.m4v ${FIGUREOUT}/Vid10.m4v
+	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.m4v ${FIGUREOUT}/Vid10.m4v
+	ln -s ${FIGUREIN}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.m4v ${FIGUREOUT}/Vid11.m4v
 	# Supplementary
 	ln -s ${FIGUREIN}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.m4v ${FIGUREOUT}/VidS1.m4v
 	ln -s ${FIGUREIN}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.m4v ${FIGUREOUT}/VidS2.m4v
