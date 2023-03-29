@@ -468,8 +468,8 @@ All authors revised and contributed to the text.
 
 ![Formation of ectopic folds in cephalic furrow mutants.
 **a**, Overview of key developmental events using a standard developmental staging [@Ashburner2005-ym]. The formation of the cephalic furrow is delayed in *prd* mutants and absent in *btd* and *eve* mutants. In the latter, ectopic folds form near the canonical invagination site of the cephalic furrow. Wildtype and *prd* embryos form less frequent and smaller ectopic folds more anterior or posterior to the cephalic furrow. Ectopic folds appear later and unfold quicker than the cephalic furrow, and their formation coincides with the appearance of mitotic domains and with the rapid phase of the germ band extension [@Campos-Ortega1985-ma].
-**b**, Profile view of wildtype and *prd* embryos (early stage 8), and *btd* and *eve* embryos (late stage 8) showing the divergent morphology of the cephalic furrow and ectopic folds, respectively. Scale bars = 20µm.
-**c**, Lateral view of sibling controls (heterozygotes) and mutant embryos (*btd* or *eve* homozygotes). The arrows indicate epithelial folds, the asterisks indicate the position of mitotic domains, and the percentages indicate the extent of germ band extension relative to the egg length. Scale bars = 50µm.
+**b**, Profile view of wildtype and *prd* embryos (early stage 8), and *btd* and *eve* embryos (late stage 8) showing the divergent morphology of the cephalic furrow and ectopic folds, respectively. Membrane marker = Gap43-mCherry. Scale bars = 20µm.
+**c**, Lateral view of sibling controls (heterozygotes) and mutant embryos (*btd* or *eve* homozygotes). The arrows indicate epithelial folds, the asterisks indicate the position of mitotic domains, and the percentages indicate the extent of germ band extension relative to the egg length. Membrane marker = Gap43-mCherry. Scale bars = 50µm.
 **d**, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about 7 minutes after gastrulation in wildtype (+/+, n=16) and *btd* heterozygotes (+/−, n=6), and is delayed in *eve* and *prd* heterozygotes (+/−, n=7 and n=10, respectively) and in *prd* homozygotes (−/−, n=5). Ectopic folds form about 20min after gastrulation in *btd* and *eve* homozygotes (−/−, n=5 and n=5, respectively). One dot represents one embryo.
 **e**, Percentage of germ band extension at the time of formation of the cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow appears at 10% germ band extension, except in *prd* heterozygotes where it varies up to 40%. Ectopic folds form at 30--35% germ band extension. The n values are the same as in **d**.
 **f**, Variability in the distribution of the cephalic furrow in sibling controls (*btd* heterozygotes) and of the ectopic folds in *btd* mutants (n=6). Scale bars = 50µm.
@@ -645,11 +645,10 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 <!--TODO: Convert area from px to µm-->
 <!--TODO: Add values to plot to be more informative-->
 
-![Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top) and homozygote embryos (bottom). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {@fig:mitotic}d.
+![Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {@fig:mitotic}d.
 ](figures/FigS4.jpg){#fig:strain tag=S4 width=80%}
 
 <!--TODO: Add scale bar-->
-<!--TODO: Add n values-->
 
 ![Embryonic proportions in wildtype and cephalic furrow mutants. Approximate relative sizes and positions between embryonic features such as mitotic domains, folds, and the germ band. All values are relative to the embryo length. We used these dimensions as a reference for creating the model.
 ](figures/FigS5.jpg){#fig:proportions tag=S5 width=70%}
@@ -670,7 +669,7 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 **b**, Finer-grained parameter sweep of ectopic folding without (TMD=0) and with (TMD=5) a delay in cephalic furrow formation. With simultaneous formation, only higher values of KCF are effective in buffering the formation of ectopic folds around the cephalic furrow region. This is also limited to low percentages of germ band extension since at higher percentages there is an increase in the frequency of ectopic folding. When a delay in mitotic formation is present, even low values of KCF are effective in preventing the formation of ectopic folds. In this condition, the extension of the germ band increases the formation of ectopic folds, but only at the posterior regions close to the germ band tip. This suggests that the initiation of the cephalic furrow is crucial to its ability to buffer the ectopic folding.
 ](figures/FigS8.jpg){#fig:cf-sweep tag=S8 width=100%}
 
-<!--TODO: Replace with newer simulations?-->
+<!--TODO: Replace with newer simulations-->
 
 ![Image processing pipeline for the tortuosity analysis in cauterized mutants.
 **a**, We acquired a single slice in profile view of the head--trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos.
