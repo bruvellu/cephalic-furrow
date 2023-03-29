@@ -534,42 +534,6 @@ All authors revised and contributed to the text.
 
 \newpage
 
-# Tables
-
-Table: Relative timing differences between the formation of the cephalic furrow (CF) and ectopic folds (EFs) in different mutant backgrounds.
-We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of infolding/buckling. {#tbl:gbtime}
-
-|           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
-| --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
-| Zygosity  | +/+      | +/−     | −/−      | +/−      | −/−      | +/−       | −/−      |
-| Fold      | CF       | CF      | EFs      | CF       | EFs      | CF        | CF       |
-| TAG (min) | 7.2±2.2  | 8.2±1.7 | 21.3±4.7 | 12.2±1.7 | 22.6±2.6 | 11.3±6.2  | 18.2±5.4 |
-| GBE (%)   | 8.7±1.7  | 9.8±1.9 | 36.3±2.4 | 8.8±2.3  | 28.5±3.9 | 18.0±12.2 | 33.0±9.5 |
-| n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
-
-
-Table: Number and frequency of ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (PEF) and the number of ectopic folds per embryo side (NEF). The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:stats}
-
-|           | wildtype | *btd*   |         | *eve*   |         | *prd*   |         | *stg*   |         |
-| --------  | -------- | -----   | -----   | -----   | -----   | -----   | -----   | -----   | -----   |
-| Zygosity  | +/+      | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     |
-| NEF       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.3±0.5 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
-| PEF (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 25.9    | 42.9    | 27.3    | 23.1    |
-| n         | 36       | 31      | 14      | 25      | 10      | 27      | 14      | 33      | 13      |
-
-
-Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated surface area (µm^2^×10^3^) of folded cells in the cephalic furrow and ectopic folds of different mutant backgrounds. {#tbl:area}
-
-|    | wildtype     | *btd*       | *eve*      | *prd*       |
-| -- | --------     | -----       | -----      | -----       |
-| CF | 11.4±1.2     | 10.3±1.9    | 9.7±1.1    | 6.0±3.4     |
-| EF | 0.7±0.5      | 2.3±1.7     | 3.2±2.1    | 1.0±0.6     |
-| n  | CF=16, EF=16 | CF=6, EF=13 | CF=7, EF=7 | CF=14, EF=8 |
-
-\clearpage
-
-\newpage
-
 # Videos
 
 ![Lateral view of ectopic fold formation in *btd* mutant. The cephalic furrow forms normally in sibling controls (top) but it is absent in *btd* mutants (bottom). In the mutant, no fold is present at the head--trunk interface until about 20min, when a large ectopic fold appears and quickly unfolds at about 45min. In the sibling control, the cephalic furrow remains partially invaginated  for the period shown in the recording (about 110min). Frame rate = 15fps. Scale bars = 50µm.
@@ -606,6 +570,42 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 
 ![Dorsal view of *btd*--*stg* double mutant. A *btd* homozygote shows the formation of an ectopic fold (top). The *btd*--*stg* double mutant exhibits no mitotic domains and no ectopic folds (bottom). Frame rate = 10fps. Scale bar = 20µm.
 ](figures/Vid11.jpg){#fig:vid-double-dorsal tag="Video 11" width=50%}
+
+\clearpage
+
+\newpage
+
+# Tables
+
+Table: Relative timing differences between the formation of the cephalic furrow (CF) and ectopic folds (EFs) in different mutant backgrounds.
+We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of infolding/buckling. {#tbl:gbtime}
+
+|           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
+| --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
+| Zygosity  | +/+      | +/−     | −/−      | +/−      | −/−      | +/−       | −/−      |
+| Fold      | CF       | CF      | EFs      | CF       | EFs      | CF        | CF       |
+| TAG (min) | 7.2±2.2  | 8.2±1.7 | 21.3±4.7 | 12.2±1.7 | 22.6±2.6 | 11.3±6.2  | 18.2±5.4 |
+| GBE (%)   | 8.7±1.7  | 9.8±1.9 | 36.3±2.4 | 8.8±2.3  | 28.5±3.9 | 18.0±12.2 | 33.0±9.5 |
+| n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
+
+
+Table: Number and frequency of ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (PEF) and the number of ectopic folds per embryo side (NEF). The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:stats}
+
+|           | wildtype | *btd*   |         | *eve*   |         | *prd*   |         | *stg*   |         |
+| --------  | -------- | -----   | -----   | -----   | -----   | -----   | -----   | -----   | -----   |
+| Zygosity  | +/+      | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     |
+| NEF       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.3±0.5 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
+| PEF (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 25.9    | 42.9    | 27.3    | 23.1    |
+| n         | 36       | 31      | 14      | 25      | 10      | 27      | 14      | 33      | 13      |
+
+
+Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated surface area (µm^2^×10^3^) of folded cells in the cephalic furrow and ectopic folds of different mutant backgrounds. {#tbl:area}
+
+|    | wildtype     | *btd*       | *eve*      | *prd*       |
+| -- | --------     | -----       | -----      | -----       |
+| CF | 11.4±1.2     | 10.3±1.9    | 9.7±1.1    | 6.0±3.4     |
+| EF | 0.7±0.5      | 2.3±1.7     | 3.2±2.1    | 1.0±0.6     |
+| n  | CF=16, EF=16 | CF=6, EF=13 | CF=7, EF=7 | CF=14, EF=8 |
 
 \clearpage
 
