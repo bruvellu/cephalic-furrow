@@ -660,13 +660,10 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 **c**, Parameter sweep with mitotic domains. Plots show the same parameters as described in **b** above.
 ](figures/FigS6.jpg){#fig:model-features tag=S6 width=70%}
 
-![Lateral and dorsal views of *stg* mutant embryos. Embryos *stg* homozygotes show no cell divisions after gastrulation. Despite of that, the early morphogenetic movements of gastrulation occur normally.
-**a**, Lateral 3D renderings. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head.
-**b**, Profile views. The initiator cell behaviors are not perturbed in *stg* mutants and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos.
+![Lateral and dorsal views of *stg* mutant embryos. *stg* homozygotes show no cell divisions after gastrulation but the early morphogenetic movements of gastrulation occur normally. Asterisks indicate mitotic domains.
+**a**, Lateral 3D renderings. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. Scale bar = 50µm.
+**b**, Profile views. The initiator cell behaviors are not perturbed in *stg* mutants and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos. Scale bar = 20µm.
 ](figures/FigS7.jpg){#fig:stg tag=S7 width=100%}
-
-<!--TODO: Add scale bars for (a)-->
-<!--TODO: Annotate cell divisions in (b)-->
 
 ![Parameter sweep for cephalic furrow simulations.
 **a**, Bending rigidity and cephalic furrow depth at different values of KCF and germ band extension. Values above 0.2 exhibit a clear peak in bending energy for most conditions and the depth reaches a plateau across iterations. The cephalic furrow depth at the peak of bending energy (max bend) and at the final iteration is similar for simulations with 0% of germ band extension. At higher percentages of germ band extension the folds (both cephalic furrow and ectopic folds) exhibit a greater depth at the last iteration.
