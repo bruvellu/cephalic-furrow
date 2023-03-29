@@ -107,7 +107,7 @@ compile:
 
 syncbib:
 	# Sync bib file from Paperpile
-	wget --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
+	wget -P resources/ --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
 
 share:
 	# Updates shared manuscript folder

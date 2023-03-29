@@ -28,8 +28,8 @@ institute:
 - csbd: Center for Systems Biology Dresden, Dresden, Germany
 - pol: Cluster of Excellence Physics of Life, Technische Universität Dresden, Dresden, Germany
 documentclass: article
-bibliography: furrow.bib
-csl: nature.csl
+bibliography: resources/furrow.bib
+csl: resources/nature-no-et-al.csl
 header-includes:
 - \usepackage[font={small}]{caption}
 link-citations: True
