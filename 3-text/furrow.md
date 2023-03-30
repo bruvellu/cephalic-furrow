@@ -49,7 +49,7 @@ tablenos-plus-name: Table
 
 The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of fly embryos during gastrulation.
 It forms under strict genetic control using active cellular mechanisms and follows an invariant morphogenetic sequence.
-But unlike other embryonic invaginations, the invaginated cells do not give rise to any precursor tissues or larval traits.
+But unlike other embryonic invaginations, the cells that invaginate in the cephalic furrow do not give rise to any precursor tissues or larval traits.
 The cephalic furrow is transient and unfolds leaving no trace.
 For these reasons, its function during development has remained elusive.
 Here we show that the cephalic furrow plays a mechanical role during *Drosophila* gastrulation.
