@@ -154,31 +154,51 @@ To determine the relative contribution of mitotic domains and germ band as sourc
 Our model represents an epithelial monolayer confined inside a rigid shell.
 It embodies one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:model}a, {@fig:proportions}).
 The blastoderm is modeled by an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:model}b).
-This elastic rod of length $L_o$ has a stretching energy component ($W_s$), defined as the sum of stretching rigidities ($K_s$) dependent on the ratio between the current and initial spring lengths ($ds/ds_o$), and a bending energy component ($W_b$), defined as the sum of bending rigidities ($K_b$) dependent on the difference between the current and initial curvatures of the rod ($\kappa-\kappa_o$) ({@fig:model}c).
-The sum of stretching and bending energies returns the total energy of the system ($W_T$), while the ratio between both rigidities returns a single, physically meaningful parameter of our model---the dimensionless bending rigidity ($K_b^*$) ({@fig:model}c).
-To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as regions of compressed springs which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the particles to invaginate ({@fig:model}b).
-The germ band in our model is defined by the position of the posterior-most particle which is fixed at different percentages of egg length for each simulation ({@fig:model}b).
+The total energy of this tissue ($W_T$) is a sum of a stretching energy component ($W_s$) and a bending energy component ($W_b$) ({@fig:model}c).
+Each of these components have a rigidity associated with them.
+$K_s$ is the stretching rigidity and $K_b$ is the bending rigidity.
+These two parameters can be combined into a single dimensionless bending rigidity, $K_b^*$ ({@fig:model}c).
+To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:model}b).
+The germ band in our model is defined by the position of the posterior end of the tissue which is fixed at different fractions of egg length ($g$) for each simulation ({@fig:model}b).
+The effect of germ band extension appears as a global compression in the blastoderm.
 Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system.
 
+<!--This elastic rod of length $L_o$ has a stretching energy component ($W_s$), defined as the sum of stretching rigidities ($K_s$) dependent on the ratio between the current and initial spring lengths ($ds/ds_o$), and a bending energy component ($W_b$), defined as the sum of bending rigidities ($K_b$) dependent on the difference between the current and initial curvatures of the rod ($\kappa-\kappa_o$) ({@fig:model}c).-->
+<!--The sum of stretching and bending energies returns the total energy of the system ($W_T$), while the ratio between both rigidities returns a single, physically meaningful parameter of our model---the dimensionless bending rigidity ($K_b^*$) ({@fig:model}c).-->
+<!--To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as regions of compressed springs which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the particles to invaginate ({@fig:model}b).-->
+<!--The germ band in our model is defined by the position of the posterior-most particle which is fixed at different percentages of egg length for each simulation ({@fig:model}b).-->
+
 We first characterized the general properties of the model.
-In simulations where folds begin to form, the bending energy increases releasing a larger amount of stretching energy which in turn makes the total energy of the system decrease over the iterations ({@fig:model}d).
+In simulations where folds begin to form, the bending energy increases while releasing a larger amount of stretching energy which in turn decreases the total energy of the system over the iterations ({@fig:model}d).
 The increase in bending energy coincides with a rapid deepening of the fold.
 Once the bending energy reaches a peak, the fold continues to deepen, though more gradually, but the number of folds stabilizes and there are rarely changes in the overall folding patterns ({@fig:model}d, {@fig:model-features}a).
-Since folding events are stochastic and can happen at different iterations across different simulations, and because we are mainly interested in analyzing the initial position and dynamics of the folding, we used the peak of bending energy as the reference point to compare and analyze the simulation results.
+Folding events are stochastic and can happen at different iterations across different simulations.
+Also, we are mainly interested in analyzing the initial position and the number of folding events in each simulation.
+Hence, we used the state of each simulation at the peak of its bending energy as the reference point to compare with other simulations.
+
+<!--We first characterized the general properties of the model.-->
+<!--In simulations where folds begin to form, the bending energy increases releasing a larger amount of stretching energy which in turn makes the total energy of the system decrease over the iterations ({@fig:model}d).-->
+<!--The increase in bending energy coincides with a rapid deepening of the fold.-->
+<!--Once the bending energy reaches a peak, the fold continues to deepen, though more gradually, but the number of folds stabilizes and there are rarely changes in the overall folding patterns ({@fig:model}d, {@fig:model-features}a).-->
+<!--Since folding events are stochastic and can happen at different iterations across different simulations, and because we are mainly interested in analyzing the initial position and dynamics of the folding, we used the peak of bending energy as the reference point to compare and analyze the simulation results.-->
 
 <!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 
-To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions (without the cephalic furrow).
-We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations.
-When this distance was greater than the maximum particle depths under the ground noise level, we counted it as a fold.
-In simulations under a baseline condition, without mitotic domains or germ band extension but with noise, we observe no ectopic fold formation for any bending rigidity values ({@fig:model}e).
-The probability of buckling increases with the amount of germ band extension, mainly in lower bending rigidities ({@fig:model}e, {@fig:model-features}b).
+To obtain realistic values of the dimensionless bending rigidity $K_b^*$ where the model matches experimental observations, we performed a sweep across the parameter space in mutant conditions (without the cephalic furrow).
+As expected, the probability of buckling increases with the amount of germ band extension, mainly in lower bending rigidities ({@fig:model}e, {@fig:model-features}b).
 At 10% germ band extension, we observe a buckling transition in the phase space of softer conditions ($K_b^* \approx 0.7 \times 10^{−4}$), but in stiffer conditions ($K_b^* \approx 1.2 \times 10^{−4}$) the germ band alone, even at its maximum extension, cannot drive the formation of ectopic folds ({@fig:model}e, {@fig:model-features}b).
 Adding mitotic domains to the simulations changed the phase diagram and dynamics of ectopic folding.
 We observe that mitotic domains alone can induce ectopic folds in softer conditions ($K_b^* < 1.1 \times 10^{−4}$) and that the number of folds increased for low values of germ band extension ({@fig:model}f).
 In addition, the timing of folding with mitotic domains has decreased across iterations in simulations, specially between 0--20% of germ band extension ({@fig:model-features}c).
 These simulations suggest that, depending on the bending rigidity, the germ band or mitotic domains alone can drive ectopic folding, and that their combined action may increase the mechanical instabilities in the blastoderm epithelium.
 We thus set to test the individual contribution of mitotic domains and germ band to the epithelial instability by performing perturbation experiments *in vivo*.
+
+<!--TODO: Move definition of a fold to methods-->
+
+<!--To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions (without the cephalic furrow).-->
+<!--We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations.-->
+<!--When this distance was greater than the maximum particle depths under the ground noise level, we counted it as a fold.-->
+<!--In simulations under a baseline condition, without mitotic domains or germ band extension but with noise, we observe no ectopic fold formation for any bending rigidity values ({@fig:model}e).-->
 
 <!--These simulations show that above a certain bending rigidity ($K_b^* > 1.0 \times 10^{−4}$), neither the mitotic domains nor the germ band can drive ectopic folding by themselves.-->
 
