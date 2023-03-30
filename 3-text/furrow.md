@@ -497,6 +497,7 @@ Jan Brugués and Keisuke Ishihara for the laser ablation setup, the MPI-CBG Ligh
 Steffen Lemke and Yu-Chiun Wang for cephalic furrow discussions.
 Juliana Roscito for text revisions and support.
 Michael Akam for drawing BCV’s attention to the cephalic furrow. 
+Carles Blanch-Mercader for feedback on simulations.
 This work was supported by the MPI-CBG core funding to CDM and PT.
 AS was supported by funding from the European Union's Horizon 2020 Research and Innovation Programme under grant agreement no. 829010 (PRIME).
 BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018), and by an European Research Council Advanced Grant (ERC-AdG 885504 GHOSTINTHESHELL) awarded to PT.
