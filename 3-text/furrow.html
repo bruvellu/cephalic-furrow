@@ -474,8 +474,8 @@ morphological proportions (Figure <a href="#fig:model">3</a>a, Figure <a
 href="#fig:proportions">S5</a>). The blastoderm is modeled by an
 elliptical arc of equidistant particles connected by springs and
 enclosed on one side by a rigid barrier representing the vitelline
-envelope (Figure <a href="#fig:model">3</a>b). The total energy of this
-tissue
+envelope (Figure <a href="#fig:model">3</a>b). The total energy per unit
+length of this tissue
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>T</mi></msub><annotation encoding="application/x-tex">W_T</annotation></semantics></math>)
 is a sum of a stretching energy component
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>s</mi></msub><annotation encoding="application/x-tex">W_s</annotation></semantics></math>)
@@ -1098,13 +1098,12 @@ data-cites="Trushko2020-gf"><sup><a href="#ref-Trushko2020-gf"
 role="doc-biblioref">21</a></sup></span>. It represents the monolayer
 epithelium of the early <em>Drosophila</em> embryo in a cross section as
 a single line through the apical–basal midline of the epithelial cells.
-The line of length
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>o</mi></msub><annotation encoding="application/x-tex">L_o</annotation></semantics></math>
-is modeled as an elastic rod with a stretching energy
+The tissue is modeled as an elastic rod with a stretching energy per
+unit length
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>s</mi></msub><annotation encoding="application/x-tex">W_s</annotation></semantics></math>
-and bending energy
+and bending energy per unit length
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>b</mi></msub><annotation encoding="application/x-tex">W_b</annotation></semantics></math>,
-so that the total energy
+so that the total energy per unit length is
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>T</mi></msub><mo>=</mo><msub><mi>W</mi><mi>s</mi></msub><mo>+</mo><msub><mi>W</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">W_T = W_s + W_b</annotation></semantics></math>.
 In full,
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>T</mi></msub><mo>=</mo><msub><mo>∫</mo><msub><mi>L</mi><mi>o</mi></msub></msub><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>K</mi><mi>s</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>d</mi><mi>s</mi></mrow><mrow><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow></mfrac><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub><mo>+</mo><msub><mo>∫</mo><msub><mi>L</mi><mi>o</mi></msub></msub><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>K</mi><mi>b</mi></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>κ</mi><mo>−</mo><msub><mi>κ</mi><mi>o</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">W_T = \int_{L_o} \frac{1}{2} K_s \left( \frac{ds}{ds_o} - 1 \right)^2 ds_o + \int_{L_o} \frac{1}{2} K_b \left( \kappa - \kappa_o \right)^2 ds_o</annotation></semantics></math>
@@ -1116,20 +1115,20 @@ is the bending rigidity of the tissue;
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">ds_o</annotation></semantics></math>
 and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">ds</annotation></semantics></math>
-are the initial and current lengths of the curve, respectively; and
+are the preferred and current lengths of the curve, respectively; and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>
-is the curvature of the rod. To perform numerics, we discretize the
-curve into
+is the curvature of the rod.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>o</mi></msub><annotation encoding="application/x-tex">L_o</annotation></semantics></math>
+is the total length of the tissue in a stress-free condition. To perform
+numerics, we discretize the curve into
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
 particles indexed by
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>.
-The total energy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>W</mi><mi>T</mi><mo>*</mo></msubsup><annotation encoding="application/x-tex">W_T^*</annotation></semantics></math>
-discretized in a dimensionless form is
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>W</mi><mi>T</mi><mo>*</mo></msubsup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>3</mn></mrow></munderover><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>Δ</mi><msub><mi>r</mi><mi>i</mi></msub></mrow><mrow><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow></mfrac><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mfrac><msub><mi>K</mi><mi>b</mi></msub><mrow><msub><mi>K</mi><mi>s</mi></msub><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>3</mn></mrow></munderover><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>κ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>κ</mi><mrow><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">W_T^* = \frac{1}{2} \sum_{i = 2}^{N-3} \left( \frac{\Delta r_i}{\Delta r_o} - 1 \right)^2 + \frac{1}{2} \frac{K_b}{K_sL^2} \sum_{i = 2}^{N-3} \left( \kappa_i - \kappa_{o,i} \right)^2 \Delta r_o</annotation></semantics></math>
+The total energy per unit length for this discretized model is given by
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>W</mi><mi>T</mi><mo>*</mo></msubsup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>K</mi><mi>s</mi></msub><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>3</mn></mrow></munderover><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>Δ</mi><msub><mi>r</mi><mi>i</mi></msub></mrow><mrow><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow></mfrac><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>K</mi><mi>b</mi></msub><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>3</mn></mrow></munderover><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>κ</mi><mi>i</mi></msub><mo>−</mo><msub><mi>κ</mi><mrow><mi>o</mi><mo>,</mo><mi>i</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">W_T^* = \frac{1}{2} K_s \sum_{i = 2}^{N-3} \left( \frac{\Delta r_i}{\Delta r_o} - 1 \right)^2 \Delta r_o + \frac{1}{2} K_b \sum_{i = 2}^{N-3} \left( \kappa_i - \kappa_{o,i} \right)^2 \Delta r_o</annotation></semantics></math>
 where
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">\Delta r_o</annotation></semantics></math>
-is the initial length of springs connecting consecutive points (equal
+is the preferred length of springs connecting consecutive points (equal
 for all springs);
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>r</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\Delta r_i</annotation></semantics></math>
 is the current length between
@@ -1144,29 +1143,29 @@ is the preferred curvature at point
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
 (equal to 0, except when specified). The first and last two points of
 the curve are fixed in space. To obtain a physically meaningful
-dimensionless bending rigidity, we divide the bending energy by the
+dimensionless bending rigidity, we divide the bending rigidity by the
 factor
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub><msup><mi>L</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">K_sL^2</annotation></semantics></math>
 as
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>=</mo><msub><mi>K</mi><mi>b</mi></msub><mi>/</mi><msub><mi>K</mi><mi>s</mi></msub><msup><mi>L</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">K_b^* = K_b/K_sL^2</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>=</mo><mfrac><msub><mi>K</mi><mi>b</mi></msub><mrow><msub><mi>K</mi><mi>s</mi></msub><msup><mi>L</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">K_b^* = \frac{K_b}{K_sL^2}</annotation></semantics></math>
 where
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
-can be any length scale defined for the system (in our case, the
-semi-major axis of the embryo). To minimize the total energy, we add a
-ground level of noise to the particles and let the particles move in the
-direction of the forces from the two connected springs. It can be
-described as
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>Δ</mi><msub><munder><mi>r</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac><msup><mi>L</mi><mn>2</mn></msup><mi>τ</mi></mfrac><mfrac><mrow><mi>∂</mi><msup><mi>W</mi><mo>*</mo></msup></mrow><mrow><mi>∂</mi><msub><munder><mi>r</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow></mfrac><mo>+</mo><msub><munder><mi>ζ</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\frac{\Delta\underline{r}_i}{\Delta t} = - \frac{L^2}{\tau} \frac{\partial W^*}{\partial \underline{r}_i} + \underline{\zeta}_i</annotation></semantics></math>
+is the semi-major axis of the embryo. To minimize the total energy, we
+add a ground level of noise to the particles and let the particles move
+in the direction of the forces. The motion of the particles are governed
+by
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>Δ</mi><msub><munder><mi>r</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac><mi>L</mi><mrow><msub><mi>K</mi><mi>s</mi></msub><mi>τ</mi></mrow></mfrac><mfrac><mrow><mi>∂</mi><msup><mi>W</mi><mo>*</mo></msup></mrow><mrow><mi>∂</mi><msub><munder><mi>r</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow></mfrac><mo>+</mo><msub><munder><mi>ζ</mi><mo accent="true">_</mo></munder><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\frac{\Delta\underline{r}_i}{\Delta t} = - \frac{L}{K_s\tau}\frac{\partial W^*}{\partial \underline{r}_i} + \underline{\zeta}_i</annotation></semantics></math>
 where
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><munder><mi>r</mi><mo accent="true">_</mo></munder><mi>i</mi></msub><annotation encoding="application/x-tex">\underline{r}_i</annotation></semantics></math>
 is the current position of the
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>th
 particle;
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>τ</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
-represents a friction coefficient to balance dimensions (equals to 1);
+represents an arbitrary timescale introduced here to balance dimensions
+(set to 1);
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta t</annotation></semantics></math>
 are the timesteps (set to
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo>×</mo><mi>τ</mi><mi>/</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">10^{-5} \times \tau/L</annotation></semantics></math>);
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mo>×</mo><mi>τ</mi><msub><mi>K</mi><mi>s</mi></msub><mi>/</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">10^{-5} \times \tau K_s/L</annotation></semantics></math>);
 and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><munder><mi>ζ</mi><mo accent="true">_</mo></munder><mi>i</mi></msub><annotation encoding="application/x-tex">\underline{\zeta}_i</annotation></semantics></math>
 is the noise, chosen from a gaussian distribution with mean 0 and
@@ -1175,34 +1174,58 @@ standard distribution
 In our model the position of the germ band corresponds to the position
 of the last particle in the curve on the semi-ellipse that represents
 the embryonic blastoderm. The extent of the germ band is given by
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><mtext mathvariant="normal">distance from posterior tip to last particle</mtext><mtext mathvariant="normal">total embryo length</mtext></mfrac></mrow><annotation encoding="application/x-tex">g = \frac{\text{distance from posterior tip to last particle}}{\text{total embryo length}}</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+which is the projection of the germ band arclength onto the mid-axis of
+the embryo normalized by the embryo length
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>L</mi></mrow><annotation encoding="application/x-tex">2L</annotation></semantics></math>).
 When
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g=0</annotation></semantics></math>
-the tissue is free of stretching stress, but at any other positive
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
-the blastoderm will be differently compressed. To find the initial
-lengths of the springs, we use
-<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>r</mi><mtext mathvariant="normal">o</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>L</mi><msubsup><mo>∫</mo><mrow><mi>u</mi><mi>′</mi></mrow><mi>π</mi></msubsup><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mn>2</mn></msup><msup><mo>cos</mo><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta r_{\text{o}} = \frac{1}{N} \left( L\int_{u&#39;}^{\pi} \sqrt{1 - e^2 \cos^2(u)} du \right)</annotation></semantics></math>
+the tissue is free of stretching stress, but at any other
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>g</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;g&lt;1</annotation></semantics></math>,
+the blastoderm will be compressed. The preferred lengths of the
+individual springs is obtained by dividing the elliptical arclength into
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+equal segments. The length of each segment is given by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>r</mi><mtext mathvariant="normal">o</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>L</mi><msubsup><mo>∫</mo><mn>0</mn><mi>π</mi></msubsup><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mn>2</mn></msup><msup><mo>cos</mo><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta r_{\text{o}} = \frac{1}{N} \left( L\int_{0}^{\pi} \sqrt{1 - e^2 \cos^2(u)} du \right)</annotation></semantics></math>.
+To find the initial lengths of the springs, we use
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><mi>r</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>=</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>L</mi><msubsup><mo>∫</mo><mrow><mi>u</mi><mi>′</mi></mrow><mi>π</mi></msubsup><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mi>e</mi><mn>2</mn></msup><msup><mo>cos</mo><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt><mi>d</mi><mi>u</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta r(t = 0) = \frac{1}{N} \left( L\int_{u&#39;}^{\pi} \sqrt{1 - e^2 \cos^2(u)} du \right)</annotation></semantics></math>
 where
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>0.4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">e = \sqrt{1 - (0.4)^2}</annotation></semantics></math>;
 and the angle
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mi>′</mi><mo>=</mo><msup><mo>cos</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u&#39; = \cos^{-1}(1 - 2g)</annotation></semantics></math>.
-For any simulation, the value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mi>′</mi></mrow><annotation encoding="application/x-tex">u&#39;</annotation></semantics></math>
+corresponds to the position of the blastoderm end.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mi>′</mi></mrow><annotation encoding="application/x-tex">u&#39;</annotation></semantics></math>
+is obtained for a given value of
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
-is constant (=static position). To model mitotic domains, we introduced
-new particles in the mid-points between two particles in specific
-regions of length
+by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mi>′</mi><mo>=</mo><msup><mo>cos</mo><mrow><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>g</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u&#39; = \cos^{-1}(1 - 2g)</annotation></semantics></math>.
+Here, we obtained the initial lengths by dividing the compressed
+blastoderm into
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+equal segments. For any simulation, the value of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+is constant (blastoderm end is static in position). To model mitotic
+domains, we introduced new particles and springs on the mid-points
+between two particles in specific regions of length
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn><mi>L</mi></mrow><annotation encoding="application/x-tex">0.5L</annotation></semantics></math>.
-The blastoderm is confined by a rigid boundary in the shape of a
-semi-ellipse and any particle that lands outside this boundary is
-re-positioned to mid-point between the initial and current position
-where it intersects with the boundary. Finally, we define and count as a
-<em>fold</em> a particle whose distance to the rigid boundary is greater
-than the maximum distance traveled by particles under ground level noise
-(equals to 0.035L). The code for the model and simulations will be
-available in a Zenodo repository<span class="citation"
-data-cites="Krishna2023-hu"><sup><a href="#ref-Krishna2023-hu"
-role="doc-biblioref">37</a></sup></span>.</p>
+The new springs are given the same
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Δ</mi><msub><mi>r</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">\Delta r_{o}</annotation></semantics></math>
+as the rest of the springs in the tissue. The blastoderm is confined by
+a rigid boundary in the shape of a semi-ellipse. Any particle that lands
+outside this boundary at any timestep is re-positioned onto the rigid
+boundary. This new position is prescribed by taking the intersection
+point of the rigid boundary curve and the line segment that connects the
+position before this iteration (which was inside or on the vitelline
+envelope) and the position outside the vitelline envelope. Finally, we
+define and count a <em>fold</em> when we find that a particle’s distance
+from the rigid boundary is greater than a threshold value. To calculate
+this threshold, we measure the maximum distance that particles can
+achieve when the tissue is in a stress-free state. This threshold was
+calculated to be
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.035</mn><mi>L</mi></mrow><annotation encoding="application/x-tex">0.035L</annotation></semantics></math>.
+The code for the model and simulations will be available in a Zenodo
+repository<span class="citation" data-cites="Krishna2023-hu"><sup><a
+href="#ref-Krishna2023-hu" role="doc-biblioref">37</a></sup></span>.</p>
 <h2 id="data-visualization-and-figure-assembly">Data visualization and
 figure assembly</h2>
 <p>For microscopy images, we only performed minimal linear intensity
@@ -1794,7 +1817,7 @@ the tip of the germ band. Scale bars = 50µm.</figcaption>
 <div id="fig:model" class="fignos">
 <figure>
 <img src="figures/Fig3.jpg" style="width:100.0%"
-alt="Figure 3: Model and simulations of the tissue mechanics at the head–trunk boundary. a, Region of interest of the model. One side of a frontal slice across a slightly dorsal plane of the embryonic blastoderm. It follows the embryo shape, its proportions, and the relative positions of mitotic domains, cephalic furrow, and germ band. b, Characteristics of the individual components of the model based on particles connected by springs. The drawings exemplify the initial and final states for each component. c, Energy equation with a stretching and a bending component, and the dimensionless bending rigidity. Inital rod length (L_o), stretching energy (W_s), stretching rigidity (K_s), initial spring length (ds_o), current spring length (ds), bending energy (W_b), bending rigidity (K_b), initial curvature (\kappa_o), current curvature (\kappa), semi-major embryonic axis (L). d, Plots showing the energy dynamics across iterations in a typical simulation run. The stretching energy dominates and goes down with the iterations. The bending energy, which is a few orders of magnitude lower, increases drastically reaching a peak that diminishes gradually with the iterations. The total energy of the system goes down to equilibrium. e, Mutant parameter sweep without mitotic domains (no cephalic furrow). The heatmap shows the average number of ectopic folds for different bending rigidities and percentages of germ band extension. Ectopic folding frequency increases with lower bending rigidities (softer tissue) and with greater values of germ band extension. Outlined in white is the baseline condition without mitotic domains and germ band and only ground level noise (i), and the germ band only condition with higher number of folding events (ii). f, Mutant parameter sweep with mitotic domains (no cephalic furrow). The phase diagram is shifted left in relation to f. The addition of mitotic domains maximizes the formation of ectopic folds even without germ band extension, a condition outlined in white (iii). g, Quantification of ectopic folding to evaluate the effectiveness of the cephalic furrow. The top row shows a control simulating a cephalic furrow mutant condition with mitotic domains and germ band. The middle row shows an active cephalic furrow invagination with mitotic domains forming at the same time without delay. The bottom row shows the cephalic furrow with a delay in mitotic domain formation. h, Representative seeds from the simulations in j at 0 and 40% germ band extension." />
+alt="Figure 3: Model and simulations of the tissue mechanics at the head–trunk boundary. a, Region of interest of the model. One side of a frontal slice across a slightly dorsal plane of the embryonic blastoderm. It follows the embryo shape, its proportions, and the relative positions of mitotic domains, cephalic furrow, and germ band. b, Characteristics of the individual components of the model based on particles connected by springs. The drawings exemplify the initial and final states for each component. c, Energy equation with a stretching and a bending component, and the dimensionless bending rigidity. Stress-free rod length (L_o), total energy per unit length (W_T), stretching energy per unit length (W_s), bending energy per unit length (W_b), stretching rigidity (K_s), bending rigidity (K_b), preferred spring length (ds_o), current spring length (ds), preferred curvature (\kappa_o), current curvature (\kappa), semi-major embryonic axis (L). d, Plots showing the energy dynamics across iterations in a typical simulation run. The total energy goes down to equilibrium. The bending energy increases drastically reaching a peak (blue dashed line) that diminishes gradually with the iterations. Energy values are normalized by the initial total energy. The number of folds stabilizes when the bending energy peaks but the fold depth continues to increase until the last iteration (pink dashed line). e, Mutant parameter sweep without mitotic domains (no cephalic furrow). The heatmap shows the average number of ectopic folds for different bending rigidities and percentages of germ band extension. Ectopic folding frequency increases with lower bending rigidities (softer tissue) and with greater values of germ band extension. Outlined in white is the baseline condition with neither mitotic domains nor germ band but only ground level noise (i), and the germ band only condition with higher number of folding events (ii). f, Mutant parameter sweep with mitotic domains (no cephalic furrow). The phase diagram shows an increase in number of folds in relation to e. The addition of mitotic domains induces the formation of ectopic folds even without germ band extension (iii). g, Quantification of ectopic folding to evaluate the effectiveness of the cephalic furrow. The top row shows a control simulating a cephalic furrow mutant condition with mitotic domains and germ band extension. The middle row shows an active cephalic furrow invagination with mitotic domains forming at the same time without delay. The bottom row shows the cephalic furrow with a delay in mitotic domain formation (t_{MD}=5). t_{MD}=1 corresponds to 105 computational timesteps. h, Representative simulations in g at 0 and 20% germ band extension." />
 <figcaption aria-hidden="true"><span>Figure 3:</span> Model and
 simulations of the tissue mechanics at the head–trunk boundary.
 <strong>a</strong>, Region of interest of the model. One side of a
@@ -1805,52 +1828,58 @@ relative positions of mitotic domains, cephalic furrow, and germ band.
 model based on particles connected by springs. The drawings exemplify
 the initial and final states for each component. <strong>c</strong>,
 Energy equation with a stretching and a bending component, and the
-dimensionless bending rigidity. Inital rod length
+dimensionless bending rigidity. Stress-free rod length
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>o</mi></msub><annotation encoding="application/x-tex">L_o</annotation></semantics></math>),
-stretching energy
+total energy per unit length
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>T</mi></msub><annotation encoding="application/x-tex">W_T</annotation></semantics></math>),
+stretching energy per unit length
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>s</mi></msub><annotation encoding="application/x-tex">W_s</annotation></semantics></math>),
+bending energy per unit length
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>b</mi></msub><annotation encoding="application/x-tex">W_b</annotation></semantics></math>),
 stretching rigidity
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>s</mi></msub><annotation encoding="application/x-tex">K_s</annotation></semantics></math>),
-initial spring length
+bending rigidity
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>b</mi></msub><annotation encoding="application/x-tex">K_b</annotation></semantics></math>),
+preferred spring length
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi>s</mi><mi>o</mi></msub></mrow><annotation encoding="application/x-tex">ds_o</annotation></semantics></math>),
 current spring length
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">ds</annotation></semantics></math>),
-bending energy
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>b</mi></msub><annotation encoding="application/x-tex">W_b</annotation></semantics></math>),
-bending rigidity
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>b</mi></msub><annotation encoding="application/x-tex">K_b</annotation></semantics></math>),
-initial curvature
+preferred curvature
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>κ</mi><mi>o</mi></msub><annotation encoding="application/x-tex">\kappa_o</annotation></semantics></math>),
 current curvature
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>κ</mi><annotation encoding="application/x-tex">\kappa</annotation></semantics></math>),
 semi-major embryonic axis
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>).
 <strong>d</strong>, Plots showing the energy dynamics across iterations
-in a typical simulation run. The stretching energy dominates and goes
-down with the iterations. The bending energy, which is a few orders of
-magnitude lower, increases drastically reaching a peak that diminishes
-gradually with the iterations. The total energy of the system goes down
-to equilibrium. <strong>e</strong>, Mutant parameter sweep without
-mitotic domains (no cephalic furrow). The heatmap shows the average
-number of ectopic folds for different bending rigidities and percentages
-of germ band extension. Ectopic folding frequency increases with lower
-bending rigidities (softer tissue) and with greater values of germ band
-extension. Outlined in white is the baseline condition without mitotic
-domains and germ band and only ground level noise (i), and the germ band
-only condition with higher number of folding events (ii).
-<strong>f</strong>, Mutant parameter sweep with mitotic domains (no
-cephalic furrow). The phase diagram is shifted left in relation to
-<strong>f</strong>. The addition of mitotic domains maximizes the
-formation of ectopic folds even without germ band extension, a condition
-outlined in white (iii). <strong>g</strong>, Quantification of ectopic
-folding to evaluate the effectiveness of the cephalic furrow. The top
-row shows a control simulating a cephalic furrow mutant condition with
-mitotic domains and germ band. The middle row shows an active cephalic
-furrow invagination with mitotic domains forming at the same time
-without delay. The bottom row shows the cephalic furrow with a delay in
-mitotic domain formation. <strong>h</strong>, Representative seeds from
-the simulations in <strong>j</strong> at 0 and 40% germ band
-extension.</figcaption>
+in a typical simulation run. The total energy goes down to equilibrium.
+The bending energy increases drastically reaching a peak (blue dashed
+line) that diminishes gradually with the iterations. Energy values are
+normalized by the initial total energy. The number of folds stabilizes
+when the bending energy peaks but the fold depth continues to increase
+until the last iteration (pink dashed line). <strong>e</strong>, Mutant
+parameter sweep without mitotic domains (no cephalic furrow). The
+heatmap shows the average number of ectopic folds for different bending
+rigidities and percentages of germ band extension. Ectopic folding
+frequency increases with lower bending rigidities (softer tissue) and
+with greater values of germ band extension. Outlined in white is the
+baseline condition with neither mitotic domains nor germ band but only
+ground level noise (i), and the germ band only condition with higher
+number of folding events (ii). <strong>f</strong>, Mutant parameter
+sweep with mitotic domains (no cephalic furrow). The phase diagram shows
+an increase in number of folds in relation to <strong>e</strong>. The
+addition of mitotic domains induces the formation of ectopic folds even
+without germ band extension (iii). <strong>g</strong>, Quantification of
+ectopic folding to evaluate the effectiveness of the cephalic furrow.
+The top row shows a control simulating a cephalic furrow mutant
+condition with mitotic domains and germ band extension. The middle row
+shows an active cephalic furrow invagination with mitotic domains
+forming at the same time without delay. The bottom row shows the
+cephalic furrow with a delay in mitotic domain formation
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi>M</mi><mi>D</mi></mrow></msub><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">t_{MD}=5</annotation></semantics></math>).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi>M</mi><mi>D</mi></mrow></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t_{MD}=1</annotation></semantics></math>
+corresponds to 10<sup>5</sup> computational timesteps.
+<strong>h</strong>, Representative simulations in <strong>g</strong> at
+0 and 20% germ band extension.</figcaption>
 </figure>
 </div>
 <!--**e**, Distance of individual particles to the vitelline envelope (depth) at basal noise levels with different bending rigidities. The maximum value of the standard deviation is highlighted in magenta. The dashed line indicates the threshold used to define the minimal distance for considering that the tissue has folded.-->
@@ -2448,22 +2477,21 @@ model.</figcaption>
 <div id="fig:model-features" class="fignos">
 <figure>
 <img src="figures/FigS6.jpg" data-tag="S6" style="width:70.0%"
-alt="Figure S6: Characterization of the model features. a, Representative simulation using K_b^*=7 \times 10^{-5} and g=0.3 showing the shape of the tissue at iteration t=19 (blue) and t=1000 (pink). The respective iterations are marked in dashed lines in the descriptive plots below showing the variation in total energy, bending energy, number of folds, and fold depth over the iterations. One iteration (t=1) corresponds to 10^{5} computational steps and the X axis is in log_{10} scale to improve the visualization. b, Parameter sweep without mitotic domains. Plots show the number of folds by germ band extension (g) using K_b^*=1.0 \times 10^{-4} (left), the number of folds by bending rigidity K_b^* using g=0.3 (center), and the timing of folding by germ band extension (g) using K_b^*=1.0 \times 10^{-4} (right). c, Parameter sweep with mitotic domains. Plots show the same parameters as described in b above." />
+alt="Figure S6: Characterization of the model features. a, Representative simulation using K_b^*=7 \times 10^{-5} and g=0.3 showing the shape of the tissue at t=19 (blue) and t=1000 (pink). The respective timepoints are marked in dashed lines in the descriptive plots below. They show the variation in total energy, bending energy, number of folds, and fold depth over the iterations. t=1 corresponds to 10^{5} computational steps and the X axis is in log_{10} scale to improve the visualization. b, Parameter sweep without mitotic domains. Plots show the number of folds by germ band extension (g) using K_b^*=1.0 \times 10^{-4} (left), the number of folds by bending rigidity K_b^* using g=0.3 (center), and the timing of folding by germ band extension (g) using K_b^*=1.0 \times 10^{-4} (right). c, Parameter sweep with mitotic domains. Plots show the same parameters as described in b above." />
 <figcaption aria-hidden="true"><span>Figure S6:</span> Characterization
 of the model features. <strong>a</strong>, Representative simulation
 using
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>K</mi><mi>b</mi><mo>*</mo></msubsup><mo>=</mo><mn>7</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_b^*=7 \times 10^{-5}</annotation></semantics></math>
 and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>0.3</mn></mrow><annotation encoding="application/x-tex">g=0.3</annotation></semantics></math>
-showing the shape of the tissue at iteration
+showing the shape of the tissue at
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>19</mn></mrow><annotation encoding="application/x-tex">t=19</annotation></semantics></math>
 (blue) and
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">t=1000</annotation></semantics></math>
-(pink). The respective iterations are marked in dashed lines in the
-descriptive plots below showing the variation in total energy, bending
-energy, number of folds, and fold depth over the iterations. One
-iteration
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t=1</annotation></semantics></math>)
+(pink). The respective timepoints are marked in dashed lines in the
+descriptive plots below. They show the variation in total energy,
+bending energy, number of folds, and fold depth over the iterations.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t=1</annotation></semantics></math>
 corresponds to
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mn>5</mn></msup><annotation encoding="application/x-tex">10^{5}</annotation></semantics></math>
 computational steps and the X axis is in
@@ -2511,7 +2539,7 @@ compared to sibling controls or wildtype embryos. Scale bar =
 <div id="fig:cf-sweep" class="fignos">
 <figure>
 <img src="figures/FigS8.jpg" data-tag="S8" style="width:100.0%"
-alt="Figure S8: Parameter sweep for cephalic furrow simulations. a, Bending rigidity and cephalic furrow depth at different values of \kappa_o^{CF} and germ band extension. Values above 0.2 exhibit a clear peak in bending energy for most conditions and the depth reaches a plateau across iterations. The cephalic furrow depth at the peak of bending energy (max bend) and at the final iteration is similar for simulations with 0% of germ band extension. At higher percentages of germ band extension the folds (both cephalic furrow and ectopic folds) exhibit a greater depth at the last iteration. b, Finer-grained parameter sweep of ectopic folding without (TMD=0) and with (TMD=5) a delay in cephalic furrow formation. With simultaneous formation, only higher values of \kappa_o^{CF} are effective in buffering the formation of ectopic folds around the cephalic furrow region. This is also limited to low percentages of germ band extension since at higher percentages there is an increase in the frequency of ectopic folding. When a delay in mitotic formation is present, even low values of \kappa_o^{CF} are effective in preventing the formation of ectopic folds. In this condition, the extension of the germ band increases the formation of ectopic folds, but only at the posterior regions close to the germ band tip. This suggests that the initiation of the cephalic furrow is crucial to its ability to buffer the ectopic folding." />
+alt="Figure S8: Parameter sweep for cephalic furrow simulations. a, Bending rigidity and cephalic furrow depth at different values of \kappa_o^{CF} and germ band extension. Values above 0.2 exhibit a clear peak in bending energy for most conditions and the depth reaches a plateau across iterations. The cephalic furrow depth at the peak of bending energy (max bend) and at the final iteration is similar for simulations with 0% of germ band extension. At higher percentages of germ band extension the folds (both cephalic furrow and ectopic folds) exhibit a greater depth at the last iteration. b, Finer-grained parameter sweep of ectopic folding without (t_{MD}=0) and with (t_{MD}=5) a delay in cephalic furrow formation. With simultaneous formation, only higher values of \kappa_o^{CF} are effective in buffering the formation of ectopic folds around the cephalic furrow region. This is also limited to low percentages of germ band extension since at higher percentages there is an increase in the frequency of ectopic folding. When a delay in mitotic formation is present, even low values of \kappa_o^{CF} are effective in preventing the formation of ectopic folds. In this condition, the extension of the germ band increases the formation of ectopic folds, but only at the posterior regions close to the germ band tip. This suggests that the initiation of the cephalic furrow is crucial to its ability to buffer the ectopic folding. Values of \kappa_o^{CF} are shown in units of 1/L. t_{MD}=1 corresponds to 105 computational timesteps." />
 <figcaption aria-hidden="true"><span>Figure S8:</span> Parameter sweep
 for cephalic furrow simulations. <strong>a</strong>, Bending rigidity
 and cephalic furrow depth at different values of
@@ -2523,8 +2551,11 @@ energy (max bend) and at the final iteration is similar for simulations
 with 0% of germ band extension. At higher percentages of germ band
 extension the folds (both cephalic furrow and ectopic folds) exhibit a
 greater depth at the last iteration. <strong>b</strong>, Finer-grained
-parameter sweep of ectopic folding without (TMD=0) and with (TMD=5) a
-delay in cephalic furrow formation. With simultaneous formation, only
+parameter sweep of ectopic folding without
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi>M</mi><mi>D</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t_{MD}=0</annotation></semantics></math>)
+and with
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi>M</mi><mi>D</mi></mrow></msub><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">t_{MD}=5</annotation></semantics></math>)
+a delay in cephalic furrow formation. With simultaneous formation, only
 higher values of
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>κ</mi><mi>o</mi><mrow><mi>C</mi><mi>F</mi></mrow></msubsup><annotation encoding="application/x-tex">\kappa_o^{CF}</annotation></semantics></math>
 are effective in buffering the formation of ectopic folds around the
@@ -2537,7 +2568,12 @@ are effective in preventing the formation of ectopic folds. In this
 condition, the extension of the germ band increases the formation of
 ectopic folds, but only at the posterior regions close to the germ band
 tip. This suggests that the initiation of the cephalic furrow is crucial
-to its ability to buffer the ectopic folding.</figcaption>
+to its ability to buffer the ectopic folding. Values of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>κ</mi><mi>o</mi><mrow><mi>C</mi><mi>F</mi></mrow></msubsup><annotation encoding="application/x-tex">\kappa_o^{CF}</annotation></semantics></math>
+are shown in units of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">1/L</annotation></semantics></math>.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi>M</mi><mi>D</mi></mrow></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t_{MD}=1</annotation></semantics></math>
+corresponds to 10<sup>5</sup> computational timesteps.</figcaption>
 </figure>
 </div>
 <!--TODO: Replace with newer simulations-->
