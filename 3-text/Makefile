@@ -11,7 +11,7 @@ OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
 FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
-PDFVARS=-V fontfamily:libertine -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt -V urlcolor='[HTML]{1f5b7a}'
+PDFVARS=-V fontfamily:libertine -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt -V urlcolor='[HTML]{0969da}'
 HTMLVARS=--standalone --mathml
 #-V urlcolor='[HTML]{4271ae}'
 #-V linkcolor='[HTML]{d55e00}' 
