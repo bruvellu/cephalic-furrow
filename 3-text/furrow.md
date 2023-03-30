@@ -469,7 +469,7 @@ All the data and analyses pipelines were deposited in a Zenodo repository [@Vell
   - [github.com/abhijeetkrishna/cephalic-furrow-theory](https://github.com/abhijeetkrishna/cephalic-furrow-theory) (Git repository)
   - [zenodo.org/record/7784907](https://zenodo.org/record/7784907) (Zenodo record)
 - Figures and videos [@Vellutini2023-ix]:
-  - [zenodo.org/record/7784907](https://zenodo.org/record/7784907) (Zenodo record)
+  - [zenodo.org/record/7781917](https://zenodo.org/record/7781917) (Zenodo record)
 
 # Acknowledgements
 
