@@ -168,19 +168,19 @@ Since folding events are stochastic and can happen at different iterations acros
 
 <!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 
-To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions without the cephalic furrow.
+To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions (without the cephalic furrow).
 We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations.
-We defined a fold when this distance was greater than the maximum particle depth under the ground noise level.
-Under the baseline condition without mitotic domains or germ band extension (only noise), we observe no ectopic fold formation for any bending rigidity values ({@fig:model}e).
-The probability of buckling increases with the germ band extension and inversely with the bending rigidity ({@fig:model}e, {@fig:model-features}b).
-We observe a buckling transition in the phase space in softer conditions ($K_b^* \approx 0.7 \times 10^{−4}$) already at 10% germ band extension, but in stiffer conditions ($K_b^* \approx 1.2 \times 10^{−4}$) the germ band alone cannot drive the formation of ectopic folds even at its maximum extension ({@fig:model}e, {@fig:model-features}b).
-Adding mitotic domains to the simulations caused a shift in the phase diagram, with the probability of ectopic fold formation increasing even in low values of germ band extension and higher values of bending rigidity ({@fig:model}f, {@fig:model-features}c).
-Mitotic domains alone can induce ectopic folds in softer conditions ($K_b^* < 1.1 \times 10^{−4}$).
-For most of the parameter space, the combined action of mitotic domains and germ band maximizes the probability of ectopic fold formation ({@fig:model}e,f).
-These simulations show that above a certain bending rigidity ($K_b^* > 1.0 \times 10^{−4}$), neither the mitotic domains nor the germ band can drive ectopic folding by themselves.
-We thus set to test these predictions *in vivo* by performing perturbation experiments to individually inhibit the formation of mitotic domains and the extension of the germ band.
+When this distance was greater than the maximum particle depths under the ground noise level, we counted it as a fold.
+In simulations under a baseline condition, without mitotic domains or germ band extension but with noise, we observe no ectopic fold formation for any bending rigidity values ({@fig:model}e).
+The probability of buckling increases with the amount of germ band extension, mainly in lower bending rigidities ({@fig:model}e, {@fig:model-features}b).
+At 10% germ band extension, we observe a buckling transition in the phase space of softer conditions ($K_b^* \approx 0.7 \times 10^{−4}$), but in stiffer conditions ($K_b^* \approx 1.2 \times 10^{−4}$) the germ band alone, even at its maximum extension, cannot drive the formation of ectopic folds ({@fig:model}e, {@fig:model-features}b).
+Adding mitotic domains to the simulations changed the phase diagram and dynamics of ectopic folding.
+We observe that mitotic domains alone can induce ectopic folds in softer conditions ($K_b^* < 1.1 \times 10^{−4}$) and that the number of folds increased for low values of germ band extension ({@fig:model}f).
+In addition, the timing of folding with mitotic domains has decreased across iterations in simulations, specially between 0--20% of germ band extension ({@fig:model-features}c).
+These simulations suggest that, depending on the bending rigidity, the germ band or mitotic domains alone can drive ectopic folding, and that their combined action may increase the mechanical instabilities in the blastoderm epithelium.
+We thus set to test the individual contribution of mitotic domains and germ band to the epithelial instability by performing perturbation experiments *in vivo*.
 
-<!--TODO: Resolve issue with model/experiment reasoning. Which predictions?-->
+<!--These simulations show that above a certain bending rigidity ($K_b^* > 1.0 \times 10^{−4}$), neither the mitotic domains nor the germ band can drive ectopic folding by themselves.-->
 
 <!--TODO: Add panel with the threshold for counting folds-->
 <!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
@@ -513,8 +513,8 @@ All authors revised and contributed to the text.
 **b**, Characteristics of the individual components of the model based on particles connected by springs. The drawings exemplify the initial and final states for each component.
 **c**, Energy equation with a stretching and a bending component, and the dimensionless bending rigidity. Inital rod length ($L_o$), stretching energy ($W_s$), stretching rigidity ($K_s$), initial spring length ($ds_o$), current spring length ($ds$), bending energy ($W_b$), bending rigidity ($K_b$), initial curvature ($\kappa_o$), current curvature ($\kappa$), semi-major embryonic axis ($L$).
 **d**, Plots showing the energy dynamics across iterations in a typical simulation run. The stretching energy dominates and goes down with the iterations. The bending energy, which is a few orders of magnitude lower, increases drastically reaching a peak that diminishes gradually with the iterations. The total energy of the system goes down to equilibrium.
-**e**, Mutant parameter sweep without mitotic domains (no cephalic furrow). The heatmap shows the average number of ectopic folds for different bending rigidities and percentages of germ band extension. Ectopic folding frequency increases with lower bending rigidities (softer tissue) and with greater values of germ band extension. The white square outline indicates the $K_b^*$ value where the number of folds begins to fall below 1 at maximum germ band extension.
-**f**, Mutant parameter sweep with mitotic domains (no cephalic furrow). The phase diagram is shifted left in relation to **f**. The addition of mitotic domains maximizes the formation of ectopic folds even without germ band extension. The white square outline indicates the $K_b^*$ value where the number of folds begins to fall below 1 at minimum germ band extension.
+**e**, Mutant parameter sweep without mitotic domains (no cephalic furrow). The heatmap shows the average number of ectopic folds for different bending rigidities and percentages of germ band extension. Ectopic folding frequency increases with lower bending rigidities (softer tissue) and with greater values of germ band extension. Outlined in white is the baseline condition without mitotic domains and germ band and only ground level noise (i), and the germ band only condition with higher number of folding events (ii).
+**f**, Mutant parameter sweep with mitotic domains (no cephalic furrow). The phase diagram is shifted left in relation to **f**. The addition of mitotic domains maximizes the formation of ectopic folds even without germ band extension, a condition outlined in white (iii).
 **g**, Quantification of ectopic folding to evaluate the effectiveness of the cephalic furrow. The top row shows a control simulating a cephalic furrow mutant condition with mitotic domains and germ band. The middle row shows an active cephalic furrow invagination with mitotic domains forming at the same time without delay. The bottom row shows the cephalic furrow with a delay in mitotic domain formation.
 **h**, Representative seeds from the simulations in **j** at 0 and 40% germ band extension.
 ](figures/Fig3.jpg){#fig:model width=100%}
