@@ -445,8 +445,19 @@ For microscopy images, we only performed minimal linear intensity adjustments in
 We created illustrations and assembled the final figure plates using Inkscape v1.2.2 [@The_Inkscape_Project2003-ht].
 For microscopy videos, we exported the original stacks as AVI without compression with 10--15fps using Fiji and post-processed them to MPEG-4 format 1080p resolution using the H.264 encoding at a constant bitrate quality factor of 18 for visualization using HandBrake v1.6.1 [@HandBrake_Team2003-fq].
 The high-resolution figures and videos are available in a Zenodo repository [@Vellutini2023-ix].
-All data wrangling, statistical analyses, and plotting performed in R v4.2.1 [@R_Core_Team1993-ki] using RStudio v2022.7.2.576 [@RStudio_Team2011-wr], and Python 3.10.7 using Jupyter notebooks [@Granger2021-zg].
-The data, scripts, and analyses pipelines are available in a Git repository ([github.com/bruvellu/cephalic-furrow](https://github.com/bruvellu/cephalic-furrow)) and have been deposited in Zenodo [@Vellutini2023-ng].
+We performed the data wrangling, statistical analyses, and plotting in R v4.2.1 [@R_Core_Team1993-ki] using RStudio v2022.7.2.576 [@RStudio_Team2011-wr], and Python 3.10.7 using Jupyter notebooks [@Granger2021-zg].
+All the data and analyses pipelines were deposited in a Zenodo repository [@Vellutini2023-ng].
+
+## Data availability
+
+- Data, scripts and analyses [@Vellutini2023-ng]:
+  - [github.com/bruvellu/cephalic-furrow](https://github.com/bruvellu/cephalic-furrow) (Git repository)
+  - [zenodo.org/record/7781948](https://zenodo.org/record/7781948) (Zenodo record)
+- Model and simulations [@Krishna2023-hu]:
+  - [github.com/abhijeetkrishna/cephalic-furrow-theory](https://github.com/abhijeetkrishna/cephalic-furrow-theory) (Git repository)
+  - [zenodo.org/record/7784907](https://zenodo.org/record/7784907) (Zenodo record)
+- Figures and videos [@Vellutini2023-ix]:
+  - [zenodo.org/record/7784907](https://zenodo.org/record/7784907) (Zenodo record)
 
 # Acknowledgements
 
