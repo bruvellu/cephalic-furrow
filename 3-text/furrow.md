@@ -163,11 +163,6 @@ The germ band in our model is defined by the position of the posterior end of th
 The effect of germ band extension appears as a global compression in the blastoderm.
 Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system.
 
-<!--This elastic rod of length $L_o$ has a stretching energy component ($W_s$), defined as the sum of stretching rigidities ($K_s$) dependent on the ratio between the current and initial spring lengths ($ds/ds_o$), and a bending energy component ($W_b$), defined as the sum of bending rigidities ($K_b$) dependent on the difference between the current and initial curvatures of the rod ($\kappa-\kappa_o$) ({@fig:model}c).-->
-<!--The sum of stretching and bending energies returns the total energy of the system ($W_T$), while the ratio between both rigidities returns a single, physically meaningful parameter of our model---the dimensionless bending rigidity ($K_b^*$) ({@fig:model}c).-->
-<!--To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as regions of compressed springs which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the particles to invaginate ({@fig:model}b).-->
-<!--The germ band in our model is defined by the position of the posterior-most particle which is fixed at different percentages of egg length for each simulation ({@fig:model}b).-->
-
 We first characterized the general properties of the model.
 In simulations where folds begin to form, the bending energy increases while releasing a larger amount of stretching energy which in turn decreases the total energy of the system over the iterations ({@fig:model}d).
 The increase in bending energy coincides with a rapid deepening of the fold.
@@ -175,12 +170,6 @@ Once the bending energy reaches a peak, the fold continues to deepen, though mor
 Folding events are stochastic and can happen at different iterations across different simulations.
 Also, we are mainly interested in analyzing the initial position and the number of folding events in each simulation.
 Hence, we used the state of each simulation at the peak of its bending energy as the reference point to compare with other simulations.
-
-<!--We first characterized the general properties of the model.-->
-<!--In simulations where folds begin to form, the bending energy increases releasing a larger amount of stretching energy which in turn makes the total energy of the system decrease over the iterations ({@fig:model}d).-->
-<!--The increase in bending energy coincides with a rapid deepening of the fold.-->
-<!--Once the bending energy reaches a peak, the fold continues to deepen, though more gradually, but the number of folds stabilizes and there are rarely changes in the overall folding patterns ({@fig:model}d, {@fig:model-features}a).-->
-<!--Since folding events are stochastic and can happen at different iterations across different simulations, and because we are mainly interested in analyzing the initial position and dynamics of the folding, we used the peak of bending energy as the reference point to compare and analyze the simulation results.-->
 
 <!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 
@@ -194,13 +183,6 @@ These simulations suggest that, depending on the bending rigidity, the germ band
 We thus set to test the individual contribution of mitotic domains and germ band to the epithelial instability by performing perturbation experiments *in vivo*.
 
 <!--TODO: Move definition of a fold to methods-->
-
-<!--To obtain realistic values where the model matches experimental observations, we performed a sweep across the bending rigidity parameter space in mutant conditions (without the cephalic furrow).-->
-<!--We quantified the tissue dynamics by measuring the distance of each particle to the vitelline envelope across iterations.-->
-<!--When this distance was greater than the maximum particle depths under the ground noise level, we counted it as a fold.-->
-<!--In simulations under a baseline condition, without mitotic domains or germ band extension but with noise, we observe no ectopic fold formation for any bending rigidity values ({@fig:model}e).-->
-
-<!--These simulations show that above a certain bending rigidity ($K_b^* > 1.0 \times 10^{−4}$), neither the mitotic domains nor the germ band can drive ectopic folding by themselves.-->
 
 <!--TODO: Add panel with the threshold for counting folds-->
 <!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
