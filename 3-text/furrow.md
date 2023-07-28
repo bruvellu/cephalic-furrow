@@ -464,12 +464,12 @@ All the data and analyses pipelines were deposited in a Zenodo repository [@Vell
 
 - Data, scripts and analyses [@Vellutini2023-ng]:
   - [github.com/bruvellu/cephalic-furrow](https://github.com/bruvellu/cephalic-furrow) (Git repository)
-  - [zenodo.org/record/7781948](https://zenodo.org/record/7781948) (Zenodo record)
+  - [zenodo.org/record/7781947](https://zenodo.org/record/7781947) (Zenodo record)
 - Model and simulations [@Krishna2023-hu]:
   - [github.com/abhijeetkrishna/cephalic-furrow-theory](https://github.com/abhijeetkrishna/cephalic-furrow-theory) (Git repository)
-  - [zenodo.org/record/7784907](https://zenodo.org/record/7784907) (Zenodo record)
+  - [zenodo.org/record/7784906](https://zenodo.org/record/7784906) (Zenodo record)
 - Figures and videos [@Vellutini2023-ix]:
-  - [zenodo.org/record/7781917](https://zenodo.org/record/7781917) (Zenodo record)
+  - [zenodo.org/record/7781916](https://zenodo.org/record/7781916) (Zenodo record)
 
 # Acknowledgements
 
