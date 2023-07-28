@@ -341,7 +341,8 @@ To remove the chorion, we immersed the embryos in 20% sodium hypochlorite soluti
 
 ## Sample mounting for live imaging
 
-We performed most of our live imaging in Zeiss Lightsheet Z.1 microscope using a mounting strategy optimized to increase the throughput of samples in one session.
+We performed most of our live imaging in a Zeiss Lightsheet Z.1 microscope.
+To increase the throughput of samples imaged in one session, we optimized a mounting strategy developed previously in our laboratory [@Schmied2016-oq].
 First, we cut a 22x22mm glass coverslip (0.17mm thickness) into 6x15mm strips using a diamond knife, and attached a single strip to a custom sample holder using silicon glue, letting it harden for 15min.
 We then coated the coverslip strip with a thin layer of heptane glue and let it dry while preparing the embryos.
 Using a fine brush, we transferred the embryos collected in the cell strainer onto an agar pad, and oriented them manually with a blunt cactus spine under a stereomicroscope.
