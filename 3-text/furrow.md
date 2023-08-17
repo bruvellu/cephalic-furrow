@@ -88,7 +88,7 @@ Our findings suggest the cephalic furrow absorbs compressive stresses at the hea
   - Mutations perturb initiator cell behaviors
   - Lack of cephalic furrow linked to increased ectopic folding
 
-- Physical increased strain rates generate ectopic buckling
+- Increased physical strain rates generate ectopic buckling
 
   - Mitotic domain formation correlates with ectopic buckling
   - Germ band extension correlates with ectopic buckling
@@ -104,7 +104,11 @@ Our findings suggest the cephalic furrow absorbs compressive stresses at the hea
 
 - Cephalic furrow evolution linked to novel btd head--trunk domain
 
-  - 
+  - CF is a late novelty in diptera, how is the genetics and mechanics?
+  - Head--trunk boundary demarcated by slp/eve with slp upstream of btd
+  - Identification of slp as a novel cephalic furrow genes
+  - Early slp activity fine tunes the position of initiator cells
+  - Late cellular arrangement demarcate initiator cells
 
 - Discussion
 
@@ -390,36 +394,58 @@ Taken together, our physical model provides a theoretical basis that an early pr
 - The cephalic furrow is a prominent invagination in Drosophila, but it is not present in all flies.
 - In fact, the mapping of this trait in the phylogenetic tree suggests that the cephalic furrow is an evolutionary novelty within Diptera.
 - Other flies do not have a cephalic furrow raising the question of how the genetic patterning and mechanics is in these flies and what could have been the evolutionary changes involved in the evolution of the cephalic furrow.
+- We therefore checked whether the expression patterns of cephalic furrow genes present in Drosophila is conserved in Clogmia, a fly sister to remaining dipterans.
 
-### Ancestral genetic programme positioning the head--trunk boundary
+### Identifying slp as a novel cephalic furrow genes
 
-### Cephalic furrow positioning fine tuned by slp activity
-
-- To better understand the history of genetic changes, we first performed an imaging screen with loss of function lines to identify novel cephalic furrow genes in Drosophila.
-- We found that cephalic furrow formation in slp mutants is perturbed.
-
-
-## Cephalic furrow patterning is under strict genetic control
-
+- The two main cephalic furrow genes are btd and eve and secondarily prd.
+- But there is probably other genes contributing.
+- It is hard to screen when your trait is transient and leaves no trace.
+- Therefore, we needed live-imaging. And we screened loss of function lines.
 - To uncover novel cephalic furrow genes we screened loss of function flies for about 50 genes expressed at the head--trunk.
-- We found that slp mutants show an anterior shift.
-- Early expression of slp contributes to positioning.
-- btd is secondarily activated at the slp/eve interface.
+- We identified few, but the main one is slp
+
+### Early slp activity fine tunes the position of initiator cells
+
+- We found that slp mutants show an anterior shift in the CF.
+- Anterior shift corresponds to a shift in the btd-eve overlap.
+
+### Early slp/eve domains demarcate the head--trunk boundary
+
+- Early expression reveals that slp/eve interface the head--trunk boundary.
+- slp is upstream of btd is secondarily activated at this interface.
+
+### Late slp expression demarcates initiator cell identities
+
 - Late expression contribute to initiator identity and invagination edges.
-- btd interact with slp.
 - btd, eve, and prd show different initiator cell behavior phenotypes.
-- These data increments and further complicates the genetic interactions controlling the formation of the cephalic furrow.
-- This suggests that the formation of the cephalic furrow is under even more strict genetic control than previously thought. 
+- slp as well shows some adhesive differences.
+- slp positions btd/eve, then btd positions slp stripe 2
 
-## Cephalic furrow evolution is associated with a novel btd expression domain
+### Cephalic furrow patterning is under strict genetic control
 
-- But how did this patterning evolved?
+- This suggests that the formation of the cephalic furrow is under more genetic control than previously thought.
+
+### Head--trunk boundary slp/eve expression is conserved
+
+- We then want to see which aspects of the gene expression were conserved in a fly which does not have a cephalic furrow, Clogmia
 - To understand the patterning differences associated with the evolution of the cephalic furrow, we compared the current expression data of Drosophila to Clogmia, a non-cyclorraphan fly without the cephalic furrow.
-- We find that at the onset of gastrulation, Clogmia does not show the btd expression domain in the lateral side which in Drosophila overlaps with eve.
+- We find that the early expression of slp and eve (and prd) are really similar between Drosophila and Clogmia.
+- They all show the same pattern.
+- However, the expression of btd is really different.
+
+### Clogmia lacks the head--trunk domain of btd
+
+- We find that Clogmia does not have the btd expression domain in the lateral side which in Drosophila overlaps with eve, and thus crucially involved in CF formation in Drosophila.
+- The only presence of btd transcripts in that region are at the ventral side at the anterior midgut position.
+- As an aside, curiously, the eye domain of btd is expressed very early in Clogmia while the same domain is delayed tremendously in Drosophila. Clogmia has larval eyes while Drosophila doesn’t. It could be that some portions of head development in Drosophila were just turned off.
 - This suggests that the evolution of the cephalic furrow is associated with the appearance of a novel expression domain of btd at the posterior portion of the future head, flanking the head--trunk boundary.
 
+<!--- It is probable that the expansion of btd along the head--trunk was or still is or originated with some other role in the patterning of the head, and that only later on it got coopted into the cephalic furrow program.-->
+<!--- Could it be that this is a re-use of the anterior midgut program? There btd and eve overlap and there is an invagination. I wonder if it is also driven by lateral myosin.-->
 
-
+<!--Clogmia is the sister group to Megaselia+Episyrphus+Drosophila [@Jimenez-Guri2013]-->
+<!--Compare the dorsoventral patterning between Clogmia and Drosophila [@Wotton2017]. Apparently, Clogmia is ventralized while Drosophila dorsalized. The origin of this head--trunk btd domain could be that it expanded dorsally with the dorsalization.-->
 
 
 # Discussion
