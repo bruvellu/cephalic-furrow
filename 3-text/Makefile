@@ -1,37 +1,50 @@
 # Makefile for cephalic furrow manuscript
+#
+# TODO:
+# 	- Replace symlink by copying (update mode)
+# 	- Copy figures to source folder first
+# 	- Add branch name to the file output name
+# 	- Rename rules for better names
+#
 
-# Variables
+# Basename for the main file
 FILE=furrow
+# Directory with template files, stylesheets, filters
 RESOURCES=resources
+# Basename for template files
 TEMPLATE=${RESOURCES}/template
+# Root directory with figures
 FIGUREIN=`realpath ../2-figures`
+# Output directory for figures
 FIGUREOUT=`realpath figures`
+# Directory with shared cloud content
 CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
+# Output directory for text
 OUTDIR=versions
+# Date timestamp
 DATE=$(shell date +'%Y-%m-%d')
+# Out filename with date stamp
 TIMESTAMPED=${DATE}_${FILE}
+# Filters for running pandoc
 #FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
 FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-citeproc
+# Pandoc variables for PDF
 PDFVARS=-V fontfamily:libertine -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt -V urlcolor='[HTML]{0969da}'
+# Pandoc variables for HTML
 HTMLVARS=--standalone --mathml
-#-V urlcolor='[HTML]{4271ae}'
-#-V linkcolor='[HTML]{d55e00}' 
-#HTMLVARS=-c resources/skeleton.css --standalone 
-#HTMLVARS=-V toc --embed-resources --standalone 
 
 # Main rule
-all: clean figures syncbib compile share
+#all: clean figures videos references text share
+all: clean figures videos references text
 
 # Cleanup figure directory before compiling
 clean:
 	touch ${FIGUREOUT}/touch.txt
 	rm -r ${FIGUREOUT}/*
-
-# Process figures and videos
-figures: linkimg linkvid
+	mkdir ${FIGUREOUT}/source
 
 # Link figure files to directory
-linkimg:
+figures:
 	# Main
 	ln -s ${FIGUREIN}/ectopic-folding/figure.png ${FIGUREOUT}/Fig1.png
 	ln -s ${FIGUREIN}/mitotic-domains/figure.png ${FIGUREOUT}/Fig2.png
@@ -52,11 +65,10 @@ linkimg:
 	# Make JPGs for smaller size for visualization/sharing
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGUREOUT}/ ${FIGUREOUT}/*.png
 	# Keep original PNGs
-	mkdir ${FIGUREOUT}/source
 	mv ${FIGUREOUT}/*.png ${FIGUREOUT}/source/
 
 # Link video files to figure directory
-linkvid:
+videos:
 	# Main
 	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.m4v ${FIGUREOUT}/Vid1.m4v
 	ln -s ${FIGUREIN}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.m4v ${FIGUREOUT}/Vid2.m4v
@@ -97,7 +109,7 @@ linkvid:
 	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.avi ${FIGUREOUT}/source/VidS4.avi
 	ln -s ${FIGUREIN}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.avi ${FIGUREOUT}/source/VidS5.avi
 
-compile:
+text:
 	# Compile timestamped documents to output directory
 	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.odt -o ${FILE}.odt
 	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.docx -o ${FILE}.docx
@@ -109,7 +121,7 @@ compile:
 	cp ${FILE}.pdf ${OUTDIR}/${TIMESTAMPED}.pdf
 	cp ${FILE}.md ${OUTDIR}/${TIMESTAMPED}.md 
 
-syncbib:
+references:
 	# Sync bib file from Paperpile
 	wget -P resources/ --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
 
