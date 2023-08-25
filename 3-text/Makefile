@@ -10,7 +10,8 @@ CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
 OUTDIR=versions
 DATE=$(shell date +'%Y-%m-%d')
 TIMESTAMPED=${DATE}_${FILE}
-FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
+#FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
+FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-citeproc
 PDFVARS=-V fontfamily:libertine -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt -V urlcolor='[HTML]{0969da}'
 HTMLVARS=--standalone --mathml
 #-V urlcolor='[HTML]{4271ae}'
@@ -23,6 +24,7 @@ all: clean figures syncbib compile share
 
 # Cleanup figure directory before compiling
 clean:
+	touch ${FIGUREOUT}/touch.txt
 	rm -r ${FIGUREOUT}/*
 
 # Process figures and videos
