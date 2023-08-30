@@ -34,11 +34,12 @@ CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
 # Date timestamp
 DATE=$(shell date +'%Y-%m-%d')
 
-# Tag from git
+# Tag and Branch from git
 TAG=`git describe --tags`
+BRANCH=`git branch --show-current`
 
 # Out filename with date stamp
-FILEOUT=${DATE}_${TAG}_${FILE}
+FILEOUT=${DATE}_${BRANCH}_${FILE}
 
 # Filters for running pandoc
 FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
@@ -51,7 +52,7 @@ PDFVARS=-V fontfamily:libertine -V geometry:bindingoffset=2mm -V geometry:hmargi
 HTMLVARS=--standalone --mathml
 
 # Main rule
-all: figs videos references text
+all: figs vids refs text
 
 # Cleanup figure directory before compiling
 clean:
