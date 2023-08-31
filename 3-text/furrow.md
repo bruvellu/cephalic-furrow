@@ -61,59 +61,6 @@ Our findings suggest the cephalic furrow absorbs compressive stresses at the hea
 
 # Main
 
-<!--Outline:
-
-- Evolution of morphogenesis in early development
-
-  - Morphogenesis is complex
-  - Pre-patterned processes are important
-  - Self-organized mechanics are important
-  - But their evolutionary interplay is unclear
-
-- Cephalic furrow as a model for evolution of morphogenesis
-
-  - Prominent invagination at anatomical landmark
-  - Under genetic control with stereotypic formation
-  - Active, cell-generated forces drive invagination
-  - But its function and evolutionary origins remain unclear
-
-- We find:
-
-  - Cephalic furrow plays a mechanical role during gastrulation
-  - Evolution associated with a novel btd head-trunk domain
-  - Mechanical stresses may have been the selective pressure
-
-- Cephalic furrow mutants show increased epithelial instability
-
-  - Mutations perturb initiator cell behaviors
-  - Lack of cephalic furrow linked to increased ectopic folding
-
-- Increased physical strain rates generate ectopic buckling
-
-  - Mitotic domain formation correlates with ectopic buckling
-  - Germ band extension correlates with ectopic buckling
-  - In silico simulations predict increased instability when MD+GB
-  - Mitotic domain formation is required for ectopic folding in vivo
-  - Germ band extension is required for ectopic folding in vivo
-
-- Early pre-patterned invagination effectively prevents instability
-
-  - Cephalic furrow invaginates autonomously pulling adjacent tissues
-  - Cephalic furrow is shallower without the germ band extension
-  - Timing rather than force impacts the effectiveness of buffering
-
-- Cephalic furrow evolution linked to novel btd head--trunk domain
-
-  - CF is a late novelty in diptera, how is the genetics and mechanics?
-  - Head--trunk boundary demarcated by slp/eve with slp upstream of btd
-  - Identification of slp as a novel cephalic furrow genes
-  - Early slp activity fine tunes the position of initiator cells
-  - Late cellular arrangement demarcate initiator cells
-
-- Discussion
-
--->
-
 ## Evolution of morphogenesis
 
 <!--TODO: Make it into a paragraph-->
@@ -399,6 +346,12 @@ Taken together, our physical model provides a theoretical basis that an early pr
 <!--Cephalic furrow evolution linked to novel expression domain of btd-->
 
 <!--TODO: Figure out this transition and the results therein-->
+
+Since the pre-patterning of the cephalic furrow is essential for its function in preventing mechanical instabilities, it is important to uncover which changes in the genetic patterning were important during the evolution of the cephalic furrow.
+
+We know that the head--trunk boundary is an important genetic boundary in the embryo [refs], and that this boundary is ancient and perhaps defining feature of bilaterians [HT], and has implications for the evolution of animal body patterns [CMD].
+
+CF patterning involves btd, eve, downstream of bcd, perhaps prd somewhat involved.
 
 - The cephalic furrow is a prominent invagination in Drosophila, but it is not present in all flies.
 - In fact, the mapping of this trait in the phylogenetic tree suggests that the cephalic furrow is an evolutionary novelty within Diptera.
