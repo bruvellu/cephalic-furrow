@@ -70,7 +70,8 @@ figs:
 	cp -vu ${FIGSRC}/mitotic-domains/figure.png ${FIGHIRES}/Fig2.png
 	cp -vu ${FIGSRC}/fold-model/figure.png ${FIGHIRES}/Fig3.png
 	cp -vu ${FIGSRC}/live-experiments/figure.png ${FIGHIRES}/Fig4.png
-	cp -vu ${FIGSRC}/summary/figure.png ${FIGHIRES}/Fig5.png
+	cp -vu ${FIGSRC}/genetic-patterning/figure.png ${FIGHIRES}/Fig5.png
+	cp -vu ${FIGSRC}/summary/figure.png ${FIGHIRES}/Fig6.png
 	# Supplementary
 	cp -vu ${FIGSRC}/initiator-behavior/figure.png ${FIGHIRES}/FigS1.png
 	cp -vu ${FIGSRC}/ectopic-features/figure.png ${FIGHIRES}/FigS2.png
@@ -93,16 +94,16 @@ vids:
 	cp -vu ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.avi ${FIGHIRES}/Vid3.avi
 	cp -vu ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.avi ${FIGHIRES}/Vid4.avi
 	cp -vu ${FIGSRC}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGHIRES}/Vid5.avi
-	cp -vu ${FIGSRC}/strain-rate/videos/Strain_btd_E10_E14_label_loop.avi ${FIGHIRES}/Vid6.avi
+	cp -vu ${ANASRC}/strain-rate/1-movies/Strain_btd_E10_E14_label_loop.avi ${FIGHIRES}/Vid6.avi
 	cp -vu ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGHIRES}/Vid7.avi
 	cp -vu ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGHIRES}/Vid8.avi
 	cp -vu ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGHIRES}/Vid9.avi
 	cp -vu ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.avi ${FIGHIRES}/Vid10.avi
 	cp -vu ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.avi ${FIGHIRES}/Vid11.avi
 	# Supplementary AVIs
-	cp -vu ${FIGSRC}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGHIRES}/VidS1.avi
-	cp -vu ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.avi ${FIGHIRES}/VidS2.avi
-	cp -vu ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.avi ${FIGHIRES}/VidS3.avi
+	cp -vu ${ANASRC}/initiator-behavior/8-combine/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGHIRES}/VidS1.avi
+	cp -vu ${ANASRC}/ectopic-variability/5-combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.avi ${FIGHIRES}/VidS2.avi
+	cp -vu ${ANASRC}/ectopic-variability/5-combined/COMBINE_E7_E14_E8_E6_folding_label_loop.avi ${FIGHIRES}/VidS3.avi
 	cp -vu ${FIGSRC}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.avi ${FIGHIRES}/VidS4.avi
 	cp -vu ${FIGSRC}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.avi ${FIGHIRES}/VidS5.avi
 	# Main
