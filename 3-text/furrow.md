@@ -47,6 +47,42 @@ tablenos-plus-name: Table
 
 # Abstract
 
+Embryonic tissues undergo astonishing changes in shape during early development known as morphogenesis.
+Morphogenetic processes are genetically-determined 
+
+Morphogenesis
+
+Form emerges during embryonic development through an astonishing dance of embryonic cells and tissues known as morphogenesis.
+Morphogenesis can be pre-patterned or self-organized, but often it is both.
+
+
+The morphogenesis of embryonic tissues is one of the most fascinating phenomena in biology.
+
+Morphogenesis is the astonishing dance of embryonic cells and tissues that gives rise to
+
+Morphogenesis is the intricate sequence of pre-patterned and self-organized events shaping tissues and organs during embryonic development.
+
+The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of fly embryos during gastrulation.
+
+Similar to other embryonic invaginations, the morphogenesis of the cephalic furrow is under strict genetic control.
+However, the invaginated cells do not give rise to any precursor tissues and the 
+
+
+While its formation is under strict genetic control, the cephalic furrow is a transient structure that unfolds leaving no trace.
+
+
+forms through a pre-patterned morphogenetic sequence of events under strict genetic control.
+
+But unlike other embryonic invaginations, the cells that invaginate in the cephalic furrow do not give rise to any precursor tissues or larval traits.
+The cephalic furrow is transient and unfolds leaving no trace.
+For these reasons, its function during development has remained elusive.
+Here we show that the cephalic furrow plays a mechanical role during *Drosophila* gastrulation.
+By live-imaging mutant embryos, we find that without the cephalic furrow, ectopic folds appear around the head--trunk interface indicating that the epithelial stability has been compromised.
+Using *in vivo* perturbations and *in silico* simulations, we demonstrate that ectopic folding in cephalic furrow mutants occurs due to the concomitant formation of mitotic domains and extension of the germ band.
+These events increase the tissue strain in the head–trunk interface giving rise to mechanical instabilities.
+Further, we show by simulations that an early pre-patterned invagination can effectively prevent the build-up of compressive stresses by retaining epithelial tissue out-of-plane before other morphogenetic movements take place.
+Our findings suggest the cephalic furrow absorbs compressive stresses at the head--trunk boundary during fly gastrulation, and raise the hypothesis that mechanical forces may have played a role in the evolution of the cephalic furrow.
+
 The cephalic furrow is a deep epithelial fold that demarcates the head--trunk boundary of fly embryos during gastrulation.
 It forms under strict genetic control using active cellular mechanisms and follows an invariant morphogenetic sequence.
 But unlike other embryonic invaginations, the cells that invaginate in the cephalic furrow do not give rise to any precursor tissues or larval traits.
@@ -61,60 +97,82 @@ Our findings suggest the cephalic furrow absorbs compressive stresses at the hea
 
 # Main
 
-## Evolution of morphogenesis
-
-<!--TODO: Make it into a paragraph-->
-<!--TODO: Add citation to theoretical paper-->
-<!--TODO: Make it broadly interesting on evo morphogenesis and mechanics-->
+<!--## Evolution of morphogenesis-->
 
 <!--Interplay of patterning and mechanics in the evolution of morphogenesis-->
-- Morphogenesis is a complex sequence of patterning and physical events.
-- Under genetic control, tissues can fold via intrinsic cell-generated forces.
-- Moving tissues generate extrinsic tissue-scale forces.
-- Self organized morphogenesis is important for regulating development.
-- Mechanical forces are crucial for the morphogenesis of embryonic tissues.
-- But it is unclear whether tissue mechanics can influence the origin and evolution of pre-patterned morphogenetic processes.
-- What are the selective pressures and evolutionary steps leading to an evolutionary innovation in early embryos where the tissues are confined in their shells?
-- How does the mechanics of embryonic tissues impact the evolution of morphogenetic processes?
-- How do novel morphogenetic processes in the embryo originate?
-- The evolutionary interplay between patterning and mechanics remains unclear
 
-Epithelial folding is a fundamental process of animal embryogenesis [@Wang2021-iy].
-Tissues fold through intrinsic cellular mechanisms or extrinsic tissue-scale forces [@Denk-Lobnig2020-pr].
-In pre-patterned invaginations, the position and timing of folding is tightly regulated by genes which instruct active cell shape changes driving morphogenesis [@Collinet2021-qa].
+Morphogenesis is a physical process [@Keller2012-ca; @Heisenberg2013-pl].
+When embryonic tissues extend or invaginate, they push and pull on neighboring tissues.
+These mechanical interactions provide essential information to embryonic cells throughout development and ultimately shape the end morphology of tissues and organs [@Collinet2021-qa].
+However, how mechanical forces influence the *evolution* of morphogenesis in early embryonic development remains unclear.
 
-To investigate the interplay between genetic patterning and tissue mechanics during the evolution of a novel epithelial invagination, we investigated the cephalic furrow as a model for the evolution of morphogenesis.
+To investigate the interplay between genetics and mechanics during the evolution of morphogenesis, we studied a prominent but enigmatic epithelial fold that forms in the head--trunk boundary of flies during gastrulation---the cephalic furrow [@Hartenstein1985-zs; @Spencer2015-td].
 
-## Cephalic furrow as a model
+
+While theoretical works suggest that mechanical forces may have been crucial for the establishment of developmental programs at the dawn of animal evolution [@Newman2000-oz], 
+However, these ideas have not been tested empirically.
+
+<!--- Morphogenesis is a complex sequence of patterning and physical events.-->
+<!--- Under genetic control, tissues can fold via intrinsic cell-generated forces.-->
+<!--- Moving tissues generate extrinsic tissue-scale forces.-->
+<!--- Self organized morphogenesis is important for regulating development.-->
+<!--- Mechanical forces are crucial for the morphogenesis of embryonic tissues.-->
+<!--- But it is unclear whether tissue mechanics can influence the origin and evolution of pre-patterned morphogenetic processes.-->
+<!--- What are the selective pressures and evolutionary steps leading to an evolutionary innovation in early embryos where the tissues are confined in their shells?-->
+<!--- How does the mechanics of embryonic tissues impact the evolution of morphogenetic processes?-->
+<!--- How do novel morphogenetic processes in the embryo originate?-->
+
+<!--Embryos develop through orchestrated cell and tissue movements known as morphogenesis.-->
+<!--Morphogenetic movements are usually under tight genetic control The control of morphogenesis in early embryonic development can be pre-patterned or self-organized, but it is usually an intricate mixture of both [@Collinet2021-qa].-->
+<!--Genes determine the position and timing of cell shape changes which will drive coordinated tissue movements like in gastrulation.-->
+<!--Morphogenetic processes are usually under tight genetic control.-->
+<!--The expression of maternal or zygotic genes in early development determines cell fates and activate behaviors.-->
+<!--The position and timing of morphogenetic processes is usually under tight genetic control and regulated by genes which instruct active cell shape changes driving morphogenesis [@Collinet2021-qa].-->
+<!--Epithelial folding, tissue extension, and cell delamination are examples of morphogenetic processes occurring during embryonic development.-->
+<!--These events are usually under tight genetic control.-->
+<!--The position and timing is determined by the expression of maternal or zygotic genes which control cell shape changes that drive morphogenesis [@Collinet2021-qa].-->
+<!--When tissues fold, they push and pull on their neighboring tissues, and these mechanical cues have been shown to be crucial as a source of information defining the final morphology.-->
+<!--Epithelial folding is a fundamental process of animal embryogenesis [@Wang2021-iy].-->
+<!--Tissues fold through intrinsic cellular mechanisms or extrinsic tissue-scale forces [@Denk-Lobnig2020-pr].-->
+<!--Some theories suggest that mechanical forces may be crucial to generate novelties in animal development [@Newman2000-oz].-->
+<!--However, these ideas have not been tested empirically.-->
+<!--However, the selective pressures and evolutionary steps leading to the evolution of novel morphogenetic processes in early embryos are poorly understood.-->
+
+<!--## Cephalic furrow as a model-->
 
 <!--Pre-patterned epithelial folding and the case of the cephalic furrow-->
 
-The formation of the cephalic furrow is one of the earliest events in *Drosophila* gastrulation.
-It first appears as a lateral indentation which quickly invaginates and forms a deep epithelial fold at the boundary between head (procephalon) and trunk (germ band) [@Hartenstein1985-zs; @Foe1989-cw; @Spencer2015-td].
-Similar to other embryonic invaginations, the formation of the cephalic furrow is under strict genetic control and follows a stereotypic morphogenetic sequence of events.
+The cephalic furrow is one of the earliest morphogenetic events during gastrulation in *Drosophila*.
+It begins as paired lateral indentations which quickly invaginate to form a deep epithelial fold at the boundary between the head (procephalon) and the trunk (germ band) [@Hartenstein1985-zs; @Foe1989-cw; @Spencer2015-td].
+Similar to other embryonic invaginations, the formation of the cephalic furrow is pre-patterned under strict genetic control.
 The site of invagination is determined by the zygotic expression of two transcription factors, *buttonhead* (*btd*) and *even skipped* (*eve*), whose domains overlap at the head--trunk boundary by a narrow row of blastoderm cells [@Vincent1997-fa].
 These so-called initiator cells shorten along the apical--basal axis by activating lateral myosin contractility and drive the infolding of the tissue [@Eritano2020-mi].
 The position of the cephalic furrow is specified with remarkable accuracy [@Liu2013-lc].
-Once initiated, the mechanical coupling between invaginating cells ensures the precision of the tissue fold during morphogenesis [@Eritano2020-mi].
-The resulting fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
-This prominent fold, however, is only transient.
-A couple of hours after gastrulation, the cephalic furrow unfolds and disappears leaving no trace, and the invaginated tissue does not give rise to any specific precursors or larval structures [@Hartenstein1985-zs].
+Once initiated, the invagination follows a stereotypic morphogenetic sequence of events.
+A mechanical coupling between invaginating cells ensures the precision of the tissue fold during morphogenesis [@Eritano2020-mi], and the resulting fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
 
-<!--- Pre-patterned structures usually have a clear role.-->
-In fly embryos, the epithelial invaginations that form during gastrulation are pre-patterned and usually fulfill a clear role in development: giving rise to precursor tissues.
-The ventral furrow and the midgut invaginations, for instance, give rise to the mesoderm and to the endoderm of the flies, respectively.
-One exception to this pattern is a prominent head invagination present in flies, known as the cephalic furrow.
+This prominent fold, however, is transient and has no clear role.
+Remarkably, a couple of hours after gastrulation, the cephalic furrow unfolds and disappears leaving no trace [@Hartenstein1985-zs].
+And, unlike other embryonic invaginations, such as the ventral furrow or midgut invaginations which give rise to mesoderm and endoderm, respectively, the cells invaginated in the cephalic furrow do not give rise to any specific precursors or larval structures.
+This ephemeral nature and absence of associated fates raised hypotheses of possible physical roles for the cephalic furrow, such as a temporary storage of anterior cells [@Turner1977-ol] or as an anchor for anterior tissues during gastrulation [@Costa1993-qj; @Dicko2017-wz].
+These hypotheses, however, have not been investigated *in vivo*.
 
-The cephalic furrow is, therefore, a puzzling structure; it is a prominent fold forming at a crucial stage of development, has a finely regulated morphogenesis driven by active cellular mechanisms, but vanishes without any obvious function for the embryo.
+This apparent contradiction between a finely controlled formation at the genetic, cellular, and tissue levels, and the absence of an obvious developmental role makes the cephalic furrow a puzzling morphogenetic trait.
 
-<!--TODO: Maybe this is too much for the introduction, move it to the discussion?-->
-This ephemeral nature and absence of associated fates suggests the cephalic furrow may play a more immediate, physical role during gastrulation.
-Some hypotheses are that the invagination functions as a temporary storage of anterior cells until later in development [@Turner1977-ol], or that the invaginated cells anchor anterior tissues and help directing tissue flow during gastrulation [@Costa1993-qj; @Dicko2017-wz].
-The cephalic furrow retains a significant number of blastoderm cells beneath the surface of the embryo during gastrulation (about 10% according to recent estimates [@Stern2021-zv]), but what function such storage accomplishes remains unclear, and none of these hypotheses have been investigated *in vivo*.
+In addition, to that the cephalic furrow is an evolutionary novelty [Lemke].
 
+The cephalic furrow is 
 CF is an evolutionary novelty within Diptera making it a great model to investigate the evolution of morphogenesis from patterning to mechanics.
 
 We find that the cephalic furrow plays a physical role during gastrulation, that its evolution is associated with a novel *btd* head--trunk domain underlying an ancestral head--trunk patterning system, and that the mechanical instability generated by mechanical stresses may have been the selective pressure involved in the evolution of this prominent invagination.
+
+<!--The cephalic furrow retains a significant number of blastoderm cells beneath the surface of the embryo during gastrulation (about 10% according to recent estimates [@Stern2021-zv]),-->
+
+To address this, my team will analyse the morphogenesis of the head--trunk boundary in selected fly species across the phylogeny.
+This will pinpoint the key evolutionary steps in terms of genetic regulation and tissue mechanics leading to the origin of the cephalic furrow.
+We will integrate *in vivo* and *in silico* approaches, using single-cell transcriptomics, multiplexed *in situ* hybridization, genetic and optogenetic perturbations with *in toto* live-imaging, and modelling and simulations of the mechanics of embryonic tissues.
+These comparative, phylogenetic-aware mechanobiology data will bring unprecedented insights into the interplay between mechanics and evolution, and reveal potential mechanisms that govern the evolution of morphogenesis in animal development.
+
 
 <!--We uncover a novel player in the CF patterning revealing that it's pre-patterned even more, and by comparing to another fly without the furrow we can say CF is associated with the appearance of a novel domain and cooption of existing patterning.-->
 
@@ -340,14 +398,13 @@ Taken together, our physical model provides a theoretical basis that an early pr
 
 <!--TODO: Timing effectiveness is not exemplified in the last panel-->
 
-
 ## CF evolution linked to novel *btd* domain
 
 <!--Cephalic furrow evolution linked to novel expression domain of btd-->
 
 <!--TODO: Figure out this transition and the results therein-->
 
-Since the pre-patterning of the cephalic furrow is essential for its function in preventing mechanical instabilities, it is important to uncover which changes in the genetic patterning were important during the evolution of the cephalic furrow.
+Because the pre-patterning of the cephalic furrow is essential for its function in preventing mechanical instabilities, it is important to uncover which changes in the genetic patterning were important during the evolution of the cephalic furrow.
 
 We know that the head--trunk boundary is an important genetic boundary in the embryo [refs], and that this boundary is ancient and perhaps defining feature of bilaterians [HT], and has implications for the evolution of animal body patterns [CMD].
 
