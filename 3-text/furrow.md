@@ -780,12 +780,20 @@ All authors revised and contributed to the text.
 **j**, Schematic drawings showing the summary of the ectopic folding in double mutants and germ band cauterization experiments.
 ](figures/Fig4.jpg){#fig:experiments width=100%}
 
+![Genetic patterning of the head--trunk boundary in Drosophila and Clogmia.
+**a**, Early expression of btd, slp, and eve.
+**b**, Detail of expression profile in Drosophila.
+**c**, Absence of btd head--trunk domain in Clogmia compared to Drosophila.
+**d**, Comparison of genetic arrangements between Drosophila and Clogmia at the onset of gastrulation.
+**e**, Schematic drawings showing the arrangement and putative genetic interactions in Drosophila and Clogmia head--trunk boundary..
+](figures/Fig5.jpg){#fig:gene-expression width=100%}
+
 ![Mechanical role of the cephalic furrow in development and evolution.
 **a**, Schematic drawings of a lateral view comparing wildtype and cephalic furrow mutants. Tissue flows are represented by black arrows, mitotic domains (MD) by light gray patches, and the cephalic furrow (CF) area by a dark gray band. In cephalic furrow mutants the excess of epithelial tissue on the surface, combined with the formation of mitotic domains and the extension of the germ band (GB), leads to mechanical instabilities and the buckling of ectopic folds (EF) at the head--trunk boundary.
 **b**, Schematic drawings of a profile view comparing the changes in epithelial thickness in cephalic furrow mutants and the correlation with the position of tissue buckling.
 **c**, Simplified dipteran phylogenetic tree with mapped traits. The germ band extension and mitotic domains probably evolved at the base of dipteran flies. The cephalic furrow is a late innovation. It is absent in *Clogmia* [@Jimenez-Guri2014-zs] and *Chironomus* [@Caroti2015-cy], and present in the common ancestor of *Megaselia* [@Wotton2014-fr] and *Drosophila*. It is unclear whether mechanical stresses are present in the head--trunk boundary of flies without cephalic furrow.
 **d**, Scenario for the evolution of the cephalic furrow. In the ancestral state there was no mechanical instability at the head--trunk boundary. With the evolution of the long germ and mitotic domains there was an increase in the compressive stresses at the head--trunk boundary. Selection for faster developmental times put the region under increased strain leading to the genetic stabilization of a pre-patterned head invagination that buffers these mechanical forces and probably bring a selective advantage to flies with a cephalic furrow.
-](figures/Fig5.jpg){#fig:summary width=50%}
+](figures/Fig6.jpg){#fig:summary width=100%}
 
 \clearpage
 
