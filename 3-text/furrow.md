@@ -137,27 +137,26 @@ To investigate the interplay between genetics and mechanics during the evolution
 
 <!--Pre-patterned epithelial folding and the case of the cephalic furrow-->
 
-The cephalic furrow is one of the earliest morphogenetic events during gastrulation in *Drosophila*.
-It begins as paired lateral indentations which quickly invaginate to form a deep epithelial fold at the boundary between the head (procephalon) and the trunk (germ band) [@Hartenstein1985-zs; @Foe1989-cw; @Spencer2015-td].
-Similar to other embryonic invaginations, the formation of the cephalic furrow is pre-patterned under strict genetic control.
+Cephalic furrow formation in *Drosophila* is under strict genetic control.
+It is one of the earliest morphogenetic events of gastrulation, beginning as paired lateral indentations which quickly invaginate to form a deep epithelial fold at the boundary between the head (procephalon) and the trunk (germ band) [@Hartenstein1985-zs; @Foe1989-cw; @Spencer2015-td].
 The site of invagination is determined by the zygotic expression of two transcription factors, *buttonhead* (*btd*) and *even skipped* (*eve*), whose domains overlap at the head--trunk boundary by a narrow row of blastoderm cells [@Vincent1997-fa].
-These so-called initiator cells shorten along the apical--basal axis by activating lateral myosin contractility and drive the infolding of the tissue [@Eritano2020-mi].
 The position of the cephalic furrow is specified with remarkable accuracy [@Liu2013-lc].
-Once initiated, the invagination follows a stereotypic morphogenetic sequence of events.
-A mechanical coupling between invaginating cells ensures the precision of the tissue fold during morphogenesis [@Eritano2020-mi], and the resulting fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
+These so-called initiator cells shorten along the apical--basal axis by activating lateral myosin contractility which drives the infolding of the tissue [@Eritano2020-mi].
+In addition, the mechanical coupling between cells ensures a precise and stereotypic morphogenetic process of tissue folding [@Eritano2020-mi].
+The resulting fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
 
-This prominent fold, however, is transient and has no clear role in development.
+However, the cephalic furrow is transient and has no clear role in development.
 The invagination unfolds after a couple of hours leaving no trace [@Hartenstein1985-zs].
 And, unlike other embryonic invaginations like the ventral furrow, which gives rise to mesodermal precursors, the cells invaginated in the cephalic furrow do not give rise to any specific structures in the larva.
 The cephalic furrow is, therefore, a trait whose formation is under tight genetic control, but which has no obvious function for the embryo.
 While some hypotheses about function of the cephalic furrow have been raised, such as a temporary storage [@Turner1977-ol] or as an tissue anchor [@Costa1993-qj; @Dicko2017-wz] during gastrulation, they have not been investigated *in vivo* or considered on a broader phylogenetic context.
 
-As we will see, the cephalic furrow is an evolutionary novelty within Diptera [Lemke].
-The invagination is only present in a derived group of flies, the cyclorraphan, but is absent in the remaining basally-branching dipteran flies [Lemke].
+As we will see, the cephalic furrow is an evolutionary novelty within Diptera [@Lemke].
+The invagination is only present in a derived group of flies, the cyclorraphan, but is absent in the remaining basally-branching dipteran flies [@Lemke].
 This clear origin in the phylogenetic tree makes the cephalic furrow an ideal model for investigating how pre-patterned morphogenetic processes evolve.
 
 Our work integrates genetics and mechanics to uncover the developmental role and evolutionary origins of the cephalic furrow.
-First, we screen for novel cephalic furrow genes in *Drosophila* and identify *sloppy paired 1* as an upstream factor controlling the position of the initiator cells.
+First, we identified the transcription factor *sloppy paired* as a cephalic furrow gene in *Drosophila* as an upstream factor controlling the position of the initiator cells.
 Then, we performed live-imaging on mutant embryos to understand how perturbations in cephalic furrow formation impact the normal gastrulation processes.
 We find that the absence of the cephalic furrow increases the mechanical instability of the blastoderm epithelium.
 Using a combination of *in vivo* experiments and *in silico* simulations, we show that the cephalic furrow prevents epithelial instability by absorbing compressive stresses, playing a mechanical role during gastrulation.
@@ -396,50 +395,49 @@ Taken together, our physical model provides a theoretical basis that an early pr
 
 <!--CF evolution linked to novel expression domain of btd-->
 
-<!--TODO: Figure out this transition and the results therein-->
+The function of the cephalic furrow in preventing mechanical instabilities depends on the correct positioning and timing of invagination to begin before other morphogenetic movements take place.
+The underlying genetic patterning regulating the activity of the initiator cells in *Drosophila* depends on the overlapping expression of *btd* and *eve* at the head--trunk boundary [@Vincent1997-fa].
+However, it is unknown whether this arrangement is conserved throughout the Diptera phylogeny or if it is associated with the evolution of the cephalic furrow.
+To uncover the gene patterning changes underlying the evolution of the cephalic furrow, we compared the expression of known and novel cephalic furrow genes between *Drosophila* and *Clogmia*, a fly without the cephalic furrow and sister group to the remaining dipterans.
 
-Because the pre-patterning of the cephalic furrow is essential for its function in preventing mechanical instabilities, it is important to uncover which changes in the genetic patterning were important during the evolution of the cephalic furrow.
-
-We know that the head--trunk boundary is an important genetic boundary in the embryo [refs], and that this boundary is ancient and perhaps defining feature of bilaterians [HT], and has implications for the evolution of animal body patterns [CMD].
-
-CF patterning involves btd, eve, downstream of bcd, perhaps prd somewhat involved.
-
-- The cephalic furrow is a prominent invagination in Drosophila, but it is not present in all flies.
-- In fact, the mapping of this trait in the phylogenetic tree suggests that the cephalic furrow is an evolutionary novelty within Diptera.
-- Other flies do not have a cephalic furrow raising the question of how the genetic patterning and mechanics is in these flies and what could have been the evolutionary changes involved in the evolution of the cephalic furrow.
-- We therefore checked whether the expression patterns of cephalic furrow genes present in Drosophila is conserved in Clogmia, a fly sister to remaining dipterans.
-
-### Early *slp* activity positions CF
+### Early *slp1* activity positions the cephalic furrow
 
 <!--Identifying slp as a novel cephalic furrow genes-->
 
-- The two main cephalic furrow genes are btd and eve and secondarily prd.
-- But there is probably other genes contributing.
-- It is hard to screen when your trait is transient and leaves no trace.
-- Therefore, we needed live-imaging. And we screened loss of function lines.
-- To uncover novel cephalic furrow genes we screened loss of function flies for about 50 genes expressed at the head--trunk.
-- We identified few, but the main one is slp
+<!--On a live-imaging screen, we identified sloppy paired as a cephalic furrow gene.-->
+
+To get a more complete picture of the genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region.
+Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to identify potential phenotypes.
+From about 50 genes, we identified five showing abnormal cephalic furrow formation to different degrees, the stronger phenotype being from *sloppy paired* (*slp*) (see @tbl:screen).
 
 <!--### Early slp activity fine tunes the position of initiator cells-->
 
-- We found that slp mutants show an anterior shift in the CF.
-- Anterior shift corresponds to a shift in the btd-eve overlap.
+*slp* is a known anterior repressor [@SlpCitations] and segment polarity gene [@SlpSegmental], but its involvement with cephalic furrow formation had not been described.
+We found that in embryos lacking functional *slp* genes, the cephalic furrow invagination is delayed and shifted anteriorly about 5%, leading to an abnormal proportion of head and trunk regions ({@fig:slp}a).
+Interestingly, the site of invagination of the cephalic furrow in slp mutants does correspond to the typical *btd* and *eve* overlap which is intact, but is  shifted forward by about 2.5 cell rows ({@fig:slp}b). 
+These data indicate that *slp* activity is an upstream factor required for the proper positioning of the cephalic furrow along the anteroposterior axis.
 
 <!--### Early slp/eve domains demarcate the head--trunk boundary-->
 
-- Early expression reveals that slp/eve interface the head--trunk boundary.
-- slp is upstream of btd is secondarily activated at this interface.
+To understand how slp controls the position of the cephalic furrow, I analyzed the colocalization of slp, eve and btd expression from the onset of zygotic activation until gastrulation. 
+slp and eve are expressed early in broad juxtaposing anterior and domains, respectively, which demarcate the boundary between the head and trunk regions ({@fig:gene}a).
+The initially ubiquitous expression of eve recedes until the posterior limit of slp expression.
+btd expression is slightly delayed and initiates at the interface between slp and eve ({@fig:gene}a).
+This suggests that while btd is secondarily and independently activated, the control of cephalic furrow position is likely due to the early activity of slp and its interacting with eve to establish the head--trunk boundary.
 
-### Late *slp* expression at CF edges
-
-- Late expression contribute to initiator identity and invagination edges.
-- btd, eve, and prd show different initiator cell behavior phenotypes.
-- slp as well shows some adhesive differences.
+<!--how btd also regulates slp stripe 2-->
 - slp positions btd/eve, then btd positions slp stripe 2
 
-<!--### Cephalic furrow patterning is under strict genetic control-->
+### Late *slp* expression demarcates cephalic furrow edges
 
-- This suggests that the formation of the cephalic furrow is under more genetic control than previously thought.
+At the onset of gastrulation, the blastoderm cells forming the cephalic furrow express a unique combination of transcripts and a characteristic arrangement.
+The initial juxtaposing domains of slp and eve progressively resolve into narrow abutting stripes that correspond to the single row of initiator cells giving rise to the cephalic furrow ({@fig:genes}b).
+slp is expressed in the adjacent cells, cells which are direct neighbors of the initiator cells, and in the edge cells which are the cells marking the outer limits of the cephalic furrow ({@fig:genes}b,d).
+slp mutants show some differences in the intercellular connection between initiator and adjacent cells providing preliminary data that the late expression may also be important for establishing the cell identities around the cephalic furrow.
+
+<!--- slp as well shows some adhesive differences.-->
+
+<!--### Cephalic furrow patterning is under strict genetic control-->
 
 ### Clogmia lacks CF and *btd* domain
 
