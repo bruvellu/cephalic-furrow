@@ -439,7 +439,7 @@ slp mutants show some differences in the intercellular connection between initia
 
 <!--### Cephalic furrow patterning is under strict genetic control-->
 
-### Clogmia lacks CF and *btd* domain
+### Clogmia lacks a *btd* head--trunk domain
 
 <!--Head--trunk boundary slp/eve expression is conserved-->
 
