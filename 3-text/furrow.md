@@ -400,40 +400,42 @@ In *Drosophila*, the infolding is mediated by the overlapping expression domains
 However, it remains unclear if this genetic patterning of *Drosophila* is conserved in other flies with or without the cephalic furrow.
 To uncover the gene expression changes associated with the evolution of the cephalic furrow, we compared the expression of known and novel cephalic furrow genes between *Drosophila* and *Clogmia*, a fly with a key phylogenetic position in dipteran phylogeny which has no the cephalic furrow.
 
-### Early *slp1* activity positions the cephalic furrow
+### *slp*--*eve* interaction positions the head--trunk boundary
+
+<!--slp is a cephalic furrow gene-->
+
+<!--### Early *slp1* activity positions the cephalic furrow-->
 
 <!--Identifying slp as a novel cephalic furrow genes-->
 
 <!--On a live-imaging screen, we identified sloppy paired as a cephalic furrow gene.-->
 
-To get a more complete picture of the genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region.
+To discover new genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region.
 Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to identify potential phenotypes.
-From about 50 genes, we identified five showing abnormal cephalic furrow formation to different degrees, the stronger phenotype being from *sloppy paired* (*slp*) (see @tbl:screen).
+From about 50 genes, we identified five showing abnormal cephalic furrow formation to different degrees, the stronger phenotype being from flies mutant for *sloppy paired* (*slp*) (see @tbl:screen).
 
 <!--### Early slp activity fine tunes the position of initiator cells-->
 
-*slp* is a known anterior repressor [@SlpCitations] and segment polarity gene [@SlpSegmental], but its involvement with cephalic furrow formation had not been described.
-We found that in embryos lacking functional *slp* genes, the cephalic furrow invagination is delayed and shifted anteriorly about 5%, leading to an abnormal proportion of head and trunk regions ({@fig:slp}a).
-Interestingly, the site of invagination of the cephalic furrow in slp mutants does correspond to the typical *btd* and *eve* overlap which is intact, but is  shifted forward by about 2.5 cell rows ({@fig:slp}b). 
-These data indicate that *slp* activity is an upstream factor required for the proper positioning of the cephalic furrow along the anteroposterior axis.
+*slp* is a known anterior repressor involved in the positioning of anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], but its involvement with cephalic furrow formation has not been analyzed.
+Our imaging data on mutant embryos lacking both *slp1* and *slp2* genes shows that the cephalic furrow invagination is delayed and shifted anteriorly about 5%, leading to an abnormal proportion of head and trunk regions ({@fig:slp}a).
+Interestingly, in *slp* mutants the typical *btd* and *eve* overlapping domains is present but shifted forward about 2.5 cell rows ({@fig:slp}b). 
+By analyzing the developmental expression of *slp*, *eve*, and *btd* transcripts from the onset of zygotic activation until the onset of gastrulation in *Drosophila*, we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:gene-expression}a).
+*eve* expression is initially ubiquitous, but its anterior limit recedes until the posterior limit of the *slp* domain, while *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:gene-expression}a).
+These data indicate that the early *slp* activity is an upstream factor required for positioning *eve* stripe 1 and *btd* domain, and consequently, important for determining the head--trunk boundary and the site of invagination for the cephalic furrow along the anteroposterior axis.
 
 <!--### Early slp/eve domains demarcate the head--trunk boundary-->
 
-To understand how slp controls the position of the cephalic furrow, I analyzed the colocalization of slp, eve and btd expression from the onset of zygotic activation until gastrulation. 
-slp and eve are expressed early in broad juxtaposing anterior and domains, respectively, which demarcate the boundary between the head and trunk regions ({@fig:gene}a).
-The initially ubiquitous expression of eve recedes until the posterior limit of slp expression.
-btd expression is slightly delayed and initiates at the interface between slp and eve ({@fig:gene}a).
-This suggests that while btd is secondarily and independently activated, the control of cephalic furrow position is likely due to the early activity of slp and its interacting with eve to establish the head--trunk boundary.
-
 <!--how btd also regulates slp stripe 2-->
-- slp positions btd/eve, then btd positions slp stripe 2
 
-### Late *slp* expression demarcates cephalic furrow edges
+<!--- slp positions btd/eve, then btd positions slp stripe 2-->
 
-At the onset of gastrulation, the blastoderm cells forming the cephalic furrow express a unique combination of transcripts and a characteristic arrangement.
-The initial juxtaposing domains of slp and eve progressively resolve into narrow abutting stripes that correspond to the single row of initiator cells giving rise to the cephalic furrow ({@fig:genes}b).
-slp is expressed in the adjacent cells, cells which are direct neighbors of the initiator cells, and in the edge cells which are the cells marking the outer limits of the cephalic furrow ({@fig:genes}b,d).
-slp mutants show some differences in the intercellular connection between initiator and adjacent cells providing preliminary data that the late expression may also be important for establishing the cell identities around the cephalic furrow.
+<!--### Late *slp* expression demarcates cephalic furrow edges-->
+
+At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:gene-expression}b,d).
+In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:gene-expression}e).
+Furthermore, the outer edges of the cephalic furrow are demarcated by slp expression ({@fig:gene-expression}d).
+This combinatorial expression of transcription factors *btd*, *eve*, *slp*, and *prd*, indicates that each row of cells forming the invagination of the cephalic furrow has a unique transcriptional identity.
+Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.
 
 <!--- slp as well shows some adhesive differences.-->
 
@@ -938,6 +940,12 @@ Values of $\kappa_o^{CF}$ are shown in units of $1/L$. $t_{MD}=1$ corresponds to
 **a**, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increase over time.
 **b**, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time.
 ](figures/FigS10.jpg){#fig:ablation tag=S10 width=80%}
+
+![Analyses of *slp* mutants.
+**a**, Anterior displacement of the cephalic furrow in *slp* mutants.
+**b**, Anterior displacement of the btd eve overlap in *slp* mutants.
+**b**, Disruption of *slp* expression in *btd* mutants.
+](figures/FigS11.jpg){#fig:slp tag=S11 width=80%}
 
 \clearpage
 

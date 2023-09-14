@@ -83,6 +83,7 @@ figs:
 	cp -vu ${FIGSRC}/cf-sweep/figure.png ${FIGHIRES}/FigS8.png
 	cp -vu ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIRES}/FigS9.png
 	cp -vu ${FIGSRC}/ablation-analysis/figure.png ${FIGHIRES}/FigS10.png
+	cp -vu ${FIGSRC}/slp-analyses/figure.png ${FIGHIRES}/FigS11.png
 	# Make JPGs for smaller size for visualization/sharing
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIRES}/*.png
 
