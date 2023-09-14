@@ -395,10 +395,10 @@ Taken together, our physical model provides a theoretical basis that an early pr
 
 <!--CF evolution linked to novel expression domain of btd-->
 
-The function of the cephalic furrow in preventing mechanical instabilities depends on the correct positioning and timing of invagination to begin before other morphogenetic movements take place.
-The underlying genetic patterning regulating the activity of the initiator cells in *Drosophila* depends on the overlapping expression of *btd* and *eve* at the head--trunk boundary [@Vincent1997-fa].
-However, it is unknown whether this arrangement is conserved throughout the Diptera phylogeny or if it is associated with the evolution of the cephalic furrow.
-To uncover the gene patterning changes underlying the evolution of the cephalic furrow, we compared the expression of known and novel cephalic furrow genes between *Drosophila* and *Clogmia*, a fly without the cephalic furrow and sister group to the remaining dipterans.
+The function of the cephalic furrow in preventing mechanical instabilities depends on the correct positioning and timing of the invagination; the initiation of the process must begin before other morphogenetic movements take place.
+In *Drosophila*, the infolding is mediated by the overlapping expression domains of *btd* and *eve* at the head--trunk boundary [@Vincent1997-fa].
+However, it remains unclear if this genetic patterning of *Drosophila* is conserved in other flies with or without the cephalic furrow.
+To uncover the gene expression changes associated with the evolution of the cephalic furrow, we compared the expression of known and novel cephalic furrow genes between *Drosophila* and *Clogmia*, a fly with a key phylogenetic position in dipteran phylogeny which has no the cephalic furrow.
 
 ### Early *slp1* activity positions the cephalic furrow
 
