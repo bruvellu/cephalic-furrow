@@ -151,8 +151,8 @@ And, unlike other embryonic invaginations like the ventral furrow, which gives r
 The cephalic furrow is, therefore, a trait whose formation is under tight genetic control, but which has no obvious function for the embryo.
 While some hypotheses about function of the cephalic furrow have been raised, such as a temporary storage [@Turner1977-ol] or as an tissue anchor [@Costa1993-qj; @Dicko2017-wz] during gastrulation, they have not been investigated *in vivo* or considered on a broader phylogenetic context.
 
-As we will see, the cephalic furrow is an evolutionary novelty within Diptera [@Lemke].
-The invagination is only present in a derived group of flies, the cyclorraphan, but is absent in the remaining basally-branching dipteran flies [@Lemke].
+As we will see, the cephalic furrow is an evolutionary novelty within Diptera [@Dey2023-pj].
+The invagination is only present in a derived group of flies, the cyclorraphan, but is absent in the remaining basally-branching dipteran flies [@Dey2023-pj].
 This clear origin in the phylogenetic tree makes the cephalic furrow an ideal model for investigating how pre-patterned morphogenetic processes evolve.
 
 Our work integrates genetics and mechanics to uncover the developmental role and evolutionary origins of the cephalic furrow.
@@ -507,9 +507,10 @@ In this sense, a canalized process forming a single predictable invagination may
 This raises an intriguing evolutionary question---if the cephalic furrow has a mechanical role in development, did it first evolve in response to these mechanical stresses of gastrulation?
 If this was the case, we expect the sources of stress (mitotic domains and germ band extension) to be present in the fly lineage before the evolution of the cephalic furrow.
 Strikingly, that appears to be the case.
-Mapping the cephalic furrow in the dipteran phylogeny suggests that the cephalic furrow is an evolutionary novelty that evolved after the appearance of mitotic domains and long germ (Steffen Lemke personal communication) ({@fig:summary}c).
+Mapping the cephalic furrow in the dipteran phylogeny suggests that the cephalic furrow is an evolutionary novelty that evolved after the appearance of mitotic domains and long germ [@Dey2023-pj] ({@fig:summary}c).
 One putative scenario is that selection for shorter developmental times concatenated the formation of mitotic domains and germ band extension, increasing the mechanical instabilities at the head--trunk boundary ({@fig:summary}d).
 In this case, mechanical stress may have acted as a selective pressure for the evolution of a pre-patterned head invagination, averting the potential detrimental effects of mechanical instabilities.
+
 While the interplay between tissue mechanics and developmental evolution is poorly understood, theoretical works have raised the hypothesis that self-organized morphogenesis were critical to generate morphogenetic innovations at the dawn of animal evolution [@Newman2000-oz].
 Or in other words, that before embryonic development, tissues would fold due to mechanical interactions between tissues, and only through natural selection that the pre-patterned morphogenetic programs we know today were fixed and development canalized [@Newman2000-oz].
 Our work support this hypothesis by bringing empirical evidence from developmental and comparative data that mechanical forces might have a critical role in generating morphogenetic innovations in early development.
