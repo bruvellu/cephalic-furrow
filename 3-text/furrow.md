@@ -132,12 +132,13 @@ Altogether, these data suggest that the evolution of the cephalic furrow pattern
 
 ## Mechanical role of cephalic furrow formation
 
-Our work investigates the physical consequences of perturbing the formation of the cephalic furrow in *Drosophila*.
-To comprehend the impact of cephalic furrow defects, we generated fluorescent lines carrying a membrane marker and a loss of function allele for genes known to affect cephalic furrow formation---*btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
-In *prd* mutants, the formation of the cephalic furrow is delayed relative to wildtype embryos [@Blankenship2001-tm], while in *btd* and *eve* mutants, the cephalic furrow is absent [@Vincent1997-fa].
+To comprehend the physical consequences of perturbing the formation of the cephalic furrow in *Drosophila*, we generated fluorescent lines carrying a membrane marker and a loss of function allele for genes known to affect cephalic furrow formation---*btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
+The cephalic furrow is delayed in *prd* mutants [@Blankenship2001-tm] and is absent in *btd* and *eve* mutants [@Vincent1997-fa].
+<!--In *prd* mutants, the formation of the cephalic furrow is delayed relative to wildtype embryos [@Blankenship2001-tm], while in *btd* and *eve* mutants, the cephalic furrow is absent [@Vincent1997-fa].-->
 To capture the tissue dynamics during gastrulation and the relative timing of developmental events, we imaged these mutant embryos using lightsheet microscopy *in toto* and with high temporal resolution.
 
 ### Initiator cell behavior is disrupted
+<!--### Initiator cell behavior-->
 
 <!--TODO: Focus the paragraph on initiator cell behaviors-->
 
@@ -148,7 +149,7 @@ The initiator cells in *prd* mutants lack the typical arched profile of the wild
 The putative initiator cells of *btd* mutants do not shorten, but show a reminiscent degree of apical constriction which creates a small indentation in epithelium of some embryos ({@fig:initiator}a,b, {!@fig:vid-initiator}).
 In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
 While the behavior of initiator cells is perturbed in the three mutants, it is only in *btd* and *eve* that the cellular basis for cephalic furrow formation---the cell shortening---is severely disrupted.
-Therefore, initiator cell behavior is only abolished in eve, while btd still shows a reminiscent behavior, maybe from myosin observed previously [@Eritano2020-mi], and prd initiators still behaves, but forms an abnormal fold indicating that the furrow is not only delayed [@Blankenship2001-tm], but that it is also perturbed.
+Therefore, initiator cell behavior is only abolished in *eve*, while *btd* still shows a reminiscent behavior, maybe from myosin observed previously [@Eritano2020-mi], and prd initiators still behaves, but forms an abnormal fold indicating that the furrow is not only delayed [@Blankenship2001-tm], but that it is also perturbed.
 
 <!--These differences may be associated with apical myosin activity which is present in *btd* but not in *eve* mutants [@Eritano2020-mi].-->
 
@@ -389,7 +390,7 @@ These data indicate that the early *slp* activity is an upstream factor required
 
 At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:gene-expression}b,d).
 In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:gene-expression}e).
-Furthermore, the outer edges of the cephalic furrow are demarcated by slp expression ({@fig:gene-expression}d).
+Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:gene-expression}d).
 This combinatorial expression of transcription factors *btd*, *eve*, *slp*, and *prd*, indicates that each row of cells forming the invagination of the cephalic furrow has a unique transcriptional identity.
 Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.
 
@@ -407,10 +408,10 @@ To uncover the genetic patterning differences associated with the evolution of t
 We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:gene-expression}a).
 However, the expression of *btd* differs between the two species.
 In *Drosophila* *btd* is expressed at the head--trunk boundary from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:gene-expression}a).
-In *Clogmia*, the *btd* acron domain is expressed much earlier and, strikingly, the head--trunk domain is not present; btd is only expressed at a ventral patch in the foregut area ({@fig:gene-expression}a,c).
+In *Clogmia*, the *btd* acron domain is expressed much earlier and, strikingly, the head--trunk domain is not present; *btd* is only expressed at a ventral patch in the foregut area ({@fig:gene-expression}a,c).
 Additionally, the combinatorial expression of *slp*, *eve*, and *prd* at the onset of gastrulation is conserved between *Clogmia* and *Drosophila* ({@fig:gene-expression}e).
 These data shows that both flies share a conserved head--trunk patterning system, and that the only significant difference is the presence of a head--trunk domain of *btd* in *Drosophila*.
-Since btd is a crucial gene for cephalic furrow formation, this suggests that the origin of a novel expression domain of *btd* at the head--trunk boundary was possibly a key event associated with the evolution of the cephalic furrow.
+Since *btd* is a crucial gene for cephalic furrow formation, this suggests that the origin of a novel expression domain of *btd* at the head--trunk boundary was possibly a key event associated with the evolution of the cephalic furrow.
 
 <!--- As an aside, curiously, the eye domain of btd is expressed very early in Clogmia while the same domain is delayed tremendously in Drosophila. Clogmia has larval eyes while Drosophila doesn’t. It could be that some portions of head development in Drosophila were just turned off.-->
 
@@ -737,12 +738,12 @@ All authors revised and contributed to the text.
 **j**, Schematic drawings showing the summary of the ectopic folding in double mutants and germ band cauterization experiments. Tissue flows are represented by black arrows, mitotic domains (MD) by light gray patches, and the cephalic furrow (CF) area by a dark gray band. In cephalic furrow mutants the excess of epithelial tissue on the surface, combined with the formation of mitotic domains and the extension of the germ band (GB), leads to mechanical instabilities and the buckling of ectopic folds (EF) at the head--trunk boundary.
 ](figures/Fig4.jpg){#fig:experiments width=100%}
 
-![Genetic patterning of the head--trunk boundary in Drosophila and Clogmia.
-**a**, Early expression of btd, slp, and eve.
-**b**, Detail of expression profile in Drosophila.
-**c**, Absence of btd head--trunk domain in Clogmia compared to Drosophila.
-**d**, Comparison of genetic arrangements between Drosophila and Clogmia at the onset of gastrulation.
-**e**, Schematic drawings showing the arrangement and putative genetic interactions in Drosophila and Clogmia head--trunk boundary..
+![Genetic patterning of the head--trunk boundary in *Drosophila* and *Clogmia*.
+**a**, Early expression of *btd*, *eve*, and *slp*.
+**b**, Detail of expression profile in *Drosophila*.
+**c**, Absence of *btd* head--trunk domain in *Clogmia* compared to *Drosophila*.
+**d**, Comparison of genetic arrangements between *Drosophila* and *Clogmia* at the onset of gastrulation.
+**e**, Schematic drawings showing the arrangement and putative genetic interactions in *Drosophila* and *Clogmia* head--trunk boundary.
 ](figures/Fig5.jpg){#fig:gene-expression width=100%}
 
 ![Genetics and mechanics during the evolution of the cephalic furrow.
@@ -846,7 +847,7 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 **c**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in *eve* embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control *eve* heterozygote (left) and of a *eve* homozygote (right). The numbers indicate the average folded area for the sample type in µm^2^×10^3^.
 **d**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.
 **e**, Dynamics, angle directionality, and tortuosity measurements comparing the cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no obvious trend in angular direction tortuosity values over time. For both angle and tortuosity analysis, n=6.
-**f**, Maximum folding depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. Ectopic folds are shallower than the cephalic furrow in both genetic backgrounds (*btd* p=1.278e-09 and eve p=9.728e-05 in a Welch Two Sample t-test). Each dot corresponds to a single fold; each embryo can have multiple folds. The number of embryos analyzed for *btd* is 22 heterozygotes and 6 homozygotes, and for *eve* is 14 heterozygotes and 4 homozygotes.
+**f**, Maximum folding depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. Ectopic folds are shallower than the cephalic furrow in both genetic backgrounds (*btd* p=1.278e-09 and *eve* p=9.728e-05 in a Welch Two Sample t-test). Each dot corresponds to a single fold; each embryo can have multiple folds. The number of embryos analyzed for *btd* is 22 heterozygotes and 6 homozygotes, and for *eve* is 14 heterozygotes and 4 homozygotes.
 **g**, Folded area of ectopic folds in wildtype and mutant embryos (*btd*, *eve*, and *prd*). Ectopic folds in wildtype occupy a smaller area than ectopic folds in cephalic furrow mutants (p=9.107e-06 in a Wilcoxon rank sum exact test).
 **h**, Lateral views of a wildtype (top) and a *prd* mutant (bottom) exhibiting ectopic folds. Scale bar = 50µm.
 **i**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in the wildtype (top) and *prd* mutant (bottom) shown in **h**. The folded region is outlined in yellow on a cartographic projection. The numbers indicate the average folded area in µm^2^×10^3^ for the CFs and EFs separately.
@@ -900,7 +901,7 @@ Values of $\kappa_o^{CF}$ are shown in units of $1/L$. $t_{MD}=1$ corresponds to
 
 ![Analyses of *slp* mutants.
 **a**, Anterior displacement of the cephalic furrow in *slp* mutants.
-**b**, Anterior displacement of the btd eve overlap in *slp* mutants.
+**b**, Anterior displacement of the *btd*--*eve* overlap in *slp* mutants.
 **b**, Disruption of *slp* expression in *btd* mutants.
 ](figures/FigS11.jpg){#fig:slp tag=S11 width=80%}
 
