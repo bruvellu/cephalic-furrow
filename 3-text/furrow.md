@@ -347,7 +347,7 @@ Taken together, our physical model provides a theoretical basis that an early pr
 
 <!--TODO: Timing effectiveness is not exemplified in the last panel-->
 
-## Gene expression innovations during cephalic furrow evolution
+## Genetic innovation at the head--trunk boundary
 
 <!--CF evolution linked to novel expression domain of btd-->
 
