@@ -47,8 +47,6 @@ tablenos-plus-name: Table
 
 # Abstract
 
-<!--Mechanical forces and the evolution of morphogenesis-->
-
 Mechanical forces are crucial for driving and shaping the morphogenesis of tissues and organs during embryonic development.
 However, their relevance for the evolution of morphogenetic processes remains poorly understood.
 Here we show that a morphogenetic innovation present in fly embryos---a deep epithelial fold known as the cephalic furrow---plays a mechanical role during *Drosophila* gastrulation.
@@ -67,7 +65,7 @@ Morphogenesis is a physical process [@Keller2012-ca; @Heisenberg2013-pl].
 When embryonic tissues extend or invaginate, they push and pull on neighboring tissues.
 These mechanical interactions provide essential information to embryonic cells throughout development and ultimately shape the end morphology of tissues and organs [@Collinet2021-qa].
 However, how mechanical forces influence the *evolution* of morphogenesis in early embryonic development remains unclear.
-To investigate the interplay between genetics and mechanics during the evolution of morphogenesis, we studied a prominent but enigmatic epithelial fold that forms in the head--trunk boundary of flies during gastrulation---the cephalic furrow [@Hartenstein1985-zs; @Spencer2015-td].
+To investigate the interplay between genetics and mechanics during the evolution of morphogenesis, we studied a prominent but enigmatic epithelial fold that forms at the head--trunk boundary of flies during gastrulation---the cephalic furrow [@Hartenstein1985-zs; @Spencer2015-td].
 
 <!--- Morphogenesis is a complex sequence of patterning and physical events.-->
 <!--- Under genetic control, tissues can fold via intrinsic cell-generated forces.-->
@@ -107,28 +105,24 @@ These so-called initiator cells shorten along the apical--basal axis by activati
 In addition, the mechanical coupling between cells ensures a precise and stereotypic morphogenetic process of tissue folding [@Eritano2020-mi].
 The resulting fold spans the entire lateral surface, from dorsal to ventral, making the cephalic furrow a distinguishable landmark of the embryo during gastrulation [@Hartenstein1985-zs; @Foe1989-cw].
 
-However, the cephalic furrow is transient and has no clear role in development.
+The cephalic furrow, however, is transient and has no clear role in development.
 The invagination unfolds after a couple of hours leaving no trace [@Hartenstein1985-zs].
-And, unlike other embryonic invaginations like the ventral furrow, which gives rise to mesodermal precursors, the cells invaginated in the cephalic furrow do not give rise to any specific structures in the larva.
+And, unlike other embryonic invaginations which give rise to tissue precursors (e.g., the ventral furrow forming mesoderm), the cells invaginated in the cephalic furrow do not give rise to any specific structures in the larva.
 The cephalic furrow is, therefore, a trait whose formation is under tight genetic control, but which has no obvious function for the embryo.
 While some hypotheses about function of the cephalic furrow have been raised, such as a temporary storage [@Turner1977-ol] or as an tissue anchor [@Costa1993-qj; @Dicko2017-wz] during gastrulation, they have not been investigated *in vivo* or considered on a broader phylogenetic context.
+As we will see, the cephalic furrow is an evolutionary novelty within Diptera [@Dey2023-pj], making it an ideal model for investigating how pre-patterned morphogenetic processes in early embryonic development evolve.
 
-As we will see, the cephalic furrow is an evolutionary novelty within Diptera [@Dey2023-pj].
-The invagination is only present in a derived group of flies, the cyclorraphan, but is absent in the remaining basally-branching dipteran flies [@Dey2023-pj].
-This clear origin in the phylogenetic tree makes the cephalic furrow an ideal model for investigating how pre-patterned morphogenetic processes evolve.
+<!--The invagination is only present in a derived group of cyclorraphan flies, but is absent in the remaining basally-branching dipteran flies [@Dey2023-pj].-->
+<!--The clear origin in the phylogenetic tree makes the cephalic furrow an ideal model for investigating how pre-patterned morphogenetic processes evolve.-->
 
 Our work integrates genetics and mechanics to uncover the developmental role and evolutionary origins of the cephalic furrow.
-Then, we performed live-imaging on mutant embryos to understand how perturbations in cephalic furrow formation impact the normal gastrulation processes.
-We find that the absence of the cephalic furrow increases the mechanical instability of the blastoderm epithelium.
-Using a combination of *in vivo* experiments and *in silico* simulations, we show that the cephalic furrow prevents epithelial instability by absorbing compressive stresses, playing a mechanical role during gastrulation.
-Then, to uncover the differences in patterning associated with the evolution of the cephalic furrow, we compare the expression of head--trunk patterning genes between *Drosophila* and *Clogmia*, a fly without a cephalic furrow.
-First, we identified the transcription factor *sloppy paired* as a cephalic furrow gene in *Drosophila* acting as an upstream factor controlling the position of the initiator cells.
-By comparing the expression of cephalic furrow genes we find that the ancestral head--trunk patterning system is conserved, but the expression of *btd* differs between species, indicating that the evolution of the cephalic furrow is associated with the appearance of a novel *btd* domain at the head--trunk boundary of flies.
-Moreover, our data in Drosophila and additional data from other flies suggests that the mechanical instability generated by mechanical stresses may have been the selective pressure involved in the evolution of this prominent invagination.
+We first analyzed how perturbing cephalic furrow formation impacts gastrulation in *Drosophila* by live-imaging of mutant embryos, and find that the absence of the cephalic furrow increases the mechanical instability of the blastoderm epithelium.
+Using a combination of *in vivo* experiments and *in silico* simulations, we show that the cephalic furrow effectively prevents this instability by absorbing compressive stresses, and thus, plays a mechanical role during gastrulation.
+Then, to uncover genetic patterning changes associated with the evolution of the cephalic furrow, we compared the expression of head--trunk patterning genes between *Drosophila* and *Clogmia*, a fly without a cephalic furrow.
+We find that while the ancestral head--trunk patterning system is conserved between the two flies, *Clogmia* lacks the head--trunk domain of *btd*, suggesting that the appearance of a novel *btd* domain at the head--trunk boundary was a key event associated with cephalic furrow evolution.
+Altogether, these data suggest that the evolution of the cephalic furrow patterning system occurred through the cooption of a novel genetic player, and that the underlying selective pressure may have been the mechanical instability during gastrulation, revealing how mechanical forces influence the evolution of morphogenesis in early development.
 
 <!--The cephalic furrow retains a significant number of blastoderm cells beneath the surface of the embryo during gastrulation (about 10% according to recent estimates [@Stern2021-zv]),-->
-
-<!--We uncover a novel player in the CF patterning revealing that it's pre-patterned even more, and by comparing to another fly without the furrow we can say CF is associated with the appearance of a novel domain and cooption of existing patterning.-->
 
 <!--The mechanisms controlling the formation of the cephalic furrow remain poorly understood [@Gilmour2017-um]-->
 <!--But the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].-->
