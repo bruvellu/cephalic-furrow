@@ -133,43 +133,32 @@ Our findings reveal an interplay between genetic patterning and mechanical force
 
 ## Mechanical role of cephalic furrow formation
 
-To comprehend the physical consequences of perturbing the formation of the cephalic furrow in *Drosophila*, we generated fluorescent lines carrying a membrane marker and a loss of function allele for genes known to affect cephalic furrow formation---*btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
-The cephalic furrow is delayed in *prd* mutants [@Blankenship2001-tm] and is absent in *btd* and *eve* mutants [@Vincent1997-fa].
-<!--In *prd* mutants, the formation of the cephalic furrow is delayed relative to wildtype embryos [@Blankenship2001-tm], while in *btd* and *eve* mutants, the cephalic furrow is absent [@Vincent1997-fa].-->
+To understand the physical consequences of perturbing the formation of the cephalic furrow in *Drosophila*, we generated fluorescent lines carrying a membrane marker and a loss of function allele for genes known to affect cephalic furrow formation---*btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
+In *prd* mutants, the cephalic furrow is delayed [@Blankenship2001-tm], while in *btd* and *eve* mutants the cephalic furrow is absent [@Vincent1997-fa].
 To capture the tissue dynamics during gastrulation and the relative timing of developmental events, we imaged these mutant embryos using lightsheet microscopy *in toto* and with high temporal resolution.
 
-<!--### Initiator cell behavior-->
 ### Initiator cell behavior is disrupted in cephalic furrow mutants
 
-<!--TODO: Focus the paragraph on initiator cell behaviors-->
-
-Our recordings show differences between the three mutants at the cellular and tissue levels ({@fig:ectopic}a).
+Our recordings show that the behavior of initiator cells is perturbed in the three mutants, but in different ways ({@fig:ectopic}a).
 In wildtype embryos, the initiator cells undergo cell shortening and anisotropic apical constriction at the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
-These behaviors are delayed in *prd* mutants.
-Their initiator cells still shorten and constrict apically forming a clear infolding point in the epithelium about six minutes after gastrulation ({@fig:initiator}a,b). 
-But *prd* initiators lack the typical arched profile of the wildtype initiators, and the resulting fold is abnormal, indicating that cephalic furrow formation is not only delayed but also perturbed.
-The initiator cells of *btd* mutants do not shorten.
-They show a reminiscent degree of apical constriction which creates a small indentation in epithelium of some embryos ({@fig:initiator}a,b, {!@fig:vid-initiator}), possibly due to the reminiscent myosin activity at the head--trunk interface [@Eritano2020-mi].
+In *prd* mutants, these behaviors are delayed but the initiators still shorten and constrict apically, forming a clear infolding point in the epithelium about six minutes after gastrulation ({@fig:initiator}a,b). 
+However, *prd* initiators lack the typical arched profile of the wildtype initiators, and the resulting fold is abnormal, indicating that cephalic furrow formation is not only delayed but also perturbed.
+In *btd* mutants, the initiator cells do not shorten, but show a reminiscent degree of apical constriction which creates a small indentation in epithelium of some embryos ({@fig:initiator}a,b, {!@fig:vid-initiator}), possibly due to the reminiscent myosin activity at the head--trunk interface [@Eritano2020-mi].
 In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
-Therefore, the behavior of initiator cells is perturbed in the three mutants, but only in *btd* and *eve* that the cellular basis for cephalic furrow formation---the early cell shortening---is severely disrupted.
-Puzzlingly, about 10--15 min after the onset of gastrulation, these mutants form a notable epithelial fold near the canonical position of cephalic furrow formation ({@fig:ectopic}b,c, {@fig:initiator}a).
-
-<!--These differences may be associated with apical myosin activity which is present in *btd* but not in *eve* mutants [@Eritano2020-mi].-->
+Therefore, while initiator behavior is abnormal in *prd* mutants, the cellular basis for cephalic furrow formation---the early shortening of initiator cells---is only severely disrupted in *btd* and *eve*.
+Nevertheless, about 10--15 min after the onset of gastrulation in *btd* and *eve* mutants, we observe the formation of epithelial folds near the canonical position of the cephalic furrow ({@fig:ectopic}b,c, {@fig:initiator}a).
 
 <!--TODO: Create video for btd initiator cells {!@fig:vid-initiator-btd}-->
 <!--TODO: Create video for prd initiator cells {!@fig:vid-initiator-prd}-->
 
-<!--### Ectopic folding-->
 ### Ectopic folds form at the head--trunk boundary
 <!--### Ectopic folds more frequent in cephalic furrow mutants-->
 
-<!--TODO: Can I re-write these paragraphs to incorporate wildtype and mutant EFs?-->
-
+<!--TODO: Re-write paragraphs to incorporate wildtype and mutant EFs?-->
 <!--TODO: Move observation of ectopic folding to the next paragraph?-->
 
-The appearance of a late fold was first noted in *eve* mutants [@Vincent1997-fa], and only more recently observed in *btd* mutants [@Eritano2020-mi].
-However, their significance and the mechanisms driving their formation have remained unclear.
-Our recordings show that in all embryos where the cephalic furrow fails to initiate, ectopic folds appear near the canonical site of cephalic furrow invagination ({@fig:ectopic}a,b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
+The appearance of a late fold was first noted in *eve* mutants [@Vincent1997-fa], and only more recently observed in *btd* mutants [@Eritano2020-mi], but their significance and the mechanisms driving their formation have remained unclear.
+Our recordings show that in all embryos where the cephalic furrow fails to initiate properly, several ectopic folds appear near the canonical site of cephalic furrow invagination ({@fig:ectopic}a,b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
 They appear 15 min after the cephalic furrow would have formed, when the germ band is extended to around 35% of the egg length ({@fig:ectopic}a,c,d, {@tbl:gbtime}), and then disappear in about 20 min---faster than the wildtype cephalic furrow.
 Ectopic folds have a wider and often asymmetric cleft compared to the cephalic furrow, and lack the typical cell morphologies of the invagination, such as the wedge-shaped initiator cells and elongated edge cells [@Spencer2015-td] ({@fig:ectopic}b, {!@fig:vid-profile-btd}, {!@fig:vid-profile-eve}).
 Unlike the cephalic furrow, the position of ectopic folds varies between individual mutant embryos as they can form anterior, posterior, or near the wildtype site of invagination ({@fig:ectopic}f, {@fig:features}b, {!@fig:vid-dynamics-btd}, {!@fig:vid-variability-btd}).
@@ -189,39 +178,34 @@ Altogether, the variable positions and frequency of ectopic folding suggests tha
 
 <!--TODO:AB: Quantify the variability of ectopic folds in some way (plot it)-->
 
-<!--### Mitotic domains and germ band extension-->
-### Ectopic folds coincide with mitotic domains and germ band
-
-<!--MD and GB drive tissue buckling-->
-
-<!--Physical interactions during gastrulation cause ectopic buckling-->
+### Ectopic folds coincide with mitotic domains and germ band extension
 
 <!--Mitotic domain formation correlates with ectopic buckling at the head--trunk-->
 
-We investigated two concurrent gastrulation processes that could drive their formation: cell divisions in mitotic domains and the extension of the germ band.
+To uncover which physical interactions may drive the ectopic fold formation, we investigated two concurrent gastrulation processes: cell divisions in mitotic domains and the extension of the germ band.
 Mitotic domains are groups of blastoderm cells that divide in synchrony during the cleavage cycle 14 [@Foe1989-cw].
 The first mitotic domains in *Drosophila* appear in the head around 20 min after gastrulation [@Foe1989-cw] which coincides with the formation of ectopic folds ({@fig:ectopic}a,c,d).
-Ectopic folds always appear in between or adjacent to mitotic domains ({@fig:mitotic}a).
-The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during anaphase elongation ({@fig:apical}).
+Our analysis show that ectopic folds always appear in between or adjacent to mitotic domains ({@fig:mitotic}a).
+The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during anaphase ({@fig:apical}).
 This expansion compresses the adjacent non-dividing cells which are the first to infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitotic}b).
 Mitotic expansions always precede ectopic folding ({@fig:mitotic}c, {@fig:initiator}a).
 Compared to the progressive invagination of the cephalic furrow (about 14 min), the process of ectopic fold formation is abrupt (about 4 min) ({@fig:initiator}a, {!@fig:vid-mitotic-fold}).
-To understand the dynamics of tissue strain, we measured the rate of tissue deformation (strain rate) at the head--trunk using particle image velocimetry.
+To estimate the forces acting on the infolding tissue, we measured the rate of tissue deformation (strain rate) at the head--trunk using particle image velocimetry.
 We find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak that coincides with the maximum expansion of mitotic domains and with the appearance of the ectopic folds ({@fig:mitotic}d,e, {@fig:strain}, {!@fig:vid-strain-rate}).
+This suggests that ectopic folds form at least in part due to physical stress of local mitotic domain expansion.
 
 <!--Germ band extension correlates with ectopic buckling at the trunk--germ-->
 
-However, for the ectopic folds that often form posterior to the Mitotic Domain 6 (MD6) ({@fig:mitotic}a,c), the source of compression must be different; we hypothesized the germ band is contributing.
-Therefore, we have also quantified the strain rate at this posterior region where the trunk tissue interacts with the tip of the germ band (trunk--germ).
-At this trunk--germ interface, the strain rate is lower than at the head--trunk, but it steadily increases over time probably driven by the extending germ band ({@fig:mitotic}d).
-The epithelial cells between MD6 and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}e).
+However, for the ectopic folds that often form posterior to the Mitotic Domain 6 (MD6) ({@fig:mitotic}a,c), the source of compression must be different as there are no mitotic domains immediately posterior to these folds.
+We hypothesized that the extending germ band may be contributing to their formation. 
+This hypothesis is supported by the steady increase of strain rate in the area between MD6 and the extending germ band ({@fig:mitotic}d).
+Moreover, the epithelial cells between MD6 and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}e).
 Taken together, these analyses suggest the expansion of mitotic domains, and the extension of the germ band are potential sources of mechanical stress to the epithelial monolayer, and that they may be involved in the formation of ectopic folds by tissue buckling.
 
 <!--TODO:AB: Are there force measurements?-->
 <!--TODO: Include cell shape analyses with density et al. around here-->
 <!--TODO: Quantify compression of trunk-germ cells in btd mutants-->
 
-<!--### Physical model of the blastoderm-->
 ### Physical model predicts increased mechanical instability
 
 To determine the relative contribution of mitotic domains and germ band as sources of mechanical stress on the head--trunk boundary, we created a physical model to simulate these tissue mechanics *in silico* and performed experimental perturbations to test our theoretical predictions *in vivo* (see below).
@@ -233,7 +217,7 @@ The total energy per unit length of this tissue ($W_T$) is a sum of a stretching
 Each of these components have a rigidity associated with them.
 $K_s$ is the stretching rigidity and $K_b$ is the bending rigidity.
 These two parameters can be combined into a single dimensionless bending rigidity, $K_b^*$ ({@fig:model}c).
-To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand, and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:model}b).
+To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand (they contain more particles compared to the surrounding regions), and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:model}b).
 The germ band in our model is defined by the position of the posterior end of the tissue which is fixed at different fractions of egg length ($g$) for each simulation ({@fig:model}b).
 The effect of germ band extension appears as a global compression in the blastoderm.
 Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system.
@@ -248,21 +232,19 @@ Hence, we used the state of each simulation at the peak of its bending energy as
 
 <!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 
-To obtain realistic values of the dimensionless bending rigidity $K_b^*$ where the model matches experimental observations, we performed a sweep across the parameter space in mutant conditions (without the cephalic furrow).
+To obtain realistic values of the dimensionless bending rigidity $K_b^*$ where the model matches experimental observations, we performed a sweep across the parameter space in conditions mimicking the mutants without the cephalic furrow.
 As expected, the probability of buckling increases with the amount of germ band extension, mainly in lower bending rigidities ({@fig:model}e, {@fig:model-features}b).
 At 10% germ band extension, we observe a buckling transition in the phase space of softer conditions ($K_b^* \approx 0.7 \times 10^{−4}$), but in stiffer conditions ($K_b^* \approx 1.2 \times 10^{−4}$) the germ band alone, even at its maximum extension, cannot drive the formation of ectopic folds ({@fig:model}e, {@fig:model-features}b).
 Adding mitotic domains to the simulations changed the phase diagram and dynamics of ectopic folding.
 We observe that mitotic domains alone can induce ectopic folds in softer conditions ($K_b^* < 1.1 \times 10^{−4}$) and that the number of folds increased for low values of germ band extension ({@fig:model}f).
-In addition, the timing of folding with mitotic domains has decreased across iterations in simulations, specially between 0--20% of germ band extension ({@fig:model-features}c).
+In addition, the number of iterations until a first folding event occurs is lower in conditions with mitotic domains, especially in simulations with 0--20% of germ band extension ({@fig:model-features}c).
 These simulations suggest that, depending on the bending rigidity, the germ band or mitotic domains alone can drive ectopic folding, and that their combined action may increase the mechanical instabilities in the blastoderm epithelium.
 We thus set to test the individual contribution of mitotic domains and germ band to the epithelial instability by performing perturbation experiments *in vivo*.
 
 <!--TODO: Move definition of a fold to methods-->
-
 <!--TODO: Add panel with the threshold for counting folds-->
 <!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
 
-<!--### Gastrulation events driving instability-->
 ### Mitotic domains and germ band extension drive tissue buckling
 
 <!--Mitotic domains are required for ectopic folding in vivo-->
@@ -300,27 +282,27 @@ This suggests that the combined activity of mitotic domains and germ band extens
 In conditions where the cephalic furrow formation is perturbed, this leads to more frequent and larger tissue buckling events.
 Therefore, we hypothesize that the temporary storage of invaginated cells folded in the cephalic furrow may contribute to absorbing these compressive stresses generated by mitotic domains and germ band extension in wildtype conditions.
 
-<!--### Cephalic furrow function-->
-### Early cephalic furrow formation prevents mechanical instability
+### Cephalic furrow formation prevents mechanical instability
 
 <!--Early pre-patterned invagination prevents mechanical instability-->
 
-To explore the role of the cephalic furrow as a mechanical buffer, we analyzed biologically and computationally how it interacts with mitotic domains and with the germ band, and how it influences the formation of ectopic folds.
+To explore the role of the cephalic furrow as a mechanical buffer, we analyzed *in vivo* and computationally how it interacts with mitotic domains and with the germ band, and how it influences the formation of ectopic folds.
 
 <!--Cephalic furrow invaginates autonomously pulling adjacent tissues-->
 
-In addition, we performed a complementary experiment to determine the size of the region under the influence of the cephalic furrow.
+First, we determined how the cephalic furrow influences the mechanics of the surrounding tissue and how far such influence spreads away from the furrow. 
 By laser ablating cell membranes at different distances from initiator cells in early wildtype embryos, we find that the recoil velocity increases with time and decreases with distance, with an approximate range of at least 40µm anterior and posterior to the initiator cells ({@fig:experiments}i).
 This suggests that the cell shortening of initiator cells, which is actively driven by lateral myosin contractility [@Eritano2020-mi], pulls on the adjacent cells and generates tension in the surrounding tissues.
-These experiments corroborate the view that cephalic furrow initiation is autonomous and independent of other morphogenetic movements of gastrulation, such as the germ band extension.
 
 <!--Cephalic furrow forms normally but is shallower in cauterized wildtype-->
 
-Since our experiments indicate that the germ band is compressing the head--trunk tissues, we first asked whether the extension of the germ band can influence the depth of the cephalic furrow.
+Since our experiments indicate that the germ band is compressing the head--trunk tissues, we asked whether the extension of the germ band can influence the depth of the cephalic furrow.
 To test *in vivo* whether the presence of the germ band impacts the formation of the cephalic furrow, we blocked the germ band extension by cauterization in wildtype embryos.
 The cephalic furrow forms normally in cauterized embryos indicating that the germ band extension is not required for its formation ({@fig:experiments}e,f).
-We then measured the maximum depth of the cephalic furrow between cauterized and non-cauterized embryos, and found it is 15% shallower after cauterization ({@fig:experiments}h).
-This result needs to be corroborated with a larger sample size, but it provides initial evidence that the germ band extension has a mild influence on the final depth of the cephalic furrow.
+We measured the maximum depth of the cephalic furrow between cauterized and non-cauterized embryos, and found it is only 15% shallower after cauterization ({@fig:experiments}h).
+These experiments corroborate the view that cephalic furrow initiation is autonomous and independent of other morphogenetic movements of gastrulation, such as the germ band extension which only has a mild influence on the final depth of the invagination.
+
+<!--This result needs to be corroborated with a larger sample size, but it provides initial evidence that the germ band extension has a mild influence on the final depth of the cephalic furrow.-->
 
 <!--These experiments rule out the germ band extension as a driver of cephalic furrow invagination, and give support to the notion that the cephalic furrow forms autonomously by independent active mechanisms which are .-->
 
@@ -329,11 +311,9 @@ This result needs to be corroborated with a larger sample size, but it provides 
 
 <!--TODO:AB: Is the increase in recoil velocity because CF or epithelial maturation?-->
 
+Next, we tested the conditions that impact the effectiveness of the cephalic furrow in preventing the formation of ectopic folds in the model.
+
 <!--Timing rather than force more effective at preventing ectopic folding-->
-
-Next, we tested the conditions that impact the effectiveness of the cephalic furrow in preventing the formation of ectopic folds.
-
-<!--TODO: Move? There’s no computational analysis here-->
 
 In our model, we programmed the cephalic furrow by establishing an intrinsic negative curvature ($\kappa_o^{CF}$) to a narrow region of the particle--spring blastoderm that matches the span of the initiator cells *in vivo* ({@fig:model}a, {@fig:proportions}).
 Using the bending rigidity fine-tuned with the previous simulations and experiments, we ran a parameter sweep for different values of $\kappa_o^{CF}$ and established a baseline ($\kappa_o^{CF}>0.3$) where the invagination forms in a robust manner with minimal variability, phenocopying the cephalic furrow *in vivo* ({@fig:cf-sweep}a).
@@ -358,27 +338,21 @@ Taken together, our physical model provides a theoretical basis that an early pr
 
 <!--CF evolution linked to novel expression domain of btd-->
 
-The function of the cephalic furrow in preventing mechanical instabilities depends on the correct positioning and timing of the invagination; the initiation of the process must begin before other morphogenetic movements take place.
+The function of the cephalic furrow in preventing mechanical instabilities depends on the correct positioning and timing of the invagination; it must occur at the head--trunk boundary and the initiation of the process must begin before other morphogenetic movements take place.
 In *Drosophila*, the infolding is mediated by the overlapping expression domains of *btd* and *eve* at the head--trunk boundary [@Vincent1997-fa].
 However, it remains unclear if this genetic patterning of *Drosophila* is conserved in other flies with or without the cephalic furrow.
-To uncover the gene expression changes associated with the evolution of the cephalic furrow, we compared the expression of known and novel cephalic furrow genes between *Drosophila* and *Clogmia*, a fly with a key phylogenetic position in dipteran phylogeny which has no the cephalic furrow.
+To uncover the gene expression changes associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified cephalic furrow genes between *Drosophila* and the dipteran fly *Clogmia albipunctata*, a species from the basally-branching Psychodidae family which has no cephalic furrow [@Jimenez-Guri2014-zs; @Dey2023-pj].
 
-<!--### Ancestral head--trunk patterning-->
 ### Ancestral *slp*--*eve* interaction defines head--trunk position
 
-<!--slp is a cephalic furrow gene-->
-
-<!--Early *slp1* activity positions the cephalic furrow-->
-
-<!--Identifying slp as a novel cephalic furrow genes-->
-
-<!--On a live-imaging screen, we identified sloppy paired as a cephalic furrow gene.-->
-
-To discover new genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region.
+To discover new genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region [@Tomancak2002-yf; @Tomancak2007-db; @Lecuyer2007-uy].
 Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to identify potential phenotypes.
-From about 50 genes, we identified five showing abnormal cephalic furrow formation to different degrees, the stronger phenotype being from flies mutant for *sloppy paired* (*slp*) (see @tbl:screen).
+From about 50 genes, we identified five showing abnormal cephalic furrow formation to different degrees.
+Besides the previously described genes affecting cephalic furrow formation, we observed a strong cephalic furrow phenotype in flies mutant for *sloppy paired* (*slp*) (see @tbl:screen).
 
-<!--Early slp activity fine tunes the position of initiator cells-->
+<!--TODO: Make this screen table or figure.-->
+
+<!--Early slp activity positions initiator cells-->
 
 *slp* is a known anterior repressor involved in the positioning of anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], but its involvement with cephalic furrow formation has not been analyzed.
 Our imaging data on mutant embryos lacking both *slp1* and *slp2* genes shows that the cephalic furrow invagination is delayed and shifted anteriorly about 5%, leading to an abnormal proportion of head and trunk regions ({@fig:slp}a).
@@ -401,16 +375,16 @@ Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expr
 This combinatorial expression of transcription factors *btd*, *eve*, *slp*, and *prd*, indicates that each row of cells forming the invagination of the cephalic furrow has a unique transcriptional identity.
 Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.
 
+<!--TODO: Describe narrowing of btd--eve overlap to a single row-->
+
 <!--- slp as well shows some adhesive differences.-->
 
-<!--### Novel expression domains-->
 ### Novel *btd* head--trunk domain associated with cephalic furrow
 
 <!--Head--trunk boundary slp/eve expression is conserved-->
-
 <!--Clogmia lacks the head--trunk domain of btd-->
 
-To uncover the genetic patterning differences associated with the evolution of the cephalic furrow, we compared the expression data of cephalic furrow genes in *Drosophila* described above to *Clogmia*, a non-cyclorraphan fly without the cephalic furrow.
+To uncover the genetic patterning differences associated with the evolution of the cephalic furrow, we compared the expression data of the above described cephalic furrow genes in *Drosophila* to *Clogmia*, which lacks a cephalic furrow.
 We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:gene-expression}a).
 However, the expression of *btd* differs between the two species.
 In *Drosophila* *btd* is expressed at the head--trunk boundary from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:gene-expression}a).
@@ -466,6 +440,7 @@ An ectopic fold can, for instance, disrupt cell-to-cell interactions or short-ra
 Physical compression may also impact the differentiation of tissues since cells can sense and respond to mechanical stimuli with changes in patterning [@Heisenberg2013-pl].
 More generally, variable ectopic buckling may slow down morphogenesis.
 In this sense, a canalized process forming a single predictable invagination may improve developmental robustness and allow for faster development, bringing an evolutionary advantage for embryos with a pre-patterned head invagination.
+
 This raises an intriguing evolutionary question---if the cephalic furrow has a mechanical role in development, did it first evolve in response to these mechanical stresses of gastrulation?
 If this was the case, we expect the sources of stress (mitotic domains and germ band extension) to be present in the fly lineage before the evolution of the cephalic furrow.
 Strikingly, that appears to be the case.
@@ -473,11 +448,12 @@ Mapping the cephalic furrow in the dipteran phylogeny suggests that the cephalic
 One putative scenario is that selection for shorter developmental times concatenated the formation of mitotic domains and germ band extension, increasing the mechanical instabilities at the head--trunk boundary ({@fig:summary}d).
 In this case, mechanical stress may have acted as a selective pressure for the evolution of a pre-patterned head invagination, averting the potential detrimental effects of mechanical instabilities.
 
-While the interplay between tissue mechanics and developmental evolution is poorly understood, theoretical works have raised the hypothesis that self-organized morphogenesis were critical to generate morphogenetic innovations at the dawn of animal evolution [@Newman2000-oz].
-Or in other words, that before embryonic development, tissues would fold due to mechanical interactions between tissues, and only through natural selection that the pre-patterned morphogenetic programs we know today were fixed and development canalized [@Newman2000-oz].
+While the interplay between tissue mechanics and developmental evolution is poorly understood, classical theoretical work by Newman and Müller have raised the hypothesis that self-organized morphogenesis were critical to generate morphogenetic innovations at the dawn of animal evolution [@Newman2000-oz].
+Or, in other words, that before genome guided embryonic development evolved, tissues would fold due to mechanical interactions between them and the environment, and the pre-patterned morphogenetic programs we know today were fixed secondarily by natural selection [@Newman2000-oz].
 Our work support this hypothesis by bringing empirical evidence from developmental and comparative data that mechanical forces might have a critical role in generating morphogenetic innovations in early development.
-In the case of the cephalic furrow compressive stresses both generated ectopic buckling and may have had a detrimental effect, being potentially a selective pressure, and secondarily, the gene expression reshuffling was coopted and fixed, eventually establishing the cephalic furrow developmental program.
-We propose that this may be a more common and broadly occurring mechanism which may explain the incredible diversity of morphogenetic processes during early embryonic development.
+In the case of the cephalic furrow, compressive stresses originating from concurrent gastrulation processes and resulting in ectopic epithelial buckling may have had a detrimental effect to the fitness of individuals.
+This mechanical instability could have acted as a selective pressure underlying the cooption of novel head--trunk gene expression domains and the establishment of a pre-patterned cephalic furrow invagination.
+We propose that genetic stabilization of mechanical conflict between independent embryonic processes may be a broadly occurring mechanism contributing to the incredible diversity of patterned morphogenetic processes during early embryonic development.
 
 <!--These speculations, however, require further testing with experiments that prevent cephalic furrow formation without other genetic side effects, as well as a systematic comparative analysis of mitotic domains, germ band extension, and tissue mechanics across the fly phylogeny.-->
 <!--Overall, our work proposes that the cephalic furrow plays a mechanical role in absorbing compressive stresses in fly gastrulation, and introduces the cephalic furrow formation as powerful context to test the hypothesis that mechanical interactions within embryonic tissues may play an important role for the evolution of morphogenesis in early development.-->
