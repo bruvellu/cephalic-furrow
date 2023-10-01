@@ -23,7 +23,7 @@ author:
     email: modes@mpi-cbg.de
     orcid: 0000-0001-9940-0730
 - Pavel Tomančák:
-    institute: [mpicbg, pol]
+    institute: [mpicbg, csbd, pol]
     correspondence: "yes"
     email: tomancak@mpi-cbg.de
     orcid: 0000-0002-2222-9370
