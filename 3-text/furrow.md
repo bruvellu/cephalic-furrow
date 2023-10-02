@@ -472,7 +472,7 @@ We propose that genetic stabilization of mechanical conflict between independent
 
 # Methods
 
-## Fly stocks and genetic crossings
+## *Drosophila* stocks and genetic crossings
 
 To generate fluorescent cephalic furrow mutants, we performed genetic crosses using the loss-of-function alleles *btd^XA^* (FBal0030657), *eve^3^* (FBal0003885), *prd^4^* (FBal0013967), and *stg^2^* (FBal0247234); the membrane fluorescent marker *Gap43-mCherry* (FBal0258719, gift from Kassiani Skouloudaki); and the green fluorescent balancers *FM7c, Kr-GFP* (FBst0005193), *CyO, twi-GFP* (gift from Akanksha Jain), and *TM3, Kr-GFP* (FBst0005195).
 We established stable lines balancing the loss-of-function alleles with fluorescent balancers, and used the lack of GFP signal to identify homozygous embryos in our live-imaging recordings.
@@ -485,14 +485,23 @@ The complete list of FlyBase [@Gramates2022-xe] accession numbers and genotypes 
 
 ## Animal husbandry and embryo collection
 
-We maintained the stocks in 50mL hard plastic vials containing fly food and enclosed with a foam lid.
+We maintained the *Drosophila* stocks in 50mL hard plastic vials containing standard fly food and enclosed with a foam lid to allow air exchange.
 They were kept in an incubator with a constant 25°C temperature and 65% humidity and a 12:12h light cycle.
-For imaging, we first amplified the stocks in larger 200mL tubes for a few weeks.
+For imaging, we first amplified the stocks in larger 200mL vials for a few weeks.
 We then narcotized the flies with CO~2~, and transferred them to a cage with a plate attached to one end containing a layer of apple juice agar and a slab of yeast paste on top.
 The flies were left to acclimatize in the cage for two days before the experiments.
 To guarantee the embryos are at a similar developmental stage, we exchanged the agar plate once per hour at least twice (pre-lays), and let the flies lay the eggs on the agar for one hour before collecting the plate.
 After filling the plate with water, we used a brush to release the eggs from the agar and transferred them to a cell strainer with 100µm nylon mesh (VWR).
-To remove the chorion, we immersed the embryos in 20% sodium hypochlorite solution (Merck 1.05614.2500) for 90s, washed abundantly with water, and proceeded to mounting for live imaging.
+To remove the chorion, we immersed the embryos in 20% bleach (sodium hypochlorite solution, Merck 1.05614.2500) for 90s, washed abundantly with water, and proceeded to mounting for live imaging.
+
+We maintained *Clogmia* flies in plastic petri dishes with a layer of wet cotton at 25°C and fed weekly with powder parsley.
+To obtain embryos for fixation, we collected the adult flies in a 200mL hard plastic vial with wet cotton, and let them mate for 2--3 days.
+Then, we anesthetized the flies with CO~2~, dissected the ovaries from ripe females, and released the eggs using tweezers in deionized water, which activates embryonic development [@Sander1985-sg; @Garcia-Solache2010-lz].
+We let embryos develop in deionized water at room temperature until the desired stage.
+To remove the chorion, we transferred the embryos to a glass vial with 0.5x PBS using a fine brush, exchanged the medium for 5% bleach in 0.5x PBS for 2min, and washed abundantly with 0.5x PBS.
+Using the diluted PBS solution instead of water prevents the embryos from bursting after dechorionation.
+
+<!--TODO: Add width of petri dish-->
 
 ## Sample mounting for live imaging
 
@@ -507,7 +516,23 @@ We placed the sample holder into the microscope chamber filled with water, and r
 With the embryos oriented vertically along the coverslip, the lightsheet generated from the illumination objectives coming from the sides only needs to pass through the width of the embryo (about 200µm).
 This approach gives the best optics for recording lateral and dorsal views and is ideal for live imaging homozygote embryos since they are only about one fourth of the total number of imaged embryos.
 
-## Microscopy and acquisition parameters
+## Embryo fixation and *in situ* hybridization
+
+For *Drosophila*, we transferred dechorionated embryos to a glass vial containing equal volumes of 4% paraformaldehyde in PBS and N-heptane, and let the vial shaking at 215rpm for 45min.
+After removing the fixative (lower phase) using a glass pipet, we added an equal volume of 100% methanol, and shook the vial vigorously by hand for 1min.
+We then removed the N-heptane (upper phase) and collected the embryos on the bottom to an eppendorf tube and washed several times with 100% methanol.
+Samples were stored at -20°C.
+For Clogmia, we used the same protocol, but diluted the fixative in 0.5x PBS.
+
+We performed the *in situ* hybridization of *btd*, *eve*, *prd*, and *slp* genes in *Drosophila* and *Clogmia* using the Hybridization Chain Reaction v3.0 (HCR^TM^) [@Choi2018-fg] reagents, except for the probe sets, which we designed using a custom script and obtained the oligos from Sigma-Aldrich.
+We selected the HCR^TM^ amplifiers to allow for triple (multiplexed) *in situ* combinations of *btd*+*eve*+*slp* or *prd*+*eve*+*slp*.
+Before starting, we rehydrated the embryos in 100% methanol with a series of washes to 100% PBT.
+We permeabilized *Clogmia* embryos with 1:5000 dilution of ProteinaseK (20 mg/mL) for 5min, but not *Drosophila* embryos.
+All samples were re-fixed in 4% paraformaldehyde for 40min and washed thoroughly with PBT.
+We then followed the *In situ HCR v3.0 protocol for whole-mount fruit fly embryos Revision 4 (2019-02-21)* from Molecular Instruments [molecularinstruments.com/hcr-rnafish-protocols](https://www.molecularinstruments.com/hcr-rnafish-protocols).
+After the protocol, we stained the embryos with 1:1000 DAPI in 5x SSCT solution for 2h and mounted the embryos in 80% glycerol in 5x SSCT for imaging.
+
+## Lightsheet acquisition parameters
 
 For lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY-resolution and 3µm Z-resolution covering half of the embryo’s volume in a single view.
 This Z-resolution was restored to 1µm during image processing (see below).
@@ -516,6 +541,8 @@ We adjusted the time resolution between 45--60s per frame to maximize the number
 To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror with SP550 and LP585 emission filters.
 All recordings were performed at 25°C.
 
+<!--TODO: Add confocal acquisition parameters-->
+
 ## Lightsheet image processing
 
 We converted the raw imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
@@ -523,15 +550,13 @@ To visualize the presence and dynamics of ectopic folds, we generated 3D renderi
 For analyzing the entire epithelial surface, we first improved the signal-to-noise ratio and z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
 Then, we created cartographic projections of the lateral recordings using the ImSAnE toolbox [@Heemskerk2015-kv] by loading the restored data in MATLAB [@Matlab2015-nd], segmenting the epithelial surface using ilastik [@Berg2019-ab], and generating 3D cartographic projections of lateral views following a workflow established for fly embryos [@Vellutini2022-ya].
 
-## Ectopic folding timing and dynamics
+## Ectopic fold analyses
 
 To characterize the relative timing of ectopic folding, we annotated the germ band position and the number of frames after the onset of gastrulation at the initial buckling, when the first cells disappear from the surface in the lateral 3D renderings.
 We defined the onset of gastrulation (T=0) as the moment immediately after the end of cellularization, and immediately before the beginning of the ventral furrow invagination.
 To visualize the variability of ectopic folding, we manually traced the fold outlines in lateral recordings using Fiji.
 Because embryos have different sizes, we first used the plugin *bUnwarpJ* [@Arganda-Carreras2006-im] ([imagej.net/plugins/bunwarpj](https://imagej.net/plugins/bunwarpj/)) to register individual frames and then applied the same transformation to the fold traces for a standardized comparison.
 We analyzed the dynamics of ectopic folds by measuring the relative angle and tortuosity of the segmented line traces over time, and to visualize the kinetics we generated color-coded temporal projections using the script *Temporal Color Code* ([imagej.net/plugins/temporal-color-code](https://imagej.net/plugins/temporal-color-code)) with the perceptually uniform *mpl-viridis* color map ([bids.github.io/colormap](https://bids.github.io/colormap/)) bundled in Fiji.
-
-## Ectopic folding area and depth
 
 To estimate the folded area in the cephalic furrow and ectopic folds, we annotated the region of the blastoderm before gastrulation that infolded in the cartographic projections using Fiji, and calculated the area correcting the pixel dimensions according to the coordinates in the projection.
 For the fold depth, we measured the distance between the vitelline envelope to the tip of the fold at the moment of maximum depth in the dorsal recordings.
