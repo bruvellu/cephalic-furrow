@@ -732,10 +732,10 @@ This work was supported by the MPI-CBG core funding to CDM and PT, and by an Eur
 # Author contributions
 
 BCV and PT conceived the study.
-BCV designed the experiments, generated the fly stocks, performed the live imaging and image processing, and analysed the data.
-MBC performed the laser ablations and cauterizations and the strain rate analyses.
+BCV designed the experiments, generated the fly stocks, acquired microscopy data, performed the *in situ* hybridizations, and processed and analyzed the *in vivo* data.
+MBC conducted the laser ablations and the cauterization experiments, and performed the strain rate analyses.
 CDM, AK, and AS designed the model.
-AK and AS created the model and performed the simulations.
+AK and AS programmed the model, performed the simulations, and analyzed the *in silico* data.
 BCV wrote the manuscript.
 All authors revised and contributed to the text.
 
