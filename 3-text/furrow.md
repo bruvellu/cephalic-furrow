@@ -565,19 +565,6 @@ Using the diluted PBS solution instead of water prevents the embryos from bursti
 
 <!--TODO: Add width of petri dish-->
 
-## Sample mounting for live imaging
-
-We performed most of our live imaging in a Zeiss Lightsheet Z.1 microscope.
-To increase the throughput of samples imaged in one session, we optimized a mounting strategy developed previously in our laboratory [@Schmied2016-oq].
-First, we cut a 22x22mm glass coverslip (0.17mm thickness) into 6x15mm strips using a diamond knife, and attached a single strip to a custom sample holder using silicon glue, letting it harden for 15min.
-We then coated the coverslip strip with a thin layer of heptane glue and let it dry while preparing the embryos.
-Using a fine brush, we transferred the embryos collected in the cell strainer onto an agar pad, and oriented them manually with a blunt cactus spine under a stereomicroscope.
-We aligned about 20 embryos in a single line (head to tail) along the main axis of the strip with the left or ventral sides up, depending on the experiment.
-To attach the embryos to the coverslip, we carefully lowered the sample holder over the agar pad until the glass coated with heptane glue touched the embryos.
-We placed the sample holder into the microscope chamber filled with water, and rotated it so that the samples are facing the detection objective directly, and the coverslip is orthogonal to the detection objective; this is important to prevent the lightsheet from hitting the glass edges.
-With the embryos oriented vertically along the coverslip, the lightsheet generated from the illumination objectives coming from the sides only needs to pass through the width of the embryo (about 200µm).
-This approach gives the best optics for recording lateral and dorsal views and is ideal for live imaging homozygote embryos since they are only about one fourth of the total number of imaged embryos.
-
 ## Embryo fixation and *in situ* hybridization
 
 For *Drosophila*, we transferred dechorionated embryos to a glass vial containing equal volumes of 4% paraformaldehyde in PBS and N-heptane, and let the vial shaking at 215rpm for 45min.
@@ -594,23 +581,41 @@ All samples were re-fixed in 4% paraformaldehyde for 40min and washed thoroughly
 We then followed the *In situ HCR v3.0 protocol for whole-mount fruit fly embryos Revision 4 (2019-02-21)* from Molecular Instruments [molecularinstruments.com/hcr-rnafish-protocols](https://www.molecularinstruments.com/hcr-rnafish-protocols).
 After the protocol, we stained the embryos with 1:1000 DAPI in 5x SSCT solution for 2h and mounted the embryos in 80% glycerol in 5x SSCT for imaging.
 
-## Lightsheet acquisition parameters
+## Sample mounting for microscopy
 
-For lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY-resolution and 3µm Z-resolution covering half of the embryo’s volume in a single view.
+For most of our live imaging, we used a Zeiss Lightsheet Z.1 microscope.
+To increase the throughput of samples imaged in one session, we optimized a mounting strategy developed previously in our laboratory [@Schmied2016-oq].
+First, we cut a 22x22mm glass coverslip (0.17mm thickness) into 6x15mm strips using a diamond knife, and attached a single strip to a custom sample holder using silicon glue, letting it harden for 15min.
+We then coated the coverslip strip with a thin layer of heptane glue and let it dry while preparing the embryos.
+Using a fine brush, we transferred the embryos collected in the cell strainer onto an agar pad, and oriented them manually with a blunt cactus spine under a stereomicroscope.
+We aligned about 20 embryos in a single line (head to tail) along the main axis of the strip with the left or ventral sides up, depending on the experiment.
+To attach the embryos to the coverslip, we carefully lowered the sample holder over the agar pad until the glass coated with heptane glue touched the embryos.
+We placed the sample holder into the microscope chamber filled with water, and rotated it so that the samples are facing the detection objective directly, and the coverslip is orthogonal to the detection objective; this is important to prevent the lightsheet from hitting the glass edges.
+With the embryos oriented vertically along the coverslip, the lightsheet generated from the illumination objectives coming from the sides only needs to pass through the width of the embryo (about 200µm).
+This approach gives the best optics for recording lateral and dorsal views and is ideal for live imaging homozygote embryos since they are only about one fourth of the total number of imaged embryos.
+For fixed imaging of *in situ* samples we used an inverted Zeiss LSM 700 Confocal microscope.
+We mounted the samples immersed in 80% glycerol between a slide and a glass coverslip supported by tape.
+
+## Microscopy acquisition parameters
+
+For the lightsheet lateral datasets, we used a Zeiss 20x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.28µm XY-resolution and 3µm Z-resolution covering half of the embryo’s volume in a single view.
 This Z-resolution was restored to 1µm during image processing (see below).
-For dorsal datasets, we used a Zeiss 40x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.14µm XY-resolution and 3µm Z-resolution covering a volume around in the middle section of the anterior end of the embryo.
+For the dorsal datasets, we used a Zeiss 40x/1NA Plan-Apochromat water immersion objective to acquire stacks with 0.14µm XY-resolution and 3µm Z-resolution covering a volume around in the middle section of the anterior end of the embryo.
 We adjusted the time resolution between 45--60s per frame to maximize the number of embryos acquired in one session.
 To visualize both the membrane signal (mCherry) and the green balancer signal (GFP), we acquired two channels simultaneously using the 488 and 561nm lasers at 3% power with an image splitter cube containing a LP560 dichromatic mirror with SP550 and LP585 emission filters.
-All recordings were performed at 25°C.
+All live imaging recordings were performed at 25°C.
+For the confocal datasets, we used a 20x/0.8 Plan-Apochromat Zeiss air objective to acquire 4-channels using 3 tracks (405nm, 488 and 639nm, and 555nm) with a BP575-640 emission filter and about 0.4µm XY-resolution and 2µm Z-resolution covering about half the embryo’s volume.
 
-<!--TODO: Add confocal acquisition parameters-->
+<!--using a pixel dwell time of x with 2 line averaging and 1 airy units.-->
 
-## Lightsheet image processing
+## Image processing and visualization
 
 We converted the raw imaging datasets into individual TIFF stacks for downstream processing using a custom ImageJ macro in Fiji [@Schindelin2012-di; @Rueden2017-ky].
 To visualize the presence and dynamics of ectopic folds, we generated 3D renderings of the surface of embryos in lateral recordings using the plugin 3Dscript in Fiji [@Schmid2019-bm].
 For analyzing the entire epithelial surface, we first improved the signal-to-noise ratio and z-resolution of lateral datasets from 3µm to 1µm by training a deep learning upsampling model using CARE [@Weigert2018-ti].
 Then, we created cartographic projections of the lateral recordings using the ImSAnE toolbox [@Heemskerk2015-kv] by loading the restored data in MATLAB [@Matlab2015-nd], segmenting the epithelial surface using ilastik [@Berg2019-ab], and generating 3D cartographic projections of lateral views following a workflow established for fly embryos [@Vellutini2022-ya].
+To visualize *in situ* hybridization data, we performed maximum intensity projections or extracted single slices from the raw volumes.
+For all microscopy images, we only performed minimal linear intensity adjustments to improve their contrast and brightness [@Schmied2020-ip].
 
 ## Ectopic fold analyses
 
@@ -697,7 +702,6 @@ The code for the model and simulations will be available in a Zenodo repository 
 
 ## Data visualization and figure assembly
 
-For microscopy images, we only performed minimal linear intensity adjustments in microscopy images to improve their contrast and brightness [@Schmied2020-ip].
 We created illustrations and assembled the final figure plates using Inkscape v1.2.2 [@The_Inkscape_Project2003-ht].
 For microscopy videos, we exported the original stacks as AVI without compression with 10--15fps using Fiji and post-processed them to MPEG-4 format 1080p resolution using the H.264 encoding at a constant bitrate quality factor of 18 for visualization using HandBrake v1.6.1 [@HandBrake_Team2003-fq].
 The high-resolution figures and videos are available in a Zenodo repository [@Vellutini2023-ix].
