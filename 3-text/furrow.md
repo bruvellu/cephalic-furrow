@@ -403,6 +403,15 @@ Since *btd* is a crucial gene for cephalic furrow formation, this suggests that 
 
 # Discussion
 
+<!--
+1. General summary sentence about our work (physical role, genetic basis)
+2. Evidence for mechanical stress, GB and MD in-plane
+3. CF role in absorbing/buffering, mechanical sink, model and wildtype EFs
+4. CF evo response to stress? Phylo tree ancestral MD/GB, stress detrimental to fitness, out-of-plane divisions as alternative mechanical solution, correlation with no btd-eve overlap, compressive stress as selective pressure, patterning and morphogenetic basis associated with the overlap between btd and eve, cooption of yet unknown genetic signaling controlling lateral myosin activation.
+5. Broader interplay between mechanics and patterned morphogenesis, hypothesis morphogenetic innovations can appear through the genetic stabilization of self-organized mechanics, mechanical instability may be an important player for evolution of morphogenesis in early development
+-->
+
+
 <!--Our work brings a novel perspective on the function of the cephalic furrow as a transient tissue reservoir that maintains the epithelial integrity when compressive stresses increase during gastrulation.-->
 
 Our results provide evidence that the cephalic furrow accomplishes a physical role during the early gastrulation of *Drosophila*.
