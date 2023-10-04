@@ -790,11 +790,12 @@ All authors revised and contributed to the text.
 ](figures/Fig4.jpg){#fig:experiments width=100%}
 
 ![Genetic patterning of the head--trunk boundary in *Drosophila* and *Clogmia*.
-**a**, Early expression of *btd*, *eve*, and *slp*.
-**b**, Detail of expression profile in *Drosophila*.
-**c**, Absence of *btd* head--trunk domain in *Clogmia* compared to *Drosophila*.
-**d**, Comparison of genetic arrangements between *Drosophila* and *Clogmia* at the onset of gastrulation.
-**e**, Schematic drawings showing the arrangement and putative genetic interactions in *Drosophila* and *Clogmia* head--trunk boundary.
+**a**, Progression of the early expression of *btd*, *eve*, and *slp* around the mitotic cycle 14. Initially, *slp* and *eve* demarcate the head--trunk boundary of both species in broad domains that later become segmented. The head--trunk domain of *btd* is expressed early in *Drosophila* but is absent in *Clogmia*. The anterior domain of *btd* is present in both species, but is only activated in *Drosophila* at the onset of gastrulation.
+**b**, Crop showing the narrowing and sharpening of the expression domains in *Drosophila*. *slp1* and *eve* expression domains are complementary and *btd* is expressed at this interface. The border between *slp1* and *eve* resolve into sharp, non-overlapping stripes. The overlap between *btd* and *eve* narrows progressively until resolving to a 1-cell row. Dashed lines mark the future edges of the cephalic furrow.
+**c**, Close-up of the anterior region showing the absence of a *btd* head--trunk domain in *Clogmia* compared to *Drosophila*.
+**d**, Comparison of gene expression patterns at the onset of gastrulation. In *Drosophila*, *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines) and the 1--2-cell wide *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping 2-cell wide *slp1* stripes. The expression pattern of *slp* and *eve* in *Clogmia* is very similar to *Drosophila*. The main difference is the absence of the head--trunk domain of *btd* in *Clogmia*. Dashed lines in *Clogmia* mark the *slp* stripes homologous to *Drosophila*.
+**e**, Schematic drawings showing the molecular arrangement and putative genetic interactions at the head--trunk boundary of *Drosophila* and *Clogmia*.
+ac: *btd* acron domain, sh: *slp* head domain, ht: btd head--trunk domain, fg: *btd* foregut domain.
 ](figures/Fig5.jpg){#fig:gene-expression width=100%}
 
 ![Genetics and mechanics during the evolution of the cephalic furrow.
