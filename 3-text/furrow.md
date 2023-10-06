@@ -345,12 +345,10 @@ To uncover the gene expression changes associated with the evolution of the ceph
 
 ### Ancestral *slp*--*eve* interaction defines head--trunk position
 
-To discover new genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region [@Tomancak2002-yf; @Tomancak2007-db; @Lecuyer2007-uy].
-Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to identify potential phenotypes.
-From about 50 genes, we identified five showing abnormal cephalic furrow formation to different degrees.
-Besides the previously described genes affecting cephalic furrow formation, we observed a strong cephalic furrow phenotype in flies mutant for *sloppy paired* (*slp*) (see @tbl:screen).
-
-<!--TODO: Make this screen table or figure.-->
+To uncover other genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region [@Tomancak2002-yf; @Tomancak2007-db; @Lecuyer2007-uy].
+Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to recognize altered phenotypes.
+From about 50 genes, we only detected three showing abnormal cephalic furrow formation to different degrees besides the previously described genes (see @tbl:screen).
+The strongest cephalic furrow phenotype was present in flies mutant for the *sloppy paired* (*slp*) genes.
 
 <!--Early slp activity positions initiator cells-->
 
@@ -869,6 +867,19 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 | CF | 11.4±1.2     | 10.3±1.9    | 9.7±1.1    | 6.0±3.4     |
 | EF | 0.7±0.5      | 2.3±1.7     | 3.2±2.1    | 1.0±0.6     |
 | n  | CF=16, EF=16 | CF=6, EF=13 | CF=7, EF=7 | CF=14, EF=8 |
+
+
+Table: Summary of live-imaging screening results for cephalic furrow genes. {#tbl:screen}
+
+| name                      | symbol         | allele/deletion | phenotype                                  |
+| ----                      | ------         | --------------- | ---------                                  |
+| *buttonhead*              | *btd*          | *btd*^XA^       | absent [@Vincent1997-fa]                   |
+| *even skipped*            | *eve*          | *eve*^3^        | absent [@Vincent1997-fa]                   |
+| *paired*                  | *prd*          | *prd*^4^        | delayed [@Blankenship2001-tm] and abnormal |
+| *sloppy paired 1* and *2* | *slp1*, *slp2* | *slp*^Δ34B^     | delayed and displaced anteriorly           |
+| *sloppy paired 1*         | *slp1*         | *slp1*^1^       | delayed and displaced anteriorly           |
+| *giant*                   | *gt*           | *gt*^X11^       | perturbed formation                        |
+| *knirps*, *knirps-like*   | *kni*, *knrl*  | Df(3L)BSC448    | ventral portion displaced anteriorly       |
 
 \clearpage
 
