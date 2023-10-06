@@ -1,5 +1,6 @@
 ---
-title: Patterned epithelial invagination prevents mechanical instability during fly gastrulation
+title: Patterned invagination prevents mechanical instability in fly gastrulation
+#title: Patterned epithelial invagination prevents mechanical instability during fly gastrulation
 author:
 - Bruno C. Vellutini:
     institute: [mpicbg]
@@ -433,13 +434,13 @@ In this sense, a patterned head invagination may have improved the robustness of
 
 <!--Out-of-plane divisions as alternative mechanical solution-->
 
-The mapping of cephalic furrow traits on a dipteran phylogeny is in agreement with the hypothesis of mechanical instability as a selective pressure ({@fig:summary}a).
+Furthermore, the mapping of cephalic furrow traits on a dipteran phylogeny supports the hypothesis of mechanical instability as a selective pressure ({@fig:summary}a).
 Mitotic domains and germ band extension (long germ) are ancestral traits common to Diptera while the cephalic furrow is a derived trait---an evolutionary novelty of cyclorraphan flies [@Dey2023-pj] ({@fig:summary}a).
-These sources of stress were probably present at the dawn of dipterans.
-This suggests that the head--trunk interface of flies may have endured with mechanical instabilities long before the evolution of the cephalic furrow.
-Remarkably, flies with no cephalic furrow exhibit out-of-plane cell divisions exactly at the head--trunk boundary, suggesting that they evolved an alternative solution to mitigate the compressive load during gastrulation [@Dey2023-pj] ({@fig:summary}a).
+The sources of stress, mitotic domains and germ band, were probably present at the dawn of dipterans.
+This suggests that the head--trunk interface of flies may have endured mechanical instabilities long before the evolution of the cephalic furrow.
+Remarkably, flies with no cephalic furrow, *Clogmia* and *Chironomus*, exhibit out-of-plane cell divisions exactly at the head--trunk boundary, suggesting that they evolved an alternative solution to mitigate the effect of tissue compression load during gastrulation [@Dey2023-pj] ({@fig:summary}a).
 One key difference that might explain these divergent solutions for the same selective pressure is the expression of *btd* at the head--trunk boundary.
-Neither *Clogmia* ({@fig:gene-expression}) nor *Chironomus* [@Dey2023-pj] exhibit the *btd*--*eve* expression overlap at the head--trunk boundary ({@fig:summary}a), a trait essential to specify the initiator cells in species with cephalic furrow.
+Neither *Clogmia* ({@fig:gene-expression}) nor *Chironomus* [@Dey2023-pj] exhibit the *btd*--*eve* expression overlap at the head--trunk boundary ({@fig:summary}a), a trait essential to specify the initiator cells in species with cephalic furrow like *Drosophila*.
 Therefore, the establishment of a *btd*--*eve* overlap was probably a key event associated with the origin of the cephalic furrow.
 In this evolutionary scenario, the mechanical instability was the underlying selective pressure leading to the cooption of novel expression domains and the genetic stabilization a patterned cephalic furrow invagination ({@fig:summary}b).
 
@@ -466,14 +467,11 @@ In this evolutionary scenario, the mechanical instability was the underlying sel
 <!--Empirical support for this mechanism of generating morphogenetic innovations-->
 
 Our cephalic furrow data reveals how the interplay between genetic patterning and tissue mechanics may have shaped the evolution of morphogenesis in the early development of flies.
-However, we believe that these findings uncover a more general mechanism integrating tissue mechanics with developmental evolution.
+However, we believe that these findings potentially uncover only one realization of a more general mechanism integrating tissue mechanics with developmental evolution.
 Classical theoretical work by Newman and Müller raised the hypothesis that self-organized morphogenesis were critical to generate morphogenetic innovations at the dawn of animal evolution [@Newman2000-oz].
 Or, in other words, that before genome-guided embryonic development, tissues would fold due to mechanical interactions between them and their environment, and that the developmental “programs” we know today were fixed secondarily by natural selection.
-Our work provides initial empirical evidence in support of this hypothesis, showing that mechanical forces might have had a critical role in generating morphogenetic innovations not only at the transition to multicellularity, but also after the establishment of developmental “programs” across evolutionary time.
-We propose that the genetic resolution of mechanical conflicts between distinct embryonic processes may be a broadly occurring mechanism that contributed to generating the remarkable morphogenetic diversity of early animal embryogenesis.
-
-<!--that may be more common than previously thought.-->
-
+Our work provides initial empirical evidence in support of this hypothesis, showing that mechanical forces might have had a critical role in generating morphogenetic innovations not only at the transition to multicellularity, but also after the establishment of developmental patterning systems across evolutionary time.
+We propose that the genetic resolution of mechanical conflicts between distinct embryonic processes may be a broadly occurring mechanism that contributes to generating the remarkable morphogenetic diversity of early animal embryogenesis.
 
 <!--While the interplay between tissue mechanics and developmental evolution is poorly understood, classical theoretical work by Newman and Müller have raised the hypothesis that self-organized morphogenesis were critical to generate morphogenetic innovations at the dawn of animal evolution [@Newman2000-oz].-->
 <!--Or, in other words, that before genome guided embryonic development evolved, tissues would fold due to mechanical interactions between them and the environment, and the patterned morphogenetic programs we know today were fixed secondarily by natural selection [@Newman2000-oz].-->
