@@ -1,5 +1,8 @@
 ---
-title: Patterned invagination prevents mechanical instability in fly gastrulation
+title: Patterned invagination evolved to prevent mechanical instability in fly gastrulation
+#title: Evolution of patterned invagination prevents mechanical instability in fly gastrulation
+#title: Patterned fold prevents mechanical instability in fly gastrulation evolution 
+#title: Mechanical instability drives evolution of patterned morphogenesis
 #title: Patterned epithelial invagination prevents mechanical instability during fly gastrulation
 author:
 - Bruno C. Vellutini:
