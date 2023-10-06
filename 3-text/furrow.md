@@ -110,7 +110,9 @@ Unlike other embryonic invaginations, however, the cephalic furrow has no obviou
 While the ventral furrow gives rise to mesodermal precursors and the midgut invaginations give rise to endodermal tissues, the cephalic furrow does not give rise to any specific structure and, after a couple of hours, unfolds leaving no trace [@Hartenstein1985-zs].
 Therefore, despite forming under tight genetic control, the role of the cephalic furrow during development has remained unclear.
 While it has been thought to serve as a temporary tissue storage [@Turner1977-ol] or as a tissue anchor during gastrulation [@Costa1993-qj; @Dicko2017-wz], these hypotheses have not been investigated *in vivo* or considered in a phylogenetic context.
-Remarkably, recent evidence from an independent study by Dey et al. indicates that the cephalic furrow is an evolutionary novelty that originated within Diptera [@Dey2023-pj], making it an ideal model for investigating how patterned morphogenetic processes in early embryonic development evolve.
+Remarkably, recent evidence from an independent study by Dey et al. [@Dey2023-pj]^(footnote^[^note]^)^ indicates that the cephalic furrow is an evolutionary novelty that originated within Diptera, making it an ideal model for investigating how patterned morphogenetic processes in early embryonic development evolve.
+
+[^note]: This study has been submitted back-to-back with the present manuscript. Both pre-prints are available on bioRxiv.
 
 <!--The invagination is only present in a derived group of cyclorraphan flies, but is absent in the remaining basally-branching dipteran flies [@Dey2023-pj].-->
 <!--The clear origin in the phylogenetic tree makes the cephalic furrow an ideal model for investigating how patterned morphogenetic processes evolve.-->
