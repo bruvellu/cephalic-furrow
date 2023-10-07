@@ -367,8 +367,8 @@ The strongest cephalic furrow phenotype was present in flies mutant for the *slo
 *slp* is a known anterior repressor involved in the positioning of anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], but its involvement with cephalic furrow formation has not been analyzed.
 Our imaging data on mutant embryos lacking both *slp1* and *slp2* genes shows that the cephalic furrow invagination is delayed and shifted anteriorly about 5%, leading to an abnormal proportion of head and trunk regions ({@fig:slp}a).
 Interestingly, in *slp* mutants the typical *btd* and *eve* overlapping domains is present but shifted forward about 2.5 cell rows ({@fig:slp}b). 
-By analyzing the developmental expression of *slp*, *eve*, and *btd* transcripts from the onset of zygotic activation until the onset of gastrulation in *Drosophila*, we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:gene-expression}a).
-*eve* expression is initially ubiquitous, but its anterior limit recedes until the posterior limit of the *slp* domain, while *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:gene-expression}a).
+By analyzing the developmental expression of *slp*, *eve*, and *btd* transcripts from the onset of zygotic activation until the onset of gastrulation in *Drosophila*, we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:patterning}a).
+*eve* expression is initially ubiquitous, but its anterior limit recedes until the posterior limit of the *slp* domain, while *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:patterning}a).
 These data indicate that the early *slp* activity is an upstream factor required for positioning *eve* stripe 1 and *btd* domain, and consequently, important for determining the head--trunk boundary and the site of invagination for the cephalic furrow along the anteroposterior axis.
 
 <!--Early slp/eve domains demarcate the head--trunk boundary-->
@@ -379,9 +379,9 @@ These data indicate that the early *slp* activity is an upstream factor required
 
 <!--Late *slp* expression demarcates cephalic furrow edges-->
 
-At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:gene-expression}b,d).
-In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:gene-expression}e).
-Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:gene-expression}d).
+At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:patterning}b,d).
+In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:patterning}e).
+Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:patterning}d).
 This combinatorial expression of transcription factors *btd*, *eve*, *slp*, and *prd*, indicates that each row of cells forming the invagination of the cephalic furrow has a unique transcriptional identity.
 Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.
 
@@ -395,11 +395,11 @@ Since *slp* is crucial to maintain parasegment polarity by activating *wingless*
 <!--Clogmia lacks the head--trunk domain of btd-->
 
 To uncover the genetic patterning differences associated with the evolution of the cephalic furrow, we compared the expression data of the above described cephalic furrow genes in *Drosophila* to *Clogmia*, which lacks a cephalic furrow.
-We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:gene-expression}a).
+We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:patterning}a).
 However, the expression of *btd* differs between the two species.
-In *Drosophila* *btd* is expressed at the head--trunk boundary from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:gene-expression}a).
-In *Clogmia*, the *btd* acron domain is expressed much earlier and, strikingly, the head--trunk domain is not present; *btd* is only expressed at a ventral patch in the foregut area ({@fig:gene-expression}a,c).
-Additionally, the combinatorial expression of *slp*, *eve*, and *prd* at the onset of gastrulation is conserved between *Clogmia* and *Drosophila* ({@fig:gene-expression}e).
+In *Drosophila* *btd* is expressed at the head--trunk boundary from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:patterning}a).
+In *Clogmia*, the *btd* acron domain is expressed much earlier and, strikingly, the head--trunk domain is not present; *btd* is only expressed at a ventral patch in the foregut area ({@fig:patterning}a,c).
+Additionally, the combinatorial expression of *slp*, *eve*, and *prd* at the onset of gastrulation is conserved between *Clogmia* and *Drosophila* ({@fig:patterning}e).
 These data shows that both flies share a conserved head--trunk patterning system, and that the only significant difference is the presence of a head--trunk domain of *btd* in *Drosophila*.
 Since *btd* is a crucial gene for cephalic furrow formation, this suggests that the origin of a novel expression domain of *btd* at the head--trunk boundary was possibly a key event associated with the evolution of the cephalic furrow.
 
@@ -451,7 +451,7 @@ The sources of stress, mitotic domains and germ band, were probably present at t
 This suggests that the head--trunk interface of flies may have endured mechanical instabilities long before the evolution of the cephalic furrow.
 Remarkably, flies with no cephalic furrow, *Clogmia* and *Chironomus*, exhibit out-of-plane cell divisions exactly at the head--trunk boundary, suggesting that they evolved an alternative solution to mitigate the effect of tissue compression load during gastrulation [@Dey2023-pj] ({@fig:summary}a).
 One key difference that might explain these divergent solutions for the same selective pressure is the expression of *btd* at the head--trunk boundary.
-Neither *Clogmia* ({@fig:gene-expression}) nor *Chironomus* [@Dey2023-pj] exhibit the *btd*--*eve* expression overlap at the head--trunk boundary ({@fig:summary}a), a trait essential to specify the initiator cells in species with cephalic furrow like *Drosophila*.
+Neither *Clogmia* ({@fig:patterning}) nor *Chironomus* [@Dey2023-pj] exhibit the *btd*--*eve* expression overlap at the head--trunk boundary ({@fig:summary}a), a trait essential to specify the initiator cells in species with cephalic furrow like *Drosophila*.
 Therefore, the establishment of a *btd*--*eve* overlap was probably a key event associated with the origin of the cephalic furrow.
 In this evolutionary scenario, the mechanical instability was the underlying selective pressure leading to the cooption of novel expression domains and the genetic stabilization a patterned cephalic furrow invagination ({@fig:summary}b).
 
@@ -793,7 +793,7 @@ All authors revised and contributed to the text.
 **d**, Comparison of gene expression patterns at the onset of gastrulation. In *Drosophila*, *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines) and the 1--2-cell wide *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping 2-cell wide *slp1* stripes. The expression pattern of *slp* and *eve* in *Clogmia* is very similar to *Drosophila*. The main difference is the absence of the head--trunk domain of *btd* in *Clogmia*. Dashed lines in *Clogmia* mark the *slp* stripes homologous to *Drosophila*.
 **e**, Schematic drawings showing the molecular arrangement and putative genetic interactions at the head--trunk boundary of *Drosophila* and *Clogmia*.
 ac: *btd* acron domain, sh: *slp* head domain, ht: btd head--trunk domain, fg: *btd* foregut domain.
-](figures/Fig5.jpg){#fig:gene-expression width=100%}
+](figures/Fig5.jpg){#fig:patterning width=100%}
 
 ![Interplay of genetics and mechanics during cephalic furrow evolution.
 **a**, Simplified dipteran phylogeny based on [@Wiegmann2011-ou] with cephalic furrow traits mapped onto the tree. Combined data from this study and Dey et al. [@Dey2023-pj] (indicated in the figure). The germ band extension and mitotic domains are ancestral, suggesting that compressive stresses at the head--trunk boundary were present since the dawn of Diptera. The cephalic furrow is derived trait, an evolutionary novelty of cyclorraphan flies [@Dey2023-pj]. It is absent in *Clogmia* [@Jimenez-Guri2014-zs] and *Chironomus* [@Caroti2015-cy], but present in the common ancestor of *Megaselia* [@Wotton2014-fr] and *Drosophila*. Out-of-plane cell divisions at the head--trunk boundary are present in *Clogmia* and *Chironomus* [@Dey2023-pj]. They could be an ancestral trait together with mitotic domains and the long germ. *Clogmia* lacks a head--trunk domain of *btd* (this study). In *Chironomus* *btd* is expressed in the lateral side, but does not overlap with *eve* stripe 1 [@Dey2023-pj]. Therefore, *btd*--*eve* overlap correlates with the presence of the cephalic furrow, and may be associated with its evolution.
