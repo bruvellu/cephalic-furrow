@@ -966,12 +966,6 @@ Values of $\kappa_o^{CF}$ are shown in units of $1/L$. $t_{MD}=1$ corresponds to
 **b**, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time.
 ](figures/FigS10.jpg){#fig:ablation tag=S10 width=80%}
 
-![Analyses of *slp* mutants.
-**a**, Anterior displacement of the cephalic furrow in *slp* mutants.
-**b**, Anterior displacement of the *btd*--*eve* overlap in *slp* mutants.
-**b**, Disruption of *slp* expression in *btd* mutants.
-](figures/FigS11.jpg){#fig:slp tag=S11 width=80%}
-
 \clearpage
 
 \newpage
