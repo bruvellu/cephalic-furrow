@@ -365,10 +365,10 @@ The strongest cephalic furrow phenotype was present in flies mutant for the *slo
 <!--Early slp activity positions initiator cells-->
 
 *slp* is a known anterior repressor involved in the positioning of anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], but its involvement with cephalic furrow formation has not been analyzed.
-Our imaging data on mutant embryos lacking both *slp1* and *slp2* genes shows that the cephalic furrow invagination is delayed and shifted anteriorly about 5%, leading to an abnormal proportion of head and trunk regions ({@fig:slp}a).
-Interestingly, in *slp* mutants the typical *btd* and *eve* overlapping domains is present but shifted forward about 2.5 cell rows ({@fig:slp}b). 
-By analyzing the developmental expression of *slp*, *eve*, and *btd* transcripts from the onset of zygotic activation until the onset of gastrulation in *Drosophila*, we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:patterning}a).
-*eve* expression is initially ubiquitous, but its anterior limit recedes until the posterior limit of the *slp* domain, while *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:patterning}a).
+We imaged mutant embryos lacking both *slp1* and *slp2* genes and find that the cephalic furrow invagination is delayed and shifted anteriorly about 5%, leading to an abnormal proportion of head and trunk regions ({@fig:patterning}a,b).
+Interestingly, in *slp* mutants the typical *btd* and *eve* overlapping domains at the head--trunk boundary is present, but shifted forward by about 2.5 cell rows (control = 4.7±0.5 rows, n=6; *slp* = 7.3±0.7 rows, n=5) ({@fig:patterning}c--e).
+By analyzing the developmental expression of *slp*, *eve*, and *btd* transcripts from the onset of zygotic activation until the onset of gastrulation in *Drosophila*, we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:patterning}f).
+*eve* expression is initially ubiquitous, but its anterior limit recedes until the posterior limit of the *slp* domain, while *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:patterning}f).
 These data indicate that the early *slp* activity is an upstream factor required for positioning *eve* stripe 1 and *btd* domain, and consequently, important for determining the head--trunk boundary and the site of invagination for the cephalic furrow along the anteroposterior axis.
 
 <!--Early slp/eve domains demarcate the head--trunk boundary-->
@@ -379,9 +379,9 @@ These data indicate that the early *slp* activity is an upstream factor required
 
 <!--Late *slp* expression demarcates cephalic furrow edges-->
 
-At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:patterning}b,d).
+At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:patterning}g,i).
 In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:patterning}e).
-Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:patterning}d).
+Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:patterning}i).
 This combinatorial expression of transcription factors *btd*, *eve*, *slp*, and *prd*, indicates that each row of cells forming the invagination of the cephalic furrow has a unique transcriptional identity.
 Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.
 
@@ -395,11 +395,11 @@ Since *slp* is crucial to maintain parasegment polarity by activating *wingless*
 <!--Clogmia lacks the head--trunk domain of btd-->
 
 To uncover the genetic patterning differences associated with the evolution of the cephalic furrow, we compared the expression data of the above described cephalic furrow genes in *Drosophila* to *Clogmia*, which lacks a cephalic furrow.
-We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:patterning}a).
+We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:patterning}f).
 However, the expression of *btd* differs between the two species.
-In *Drosophila* *btd* is expressed at the head--trunk boundary from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:patterning}a).
-In *Clogmia*, the *btd* acron domain is expressed much earlier and, strikingly, the head--trunk domain is not present; *btd* is only expressed at a ventral patch in the foregut area ({@fig:patterning}a,c).
-Additionally, the combinatorial expression of *slp*, *eve*, and *prd* at the onset of gastrulation is conserved between *Clogmia* and *Drosophila* ({@fig:patterning}e).
+In *Drosophila* *btd* is expressed at the head--trunk boundary from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:patterning}f).
+In *Clogmia*, the *btd* acron domain is expressed much earlier and, strikingly, the head--trunk domain is not present; *btd* is only expressed at a ventral patch in the foregut area ({@fig:patterning}f,h).
+Additionally, the combinatorial expression of *slp*, *eve*, and *prd* at the onset of gastrulation is conserved between *Clogmia* and *Drosophila* ({@fig:patterning}j).
 These data shows that both flies share a conserved head--trunk patterning system, and that the only significant difference is the presence of a head--trunk domain of *btd* in *Drosophila*.
 Since *btd* is a crucial gene for cephalic furrow formation, this suggests that the origin of a novel expression domain of *btd* at the head--trunk boundary was possibly a key event associated with the evolution of the cephalic furrow.
 
@@ -787,11 +787,16 @@ All authors revised and contributed to the text.
 ](figures/Fig4.jpg){#fig:experiments width=100%}
 
 ![Genetic patterning of the head--trunk boundary in *Drosophila* and *Clogmia*.
-**a**, Progression of the early expression of *btd*, *eve*, and *slp* around the mitotic cycle 14. Initially, *slp* and *eve* demarcate the head--trunk boundary of both species in broad domains that later become segmented. The head--trunk domain of *btd* is expressed early in *Drosophila* but is absent in *Clogmia*. The anterior domain of *btd* is present in both species, but is only activated in *Drosophila* at the onset of gastrulation.
-**b**, Crop showing the narrowing and sharpening of the expression domains in *Drosophila*. *slp1* and *eve* expression domains are complementary and *btd* is expressed at this interface. The border between *slp1* and *eve* resolve into sharp, non-overlapping stripes. The overlap between *btd* and *eve* narrows progressively until resolving to a 1-cell row. Dashed lines mark the future edges of the cephalic furrow.
-**c**, Close-up of the anterior region showing the absence of a *btd* head--trunk domain in *Clogmia* compared to *Drosophila*.
-**d**, Comparison of gene expression patterns at the onset of gastrulation. In *Drosophila*, *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines) and the 1--2-cell wide *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping 2-cell wide *slp1* stripes. The expression pattern of *slp* and *eve* in *Clogmia* is very similar to *Drosophila*. The main difference is the absence of the head--trunk domain of *btd* in *Clogmia*. Dashed lines in *Clogmia* mark the *slp* stripes homologous to *Drosophila*.
-**e**, Schematic drawings showing the molecular arrangement and putative genetic interactions at the head--trunk boundary of *Drosophila* and *Clogmia*.
+**a**, Lateral view of *slp* mutant heterozygote (control) and mutant embryo at the onset of initiator cell behavior. The initiation is delayed in mutants happening when the germ band is extended about 18% of egg length. The position of intiation is shifted forward in mutants at about 73% of egg length. The asterisk indicates mitotic cells.
+**b**, Plots showing the position of the cephalic furrow (CF) and germ band (GB) at the onset of initiator cell behavior in *slp* mutants.
+**c**, Lateral view of *slp* mutants in *Drosophila* embryos showing the expression of *btd* and *eve*. The distance between *eve* stripe 1 and 2 is larger in *slp* embryos. The asterisk indicates a region between the acron (ac) and head--trunk (ht) domains of *btd* where its expression is de-repressed in the absence of the *slp* head domain (sh). 
+**d**, Dorsal view showing the de-repression of *btd* (asterisks) and anterior shift of *btd*--*eve* overlap in *slp* mutants.
+**e**, Profile view showing the increased number of cell rows between *eve* stripe 1 and 2 in *slp* mutants.
+**f**, Progression of the early expression of *btd*, *eve*, and *slp* around the mitotic cycle 14. Initially, *slp* and *eve* demarcate the head--trunk boundary of both species in broad domains that later become segmented. The head--trunk domain of *btd* is expressed early in *Drosophila* but is absent in *Clogmia*. The anterior domain of *btd* is present in both species, but is only activated in *Drosophila* at the onset of gastrulation.
+**g**, Crop showing the narrowing and sharpening of the expression domains in *Drosophila*. *slp1* and *eve* expression domains are complementary and *btd* is expressed at this interface. The border between *slp1* and *eve* resolve into sharp, non-overlapping stripes. The overlap between *btd* and *eve* narrows progressively until resolving to a 1-cell row. Dashed lines mark the future edges of the cephalic furrow.
+**h**, Close-up of the anterior region showing the absence of a *btd* head--trunk domain in *Clogmia* compared to *Drosophila*.
+**i**, Comparison of gene expression patterns at the onset of gastrulation. In *Drosophila*, *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines) and the 1--2-cell wide *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping 2-cell wide *slp1* stripes. The expression pattern of *slp* and *eve* in *Clogmia* is very similar to *Drosophila*. The main difference is the absence of the head--trunk domain of *btd* in *Clogmia*. Dashed lines in *Clogmia* mark the *slp* stripes homologous to *Drosophila*.
+**j**, Schematic drawings showing the molecular arrangement and putative genetic interactions at the head--trunk boundary of *Drosophila* and *Clogmia*.
 ac: *btd* acron domain, sh: *slp* head domain, ht: btd head--trunk domain, fg: *btd* foregut domain.
 ](figures/Fig5.jpg){#fig:patterning width=100%}
 
