@@ -1,10 +1,9 @@
 ---
-title: Patterned invagination prevents mechanical instability in fly gastrulation
+title: Patterned epithelial invagination prevents mechanical instability during fly gastrulation
+#title: Patterned embryonic invagination evolved in response to mechanical instability in fly gastrulation
+#title: Patterned embryonic invagination evolved in response to mechanical instability in fly gastrulation
 #title: How tissue mechanics influences the evolution of patterned morphogenesis
-#title: Role of mechanical instability for the evolution of patterned morphogenesis
-#title: Role of tissue mechanics for the evolution of patterned morphogenesis
 #title: Mechanical instability shaping the evolution of patterned morphogenesis
-#title: How mechanical instability shapes the evolution of patterned morphogenesis
 #title: Mechanical instability and the evolution of patterned morphogenesis
 #title: Evolution of patterned morphogenesis linked to mechanical instability
 #title: Linking mechanical instability and the evolution of patterned morphogenesis
@@ -74,7 +73,7 @@ Our findings uncover empirical evidence for how mechanical forces can influence 
 Morphogenesis is a physical process [@Keller2012-ca; @Heisenberg2013-pl].
 When embryonic tissues extend or invaginate, they push and pull on neighboring tissues.
 These mechanical interactions provide essential information to embryonic cells throughout development and ultimately shape the final morphology of tissues and organs [@Collinet2021-qa].
-However, how mechanical forces influence the *evolution* of morphogenesis in early embryonic development remains unclear.
+However, how mechanical forces influence the evolution of morphogenesis in early embryonic development remains unclear.
 To investigate the interplay between genetics and mechanics during the evolution of morphogenesis, we studied a prominent but enigmatic epithelial fold that forms at the head--trunk boundary of flies during gastrulation---the cephalic furrow [@Hartenstein1985-zs; @Spencer2015-td].
 
 <!--- Morphogenesis is a complex sequence of patterning and physical events.-->
@@ -119,7 +118,7 @@ Unlike other embryonic invaginations, however, the cephalic furrow has no obviou
 While the ventral furrow gives rise to mesodermal precursors and the midgut invaginations give rise to endodermal tissues, the cephalic furrow does not give rise to any specific structure and, after a couple of hours, unfolds leaving no trace [@Hartenstein1985-zs].
 Therefore, despite forming under tight genetic control, the role of the cephalic furrow during development has remained unclear.
 While it has been thought to serve as a temporary tissue storage [@Turner1977-ol] or as a tissue anchor during gastrulation [@Costa1993-qj; @Dicko2017-wz], these hypotheses have not been investigated *in vivo* or considered in a phylogenetic context.
-Remarkably, recent evidence from an independent study by Dey et al. [@Dey2023-pj]^(footnote^[^note]^)^ indicates that the cephalic furrow is an evolutionary novelty that originated within Diptera, making it an ideal model for investigating how patterned morphogenetic processes in early embryonic development evolve.
+Remarkably, recent evidence from an independent study by Dey et al. ^(footnote^[^note]^)^ indicates that the cephalic furrow is an evolutionary novelty that originated within Diptera [@Dey2023-pj], making it an ideal model for investigating how patterned morphogenetic processes in early embryonic development evolve.
 
 [^note]: This study has been submitted back-to-back with the present manuscript. Both pre-prints are available on bioRxiv.
 
