@@ -49,7 +49,7 @@ FILEOUT=${DATE}_${BRANCH}_${FILE}
 FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-citeproc
 
 # Pandoc variables for PDF
-PDFVARS=-V fontfamily:libertine -V linestretch:1.5 -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt -V urlcolor='[HTML]{0969da}'
+PDFVARS=-V fontfamily:libertine -V linestretch:1 -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt -V urlcolor='[HTML]{0969da}'
 
 # Pandoc variables for HTML
 HTMLVARS=--standalone --mathml
