@@ -109,7 +109,7 @@ Unlike other embryonic invaginations, however, the cephalic furrow has no obviou
 While the ventral furrow gives rise to mesodermal precursors and the midgut invaginations give rise to endodermal tissues, the cephalic furrow does not give rise to any specific structure and, after a couple of hours, unfolds leaving no trace [@Hartenstein1985-zs].
 Therefore, despite forming under tight genetic control, the role of the cephalic furrow during development has remained unclear.
 While it has been thought to serve as a temporary tissue storage [@Turner1977-ol] or as a tissue anchor during gastrulation [@Costa1993-qj; @Dicko2017-wz], these hypotheses have not been investigated *in vivo* or considered in a phylogenetic context.
-Remarkably, recent evidence from an independent study by Dey et al. ^(footnote^[^note]^)^ indicates that the cephalic furrow is an evolutionary novelty that originated within Diptera [@Dey2023-pj], making it an ideal model for investigating how patterned morphogenetic processes in early embryonic development evolve.
+Remarkably, recent evidence from an independent study by Dey *et al.* ^(footnote^[^note]^)^ indicates that the cephalic furrow is an evolutionary novelty that originated within Diptera [@Dey2023-pj], making it an ideal model for investigating how patterned morphogenetic processes in early embryonic development evolve.
 
 [^note]: This study has been submitted back-to-back with the present manuscript. Both pre-prints are available on bioRxiv.
 
@@ -169,7 +169,7 @@ Such differences in morphology and dynamics suggest that the cephalic furrow and
 
 <!--TODO: Merge with previous section?-->
 
-To better understand the mechanisms of ectopic folding, we analyzed the phenomenon more broadly in our datasets and found that ectopic folds may also occur in embryos with a cephalic furrow (i.e. *btd* or *eve* heterozygotes, *prd* hetero- or homozygotes, and wildtype).
+To better understand the mechanisms of ectopic folding, we analyzed the phenomenon more broadly in our datasets and found that ectopic folds may also occur in embryos with a cephalic furrow (*i.e.*, *btd* or *eve* heterozygotes, *prd* hetero- or homozygotes, and wildtype).
 These ectopic folds, however, differ from the ectopic folds of cephalic mutants in two key aspects.
 While the frequency of ectopic folding is high in cephalic furrow mutants (>93%)---nearly every *btd* and *eve* homozygote shows one or more ectopic folds per embryo side (2.0±1.0 and 1.8±0.6, respectively) ({@fig:ectopic}b, {@fig:features}a)---the frequency of ectopic folding in the other embryos is lower, ranging between 12% (*eve* heterozygotes) and 80% (wildtype embryos) ({@tbl:stats}).
 In addition, the area of ectopic folds in wildtype embryos is 3--4x smaller than the area of ectopic folds in cephalic furrow mutants ({@fig:features}g--k, {@tbl:area}).
@@ -410,7 +410,7 @@ We find that perturbing cephalic furrow formation in *Drosophila* makes the head
 Dividing cells can impact the stability of epithelial monolayers because they generate in-plane outward forces during the elongation phase [@Gupta2021-oo] and undergo basal detachment, creating an imbalance in the tissue [@Ko2020-wk].
 Mitotic rounding indeed induces epithelial folds in the tracheal placode of flies [@Kondo2013-gy] and in intestinal villi of mice [@Freddo2016-et], but it only occurs in the presence of an additional intraepithelial compressive force.
 Our findings that only the combined action of mitotic domains and germ band can induce ectopic folds ({@fig:experiments}j) indicates that a similar mechanism could be at play in cephalic furrow mutants.
-The role of mitotic domains and germ band as stressors is corroborated by complementary experiments performed in the independent study by Dey et al. [@Dey2023-pj], consolidating the evidence that the head--trunk interface of flies is under increased mechanical stress during gastrulation.
+The role of mitotic domains and germ band as stressors is corroborated by complementary experiments performed in the independent study by Dey *et al.* [@Dey2023-pj], consolidating the evidence that the head--trunk interface of flies is under increased mechanical stress during gastrulation.
 Since our experiments ({@fig:features}g,i--k) and simulations ({@fig:model}g,h) show that the early formation of the cephalic furrow effectively inhibits the occurrence of ectopic folds, it gives support to the idea that the cephalic furrow is preventing the build up of these compressive stresses at the head--trunk boundary.
 We propose, therefore, that the cephalic furrow safeguards the mechanical stability of the head--trunk boundary, and thus, accomplishes a physical role during *Drosophila* gastrulation.
 
@@ -427,7 +427,7 @@ We propose, therefore, that the cephalic furrow safeguards the mechanical stabil
 This raises an intriguing evolutionary question---has the cephalic furrow evolved in response to mechanical instability?
 For this to be the case, we expect that increased mechanical instability would be detrimental to the fitness of individuals.
 While mechanical compression and tissue buckling have the potential to disrupt cell-to-cell interactions and short-range signaling at the head--trunk boundary, investigating these effects *in vivo* is challenging.
-However, Dey et al. show that inhibiting cephalic furrow formation in *Drosophila* increases the frequency of a distorted ventral midline where the body axis becomes partially rotated during gastrulation [@Dey2023-pj].
+However, Dey *et al.* show that inhibiting cephalic furrow formation in *Drosophila* increases the frequency of a distorted ventral midline where the body axis becomes partially rotated during gastrulation [@Dey2023-pj].
 This suggests that increased compressive stresses and variable ectopic buckling cause a mechanical imbalance between embryonic tissues which can impact the robustness of morphogenetic processes and potentially slow down embryogenesis.
 In this sense, a patterned head invagination may have improved the robustness of gastrulation or allowed for faster development, providing an evolutionary advantage which was then positively selected.
 
@@ -532,9 +532,9 @@ Using the diluted PBS solution instead of water prevents the embryos from bursti
 
 ## Embryo fixation and *in situ* hybridization
 
-For *Drosophila*, we transferred dechorionated embryos to a glass vial containing equal volumes of 4% paraformaldehyde in PBS and N-heptane, and let the vial shaking at 215rpm for 45min.
+For *Drosophila*, we transferred dechorionated embryos to a glass vial containing equal volumes of 4% paraformaldehyde in PBS and n-Heptane, and let the vial shaking at 215rpm for 45min.
 After removing the fixative (lower phase) using a glass pipet, we added an equal volume of 100% methanol, and shook the vial vigorously by hand for 1min.
-We then removed the N-heptane (upper phase) and collected the embryos on the bottom to an eppendorf tube and washed several times with 100% methanol.
+We then removed the n-Heptane (upper phase) and collected the embryos on the bottom to an eppendorf tube and washed several times with 100% methanol.
 Samples were stored at -20°C.
 For Clogmia, we used the same protocol, but diluted the fixative in 0.5x PBS.
 
@@ -619,7 +619,7 @@ The laser power measured before the microscope port was 6 mW and the pixel dwell
 To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY-resolution and 200ms time-steps.
 We ablated each embryo just once.
 The temperature was maintained at 28°C.
-To analyse the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the *Multi Kymograph* Fiji plugin ({@fig:ablation}).
+To analyze the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the *Multi Kymograph* Fiji plugin ({@fig:ablation}).
 We then binarized the kymographs, measured the distance between cell edges over the first 30s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({@fig:ablation}).
 
 <!--TODO: What is the brand of the objective?-->
@@ -791,7 +791,7 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg:
 ](figures/Fig5.jpg){#fig:patterning width=100%}
 
 ![Interplay of genetics and mechanics during cephalic furrow evolution.
-**a**, Simplified dipteran phylogeny based on [@Wiegmann2011-ou] with cephalic furrow traits mapped onto the tree. Combined data from this study and Dey et al. [@Dey2023-pj] (indicated in the figure). The germ band extension and mitotic domains are ancestral, suggesting that compressive stresses at the head--trunk boundary were present since the dawn of Diptera. The cephalic furrow is derived trait, an evolutionary novelty of cyclorraphan flies [@Dey2023-pj]. It is absent in *Clogmia* [@Jimenez-Guri2014-zs] and *Chironomus* [@Caroti2015-cy], but present in the common ancestor of *Megaselia* [@Wotton2014-fr] and *Drosophila*. Out-of-plane cell divisions at the head--trunk boundary are present in *Clogmia* and *Chironomus* [@Dey2023-pj]. They could be an ancestral trait together with mitotic domains and the long germ. *Clogmia* lacks a head--trunk domain of *btd* (this study). In *Chironomus* *btd* is expressed in the lateral side, but does not overlap with *eve* stripe 1 [@Dey2023-pj]. Therefore, *btd*--*eve* overlap correlates with the presence of the cephalic furrow, and may be associated with its evolution.
+**a**, Simplified dipteran phylogeny based on [@Wiegmann2011-ou] with cephalic furrow traits mapped onto the tree. Combined data from this study and Dey *et al.* [@Dey2023-pj] (indicated in the figure). The germ band extension and mitotic domains are ancestral, suggesting that compressive stresses at the head--trunk boundary were present since the dawn of Diptera. The cephalic furrow is derived trait, an evolutionary novelty of cyclorraphan flies [@Dey2023-pj]. It is absent in *Clogmia* [@Jimenez-Guri2014-zs] and *Chironomus* [@Caroti2015-cy], but present in the common ancestor of *Megaselia* [@Wotton2014-fr] and *Drosophila*. Out-of-plane cell divisions at the head--trunk boundary are present in *Clogmia* and *Chironomus* [@Dey2023-pj]. They could be an ancestral trait together with mitotic domains and the long germ. *Clogmia* lacks a head--trunk domain of *btd* (this study). In *Chironomus* *btd* is expressed in the lateral side, but does not overlap with *eve* stripe 1 [@Dey2023-pj]. Therefore, *btd*--*eve* overlap correlates with the presence of the cephalic furrow, and may be associated with its evolution.
 **b**, Scenario for mechanical instability as a selective pressure for the evolution of morphogenetic innovations. In the ancestral state there was no mechanical instability at the head--trunk boundary (0). The appearance of mitotic domains and germ band extension increased the compressive stresses and ectopic buckling events at the head--trunk boundary (1). This mechanical instability may have had a detrimental effect on individual fitness by affecting developmental robustness or by slowing down embryogenesis. Natural selection favored the establishment of patterned processes that mitigate these compressive stresses at the head--trunk boundary. One solution, present in *Clogmia* and *Chironomus*, is the out-of-plane cell divisions which reduce the compression load on the monolayer epithelium (2a). Another solution, present in *Drosophila* and other cyclorraphan flies, is the formation of an out-of-plane invagination which absorbs the mechanical forces at the head--trunk boundary (2b). These events may have happened through the stabilization of genetic interactions and cooption of existing signaling modules controlling cell and tissue morphogenesis. Tissue mechanics may have been an important factor influencing the evolution of patterned morphogenesis in early embryonic development.
 ](figures/Fig6.jpg){#fig:summary width=100%}
 
