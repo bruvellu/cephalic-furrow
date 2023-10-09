@@ -701,8 +701,8 @@ This work was supported by the MPI-CBG core funding to CDM and PT, and by an Eur
 # Author contributions
 
 BCV and PT conceived the study.
-BCV designed the experiments, generated the fly stocks, acquired microscopy data, performed the *in situ* hybridizations, and processed and analyzed the *in vivo* data.
-MBC conducted the laser ablations and the cauterization experiments, and performed the strain rate analyses.
+BCV designed experiments, generated fly stocks, acquired microscopy data, performed *in situ* hybridizations, and processed and analyzed the *in vivo* data.
+MBC conceived and conducted the laser ablation and cauterization experiments, and analyzed the laser ablation and strain rate data.
 CDM, AK, and AS designed the model.
 AK and AS programmed the model, performed the simulations, and analyzed the *in silico* data.
 BCV wrote the manuscript.
@@ -787,7 +787,7 @@ All authors revised and contributed to the text.
 **h**, Close-up of the anterior region showing the absence of a *btd* head--trunk domain in *Clogmia* compared to *Drosophila*.
 **i**, Comparison of gene expression patterns at the onset of gastrulation. In *Drosophila*, *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines) and the 1--2-cell wide *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping 2-cell wide *slp1* stripes. The expression pattern of *slp* and *eve* in *Clogmia* is very similar to *Drosophila*. The main difference is the absence of the head--trunk domain of *btd* in *Clogmia*. Dashed lines in *Clogmia* mark the *slp* stripes homologous to *Drosophila*.
 **j**, Schematic drawings showing the molecular arrangement and putative genetic interactions at the head--trunk boundary of *Drosophila* and *Clogmia*.
-ac: *btd* acron domain, sh: *slp* head domain, ht: btd head--trunk domain, fg: *btd* foregut domain.
+ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg: *btd* foregut domain.
 ](figures/Fig5.jpg){#fig:patterning width=100%}
 
 ![Interplay of genetics and mechanics during cephalic furrow evolution.
