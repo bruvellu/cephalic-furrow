@@ -1,14 +1,5 @@
 ---
-title: Patterned epithelial invagination prevents mechanical instability during fly gastrulation
-#title: Patterned embryonic invagination evolved in response to mechanical instability in fly gastrulation
-#title: Patterned embryonic invagination evolved in response to mechanical instability in fly gastrulation
-#title: How tissue mechanics influences the evolution of patterned morphogenesis
-#title: Mechanical instability shaping the evolution of patterned morphogenesis
-#title: Mechanical instability and the evolution of patterned morphogenesis
-#title: Evolution of patterned morphogenesis linked to mechanical instability
-#title: Linking mechanical instability and the evolution of patterned morphogenesis
-#title: Patterned invagination evolved to prevent mechanical instability in fly gastrulation
-#title: Patterned epithelial invagination prevents mechanical instability during fly gastrulation
+title: Patterned embryonic invagination evolved in response to mechanical instability
 author:
 - Bruno C. Vellutini:
     institute: [mpicbg]
