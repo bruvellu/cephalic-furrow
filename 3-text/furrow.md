@@ -876,7 +876,7 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 
 Table: Summary of live-imaging screening results for cephalic furrow genes. {#tbl:screen}
 
-| name                      | symbol         | allele/deletion | phenotype                                  |
+| gene name                 | gene symbol      | allele/deficiency | phenotype                                  |
 | ----                      | ------         | --------------- | ---------                                  |
 | *buttonhead*              | *btd*          | *btd*^XA^       | absent [@Vincent1997-fa]                   |
 | *even skipped*            | *eve*          | *eve*^3^        | absent [@Vincent1997-fa]                   |
