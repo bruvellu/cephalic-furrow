@@ -1,0 +1,130 @@
+---
+title: "Measurements of slp mutants"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: February 06, 2020
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = getwd())
+library(ggplot2)
+library(ggbeeswarm)
+```
+
+## Load measurements
+
+```{r load}
+measurements <- read.csv("slp_measurements.csv")
+```
+
+## Descriptive statistics
+
+Calculate and print the mean and standard deviation for all variables.
+
+```{r values}
+# Print statistics
+by(measurements, measurements$zygosity, summary)
+
+# Save to file
+capture.output(by(measurements, measurements$zygosity, summary), file = "stats.txt")
+```
+
+## Figures
+
+```{r plot-cf-position}
+ggplot(measurements, aes(zygosity, position_cf, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4.5)) +
+  scale_y_continuous(limits = c(60,80)) +
+  scale_x_discrete(labels = c("+/−", "−/−")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "zygosity", y = "egg length (%)") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", linewidth = 1)
+        )
+ggsave("2-plots/cf_pct_position.png", width = 6, height = 6)
+ggsave("2-plots/cf_pct_position.svg", width = 6, height = 6)
+```
+
+```{r plot-gb-position}
+ggplot(measurements, aes(zygosity, position_gb, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4.5)) +
+  scale_y_continuous(limits = c(0,30)) +
+  scale_x_discrete(labels = c("+/−", "−/−")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "zygosity", y = "egg length (%)") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", linewidth = 1)
+        )
+ggsave("2-plots/gb_pct_position.png", width = 6, height = 6)
+ggsave("2-plots/gb_pct_position.svg", width = 6, height = 6)
+```
+
+
+## Statistics
+
+The distribution is not normal. Using Wilcoxon test to compare the samples.
+
+```{r stats}
+sink('tests.txt')
+
+print("Testing normality of distribution")
+shapiro.test(measurements$position_cf)
+shapiro.test(measurements$position_gb)
+shapiro.test(measurements[measurements$zygosity == "heterozygote",]$position_cf)
+shapiro.test(measurements[measurements$zygosity == "homozygote",]$position_cf)
+shapiro.test(measurements[measurements$zygosity == "heterozygote",]$position_gb)
+shapiro.test(measurements[measurements$zygosity == "homozygote",]$position_gb)
+
+print("Testing for difference between samples")
+wilcox.test(measurements[measurements$zygosity == "heterozygote",]$position_cf,
+            measurements[measurements$zygosity == "homozygote",]$position_cf)
+wilcox.test(measurements[measurements$zygosity == "heterozygote",]$position_gb,
+            measurements[measurements$zygosity == "homozygote",]$position_gb)
+
+print("t-test just to get the difference between sample means")
+t.test(measurements[measurements$zygosity == "heterozygote",]$position_cf,
+       measurements[measurements$zygosity == "homozygote",]$position_cf,
+       var.equal = FALSE)
+t.test(measurements[measurements$zygosity == "heterozygote",]$position_gb,
+       measurements[measurements$zygosity == "homozygote",]$position_gb,
+       var.equal = FALSE)
+
+sink()
+```
+
+## Number of rows
+
+```{r load}
+# Load row counts
+rows <- read.csv("slp_rows.csv")
+# Print statistics
+by(rows, rows$zygosity, summary)
+# Save to file
+capture.output(by(rows, rows$zygosity, summary), file = "rows.txt")
+# Plot
+ggplot(rows, aes(zygosity, rows, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
+  scale_y_continuous(limits = c(2,10)) +
+  scale_x_discrete(labels = c("+/−", "−/−")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "Zygosity", y = "rows") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", linewidth = 1)
+        )
+ggsave("2-plots/rows_between_eve1_eve2.png", width = 6, height = 6)
+ggsave("2-plots/rows_between_eve1_eve2.svg", width = 6, height = 6)
+```
+

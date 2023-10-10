@@ -1,0 +1,17 @@
+rows$zygosity: heterozygote
+    image                rows       zygosity        
+ Length:30          Min.   :4.0   Length:30         
+ Class :character   1st Qu.:4.0   Class :character  
+ Mode  :character   Median :5.0   Mode  :character  
+                    Mean   :4.7                     
+                    3rd Qu.:5.0                     
+                    Max.   :5.0                     
+------------------------------------------------------------------------------------ 
+rows$zygosity: homozygote
+    image                rows        zygosity        
+ Length:25          Min.   :6.00   Length:25         
+ Class :character   1st Qu.:7.00   Class :character  
+ Mode  :character   Median :7.00   Mode  :character  
+                    Mean   :7.32                     
+                    3rd Qu.:8.00                     
+                    Max.   :9.00                     

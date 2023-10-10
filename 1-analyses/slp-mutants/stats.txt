@@ -1,0 +1,31 @@
+measurements$zygosity: heterozygote
+    stack             length_egg     length_trunk     length_gb      position_cf     position_gb    
+ Length:26          Min.   :464.0   Min.   :311.0   Min.   :23.00   Min.   :65.50   Min.   : 4.700  
+ Class :character   1st Qu.:488.5   1st Qu.:330.2   1st Qu.:36.25   1st Qu.:66.42   1st Qu.: 6.750  
+ Mode  :character   Median :505.5   Median :342.0   Median :48.00   Median :67.35   Median : 9.200  
+                    Mean   :507.6   Mean   :343.5   Mean   :48.50   Mean   :67.64   Mean   : 9.604  
+                    3rd Qu.:524.8   3rd Qu.:358.8   3rd Qu.:60.00   3rd Qu.:68.78   3rd Qu.:11.925  
+                    Max.   :554.0   Max.   :384.0   Max.   :85.00   Max.   :69.90   Max.   :18.200  
+    frame_ic       frame_step    frame_gastr     min_ic          zygosity        
+ Min.   :16.00   Min.   :45.00   Mode:logical   Mode:logical   Length:26         
+ 1st Qu.:30.50   1st Qu.:45.00   NA's:26        NA's:26        Class :character  
+ Median :44.50   Median :50.00                                 Mode  :character  
+ Mean   :49.35   Mean   :57.69                                                   
+ 3rd Qu.:66.00   3rd Qu.:70.00                                                   
+ Max.   :93.00   Max.   :70.00                                                   
+------------------------------------------------------------------------------------ 
+measurements$zygosity: homozygote
+    stack             length_egg     length_trunk     length_gb       position_cf     position_gb   
+ Length:7           Min.   :464.0   Min.   :339.0   Min.   : 55.00   Min.   :72.40   Min.   :11.90  
+ Class :character   1st Qu.:508.0   1st Qu.:372.5   1st Qu.: 79.50   1st Qu.:72.70   1st Qu.:15.30  
+ Mode  :character   Median :513.0   Median :374.0   Median : 96.00   Median :73.10   Median :18.70  
+                    Mean   :507.7   Mean   :371.9   Mean   : 90.29   Mean   :73.23   Mean   :17.77  
+                    3rd Qu.:516.0   3rd Qu.:376.5   3rd Qu.:102.50   3rd Qu.:73.75   3rd Qu.:19.95  
+                    Max.   :529.0   Max.   :392.0   Max.   :117.00   Max.   :74.20   Max.   :23.30  
+    frame_ic       frame_step frame_gastr     min_ic          zygosity        
+ Min.   :44.00   Min.   :45   Mode:logical   Mode:logical   Length:7          
+ 1st Qu.:59.00   1st Qu.:50   NA's:7         NA's:7         Class :character  
+ Median :73.00   Median :50                                 Mode  :character  
+ Mean   :69.14   Mean   :55                                                   
+ 3rd Qu.:81.50   3rd Qu.:60                                                   
+ Max.   :86.00   Max.   :70                                                   
