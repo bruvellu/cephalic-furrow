@@ -874,24 +874,11 @@ Table: Area of ectopic fold formation in cephalic furrow mutants. We calculated 
 | EF | 0.7±0.5      | 2.3±1.7     | 3.2±2.1    | 1.0±0.6     |
 | n  | CF=16, EF=16 | CF=6, EF=13 | CF=7, EF=7 | CF=14, EF=8 |
 
-
-Table: Summary of live-imaging screening results for cephalic furrow genes. {#tbl:screen}
-
-| gene name                 | gene symbol      | allele/deficiency | phenotype                                  |
-| ----                      | ------         | --------------- | ---------                                  |
-| *buttonhead*              | *btd*          | *btd*^XA^       | absent [@Vincent1997-fa]                   |
-| *even skipped*            | *eve*          | *eve*^3^        | absent [@Vincent1997-fa]                   |
-| *paired*                  | *prd*          | *prd*^4^        | delayed [@Blankenship2001-tm] and abnormal |
-| *sloppy paired 1* and *2* | *slp1*, *slp2* | *slp*^Δ34B^     | delayed and displaced anteriorly           |
-| *sloppy paired 1*         | *slp1*         | *slp1*^1^       | delayed and displaced anteriorly           |
-| *giant*                   | *gt*           | *gt*^X11^       | perturbed formation                        |
-| *knirps*, *knirps-like*   | *kni*, *knrl*  | Df(3L)BSC448    | ventral portion displaced anteriorly       |
-
 \clearpage
 
 \newpage
 
-# Supplementary information
+# Extended data
 
 ## Figures
 
@@ -982,4 +969,22 @@ Values of $\kappa_o^{CF}$ are shown in units of $1/L$. $t_{MD}=1$ corresponds to
 ](figures/VidS5.jpg){#fig:vid-stg-dorsal tag="Video S5" width=50%}
 
 <!--TODO: Fix the time to show countdown to gastrulation-->
+
+\clearpage
+
+\newpage
+
+## Tables
+
+Table: Summary of live-imaging screening results for cephalic furrow genes. {#tbl:screen}
+
+| gene name                 | gene symbol    | allele/deficiency | phenotype                                  |
+| ---------                 | -----------    | ---------------   | ---------                                  |
+| *buttonhead*              | *btd*          | *btd*^XA^         | absent [@Vincent1997-fa]                   |
+| *even skipped*            | *eve*          | *eve*^3^          | absent [@Vincent1997-fa]                   |
+| *paired*                  | *prd*          | *prd*^4^          | delayed [@Blankenship2001-tm] and abnormal |
+| *sloppy paired 1* and *2* | *slp1*, *slp2* | *slp*^Δ34B^       | delayed and displaced anteriorly           |
+| *sloppy paired 1*         | *slp1*         | *slp1*^1^         | delayed and displaced anteriorly           |
+| *giant*                   | *gt*           | *gt*^X11^         | perturbed formation                        |
+| *knirps*, *knirps-like*   | *kni*, *knrl*  | Df(3L)BSC448      | ventral portion displaced anteriorly       |
 
