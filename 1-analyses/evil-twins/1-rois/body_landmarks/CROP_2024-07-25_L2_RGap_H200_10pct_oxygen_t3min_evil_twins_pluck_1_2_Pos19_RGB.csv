@@ -1,0 +1,5 @@
+ ,Label,X,Y,Slice
+1,CROP_2024-07-25_L2_RGap_H200_10pct_oxygen_t3min_evil_twins_pluck_1_2_Pos19_RGB.tif:subject_anterior:1,312,63,1
+2,CROP_2024-07-25_L2_RGap_H200_10pct_oxygen_t3min_evil_twins_pluck_1_2_Pos19_RGB.tif:subject_posterior:1,336,570,1
+3,CROP_2024-07-25_L2_RGap_H200_10pct_oxygen_t3min_evil_twins_pluck_1_2_Pos19_RGB.tif:subject_left:1,227,335,1
+4,CROP_2024-07-25_L2_RGap_H200_10pct_oxygen_t3min_evil_twins_pluck_1_2_Pos19_RGB.tif:subject_right:1,410,335,1
