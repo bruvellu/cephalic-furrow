@@ -1,5 +1,5 @@
 ---
-title: "Germ band speed"
+title: "Germ band speed estimation"
 author: "Bruno C. Vellutini"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 creation: September 12, 2024
@@ -22,7 +22,7 @@ To estimate the germ band speed, we annotated the position of the tip of the ger
 2	3D_btd-gap2_z3_t55s_E7.tif:0047-0113-1382:46	355	32	47
 ```
 
-The distance traveled in X (microns) through ten frames gives the speed.
+The distance traveled in X (microns) during ten frames gives the approximate speed of extension.
 
 ```{r preprocess}
 # List all txt files in ROIs folder
