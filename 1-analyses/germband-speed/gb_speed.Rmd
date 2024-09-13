@@ -1,0 +1,191 @@
+---
+title: "Germ band speed"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: September 12, 2024
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/germband-speed")
+library(ggplot2)
+library(ggbeeswarm)
+```
+
+## Pre-processing
+
+To estimate the germ band speed, we annotated the position of the tip of the germ band in two timepoints ten frames apart. We saved the coordinates as a RoiSet. Here is a sample file:
+
+```
+ 	Label	X	Y	Slice
+1	3D_btd-gap2_z3_t55s_E7.tif:0047-0113-1382:46	433	33	37
+2	3D_btd-gap2_z3_t55s_E7.tif:0047-0113-1382:46	355	32	47
+```
+
+The distance traveled in X (microns) through ten frames gives the speed.
+
+```{r preprocess}
+# List all txt files in ROIs folder
+files = list.files(path = "1-rois", pattern="*.tsv", full.names = TRUE)
+
+# Function for pre-processing
+preprocess <- function(txtfile) {
+  # Read txt file
+  df <- read.delim(txtfile)
+  # Get label and clean up embryo name
+  label <- df$Label[1]
+  dataset <- strsplit(df$Label[1], ":")[[1]][1]
+  embryo <- gsub("3D_", "", dataset)
+  embryo <- gsub(".tif", "", embryo)
+  # Get X positions
+  x_start <- df$X[1]
+  x_end <- df$X[2]
+  # Get sizes
+  microns <- x_start - x_end
+  # Get frames
+  frame_start <- df$Slice[1]
+  frame_end <- df$Slice[2]
+  # Get frames
+  frame_delta <- frame_end - frame_start
+  # Get percentages
+  microns_per_frame <- microns / frame_delta
+  # Save as vector
+  myvector <- c(label, dataset, embryo, x_start, x_end, frame_start, frame_end, microns, frame_delta, microns_per_frame)
+  return(myvector)
+}
+
+# Define empty data frame
+landmarks <- data.frame()
+
+# Loop over files binding rows to data frame
+for (txtfile in files) {
+  gbrow <- preprocess(txtfile)
+  landmarks <- rbind(landmarks, gbrow)
+}
+
+# Define column names
+colnames(landmarks) <- c("label", "dataset", "embryo", "x_start", "x_end", "frame_start", "frame_end", "microns", "frame_delta", "microns_per_frame")
+```
+
+## Dataset building
+
+```{r merge}
+# Import main dataset
+datasets <- read.csv("~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/0-data/datasets.csv")
+
+# Merge landmarks with datasets
+germband <- merge(landmarks, datasets, by = "embryo", all.x = TRUE)
+
+# Properly convert column types before any calculations
+germband <- as.data.frame(lapply(germband, type.convert))
+
+# Create columns with times (s and min)
+germband$microns_per_second <- germband$microns / (germband$frame_delta * germband$timestep)
+germband$microns_per_minute <- germband$microns / ((germband$frame_delta * germband$timestep) / 60)
+
+# Make smaller dataset for plotting
+gblong <- data.frame(
+  embryo = germband$embryo,
+  microns_per_frame = germband$microns_per_frame,
+  microns_per_second = germband$microns_per_second,
+  microns_per_minute = germband$microns_per_minute,
+  stock = germband$stock,
+  zygosity = germband$zygosity
+  )
+
+# Transform data frame to order the stock for plotting
+#gblong <- transform(gblong, stock=factor(stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg")))
+gblong$stock = factor(gblong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+gblong$zygosity = factor(gblong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
+gblong <- gblong[order(gblong$stock),]
+rownames(gblong) <- 1:nrow(gblong)
+
+# Save both data frames to file
+write.csv(germband, file = "germband_speed.csv", row.names = FALSE)
+write.csv(gblong, file = "germband_long.csv", row.names = FALSE)
+```
+
+## Descriptive statistics
+
+Calculate and print the mean and standard deviation for all variables.
+
+```{r values}
+stats <- aggregate(microns_per_minute ~ stock + zygosity, gblong, function(x) c(count = length(x), mean = mean(x), sd = sd(x)))
+stats <- do.call(data.frame, stats)
+stats$stock = factor(stats$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+stats <- stats[order(stats$stock),]
+rownames(stats) <- 1:nrow(stats)
+stats
+write.csv(stats, file = "stats.csv", row.names = FALSE)
+```
+
+## Descriptive plot
+
+```{r plot-gb-speed-all}
+
+ggplot(gblong, aes(stock, microns_per_minute, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = TRUE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7",  "#56b4e9", "#e69f03", "#0072b2", "#009966", "#f0e442", "#d55e00")) +
+  scale_color_manual(values=c("#cc79a7",  "#56b4e9", "#e69f03", "#0072b2", "#009966", "#f0e442", "#d55e00")) +
+  labs(x = "stocks", y = "speed (µm/min)") +
+  facet_grid(cols = vars(stock), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        title = element_text(size = 15),
+        legend.text = element_text(size = 15),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_speed_all.png", width = 15, height = 8)
+ggsave("2-plots/gb_speed_all.svg", width = 15, height = 8)
+```
+
+## Main plot
+
+```{r plot-gb-speed}
+ggplot(gblong[gblong$stock %in% c("wt", "btd", "eve", "prd"),], aes(stock, microns_per_minute, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = TRUE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7",  "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7",  "#56b4e9", "#e69f03")) +
+  labs(x = "stocks", y = "speed (µm/min)") +
+  facet_grid(cols = vars(stock), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        title = element_text(size = 15),
+        legend.text = element_text(size = 15),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_speed.png", width = 12, height = 4)
+ggsave("2-plots/gb_speed.svg", width = 12, height = 4)
+```
+
+# Statistics
+
+```{r stats}
+
+tests <- data.frame()
+
+for (stock in c("btd", "eve", "prd")) {
+  
+  wt <- gblong[gblong$stock == "wt", ]$microns_per_minute
+  het <- gblong[(gblong$stock == stock & gblong$zygosity == "heterozygote"), ]$microns_per_minute
+  hom <- gblong[(gblong$stock == stock & gblong$zygosity == "homozygote"), ]$microns_per_minute
+  
+  wt_vs_het <- wilcox.test(wt, het, exact = FALSE)
+  het_vs_hom <- wilcox.test(het, hom, exact = FALSE)
+  
+  wt_test <- c(contrast = sprintf("wildtype vs %s heterozygote", stock), pvalue = wt_vs_het["p.value"])
+  st_test <- c(contrast = sprintf("%s heterozygote vs homozygote", stock), pvalue = het_vs_hom["p.value"])
+  
+  tests <- rbind(tests, wt_test)
+  tests <- rbind(tests, st_test)
+}
+
+colnames(tests) <- c("contrast", "pvalue")
+tests
+
+write.csv(tests, file = "tests.csv", row.names = FALSE)
+```

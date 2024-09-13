@@ -1,0 +1,14 @@
+"stock","zygosity","microns_per_minute.count","microns_per_minute.mean","microns_per_minute.sd"
+"wt","wildtype",16,10.16875,0.512144185426982
+"btd","heterozygote",9,10.4082590612002,1.66041340748083
+"btd","homozygote",7,9.39174942704355,1.68571742927739
+"eve","heterozygote",7,10.5666666666667,0.99666109251507
+"eve","homozygote",5,9,0.565685424949238
+"prd","heterozygote",10,10.55,1.23939949617188
+"prd","homozygote",5,10.74,1.10589330407594
+"stg","heterozygote",21,12.3956043956044,1.10116358959813
+"stg","homozygote",8,11.82,1.00050942223097
+"btd-stg","double heterozygote",17,11.336030273958,1.71280477866395
+"btd-stg","btd homozygote",12,9.96100095938599,1.8601078788597
+"btd-stg","stg homozygote",1,5.6,NA
+"btd-stg","double homozygote",3,9.72222222222222,3.53149847536163
