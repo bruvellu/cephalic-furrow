@@ -24,6 +24,11 @@ happens. Row 4 marks the position of the tip of the germ band when the cephalic
 furrow or ectopic folds reach maximum depth, immediately before they begin to
 unfold. The Slice also corresponds to the frame when this happens.
 
+1. anterior_end (frame_gastrulation)
+2. posterior_end (frame_gastrulation)
+3. first_buckle (CF or EF)
+4. max_depth (CF or EF)
+
 Here is a sample file:
 
 ```
