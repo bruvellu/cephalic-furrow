@@ -7,7 +7,7 @@ creation: October 24, 2022
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-extension")
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/germband-extension")
 library(ggplot2)
 library(ggbeeswarm)
 ```
@@ -45,7 +45,7 @@ and creates an initial data frame.
 
 ```{r preprocess}
 # List all txt files in ROIs folder
-files = list.files(path = "1-rois", pattern="*.txt", full.names = TRUE)
+files = list.files(path = "1-rois/fold_start", pattern="*.txt", full.names = TRUE)
 
 # Function for pre-processing
 process <- function(txtfile) {
@@ -101,7 +101,7 @@ important is the stock, zygosity, timestep, and gastrulation frame.
 
 ```{r merge}
 # Import main dataset
-datasets <- read.csv("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv")
+datasets <- read.csv("../../0-data/datasets.csv")
 
 # Merge landmarks with datasets
 germband <- merge(landmarks, datasets, by = "embryo", all.x = TRUE)
