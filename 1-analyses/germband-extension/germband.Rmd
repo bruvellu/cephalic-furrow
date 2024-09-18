@@ -66,7 +66,6 @@ process_fold <- function(txtfile) {
   gb_pos_tf_buck <- x_tf_buck - x_ant
   gb_pos_tf_deep <- x_tf_deep - x_ant
   # Get percentages
-  # TODO: Fix the percentages here
   gb_pct_tf_buck <- 100 - ((gb_pos_tf_buck / size) * 100)
   gb_pct_tf_deep <- 100 - ((gb_pos_tf_deep / size) * 100)
   # Get frames
@@ -155,7 +154,6 @@ germband <- as.data.frame(lapply(germband, type.convert))
 # Calculate GB percentage for MD start
 germband$gb_pos_md_start <- germband$x_md_start - germband$x_ant
 germband$gb_pos_md_split <- germband$x_md_split - germband$x_ant
-# TODO: Fix the percentages here
 germband$gb_pct_md_start <- 100 - ((germband$gb_pos_md_start / germband$size) * 100)
 germband$gb_pct_md_split <- 100 - ((germband$gb_pos_md_split / germband$size) * 100)
 
