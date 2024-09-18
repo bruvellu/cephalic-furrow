@@ -43,12 +43,12 @@ For extracting information and plotting, these raw files need to be parsed,
 processed, and compiled in a single data frame. The next block reads, process,
 and creates an initial data frame.
 
-```{r preprocess}
+```{r preprocess-fold-start}
 # List all txt files in ROIs folder
-files = list.files(path = "1-rois/fold_start", pattern="*.txt", full.names = TRUE)
+files = list.files(path = "1-rois/fold_start", pattern="*.tsv", full.names = TRUE)
 
 # Function for pre-processing
-process <- function(txtfile) {
+process_fold <- function(txtfile) {
   # Read txt file
   df <- read.delim(txtfile)
   # Get label and clean up embryo name
@@ -84,7 +84,7 @@ landmarks <- data.frame()
 
 # Loop over files binding rows to data frame
 for (txtfile in files) {
-  gbrow <- process(txtfile)
+  gbrow <- process_fold(txtfile)
   landmarks <- rbind(landmarks, gbrow)
 }
 
@@ -93,6 +93,7 @@ colnames(landmarks) <- c("label", "embryo", "x_ant", "x_post", "x_buck", "x_deep
                          "size", "gb_pos_buck", "gb_pos_deep", "gb_pct_buck", "gb_pct_deep",
                          "frame_gastr", "frame_buck", "frame_deep")
 ```
+
 
 ## Dataset building
 
