@@ -214,6 +214,7 @@ gblong$id <- NULL
 # Transform data frame to order the stock for plotting
 gblong$stock = factor(gblong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
 gblong$zygosity = factor(gblong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
+gblong$status = factor(gblong$status, levels = c("tf_buck", "tf_deep", "md_start", "md_split"))
 gblong <- gblong[order(gblong$stock, gblong$zygosity),]
 rownames(gblong) <- 1:nrow(gblong)
 
@@ -227,42 +228,12 @@ write.csv(gblong, file = "gblong.csv", row.names = FALSE)
 Calculate and print the mean and standard deviation for all variables.
 
 ```{r values}
-stats <- aggregate(cbind(gb_pct, gb_time) ~ stock + zygosity + status, gblong, function(x) c(count = length(x), mean = mean(x), sd = sd(x)))
+stats <- aggregate(cbind(gb_pct, time) ~ stock + zygosity + status, gblong, function(x) c(count = length(x), mean = mean(x), sd = sd(x)))
 stats <- do.call(data.frame, stats)
-stats$stock = factor(stats$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
-stats <- stats[order(stats$stock),]
+stats <- stats[order(stats$status, stats$stock, stats$zygosity),]
 rownames(stats) <- 1:nrow(stats)
 stats
 write.csv(stats, file = "stats.csv", row.names = FALSE)
-```
-
-```{r values}
-print_stats <- function(dataframe, stock) {
-  # Subset data frame
-  gb <- dataframe[dataframe$stock == stock,]
-  # Select relevant columns
-  cols <- c("embryo", "gb_pct_tf_buck", "gb_pct_tf_deep", "time_tf_buck", "time_tf_deep")
-  # Summarize data
-  print("-------------------")
-  print(stock)
-  print(by(gb[,cols], gb$zygosity, summary))
-  print("SD: gb_pct_tf_buck")
-  print(by(gb[,"gb_pct_tf_buck"], gb$zygosity, sd))
-  print("SD: time_tf_buck")
-  print(by(gb[,"time_tf_buck"], gb$zygosity, sd))
-  }
-
-# Print summary statistics
-print_stats(germband, "wt")
-print_stats(germband, "btd")
-print_stats(germband, "eve")
-print_stats(germband, "prd")
-
-capture.output(print_stats(germband, "wt"),
-               print_stats(germband, "btd"),
-               print_stats(germband, "eve"),
-               print_stats(germband, "prd"),
-               file = "stats.txt")
 ```
 
 ## Descriptive plots
