@@ -52,48 +52,89 @@ process_fold <- function(txtfile) {
   # Read txt file
   df <- read.delim(txtfile)
   # Get label and clean up embryo name
-  label <- df$Label[1]
+  label_tf <- df$Label[1]
   embryo <- strsplit(df$Label[1], ":")[[1]][1]
   embryo <- gsub("3D_", "", embryo)
   embryo <- gsub(".tif", "", embryo)
   # Get X positions
   x_ant <- df$X[1]
   x_post <- df$X[2]
-  x_buck <- df$X[3]
-  x_deep <- df$X[4]
+  x_tf_buck <- df$X[3]
+  x_tf_deep <- df$X[4]
   # Get sizes
   size <- x_post - x_ant
-  gb_pos_buck <- x_buck - x_ant
-  gb_pos_deep <- x_deep - x_ant
+  gb_pos_tf_buck <- x_tf_buck - x_ant
+  gb_pos_tf_deep <- x_tf_deep - x_ant
   # Get percentages
-  gb_pct_buck <- 100 - ((gb_pos_buck / size) * 100)
-  gb_pct_deep <- 100 - ((gb_pos_deep / size) * 100)
+  # TODO: Fix the percentages here
+  gb_pct_tf_buck <- 100 - ((gb_pos_tf_buck / size) * 100)
+  gb_pct_tf_deep <- 100 - ((gb_pos_tf_deep / size) * 100)
   # Get frames
   frame_gastr <- df$Slice[1]
-  frame_buck <- df$Slice[3]
-  frame_deep <- df$Slice[4]
+  frame_tf_buck <- df$Slice[3]
+  frame_tf_deep <- df$Slice[4]
   # Save as vector
-  mv <- c(label, embryo, x_ant, x_post, x_buck, x_deep,
-          size, gb_pos_buck, gb_pos_deep, gb_pct_buck, gb_pct_deep,
-          frame_gastr, frame_buck, frame_deep)
+  mv <- c(label_tf, embryo, size, x_ant, x_post, x_tf_buck, x_tf_deep,
+          gb_pos_tf_buck, gb_pos_tf_deep, gb_pct_tf_buck, gb_pct_tf_deep,
+          frame_gastr, frame_tf_buck, frame_tf_deep)
   return(mv)
 }
 
 # Define empty data frame
-landmarks <- data.frame()
+fold_start <- data.frame()
 
 # Loop over files binding rows to data frame
 for (txtfile in files) {
   gbrow <- process_fold(txtfile)
-  landmarks <- rbind(landmarks, gbrow)
+  fold_start <- rbind(fold_start, gbrow)
 }
 
 # Define column names
-colnames(landmarks) <- c("label", "embryo", "x_ant", "x_post", "x_buck", "x_deep",
-                         "size", "gb_pos_buck", "gb_pos_deep", "gb_pct_buck", "gb_pct_deep",
-                         "frame_gastr", "frame_buck", "frame_deep")
+colnames(fold_start) <- c("label_tf", "embryo", "size", "x_ant", "x_post", "x_tf_buck", "x_tf_deep",
+                         "gb_pos_tf_buck", "gb_pos_tf_deep", "gb_pct_tf_buck", "gb_pct_tf_deep",
+                         "frame_gastr", "frame_tf_buck", "frame_tf_deep")
 ```
 
+```{r preprocess-md-start}
+# List all txt files in ROIs folder
+files = list.files(path = "1-rois/md_start", pattern="*.tsv", full.names = TRUE)
+
+# Function for pre-processing
+process_md <- function(txtfile) {
+  # Read txt file
+  df <- read.delim(txtfile)
+  # Get label and clean up embryo name
+  label_md <- df$Label[1]
+  embryo <- strsplit(df$Label[1], ":")[[1]][1]
+  embryo <- gsub("3D_", "", embryo)
+  embryo <- gsub(".tif", "", embryo)
+  # Get X positions
+  x_md_start <- df$X[1]
+  x_md_split <- df$X[2]
+  # TODO: Get sizes
+  # TODO: Get percentages
+  
+  # Get frames
+  frame_md_start <- df$Slice[1]
+  frame_md_split <- df$Slice[2]
+
+    # Save as vector
+  mv <- c(label_md, embryo, x_md_start, x_md_split, frame_md_start, frame_md_split)
+  return(mv)
+}
+
+# Define empty data frame
+md_start <- data.frame()
+
+# Loop over files binding rows to data frame
+for (txtfile in files) {
+  gbrow <- process_md(txtfile)
+  md_start <- rbind(md_start, gbrow)
+}
+
+# Define column names
+colnames(md_start) <- c("label_md", "embryo", "x_md_start", "x_md_split", "frame_md_start", "frame_md_split")
+```
 
 ## Dataset building
 
@@ -105,35 +146,80 @@ important is the stock, zygosity, timestep, and gastrulation frame.
 datasets <- read.csv("../../0-data/datasets.csv")
 
 # Merge landmarks with datasets
-germband <- merge(landmarks, datasets, by = "embryo", all.x = TRUE)
+germband <- merge(fold_start, datasets, by = "embryo", all.x = TRUE)
+germband <- merge(germband, md_start, by = "embryo", all.x = TRUE)
 
 # Properly convert column types before any calculations
 germband <- as.data.frame(lapply(germband, type.convert))
 
-# Create columns with times (min)
-germband$time_buck <- ((germband$frame_buck - germband$frame_gastr) * germband$timestep) / 60
-germband$time_deep <- ((germband$frame_deep - germband$frame_gastr) * germband$timestep) / 60
+# Calculate GB percentage for MD start
+germband$gb_pos_md_start <- germband$x_md_start - germband$x_ant
+germband$gb_pos_md_split <- germband$x_md_split - germband$x_ant
+# TODO: Fix the percentages here
+germband$gb_pct_md_start <- 100 - ((germband$gb_pos_md_start / germband$size) * 100)
+germband$gb_pct_md_split <- 100 - ((germband$gb_pos_md_split / germband$size) * 100)
 
-# Make smaller dataset for plotting
-columns <- c("embryo", "size", "status", "gb_pct", "gb_time", "stock", "zygosity", "folds_left")
-gblong <- data.frame(
-  c(germband$embryo, germband$embryo),
-  c(germband$size, germband$size),
-  c(rep("buck", length(germband$embryo)), rep("deep", length(germband$embryo))),
-  c(germband$gb_pct_buck, germband$gb_pct_deep),
-  c(germband$time_buck, germband$time_deep),
-  c(germband$stock, germband$stock),
-  c(germband$zygosity, germband$zygosity),
-  c(germband$folds_left, germband$folds_left)
-  )
-colnames(gblong) <- columns
+# Create columns with times (min)
+germband$time_tf_buck <- ((germband$frame_tf_buck - germband$frame_gastr) * germband$timestep) / 60
+germband$time_tf_deep <- ((germband$frame_tf_deep - germband$frame_gastr) * germband$timestep) / 60
+germband$time_md_start <- ((germband$frame_md_start - germband$frame_gastr) * germband$timestep) / 60
+germband$time_md_split <- ((germband$frame_md_split - germband$frame_gastr) * germband$timestep) / 60
+
+```
+
+Convert the main dataframe into the long format for plotting
+
+```{r gblong}
+# Define variables for plotting
+longvars <- c(
+  "embryo",
+  "stock",
+  "zygosity",
+  "size",
+  "gb_pct_tf_buck",
+  "gb_pct_tf_deep",
+  "gb_pct_md_start",
+  "gb_pct_md_split",
+  "time_tf_buck",
+  "time_tf_deep",
+  "time_md_start",
+  "time_md_split"
+)
+
+gblong <- reshape(
+  germband[, longvars],
+  varying = list(
+    c(
+      "gb_pct_tf_buck",
+      "gb_pct_tf_deep",
+      "gb_pct_md_start",
+      "gb_pct_md_split"
+    ),
+    c(
+      "time_tf_buck",
+      "time_tf_deep",
+      "time_md_start",
+      "time_md_split"
+    )
+  ),
+  v.names = c("gb_pct", "time"),
+  timevar = "status",
+  times = c("tf_buck", "tf_deep", "md_start", "md_split"),
+  direction = "long"
+)
+
+# Remove the id column that reshape adds
+gblong$id <- NULL
 
 # Transform data frame to order the stock for plotting
-gblong <- transform(gblong, stock=factor(stock, levels = c("wt", "btd", "eve", "prd")))
+gblong$stock = factor(gblong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+gblong$zygosity = factor(gblong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
+gblong <- gblong[order(gblong$stock, gblong$zygosity),]
+rownames(gblong) <- 1:nrow(gblong)
 
 # Save both data frames to file
-write.csv(germband, file = "germband.csv")
-write.csv(gblong, file = "gblong.csv")
+write.csv(germband, file = "germband.csv", row.names = FALSE)
+write.csv(gblong, file = "gblong.csv", row.names = FALSE)
 ```
 
 ## Descriptive statistics
@@ -141,19 +227,29 @@ write.csv(gblong, file = "gblong.csv")
 Calculate and print the mean and standard deviation for all variables.
 
 ```{r values}
+stats <- aggregate(cbind(gb_pct, gb_time) ~ stock + zygosity + status, gblong, function(x) c(count = length(x), mean = mean(x), sd = sd(x)))
+stats <- do.call(data.frame, stats)
+stats$stock = factor(stats$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+stats <- stats[order(stats$stock),]
+rownames(stats) <- 1:nrow(stats)
+stats
+write.csv(stats, file = "stats.csv", row.names = FALSE)
+```
+
+```{r values}
 print_stats <- function(dataframe, stock) {
   # Subset data frame
   gb <- dataframe[dataframe$stock == stock,]
   # Select relevant columns
-  cols <- c("embryo", "gb_pct_buck", "gb_pct_deep", "time_buck", "time_deep")
+  cols <- c("embryo", "gb_pct_tf_buck", "gb_pct_tf_deep", "time_tf_buck", "time_tf_deep")
   # Summarize data
   print("-------------------")
   print(stock)
   print(by(gb[,cols], gb$zygosity, summary))
-  print("SD: gb_pct_buck")
-  print(by(gb[,"gb_pct_buck"], gb$zygosity, sd))
-  print("SD: time_buck")
-  print(by(gb[,"time_buck"], gb$zygosity, sd))
+  print("SD: gb_pct_tf_buck")
+  print(by(gb[,"gb_pct_tf_buck"], gb$zygosity, sd))
+  print("SD: time_tf_buck")
+  print(by(gb[,"time_tf_buck"], gb$zygosity, sd))
   }
 
 # Print summary statistics
