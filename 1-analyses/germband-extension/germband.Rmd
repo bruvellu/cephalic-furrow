@@ -251,7 +251,7 @@ ggplot(gblong, aes(stock, gb_pct, fill = zygosity)) +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   labs(x = "stocks", y = "germ band extension (%)") +
-  facet_grid(rows = vars(status), cols = vars(stock), scales = "free") +
+  facet_grid(rows = vars(status), cols = vars(stock), scales = "free_x") +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 35),
         title = element_text(size = 15),
@@ -272,7 +272,7 @@ ggplot(gblong, aes(stock, time, fill = zygosity)) +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   labs(x = "stocks", y = "time after gastrulation (min)") +
-  facet_grid(rows = vars(status), cols = vars(stock), scales = "free") +
+  facet_grid(rows = vars(status), cols = vars(stock), scales = "free_x") +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 35),
         title = element_text(size = 15),
@@ -288,7 +288,9 @@ ggsave("2-plots/gb_time.svg", width = 15, height = 12)
 
 The above are nice descriptive plots. But for the figure, the most interesting
 is the initial buckling/infolding relative to GB position and time after
-gastrulation. First the germ band extension percentage:
+gastrulation.
+
+Plot germ band extension percentage at the moment of buckling/infolding:
 
 ```{r plot-gb-pct-buck}
 ggplot(gblong[gblong$status == "tf_buck",], aes(stock, gb_pct, fill = zygosity)) +
@@ -307,7 +309,7 @@ ggsave("2-plots/gb_pct_buck.png", width = 12, height = 4)
 ggsave("2-plots/gb_pct_buck.svg", width = 12, height = 4)
 ```
 
-Then the time after gastrulation:
+Plot the time after gastrulation at the moment of buckling/infolding:
 
 ```{r plot-gb-time-buck}
 ggplot(gblong[gblong$status == "tf_buck",], aes(stock, time, fill = zygosity)) +
@@ -326,26 +328,7 @@ ggsave("2-plots/gb_time_buck.png", width = 12, height = 4)
 ggsave("2-plots/gb_time_buck.svg", width = 12, height = 4)
 ```
 
-Buck vs MD time
-
-```{r plot-gb-time-buck}
-ggplot(gblong[(gblong$status %in% c("tf_buck", "md_start") & gblong$stock != "prd"),], aes(status, time, fill = zygosity)) +
-  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  #geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE) +
-  geom_line(aes(group = embryo)) +
-  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
-  labs(x = "zygosity", y = "time after gastrulation (min)") +
-  facet_grid(cols = vars(zygosity), scales = "free") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", size=1)
-        )
-ggsave("2-plots/gb_time_tf_buck_md_start.png", width = 12, height = 4)
-ggsave("2-plots/gb_time_tf_buck_md_start.svg", width = 12, height = 4)
-```
+Plot the germ band extension at the time of buckling/infolding and mitotic domain expansion:
 
 ```{r plot-gb-time-buck}
 ggplot(gblong[(gblong$status %in% c("tf_buck", "md_start") & gblong$stock != "prd"),], aes(status, gb_pct, fill = zygosity)) +
@@ -355,26 +338,78 @@ ggplot(gblong[(gblong$status %in% c("tf_buck", "md_start") & gblong$stock != "pr
   geom_line(aes(group = embryo)) +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
-  labs(x = "zygosity", y = "germ band extension (%)") +
+  labs(x = "status", y = "germ band extension (%)") +
   facet_grid(cols = vars(zygosity), scales = "free") +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 35),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_pct_tf_buck_md_start.png", width = 12, height = 4)
-ggsave("2-plots/gb_pct_tf_buck_md_start.svg", width = 12, height = 4)
+ggsave("2-plots/gb_pct_tf_buck_md_start.png", width = 9, height = 4)
+ggsave("2-plots/gb_pct_tf_buck_md_start.svg", width = 9, height = 4)
 ```
 
-## Tests
+Plot the time after gastrulation at the time of buckling/infolding and mitotic domain expansion:
 
-```{r tests}
-# TODO: Create the relevant tests for testing relevant differences
-wilcox.test(
-  gblong[(gblong$status == "tf_buck" & gblong$stock != "prd" & gblong$zygosity == "homozygote"),]$time,
-  gblong[(gblong$status == "md_start" & gblong$stock != "prd" & gblong$zygosity == "homozygote"),]$time,
-  paired = TRUE
-)
+```{r plot-gb-time-buck}
+ggplot(gblong[(gblong$status %in% c("tf_buck", "md_start") & gblong$stock != "prd"),], aes(status, time, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  #geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE) +
+  geom_line(aes(group = embryo)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "status", y = "time after gastrulation (min)") +
+  facet_grid(cols = vars(zygosity), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_time_tf_buck_md_start.png", width = 9, height = 4)
+ggsave("2-plots/gb_time_tf_buck_md_start.svg", width = 9, height = 4)
+```
+
+Plot the germ band percentage vs buckling/infolding and md expansion, but faceted by status:
+
+```{r plot-gb-time-buck}
+ggplot(gblong[(gblong$status %in% c("tf_buck", "md_start") & gblong$stock != "prd"),], aes(zygosity, gb_pct, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
+  #geom_point(alpha = 0.8, size = 3, show.legend = TRUE) +
+  #geom_line(aes(group = embryo)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "zygosity", y = "germ band extension (%)") +
+  facet_grid(cols = vars(status), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_pct_tf_buck_md_start_facet_status.png", width = 6, height = 4)
+ggsave("2-plots/gb_pct_tf_buck_md_start_facet_status.svg", width = 6, height = 4)
+```
+
+Plot the time after gastrulation vs buckling/infolding and md expansion, but faceted by status:
+
+```{r plot-gb-time-buck}
+ggplot(gblong[(gblong$status %in% c("tf_buck", "md_start") & gblong$stock != "prd"),], aes(zygosity, time, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
+  #geom_point(alpha = 0.8, size = 3, show.legend = TRUE) +
+  #geom_line(aes(group = embryo)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "zygosity", y = "time after gastrulation (min)") +
+  facet_grid(cols = vars(status), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_time_tf_buck_md_start_facet_status.png", width = 6, height = 4)
+ggsave("2-plots/gb_time_tf_buck_md_start_facet_status.svg", width = 6, height = 4)
 ```
 
 ## Supplementary plots
@@ -420,21 +455,54 @@ ggsave("2-plots/gb_time_deep.png", width = 12, height = 4)
 ggsave("2-plots/gb_time_deep.svg", width = 12, height = 4)
 ```
 
-```{r plot-gb-time-buck}
+```{r plot-gb-pct-tf-buck-md-start-by-stock}
+ggplot(gblong[gblong$status %in% c("tf_buck", "md_start"),], aes(status, gb_pct, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  #geom_line(aes(group = embryo)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "status", y = "germ band extension (%)") +
+  #facet_grid(cols = vars(zygosity), scales = "free") +
+  facet_grid(cols = vars(status), rows = vars(stock), scales = "free_x") +
+  #facet_grid(rows = vars(stock), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_pct_tf_buck_md_start_by_stock.png", width = 7, height = 12)
+ggsave("2-plots/gb_pct_tf_buck_md_start_by_stock.svg", width = 7, height = 12)
+```
+
+
+```{r plot-gb-time-tf-buck-md-start-by-stock}
 ggplot(gblong[gblong$status %in% c("tf_buck", "md_start"),], aes(status, time, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   #geom_line(aes(group = embryo)) +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
-  labs(x = "stocks", y = "time after gastrulation (min)") +
+  labs(x = "status", y = "time after gastrulation (min)") +
   #facet_grid(cols = vars(zygosity), scales = "free") +
-  facet_grid(cols = vars(zygosity), rows = vars(stock), scales = "free") +
+  facet_grid(cols = vars(status), rows = vars(stock), scales = "free_x") +
+  #facet_grid(rows = vars(stock), scales = "free") +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 35),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_time_tf_buck_md_start_by_stock.png", width = 12, height = 12)
-ggsave("2-plots/gb_time_tf_buck_md_start_by_stock.svg", width = 12, height = 12)
+ggsave("2-plots/gb_time_tf_buck_md_start_by_stock.png", width = 7, height = 12)
+ggsave("2-plots/gb_time_tf_buck_md_start_by_stock.svg", width = 7, height = 12)
+```
+
+## Tests
+
+```{r tests}
+# TODO: Create the relevant tests for testing relevant differences
+wilcox.test(
+  gblong[(gblong$status == "tf_buck" & gblong$stock != "prd" & gblong$zygosity == "homozygote"),]$time,
+  gblong[(gblong$status == "md_start" & gblong$stock != "prd" & gblong$zygosity == "homozygote"),]$time,
+  paired = TRUE
+)
 ```
