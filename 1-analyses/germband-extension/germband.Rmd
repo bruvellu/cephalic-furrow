@@ -14,34 +14,24 @@ library(ggbeeswarm)
 
 ## Pre-processing
 
-We exported the measurements of individual embryos using the "Measure" command
-from Fiji. Each file contains 4 rows with predefined values. Row 1 and 2 are the
-anterior and posterior limits of the vitelline envelope, respectively. The Slice
-value of these two rows represents the frame at the onset of gastrulation (T=0).
-Row 3 marks the position of the tip of the germ band when the cephalic furrow or
-an ectopic fold first buckle in. The Slice correspond to the frame when this
-happens. Row 4 marks the position of the tip of the germ band when the cephalic
-furrow or ectopic folds reach maximum depth, immediately before they begin to
-unfold. The Slice also corresponds to the frame when this happens.
+We exported the measurements of individual embryos using the "Measure" command from Fiji. Each file contains 4 rows with predefined values. Row 1 and 2 are the anterior and posterior limits of the vitelline envelope, respectively. The Slice value of these two rows represents the frame at the onset of gastrulation (T=0). Row 3 marks the position of the tip of the germ band when the cephalic furrow or an ectopic fold first buckle in. The Slice correspond to the frame when this happens. Row 4 marks the position of the tip of the germ band when the cephalic furrow or ectopic folds reach maximum depth, immediately before they begin to unfold. The Slice also corresponds to the frame when this happens.
 
-1. anterior_end (frame_gastrulation)
-2. posterior_end (frame_gastrulation)
-3. first_buckle (CF or EF)
-4. max_depth (CF or EF)
+1.  anterior_end (frame_gastrulation)
+2.  posterior_end (frame_gastrulation)
+3.  first_buckle (CF or EF)
+4.  max_depth (CF or EF)
 
 Here is a sample file:
 
-```
- 	Label	X	Y	Slice
-1	3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55	72.000	358.000	26
-2	3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55	1820.833	314.167	26
-3	3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55	1240.833	119.500	47
-4	3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55	1050.167	115.500	56
+```         
+    Label   X   Y   Slice
+1   3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55    72.000  358.000 26
+2   3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55    1820.833    314.167 26
+3   3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55    1240.833    119.500 47
+4   3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55    1050.167    115.500 56
 ```
 
-For extracting information and plotting, these raw files need to be parsed,
-processed, and compiled in a single data frame. The next block reads, process,
-and creates an initial data frame.
+For extracting information and plotting, these raw files need to be parsed, processed, and compiled in a single data frame. The next block reads, process, and creates an initial data frame.
 
 ```{r preprocess-fold-start}
 # List all txt files in ROIs folder
@@ -92,6 +82,9 @@ for (txtfile in files) {
 colnames(fold_start) <- c("label_tf", "embryo", "size", "x_ant", "x_post", "x_tf_buck", "x_tf_deep",
                          "gb_pos_tf_buck", "gb_pos_tf_deep", "gb_pct_tf_buck", "gb_pct_tf_deep",
                          "frame_gastr", "frame_tf_buck", "frame_tf_deep")
+
+# Save data frame to file
+write.csv(fold_start, file = "gb_extension.csv", row.names = FALSE)
 ```
 
 ```{r preprocess-md-start}
@@ -137,8 +130,7 @@ colnames(md_start) <- c("label_md", "embryo", "x_md_start", "x_md_split", "frame
 
 ## Dataset building
 
-Next, we need to import the master dataset file to get some metadata. Most
-important is the stock, zygosity, timestep, and gastrulation frame.
+Next, we need to import the master dataset file to get some metadata. Most important is the stock, zygosity, timestep, and gastrulation frame.
 
 ```{r merge}
 # Import main dataset
@@ -236,13 +228,9 @@ write.csv(stats, file = "stats.csv", row.names = FALSE)
 
 ## Descriptive plots
 
-We want to identify the difference between the cephalic furrow and the ectopic
-folds in the percentage of germ band extension, and the timing of formation
-after gastrulation.
+We want to identify the difference between the cephalic furrow and the ectopic folds in the percentage of germ band extension, and the timing of formation after gastrulation.
 
-First, we plot the germ band extension (%) for homozygotes and heterozygotes at
-two different moments: initial infolding/buckling (buck) and deepest point
-(deep).
+First, we plot the germ band extension (%) for homozygotes and heterozygotes at two different moments: initial infolding/buckling (buck) and deepest point (deep).
 
 ```{r plot-gb-pct}
 ggplot(gblong, aes(stock, gb_pct, fill = zygosity)) +
@@ -286,9 +274,7 @@ ggsave("2-plots/gb_time.svg", width = 15, height = 12)
 
 ## Main figure plots
 
-The above are nice descriptive plots. But for the figure, the most interesting
-is the initial buckling/infolding relative to GB position and time after
-gastrulation.
+The above are nice descriptive plots. But for the figure, the most interesting is the initial buckling/infolding relative to GB position and time after gastrulation.
 
 Plot germ band extension percentage at the moment of buckling/infolding:
 
@@ -414,8 +400,7 @@ ggsave("2-plots/gb_time_tf_buck_md_start_facet_status.svg", width = 6, height = 
 
 ## Supplementary plots
 
-The deepest point plots are not super informative and will go into the
-supplementary.
+The deepest point plots are not super informative and will go into the supplementary.
 
 ```{r plot-gb-pct-deep}
 ggplot(gblong[gblong$status == "tf_deep",], aes(stock, gb_pct, fill = zygosity)) +
@@ -474,7 +459,6 @@ ggplot(gblong[gblong$status %in% c("tf_buck", "md_start"),], aes(status, gb_pct,
 ggsave("2-plots/gb_pct_tf_buck_md_start_by_stock.png", width = 7, height = 12)
 ggsave("2-plots/gb_pct_tf_buck_md_start_by_stock.svg", width = 7, height = 12)
 ```
-
 
 ```{r plot-gb-time-tf-buck-md-start-by-stock}
 ggplot(gblong[gblong$status %in% c("tf_buck", "md_start"),], aes(status, time, fill = zygosity)) +
