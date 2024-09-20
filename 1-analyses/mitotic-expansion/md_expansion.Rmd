@@ -182,6 +182,7 @@ write.csv(mdlong, file = "mdlong.csv", row.names = FALSE)
 Create data frame with descriptive statistics for all the different samples and variables.
 
 ```{r calculate-mean-sd}
+
 # Automatically aggregate data by columns for MD statuses only
 stats <- aggregate(
   cbind(gb_pct, time) ~ stock + zygosity + status,
@@ -299,6 +300,42 @@ ggsave("2-plots/gb_pct_all_by_status_stock.svg", width = 10, height = 12)
 
 Comparison between `tf_buck` and `md_start`, the most informative values, excluding data from `prd` since cephalic furrow formation is not prevented in homozygote embryos.
 
+### Time after gastrulation at mitotic expansion by stock (cols)
+
+```{r plot-md-time-md-start-stock}
+ggplot(mdlong[mdlong$status == "md_start",], aes(stock, time, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "stocks", y = "time after gastrulation (min)") +
+  facet_grid(cols = vars(stock), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("2-plots/md_time_md_start_by_stock.png", width = 12, height = 4)
+ggsave("2-plots/md_time_md_start_by_stock.svg", width = 12, height = 4)
+```
+
+### Percentage of germ band extension at mitotic expansion by stock (cols)
+
+```{r plot-gb-pct-md-start-stock}
+ggplot(mdlong[mdlong$status == "md_start",], aes(stock, gb_pct, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "stocks", y = "germ band extension (%)") +
+  facet_grid(cols = vars(stock), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("2-plots/gb_pct_md_start_by_stock.png", width = 12, height = 4)
+ggsave("2-plots/gb_pct_md_start_by_stock.svg", width = 12, height = 4)
+```
+
 ### Time of mitotic expansion vs ectopic folding by status (cols)
 
 The plot shows how ectopic folding is delayed relative to the cephalic furrow, and how the timing of mitotic expansion does not change between different zygosities. Comparing the timing of ectopic folding with mitotic expansion in homozygotes indicates that the latter precedes the former.
@@ -319,6 +356,7 @@ ggplot(mdlong[(mdlong$status %in% c("tf_buck", "md_start") & mdlong$stock != "pr
 ggsave("2-plots/md_time_tf_buck_vs_md_start_by_status.png", width = 10, height = 6)
 ggsave("2-plots/md_time_tf_buck_vs_md_start_by_status.svg", width = 10, height = 6)
 ```
+
 ### Percentage of germ band extension at mitotic expansion vs ectopic folding by status (cols)
 
 Although heterozygote cephalic furrow is slightly delayed compared to wildtype, it happens at the same percentage of germ band extension. This suggests that germ band extension is a good relative measure for developmental events.
