@@ -1,0 +1,490 @@
+---
+title: "Germ band extension relative to ectopic folding"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: October 24, 2022
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/germband-extension")
+library(ggplot2)
+library(ggbeeswarm)
+```
+
+## Import measurements
+
+We exported the measurements of individual embryos using the "Measure" command from Fiji. Each file contains 4 rows with predefined values. Row 1 and 2 are the anterior and posterior limits of the vitelline envelope, respectively. The Slice value of these two rows represents the frame at the onset of gastrulation (T=0). Row 3 marks the position of the tip of the germ band when the cephalic furrow or an ectopic fold first buckle in. The Slice correspond to the frame when this happens. Row 4 marks the position of the tip of the germ band when the cephalic furrow or ectopic folds reach maximum depth, immediately before they begin to unfold. The Slice also corresponds to the frame when this happens.
+
+Here is a sample file:
+
+```         
+ 	Label	X	Y	Slice
+1	3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55	21	102	26
+2	3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55	520	90	26
+3	3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55	354	34	47
+4	3D_btd-gap2_z3_t55s_E7.tif:0056-0237-0946:55	300	33	56
+```
+
+For extracting information and plotting, these raw files need to be parsed, processed, and compiled in a single data frame. The next block reads, process, and creates an initial data frame.
+
+```{r import-measurements}
+# List all txt files in ROIs folder
+files = list.files(path = "1-rois", pattern="*.tsv", full.names = TRUE)
+
+# Function for pre-processing
+process <- function(tabfile) {
+  
+  # Read txt file
+  df <- read.delim(tabfile)
+  
+  # Get label
+  label_tf <- df$Label[1]
+  
+  # Clean up embryo name
+  embryo <- strsplit(df$Label[1], ":")[[1]][1]
+  embryo <- gsub("3D_", "", embryo)
+  embryo <- gsub(".tif", "", embryo)
+  
+  # Get X positions
+  x_ant <- df$X[1]
+  x_post <- df$X[2]
+  x_tf_buck <- df$X[3]
+  x_tf_deep <- df$X[4]
+  
+  # Get sizes
+  size <- x_post - x_ant
+  gb_pos_tf_buck <- x_tf_buck - x_ant
+  gb_pos_tf_deep <- x_tf_deep - x_ant
+  
+  # Get percentages
+  gb_pct_tf_buck <- 100 - ((gb_pos_tf_buck / size) * 100)
+  gb_pct_tf_deep <- 100 - ((gb_pos_tf_deep / size) * 100)
+  
+  # Get frames
+  frame_gastr <- df$Slice[1]
+  frame_tf_buck <- df$Slice[3]
+  frame_tf_deep <- df$Slice[4]
+  
+  # Save as vector
+  mv <- c(label_tf = label_tf,
+          embryo = embryo,
+          size = size,
+          x_ant = x_ant,
+          x_post = x_post,
+          x_tf_buck = x_tf_buck,
+          x_tf_deep = x_tf_deep,
+          gb_pos_tf_buck = gb_pos_tf_buck,
+          gb_pos_tf_deep = gb_pos_tf_deep,
+          gb_pct_tf_buck = gb_pct_tf_buck,
+          gb_pct_tf_deep = gb_pct_tf_deep,
+          frame_gastr = frame_gastr,
+          frame_tf_buck = frame_tf_buck,
+          frame_tf_deep = frame_tf_deep
+          )
+  
+  return(mv)
+}
+
+# Define empty data frame
+gb_extension <- data.frame()
+
+# Loop over files binding rows to data frame
+for (tabfile in files) {
+  gb_row <- process(tabfile)
+  gb_extension <- rbind(gb_extension, as.data.frame(t(gb_row)))
+}
+
+# Save data frame to file
+write.csv(gb_extension, file = "gb_extension.csv", row.names = FALSE)
+```
+
+## Merge datasets
+
+Next, we need to import the master dataset file to get some metadata. Most important is the stock, zygosity, timestep, and gastrulation frame.
+
+```{r merge-datasets}
+
+# Import main dataset
+datasets <- read.csv("../../0-data/datasets.csv")
+
+# Merge landmarks with datasets
+germband <- merge(gb_extension, datasets, by = "embryo", all.x = TRUE)
+
+# Properly convert column types before any calculations
+germband <- as.data.frame(lapply(germband, type.convert, as.is = FALSE))
+
+```
+
+## Calculate time
+
+Now that the datasets are merged, we need to convert the frame information to time relative to gastrulation and the position information to percentage of extension.
+
+```{r calculate-time}
+# Create columns with times (min)
+germband$time_tf_buck <- ((germband$frame_tf_buck - germband$frame_gastr) * germband$timestep) / 60
+germband$time_tf_deep <- ((germband$frame_tf_deep - germband$frame_gastr) * germband$timestep) / 60
+```
+
+## Create long format data frame
+
+Convert the main data frame into the long format for plotting
+
+```{r reshape-long-format}
+
+# Define variables for plotting
+longvars <- c(
+  "embryo",
+  "stock",
+  "zygosity",
+  "size",
+  "gb_pct_tf_buck",
+  "gb_pct_tf_deep",
+  "time_tf_buck",
+  "time_tf_deep"
+)
+
+gblong <- reshape(
+  germband[, longvars],
+  varying = list(
+    c(
+      "gb_pct_tf_buck",
+      "gb_pct_tf_deep"
+    ),
+    c(
+      "time_tf_buck",
+      "time_tf_deep"
+    )
+  ),
+  v.names = c("gb_pct", "time"),
+  timevar = "status",
+  times = c("tf_buck", "tf_deep"),
+  direction = "long"
+)
+
+# Remove the id column that reshape adds
+gblong$id <- NULL
+
+# Transform data frame to order the stock for plotting
+gblong$stock = factor(gblong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+gblong$zygosity = factor(gblong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
+gblong$status = factor(gblong$status, levels = c("tf_buck", "tf_deep"))
+gblong <- gblong[order(gblong$stock, gblong$zygosity),]
+rownames(gblong) <- 1:nrow(gblong)
+
+# Save both data frames to file
+write.csv(germband, file = "germband.csv", row.names = FALSE)
+write.csv(gblong, file = "gblong.csv", row.names = FALSE)
+```
+
+## Calculate mean and standard deviation
+
+Create data frame with descriptive statistics for all the different samples and variables.
+
+
+```{r values}
+
+# Automatically aggregate data by columns
+stats <- aggregate(
+  cbind(gb_pct, time) ~ stock + zygosity + status,
+  gblong,
+  function(x)
+    c(
+      count = length(x),
+      mean = mean(x),
+      sd = sd(x))
+  )
+
+# Makes column names nicer
+stats <- do.call(data.frame, stats)
+
+# Order rows by something meaningful (and re-index)
+stats <- stats[order(stats$status, stats$stock, stats$zygosity),]
+rownames(stats) <- 1:nrow(stats)
+
+# Print and save data frame
+stats
+write.csv(stats, file = "stats.csv", row.names = FALSE)
+
+```
+
+## Exploratory plots
+
+We want to identify the difference between the cephalic furrow and the ectopic folds in the percentage of germ band extension, and the timing of formation after gastrulation.
+
+### Time of mitotic events after gastrulation by stock (cols) and status (rows)
+
+```{r plot-md-time-by-stock-status}
+ggplot(gblong, aes(stock, time, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = TRUE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "stocks", y = "time after gastrulation (min)") +
+  facet_grid(rows = vars(status), cols = vars(stock), scales = "free_x") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        title = element_text(size = 15),
+        legend.text = element_text(size = 15),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("2-plots/gb_time_all_by_stock_status.png", width = 15, height = 7)
+ggsave("2-plots/gb_time_all_by_stock_status.svg", width = 15, height = 7)
+```
+
+
+### Percentage of germ band extension by stock (cols) and status (rows)
+
+Plot the germ band extension (%) for homozygotes and heterozygotes at two different moments: initial infolding/buckling (buck) and deepest point (deep).
+
+```{r plot-gb-pct-by-stock-status}
+ggplot(gblong, aes(stock, gb_pct, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = TRUE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "stocks", y = "germ band extension (%)") +
+  facet_grid(rows = vars(status), cols = vars(stock), scales = "free_x") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        title = element_text(size = 15),
+        legend.text = element_text(size = 15),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("2-plots/gb_pct_all_by_stock_status.png", width = 15, height = 7)
+ggsave("2-plots/gb_pct_all_by_stock_status.svg", width = 15, height = 7)
+```
+
+### Time of mitotic events after gastrulation by status (cols) and stock (rows)
+
+```{r plot-gb-time-by-status-stock}
+ggplot(gblong, aes(status, time, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "status", y = "time after gastrulation (min)") +
+  facet_grid(cols = vars(status), rows = vars(stock), scales = "free_x") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_time_all_by_status_stock.png", width = 7, height = 12)
+ggsave("2-plots/gb_time_all_by_status_stock.svg", width = 7, height = 12)
+```
+
+### Percentage of germ band extension by status (cols) and stock (rows)
+
+```{r plot-gb-pct-by-status-stock}
+ggplot(gblong, aes(status, gb_pct, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "status", y = "germ band extension (%)") +
+  facet_grid(cols = vars(status), rows = vars(stock), scales = "free_x") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_pct_all_by_status_stock.png", width = 7, height = 12)
+ggsave("2-plots/gb_pct_all_by_status_stock.svg", width = 7, height = 12)
+```
+
+## Main plots
+
+The above are nice descriptive plots. But for the figure, the most interesting is the initial buckling/infolding relative to GB position and time after gastrulation.
+
+### Time after gastrulation at buckling/infolding by stock (cols)
+
+```{r plot-gb-time-tf-buck-stock}
+ggplot(gblong[gblong$status == "tf_buck",], aes(stock, time, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "stocks", y = "time after gastrulation (min)") +
+  facet_grid(cols = vars(stock), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("2-plots/gb_time_tf_buck_by_stock.png", width = 12, height = 4)
+ggsave("2-plots/gb_time_tf_buck_by_stock.svg", width = 12, height = 4)
+```
+
+### Percentage of germ band extension at buckling/infolding by stock (cols)
+
+```{r plot-gb-pct-tf-buck-stock}
+ggplot(gblong[gblong$status == "tf_buck",], aes(stock, gb_pct, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "stocks", y = "germ band extension (%)") +
+  facet_grid(cols = vars(stock), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("2-plots/gb_pct_tf_buck_by_stock.png", width = 12, height = 4)
+ggsave("2-plots/gb_pct_tf_buck_by_stock.svg", width = 12, height = 4)
+```
+
+
+### Time of ectopic folding by status (cols)
+
+```{r plot-md-time-tf-buck-vs-md-start-by-status}
+ggplot(gblong[(gblong$status %in% c("tf_buck") & gblong$stock != "prd"),], aes(zygosity, time, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 5)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "zygosity", y = "time after gastrulation (min)") +
+  facet_grid(cols = vars(status), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_time_tf_buck_by_status.png", width = 10, height = 6)
+ggsave("2-plots/gb_time_tf_buck_by_status.svg", width = 10, height = 6)
+```
+
+### Percentage of germ band extension at mitotic expansion vs ectopic folding by status (cols)
+
+```{r plot-gb-pct-tf-buck-vs-md-start-by-status}
+ggplot(gblong[(gblong$status %in% c("tf_buck") & gblong$stock != "prd"),], aes(zygosity, gb_pct, fill = zygosity)) +
+  geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  labs(x = "zygosity", y = "germ band extension (%)") +
+  facet_grid(cols = vars(status), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1)
+        )
+ggsave("2-plots/gb_pct_tf_buck_vs_md_start_by_status.png", width = 10, height = 6)
+ggsave("2-plots/gb_pct_tf_buck_vs_md_start_by_status.svg", width = 10, height = 6)
+```
+
+
+## Statistical tests
+
+```{r tests}
+# Create data frame for tests
+tests <- data.frame()
+
+# Contrasts of single variables within stocks (het vs hom)
+for (stock in unique(gblong$stock)) {
+  
+  if (stock == "wt") { next }
+  
+  for (status in unique(gblong$status)) {
+    
+    for (value in c("gb_pct", "time")) {
+      
+      het = gblong[(gblong$status == status & gblong$stock == stock & gblong$zygosity == "heterozygote"), value]
+      hom = gblong[(gblong$status == status & gblong$stock == stock & gblong$zygosity == "homozygote"), value]
+      
+      test = wilcox.test(het, hom, paired = FALSE)
+      pvalue = test$p.value
+      statistic = test$statistic
+      delta = mean(het) - mean(hom)
+      
+      test_row = c(
+        contrast = "het vs hom",
+        stock = stock,
+        zygosity = "-",
+        status = status,
+        value = value,
+        delta = sprintf("%.1f", delta),
+        significant = pvalue < 0.05,
+        pvalue = sprintf("%.6f", pvalue),
+        statistic = sprintf("%s=%s", names(statistic), statistic),
+        paired = FALSE
+      )
+      
+      tests <- rbind(tests, as.data.frame(t(test_row)))
+      
+    }
+  }
+}
+
+# Contrasts between variables within zygosity (buck vs md)
+for (stock in unique(gblong$stock)) {
+  
+  for (zygosity in unique(gblong$zygosity)) {
+    
+    for (value in c("gb_pct", "time")) {
+      
+      if (stock == "wt" & zygosity != "wildtype") { next }
+      
+      if (stock != "wt" & zygosity == "wildtype") { next }
+      
+      # Note: with low n and all values from one contrast higher or lower than the other, pvalues might be identical
+      buck = gblong[(gblong$status == "tf_buck" & gblong$stock == stock & gblong$zygosity == zygosity), value]
+      md = gblong[(gblong$status == "md_start" & gblong$stock == stock & gblong$zygosity == zygosity), value]
+      
+      test = wilcox.test(buck, md, paired = TRUE)
+      pvalue = test$p.value
+      statistic = test$statistic
+      delta = mean(buck) - mean(md)
+      
+      test_row = c(
+        contrast = "buck vs md",
+        stock = stock,
+        zygosity = zygosity,
+        status = "-",
+        value = value,
+        delta = sprintf("%.1f", delta),
+        significant = pvalue < 0.05,
+        pvalue = sprintf("%.6f", pvalue),
+        statistic = sprintf("%s=%s", names(statistic), statistic),
+        paired = TRUE
+      )
+      
+      tests <- rbind(tests, as.data.frame(t(test_row)))
+      
+    }
+  }
+}
+
+# Contrasts between variables within zygosity but batch stocks (buck vs md)
+for (zygosity in c("heterozygote", "homozygote")) {
+  
+  for (value in c("gb_pct", "time")) {
+    
+    # Note: prd excluded because CF formation is not prevented
+    buck = gblong[(gblong$status == "tf_buck" & gblong$stock != "prd" & gblong$zygosity == zygosity), value]
+    md = gblong[(gblong$status == "md_start" & gblong$stock != "prd" & gblong$zygosity == zygosity), value]
+    
+    test = wilcox.test(buck, md, paired = TRUE)
+    pvalue = test$p.value
+    statistic = test$statistic
+    delta = mean(buck) - mean(md)
+    
+    test_row = c(
+      contrast = "buck vs md",
+      stock = "btd+eve",
+      zygosity = zygosity,
+      status = "-",
+      value = value,
+      delta = sprintf("%.1f", delta),
+      significant = pvalue < 0.05,
+      pvalue = sprintf("%.6f", pvalue),
+      statistic = sprintf("%s=%s", names(statistic), statistic),
+      paired = TRUE
+    )
+    
+    tests <- rbind(tests, as.data.frame(t(test_row)))
+  }
+}
+
+tests
+write.csv(tests, file = "tests.csv", row.names = FALSE)
+```
