@@ -336,10 +336,10 @@ ggsave("2-plots/gb_pct_tf_buck_by_stock.svg", width = 12, height = 4)
 
 ### Time of ectopic folding by status (cols)
 
-```{r plot-md-time-tf-buck-vs-md-start-by-status}
+```{r plot-gb-time-tf-buck-by-status}
 ggplot(gblong[(gblong$status %in% c("tf_buck") & gblong$stock != "prd"),], aes(zygosity, time, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 5)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   labs(x = "zygosity", y = "time after gastrulation (min)") +
@@ -349,13 +349,13 @@ ggplot(gblong[(gblong$status %in% c("tf_buck") & gblong$stock != "prd"),], aes(z
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_time_tf_buck_by_status.png", width = 10, height = 6)
-ggsave("2-plots/gb_time_tf_buck_by_status.svg", width = 10, height = 6)
+ggsave("2-plots/gb_time_tf_buck_by_status.png", width = 6, height = 6)
+ggsave("2-plots/gb_time_tf_buck_by_status.svg", width = 6, height = 6)
 ```
 
 ### Percentage of germ band extension at mitotic expansion vs ectopic folding by status (cols)
 
-```{r plot-gb-pct-tf-buck-vs-md-start-by-status}
+```{r plot-gb-pct-tf-buck-by-status}
 ggplot(gblong[(gblong$status %in% c("tf_buck") & gblong$stock != "prd"),], aes(zygosity, gb_pct, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
@@ -368,14 +368,17 @@ ggplot(gblong[(gblong$status %in% c("tf_buck") & gblong$stock != "prd"),], aes(z
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", size=1)
         )
-ggsave("2-plots/gb_pct_tf_buck_vs_md_start_by_status.png", width = 10, height = 6)
-ggsave("2-plots/gb_pct_tf_buck_vs_md_start_by_status.svg", width = 10, height = 6)
+ggsave("2-plots/gb_pct_tf_buck_by_status.png", width = 6, height = 6)
+ggsave("2-plots/gb_pct_tf_buck_by_status.svg", width = 6, height = 6)
 ```
 
 
 ## Statistical tests
 
 ```{r tests}
+
+#TODO: Finish up tests
+
 # Create data frame for tests
 tests <- data.frame()
 
