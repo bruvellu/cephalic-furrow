@@ -262,13 +262,10 @@ The plot suggests that buckling in btd, eve, and prd homozygotes happen after th
 ggplot(mdlong, aes(status, time, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
-  #geom_line(aes(group = embryo)) +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   labs(x = "status", y = "time after gastrulation (min)") +
-  #facet_grid(cols = vars(zygosity), scales = "free") +
   facet_grid(cols = vars(status), rows = vars(stock), scales = "free_x") +
-  #facet_grid(rows = vars(stock), scales = "free") +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 35),
         strip.background = element_blank(),
@@ -285,13 +282,10 @@ The plot suggests that buckling in btd, eve, and prd homozygotes is delayed rela
 ggplot(mdlong, aes(status, gb_pct, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
-  #geom_line(aes(group = embryo)) +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   labs(x = "status", y = "germ band extension (%)") +
-  #facet_grid(cols = vars(zygosity), scales = "free") +
   facet_grid(cols = vars(status), rows = vars(stock), scales = "free_x") +
-  #facet_grid(rows = vars(stock), scales = "free") +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 35),
         strip.background = element_blank(),
