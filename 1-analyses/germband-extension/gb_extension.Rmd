@@ -124,11 +124,14 @@ Now that the datasets are merged, we need to convert the frame information to ti
 # Create columns with times (min)
 germband$time_tf_buck <- ((germband$frame_tf_buck - germband$frame_gastr) * germband$timestep) / 60
 germband$time_tf_deep <- ((germband$frame_tf_deep - germband$frame_gastr) * germband$timestep) / 60
+
+# Save data frame to file
+write.csv(germband, file = "germband.csv", row.names = FALSE)
 ```
 
 ## Create long format data frame
 
-Convert the main data frame into the long format for plotting
+Convert the main data frame into the long format for plotting.
 
 ```{r reshape-long-format}
 
@@ -172,8 +175,7 @@ gblong$status = factor(gblong$status, levels = c("tf_buck", "tf_deep"))
 gblong <- gblong[order(gblong$stock, gblong$zygosity),]
 rownames(gblong) <- 1:nrow(gblong)
 
-# Save both data frames to file
-write.csv(germband, file = "germband.csv", row.names = FALSE)
+# Save long data frame to file
 write.csv(gblong, file = "gblong.csv", row.names = FALSE)
 ```
 
@@ -406,7 +408,6 @@ for (stock in unique(gblong$stock)) {
       test_row = c(
         contrast = contrast,
         stock = stock,
-        zygosity = "-",
         status = status,
         value = value,
         delta = sprintf("%.1f", delta),
@@ -428,7 +429,6 @@ for (stock in unique(gblong$stock)) {
       test_row = c(
         contrast = contrast,
         stock = stock,
-        zygosity = "-",
         status = status,
         value = value,
         delta = sprintf("%.1f", delta),
@@ -450,7 +450,6 @@ for (stock in unique(gblong$stock)) {
       test_row = c(
         contrast = contrast,
         stock = stock,
-        zygosity = "-",
         status = status,
         value = value,
         delta = sprintf("%.1f", delta),
@@ -492,7 +491,6 @@ for (zygosity in c("heterozygote", "homozygote")) {
       test_row = c(
         contrast = contrast,
         stock = stock,
-        zygosity = "-",
         status = status,
         value = value,
         delta = sprintf("%.1f", delta),
@@ -514,7 +512,6 @@ for (zygosity in c("heterozygote", "homozygote")) {
       test_row = c(
         contrast = contrast,
         stock = stock,
-        zygosity = "-",
         status = status,
         value = value,
         delta = sprintf("%.1f", delta),
@@ -536,7 +533,6 @@ for (zygosity in c("heterozygote", "homozygote")) {
       test_row = c(
         contrast = contrast,
         stock = stock,
-        zygosity = "-",
         status = status,
         value = value,
         delta = sprintf("%.1f", delta),
