@@ -391,100 +391,163 @@ for (stock in unique(gblong$stock)) {
     
     for (value in c("gb_pct", "time")) {
       
+      # Get values to be compared
+      wt = gblong[(gblong$status == status & gblong$stock == "wt" & gblong$zygosity == "wildtype"), value]
       het = gblong[(gblong$status == status & gblong$stock == stock & gblong$zygosity == "heterozygote"), value]
       hom = gblong[(gblong$status == status & gblong$stock == stock & gblong$zygosity == "homozygote"), value]
       
+      # Heterozygotes vs homozygotes
+      contrast = "het vs hom"
       test = wilcox.test(het, hom, paired = FALSE)
       pvalue = test$p.value
       statistic = test$statistic
       delta = mean(het) - mean(hom)
       
       test_row = c(
-        contrast = "het vs hom",
+        contrast = contrast,
         stock = stock,
         zygosity = "-",
         status = status,
         value = value,
         delta = sprintf("%.1f", delta),
         significant = pvalue < 0.05,
-        pvalue = sprintf("%.6f", pvalue),
+        pvalue = sprintf("%.9f", pvalue),
         statistic = sprintf("%s=%s", names(statistic), statistic),
         paired = FALSE
       )
       
       tests <- rbind(tests, as.data.frame(t(test_row)))
       
-    }
-  }
-}
-
-# Contrasts between variables within zygosity (buck vs md)
-for (stock in unique(gblong$stock)) {
-  
-  for (zygosity in unique(gblong$zygosity)) {
-    
-    for (value in c("gb_pct", "time")) {
-      
-      if (stock == "wt" & zygosity != "wildtype") { next }
-      
-      if (stock != "wt" & zygosity == "wildtype") { next }
-      
-      # Note: with low n and all values from one contrast higher or lower than the other, pvalues might be identical
-      buck = gblong[(gblong$status == "tf_buck" & gblong$stock == stock & gblong$zygosity == zygosity), value]
-      md = gblong[(gblong$status == "md_start" & gblong$stock == stock & gblong$zygosity == zygosity), value]
-      
-      test = wilcox.test(buck, md, paired = TRUE)
+      # Wildtype vs heterozygotes
+      contrast = "wt vs het"
+      test = wilcox.test(wt, het, paired = FALSE)
       pvalue = test$p.value
       statistic = test$statistic
-      delta = mean(buck) - mean(md)
+      delta = mean(wt) - mean(het)
       
       test_row = c(
-        contrast = "buck vs md",
+        contrast = contrast,
         stock = stock,
-        zygosity = zygosity,
-        status = "-",
+        zygosity = "-",
+        status = status,
         value = value,
         delta = sprintf("%.1f", delta),
         significant = pvalue < 0.05,
-        pvalue = sprintf("%.6f", pvalue),
+        pvalue = sprintf("%.9f", pvalue),
         statistic = sprintf("%s=%s", names(statistic), statistic),
-        paired = TRUE
+        paired = FALSE
       )
       
       tests <- rbind(tests, as.data.frame(t(test_row)))
       
+      # Wildtype vs homozygotes
+      contrast = "wt vs hom"
+      test = wilcox.test(wt, hom, paired = FALSE)
+      pvalue = test$p.value
+      statistic = test$statistic
+      delta = mean(wt) - mean(hom)
+      
+      test_row = c(
+        contrast = contrast,
+        stock = stock,
+        zygosity = "-",
+        status = status,
+        value = value,
+        delta = sprintf("%.1f", delta),
+        significant = pvalue < 0.05,
+        pvalue = sprintf("%.9f", pvalue),
+        statistic = sprintf("%s=%s", names(statistic), statistic),
+        paired = FALSE
+      )
+      
+      tests <- rbind(tests, as.data.frame(t(test_row)))
     }
   }
 }
 
+
+
 # Contrasts between variables within zygosity but batch stocks (buck vs md)
 for (zygosity in c("heterozygote", "homozygote")) {
   
-  for (value in c("gb_pct", "time")) {
+  for (status in unique(gblong$status)) {
     
-    # Note: prd excluded because CF formation is not prevented
-    buck = gblong[(gblong$status == "tf_buck" & gblong$stock != "prd" & gblong$zygosity == zygosity), value]
-    md = gblong[(gblong$status == "md_start" & gblong$stock != "prd" & gblong$zygosity == zygosity), value]
-    
-    test = wilcox.test(buck, md, paired = TRUE)
-    pvalue = test$p.value
-    statistic = test$statistic
-    delta = mean(buck) - mean(md)
-    
-    test_row = c(
-      contrast = "buck vs md",
-      stock = "btd+eve",
-      zygosity = zygosity,
-      status = "-",
-      value = value,
-      delta = sprintf("%.1f", delta),
-      significant = pvalue < 0.05,
-      pvalue = sprintf("%.6f", pvalue),
-      statistic = sprintf("%s=%s", names(statistic), statistic),
-      paired = TRUE
-    )
-    
-    tests <- rbind(tests, as.data.frame(t(test_row)))
+    for (value in c("gb_pct", "time")) {
+      
+      # Get values to be compared
+      wt = gblong[(gblong$status == status & gblong$stock == "wt" & gblong$zygosity == "wildtype"), value]
+      het = gblong[(gblong$status == status & gblong$stock != "prd" & gblong$zygosity == "heterozygote"), value]
+      hom = gblong[(gblong$status == status & gblong$stock != "prd" & gblong$zygosity == "homozygote"), value]
+      
+      # Define custom stock
+      stock = "btd+eve"
+      
+      # Heterozygotes vs homozygotes
+      contrast = "het vs hom"
+      test = wilcox.test(het, hom, paired = FALSE)
+      pvalue = test$p.value
+      statistic = test$statistic
+      delta = mean(het) - mean(hom)
+      
+      test_row = c(
+        contrast = contrast,
+        stock = stock,
+        zygosity = "-",
+        status = status,
+        value = value,
+        delta = sprintf("%.1f", delta),
+        significant = pvalue < 0.05,
+        pvalue = sprintf("%.9f", pvalue),
+        statistic = sprintf("%s=%s", names(statistic), statistic),
+        paired = FALSE
+      )
+      
+      tests <- rbind(tests, as.data.frame(t(test_row)))
+      
+      # Wildtype vs heterozygotes
+      contrast = "wt vs het"
+      test = wilcox.test(wt, het, paired = FALSE)
+      pvalue = test$p.value
+      statistic = test$statistic
+      delta = mean(wt) - mean(het)
+      
+      test_row = c(
+        contrast = contrast,
+        stock = stock,
+        zygosity = "-",
+        status = status,
+        value = value,
+        delta = sprintf("%.1f", delta),
+        significant = pvalue < 0.05,
+        pvalue = sprintf("%.9f", pvalue),
+        statistic = sprintf("%s=%s", names(statistic), statistic),
+        paired = FALSE
+      )
+      
+      tests <- rbind(tests, as.data.frame(t(test_row)))
+      
+      # Wildtype vs homozygotes
+      contrast = "wt vs hom"
+      test = wilcox.test(wt, hom, paired = FALSE)
+      pvalue = test$p.value
+      statistic = test$statistic
+      delta = mean(wt) - mean(hom)
+      
+      test_row = c(
+        contrast = contrast,
+        stock = stock,
+        zygosity = "-",
+        status = status,
+        value = value,
+        delta = sprintf("%.1f", delta),
+        significant = pvalue < 0.05,
+        pvalue = sprintf("%.9f", pvalue),
+        statistic = sprintf("%s=%s", names(statistic), statistic),
+        paired = FALSE
+      )
+      
+      tests <- rbind(tests, as.data.frame(t(test_row)))
+    }
   }
 }
 
