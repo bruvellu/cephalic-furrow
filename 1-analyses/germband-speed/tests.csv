@@ -1,7 +1,13 @@
-"contrast","pvalue"
-"wildtype vs btd heterozygote",0.798641248638318
-"btd heterozygote vs homozygote",0.28946707881171
-"wildtype vs eve heterozygote",0.56922241813697
-"eve heterozygote vs homozygote",0.0146765417492828
-"wildtype vs prd heterozygote",0.579080901589435
-"prd heterozygote vs homozygote",0.581541002431495
+"contrast","stock","value","delta","significant","pvalue","statistic","paired"
+"het vs hom","btd","µm/min","1.0","FALSE","0.289467079","W=42","FALSE"
+"wt vs het","btd","µm/min","-0.2","FALSE","0.798641249","W=67","FALSE"
+"wt vs hom","btd","µm/min","0.8","FALSE","0.503085016","W=66.5","FALSE"
+"het vs hom","eve","µm/min","1.6","TRUE","0.014676542","W=33","FALSE"
+"wt vs het","eve","µm/min","-0.4","FALSE","0.569222418","W=47","FALSE"
+"wt vs hom","eve","µm/min","1.2","TRUE","0.005547654","W=74","FALSE"
+"het vs hom","prd","µm/min","-0.2","FALSE","0.594072594","W=20","FALSE"
+"wt vs het","prd","µm/min","-0.4","FALSE","0.579080902","W=69","FALSE"
+"wt vs hom","prd","µm/min","-0.6","FALSE","0.159312037","W=22.5","FALSE"
+"het vs hom","stg","µm/min","0.6","FALSE","0.293540240","W=106","FALSE"
+"wt vs het","stg","µm/min","-2.2","TRUE","0.000000992","W=8","FALSE"
+"wt vs hom","stg","µm/min","-1.7","TRUE","0.001282537","W=11","FALSE"

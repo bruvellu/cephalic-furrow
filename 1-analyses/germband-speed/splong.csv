@@ -1,0 +1,122 @@
+"embryo","stock","zygosity","microns_per_minute","gb_pct_tf_buck","gb_pct_md_start","time_tf_buck","time_md_start"
+"rgap_1b_z3_t60s_E1","wt","wildtype",11.1,8.16733067729083,22.3107569721116,10,18
+"rgap_1b_z3_t60s_E11","wt","wildtype",10.1,10.5476673427992,22.920892494929,5,13
+"rgap_1b_z3_t60s_E12","wt","wildtype",10.4,6.99029126213591,20.3883495145631,7,14
+"rgap_1b_z3_t60s_E13","wt","wildtype",9.5,9.45674044265593,22.5352112676056,8,14
+"rgap_1b_z3_t60s_E14","wt","wildtype",10.4,7.50507099391481,20.8924949290061,9,17
+"rgap_1b_z3_t60s_E15","wt","wildtype",9.5,8.85826771653542,20.6692913385827,10,18
+"rgap_1b_z3_t60s_E16","wt","wildtype",9.7,9.9601593625498,24.1035856573705,9,17
+"rgap_1b_z3_t60s_E17","wt","wildtype",10.2,8.66141732283464,19.8818897637795,11,18
+"rgap_1b_z3_t60s_E2","wt","wildtype",10.3,9.3167701863354,23.3954451345756,8,14
+"rgap_1b_z3_t60s_E3","wt","wildtype",10.6,6.16016427104724,20.1232032854209,7,15
+"rgap_1b_z3_t60s_E4","wt","wildtype",9.7,7.11382113821138,19.7154471544715,4,11
+"rgap_1b_z3_t60s_E5","wt","wildtype",10.7,10.183299389002,21.1812627291242,6,13
+"rgap_1b_z3_t60s_E6","wt","wildtype",9.4,12.4236252545825,23.0142566191446,7,13
+"rgap_1b_z3_t60s_E7","wt","wildtype",10.1,9.36863543788188,24.847250509165,6,15
+"rgap_1b_z3_t60s_E8","wt","wildtype",10.9,5.36779324055667,18.6878727634195,3,12
+"rgap_1b_z3_t60s_E9","wt","wildtype",10.1,8.74751491053678,18.8866799204771,6,11
+"btd-gap_z3_t55s_E10","btd","heterozygote",11.5636363636364,10.1321585903084,20.4845814977974,5.5,11.9166666666667
+"btd-gap_z3_t55s_E12","btd","heterozygote",10.1454545454545,8.92116182572614,20.746887966805,8.25,12.8333333333333
+"btd-gap_z3_t55s_E14","btd","homozygote",11.0181818181818,35.0840336134454,27.9411764705882,18.3333333333333,14.6666666666667
+"btd-gap_z3_t55s_E3","btd","heterozygote",12.8727272727273,10.3896103896104,29.8701298701299,10.0833333333333,17.4166666666667
+"btd-gap_z3_t55s_E6","btd","homozygote",10.9090909090909,36.4224137931034,29.9568965517241,16.5,13.75
+"btd-gap_z3_t55s_E8","btd","homozygote",11.0181818181818,37.4753451676529,30.3747534516765,25.6666666666667,22
+"btd-gap2_z3_t55s_E12","btd","heterozygote",9.16363636363636,12.720156555773,17.8082191780822,8.25,11.9166666666667
+"btd-gap2_z3_t55s_E14","btd","homozygote",8.18181818181818,NA,NA,NA,NA
+"btd-gap2_z3_t55s_E7","btd","homozygote",8.50909090909091,33.2665330661323,24.4488977955912,19.25,14.6666666666667
+"btd-gap2_z3_t55s_E8","btd","heterozygote",11.7818181818182,9.8326359832636,20.5020920502092,7.33333333333333,12.8333333333333
+"btd-HisGap_z3_t51s_E11","btd","homozygote",6.70588235294118,NA,NA,NA,NA
+"btd-HisGap_z3_t51s_E14","btd","heterozygote",9.76470588235294,NA,NA,NA,NA
+"btd-HisGap_z3_t51s_E4","btd","heterozygote",11.7647058823529,NA,NA,NA,NA
+"btd-HisGap_z3_t51s_E7","btd","heterozygote",8.11764705882353,NA,NA,NA,NA
+"btd-hisgap1_E7","btd","heterozygote",8.5,6.79012345679013,23.2510288065844,10,21
+"btd-hisgap1_E8","btd","homozygote",9.4,39.662447257384,27.6371308016878,27,20
+"eve-Gap_1_E13","eve","homozygote",9.6,33.3973128598848,22.4568138195777,22,16
+"eve-Gap_1_t45s_z3_E1","eve","heterozygote",9.86666666666667,7.19844357976653,16.3424124513619,13.5,18.75
+"eve-Gap_1_t45s_z3_E11","eve","homozygote",9.6,28.1553398058252,18.252427184466,24,18.75
+"eve-Gap_1_t45s_z3_E4","eve","heterozygote",10,9.78473581213308,19.5694716242661,12.75,18.75
+"eve-Gap1_t60s_z3_E11","eve","heterozygote",10.2,4.56349206349206,14.0873015873016,10,17
+"eve-Gap1_t60s_z3_E12","eve","homozygote",8.4,23.9089184060721,20.8728652751423,19,17
+"eve-Gap1_t60s_z3_E16","eve","heterozygote",11.9,9.12698412698413,18.6507936507936,12,17
+"eve-Gap1_t60s_z3_E2","eve","homozygote",8.6,25.5859375,18.359375,22,17
+"eve-Gap1_t60s_z3_E3","eve","homozygote",8.8,31.3346228239845,15.2804642166344,26,16
+"eve-Gap1_t60s_z3_E4","eve","heterozygote",10.9,10.2316602316602,21.2355212355212,15,20
+"eve-Gap1_t60s_z3_E5","eve","heterozygote",11.8,11.3168724279835,23.0452674897119,11,16
+"eve-Gap1_t60s_z3_E9","eve","heterozygote",9.3,9.61923847695391,26.25250501002,11,20
+"prd-Gap_1_t60s_E1","prd","heterozygote",10.1,6.54761904761905,17.2619047619048,6,12
+"prd-Gap_1_t60s_E10","prd","homozygote",11.3,18.0497925311203,26.5560165975104,9,12
+"prd-Gap_1_t60s_E11","prd","heterozygote",10.7,32.2515212981745,16.0243407707911,18,11
+"prd-Gap_1_t60s_E12","prd","homozygote",11.7,36.5145228215768,22.6141078838174,21,14
+"prd-Gap_1_t60s_E13","prd","heterozygote",12.4,39.7705544933078,22.7533460803059,21,13
+"prd-Gap_1_t60s_E15","prd","heterozygote",11,11.9047619047619,27.9220779220779,8,14
+"prd-Gap_1_t60s_E16","prd","homozygote",11.4,43.9175257731959,26.5979381443299,18,10
+"prd-Gap_1_t60s_E2","prd","heterozygote",9.6,27.8118609406953,16.9734151329243,19,14
+"prd-Gap_1_t60s_E3","prd","heterozygote",9.3,7.54310344827587,21.3362068965517,7,13
+"prd-Gap_1_t60s_E4","prd","homozygote",10.3,32,21.2,20,15
+"prd-Gap_1_t60s_E5","prd","heterozygote",9.8,9.09090909090909,20.3557312252965,5,11
+"prd-Gap_1_t60s_E6","prd","heterozygote",8.9,9.14634146341463,16.260162601626,7,13
+"prd-Gap_1_t60s_E7","prd","heterozygote",12.5,10,23.75,7,14
+"prd-Gap_1_t60s_E8","prd","heterozygote",11.2,26.1855670103093,21.4432989690722,15,13
+"prd-Gap_1_t60s_E9","prd","homozygote",9,34.8605577689243,20.1195219123506,23,14
+"Gap,stg[2]_2_z3_t50s_E1","stg","homozygote",12.96,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E10","stg","heterozygote",11.04,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E11","stg","homozygote",9.84,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E12","stg","homozygote",11.52,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E13","stg","heterozygote",11.04,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E14","stg","heterozygote",12,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E15","stg","heterozygote",10.92,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E2","stg","homozygote",11.88,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E3","stg","homozygote",12.36,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E4","stg","heterozygote",11.52,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E7","stg","heterozygote",10.68,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E8","stg","heterozygote",10.8,NA,NA,NA,NA
+"Gap,stg[2]_2_z3_t50s_E9","stg","homozygote",12,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E1","stg","heterozygote",12.2307692307692,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E10","stg","heterozygote",12.9230769230769,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E11","stg","heterozygote",13.0384615384615,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E12","stg","heterozygote",12.9230769230769,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E13","stg","heterozygote",12.4615384615385,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E14","stg","homozygote",11.1923076923077,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E15","stg","heterozygote",12.5769230769231,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E16","stg","homozygote",12.8076923076923,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E2","stg","heterozygote",14.3076923076923,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E3","stg","heterozygote",13.6153846153846,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E4","stg","heterozygote",14.3076923076923,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E5","stg","heterozygote",12.8076923076923,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E6","stg","heterozygote",13.7307692307692,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E7","stg","heterozygote",12.8076923076923,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E8","stg","heterozygote",12.2307692307692,NA,NA,NA,NA
+"Gap,stg[2]_green_1_z3_t52_E9","stg","heterozygote",12.3461538461538,NA,NA,NA,NA
+"btd-gap-stg_1_z3_t45s_E12","btd-stg","btd homozygote",10.1333333333333,NA,NA,NA,NA
+"btd-gap-stg_1_z3_t45s_E3","btd-stg","btd homozygote",11.8666666666667,NA,NA,NA,NA
+"btd-gap-stg_1_z3_t45s_E8","btd-stg","double heterozygote",11.7333333333333,NA,NA,NA,NA
+"btd-gap-stg_1_z3_t45s_E9","btd-stg","double homozygote",5.86666666666667,NA,NA,NA,NA
+"btd-gap-stg_3_z3_t53s_E11","btd-stg","btd homozygote",8.15094339622642,NA,NA,NA,NA
+"btd-gap-stg_3_z3_t53s_E12","btd-stg","double heterozygote",12.9056603773585,NA,NA,NA,NA
+"btd-gap-stg_3_z3_t53s_E13","btd-stg","double heterozygote",12.6792452830189,NA,NA,NA,NA
+"btd-gap-stg_3_z3_t53s_E14","btd-stg","double heterozygote",11.6603773584906,NA,NA,NA,NA
+"btd-gap-stg_3_z3_t53s_E2","btd-stg","btd homozygote",5.54716981132075,NA,NA,NA,NA
+"btd-gap-stg_3_z3_t53s_E3","btd-stg","double heterozygote",12,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E1","btd-stg","double heterozygote",11.4915254237288,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E10","btd-stg","btd homozygote",9.5593220338983,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E11","btd-stg","double heterozygote",9.96610169491525,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E13","btd-stg","double heterozygote",7.22033898305085,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E14","btd-stg","double heterozygote",10.4745762711864,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E16","btd-stg","double heterozygote",9.96610169491525,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E3","btd-stg","double heterozygote",10.7796610169492,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E4","btd-stg","double heterozygote",8.74576271186441,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E6","btd-stg","double heterozygote",11.3898305084746,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E7","btd-stg","btd homozygote",11.5932203389831,NA,NA,NA,NA
+"btd-gap-stg_4_z3_t59s_E8","btd-stg","btd homozygote",10.8813559322034,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E1","btd-stg","double homozygote",10.5,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E16","btd-stg","btd homozygote",12.1,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E17","btd-stg","double heterozygote",11.7,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E18","btd-stg","btd homozygote",10.7,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E19","btd-stg","double heterozygote",13.6,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E2","btd-stg","double heterozygote",12.4,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E20","btd-stg","btd homozygote",10.6,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E3","btd-stg","double homozygote",12.8,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E5","btd-stg","double heterozygote",14,NA,NA,NA,NA
+"btd-gap-stg_7_z3_60s_E6","btd-stg","btd homozygote",10,NA,NA,NA,NA
+"btd-gap-stg_8_z3_45s_E3","btd-stg","btd homozygote",8.4,NA,NA,NA,NA
+"btd-gap-stg_8_z3_45s_E8","btd-stg","stg homozygote",5.6,NA,NA,NA,NA
