@@ -2,15 +2,14 @@
 
 ## Analysis
 
-At which percentage of germ band extension (and how long after gastrulation) do ectopic folds appear in cephalic furrow mutants?
-We have a rough estimate based on a few embryos, but a more accurate description is lacking.
-A proper characterization of the relative dynamics of gastrulation events is also important for the modelling.
+At which percentage of germ band extension and how long after gastrulation do ectopic folds appear in cephalic furrow mutants?
+
 To accomplish that, we annotated the germ band position and the time after gastrulation at the moment of infolding/buckling of the cephalic furrow and ectopic folds.
 
 ## Directories
 
 - [`0-data`](0-data): 3D renderings of [lateral views](../../0-data/lateral).
-- [`1-rois`](1-rois): Landmarks in RoiSets (.zip) and measurements in tabular format (.txt).
+- [`1-rois`](1-rois): Landmarks in RoiSets (.zip) and measurements in tabular format (.tsv).
 - [`2-plots`](2-plots): Final plots generated from the measurements.
 
 ## Pipeline
@@ -27,4 +26,4 @@ To accomplish that, we annotated the germ band position and the time after gastr
 10. Close the measurements, close the stack, clear the ROI manager, and open the next stack for marking the landmarks again.
 
 We then processed and plotted the data in R.
-Read the details at [germband.Rmd](germband.Rmd).
+Read the details at [gb_extension.Rmd](gb_extension.Rmd).
