@@ -93,7 +93,7 @@ germband <- read.csv("../germband-extension/germband.csv")
 gb_extension <- cbind(gb_extension, germband[, c("time_tf_buck", "time_tf_deep")])
 
 # Merge mitotic landmarks with datasets
-mitotic <- merge(gb_extension, md_expansion, by = "embryo", all.x = TRUE)
+mitotic <- merge(md_expansion, gb_extension, by = "embryo", all.x = TRUE)
 mitotic <- merge(mitotic, datasets, by = "embryo", all.x = TRUE)
 
 # Properly convert column types before any calculations
@@ -119,6 +119,8 @@ mitotic$gb_pct_md_split <- 100 - ((mitotic$gb_pos_md_split / mitotic$size) * 100
 mitotic$time_md_start <- ((mitotic$frame_md_start - mitotic$frame_gastr) * mitotic$timestep) / 60
 mitotic$time_md_split <- ((mitotic$frame_md_split - mitotic$frame_gastr) * mitotic$timestep) / 60
 
+# Save data frame to file
+write.csv(mitotic, file = "mitotic.csv", row.names = FALSE)
 ```
 
 ## Create long format data frame
@@ -164,6 +166,9 @@ mdlong <- reshape(
 # Remove the id column that reshape adds
 mdlong$id <- NULL
 
+# Remove rows with NA
+mdlong <- na.omit(mdlong)
+
 # Transform data frame to order the stock for plotting
 mdlong$stock = factor(mdlong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
 mdlong$zygosity = factor(mdlong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
@@ -171,8 +176,7 @@ mdlong$status = factor(mdlong$status, levels = c("tf_buck", "tf_deep", "md_start
 mdlong <- mdlong[order(mdlong$stock, mdlong$zygosity),]
 rownames(mdlong) <- 1:nrow(mdlong)
 
-# Save both data frames to file
-write.csv(mitotic, file = "mitotic.csv", row.names = FALSE)
+# Save long data frame to file
 write.csv(mdlong, file = "mdlong.csv", row.names = FALSE)
 
 ```
