@@ -22,7 +22,6 @@ author:
     institute: [mpicbg, csbd, pol]
     email: modes@mpi-cbg.de
     orcid: 0000-0001-9940-0730
-#- Pavel Tomančák:
 - Pavel Tomancak:
     institute: [mpicbg, csbd, pol]
     correspondence: "yes"
@@ -192,18 +191,20 @@ The first mitotic domains in *Drosophila* appear in the head around 20 min after
 Our analysis show that ectopic folds always appear in between or adjacent to mitotic domains ({@fig:mitotic}a).
 The dividing cells synchronously lose their basal attachment, round up at the apical side, and more than double (2.3x) their apical area during anaphase ({@fig:apical}).
 This expansion compresses the adjacent non-dividing cells which are the first to infold, followed by a portion of the dividing cells within mitotic domains ({@fig:mitotic}b).
-Mitotic expansions always precede ectopic folding ({@fig:mitotic}c, {@fig:initiator}a).
+Mitotic expansions always precede ectopic folding ({@fig:mitotic}c,d, {@fig:initiator}a, {@tbl:gbtime}).
 Compared to the progressive invagination of the cephalic furrow (about 14 min), the process of ectopic fold formation is abrupt (about 4 min) ({@fig:initiator}a, {!@fig:vid-mitotic-fold}).
 To estimate the forces acting on the infolding tissue, we measured the rate of tissue deformation (strain rate) at the head--trunk boundary using particle image velocimetry.
-We find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak that coincides with the maximum expansion of mitotic domains and with the appearance of the ectopic folds ({@fig:mitotic}d,e, {@fig:strain}, {!@fig:vid-strain-rate}).
+We find that *btd* mutants show a strain rate 1.3x higher than sibling controls with a peak that coincides with the maximum expansion of mitotic domains and with the appearance of the ectopic folds ({@fig:mitotic}e,f, {@fig:strain}, {!@fig:vid-strain-rate}).
 This suggests that ectopic folds form at least in part due to physical stress of local mitotic domain expansion.
+
+<!--TODO: Add pvalues somewhere.-->
 
 <!--Germ band extension correlates with ectopic buckling at the trunk--germ-->
 
 However, for the ectopic folds that often form posterior to the Mitotic Domain 6 (MD6) ({@fig:mitotic}a,c), the source of compression must be different as there are no mitotic domains immediately posterior to these folds.
 We hypothesized that the extending germ band may be contributing to their formation. 
-This hypothesis is supported by the steady increase of strain rate in the area between MD6 and the extending germ band ({@fig:mitotic}d).
-Moreover, the epithelial cells between MD6 and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}e).
+This hypothesis is supported by the steady increase of strain rate in the area between MD6 and the extending germ band ({@fig:mitotic}e).
+Moreover, the epithelial cells between MD6 and the germ band tip are indeed more compressed in *btd* mutants compared to sibling controls, as inferred from the greater reduction in their apical area ({@fig:mitotic}f).
 Taken together, these analyses suggest the expansion of mitotic domains, and the extension of the germ band are potential sources of mechanical stress to the epithelial monolayer, and that they may be involved in the formation of ectopic folds by tissue buckling.
 
 <!--TODO:AB: Are there force measurements?-->
@@ -745,9 +746,10 @@ Download file (1.8 MB): [https://zenodo.org/record/8424742/files/Fig1.png?downlo
 ![Coincidence of mitotic domains and germ band extension with ectopic folding.
 **a**, Position of ectopic folds (black lines) in relation to the mitotic domains (colored areas) in *btd* and *eve* mutants. The ectopic folds appear between mitotic domains and between the germ band and the mitotic domain 6 (MD6). Scale bars = 50µm.
 **b**, Apical cell area between mitotic domains MD5 and MD7/6 (top). The infolded area is highlighted in the last frame (4.6 min). Detail of a cell subset in between mitotic domains (bottom) showing non-dividing cells (orange) and adjacent dividing cells (blue). Scale bars = 20µm (this is an approximate value because the pixel resolutions vary across the projection).
-**c**, Ectopic folding forming between MD6 and the germ band in a *btd* mutant. Scale bar = 20µm.
-**d**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions. The formation of the cephalic furrow (CF), ectopic folds (EF), and mitotic domains (MD) are annotated. The measurements combine isotropic and anisotropic strain rate.
-**e**, Compressed epithelial cells between MD6 and the tip of the germ band. Scale bars = 50µm.
+**c**, Ectopic folding forming between MD6 and the germ band in a *btd* mutant. The mitotic expansion (double arrouw) precedes the ectopic folding (arrow). Scale bar = 20µm.
+**d**, Comparison between the timing of cephalic furrow formation (CF), mitotic domain expansion (MD), and ectopic folding (EF) in wildtype and cephalic furrow mutants (*btd* and *eve* combined). In wildtype and heterozygote embryos, the cephalic furrow forms before mitotic domains, while in homozygote embryos, the ectopic folds form after mitotic domains.
+**e**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions. The formation of the cephalic furrow (CF), ectopic folds (EF), and mitotic domains (MD) are annotated. The measurements combine isotropic and anisotropic strain rate.
+**f**, Compressed epithelial cells between MD6 and the tip of the germ band. Scale bars = 50µm.
 ](figures/Fig2.jpg){#fig:mitotic width=60%}
 
 Download file (1.4 MB): [https://zenodo.org/record/8424742/files/Fig2.png?download=1](https://zenodo.org/record/8424742/files/Fig2.png?download=1)
@@ -930,16 +932,28 @@ Download file (18.7 MB): [https://zenodo.org/record/8424742/files/Vid11.m4v?down
 
 ## Table 1
 
-Table: Relative timing differences between the formation of the cephalic furrow (CF) and ectopic folds (EFs) in different mutant backgrounds.
-We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of infolding/buckling. {#tbl:gbtime}
+Table: Relative timing differences between the formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of each developmental event. {#tbl:gbtime}
 
-|           | wildtype | *btd*   |          | *eve*    |          | *prd*     |          |
-| --------  | -------- | -----   | -----    | -----    | -----    | -----     | -----    |
-| Zygosity  | +/+      | +/−     | −/−      | +/−      | −/−      | +/−       | −/−      |
-| Fold      | CF       | CF      | EFs      | CF       | EFs      | CF        | CF       |
-| TAG (min) | 7.2±2.2  | 8.2±1.7 | 21.3±4.7 | 12.2±1.7 | 22.6±2.6 | 11.3±6.2  | 18.2±5.4 |
-| GBE (%)   | 8.7±1.7  | 9.8±1.9 | 36.3±2.4 | 8.8±2.3  | 28.5±3.9 | 18.0±12.2 | 33.0±9.5 |
-| n         | 16       | 6       | 5        | 7        | 5        | 10        | 5        |
+|             | Zygosity | Event | TAG (min) | GBE (%)   | n  |
+| --------    | -------- | ----  | --------- | -------   | -  |
+| wildtype    | +/+      | CF    | 7.2±2.2   | 8.7±1.7   | 16 |
+|             | +/+      | MD    | 14.6±2.4  | 21.4±1.9  |    |
+| *btd*       | +/−      | CF    | 8.2±1.7   | 9.8±1.9   | 6  |
+|             | +/−      | MD    | 14.6±3.7  | 22.1±4.2  |    |
+|             | −/−      | EF    | 21.3±4.7  | 36.3±2.4  | 5  |
+|             | −/−      | MD    | 17.0±3.7  | 28.1±2.3  |    |
+| *eve*       | +/−      | CF    | 12.2±1.7  | 8.8±2.3   | 7  |
+|             | +/−      | MD    | 18.2±1.6  | 19.9±4.1  |    |
+|             | −/−      | EF    | 22.6±2.6  | 28.5±3.9  | 5  |
+|             | −/−      | MD    | 16.9±1.1  | 19.0±2.7  |    |
+| *prd*       | +/−      | CF    | 11.3±6.2  | 18.0±12.2 | 10 |
+|             | +/−      | MD    | 12.8±1.1  | 20.4±3.8  |    |
+|             | −/−      | CF    | 18.2±5.4  | 33.0±9.5  | 5  |
+|             | −/−      | MD    | 13.0±2.0  | 23.4±3.0  |    |
+| *btd*+*eve* | +/−      | CF    | 10.4±2.6  | 9.2±2.1   | 13 |
+|             | +/−      | MD    | 16.6±3.2  | 20.9±4.1  |    |
+|             | −/−      | EF    | 21.9±3.6  | 32.4±5.1  | 10 |
+|             | −/−      | MD    | 17.0±2.6  | 23.6±5.3  |    |
 
 \newpage
 
@@ -1017,7 +1031,7 @@ Download file (87.1 kB): [https://zenodo.org/record/8424742/files/FigS3.png?down
 
 ## Extended Data Figure S4
 
-![Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {@fig:mitotic}d.
+![Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {@fig:mitotic}e.
 ](figures/FigS4.jpg){#fig:strain tag=S4 width=80%}
 
 Download file (969.3 kB): [https://zenodo.org/record/8424742/files/FigS4.png?download=1](https://zenodo.org/record/8424742/files/FigS4.png?download=1)

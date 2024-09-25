@@ -204,6 +204,29 @@ stats <- do.call(data.frame, stats)
 stats <- stats[order(stats$status, stats$stock, stats$zygosity),]
 rownames(stats) <- 1:nrow(stats)
 
+# Add mean/sd for combined btd+eve data
+for (status in c("md_start", "md_split")) {
+  for (zygosity in c("heterozygote", "homozygote")) {
+    
+      time <- mdlong[mdlong$status == status & mdlong$stock %in% c("btd", "eve") & mdlong$zygosity == zygosity, "time"]
+      gb_pct <- mdlong[mdlong$status == status & mdlong$stock %in% c("btd", "eve") & mdlong$zygosity == zygosity, "gb_pct"]
+      
+      stats_row = c(
+        stock = "btd+eve",
+        zygosity = zygosity,
+        status = status,
+        gb_pct.count = length(gb_pct),
+        gb_pct.mean = mean(gb_pct),
+        gb_pct.sd = sd(gb_pct),
+        time.count = length(time),
+        time.mean = mean(time),
+        time.sd = sd(time)
+      )
+      
+      stats <- rbind(stats, as.data.frame(t(stats_row)))
+  }
+}
+
 # Print and save data frame
 stats
 write.csv(stats, file = "stats.csv", row.names = FALSE)
