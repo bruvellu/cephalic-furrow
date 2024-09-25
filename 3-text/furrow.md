@@ -932,7 +932,7 @@ Download file (18.7 MB): [https://zenodo.org/record/8424742/files/Vid11.m4v?down
 
 ## Table 1
 
-Table: Relative timing differences between the formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the time of each developmental event. {#tbl:gbtime}
+Table: Relative timing differences between the formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the moment of each developmental event. {#tbl:gbtime}
 
 |             | Zygosity | Event | TAG (min) | GBE (%)   | n  |
 | --------    | -------- | ----  | --------- | -------   | -  |
