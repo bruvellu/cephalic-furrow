@@ -26,7 +26,7 @@ The distance traveled in X (microns) during ten frames gives the approximate spe
 
 ```{r import-measurements}
 # List all txt files in ROIs folder
-files = list.files(path = "1-rois", pattern="*.tsv", full.names = TRUE)
+files <- list.files(path = "1-rois", pattern="*.tsv", full.names = TRUE)
 
 # Function for pre-processing
 process <- function(tabfile) {
@@ -147,8 +147,8 @@ splong <- speed[, c("embryo",
                     "time_md_start")]
 
 # Transform data frame to order the stock for plotting
-splong$stock = factor(splong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
-splong$zygosity = factor(splong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
+splong$stock <- factor(splong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+splong$zygosity <- factor(splong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
 splong <- splong[order(splong$stock),]
 rownames(splong) <- 1:nrow(splong)
 
@@ -174,7 +174,7 @@ stats <- aggregate(microns_per_minute ~ stock + zygosity, splong, function(x)
 stats <- do.call(data.frame, stats)
 
 # Order rows by something meaningful (and re-index)
-stats$stock = factor(stats$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+stats$stock <- factor(stats$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
 stats <- stats[order(stats$stock),]
 rownames(stats) <- 1:nrow(stats)
 
@@ -305,13 +305,13 @@ for (stock in c("btd", "eve", "prd", "stg")) {
   hom <- splong[(splong$stock == stock & splong$zygosity == "homozygote"), ]$microns_per_minute
   
   # Heterozygotes vs homozygotes
-  contrast = "het vs hom"
-  test = wilcox.test(het, hom, paired = FALSE)
-  pvalue = test$p.value
-  statistic = test$statistic
-  delta = mean(het) - mean(hom)
+  contrast <- "het vs hom"
+  test <- wilcox.test(het, hom, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(het) - mean(hom)
   
-  test_row = c(
+  test_row <- c(
     contrast = contrast,
     stock = stock,
     value = "µm/min",
@@ -325,13 +325,13 @@ for (stock in c("btd", "eve", "prd", "stg")) {
   tests <- rbind(tests, as.data.frame(t(test_row)))
   
   # Wildtype vs heterozygotes
-  contrast = "wt vs het"
-  test = wilcox.test(wt, het, paired = FALSE)
-  pvalue = test$p.value
-  statistic = test$statistic
-  delta = mean(wt) - mean(het)
+  contrast <- "wt vs het"
+  test <- wilcox.test(wt, het, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(wt) - mean(het)
   
-  test_row = c(
+  test_row <- c(
     contrast = contrast,
     stock = stock,
     value = "µm/min",
@@ -345,13 +345,13 @@ for (stock in c("btd", "eve", "prd", "stg")) {
   tests <- rbind(tests, as.data.frame(t(test_row)))
   
   # Wildtype vs homozygotes
-  contrast = "wt vs hom"
-  test = wilcox.test(wt, hom, paired = FALSE)
-  pvalue = test$p.value
-  statistic = test$statistic
-  delta = mean(wt) - mean(hom)
+  contrast <- "wt vs hom"
+  test <- wilcox.test(wt, hom, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(wt) - mean(hom)
   
-  test_row = c(
+  test_row <- c(
     contrast = contrast,
     stock = stock,
     value = "µm/min",

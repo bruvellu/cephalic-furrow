@@ -29,7 +29,7 @@ These raw files need to be parsed, processed, and compiled in a single data fram
 ```{r import-measurements}
 
 # List all txt files in ROIs folder
-files = list.files(path = "1-rois", pattern="*.tsv", full.names = TRUE)
+files <- list.files(path = "1-rois", pattern="*.tsv", full.names = TRUE)
 
 # Function for pre-processing
 process <- function(tabfile) {
@@ -170,9 +170,9 @@ mdlong$id <- NULL
 mdlong <- na.omit(mdlong)
 
 # Transform data frame to order the stock for plotting
-mdlong$stock = factor(mdlong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
-mdlong$zygosity = factor(mdlong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
-mdlong$status = factor(mdlong$status, levels = c("tf_buck", "tf_deep", "md_start", "md_split"))
+mdlong$stock <- factor(mdlong$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+mdlong$zygosity <- factor(mdlong$zygosity, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
+mdlong$status <- factor(mdlong$status, levels = c("tf_buck", "tf_deep", "md_start", "md_split"))
 mdlong <- mdlong[order(mdlong$stock, mdlong$zygosity),]
 rownames(mdlong) <- 1:nrow(mdlong)
 
@@ -211,7 +211,7 @@ for (status in c("md_start", "md_split")) {
       time <- mdlong[mdlong$status == status & mdlong$stock %in% c("btd", "eve") & mdlong$zygosity == zygosity, "time"]
       gb_pct <- mdlong[mdlong$status == status & mdlong$stock %in% c("btd", "eve") & mdlong$zygosity == zygosity, "gb_pct"]
       
-      stats_row = c(
+      stats_row <- c(
         stock = "btd+eve",
         zygosity = zygosity,
         status = status,
@@ -468,18 +468,18 @@ for (stock in unique(mdlong$stock)) {
     for (value in c("gb_pct", "time")) {
       
       # Get values to be compared
-      wt = mdlong[(mdlong$status == status & mdlong$stock == "wt" & mdlong$zygosity == "wildtype"), value]
-      het = mdlong[(mdlong$status == status & mdlong$stock == stock & mdlong$zygosity == "heterozygote"), value]
-      hom = mdlong[(mdlong$status == status & mdlong$stock == stock & mdlong$zygosity == "homozygote"), value]
+      wt <- mdlong[(mdlong$status == status & mdlong$stock == "wt" & mdlong$zygosity == "wildtype"), value]
+      het <- mdlong[(mdlong$status == status & mdlong$stock == stock & mdlong$zygosity == "heterozygote"), value]
+      hom <- mdlong[(mdlong$status == status & mdlong$stock == stock & mdlong$zygosity == "homozygote"), value]
       
       # Heterozygotes vs homozygotes
-      contrast = "het vs hom"
-      test = wilcox.test(het, hom, paired = FALSE)
-      pvalue = test$p.value
-      statistic = test$statistic
-      delta = mean(het) - mean(hom)
+      contrast <- "het vs hom"
+      test <- wilcox.test(het, hom, paired = FALSE)
+      pvalue <- test$p.value
+      statistic <- test$statistic
+      delta <- mean(het) - mean(hom)
       
-      test_row = c(
+      test_row <- c(
         contrast = contrast,
         stock = stock,
         zygosity = "-",
@@ -495,13 +495,13 @@ for (stock in unique(mdlong$stock)) {
       tests <- rbind(tests, as.data.frame(t(test_row)))
       
       # Wildtype vs heterozygotes
-      contrast = "wt vs het"
-      test = wilcox.test(wt, het, paired = FALSE)
-      pvalue = test$p.value
-      statistic = test$statistic
-      delta = mean(wt) - mean(het)
+      contrast <- "wt vs het"
+      test <- wilcox.test(wt, het, paired = FALSE)
+      pvalue <- test$p.value
+      statistic <- test$statistic
+      delta <- mean(wt) - mean(het)
       
-      test_row = c(
+      test_row <- c(
         contrast = contrast,
         stock = stock,
         zygosity = "-",
@@ -517,13 +517,13 @@ for (stock in unique(mdlong$stock)) {
       tests <- rbind(tests, as.data.frame(t(test_row)))
       
       # Wildtype vs homozygotes
-      contrast = "wt vs hom"
-      test = wilcox.test(wt, hom, paired = FALSE)
-      pvalue = test$p.value
-      statistic = test$statistic
-      delta = mean(wt) - mean(hom)
+      contrast <- "wt vs hom"
+      test <- wilcox.test(wt, hom, paired = FALSE)
+      pvalue <- test$p.value
+      statistic <- test$statistic
+      delta <- mean(wt) - mean(hom)
       
-      test_row = c(
+      test_row <- c(
         contrast = contrast,
         stock = stock,
         zygosity = "-",
@@ -554,15 +554,15 @@ for (stock in unique(mdlong$stock)) {
       if (stock != "wt" & zygosity == "wildtype") { next }
       
       # Note: with low n and all values from one contrast higher or lower than the other, pvalues might be identical
-      buck = mdlong[(mdlong$status == "tf_buck" & mdlong$stock == stock & mdlong$zygosity == zygosity), value]
-      md = mdlong[(mdlong$status == "md_start" & mdlong$stock == stock & mdlong$zygosity == zygosity), value]
+      buck <- mdlong[(mdlong$status == "tf_buck" & mdlong$stock == stock & mdlong$zygosity == zygosity), value]
+      md <- mdlong[(mdlong$status == "md_start" & mdlong$stock == stock & mdlong$zygosity == zygosity), value]
       
-      test = wilcox.test(buck, md, paired = TRUE)
-      pvalue = test$p.value
-      statistic = test$statistic
-      delta = mean(buck) - mean(md)
+      test <- wilcox.test(buck, md, paired = TRUE)
+      pvalue <- test$p.value
+      statistic <- test$statistic
+      delta <- mean(buck) - mean(md)
       
-      test_row = c(
+      test_row <- c(
         contrast = "buck vs md",
         stock = stock,
         zygosity = zygosity,
@@ -587,18 +587,18 @@ for (zygosity in c("heterozygote", "homozygote")) {
   for (value in c("gb_pct", "time")) {
     
     # Note: prd excluded because CF formation is not prevented
-    buck = mdlong[(mdlong$status == "tf_buck" & mdlong$stock != "prd" & mdlong$zygosity == zygosity), value]
-    md = mdlong[(mdlong$status == "md_start" & mdlong$stock != "prd" & mdlong$zygosity == zygosity), value]
-    wt = mdlong[(mdlong$status == "md_start" & mdlong$stock == "wt" & mdlong$zygosity == "wildtype"), value]
+    buck <- mdlong[(mdlong$status == "tf_buck" & mdlong$stock != "prd" & mdlong$zygosity == zygosity), value]
+    md <- mdlong[(mdlong$status == "md_start" & mdlong$stock != "prd" & mdlong$zygosity == zygosity), value]
+    wt <- mdlong[(mdlong$status == "md_start" & mdlong$stock == "wt" & mdlong$zygosity == "wildtype"), value]
     
     # buck vs md
-    contrast = "buck vs md"
-    test = wilcox.test(buck, md, paired = TRUE)
-    pvalue = test$p.value
-    statistic = test$statistic
-    delta = mean(buck) - mean(md)
+    contrast <- "buck vs md"
+    test <- wilcox.test(buck, md, paired = TRUE)
+    pvalue <- test$p.value
+    statistic <- test$statistic
+    delta <- mean(buck) - mean(md)
     
-    test_row = c(
+    test_row <- c(
       contrast = contrast,
       stock = "btd+eve",
       zygosity = zygosity,
@@ -613,13 +613,13 @@ for (zygosity in c("heterozygote", "homozygote")) {
     tests <- rbind(tests, as.data.frame(t(test_row)))
     
     # wt vs md het or hom (combined)
-    contrast = sprintf("wt vs %s", substr(zygosity, 1, 3))
-    test = wilcox.test(wt, md, paired = FALSE)
-    pvalue = test$p.value
-    statistic = test$statistic
-    delta = mean(wt) - mean(md)
+    contrast <- sprintf("wt vs %s", substr(zygosity, 1, 3))
+    test <- wilcox.test(wt, md, paired = FALSE)
+    pvalue <- test$p.value
+    statistic <- test$statistic
+    delta <- mean(wt) - mean(md)
     
-    test_row = c(
+    test_row <- c(
       contrast = contrast,
       stock = "btd+eve",
       zygosity = zygosity,
@@ -636,10 +636,10 @@ for (zygosity in c("heterozygote", "homozygote")) {
 }
 
 # Define factors for ordering
-tests$contrast = factor(tests$contrast, levels = c("het vs hom", "wt vs het", "wt vs hom", "buck vs md"))
-tests$stock = factor(tests$stock, levels = c("wt", "btd", "eve", "prd", "btd+eve"))
-tests$status = factor(tests$status, levels = c("md_start", "md_split", "-"))
-tests$value = factor(tests$value, levels = c("time", "gb_pct"))
+tests$contrast <- factor(tests$contrast, levels = c("het vs hom", "wt vs het", "wt vs hom", "buck vs md"))
+tests$stock <- factor(tests$stock, levels = c("wt", "btd", "eve", "prd", "btd+eve"))
+tests$status <- factor(tests$status, levels = c("md_start", "md_split", "-"))
+tests$value <- factor(tests$value, levels = c("time", "gb_pct"))
 tests <- tests[order(tests$contrast, tests$stock, tests$status, tests$value),]
 
 tests
