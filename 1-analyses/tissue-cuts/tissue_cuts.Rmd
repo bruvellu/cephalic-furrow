@@ -1,0 +1,274 @@
+---
+title: "Tissue dynamics after laser cuts"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: September 27, 2024
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/tissue-cuts")
+library(ggplot2)
+library(ggbeeswarm)
+```
+
+## Import measurements
+
+To analyze the tissue dynamics after laser cuts, we tracked a pair of vertices of non-ablated cells sitting at the edges of the cut every 50 frames. Then, we measured the euclidean distance between the vertices over time.
+
+Here is a sample data file from TrackMate:
+
+```         
+LABEL	ID	TRACK_ID	QUALITY	POSITION_X	POSITION_Y	POSITION_Z	POSITION_T	FRAME	RADIUS	VISIBILITY
+Label	Spot ID	Track ID	Quality	X	Y	Z	T	Frame	Radius	Visibility
+Label	Spot ID	Track ID	Quality	X	Y	Z	T	Frame	R	Visibility
+			(quality)	(micron)	(micron)	(micron)	(sec)		(micron)	
+ID2853067	2853067	3	-1	51.7865123753519	72.5230220892749	0	0	0	5	1
+ID2853108	2853108	1	-1	63.1769895421547	62.1547672323134	0	0	0	5	1
+ID2853069	2853069	3	-1	52.3706394095469	74.1293714333112	0	25.4814602	49	5	1
+ID2853110	2853110	1	-1	64.783338886191	63.6150848178009	0	25.4814602	49	5	1
+```
+
+Import the data and generate a tracking data frame.
+
+```{r import-measurements}
+
+# List all txt files in ROIs folder
+files <- list.files(path = "1-tracking", pattern="*.csv", full.names = TRUE)
+
+# Define empty data frame
+tracking <- data.frame()
+
+# Loop over files binding rows to data frame
+for (tabfile in files) {
+  
+  # Read CSV file
+  df <- read.csv(tabfile)
+  
+  # Skip first three rows (labels)
+  df <- df[4:nrow(df),]
+  
+  # Define dataset column
+  df$DATASET <- strsplit(strsplit(tabfile, "/")[[1]][2], "_")[[1]][1]
+  
+  # Add to data frame
+  tracking <- rbind(tracking, df)
+}
+
+# Properly convert column types before any calculations
+tracking <- as.data.frame(lapply(tracking, type.convert, as.is = FALSE))
+
+# Define condition column
+tracking$DATASET <- as.character(tracking$DATASET)
+tracking$CONDITION <- ifelse(startsWith(tracking$DATASET, "c"), "control", "ablated")
+
+# Define sample column
+tracking$SAMPLE <- NA
+
+# Define standardized sample names
+for (condition in unique(tracking$CONDITION)) {
+  
+  # Get subset with condition and sort properly
+  datasets <- unique(tracking[tracking$CONDITION == condition, ]$DATASET)
+  datasets <- datasets[order(as.numeric(gsub("[^0-9]", "", datasets)))]
+  
+  # Initialize counter
+  counter = 1
+  
+  # Loop over datasets
+  for (dataset in datasets) {
+    
+    # Define sample name
+    sample <- sprintf("%s%s", condition, counter)
+    
+    # Set sample name
+    tracking[tracking$DATASET == dataset, ]$SAMPLE <- sample
+    
+    # Increment counter
+    counter <- counter + 1
+    
+  }
+}
+
+# Set factors for plotting
+tracking$TRACK_ID <- factor(tracking$TRACK_ID, levels = c("0", "1"))
+tracking$DATASET <- factor(tracking$DATASET, levels = c("cONTROL1", "cONTROL3", "cONTROL4", "Lateral2", "Lateral4", "Lateral10S"))
+tracking$SAMPLE <- factor(tracking$SAMPLE, levels = c("control1", "control2", "control3", "ablated1", "ablated2", "ablated3"))
+tracking$CONDITION <- factor(tracking$CONDITION, levels = c("control", "ablated"))
+tracking <- tracking[order(tracking$DATASET, tracking$TRACK_ID, tracking$POSITION_T),]
+rownames(tracking) <- 1:nrow(tracking)
+
+# Save data frame to file
+write.csv(tracking, file = "tracking.csv", row.names = FALSE)
+
+```
+
+## Calculate absolute and relative distances
+
+Using the XY coordinates, calculate the euclidean distance between the two points. And generate a new data frame with the distances for plotting.
+
+```{r calculate-distances}
+
+# Calculate the euclidean distance between two points
+get_euclidean <- function(ax, ay, bx, by) {
+  sqrt((ax - bx)^2 + (ay - by)^2)
+}
+
+# Define distances data frame
+distances <- data.frame()
+
+# Build distances by dataset
+for (dataset in unique(tracking$DATASET)) {
+  
+  # Subset dataset
+  df <- tracking[tracking$DATASET == dataset, ]
+  
+  # Define condition and sample
+  condition <- as.character(unique(df$CONDITION))
+  sample <- as.character(unique(df$SAMPLE))
+  
+  # Iterate per frame
+  for (frame in unique(df$FRAME)) {
+    
+    # Get points 1 and 2
+    p1 <- df[df$FRAME == frame & df$TRACK_ID == "0",]
+    p2 <- df[df$FRAME == frame & df$TRACK_ID == "1",]
+    
+    # Calculate distance between 1 and 2
+    dist_p1p2 <- get_euclidean(p1$POSITION_X, p1$POSITION_Y, p2$POSITION_X, p2$POSITION_Y)
+    
+    # Define initial distance at frame 0
+    if (frame == 0) {
+      init_p1p2 <- dist_p1p2
+    }
+    
+    # Calculate percentage between 1 and 2
+    pct_p1p2 <- (dist_p1p2 / init_p1p2) * 100
+    
+    # Define new data frame row
+    row <- c(
+      dataset = dataset,
+      sample = sample,
+      condition = condition,
+      frame = frame,
+      time_s = p1$POSITION_T,
+      time_min = p1$POSITION_T / 60,
+      distance = dist_p1p2,
+      percentage = pct_p1p2
+    )
+    
+    # Bind to data frame
+    distances <- rbind(distances, as.data.frame(t(row)))
+  }
+}
+
+# Properly convert column types before any calculations
+distances <- as.data.frame(lapply(distances, type.convert, as.is = FALSE))
+
+# Set factors for plotting
+distances$dataset <- factor(distances$dataset, levels = c("cONTROL1", "cONTROL3", "cONTROL4", "Lateral2", "Lateral4", "Lateral10S"))
+distances$sample <- factor(distances$sample, levels = c("control1", "control2", "control3", "ablated1", "ablated2", "ablated3"))
+distances$condition <- factor(distances$condition, levels = c("control", "ablated"))
+distances <- distances[order(distances$dataset, distances$frame),]
+rownames(distances) <- 1:nrow(distances)
+
+# Save data frame to file
+write.csv(distances, file = "distances.csv", row.names = FALSE)
+
+```
+
+
+## Exploratory plots
+
+### Distance between vertices over time by dataset with facets
+
+```{r distance-vs-time-by-dataset-facets}
+
+# Ablations:
+# Lateral2 frame 8
+# Lateral4 frame 57
+# Lateral10S frame 9
+
+ggplot(distances, aes(x = time_min, y = distance, group = sample, color = sample)) +
+  geom_rect(data = data.frame(xmin = 8*0.52/60, xmax = 57*0.52/60, ymin = -1, ymax = 22, condition = factor("ablated", levels = c("control", "ablated"))), aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax), alpha = 0.5, fill = "#cccccc", inherit.aes = FALSE) +
+  geom_line(linewidth = 1, show.legend = FALSE) +
+  geom_point(alpha = 0.8, size = 3, show.legend = TRUE) +
+  facet_grid(cols = vars(condition), scales = "free_x") +
+  labs(x = "time (min)", y = "distance (µm)") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        title = element_text(size = 25),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+
+ggsave("2-plots/distance_vs_time_by_dataset_facets.png", width = 14, height = 7)
+ggsave("2-plots/distance_vs_time_by_dataset_facets.svg", width = 14, height = 7)
+
+```
+
+### Relative distance between vertices over time by dataset with facets
+
+```{r delta-vs-time-by-dataset-facets}
+
+ggplot(distances, aes(x = time_min, y = percentage, group = sample, color = sample)) +
+  geom_rect(data = data.frame(xmin = 8*0.52/60, xmax = 57*0.52/60, ymin = -1, ymax = 125, condition = factor("ablated", levels = c("control", "ablated"))), aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax), alpha = 0.5, fill = "#cccccc", inherit.aes = FALSE) +
+  geom_line(linewidth = 1, show.legend = FALSE) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE) +
+  facet_grid(cols = vars(condition), scales = "free_x") +
+  labs(x = "time (min)", y = "relative distance (%)") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        title = element_text(size = 25),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+
+ggsave("2-plots/delta_vs_time_by_dataset_facets.png", width = 10, height = 6)
+ggsave("2-plots/delta_vs_time_by_dataset_facets.svg", width = 10, height = 6)
+```
+### Relative distance between vertices over time by condition with facets
+
+```{r delta-vs-time-by-condition-smooth-facets}
+ggplot(distances, aes(x = time_min, y = percentage, group = sample, color = condition, fill = condition)) +
+  geom_line(alpha = 0.2, linewidth = 0.5, show.legend = FALSE) +
+  geom_point(alpha = 0.2, size = 3, show.legend = FALSE) +
+  geom_smooth(aes(group = condition), linewidth = 2, alpha = 0.3, show.legend = FALSE) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_y_continuous(limits = c(0,130)) +
+  facet_grid(cols = vars(condition), scales = "free_x") +
+  labs(x = "time (min)", y = "relative distance (%)") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 45),
+        title = element_text(size = 25),
+        legend.text = element_text(size = 25),
+        axis.text = element_text(size = 25),
+        strip.background = element_blank(),
+        strip.text = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+
+ggsave("2-plots/delta_vs_time_by_condition_smooth_facets.png", width = 8, height = 4)
+ggsave("2-plots/delta_vs_time_by_condition_smooth_facets.svg", width = 8, height = 4)
+```
+
+### Relative distance between vertices over time by condition
+
+```{r delta-vs-time-by-condition-smooth}
+ggplot(distances, aes(x = time_min, y = percentage, group = sample, color = condition, fill = condition)) +
+  geom_line(alpha = 0.2, linewidth = 0.5, show.legend = FALSE) +
+  geom_point(alpha = 0.2, size = 2, show.legend = TRUE) +
+  geom_smooth(aes(group = condition), linewidth = 1.5, alpha = 0.2, show.legend = FALSE) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_y_continuous(limits = c(0,130)) +
+  labs(x = "time (min)", y = "relative distance (%)") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        title = element_text(size = 25),
+        legend.text = element_text(size = 25),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+
+ggsave("2-plots/delta_vs_time_by_condition_smooth.png", width = 10, height = 6)
+ggsave("2-plots/delta_vs_time_by_condition_smooth.svg", width = 10, height = 6)
+```
+
