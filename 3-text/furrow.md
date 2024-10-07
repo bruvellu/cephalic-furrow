@@ -203,8 +203,7 @@ While in control embryos the distance between vertices remains more or less cons
 This suggests that the tissue might be “collapsing on itself” due to adjacent compressive stresses, and is congruent with the hypothesis that the trunk--germ interface is under compression from the extending germ band.
 Taken together, these analyses suggest the expansion of mitotic domains, and the extension of the germ band are potential sources of mechanical stress to the epithelial monolayer, and that they may be involved in the formation of ectopic folds by tissue buckling.
 
-<!--Germ band extension correlates with ectopic buckling at the trunk--germ-->
-
+<!--TODO: Laser cut experiments. Consider adding them here starting with: “MD and GB generate mechanical forces and tissue flows that converge to the head--trunk boundary. If that’s the case, we expect that these tissues are under compression, and thus, would not show any recoil if cut using laser. To test that...”. The reasoning would almost the same as the one from the next paragraph: we observe that when MD and GB generate opposing flows at the same time the epithelial undergoes a buckling transition forming ectopic folds, we observe that the first epithelial cells to buckle are usually non-dividing between MDs and between MD/GB that become compressed immediately before the formation of the EF, these observations in combination with our models suggested that compressive stresses are driving a buckling transition in CF mutants, which in addition in a mutant situation there’s an excess of tissue in the surface due to the absence of the CF and the threshold for a buckling transition is even lower and these compressive forces are even more effective, if that’s the case, if these epithelial cells are being compressed and are under pressure we expect that a cut orthogonal to the predicted forces would show no recoil and possibly the tissue would collapse in itself. To test this hypothesis in vivo we performed painstaking laser cuts in cephalic furrow mutants and saw just that, if non-dividing cells between MDs or between MD/GB are cut we see no recoil, this supports our view that compressive forces are the essential driving forces underlying EF formation in cephalic furrow mutants and additionally it reveals that the HT is under compressive stresses from at least these two opposing morphogenetic events at gastrulation the MD and GB-->
 
 <!--TODO:AB: Are there force measurements?-->
 <!--TODO: Include cell shape analyses with density et al. around here-->
@@ -269,27 +268,33 @@ Mitotic expansions compress the neighboring non-dividing cells, but no buckling 
 Cauterized mutant embryos also show less epithelial deformations compared to non-cauterized mutant embryos ({@fig:experiments}d,g).
 These experiments reveal that *in vivo*, the local expansions of mitotic domains are insufficient to cause epithelial buckling at the head--trunk interface, and that the germ band extension is required.
 
-<!--TODO: Laser cut experiments. Consider adding them here starting with: “MD and GB generate mechanical forces and tissue flows that converge to the head--trunk boundary. If that’s the case, we expect that these tissues are under compression, and thus, would not show any recoil if cut using laser. To test that...”. The reasoning would almost the same as the one from the next paragraph: we observe that when MD and GB generate opposing flows at the same time the epithelial undergoes a buckling transition forming ectopic folds, we observe that the first epithelial cells to buckle are usually non-dividing between MDs and between MD/GB that become compressed immediately before the formation of the EF, these observations in combination with our models suggested that compressive stresses are driving a buckling transition in CF mutants, which in addition in a mutant situation there’s an excess of tissue in the surface due to the absence of the CF and the threshold for a buckling transition is even lower and these compressive forces are even more effective, if that’s the case, if these epithelial cells are being compressed and are under pressure we expect that a cut orthogonal to the predicted forces would show no recoil and possibly the tissue would collapse in itself. To test this hypothesis in vivo we performed painstaking laser cuts in cephalic furrow mutants and saw just that, if non-dividing cells between MDs or between MD/GB are cut we see no recoil, this supports our view that compressive forces are the essential driving forces underlying EF formation in cephalic furrow mutants and additionally it reveals that the HT is under compressive stresses from at least these two opposing morphogenetic events at gastrulation the MD and GB-->
+These *in vivo* experiments show that, in cephalic furrow mutants, neither mitotic domains nor the germ band extension can promote ectopic folding by themselves.
+Our simulations recapitulate these behaviors around the bending rigidity of $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$, when the number of folds falls below one in the mitotic-domains-only and germ-band-only conditions ({@fig:model-features}b,c).
+This indicates that the bending rigidity of the epithelium *in vivo* may be around the same order of magnitude.
+At this bending rigidity regime, when both mitotic domains and germ band are present *in silico*, there is an increase in the tissue compression, which maximizes the ectopic fold count and speed ({@fig:model-features}b,c).
+Based on this theoretical link between increased compression and buckling, we thus speculate that the mechanical instability we observe in cephalic furrow mutants is due to an increase in the compressive stresses at the head–trunk boundary generated by the combined formation of mitotic domains and germ band during early gastrulation.
 
-These *in vivo* experiments show that neither the mitotic domains nor the germ band can promote ectopic folding by themselves.
-In our model, these situations occur around a bending rigidity of $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.
-At this bending rigidity the number of folds falls below 1 in germ band only and mitotic domains only conditions ({@fig:model-features}b,c).
-This suggests that the bending rigidity regime of the epithelium *in vivo* is around the same order of magnitude.
+<!--These *in vivo* experiments show that neither the mitotic domains nor the germ band can promote ectopic folding by themselves.-->
+<!--In our model, these situations occur around a bending rigidity of $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.-->
+<!--At this bending rigidity the number of folds falls below 1 in germ band only and mitotic domains only conditions ({@fig:model-features}b,c).-->
+<!--This suggests that the bending rigidity regime of the epithelium *in vivo* is around the same order of magnitude.-->
+
+<!--The existence of a regime in the model parameter space that matches this behavior further validates our mechanical picture of the process and allows us to infer an effective bending rigidity of the blastoderm.-->
+
+<!--Overall, our *in vivo* experiments show that the epithelial buckling at the head--trunk interface in cephalic furrow mutants only occurs when both the mitotic domain expansion and the germ band extension happen concomitantly.-->
+<!--This suggests that the combined activity of mitotic domains and germ band extension increases the compressive stresses at the head--trunk boundary during early gastrulation.-->
+<!--In conditions where the cephalic furrow formation is perturbed, this leads to more frequent and larger tissue buckling events.-->
+<!--Therefore, we hypothesize that the temporary storage of invaginated cells folded in the cephalic furrow may contribute to absorbing these compressive stresses generated by mitotic domains and germ band extension in wildtype conditions.-->
 
 <!--TODO: Add sentence about correlation between model and real measurements. Here or discussion?
 
 For the characterization of the CF, I chose the bending rigidity of the blastoderm as K_{b}^{\text{*}} = 10^{-4}. I analyzed how this value compares with the bending rigidity measured for previous studies. In Trushko 2020 and Fouchard 2020 , they estimate K_b \approx 5 \times 10^{-13} Nm and K_s \approx 0.2 Nm^{-1} for MDCK monolayers. By this measure the value of K_{b}^{\text{*}} for them would be 3.8\times 10^{-5}. This is lower than my estimate of the bending rigidity of the blastoderm. One reason for this mismatch could be different tissue thicknesses between the their study and our study. The thickness of the MDCK monolayer mentioned in Fouchard 2020 is about 18 \mu m while the typical thickness of the blastoderm as measured by my collaborators is about 40 \mu m. It is known that for elastic sheets K_b/K_s \propto h^2, where h is the thickness of the sheet . Thus, the height adjusted value of K^{\text{*}}_{b} as estimated by Fouchard 2020 should be 1.8 \times 10^{-4}. This is higher than our estimate but in the same order of magnitude.  Still, it must be noted that my model, like any other model, makes several simplifying assumptions.
 -->
 
-Overall, our *in silico* modeling and *in vivo* experiments suggest that the epithelial buckling at the head--trunk interface in cephalic furrow mutants only occurs when both the mitotic domain expansion and the germ band extension happen concomitantly.
-This suggests that the combined activity of mitotic domains and germ band extension increases the compressive stresses at the head--trunk boundary during early gastrulation.
-In conditions where the cephalic furrow formation is perturbed, this leads to more frequent and larger tissue buckling events.
-Therefore, we hypothesize that the temporary storage of invaginated cells folded in the cephalic furrow may contribute to absorbing these compressive stresses generated by mitotic domains and germ band extension in wildtype conditions.
 
 ### Cephalic furrow formation prevents mechanical instability
 
-<!--Early patterned invagination prevents mechanical instability-->
-
+<!--The increased mechanical instability in cephalic furrow mutants led us to hypothesize that the temporary storage of invaginated cells may contribute to absorbing the compressive stresses generated by mitotic domains and germ band in wildtype conditions.-->
 To explore the role of the cephalic furrow as a mechanical buffer, we analyzed *in vivo* and computationally how it interacts with mitotic domains and with the germ band, and how it influences the formation of ectopic folds.
 
 <!--Cephalic furrow invaginates autonomously pulling adjacent tissues-->
