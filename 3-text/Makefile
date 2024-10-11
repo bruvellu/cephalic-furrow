@@ -1,11 +1,4 @@
 # Makefile for cephalic furrow manuscript
-#
-# TODO:
-# 	- Replace symlink by copying (update mode)
-# 	- Copy figures to source folder first
-# 	- Add branch name to the file output name
-# 	- Rename rules for better names
-#
 
 # Basename for the main file
 FILE=furrow
@@ -16,7 +9,7 @@ RESOURCES=resources
 # Basename for template files
 TEMPLATE=${RESOURCES}/template
 
-# Root directory with figures
+# Root directory with analyses
 ANASRC=`realpath ../1-analyses`
 
 # Root directory with figures
@@ -28,11 +21,8 @@ FIGOUT=`realpath figures`
 # Output directory for source figures
 FIGHIRES=${FIGOUT}/highres
 
-# Output directory for text
+# Output directory for text versions
 TXTOUT=versions
-
-# Directory with shared cloud content
-CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
 
 # Date timestamp
 DATE=$(shell date +'%Y-%m-%d')
@@ -65,14 +55,14 @@ clean:
 
 # Copy figure files to source directory
 figs:
-	# Main
+	# Main figures
 	cp -vu ${FIGSRC}/ectopic-folding/figure.png ${FIGHIRES}/Fig1.png
 	cp -vu ${FIGSRC}/mitotic-domains/figure.png ${FIGHIRES}/Fig2.png
 	cp -vu ${FIGSRC}/fold-model/figure.png ${FIGHIRES}/Fig3.png
 	cp -vu ${FIGSRC}/live-experiments/figure.png ${FIGHIRES}/Fig4.png
 	cp -vu ${FIGSRC}/genetic-patterning/figure.png ${FIGHIRES}/Fig5.png
 	cp -vu ${FIGSRC}/summary/figure.png ${FIGHIRES}/Fig6.png
-	# Supplementary
+	# Extended data figures
 	cp -vu ${FIGSRC}/initiator-behavior/figure.png ${FIGHIRES}/FigS1.png
 	cp -vu ${FIGSRC}/ectopic-features/figure.png ${FIGHIRES}/FigS2.png
 	cp -vu ${FIGSRC}/apical-area/figure.png ${FIGHIRES}/FigS3.png
@@ -144,11 +134,3 @@ refs:
 	# Sync bib file from Paperpile
 	wget --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
 
-share:
-	# Updates shared manuscript folder
-	rsync -ahu --progress --exclude 'Vid*.jpg' --exclude 'source' --copy-links --delete ${FIGOUT}/ ${CLOUD}/figures/
-	cp ${TXTOUT}/${FILEOUT}.docx ${CLOUD}/versions/
-	cp ${TXTOUT}/${FILEOUT}.pdf ${CLOUD}/versions/
-	cp ${TXTOUT}/${FILEOUT}.docx ${CLOUD}/latest_furrow.docx
-	cp ${TXTOUT}/${FILEOUT}.pdf ${CLOUD}/latest_furrow.pdf
-	
