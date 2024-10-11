@@ -45,7 +45,7 @@ PDFVARS=-V fontfamily:libertine -V linestretch:1 -V geometry:bindingoffset=2mm -
 HTMLVARS=--standalone --mathml
 
 # Main rule
-all: figs vids refs text
+all: clean figs vids refs text
 
 # Cleanup figure directory before compiling
 clean:
@@ -57,24 +57,22 @@ clean:
 figs:
 	# Main figures
 	ln -sf ${FIGSRC}/ectopic-folding/figure.png ${FIGHIRES}/Fig1.png
-	ln -sf ${FIGSRC}/mitotic-domains/figure.png ${FIGHIRES}/Fig2.png
+	ln -sf ${FIGSRC}/mitotic-strain/figure.png ${FIGHIRES}/Fig2.png
 	ln -sf ${FIGSRC}/fold-model/figure.png ${FIGHIRES}/Fig3.png
 	ln -sf ${FIGSRC}/live-experiments/figure.png ${FIGHIRES}/Fig4.png
 	ln -sf ${FIGSRC}/genetic-patterning/figure.png ${FIGHIRES}/Fig5.png
 	ln -sf ${FIGSRC}/summary/figure.png ${FIGHIRES}/Fig6.png
 	# Extended data figures
-	ln -sf ${FIGSRC}/initiator-behavior/figure.png ${FIGHIRES}/FigS1.png
-	ln -sf ${FIGSRC}/ectopic-features/figure.png ${FIGHIRES}/FigS2.png
-	ln -sf ${FIGSRC}/apical-area/figure.png ${FIGHIRES}/FigS3.png
-	ln -sf ${FIGSRC}/strain-rate/figure.png ${FIGHIRES}/FigS4.png
-	ln -sf ${FIGSRC}/embryo-proportions/figure.png ${FIGHIRES}/FigS5.png
-	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIRES}/FigS6.png
-	ln -sf ${FIGSRC}/stg-mutants/figure.png ${FIGHIRES}/FigS7.png
-	ln -sf ${FIGSRC}/cf-sweep/figure.png ${FIGHIRES}/FigS8.png
-	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIRES}/FigS9.png
-	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIRES}/FigS10.png
-	#ln -sf ${FIGSRC}/slp-analyses/figure.png ${FIGHIRES}/FigS11.png
-	# Make JPGs for smaller size for visualization/sharing
+	ln -sf ${FIGSRC}/initiator-behavior/figure.png ${FIGHIRES}/EDFig1.png
+	ln -sf ${FIGSRC}/ectopic-features/figure.png ${FIGHIRES}/EDFig2.png
+	ln -sf ${FIGSRC}/apical-strain/figure.png ${FIGHIRES}/EDFig3.png
+	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIRES}/EDFig4.png
+	ln -sf ${FIGSRC}/live-details/figure.png ${FIGHIRES}/EDFig5.png
+	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIRES}/EDFig6.png
+	# Supplementary information
+	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIRES}/SIFig1.png
+	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIRES}/SIFig2.png
+	# Make JPGs smaller for compilation and sharing
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIRES}/*.png
 
 # Link video files to figure directory
@@ -84,7 +82,7 @@ vids:
 	ln -sf ${FIGSRC}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.avi ${FIGHIRES}/Vid2.avi
 	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.avi ${FIGHIRES}/Vid3.avi
 	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.avi ${FIGHIRES}/Vid4.avi
-	ln -sf ${FIGSRC}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGHIRES}/Vid5.avi
+	ln -sf ${FIGSRC}/mitotic-strain/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGHIRES}/Vid5.avi
 	ln -sf ${ANASRC}/strain-rate/1-movies/Strain_btd_E10_E14_label_loop.avi ${FIGHIRES}/Vid6.avi
 	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGHIRES}/Vid7.avi
 	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGHIRES}/Vid8.avi
@@ -102,7 +100,7 @@ vids:
 	ln -sf ${FIGSRC}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.m4v ${FIGOUT}/Vid2.m4v
 	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.m4v ${FIGOUT}/Vid3.m4v
 	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.m4v ${FIGOUT}/Vid4.m4v
-	ln -sf ${FIGSRC}/mitotic-domains/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.m4v ${FIGOUT}/Vid5.m4v
+	ln -sf ${FIGSRC}/mitotic-strain/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.m4v ${FIGOUT}/Vid5.m4v
 	ln -sf ${FIGSRC}/strain-rate/videos/Strain_btd_E10_E14_label_loop.m4v ${FIGOUT}/Vid6.m4v
 	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.m4v ${FIGOUT}/Vid7.m4v
 	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.m4v ${FIGOUT}/Vid8.m4v
