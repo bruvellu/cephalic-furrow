@@ -277,7 +277,9 @@ This specific value establishes an important bridge between our *in vivo* and *i
 
 To compare our reference bending rigidity with available direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km].
 Given that in elastic sheets the bending and stretching rigidity ratio is proportional to the square of the height ($K_{b}/K_{s} \propto h^2$) [@Efrati2009-ve], we adjusted the calculation to the estimated thickness of the MDCK monolayer (~18µm) [@Fouchard2020-km].
-The value that we obtained, $K_{b}^{\text{*}} \approx 1.8 \times 10^{-4}$, is higher than our reference bending rigidity but within the same order of magnitude, indicating that this parameter space in our model is consistent with existing direct measurements of bending rigidity.
+The value we obtained in this way for the effective $K_{b}^{\text{*}}$ of a height-adjusted MDCK monolayer, $\approx 1.8 \times 10^{-4}$, is within a factor of 2 of our own reference bending rigidity, indicating that the relevant region of parameter space we identified in our model is consistent with existing direct measurements of bending rigidity in other tissues.
+
+<!--and is therefore likely to be physiologically relevant-->
 
 <!--TODO: More detailed steps of comparison of bending rigidities-->
 <!--To compare our reference bending rigidity with available direct measurements, we calculated $K_{b}^{\text{*}}$ for bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km].-->
