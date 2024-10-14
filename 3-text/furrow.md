@@ -341,10 +341,10 @@ Ectopic folds only form in the posterior region near the germ band tip, a positi
 
 <!--TODO: Add figure references and update previous ones-->
 
-Finally, we tested how the positioning of the cephalic furrow along the anteroposterior axis affects the ability to prevent ectopic folding.
-Ectopic folding in simulations of without germ band extension, occurs mainly in the region of mitotic domains, and only begins to be buffered when the cephalic furrow is below 50% position.
-Correspondingly, when the germ band is extended, ectopic folding at the posterior end is only buffered when the position is above 60%.
-This indicates that a region between 40-60% egg length minimizes ectopic folding at the different phases of germ band extension.
+Finally, we tested how the position of the cephalic furrow along the anteroposterior axis impacts its ability to prevent ectopic folding.
+The formation of a cephalic furrow at the posterior end (~30% of the egg length) does not prevent ectopic folding at the anterior end ({@fig:fold-model}h).
+Conversely, when the cephalic furrow is located more anteriorly (~70% of the egg length), the ectopic folding at the posterior end is not buffered when the germ band is extended ({@fig:fold-model}h).
+This indicates that a region between 40-60% of the egg length is the optimal region for minimizing ectopic folding at the different phases of germ band extension.
 
 <!--TODO: Conclude that relative timing between CF, MD, GB and the position of CF is important for the function of the CF and its effectiveness in its mechanical role.-->
 
