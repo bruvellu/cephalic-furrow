@@ -353,6 +353,15 @@ Taken together, our physical model provides a theoretical basis that a fold like
 
 ## Genetic innovation at the head--trunk boundary
 
+<!--
+- Function depends on timing and position that depends on patterning
+- Is the patterning conserved in species with or without cephalic furrow?
+- We identified slp as a cephalic furrow gene (supp, screen, mutants, etc)
+- Comparative expression across species (include prd?)
+-->
+
+<!--TODO: Move slp screen to supplementary note or methods-->
+
 The function of the cephalic furrow in preventing mechanical instabilities depends on the correct positioning and timing of the invagination; it must occur at the head--trunk boundary and the initiation of the process must begin before other morphogenetic movements take place.
 In *Drosophila*, the infolding is mediated by the overlapping expression domains of *btd* and *eve* at the head--trunk boundary [@Vincent1997-fa].
 However, it remains unclear if this genetic patterning of *Drosophila* is conserved in other flies with or without the cephalic furrow.
@@ -1127,14 +1136,13 @@ Download file (42.1 MB): [https://zenodo.org/record/8424742/files/VidS5.m4v?down
 
 <!--TODO: Fix the time to show countdown to gastrulation-->
 
-\newpage
+<!--TODO: Add slp-mutant video from 1-analyses/slp-mutants/3-snaps/-->
 
+\newpage
 
 # Supplementary information
 
 ## Supplementary Note 1
-
-<!--TODO: Move to supplementary methods-->
 
 ![Image processing pipeline for the tortuosity analysis in cauterized mutants.
 **a**, We acquired a single slice in profile view of the head--trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos.
@@ -1145,8 +1153,6 @@ Download file (42.1 MB): [https://zenodo.org/record/8424742/files/VidS5.m4v?down
 \newpage
 
 ## Supplementary Note 2
-
-<!--TODO: Move to supplementary methods-->
 
 ![Image processing pipeline for the ablation analysis.
 **a**, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increase over time.
@@ -1169,5 +1175,5 @@ Table: Summary of live-imaging screening results for cephalic furrow genes. {#tb
 | *giant*                   | *gt*           | *gt*^X11^         | perturbed formation                        |
 | *knirps*, *knirps-like*   | *kni*, *knrl*  | Df(3L)BSC448      | ventral portion displaced anteriorly       |
 
-
 \newpage
+

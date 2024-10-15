@@ -137,6 +137,13 @@
 <p>Taken together, our physical model provides a theoretical basis that a fold like the cephalic furrow, when forming before other morphogenetic events and around the central portion of the anteroposterior axis, can effectively absorb compressive stresses and prevent mechanical instabilities in the embryonic tissues during gastrulation.</p>
 <!--TODO: Timing effectiveness is not exemplified in the last panel-->
 <h2 id="genetic-innovation-at-the-headtrunk-boundary">Genetic innovation at the head–trunk boundary</h2>
+<!--
+- Function depends on timing and position that depends on patterning
+- Is the patterning conserved in species with or without cephalic furrow?
+- We identified slp as a cephalic furrow gene (supp, screen, mutants, etc)
+- Comparative expression across species (include prd?)
+-->
+<!--TODO: Move slp screen to supplementary note or methods-->
 <p>The function of the cephalic furrow in preventing mechanical instabilities depends on the correct positioning and timing of the invagination; it must occur at the head–trunk boundary and the initiation of the process must begin before other morphogenetic movements take place. In <em>Drosophila</em>, the infolding is mediated by the overlapping expression domains of <em>btd</em> and <em>eve</em> at the head–trunk boundary.<span class="citation" data-cites="Vincent1997-fa"><sup><a href="#ref-Vincent1997-fa" role="doc-biblioref">7</a></sup></span> However, it remains unclear if this genetic patterning of <em>Drosophila</em> is conserved in other flies with or without the cephalic furrow. To uncover the gene expression changes associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified cephalic furrow genes between <em>Drosophila</em> and the dipteran fly <em>Clogmia albipunctata</em>, a species from the basally-branching Psychodidae family which has no cephalic furrow.<span class="citation" data-cites="Jimenez-Guri2014-zs Dey2023-mo"><sup><a href="#ref-Dey2023-mo" role="doc-biblioref">13</a>,<a href="#ref-Jimenez-Guri2014-zs" role="doc-biblioref">19</a></sup></span></p>
 <h3 id="ancestral-slpeve-interaction-defines-headtrunk-position">Ancestral <em>slp</em>–<em>eve</em> interaction defines head–trunk position</h3>
 <p>To uncover other genes directly involved in cephalic furrow formation in addition to <em>btd</em>, <em>eve</em>, and <em>prd</em>, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head–trunk region.<span class="citation" data-cites="Tomancak2002-yf Tomancak2007-db Lecuyer2007-uy"><sup><a href="#ref-Tomancak2002-yf" role="doc-biblioref">20</a>–<a href="#ref-Lecuyer2007-uy" role="doc-biblioref">22</a></sup></span> Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to recognize altered phenotypes. From about 50 genes, we only detected three showing abnormal cephalic furrow formation to different degrees besides the previously described genes (see Table <a href="#tbl:screen">Supplementary Table 1</a>). The strongest cephalic furrow phenotype was present in flies mutant for the <em>sloppy paired</em> (<em>slp</em>) genes.</p>
@@ -955,10 +962,10 @@
 </div>
 <p>Download file (42.1 MB): <a href="https://zenodo.org/record/8424742/files/VidS5.m4v?download=1">https://zenodo.org/record/8424742/files/VidS5.m4v?download=1</a></p>
 <!--TODO: Fix the time to show countdown to gastrulation-->
+<!--TODO: Add slp-mutant video from 1-analyses/slp-mutants/3-snaps/-->
 <div style=""></div>
 <h1 id="supplementary-information">Supplementary information</h1>
 <h2 id="supplementary-note-1">Supplementary Note 1</h2>
-<!--TODO: Move to supplementary methods-->
 <div id="fig:tortuosity" class="fignos">
 <figure>
 <img src="figures/SIFig1.jpg" data-tag="Supplementary Note 1" style="width:100.0%" alt="" /><figcaption><span>Figure Supplementary Note 1:</span> Image processing pipeline for the tortuosity analysis in cauterized mutants. <strong>a</strong>, We acquired a single slice in profile view of the head–trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos. <strong>b</strong>, Then, we applied a gaussian blur which allows to capture the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing. <strong>c</strong>, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ.</figcaption>
@@ -966,7 +973,6 @@
 </div>
 <div style=""></div>
 <h2 id="supplementary-note-2">Supplementary Note 2</h2>
-<!--TODO: Move to supplementary methods-->
 <div id="fig:ablation" class="fignos">
 <figure>
 <img src="figures/SIFig2.jpg" data-tag="Supplementary Note 2" style="width:80.0%" alt="" /><figcaption><span>Figure Supplementary Note 2:</span> Image processing pipeline for the ablation analysis. <strong>a</strong>, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increase over time. <strong>b</strong>, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time.</figcaption>
