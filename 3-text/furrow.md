@@ -339,16 +339,15 @@ Given that in wildtype embryos the cephalic furrow forms around 15 min before mi
 Indeed, when we added a delay to the formation of mitotic domains, the cephalic furrow is more effective in preventing ectopic folding even for lower $\kappa_o^{CF}$ values and for greater percentages of germ band extension ({@fig:fold-model}g, {@fig:model-features}e, {@fig:model-features}b).
 Ectopic folds only form in the posterior region near the germ band tip, a position notably similar to where the dorsal folds form in the *Drosophila* embryo *in vivo*.
 
-<!--TODO: Add figure references and update previous ones-->
-
-Finally, we tested how the position of the cephalic furrow along the anteroposterior axis impacts its ability to prevent ectopic folding.
-The formation of a cephalic furrow at the posterior end (~30% of the egg length) does not prevent ectopic folding at the anterior end ({@fig:fold-model}h).
-Conversely, when the cephalic furrow is located more anteriorly (~70% of the egg length), the ectopic folding at the posterior end is not buffered when the germ band is extended ({@fig:fold-model}h).
-This indicates that a region between 40-60% of the egg length is the optimal region for minimizing ectopic folding at the different phases of germ band extension.
+Finally, we tested how the position of the cephalic furrow impacts its ability to prevent ectopic folding.
+Similar to the simulations of the cephalic furrow at ~65% egg length {@fig:fold-model}g (the wildtype position), formation of the cephalic furrow at >70% egg length, when the germ band is not extended (*g*=0), also effectively prevents ectopic folding in the head ({@fig:fold-model}h).
+However, when the cephalic furrow is moved further back <50% egg length, ectopic folding around mitotic domains becomes more frequent.
+Conversely, when the germ band is extended (*g*=4), a cephalic furrow located more posteriorly along the anteroposterior axis (<30% egg length) will prevent ectopic folding, while a cephalic furrow located more anteriorly (>50% egg length) will fail to do so and ectopic folding appears at the posterior region ({@fig:fold-model}h).
+These simulations reveal that when the cephalic furrow is positioned between 40-60% egg length, it is the most effective at preventing ectopic folding throughout the different phases of germ band extension.
 
 <!--TODO: Conclude that relative timing between CF, MD, GB and the position of CF is important for the function of the CF and its effectiveness in its mechanical role.-->
 
-Taken together, our physical model provides a theoretical basis that an early patterned invagination can effectively absorb compressive stresses in the tissue preventing mechanical instabilities in the embryo epithelium during gastrulation.
+Taken together, our physical model provides a theoretical basis that a fold like the cephalic furrow, when forming before other morphogenetic events and around the central portion of the anteroposterior axis, can effectively absorb compressive stresses and prevent mechanical instabilities in the embryonic tissues during gastrulation.
 
 <!--TODO: Timing effectiveness is not exemplified in the last panel-->
 
