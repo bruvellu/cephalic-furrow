@@ -222,7 +222,7 @@ Each of these components have a rigidity associated with them.
 $K_s$ is the stretching rigidity and $K_b$ is the bending rigidity.
 These two parameters can be combined into a single dimensionless bending rigidity, $K_{b}^{\text{*}}$ ({@fig:fold-model}c).
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand (they contain more particles compared to the surrounding regions), and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:fold-model}b).
-The germ band in our model is defined by the position of the posterior end of the tissue which is fixed at different fractions of egg length ($g$) for each simulation ({@fig:fold-model}b).
+The germ band in our model is defined by the position of the posterior end of the tissue ($g$) which is fixed at different fractions of egg length for each simulation ({@fig:fold-model}b).
 The effect of germ band extension appears as a global compression in the blastoderm.
 Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system (see Methods).
 
@@ -340,12 +340,12 @@ Indeed, when we added a delay to the formation of mitotic domains, the cephalic 
 Ectopic folds only form in the posterior region near the germ band tip, a position notably similar to where the dorsal folds form in the *Drosophila* embryo *in vivo*.
 
 Finally, we tested how the position of the cephalic furrow impacts its ability to prevent ectopic folding.
-Similar to the simulations of the cephalic furrow at ~65% egg length {@fig:fold-model}g (the wildtype position), formation of the cephalic furrow at >70% egg length, when the germ band is not extended (*g*=0), also effectively prevents ectopic folding in the head ({@fig:fold-model}h).
-However, when the cephalic furrow is moved further back <50% egg length, ectopic folding around mitotic domains becomes more frequent.
-Conversely, when the germ band is extended (*g*=4), a cephalic furrow located more posteriorly along the anteroposterior axis (<30% egg length) will prevent ectopic folding, while a cephalic furrow located more anteriorly (>50% egg length) will fail to do so and ectopic folding appears at the posterior region ({@fig:fold-model}h).
-These simulations reveal that when the cephalic furrow is positioned between 40-60% egg length, it is the most effective at preventing ectopic folding throughout the different phases of germ band extension.
+Similar to the simulations of the cephalic furrow at ~65% embryo length {@fig:fold-model}g (the wildtype position), formation of the cephalic furrow at >70% embryo length, when the germ band is not extended (*g*=0), also effectively prevents ectopic folding in the head ({@fig:fold-model}h).
+However, when the cephalic furrow is moved further back <50% embryo length, ectopic folding around mitotic domains becomes more frequent.
+Conversely, when the germ band is extended (*g*=0.4), a cephalic furrow located more posteriorly along the anteroposterior axis (<30% embryo length) will prevent ectopic folding, while a cephalic furrow located more anteriorly (>50% embryo length) will fail to do so and ectopic folding appears at the posterior region ({@fig:fold-model}h).
+These simulations reveal that when the cephalic furrow is positioned between 40-60% embryo length, it is the most effective at preventing ectopic folding throughout the different phases of germ band extension.
 
-<!--TODO: Conclude that relative timing between CF, MD, GB and the position of CF is important for the function of the CF and its effectiveness in its mechanical role.-->
+<!--TODO: Add full parameter sweeps as supplementary notes-->
 
 Taken together, our physical model provides a theoretical basis that a fold like the cephalic furrow, when forming before other morphogenetic events and around the central portion of the anteroposterior axis, can effectively absorb compressive stresses and prevent mechanical instabilities in the embryonic tissues during gastrulation.
 
