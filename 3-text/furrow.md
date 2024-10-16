@@ -1,5 +1,6 @@
 ---
 title: Patterned embryonic invagination evolved in response to mechanical instability
+#alt: Patterned invagination prevents mechanical instability during gastrulation
 author:
 - Bruno C. Vellutini:
     institute: [mpicbg]
@@ -118,7 +119,7 @@ Remarkably, recent evidence from an independent study by Dey *et al.* ^(footnote
 <!--The clear origin in the phylogenetic tree makes the cephalic furrow an ideal model for investigating how patterned morphogenetic processes evolve.-->
 
 Our work integrates genetics and mechanics to uncover the developmental role and evolutionary origins of the cephalic furrow.
-First, we analyzed how perturbing cephalic furrow formation impacts gastrulation in *Drosophila* by live-imaging of mutant embryos, and find that the absence of the cephalic furrow increases the mechanical instability of the blastoderm epithelium.
+First, we analyzed how perturbing cephalic furrow formation impacts gastrulation in *Drosophila* by live imaging mutant embryos, and find that the absence of the cephalic furrow increases the mechanical instability of the blastoderm epithelium.
 Using a combination of *in vivo* experiments and *in silico* simulations, we show that the cephalic furrow effectively prevents this instability by absorbing compressive stresses, and thus, plays a mechanical role during gastrulation.
 Next, to uncover the changes in genetic patterning associated with the evolution of the cephalic furrow, we compared the expression of head--trunk patterning genes between *Drosophila* and *Clogmia*, a fly belonging to a basally-branching group of dipterans which do not form a cephalic furrow.
 We find that while the ancestral head--trunk patterning system is conserved between the two flies, *Clogmia* lacks the head--trunk domain of *btd* that is present in *Drosophila*, suggesting that the appearance of a novel *btd* domain at the head--trunk boundary was a key event associated with cephalic furrow evolution.
@@ -347,11 +348,16 @@ These simulations reveal that when the cephalic furrow is positioned between 40-
 
 <!--TODO: Add full parameter sweeps as supplementary notes-->
 
-Taken together, our physical model provides a theoretical basis that a fold like the cephalic furrow, when forming before other morphogenetic events and around the central portion of the anteroposterior axis, can effectively absorb compressive stresses and prevent mechanical instabilities in the embryonic tissues during gastrulation.
+Taken together, our physical model provides a theoretical basis that a fold like the cephalic furrow, when forming before other morphogenetic events and around the central portion of the anteroposterior axis, can effectively absorb compressive stresses and prevent mechanical instabilities in embryonic tissues during gastrulation.
 
 <!--TODO: Timing effectiveness is not exemplified in the last panel-->
 
+<!--TODO: Add evolutionary question here or after genes?-->
+
 ## Genetic innovation at the head--trunk boundary
+
+
+<!--### Ancestral *slp*--*eve* interaction defines head--trunk position-->
 
 <!--
 - Function depends on timing and position that depends on patterning
@@ -362,26 +368,36 @@ Taken together, our physical model provides a theoretical basis that a fold like
 
 <!--TODO: Move slp screen to supplementary note or methods-->
 
-The function of the cephalic furrow in preventing mechanical instabilities depends on the correct positioning and timing of the invagination; it must occur at the head--trunk boundary and the initiation of the process must begin before other morphogenetic movements take place.
-In *Drosophila*, the infolding is mediated by the overlapping expression domains of *btd* and *eve* at the head--trunk boundary [@Vincent1997-fa].
-However, it remains unclear if this genetic patterning of *Drosophila* is conserved in other flies with or without the cephalic furrow.
-To uncover the gene expression changes associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified cephalic furrow genes between *Drosophila* and the dipteran fly *Clogmia albipunctata*, a species from the basally-branching Psychodidae family which has no cephalic furrow [@Jimenez-Guri2014-zs; @Dey2023-mo].
 
-### Ancestral *slp*--*eve* interaction defines head--trunk position
+The mechanical role of the cephalic furrow in preventing epithelial instability depends on the correct positioning and timing of the invagination.
+In *Drosophila*, this is determined genetically by *btd*, *eve*, and *prd* expressed at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm].
+We identified a fourth cephalic furrow gene during a live-imaging screen (Supplementary Note 1): the transcription factors *sloppy paired* (*slp*) 1 and 2.
+*slp* is a repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv].
+We find that in mutant embryos lacking both *slp1* and *slp2*, the cephalic furrow is shifted 5% anteriorly, leading to an abnormal proportion of head and trunk regions ({@fig:genetic-patterning}a,b).
 
-To uncover other genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region [@Tomancak2002-yf; @Tomancak2007-db; @Lecuyer2007-uy].
-Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to recognize altered phenotypes.
-From about 50 genes, we only detected three showing abnormal cephalic furrow formation to different degrees besides the previously described genes (see @tbl:screen).
-The strongest cephalic furrow phenotype was present in flies mutant for the *sloppy paired* (*slp*) genes.
+The typical overlap between *btd* and *eve* stripe 1 remains almost unaltered.
 
-<!--Early slp activity positions initiator cells-->
+Except for areas where btd is de-repressed.
 
-*slp* is a known anterior repressor involved in the positioning of anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], but its involvement with cephalic furrow formation has not been analyzed.
-We imaged mutant embryos lacking both *slp1* and *slp2* genes and find that the cephalic furrow invagination is delayed and shifted anteriorly about 5%, leading to an abnormal proportion of head and trunk regions ({@fig:genetic-patterning}a,b).
-Interestingly, in *slp* mutants the typical *btd* and *eve* overlapping domains at the head--trunk boundary is present, but shifted forward by about 2.5 cell rows (control = 4.7±0.5 rows, n=6; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}c--e).
+still overlap at the head--trunk boundary, but their distance to *eve* stripe 2 is wider (control = 4.7±0.5 rows, n=6; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}c--e).
+
+In *slp* mutants, 
+
+<!--, but its involvement with cephalic furrow formation has not been analyzed.-->
+
 By analyzing the developmental expression of *slp*, *eve*, and *btd* transcripts from the onset of zygotic activation until the onset of gastrulation in *Drosophila*, we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:genetic-patterning}f).
 *eve* expression is initially ubiquitous, but its anterior limit recedes until the posterior limit of the *slp* domain, while *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:genetic-patterning}f).
 These data indicate that the early *slp* activity is an upstream factor required for positioning *eve* stripe 1 and *btd* domain, and consequently, important for determining the head--trunk boundary and the site of invagination for the cephalic furrow along the anteroposterior axis.
+
+but it is unclear if this is conserved in other flies.
+To uncover the changes in genetic patterning associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified cephalic furrow genes between dipteran species with or without the invagination.
+
+<!--it must occur at the head--trunk boundary and the initiation of the process must begin before other morphogenetic movements take place.-->
+
+<!--the dipteran fly *Clogmia albipunctata*, a species from the basally-branching Psychodidae family which has no cephalic furrow [@Jimenez-Guri2014-zs; @Dey2023-mo].-->
+
+
+
 
 <!--Early slp/eve domains demarcate the head--trunk boundary-->
 
@@ -1142,17 +1158,29 @@ Download file (42.1 MB): [https://zenodo.org/record/8424742/files/VidS5.m4v?down
 
 # Supplementary information
 
-## Supplementary Note 1
+## Supplementary Note 1 - Live-imaging screen for cephalic furrow genes
+
+<!--TODO: Add figure with screen outline-->
+<!--TODO: Add table with candidate genes-->
+<!--TODO: Add table with screen results-->
+<!--TODO: Add figure with screen results-->
+
+To uncover other genes directly involved in cephalic furrow formation in addition to *btd*, *eve*, and *prd*, we performed a live-imaging screen in strains containing loss-of-function alleles for a selection of candidate genes expressed at the head--trunk region [@Tomancak2002-yf; @Tomancak2007-db; @Lecuyer2007-uy].
+Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to recognize altered phenotypes.
+From about 50 genes, we only detected three showing abnormal cephalic furrow formation to different degrees besides the previously described genes (see @tbl:screen).
+The strongest cephalic furrow phenotype was present in flies mutant for the *sloppy paired* (*slp*) genes.
+
+## Supplementary Method 1
 
 ![Image processing pipeline for the tortuosity analysis in cauterized mutants.
 **a**, We acquired a single slice in profile view of the head--trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos.
 **b**, Then, we applied a gaussian blur which allows to capture the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing.
 **c**, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ.
-](figures/SIFig1.jpg){#fig:tortuosity tag="Supplementary Note 1" width=100%}
+](figures/SIFig1.jpg){#fig:tortuosity tag="Supplementary Method 1" width=100%}
 
 \newpage
 
-## Supplementary Note 2
+## Supplementary Methods 2
 
 ![Image processing pipeline for the ablation analysis.
 **a**, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increase over time.
