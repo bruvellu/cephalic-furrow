@@ -1,0 +1,3 @@
+"contrast","value","delta","significant","pvalue","statistic","paired"
+"het vs hom","position_cf","-5.6","TRUE","0.000067104","W=0","FALSE"
+"het vs hom","position_gb","-8.2","TRUE","0.000691780","W=13.5","FALSE"

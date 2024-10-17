@@ -1,0 +1,4 @@
+"contrast","value","delta","significant","pvalue","statistic","paired"
+"wt vs het","count","0.1","FALSE","0.421829863","W=115","FALSE"
+"wt vs hom","count","-2.5","TRUE","0.000001944","W=0","FALSE"
+"het vs hom","count","-2.7","TRUE","0.000000004","W=0","FALSE"

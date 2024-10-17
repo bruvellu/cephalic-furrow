@@ -12,31 +12,49 @@ library(ggplot2)
 library(ggbeeswarm)
 ```
 
-## Load measurements
+## Import length measurements
 
-```{r load}
-measurements <- read.csv("slp_measurements.csv")
+To analyze the differences between control and slp mutants, we manually annotated the egg, trunk, and germ band lengths at the frame in which the initiator cells first appear in lateral 3D renderings.
+
+```{r import-lengths}
+slp_lengths <- read.csv("slp_lengths.csv")
 ```
 
-## Descriptive statistics
+## Calculate mean and standard deviation
 
-Calculate and print the mean and standard deviation for all variables.
+Create data frame with descriptive statistics for all the different samples and variables.
 
-```{r values}
-# Print statistics
-by(measurements, measurements$zygosity, summary)
+```{r values-lengths}
 
-# Save to file
-capture.output(by(measurements, measurements$zygosity, summary), file = "stats.txt")
+# Automatically aggregate data by columns
+stats_lengths <- aggregate(cbind(position_cf, position_gb) ~ zygosity, slp_lengths, function(x)
+  c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x)
+  ))
+
+# Makes column names nicer
+stats_lengths <- do.call(data.frame, stats_lengths)
+
+# Order rows by something meaningful (and re-index)
+stats_lengths$zygosity <- factor(stats_lengths$zygosity, levels = c("heterozygote", "homozygote"))
+stats_lengths <- stats_lengths[order(stats_lengths$zygosity),]
+rownames(stats_lengths) <- 1:nrow(stats_lengths)
+
+# Print and save data frame
+stats_lengths
+write.csv(stats_lengths, file = "stats_lengths.csv", row.names = FALSE)
+
 ```
 
-## Figures
+## Plot CF position
 
 ```{r plot-cf-position}
-ggplot(measurements, aes(zygosity, position_cf, fill = zygosity)) +
+ggplot(slp_lengths, aes(zygosity, position_cf, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4.5)) +
-  scale_y_continuous(limits = c(60,80)) +
+  scale_y_continuous(limits = c(60,90)) +
   scale_x_discrete(labels = c("+/−", "−/−")) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03")) +
@@ -50,8 +68,12 @@ ggsave("2-plots/cf_pct_position.png", width = 6, height = 6)
 ggsave("2-plots/cf_pct_position.svg", width = 6, height = 6)
 ```
 
+## Plot GB position
+
 ```{r plot-gb-position}
-ggplot(measurements, aes(zygosity, position_gb, fill = zygosity)) +
+#TODO: Plot time after gastrulation instead of GB position
+
+ggplot(slp_lengths, aes(zygosity, position_gb, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4.5)) +
   scale_y_continuous(limits = c(0,30)) +
@@ -68,56 +90,94 @@ ggsave("2-plots/gb_pct_position.png", width = 6, height = 6)
 ggsave("2-plots/gb_pct_position.svg", width = 6, height = 6)
 ```
 
-
 ## Statistics
 
-The distribution is not normal. Using Wilcoxon test to compare the samples.
+```{r stats-lengths}
+tests_lengths <- data.frame()
 
-```{r stats}
-sink('tests.txt')
+for (position in c("position_cf", "position_gb")) {
+  
+  het <- slp_lengths[slp_lengths$zygosity == "heterozygote", position]
+  hom <- slp_lengths[slp_lengths$zygosity == "homozygote", position]
+  
+  # Heterozygotes vs homozygotes
+  contrast <- "het vs hom"
+  test <- wilcox.test(het, hom, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(het) - mean(hom)
+  
+  test_row <- c(
+    contrast = contrast,
+    value = position,
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
+  )
+  
+  tests_lengths <- rbind(tests_lengths, as.data.frame(t(test_row)))
 
-print("Testing normality of distribution")
-shapiro.test(measurements$position_cf)
-shapiro.test(measurements$position_gb)
-shapiro.test(measurements[measurements$zygosity == "heterozygote",]$position_cf)
-shapiro.test(measurements[measurements$zygosity == "homozygote",]$position_cf)
-shapiro.test(measurements[measurements$zygosity == "heterozygote",]$position_gb)
-shapiro.test(measurements[measurements$zygosity == "homozygote",]$position_gb)
+}
 
-print("Testing for difference between samples")
-wilcox.test(measurements[measurements$zygosity == "heterozygote",]$position_cf,
-            measurements[measurements$zygosity == "homozygote",]$position_cf)
-wilcox.test(measurements[measurements$zygosity == "heterozygote",]$position_gb,
-            measurements[measurements$zygosity == "homozygote",]$position_gb)
-
-print("t-test just to get the difference between sample means")
-t.test(measurements[measurements$zygosity == "heterozygote",]$position_cf,
-       measurements[measurements$zygosity == "homozygote",]$position_cf,
-       var.equal = FALSE)
-t.test(measurements[measurements$zygosity == "heterozygote",]$position_gb,
-       measurements[measurements$zygosity == "homozygote",]$position_gb,
-       var.equal = FALSE)
-
-sink()
+tests_lengths
+write.csv(tests_lengths, file = "tests_lengths.csv", row.names = FALSE)
 ```
 
-## Number of rows
+## Import row measurements
 
-```{r load}
+To quantify the differences in the number of rows between control and slp mutants, we manually counted the cells between eve stripe 1 and 2 in five different rows for each in situ image.
+
+```{r import-rows}
 # Load row counts
-rows <- read.csv("slp_rows.csv")
-# Print statistics
-by(rows, rows$zygosity, summary)
-# Save to file
-capture.output(by(rows, rows$zygosity, summary), file = "rows.txt")
+slp_rows <- read.csv("slp_rows.csv")
+
+# Transform data frame to order the stock for plotting
+slp_rows$zygosity <- factor(slp_rows$zygosity, levels = c("wildtype", "heterozygote", "homozygote"))
+slp_rows <- slp_rows[order(slp_rows$zygosity),]
+rownames(slp_rows) <- 1:nrow(slp_rows)
+```
+
+## Calculate mean and standard deviation
+
+Create data frame with descriptive statistics for all the different samples and variables.
+
+```{r values-rows}
+
+# Automatically aggregate data by columns
+stats_rows <- aggregate(count ~ zygosity, slp_rows, function(x)
+  c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x)
+  ))
+
+# Makes column names nicer
+stats_rows <- do.call(data.frame, stats_rows)
+
+# Order rows by something meaningful (and re-index)
+stats_rows$zygosity <- factor(stats_rows$zygosity, levels = c("wildtype", "heterozygote", "homozygote"))
+stats_rows <- stats_rows[order(stats_rows$zygosity),]
+rownames(stats_rows) <- 1:nrow(stats_rows)
+
+# Print and save data frame
+stats_rows
+write.csv(stats_rows, file = "stats_rows.csv", row.names = FALSE)
+
+```
+## Plot row counts
+
+```{r plot-count-rows}
+
 # Plot
-ggplot(rows, aes(zygosity, rows, fill = zygosity)) +
+ggplot(slp_rows, aes(zygosity, count, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.0)) +
   scale_y_continuous(limits = c(2,10)) +
-  scale_x_discrete(labels = c("+/−", "−/−")) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_x_discrete(labels = c("+/+", "+/−", "−/−")) +
+  scale_fill_manual(values=c("#cc79a7",  "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7",  "#56b4e9", "#e69f03")) +
   labs(x = "Zygosity", y = "rows") +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 35),
@@ -128,3 +188,72 @@ ggsave("2-plots/rows_between_eve1_eve2.png", width = 6, height = 6)
 ggsave("2-plots/rows_between_eve1_eve2.svg", width = 6, height = 6)
 ```
 
+## Statistics
+
+```{r stats-rows}
+tests_rows <- data.frame()
+
+wt <- slp_rows[slp_rows$zygosity == "wildtype", "count"]
+het <- slp_rows[slp_rows$zygosity == "heterozygote", "count"]
+hom <- slp_rows[slp_rows$zygosity == "homozygote", "count"]
+
+# Wildtype vs Heterozygotes
+contrast <- "wt vs het"
+test <- wilcox.test(wt, het, paired = FALSE)
+pvalue <- test$p.value
+statistic <- test$statistic
+delta <- mean(wt) - mean(het)
+
+test_row <- c(
+  contrast = contrast,
+  value = "count",
+  delta = sprintf("%.1f", delta),
+  significant = pvalue < 0.05,
+  pvalue = sprintf("%.9f", pvalue),
+  statistic = sprintf("%s=%s", names(statistic), statistic),
+  paired = FALSE
+)
+
+tests_rows <- rbind(tests_rows, as.data.frame(t(test_row)))
+
+# Wildtype vs Homozygotes
+contrast <- "wt vs hom"
+test <- wilcox.test(wt, hom, paired = FALSE)
+pvalue <- test$p.value
+statistic <- test$statistic
+delta <- mean(wt) - mean(hom)
+
+test_row <- c(
+  contrast = contrast,
+  value = "count",
+  delta = sprintf("%.1f", delta),
+  significant = pvalue < 0.05,
+  pvalue = sprintf("%.9f", pvalue),
+  statistic = sprintf("%s=%s", names(statistic), statistic),
+  paired = FALSE
+)
+
+tests_rows <- rbind(tests_rows, as.data.frame(t(test_row)))
+
+# Heterozygotes vs Homozygotes
+contrast <- "het vs hom"
+test <- wilcox.test(het, hom, paired = FALSE)
+pvalue <- test$p.value
+statistic <- test$statistic
+delta <- mean(het) - mean(hom)
+
+test_row <- c(
+  contrast = contrast,
+  value = "count",
+  delta = sprintf("%.1f", delta),
+  significant = pvalue < 0.05,
+  pvalue = sprintf("%.9f", pvalue),
+  statistic = sprintf("%s=%s", names(statistic), statistic),
+  paired = FALSE
+)
+
+tests_rows <- rbind(tests_rows, as.data.frame(t(test_row)))
+
+tests_rows
+write.csv(tests_rows, file = "tests_rows.csv", row.names = FALSE)
+```

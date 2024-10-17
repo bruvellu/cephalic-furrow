@@ -1,0 +1,12 @@
+stack,rowA,rowB,rowC,rowD,rowE,zygosity
+slp_wt11,4,5,5,5,4,heterozygous
+slp_wt14,5,4,5,5,4,heterozygous
+slp_wt3,4,5,5,4,5,heterozygous
+slp_wt8,5,5,5,5,4,heterozygous
+wt_wt6,5,5,5,5,4,wildtype
+wt_wt4,5,4,5,5,5,wildtype
+slp_slp7,7,8,6,8,8,homozygous
+slp_slp2,8,9,8,7,6,homozygous
+slp_slp6,7,7,8,7,7,homozygous
+slp_slp8,8,8,7,7,7,homozygous
+slp_slp3,7,7,7,7,7,homozygous
