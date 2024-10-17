@@ -371,33 +371,30 @@ Taken together, our physical model provides a theoretical basis that a fold like
 
 The mechanical role of the cephalic furrow in preventing epithelial instability depends on the correct positioning and timing of the invagination.
 In *Drosophila*, this is determined genetically by *btd*, *eve*, and *prd* expressed at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm].
-We identified a fourth cephalic furrow gene during a live-imaging screen (Supplementary Note 1): the transcription factors *sloppy paired* (*slp*) 1 and 2.
-*slp* is a repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv].
-We find that in mutant embryos lacking both *slp1* and *slp2*, the cephalic furrow is shifted 5% anteriorly, leading to an abnormal proportion of head and trunk regions ({@fig:genetic-patterning}a,b).
+During a live-imaging screen for other cephalic furrow genes, we identified a fourth candidate: the *sloppy paired* (*slp*) transcription factors *slp1* and *slp2* (Supplementary Note 1).
+In null mutants for both *slp1* and *slp2*, the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
+Since *slp1* is a repressor known to position the anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the overlap between *btd* and *eve* stripe 1 expression at the head--trunk boundary had been disturbed in *slp* mutants.
+However, the typical expression pattern remains almost unaltered ({@fig:genetic-features}a), except for the wider gap between *eve* stripe 1 and 2 and for a region where *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d).
+Cells expressing *btd* and *eve* are shifted a few rows anteriorly (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e), but they still give rise to the initiator cells, indicating that the cephalic furrow patterning is displaced but not entirely perturbed in *slp* mutants.
 
-The typical overlap between *btd* and *eve* stripe 1 remains almost unaltered.
+To understand this phenotype, we analyzed the expression of *slp1* relative to *btd*, *eve*, and *prd* from the onset of zygotic activation to gastrulation ({@fig:genetic-features}b).
 
-Except for areas where btd is de-repressed.
-
-still overlap at the head--trunk boundary, but their distance to *eve* stripe 2 is wider (control = 4.7±0.5 rows, n=6; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}c--e).
-
-In *slp* mutants, 
-
-<!--, but its involvement with cephalic furrow formation has not been analyzed.-->
-
-By analyzing the developmental expression of *slp*, *eve*, and *btd* transcripts from the onset of zygotic activation until the onset of gastrulation in *Drosophila*, we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:genetic-patterning}f).
+we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:genetic-patterning}f).
 *eve* expression is initially ubiquitous, but its anterior limit recedes until the posterior limit of the *slp* domain, while *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:genetic-patterning}f).
 These data indicate that the early *slp* activity is an upstream factor required for positioning *eve* stripe 1 and *btd* domain, and consequently, important for determining the head--trunk boundary and the site of invagination for the cephalic furrow along the anteroposterior axis.
 
 but it is unclear if this is conserved in other flies.
 To uncover the changes in genetic patterning associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified cephalic furrow genes between dipteran species with or without the invagination.
 
+At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:genetic-patterning}g,i).
+In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:genetic-patterning}e).
+Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:genetic-patterning}i).
+This combinatorial expression of transcription factors *btd*, *eve*, *slp*, and *prd*, indicates that each row of cells forming the invagination of the cephalic furrow has a unique transcriptional identity.
+Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.
+
 <!--it must occur at the head--trunk boundary and the initiation of the process must begin before other morphogenetic movements take place.-->
 
 <!--the dipteran fly *Clogmia albipunctata*, a species from the basally-branching Psychodidae family which has no cephalic furrow [@Jimenez-Guri2014-zs; @Dey2023-mo].-->
-
-
-
 
 <!--Early slp/eve domains demarcate the head--trunk boundary-->
 
@@ -407,11 +404,6 @@ To uncover the changes in genetic patterning associated with the evolution of th
 
 <!--Late *slp* expression demarcates cephalic furrow edges-->
 
-At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:genetic-patterning}g,i).
-In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:genetic-patterning}e).
-Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:genetic-patterning}i).
-This combinatorial expression of transcription factors *btd*, *eve*, *slp*, and *prd*, indicates that each row of cells forming the invagination of the cephalic furrow has a unique transcriptional identity.
-Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.
 
 <!--TODO: Describe narrowing of btd--eve overlap to a single row-->
 
@@ -1101,6 +1093,7 @@ High-resolution versions of the extended data figures and videos are available a
 ## Extended Data Fig. 6
 
 ![Additional genetic patterning of the head--trunk boundary.
+**a**, Expression of *btd* and *eve* in wildtype and *slp* mutants at mid and late mitotic cycle 14.
 ](figures/EDFig6.jpg){#fig:genetic-features tag="Extended Data Fig. 6" width=100%}
 
 \newpage
