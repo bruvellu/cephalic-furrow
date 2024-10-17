@@ -53,19 +53,21 @@ write.csv(stats_lengths, file = "stats_lengths.csv", row.names = FALSE)
 ```{r plot-cf-position}
 ggplot(slp_lengths, aes(zygosity, position_cf, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4.5)) +
-  scale_y_continuous(limits = c(60,90)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 5)) +
+  scale_y_continuous(limits = c(50,80)) +
   scale_x_discrete(labels = c("+/−", "−/−")) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  labs(x = "zygosity", y = "egg length (%)") +
+  labs(x = expression(italic("slp")), y = "egg length (%)") +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
+  theme(text = element_text(size = 30),
+        title = element_text(size = 25),
+        legend.text = element_text(size = 25),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", linewidth = 1)
         )
-ggsave("2-plots/cf_pct_position.png", width = 6, height = 6)
-ggsave("2-plots/cf_pct_position.svg", width = 6, height = 6)
+ggsave("2-plots/cf_pct_position.png", width = 4, height = 4)
+ggsave("2-plots/cf_pct_position.svg", width = 4, height = 4)
 ```
 
 ## Plot GB position
@@ -75,19 +77,21 @@ ggsave("2-plots/cf_pct_position.svg", width = 6, height = 6)
 
 ggplot(slp_lengths, aes(zygosity, position_gb, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4.5)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 5)) +
   scale_y_continuous(limits = c(0,30)) +
   scale_x_discrete(labels = c("+/−", "−/−")) +
   scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  labs(x = "zygosity", y = "egg length (%)") +
+  labs(x = expression(italic("slp")), y = "egg length (%)") +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
+  theme(text = element_text(size = 30),
+        title = element_text(size = 25),
+        legend.text = element_text(size = 25),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", linewidth = 1)
         )
-ggsave("2-plots/gb_pct_position.png", width = 6, height = 6)
-ggsave("2-plots/gb_pct_position.svg", width = 6, height = 6)
+ggsave("2-plots/gb_pct_position.png", width = 4, height = 4)
+ggsave("2-plots/gb_pct_position.svg", width = 4, height = 4)
 ```
 
 ## Statistics
@@ -173,19 +177,21 @@ write.csv(stats_rows, file = "stats_rows.csv", row.names = FALSE)
 # Plot
 ggplot(slp_rows, aes(zygosity, count, fill = zygosity)) +
   geom_boxplot(aes(color = zygosity), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
   scale_y_continuous(limits = c(2,10)) +
   scale_x_discrete(labels = c("+/+", "+/−", "−/−")) +
   scale_fill_manual(values=c("#cc79a7",  "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7",  "#56b4e9", "#e69f03")) +
-  labs(x = "Zygosity", y = "rows") +
+  labs(x = expression(italic("slp")), y = "row count") +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
+  theme(text = element_text(size = 30),
+        title = element_text(size = 25),
+        legend.text = element_text(size = 25),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", linewidth = 1)
         )
-ggsave("2-plots/rows_between_eve1_eve2.png", width = 6, height = 6)
-ggsave("2-plots/rows_between_eve1_eve2.svg", width = 6, height = 6)
+ggsave("2-plots/rows_between_eve1_eve2.png", width = 4, height = 4)
+ggsave("2-plots/rows_between_eve1_eve2.svg", width = 4, height = 4)
 ```
 
 ## Statistics
