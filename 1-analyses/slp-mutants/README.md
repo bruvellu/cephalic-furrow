@@ -53,6 +53,7 @@ Results:
 - Compare average number of cell rows between slp heterozygotes and homozygotes
 
 Results:
-- Heterozygotes: 4.7 ± 0.5 cell rows (n=6)
+- Wildtype: 4.8 ± 0.4 cell rows (n=2)
+- Heterozygotes: 4.7 ± 0.5 cell rows (n=4)
 - Homozygotes: 7.3 ± 0.7 cell rows (n=5)
 
