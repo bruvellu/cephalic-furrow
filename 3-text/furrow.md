@@ -276,7 +276,7 @@ For that, we determined at which bending rigidity the average number of folds fa
 The criteria is fulfilled when the bending rigidity is $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.
 This specific value establishes an important bridge between our *in vivo* and *in silico* data by revealing where the embryo resides within the parameter space of the model, and by providing a biologically relevant reference for subsequent simulations.
 
-To compare our reference bending rigidity with available direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km].
+To compare our reference bending rigidity with available direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km] (Supplementary Note 1).
 Given that in elastic sheets the bending and stretching rigidity ratio is proportional to the square of the height ($K_{b}/K_{s} \propto h^2$) [@Efrati2009-ve], we adjusted the calculation to the estimated thickness of the MDCK monolayer (~18µm) [@Fouchard2020-km].
 The value we obtained in this way for the effective $K_{b}^{\text{*}}$ of a height-adjusted MDCK monolayer, $\approx 1.8 \times 10^{-4}$, is within a factor of 2 of our own reference bending rigidity, indicating that the relevant region of parameter space we identified in our model is consistent with existing direct measurements of bending rigidity in other tissues.
 
@@ -371,22 +371,35 @@ Taken together, our physical model provides a theoretical basis that a fold like
 
 The mechanical role of the cephalic furrow in preventing epithelial instability depends on the correct positioning and timing of the invagination.
 In *Drosophila*, this is determined genetically by *btd*, *eve*, and *prd* expressed at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm].
-During a live-imaging screen for other cephalic furrow genes, we identified a fourth candidate: the *sloppy paired* (*slp*) transcription factors *slp1* and *slp2* (Supplementary Note 1).
+During a live-imaging screen for other cephalic furrow genes, we identified a fourth candidate: the *sloppy paired* (*slp*) transcription factors *slp1* and *slp2* (Supplementary Note 2).
 In null mutants for both *slp1* and *slp2*, the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
 Since *slp1* is a repressor known to position the anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the overlap between *btd* and *eve* stripe 1 expression at the head--trunk boundary had been disturbed in *slp* mutants.
 However, the typical expression pattern remains almost unaltered ({@fig:genetic-features}a), except for the wider gap between *eve* stripe 1 and 2 and for a region where *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d).
 Cells expressing *btd* and *eve* are shifted a few rows anteriorly (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e), but they still give rise to the initiator cells, indicating that the cephalic furrow patterning is displaced but not entirely perturbed in *slp* mutants.
 
-To understand this phenotype, we analyzed the expression of *slp1* relative to *btd*, *eve*, and *prd* from the onset of zygotic activation to gastrulation ({@fig:genetic-features}b).
+To understand this phenotype, we analyzed the expression of *slp1* relative to *btd*, *eve*, and *prd* from the onset of zygotic activation to gastrulation.
+Embryos at cycle 11 already express *slp1* at the anterior end and *eve* almost ubiquitously ({@fig:genetic-features}b).
+At cycle 12, *eve* is downregulated in *slp1*-expressing nuclei.
 
-we found that *slp* and *eve* are expressed early in broad juxtaposing anterior and domains, respectively, that demarcate the boundary between the head and trunk regions ({@fig:genetic-patterning}f).
-*eve* expression is initially ubiquitous, but its anterior limit recedes until the posterior limit of the *slp* domain, while *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:genetic-patterning}f).
+At cycle 11, we already detect nuclear transcripts of slp1 and eve.
+From an almost ubiquitous expression, eve gets downregulated in *slp1*-expressing nuclei at the anterior end.
+From cycle 12, the two genes are expressed in broad, juxtaposing territories that mark the embryo’s head and trunk domains, respectively.
+
+progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:genetic-patterning}g,i).
+
+The boundary between slp1 and eve determines the position of the head--trunk boundary
+
+*btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:genetic-patterning}f).
+
+, that demarcate the boundary between the head and trunk regions ({@fig:genetic-patterning}f).
+
 These data indicate that the early *slp* activity is an upstream factor required for positioning *eve* stripe 1 and *btd* domain, and consequently, important for determining the head--trunk boundary and the site of invagination for the cephalic furrow along the anteroposterior axis.
 
 but it is unclear if this is conserved in other flies.
 To uncover the changes in genetic patterning associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified cephalic furrow genes between dipteran species with or without the invagination.
 
 At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:genetic-patterning}g,i).
+
 In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:genetic-patterning}e).
 Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:genetic-patterning}i).
 This combinatorial expression of transcription factors *btd*, *eve*, *slp*, and *prd*, indicates that each row of cells forming the invagination of the cephalic furrow has a unique transcriptional identity.
@@ -1151,7 +1164,20 @@ Download file (42.1 MB): [https://zenodo.org/record/8424742/files/VidS5.m4v?down
 
 # Supplementary information
 
-## Supplementary Note 1 - Live-imaging screen for cephalic furrow genes
+## Supplementary Note 1
+
+### Comparing model bending rigidity to MDCK measurements
+
+<!--TODO: Revise this text-->
+
+Trushko et al reports $K_b = 5\times10^{-13} Nm$ and $K_s = 0.15 Nm^{-1}$ for MDCK monolayer tissue. From these values, we can compute the dimensionless bending rigidity $K_b^*$ and compare them with the $K_b^*$ that we estimate for the Drosophila blastoderm. 
+However, the thickness of the MDCK monolayer and the Drosophila blastoderm are quite different and hence we need to correct for this before computing $K_b^*$ for MDCK monolayer. 
+
+The bending rigidity scales with square of the thickness of the tissue. Hence the corrected $K_b$ can be computed as $K_b^{'} = K_b*(h_{blastoderm}/h_{MDCK})^2$. This gives us $K_b^{'} =2\times10^{-12} Nm$. Now we can compute $K_b^* = K_b^{'}/K_s L^2$ where we put $L = 300\mu m$. Here we scale $K_b^{'}/K_s$ by the relevant lengthscale which is the semi-major axis of the Drosophila embryo. This gives us $K_b^* = 2.05\times 10^{-4}$. This is the estimated $K_b^*$ for the MDCK monolayer that has the same thickness as the Drosophila blastoderm (referring to the height correction) and has been put in the same geometrical conditions as the Drosophila blastoderm (referring to the $L$ used in the calculation).
+
+## Supplementary Note 2
+
+### Live-imaging screen for cephalic furrow genes
 
 <!--TODO: Add figure with screen outline-->
 <!--TODO: Add table with candidate genes-->
