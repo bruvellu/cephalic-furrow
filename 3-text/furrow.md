@@ -276,7 +276,7 @@ For that, we determined at which bending rigidity the average number of folds fa
 The criteria is fulfilled when the bending rigidity is $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.
 This specific value establishes an important bridge between our *in vivo* and *in silico* data by revealing where the embryo resides within the parameter space of the model, and by providing a biologically relevant reference for subsequent simulations.
 
-To compare our reference bending rigidity with available direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km] (Supplementary Note 1).
+To compare our reference bending rigidity with direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km] (Supplementary Note 1).
 Given that in elastic sheets the bending and stretching rigidity ratio is proportional to the square of the height ($K_{b}/K_{s} \propto h^2$) [@Efrati2009-ve], we adjusted the calculation to the estimated thickness of the MDCK monolayer (~18µm) [@Fouchard2020-km].
 The value we obtained in this way for the effective $K_{b}^{\text{*}}$ of a height-adjusted MDCK monolayer, $\approx 1.8 \times 10^{-4}$, is within a factor of 2 of our own reference bending rigidity, indicating that the relevant region of parameter space we identified in our model is consistent with existing direct measurements of bending rigidity in other tissues.
 
@@ -370,17 +370,21 @@ Since *slp1* is a repressor known to position the anterior pair rule stripes [@A
 However, the typical expression pattern remains almost unaltered ({@fig:genetic-features}a), except for the wider gap between *eve* stripe 1 and 2 and for a region where *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d).
 Cells expressing *btd* and *eve* are shifted a few rows anteriorly (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e), but they still give rise to the initiator cells, indicating that the cephalic furrow patterning is displaced but not entirely perturbed in *slp* mutants.
 
-To understand this phenotype, we analyzed the expression of *slp1* relative to *btd*, *eve*, and *prd* from the onset of zygotic activation to gastrulation.
-Embryos at cycle 11 already express *slp1* at the anterior end and *eve* almost ubiquitously ({@fig:genetic-features}b).
-At cycle 12, *eve* is downregulated in *slp1*-expressing nuclei.
+By analyzing the expression from zygotic activation to gastrulation, we suggest that this anterior shift occurs because without slp, eve is not repressed at the anterior end.
 
-At cycle 11, we already detect nuclear transcripts of slp1 and eve.
-From an almost ubiquitous expression, eve gets downregulated in *slp1*-expressing nuclei at the anterior end.
-From cycle 12, the two genes are expressed in broad, juxtaposing territories that mark the embryo’s head and trunk domains, respectively.
+To understand this phenotype, we analyzed the expression of *slp1* relative to *btd*, *eve*, and *prd* from the onset of zygotic activation to gastrulation.
+Wildtype embryos at cycle 11 already express *slp1* at the anterior end and *eve* almost ubiquitously ({@fig:genetic-features}b).
+At cycle 12, *eve* is cleared from the anterior end, and the two genes form juxtaposing territories that broadly correspond to the head and trunk regions of the embryo.
+The boundary between *slp1* and *eve* expression domains is set at 65% embryo length and does not change until gastrulation and coincides with the head--trunk boundary and initiator cells of the cephalic furrow.
+The anterior shift that occurs in slp mutants suggests that this early genetic interaction between slp and eve is altered, possibly with eve transcripts not being fully cleared from the anterior end, setting the boundary more anteriorly.
+
+
+; this position does not change suggesting that 
+
+and does not change   determines the position of the head--trunk boundary
 
 progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:genetic-patterning}g,i).
 
-The boundary between slp1 and eve determines the position of the head--trunk boundary
 
 *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:genetic-patterning}f).
 
@@ -1159,14 +1163,21 @@ Download file (42.1 MB): [https://zenodo.org/record/8424742/files/VidS5.m4v?down
 
 ## Supplementary Note 1
 
-### Comparing model bending rigidity to MDCK measurements
+### Comparing our reference bending rigidity to direct measurements
 
 <!--TODO: Revise this text-->
 
-Trushko et al reports $K_b = 5\times10^{-13} Nm$ and $K_s = 0.15 Nm^{-1}$ for MDCK monolayer tissue. From these values, we can compute the dimensionless bending rigidity $K_b^*$ and compare them with the $K_b^*$ that we estimate for the Drosophila blastoderm. 
-However, the thickness of the MDCK monolayer and the Drosophila blastoderm are quite different and hence we need to correct for this before computing $K_b^*$ for MDCK monolayer. 
-
-The bending rigidity scales with square of the thickness of the tissue. Hence the corrected $K_b$ can be computed as $K_b^{'} = K_b*(h_{blastoderm}/h_{MDCK})^2$. This gives us $K_b^{'} =2\times10^{-12} Nm$. Now we can compute $K_b^* = K_b^{'}/K_s L^2$ where we put $L = 300\mu m$. Here we scale $K_b^{'}/K_s$ by the relevant lengthscale which is the semi-major axis of the Drosophila embryo. This gives us $K_b^* = 2.05\times 10^{-4}$. This is the estimated $K_b^*$ for the MDCK monolayer that has the same thickness as the Drosophila blastoderm (referring to the height correction) and has been put in the same geometrical conditions as the Drosophila blastoderm (referring to the $L$ used in the calculation).
+The goal is to compare the reference bending rigidity that we estimate for the *Drosophila* blastoderm with a direct measurement from the literature.
+Trushko et al. [@Trushko2020-gf] reports that in a MDCK monolayer $K_b = 5\times10^{-13} Nm$ and $K_s = 0.15 Nm^{-1}$.
+With these values we can compute the dimensionless bending rigidity $K_b^*$.
+However, the thickness of the MDCK monolayer and the *Drosophila* blastoderm are very different, and hence we need to correct for this before computing $K_b^*$ for MDCK monolayer. 
+The bending rigidity scales with square of the thickness of the tissue.
+Hence the corrected $K_b$ can be computed as $K_b^{'} = K_b^*(h_{blastoderm}/h_{MDCK})^2$.
+This gives us $K_b^{'} =2\times10^{-12} Nm$.
+Now we can compute $K_b^* = K_b^{'}/K_s L^2$ where we put $L = 255\mu m$.
+Here we scale $K_b^{'}/K_s$ by the relevant lengthscale which is the semi-major axis of the Drosophila embryo.
+This gives us $K_b^* = 2.05\times 10^{-4}$.
+This is the estimated $K_b^*$ for the MDCK monolayer that has the same thickness as the *Drosophila* blastoderm (referring to the height correction) and has been put in the same geometrical conditions as the *Drosophila* blastoderm (referring to the $L$ used in the calculation).
 
 ## Supplementary Note 2
 
