@@ -349,9 +349,6 @@ Taken together, our physical model provides a theoretical basis that a fold like
 
 ## Genetic innovation at the head--trunk boundary
 
-
-<!--### Ancestral *slp*--*eve* interaction defines head--trunk position-->
-
 <!--
 - Function depends on timing and position that depends on patterning
 - Is the patterning conserved in species with or without cephalic furrow?
@@ -359,16 +356,19 @@ Taken together, our physical model provides a theoretical basis that a fold like
 - Comparative expression across species (include prd?)
 -->
 
-<!--TODO: Move slp screen to supplementary note or methods-->
+As described above, the effectiveness of the cephalic furrow in preventing epithelial instabilities depends on the position and time of invagination.
+This spatiotemporal control of the invagination in *Drosophila* is determined genetically by *btd*, *eve*, and *prd* expressed at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm].
+However, it remains unclear if this genetic patterning is conserved across the dipteran phylogeny.
+To uncover the gene expression changes associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified genes between *Drosophila* and other fly species with and without the cephalic furrow.
 
+### Ancestral *slp*--*eve* interaction defines head--trunk position
 
-The mechanical role of the cephalic furrow in preventing epithelial instability depends on the correct positioning and timing of the invagination.
-In *Drosophila*, this is determined genetically by *btd*, *eve*, and *prd* expressed at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm].
-During a live-imaging screen for other cephalic furrow genes, we identified a fourth candidate: the *sloppy paired* (*slp*) transcription factors *slp1* and *slp2* (Supplementary Note 2).
-In null mutants for both *slp1* and *slp2*, the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
-Since *slp1* is a repressor known to position the anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the overlap between *btd* and *eve* stripe 1 expression at the head--trunk boundary had been disturbed in *slp* mutants.
-However, the typical expression pattern remains almost unaltered ({@fig:genetic-features}a), except for the wider gap between *eve* stripe 1 and 2 and for a region where *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d).
-Cells expressing *btd* and *eve* are shifted a few rows anteriorly (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e), but they still give rise to the initiator cells, indicating that the cephalic furrow patterning is displaced but not entirely perturbed in *slp* mutants.
+To uncover additional genes patterning the cephalic furrow, we performed a live-imaging screen with loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
+We find that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a delayed cephalic furrow that is shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
+Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary.
+Indeed, except for the wider gap between *eve* stripe 1 and 2, the typical overlap remains unaltered ({@fig:genetic-patterning}c--d, {@fig:genetic-features}a).
+Cells expressing *btd* and *eve* are shifted anteriorly a few rows (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e).
+However, they still give rise to initiator cells, indicating that the cephalic furrow patterning in *slp* mutants has been displaced but not disrupted.
 
 By analyzing the expression from zygotic activation to gastrulation, we suggest that this anterior shift occurs because without slp, eve is not repressed at the anterior end.
 
@@ -423,6 +423,10 @@ Since *slp* is crucial to maintain parasegment polarity by activating *wingless*
 
 <!--Head--trunk boundary slp/eve expression is conserved-->
 <!--Clogmia lacks the head--trunk domain of btd-->
+
+the dipteran fly *Clogmia albipunctata*, a species from the basally-branching Psychodidae family which has no cephalic furrow [@Jimenez-Guri2014-zs; @Dey2023-pj].
+
+
 
 To uncover the genetic patterning differences associated with the evolution of the cephalic furrow, we compared the expression data of the above described cephalic furrow genes in *Drosophila* to *Clogmia*, which lacks a cephalic furrow.
 We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:genetic-patterning}f).
@@ -1192,6 +1196,12 @@ To uncover other genes directly involved in cephalic furrow formation in additio
 Because the cephalic furrow is transient and leaves no trace, the live-imaging approach is critical to recognize altered phenotypes.
 From about 50 genes, we only detected three showing abnormal cephalic furrow formation to different degrees besides the previously described genes (see @tbl:screen).
 The strongest cephalic furrow phenotype was present in flies mutant for the *sloppy paired* (*slp*) genes.
+
+## Supplementary Note 3
+
+### Genetic interactions at the head--trunk boundary
+
+*btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d)
 
 ## Supplementary Method 1
 
