@@ -359,32 +359,49 @@ Taken together, our physical model provides a theoretical basis that a fold like
 As described above, the effectiveness of the cephalic furrow in preventing epithelial instabilities depends on the position and time of invagination.
 This spatiotemporal control of the invagination in *Drosophila* is determined genetically by *btd*, *eve*, and *prd* expressed at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm].
 However, it remains unclear if this genetic patterning is conserved across the dipteran phylogeny.
-To uncover the gene expression changes associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified genes between *Drosophila* and other fly species with and without the cephalic furrow.
+To uncover the genetic changes associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified genes between fly species with and without the cephalic furrow.
 
 ### Ancestral *slp*--*eve* interaction defines head--trunk position
 
-To uncover additional genes patterning the cephalic furrow, we performed a live-imaging screen with loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
+To identify additional genes patterning the cephalic furrow, we performed a live-imaging screen with loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
 We find that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a delayed cephalic furrow that is shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
 Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary.
-Indeed, except for the wider gap between *eve* stripe 1 and 2, the typical overlap remains unaltered ({@fig:genetic-patterning}c--d, {@fig:genetic-features}a).
+Indeed, except for the wider gap between *eve* stripe 1 and 2, the typical overlap remains unaltered ({@fig:genetic-patterning}c--d, {@fig:genetic-features}c).
 Cells expressing *btd* and *eve* are shifted anteriorly a few rows (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e).
 However, they still give rise to initiator cells, indicating that the cephalic furrow patterning in *slp* mutants has been displaced but not disrupted.
 
-By analyzing the expression from zygotic activation to gastrulation, we suggest that this anterior shift occurs because without slp, eve is not repressed at the anterior end.
+By analyzing the expression of *slp1* relative to *btd*, *eve*, and *prd* in wildtype *Drosophila* embryos, we find that the early *slp1* and *eve* expression domains demarcate the head--trunk boundary from the onset of zygotic activation until gastrulation ({@fig:genetic-patterning}f, {@fig:genetic-features}b).
+Early *slp1* transcripts are limited to the anterior end while *eve* transcripts, which are initially ubiquitous [@Andrioli2012-fv], begin to clear from the anterior end at cycle 11, and become limited to the posterior region of the body from cycle 12 ({@fig:genetic-features}b).
+At this stage, the two genes form broad, complementary territories that correspond to the head and trunk regions of the embryo, with the domains juxtaposed at ~70% of the embryo length ({@fig:genetic-features}b).
+We first detect *btd* and *prd* transcripts at this interface ({@fig:genetic-features}a,b).
+During subsequent stages, the *slp1*--*eve* boundary progressively resolves into narrow abutting stripes giving rise to the row of initiator cells ({@fig:genetic-patterning}f, {@fig:genetic-features}a).
+Altogether, the data suggests that *slp1* activity contributes to restricting the anterior boundary of *eve* expression during early stages of zygotic activation, an interaction that determines the site of invagination of the cephalic furrow along the anteroposterior axis.
 
-To understand this phenotype, we analyzed the expression of *slp1* relative to *btd*, *eve*, and *prd* from the onset of zygotic activation to gastrulation.
-Wildtype embryos at cycle 11 already express *slp1* at the anterior end and *eve* almost ubiquitously ({@fig:genetic-features}b).
-At cycle 12, *eve* is cleared from the anterior end, and the two genes form juxtaposing territories that broadly correspond to the head and trunk regions of the embryo.
-The boundary between *slp1* and *eve* expression domains is set at 65% embryo length and does not change until gastrulation and coincides with the head--trunk boundary and initiator cells of the cephalic furrow.
+upstream factor 
+
+At gastrulation, there is unique combinatorial arrangement.
+We infer some genetic interactions (Supp note).
+We compare this arrangement with other species.
+
+
+surrounded by rows of *slp*-expressing adjacent cells 
+
+
 The anterior shift that occurs in slp mutants suggests that this early genetic interaction between slp and eve is altered, possibly with eve transcripts not being fully cleared from the anterior end, setting the boundary more anteriorly.
 
+*btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:patterning}f).
+
+To understand this phenotype, we analyzed the expression of *slp1* relative to *btd*, *eve*, and *prd* from the onset of zygotic activation to gastrulation.
+
+The boundary between *slp1* and *eve* is set at 65% embryo length; it does not change until gastrulation and coincides with the position of the initiator cells.
+
+The anterior shift that occurs in slp mutants suggests that this early genetic interaction between slp and eve is altered, possibly with eve transcripts not being fully cleared from the anterior end, setting the boundary more anteriorly.
 
 ; this position does not change suggesting that 
 
 and does not change   determines the position of the head--trunk boundary
 
 progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:genetic-patterning}g,i).
-
 
 *btd* expression initiates secondarily at the interface between *slp* and *eve* ({@fig:genetic-patterning}f).
 
@@ -395,7 +412,6 @@ These data indicate that the early *slp* activity is an upstream factor required
 but it is unclear if this is conserved in other flies.
 To uncover the changes in genetic patterning associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified cephalic furrow genes between dipteran species with or without the invagination.
 
-At the onset of gastrulation, the broad *slp* and *eve* domains progressively resolve into narrow abutting stripes which correspond to a central row of *eve*-expressing initiator cells surrounded by rows of *slp*-expressing adjacent cells ({@fig:genetic-patterning}g,i).
 
 In addition, *prd* expression is offset to *slp* expression by a single row of cells and *btd* expression localizes to the anterior half of the cephalic furrow ({@fig:genetic-patterning}e).
 Furthermore, the outer edges of the cephalic furrow are demarcated by *slp* expression ({@fig:genetic-patterning}i).
@@ -424,7 +440,7 @@ Since *slp* is crucial to maintain parasegment polarity by activating *wingless*
 <!--Head--trunk boundary slp/eve expression is conserved-->
 <!--Clogmia lacks the head--trunk domain of btd-->
 
-the dipteran fly *Clogmia albipunctata*, a species from the basally-branching Psychodidae family which has no cephalic furrow [@Jimenez-Guri2014-zs; @Dey2023-pj].
+the dipteran fly *Clogmia albipunctata*, a species from the basally-branching Psychodidae family which has no cephalic furrow [@Jimenez-Guri2014-zs; @Dey2023-mo].
 
 
 
@@ -1200,6 +1216,8 @@ The strongest cephalic furrow phenotype was present in flies mutant for the *slo
 ## Supplementary Note 3
 
 ### Genetic interactions at the head--trunk boundary
+
+early slp activity represses eve at the anterior end
 
 *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d)
 
