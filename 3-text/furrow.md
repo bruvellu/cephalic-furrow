@@ -405,6 +405,14 @@ The data provides a template of cephalic furrow patterning to be compared with o
 
 ### Novel *btd* head--trunk domain associated with cephalic furrow
 
+<!--TODO: Update text to reflect the four species studied-->
+<!--TODO: First mention early expression fairly similar-->
+<!--TODO: Put early expression patterns Ccap, Aste, Calb on new extended data-->
+<!--TODO: Put representative images of early patterns on main figure-->
+<!--TODO: Add lateral head view for the four species-->
+<!--TODO: Add profile view for the four species-->
+<!--TODO: Complete the schematics with combinatorial pattern-->
+
 <!--Head--trunk boundary slp/eve expression is conserved-->
 <!--Clogmia lacks the head--trunk domain of btd-->
 
@@ -1088,9 +1096,17 @@ High-resolution versions of the extended data figures and videos are available a
 
 ## Extended Data Fig. 6
 
-![Additional genetic patterning of the head--trunk boundary.
+![Additional genetic patterning of the head--trunk boundary in *Drosophila*.
 **a**, Expression of *btd* and *eve* in wildtype and *slp* mutants at mid and late mitotic cycle 14.
 ](figures/EDFig6.jpg){#fig:genetic-features tag="Extended Data Fig. 6" width=100%}
+
+\newpage
+
+## Extended Data Fig. 7
+
+![Additional genetic patterning of the head--trunk boundary in other species.
+**a**, Expression of...
+](figures/EDFig7.jpg){#fig:genetic-comparative tag="Extended Data Fig. 7" width=100%}
 
 \newpage
 

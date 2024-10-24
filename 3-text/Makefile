@@ -69,6 +69,7 @@ figs:
 	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIRES}/EDFig4.png
 	ln -sf ${FIGSRC}/live-details/figure.png ${FIGHIRES}/EDFig5.png
 	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIRES}/EDFig6.png
+	ln -sf ${FIGSRC}/genetic-comparative/figure.png ${FIGHIRES}/EDFig7.png
 	# Supplementary information
 	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIRES}/SIFig1.png
 	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIRES}/SIFig2.png
