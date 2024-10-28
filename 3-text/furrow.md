@@ -413,12 +413,9 @@ The data provides a template of cephalic furrow patterning to be compared with o
 <!--TODO: Add profile view for the four species-->
 <!--TODO: Complete the schematics with combinatorial pattern-->
 
-<!--Head--trunk boundary slp/eve expression is conserved-->
-<!--Clogmia lacks the head--trunk domain of btd-->
+To uncover the differences in the head--trunk genetic patterning associated with the evolution of the cephalic furrow, we compared the *Drosophila* expression patterns to three other dipteran species.
+One with cephalic furrow, the mediterranean fruit fly (medfly) *Ceratitis capitata* (Tephritidae) [@Strobl2022-og], and two without, the malaria mosquito *Anopheles stephensi* (Culicidae) [@Cheatle-Jarvela2020-go; @Cheatle-Jarvela2023-gd] and the drain fly *Clogmia albipunctata* (Psychodidae) [@Jimenez-Guri2014-zs; @Dey2023-mo].
 
-<!--the dipteran fly *Clogmia albipunctata*, a species from the basally-branching Psychodidae family which has no cephalic furrow [@Jimenez-Guri2014-zs; @Dey2023-mo].-->
-
-To uncover the genetic patterning differences associated with the evolution of the cephalic furrow, we compared the expression data of the above described cephalic furrow genes in *Drosophila* to *Clogmia*, which lacks a cephalic furrow.
 We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:genetic-patterning}f).
 However, the expression of *btd* differs between the two species.
 In *Drosophila* *btd* is expressed at the head--trunk boundary from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:genetic-patterning}f).
@@ -426,6 +423,9 @@ In *Clogmia*, the *btd* acron domain is expressed much earlier and, strikingly, 
 Additionally, the combinatorial expression of *slp*, *eve*, and *prd* at the onset of gastrulation is conserved between *Clogmia* and *Drosophila* ({@fig:genetic-patterning}j).
 These data shows that both flies share a conserved head--trunk patterning system, and that the only significant difference is the presence of a head--trunk domain of *btd* in *Drosophila*.
 Since *btd* is a crucial gene for cephalic furrow formation, this suggests that the origin of a novel expression domain of *btd* at the head--trunk boundary was a key event associated with the evolution of the cephalic furrow.
+
+<!--Head--trunk boundary slp/eve expression is conserved-->
+<!--Clogmia lacks the head--trunk domain of btd-->
 
 <!--- As an aside, curiously, the eye domain of btd is expressed very early in Clogmia while the same domain is delayed tremendously in Drosophila. Clogmia has larval eyes while Drosophila doesn’t. It could be that some portions of head development in Drosophila were just turned off.-->
 
