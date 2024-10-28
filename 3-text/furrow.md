@@ -416,7 +416,7 @@ The data provides a template of cephalic furrow patterning to be compared with o
 To uncover the differences in the head--trunk genetic patterning associated with the evolution of the cephalic furrow, we compared the *Drosophila* expression patterns to three other dipteran species.
 One with cephalic furrow, the mediterranean fruit fly (medfly) *Ceratitis capitata* (Tephritidae) [@Strobl2022-og], and two without, the malaria mosquito *Anopheles stephensi* (Culicidae) [@Cheatle-Jarvela2020-go; @Cheatle-Jarvela2023-gd] and the drain fly *Clogmia albipunctata* (Psychodidae) [@Jimenez-Guri2014-zs; @Dey2023-mo].
 
-We find that the early expression of *slp* and *eve* are highly similar between *Drosophila* and *Clogmia* as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:genetic-patterning}f).
+We find that the early expression of *slp* and *eve* are highly similar between the species as both genes are expressed in broad juxtaposing domains demarcating the head--trunk boundary ({@fig:genetic-patterning}f,j).
 However, the expression of *btd* differs between the two species.
 In *Drosophila* *btd* is expressed at the head--trunk boundary from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:genetic-patterning}f).
 In *Clogmia*, the *btd* acron domain is expressed much earlier and, strikingly, the head--trunk domain is not present; *btd* is only expressed at a ventral patch in the foregut area ({@fig:genetic-patterning}f,h).
