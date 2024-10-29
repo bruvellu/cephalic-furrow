@@ -418,7 +418,7 @@ One species, the mediterranean fruit fly *Ceratitis capitata* (Tephritidae) [@St
 The other two species, the malaria mosquito *Anopheles stephensi* (Culicidae) [@Cheatle-Jarvela2020-go; @Cheatle-Jarvela2023-gd] and the drain fly *Clogmia albipunctata* (Psychodidae) [@Jimenez-Guri2014-zs; @Dey2023-mo], belong to families where the cephalic furrow has not been observed [@Dey2023-mo].
 
 The three species show early, juxtaposing domains of *slp* and *eve* demarcating the head and trunk regions in a pattern highly similar to that of *Drosophila* ({@fig:genetic-patterning}f,j, {@fig:genetic-comparative}a,b,c).
-Moreover, the late pattern of abutting *slp* and *eve* stripes is nearly identical between the four species ({@fig:genetic-patterning}f,j,k) and *prd* expression relative to *slp* and *eve* in *Clogmia* is identical to *Drosophila* ({@fig}).
+Moreover, the late pattern of abutting *slp* and *eve* stripes is nearly identical between the four species ({@fig:genetic-patterning}f,j,k).
 These observations suggest that the genetic interactions that establish the head--trunk boundary position in *Drosophila*, and much of the late patterning,  might be conserved in other dipteran species.
 
 However, we identified a key difference between species with and without the cephalic furrow in the expression of *btd*.
@@ -428,6 +428,8 @@ Their head--trunk domain of *btd* either does not overlap with *eve* or is entir
 Unlike *Drosophila* ({@fig:genetic-patterning}i), *eve* stripe 1 cells do not express *btd* in species without a cephalic furrow ({@fig:genetic-patterning}m).
 The absence of a *btd*--*eve* overlap in species without cephalic furrow has also been corroborated in other dipteran species [@Dey2023-mo].
 Since *btd* is a crucial gene for cephalic furrow formation, this suggests that the its evolution may have been associated with the establishment and positioning of *btd* at the head--trunk boundary.
+
+<!--*prd* expression relative to *slp* and *eve* in *Clogmia* is different to *Drosophila* ({@fig})-->
 
 <!--The data indicates that the presence of a head--trunk domain of *btd* in *Drosophila*.-->
 
