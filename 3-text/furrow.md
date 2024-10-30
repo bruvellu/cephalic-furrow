@@ -146,16 +146,18 @@ To capture the tissue dynamics during gastrulation and the relative timing of de
 Our recordings show that the behavior of initiator cells is perturbed in the three mutants, but in different ways ({@fig:ectopic-folding}a).
 In wildtype embryos, the initiator cells undergo cell shortening and anisotropic apical constriction at the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
 In *prd* mutants, these behaviors are delayed but the initiators still shorten and constrict apically, forming a clear infolding point in the epithelium about six minutes after gastrulation ({@fig:initiator}a,b). 
-However, *prd* initiators lack the typical arched profile of the wildtype initiators, and the resulting fold is abnormal, indicating that cephalic furrow formation is not only delayed but also perturbed.
+However, *prd* initiator and adjacent cells lack the typical arched profile of the wildtype cells and the resulting fold is abnormal ({@fig:initiator}a).
+This indicates that cephalic furrow formation is not only delayed as reported previously [@Blankenship2001-tm], but also perturbed.
 In *btd* mutants, the initiator cells do not shorten, but show a reduced degree of apical constriction which creates a small indentation in epithelium of some embryos ({@fig:initiator}a,b, {!@fig:vid-initiator}), possibly due to the myosin activity at the head--trunk interface [@Eritano2020-mi].
 In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
-Therefore, while initiator behavior is abnormal in *prd* mutants, the cellular basis for cephalic furrow formation---the early shortening of initiator cells---is only severely disrupted in *btd* and *eve*.
+While initiator behavior is abnormal in *prd* mutants, the cellular basis for cephalic furrow formation---the early shortening of initiator cells---is only severely disrupted in *btd* and *eve*.
 Nevertheless, about 10--15 min after the onset of gastrulation in *btd* and *eve* mutants, we observe the formation of epithelial folds near the canonical position of the cephalic furrow ({@fig:ectopic-folding}b,c, {@fig:initiator}a).
 
 <!--TODO: Create video for btd initiator cells {!@fig:vid-initiator-btd}-->
 <!--TODO: Create video for prd initiator cells {!@fig:vid-initiator-prd}-->
 
 ### Ectopic folds form at the head--trunk boundary
+
 <!--### Ectopic folds more frequent in cephalic furrow mutants-->
 
 <!--TODO: Re-write paragraphs to incorporate wildtype and mutant EFs?-->
@@ -356,15 +358,17 @@ Taken together, our physical model provides a theoretical basis that a fold like
 - Comparative expression across species (include prd?)
 -->
 
-As described above, the effectiveness of the cephalic furrow in preventing epithelial instabilities depends on the position and time of invagination.
-This spatiotemporal control of the invagination in *Drosophila* is determined genetically by *btd*, *eve*, and *prd* expressed at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm].
+As described above, the effectiveness of the cephalic furrow in preventing epithelial instabilities depends on its position and time of formation.
+In *Drosophila*, this spatiotemporal control is determined genetically by the combinatorial expression of *btd*, *eve*, and *prd* at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm; this study].
+Given that 
+
 However, it remains unclear if this genetic patterning is conserved across the dipteran phylogeny.
 To uncover the genetic changes associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified genes between fly species with and without the cephalic furrow.
 
 ### Ancestral *slp*--*eve* interaction defines head--trunk position
 
 To identify additional genes patterning the cephalic furrow, we performed a live-imaging screen with loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
-We find that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a delayed cephalic furrow that is shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
+We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a delayed cephalic furrow that is shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
 Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary.
 Indeed, except for the wider gap between *eve* stripe 1 and 2, the typical overlap remains unaltered ({@fig:genetic-patterning}c--d, {@fig:genetic-features}c).
 Cells expressing *btd* and *eve* are shifted anteriorly a few rows (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e).
