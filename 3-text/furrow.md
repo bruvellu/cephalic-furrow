@@ -358,17 +358,15 @@ Taken together, our physical model provides a theoretical basis that a fold like
 - Comparative expression across species (include prd?)
 -->
 
-As described above, the effectiveness of the cephalic furrow in preventing epithelial instabilities depends on its position and time of formation.
-In *Drosophila*, this spatiotemporal control is determined genetically by the combinatorial expression of *btd*, *eve*, and *prd* at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm; this study].
-Given that 
-
-However, it remains unclear if this genetic patterning is conserved across the dipteran phylogeny.
-To uncover the genetic changes associated with the evolution of the cephalic furrow, we compared the expression of known and newly-identified genes between fly species with and without the cephalic furrow.
+As described above, the effectiveness of the cephalic furrow in preventing epithelial instabilities depends on the position and time of the invagination.
+In *Drosophila*, this spatiotemporal control is determined genetically by the combinatorial expression of *btd*, *eve*, and *prd* at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm] (also this study).
+However, it remains unclear which elements of this genetic patterning cascade are associated with the evolution of the cephalic furrow.
+To address this question, we first sought to identify additional genes involved in cephalic furrow formation, and then asked how the expression of these cephalic furrow genes compare between dipteran species with and without the cephalic furrow.
 
 ### Ancestral *slp*--*eve* interaction defines head--trunk position
 
-To identify additional genes patterning the cephalic furrow, we performed a live-imaging screen with loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
-We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a delayed cephalic furrow that is shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
+To identify other cephalic furrow genes, we performed a live-imaging screen using loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
+We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a strong phenotype where the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
 Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary.
 Indeed, except for the wider gap between *eve* stripe 1 and 2, the typical overlap remains unaltered ({@fig:genetic-patterning}c--d, {@fig:genetic-features}c).
 Cells expressing *btd* and *eve* are shifted anteriorly a few rows (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e).
@@ -385,8 +383,9 @@ At the onset of gastrulation, the expression of *btd*, *eve*, *slp*, and *prd* a
 The central row of *eve*-expressing initiator cells are surrounded by *slp1*-expressing adjacent cells, with *prd* expression offset by a single row of cells relative to the inner *slp1* stripes ({@fig:genetic-patterning}g,i).
 Moreover, *slp1*-expressing cells also demarcate the outer edges of the invagination ({@fig:genetic-patterning}i).
 This combinatorial expression suggests that each row has a unique transcriptional identity.
-This arrangement is disrupted in *btd*, *eve*, and *prd* mutants (Supplementary Note 3), suggesting that it is important for the patterning and morphogenesis of the invagination in *Drosophila*.
-The data provides a template of cephalic furrow patterning to be compared with other species.
+This arrangement is disrupted in *btd*, *eve*, and *prd* mutants (Supplementary Note 3), embryos that exhibit cephalic furrow defects ({@fig:initiator}).
+This indicating that this specific molecular profile is important
+for the patterning and morphogenesis of the invagination in *Drosophila*, and provide a template for the comparison to other species.
 
 <!--Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.-->
 
