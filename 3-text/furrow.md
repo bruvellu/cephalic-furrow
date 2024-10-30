@@ -366,11 +366,12 @@ To address this question, we first sought to identify additional genes involved 
 ### Ancestral *slp*--*eve* interaction defines head--trunk position
 
 To identify other cephalic furrow genes, we performed a live-imaging screen using loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
-We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a strong phenotype where the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b).
+We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a strong phenotype where the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b, {@fig:vid-slp-lateral}).
 Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary.
-Indeed, except for the wider gap between *eve* stripe 1 and 2, the typical overlap remains unaltered ({@fig:genetic-patterning}c--d, {@fig:genetic-features}c).
-Cells expressing *btd* and *eve* are shifted anteriorly a few rows (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e).
-However, they still give rise to initiator cells, indicating that the cephalic furrow patterning in *slp* mutants has been displaced but not disrupted.
+Indeed, the expression patterns and typical overlap between the two genes remains almost unaltered, except for the small ectopic expression *btd* in the head and for the wider gap between *eve* stripe 1 and 2 ({@fig:genetic-patterning}c--d, {@fig:genetic-features}c).
+The anterior shift in cells expressing *btd* and *eve* corresponds to a few rows of blastoderm cells (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e).
+Despite the displacement, these cells exhibit a initiator behaviors, suggesting that the patterning is not entirely perturbed ({@fig:genetic-features}c).
+However, the morphogenesis and symmetry of the resulting fold are altered ({@fig:vid-slp-lateral}, {@fig:genetic-features}d), indicating that *slp1* may contribute not only to the positioning but also patterning of individual cells that give rise to the cephalic furrow.
 
 By analyzing the expression of *slp1* relative to *btd*, *eve*, and *prd* in wildtype *Drosophila* embryos, we find that the early *slp1* and *eve* expression domains demarcate the head--trunk boundary from the onset of zygotic activation until gastrulation ({@fig:genetic-patterning}f, {@fig:genetic-features}b).
 Early *slp1* transcripts are limited to the anterior end while *eve* transcripts, which are initially ubiquitous [@Andrioli2012-fv], begin to clear from the anterior end at cycle 11, and become limited to the posterior region of the body from cycle 12 ({@fig:genetic-features}b).
