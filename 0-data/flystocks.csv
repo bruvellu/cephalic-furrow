@@ -11,7 +11,8 @@ ICMT,,Chr 2 and 3 double balancer,"w; Kr[If-1]/CyO, twi-GFP; MKRS, Sb/TM6B, Tb",
 btd[XA] Gap,,btd green balancer with membrane,"btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry/MKRS",this study,BCV88,Gap is not balanced by MKRS; recombinants and non-Gap embryos can appear in the stock
 eve[3] Gap,,eve green balancer with membrane,"eve[3]/CyO, twi-GFP; Gap43-mCherry/MKRS",this study,BCV89,Gap is not balanced by MKRS; recombinants and non-Gap embryos can appear in the stock
 prd[4] Gap,,prd green balancer with membrane,"prd[4]/CyO, twi-GFP; Gap43-mCherry/MKRS",this study,BCV45,Gap is not balanced by MKRS; recombinants and non-Gap embryos can appear in the stock
-slp[delta34b] Gap,,slp green balancer with membrane,"W; Df(2L)ed1/CyO, twi-GFP; TM6B, Tb/Gap43-mCherry",this study,BCV44,
+slp[delta34b] Gap,,slp green balancer with membrane,"w; Df(2L)ed1/CyO, twi-GFP; TM6B, Tb/Gap43-mCherry",this study,BCV44,
+slp[delta34b] HisGap,,slp green balancer with nuclei and membrane,"w; Df(2L)ed1/CyO, twi-GFP; MKRS, Sb/His-GFP,Gap43-mCherry",this study,-,Gap is not balanced by MKRS; recombinants and non-Gap embryos can appear in the stock
 "Gap,stg[2]",,stg with membrane,"w;; Gap43-mCherry, stg[2]/TM3, Sb ",this study,BCV77,
 "Gap,stg[2] green",,stg green balancer with membrane,"w;; Gap43-mCherry, stg[2]/TM3, Kr-GFP, Sb[1]",this study,BCV78,
 "btd[XA] Gap,stg[2] transient",,btd-stg double mutant with membrane transient,"btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/Gap43-mCherry",this study,-,
