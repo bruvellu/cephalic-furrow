@@ -90,6 +90,7 @@ vids:
 	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGHIRES}/Vid9.avi
 	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.avi ${FIGHIRES}/Vid10.avi
 	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.avi ${FIGHIRES}/Vid11.avi
+	ln -sf ${ANASRC}/slp-mutants/3-snaps/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.avi ${FIGHIRES}/Vid12.avi
 	# Supplementary AVIs
 	ln -sf ${ANASRC}/initiator-behavior/8-combine/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.avi ${FIGHIRES}/VidS1.avi
 	ln -sf ${ANASRC}/ectopic-variability/5-combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.avi ${FIGHIRES}/VidS2.avi
@@ -108,6 +109,7 @@ vids:
 	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.m4v ${FIGOUT}/Vid9.m4v
 	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.m4v ${FIGOUT}/Vid10.m4v
 	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.m4v ${FIGOUT}/Vid11.m4v
+	ln -sf ${ANASRC}/slp-mutants/3-snaps/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.mp4 ${FIGHIRES}/Vid12.mp4
 	# Supplementary
 	ln -sf ${FIGSRC}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.m4v ${FIGOUT}/VidS1.m4v
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.m4v ${FIGOUT}/VidS2.m4v

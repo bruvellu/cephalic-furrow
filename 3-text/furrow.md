@@ -367,11 +367,13 @@ To address this question, we first sought to identify additional genes involved 
 
 To identify other cephalic furrow genes, we performed a live-imaging screen using loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
 We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a strong phenotype where the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b, {@fig:vid-slp-lateral}).
+With this anterior shift, *slp* mutants exhibit a more prominent posterior dorsal fold and an early ectopic fold within MD6 appearing before cell divisions ({@fig:genetic-patterning}a, {@fig:vid-slp-lateral}), which are congruent with the increase in posterior mechanical instability present in our simulations where the cephalic furrow is shifted forward ({@fig:fold-model}h).
+
 Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary.
 Indeed, the expression patterns and typical overlap between the two genes remains almost unaltered, except for the small ectopic expression *btd* in the head and for the wider gap between *eve* stripe 1 and 2 ({@fig:genetic-patterning}c--d, {@fig:genetic-features}c).
 The anterior shift in cells expressing *btd* and *eve* corresponds to a few rows of blastoderm cells (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e).
-Despite the displacement, these cells exhibit a initiator behaviors, suggesting that the patterning is not entirely perturbed ({@fig:genetic-features}c).
-However, the morphogenesis and symmetry of the resulting fold are altered ({@fig:vid-slp-lateral}, {@fig:genetic-features}d), indicating that *slp1* may contribute not only to the positioning but also patterning of individual cells that give rise to the cephalic furrow.
+Despite the displacement, most *slp* embryos exhibit initiator cell behaviors, suggesting that the patterning is not entirely perturbed ({@fig:genetic-features}c).
+However, the symmetry of the resulting fold is altered ({@fig:genetic-features}d), indicating that *slp1* may contribute not only to the positioning but also to the patterning of individual cells that give rise to the cephalic furrow.
 
 By analyzing the expression of *slp1* relative to *btd*, *eve*, and *prd* in wildtype *Drosophila* embryos, we find that the early *slp1* and *eve* expression domains demarcate the head--trunk boundary from the onset of zygotic activation until gastrulation ({@fig:genetic-patterning}f, {@fig:genetic-features}b).
 Early *slp1* transcripts are limited to the anterior end while *eve* transcripts, which are initially ubiquitous [@Andrioli2012-fv], begin to clear from the anterior end at cycle 11, and become limited to the posterior region of the body from cycle 12 ({@fig:genetic-features}b).
@@ -811,8 +813,6 @@ High-resolution versions of the figures are available at [https://doi.org/10.528
 **g**, Tissue dynamics at the trunk--germ boundary after laser ablations. We measured the distance between cell vertex pairs over time in control and ablated wildtype embryos. The tracks are color-coded for time. Solid white line represents the distance between vertices at one timepoint. Dashed white line shows the location of the cut. The plots show a smoothed local regression of three samples.
 ](figures/Fig2.jpg){#fig:mitotic-strain width=80%}
 
-Download file (1.4 MB): [https://zenodo.org/record/8424742/files/Fig2.png?download=1](https://zenodo.org/record/8424742/files/Fig2.png?download=1)
-
 \newpage
 
 ## Figure 3
@@ -831,8 +831,6 @@ Download file (1.4 MB): [https://zenodo.org/record/8424742/files/Fig2.png?downlo
 ](figures/Fig3.jpg){#fig:fold-model width=100%}
 
 <!--TODO: Describe properly panel with CF positioning-->
-
-Download file (708.1 kB): [https://zenodo.org/record/8424742/files/Fig3.png?download=1](https://zenodo.org/record/8424742/files/Fig3.png?download=1)
 
 \newpage
 
@@ -880,8 +878,6 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg:
 **b**, Scenario for mechanical instability as a selective pressure for the evolution of morphogenetic innovations. In the ancestral state there was no mechanical instability at the head--trunk boundary (0). The appearance of mitotic domains and germ band extension increased the compressive stresses and ectopic buckling events at the head--trunk boundary (1). This mechanical instability may have had a detrimental effect on individual fitness by affecting developmental robustness or by slowing down embryogenesis. Natural selection favored the establishment of patterned processes that mitigate these compressive stresses at the head--trunk boundary. One solution, present in *Clogmia* and *Chironomus*, is the out-of-plane cell divisions which reduce the compression load on the monolayer epithelium (2a). Another solution, present in *Drosophila* and other cyclorraphan flies, is the formation of an out-of-plane invagination which absorbs the mechanical forces at the head--trunk boundary (2b). These events may have happened through the stabilization of genetic interactions and cooption of existing signaling modules controlling cell and tissue morphogenesis. Tissue mechanics may have been an important factor influencing the evolution of patterned morphogenesis in early embryonic development.
 ](figures/Fig6.jpg){#fig:summary width=100%}
 
-Download file (435.7 kB): [https://zenodo.org/record/8424742/files/Fig6.png?download=1](https://zenodo.org/record/8424742/files/Fig6.png?download=1)
-
 \newpage
 
 # Videos
@@ -893,16 +889,12 @@ High-resolution versions of the videos are available at [https://doi.org/10.5281
 ![Lateral view of ectopic fold formation in *btd* mutant. The cephalic furrow forms normally in sibling controls (top) but it is absent in *btd* mutants (bottom). In the mutant, no fold is present at the head--trunk interface until about 20min, when a large ectopic fold appears and quickly unfolds at about 45min. In the sibling control, the cephalic furrow remains partially invaginated  for the period shown in the recording (about 110min). Frame rate = 15fps. Scale bars = 50µm.
 ](figures/Vid1.jpg){#fig:vid-lateral-btd tag="Video 1" width=50%}
 
-Download file (20.3 MB): [https://zenodo.org/record/8424742/files/Vid1.m4v?download=1](https://zenodo.org/record/8424742/files/Vid1.m4v?download=1)
-
 \newpage
 
 ## Video 2
 
 ![Lateral view of ectopic fold formation in *eve* mutant. The cephalic furrow forms normally in sibling controls (top) but it is absent in *eve* mutants (bottom). There is no invagination at the head--trunk boundary at the onset of gastrulation, but an ectopic fold starts forming near the dorsal region as soon as the mitotic domains begin expanding around 24min. The ectopic folds unfolds almost entirely by the end of the recording (about 85min). Additional ectopic folds appear in the trunk region. Frame rate = 10fps. Scale bars = 50µm.
 ](figures/Vid2.jpg){#fig:vid-lateral-eve tag="Video 2" width=50%}
-
-Download file (15.0 MB): [https://zenodo.org/record/8424742/files/Vid2.m4v?download=1](https://zenodo.org/record/8424742/files/Vid2.m4v?download=1)
 
 \newpage
 
@@ -911,16 +903,12 @@ Download file (15.0 MB): [https://zenodo.org/record/8424742/files/Vid2.m4v?downl
 ![Profile view of ectopic fold formation in *btd* mutant. In sibling controls (top), the cephalic furrow initiates at the onset of gastrulation (1.5min) and is fully invaginated when the cell divisions start (about 11min). In *btd* mutants (bottom), no invagination initiates but some embryos exhibit a bulging of the epithelium due to a residual apical constriction behavior (about 7min). An ectopic fold forms at this position. Its morphology differs greatly from the cephalic furrow (see 10min). Both the cephalic furrow and ectopic folds regress with the extension of the germ band. Frame rate = 10fps. Scale bar = 20µm.
 ](figures/Vid3.jpg){#fig:vid-profile-btd tag="Video 3" width=50%}
 
-Download file (36.2 MB): [https://zenodo.org/record/8424742/files/Vid3.m4v?download=1](https://zenodo.org/record/8424742/files/Vid3.m4v?download=1)
-
 \newpage
 
 ## Video 4
 
 ![Profile view of ectopic fold formation in *eve* mutant. In sibling controls (top), the cephalic furrow intiates at the onset of gastrulation (1.8min). In *eve* mutants, there are no folds appearing in the epithelium until the formation of mitotic domains (about 10min). Then, a large ectopic fold appears posterior to dividing cells (15min). The epithelium of *eve* mutants show additional folding events along the head and trunk regions. Frame rate = 10fps. Scale bar = 20µm.
 ](figures/Vid4.jpg){#fig:vid-profile-eve tag="Video 4" width=50%}
-
-Download file (25.8 MB): [https://zenodo.org/record/8424742/files/Vid4.m4v?download=1](https://zenodo.org/record/8424742/files/Vid4.m4v?download=1)
 
 \newpage
 
@@ -929,8 +917,6 @@ Download file (25.8 MB): [https://zenodo.org/record/8424742/files/Vid4.m4v?downl
 ![Ectopic folding between mitotic domains in *btd* mutant. Detailed view of cartographic projections of *btd* embryos showing the formation of the cephalic furrow (left) and of an ectopic fold (right). In sibling controls, the cephalic furrow initiates in a progressive manner from a narrow row of cells before mitotic domains which only appear at about 20min. In *btd* mutants, the ectopic folds appear in an abrupt manner without any preceding changes in epithelial cells and unfold soon after. Frame rate = 10fps. Scale bar = 20µm (approximate value for cartographic projection).
 ](figures/Vid5.jpg){#fig:vid-mitotic-fold tag="Video 5" width=50%}
 
-Download file (3.8 MB): [https://zenodo.org/record/8424742/files/Vid5.m4v?download=1](https://zenodo.org/record/8424742/files/Vid5.m4v?download=1)
-
 \newpage
 
 ## Video 6
@@ -938,16 +924,12 @@ Download file (3.8 MB): [https://zenodo.org/record/8424742/files/Vid5.m4v?downlo
 ![Epithelial strain rate during ectopic folding in *btd* mutant. Video from @fig:vid-mitotic-fold overlayed with the estimated strain rate across the tissues (color-coded from purple to yellow). Increase in strain rates are associated with tissue infolding and mitotic expansions. The video is looped. Frame rate = 10fps.
 ](figures/Vid6.jpg){#fig:vid-strain-rate tag="Video 6" width=50%}
 
-Download file (2.1 MB): [https://zenodo.org/record/8424742/files/Vid6.m4v?download=1](https://zenodo.org/record/8424742/files/Vid6.m4v?download=1)
-
 \newpage
 
 ## Video 7
 
 ![Lateral views of germ band cauterization in *eve* embryos. Non-cauterized *eve* embryo showing the formation of ectopic folds (top, same embryo from @fig:vid-lateral-eve) and a cauterized *eve* embryo where no ectopic folds appear at the head--trunk interface (bottom). The germ band extension is mechanically blocked by cauterizing the tissue to the vitelline envelope. Mitotic domains form normally but no folding of the surface occurs. Frame rate = 10fps. Scale bar = 50µm.
 ](figures/Vid7.jpg){#fig:vid-cautlat-eve tag="Video 7" width=50%}
-
-Download file (3.4 MB): [https://zenodo.org/record/8424742/files/Vid7.m4v?download=1](https://zenodo.org/record/8424742/files/Vid7.m4v?download=1)
 
 <!--TODO: Replace eve embryo so that it is not the same used in a previous video?-->
 
@@ -958,16 +940,12 @@ Download file (3.4 MB): [https://zenodo.org/record/8424742/files/Vid7.m4v?downlo
 ![Profile views of germ band cauterization in *eve* mutant. Same embryo from @fig:vid-cautlat-eve, but showing a surface and a profile view. The cauterization prevents the extension of the germ band. The mitotic domains compress non-dividing cells but these do not buckle. Frame rate = 10fps. Scale bar = 50µm.
 ](figures/Vid8.jpg){#fig:vid-cautdor-eve tag="Video 8" width=50%}
 
-Download file (1.6 MB): [https://zenodo.org/record/8424742/files/Vid8.m4v?download=1](https://zenodo.org/record/8424742/files/Vid8.m4v?download=1)
-
 \newpage
 
 ## Video 9
 
 ![Profile views of germ band cauterizations in *btd* embryos. A non-cauterized *btd* embryo (top) showing ectopic folds and a cauterized *btd* embryo showing no ectopic folds (bottom). Frame rate = 10fps. Scale bar = 20µm.
 ](figures/Vid9.jpg){#fig:vid-cautdor-btd tag="Video 9" width=50%}
-
-Download file (4.1 MB): [https://zenodo.org/record/8424742/files/Vid9.m4v?download=1](https://zenodo.org/record/8424742/files/Vid9.m4v?download=1)
 
 \newpage
 
@@ -976,8 +954,6 @@ Download file (4.1 MB): [https://zenodo.org/record/8424742/files/Vid9.m4v?downlo
 ![Lateral view of *btd*--*stg* double mutant. A *btd* homozygote (top) shows the formation of ectopic folds while no ectopic folds form in the *btd*--*stg* double mutant (bottom). Frame rate = 10fps. Scale bars = 50µm.
 ](figures/Vid10.jpg){#fig:vid-double-lateral tag="Video 10" width=50%}
 
-Download file (4.9 MB): [https://zenodo.org/record/8424742/files/Vid10.m4v?download=1](https://zenodo.org/record/8424742/files/Vid10.m4v?download=1)
-
 \newpage
 
 ## Video 11
@@ -985,7 +961,12 @@ Download file (4.9 MB): [https://zenodo.org/record/8424742/files/Vid10.m4v?downl
 ![Dorsal view of *btd*--*stg* double mutant. A *btd* homozygote shows the formation of an ectopic fold (top). The *btd*--*stg* double mutant exhibits no mitotic domains and no ectopic folds (bottom). Frame rate = 10fps. Scale bar = 20µm.
 ](figures/Vid11.jpg){#fig:vid-double-dorsal tag="Video 11" width=50%}
 
-Download file (18.7 MB): [https://zenodo.org/record/8424742/files/Vid11.m4v?download=1](https://zenodo.org/record/8424742/files/Vid11.m4v?download=1)
+\newpage
+
+## Video 12
+
+![Lateral view of *slp* mutant. A *slp* heterozygote (top) shows a normal cephalic furrow formation. The *slp* homozygote (bottom) shows a delayed initiator cell behavior and cephalic furrow formation. The embryo also exhibits a more prominent posterior dorsal fold and an ectopic fold forming within the mitotic domain 6 before cell divisions. Frame rate = 10fps. Scale bar = 50µm.
+](figures/Vid12.jpg){#fig:vid-slp-lateral tag="Video 12" width=50%}
 
 \newpage
 
@@ -1144,8 +1125,6 @@ High-resolution versions of the extended data figures and videos are available a
 ![Residual apical constriction in *btd* mutants. Lateral view (left) and cartographic projection (right) of the head--trunk interface in four individual *btd* mutants. Cells exhibit different degrees of apical constriction. The video is looped to highlight the changes in apical cell area. Frame rate = 10fps.
 ](figures/VidS1.jpg){#fig:vid-initiator tag="Video S1" width=50%}
 
-Download file (1.4 MB): [https://zenodo.org/record/8424742/files/VidS1.m4v?download=1](https://zenodo.org/record/8424742/files/VidS1.m4v?download=1)
-
 <!--TODO: Add scale bars-->
 
 \newpage
@@ -1155,16 +1134,12 @@ Download file (1.4 MB): [https://zenodo.org/record/8424742/files/VidS1.m4v?downl
 ![Dynamics of ectopic folding in *btd* mutant. The cephalic furrow in sibling controls (top) and the ectopic folds in *btd* mutants (bottom) are annotated in white to visualize the dynamics in position, extension, and shape during their formation. Frame rate = 10fps. Scale bars = 50µm.
 ](figures/VidS2.jpg){#fig:vid-dynamics-btd tag="Video S2" width=50%}
 
-Download file (6.9 MB): [https://zenodo.org/record/8424742/files/VidS2.m4v?download=1](https://zenodo.org/record/8424742/files/VidS2.m4v?download=1)
-
 \newpage
 
 ## Extended Data Video S3
 
 ![Variability of ectopic folding in *btd* mutants. The video shows four individual *btd* mutants where each display a different pattern and number of ectopic folds at the head--trunk interface. The video is looped to highlight the dynamics of ectopic folding. Frame rate = 15fps. Scale bars = 50µm.
 ](figures/VidS3.jpg){#fig:vid-variability-btd tag="Video S3" width=50%}
-
-Download file (11.1 MB): [https://zenodo.org/record/8424742/files/VidS3.m4v?download=1](https://zenodo.org/record/8424742/files/VidS3.m4v?download=1)
 
 \newpage
 
@@ -1173,16 +1148,12 @@ Download file (11.1 MB): [https://zenodo.org/record/8424742/files/VidS3.m4v?down
 ![Lateral view of cephalic furrow formation in *stg* mutants. Sibling control (top) and *stg* mutant (bottom) during gastrulation. The formation of the cephalic furrow almost identical to the control embryo. The other morphogenetic movements also occur normally until about 35min. At this point the cells in the *stg* mutant are notably larger than the control. Frame rate = 15fps. Scale bars = 50µm.
 ](figures/VidS4.jpg){#fig:vid-stg-lateral tag="Video S4" width=50%}
 
-Download file (41.8 MB): [https://zenodo.org/record/8424742/files/VidS4.m4v?download=1](https://zenodo.org/record/8424742/files/VidS4.m4v?download=1)
-
 \newpage
 
 ## Extended Data Video S5
 
 ![Dorsal view of cephalic furrow formation in *stg* mutants. Sibling control (top) and *stg* mutant (bottom) during gastrulation. The cephalic furrow in *stg* mutants initiates without delay and shows identical morphology to the control until cell divisions begin in the latter. The cells dividing within the cephalic furrow of control embryos alter its morphology, it becomes curved and lengthier. In contrast, the cephalic furrow in the *stg* mutant retains its initial morphology until it unfolds. Frame rate = 10fps. Scale bar = 20µm.
 ](figures/VidS5.jpg){#fig:vid-stg-dorsal tag="Video S5" width=50%}
-
-Download file (42.1 MB): [https://zenodo.org/record/8424742/files/VidS5.m4v?download=1](https://zenodo.org/record/8424742/files/VidS5.m4v?download=1)
 
 <!--TODO: Fix the time to show countdown to gastrulation-->
 
