@@ -1,6 +1,6 @@
 experiment,author,stock,genotype,embryo,view,xres,yres,zres,slices,timestep,frames,zygosity,folds_left,folds_right,folds_avg,ectopic_folds
 2019-04-25_slpGap,bruno,slp,"Df(2L)ed1/CyO,twi-GFP;TM6B,Tb/Gap43-mCherry",slp-CTGap_1_t45s_z3_G1,lateral,0.2859011,0.2859011,3.0000000,,45,330,heterozygote,,,,
-2019-04-25_slpGap,bruno,slp,"Df(2L)ed1/CyO,twi-GFP;TM6B,Tb/Gap43-mCherry",slp-CTGap_1_t45s_z3_G5,lateral,0.2859011,0.2859011,3.0000000,,45,330,homozygote,,,,
+2019-04-25_slpGap,bruno,slp,"Df(2L)ed1/CyO,twi-GFP;TM6B,Tb/Gap43-mCherry",slp-CTGap_1_t45s_z3_G4,lateral,0.2859011,0.2859011,3.0000000,,45,330,homozygote,,,,
 2019-04-25_slpGap,bruno,slp,"Df(2L)ed1/CyO,twi-GFP;TM6B,Tb/Gap43-mCherry",slp-CTGap_1_t45s_z3_G5,lateral,0.2859011,0.2859011,3.0000000,,45,330,heterozygote,,,,
 2019-06-27_slpGap,bruno,slp,"Df(2L)ed1/CyO,twi-GFP;TM6B,Tb/Gap43-mCherry",slpGap_t45_z3_E1,lateral,0.2853696,0.2853696,3.0000000,,45,200,heterozygote,,,,
 2019-06-27_slpGap,bruno,slp,"Df(2L)ed1/CyO,twi-GFP;TM6B,Tb/Gap43-mCherry",slpGap_t45_z3_E3,lateral,0.2853696,0.2853696,3.0000000,,45,200,heterozygote,,,,
