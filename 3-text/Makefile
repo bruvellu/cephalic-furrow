@@ -24,6 +24,12 @@ FIGHIRES=${FIGOUT}/highres
 # Output directory for text versions
 TXTOUT=versions
 
+# Output directory for shared cloud
+CLOUD=`realpath ~/ownCloud/Furrow_manuscript`
+
+# Revision directory
+REVISION=`realpath ../6-revision`
+
 # Date timestamp
 DATE=$(shell date +'%Y-%m-%d')
 
@@ -45,7 +51,7 @@ PDFVARS=-V fontfamily:libertine -V linestretch:1 -V geometry:bindingoffset=2mm -
 HTMLVARS=--standalone --mathml
 
 # Main rule
-all: clean figs vids refs text
+all: clean figs vids refs text cloud
 
 # Cleanup figure directory before compiling
 clean:
@@ -98,24 +104,24 @@ vids:
 	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.avi ${FIGHIRES}/VidS4.avi
 	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.avi ${FIGHIRES}/VidS5.avi
 	# Main
-	ln -sf ${FIGSRC}/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.m4v ${FIGOUT}/Vid1.m4v
-	ln -sf ${FIGSRC}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.m4v ${FIGOUT}/Vid2.m4v
-	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.m4v ${FIGOUT}/Vid3.m4v
-	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.m4v ${FIGOUT}/Vid4.m4v
-	ln -sf ${FIGSRC}/mitotic-strain/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.m4v ${FIGOUT}/Vid5.m4v
-	ln -sf ${FIGSRC}/strain-rate/videos/Strain_btd_E10_E14_label_loop.m4v ${FIGOUT}/Vid6.m4v
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.m4v ${FIGOUT}/Vid7.m4v
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.m4v ${FIGOUT}/Vid8.m4v
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.m4v ${FIGOUT}/Vid9.m4v
-	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.m4v ${FIGOUT}/Vid10.m4v
-	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.m4v ${FIGOUT}/Vid11.m4v
-	ln -sf ${ANASRC}/slp-mutants/3-snaps/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.mp4 ${FIGHIRES}/Vid12.mp4
+	ln -sf ${FIGSRC}/ectopic-folding/2-combine/COMBINE_3D_btd-gap_z3_t55s_E10_f29_E14_f44_label.mp4 ${FIGOUT}/Vid1.mp4
+	ln -sf ${FIGSRC}/ectopic-folding/2-combine/COMBINE_3D_eve-Gap1_t60s_z3_E11_f45_E12_f25_label.mp4 ${FIGOUT}/Vid2.mp4
+	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.mp4 ${FIGOUT}/Vid3.mp4
+	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.mp4 ${FIGOUT}/Vid4.mp4
+	ln -sf ${FIGSRC}/mitotic-strain/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.mp4 ${FIGOUT}/Vid5.mp4
+	ln -sf ${FIGSRC}/strain-rate/videos/Strain_btd_E10_E14_label_loop.mp4 ${FIGOUT}/Vid6.mp4
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.mp4 ${FIGOUT}/Vid7.mp4
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.mp4 ${FIGOUT}/Vid8.mp4
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.mp4 ${FIGOUT}/Vid9.mp4
+	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.mp4 ${FIGOUT}/Vid10.mp4
+	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.mp4 ${FIGOUT}/Vid11.mp4
+	ln -sf ${ANASRC}/slp-mutants/3-snaps/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.mp4 ${FIGOUT}/Vid12.mp4
 	# Supplementary
-	ln -sf ${FIGSRC}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.m4v ${FIGOUT}/VidS1.m4v
-	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.m4v ${FIGOUT}/VidS2.m4v
-	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.m4v ${FIGOUT}/VidS3.m4v
-	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.m4v ${FIGOUT}/VidS4.m4v
-	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.m4v ${FIGOUT}/VidS5.m4v
+	ln -sf ${FIGSRC}/initiator-behavior/videos/COMBINE_E7_E14_E8_E6_head_crop_ic_label_loop.mp4 ${FIGOUT}/VidS1.mp4
+	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.mp4 ${FIGOUT}/VidS2.mp4
+	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.mp4 ${FIGOUT}/VidS3.mp4
+	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.mp4 ${FIGOUT}/VidS4.mp4
+	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.mp4 ${FIGOUT}/VidS5.mp4
 	# Create JPG snapshot for visualization
 	for i in ${FIGHIRES}/*.avi; do ffmpeg -y -loglevel quiet -ss 1 -i $${i} -frames:v 1 -update 1 ${FIGHIRES}/`basename $${i} .avi`.png; done
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIRES}/Vid*.png
@@ -134,4 +140,14 @@ text:
 refs:
 	# Sync bib file from Paperpile
 	wget --content-disposition -N https://paperpile.com/eb/TzUbpFbxIs
+
+cloud:
+	# Copy latest media files to shared cloud
+	cp -vu ${FIGOUT}/*.jpg ${CLOUD}/figures/
+	cp -vu ${FIGOUT}/*.mp4 ${CLOUD}/figures/
+	# Copy latest text to shared cloud
+	cp ${FILE}.pdf ${CLOUD}/${FILEOUT}.pdf
+	cp ${FILE}.docx ${CLOUD}/${FILEOUT}.docx
+	# Copy latest response to shared cloud
+	cp ${REVISION}/response.docx ${CLOUD}/${DATE}_response.docx
 
