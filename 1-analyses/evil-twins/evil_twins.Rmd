@@ -7,7 +7,7 @@ creation: July 23, 2024
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/evil-twins")
+knitr::opts_knit$set(root.dir = getwd())
 library(ggplot2)
 library(ggbeeswarm)
 library(svglite)
@@ -25,7 +25,7 @@ There are two data sources. One CSV file with the technical information of indiv
 
 ```{r import-events}
 # Import datasets with annotated developmental traits
-datafull <- read.csv("evil_twins.csv")
+evil_twins <- read.csv("annotations.csv")
 ```
 
 ## Define developmental events
@@ -72,68 +72,68 @@ for (event in events) {
   time_event <- sprintf("time_%s", event)
   
   # Create new column with time of events in hours relative to gastrulation
-  datafull[,time_event] <- round((((datafull[,frame_event] - datafull$frame_gastrulation) * datafull$timestep) + ifelse(datafull[,frame_event] > datafull$frame_hypoxia_end, datafull$time_plucking, 0)) / 60, digits = 2)
+  evil_twins[,time_event] <- round((((evil_twins[,frame_event] - evil_twins$frame_gastrulation) * evil_twins$timestep) + ifelse(evil_twins[,frame_event] > evil_twins$frame_hypoxia_end, evil_twins$time_plucking, 0)) / 60, digits = 2)
   
   # Add experiment total duration time in hours
   if (event == "experiment_end") {
-    datafull$time_experiment_total <- round(
-      ((datafull$frame_experiment_end * datafull$timestep) + datafull$time_plucking) / 60,
+    evil_twins$time_experiment_total <- round(
+      ((evil_twins$frame_experiment_end * evil_twins$timestep) + evil_twins$time_plucking) / 60,
       digits = 2)
   }
   
   # Add hypoxia total duration time in hours
   if (event == "hypoxia_end") {
-    datafull$time_hypoxia_total <- round(
-      ((datafull$frame_hypoxia_end - datafull$frame_hypoxia_start) * datafull$timestep) / 60,
+    evil_twins$time_hypoxia_total <- round(
+      ((evil_twins$frame_hypoxia_end - evil_twins$frame_hypoxia_start) * evil_twins$timestep) / 60,
       digits = 2)
   }
   
   # Add germband extension total duration time in hours
   if (event == "gb_extension_end") {
-    datafull$time_gb_extension_total <- round(
-      (((datafull$frame_gb_extension_end - datafull$frame_gb_extension_start) * datafull$timestep) + ifelse((datafull[,"frame_gb_extension_start"] < datafull$frame_hypoxia_end & datafull[,"frame_gb_extension_end"] > datafull$frame_hypoxia_end), datafull$time_plucking, 0)) / 60,
+    evil_twins$time_gb_extension_total <- round(
+      (((evil_twins$frame_gb_extension_end - evil_twins$frame_gb_extension_start) * evil_twins$timestep) + ifelse((evil_twins[,"frame_gb_extension_start"] < evil_twins$frame_hypoxia_end & evil_twins[,"frame_gb_extension_end"] > evil_twins$frame_hypoxia_end), evil_twins$time_plucking, 0)) / 60,
       digits = 2)
   }
   
   # Add germband retraction total duration time in hours
   if (event == "gb_retraction_end") {
-    datafull$time_gb_retraction_total <- round(
-      (((datafull$frame_gb_retraction_end - datafull$frame_gb_retraction_start) * datafull$timestep) + ifelse((datafull[,"frame_gb_retraction_start"] < datafull$frame_hypoxia_end & datafull[,"frame_gb_retraction_end"] > datafull$frame_hypoxia_end), datafull$time_plucking, 0)) / 60,
+    evil_twins$time_gb_retraction_total <- round(
+      (((evil_twins$frame_gb_retraction_end - evil_twins$frame_gb_retraction_start) * evil_twins$timestep) + ifelse((evil_twins[,"frame_gb_retraction_start"] < evil_twins$frame_hypoxia_end & evil_twins[,"frame_gb_retraction_end"] > evil_twins$frame_hypoxia_end), evil_twins$time_plucking, 0)) / 60,
       digits = 2)
   }
 
   # Add head involution total duration time in hours
   if (event == "head_involution_end") {
-    datafull$time_head_involution_total <- round(
-      (((datafull$frame_head_involution_end - datafull$frame_head_involution_start) * datafull$timestep) + ifelse((datafull[,"frame_head_involution_start"] < datafull$frame_hypoxia_end & datafull[,"frame_head_involution_end"] > datafull$frame_hypoxia_end), datafull$time_plucking, 0)) / 60,
+    evil_twins$time_head_involution_total <- round(
+      (((evil_twins$frame_head_involution_end - evil_twins$frame_head_involution_start) * evil_twins$timestep) + ifelse((evil_twins[,"frame_head_involution_start"] < evil_twins$frame_hypoxia_end & evil_twins[,"frame_head_involution_end"] > evil_twins$frame_hypoxia_end), evil_twins$time_plucking, 0)) / 60,
       digits = 2)
   }
 
   # Add dorsal closure total duration time in hours
   if (event == "dorsal_closure_end") {
-    datafull$time_dorsal_closure_total <- round(
-      (((datafull$frame_dorsal_closure_end - datafull$frame_dorsal_closure_start) * datafull$timestep) + ifelse((datafull[,"frame_dorsal_closure_start"] < datafull$frame_hypoxia_end & datafull[,"frame_dorsal_closure_end"] > datafull$frame_hypoxia_end), datafull$time_plucking, 0)) / 60,
+    evil_twins$time_dorsal_closure_total <- round(
+      (((evil_twins$frame_dorsal_closure_end - evil_twins$frame_dorsal_closure_start) * evil_twins$timestep) + ifelse((evil_twins[,"frame_dorsal_closure_start"] < evil_twins$frame_hypoxia_end & evil_twins[,"frame_dorsal_closure_end"] > evil_twins$frame_hypoxia_end), evil_twins$time_plucking, 0)) / 60,
       digits = 2)
   }
   
   # Add dorsal closure total duration time in hours
   if (event == "dorsal_closure_end") {
-    datafull$time_dorsal_closure_total <- round(
-      (((datafull$frame_dorsal_closure_end - datafull$frame_dorsal_closure_start) * datafull$timestep) + ifelse((datafull[,"frame_dorsal_closure_start"] < datafull$frame_hypoxia_end & datafull[,"frame_dorsal_closure_end"] > datafull$frame_hypoxia_end), datafull$time_plucking, 0)) / 60,
+    evil_twins$time_dorsal_closure_total <- round(
+      (((evil_twins$frame_dorsal_closure_end - evil_twins$frame_dorsal_closure_start) * evil_twins$timestep) + ifelse((evil_twins[,"frame_dorsal_closure_start"] < evil_twins$frame_hypoxia_end & evil_twins[,"frame_dorsal_closure_end"] > evil_twins$frame_hypoxia_end), evil_twins$time_plucking, 0)) / 60,
       digits = 2)
   }
   
   # Add gut partition total duration time in hours
   if (event == "gut_partition_end") {
-    datafull$time_gut_partition_total <- round(
-      (((datafull$frame_gut_partition_end - datafull$frame_gut_partition_start) * datafull$timestep) + ifelse((datafull[,"frame_gut_partition_start"] < datafull$frame_hypoxia_end & datafull[,"frame_gut_partition_end"] > datafull$frame_hypoxia_end), datafull$time_plucking, 0)) / 60,
+    evil_twins$time_gut_partition_total <- round(
+      (((evil_twins$frame_gut_partition_end - evil_twins$frame_gut_partition_start) * evil_twins$timestep) + ifelse((evil_twins[,"frame_gut_partition_start"] < evil_twins$frame_hypoxia_end & evil_twins[,"frame_gut_partition_end"] > evil_twins$frame_hypoxia_end), evil_twins$time_plucking, 0)) / 60,
       digits = 2)
   }
   
   # Add gut partition total duration time in hours
   if (event == "tracheae_start") {
-    datafull$time_tracheae_to_hatching_total <- round(
-      (((datafull$frame_hatching - datafull$frame_tracheae_start) * datafull$timestep) + ifelse((datafull[,"frame_tracheae_start"] < datafull$frame_hypoxia_end & datafull[,"frame_hatching"] > datafull$frame_hypoxia_end), datafull$time_plucking, 0)) / 60,
+    evil_twins$time_tracheae_to_hatching_total <- round(
+      (((evil_twins$frame_hatching - evil_twins$frame_tracheae_start) * evil_twins$timestep) + ifelse((evil_twins[,"frame_tracheae_start"] < evil_twins$frame_hypoxia_end & evil_twins[,"frame_hatching"] > evil_twins$frame_hypoxia_end), evil_twins$time_plucking, 0)) / 60,
       digits = 2)
   }
 
@@ -144,20 +144,20 @@ for (event in events) {
 
 ```{r build-overview}
 # Build dataframe with aggregated data
-overfull <- data.frame(
-  experiment = as.vector(unique(datafull$experiment)),
-  date = as.vector(unique(datafull$date)),
-  total_n = as.vector(table(datafull$experiment)),
-  total_bad_embryo = as.vector(tapply(datafull$bad_embryo, datafull$experiment, sum, na.rm = TRUE)),
-  total_bad_twins = as.vector(tapply(datafull$bad_twins, datafull$experiment, sum, na.rm = TRUE)),
-  total_hatched = as.vector(tapply(datafull$hatched, datafull$experiment, sum, na.rm = TRUE)),
-  total_time_hypoxia = as.vector(unique(na.omit(round(datafull$time_hypoxia_total, digits = 2)))),
-  total_time_experiment = as.vector(unique(datafull$time_experiment_total))
+overview <- data.frame(
+  experiment = as.vector(unique(evil_twins$experiment)),
+  date = as.vector(unique(evil_twins$date)),
+  total_n = as.vector(table(evil_twins$experiment)),
+  total_bad_embryo = as.vector(tapply(evil_twins$bad_embryo, evil_twins$experiment, sum, na.rm = TRUE)),
+  total_bad_twins = as.vector(tapply(evil_twins$bad_twins, evil_twins$experiment, sum, na.rm = TRUE)),
+  total_hatched = as.vector(tapply(evil_twins$hatched, evil_twins$experiment, sum, na.rm = TRUE)),
+  total_time_hypoxia = as.vector(unique(na.omit(round(evil_twins$time_hypoxia_total, digits = 2)))),
+  total_time_experiment = as.vector(unique(evil_twins$time_experiment_total))
 )
 
 # Add columns with percentage of bad and hatched embryos
-overfull$pct_bad_embryo <- round((overfull$total_bad_embryo / overfull$total_n) * 100, digits = 2)
-overfull$pct_hatched <- round((overfull$total_hatched / (overfull$total_n - overfull$total_bad_embryo)) * 100, digits = 2)
+overview$pct_bad_embryo <- round((overview$total_bad_embryo / overview$total_n) * 100, digits = 2)
+overview$pct_hatched <- round((overview$total_hatched / (overview$total_n - overview$total_bad_embryo)) * 100, digits = 2)
 
 # Calculate mean and sd for each event
 for (event in events) {
@@ -179,17 +179,17 @@ for (event in events) {
   }
   
   # Calculate mean and sd values per condition
-  overfull[,control_mean] <- apply_mean_sd(datafull, "control", mean)
-  overfull[,control_sd] <- apply_mean_sd(datafull, "control", sd)
-  overfull[,evil_twins_mean] <- apply_mean_sd(datafull, "evil_twins", mean)
-  overfull[,evil_twins_sd] <- apply_mean_sd(datafull, "evil_twins", sd)
+  overview[,control_mean] <- apply_mean_sd(evil_twins, "control", mean)
+  overview[,control_sd] <- apply_mean_sd(evil_twins, "control", sd)
+  overview[,evil_twins_mean] <- apply_mean_sd(evil_twins, "evil_twins", mean)
+  overview[,evil_twins_sd] <- apply_mean_sd(evil_twins, "evil_twins", sd)
   
 }
 ```
 
 ## Calculate normalized values using control mean
 
-```{r calculate-norm}
+```{r calculate-norm-full}
 for (event in events[5:length(events)]) {
   
   # Define new column names
@@ -197,17 +197,17 @@ for (event in events[5:length(events)]) {
   time_norm <- sprintf("%s_norm", time_event)
   control_mean <- sprintf("%s_control_mean", time_event)
   
-  # Create datafull-sized vector with control means per experiment
-  control_mean_subset <- merge(datafull[, c("experiment", "date", "position", time_event)], overfull[, c("experiment", control_mean)], by = "experiment", all.x = TRUE)
+  # Create evil_twins-sized vector with control means per experiment
+  control_mean_subset <- merge(evil_twins[, c("experiment", "date", "position", time_event)], overview[, c("experiment", control_mean)], by = "experiment", all.x = TRUE)
   
   # Order properly just in case before creating vector
   control_mean_subset[order(control_mean_subset$date, control_mean_subset$position),]
   control_mean_vector <- control_mean_subset[, control_mean]
   
   # Calculate normalized values using control mean
-  datafull[,time_norm] <- datafull[,time_event] - control_mean_vector
+  evil_twins[,time_norm] <- evil_twins[,time_event] - control_mean_vector
   # Divide by control mean to get ratio
-  #datafull[,time_norm] <- (datafull[,time_event] - control_mean_vector) / control_mean_vector
+  #evil_twins[,time_norm] <- (evil_twins[,time_event] - control_mean_vector) / control_mean_vector
 }
 ```
 
@@ -221,14 +221,14 @@ for (event in events[5:length(events)]) {
   time_pct <- sprintf("%s_pct", time_event)
   
   # Calculate normalized values using control mean
-  datafull[,time_pct] <- (datafull[,time_event] / datafull$time_hatching) * 100
+  evil_twins[,time_pct] <- (evil_twins[,time_event] / evil_twins$time_hatching) * 100
 }
 ```
 
 ## Hatched embryos vs bad embryos per experiment
 
 ```{r pct-hatched}
-ggplot(overfull, aes(pct_bad_embryo, pct_hatched, color = date)) +
+ggplot(overview, aes(pct_bad_embryo, pct_hatched, color = date)) +
   geom_point(alpha = 0.8, size = 5, show.legend = TRUE) + 
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 35),
@@ -237,8 +237,8 @@ ggplot(overfull, aes(pct_bad_embryo, pct_hatched, color = date)) +
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", linewidth = 1)
         )
-ggsave("2-plots/overfull-pct_bad_embryo-vs-pct_hatched.png", width = 10, height = 7)
-#ggsave("2-plots/overfull-pct_bad_embryo-vs-pct_hatched.svg", width = 10, height = 7)
+ggsave("2-plots/overview-pct_bad_embryo-vs-pct_hatched.png", width = 10, height = 7)
+#ggsave("2-plots/overview-pct_bad_embryo-vs-pct_hatched.svg", width = 10, height = 7)
 
 ```
 
@@ -366,18 +366,17 @@ plotloop <- function(items, data, plotfunc, type = "time", faceted = TRUE, plot_
 ## Plot hypoxia starting time vs other events
 
 ```{r plot-hypoxia}
-plotloop(events[5:length(events)], datafull, plot_time_hypoxia_start_vs, type = "time")
-plotloop(events[5:length(events)], datafull, plot_time_hypoxia_start_vs, type = "norm")
-plotloop(events[5:length(events)], datafull, plot_time_hypoxia_start_vs, type = "pct")
+plotloop(events[5:length(events)], evil_twins, plot_time_hypoxia_start_vs, type = "time")
+plotloop(events[5:length(events)], evil_twins, plot_time_hypoxia_start_vs, type = "norm")
+plotloop(events[5:length(events)], evil_twins, plot_time_hypoxia_start_vs, type = "pct")
 ```
-
 
 ## Plot condition vs other events
 
 ```{r condition-events}
-plotloop(events[5:length(events)], datafull, plot_condition_vs, type = "time", cex = 6)
-plotloop(events[5:length(events)], datafull, plot_condition_vs, type = "norm", cex = 6)
-plotloop(events[5:length(events)], datafull, plot_condition_vs, type = "pct", cex = 6)
+plotloop(events[5:length(events)], evil_twins, plot_condition_vs, type = "time", cex = 6)
+plotloop(events[5:length(events)], evil_twins, plot_condition_vs, type = "norm", cex = 6)
+plotloop(events[5:length(events)], evil_twins, plot_condition_vs, type = "pct", cex = 6)
 ```
 
 ## Import developmental landmarks
@@ -453,7 +452,7 @@ distpairs <- list(
 
 ```{r import-distances}
 # Define main distances dataset
-distances <- data.frame(dataset = datafull$dataset)
+distances <- data.frame(dataset = evil_twins$dataset)
 
 # Loop over distance pair names
 for (pairname in names(distpairs)) {
@@ -468,21 +467,21 @@ for (pairname in names(distpairs)) {
   df_ab$dataset <- names(dist_ab)
   colnames(df_ab) <- c(sprintf("coord_%s", pairname), "dataset")
   rownames(df_ab) <- 1:nrow(df_ab)
-  # Merge distances with main datafull data frame
+  # Merge distances with main evil_twins data frame
   distances <- merge(distances, df_ab, by = "dataset", all.x = TRUE)
 }
 
 # Hack to remove existing coord columns before merging (avoid duplicates)
-#datafull <- datafull[, -grep("coord", colnames(datafull))]
+#evil_twins <- evil_twins[, -grep("coord", colnames(evil_twins))]
 
-# Merge distances with main datafull data frame
-datafull <- merge(datafull, distances, by = "dataset", all.x = TRUE)
+# Merge distances with main evil_twins data frame
+evil_twins <- merge(evil_twins, distances, by = "dataset", all.x = TRUE)
 
 # Sort to maintain chronological order
-datafull <- datafull[order(datafull$date, datafull$position), c(2, 1, 3:ncol(datafull))]
+evil_twins <- evil_twins[order(evil_twins$date, evil_twins$position), c(2, 1, 3:ncol(evil_twins))]
 
 # Rebuild numeric index
-rownames(datafull) <- 1:nrow(datafull)
+rownames(evil_twins) <- 1:nrow(evil_twins)
 ```
 
 ## Calculate GB angle
@@ -541,36 +540,45 @@ df_angles$dataset <- names(angles)
 colnames(df_angles) <- c("coord_gb_start_angle", "dataset")
 rownames(df_angles) <- 1:nrow(df_angles)
 
-# Merge distances with main datafull data frame
-datafull <- merge(datafull, df_angles, by = "dataset", all.x = TRUE)
+# Merge distances with main evil_twins data frame
+evil_twins <- merge(evil_twins, df_angles, by = "dataset", all.x = TRUE)
 
 # Sort to maintain chronological order
-datafull <- datafull[order(datafull$date, datafull$position), c(2, 1, 3:ncol(datafull))]
+evil_twins <- evil_twins[order(evil_twins$date, evil_twins$position), c(2, 1, 3:ncol(evil_twins))]
 
 # Rebuild numeric index
-rownames(datafull) <- 1:nrow(datafull)
+rownames(evil_twins) <- 1:nrow(evil_twins)
 ```
 
 
 ## Condition vs gb starting time per experiment
 
 ```{r hatching-experiment}
-plotloop(names(distpairs), datafull, plot_time_hypoxia_start_vs, type = "coord")
-plotloop(names(distpairs), datafull, plot_condition_vs, type = "coord", cex = 6)
+plotloop(names(distpairs), evil_twins, plot_time_hypoxia_start_vs, type = "coord")
+plotloop(names(distpairs), evil_twins, plot_condition_vs, type = "coord", cex = 6)
 
-plotloop(c("gb_start_angle"), datafull, plot_time_hypoxia_start_vs, type = "coord")
-plotloop(c("gb_start_angle"), datafull, plot_condition_vs, type = "coord", cex = 6)
+plotloop(c("gb_start_angle"), evil_twins, plot_time_hypoxia_start_vs, type = "coord")
+plotloop(c("gb_start_angle"), evil_twins, plot_condition_vs, type = "coord", cex = 6)
+```
+
+## Save full datasets to file
+
+```{r save-full-datasets}
+# Save datasets to file
+write.csv(evil_twins, file = "evil_twins_full.csv", row.names = FALSE)
+write.csv(overview, file = "overview_full.csv", row.names = FALSE)
+write.csv(coordinates, file = "coordinates_full.csv", row.names = FALSE)
 ```
 
 ## Discard datasets and embryos below quality thresholds
 
 ```{r discard}
 # Copy data to clean data frame
-dataclean <- datafull
+dataclean <- evil_twins
 # Discard experiments with hatching rate smaller than 90%
-dataclean <- dataclean[!dataclean$experiment %in% overfull[overfull$pct_hatched < 90, ]$experiment, ]
+dataclean <- dataclean[!dataclean$experiment %in% overview[overview$pct_hatched < 90, ]$experiment, ]
 # Discard experiment with abnormal distribution
-#dataclean <- dataclean[!dataclean$experiment %in% overfull[overfull$time_hatching_evil_twins_sd > 1, ]$experiment, ]
+#dataclean <- dataclean[!dataclean$experiment %in% overview[overview$time_hatching_evil_twins_sd > 1, ]$experiment, ]
 # Discard embryos that did not hatch
 dataclean <- dataclean[dataclean$hatched, ]
 # Discard unfertilized eggs and embryos with catastrophic development
@@ -583,7 +591,7 @@ dataclean <- dataclean[!dataclean$time_experiment_start >= 0, ]
 
 ## Build data frame with cleaned experiments overview
 
-```{r build-overview}
+```{r build-overclean}
 # Build dataframe with aggregated data
 overclean <- data.frame(
   experiment = as.vector(unique(dataclean$experiment)),
@@ -630,7 +638,7 @@ for (event in events) {
 
 ## Calculate clean normalized values using control mean
 
-```{r calculate-norm}
+```{r calculate-norm-clean}
 for (event in events[5:length(events)]) {
   
   # Define new column names
@@ -638,7 +646,7 @@ for (event in events[5:length(events)]) {
   time_norm <- sprintf("%s_norm", time_event)
   control_mean <- sprintf("%s_control_mean", time_event)
   
-  # Create datafull-sized vector with control means per experiment
+  # Create evil_twins-sized vector with control means per experiment
   control_mean_subset <- merge(dataclean[, c("experiment", "date", "position", time_event)], overclean[, c("experiment", control_mean)], by = "experiment", all.x = TRUE)
   
   # Order properly just in case before creating vector
@@ -650,22 +658,30 @@ for (event in events[5:length(events)]) {
 }
 ```
 
+## Save cleaned datasets to file
+
+```{r save-cleaned-datasets}
+# Save datasets to file
+write.csv(dataclean, file = "evil_twins_clean.csv", row.names = FALSE)
+write.csv(overclean, file = "overview_clean.csv", row.names = FALSE)
+```
+
 ## Plot cleaned hypoxia starting time vs other events
 
-```{r time-start-hatched}
+```{r time-start-hypoxia}
 plotloop(events[5:length(events)], dataclean, plot_time_hypoxia_start_vs, type = "time", faceted = FALSE, plot_width = 13, plot_height = 10, cex = 1)
 ```
 
 ## Plot cleaned condition vs other events
 
-```{r time-start-hatched}
+```{r time-events-condition}
 plotloop(events[5:length(events)], dataclean, plot_condition_vs, type = "norm", faceted = FALSE, plot_width = 10, plot_height = 10, cex = 4)
 plotloop(events[5:length(events)], dataclean, plot_condition_vs, type = "pct", faceted = FALSE, plot_width = 10, plot_height = 10, cex = 4)
 ```
 
 ## Plot cleaned condition vs other coord measurements
 
-```{r time-start-hatched}
+```{r coord-condition-hypoxia-events}
 plotloop(names(distpairs), dataclean, plot_time_hypoxia_start_vs, type = "coord", faceted = FALSE, plot_width = 13, plot_height = 10, cex = 1)
 plotloop(names(distpairs), dataclean, plot_condition_vs, type = "coord", faceted = FALSE, plot_width = 10, plot_height = 10, cex = 4)
 
@@ -760,236 +776,82 @@ ggsave("2-plots/dataclean-percent_event-vs-condition.png", width = 15, height = 
 #ggsave("2-plots/clean-time_hypoxia_start-vs-time_folding.svg", width = 25, height = 8)
 ```
 
+
+## Calculate mean and standard deviation
+
+Create data frame from clean dataset with descriptive statistics for different conditions and variables.
+
+```{r values-clean}
+
+# Generate list with columns of interest
+nonempty_colnames <- colnames(dataclean[, colSums(!is.na(dataclean)) > 0])
+stats_colnames <- nonempty_colnames[36:length(nonempty_colnames)]
+
+# Create empty dataframe for descriptive stats
+stats <- data.frame(
+  condition = c("control", "evil_twins")
+)
+
+# Automatically aggregate data by columns since each column has a different number of rows with values
+for (column in stats_colnames) {
+  
+  # Calculate stats for column (column ~ condition)
+  col_stats <- aggregate(
+    reformulate("condition", column),
+    dataclean,
+    function(x)
+    c(
+      count = length(x),
+      mean = mean(x),
+      sd = sd(x)
+    ))
+  
+  # Bind columns with main data frame
+  stats <- merge(stats, col_stats, by="condition")
+  
+}
+
+# Makes column names nicer
+stats <- do.call(data.frame, stats)
+
+# Print and save data frame
+stats
+write.csv(stats, file = "stats.csv", row.names = FALSE)
+
+```
+
 ## Statistics
 
 ```{r stats}
-statsloop <- function(type) {
-  # type = norm or coord
-  variables <- colnames(dataclean[, grepl(type, colnames(dataclean))])
+tests <- data.frame()
+
+for (column in stats_colnames) {
   
-  for (variable in variables) {
-    
-    control <- dataclean[dataclean$condition == "control", variable]
-    evil_twins <- dataclean[dataclean$condition == "evil_twins", variable]
-    
-    count_nas <- sum(is.na(control))
-    count_rows <- length(control)
-    
-    if (count_nas < count_rows) {
-      
-      test <- wilcox.test(control, evil_twins, exact = FALSE)
-      print(sprintf("%s >>> p-value = %s", variable, test["p.value"]))
-      
-    }
-  }
+  control <- dataclean[dataclean$condition == "control", column]
+  evil <- dataclean[dataclean$condition == "evil_twins", column]
+  
+  
+  # Control vs Evil Twins
+  contrast <- "control vs evil twins"
+  test <- wilcox.test(control, evil, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(control) - mean(evil)
+  
+  test_row <- c(
+    variable = column,
+    contrast = contrast,
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
+  )
+  
+  tests <- rbind(tests, as.data.frame(t(test_row)))
+
 }
 
-sink('tests.txt')
-statsloop("_norm")
-statsloop("pct")
-statsloop("coord")
-sink()
-```
-
-
-
-
-
-
-
-
-## Archive
-
-Starting time vs hatching time per experiment
-
-```{r time-start-hatched}
-ggplot(datafull, aes(time_hypoxia_start, time_hatching, size = time_hypoxia_total, color = condition)) +
-  geom_point(alpha = 0.8, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 0.1, cex = 1)) + 
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_size(range = c(3,5)) +
-  facet_grid(cols = vars(date), scales = "fixed") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        legend.title = element_text(size = 15),
-        legend.text = element_text(size = 10),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", linewidth = 1)
-        )
-ggsave("2-plots/full-time_start-vs-time_hatching.png", width = 25, height = 8)
-#ggsave("2-plots/full-time_start-vs-time_hatching.svg", width = 25, height = 8)
-```
-
-## Hatching and cephalic furrow
-
-This is a descriptive plot to understand the correlation between hatching success and cephalic furrow inhibition success against the experiment start time and hypoxia start time.
-
-From a general experience of performing the evil twins experiments, if set too early, the embryos will die, if set too late, the CF will not be inhibited. If that's the case, we should see a defined region in the plot.
-
-```{r cf-timing}
-ggplot(dataclean[dataclean$condition == "evil_twins",], aes(time_hypoxia_start, time_gb_retraction_end, color = cephalic_furrow)) +
-  geom_point(alpha = 0.8, size = 5, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 0.1, cex = 1)) +
-  geom_vline(xintercept = 0, linetype = "dashed", color = "#cccccc") +
-  geom_hline(yintercept = c(0, 1.5), linetype = "solid", color = "#cccccc") +
-  #annotate("rect", xmin = -1.7, xmax = 0.45, ymin = -1.3, ymax = -0.4, alpha = 0.1, fill = "#cccccc") +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  #labs(x = "time at hypoxia start", y = "hatching (h)") +
-  facet_grid(cols = vars(time_hypoxia_total), scales = "fixed") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        legend.title = element_text(size = 15),
-        legend.text = element_text(size = 10),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", linewidth = 1)
-        )
-ggsave("2-plots/dataclean-time_start-vs-time_hypoxia_start.png", width = 15, height = 8)
-#ggsave("2-plots/dataclean-time_start-vs-time_hypoxia_start.svg", width = 15, height = 8)
-```
-
-## Starting time vs normalized hatching time
-
-We expect that embryos that are on earlier stages when mounted, will take longer to hatch. Therefore, a negative correlation between `time_start` and `time_hatching` when time is hours relative to gastrulation.
-
-The average hatching time is different between experiments. It does not correlate with the developmental time that these embryos start.
-
-```{r time-start-hatched}
-ggplot(dataclean, aes(time_experiment_start, time_hatching_norm, size = time_hypoxia_total, color = condition)) +
-  geom_point(alpha = 0.8, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 0.1, cex = 1)) + 
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_size(range = c(3,5)) +
-  #facet_grid(cols = vars(condition), scales = "fixed") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        legend.title = element_text(size = 15),
-        legend.text = element_text(size = 10),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", linewidth = 1)
-        )
-ggsave("2-plots/clean-time_start-vs-time_hatching_norm.png", width = 25, height = 8)
-#ggsave("2-plots/clean-time_start-vs-time_hatching_norm.svg", width = 25, height = 8)
-```
-
-## Starting hypoxia time vs folding time
-
-We expect that embryos that are on earlier stages when mounted, will take longer to hatch. Therefore, a negative correlation between `time_start` and `time_hatching` when time is hours relative to gastrulation.
-
-The average hatching time is different between experiments. It does not correlate with the developmental time that these embryos start.
-
-```{r time-start-hatched}
-ggplot(dataclean, aes(time_hypoxia_start, time_folding_norm, size = time_hypoxia_total, color = condition)) +
-  geom_point(alpha = 0.8, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 0.1, cex = 1)) + 
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_size(range = c(3,5)) +
-  #facet_grid(cols = vars(condition), scales = "fixed") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        legend.title = element_text(size = 15),
-        legend.text = element_text(size = 10),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", linewidth = 1)
-        )
-ggsave("2-plots/clean-time_hypoxia_start-vs-time_folding.png", width = 25, height = 8)
-#ggsave("2-plots/clean-time_hypoxia_start-vs-time_folding.svg", width = 25, height = 8)
-```
-
-
-## Starting time vs normalized gb retraction time
-
-```{r time-start-hatched}
-ggplot(dataclean, aes(time_experiment_start, time_gb_retraction_end_norm, size = time_hypoxia_total, color = condition)) +
-  geom_point(alpha = 0.8, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 0.1, cex = 1)) + 
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_size(range = c(3,5)) +
-  #facet_grid(cols = vars(condition), scales = "fixed") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        legend.title = element_text(size = 15),
-        legend.text = element_text(size = 10),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", linewidth = 1)
-        )
-ggsave("2-plots/clean-time_start-vs-time_gb_retraction_norm.png", width = 25, height = 8)
-#ggsave("2-plots/clean-time_start-vs-time_gb_retraction_norm.svg", width = 25, height = 8)
-```
-
-## Condition vs normalized hatching time
-
-Difference in the time of hatching between control and evil twins.
-
-```{r hatching-experiment}
-ggplot(dataclean, aes(condition, time_hatching_norm, fill = condition)) +
-  geom_boxplot(aes(color = condition), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  #labs(x = "condition", y = "hatching (h)") +
-  #facet_grid(cols = vars(time_hypoxia_total), scales = "free") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", linewidth = 1))
-ggsave("2-plots/clean-condition-vs-time_hatching_norm.png", width = 25, height = 8)
-#ggsave("2-plots/clean-condition-vs-time_hatching_norm.svg", width = 25, height = 8)
-```
-
-## Condition vs folding time
-
-```{r hatching-experiment}
-ggplot(dataclean, aes(condition, time_folding, fill = condition)) +
-  geom_boxplot(aes(color = condition), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  #labs(x = "condition", y = "hatching (h)") +
-  #facet_grid(cols = vars(time_hypoxia_total), scales = "free") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", linewidth = 1))
-ggsave("2-plots/clean-condition-vs-time_folding.png", width = 25, height = 8)
-#ggsave("2-plots/clean-condition-vs-time_folding.svg", width = 25, height = 8)
-```
-
-## Condition vs normalized gb retraction time
-
-```{r hatching-experiment}
-ggplot(dataclean, aes(condition, time_gb_retraction_end_norm, fill = condition)) +
-  geom_boxplot(aes(color = condition), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
-  #labs(x = "condition", y = "hatching (h)") +
-  #facet_grid(cols = vars(time_hypoxia_total), scales = "free") +
-  theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 35),
-        strip.background = element_blank(),
-        panel.background = element_rect(colour = "black", linewidth = 1))
-ggsave("2-plots/clean-condition-vs-time_folding.png", width = 25, height = 8)
-#ggsave("2-plots/clean-condition-vs-time_folding.svg", width = 25, height = 8)
-```
-
-
-```{r stats}
-# Normal if p-value > 0.05
-print("Testing normality of distribution")
-shapiro.test(dataclean$time_hatching_norm)
-shapiro.test(dataclean[dataclean$condition == "control", ]$time_hatching_norm)
-shapiro.test(dataclean[dataclean$condition == "evil_twins", ]$time_hatching_norm)
-
-print("Testing for difference between samples")
-wilcox.test(dataclean[dataclean$condition == "control", ]$time_hatching_norm,
-            dataclean[dataclean$condition == "evil_twins", ]$time_hatching_norm)
-wilcox.test(dataclean[dataclean$condition == "control", ]$time_head_involution_end_norm,
-            dataclean[dataclean$condition == "evil_twins", ]$time_head_involution_end_norm)
-
-print("t-test just to get the difference between sample means")
-t.test(dataclean[dataclean$condition == "control", ]$time_hatching_norm,
-       dataclean[dataclean$condition == "evil_twins", ]$time_hatching_norm,
-       var.equal = FALSE)
-
-#sink()
+tests
+write.csv(tests, file = "tests.csv", row.names = FALSE)
 ```
