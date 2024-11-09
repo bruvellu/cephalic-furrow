@@ -855,3 +855,30 @@ for (column in stats_colnames) {
 tests
 write.csv(tests, file = "tests.csv", row.names = FALSE)
 ```
+
+## Select representative datasets
+
+Select datasets that are closest to the normalized mean values for representing the data in figures.
+
+```{r representative-datasets}
+# Get mean for time_hatching_norm
+# Check control embryos closest to the mean (~0.0)
+# Check evil twins closest to the mean (~1.0)
+
+time_hatching_norm_mean_control <- stats[stats$condition == "control", "time_hatching_norm.mean"]
+time_hatching_norm_mean_evil <- stats[stats$condition == "evil_twins", "time_hatching_norm.mean"]
+
+controls_time_hatching_norm <- dataclean[dataclean$condition == "control", c("dataset", "date", "time_hatching_norm")]
+controls_time_hatching_norm$distance_to_norm <- abs(time_hatching_norm_mean_control - abs(controls_time_hatching_norm$time_hatching_norm))
+controls_time_hatching_norm <- controls_time_hatching_norm[order(controls_time_hatching_norm$distance_to_norm), ]
+rownames(controls_time_hatching_norm) <- 1:nrow(controls_time_hatching_norm)
+controls_time_hatching_norm
+
+
+evils_time_hatching_norm <- dataclean[dataclean$condition == "evil_twins", c("dataset", "date", "time_hatching_norm")]
+evils_time_hatching_norm$distance_to_norm <- abs(time_hatching_norm_mean_evil - abs(evils_time_hatching_norm$time_hatching_norm))
+evils_time_hatching_norm <- evils_time_hatching_norm[order(evils_time_hatching_norm$distance_to_norm), ]
+rownames(evils_time_hatching_norm) <- 1:nrow(evils_time_hatching_norm)
+evils_time_hatching_norm
+```
+
