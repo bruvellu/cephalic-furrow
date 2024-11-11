@@ -725,11 +725,11 @@ percent <- rbind(
              condition = dataclean$condition,
              event = "05-time_gb_retraction_end",
              value = dataclean$time_gb_retraction_end),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "06-time_head_involution_start",
-             value = dataclean$time_head_involution_start),
+  # data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
+  #            date = dataclean$date,
+  #            condition = dataclean$condition,
+  #            event = "06-time_head_involution_start",
+  #            value = dataclean$time_head_involution_start),
   data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
              date = dataclean$date,
              condition = dataclean$condition,
@@ -740,11 +740,11 @@ percent <- rbind(
              condition = dataclean$condition,
              event = "08-time_gut_partition_start",
              value = dataclean$time_gut_partition_start),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "09-time_twitching_start",
-             value = dataclean$time_twitching_start),
+  # data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
+  #            date = dataclean$date,
+  #            condition = dataclean$condition,
+  #            event = "09-time_twitching_start",
+  #            value = dataclean$time_twitching_start),
   data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
              date = dataclean$date,
              condition = dataclean$condition,
@@ -761,7 +761,7 @@ percent <- rbind(
 percent$value <- ifelse(percent$value < 0, 0, percent$value)
 
 #ggplot(percent, aes(embryo, value, fill = event)) +
-ggplot(percent[percent$date %in% c("2024-07-25", "2024-07-29"), ], aes(x=reorder(embryo, value), y=value, fill = event)) +
+ggplot(percent[percent$embryo %in% c("2024-07-29_17", "2024-07-29_10"), ], aes(x=reorder(embryo, value), y=value, fill = event)) +
   geom_bar(position = position_fill(reverse = TRUE), stat = "identity") +
   coord_flip() +
   facet_grid(rows = vars(condition), scales = "free") +
@@ -773,7 +773,7 @@ ggplot(percent[percent$date %in% c("2024-07-25", "2024-07-29"), ], aes(x=reorder
         panel.background = element_rect(colour = "black", linewidth = 1)
         )
 ggsave("2-plots/dataclean-percent_event-vs-condition.png", width = 15, height = 8)
-#ggsave("2-plots/clean-time_hypoxia_start-vs-time_folding.svg", width = 25, height = 8)
+ggsave("2-plots/dataclean-percent_event-vs-condition.svg", width = 25, height = 8)
 ```
 
 
