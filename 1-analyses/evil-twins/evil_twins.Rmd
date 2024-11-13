@@ -86,6 +86,9 @@ for (event in events) {
     evil_twins$time_hypoxia_total <- round(
       ((evil_twins$frame_hypoxia_end - evil_twins$frame_hypoxia_start) * evil_twins$timestep) / 60,
       digits = 2)
+    
+    # Add a time gastrulation before other time variables
+    evil_twins$time_gastrulation <- 0
   }
   
   # Add germband extension total duration time in hours
@@ -214,13 +217,17 @@ for (event in events[5:length(events)]) {
 ## Calculate percentage values relative developmental time
 
 ```{r calculate-pct}
+# Add percentage of developmental time for gastrulation
+evil_twins$time_gastrulation_pct <- 0
+
+# Add percentage for the remaining variables
 for (event in events[5:length(events)]) {
   
   # Define new column names
   time_event <- sprintf("time_%s", event)
   time_pct <- sprintf("%s_pct", time_event)
   
-  # Calculate normalized values using control mean
+  # Calculate percentage of developmental time using hatching time
   evil_twins[,time_pct] <- (evil_twins[,time_event] / evil_twins$time_hatching) * 100
 }
 ```
@@ -689,7 +696,137 @@ plotloop(c("gb_start_angle"), dataclean, plot_time_hypoxia_start_vs, type = "coo
 plotloop(c("gb_start_angle"), dataclean, plot_condition_vs, type = "coord", faceted = FALSE, plot_width = 10, plot_height = 10, cex = 4)
 ```
 
-## Percentage plotting
+
+## Create long format data frame
+
+For plotting the comparison of developmental events.
+
+```{r reshape-long-format}
+
+# Define variables for plotting
+longvars <- c(
+  "date",
+  "dataset",
+  "position",
+  "condition",
+  "time_gastrulation",
+  "time_cf_folding_start",
+  "time_gb_extension_start",
+  "time_gb_extension_end",
+  "time_gb_retraction_start",
+  "time_gb_retraction_end",
+  "time_head_involution_end",
+  "time_gut_partition_start",
+  "time_tracheae_start",
+  "time_hatching",
+  "time_gastrulation_pct",
+  "time_cf_folding_start_pct",
+  "time_gb_extension_start_pct",
+  "time_gb_extension_end_pct",
+  "time_gb_retraction_start_pct",
+  "time_gb_retraction_end_pct",
+  "time_head_involution_end_pct",
+  "time_gut_partition_start_pct",
+  "time_tracheae_start_pct",
+  "time_hatching_pct"
+)
+
+datalong <- reshape(
+  dataclean[, longvars],
+  varying = list(
+    c(
+      "time_gastrulation",
+      "time_cf_folding_start",
+      "time_gb_extension_start",
+      "time_gb_extension_end",
+      "time_gb_retraction_start",
+      "time_gb_retraction_end",
+      "time_gut_partition_start",
+      "time_head_involution_end",
+      "time_tracheae_start",
+      "time_hatching"
+    ),
+    c(
+      "time_gastrulation_pct",
+      "time_cf_folding_start_pct",
+      "time_gb_extension_start_pct",
+      "time_gb_extension_end_pct",
+      "time_gb_retraction_start_pct",
+      "time_gb_retraction_end_pct",
+      "time_gut_partition_start_pct",
+      "time_head_involution_end_pct",
+      "time_tracheae_start_pct",
+      "time_hatching_pct"
+    )
+  ),
+  v.names = c("time", "pct"),
+  timevar = "event",
+  times = c(
+    "gastrulation",
+    "cf_folding_start",
+    "gb_extension_start",
+    "gb_extension_end",
+    "gb_retraction_start",
+    "gb_retraction_end",
+    "gut_partition_start",
+    "head_involution_end",
+    "tracheae_start",
+    "hatching"
+  ),
+  direction = "long"
+)
+
+# Remove the id column that reshape adds
+datalong$id <- NULL
+
+# Remove rows with NA
+datalong <- na.omit(datalong)
+
+# Transform data frame to order the stock for plotting
+datalong$condition <- factor(datalong$condition, levels = c("control", "evil_twins"))
+datalong$event <- factor(
+  datalong$event,
+  levels = c(
+    "gastrulation",
+    "cf_folding_start",
+    "gb_extension_start",
+    "gb_extension_end",
+    "gb_retraction_start",
+    "gb_retraction_end",
+    "gut_partition_start",
+    "head_involution_end",
+    "tracheae_start",
+    "hatching"
+  )
+)
+datalong <- datalong[order(datalong$date, datalong$event, datalong$condition),]
+rownames(datalong) <- 1:nrow(datalong)
+
+# Save long data frame to file
+write.csv(datalong, file = "evil_twins_clean_long.csv", row.names = FALSE)
+
+```
+
+## Plot timing of developmental events
+
+```{r plot-timing-events}
+ggplot(datalong, aes(time, event, color = event, fill = event, group = interaction(event, condition))) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 1.0) +
+  labs(x = "time (h)", y = "event") +
+  #scale_y_discrete(limits=rev) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 15),
+        legend.title = element_text(size = 15),
+        legend.text = element_text(size = 10),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", linewidth = 1)
+        )
+ggsave("2-plots/datalong-time_event-vs-condition.png", width = 10, height = 4)
+ggsave("2-plots/datalong-time_event-vs-condition.svg", width = 10, height = 4)
+```
+
+
+## Plot developmental percentage of events
 
 ```{r percentage}
 
