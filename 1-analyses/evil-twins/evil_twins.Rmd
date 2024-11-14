@@ -826,82 +826,13 @@ ggsave("2-plots/datalong-time_event-vs-condition.svg", width = 10, height = 4)
 ```
 
 
-## Plot developmental percentage of events
+## Plot percentage of developmental events
 
-```{r percentage}
-
-# Create data frame
-percent <- rbind(
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "00-time_gastrulation",
-             value = 0),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "01-time_cf_folding_start",
-             value = dataclean$time_cf_folding_start),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "02-time_gb_extension_start",
-             value = dataclean$time_gb_extension_start),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "03-time_gb_extension_end",
-             value = dataclean$time_gb_extension_end),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "04-time_gb_retraction_start",
-             value = dataclean$time_gb_retraction_start),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "05-time_gb_retraction_end",
-             value = dataclean$time_gb_retraction_end),
-  # data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-  #            date = dataclean$date,
-  #            condition = dataclean$condition,
-  #            event = "06-time_head_involution_start",
-  #            value = dataclean$time_head_involution_start),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "07-time_head_involution_end",
-             value = dataclean$time_head_involution_end),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "08-time_gut_partition_start",
-             value = dataclean$time_gut_partition_start),
-  # data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-  #            date = dataclean$date,
-  #            condition = dataclean$condition,
-  #            event = "09-time_twitching_start",
-  #            value = dataclean$time_twitching_start),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "10-time_tracheae_start",
-             value = dataclean$time_tracheae_start),
-  data.frame(embryo = sprintf("%s_%s", dataclean$date, dataclean$position),
-             date = dataclean$date,
-             condition = dataclean$condition,
-             event = "11-time_hatching",
-             value = dataclean$time_hatching)
-  )
-
-# Set negative values to zero
-percent$value <- ifelse(percent$value < 0, 0, percent$value)
-
-#ggplot(percent, aes(embryo, value, fill = event)) +
-ggplot(percent[percent$embryo %in% c("2024-07-29_17", "2024-07-29_10"), ], aes(x=reorder(embryo, value), y=value, fill = event)) +
-  geom_bar(position = position_fill(reverse = TRUE), stat = "identity") +
-  coord_flip() +
-  facet_grid(rows = vars(condition), scales = "free") +
+```{r plot-percentage-events}
+ggplot(datalong, aes(pct, event, color = event, fill = event, group = interaction(event, condition))) +
+  geom_boxplot(show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 1.0) +
+  labs(x = "time (h)", y = "event") +
+  #scale_y_discrete(limits=rev) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 15),
         legend.title = element_text(size = 15),
@@ -909,10 +840,28 @@ ggplot(percent[percent$embryo %in% c("2024-07-29_17", "2024-07-29_10"), ], aes(x
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", linewidth = 1)
         )
-ggsave("2-plots/dataclean-percent_event-vs-condition.png", width = 15, height = 8)
-ggsave("2-plots/dataclean-percent_event-vs-condition.svg", width = 25, height = 8)
+ggsave("2-plots/datalong-pct_event-vs-condition.png", width = 10, height = 4)
+ggsave("2-plots/datalong-pct_event-vs-condition.svg", width = 10, height = 4)
 ```
 
+## Plot percentage of developmental events (bar plot)
+
+```{r plot-percentage-events-bar}
+ggplot(datalong[datalong$date %in% c("2024-07-25", "2024-07-29") & datalong$time >= 0, ], aes(time, dataset, fill = event)) +
+  geom_bar(position = position_fill(reverse = TRUE), stat = "identity") +
+  labs(x = "time (h)", y = "event") +
+  facet_grid(rows = vars(condition), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 15),
+        legend.title = element_text(size = 15),
+        legend.text = element_text(size = 10),
+        axis.text.y=element_blank(),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", linewidth = 1)
+        )
+ggsave("2-plots/datalong-bar-pct_event-vs-condition.png", width = 10, height = 4)
+ggsave("2-plots/datalong-bar-pct_event-vs-condition.svg", width = 10, height = 4)
+```
 
 ## Calculate mean and standard deviation
 
