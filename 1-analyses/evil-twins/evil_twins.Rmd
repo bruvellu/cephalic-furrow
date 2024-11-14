@@ -813,7 +813,6 @@ write.csv(datalong, file = "evil_twins_clean_long.csv", row.names = FALSE)
 ggplot(datalong, aes(time, event, color = event, fill = event, group = interaction(event, condition))) +
   geom_boxplot(show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 1.0) +
   labs(x = "time (h)", y = "event") +
-  #scale_y_discrete(limits=rev) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 15),
         legend.title = element_text(size = 15),
@@ -832,7 +831,6 @@ ggsave("2-plots/datalong-time_event-vs-condition.svg", width = 10, height = 4)
 ggplot(datalong, aes(pct, event, color = event, fill = event, group = interaction(event, condition))) +
   geom_boxplot(show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 1.0) +
   labs(x = "time (h)", y = "event") +
-  #scale_y_discrete(limits=rev) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 15),
         legend.title = element_text(size = 15),
