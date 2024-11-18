@@ -7,29 +7,46 @@ creation: February 18, 2021
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/folded-area")
+knitr::opts_knit$set(root.dir = getwd())
 library(ggplot2)
 library(ggbeeswarm)
 ```
 
-## Load measurements
+## Import measurements
 
-```{r load}
+We exported the area measurements from ROIs on cartographic projections and corrected the values to microns.
+
+Sample of `results.txt`:
+
+```
+ 	Label	Area	StdDev	X	Y	XM	YM	Perim.	BX	BY	Width	Height	Major	Minor	Angle	Circ.	Feret	IntDen	Median	Skew	Kurt	RawIntDen	FeretX	FeretY	FeretAngle	MinFeret	AR	Round	Solidity
+1	btd-gap2_z3_t55s_E12_CARE_s24_0x0_w1724_h1106_fliph_f48-117.1.roi:1	98543.000	217.480	499.839	515.725	500.504	520.260	1823.388	395.000	180.000	200.000	744.000	712.253	176.158	87.248	0.372	746.496	120829781.000	1185	0.972	1.586	120829781.000	477	924	85.313	198.872	4.043	0.247	0.893
+2	btd-gap2_z3_t55s_E7_CARE_s20_0x0_w1721_h1029_flipn_f23-92.1.roi:1	7095.000	103.782	253.389	841.867	252.628	839.782	459.002	213.000	746.000	85.000	171.000	170.569	52.962	110.872	0.423	177.775	7733816.000	1071	1.160	1.531	7733816.000	221	746	107.008	68.088	3.221	0.311	0.787
+```
+
+Sample of `corrected_results.txt`:
+
+```
+File "ROI Area"
+rgap_1b_z3_t60s_E15_s20_0x70_w1777_h980_fliph_f45-114.1.roi 261.57975999999996
+rgap_1b_z3_t60s_E15_s20_0x70_w1777_h980_fliph_f45-114.2.roi 10251.997106000003
+```
+
+```{r import-measurements}
+# Load sample info
+samples <- read.delim("samples.csv", sep = ",")
+
 # Load raw ROI measurements from ImageJ
 results <- read.delim("results.txt")
+
+# Remove column with row number
+results <- subset(results, select = -X.1)
 
 # Remove slice number from the labels
 results$Label <- gsub(":1", "", results$Label)
 
-# Split label at "_s" to get the embryo name. sapply gets all first elements of the split.
-results$Embryo <- sapply(strsplit(results$Label, "_s"), "[", 1)
-
-# Remove "_CARE" from embryo name
-results$Embryo <- gsub("_CARE", "", results$Embryo)
-
-# Load sample info and merge with results
-samples <- read.delim("samples.csv", sep = ",")
-results <- merge(results, samples, by = "Label", all.x = TRUE)
+# Merge samples with results
+results <- merge(samples, results, by = "Label", all.x = TRUE)
 
 # Load corrected area measurements for cartographic projections
 corrected <- read.delim("corrected_results.txt", sep = "")
@@ -38,18 +55,82 @@ colnames(corrected) <- c("Label", "AreaCorr")
 # Merge corrected area to results
 results <- merge(results, corrected, by = "Label", all.x = TRUE)
 
-# Transform data frame to order the stock for plotting
-results <- transform(results, Stock=factor(Stock, levels = c("wt", "btd", "eve", "prd")))
-
-# Quick fix to add type of fold
-results$Type <- "EF"
-results[results$Stock == "wt" & results$Position == "mid",]$Type <- "CF"
-results[results$Stock == "btd" & results$Genotype == "heterozygote",]$Type <- "CF"
-results[results$Stock == "eve" & results$Genotype == "heterozygote",]$Type <- "CF"
-results[results$Stock == "prd" & results$Position == "mid",]$Type <- "CF"
+# Add column for embryo sorting
+results$E <- as.numeric(sub(".*_E(\\d+)$", "\\1", results$Embryo))
 
 # Transform data frame to order the stock for plotting
-results <- transform(results, Sample=factor(Sample, levels = c("wildtype", "control", "mutant")))
+results$Stock <- factor(results$Stock, levels = c("wt", "btd", "eve", "prd"))
+results$Sample <- factor(results$Sample, levels = c("wildtype", "control", "mutant"))
+results$Genotype <- factor(results$Genotype, levels = c("wildtype", "heterozygote", "homozygote"))
+results$Position <- factor(results$Position, levels = c("ant", "mid", "post"))
+
+results <- results[order(results$Stock, results$Genotype, results$Position, results$E),]
+rownames(results) <- 1:nrow(results)
+
+# Save long data frame to file
+write.csv(results, file = "combined_results.csv", row.names = FALSE)
+```
+
+```{r calculate-sum-mean-sd-total}
+
+# Total folds and folded area per embryo
+stats_total_per_embryo <- aggregate(
+  AreaCorr ~ Embryo + Stock + Genotype,
+  results[results$Fold == TRUE,],
+  function(x) c(
+    count = length(x),
+    sum = sum(x)
+    ))
+
+# Makes column names nicer
+stats_total_per_embryo <- do.call(data.frame, stats_total_per_embryo)
+colnames(stats_total_per_embryo)[colnames(stats_total_per_embryo) == "AreaCorr.count"] <- "nFolds"
+
+# Total folds and folded area per Stock and Genotype
+stats_total_per_stock <- aggregate(
+  cbind(nFolds, AreaCorr.sum) ~ Stock + Genotype,
+  stats_total_per_embryo,
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x),
+    sum = sum(x)
+    ))
+
+# Makes column names nicer
+stats_total_per_stock <- do.call(data.frame, stats_total_per_stock)
+stats_total_per_stock <- subset(stats_total_per_stock, select = -AreaCorr.sum.count)
+colnames(stats_total_per_stock)[colnames(stats_total_per_stock) == "nFolds.count"] <- "nEmbryos"
+#colnames(stats_total_per_stock) <- c("Stock", "Genotype", "nEmbryos", "nFolds", "AreaCorr.sum.folds")
+stats_total_per_stock <- stats_total_per_stock[order(stats_total_per_stock$Stock),]
+
+```
+
+```{r calculate-sum-mean-sd-type}
+
+# Total folds and folded area per embryo
+stats_total_per_type <- aggregate(
+  AreaCorr ~ Stock + Genotype + Type,
+  results[results$Fold == TRUE,],
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x),
+    sum = sum(x)
+    ))
+# Makes column names nicer
+stats_total_per_type <- do.call(data.frame, stats_total_per_type)
+
+
+
+stats <- aggregate(
+  cbind(Area, AreaCorr) ~ stock + zygosity + status,
+  mdlong[mdlong$status %in% c("md_start", "md_split"), ],
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x))
+  )
 
 # Sum total folded area corrected
 areacorr <- aggregate(results$AreaCorr, list(results$Embryo), sum)
