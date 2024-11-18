@@ -8,9 +8,9 @@ We performed the annotations manually, using Fiji to define ROIs marking the bla
 
 ## Directories
 
-- [`0-data`](0-data): Single-slice, cropped imsane projections.
+- [`0-data`](0-data): Single-slice, cropped cartographic projections.
 - [`1-rois`](1-rois): ROIs for individual folds and frame showing area overlay. 
-- [`2-cylinder`](2-cylinder): Matrix of pixel resolution by coordinates for individual imsane projections.
+- [`2-cylinder`](2-cylinder): Matrix of pixel resolution by coordinates for each projection.
 - [`3-tracking`](3-tracking): Tracking of infolded cells.
 - [`4-plots`](4-plots): Plots of the analysis of folded area.
 
