@@ -12,6 +12,7 @@ pip install read-roi
 @author: @Cuencam15
 """
 
+import os
 
 import pandas as pd
 import numpy as np
@@ -21,7 +22,8 @@ from skimage.draw import polygon
 from read_roi import read_roi_file 
 
 #path = '/Users/cuenca/Documents/Bruno/InvaginatedAreaCorrection' #path 
-path = '/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/folded-area' #path 
+#path = '/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/folded-area' #path
+path = os.path.dirname(os.path.realpath(__file__)) #path
 
 afiles = glob.glob(path + '/2-cylinder/*.txt') #files in path with projections
 rfiles = glob.glob(path + '/1-rois/*.roi') #files in path with rois

@@ -44,8 +44,17 @@ For the analysis we:
 9. Since the cartographic projections have variable pixel resolutions around the image, the direct measurements above need to be corrected. This is done by running the script [`run_cylinder_measure.py`](run_cylinder_measure.py) which takes the cylinder coordinates with pixel values from the folder [`2-cylinder`](2-cylinder) to apply the correction writing to the [`corrected_results.txt`](corrected_results.txt) file.
 10. Process the data in R using the [`area.Rmd`](area.Rmd) and generate plots to [`4-plots`](4-plots).
 
-Criteria:
+## Notes
+
+### Criteria for scoring ectopic folds
+
 - Cell's apical surface must be hidden from view by movement of neighbors
 - Cell should resurface on unfolding, usually without dividing
 - Presence of a straight line between edges (if collapsed)
 - Absence of initiator cell behavior
+
+### Run run_cylinder_measure.py
+
+```
+uv run --with pandas --with numpy --with scikit-image --with read_roi --with pillow run_cylinder_measure.py
+```
