@@ -34,17 +34,20 @@ eve-Gap1_t60s_z3_E5,eve-Gap1_t60s_z3_E5_CARE_s24_0x172_w1794_h1070_fliph_f60-129
 eve-Gap1_t60s_z3_E5,,eve,control,heterozygote,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
 eve-Gap1_t60s_z3_E9,eve-Gap1_t60s_z3_E9_CARE_s18_0x96_w1801_h942_flipn_f16-85.1.roi,eve,control,heterozygote,TRUE,mid,CF,
 eve-Gap1_t60s_z3_E9,,eve,control,heterozygote,TRUE,post,,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
-eve-Gap1_t60s_z3_E11,eve-Gap1_t60s_z3_E11_CARE_s18_0x0_w1824_h1040_fliph_f26-95.1.roi,eve,control,heterozygote,TRUE,mid,CF,Maybe anterior EF
+eve-Gap1_t60s_z3_E11,eve-Gap1_t60s_z3_E11_CARE_s18_0x0_w1824_h1040_fliph_f26-95.1.roi,eve,control,heterozygote,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one"
 eve-Gap1_t60s_z3_E12,eve-Gap1_t60s_z3_E12_CARE_s19_0x0_w1877_h1008_flipn_f6-75.1.roi,eve,mutant,homozygote,TRUE,mid,EF,
 eve-Gap1_t60s_z3_E12,eve-Gap1_t60s_z3_E12_CARE_s19_0x0_w1877_h1008_flipn_f6-75.2.roi,eve,mutant,homozygote,TRUE,post,EF,
-eve-Gap1_t60s_z3_E16,eve-Gap1_t60s_z3_E16_CARE_s15_0x0_w1799_h1052_flipn_f41-110.1.roi,eve,control,heterozygote,TRUE,mid,CF,Maybe anterior and posterior EF
-prd-Gap_1_t60s_E1,prd-Gap_1_t60s_E1_CARE_s20_0x0_w1795_h1026_flipn_f54-123.1.roi,prd,control,heterozygote,TRUE,mid,CF,Maybe anterior EF
+eve-Gap1_t60s_z3_E16,eve-Gap1_t60s_z3_E16_CARE_s15_0x0_w1799_h1052_flipn_f41-110.1.roi,eve,control,heterozygote,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one"
+eve-Gap1_t60s_z3_E16,,eve,control,heterozygote,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
+prd-Gap_1_t60s_E1,prd-Gap_1_t60s_E1_CARE_s20_0x0_w1795_h1026_flipn_f54-123.1.roi,prd,control,heterozygote,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one"
 prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.1.roi,prd,control,heterozygote,TRUE,ant,EF,
-prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.2.roi,prd,control,heterozygote,TRUE,mid,CF,Maybe posterior EF
+prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.2.roi,prd,control,heterozygote,TRUE,mid,CF,
+prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.3.roi,prd,control,heterozygote,TRUE,post,EF,Checked. This is an EF next to MD6.
 prd-Gap_1_t60s_E3,prd-Gap_1_t60s_E3_CARE_s22_0x0_w1544_h998_fliph_f49-118.1.roi,prd,control,heterozygote,TRUE,ant,EF,
 prd-Gap_1_t60s_E3,prd-Gap_1_t60s_E3_CARE_s22_0x0_w1544_h998_fliph_f49-118.2.roi,prd,control,heterozygote,TRUE,mid,CF,
-prd-Gap_1_t60s_E4,prd-Gap_1_t60s_E4_CARE_s19_0x0_w1743_h984_flipn_f46-115.1.roi,prd,mutant,homozygote,TRUE,ant,EF,Maybe posterior EF
+prd-Gap_1_t60s_E4,prd-Gap_1_t60s_E4_CARE_s19_0x0_w1743_h984_flipn_f46-115.1.roi,prd,mutant,homozygote,TRUE,ant,EF,
 prd-Gap_1_t60s_E4,prd-Gap_1_t60s_E4_CARE_s19_0x0_w1743_h984_flipn_f46-115.2.roi,prd,mutant,homozygote,TRUE,mid,EF,At CF position but no IC
+prd-Gap_1_t60s_E4,,prd,mutant,homozygote,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
 prd-Gap_1_t60s_E5,prd-Gap_1_t60s_E5_CARE_s22_0x0_w1800_h1032_fliph_f50-119.1.roi,prd,control,heterozygote,TRUE,ant,EF,
 prd-Gap_1_t60s_E5,prd-Gap_1_t60s_E5_CARE_s22_0x0_w1800_h1032_fliph_f50-119.2.roi,prd,control,heterozygote,TRUE,mid,CF,Maybe posterior EF
 prd-Gap_1_t60s_E6,prd-Gap_1_t60s_E6_CARE_s21_0x0_w1720_h988_fliph_f41-110.1.roi,prd,control,heterozygote,TRUE,mid,CF,
@@ -54,13 +57,16 @@ prd-Gap_1_t60s_E8,prd-Gap_1_t60s_E8_CARE_s19_0x0_w1705_h1012_flipn_f53-122.2.roi
 prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.1.roi,prd,mutant,homozygote,TRUE,ant,EF,
 prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.2.roi,prd,mutant,homozygote,TRUE,mid,EF,At CF position but no IC
 prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.3.roi,prd,mutant,homozygote,TRUE,post,EF,
-prd-Gap_1_t60s_E10,prd-Gap_1_t60s_E10_CARE_s24_0x224_w1706_h998_flipv_f43-112.1.roi,prd,mutant,homozygote,TRUE,mid,CF,Maybe anterior EF
+prd-Gap_1_t60s_E10,,prd,mutant,homozygote,TRUE,ant,EF,"TODO anterior. Checked. There’s a small EF, not sure if measurable"
+prd-Gap_1_t60s_E10,prd-Gap_1_t60s_E10_CARE_s24_0x224_w1706_h998_flipv_f43-112.1.roi,prd,mutant,homozygote,TRUE,mid,CF,"There’s a posterior fold, but forming before mitotic domains, dorsal fold"
 prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.1.roi,prd,control,heterozygote,TRUE,ant,EF,
-prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.2.roi,prd,control,heterozygote,TRUE,mid,CF,Maybe posterior EF
+prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.2.roi,prd,control,heterozygote,TRUE,mid,CF,
+prd-Gap_1_t60s_E11,,prd,control,heterozygote,TRUE,post,EF,TODO posterior. Checked. This is an EF next to MD6.
 prd-Gap_1_t60s_E12,,prd,mutant,homozygote,TRUE,ant,EF,TODO: anterior EF
 prd-Gap_1_t60s_E12,prd-Gap_1_t60s_E12_CARE_s20_0x0_w1709_h978_fliph_f47-116.1.roi,prd,mutant,homozygote,TRUE,mid,EF,At CF position but no IC
 prd-Gap_1_t60s_E15,prd-Gap_1_t60s_E15_CARE_s20_0x382_w1618_h892_fliph_f48-117.1.roi,prd,control,heterozygote,TRUE,mid,CF,
-prd-Gap_1_t60s_E16,prd-Gap_1_t60s_E16_CARE_s24_0x26_w1678_h964_flipn_f43-112.1.roi,prd,mutant,homozygote,TRUE,mid,EF,At CF position but no IC; maybe posterior EF
+prd-Gap_1_t60s_E16,prd-Gap_1_t60s_E16_CARE_s24_0x26_w1678_h964_flipn_f43-112.1.roi,prd,mutant,homozygote,TRUE,mid,EF,At CF position but no IC
+prd-Gap_1_t60s_E16,,prd,mutant,homozygote,TRUE,post,EF,TODO posterior. Checked. This is an EF next to MD6.
 rgap_1b_z3_t60s_E1,rgap_1b_z3_t60s_E1_s24_0x0_w1782_h920_fliph_f49-118.1.roi,wt,wildtype,wildtype,TRUE,ant,EF,Checked. This is a small EF
 rgap_1b_z3_t60s_E1,rgap_1b_z3_t60s_E1_s24_0x0_w1782_h920_fliph_f49-118.2.roi,wt,wildtype,wildtype,TRUE,mid,CF,
 rgap_1b_z3_t60s_E2,rgap_1b_z3_t60s_E2_s20_0x0_w1690_h920_flipn_f59-128.1.roi,wt,wildtype,wildtype,TRUE,mid,CF,
