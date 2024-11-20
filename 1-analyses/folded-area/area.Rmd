@@ -69,9 +69,42 @@ rownames(results) <- 1:nrow(results)
 
 # Save long data frame to file
 write.csv(results, file = "combined_results.csv", row.names = FALSE)
+
+# For downstream analysis, only consider TRUE folds
+results <- results[results$Fold == TRUE, ]
 ```
 
-```{r calculate-sum-mean-sd-total}
+## Calculate fold type percentage
+
+```{r calculate-fold-type-percentage}
+
+
+# Create data frame for tests
+summary <- data.frame()
+
+# Contrasts of single variables within stocks (het vs hom)
+for (stock in unique(results$Stock)) {
+  
+  n_total <- length(unique(results[results$Stock == stock, ]$Embryo))
+  n_het <- length(unique(results[results$Stock == stock & results$Genotype == "heterozygote", ]$Embryo))
+  n_hom <- length(unique(results[results$Stock == stock & results$Genotype == "homozygote", ]$Embryo))
+  
+  row <- c(
+    stock = stock,
+    n_total = n_total,
+    n_het = n_het,
+    n_hom = n_hom
+    
+  )
+  
+  summary <- rbind(summary, as.data.frame(t(row)))
+  
+}
+```
+
+## Calculate total area per embryo
+
+```{r calculate-total-area-per-embryo}
 
 # Total folds and folded area per embryo
 stats_total_per_embryo <- aggregate(
@@ -85,6 +118,12 @@ stats_total_per_embryo <- aggregate(
 # Makes column names nicer
 stats_total_per_embryo <- do.call(data.frame, stats_total_per_embryo)
 colnames(stats_total_per_embryo)[colnames(stats_total_per_embryo) == "AreaCorr.count"] <- "nFolds"
+
+stats_total_per_embryo
+```
+
+
+```{r calculate-total-area-per-embryo}
 
 # Total folds and folded area per Stock and Genotype
 stats_total_per_stock <- aggregate(
@@ -104,9 +143,6 @@ colnames(stats_total_per_stock)[colnames(stats_total_per_stock) == "nFolds.count
 #colnames(stats_total_per_stock) <- c("Stock", "Genotype", "nEmbryos", "nFolds", "AreaCorr.sum.folds")
 stats_total_per_stock <- stats_total_per_stock[order(stats_total_per_stock$Stock),]
 
-```
-
-```{r calculate-sum-mean-sd-type}
 
 # Total folds and folded area per embryo
 stats_total_per_type <- aggregate(
@@ -131,6 +167,11 @@ stats <- aggregate(
     mean = mean(x),
     sd = sd(x))
   )
+
+
+```
+
+```{r calculate-sum-mean-sd-type}
 
 # Sum total folded area corrected
 areacorr <- aggregate(results$AreaCorr, list(results$Embryo), sum)
@@ -216,13 +257,13 @@ print_wt <- sprintf(" wt: embryos=%s, folds=%s, ant=%s, mid=%s, post=%s",
         length(results[results$Stock == "wt" & results$Position == "post",]$Label) # posterior folds
         )
 
+print_wt
 print_btd
 print_eve
 print_prd
-print_wt
 
 # Save nfolds output to files
-capture.output(print_btd, print_eve, print_prd, print_wt, file = "nfolds.txt")
+capture.output(print_wt, print_btd, print_eve, print_prd, file = "nfolds.txt")
 ```
 
 ## Statistics for folded area
@@ -230,7 +271,7 @@ capture.output(print_btd, print_eve, print_prd, print_wt, file = "nfolds.txt")
 ```{r print-stats}
 print_stats <- function(dataframe, stock, type) {
   filter_df <- (dataframe$Stock == stock & dataframe$Type == type)
-  df <- dataframe[filter_df,]
+  df <- na.omit(dataframe[filter_df,])
   df <- droplevels(df)
 
   # Define row
@@ -288,8 +329,8 @@ ggplot(total, aes(Stock, AreaCorr, fill = Genotype)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("total folded area per embryo ", (µm^2)~x~10^3))) +
   facet_grid(cols = vars(Stock), scales = "free_x") +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
@@ -302,13 +343,13 @@ ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
 ## Area of individual ectopic folds
 
 ```{r individual-area-per-ectopic-fold}
-ggplot(results[results$Stock != "prd" & results$Type == "EF",], aes(Sample, AreaCorr, fill = Sample)) +
+ggplot(results[results$Type == "EF",], aes(Genotype, AreaCorr, fill = Sample)) +
   geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
@@ -318,27 +359,6 @@ ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
 ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
 ```
 
-## Statistics
-
-The distribution is not normal. Using Wilcoxon test to compare the samples.
-
-```{r stats}
-sink('tests.txt')
-
-print("Testing normality of distribution")
-shapiro.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr)
-shapiro.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr)
-print("Testing for difference between samples")
-wilcox.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr,
-            results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr)
-
-print("t-test just to get the difference between sample means")
-t.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr,
-       results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr,
-       var.equal = FALSE)
-
-sink()
-```
 
 ## Area of individual ectopic folds per position
 
@@ -348,8 +368,8 @@ ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 3)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("area of individual folds ", (µm^2)~x~10^3))) +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   facet_grid(cols = vars(Position), scales = "free") +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 30),
@@ -372,8 +392,8 @@ ggplot(results, aes(Type, AreaCorr, fill = Genotype)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
   facet_grid(cols = vars(Stock), scales = "free_x") +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
@@ -381,4 +401,27 @@ ggplot(results, aes(Type, AreaCorr, fill = Genotype)) +
         )
 ggsave("4-plots/individual-area-per-type.png", width = 12, height = 4)
 ggsave("4-plots/individual-area-per-type.svg", width = 12, height = 4)
+```
+
+
+## Statistics
+
+The distribution is not normal. Using Wilcoxon test to compare the samples.
+
+```{r stats}
+sink('tests.txt')
+
+print("Testing normality of distribution")
+shapiro.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr)
+shapiro.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr)
+print("Testing for difference between samples")
+wilcox.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr,
+            results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr)
+
+print("t-test just to get the difference between sample means")
+t.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr,
+       results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr,
+       var.equal = FALSE)
+
+sink()
 ```

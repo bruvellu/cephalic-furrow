@@ -1,9 +1,9 @@
 stock	type	mean	sd	n
 wt	CF	11.4	1.2	16
-wt	EF	 0.7	0.5	16
+wt	EF	 0.6	0.4	14
 btd	CF	10.3	1.9	 6
-btd	EF	 2.3	1.7	13
+btd	EF	 2.3	1.8	12
 eve	CF	 9.7	1.1	 7
 eve	EF	 3.2	2.1	 7
-prd	CF	 6.0	3.4	14
-prd	EF	 1.0	0.6	 8
+prd	CF	 7.6	2.5	10
+prd	EF	 1.1	0.8	16

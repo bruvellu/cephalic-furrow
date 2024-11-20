@@ -33,7 +33,7 @@ eve-Gap1_t60s_z3_E4,,eve,control,heterozygote,TRUE,post,EF,EF present next to MD
 eve-Gap1_t60s_z3_E5,eve-Gap1_t60s_z3_E5_CARE_s24_0x172_w1794_h1070_fliph_f60-129.1.roi,eve,control,heterozygote,TRUE,mid,CF,
 eve-Gap1_t60s_z3_E5,,eve,control,heterozygote,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
 eve-Gap1_t60s_z3_E9,eve-Gap1_t60s_z3_E9_CARE_s18_0x96_w1801_h942_flipn_f16-85.1.roi,eve,control,heterozygote,TRUE,mid,CF,
-eve-Gap1_t60s_z3_E9,,eve,control,heterozygote,TRUE,post,,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
+eve-Gap1_t60s_z3_E9,,eve,control,heterozygote,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
 eve-Gap1_t60s_z3_E11,eve-Gap1_t60s_z3_E11_CARE_s18_0x0_w1824_h1040_fliph_f26-95.1.roi,eve,control,heterozygote,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one"
 eve-Gap1_t60s_z3_E12,eve-Gap1_t60s_z3_E12_CARE_s19_0x0_w1877_h1008_flipn_f6-75.1.roi,eve,mutant,homozygote,TRUE,mid,EF,
 eve-Gap1_t60s_z3_E12,eve-Gap1_t60s_z3_E12_CARE_s19_0x0_w1877_h1008_flipn_f6-75.2.roi,eve,mutant,homozygote,TRUE,post,EF,
