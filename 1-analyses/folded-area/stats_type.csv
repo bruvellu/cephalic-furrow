@@ -1,0 +1,11 @@
+"Stock","Genotype","Type","AreaCorr.count","AreaCorr.mean","AreaCorr.sd"
+"wt","wildtype","CF",16,11422.6639619375,1231.44153794893
+"wt","wildtype","EF",14,628.401328071429,440.866912872825
+"btd","heterozygote","CF",6,10338.2336158333,1928.34767776306
+"btd","homozygote","EF",12,2313.54548991667,1815.15800121985
+"eve","heterozygote","CF",7,9711.03387571428,1126.13088072807
+"eve","homozygote","EF",7,3202.90565771429,2106.59772457517
+"prd","heterozygote","CF",9,7615.709856,2654.88387861611
+"prd","homozygote","CF",1,7177.064118,NA
+"prd","heterozygote","EF",7,807.434963,484.566345309194
+"prd","homozygote","EF",9,1296.62937366667,954.221231099473

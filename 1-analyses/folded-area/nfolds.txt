@@ -1,4 +1,0 @@
-[1] " wt: embryos=16, folds=30, ant=10, mid=16, post=4"
-[1] "btd: embryos=11 (het=6, hom=5), folds=18 (het=6, hom=12)"
-[1] "eve: embryos=12 (het=7, hom=5), folds=20 (het=11, hom=9)"
-[1] "prd: embryos=14 (het=9, hom=5), folds=27 (het=16, hom=11)"
