@@ -7,7 +7,7 @@ creation: February 18, 2021
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = getwd())
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/folded-area")
 library(ggplot2)
 library(ggbeeswarm)
 ```
@@ -33,8 +33,9 @@ rgap_1b_z3_t60s_E15_s20_0x70_w1777_h980_fliph_f45-114.2.roi 10251.997106000003
 ```
 
 ```{r import-measurements}
-# Load sample info
+# Load sample info, remove comments
 samples <- read.delim("samples.csv", sep = ",")
+samples <- subset(samples, select = -Comment)
 
 # Load raw ROI measurements from ImageJ
 results <- read.delim("results.txt")
@@ -59,35 +60,40 @@ results <- merge(results, corrected, by = "Label", all.x = TRUE)
 results$E <- as.numeric(sub(".*_E(\\d+)$", "\\1", results$Embryo))
 
 # Transform data frame to order the stock for plotting
-results$Stock <- factor(results$Stock, levels = c("wt", "btd", "eve", "prd"))
-results$Sample <- factor(results$Sample, levels = c("wildtype", "control", "mutant"))
+results$Stock <- factor(results$Stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
 results$Genotype <- factor(results$Genotype, levels = c("wildtype", "heterozygote", "homozygote"))
 results$Position <- factor(results$Position, levels = c("ant", "mid", "post"))
 
 results <- results[order(results$Stock, results$Genotype, results$Position, results$E),]
 rownames(results) <- 1:nrow(results)
 
-# Save long data frame to file
+# Save data frame to file
 write.csv(results, file = "combined_results.csv", row.names = FALSE)
+```
 
-# For downstream analysis, only consider TRUE folds
-results <- results[results$Fold == TRUE, ]
+## Create main folded area dataset
+
+```{r create-area-results}
+# For downstream area analysis, only consider TRUE folds without NA
+area <- na.omit(results[results$Fold == TRUE, ])
+
+# Save data frame to file
+write.csv(area, file = "area.csv", row.names = FALSE)
 ```
 
 ## Calculate fold type percentage
 
 ```{r calculate-fold-type-percentage}
 
-
-# Create data frame for tests
+# Create data frame for summary
 summary <- data.frame()
 
 # Contrasts of single variables within stocks (het vs hom)
-for (stock in unique(results$Stock)) {
+for (stock in unique(area$Stock)) {
   
-  n_total <- length(unique(results[results$Stock == stock, ]$Embryo))
-  n_het <- length(unique(results[results$Stock == stock & results$Genotype == "heterozygote", ]$Embryo))
-  n_hom <- length(unique(results[results$Stock == stock & results$Genotype == "homozygote", ]$Embryo))
+  n_total <- length(unique(area[area$Stock == stock, ]$Embryo))
+  n_het <- length(unique(area[area$Stock == stock & area$Genotype == "heterozygote", ]$Embryo))
+  n_hom <- length(unique(area[area$Stock == stock & area$Genotype == "homozygote", ]$Embryo))
   
   row <- c(
     stock = stock,
@@ -104,101 +110,34 @@ for (stock in unique(results$Stock)) {
 
 ## Calculate total area per embryo
 
-```{r calculate-total-area-per-embryo}
-
-# Total folds and folded area per embryo
-stats_total_per_embryo <- aggregate(
-  AreaCorr ~ Embryo + Stock + Genotype,
-  results[results$Fold == TRUE,],
-  function(x) c(
-    count = length(x),
-    sum = sum(x)
-    ))
-
-# Makes column names nicer
-stats_total_per_embryo <- do.call(data.frame, stats_total_per_embryo)
-colnames(stats_total_per_embryo)[colnames(stats_total_per_embryo) == "AreaCorr.count"] <- "nFolds"
-
-stats_total_per_embryo
-```
-
-
-```{r calculate-total-area-per-embryo}
-
-# Total folds and folded area per Stock and Genotype
-stats_total_per_stock <- aggregate(
-  cbind(nFolds, AreaCorr.sum) ~ Stock + Genotype,
-  stats_total_per_embryo,
-  function(x) c(
-    count = length(x),
-    mean = mean(x),
-    sd = sd(x),
-    sum = sum(x)
-    ))
-
-# Makes column names nicer
-stats_total_per_stock <- do.call(data.frame, stats_total_per_stock)
-stats_total_per_stock <- subset(stats_total_per_stock, select = -AreaCorr.sum.count)
-colnames(stats_total_per_stock)[colnames(stats_total_per_stock) == "nFolds.count"] <- "nEmbryos"
-#colnames(stats_total_per_stock) <- c("Stock", "Genotype", "nEmbryos", "nFolds", "AreaCorr.sum.folds")
-stats_total_per_stock <- stats_total_per_stock[order(stats_total_per_stock$Stock),]
-
-
-# Total folds and folded area per embryo
-stats_total_per_type <- aggregate(
-  AreaCorr ~ Stock + Genotype + Type,
-  results[results$Fold == TRUE,],
-  function(x) c(
-    count = length(x),
-    mean = mean(x),
-    sd = sd(x),
-    sum = sum(x)
-    ))
-# Makes column names nicer
-stats_total_per_type <- do.call(data.frame, stats_total_per_type)
-
-
-
-stats <- aggregate(
-  cbind(Area, AreaCorr) ~ stock + zygosity + status,
-  mdlong[mdlong$status %in% c("md_start", "md_split"), ],
-  function(x) c(
-    count = length(x),
-    mean = mean(x),
-    sd = sd(x))
-  )
-
-
-```
-
 ```{r calculate-sum-mean-sd-type}
 
 # Sum total folded area corrected
-areacorr <- aggregate(results$AreaCorr, list(results$Embryo), sum)
+areacorr <- aggregate(area$AreaCorr, list(area$Embryo), sum)
 colnames(areacorr) <- c("Embryo", "AreaCorr")
 
 # Sum total folded area corrected for CF
-areacorr_cf <- aggregate(results[results$Type == "CF",]$AreaCorr, list(results[results$Type == "CF",]$Embryo), sum)
+areacorr_cf <- aggregate(area[area$Type == "CF",]$AreaCorr, list(area[area$Type == "CF",]$Embryo), sum)
 colnames(areacorr_cf) <- c("Embryo", "AreaCorrCF")
 
 # Sum total folded area corrected for EF
-areacorr_ef <- aggregate(results[results$Type == "EF",]$AreaCorr, list(results[results$Type == "EF",]$Embryo), sum)
+areacorr_ef <- aggregate(area[area$Type == "EF",]$AreaCorr, list(area[area$Type == "EF",]$Embryo), sum)
 colnames(areacorr_ef) <- c("Embryo", "AreaCorrEF")
 
 # Count number of folds
-nfold <- data.frame(table(results$Embryo))
+nfold <- data.frame(table(area$Embryo))
 colnames(nfold) <- c("Embryo", "Folds")
 
 # Count number of CF folds
-nfold_cf <- data.frame(table(results[results$Type == "CF",]$Embryo))
+nfold_cf <- data.frame(table(area[area$Type == "CF",]$Embryo))
 colnames(nfold_cf) <- c("Embryo", "CFs")
 
 # Count number of EF folds
-nfold_ef <- data.frame(table(results[results$Type == "EF",]$Embryo))
+nfold_ef <- data.frame(table(area[area$Type == "EF",]$Embryo))
 colnames(nfold_ef) <- c("Embryo", "EFs")
 
 # Get sample information
-embryos <- unique(results[, c("Embryo", "Stock", "Sample", "Genotype")])
+embryos <- unique(area[, c("Embryo", "Stock", "Genotype")])
 
 # Merge datasets
 total <- merge(embryos, areacorr, by = "Embryo", all.x = TRUE)
@@ -221,9 +160,9 @@ print_btd <- sprintf("btd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s
         length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "btd",]$Embryo), # het embryos
         length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "btd",]$Embryo), # hom embryos
         
-        length(results[results$Stock == "btd",]$Label), # total folds
-        length(results[results$Genotype == "heterozygote" & results$Stock == "btd",]$Label), # het folds
-        length(results[results$Genotype == "homozygote" & results$Stock == "btd",]$Label) # het folds
+        length(area[area$Stock == "btd",]$Label), # total folds
+        length(area[area$Genotype == "heterozygote" & area$Stock == "btd",]$Label), # het folds
+        length(area[area$Genotype == "homozygote" & area$Stock == "btd",]$Label) # het folds
         )
 
 # Print eve embryos
@@ -232,9 +171,9 @@ print_eve <- sprintf("eve: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s
         length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "eve",]$Embryo), # het embryos
         length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "eve",]$Embryo), # hom embryos
         
-        length(results[results$Stock == "eve",]$Label), # total folds
-        length(results[results$Genotype == "heterozygote" & results$Stock == "eve",]$Label), # het folds
-        length(results[results$Genotype == "homozygote" & results$Stock == "eve",]$Label) # het folds
+        length(area[area$Stock == "eve",]$Label), # total folds
+        length(area[area$Genotype == "heterozygote" & area$Stock == "eve",]$Label), # het folds
+        length(area[area$Genotype == "homozygote" & area$Stock == "eve",]$Label) # het folds
         )
 
 # Print prd embryos
@@ -243,18 +182,18 @@ print_prd <- sprintf("prd: embryos=%s (het=%s, hom=%s), folds=%s (het=%s, hom=%s
         length(embryos[embryos$Genotype == "heterozygote" & embryos$Stock == "prd",]$Embryo), # het embryos
         length(embryos[embryos$Genotype == "homozygote" & embryos$Stock == "prd",]$Embryo), # hom embryos
         
-        length(results[results$Stock == "prd",]$Label), # total folds
-        length(results[results$Genotype == "heterozygote" & results$Stock == "prd",]$Label), # het folds
-        length(results[results$Genotype == "homozygote" & results$Stock == "prd",]$Label) # het folds
+        length(area[area$Stock == "prd",]$Label), # total folds
+        length(area[area$Genotype == "heterozygote" & area$Stock == "prd",]$Label), # het folds
+        length(area[area$Genotype == "homozygote" & area$Stock == "prd",]$Label) # het folds
         )
 
 # Print wt embryos
 print_wt <- sprintf(" wt: embryos=%s, folds=%s, ant=%s, mid=%s, post=%s",
         length(embryos[embryos$Stock == "wt",]$Embryo), # total embryos
-        length(results[results$Stock == "wt",]$Label), # total folds
-        length(results[results$Stock == "wt" & results$Position == "ant",]$Label), # anterior folds
-        length(results[results$Stock == "wt" & results$Position == "mid",]$Label), # middle folds
-        length(results[results$Stock == "wt" & results$Position == "post",]$Label) # posterior folds
+        length(area[area$Stock == "wt",]$Label), # total folds
+        length(area[area$Stock == "wt" & area$Position == "ant",]$Label), # anterior folds
+        length(area[area$Stock == "wt" & area$Position == "mid",]$Label), # middle folds
+        length(area[area$Stock == "wt" & area$Position == "post",]$Label) # posterior folds
         )
 
 print_wt
@@ -296,14 +235,14 @@ print_stats <- function(dataframe, stock, type) {
 stats <- data.frame()
 
 # Bind row by row
-stats <- rbind(stats, print_stats(results, "wt", "CF"))
-stats <- rbind(stats, print_stats(results, "wt", "EF"))
-stats <- rbind(stats, print_stats(results, "btd", "CF"))
-stats <- rbind(stats, print_stats(results, "btd", "EF"))
-stats <- rbind(stats, print_stats(results, "eve", "CF"))
-stats <- rbind(stats, print_stats(results, "eve", "EF"))
-stats <- rbind(stats, print_stats(results, "prd", "CF"))
-stats <- rbind(stats, print_stats(results, "prd", "EF"))
+stats <- rbind(stats, print_stats(area, "wt", "CF"))
+stats <- rbind(stats, print_stats(area, "wt", "EF"))
+stats <- rbind(stats, print_stats(area, "btd", "CF"))
+stats <- rbind(stats, print_stats(area, "btd", "EF"))
+stats <- rbind(stats, print_stats(area, "eve", "CF"))
+stats <- rbind(stats, print_stats(area, "eve", "EF"))
+stats <- rbind(stats, print_stats(area, "prd", "CF"))
+stats <- rbind(stats, print_stats(area, "prd", "EF"))
 
 # Add column names
 colnames(stats) <- c("stock", "type", "mean", "sd", "n")
@@ -343,8 +282,8 @@ ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
 ## Area of individual ectopic folds
 
 ```{r individual-area-per-ectopic-fold}
-ggplot(results[results$Type == "EF",], aes(Genotype, AreaCorr, fill = Sample)) +
-  geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+ggplot(area[area$Type == "EF",], aes(Genotype, AreaCorr, fill = Genotype)) +
+  geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
   scale_y_continuous(labels = function(x) x / 1000) +
   labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
@@ -363,7 +302,7 @@ ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
 ## Area of individual ectopic folds per position
 
 ```{r area-individual-folds-per-position}
-ggplot(results, aes(Stock, AreaCorr, fill = Genotype)) +
+ggplot(area, aes(Stock, AreaCorr, fill = Genotype)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 3)) +
   scale_y_continuous(labels = function(x) x / 1000) +
@@ -386,7 +325,7 @@ ggsave("4-plots/individual-area-per-position.svg", width = 12, height = 4)
 ## Area of individual folds per type
 
 ```{r individual-area-per-type}
-ggplot(results, aes(Type, AreaCorr, fill = Genotype)) +
+ggplot(area, aes(Type, AreaCorr, fill = Genotype)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   scale_y_continuous(labels = function(x) x / 1000) +
@@ -409,19 +348,87 @@ ggsave("4-plots/individual-area-per-type.svg", width = 12, height = 4)
 The distribution is not normal. Using Wilcoxon test to compare the samples.
 
 ```{r stats}
+#TODO Fix these tests to use Genotype
 sink('tests.txt')
 
 print("Testing normality of distribution")
-shapiro.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr)
-shapiro.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr)
+shapiro.test(area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "wildtype"),]$AreaCorr)
+shapiro.test(area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "mutant"),]$AreaCorr)
 print("Testing for difference between samples")
-wilcox.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr,
-            results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr)
+wilcox.test(area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "wildtype"),]$AreaCorr,
+            area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "mutant"),]$AreaCorr)
 
 print("t-test just to get the difference between sample means")
-t.test(results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "wildtype"),]$AreaCorr,
-       results[(results$Stock != "prd" & results$Type == "EF" & results$Sample == "mutant"),]$AreaCorr,
+t.test(area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "wildtype"),]$AreaCorr,
+       area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "mutant"),]$AreaCorr,
        var.equal = FALSE)
 
 sink()
+```
+
+## Refactored calculations
+
+```{r calculate-total-area-per-embryo, include=FALSE}
+
+#TODO: Began refactoring the quantifications, but decided to simply use what I have already. I can improve the code later on.
+
+# Total folds and folded area per embryo
+stats_total_per_embryo <- aggregate(
+  AreaCorr ~ Embryo + Stock + Genotype,
+  area[area$Fold == TRUE,],
+  function(x) c(
+    count = length(x),
+    sum = sum(x)
+    ))
+
+# Makes column names nicer
+stats_total_per_embryo <- do.call(data.frame, stats_total_per_embryo)
+colnames(stats_total_per_embryo)[colnames(stats_total_per_embryo) == "AreaCorr.count"] <- "nFolds"
+
+stats_total_per_embryo
+
+# Total folds and folded area per Stock and Genotype
+stats_total_per_stock <- aggregate(
+  cbind(nFolds, AreaCorr.sum) ~ Stock + Genotype,
+  stats_total_per_embryo,
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x),
+    sum = sum(x)
+    ))
+
+# Makes column names nicer
+stats_total_per_stock <- do.call(data.frame, stats_total_per_stock)
+stats_total_per_stock <- subset(stats_total_per_stock, select = -AreaCorr.sum.count)
+colnames(stats_total_per_stock)[colnames(stats_total_per_stock) == "nFolds.count"] <- "nEmbryos"
+#colnames(stats_total_per_stock) <- c("Stock", "Genotype", "nEmbryos", "nFolds", "AreaCorr.sum.folds")
+stats_total_per_stock <- stats_total_per_stock[order(stats_total_per_stock$Stock),]
+
+
+# Total folds and folded area per embryo
+stats_total_per_type <- aggregate(
+  AreaCorr ~ Stock + Genotype + Type,
+  area[area$Fold == TRUE,],
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x),
+    sum = sum(x)
+    ))
+# Makes column names nicer
+stats_total_per_type <- do.call(data.frame, stats_total_per_type)
+
+
+
+stats <- aggregate(
+  cbind(Area, AreaCorr) ~ stock + zygosity + status,
+  mdlong[mdlong$status %in% c("md_start", "md_split"), ],
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x))
+  )
+
+
 ```
