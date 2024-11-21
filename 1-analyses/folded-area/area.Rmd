@@ -87,17 +87,17 @@ write.csv(area, file = "area.csv", row.names = FALSE)
 
 ```{r calculate-total-area-per-embryo, include=FALSE}
 # Total folds and folded area per embryo
-total_area_per_embryo <- aggregate(AreaCorr ~ Embryo + Stock + Genotype,
+area_total <- aggregate(AreaCorr ~ Embryo + Stock + Genotype,
                                    area, function(x) c(
                                      count = length(x),
                                      sum = sum(x)))
 
 # Makes column names nicer
-total_area_per_embryo <- do.call(data.frame, total_area_per_embryo)
-colnames(total_area_per_embryo)[colnames(total_area_per_embryo) == "AreaCorr.count"] <- "Folds.count"
+area_total <- do.call(data.frame, area_total)
+colnames(area_total)[colnames(area_total) == "AreaCorr.count"] <- "Folds.count"
 
 # Save data frame to file
-write.csv(total_area_per_embryo, file = "total_area_per_embryo.csv", row.names = FALSE)
+write.csv(area_total, file = "area_total.csv", row.names = FALSE)
 ```
 
 ## Summarize total area per embryo by genotype
@@ -107,7 +107,7 @@ write.csv(total_area_per_embryo, file = "total_area_per_embryo.csv", row.names =
 # Total folds and folded area per Stock and Genotype
 stats_total <- aggregate(
   cbind(Folds.count, AreaCorr.sum) ~ Stock + Genotype,
-  total_area_per_embryo,
+  area_total,
   function(x) c(
     count = length(x),
     mean = mean(x),
@@ -180,7 +180,7 @@ stats_position
 Plot the total area of folded tissue per embryo of different genotypes.
 
 ```{r total-area-per-embryo}
-ggplot(total_area_per_embryo, aes(Stock, AreaCorr.sum, fill = Genotype)) +
+ggplot(area_total, aes(Stock, AreaCorr.sum, fill = Genotype)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   scale_y_continuous(labels = function(x) x / 1000) +
@@ -260,121 +260,146 @@ ggsave("4-plots/individual-area-per-type.png", width = 12, height = 4)
 ggsave("4-plots/individual-area-per-type.svg", width = 12, height = 4)
 ```
 
-## Statistics
-
-The distribution is not normal. Using Wilcoxon test to compare the samples.
+# Statistics
 
 ```{r stats}
-#TODO Fix these tests to use Genotype
-sink('tests.txt')
+tests <- data.frame()
 
-print("Testing normality of distribution")
-shapiro.test(area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "wildtype"),]$AreaCorr)
-shapiro.test(area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "mutant"),]$AreaCorr)
-print("Testing for difference between samples")
-wilcox.test(area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "wildtype"),]$AreaCorr,
-            area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "mutant"),]$AreaCorr)
-
-print("t-test just to get the difference between sample means")
-t.test(area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "wildtype"),]$AreaCorr,
-       area[(area$Stock != "prd" & area$Type == "EF" & area$Sample == "mutant"),]$AreaCorr,
-       var.equal = FALSE)
-
-sink()
-```
-
-
-
-## Refactored calculations
-
-```{r calculate-total-area-per-embryo, include=FALSE}
-
-#TODO: Began refactoring the quantifications, but decided to simply use what I have already. I can improve the code later on.
-
-# Total folds and folded area per embryo
-total_area_per_embryo <- aggregate(
-  AreaCorr ~ Embryo + Stock + Genotype,
-  area,
-  function(x) c(
-    count = length(x),
-    sum = sum(x)
-    ))
-
-# Makes column names nicer
-total_area_per_embryo <- do.call(data.frame, total_area_per_embryo)
-colnames(total_area_per_embryo)[colnames(total_area_per_embryo) == "AreaCorr.count"] <- "Folds.count"
-
-stats_total_per_embryo
-
-# Total folds and folded area per Stock and Genotype
-stats_total_per_stock <- aggregate(
-  cbind(nFolds, AreaCorr.sum) ~ Stock + Genotype,
-  stats_total_per_embryo,
-  function(x) c(
-    count = length(x),
-    mean = mean(x),
-    sd = sd(x),
-    sum = sum(x)
-    ))
-
-# Makes column names nicer
-stats_total_per_stock <- do.call(data.frame, stats_total_per_stock)
-stats_total_per_stock <- subset(stats_total_per_stock, select = -AreaCorr.sum.count)
-colnames(stats_total_per_stock)[colnames(stats_total_per_stock) == "nFolds.count"] <- "nEmbryos"
-#colnames(stats_total_per_stock) <- c("Stock", "Genotype", "nEmbryos", "nFolds", "AreaCorr.sum.folds")
-stats_total_per_stock <- stats_total_per_stock[order(stats_total_per_stock$Stock),]
-
-
-# Total folds and folded area per embryo
-stats_total_area_per_embryo <- aggregate(
-  AreaCorr ~ Embryo + Stock + Genotype,
-  area,
-  function(x) c(
-    count = length(x),
-    mean = mean(x),
-    sd = sd(x)
-    ))
-# Makes column names nicer
-stats_total_per_type <- do.call(data.frame, stats_total_per_type)
-
-
-
-stats <- aggregate(
-  cbind(Area, AreaCorr) ~ stock + zygosity + status,
-  mdlong[mdlong$status %in% c("md_start", "md_split"), ],
-  function(x) c(
-    count = length(x),
-    mean = mean(x),
-    sd = sd(x))
-  )
-
-
-```
-
-
-## Calculate fold type percentage
-
-```{r calculate-fold-type-percentage}
-
-# Create data frame for summary
-summary <- data.frame()
-
-# Contrasts of single variables within stocks (het vs hom)
-for (stock in unique(area$Stock)) {
+for (stock in c("btd", "eve", "prd")) {
   
-  n_total <- length(unique(area[area$Stock == stock, ]$Embryo))
-  n_het <- length(unique(area[area$Stock == stock & area$Genotype == "heterozygote", ]$Embryo))
-  n_hom <- length(unique(area[area$Stock == stock & area$Genotype == "homozygote", ]$Embryo))
+  wt <- area_total[area_total$Stock == "wt", "AreaCorr.sum"]
+  het <- area_total[(area_total$Stock == stock & area_total$Genotype == "heterozygote"), "AreaCorr.sum"]
+  hom <- area_total[(area_total$Stock == stock & area_total$Genotype == "homozygote"), "AreaCorr.sum"]
   
-  row <- c(
+  # Heterozygotes vs Homozygotes
+  contrast <- "het vs hom"
+  test <- wilcox.test(het, hom, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(het) - mean(hom)
+  
+  test_row <- c(
+    contrast = contrast,
     stock = stock,
-    n_total = n_total,
-    n_het = n_het,
-    n_hom = n_hom
-    
+    value = "total",
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
   )
   
-  summary <- rbind(summary, as.data.frame(t(row)))
+  tests <- rbind(tests, as.data.frame(t(test_row)))
   
+  # Wildtype vs Heterozygotes
+  contrast <- "wt vs het"
+  test <- wilcox.test(wt, het, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(wt) - mean(het)
+  
+  test_row <- c(
+    contrast = contrast,
+    stock = stock,
+    value = "total",
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
+  )
+  
+  tests <- rbind(tests, as.data.frame(t(test_row)))
+  
+  # Wildtype vs Homozygotes
+  contrast <- "wt vs hom"
+  test <- wilcox.test(wt, hom, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(wt) - mean(hom)
+  
+  test_row <- c(
+    contrast = contrast,
+    stock = stock,
+    value = "total",
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
+  )
+  
+  tests <- rbind(tests, as.data.frame(t(test_row)))
 }
+
+# Compare all EFs by genotype below
+wt <- area[area$Type == "EF" & area$Genotype == "wildtype", "AreaCorr"]
+het <- area[area$Type == "EF" & area$Genotype == "heterozygote", "AreaCorr"]
+hom <- area[area$Type == "EF" & area$Genotype == "homozygote", "AreaCorr"]
+
+# Heterozygotes vs Homozygotes
+contrast <- "het vs hom"
+test <- wilcox.test(het, hom, paired = FALSE)
+pvalue <- test$p.value
+statistic <- test$statistic
+delta <- mean(het) - mean(hom)
+
+test_row <- c(
+  contrast = contrast,
+  stock = "all",
+  value = "EFs",
+  delta = sprintf("%.1f", delta),
+  significant = pvalue < 0.05,
+  pvalue = sprintf("%.9f", pvalue),
+  statistic = sprintf("%s=%s", names(statistic), statistic),
+  paired = FALSE
+)
+
+tests <- rbind(tests, as.data.frame(t(test_row)))
+
+
+# Wildtype vs Heterozygotes
+contrast <- "wt vs het"
+test <- wilcox.test(wt, het, paired = FALSE)
+pvalue <- test$p.value
+statistic <- test$statistic
+delta <- mean(wt) - mean(het)
+
+test_row <- c(
+  contrast = contrast,
+  stock = "all",
+  value = "EFs",
+  delta = sprintf("%.1f", delta),
+  significant = pvalue < 0.05,
+  pvalue = sprintf("%.9f", pvalue),
+  statistic = sprintf("%s=%s", names(statistic), statistic),
+  paired = FALSE
+)
+
+tests <- rbind(tests, as.data.frame(t(test_row)))
+
+# Wildtype vs Homozygotes
+contrast <- "wt vs hom"
+test <- wilcox.test(wt, hom, paired = FALSE)
+pvalue <- test$p.value
+statistic <- test$statistic
+delta <- mean(wt) - mean(hom)
+
+test_row <- c(
+  contrast = contrast,
+  stock = "all",
+  value = "EFs",
+  delta = sprintf("%.1f", delta),
+  significant = pvalue < 0.05,
+  pvalue = sprintf("%.9f", pvalue),
+  statistic = sprintf("%s=%s", names(statistic), statistic),
+  paired = FALSE
+)
+
+tests <- rbind(tests, as.data.frame(t(test_row)))
+
+# Save test data frame to file
+write.csv(tests, file = "tests.csv", row.names = FALSE)
+tests
 ```
+
