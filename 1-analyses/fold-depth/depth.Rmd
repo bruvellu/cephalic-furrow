@@ -18,8 +18,17 @@ library(ggbeeswarm)
 # Load raw ROI measurements from ImageJ
 results <- read.delim("results.txt")
 
-# Replace label by filename
-results$Label <- sapply(strsplit(results$Label, ":"), "[", 1)
+# Remove column with row number and angle
+results <- subset(results, select = -X)
+results <- subset(results, select = -Angle)
+
+# Add Embryo row
+results$Embryo <- sapply(strsplit(results$Label, ":"), "[", 1)
+
+# Replace label with proper label
+results$Label <- paste0(sapply(strsplit(results$Label, ":"), "[", 1),
+                        "_", sapply(strsplit(results$Label, ":"), "[", 2))
+
 
 # Load sample info and merge with results
 samples <- read.delim("samples.csv", sep = ",")
