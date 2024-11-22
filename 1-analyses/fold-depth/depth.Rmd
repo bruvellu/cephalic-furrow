@@ -12,9 +12,12 @@ library(ggplot2)
 library(ggbeeswarm)
 ```
 
-## Load measurements
+## Import measurements
 
-```{r load}
+```{r import-measurements}
+# Load sample info and merge with results
+samples <- read.delim("samples.csv", sep = ",")
+
 # Load raw ROI measurements from ImageJ
 results <- read.delim("results.txt")
 
@@ -22,17 +25,15 @@ results <- read.delim("results.txt")
 results <- subset(results, select = -X)
 results <- subset(results, select = -Angle)
 
-# Add Embryo row
-results$Embryo <- sapply(strsplit(results$Label, ":"), "[", 1)
-
 # Replace label with proper label
 results$Label <- paste0(sapply(strsplit(results$Label, ":"), "[", 1),
                         "_", sapply(strsplit(results$Label, ":"), "[", 2))
 
+# Merge samples with results
+results <- merge(samples, results, by = "Label", all.x = TRUE)
 
-# Load sample info and merge with results
-samples <- read.delim("samples.csv", sep = ",")
-results <- merge(results, samples, by = "Label", all.x = TRUE)
+# Save data frame to file
+write.csv(results, file = "depth.csv", row.names = FALSE)
 ```
 
 ## Print summary
