@@ -1,5 +1,0 @@
-sample	genotype	n_folds	n_embryos
-btd	heterozygote	44	22
-btd	homozygote	27	 6
-eve	heterozygote	29	14
-eve	homozygote	15	 4

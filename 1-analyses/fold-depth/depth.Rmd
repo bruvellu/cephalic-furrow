@@ -32,115 +32,171 @@ results$Label <- paste0(sapply(strsplit(results$Label, ":"), "[", 1),
 # Merge samples with results
 results <- merge(samples, results, by = "Label", all.x = TRUE)
 
+# Add column for embryo sorting
+results$E <- as.numeric(sub(".*_E(\\d+)$", "\\1", results$Embryo))
+
+# Transform data frame to order the stock for plotting
+results$Stock <- factor(results$Stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+results$Genotype <- factor(results$Genotype, levels = c("wildtype", "heterozygote", "homozygote"))
+results$Position <- factor(results$Position, levels = c("ant", "mid", "post"))
+
+results <- results[order(results$Stock, results$Genotype, results$Position, results$E),]
+rownames(results) <- 1:nrow(results)
+
 # Save data frame to file
-write.csv(results, file = "depth.csv", row.names = FALSE)
+write.csv(results, file = "combined_results.csv", row.names = FALSE)
 ```
 
-## Print summary
+## Create main fold-depth dataset
 
-```{r summary}
-print_stats <- function(dataframe, sample, genotype) {
-  filter_df <- (dataframe$Sample == sample & dataframe$Genotype == genotype)
-  df <- dataframe[filter_df,]
-  df <- droplevels(df)
+The dataset only include ROIs scored as true folds (after revision) and remove any NA values without area measurements.
 
-  # Define row
-  row <- c(sample,
-           genotype,
-           length(df$Label),
-           length(unique(df$Label))
-           )
-  
-  return(row)
-}
+```{r create-depth-results}
+# For downstream area analysis, only consider TRUE folds without NA
+depth <- results[results$Fold == TRUE & !is.na(results$Length), ]
 
-# Save stats to data frame
-stats <- data.frame()
-
-# Bind row by row
-stats <- rbind(stats, print_stats(results, "btd", "heterozygote"))
-stats <- rbind(stats, print_stats(results, "btd", "homozygote"))
-stats <- rbind(stats, print_stats(results, "eve", "heterozygote"))
-stats <- rbind(stats, print_stats(results, "eve", "homozygote"))
-
-# Add column names
-colnames(stats) <- c("sample", "genotype", "n_folds", "n_embryos")
-
-# Convert columns to numeric
-stats[, 3:4] <- apply(stats[, 3:4], 2, as.numeric)
-
-# Write table to file
-write.table(format(stats, digits=2), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
-print(stats)
+# Save data frame to file
+write.csv(depth, file = "depth.csv", row.names = FALSE)
 ```
 
+## Create total fold depth per embryo
 
-## Plot fold depth by stocks
+```{r calculate-total-depth-per-embryo}
 
-```{r plot-depth}
+# Total folds and folded area per embryo
+depth_total <- aggregate(
+  Length ~ Embryo + Stock + Genotype + Type,
+  depth,
+  function(x) c(
+    count = length(x),
+    sum = sum(x),
+    mean = mean(x),
+    sd = sd(x)
+  ))
+
+# Makes column names nicer
+depth_total <- do.call(data.frame, depth_total)
+depth_total <- depth_total[order(depth_total$Stock, depth_total$Genotype, depth_total$Type),]
+
+# Save data frame to file
+write.csv(depth_total, file = "depth_total.csv", row.names = FALSE)
+
+depth_total
+```
+
+## Summarize total depth per embryo by genotype
+
+```{r summarize-total-depth-per-embryo-by-genotype}
+
+# Total folds and folded area per Stock and Genotype
+stats_total <- aggregate(
+  cbind(Length.sum, Length.mean) ~ Stock + Genotype,
+  depth_total,
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x)
+    ))
+
+# Makes column names nicer
+stats_total <- do.call(data.frame, stats_total)
+stats_total <- subset(stats_total, select = -Length.mean.count)
+colnames(stats_total)[colnames(stats_total) == "Length.sum.count"] <- "Embryos"
+stats_total <- stats_total[order(stats_total$Stock, stats_total$Genotype),]
+
+# Save data frame to file
+write.csv(stats_total, file = "stats_total.csv", row.names = FALSE)
+
+stats_total
+```
+
+## Summarize individual fold depth per type
+
+```{r summarize-individual-fold-depth-per-type}
+
+# Total folds and folded area per Stock and Genotype
+stats_type <- aggregate(
+  Length ~ Stock + Genotype + Type,
+  depth,
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x)
+    ))
+
+# Makes column names nicer
+stats_type <- do.call(data.frame, stats_type)
+stats_type <- stats_type[order(stats_type$Stock, stats_type$Genotype, stats_type$Type),]
+
+# Save data frame to file
+write.csv(stats_type, file = "stats_type.csv", row.names = FALSE)
+
+stats_type
+```
+
+## Summarize individual fold depth per type by position
+
+```{r summarize-individual-fold-depth-per-type-by-position}
+
+# Total folds and folded area per Stock and Genotype
+stats_position <- aggregate(
+  Length ~ Stock + Genotype + Type + Position,
+  depth,
+  function(x) c(
+    count = length(x),
+    mean = mean(x),
+    sd = sd(x)
+    ))
+
+# Makes column names nicer
+stats_position <- do.call(data.frame, stats_position)
+stats_position <- stats_position[order(stats_position$Stock, stats_position$Genotype, stats_position$Position),]
+
+# Save data frame to file
+write.csv(stats_position, file = "stats_position.csv", row.names = FALSE)
+
+stats_position
+```
+
+## Plot mean total fold depth by stocks
+
+```{r plot-mean-total-depth}
 # Plot stocks separately
-ggplot(results, aes(Genotype, Length, fill = Genotype)) +
+ggplot(depth_total, aes(Genotype, Length.mean, fill = Genotype, shape = Type)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   labs(x = "mutants", y = "depth") +
-  facet_wrap(~Sample, strip.position = "top") +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  facet_wrap(~Stock, strip.position = "top") +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 30),
         strip.background = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
-        panel.background = element_rect(colour = "black", size=1))
-ggsave("3-plots/depth_facet.png", width = 12, height = 6)
-ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
+        panel.background = element_rect(colour = "black", linewidth = 1))
+ggsave("3-plots/total_depth_facet.png", width = 12, height = 6)
+ggsave("3-plots/total_depth_facet.svg", width = 12, height = 6)
 
 ```
 
-## Mean furrow length by embryo
+## Plot individual fold depth by stocks
 
-To attempt to normalize the furrow length per embryo, since their length does not
-seem to be independent of each other, I'll take the length mean per embryo.
-
-```{r mean-length}
-# Mean of fold length per embryo
-embryo_mean <- aggregate(results$Length, list(results$Label), mean)
-colnames(embryo_mean) <- c("Label", "Mean")
-
-# Standard deviation of fold length per embryo
-embryo_sd <- aggregate(results$Length, list(results$Label), sd)
-colnames(embryo_sd) <- c("Label", "SD")
-
-# Get sample information
-samples <- unique(results[, c("Label", "Sample", "Genotype")])
-
-# Merge datasets
-means <- merge(samples, embryo_mean, by = "Label", all.x = TRUE)
-means <- merge(means, embryo_sd, by = "Label", all.x = TRUE)
-
-# Summary by sample
-by(means[means$Genotype == "heterozygote", c("Mean", "SD")], means[means$Genotype == "heterozygote",]$Sample, summary)
-print("------------------------------------------------------------------------------------")
-by(means[means$Genotype == "homozygote", c("Mean", "SD")], means[means$Genotype == "homozygote",]$Sample, summary)
-```
-
-## Plot mean fold depth by embryo for stocks
-
-```{r plot-mean-depth}
+```{r plot-individual-depth}
 # Plot stocks separately
-ggplot(means, aes(Genotype, Mean, fill = Genotype)) +
+ggplot(depth, aes(Genotype, Length, fill = Genotype, shape = Type)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
   labs(x = "mutants", y = "depth") +
-  facet_wrap(~Sample, strip.position = "top") +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
+  facet_wrap(~Stock, strip.position = "top") +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 30),
         strip.background = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
-        panel.background = element_rect(colour = "black", size=1))
+        panel.background = element_rect(colour = "black", linewidth = 1))
 ggsave("3-plots/depth_facet.png", width = 12, height = 6)
 ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
 

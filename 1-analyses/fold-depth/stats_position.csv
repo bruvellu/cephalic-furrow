@@ -1,0 +1,12 @@
+"Stock","Genotype","Type","Position","Length.count","Length.mean","Length.sd"
+"btd","heterozygote","CF","mid",52,71.6519230769231,7.97561210103172
+"btd","heterozygote","EF","post",6,32.5333333333333,3.56968719451252
+"btd","homozygote","EF","ant",4,45.35,7.22472606170412
+"btd","homozygote","EF","mid",14,55.25,15.0090613656192
+"btd","homozygote","EF","post",10,51.43,7.96883513026423
+"eve","heterozygote","EF","ant",1,36.8,NA
+"eve","heterozygote","CF","mid",34,59.0382352941176,6.80369840182228
+"eve","heterozygote","EF","post",3,35.8333333333333,5.39104195247387
+"eve","homozygote","EF","ant",6,35.9166666666667,6.62100193827692
+"eve","homozygote","EF","mid",4,44.075,14.0343329018518
+"eve","homozygote","EF","post",5,48.04,13.1092715281971
