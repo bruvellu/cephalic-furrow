@@ -7,30 +7,25 @@ dirRois = dirWork + "1-rois/";
 dirSnaps = dirWork + "2-snaps/";
 
 // Get files from data directory
-dataList = getFileList(dirData);
+dataList = getFileList(dirRois);
 
 // Open ROI Manager
 run("ROI Manager...");
 
 // Loop over data file list
 for (i=0; i<dataList.length; i++) {
-//for (i=0; i<5; i++) {
+//for (i=0; i<3; i++) {
 
-	// Get stack name
-	stackFile = dataList[i];
+	// Get ROI name
+	roiFile = dataList[i];
+	
+	if (endsWith(roiFile, ".md")) { continue }
 
 	// Define ROI name
-	stackName = File.getNameWithoutExtension(stackFile);
+	stackName = File.getNameWithoutExtension(roiFile);
 
-	// Discover ROI file due to .roi vs .zip issue.
-	if (File.exists(dirRois + stackName + ".zip")) {
-		roiName = stackName + ".zip";
-	} else if (File.exists(dirRois + stackName + ".roi")) {
-		roiName = stackName + ".roi";
-	} else {
-		// Skip stacks without ROIs
-		continue
-	}
+	// Get stack name
+	stackFile = stackName + ".tif";
 
 	// Open stack if ROISet exists
 	run("TIFF Virtual Stack...", "open=" + dirData + stackFile);
@@ -47,7 +42,7 @@ for (i=0; i<dataList.length; i++) {
 	rename(stackName);
 
 	// Load ROIs
-	roiManager("Open", dirRois + roiName);
+	roiManager("Open", dirRois + roiFile);
 
 	// Get number of ROIs in Manager
 	roiCount = roiManager("count");
