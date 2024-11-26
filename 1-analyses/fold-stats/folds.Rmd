@@ -7,21 +7,85 @@ creation: November 30, 2022
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/fold-stats")
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/fold-stats")
 library(ggplot2)
 ```
 
-## Load data
+## Import datasets
 
 ```{r import}
-# Import main dataset
-datasets <- read.csv("~/Dropbox/Projects/Cephalic_furrow/7-Paper/0-data/datasets.csv", stringsAsFactors=TRUE)
+# Load sample info and merge with results
+area_results <- read.delim("../folded-area/combined_results.csv", sep = ",")
+depth_results <- read.delim("../fold-depth/combined_results.csv", sep = ",")
 
-# Filter out NAs
-datasets <- datasets[!is.na(datasets$folds_left),]
+# Remove discarded folds marked as FALSE in area dataset
+area_results <- area_results[area_results$Discard == FALSE, ]
+
+# Subset only relevant columns and merge
+fold_cols <- c("Embryo", "Stock", "Genotype", "View", "Side", "Fold", "Position", "Type")
+area_results <- area_results[, fold_cols]
+depth_results <- depth_results[, fold_cols]
+folds <- rbind(area_results, depth_results)
 
 # Transform data frame to order the stock for plotting
-datasets <- transform(datasets, stock=factor(stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg")))
+folds$Stock <- factor(folds$Stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+folds$Genotype <- factor(folds$Genotype, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
+folds$Position <- factor(folds$Position, levels = c("ant", "mid", "post"))
+folds$Type <- factor(folds$Type, levels = c("CF", "EF"))
+
+folds <- folds[order(folds$Stock, folds$Genotype, folds$Position, folds$Type),]
+rownames(folds) <- 1:nrow(folds)
+
+# Save data frame to file
+write.csv(folds, file = "folds.csv", row.names = FALSE)
+```
+
+## Ave total fold depth per embryo
+
+```{r calculate-total-depth-per-embryo}
+
+# Total folds and folded area per embryo
+fold_total <- aggregate(
+  Fold ~ Embryo + Stock + Genotype + Side + Type,
+  folds,
+  function(x) c(
+    count = length(x)
+    #sum = sum(x)
+    #mean = mean(x),
+    #sd = sd(x)
+  ))
+
+# Makes column names nicer
+depth_total <- do.call(data.frame, depth_total)
+depth_total <- depth_total[order(depth_total$Stock, depth_total$Genotype, depth_total$Type),]
+
+# Save data frame to file
+write.csv(depth_total, file = "depth_total.csv", row.names = FALSE)
+
+depth_total
+
+#total wt
+length(unique(folds[folds$Stock == "wt",]$Embryo))
+#total wt with a fold
+length(unique(folds[folds$Stock == "wt" & folds$Fold == TRUE,]$Embryo))
+#total wt with a CF
+length(unique(folds[folds$Stock == "wt" & folds$Type == "CF",]$Embryo))
+#total wt with a EF
+length(unique(folds[folds$Stock == "wt" & folds$Type == "EF",]$Embryo))
+#total wt with a CF for lateral
+length(unique(folds[folds$Stock == "wt" & folds$Type == "CF" & folds$View == "lateral",]$Embryo))
+#total wt with a EF for lateral
+length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$View == "lateral",]$Embryo))
+#total wt with a CF for dorsal
+length(unique(folds[folds$Stock == "wt" & folds$Type == "CF" & folds$View == "dorsal",]$Embryo))
+#total wt with a EF for dorsal
+length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$View == "dorsal",]$Embryo))
+#total wt with a EF for position
+length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$Position == "ant",]$Embryo))
+length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$Position == "mid",]$Embryo))
+length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$Position == "post",]$Embryo))
+
+
 ```
 
 ## Print statistics
