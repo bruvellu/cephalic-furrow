@@ -61,7 +61,7 @@ results$E <- as.numeric(sub(".*_E(\\d+)$", "\\1", results$Embryo))
 
 # Transform data frame to order the stock for plotting
 results$Stock <- factor(results$Stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
-results$Genotype <- factor(results$Genotype, levels = c("wildtype", "heterozygote", "homozygote"))
+results$Genotype <- factor(results$Genotype, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
 results$Position <- factor(results$Position, levels = c("ant", "mid", "post"))
 
 results <- results[order(results$Stock, results$Genotype, results$Position, results$E),]
@@ -76,8 +76,8 @@ write.csv(results, file = "combined_results.csv", row.names = FALSE)
 The dataset only include ROIs scored as true folds (after revision) and remove any NA values without area measurements.
 
 ```{r create-area-results}
-# For downstream area analysis, only consider TRUE folds without NA
-area <- na.omit(results[results$Fold == TRUE, ])
+# For downstream area analysis, discard FALSE folds and keep only folds with a measurement
+area <- results[results$Discard == FALSE & !is.na(results$AreaCorr), ]
 
 # Save data frame to file
 write.csv(area, file = "area.csv", row.names = FALSE)
@@ -85,7 +85,7 @@ write.csv(area, file = "area.csv", row.names = FALSE)
 
 ## Create total folded-area per embryo
 
-```{r calculate-total-area-per-embryo, include=FALSE}
+```{r calculate-total-area-per-embryo}
 # Total folds and folded area per embryo
 area_total <- aggregate(AreaCorr ~ Embryo + Stock + Genotype,
                                    area, function(x) c(

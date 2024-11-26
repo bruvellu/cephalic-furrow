@@ -1,178 +1,178 @@
-Embryo,Label,Stock,Genotype,View,Side,Fold,Position,Type,Comment
-btd-gap_z3_t55s_E3,btd-gap_z3_t55s_E3_CARE_s20_0x0_w1606_h999_flipn_f38-107.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap_z3_t55s_E6,btd-gap_z3_t55s_E6_CARE_s25_0x0_w1618_h927_fliph_f17-86.1.roi,btd,homozygote,lateral,left,TRUE,ant,EF,
-btd-gap_z3_t55s_E6,btd-gap_z3_t55s_E6_CARE_s25_0x0_w1618_h927_fliph_f17-86.2.roi,btd,homozygote,lateral,left,FALSE,mid,EF,Bends from reminiscent IC
-btd-gap_z3_t55s_E6,btd-gap_z3_t55s_E6_CARE_s25_0x0_w1618_h927_fliph_f17-86.3.roi,btd,homozygote,lateral,left,TRUE,mid,EF,
-btd-gap_z3_t55s_E6,btd-gap_z3_t55s_E6_CARE_s25_0x0_w1618_h927_fliph_f17-86.4.roi,btd,homozygote,lateral,left,TRUE,post,EF,
-btd-gap_z3_t55s_E8,btd-gap_z3_t55s_E8_CARE_s22_0x0_w1762_h966_flipn_f32-101.1.roi,btd,homozygote,lateral,left,TRUE,mid,EF,
-btd-gap_z3_t55s_E8,btd-gap_z3_t55s_E8_CARE_s22_0x0_w1762_h966_flipn_f32-101.2.roi,btd,homozygote,lateral,left,TRUE,post,EF,
-btd-gap_z3_t55s_E10,btd-gap_z3_t55s_E10_CARE_s21_0x0_w1578_h1002_flipn_f1-70.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap_z3_t55s_E12,btd-gap_z3_t55s_E12_CARE_s20_0x0_w1676_h1028_fliph_f1-70.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap_z3_t55s_E14,btd-gap_z3_t55s_E14_CARE_s24_0x0_w1685_h998_flipn_f18-87.1.roi,btd,homozygote,lateral,left,TRUE,ant,EF,
-btd-gap_z3_t55s_E14,btd-gap_z3_t55s_E14_CARE_s24_0x0_w1685_h998_flipn_f18-87.2.roi,btd,homozygote,lateral,left,TRUE,mid,EF,
-btd-gap2_z3_t55s_E7,btd-gap2_z3_t55s_E7_CARE_s20_0x0_w1721_h1029_flipn_f23-92.1.roi,btd,homozygote,lateral,left,TRUE,ant,EF,
-btd-gap2_z3_t55s_E7,btd-gap2_z3_t55s_E7_CARE_s20_0x0_w1721_h1029_flipn_f23-92.2.roi,btd,homozygote,lateral,left,TRUE,mid,EF,
-btd-gap2_z3_t55s_E8,btd-gap2_z3_t55s_E8_CARE_s23_0x0_w1643_h1016_flipn_f41-110.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one"
-btd-gap2_z3_t55s_E12,btd-gap2_z3_t55s_E12_CARE_s24_0x0_w1724_h1106_fliph_f48-117.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap2_z3_t55s_E14,,btd,homozygote,lateral,left,FALSE,,,No EFs in this embryo
-btd-hisgap1_E7,btd-hisgap1_E7_CARE_s27_0x0_w1698_h918_fliph_f34-103.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,
-btd-hisgap1_E8,btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.1.roi,btd,homozygote,lateral,left,TRUE,mid,EF,
-btd-hisgap1_E8,btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.2.roi,btd,homozygote,lateral,left,TRUE,mid,EF,
-btd-hisgap1_E8,btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.3.roi,btd,homozygote,lateral,left,TRUE,post,EF,
-eve-Gap_1_E13,eve-Gap_1_E13_CARE_s14_0x0_w1867_h1068_fliph_f11-80.1.roi,eve,homozygote,lateral,left,TRUE,post,EF,
-eve-Gap_1_t45s_z3_E1,eve-Gap_1_t45s_z3_E1_CARE_s21_0x0_w1845_h974_flipn_f51-120.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,
-eve-Gap_1_t45s_z3_E4,eve-Gap_1_t45s_z3_E4_CARE_s15_0x398_w1798_h960_fliph_f76-145.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,
-eve-Gap_1_t45s_z3_E11,eve-Gap_1_t45s_z3_E11_CARE_s14_0x0_w1813_h992_flipn_f48-117.1.roi,eve,homozygote,lateral,left,TRUE,ant,EF,
-eve-Gap_1_t45s_z3_E11,eve-Gap_1_t45s_z3_E11_CARE_s14_0x0_w1813_h992_flipn_f48-117.2.roi,eve,homozygote,lateral,left,TRUE,post,EF,
-eve-Gap1_t60s_z3_E2,eve-Gap1_t60s_z3_E2_CARE_s22_0x0_w1797_h1014_flipn_f6-75.1.roi,eve,homozygote,lateral,left,TRUE,mid,EF,
-eve-Gap1_t60s_z3_E3,,eve,homozygote,lateral,left,TRUE,mid,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
-eve-Gap1_t60s_z3_E3,,eve,homozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
-eve-Gap1_t60s_z3_E2,eve-Gap1_t60s_z3_E2_CARE_s22_0x0_w1797_h1014_flipn_f6-75.2.roi,eve,homozygote,lateral,left,TRUE,post,EF,
-eve-Gap1_t60s_z3_E4,eve-Gap1_t60s_z3_E4_CARE_s20_0x334_w1850_h1040_fliph_f15-84.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,
-eve-Gap1_t60s_z3_E4,,eve,heterozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
-eve-Gap1_t60s_z3_E5,eve-Gap1_t60s_z3_E5_CARE_s24_0x172_w1794_h1070_fliph_f60-129.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,
-eve-Gap1_t60s_z3_E5,,eve,heterozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
-eve-Gap1_t60s_z3_E9,eve-Gap1_t60s_z3_E9_CARE_s18_0x96_w1801_h942_flipn_f16-85.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,
-eve-Gap1_t60s_z3_E9,,eve,heterozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
-eve-Gap1_t60s_z3_E11,eve-Gap1_t60s_z3_E11_CARE_s18_0x0_w1824_h1040_fliph_f26-95.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one"
-eve-Gap1_t60s_z3_E12,eve-Gap1_t60s_z3_E12_CARE_s19_0x0_w1877_h1008_flipn_f6-75.1.roi,eve,homozygote,lateral,left,TRUE,mid,EF,
-eve-Gap1_t60s_z3_E12,eve-Gap1_t60s_z3_E12_CARE_s19_0x0_w1877_h1008_flipn_f6-75.2.roi,eve,homozygote,lateral,left,TRUE,post,EF,
-eve-Gap1_t60s_z3_E16,eve-Gap1_t60s_z3_E16_CARE_s15_0x0_w1799_h1052_flipn_f41-110.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one"
-eve-Gap1_t60s_z3_E16,,eve,heterozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
-prd-Gap_1_t60s_E1,prd-Gap_1_t60s_E1_CARE_s20_0x0_w1795_h1026_flipn_f54-123.1.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one"
-prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,
-prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,
-prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.3.roi,prd,heterozygote,lateral,left,TRUE,post,EF,Checked. This is an EF next to MD6.
-prd-Gap_1_t60s_E3,prd-Gap_1_t60s_E3_CARE_s22_0x0_w1544_h998_fliph_f49-118.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,
-prd-Gap_1_t60s_E3,prd-Gap_1_t60s_E3_CARE_s22_0x0_w1544_h998_fliph_f49-118.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,
-prd-Gap_1_t60s_E4,prd-Gap_1_t60s_E4_CARE_s19_0x0_w1743_h984_flipn_f46-115.1.roi,prd,homozygote,lateral,left,TRUE,ant,EF,
-prd-Gap_1_t60s_E4,prd-Gap_1_t60s_E4_CARE_s19_0x0_w1743_h984_flipn_f46-115.2.roi,prd,homozygote,lateral,left,TRUE,mid,EF,At CF position but no IC
-prd-Gap_1_t60s_E4,,prd,homozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral)
-prd-Gap_1_t60s_E5,prd-Gap_1_t60s_E5_CARE_s22_0x0_w1800_h1032_fliph_f50-119.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,
-prd-Gap_1_t60s_E5,prd-Gap_1_t60s_E5_CARE_s22_0x0_w1800_h1032_fliph_f50-119.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,Maybe posterior EF
-prd-Gap_1_t60s_E6,prd-Gap_1_t60s_E6_CARE_s21_0x0_w1720_h988_fliph_f41-110.1.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,
-prd-Gap_1_t60s_E7,prd-Gap_1_t60s_E7_CARE_s21_0x0_w1653_h1016_fliph_f17-86.1.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,
-prd-Gap_1_t60s_E8,prd-Gap_1_t60s_E8_CARE_s19_0x0_w1705_h1012_flipn_f53-122.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,
-prd-Gap_1_t60s_E8,prd-Gap_1_t60s_E8_CARE_s19_0x0_w1705_h1012_flipn_f53-122.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,
-prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.1.roi,prd,homozygote,lateral,left,TRUE,ant,EF,
-prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.2.roi,prd,homozygote,lateral,left,TRUE,mid,EF,At CF position but no IC
-prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.3.roi,prd,homozygote,lateral,left,TRUE,post,EF,
-prd-Gap_1_t60s_E10,prd-Gap_1_t60s_E10_CARE_s24_0x224_w1706_h998_flipv_f43-112.1.roi,prd,homozygote,lateral,left,TRUE,ant,EF,"Checked. There’s a small EF, included new ROI"
-prd-Gap_1_t60s_E10,prd-Gap_1_t60s_E10_CARE_s24_0x224_w1706_h998_flipv_f43-112.2.roi,prd,homozygote,lateral,left,TRUE,mid,CF,"There’s a posterior fold, but forming before mitotic domains, dorsal fold"
-prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,
-prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,
-prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.3.roi,prd,heterozygote,lateral,left,TRUE,post,EF,"Checked. This is an EF next to MD6, included new ROI"
-prd-Gap_1_t60s_E12,prd-Gap_1_t60s_E12_CARE_s20_0x0_w1709_h978_fliph_f47-116.1.roi,prd,homozygote,lateral,left,TRUE,ant,EF,Checked. This is a proper EF
-prd-Gap_1_t60s_E12,prd-Gap_1_t60s_E12_CARE_s20_0x0_w1709_h978_fliph_f47-116.2.roi,prd,homozygote,lateral,left,TRUE,mid,EF,At CF position but no IC
-prd-Gap_1_t60s_E15,prd-Gap_1_t60s_E15_CARE_s20_0x382_w1618_h892_fliph_f48-117.1.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,
-prd-Gap_1_t60s_E16,prd-Gap_1_t60s_E16_CARE_s24_0x26_w1678_h964_flipn_f43-112.1.roi,prd,homozygote,lateral,left,TRUE,mid,EF,At CF position but no IC
-rgap_1b_z3_t60s_E1,rgap_1b_z3_t60s_E1_s24_0x0_w1782_h920_fliph_f49-118.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a small EF
-rgap_1b_z3_t60s_E1,rgap_1b_z3_t60s_E1_s24_0x0_w1782_h920_fliph_f49-118.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E2,rgap_1b_z3_t60s_E2_s20_0x0_w1690_h920_flipn_f59-128.1.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E3,rgap_1b_z3_t60s_E3_s20_0x50_w1737_h890_fliph_f23-92.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a proper EF
-rgap_1b_z3_t60s_E3,rgap_1b_z3_t60s_E3_s20_0x50_w1737_h890_fliph_f23-92.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E3,rgap_1b_z3_t60s_E3_s20_0x50_w1737_h890_fliph_f23-92.3.roi,wt,wildtype,lateral,left,TRUE,post,EF,Checked. This is a proper EF
-rgap_1b_z3_t60s_E4,rgap_1b_z3_t60s_E4_s18_0x40_w1737_h970_flipn_f38-107.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a proper EF
-rgap_1b_z3_t60s_E4,rgap_1b_z3_t60s_E4_s18_0x40_w1737_h970_flipn_f38-107.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E5,rgap_1b_z3_t60s_E5_s20_0x55_w1740_h905_fliph_f47-116.1.roi,wt,wildtype,lateral,left,FALSE,ant,EF,"Checked. This is not an EF, a few cells get hidden, but there’s barely a fold"
-rgap_1b_z3_t60s_E5,rgap_1b_z3_t60s_E5_s20_0x55_w1740_h905_fliph_f47-116.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E5,rgap_1b_z3_t60s_E5_s20_0x55_w1740_h905_fliph_f47-116.3.roi,wt,wildtype,lateral,left,TRUE,post,EF,Checked. This is a proper EF
-rgap_1b_z3_t60s_E6,rgap_1b_z3_t60s_E6_s19_0x50_w1683_h900_fliph_f47-116.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a very small EF
-rgap_1b_z3_t60s_E6,rgap_1b_z3_t60s_E6_s19_0x50_w1683_h900_fliph_f47-116.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E7,rgap_1b_z3_t60s_E7_s20_0x50_w1745_h940_fliph_f38-107.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a borderline EF
-rgap_1b_z3_t60s_E7,rgap_1b_z3_t60s_E7_s20_0x50_w1745_h940_fliph_f38-107.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E8,rgap_1b_z3_t60s_E8_s20_0x100_w1765_h990_fliph_f32-101.1.roi,wt,wildtype,lateral,left,FALSE,ant,EF,"Checked. This is not an EF, only one hidden cell"
-rgap_1b_z3_t60s_E8,rgap_1b_z3_t60s_E8_s20_0x100_w1765_h990_fliph_f32-101.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E9,rgap_1b_z3_t60s_E9_s20_0x0_w1774_h1000_flipn_f44-113.1.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E11,rgap_1b_z3_t60s_E11_s20_0x80_w1738_h950_fliph_f38-107.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,"Checked. This is a proper EF, revised ROI (it was overestimated)"
-rgap_1b_z3_t60s_E11,rgap_1b_z3_t60s_E11_s20_0x80_w1738_h950_fliph_f38-107.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E11,rgap_1b_z3_t60s_E11_s20_0x80_w1738_h950_fliph_f38-107.3.roi,wt,wildtype,lateral,left,TRUE,post,EF,
-rgap_1b_z3_t60s_E12,rgap_1b_z3_t60s_E12_s20_0x40_w1809_h900_fliph_f37-106.1.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E13,rgap_1b_z3_t60s_E13_s22_0x40_w1765_h900_flipn_f32-101.1.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E14,rgap_1b_z3_t60s_E14_s20_0x30_w1733_h980_flipn_f34-103.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a very small EF
-rgap_1b_z3_t60s_E14,rgap_1b_z3_t60s_E14_s20_0x30_w1733_h980_flipn_f34-103.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E15,rgap_1b_z3_t60s_E15_s20_0x70_w1777_h980_fliph_f45-114.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a borderline EF
-rgap_1b_z3_t60s_E15,rgap_1b_z3_t60s_E15_s20_0x70_w1777_h980_fliph_f45-114.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E16,rgap_1b_z3_t60s_E16_s18_0x0_w1714_h950_flipn_f25-94.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,"Checked. This is a proper EF, revised ROI (it was overestimated)"
-rgap_1b_z3_t60s_E16,rgap_1b_z3_t60s_E16_s18_0x0_w1714_h950_flipn_f25-94.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-rgap_1b_z3_t60s_E16,rgap_1b_z3_t60s_E16_s18_0x0_w1714_h950_flipn_f25-94.3.roi,wt,wildtype,lateral,left,TRUE,post,EF,
-rgap_1b_z3_t60s_E17,rgap_1b_z3_t60s_E17_s19_0x30_w1775_h950_flipn_f46-115.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a proper EF
-rgap_1b_z3_t60s_E17,rgap_1b_z3_t60s_E17_s19_0x30_w1775_h950_flipn_f46-115.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E1",,stg,homozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E1",,stg,homozygote,lateral,left,TRUE,post,EF,
-"Gap,stg[2]_2_z3_t50s_E2",,stg,homozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E2",,stg,homozygote,lateral,left,TRUE,post,EF,
-"Gap,stg[2]_2_z3_t50s_E3",,stg,homozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E4",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E7",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E7",,stg,heterozygote,lateral,left,TRUE,post,EF,
-"Gap,stg[2]_2_z3_t50s_E8",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E9",,stg,homozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E10",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E11",,stg,homozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E12",,stg,homozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E13",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E13",,stg,heterozygote,lateral,left,TRUE,post,EF,
-"Gap,stg[2]_2_z3_t50s_E14",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_2_z3_t50s_E15",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E1",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E2",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E3",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E4",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E5",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E6",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E6",,stg,heterozygote,lateral,left,TRUE,post,EF,
-"Gap,stg[2]_green_1_z3_t52_E7",,stg,heterozygote,lateral,left,TRUE,ant,EF,
-"Gap,stg[2]_green_1_z3_t52_E7",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E8",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E9",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E10",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E11",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E11",,stg,heterozygote,lateral,left,TRUE,post,EF,
-"Gap,stg[2]_green_1_z3_t52_E12",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E13",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E14",,stg,homozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E15",,stg,heterozygote,lateral,left,TRUE,mid,CF,
-"Gap,stg[2]_green_1_z3_t52_E16",,stg,homozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_1_z3_t45s_E3,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,
-btd-gap-stg_1_z3_t45s_E3,,btd-stg,btd homozygote,lateral,left,TRUE,mid,EF,
-btd-gap-stg_1_z3_t45s_E3,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_1_z3_t45s_E8,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_1_z3_t45s_E9,,btd-stg,double homozygote,lateral,left,FALSE,,,No EFs in this embryo
-btd-gap-stg_1_z3_t45s_E12,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,
-btd-gap-stg_3_z3_t53s_E2,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_3_z3_t53s_E3,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_3_z3_t53s_E3,,btd-stg,double heterozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_3_z3_t53s_E11,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,
-btd-gap-stg_3_z3_t53s_E11,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_3_z3_t53s_E12,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_3_z3_t53s_E13,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_3_z3_t53s_E14,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_4_z3_t59s_E1,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_4_z3_t59s_E1,,btd-stg,double heterozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_4_z3_t59s_E3,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_4_z3_t59s_E4,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_4_z3_t59s_E6,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_4_z3_t59s_E7,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,
-btd-gap-stg_4_z3_t59s_E7,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_4_z3_t59s_E8,,btd-stg,btd homozygote,lateral,left,TRUE,mid,EF,
-btd-gap-stg_4_z3_t59s_E10,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,
-btd-gap-stg_4_z3_t59s_E10,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_4_z3_t59s_E11,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_4_z3_t59s_E13,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_4_z3_t59s_E14,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_4_z3_t59s_E16,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_7_z3_60s_E1,,btd-stg,double homozygote,lateral,left,FALSE,,,No EFs in this embryo
-btd-gap-stg_7_z3_60s_E2,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_7_z3_60s_E2,,btd-stg,double heterozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_7_z3_60s_E3,,btd-stg,double homozygote,lateral,left,FALSE,,,No EFs in this embryo
-btd-gap-stg_7_z3_60s_E5,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_7_z3_60s_E6,,btd-stg,btd homozygote,lateral,left,FALSE,,,No EFs in this embryo
-btd-gap-stg_7_z3_60s_E16,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_7_z3_60s_E17,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_7_z3_60s_E18,,btd-stg,btd homozygote,lateral,left,FALSE,,,No EFs in this embryo
-btd-gap-stg_7_z3_60s_E19,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,
-btd-gap-stg_7_z3_60s_E19,,btd-stg,double heterozygote,lateral,left,TRUE,post,EF,
-btd-gap-stg_7_z3_60s_E20,,btd-stg,btd homozygote,lateral,left,TRUE,mid,EF,Between MD5/MD6
-btd-gap-stg_8_z3_45s_E3,,btd-stg,btd homozygote,lateral,left,FALSE,,,No EFs in this embryo
-btd-gap-stg_8_z3_45s_E8,,btd-stg,stg homozygote,lateral,left,TRUE,mid,CF,
+Embryo,Label,Stock,Genotype,View,Side,Fold,Position,Type,Comment,Discard
+btd-gap_z3_t55s_E3,btd-gap_z3_t55s_E3_CARE_s20_0x0_w1606_h999_flipn_f38-107.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap_z3_t55s_E6,btd-gap_z3_t55s_E6_CARE_s25_0x0_w1618_h927_fliph_f17-86.1.roi,btd,homozygote,lateral,left,TRUE,ant,EF,,FALSE
+btd-gap_z3_t55s_E6,btd-gap_z3_t55s_E6_CARE_s25_0x0_w1618_h927_fliph_f17-86.2.roi,btd,homozygote,lateral,left,FALSE,mid,EF,Only bending from reminiscent IC,TRUE
+btd-gap_z3_t55s_E6,btd-gap_z3_t55s_E6_CARE_s25_0x0_w1618_h927_fliph_f17-86.3.roi,btd,homozygote,lateral,left,TRUE,mid,EF,,FALSE
+btd-gap_z3_t55s_E6,btd-gap_z3_t55s_E6_CARE_s25_0x0_w1618_h927_fliph_f17-86.4.roi,btd,homozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap_z3_t55s_E8,btd-gap_z3_t55s_E8_CARE_s22_0x0_w1762_h966_flipn_f32-101.1.roi,btd,homozygote,lateral,left,TRUE,mid,EF,,FALSE
+btd-gap_z3_t55s_E8,btd-gap_z3_t55s_E8_CARE_s22_0x0_w1762_h966_flipn_f32-101.2.roi,btd,homozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap_z3_t55s_E10,btd-gap_z3_t55s_E10_CARE_s21_0x0_w1578_h1002_flipn_f1-70.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap_z3_t55s_E12,btd-gap_z3_t55s_E12_CARE_s20_0x0_w1676_h1028_fliph_f1-70.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap_z3_t55s_E14,btd-gap_z3_t55s_E14_CARE_s24_0x0_w1685_h998_flipn_f18-87.1.roi,btd,homozygote,lateral,left,TRUE,ant,EF,,FALSE
+btd-gap_z3_t55s_E14,btd-gap_z3_t55s_E14_CARE_s24_0x0_w1685_h998_flipn_f18-87.2.roi,btd,homozygote,lateral,left,TRUE,mid,EF,,FALSE
+btd-gap2_z3_t55s_E7,btd-gap2_z3_t55s_E7_CARE_s20_0x0_w1721_h1029_flipn_f23-92.1.roi,btd,homozygote,lateral,left,TRUE,ant,EF,,FALSE
+btd-gap2_z3_t55s_E7,btd-gap2_z3_t55s_E7_CARE_s20_0x0_w1721_h1029_flipn_f23-92.2.roi,btd,homozygote,lateral,left,TRUE,mid,EF,,FALSE
+btd-gap2_z3_t55s_E8,btd-gap2_z3_t55s_E8_CARE_s23_0x0_w1643_h1016_flipn_f41-110.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one",FALSE
+btd-gap2_z3_t55s_E12,btd-gap2_z3_t55s_E12_CARE_s24_0x0_w1724_h1106_fliph_f48-117.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap2_z3_t55s_E14,,btd,homozygote,lateral,left,FALSE,,,No EFs in this embryo,FALSE
+btd-hisgap1_E7,btd-hisgap1_E7_CARE_s27_0x0_w1698_h918_fliph_f34-103.1.roi,btd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-hisgap1_E8,btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.1.roi,btd,homozygote,lateral,left,TRUE,mid,EF,,FALSE
+btd-hisgap1_E8,btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.2.roi,btd,homozygote,lateral,left,TRUE,mid,EF,,FALSE
+btd-hisgap1_E8,btd-hisgap1_E8_CARE_s22_0x0_w1619_h931_fliph_f81-150.3.roi,btd,homozygote,lateral,left,TRUE,post,EF,,FALSE
+eve-Gap_1_E13,eve-Gap_1_E13_CARE_s14_0x0_w1867_h1068_fliph_f11-80.1.roi,eve,homozygote,lateral,left,TRUE,post,EF,,FALSE
+eve-Gap_1_t45s_z3_E1,eve-Gap_1_t45s_z3_E1_CARE_s21_0x0_w1845_h974_flipn_f51-120.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+eve-Gap_1_t45s_z3_E4,eve-Gap_1_t45s_z3_E4_CARE_s15_0x398_w1798_h960_fliph_f76-145.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+eve-Gap_1_t45s_z3_E11,eve-Gap_1_t45s_z3_E11_CARE_s14_0x0_w1813_h992_flipn_f48-117.1.roi,eve,homozygote,lateral,left,TRUE,ant,EF,,FALSE
+eve-Gap_1_t45s_z3_E11,eve-Gap_1_t45s_z3_E11_CARE_s14_0x0_w1813_h992_flipn_f48-117.2.roi,eve,homozygote,lateral,left,TRUE,post,EF,,FALSE
+eve-Gap1_t60s_z3_E2,eve-Gap1_t60s_z3_E2_CARE_s22_0x0_w1797_h1014_flipn_f6-75.1.roi,eve,homozygote,lateral,left,TRUE,mid,EF,,FALSE
+eve-Gap1_t60s_z3_E3,,eve,homozygote,lateral,left,TRUE,mid,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral),FALSE
+eve-Gap1_t60s_z3_E3,,eve,homozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral),FALSE
+eve-Gap1_t60s_z3_E2,eve-Gap1_t60s_z3_E2_CARE_s22_0x0_w1797_h1014_flipn_f6-75.2.roi,eve,homozygote,lateral,left,TRUE,post,EF,,FALSE
+eve-Gap1_t60s_z3_E4,eve-Gap1_t60s_z3_E4_CARE_s20_0x334_w1850_h1040_fliph_f15-84.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+eve-Gap1_t60s_z3_E4,,eve,heterozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral),FALSE
+eve-Gap1_t60s_z3_E5,eve-Gap1_t60s_z3_E5_CARE_s24_0x172_w1794_h1070_fliph_f60-129.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+eve-Gap1_t60s_z3_E5,,eve,heterozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral),FALSE
+eve-Gap1_t60s_z3_E9,eve-Gap1_t60s_z3_E9_CARE_s18_0x96_w1801_h942_flipn_f16-85.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+eve-Gap1_t60s_z3_E9,,eve,heterozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral),FALSE
+eve-Gap1_t60s_z3_E11,eve-Gap1_t60s_z3_E11_CARE_s18_0x0_w1824_h1040_fliph_f26-95.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one",FALSE
+eve-Gap1_t60s_z3_E12,eve-Gap1_t60s_z3_E12_CARE_s19_0x0_w1877_h1008_flipn_f6-75.1.roi,eve,homozygote,lateral,left,TRUE,mid,EF,,FALSE
+eve-Gap1_t60s_z3_E12,eve-Gap1_t60s_z3_E12_CARE_s19_0x0_w1877_h1008_flipn_f6-75.2.roi,eve,homozygote,lateral,left,TRUE,post,EF,,FALSE
+eve-Gap1_t60s_z3_E16,eve-Gap1_t60s_z3_E16_CARE_s15_0x0_w1799_h1052_flipn_f41-110.1.roi,eve,heterozygote,lateral,left,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one",FALSE
+eve-Gap1_t60s_z3_E16,,eve,heterozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral),FALSE
+prd-Gap_1_t60s_E1,prd-Gap_1_t60s_E1_CARE_s20_0x0_w1795_h1026_flipn_f54-123.1.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,"Checked potential anterior EF, but it wasn’t one",FALSE
+prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,,FALSE
+prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+prd-Gap_1_t60s_E2,prd-Gap_1_t60s_E2_CARE_s19_0x0_w1695_h1010_fliph_f47-116.3.roi,prd,heterozygote,lateral,left,TRUE,post,EF,Checked. This is an EF next to MD6.,FALSE
+prd-Gap_1_t60s_E3,prd-Gap_1_t60s_E3_CARE_s22_0x0_w1544_h998_fliph_f49-118.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,,FALSE
+prd-Gap_1_t60s_E3,prd-Gap_1_t60s_E3_CARE_s22_0x0_w1544_h998_fliph_f49-118.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+prd-Gap_1_t60s_E4,prd-Gap_1_t60s_E4_CARE_s19_0x0_w1743_h984_flipn_f46-115.1.roi,prd,homozygote,lateral,left,TRUE,ant,EF,,FALSE
+prd-Gap_1_t60s_E4,prd-Gap_1_t60s_E4_CARE_s19_0x0_w1743_h984_flipn_f46-115.2.roi,prd,homozygote,lateral,left,TRUE,mid,EF,At CF position but no IC,FALSE
+prd-Gap_1_t60s_E4,,prd,homozygote,lateral,left,TRUE,post,EF,EF present next to MD6 but can’t measure due to embryo orientation (too ventral),FALSE
+prd-Gap_1_t60s_E5,prd-Gap_1_t60s_E5_CARE_s22_0x0_w1800_h1032_fliph_f50-119.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,,FALSE
+prd-Gap_1_t60s_E5,prd-Gap_1_t60s_E5_CARE_s22_0x0_w1800_h1032_fliph_f50-119.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,Maybe posterior EF,FALSE
+prd-Gap_1_t60s_E6,prd-Gap_1_t60s_E6_CARE_s21_0x0_w1720_h988_fliph_f41-110.1.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+prd-Gap_1_t60s_E7,prd-Gap_1_t60s_E7_CARE_s21_0x0_w1653_h1016_fliph_f17-86.1.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+prd-Gap_1_t60s_E8,prd-Gap_1_t60s_E8_CARE_s19_0x0_w1705_h1012_flipn_f53-122.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,,FALSE
+prd-Gap_1_t60s_E8,prd-Gap_1_t60s_E8_CARE_s19_0x0_w1705_h1012_flipn_f53-122.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.1.roi,prd,homozygote,lateral,left,TRUE,ant,EF,,FALSE
+prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.2.roi,prd,homozygote,lateral,left,TRUE,mid,EF,At CF position but no IC,FALSE
+prd-Gap_1_t60s_E9,prd-Gap_1_t60s_E9_CARE_s24_0x0_w1756_h1014_flipn_f55-124.3.roi,prd,homozygote,lateral,left,TRUE,post,EF,,FALSE
+prd-Gap_1_t60s_E10,prd-Gap_1_t60s_E10_CARE_s24_0x224_w1706_h998_flipv_f43-112.1.roi,prd,homozygote,lateral,left,TRUE,ant,EF,"Checked. There’s a small EF, included new ROI",FALSE
+prd-Gap_1_t60s_E10,prd-Gap_1_t60s_E10_CARE_s24_0x224_w1706_h998_flipv_f43-112.2.roi,prd,homozygote,lateral,left,TRUE,mid,CF,"There’s a posterior fold, but forming before mitotic domains, dorsal fold",FALSE
+prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.1.roi,prd,heterozygote,lateral,left,TRUE,ant,EF,,FALSE
+prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.2.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+prd-Gap_1_t60s_E11,prd-Gap_1_t60s_E11_CARE_s24_0x0_w1732_h1000_flipn_f30-99.3.roi,prd,heterozygote,lateral,left,TRUE,post,EF,"Checked. This is an EF next to MD6, included new ROI",FALSE
+prd-Gap_1_t60s_E12,prd-Gap_1_t60s_E12_CARE_s20_0x0_w1709_h978_fliph_f47-116.1.roi,prd,homozygote,lateral,left,TRUE,ant,EF,Checked. This is a proper EF,FALSE
+prd-Gap_1_t60s_E12,prd-Gap_1_t60s_E12_CARE_s20_0x0_w1709_h978_fliph_f47-116.2.roi,prd,homozygote,lateral,left,TRUE,mid,EF,At CF position but no IC,FALSE
+prd-Gap_1_t60s_E15,prd-Gap_1_t60s_E15_CARE_s20_0x382_w1618_h892_fliph_f48-117.1.roi,prd,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+prd-Gap_1_t60s_E16,prd-Gap_1_t60s_E16_CARE_s24_0x26_w1678_h964_flipn_f43-112.1.roi,prd,homozygote,lateral,left,TRUE,mid,EF,At CF position but no IC,FALSE
+rgap_1b_z3_t60s_E1,rgap_1b_z3_t60s_E1_s24_0x0_w1782_h920_fliph_f49-118.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a small EF,FALSE
+rgap_1b_z3_t60s_E1,rgap_1b_z3_t60s_E1_s24_0x0_w1782_h920_fliph_f49-118.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E2,rgap_1b_z3_t60s_E2_s20_0x0_w1690_h920_flipn_f59-128.1.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E3,rgap_1b_z3_t60s_E3_s20_0x50_w1737_h890_fliph_f23-92.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a proper EF,FALSE
+rgap_1b_z3_t60s_E3,rgap_1b_z3_t60s_E3_s20_0x50_w1737_h890_fliph_f23-92.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E3,rgap_1b_z3_t60s_E3_s20_0x50_w1737_h890_fliph_f23-92.3.roi,wt,wildtype,lateral,left,TRUE,post,EF,Checked. This is a proper EF,FALSE
+rgap_1b_z3_t60s_E4,rgap_1b_z3_t60s_E4_s18_0x40_w1737_h970_flipn_f38-107.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a proper EF,FALSE
+rgap_1b_z3_t60s_E4,rgap_1b_z3_t60s_E4_s18_0x40_w1737_h970_flipn_f38-107.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E5,rgap_1b_z3_t60s_E5_s20_0x55_w1740_h905_fliph_f47-116.1.roi,wt,wildtype,lateral,left,FALSE,ant,EF,"Checked. This is not an EF, a few cells get hidden, but there’s barely a fold",TRUE
+rgap_1b_z3_t60s_E5,rgap_1b_z3_t60s_E5_s20_0x55_w1740_h905_fliph_f47-116.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E5,rgap_1b_z3_t60s_E5_s20_0x55_w1740_h905_fliph_f47-116.3.roi,wt,wildtype,lateral,left,TRUE,post,EF,Checked. This is a proper EF,FALSE
+rgap_1b_z3_t60s_E6,rgap_1b_z3_t60s_E6_s19_0x50_w1683_h900_fliph_f47-116.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a very small EF,FALSE
+rgap_1b_z3_t60s_E6,rgap_1b_z3_t60s_E6_s19_0x50_w1683_h900_fliph_f47-116.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E7,rgap_1b_z3_t60s_E7_s20_0x50_w1745_h940_fliph_f38-107.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a borderline EF,FALSE
+rgap_1b_z3_t60s_E7,rgap_1b_z3_t60s_E7_s20_0x50_w1745_h940_fliph_f38-107.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E8,rgap_1b_z3_t60s_E8_s20_0x100_w1765_h990_fliph_f32-101.1.roi,wt,wildtype,lateral,left,FALSE,ant,EF,"Checked. This is not an EF, only one hidden cell",TRUE
+rgap_1b_z3_t60s_E8,rgap_1b_z3_t60s_E8_s20_0x100_w1765_h990_fliph_f32-101.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E9,rgap_1b_z3_t60s_E9_s20_0x0_w1774_h1000_flipn_f44-113.1.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E11,rgap_1b_z3_t60s_E11_s20_0x80_w1738_h950_fliph_f38-107.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,"Checked. This is a proper EF, revised ROI (it was overestimated)",FALSE
+rgap_1b_z3_t60s_E11,rgap_1b_z3_t60s_E11_s20_0x80_w1738_h950_fliph_f38-107.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E11,rgap_1b_z3_t60s_E11_s20_0x80_w1738_h950_fliph_f38-107.3.roi,wt,wildtype,lateral,left,TRUE,post,EF,,FALSE
+rgap_1b_z3_t60s_E12,rgap_1b_z3_t60s_E12_s20_0x40_w1809_h900_fliph_f37-106.1.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E13,rgap_1b_z3_t60s_E13_s22_0x40_w1765_h900_flipn_f32-101.1.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E14,rgap_1b_z3_t60s_E14_s20_0x30_w1733_h980_flipn_f34-103.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a very small EF,FALSE
+rgap_1b_z3_t60s_E14,rgap_1b_z3_t60s_E14_s20_0x30_w1733_h980_flipn_f34-103.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E15,rgap_1b_z3_t60s_E15_s20_0x70_w1777_h980_fliph_f45-114.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a borderline EF,FALSE
+rgap_1b_z3_t60s_E15,rgap_1b_z3_t60s_E15_s20_0x70_w1777_h980_fliph_f45-114.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E16,rgap_1b_z3_t60s_E16_s18_0x0_w1714_h950_flipn_f25-94.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,"Checked. This is a proper EF, revised ROI (it was overestimated)",FALSE
+rgap_1b_z3_t60s_E16,rgap_1b_z3_t60s_E16_s18_0x0_w1714_h950_flipn_f25-94.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+rgap_1b_z3_t60s_E16,rgap_1b_z3_t60s_E16_s18_0x0_w1714_h950_flipn_f25-94.3.roi,wt,wildtype,lateral,left,TRUE,post,EF,,FALSE
+rgap_1b_z3_t60s_E17,rgap_1b_z3_t60s_E17_s19_0x30_w1775_h950_flipn_f46-115.1.roi,wt,wildtype,lateral,left,TRUE,ant,EF,Checked. This is a proper EF,FALSE
+rgap_1b_z3_t60s_E17,rgap_1b_z3_t60s_E17_s19_0x30_w1775_h950_flipn_f46-115.2.roi,wt,wildtype,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E1",,stg,homozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E1",,stg,homozygote,lateral,left,TRUE,post,EF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E2",,stg,homozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E2",,stg,homozygote,lateral,left,TRUE,post,EF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E3",,stg,homozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E4",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E7",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E7",,stg,heterozygote,lateral,left,TRUE,post,EF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E8",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E9",,stg,homozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E10",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E11",,stg,homozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E12",,stg,homozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E13",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E13",,stg,heterozygote,lateral,left,TRUE,post,EF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E14",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_2_z3_t50s_E15",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E1",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E2",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E3",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E4",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E5",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E6",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E6",,stg,heterozygote,lateral,left,TRUE,post,EF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E7",,stg,heterozygote,lateral,left,TRUE,ant,EF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E7",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E8",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E9",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E10",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E11",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E11",,stg,heterozygote,lateral,left,TRUE,post,EF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E12",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E13",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E14",,stg,homozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E15",,stg,heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+"Gap,stg[2]_green_1_z3_t52_E16",,stg,homozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_1_z3_t45s_E3,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,,FALSE
+btd-gap-stg_1_z3_t45s_E3,,btd-stg,btd homozygote,lateral,left,TRUE,mid,EF,,FALSE
+btd-gap-stg_1_z3_t45s_E3,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_1_z3_t45s_E8,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_1_z3_t45s_E9,,btd-stg,double homozygote,lateral,left,FALSE,,,No EFs in this embryo,FALSE
+btd-gap-stg_1_z3_t45s_E12,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,,FALSE
+btd-gap-stg_3_z3_t53s_E2,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_3_z3_t53s_E3,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_3_z3_t53s_E3,,btd-stg,double heterozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_3_z3_t53s_E11,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,,FALSE
+btd-gap-stg_3_z3_t53s_E11,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_3_z3_t53s_E12,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_3_z3_t53s_E13,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_3_z3_t53s_E14,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_4_z3_t59s_E1,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_4_z3_t59s_E1,,btd-stg,double heterozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_4_z3_t59s_E3,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_4_z3_t59s_E4,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_4_z3_t59s_E6,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_4_z3_t59s_E7,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,,FALSE
+btd-gap-stg_4_z3_t59s_E7,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_4_z3_t59s_E8,,btd-stg,btd homozygote,lateral,left,TRUE,mid,EF,,FALSE
+btd-gap-stg_4_z3_t59s_E10,,btd-stg,btd homozygote,lateral,left,TRUE,ant,EF,,FALSE
+btd-gap-stg_4_z3_t59s_E10,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_4_z3_t59s_E11,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_4_z3_t59s_E13,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_4_z3_t59s_E14,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_4_z3_t59s_E16,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_7_z3_60s_E1,,btd-stg,double homozygote,lateral,left,FALSE,,,No EFs in this embryo,FALSE
+btd-gap-stg_7_z3_60s_E2,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_7_z3_60s_E2,,btd-stg,double heterozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_7_z3_60s_E3,,btd-stg,double homozygote,lateral,left,FALSE,,,No EFs in this embryo,FALSE
+btd-gap-stg_7_z3_60s_E5,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_7_z3_60s_E6,,btd-stg,btd homozygote,lateral,left,FALSE,,,No EFs in this embryo,FALSE
+btd-gap-stg_7_z3_60s_E16,,btd-stg,btd homozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_7_z3_60s_E17,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_7_z3_60s_E18,,btd-stg,btd homozygote,lateral,left,FALSE,,,No EFs in this embryo,FALSE
+btd-gap-stg_7_z3_60s_E19,,btd-stg,double heterozygote,lateral,left,TRUE,mid,CF,,FALSE
+btd-gap-stg_7_z3_60s_E19,,btd-stg,double heterozygote,lateral,left,TRUE,post,EF,,FALSE
+btd-gap-stg_7_z3_60s_E20,,btd-stg,btd homozygote,lateral,left,TRUE,mid,EF,Between MD5/MD6,FALSE
+btd-gap-stg_8_z3_45s_E3,,btd-stg,btd homozygote,lateral,left,FALSE,,,No EFs in this embryo,FALSE
+btd-gap-stg_8_z3_45s_E8,,btd-stg,stg homozygote,lateral,left,TRUE,mid,CF,,FALSE

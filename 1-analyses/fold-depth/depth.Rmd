@@ -37,7 +37,7 @@ results$E <- as.numeric(sub(".*_E(\\d+)$", "\\1", results$Embryo))
 
 # Transform data frame to order the stock for plotting
 results$Stock <- factor(results$Stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
-results$Genotype <- factor(results$Genotype, levels = c("wildtype", "heterozygote", "homozygote"))
+results$Genotype <- factor(results$Genotype, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
 results$Position <- factor(results$Position, levels = c("ant", "mid", "post"))
 
 results <- results[order(results$Stock, results$Genotype, results$Position, results$E),]
