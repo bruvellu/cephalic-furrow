@@ -87,32 +87,69 @@ btd-gap_dorsal_1_z3_t45s_E14,btd-gap_dorsal_1_z3_t45s_E14_L_1,btd,homozygote,dor
 btd-gap_dorsal_1_z3_t45s_E14,btd-gap_dorsal_1_z3_t45s_E14_L_2,btd,homozygote,dorsal,left,TRUE,mid,EF,,,,
 btd-gap_dorsal_1_z3_t45s_E15,,btd,homozygote,dorsal,left,TRUE,mid,CF,Embryo orientation bad for measuring,,,
 btd-gap_dorsal_1_z3_t45s_E15,,btd,homozygote,dorsal,left,TRUE,mid,CF,,,,
-prd-gap_dorsal_1_z3_t41s_E3,,prd,heterozygote,dorsal,,,,,,1,2,1.5
-prd-gap_dorsal_1_z3_t41s_E4,,prd,homozygote,dorsal,,,,,,1,1,1
-prd-gap_dorsal_1_z3_t41s_E5,,prd,homozygote,dorsal,,,,,,1,1,1
-prd-gap_dorsal_1_z3_t41s_E6,,prd,homozygote,dorsal,,,,,,1,2,1.5
-prd-gap_dorsal_1_z3_t41s_E7,,prd,homozygote,dorsal,,,,,,1,1,1
-prd-gap_dorsal_1_z3_t41s_E9,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_dorsal_1_z3_t41s_E10,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_dorsal_1_z3_t41s_E12,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_dorsal_1_z3_t41s_E13,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_dorsal_1_z3_t41s_E14,,prd,homozygote,dorsal,,,,,,1,1,1
-prd-gap_dorsal_1_z3_t41s_E15,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E1,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E4,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E5,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E8,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E9,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E10,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E11,,prd,homozygote,dorsal,,,,,,1,2,1.5
-prd-gap_1_z3_t52s_E12,,prd,homozygote,dorsal,,,,,,3,3,3
-prd-gap_1_z3_t52s_E13,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E14,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E15,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E16,,prd,homozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E17,,prd,homozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E18,,prd,heterozygote,dorsal,,,,,,1,1,1
-prd-gap_1_z3_t52s_E19,,prd,heterozygote,dorsal,,,,,,1,1,1
+prd-gap_dorsal_1_z3_t41s_E3,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E3,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E3,,prd,heterozygote,dorsal,left,TRUE,post,EF,,,,
+prd-gap_dorsal_1_z3_t41s_E4,,prd,homozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E4,,prd,homozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E5,,prd,homozygote,dorsal,right,TRUE,mid,EF,IC failed to shorten,,,
+prd-gap_dorsal_1_z3_t41s_E5,,prd,homozygote,dorsal,right,TRUE,post,EF,,,,
+prd-gap_dorsal_1_z3_t41s_E5,,prd,homozygote,dorsal,left,TRUE,mid,EF,,,,
+prd-gap_dorsal_1_z3_t41s_E5,,prd,homozygote,dorsal,left,TRUE,post,EF,,,,
+prd-gap_dorsal_1_z3_t41s_E6,,prd,homozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E6,,prd,homozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E6,,prd,homozygote,dorsal,left,TRUE,post,EF,,,,
+prd-gap_dorsal_1_z3_t41s_E7,,prd,homozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E7,,prd,homozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E9,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E9,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E10,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E10,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E12,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E12,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E13,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E13,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E14,,prd,homozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E14,,prd,homozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E15,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_dorsal_1_z3_t41s_E15,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E1,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E1,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E4,,prd,heterozygote,dorsal,right,TRUE,mid,CF,Bad orientation,,,
+prd-gap_1_z3_t52s_E4,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E5,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E5,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E8,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E8,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E9,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E9,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E10,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E10,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E11,,prd,homozygote,dorsal,right,TRUE,mid,EF,IC failed to shorten,,,
+prd-gap_1_z3_t52s_E11,,prd,homozygote,dorsal,left,TRUE,mid,EF,IC failed to shorten,,,
+prd-gap_1_z3_t52s_E11,,prd,homozygote,dorsal,left,TRUE,post,EF,,,,
+prd-gap_1_z3_t52s_E12,,prd,homozygote,dorsal,right,TRUE,ant,EF,,,,
+prd-gap_1_z3_t52s_E12,,prd,homozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E12,,prd,homozygote,dorsal,right,TRUE,post,EF,,,,
+prd-gap_1_z3_t52s_E12,,prd,homozygote,dorsal,left,TRUE,ant,EF,,,,
+prd-gap_1_z3_t52s_E12,,prd,homozygote,dorsal,left,TRUE,mid,EF,IC failed to shorten,,,
+prd-gap_1_z3_t52s_E12,,prd,homozygote,dorsal,left,TRUE,post,EF,,,,
+prd-gap_1_z3_t52s_E13,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E13,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E13,,prd,heterozygote,dorsal,left,TRUE,post,EF,,,,
+prd-gap_1_z3_t52s_E14,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E14,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E15,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E15,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E16,,prd,homozygote,dorsal,right,TRUE,mid,EF,IC failed to shorten,,,
+prd-gap_1_z3_t52s_E16,,prd,homozygote,dorsal,right,TRUE,post,EF,,,,
+prd-gap_1_z3_t52s_E16,,prd,homozygote,dorsal,left,TRUE,mid,EF,,,,
+prd-gap_1_z3_t52s_E17,,prd,homozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E17,,prd,homozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E18,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E18,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E19,,prd,heterozygote,dorsal,right,TRUE,mid,CF,,,,
+prd-gap_1_z3_t52s_E19,,prd,heterozygote,dorsal,left,TRUE,mid,CF,,,,
 eve-gap_dorsal_1_z3_t52s_E1,eve-gap_dorsal_1_z3_t52s_E1_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
 eve-gap_dorsal_1_z3_t52s_E1,eve-gap_dorsal_1_z3_t52s_E1_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
 eve-gap_dorsal_1_z3_t52s_E2,eve-gap_dorsal_1_z3_t52s_E2_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
@@ -137,13 +174,11 @@ eve-gap_dorsal_1_z3_t52s_E12,eve-gap_dorsal_1_z3_t52s_E12_L_1,eve,heterozygote,d
 eve-gap_dorsal_1_z3_t52s_E13,,eve,homozygote,dorsal,right,TRUE,mid,EF,Embryo orientation bad for measuring,,,
 eve-gap_dorsal_1_z3_t52s_E13,,eve,homozygote,dorsal,right,TRUE,post,EF,,,,
 eve-gap_dorsal_1_z3_t52s_E13,,eve,homozygote,dorsal,left,TRUE,mid,EF,,,,
-eve-gap_dorsal_1_z3_t52s_E14,,eve,heterozygote,dorsal,,,,,Embryo orientation bad for scoring and measuring,,,
 eve-gap_dorsal_1_z3_t52s_E15,,eve,heterozygote,dorsal,right,TRUE,mid,CF,Embryo orientation bad for measuring,,,
 eve-gap_dorsal_1_z3_t52s_E15,,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
 eve-gap_dorsal_1_z3_t52s_E17,eve-gap_dorsal_1_z3_t52s_E17_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
 eve-gap_dorsal_1_z3_t52s_E17,eve-gap_dorsal_1_z3_t52s_E17_R_2,eve,heterozygote,dorsal,right,TRUE,post,EF,,,,
 eve-gap_dorsal_1_z3_t52s_E17,eve-gap_dorsal_1_z3_t52s_E17_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
-eve-gap_dorsal_1_z3_t52s_E18,,eve,heterozygote,dorsal,,,,,Embryo orientation bad for scoring and measuring,,,
 eve-gap_dorsal_1_z3_t52s_E19,eve-gap_dorsal_1_z3_t52s_E19_R_1,eve,homozygote,dorsal,right,TRUE,mid,EF,,,,
 eve-gap_dorsal_1_z3_t52s_E19,eve-gap_dorsal_1_z3_t52s_E19_L_1,eve,homozygote,dorsal,left,TRUE,ant,EF,,,,
 eve-gap_dorsal_2_z3_t53s_E2,eve-gap_dorsal_2_z3_t53s_E2_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
@@ -155,44 +190,71 @@ eve-gap_dorsal_2_z3_t53s_E4,eve-gap_dorsal_2_z3_t53s_E4_R_2,eve,homozygote,dorsa
 eve-gap_dorsal_2_z3_t53s_E4,eve-gap_dorsal_2_z3_t53s_E4_L_1,eve,homozygote,dorsal,left,TRUE,post,EF,,,,
 eve-gap_dorsal_2_z3_t53s_E5,eve-gap_dorsal_2_z3_t53s_E5_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E5,eve-gap_dorsal_2_z3_t53s_E5_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
-eve-gap_dorsal_2_z3_t53s_E9,,eve,heterozygote,dorsal,,,,,Embryo orientation bad for measuring,,,
+eve-gap_dorsal_2_z3_t53s_E9,,eve,heterozygote,dorsal,right,TRUE,mid,CF,Embryo orientation bad for measuring,,,
+eve-gap_dorsal_2_z3_t53s_E9,,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E11,eve-gap_dorsal_2_z3_t53s_E11_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,TODO: Re-run to get values,,,
 eve-gap_dorsal_2_z3_t53s_E11,eve-gap_dorsal_2_z3_t53s_E11_R_2,eve,heterozygote,dorsal,right,TRUE,post,EF,,,,
 eve-gap_dorsal_2_z3_t53s_E11,eve-gap_dorsal_2_z3_t53s_E11_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E11,eve-gap_dorsal_2_z3_t53s_E11_L_2,eve,heterozygote,dorsal,left,TRUE,post,EF,,,,
 eve-gap_dorsal_2_z3_t53s_E12,eve-gap_dorsal_2_z3_t53s_E12_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E12,eve-gap_dorsal_2_z3_t53s_E12_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
-eve-gap_dorsal_2_z3_t53s_E13,eve-gap_dorsal_2_z3_t53s_E13_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,TODO: Re-run to get values,,,
+eve-gap_dorsal_2_z3_t53s_E13,eve-gap_dorsal_2_z3_t53s_E13_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E13,eve-gap_dorsal_2_z3_t53s_E13_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E14,eve-gap_dorsal_2_z3_t53s_E14_R_1,eve,homozygote,dorsal,right,TRUE,ant,EF,,,,
 eve-gap_dorsal_2_z3_t53s_E14,eve-gap_dorsal_2_z3_t53s_E14_R_2,eve,homozygote,dorsal,right,TRUE,post,EF,,,,
 eve-gap_dorsal_2_z3_t53s_E14,eve-gap_dorsal_2_z3_t53s_E14_L_1,eve,homozygote,dorsal,left,TRUE,ant,EF,,,,
 eve-gap_dorsal_2_z3_t53s_E14,eve-gap_dorsal_2_z3_t53s_E14_L_2,eve,homozygote,dorsal,left,TRUE,post,EF,,,,
-eve-gap_dorsal_2_z3_t53s_E15,eve-gap_dorsal_2_z3_t53s_E15_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,TODO: Re-run to get values,,,
+eve-gap_dorsal_2_z3_t53s_E15,eve-gap_dorsal_2_z3_t53s_E15_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E15,eve-gap_dorsal_2_z3_t53s_E15_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
-eve-gap_dorsal_2_z3_t53s_E17,eve-gap_dorsal_2_z3_t53s_E17_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,TODO: Re-run to get values,,,
+eve-gap_dorsal_2_z3_t53s_E17,eve-gap_dorsal_2_z3_t53s_E17_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E17,eve-gap_dorsal_2_z3_t53s_E17_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E19,eve-gap_dorsal_2_z3_t53s_E19_R_1,eve,heterozygote,dorsal,right,TRUE,mid,CF,,,,
 eve-gap_dorsal_2_z3_t53s_E19,eve-gap_dorsal_2_z3_t53s_E19_L_1,eve,heterozygote,dorsal,left,TRUE,mid,CF,,,,
-"Gap,stg[2]_dorsal_1_z3_t60_E1",,stg,heterozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E2",,stg,heterozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E3",,stg,heterozygote,dorsal,,,,,,1,2,1.5
-"Gap,stg[2]_dorsal_1_z3_t60_E4",,stg,homozygote,dorsal,,,,,,2,1,1.5
-"Gap,stg[2]_dorsal_1_z3_t60_E5",,stg,heterozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E6",,stg,homozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E7",,stg,heterozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E8",,stg,heterozygote,dorsal,,,,,,2,2,2
-"Gap,stg[2]_dorsal_1_z3_t60_E9",,stg,heterozygote,dorsal,,,,,,2,1,1.5
-"Gap,stg[2]_dorsal_1_z3_t60_E10",,stg,homozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E11",,stg,heterozygote,dorsal,,,,,,2,1,1.5
-"Gap,stg[2]_dorsal_1_z3_t60_E12",,stg,heterozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E13",,stg,heterozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E14",,stg,homozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E15",,stg,heterozygote,dorsal,,,,,,1,1,1
-"Gap,stg[2]_dorsal_1_z3_t60_E16",,stg,heterozygote,dorsal,,,,,,1,2,1.5
-"Gap,stg[2]_dorsal_1_z3_t60_E17",,stg,homozygote,dorsal,,,,,,1,1,1
-btd-gap-stg_dorsal_1_z3_t50s_E1,,btd-stg,double homozygote,dorsal,,,,,,0,0,0
-btd-gap-stg_dorsal_1_z3_t50s_E7,,btd-stg,double homozygote,dorsal,,,,,,0,0,0
+"Gap,stg[2]_dorsal_1_z3_t60_E1",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E1",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E2",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E2",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E3",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,2,1.5
+"Gap,stg[2]_dorsal_1_z3_t60_E3",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E3",,stg,heterozygote,dorsal,left,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E4",,stg,homozygote,dorsal,right,TRUE,mid,CF,,2,1,1.5
+"Gap,stg[2]_dorsal_1_z3_t60_E4",,stg,homozygote,dorsal,right,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E4",,stg,homozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E5",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E5",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E6",,stg,homozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E6",,stg,homozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E7",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E7",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E8",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,2,2,2
+"Gap,stg[2]_dorsal_1_z3_t60_E8",,stg,heterozygote,dorsal,right,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E8",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E8",,stg,heterozygote,dorsal,left,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E9",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,2,1,1.5
+"Gap,stg[2]_dorsal_1_z3_t60_E9",,stg,heterozygote,dorsal,right,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E9",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E10",,stg,homozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E10",,stg,homozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E11",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,2,1,1.5
+"Gap,stg[2]_dorsal_1_z3_t60_E11",,stg,heterozygote,dorsal,right,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E11",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E12",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E12",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E12",,stg,heterozygote,dorsal,left,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E13",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E13",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E13",,stg,heterozygote,dorsal,left,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E14",,stg,homozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E14",,stg,homozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E15",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E15",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E16",,stg,heterozygote,dorsal,right,TRUE,mid,CF,,1,2,1.5
+"Gap,stg[2]_dorsal_1_z3_t60_E16",,stg,heterozygote,dorsal,left,TRUE,mid,CF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E16",,stg,heterozygote,dorsal,left,TRUE,post,EF,,,,
+"Gap,stg[2]_dorsal_1_z3_t60_E17",,stg,homozygote,dorsal,right,TRUE,mid,CF,,1,1,1
+"Gap,stg[2]_dorsal_1_z3_t60_E17",,stg,homozygote,dorsal,left,TRUE,mid,CF,,,,
+btd-gap-stg_dorsal_1_z3_t50s_E1,,btd-stg,double homozygote,dorsal,,FALSE,,,No folds,0,0,0
+btd-gap-stg_dorsal_1_z3_t50s_E7,,btd-stg,double homozygote,dorsal,,FALSE,,,No folds,0,0,0
 rgap_dorsal_1_z3_t60s_E4,,wt,wildtype,dorsal,right,TRUE,mid,CF,,,,
 rgap_dorsal_1_z3_t60s_E4,,wt,wildtype,dorsal,right,TRUE,post,EF,,,,
 rgap_dorsal_1_z3_t60s_E4,,wt,wildtype,dorsal,left,TRUE,mid,CF,,,,

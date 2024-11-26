@@ -111,13 +111,13 @@
 "eve-gap_dorsal_2_z3_t53s_E12_L_1","eve-gap_dorsal_2_z3_t53s_E12","eve","heterozygote","dorsal","left",TRUE,"mid","CF","",NA,NA,NA,68.1,12
 "eve-gap_dorsal_2_z3_t53s_E12_R_1","eve-gap_dorsal_2_z3_t53s_E12","eve","heterozygote","dorsal","right",TRUE,"mid","CF","",NA,NA,NA,62.6,12
 "eve-gap_dorsal_2_z3_t53s_E13_L_1","eve-gap_dorsal_2_z3_t53s_E13","eve","heterozygote","dorsal","left",TRUE,"mid","CF","",NA,NA,NA,58.6,13
-"eve-gap_dorsal_2_z3_t53s_E13_R_1","eve-gap_dorsal_2_z3_t53s_E13","eve","heterozygote","dorsal","right",TRUE,"mid","CF","TODO: Re-run to get values",NA,NA,NA,49.9,13
+"eve-gap_dorsal_2_z3_t53s_E13_R_1","eve-gap_dorsal_2_z3_t53s_E13","eve","heterozygote","dorsal","right",TRUE,"mid","CF","",NA,NA,NA,49.9,13
 "eve-gap_dorsal_2_z3_t53s_E15_L_1","eve-gap_dorsal_2_z3_t53s_E15","eve","heterozygote","dorsal","left",TRUE,"mid","CF","",NA,NA,NA,51.9,15
-"eve-gap_dorsal_2_z3_t53s_E15_R_1","eve-gap_dorsal_2_z3_t53s_E15","eve","heterozygote","dorsal","right",TRUE,"mid","CF","TODO: Re-run to get values",NA,NA,NA,52.5,15
+"eve-gap_dorsal_2_z3_t53s_E15_R_1","eve-gap_dorsal_2_z3_t53s_E15","eve","heterozygote","dorsal","right",TRUE,"mid","CF","",NA,NA,NA,52.5,15
 "eve-gap_dorsal_1_z3_t52s_E17_L_1","eve-gap_dorsal_1_z3_t52s_E17","eve","heterozygote","dorsal","left",TRUE,"mid","CF","",NA,NA,NA,58,17
 "eve-gap_dorsal_1_z3_t52s_E17_R_1","eve-gap_dorsal_1_z3_t52s_E17","eve","heterozygote","dorsal","right",TRUE,"mid","CF","",NA,NA,NA,43.6,17
 "eve-gap_dorsal_2_z3_t53s_E17_L_1","eve-gap_dorsal_2_z3_t53s_E17","eve","heterozygote","dorsal","left",TRUE,"mid","CF","",NA,NA,NA,56,17
-"eve-gap_dorsal_2_z3_t53s_E17_R_1","eve-gap_dorsal_2_z3_t53s_E17","eve","heterozygote","dorsal","right",TRUE,"mid","CF","TODO: Re-run to get values",NA,NA,NA,50.8,17
+"eve-gap_dorsal_2_z3_t53s_E17_R_1","eve-gap_dorsal_2_z3_t53s_E17","eve","heterozygote","dorsal","right",TRUE,"mid","CF","",NA,NA,NA,50.8,17
 "eve-gap_dorsal_2_z3_t53s_E19_L_1","eve-gap_dorsal_2_z3_t53s_E19","eve","heterozygote","dorsal","left",TRUE,"mid","CF","",NA,NA,NA,57.6,19
 "eve-gap_dorsal_2_z3_t53s_E19_R_1","eve-gap_dorsal_2_z3_t53s_E19","eve","heterozygote","dorsal","right",TRUE,"mid","CF","",NA,NA,NA,55.3,19
 "eve-gap_dorsal_2_z3_t53s_E11_L_2","eve-gap_dorsal_2_z3_t53s_E11","eve","heterozygote","dorsal","left",TRUE,"post","EF","",NA,NA,NA,40.8,11
