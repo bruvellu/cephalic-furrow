@@ -7,7 +7,7 @@ creation: May 31, 2021
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/fold-depth")
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/fold-depth")
 library(ggplot2)
 library(ggbeeswarm)
 ```
@@ -204,59 +204,120 @@ ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
 
 ## Statistics
 
-The distribution is normal. Using t-test to compare the means.
-
 ```{r stats}
-sink('tests.txt')
+tests <- data.frame()
 
-print("Testing individual folds")
-print("Testing normality and means difference for btd")
-# Test if distribution is normal per measure (yes)
-shapiro.test(results[(results$Sample == "btd" & results$Genotype == "heterozygote"),]$Length)
-shapiro.test(results[(results$Sample == "btd" & results$Genotype == "homozygote"),]$Length)
-# Test if means are different
-t.test(results[(results$Sample == "btd" & results$Genotype == "heterozygote"),]$Length,
-       results[(results$Sample == "btd" & results$Genotype == "homozygote"),]$Length,
-       var.equal = FALSE)
+for (stock in c("btd", "eve")) {
+  
+  # Total mean
+  het <- depth_total[(depth_total$Stock == stock & depth_total$Genotype == "heterozygote" & depth_total$Type == "CF"), "Length.mean"]
+  hom <- depth_total[(depth_total$Stock == stock & depth_total$Genotype == "homozygote" & depth_total$Type == "EF"), "Length.mean"]
+  
+  # Heterozygotes vs Homozygotes
+  contrast <- "het vs hom"
+  test <- wilcox.test(het, hom, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(het) - mean(hom)
+  
+  test_row <- c(
+    contrast = contrast,
+    subject = stock,
+    value = "total",
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
+  )
+  
+  tests <- rbind(tests, as.data.frame(t(test_row)))
+  
+  # Individual folds
+  het <- depth[(depth$Stock == stock & depth$Genotype == "heterozygote" & depth$Type == "CF"), "Length"]
+  hom <- depth[(depth$Stock == stock & depth$Genotype == "homozygote" & depth$Type == "EF"), "Length"]
+  
+  # Heterozygotes vs Homozygotes
+  contrast <- "het vs hom"
+  test <- wilcox.test(het, hom, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(het) - mean(hom)
+  
+  test_row <- c(
+    contrast = contrast,
+    subject = stock,
+    value = "individual",
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
+  )
+  
+  tests <- rbind(tests, as.data.frame(t(test_row)))
 
-print("Testing normality and means difference for eve")
-# Test if distribution is normal per measure (yes)
-shapiro.test(results[(results$Sample == "eve" & results$Genotype == "heterozygote"),]$Length)
-shapiro.test(results[(results$Sample == "eve" & results$Genotype == "homozygote"),]$Length)
-# Test if means are different
-t.test(results[(results$Sample == "eve" & results$Genotype == "heterozygote"),]$Length,
-       results[(results$Sample == "eve" & results$Genotype == "homozygote"),]$Length,
-       var.equal = FALSE)
+}
 
-sink()
-```
+for (genotype in c("heterozygote", "homozygote")) {
+  
+  if (genotype == "heterozygote") {
+    type <- "CF"
+  } else if (genotype == "homozygote") {
+    type <- "EF"
+  }
+    
+  # Total mean
+  btd <- depth_total[(depth_total$Stock == "btd" & depth_total$Genotype == genotype & depth_total$Type == type), "Length.mean"]
+  eve <- depth_total[(depth_total$Stock == "eve" & depth_total$Genotype == genotype & depth_total$Type == type), "Length.mean"]
+  
+  # Heterozygotes vs Homozygotes
+  contrast <- "btd vs eve"
+  test <- wilcox.test(btd, eve, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(btd) - mean(eve)
+  
+  test_row <- c(
+    contrast = contrast,
+    subject = sprintf("%s %s", genotype, type),
+    value = "total",
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
+  )
+  
+  tests <- rbind(tests, as.data.frame(t(test_row)))
+  
+  # Individual folds
+  btd <- depth[(depth$Stock == "btd" & depth$Genotype == genotype & depth$Type == type), "Length"]
+  eve <- depth[(depth$Stock == "eve" & depth$Genotype == genotype & depth$Type == type), "Length"]
+  
+  # Heterozygotes vs Homozygotes
+  contrast <- "btd vs eve"
+  test <- wilcox.test(btd, eve, paired = FALSE)
+  pvalue <- test$p.value
+  statistic <- test$statistic
+  delta <- mean(btd) - mean(eve)
+  
+  test_row <- c(
+    contrast = contrast,
+    subject = sprintf("%s %s", genotype, type),
+    value = "individual",
+    delta = sprintf("%.1f", delta),
+    significant = pvalue < 0.05,
+    pvalue = sprintf("%.9f", pvalue),
+    statistic = sprintf("%s=%s", names(statistic), statistic),
+    paired = FALSE
+  )
+  
+  tests <- rbind(tests, as.data.frame(t(test_row)))
 
-```{r tmp-stats}
+}
 
-
-
-print("Testing individual embryos")
-print("Testing normality and means difference for btd")
-# Test if distribution is normal per measure (yes)
-shapiro.test(means[(means$Sample == "btd" & means$Genotype == "heterozygote"),]$Mean)
-shapiro.test(means[(means$Sample == "btd" & means$Genotype == "homozygote"),]$Mean)
-# Test if means are different
-t.test(means[(means$Sample == "btd" & means$Genotype == "heterozygote"),]$Mean,
-       means[(means$Sample == "btd" & means$Genotype == "homozygote"),]$Mean,
-       var.equal = FALSE)
-wilcox.test(means[(means$Sample == "btd" & means$Genotype == "heterozygote"),]$Mean,
-       means[(means$Sample == "btd" & means$Genotype == "homozygote"),]$Mean)
-
-print("Testing normality and means difference for eve")
-# Test if distribution is normal per measure (yes)
-shapiro.test(means[(means$Sample == "eve" & means$Genotype == "heterozygote"),]$Mean)
-shapiro.test(means[(means$Sample == "eve" & means$Genotype == "homozygote"),]$Mean)
-# Test if means are different
-t.test(means[(means$Sample == "eve" & means$Genotype == "heterozygote"),]$Mean,
-       means[(means$Sample == "eve" & means$Genotype == "homozygote"),]$Mean,
-       var.equal = FALSE)
-wilcox.test(means[(means$Sample == "eve" & means$Genotype == "heterozygote"),]$Mean,
-       means[(means$Sample == "eve" & means$Genotype == "homozygote"),]$Mean)
-
-sink()
+# Save test data frame to file
+write.csv(tests, file = "tests.csv", row.names = FALSE)
+tests
 ```
