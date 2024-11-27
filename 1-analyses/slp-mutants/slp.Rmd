@@ -7,7 +7,7 @@ creation: February 06, 2020
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = getwd())
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/slp-mutants")
 library(ggplot2)
 library(ggbeeswarm)
 ```
