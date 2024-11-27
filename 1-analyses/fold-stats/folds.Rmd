@@ -30,8 +30,9 @@ folds <- rbind(area_results, depth_results)
 # Transform data frame to order the stock for plotting
 folds$Stock <- factor(folds$Stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
 folds$Genotype <- factor(folds$Genotype, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
-folds$Position <- factor(folds$Position, levels = c("ant", "mid", "post"))
 folds$Type <- factor(folds$Type, levels = c("CF", "EF"))
+folds$Position <- factor(folds$Position, levels = c("ant", "mid", "post"))
+
 
 folds <- folds[order(folds$Stock, folds$Genotype, folds$Position, folds$Type),]
 rownames(folds) <- 1:nrow(folds)
@@ -40,12 +41,12 @@ rownames(folds) <- 1:nrow(folds)
 write.csv(folds, file = "folds.csv", row.names = FALSE)
 ```
 
-## Ave total fold depth per embryo
+## Calculate total folds per side
 
-```{r calculate-total-depth-per-embryo}
+```{r fold-count-per-side}
 
 # Total folds and folded area per embryo
-fold_total <- aggregate(
+folds_per_side <- aggregate(
   Fold ~ Embryo + Stock + Genotype + Side + Type,
   folds,
   function(x) c(
@@ -56,113 +57,228 @@ fold_total <- aggregate(
   ))
 
 # Makes column names nicer
-depth_total <- do.call(data.frame, depth_total)
-depth_total <- depth_total[order(depth_total$Stock, depth_total$Genotype, depth_total$Type),]
+folds_per_side <- do.call(data.frame, folds_per_side)
+folds_per_side <- folds_per_side[order(folds_per_side$Stock, folds_per_side$Genotype, folds_per_side$Type),]
 
 # Save data frame to file
-write.csv(depth_total, file = "depth_total.csv", row.names = FALSE)
+write.csv(folds_per_side, file = "folds_per_side.csv", row.names = FALSE)
+```
 
-depth_total
+## Calculate average folds per embryo side
 
-#total wt
-length(unique(folds[folds$Stock == "wt",]$Embryo))
-#total wt with a fold
-length(unique(folds[folds$Stock == "wt" & folds$Fold == TRUE,]$Embryo))
-#total wt with a CF
-length(unique(folds[folds$Stock == "wt" & folds$Type == "CF",]$Embryo))
-#total wt with a EF
-length(unique(folds[folds$Stock == "wt" & folds$Type == "EF",]$Embryo))
-#total wt with a CF for lateral
-length(unique(folds[folds$Stock == "wt" & folds$Type == "CF" & folds$View == "lateral",]$Embryo))
-#total wt with a EF for lateral
-length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$View == "lateral",]$Embryo))
-#total wt with a CF for dorsal
-length(unique(folds[folds$Stock == "wt" & folds$Type == "CF" & folds$View == "dorsal",]$Embryo))
-#total wt with a EF for dorsal
-length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$View == "dorsal",]$Embryo))
-#total wt with a EF for position
-length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$Position == "ant",]$Embryo))
-length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$Position == "mid",]$Embryo))
-length(unique(folds[folds$Stock == "wt" & folds$Type == "EF" & folds$Position == "post",]$Embryo))
+```{r fold-average-per-side}
 
+# Total folds and folded area per embryo
+folds_per_embryo <- aggregate(
+  Fold ~ Embryo + Stock + Genotype + Type,
+  folds_per_side,
+  function(x) c(
+    mean = mean(x),
+    sd = sd(x)
+  ))
+
+# Makes column names nicer
+folds_per_embryo <- do.call(data.frame, folds_per_embryo)
+folds_per_embryo <- folds_per_embryo[order(folds_per_embryo$Stock, folds_per_embryo$Genotype, folds_per_embryo$Type),]
+
+# Save data frame to file
+write.csv(folds_per_embryo, file = "folds_per_embryo.csv", row.names = FALSE)
+```
+
+## Calculate average folds per genotype
+
+```{r fold-average-per-side}
+
+# Total folds and folded area per embryo
+folds_per_genotype <- aggregate(
+  Fold.mean ~ Stock + Genotype + Type,
+  folds_per_embryo,
+  function(x) c(
+    mean = mean(x),
+    sd = sd(x)
+  ))
+
+# Makes column names nicer
+folds_per_genotype <- do.call(data.frame, folds_per_genotype)
+folds_per_genotype <- folds_per_genotype[order(folds_per_genotype$Stock, folds_per_genotype$Genotype, folds_per_genotype$Type),]
+
+# Save data frame to file
+write.csv(folds_per_embryo, file = "folds_per_embryo.csv", row.names = FALSE)
+```
+
+
+## Frequency of folding per genotype, fold type, and position
+
+```{r fold-frequency}
+
+stats <- data.frame()
+
+for (stock in unique(folds$Stock)) {
+  
+  print(stock)
+  
+  # Define data frame for stock
+  df_stock <- folds[folds$Stock == stock, ]
+  
+  # Total embryos per stock
+  n_stock <- length(unique(df_stock$Embryo))
+  
+  # Define stock's genotypes
+  genotypes <- unique(df_stock$Genotype)
+  
+  for (genotype in genotypes) {
+    
+    print(genotype)
+    
+    # Define data frame for genotype
+    df_genotype <- df_stock[df_stock$Genotype == genotype, ]
+    
+    # Total embryos per genotype
+    n_genotype <- length(unique(df_genotype$Embryo))
+    
+    # Percentage embryos per genotype
+    pct_genotype <- round((n_genotype / n_stock) * 100, digits = 1)
+    
+    # Total embryos with a fold
+    n_with_fold <- length(unique(df_genotype[df_genotype$Fold == TRUE, ]$Embryo))
+    
+    # Percentage embryos with a fold
+    pct_with_fold <- round((n_with_fold / n_genotype) * 100, digits = 1)
+    
+    # Define foldtypes for true folds
+    foldtypes <- unique(df_genotype[df_genotype$Fold == TRUE, ]$Type)
+    
+    for (foldtype in foldtypes) {
+      
+      print(foldtype)
+      
+      # Define data frame for foldtype
+      df_foldtype <- df_genotype[df_genotype$Type == foldtype & df_genotype$Fold == TRUE, ]
+      
+      # Total embryos per foldtype
+      n_foldtype <- length(unique(df_foldtype$Embryo))
+      
+      # Percentage embryos per foldtype
+      pct_foldtype <- round((n_foldtype / n_genotype) * 100, digits = 1)
+      
+      # Define positions for folds
+      positions <- unique(df_foldtype$Position)
+      
+      for (position in positions) {
+        
+        print(position)
+        
+        # Define data frame for fold position
+        df_position <- df_foldtype[df_foldtype$Position == position, ]
+        
+        # Total embryos per position
+        n_position <- length(unique(df_position$Embryo))
+        
+        # Percentage embryos per position
+        pct_position <- round((n_position / n_foldtype) * 100, digits = 1)
+        
+        # Create rows for output data frame
+        row <- c(
+          stock = stock,
+          n_stock = n_stock,
+          genotype = genotype,
+          n_genotype = n_genotype,
+          pct_genotype = pct_genotype,
+          n_with_fold = n_with_fold,
+          pct_with_fold = pct_with_fold,
+          foldtype = foldtype,
+          n_foldtype = n_foldtype,
+          pct_foldtype = pct_foldtype,
+          position = position,
+          n_position = n_position,
+          pct_position = pct_position
+          )
+        
+        # Bind rows to stats data frame
+        stats <- rbind(stats, as.data.frame(t(row)))
+        
+      }
+    }
+  }
+}
+
+# Transform data frame to order the stock for plotting
+stats$stock <- factor(stats$stock, levels = c("wt", "btd", "eve", "prd", "stg", "btd-stg"))
+stats$genotype <- factor(stats$genotype, levels = c("wildtype", "heterozygote", "homozygote", "double heterozygote", "btd homozygote", "stg homozygote", "double homozygote"))
+stats$foldtype <- factor(stats$foldtype, levels = c("CF", "EF"))
+stats$position <- factor(stats$position, levels = c("ant", "mid", "post"))
+
+# Order
+stats <- stats[order(stats$stock, stats$genotype, stats$foldtype, stats$position),]
+rownames(stats) <- 1:nrow(stats)
+
+# Save stats data frame to file
+write.csv(stats, file = "stats.csv", row.names = FALSE)
+stats
+```
+
+## Plot proportion of fold types (bar plot)
+
+```{r plot-percentage-events-bar}
+
+ggplot(folds, aes(Genotype, fill = Type)) +
+  geom_bar(alpha = 0.5, position = position_fill(reverse = TRUE), stat = "count") +
+  labs(x = "genotype", y = "fold type proportion") +
+  #geom_bar(position = position_stack(reverse = TRUE), stat = "count") +
+  #labs(x = "genotype", y = "folds by type") +
+  facet_grid(cols = vars(Stock), scales = "free") +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 15),
+        legend.title = element_text(size = 15),
+        legend.text = element_text(size = 10),
+        axis.text.y=element_blank(),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", linewidth = 1)
+        )
+
+
+ggsave("2-plots/datalong-bar-pct_event-vs-condition.png", width = 10, height = 4)
+ggsave("2-plots/datalong-bar-pct_event-vs-condition.svg", width = 10, height = 4)
 
 ```
 
-## Print statistics
 
-```{r print}
-# Function to print statistics
-print_stats <- function(dataframe, stock, zygosity) {
-  # Filtering parameters
-  filter_df <- (dataframe$stock == stock & dataframe$zygosity == zygosity)
-  # Subset data frame
-  df <- dataframe[filter_df,]
-  df <- droplevels(df)
-  
-  # Select relevant columns
-  #cols <- c("view", "folds_left", "folds_right", "folds_avg", "ectopic_folds")
-  #print(by(df[,cols], df$zygosity, summary))
-  
-  # Define row
-  row <- c(stock,
-           zygosity,
-           mean(df$folds_avg), sd(df$folds_avg),
-           (length(df[df$ectopic_folds == TRUE,]$ectopic_folds) / length(df$folds_avg)) * 100,
-           length(df$folds_avg),
-           length(df[df$view == "lateral",]$view),
-           length(df[df$view == "dorsal",]$view)
-           )
-  
-  # Summarize data
-  print(sprintf("%s %s / avg_folds=%.3f±%.3f / pct_ef=%.1f%% / n=%i / lat=%i / dor=%i",
-                stock, zygosity,
-                mean(df$folds_avg), sd(df$folds_avg),
-                (length(df[df$ectopic_folds == TRUE,]$ectopic_folds) / length(df$folds_avg)) * 100,
-                length(df$folds_avg),
-                length(df[df$view == "lateral",]$view),
-                length(df[df$view == "dorsal",]$view)
-                ))
-  return(row)
-  
-}
+## Plot individual fold depth by stocks
 
-# Save stats to data frame
-stats <- data.frame()
+```{r plot-individual-depth}
 
-# Bind row by row
-stats <- rbind(stats, print_stats(datasets, "wt", "wildtype"))
-stats <- rbind(stats, print_stats(datasets, "btd", "heterozygote"))
-stats <- rbind(stats, print_stats(datasets, "btd", "homozygote"))
-stats <- rbind(stats, print_stats(datasets, "eve", "heterozygote"))
-stats <- rbind(stats, print_stats(datasets, "eve", "homozygote"))
-stats <- rbind(stats, print_stats(datasets, "prd", "heterozygote"))
-stats <- rbind(stats, print_stats(datasets, "prd", "homozygote"))
-stats <- rbind(stats, print_stats(datasets, "stg", "heterozygote"))
-stats <- rbind(stats, print_stats(datasets, "stg", "homozygote"))
+ggplot(folds, aes(Type)) +
+  geom_histogram()
 
-#print_stats(datasets, "btd-stg")
+# Plot stocks separately
+ggplot(folds, aes(Genotype, Length, fill = Genotype, shape = Type)) +
+  geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
+  labs(x = "mutants", y = "depth") +
+  facet_wrap(~Stock, strip.position = "top") +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 30),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(face = "italic"),
+        panel.background = element_rect(colour = "black", linewidth = 1))
+ggsave("3-plots/depth_facet.png", width = 12, height = 6)
+ggsave("3-plots/depth_facet.svg", width = 12, height = 6)
 
-# Add column names
-colnames(stats) <- c("stock", "zygosity", "avg_folds", "sd_folds", "pct_ef", "n", "lateral", "dorsal")
-
-# Convert columns to numeric
-stats[, 3:8] <- apply(stats[, 3:8], 2, as.numeric)
-
-# Round up
-stats[, 3:8] <- round(stats[, 3:8], digits=1)
-
-# Write table to file
-write.table(format(stats, digits=2), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
 ```
 
 ## Plot overview
 
 ```{r plot}
-ggplot(datasets[datasets$stock != "btd-stg",], aes(folds_avg, fill = zygosity)) +
-  geom_histogram() +
-  scale_fill_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  scale_color_manual(values=c("#56b4e9", "#e69f03", "#cc79a7")) +
-  facet_grid(cols = vars(stock), scales = "free_y") +
+ggplot(folds, aes(Type, fill = Genotype)) +
+  geom_histogram(stat = "count") +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  facet_grid(cols = vars(Stock), scales = "free_y") +
   theme_classic() +
   theme(text = element_text(size = 35),
         strip.background = element_blank(),
