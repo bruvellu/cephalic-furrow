@@ -115,6 +115,8 @@
 "btd-gap_dorsal_1_z3_t45s_E13_R_1","btd-gap_dorsal_1_z3_t45s_E13","btd","heterozygote","dorsal","right",TRUE,"mid","CF","",71.7,13
 "btd-gap_dorsal_1_z1.5_t51s_E14_L_1","btd-gap_dorsal_1_z1.5_t51s_E14","btd","heterozygote","dorsal","left",TRUE,"mid","CF","",67.9,14
 "btd-gap_dorsal_1_z1.5_t51s_E14_R_1","btd-gap_dorsal_1_z1.5_t51s_E14","btd","heterozygote","dorsal","right",TRUE,"mid","CF","",50.1,14
+"","btd-gap_dorsal_1_z3_t45s_E15","btd","heterozygote","dorsal","left",TRUE,"mid","CF","Embryo orientation bad for measuring",NA,15
+"","btd-gap_dorsal_1_z3_t45s_E15","btd","heterozygote","dorsal","left",TRUE,"mid","CF","",NA,15
 "btd-gap_dorsal_1_z1.5_t51s_E15_L_1","btd-gap_dorsal_1_z1.5_t51s_E15","btd","heterozygote","dorsal","left",TRUE,"mid","CF","",69.8,15
 "btd-gap_dorsal_1_z1.5_t51s_E15_R_1","btd-gap_dorsal_1_z1.5_t51s_E15","btd","heterozygote","dorsal","right",TRUE,"mid","CF","",65.5,15
 "btd-gap_dorsal_1_z1.5_t51s_E5_L_2","btd-gap_dorsal_1_z1.5_t51s_E5","btd","heterozygote","dorsal","left",TRUE,"post","EF","",30.6,5
@@ -141,8 +143,6 @@
 "btd-gap_dorsal1_z3_t51s_E12_R_1","btd-gap_dorsal1_z3_t51s_E12","btd","homozygote","dorsal","right",TRUE,"mid","EF","",43.8,12
 "btd-gap_dorsal_1_z3_t45s_E14_L_2","btd-gap_dorsal_1_z3_t45s_E14","btd","homozygote","dorsal","left",TRUE,"mid","EF","",63,14
 "btd-gap_dorsal_1_z3_t45s_E14_R_1","btd-gap_dorsal_1_z3_t45s_E14","btd","homozygote","dorsal","right",TRUE,"mid","EF","",62.1,14
-"","btd-gap_dorsal_1_z3_t45s_E15","btd","homozygote","dorsal","left",TRUE,"mid","CF","Embryo orientation bad for measuring",NA,15
-"","btd-gap_dorsal_1_z3_t45s_E15","btd","homozygote","dorsal","left",TRUE,"mid","CF","",NA,15
 "btd-gap_dorsal_1_z1.5_t51s_E2_L_3","btd-gap_dorsal_1_z1.5_t51s_E2","btd","homozygote","dorsal","left",TRUE,"post","EF","",52.9,2
 "btd-gap_dorsal_1_z1.5_t51s_E2_R_2","btd-gap_dorsal_1_z1.5_t51s_E2","btd","homozygote","dorsal","right",TRUE,"post","EF","",66.7,2
 "btd-gap_dorsal_1_z3_t45s_E4_L_3","btd-gap_dorsal_1_z3_t45s_E4","btd","homozygote","dorsal","left",TRUE,"post","EF","",59.1,4
