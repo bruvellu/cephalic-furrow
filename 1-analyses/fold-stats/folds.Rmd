@@ -186,7 +186,7 @@ ggsave("0-plots/count-fold-types-per-stock.svg", width = 10, height = 4)
 
 ```{r plot-proportion-fold-type}
 
-ggplot(folds, aes(Genotype, fill = Type)) +
+ggplot(folds[folds$Stock != "btd-stg", ], aes(Genotype, fill = Type)) +
   geom_bar(alpha = 0.5, position = position_fill(reverse = TRUE), stat = "count") +
   labs(x = "genotype", y = "fold type proportion") +
   facet_grid(cols = vars(Stock), scales = "free") +
@@ -207,7 +207,7 @@ ggsave("0-plots/proportion-fold-types-per-stock.svg", width = 10, height = 4)
 
 ```{r plot-proportion-fold-position}
 
-ggplot(folds[folds$Fold == TRUE & folds$Type == "EF", ], aes(Genotype, fill = Position)) +
+ggplot(folds[folds$Fold == TRUE & folds$Type == "EF" & folds$Stock != "btd-stg", ], aes(Genotype, fill = Position)) +
   geom_bar(alpha = 0.5, position = "fill", stat = "count") +
   labs(x = "genotype", y = "fold type proportion") +
   facet_grid(cols = vars(Stock), scales = "free") +
