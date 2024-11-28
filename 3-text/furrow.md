@@ -173,6 +173,9 @@ Such differences in morphology and dynamics suggest that the cephalic furrow and
 
 <!--TODO: Merge with previous section?-->
 
+TODO: Improve description of ectopic folding frequency
+TODO: Select panels to include about frequency of ectopic folding
+
 To better understand the mechanisms of ectopic folding, we analyzed the phenomenon more broadly in our datasets and found that ectopic folds may also occur in embryos with a cephalic furrow (*i.e.*, *btd* or *eve* heterozygotes, *prd* hetero- or homozygotes, and wildtype).
 These ectopic folds, however, differ from the ectopic folds of cephalic mutants in two key aspects.
 While the frequency of ectopic folding is high in cephalic furrow mutants (>93%)---nearly every *btd* and *eve* homozygote shows one or more ectopic folds per embryo side (2.0±1.0 and 1.8±0.6, respectively) ({@fig:ectopic-folding}b, {@fig:features}a)---the frequency of ectopic folding in the other embryos is lower, ranging between 12% (*eve* heterozygotes) and 80% (wildtype embryos) ({@tbl:stats}).
@@ -977,7 +980,7 @@ High-resolution versions of the videos are available at [https://doi.org/10.5281
 Table: Relative timing differences between the formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the moment of each developmental event. {#tbl:gbtime}
 
 |             | Zygosity | Event | TAG (min) | GBE (%)   | n  |
-| --------    | -------- | ----  | --------- | -------   | -  |
+| --------    | -------- | ----- | --------- | -------   | -  |
 | wildtype    | +/+      | CF    | 7.2±2.2   | 8.7±1.7   | 16 |
 |             | +/+      | MD    | 14.6±2.4  | 21.4±1.9  |    |
 | *btd*       | +/−      | CF    | 8.2±1.7   | 9.8±1.9   | 6  |
@@ -1001,14 +1004,27 @@ Table: Relative timing differences between the formation of the cephalic furrow 
 
 ## Table 2
 
-Table: Number and frequency of ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head--trunk interface (PEF) and the number of ectopic folds per embryo side (NEF). The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:stats}
+Table: Folding statistics in cephalic furrow mutants. We calculated the percentage of embryos exhibiting a cephalic furrow (CF) or ectopic folds (EF) for each stock and genotype (Frequency), and for each position relative to the head--trunk boundary (Ant=anterior, Mid=middle, Post=posterior). In addition, we calculated the average number of folds per embryo side. For example, 28 out of 36 wildtype embryos show ectopic folds (77.8%); 42.9% of these embryos form ectopic folds anterior to the head--trunk boundary, while 71.4% form them at the posterior position; and each embryo forms 1.1±0.3 ectopic fold on each of its side, on average. The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:stats}
 
-|           | wildtype | *btd*   |         | *eve*   |         | *prd*   |         | *stg*   |         |
-| --------  | -------- | -----   | -----   | -----   | -----   | -----   | -----   | -----   | -----   |
-| Zygosity  | +/+      | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     | +/−     | −/−     |
-| NEF       | 1.8±0.6  | 1.1±0.2 | 2.0±1.0 | 1.1±0.2 | 1.8±0.6 | 1.3±0.5 | 1.4±0.7 | 1.2±0.4 | 1.2±0.4 |
-| PEF (%)   | 80.6     | 12.9    | 92.9    | 12.0    | 100.0   | 25.9    | 42.9    | 27.3    | 23.1    |
-| n         | 36       | 31      | 14      | 25      | 10      | 27      | 14      | 33      | 13      |
+| Stock    | n  | Zygosity | n  | Type | n  | Frequency | Ant   | Mid  | Post  | Folds   |
+| :----    | -: | :------: | -: | :--: | -: | --------: | --:   | --:  | ---:  | ----:   |
+| wildtype | 36 | +/+      | 36 | CF   | 36 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
+|          |    |          |    | EF   | 28 | 77.8%     | 42.9% | 0%   | 71.4% | 1.1±0.3 |
+| *btd*    | 46 | +/−      | 33 | CF   | 33 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
+|          |    |          |    | EF   | 6  | 18.2%     | 0%    | 0%   | 100%  | 1.0±0.0 |
+|          |    | −/−      | 13 | EF   | 12 | 92.3%     | 50%   | 100% | 75%   | 2.2±0.4 |
+| *eve*    | 36 | +/−      | 26 | CF   | 26 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
+|          |    |          |    | EF   | 7  | 26.9%     | 14.3% | 0%   | 85.7% | 1.0±0.0 |
+|          |    | −/−      | 10 | EF   | 10 | 100%      | 40%   | 70%  | 90%   | 1.8±0.6 |
+| *prd*    | 40 | +/−      | 26 | CF   | 26 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
+|          |    |          |    | EF   | 7  | 26.9%     | 71.4% | 0%   | 57.1% | 1.3±0.5 |
+|          |    | −/−      | 14 | CF   | 7  | 50.0%     | 0%    | 100% | 0%    | 1.0±0.0 |
+|          |    |          |    | EF   | 10 | 71.4%     | 50%   | 80%  | 70%   | 1.9±0.8 |
+| *stg*    | 46 | +/−      | 33 | CF   | 33 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
+|          |    |          |    | EF   | 12 | 36.4%     | 8.3%  | 0%   | 91.7% | 1.0±0.0 |
+|          |    | −/−      | 13 | CF   | 13 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
+|          |    |          |    | EF   | 3  | 23.1%     | 0%    | 0%   | 100%  | 1.0±0.0 |
+
 
 \newpage
 
