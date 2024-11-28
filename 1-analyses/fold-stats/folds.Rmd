@@ -95,6 +95,14 @@ for (stock in unique(folds$Stock)) {
       # Percentage embryos per foldtype
       pct_foldtype <- round((n_foldtype / n_genotype) * 100, digits = 1)
       
+      # Average folds per side per embryo per foldtype
+      folds_per_side <- aggregate(Fold ~ Embryo + Side, df_foldtype, function(x) c(count = length(x)))
+      folds_per_side <- do.call(data.frame, folds_per_side)
+      folds_per_embryo <- aggregate(Fold ~ Embryo, folds_per_side, function(x) c(mean = mean(x), sd = sd(x)))
+      folds_per_embryo <- do.call(data.frame, folds_per_embryo)
+      avg_per_embryo <- round(mean(folds_per_embryo$Fold.mean), digits = 1)
+      sd_per_embryo <- round(sd(folds_per_embryo$Fold.mean), digits = 1)
+      
       # Define positions for folds
       positions <- unique(df_foldtype$Position)
       
@@ -123,6 +131,8 @@ for (stock in unique(folds$Stock)) {
           foldtype = foldtype,
           n_foldtype = n_foldtype,
           pct_foldtype = pct_foldtype,
+          avg_per_embryo = avg_per_embryo,
+          sd_per_embryo = sd_per_embryo,
           position = position,
           n_position = n_position,
           pct_position = pct_position
