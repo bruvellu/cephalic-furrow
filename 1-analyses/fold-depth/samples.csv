@@ -85,7 +85,7 @@ btd-gap_dorsal_1_z3_t45s_E13,btd-gap_dorsal_1_z3_t45s_E13_L_2,btd,heterozygote,d
 btd-gap_dorsal_1_z3_t45s_E14,btd-gap_dorsal_1_z3_t45s_E14_R_1,btd,homozygote,dorsal,right,TRUE,mid,EF,
 btd-gap_dorsal_1_z3_t45s_E14,btd-gap_dorsal_1_z3_t45s_E14_L_1,btd,homozygote,dorsal,left,TRUE,ant,EF,
 btd-gap_dorsal_1_z3_t45s_E14,btd-gap_dorsal_1_z3_t45s_E14_L_2,btd,homozygote,dorsal,left,TRUE,mid,EF,
-btd-gap_dorsal_1_z3_t45s_E15,,btd,heterozygote,dorsal,left,TRUE,mid,CF,Embryo orientation bad for measuring
+btd-gap_dorsal_1_z3_t45s_E15,,btd,heterozygote,dorsal,right,TRUE,mid,CF,Embryo orientation bad for measuring
 btd-gap_dorsal_1_z3_t45s_E15,,btd,heterozygote,dorsal,left,TRUE,mid,CF,
 prd-gap_dorsal_1_z3_t41s_E3,,prd,heterozygote,dorsal,right,TRUE,mid,CF,
 prd-gap_dorsal_1_z3_t41s_E3,,prd,heterozygote,dorsal,left,TRUE,mid,CF,
