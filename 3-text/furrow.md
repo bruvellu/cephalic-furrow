@@ -173,8 +173,8 @@ Such differences in morphology and dynamics suggest that the cephalic furrow and
 
 <!--TODO: Merge with previous section?-->
 
-TODO: Improve description of ectopic folding frequency
-TODO: Select panels to include about frequency of ectopic folding
+<!--TODO: Improve description of ectopic folding frequency-->
+<!--TODO: Select panels to include about frequency of ectopic folding-->
 
 To better understand the mechanisms of ectopic folding, we analyzed the phenomenon more broadly in our datasets and found that ectopic folds may also occur in embryos with a cephalic furrow (*i.e.*, *btd* or *eve* heterozygotes, *prd* hetero- or homozygotes, and wildtype).
 These ectopic folds, however, differ from the ectopic folds of cephalic mutants in two key aspects.

@@ -80,6 +80,8 @@
 <!--TODO: Move observation of ectopic folding to the next paragraph?-->
 <p>The appearance of a late fold was first noted in <em>eve</em> mutants,<span class="citation" data-cites="Vincent1997-fa"><sup><a href="#ref-Vincent1997-fa" role="doc-biblioref">7</a></sup></span> and only more recently observed in <em>btd</em> mutants,<span class="citation" data-cites="Eritano2020-mi"><sup><a href="#ref-Eritano2020-mi" role="doc-biblioref">9</a></sup></span> but their significance and the mechanisms driving their formation have remained unclear. Our recordings show that in all embryos where the cephalic furrow fails to initiate properly, several ectopic folds appear near the canonical site of cephalic furrow invagination (Figure <a href="#fig:ectopic-folding">1</a>a,b,c, <a href="#fig:vid-lateral-btd">Video 1</a>, <a href="#fig:vid-lateral-eve">Video 2</a>). They appear 15 min after the cephalic furrow would have formed, when the germ band is extended to around 35% of the egg length (Figure <a href="#fig:ectopic-folding">1</a>a,c,d, Table <a href="#tbl:gbtime">1</a>), and then disappear in about 20 min—faster than the wildtype cephalic furrow. Ectopic folds have a wider and often asymmetric cleft compared to the cephalic furrow, and lack the typical cell morphologies of the invagination, such as the wedge-shaped initiator cells and elongated edge cells<span class="citation" data-cites="Spencer2015-td"><sup><a href="#ref-Spencer2015-td" role="doc-biblioref">5</a></sup></span> (Figure <a href="#fig:ectopic-folding">1</a>b, <a href="#fig:vid-profile-btd">Video 3</a>, <a href="#fig:vid-profile-eve">Video 4</a>). Unlike the cephalic furrow, the position of ectopic folds varies between individual mutant embryos as they can form anterior, posterior, or near the wildtype site of invagination (Figure <a href="#fig:ectopic-folding">1</a>f, Figure <a href="#fig:features">Extended Data Fig. 2</a>b, <a href="#fig:vid-dynamics-btd">Video S2</a>, <a href="#fig:vid-variability-btd">Video S3</a>). Finally, ectopic folds show more variable kinetics (Figure <a href="#fig:features">Extended Data Fig. 2</a>d,e), are 25% shallower (Figure <a href="#fig:features">Extended Data Fig. 2</a>f), and occupy an area 50% smaller compared to the cephalic furrow (Figure <a href="#fig:ectopic-folding">1</a>g,h, Figure <a href="#fig:features">Extended Data Fig. 2</a>c). Such differences in morphology and dynamics suggest that the cephalic furrow and the ectopic folds form via distinct mechanisms.</p>
 <!--TODO: Merge with previous section?-->
+<!--TODO: Improve description of ectopic folding frequency-->
+<!--TODO: Select panels to include about frequency of ectopic folding-->
 <p>To better understand the mechanisms of ectopic folding, we analyzed the phenomenon more broadly in our datasets and found that ectopic folds may also occur in embryos with a cephalic furrow (<em>i.e.</em>, <em>btd</em> or <em>eve</em> heterozygotes, <em>prd</em> hetero- or homozygotes, and wildtype). These ectopic folds, however, differ from the ectopic folds of cephalic mutants in two key aspects. While the frequency of ectopic folding is high in cephalic furrow mutants (&gt;93%)—nearly every <em>btd</em> and <em>eve</em> homozygote shows one or more ectopic folds per embryo side (2.0±1.0 and 1.8±0.6, respectively) (Figure <a href="#fig:ectopic-folding">1</a>b, Figure <a href="#fig:features">Extended Data Fig. 2</a>a)—the frequency of ectopic folding in the other embryos is lower, ranging between 12% (<em>eve</em> heterozygotes) and 80% (wildtype embryos) (Table <a href="#tbl:stats">2</a>). In addition, the area of ectopic folds in wildtype embryos is 3–4x smaller than the area of ectopic folds in cephalic furrow mutants (Figure <a href="#fig:features">Extended Data Fig. 2</a>g–k, Table <a href="#tbl:area">3</a>). Thus, cephalic furrow mutants have more frequent and more prominent ectopic folds compared to wildtype embryos. These data provide evidence that the absence of the cephalic furrow is causally linked to an increase in the frequency and in the magnitude of ectopic folding during <em>Drosophila</em> gastrulation.</p>
 <p>Altogether, the variable positions and frequency of ectopic folding suggests that they are not under genetic control comparable to that of the cephalic furrow, but that they may form as a result of physical interactions in the tissue.</p>
 <!--TODO:AB: Quantify the variability of ectopic folds in some way (plot it)-->
@@ -773,69 +775,230 @@
 <h2 id="table-2">Table 2</h2>
 <div id="tbl:stats" class="tablenos">
 <table>
-<caption><span>Table 2:</span> Number and frequency of ectopic fold formation in cephalic furrow mutants. We calculated the percentage of embryos showing ectopic folds at the head–trunk interface (PEF) and the number of ectopic folds per embryo side (NEF). The <em>n</em> includes datasets imaged from the lateral and dorsal sides. </caption>
+<caption><span>Table 2:</span> Folding statistics in cephalic furrow mutants. We calculated the percentage of embryos exhibiting a cephalic furrow (CF) or ectopic folds (EF) for each stock and genotype (Frequency), and for each position relative to the head–trunk boundary (Ant=anterior, Mid=middle, Post=posterior). In addition, we calculated the average number of folds per embryo side. For example, 28 out of 36 wildtype embryos show ectopic folds (77.8%); 42.9% of these embryos form ectopic folds anterior to the head–trunk boundary, while 71.4% form them at the posterior position; and each embryo forms 1.1±0.3 ectopic fold on each of its side, on average. The <em>n</em> includes datasets imaged from the lateral and dorsal sides. </caption>
 <thead>
 <tr class="header">
-<th></th>
-<th>wildtype</th>
-<th><em>btd</em></th>
-<th></th>
-<th><em>eve</em></th>
-<th></th>
-<th><em>prd</em></th>
-<th></th>
-<th><em>stg</em></th>
-<th></th>
+<th style="text-align: left;">Stock</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: center;">Zygosity</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: center;">Type</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">Frequency</th>
+<th style="text-align: right;">Ant</th>
+<th style="text-align: right;">Mid</th>
+<th style="text-align: right;">Post</th>
+<th style="text-align: right;">Folds</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Zygosity</td>
-<td>+/+</td>
-<td>+/−</td>
-<td>−/−</td>
-<td>+/−</td>
-<td>−/−</td>
-<td>+/−</td>
-<td>−/−</td>
-<td>+/−</td>
-<td>−/−</td>
+<td style="text-align: left;">wildtype</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: center;">+/+</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: center;">CF</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">1.0±0.0</td>
 </tr>
 <tr class="even">
-<td>NEF</td>
-<td>1.8±0.6</td>
-<td>1.1±0.2</td>
-<td>2.0±1.0</td>
-<td>1.1±0.2</td>
-<td>1.8±0.6</td>
-<td>1.3±0.5</td>
-<td>1.4±0.7</td>
-<td>1.2±0.4</td>
-<td>1.2±0.4</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">77.8%</td>
+<td style="text-align: right;">42.9%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">71.4%</td>
+<td style="text-align: right;">1.1±0.3</td>
 </tr>
 <tr class="odd">
-<td>PEF (%)</td>
-<td>80.6</td>
-<td>12.9</td>
-<td>92.9</td>
-<td>12.0</td>
-<td>100.0</td>
-<td>25.9</td>
-<td>42.9</td>
-<td>27.3</td>
-<td>23.1</td>
+<td style="text-align: left;"><em>btd</em></td>
+<td style="text-align: right;">46</td>
+<td style="text-align: center;">+/−</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: center;">CF</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">1.0±0.0</td>
 </tr>
 <tr class="even">
-<td>n</td>
-<td>36</td>
-<td>31</td>
-<td>14</td>
-<td>25</td>
-<td>10</td>
-<td>27</td>
-<td>14</td>
-<td>33</td>
-<td>13</td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">18.2%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">1.0±0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">−/−</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">92.3%</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">75%</td>
+<td style="text-align: right;">2.2±0.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>eve</em></td>
+<td style="text-align: right;">36</td>
+<td style="text-align: center;">+/−</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: center;">CF</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">1.0±0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">26.9%</td>
+<td style="text-align: right;">14.3%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">85.7%</td>
+<td style="text-align: right;">1.0±0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">−/−</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">40%</td>
+<td style="text-align: right;">70%</td>
+<td style="text-align: right;">90%</td>
+<td style="text-align: right;">1.8±0.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>prd</em></td>
+<td style="text-align: right;">40</td>
+<td style="text-align: center;">+/−</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: center;">CF</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">1.0±0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">26.9%</td>
+<td style="text-align: right;">71.4%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">57.1%</td>
+<td style="text-align: right;">1.3±0.5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">−/−</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: center;">CF</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">50.0%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">1.0±0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">71.4%</td>
+<td style="text-align: right;">50%</td>
+<td style="text-align: right;">80%</td>
+<td style="text-align: right;">70%</td>
+<td style="text-align: right;">1.9±0.8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>stg</em></td>
+<td style="text-align: right;">46</td>
+<td style="text-align: center;">+/−</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: center;">CF</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">1.0±0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">36.4%</td>
+<td style="text-align: right;">8.3%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">91.7%</td>
+<td style="text-align: right;">1.0±0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">−/−</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: center;">CF</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">1.0±0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: center;">EF</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">23.1%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">100%</td>
+<td style="text-align: right;">1.0±0.0</td>
 </tr>
 </tbody>
 </table>
