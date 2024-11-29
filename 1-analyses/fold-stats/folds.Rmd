@@ -208,6 +208,22 @@ ggsave("0-plots/proportion-fold-types-per-stock.svg", width = 10, height = 4)
 ```{r plot-proportion-fold-position}
 
 ggplot(folds[folds$Fold == TRUE & folds$Type == "EF" & folds$Stock != "btd-stg", ], aes(Genotype, fill = Position)) +
+  geom_bar(alpha = 0.5, position = position_fill(reverse = TRUE), stat = "count") +
+  labs(x = "genotype", y = "fold type proportion") +
+  facet_grid(rows = vars(Stock), scales = "free") +
+  scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
+  coord_flip() +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 15),
+        legend.title = element_text(size = 15),
+        legend.text = element_text(size = 10),
+        #axis.text.y=element_blank(),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", linewidth = 1)
+        )
+
+
+ggplot(folds[folds$Fold == TRUE & folds$Type == "EF" & folds$Stock != "btd-stg", ], aes(Genotype, fill = Position)) +
   geom_bar(alpha = 0.5, position = "fill", stat = "count") +
   labs(x = "genotype", y = "fold type proportion") +
   facet_grid(cols = vars(Stock), scales = "free") +
