@@ -262,7 +262,6 @@ We thus set to test the individual contribution of mitotic domains and germ band
 We first asked whether the extension of the germ band alone can generate ectopic folds.
 To that end, we generated double-mutant flies lacking both the cephalic furrow and the mitotic domains by combining *btd* mutants with a loss-of-function allele of *cdc25* or *string* (*stg*), a phosphatase that regulates the cell divisions in cleavage cycle 14 of *Drosophila* [@Edgar1989-hv].
 In *stg* mutants, the formation of the cephalic furrow and of other morphogenetic movements during early gastrulation occur normally [@Edgar1989-hv] ({@fig:live-details}a,b, {!@fig:vid-stg-lateral}, {!@fig:vid-stg-dorsal}).
-Compared to wildtype, the ectopic folds in *stg* mutants are less frequent and primarily appear near the trunk--germ interface ({@tbl:stats}), which suggests that mitotic domains affects ectopic folding.
 Indeed, in *btd*--*stg* double-mutant embryos, we find no ectopic folds forming at the head--trunk interface ({@fig:live-experiments}a,b,j (left), {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}).
 The experiment shows that mitotic domains are required for ectopic folding, and the push from the germ band extension alone is insufficient to induce ectopic buckling in cephalic furrow mutants.
 
