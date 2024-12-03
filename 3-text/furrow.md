@@ -918,7 +918,7 @@ High-resolution versions of the videos are available at [https://doi.org/10.5281
 
 ## Video 5
 
-![Ectopic folding between mitotic domains in *btd* mutant. Detailed view of cartographic projections of *btd* embryos showing the formation of the cephalic furrow (left) and of an ectopic fold (right). In sibling controls, the cephalic furrow initiates in a progressive manner from a narrow row of cells before mitotic domains which only appear at about 20min. In *btd* mutants, the ectopic folds appear in an abrupt manner without any preceding changes in epithelial cells and unfold soon after. Frame rate = 10fps. Scale bar = 20µm (approximate value for cartographic projection).
+![Ectopic folding between mitotic domains in *btd* mutant. Detailed view of cartographic projections of *btd* embryos showing the formation of the cephalic furrow (left) and of an ectopic fold (right). In sibling controls, the cephalic furrow initiates from a narrow row of cells and invaginates in a progressive manner before the appearance of mitotic domains. In *btd* mutants, the ectopic folds only appear after the apical expansion of dividing cells within mitotic domains, quickly buckling and unfolding shortly after. Frame rate = 10fps. Scale bar = 20µm (approximate value for cartographic projection).
 ](figures/Vid5.jpg){#fig:vid-mitotic-fold tag="Video 5" width=50%}
 
 \newpage
