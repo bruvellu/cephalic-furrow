@@ -167,9 +167,11 @@ The appearance of a late fold was first noted in *eve* mutants [@Vincent1997-fa]
 Our recordings show that in all embryos where the cephalic furrow fails to initiate properly, several ectopic folds appear near the canonical site of cephalic furrow invagination ({@fig:ectopic-folding}a,b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
 They appear 15 min after the cephalic furrow would have formed, when the germ band is extended to around 35% of the egg length ({@fig:ectopic-folding}a,c,d, {@tbl:gbtime}), and then disappear in about 20 min---faster than the wildtype cephalic furrow.
 Ectopic folds have a wider and often asymmetric cleft compared to the cephalic furrow, and lack the typical cell morphologies of the invagination, such as the wedge-shaped initiator cells and elongated edge cells [@Spencer2015-td] ({@fig:ectopic-folding}b, {!@fig:vid-profile-btd}, {!@fig:vid-profile-eve}).
-Unlike the cephalic furrow, the position of ectopic folds varies between individual mutant embryos as they can form anterior, posterior, or near the wildtype site of invagination ({@fig:ectopic-folding}f, {@fig:features}b, {!@fig:vid-dynamics-btd}, {!@fig:vid-variability-btd}).
+Unlike the cephalic furrow, the position of ectopic folds varies between individual mutant embryos as they can form anterior, posterior, or near the wildtype site of invagination ({@fig:ectopic-folding}f, {@fig:features}b, {!@fig:vid-dynamics-btd}, {!@fig:vid-variability-btd} {@fig:ectopic-variability}).
 Finally, ectopic folds show more variable kinetics ({@fig:features}d,e), are 25% shallower ({@fig:features}f), and occupy an area 50% smaller compared to the cephalic furrow ({@fig:ectopic-folding}g,h, {@fig:features}c).
 Such differences in morphology and dynamics suggest that the cephalic furrow and the ectopic folds form via distinct mechanisms.
+
+<!--TODO: Add ectopic variability panel somewhere-->
 
 <!--TODO: Merge with previous section?-->
 
