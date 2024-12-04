@@ -135,18 +135,18 @@ Our findings reveal an interplay between genetic patterning and mechanical force
 
 # Analyses of cephalic furrow mutants
 
-<!--## Mechanical role of cephalic furrow formation-->
+<!--Mechanical role of cephalic furrow formation-->
 
-To understand the physical consequences of perturbing the formation of the cephalic furrow in *Drosophila*, we generated fluorescent lines carrying a membrane marker and a loss of function allele for genes known to affect cephalic furrow formation---*btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
-In *prd* mutants, the cephalic furrow is delayed [@Blankenship2001-tm], while in *btd* and *eve* mutants the cephalic furrow is absent [@Vincent1997-fa].
-To capture the tissue dynamics during gastrulation and the relative timing of developmental events, we imaged these mutant embryos using lightsheet microscopy *in toto* and with high temporal resolution.
+To understand the physical consequences of perturbing cephalic furrow formation in *Drosophila*, we generated fluorescent lines carrying a membrane marker and a loss of function allele for the genes *btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
+The cephalic furrow is absent in *btd* and *eve* mutants [@Vincent1997-fa] and delayed in *prd* mutants [@Blankenship2001-tm].
+Using *in toto* lightsheet microscopy and high temporal resolution, we imaged mutant embryos during gastrulation and characterized the differences in tissue dynamics and timing of developmental events ({@fig:ectopic-folding}a).
 
 ## Disruption of initiator cell behavior
 
 <!--## Initiator cell behavior is disrupted in cephalic furrow mutants-->
 
-Our recordings show that the behavior of initiator cells is perturbed in the three mutants, but in different ways ({@fig:ectopic-folding}a).
-In wildtype embryos, the initiator cells undergo cell shortening and anisotropic apical constriction at the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
+We first analyzed the how the typical behavior of initiator cell is perturbed in the three mutants .
+The initiator cells in wildtype embryos undergo shortening and anisotropic apical constriction at the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
 In *prd* mutants, these behaviors are delayed but the initiators still shorten and constrict apically, forming a clear infolding point in the epithelium about six minutes after gastrulation ({@fig:initiator}a,b). 
 However, *prd* initiator and adjacent cells lack the typical arched profile of the wildtype cells and the resulting fold is abnormal ({@fig:initiator}a).
 This indicates that cephalic furrow formation is not only delayed as reported previously [@Blankenship2001-tm], but also perturbed.
@@ -154,6 +154,7 @@ In *btd* mutants, the initiator cells do not shorten, but show a reduced degree 
 In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
 While initiator behavior is abnormal in *prd* mutants, the cellular basis for cephalic furrow formation---the early shortening of initiator cells---is only severely disrupted in *btd* and *eve*.
 Nevertheless, about 10--15 min after the onset of gastrulation in *btd* and *eve* mutants, we observe the formation of epithelial folds near the canonical position of the cephalic furrow ({@fig:ectopic-folding}b,c, {@fig:initiator}a).
+Our recordings show that the behavior of initiator cells is perturbed in the three mutants, but in different ways .
 
 <!--TODO: Create video for btd initiator cells {!@fig:vid-initiator-btd}-->
 <!--TODO: Create video for prd initiator cells {!@fig:vid-initiator-prd}-->
