@@ -133,15 +133,17 @@ Our findings reveal an interplay between genetic patterning and mechanical force
 <!--But the interactions of the cephalic furrow with other morphogenetic movements have not been investigated *in vivo* [@Kong2017-ac].-->
 <!--Current models for the cephalic furrow account for the mechanics of the invagination [@Eritano2020-mi; @Jeffery2023; @OlderModel], but not the global context of how it interacts with neighbouring tissues during gastrulation.-->
 
-# Results
+# Analyses of cephalic furrow mutants
 
-## Mechanical role of cephalic furrow formation
+<!--## Mechanical role of cephalic furrow formation-->
 
 To understand the physical consequences of perturbing the formation of the cephalic furrow in *Drosophila*, we generated fluorescent lines carrying a membrane marker and a loss of function allele for genes known to affect cephalic furrow formation---*btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
 In *prd* mutants, the cephalic furrow is delayed [@Blankenship2001-tm], while in *btd* and *eve* mutants the cephalic furrow is absent [@Vincent1997-fa].
 To capture the tissue dynamics during gastrulation and the relative timing of developmental events, we imaged these mutant embryos using lightsheet microscopy *in toto* and with high temporal resolution.
 
-### Initiator cell behavior is disrupted in cephalic furrow mutants
+## Disruption of initiator cell behavior
+
+<!--## Initiator cell behavior is disrupted in cephalic furrow mutants-->
 
 Our recordings show that the behavior of initiator cells is perturbed in the three mutants, but in different ways ({@fig:ectopic-folding}a).
 In wildtype embryos, the initiator cells undergo cell shortening and anisotropic apical constriction at the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
@@ -156,7 +158,9 @@ Nevertheless, about 10--15 min after the onset of gastrulation in *btd* and *eve
 <!--TODO: Create video for btd initiator cells {!@fig:vid-initiator-btd}-->
 <!--TODO: Create video for prd initiator cells {!@fig:vid-initiator-prd}-->
 
-### Ectopic folds form at the head--trunk boundary
+## Formation of ectopic folds
+
+<!--## Ectopic folds form at the head--trunk boundary-->
 
 <!--### Ectopic folds more frequent in cephalic furrow mutants-->
 
@@ -189,7 +193,9 @@ Altogether, the variable positions and frequency of ectopic folding suggests tha
 
 <!--TODO:AB: Quantify the variability of ectopic folds in some way (plot it)-->
 
-### Ectopic folding coincides with mitotic domain expansion and germ band extension
+## Evidence of tissue compression
+
+<!--## Ectopic folding coincides with mitotic domain expansion and germ band extension-->
 
 The formation of ectopic folds coincides spatiotemporally with two other concurrent processes of gastrulation: the expansion of mitotic domains and the extension of the germ band ({@fig:ectopic-folding}a,c,d,e).
 Mitotic domains are groups of blastoderm cells that divide in synchrony during cleavage cycle 14 in *Drosophila*, first appearing in the head around 20 min after gastrulation [@Foe1989-cw].
@@ -218,48 +224,16 @@ Taken together, these analyses suggest the expansion of mitotic domains, and the
 <!--TODO: Include cell shape analyses with density et al. around here-->
 <!--TODO: Quantify compression of trunk-germ cells in btd mutants-->
 
-### Physical model predicts increased mechanical instability
+## Contribution of mitotic domains and germ band
 
-To determine the relative contribution of mitotic domains and germ band as sources of mechanical stress on the head--trunk boundary, we created a physical model to simulate these tissue mechanics *in silico* and performed experimental perturbations to test our theoretical predictions *in vivo* (see below).
+<!--## Role of mitotic domains and germ band-->
+<!--## Involvement of mitotic domains and germ band-->
 
-Our model represents an epithelial monolayer confined inside a rigid shell.
-It embodies one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:fold-model}a, {@fig:model-features}a).
-The blastoderm is modeled by an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:fold-model}b).
-The total energy per unit length of this tissue ($W_T$) is a sum of a stretching energy component ($W_s$) and a bending energy component ($W_b$) ({@fig:fold-model}c).
-Each of these components have a rigidity associated with them.
-$K_s$ is the stretching rigidity and $K_b$ is the bending rigidity.
-These two parameters can be combined into a single dimensionless bending rigidity, $K_{b}^{\text{*}}$ ({@fig:fold-model}c).
-To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand (they contain more particles compared to the surrounding regions), and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:fold-model}b).
-The germ band in our model is defined by the position of the posterior end of the tissue ($g$) which is fixed at different fractions of egg length for each simulation ({@fig:fold-model}b).
-The effect of germ band extension appears as a global compression in the blastoderm.
-Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system (see Methods).
-
-We first characterized the general properties of the model.
-In simulations where folds begin to form, the bending energy increases while releasing a larger amount of stretching energy which in turn decreases the total energy of the system over the iterations ({@fig:fold-model}d).
-The increase in bending energy coincides with a rapid deepening of the fold.
-Once the bending energy reaches a peak, the fold continues to deepen, though more gradually, but the number of folds stabilizes and there are rarely changes in the overall folding patterns ({@fig:fold-model}d, {@fig:model-features}b).
-Folding events are stochastic and can happen at different iterations across different simulations.
-Also, we are mainly interested in analyzing the initial position and the number of folding events in each simulation.
-Hence, we used the state of each simulation at the peak of its bending energy as the reference point to compare with other simulations.
-
-<!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
-
-To obtain realistic values of the dimensionless bending rigidity $K_{b}^{\text{*}}$ where the model matches experimental observations, we performed a sweep across the parameter space in conditions mimicking the mutants without the cephalic furrow.
-As expected, the probability of buckling increases with the amount of germ band extension, mainly in lower bending rigidities ({@fig:fold-model}e, {@fig:model-features}c).
-At 10% germ band extension, we observe a buckling transition in the phase space of softer conditions ($K_{b}^{\text{*}} \approx 0.7 \times 10^{−4}$), but in stiffer conditions ($K_{b}^{\text{*}} \approx 1.2 \times 10^{−4}$) the germ band alone, even at its maximum extension, cannot drive the formation of ectopic folds ({@fig:fold-model}e, {@fig:model-features}c).
-Adding mitotic domains to the simulations changed the phase diagram and dynamics of ectopic folding.
-We observe that mitotic domains alone can induce ectopic folds in softer conditions ($K_{b}^{\text{*}} < 1.1 \times 10^{−4}$) and that the number of folds increased for low values of germ band extension ({@fig:fold-model}f).
-In addition, the number of iterations until a first folding event occurs is lower in conditions with mitotic domains, especially in simulations with 0--20% of germ band extension ({@fig:model-features}d).
-These simulations suggest that, depending on the bending rigidity, the germ band or mitotic domains alone can drive ectopic folding, and that their combined action may increase the mechanical instabilities in the blastoderm epithelium.
-We thus set to test the individual contribution of mitotic domains and germ band to the epithelial instability by performing perturbation experiments *in vivo*.
-
-<!--TODO: Move definition of a fold to methods-->
-<!--TODO: Add panel with the threshold for counting folds-->
-<!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
-
-### Mitotic domains and germ band extension drive tissue buckling
+<!--## Mitotic domains and germ band extension drive tissue buckling-->
 
 <!--Mitotic domains are required for ectopic folding in vivo-->
+
+<!--TODO: Re-word this to test if MD are required, GB is secondary observation-->
 
 We first asked whether the extension of the germ band alone can generate ectopic folds.
 To that end, we generated double-mutant flies lacking both the cephalic furrow and the mitotic domains by combining *btd* mutants with a loss-of-function allele of *cdc25* or *string* (*stg*), a phosphatase that regulates the cell divisions in cleavage cycle 14 of *Drosophila* [@Edgar1989-hv].
@@ -267,37 +241,11 @@ In *stg* mutants, the formation of the cephalic furrow and of other morphogeneti
 Indeed, in *btd*--*stg* double-mutant embryos, we find no ectopic folds forming at the head--trunk interface ({@fig:live-experiments}a,b,j (left), {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}).
 The experiment shows that mitotic domains are required for ectopic folding, and the push from the germ band extension alone is insufficient to induce ectopic buckling in cephalic furrow mutants.
 
-<!--Germ band extension is required for ectopic folding in vivo-->
-
-To test whether mitotic domains alone are sufficient to induce ectopic buckling *in vivo*, we mechanically blocked the extension of the germ band in cephalic furrow mutants.
-For that, we cauterized a patch of dorsal tissue, attaching it to the vitelline envelope at the onset of gastrulation ({@fig:live-experiments}c).
-When the germ band extension is blocked in *btd* and *eve* mutants, no ectopic folds appear at the head--trunk interface ({@fig:live-experiments}c,d,j (middle), {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}).
-Mitotic expansions compress the neighboring non-dividing cells, but no buckling occurs ({@fig:live-experiments}c).
-Cauterized mutant embryos also show less epithelial deformations compared to non-cauterized mutant embryos ({@fig:live-experiments}d,g).
-These experiments reveal that *in vivo*, the local expansions of mitotic domains are insufficient to cause epithelial buckling at the head--trunk interface, and that the germ band extension is required.
-
-Altogether, the experiments show that, in cephalic furrow mutants, neither mitotic domain nor germ band can promote ectopic folding by themselves.
-With this crucial insight, we could then look back to our model and identify the bending rigidity value where these biological behaviors are recapitulated in the simulations.
-For that, we determined at which bending rigidity the average number of folds falls below 1 in mitotic-domains-only and germ-band-only conditions ({@fig:model-features}c,d).
-The criteria is fulfilled when the bending rigidity is $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.
-This specific value establishes an important bridge between our *in vivo* and *in silico* data by revealing where the embryo resides within the parameter space of the model, and by providing a biologically relevant reference for subsequent simulations.
-
-To compare our reference bending rigidity with direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km] (Supplementary Note 1).
-Given that in elastic sheets the bending and stretching rigidity ratio is proportional to the square of the height ($K_{b}/K_{s} \propto h^2$) [@Efrati2009-ve], we adjusted the calculation to the estimated thickness of the MDCK monolayer (~18µm) [@Fouchard2020-km].
-The value we obtained in this way for the effective $K_{b}^{\text{*}}$ of a height-adjusted MDCK monolayer, $\approx 1.8 \times 10^{-4}$, is within a factor of 2 of our own reference bending rigidity, indicating that the relevant region of parameter space we identified in our model is consistent with existing direct measurements of bending rigidity in other tissues.
-
-<!--and is therefore likely to be physiologically relevant-->
-
-Simulations at our reference bending rigidity regime reveal a correlation between increased compressive stresses and buckling instability.
-When both mitotic domains and germ band are present *in silico*, there is an increase in tissue compression that maximizes the number and speed of ectopic fold formation ({@fig:model-features}c,d).
-Similarly, we propose the mechanical instability in cephalic furrow mutants may be due to an increase in the compressive stresses at the head–trunk boundary, generated by the combined formation of mitotic domains and germ band extension during early gastrulation.
-
-### Cephalic furrow formation prevents mechanical instability
-
-The increased mechanical instability in cephalic furrow mutants led us to hypothesize that the temporary storage of invaginated cells may contribute to absorbing the compressive stresses generated by mitotic domains and germ band in wildtype conditions.
-To explore the role of the cephalic furrow as a mechanical buffer, we analyzed *in vivo* and computationally how it interacts with mitotic domains and with the germ band, and how it influences the formation of ectopic folds.
+<!--TODO: Add here the wildtype control ablation and cauterization experiments-->
 
 <!--Cephalic furrow invaginates autonomously pulling adjacent tissues-->
+
+<!--TODO: Reduce and move data somewhere else?-->
 
 First, we determined how the cephalic furrow influences the mechanics of the surrounding tissue and how far such influence spreads away from the furrow. 
 By laser ablating cell membranes at different distances from initiator cells in early wildtype embryos, we find that the recoil velocity increases with time and decreases with distance, with an approximate range of at least 40µm anterior and posterior to the initiator cells ({@fig:live-experiments}i).
@@ -319,6 +267,94 @@ These experiments corroborate the view that cephalic furrow initiation is autono
 <!--Mitotic activity and germ band elongation contributes to the depth of the cephalic furrow [@Campos-Ortega1997-rd].-->
 
 <!--TODO:AB: Is the increase in recoil velocity because CF or epithelial maturation?-->
+
+<!--Germ band extension is required for ectopic folding in vivo-->
+
+<!--TODO: Re-word this to test if GB is required, MD is secondary observation-->
+
+To test whether mitotic domains alone are sufficient to induce ectopic buckling *in vivo*, we mechanically blocked the extension of the germ band in cephalic furrow mutants.
+For that, we cauterized a patch of dorsal tissue, attaching it to the vitelline envelope at the onset of gastrulation ({@fig:live-experiments}c).
+When the germ band extension is blocked in *btd* and *eve* mutants, no ectopic folds appear at the head--trunk interface ({@fig:live-experiments}c,d,j (middle), {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}).
+Mitotic expansions compress the neighboring non-dividing cells, but no buckling occurs ({@fig:live-experiments}c).
+Cauterized mutant embryos also show less epithelial deformations compared to non-cauterized mutant embryos ({@fig:live-experiments}d,g).
+These experiments reveal that *in vivo*, the local expansions of mitotic domains are insufficient to cause epithelial buckling at the head--trunk interface, and that the germ band extension is required.
+Altogether, the experiments show that, in cephalic furrow mutants, neither mitotic domain nor germ band can promote ectopic folding by themselves.
+
+# Physical model of folding dynamics
+
+<!--## Physical model predicts increased mechanical instability-->
+
+To determine the relative contribution of mitotic domains and germ band as sources of mechanical stress on the head--trunk boundary, we created a physical model to simulate these tissue mechanics *in silico* and performed experimental perturbations to test our theoretical predictions *in vivo* (see below).
+
+## Simulation design and properties
+
+Our model represents an epithelial monolayer confined inside a rigid shell.
+It embodies one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:fold-model}a, {@fig:model-features}a).
+The blastoderm is modeled by an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:fold-model}b).
+The total energy per unit length of this tissue ($W_T$) is a sum of a stretching energy component ($W_s$) and a bending energy component ($W_b$) ({@fig:fold-model}c).
+Each of these components have a rigidity associated with them.
+$K_s$ is the stretching rigidity and $K_b$ is the bending rigidity.
+These two parameters can be combined into a single dimensionless bending rigidity, $K_{b}^{\text{*}}$ ({@fig:fold-model}c).
+To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand (they contain more particles compared to the surrounding regions), and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:fold-model}b).
+The germ band in our model is defined by the position of the posterior end of the tissue ($g$) which is fixed at different fractions of egg length for each simulation ({@fig:fold-model}b).
+The effect of germ band extension appears as a global compression in the blastoderm.
+Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system (see Methods).
+
+We first characterized the general properties of the model.
+In simulations where folds begin to form, the bending energy increases while releasing a larger amount of stretching energy which in turn decreases the total energy of the system over the iterations ({@fig:fold-model}d).
+The increase in bending energy coincides with a rapid deepening of the fold.
+Once the bending energy reaches a peak, the fold continues to deepen, though more gradually, but the number of folds stabilizes and there are rarely changes in the overall folding patterns ({@fig:fold-model}d, {@fig:model-features}b).
+Folding events are stochastic and can happen at different iterations across different simulations.
+Also, we are mainly interested in analyzing the initial position and the number of folding events in each simulation.
+Hence, we used the state of each simulation at the peak of its bending energy as the reference point to compare with other simulations.
+
+<!--## Parameter sweep of mutant conditions-->
+
+<!--## Parameter sweep of bending rigidity-->
+
+<!--## Bending rigidity parameter sweep-->
+
+## Bending rigidity sweep in mutant conditions
+
+<!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
+
+To obtain realistic values of the dimensionless bending rigidity $K_{b}^{\text{*}}$ where the model matches experimental observations, we performed a sweep across the parameter space in conditions mimicking the mutants without the cephalic furrow.
+As expected, the probability of buckling increases with the amount of germ band extension, mainly in lower bending rigidities ({@fig:fold-model}e, {@fig:model-features}c).
+At 10% germ band extension, we observe a buckling transition in the phase space of softer conditions ($K_{b}^{\text{*}} \approx 0.7 \times 10^{−4}$), but in stiffer conditions ($K_{b}^{\text{*}} \approx 1.2 \times 10^{−4}$) the germ band alone, even at its maximum extension, cannot drive the formation of ectopic folds ({@fig:fold-model}e, {@fig:model-features}c).
+Adding mitotic domains to the simulations changed the phase diagram and dynamics of ectopic folding.
+We observe that mitotic domains alone can induce ectopic folds in softer conditions ($K_{b}^{\text{*}} < 1.1 \times 10^{−4}$) and that the number of folds increased for low values of germ band extension ({@fig:fold-model}f).
+In addition, the number of iterations until a first folding event occurs is lower in conditions with mitotic domains, especially in simulations with 0--20% of germ band extension ({@fig:model-features}d).
+These simulations suggest that, depending on the bending rigidity, the germ band or mitotic domains alone can drive ectopic folding, and that their combined action may increase the mechanical instabilities in the blastoderm epithelium.
+We thus set to test the individual contribution of mitotic domains and germ band to the epithelial instability by performing perturbation experiments *in vivo*.
+
+<!--TODO: Move definition of a fold to methods-->
+<!--TODO: Add panel with the threshold for counting folds-->
+<!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
+
+<!--TODO: Move this part somewhere else after the model-->
+
+Altogether, the experiments show that, in cephalic furrow mutants, neither mitotic domain nor germ band can promote ectopic folding by themselves.
+With this crucial insight, we could then look back to our model and identify the bending rigidity value where these biological behaviors are recapitulated in the simulations.
+For that, we determined at which bending rigidity the average number of folds falls below 1 in mitotic-domains-only and germ-band-only conditions ({@fig:model-features}c,d).
+The criteria is fulfilled when the bending rigidity is $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.
+This specific value establishes an important bridge between our *in vivo* and *in silico* data by revealing where the embryo resides within the parameter space of the model, and by providing a biologically relevant reference for subsequent simulations.
+
+To compare our reference bending rigidity with direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km] (Supplementary Note 1).
+Given that in elastic sheets the bending and stretching rigidity ratio is proportional to the square of the height ($K_{b}/K_{s} \propto h^2$) [@Efrati2009-ve], we adjusted the calculation to the estimated thickness of the MDCK monolayer (~18µm) [@Fouchard2020-km].
+The value we obtained in this way for the effective $K_{b}^{\text{*}}$ of a height-adjusted MDCK monolayer, $\approx 1.8 \times 10^{-4}$, is within a factor of 2 of our own reference bending rigidity, indicating that the relevant region of parameter space we identified in our model is consistent with existing direct measurements of bending rigidity in other tissues.
+
+<!--and is therefore likely to be physiologically relevant-->
+
+Simulations at our reference bending rigidity regime reveal a correlation between increased compressive stresses and buckling instability.
+When both mitotic domains and germ band are present *in silico*, there is an increase in tissue compression that maximizes the number and speed of ectopic fold formation ({@fig:model-features}c,d).
+Similarly, we propose the mechanical instability in cephalic furrow mutants may be due to an increase in the compressive stresses at the head–trunk boundary, generated by the combined formation of mitotic domains and germ band extension during early gastrulation.
+
+## Impact of cephalic furrow on ectopic folding
+
+<!--## Cephalic furrow formation prevents mechanical instability-->
+
+The increased mechanical instability in cephalic furrow mutants led us to hypothesize that the temporary storage of invaginated cells may contribute to absorbing the compressive stresses generated by mitotic domains and germ band in wildtype conditions.
+To explore the role of the cephalic furrow as a mechanical buffer, we analyzed *in vivo* and computationally how it interacts with mitotic domains and with the germ band, and how it influences the formation of ectopic folds.
 
 Next, we tested the conditions that impact the effectiveness of the cephalic furrow in preventing the formation of ectopic folds in the model.
 
@@ -356,7 +392,9 @@ Taken together, our physical model provides a theoretical basis that a fold like
 
 <!--TODO: Add evolutionary question here or after genes?-->
 
-## Genetic innovation at the head--trunk boundary
+# Evolution of gene expression
+
+<!--## Genetic innovation at the head--trunk boundary-->
 
 <!--
 - Function depends on timing and position that depends on patterning
@@ -370,7 +408,9 @@ In *Drosophila*, this spatiotemporal control is determined genetically by the co
 However, it remains unclear which elements of this genetic patterning cascade are associated with the evolution of the cephalic furrow.
 To address this question, we first sought to identify additional genes involved in cephalic furrow formation, and then asked how the expression of these cephalic furrow genes compare between dipteran species with and without the cephalic furrow.
 
-### Ancestral *slp*--*eve* interaction defines head--trunk position
+## Role of *sloppy paired* in cephalic furrow patterning
+
+<!--## Ancestral *slp*--*eve* interaction defines head--trunk position-->
 
 To identify other cephalic furrow genes, we performed a live-imaging screen using loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2).
 We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a strong phenotype where the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b, {@fig:vid-slp-lateral}).
@@ -416,7 +456,9 @@ for the patterning and morphogenesis of the invagination in *Drosophila*, and pr
 
 <!--- slp as well shows some adhesive differences.-->
 
-### Novel *btd* head--trunk domain associated with cephalic furrow
+## Association of *buttonhead* with cephalic furrow evolution
+
+<!--## Novel *btd* head--trunk domain associated with cephalic furrow-->
 
 <!--TODO: Update text to reflect the four species studied-->
 <!--TODO: First mention early expression fairly similar-->
