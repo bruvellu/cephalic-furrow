@@ -143,18 +143,22 @@ Using *in toto* lightsheet microscopy and high temporal resolution, we imaged mu
 
 ## Disruption of initiator cell behavior
 
-<!--## Initiator cell behavior is disrupted in cephalic furrow mutants-->
+<!--Initiator cell behavior is disrupted in cephalic furrow mutants-->
 
-We first analyzed the how the typical behavior of initiator cell is perturbed in the three mutants .
-The initiator cells in wildtype embryos undergo shortening and anisotropic apical constriction at the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
-In *prd* mutants, these behaviors are delayed but the initiators still shorten and constrict apically, forming a clear infolding point in the epithelium about six minutes after gastrulation ({@fig:initiator}a,b). 
-However, *prd* initiator and adjacent cells lack the typical arched profile of the wildtype cells and the resulting fold is abnormal ({@fig:initiator}a).
-This indicates that cephalic furrow formation is not only delayed as reported previously [@Blankenship2001-tm], but also perturbed.
-In *btd* mutants, the initiator cells do not shorten, but show a reduced degree of apical constriction which creates a small indentation in epithelium of some embryos ({@fig:initiator}a,b, {!@fig:vid-initiator}), possibly due to the myosin activity at the head--trunk interface [@Eritano2020-mi].
-In contrast, *eve* mutants show neither apical constriction nor cell shortening and the epithelium remains flat until about ten minutes after gastrulation ({@fig:initiator}a,b).
-While initiator behavior is abnormal in *prd* mutants, the cellular basis for cephalic furrow formation---the early shortening of initiator cells---is only severely disrupted in *btd* and *eve*.
-Nevertheless, about 10--15 min after the onset of gastrulation in *btd* and *eve* mutants, we observe the formation of epithelial folds near the canonical position of the cephalic furrow ({@fig:ectopic-folding}b,c, {@fig:initiator}a).
-Our recordings show that the behavior of initiator cells is perturbed in the three mutants, but in different ways .
+<!--TODO: Revise to improve flow and reduce length-->
+
+We first analyzed how the typical behavior of initiator cells is perturbed in the three cephalic furrow mutants.
+Initiator cells in wildtype embryos begin to shorten and undergo anisotropic apical constriction a few minutes before the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
+In *prd* mutants, both behaviors are delayed.
+The epithelium only begins to invaginate about four minutes after gastrulation and the resulting fold deviates is slightly abnormal ({@fig:initiator}a,b).
+Moreover, the initiator and adjacent cells lack the typical arched profile of wildtype cells ({@fig:initiator}a).
+These observations indicate that cephalic furrow formation in *prd* mutants is not only delayed but also perturbed.
+*btd* and *eve* mutants show stronger phenotypes.
+Initiator cells in *btd* embryos do not shorten and only display a reduced degree of apical constriction, which can result in a small tissue indentation ({@fig:initiator}a,b, {!@fig:vid-initiator}).
+In contrast, *eve* mutants show neither apical constriction nor cell shortening.
+The epithelium remains flat after gastrulation for about ten minutes ({@fig:initiator}a,b).
+Our recordings reveal that initiator cell behaviors are perturbed to different degrees in each mutant.
+While initiator behavior is abnormal in *prd* mutants, the cellular basis for cephalic furrow formation---the early shortening of initiator cells---is more severely disrupted in *btd* and *eve*.
 
 <!--TODO: Create video for btd initiator cells {!@fig:vid-initiator-btd}-->
 <!--TODO: Create video for prd initiator cells {!@fig:vid-initiator-prd}-->
@@ -167,6 +171,9 @@ Our recordings show that the behavior of initiator cells is perturbed in the thr
 
 <!--TODO: Re-write paragraphs to incorporate wildtype and mutant EFs?-->
 <!--TODO: Move observation of ectopic folding to the next paragraph?-->
+
+Nevertheless, about 10--15 min after the onset of gastrulation in *btd* and *eve* mutants, we observe the formation of epithelial folds near the canonical position of the cephalic furrow ({@fig:ectopic-folding}b,c, {@fig:initiator}a).
+
 
 The appearance of a late fold was first noted in *eve* mutants [@Vincent1997-fa], and only more recently observed in *btd* mutants [@Eritano2020-mi], but their significance and the mechanisms driving their formation have remained unclear.
 Our recordings show that in all embryos where the cephalic furrow fails to initiate properly, several ectopic folds appear near the canonical site of cephalic furrow invagination ({@fig:ectopic-folding}a,b,c, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}).
