@@ -137,9 +137,16 @@ Our findings reveal an interplay between genetic patterning and mechanical force
 
 <!--Mechanical role of cephalic furrow formation-->
 
-To understand the physical consequences of perturbing cephalic furrow formation in *Drosophila*, we generated fluorescent lines carrying a membrane marker and a loss of function allele for the genes *btd*, *eve*, and *paired* (*prd*) [@Vincent1997-fa; @Blankenship2001-tm].
-The cephalic furrow is absent in *btd* and *eve* mutants [@Vincent1997-fa] and delayed in *prd* mutants [@Blankenship2001-tm].
-Using *in toto* lightsheet microscopy and high temporal resolution, we imaged mutant embryos during gastrulation and characterized the differences in tissue dynamics and timing of developmental events ({@fig:ectopic-folding}a).
+To understand the physical consequences of perturbing cephalic furrow formation in *Drosophila*, we investigated the tissue dynamics at the head--trunk boundary in known cephalic furrow mutants.
+The cephalic furrow has been shown to be absent in *btd* and *eve* mutants [@Vincent1997-fa] and delayed in *prd* mutants [@Blankenship2001-tm].
+We generated fluorescent lines carrying a loss of function allele of these genes, and imaged the embryos under high temporal resolution using *in toto* lightsheet microscopy, characterizing differences in timing and dynamics of developmental events during gastrulation ({@fig:ectopic-folding}a).
+
+
+<!--In *btd* and *eve* mutants, the cephalic furrow is absent [@Vincent1997-fa],  while in *prd* mutants, it is delayed [@Blankenship2001-tm].-->
+<!--However, the dynamics of tissues at their head--trunk boundary have not been analyzed.-->
+
+<!--The cephalic furrow is absent in *btd* and *eve* mutants [@Vincent1997-fa] and delayed in *prd* mutants [@Blankenship2001-tm], but the dynamics of their head--trunk boundary tissues have not been analyzed.-->
+
 
 ## Disruption of initiator cell behavior
 
