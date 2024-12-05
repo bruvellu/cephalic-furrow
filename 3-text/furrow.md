@@ -111,9 +111,10 @@ Unlike other embryonic invaginations, however, the cephalic furrow has no obviou
 While the ventral furrow gives rise to mesodermal precursors and the midgut invaginations give rise to endodermal tissues, the cephalic furrow does not give rise to any specific structure and, after a couple of hours, unfolds leaving no trace [@Hartenstein1985-zs].
 Therefore, despite forming under tight genetic control, the role of the cephalic furrow during development has remained unclear.
 While it has been thought to serve as a temporary tissue storage [@Turner1977-ol] or as a tissue anchor during gastrulation [@Costa1993-qj; @Dicko2017-wz], these hypotheses have not been investigated *in vivo* or considered in a phylogenetic context.
-Remarkably, recent evidence from an independent study by Dey *et al.* ^(footnote^[^note]^)^ indicates that the cephalic furrow is an evolutionary novelty that originated within Diptera [@Dey2023-mo], making it an ideal model for investigating how patterned morphogenetic processes in early embryonic development evolve.
+Remarkably, recent evidence from an independent study by Dey *et al.* indicates that the cephalic furrow is an evolutionary novelty that originated within Diptera [@Dey2023-mo], making it an ideal model for investigating how patterned morphogenetic processes in early embryonic development evolve.
 
-[^note]: This study has been submitted back-to-back with the present manuscript. Both pre-prints are available on bioRxiv.
+<!--^(footnote^[^note]^)^ -->
+<!--[^note]: This study has been submitted back-to-back with the present manuscript. Both pre-prints are available on bioRxiv.-->
 
 <!--The invagination is only present in a derived group of cyclorraphan flies, but is absent in the remaining basally-branching dipteran flies [@Dey2023-mo].-->
 <!--The clear origin in the phylogenetic tree makes the cephalic furrow an ideal model for investigating how patterned morphogenetic processes evolve.-->
@@ -137,16 +138,15 @@ Our findings reveal an interplay between genetic patterning and mechanical force
 
 <!--Mechanical role of cephalic furrow formation-->
 
-To understand the physical consequences of perturbing cephalic furrow formation in *Drosophila*, we investigated the tissue dynamics at the head--trunk boundary in known cephalic furrow mutants.
-The cephalic furrow has been shown to be absent in *btd* and *eve* mutants [@Vincent1997-fa] and delayed in *prd* mutants [@Blankenship2001-tm].
-We generated fluorescent lines carrying a loss of function allele of these genes, and imaged the embryos under high temporal resolution using *in toto* lightsheet microscopy, characterizing differences in timing and dynamics of developmental events during gastrulation ({@fig:ectopic-folding}a).
+<!--TODO: Revise for clarity-->
 
+To understand the physical consequences of perturbing cephalic furrow formation in *Drosophila*, we investigated the tissue dynamics at the head--trunk boundary in known cephalic furrow mutants---*btd* and *eve*, where the invagination is absent [@Vincent1997-fa], and *prd* where the invagination is delayed [@Blankenship2001-tm].
+We generated fluorescent lines carrying a loss of function allele of these genes, and imaged the embryos under high temporal resolution using *in toto* lightsheet microscopy, characterizing differences in timing and dynamics of developmental events during gastrulation ({@fig:ectopic-folding}a).
 
 <!--In *btd* and *eve* mutants, the cephalic furrow is absent [@Vincent1997-fa],  while in *prd* mutants, it is delayed [@Blankenship2001-tm].-->
 <!--However, the dynamics of tissues at their head--trunk boundary have not been analyzed.-->
 
 <!--The cephalic furrow is absent in *btd* and *eve* mutants [@Vincent1997-fa] and delayed in *prd* mutants [@Blankenship2001-tm], but the dynamics of their head--trunk boundary tissues have not been analyzed.-->
-
 
 ## Disruption of initiator cell behavior
 
@@ -154,18 +154,14 @@ We generated fluorescent lines carrying a loss of function allele of these genes
 
 <!--TODO: Revise to improve flow and reduce length-->
 
-We first analyzed how the typical behavior of initiator cells is perturbed in the three cephalic furrow mutants.
-Initiator cells in wildtype embryos begin to shorten and undergo anisotropic apical constriction a few minutes before the end of cellularization [@Spencer2015-td] ({@fig:initiator}a,b).
-In *prd* mutants, both behaviors are delayed.
-The epithelium only begins to invaginate about four minutes after gastrulation and the resulting fold deviates is slightly abnormal ({@fig:initiator}a,b).
-Moreover, the initiator and adjacent cells lack the typical arched profile of wildtype cells ({@fig:initiator}a).
-These observations indicate that cephalic furrow formation in *prd* mutants is not only delayed but also perturbed.
-*btd* and *eve* mutants show stronger phenotypes.
-Initiator cells in *btd* embryos do not shorten and only display a reduced degree of apical constriction, which can result in a small tissue indentation ({@fig:initiator}a,b, {!@fig:vid-initiator}).
-In contrast, *eve* mutants show neither apical constriction nor cell shortening.
-The epithelium remains flat after gastrulation for about ten minutes ({@fig:initiator}a,b).
-Our recordings reveal that initiator cell behaviors are perturbed to different degrees in each mutant.
-While initiator behavior is abnormal in *prd* mutants, the cellular basis for cephalic furrow formation---the early shortening of initiator cells---is more severely disrupted in *btd* and *eve*.
+We first analyzed how the typical behavior of initiator cells is perturbed in the three mutant backgrounds.
+In wildtype embryos, the initiator cells shorten and undergo anisotropic apical constriction a few minutes before the end of cellularization [@Spencer2015-td] ({!@fig:initiator}a,b).
+In *prd* mutants, both behaviors are delayed and the epithelium only invaginates after gastrulation has started ({!@fig:initiator}a,b).
+Moreover, the cells adjacent to the initiator cells lack the typical arched profile of wildtype cells and the shape of the resulting fold is slightly abnormal compared to a wildtype invagination ({!@fig:initiator}a).
+In *btd* and *eve* mutants, the phenotypes are stronger.
+Initiator cells in *btd* embryos exhibit a reduced degree of apical constriction but do not shorten ({!@fig:initiator}a,b, {!@fig:vid-initiator}).
+In contrast, *eve* mutants show neither apical constriction nor cell shortening; the epithelium remains flat for several minutes after gastrulation ({!@fig:initiator}a,b).
+These observations reveal that cephalic furrow formation in *prd* mutants is not only delayed but also perturbed, and that the cellular mechanism for the invagination is severely disrupted in *btd* and *eve* mutants.
 
 <!--TODO: Create video for btd initiator cells {!@fig:vid-initiator-btd}-->
 <!--TODO: Create video for prd initiator cells {!@fig:vid-initiator-prd}-->
