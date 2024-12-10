@@ -249,16 +249,14 @@ Taken together, these analyses suggest the expansion of mitotic domains, and the
 
 <!--Mitotic domains are required for ectopic folding in vivo-->
 
-<!--TODO: Re-word this to test if MD are required, GB is secondary observation-->
-
 To test the individual role of mitotic domains and germ band to the epithelial instability, we performed a series of perturbation experiments *in vivo*.
 
 We first asked if mitotic expansions are required for the formation of ectopic folds.
 To that end, we generated a double-mutant line carrying the loss-of-function alleles of *btd* and *string* (*stg*)---the *cdc25* phosphatase ortholog that regulates the formation of mitotic domains in *Drosophila* [@Edgar1989-hv].
 Regular *stg* mutants lack mitotic domains, but their morphogenetic movements and cephalic furrow formation are unaffected [@Edgar1989-hv] ({!@fig:live-details}a,b, {!@fig:vid-stg-lateral}, {!@fig:vid-stg-dorsal}).
 In contrast, the *btd*--*stg* double-mutant embryos lack both the mitotic domains and the cephalic furrow ({@fig:live-experiments}a).
-These embryos show no ectopic folds at the head--trunk interface ({@fig:live-experiments}a,b, {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}), indicating that mitotic expansions are necessary for ectopic folding in cephalic furrow mutants.
-Moreover, the experiment reveals that the compression exerted by the germ band extension alone is insufficient to induce ectopic folds in absence of the cephalic furrow.
+These embryos show no ectopic folds at the head--trunk interface ({@fig:live-experiments}a,b, {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}), indicating that mitotic expansions are necessary for the appearance of ectopic folds in cephalic furrow mutants.
+Conversely, the experiment reveals the compression exerted by the germ band extension alone is insufficient to induce ectopic folding.
 
 <!--TODO: Add here the wildtype control ablation and cauterization experiments-->
 
@@ -266,17 +264,28 @@ Moreover, the experiment reveals that the compression exerted by the germ band e
 
 <!--TODO: Reduce and move data somewhere else?-->
 
-First, we determined how the cephalic furrow influences the mechanics of the surrounding tissue and how far such influence spreads away from the furrow. 
-By laser ablating cell membranes at different distances from initiator cells in early wildtype embryos, we find that the recoil velocity increases with time and decreases with distance, with an approximate range of at least 40µm anterior and posterior to the initiator cells ({@fig:live-experiments}i).
-This suggests that the cell shortening of initiator cells, which is actively driven by lateral myosin contractility [@Eritano2020-mi], pulls on the adjacent cells and generates tension in the surrounding tissues.
+<!--TODO: Swap wildtype with mutant cauterization-->
+
+Next, we asked if the extension of the germ band is required for the formation of ectopic folds.
+To prevent the germ band from extending, we cauterized a patch of posterodorsal tissue at the onset of gastrulation to mechanically attach it to the vitelline envelope ({@fig:live-experiments}c).
+When the germ band extension is blocked in wildtype embryos, the cephalic furrow is about 15% shallower, but forms normally otherwise ({@fig:live-experiments}e,f,h), indicating that the germ band extension itself does not contribute to the initial invagination process.
+By performing laser ablations around the initiator cells, we find that the recoil velocity increases with time and decreases with distance, suggesting that the pull from initiator cells generates tension within a range of 40µm from the head--trunk boundary ({@fig:live-experiments}i).
+These experiments corroborate that cephalic furrow formation is an active and autonomous process.
+
+<!--This suggests that the cell shortening of initiator cells, which is actively driven by lateral myosin contractility [@Eritano2020-mi], pulls on the adjacent cells and generates tension in the surrounding tissues.-->
+
+To test whether mitotic domains alone are sufficient to induce ectopic buckling *in vivo*, we mechanically blocked the extension of the germ band in cephalic furrow mutants.
+For that, we cauterized a patch of dorsal tissue, attaching it to the vitelline envelope at the onset of gastrulation ({@fig:live-experiments}c).
+When the germ band extension is blocked in *btd* and *eve* mutants, no ectopic folds appear at the head--trunk interface ({@fig:live-experiments}c,d,j (middle), {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}).
+Mitotic expansions compress the neighboring non-dividing cells, but no buckling occurs ({@fig:live-experiments}c).
+Cauterized mutant embryos also show less epithelial deformations compared to non-cauterized mutant embryos ({@fig:live-experiments}d,g).
+These experiments reveal that *in vivo*, the local expansions of mitotic domains are insufficient to cause epithelial buckling at the head--trunk interface, and that the germ band extension is required.
+Altogether, the experiments show that, in cephalic furrow mutants, neither mitotic domain nor germ band can promote ectopic folding by themselves.
+
+These experiments corroborate the view that cephalic furrow initiation is autonomous and independent of other morphogenetic movements of gastrulation, such as the germ band extension which only has a mild influence on the final depth of the invagination.
+
 
 <!--Cephalic furrow forms normally but is shallower in cauterized wildtype-->
-
-Since our experiments indicate that the germ band is compressing the head--trunk tissues, we asked whether the extension of the germ band can influence the depth of the cephalic furrow.
-To test *in vivo* whether the presence of the germ band impacts the formation of the cephalic furrow, we blocked the germ band extension by cauterization in wildtype embryos.
-The cephalic furrow forms normally in cauterized embryos indicating that the germ band extension is not required for its formation ({@fig:live-experiments}e,f,j (right)).
-We measured the maximum depth of the cephalic furrow between cauterized and non-cauterized embryos, and found it is only 15% shallower after cauterization ({@fig:live-experiments}h).
-These experiments corroborate the view that cephalic furrow initiation is autonomous and independent of other morphogenetic movements of gastrulation, such as the germ band extension which only has a mild influence on the final depth of the invagination.
 
 <!--This result needs to be corroborated with a larger sample size, but it provides initial evidence that the germ band extension has a mild influence on the final depth of the cephalic furrow.-->
 
@@ -290,14 +299,6 @@ These experiments corroborate the view that cephalic furrow initiation is autono
 <!--Germ band extension is required for ectopic folding in vivo-->
 
 <!--TODO: Re-word this to test if GB is required, MD is secondary observation-->
-
-To test whether mitotic domains alone are sufficient to induce ectopic buckling *in vivo*, we mechanically blocked the extension of the germ band in cephalic furrow mutants.
-For that, we cauterized a patch of dorsal tissue, attaching it to the vitelline envelope at the onset of gastrulation ({@fig:live-experiments}c).
-When the germ band extension is blocked in *btd* and *eve* mutants, no ectopic folds appear at the head--trunk interface ({@fig:live-experiments}c,d,j (middle), {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}).
-Mitotic expansions compress the neighboring non-dividing cells, but no buckling occurs ({@fig:live-experiments}c).
-Cauterized mutant embryos also show less epithelial deformations compared to non-cauterized mutant embryos ({@fig:live-experiments}d,g).
-These experiments reveal that *in vivo*, the local expansions of mitotic domains are insufficient to cause epithelial buckling at the head--trunk interface, and that the germ band extension is required.
-Altogether, the experiments show that, in cephalic furrow mutants, neither mitotic domain nor germ band can promote ectopic folding by themselves.
 
 # Physical model of folding dynamics
 
@@ -1178,7 +1179,6 @@ High-resolution versions of the extended data figures and videos are available a
 <!--TODO: Update model-features references in the text-->
 <!--TODO: Move full cf-sweep to supplementary or just leave in repository?-->
 <!--TODO: Replace with newer simulations-->
-
 
 \newpage
 
