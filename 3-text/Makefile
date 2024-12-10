@@ -64,16 +64,16 @@ figs:
 	# Main figures
 	ln -sf ${FIGSRC}/ectopic-folding/figure.png ${FIGHIRES}/Fig1.png
 	ln -sf ${FIGSRC}/mitotic-strain/figure.png ${FIGHIRES}/Fig2.png
-	ln -sf ${FIGSRC}/fold-model/figure.png ${FIGHIRES}/Fig3.png
-	ln -sf ${FIGSRC}/live-experiments/figure.png ${FIGHIRES}/Fig4.png
+	ln -sf ${FIGSRC}/live-experiments/figure.png ${FIGHIRES}/Fig3.png
+	ln -sf ${FIGSRC}/fold-model/figure.png ${FIGHIRES}/Fig4.png
 	ln -sf ${FIGSRC}/genetic-patterning/figure.png ${FIGHIRES}/Fig5.png
 	ln -sf ${FIGSRC}/summary/figure.png ${FIGHIRES}/Fig6.png
 	# Extended data figures
 	ln -sf ${FIGSRC}/initiator-behavior/figure.png ${FIGHIRES}/EDFig1.png
 	ln -sf ${FIGSRC}/ectopic-features/figure.png ${FIGHIRES}/EDFig2.png
 	ln -sf ${FIGSRC}/apical-strain/figure.png ${FIGHIRES}/EDFig3.png
-	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIRES}/EDFig4.png
-	ln -sf ${FIGSRC}/live-details/figure.png ${FIGHIRES}/EDFig5.png
+	ln -sf ${FIGSRC}/live-details/figure.png ${FIGHIRES}/EDFig4.png
+	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIRES}/EDFig5.png
 	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIRES}/EDFig6.png
 	ln -sf ${FIGSRC}/genetic-comparative/figure.png ${FIGHIRES}/EDFig7.png
 	# Supplementary information
