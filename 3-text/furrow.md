@@ -269,9 +269,7 @@ These experiments reveal that the germ band extension is necessary for the appea
 
 # Physical model of folding dynamics
 
-<!--## Physical model predicts increased mechanical instability-->
-
-To determine the relative contribution of mitotic domains and germ band as sources of mechanical stress on the head--trunk boundary, we created a physical model to simulate these tissue mechanics *in silico* and performed experimental perturbations to test our theoretical predictions *in vivo* (see below).
+To determine the relative contribution of mitotic domains and germ band as sources of mechanical stress on the head--trunk boundary, we created a physical model of the blastoderm and simulated the tissue mechanics of mutant and wildtype conditions *in silico*.
 
 ## Simulation design and properties
 
@@ -285,21 +283,12 @@ These two parameters can be combined into a single dimensionless bending rigidit
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand (they contain more particles compared to the surrounding regions), and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:fold-model}b).
 The germ band in our model is defined by the position of the posterior end of the tissue ($g$) which is fixed at different fractions of egg length for each simulation ({@fig:fold-model}b).
 The effect of germ band extension appears as a global compression in the blastoderm.
-Finally, to run the simulations we added a ground level of random noise, and iterated the model towards an equilibrium in the total energy of the system (see Methods).
-
-We first characterized the general properties of the model.
-In simulations where folds begin to form, the bending energy increases while releasing a larger amount of stretching energy which in turn decreases the total energy of the system over the iterations ({@fig:fold-model}d).
+To run the simulations, we added a ground level of random noise and iterated towards equilibrium of the total energy in the system (see Methods).
+With this setup, we characterized the general properties of the model.
+When folds begin to form in the simulations, the bending energy increases releasing a larger amount of stretching energy, which, in turn, decreases the total energy of the system over each iteration ({@fig:fold-model}d).
 The increase in bending energy coincides with a rapid deepening of the fold.
-Once the bending energy reaches a peak, the fold continues to deepen, though more gradually, but the number of folds stabilizes and there are rarely changes in the overall folding patterns ({@fig:fold-model}d, {@fig:model-features}b).
-Folding events are stochastic and can happen at different iterations across different simulations.
-Also, we are mainly interested in analyzing the initial position and the number of folding events in each simulation.
-Hence, we used the state of each simulation at the peak of its bending energy as the reference point to compare with other simulations.
-
-<!--## Parameter sweep of mutant conditions-->
-
-<!--## Parameter sweep of bending rigidity-->
-
-<!--## Bending rigidity parameter sweep-->
+Once the bending energy reaches a peak, the fold continues to deepen more gradually, but the number of folds stabilizes and rarely change ({@fig:fold-model}d, {!@fig:model-features}b).
+Since folding events are stochastic and can happen at a different iteration in each simulation,we used the peak of bending energy as the reference point to compare different simulations.
 
 ## Bending rigidity sweep in mutant conditions
 
