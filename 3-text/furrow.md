@@ -264,26 +264,15 @@ Conversely, the experiment reveals the compression exerted by the germ band exte
 
 <!--TODO: Reduce and move data somewhere else?-->
 
-<!--TODO: Swap wildtype with mutant cauterization-->
-
 Next, we asked if the extension of the germ band is required for the formation of ectopic folds.
 To prevent the germ band from extending, we cauterized a patch of posterodorsal tissue at the onset of gastrulation to mechanically attach it to the vitelline envelope ({@fig:live-experiments}c).
-When the germ band extension is blocked in wildtype embryos, the cephalic furrow is about 15% shallower, but forms normally otherwise ({@fig:live-experiments}e,f,h), indicating that the germ band extension itself does not contribute to the initial invagination process.
-By performing laser ablations around the initiator cells, we find that the recoil velocity increases with time and decreases with distance, suggesting that the pull from initiator cells generates tension within a range of 40µm from the head--trunk boundary ({@fig:live-experiments}i).
-These experiments corroborate that cephalic furrow formation is an active and autonomous process.
-
-<!--This suggests that the cell shortening of initiator cells, which is actively driven by lateral myosin contractility [@Eritano2020-mi], pulls on the adjacent cells and generates tension in the surrounding tissues.-->
-
-To test whether mitotic domains alone are sufficient to induce ectopic buckling *in vivo*, we mechanically blocked the extension of the germ band in cephalic furrow mutants.
-For that, we cauterized a patch of dorsal tissue, attaching it to the vitelline envelope at the onset of gastrulation ({@fig:live-experiments}c).
-When the germ band extension is blocked in *btd* and *eve* mutants, no ectopic folds appear at the head--trunk interface ({@fig:live-experiments}c,d,j (middle), {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}).
-Mitotic expansions compress the neighboring non-dividing cells, but no buckling occurs ({@fig:live-experiments}c).
-Cauterized mutant embryos also show less epithelial deformations compared to non-cauterized mutant embryos ({@fig:live-experiments}d,g).
-These experiments reveal that *in vivo*, the local expansions of mitotic domains are insufficient to cause epithelial buckling at the head--trunk interface, and that the germ band extension is required.
-Altogether, the experiments show that, in cephalic furrow mutants, neither mitotic domain nor germ band can promote ectopic folding by themselves.
-
-These experiments corroborate the view that cephalic furrow initiation is autonomous and independent of other morphogenetic movements of gastrulation, such as the germ band extension which only has a mild influence on the final depth of the invagination.
-
+Blocking the germ band in wildtype embryos does not prevent the formation of the cephalic furrow ({@fig:live-experiments}e).
+The shortening of initiator cells occurs normally and correlates with an increase in tension around the head--trunk boundary ({@fig:live-experiments}i), corroborating the idea that the initial formation of the cephalic furrow is an active process independent of other morphogenetic movements.
+The germ band only has a mild influence on the final depth of the invagination, as we find that the cephalic furrow in cauterized embryos are about 15% shallower ({@fig:live-experiments}f,h).
+We then performed the cauterization experiment in *btd* and *eve* embryos.
+When the germ band is blocked in the mutants, no ectopic folds appear at the head--trunk interface ({@fig:live-experiments}c,d, {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}), and their epithelium undergoes less deformations or buckling events compared to non-cauterized mutant embryos ({@fig:live-experiments}d,g).
+While the apical expansion of mitotic domains compress the neighboring, non-dividing cells, no buckling occurs ({@fig:live-experiments}c).
+These experiments reveal that the germ band extension is necessary for the appearance of ectopic folds in cephalic furrow mutants and, conversely, that mitotic expansions alone are insufficient to cause epithelial buckling at the head--trunk interface.
 
 <!--Cephalic furrow forms normally but is shallower in cauterized wildtype-->
 
@@ -883,6 +872,8 @@ High-resolution versions of the figures are available at [https://doi.org/10.528
 ## Figure 3
 
 <!--TODO: Rearrange contents from simple to complex-->
+<!--TODO: Annotate cephalic furrow wt cauterization, improve labels-->
+<!--TODO: Swap wildtype with mutant cauterization-->
 
 ![Perturbation experiments *in vivo* using cephalic furrow mutants and wildtype embryos.
 **a**, Lateral view of *btd*--*stg* double mutants showing the absence of ectopic folds at the head--trunk boundary compared to a *btd* mutant. Scale bar = 50µm.
