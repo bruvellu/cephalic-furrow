@@ -41,7 +41,7 @@ link-citations: True
 colorlinks: True
 fignos-warning-level: 0
 fignos-cleveref: True
-fignos-plus-name: Figure
+fignos-plus-name: Fig.
 tablenos-cleveref: True
 tablenos-plus-name: Table
 
@@ -400,23 +400,23 @@ We found that null mutants for the *sloppy paired* (*slp*) transcription factors
 With this anterior shift, *slp* mutants exhibit a more prominent posterior dorsal fold and an early ectopic fold within MD6 appearing before cell divisions ({@fig:genetic-patterning}a, {@fig:vid-slp-lateral}), which are congruent with the increase in posterior mechanical instability present in our simulations where the cephalic furrow is shifted forward ({@fig:fold-model}h).
 
 Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary.
-Indeed, the expression patterns and typical overlap between the two genes remains almost unaltered, except for the small ectopic expression *btd* in the head and for the wider gap between *eve* stripe 1 and 2 ({@fig:genetic-patterning}c--d, {@fig:genetic-features}c).
+Indeed, the expression patterns and typical overlap between the two genes remains almost unaltered, except for the small ectopic expression *btd* in the head and for the wider gap between *eve* stripe 1 and 2 ({@fig:genetic-patterning}c--d, {!@fig:genetic-features}c).
 The anterior shift in cells expressing *btd* and *eve* corresponds to a few rows of blastoderm cells (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e).
-Despite the displacement, most *slp* embryos exhibit initiator cell behaviors, suggesting that the patterning is not entirely perturbed ({@fig:genetic-features}c).
-However, the symmetry of the resulting fold is altered ({@fig:genetic-features}d), indicating that *slp1* may contribute not only to the positioning but also to the patterning of individual cells that give rise to the cephalic furrow.
+Despite the displacement, most *slp* embryos exhibit initiator cell behaviors, suggesting that the patterning is not entirely perturbed ({!@fig:genetic-features}c).
+However, the symmetry of the resulting fold is altered ({!@fig:genetic-features}d), indicating that *slp1* may contribute not only to the positioning but also to the patterning of individual cells that give rise to the cephalic furrow.
 
-By analyzing the expression of *slp1* relative to *btd*, *eve*, and *prd* in wildtype *Drosophila* embryos, we find that the early *slp1* and *eve* expression domains demarcate the head--trunk boundary from the onset of zygotic activation until gastrulation ({@fig:genetic-patterning}f, {@fig:genetic-features}b).
-Early *slp1* transcripts are limited to the anterior end while *eve* transcripts, which are initially ubiquitous [@Andrioli2012-fv], begin to clear from the anterior end at cycle 11, and become limited to the posterior region of the body from cycle 12 ({@fig:genetic-features}b).
-At this stage, the two genes form broad, complementary territories that correspond to the head and trunk regions of the embryo, with the domains juxtaposed at ~70% of the embryo length ({@fig:genetic-features}b).
-We first detect *btd* and *prd* transcripts at this interface ({@fig:genetic-features}a,b).
-During subsequent stages, the *slp1*--*eve* boundary progressively resolves into narrow abutting stripes giving rise to the row of initiator cells ({@fig:genetic-patterning}f, {@fig:genetic-features}a).
+By analyzing the expression of *slp1* relative to *btd*, *eve*, and *prd* in wildtype *Drosophila* embryos, we find that the early *slp1* and *eve* expression domains demarcate the head--trunk boundary from the onset of zygotic activation until gastrulation ({@fig:genetic-patterning}f, {!@fig:genetic-features}b).
+Early *slp1* transcripts are limited to the anterior end while *eve* transcripts, which are initially ubiquitous [@Andrioli2012-fv], begin to clear from the anterior end at cycle 11, and become limited to the posterior region of the body from cycle 12 ({!@fig:genetic-features}b).
+At this stage, the two genes form broad, complementary territories that correspond to the head and trunk regions of the embryo, with the domains juxtaposed at ~70% of the embryo length ({!@fig:genetic-features}b).
+We first detect *btd* and *prd* transcripts at this interface ({!@fig:genetic-features}a,b).
+During subsequent stages, the *slp1*--*eve* boundary progressively resolves into narrow abutting stripes giving rise to the row of initiator cells ({@fig:genetic-patterning}f, {!@fig:genetic-features}a).
 Altogether, the data suggests that *slp1* activity contributes to restricting the anterior boundary of *eve* expression during early stages of zygotic activation, an interaction that determines the site of invagination of the cephalic furrow along the anteroposterior axis.
 
 At the onset of gastrulation, the expression of *btd*, *eve*, *slp*, and *prd* at the head--trunk boundary of *Drosophila*, forms a unique combinatorial code that coincides with the different portions of the cephalic furrow.
 The central row of *eve*-expressing initiator cells are surrounded by *slp1*-expressing adjacent cells, with *prd* expression offset by a single row of cells relative to the inner *slp1* stripes ({@fig:genetic-patterning}g,i).
 Moreover, *slp1*-expressing cells also demarcate the outer edges of the invagination ({@fig:genetic-patterning}i).
 This combinatorial expression suggests that each row has a unique transcriptional identity.
-This arrangement is disrupted in *btd*, *eve*, and *prd* mutants (Supplementary Note 3), embryos that exhibit cephalic furrow defects ({@fig:initiator}).
+This arrangement is disrupted in *btd*, *eve*, and *prd* mutants (Supplementary Note 3), embryos that exhibit cephalic furrow defects ({!@fig:initiator}).
 This indicating that this specific molecular profile is important
 for the patterning and morphogenesis of the invagination in *Drosophila*, and provide a template for the comparison to other species.
 
@@ -455,7 +455,7 @@ To uncover the differences in the head--trunk genetic patterning associated with
 One species, the mediterranean fruit fly *Ceratitis capitata* (Tephritidae) [@Strobl2022-og], belongs to a family known to form a cephalic furrow.
 The other two species, the malaria mosquito *Anopheles stephensi* (Culicidae) [@Cheatle-Jarvela2020-go; @Cheatle-Jarvela2023-gd] and the drain fly *Clogmia albipunctata* (Psychodidae) [@Jimenez-Guri2014-zs; @Dey2023-mo], belong to families where the cephalic furrow has not been observed [@Dey2023-mo].
 
-The three species show early, juxtaposing domains of *slp* and *eve* demarcating the head and trunk regions in a pattern highly similar to that of *Drosophila* ({@fig:genetic-patterning}f,j, {@fig:genetic-comparative}a,b,c).
+The three species show early, juxtaposing domains of *slp* and *eve* demarcating the head and trunk regions in a pattern highly similar to that of *Drosophila* ({@fig:genetic-patterning}f,j, {!@fig:genetic-comparative}a,b,c).
 Moreover, the late pattern of abutting *slp* and *eve* stripes is nearly identical between the four species ({@fig:genetic-patterning}f,j,k).
 These observations suggest that the genetic interactions that establish the head--trunk boundary position in *Drosophila*, and much of the late patterning,  might be conserved in other dipteran species.
 
