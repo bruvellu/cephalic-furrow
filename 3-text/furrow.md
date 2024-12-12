@@ -294,32 +294,32 @@ Since folding events are stochastic and can happen at a different iteration in e
 
 <!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 
-To obtain realistic values of the dimensionless bending rigidity $K_{b}^{\text{*}}$ where the model matches experimental observations, we performed a sweep across the parameter space in conditions mimicking the mutants without the cephalic furrow.
-As expected, the probability of buckling increases with the amount of germ band extension, mainly in lower bending rigidities ({@fig:fold-model}e, {@fig:model-features}c).
-At 10% germ band extension, we observe a buckling transition in the phase space of softer conditions ($K_{b}^{\text{*}} \approx 0.7 \times 10^{−4}$), but in stiffer conditions ($K_{b}^{\text{*}} \approx 1.2 \times 10^{−4}$) the germ band alone, even at its maximum extension, cannot drive the formation of ectopic folds ({@fig:fold-model}e, {@fig:model-features}c).
-Adding mitotic domains to the simulations changed the phase diagram and dynamics of ectopic folding.
-We observe that mitotic domains alone can induce ectopic folds in softer conditions ($K_{b}^{\text{*}} < 1.1 \times 10^{−4}$) and that the number of folds increased for low values of germ band extension ({@fig:fold-model}f).
-In addition, the number of iterations until a first folding event occurs is lower in conditions with mitotic domains, especially in simulations with 0--20% of germ band extension ({@fig:model-features}d).
-These simulations suggest that, depending on the bending rigidity, the germ band or mitotic domains alone can drive ectopic folding, and that their combined action may increase the mechanical instabilities in the blastoderm epithelium.
+<!--where the model matches experimental observations-->
+
+To obtain realistic values of the dimensionless bending rigidity $K_{b}^{\text{*}}$, we performed a sweep across the parameter space for the cephalic furrow mutant conditions.
+In simulations without mitotic domains, we observe no folding events without the germ band.
+With the extension of the germ band, the probability of buckling increases ({!@fig:model-features}d) and the time to folding decreases ({!@fig:model-features}e).
+Folding is more frequent in lower values of bending rigidity ({@fig:fold-model}e).
+The parameter sweep shows a clear transition in the phase space with the buckling probability reaching a plateau around $K_{b}^{\text{*}} \approx 1.2 \times 10^{−4}$ ({@fig:fold-model}e).
+In these stiffer conditions, the germ band, even at its maximum extension, cannot drive the formation of ectopic folds ({@fig:fold-model}e).
+Adding mitotic domains to the simulations changed the phase diagram, increasing the probability of folding.
+We find that, in softer conditions ($K_{b}^{\text{*}} \leq 1.0 \times 10^{−4}$), mitotic domains alone can induce ectopic folding ({@fig:fold-model}f).
+For lower values of germ band extension, the number of folds increased ({!@fig:model-features}g) and the time to folding decreased ({!@fig:model-features}h) compared to the simulations without mitotic domains.
+These simulations reveal that, depending on the bending rigidity, the germ band or mitotic domains alone can drive ectopic folding, and that their combined action increases the mechanical instability of the tissues.
 
 <!--TODO: Move definition of a fold to methods-->
 <!--TODO: Add panel with the threshold for counting folds-->
-<!--TODO:AB: Give a physics-based estimation of order of magnitude of dimensionless parameter from literature. Good sanity check to see if values are not off the charts!-->
 
-With the crucial insight from our experimental data that neither mitotic domain nor germ band can promote ectopic folding by themselves, we could then look back to our model and identify the bending rigidity value where these biological behaviors are recapitulated in the simulations.
-For that, we determined at which bending rigidity the average number of folds falls below 1 in mitotic-domains-only and germ-band-only conditions ({@fig:model-features}c,d).
+To determine where our embryo lies in this parameter space, we used the crucial insight from our experimental data that neither mitotic domain nor germ band can promote ectopic folding by themselves.
+With this information, we identified the bending rigidity value where these biological behaviors are recapitulated in the simulations.
+For that, we determined at which bending rigidity the average number of folds falls below 1 in mitotic-domains-only and germ-band-only conditions ({!@fig:model-features}c,d).
 The criteria is fulfilled when the bending rigidity is $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.
-This specific value establishes an important bridge between our *in vivo* and *in silico* data by revealing where the embryo resides within the parameter space of the model, and by providing a biologically relevant reference for subsequent simulations.
-
-To compare our reference bending rigidity with direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km] (Supplementary Note 1).
+To compare this value with existing direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in MDCK monolayers ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km] (Supplementary Note 1).
 Given that in elastic sheets the bending and stretching rigidity ratio is proportional to the square of the height ($K_{b}/K_{s} \propto h^2$) [@Efrati2009-ve], we adjusted the calculation to the estimated thickness of the MDCK monolayer (~18µm) [@Fouchard2020-km].
 The value we obtained in this way for the effective $K_{b}^{\text{*}}$ of a height-adjusted MDCK monolayer, $\approx 1.8 \times 10^{-4}$, is within a factor of 2 of our own reference bending rigidity, indicating that the relevant region of parameter space we identified in our model is consistent with existing direct measurements of bending rigidity in other tissues.
+This specific value establishes an important bridge between our *in vivo* and *in silico* data by revealing where the embryo resides within the parameter space of the model, and by providing a biologically relevant reference for subsequent simulations.
 
 <!--and is therefore likely to be physiologically relevant-->
-
-Simulations at our reference bending rigidity regime reveal a correlation between increased compressive stresses and buckling instability.
-When both mitotic domains and germ band are present *in silico*, there is an increase in tissue compression that maximizes the number and speed of ectopic fold formation ({@fig:model-features}c,d).
-Similarly, we propose the mechanical instability in cephalic furrow mutants may be due to an increase in the compressive stresses at the head–trunk boundary, generated by the combined formation of mitotic domains and germ band extension during early gastrulation.
 
 <!--The simulations show that the average depth of the cephalic furrow correlates with the percentage of germ band extension ({@fig:fold-model}i).-->
 
@@ -365,6 +365,11 @@ Taken together, our physical model provides a theoretical basis that a fold like
 <!--TODO: Timing effectiveness is not exemplified in the last panel-->
 
 <!--TODO: Add evolutionary question here or after genes?-->
+
+<!--Simulations at our reference bending rigidity regime reveal a correlation between increased compressive stresses and buckling instability.-->
+<!--When both mitotic domains and germ band are present *in silico*, there is an increase in tissue compression that maximizes the number and speed of ectopic fold formation ({@fig:model-features}c,d).-->
+<!--Similarly, we propose the mechanical instability in cephalic furrow mutants may be due to an increase in the compressive stresses at the head–trunk boundary, generated by the combined formation of mitotic domains and germ band extension during early gastrulation.-->
+
 
 # Evolution of gene expression
 
