@@ -184,7 +184,7 @@ These differences in timing of formation, morphological features, and shape dyna
 
 Moreover, we find that ectopic folding is more variable than cephalic furrow formation.
 While the latter forms at 65% egg length, the position of ectopic folds varies between individual mutant embryos, as they can form anterior to, posterior to, or at the head--trunk boundary ({@fig:ectopic-folding}f, {@fig:features}b, {!@fig:vid-dynamics-btd}, {!@fig:vid-variability-btd}, {@fig:ectopic-variability}).
-Nearly every *btd* and *eve* homozygotes (>95%) show one or more ectopic fold per embryo side (2.2±0.4 and 1.8±0.6, respectively) ({@fig:ectopic-folding}b, {!@fig:features}a), while *prd* homozygotes have a relatively lower frequency (71.4% and 1.9±0.8, respectively) ({@tbl:stats}).
+Nearly every *btd* and *eve* homozygotes (>92.3%) show one or more ectopic fold per embryo side (2.2±0.4 and 1.8±0.6, respectively) ({@fig:ectopic-folding}b, {!@fig:features}a), while *prd* homozygotes have a relatively lower frequency (71.4%) with 1.9±0.8 ectopic folds per embryo side ({@tbl:stats}).
 Ectopic folds also form in heterozygote embryos but at a lower frequency (20--25%) ({@tbl:stats}).
 While the frequency of ectopic folding in our wildtype strain is high (77.8%), the area of these folds is significantly smaller (about 4x) compared to the area of ectopic folds in *btd* and *eve* mutants ({!@fig:features}g--k, {@tbl:area}).
 This data indicates that ectopic folding is more prominent in cephalic furrow mutants, and provides evidence that the absence of the cephalic furrow is causally linked to an increase in the magnitude of ectopic folding during *Drosophila* gastrulation.
