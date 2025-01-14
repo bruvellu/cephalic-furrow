@@ -41,8 +41,7 @@ BRANCH=`git branch --show-current`
 FILEOUT=${DATE}_${BRANCH}_${FILE}
 
 # Filters for running Pandoc
-#FILTERS=--lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc
-FILTERS=--lua-filter=${RESOURCES}/pagebreak.lua --lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-citeproc --mathml
+FILTERS=--lua-filter=${RESOURCES}/pagebreak.lua --lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc --mathml
 
 # Pandoc variables for PDF
 PDFVARS=-V fontfamily:libertine -V linestretch:1 -V geometry:bindingoffset=2mm -V geometry:hmargin=25mm -V geometry:vmargin=25mm -V papersize:a4 -V fontsize:11pt -V urlcolor='[HTML]{0969da}'
@@ -128,10 +127,10 @@ vids:
 
 text:
 	# Compile documents and copy timestamped files to versions directory 
-	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.odt -o ${FILE}.odt
-	pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.docx -o ${FILE}.docx
-	pandoc ${FILE}.md ${FILTERS} ${PDFVARS} --pdf-engine=xelatex -o ${FILE}.pdf
-	pandoc ${FILE}.md ${FILTERS} ${HTMLVARS} -o ${FILE}.html
+	~/src/pandoc-2.11.4-linux-amd64/pandoc-2.11.4/bin/pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.odt -o ${FILE}.odt
+	~/src/pandoc-2.11.4-linux-amd64/pandoc-2.11.4/bin/pandoc ${FILE}.md ${FILTERS} --reference-doc=${TEMPLATE}.docx -o ${FILE}.docx
+	~/src/pandoc-2.11.4-linux-amd64/pandoc-2.11.4/bin/pandoc ${FILE}.md ${FILTERS} ${PDFVARS} --pdf-engine=xelatex -o ${FILE}.pdf
+	~/src/pandoc-2.11.4-linux-amd64/pandoc-2.11.4/bin/pandoc ${FILE}.md ${FILTERS} ${HTMLVARS} -o ${FILE}.html
 	cp ${FILE}.odt ${TXTOUT}/${FILEOUT}.odt
 	cp ${FILE}.docx ${TXTOUT}/${FILEOUT}.docx
 	cp ${FILE}.pdf ${TXTOUT}/${FILEOUT}.pdf
