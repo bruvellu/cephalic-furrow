@@ -179,8 +179,6 @@ This data provides evidence that the absence of the cephalic furrow is linked to
 
 <!--while *prd* homozygotes have a relatively lower frequency (71.4%) with 1.9±0.8 ectopic folds per embryo side-->
 
-<!--TODO: Add ectopic variability panel somewhere-->
-<!--TODO: Select panels to include about frequency of ectopic folding-->
 <!--TODO:AB: Quantify the variability of ectopic folds in some way (plot it)-->
 
 ## Evidence of tissue compression
@@ -189,29 +187,33 @@ The variability in ectopic folding suggests that, unlike the cephalic furrow, th
 Our analysis show that the formation of ectopic folds coincides spatially and temporally with two other processes of gastrulation: the expansion of mitotic domains and the extension of the germ band ({@fig:ectopic-folding}a,c,d,e).
 
 Mitotic domains are groups of blastoderm cells that divide in synchrony during nuclear cycle 14, first appearing around 20 min after gastrulation around the embryo’s head--boundary [@Foe1989-cw].
-The ectopic folds in cephalic furrow mutant form between mitotic domains or between the posterior Mitotic Domain 6 (MD6) and the extending germ band ({!@fig:mitotic-strain}a,c).
+The ectopic folds in *btd* and *eve* mutants form between mitotic domains or between the posterior Mitotic Domain 6 (MD6) and the extending germ band ({@fig:mitotic-strain}a,b).
 When mitotic cells begin to divide, they lose their basal attachment, round up at the apical side, and more than double their apical area during anaphase ({!@fig:apical-strain}a).
 This apical expansion compresses the adjacent, non-dividing cells, which are the first to fold inward ({@fig:mitotic-strain}b).
 Mitotic expansions always precede ectopic folding ({@fig:mitotic-strain}c,d, {!@fig:initiator}a, {@tbl:gbtime}).
 This suggests the formation of mitotic domains may generate buckling instability in the monolayer epithelium, contributing to the appearance of ectopic folds.
 
-<!--TODO: Add pvalues for ... somewhere.-->
+<!--TODO: Add pvalues for MD/EF timing somewhere?-->
 
 To estimate the forces acting on the buckling tissue, we measured the rate of tissue deformation (strain rate) at the head--trunk and trunk--germ boundaries using particle image velocimetry ({@fig:mitotic-strain}e).
-At the head--trunk boundary of *btd* mutants the strain rate is 1.3x higher than in sibling controls ({@fig:mitotic-strain}f, {!@fig:apical-strain}b, {!@fig:vid-strain-rate}).
-Moreover, the peak of strain rate coincides with the maximum expansion of mitotic domains and appearance of ectopic folds, suggesting that compressive stresses from mitotic expansions may contribute to ectopic folding.
+Control embryos exhibit a peak of strain rate around the head--trunk interface that correlates with late phase of the cephalic furrow invagination, when the initiator cells move into the yolk ({@fig:mitotic-strain}f, {!@fig:apical-strain}b, {!@fig:vid-strain-rate}).
+This is absent in *btd* mutants.
+Instead, the mutants show a higher peak of strain rate that coincides with the maximum expansion of the mitotic domains during telophase and ectopic folding ({@fig:mitotic-strain}f, {!@fig:apical-strain}b, {!@fig:vid-strain-rate}).
+This suggests the tissue deformation is associated with the mitotic expansions.
 
-More posteriorly, at the trunk--germ boundary, we observe a steady increase in the strain rate, which correlates with the compressed profile of cells between MD6 and germ band ({@fig:mitotic-strain}e,f).
-To evaluate if this tissue is under compression, we performed laser cuts at the trunk--germ boundary of wildtype embryos.
-We ablated the apical membrane of multiple cells (3--4) with cuts oriented orthogonal to the direction of the germ band extension, and then tracked the distance between non-ablated cells on each side of the cut.
-In control embryos, this distance remains constant, but in ablated embryos it decreases over time ({@fig:mitotic-strain}g), suggesting the tissue may be “collapsing on itself” after the ablation.
-This is congruent with the hypothesis that the trunk--germ interface is under compression from the extending germ band.
+At the trunk--germ interface, however, the strain rate values remain low and without peaks, but show a steady increase over time ({@fig:mitotic-strain}f).
+Cell shapes in this region, between MD6 and the germ band, become progressively elongated ({@fig:mitotic-strain}e), suggesting the tissue is under compression.
+To test this hypothesis, we performed laser cuts at the trunk--germ interface in wildtype embryos.
+We ablated the apical membrane of multiple cells (3--4) with cuts oriented orthogonal to the direction of the germ band extension, and then tracked the distance between non-ablated cells on each side of the cut ({@fig:mitotic-strain}g).
+This distance remains constant in control embryos, but decreases over the first five minutes after the cut ({@fig:mitotic-strain}g).
+This is evidence that the tissue may be “collapsing on itself” after the ablation, which supports the hypothesis that the trunk--germ interface is under compression from the extending germ band.
 
-Taken together, these analyses suggest the mitotic expansions and germ band extension are potential sources of compressive stress capable of inducing tissue buckling, and thus could contribute to the formation of ectopic folds on the head--trunk boundary epithelium during gastrulation.
+Taken together, these analyses suggest the mitotic expansions and germ band extension are potential sources of compressive stress capable of inducing tissue buckling, and thus could contribute to the formation of ectopic folds at the head--trunk boundary during gastrulation.
 
 <!--TODO:AB: Are there force measurements?-->
 <!--TODO: Include cell shape analyses with density et al. around here-->
 <!--TODO: Quantify compression of trunk-germ cells in btd mutants-->
+<!--TODO: Supplementary Fig or Methods about laser cuts.-->
 
 ## Contribution of mitotic domains and germ band
 
@@ -743,10 +745,10 @@ High-resolution versions of the figures are available at [https://doi.org/10.528
 ![Coincidence of mitotic domains and germ band extension with ectopic folding.
 **a**, Position of ectopic folds (black lines) in relation to the mitotic domains (colored areas) in *btd* and *eve* mutants. The ectopic folds appear between mitotic domains and between the germ band and the mitotic domain 6 (MD6). Scale bars = 50µm.
 **b**, Apical cell area between mitotic domains MD5 and MD7/6 (top). The infolded area is highlighted in the last frame (4.6 min). Detail of a cell subset in between mitotic domains (bottom) showing non-dividing cells (orange) and adjacent dividing cells (blue). Scale bars = 20µm (this is an approximate value because the pixel resolutions vary across the projection).
-**c**, Ectopic folding forming between MD6 and the germ band in a *btd* mutant. The mitotic expansion (double arrouw) precedes the ectopic folding (arrow). Scale bar = 20µm.
+**c**, Ectopic folding forming between MD6 and the germ band in a *btd* mutant. The mitotic expansion (double arrow) precedes the ectopic folding (arrow). Scale bar = 20µm.
 **d**, Comparison between the timing of cephalic furrow formation (CF), mitotic domain expansion (MD), and ectopic folding (EF) in wildtype and cephalic furrow mutants (*btd* and *eve* combined). In wildtype and heterozygote embryos, the cephalic furrow forms before mitotic domains, while in homozygote embryos, the ectopic folds form after mitotic domains.
 **e**, Compressed epithelial cells between MD6 and the tip of the germ band. Scale bars = 50µm.
-**f**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions. The formation of the cephalic furrow (CF), ectopic folds (EF), and mitotic domains (MD) are annotated. The measurements combine isotropic and anisotropic strain rate.
+**f**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions. The filled triangles indicate the beginning of the formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EF). MD~i~ shows the initial of the expansion during metaphase and MD~ii~ the moment of cell division during telophase. The empty triangles indicate the peaks of strain rate. Letters A--D show the exact frames from {!@fig:apical-strain}b. The measurements combine isotropic and anisotropic strain rate.
 **g**, Tissue dynamics at the trunk--germ boundary after laser ablations. We measured the distance between cell vertex pairs over time in control and ablated wildtype embryos. The tracks are color-coded for time. Solid white line represents the distance between vertices at one timepoint. Dashed white line shows the location of the cut. The plots show a smoothed local regression of three samples.
 ](figures/Fig2.jpg){#fig:mitotic-strain width=80%}
 
@@ -823,28 +825,28 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg:
 
 ## Table 1
 
-Table: Relative timing differences between the formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EFs) in different mutant backgrounds. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the moment of each developmental event. {#tbl:gbtime}
+Table: Relative timing differences between developmental events. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the moment of formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EFs) in different mutant backgrounds. For a more general comparison, we also aggregated the data for mutants where the cephalic furrow is absent (*btd*+*eve*). {#tbl:gbtime}
 
-|             | Zygosity | Event | TAG (min) | GBE (%)   | n  |
-| --------    | -------- | ----- | --------- | -------   | -  |
-| wildtype    | +/+      | CF    | 7.2±2.2   | 8.7±1.7   | 16 |
-|             | +/+      | MD    | 14.6±2.4  | 21.4±1.9  |    |
-| *btd*       | +/−      | CF    | 8.2±1.7   | 9.8±1.9   | 6  |
-|             | +/−      | MD    | 14.6±3.7  | 22.1±4.2  |    |
-|             | −/−      | EF    | 21.3±4.7  | 36.3±2.4  | 5  |
-|             | −/−      | MD    | 17.0±3.7  | 28.1±2.3  |    |
-| *eve*       | +/−      | CF    | 12.2±1.7  | 8.8±2.3   | 7  |
-|             | +/−      | MD    | 18.2±1.6  | 19.9±4.1  |    |
-|             | −/−      | EF    | 22.6±2.6  | 28.5±3.9  | 5  |
-|             | −/−      | MD    | 16.9±1.1  | 19.0±2.7  |    |
-| *prd*       | +/−      | CF    | 11.3±6.2  | 18.0±12.2 | 10 |
-|             | +/−      | MD    | 12.8±1.1  | 20.4±3.8  |    |
-|             | −/−      | CF    | 18.2±5.4  | 33.0±9.5  | 5  |
-|             | −/−      | MD    | 13.0±2.0  | 23.4±3.0  |    |
-| *btd*+*eve* | +/−      | CF    | 10.4±2.6  | 9.2±2.1   | 13 |
-|             | +/−      | MD    | 16.6±3.2  | 20.9±4.1  |    |
-|             | −/−      | EF    | 21.9±3.6  | 32.4±5.1  | 10 |
-|             | −/−      | MD    | 17.0±2.6  | 23.6±5.3  |    |
+| Stock       | n  | Zygosity | n  | Event | TAG (min) | GBE (%)   |
+| :----       | -: | -------- | -: | ----- | --------- | -------   |
+| wildtype    | 16 | +/+      | 16 | CF    | 7.2±2.2   | 8.7±1.7   |
+|             |    |          |    | MD    | 14.6±2.4  | 21.4±1.9  |
+| *btd*       | 11 | +/−      | 6  | CF    | 8.2±1.7   | 9.8±1.9   |
+|             |    |          |    | MD    | 14.6±3.7  | 22.1±4.2  |
+|             |    | −/−      | 5  | EF    | 21.3±4.7  | 36.3±2.4  |
+|             |    |          |    | MD    | 17.0±3.7  | 28.1±2.3  |
+| *eve*       | 12 | +/−      | 7  | CF    | 12.2±1.7  | 8.8±2.3   |
+|             |    |          |    | MD    | 18.2±1.6  | 19.9±4.1  |
+|             |    | −/−      | 5  | EF    | 22.6±2.6  | 28.5±3.9  |
+|             |    |          |    | MD    | 16.9±1.1  | 19.0±2.7  |
+| *prd*       | 15 | +/−      | 10 | CF    | 11.3±6.2  | 18.0±12.2 |
+|             |    |          |    | MD    | 12.8±1.1  | 20.4±3.8  |
+|             |    | −/−      | 5  | CF    | 18.2±5.4  | 33.0±9.5  |
+|             |    |          |    | MD    | 13.0±2.0  | 23.4±3.0  |
+| *btd*+*eve* | 23 | +/−      | 13 | CF    | 10.4±2.6  | 9.2±2.1   |
+|             |    |          |    | MD    | 16.6±3.2  | 20.9±4.1  |
+|             |    | −/−      | 10 | EF    | 21.9±3.6  | 32.4±5.1  |
+|             |    |          |    | MD    | 17.0±2.6  | 23.6±5.3  |
 
 \newpage
 
@@ -1207,7 +1209,6 @@ The strongest cephalic furrow phenotype was present in flies mutant for the *slo
 - late *slp* expression demarcates cephalic furrow edges
 - early slp activity represses eve at the anterior end
 - *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d)
-
 
 \newpage
 
