@@ -217,6 +217,8 @@ Taken together, these analyses suggest the mitotic expansions and germ band exte
 
 ## Contribution of mitotic domains and germ band
 
+<!--TODO: Continue from here.-->
+
 To test the individual role of mitotic domains and germ band to the epithelial instability, we performed a series of perturbation experiments *in vivo*.
 
 We first asked if mitotic expansions are required for the formation of ectopic folds.
@@ -245,7 +247,7 @@ Overall, we conclude that neither mitotic expansions nor the germ band extension
 
 To determine the relative contribution of mitotic domains and germ band as sources of mechanical stress on the head--trunk boundary, we created a physical model of the blastoderm and simulated the tissue mechanics of mutant and wildtype conditions *in silico*.
 
-## Model design and general properties
+## Model and simulation design
 
 Our model represents an epithelial monolayer confined inside a rigid shell.
 It embodies one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:fold-model}a, {@fig:model-features}a).
@@ -256,15 +258,21 @@ $K_s$ is the stretching rigidity and $K_b$ is the bending rigidity.
 These two parameters can be combined into a single dimensionless bending rigidity, $K_{b}^{\text{*}}$ ({@fig:fold-model}c).
 
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand (they contain more particles compared to the surrounding regions), and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:fold-model}b).
-The germ band in our model is defined by the position of the posterior end of the tissue ($g$) which is fixed at different fractions of egg length for each simulation ({@fig:fold-model}b).
+The germ band is defined by the position of the posterior end of the tissue ($g$), which is fixed at different fractions of egg length for each simulation ({@fig:fold-model}b).
 The effect of germ band extension appears as a global compression in the blastoderm.
-Finally, we ran the simulations by adding a ground level of random noise and iterating towards equilibrium of the total energy in the system (see Methods).
+To run the simulations, we defined a ground level of random noise and iterated towards equilibrium of the total energy in the system (see Methods).
+We then set several simulations with different bending rigidity values and combinations of presence/absence of mitotic domains, cephalic furrow, and percentages of germ band extension to quantify the position, frequency, and depth of ectopic folding in the epithelium.
 
-With this setup, we characterized the general properties of the model.
-When folds begin to form in the simulations, the bending energy increases releasing a larger amount of stretching energy, which, in turn, decreases the total energy of the system over each iteration ({@fig:fold-model}d).
+## General properties and energy dynamics
+
+To characterize the model properties and energy dynamics, we ran simulations using a single bending rigidity value ($K_{b}^{\text{*}} = 0.8 \times 10^{−4}$), without mitotic domains, and at different percentages of germ band extension.
+Without the germ band, the tissue is almost stress-free and no ectopic folding occurs ({@fig:fold-model}e, column i).
+We begin to observe folds in the simulations with higher percentages of germ band extension.
+Folding events are stochastic and happen at distinct iterations for each simulation.
+When a fold begins to form, the bending energy increases releasing a larger amount of stretching energy, which, in turn, decreases the total energy of the system over each iteration ({@fig:fold-model}d).
 The increase in bending energy coincides with a rapid deepening of the fold.
-Once the bending energy reaches a peak, the fold continues to deepen more gradually, but the number of folds stabilizes and rarely change ({@fig:fold-model}d, {!@fig:model-features}b).
-Since folding events are stochastic and happen at distinct iterations for each simulation, we used the peak of bending energy as the reference point to compare different simulations.
+Once the bending energy reaches a peak, we find that the fold continues to deepen more gradually but the total number of folds rarely change afterward ({@fig:fold-model}d, {!@fig:model-features}b).
+Therefore, this peak of bending energy provides an informative reference point which we used to standardize the comparison across simulations.
 
 ## Bending rigidity sweep in mutant conditions
 
