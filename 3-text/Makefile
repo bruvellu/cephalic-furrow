@@ -101,7 +101,7 @@ vids:
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.mp4 ${FIGOUT}/Vid7.mp4
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.mp4 ${FIGOUT}/Vid8.avi
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.mp4 ${FIGOUT}/Vid8.mp4
-	# Lines below need to be updated
+	# TODO: Continue updating the videos below
 	ln -sf ${ANASRC}/strain-rate/1-movies/Strain_btd_E10_E14_label_loop.avi ${FIGHIR}/Vid7.avi
 	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGHIR}/Vid7.avi
 	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGHIR}/Vid8.avi

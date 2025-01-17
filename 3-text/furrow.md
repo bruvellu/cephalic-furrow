@@ -217,16 +217,18 @@ Taken together, these analyses suggest the mitotic expansions and germ band exte
 
 ## Contribution of mitotic domains and germ band
 
-<!--TODO: Continue from here.-->
+To test the individual role of mitotic domains and germ band to the mechanical stability of the blastoderm, we performed a series of perturbation experiments *in vivo*.
 
-To test the individual role of mitotic domains and germ band to the epithelial instability, we performed a series of perturbation experiments *in vivo*.
+<!--TODO: Continue from here.-->
+<!--TODO: Fix references to new figure panels.-->
+<!--TODO: Fix references to extended data.-->
+<!--TODO: Fix references to supplementary videos.-->
 
 We first asked if mitotic expansions are required for the formation of ectopic folds.
 To that end, we generated a double-mutant line carrying the loss-of-function alleles of *btd* and *string* (*stg*)---the *cdc25* phosphatase ortholog that regulates the formation of mitotic domains in *Drosophila* [@Edgar1989-hv].
-Regular *stg* mutants lack mitotic domains, but their morphogenetic movements and cephalic furrow formation are unaffected [@Edgar1989-hv] ({!@fig:live-details}a,b, {!@fig:vid-stg-lateral}, {!@fig:vid-stg-dorsal}).
-In contrast, the *btd*--*stg* double-mutant embryos lack both the mitotic domains and the cephalic furrow ({@fig:live-experiments}a).
-These embryos show no ectopic folds at the head--trunk interface ({@fig:live-experiments}a,b, {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}), indicating that mitotic expansions are necessary for the appearance of ectopic folds in cephalic furrow mutants.
-Conversely, the experiment reveals the compression exerted by the germ band extension alone is insufficient to induce ectopic folding.
+While *stg* mutants lack mitotic domains, the *btd*--*stg* double-mutant embryos lack both mitotic domains and cephalic furrow ({@fig:live-experiments}a).
+The absence of mitotic domains does not affect cephalic furrow formation in *stg* mutants [@Edgar1989-hv] ({!@fig:live-details}a,b, {!@fig:vid-stg-lateral}, {!@fig:vid-stg-dorsal}), but it does affect the formation of ectopic folds in *btd*--*stg* embryos.
+The double-mutant embryos show no ectopic folds at the head--trunk interface ({@fig:live-experiments}a,b, {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}), indicating that mitotic expansions are necessary for the appearance of ectopic folds in cephalic furrow mutants.
 
 Next, we asked if the extension of the germ band is required for the formation of ectopic folds.
 To prevent the germ band from extending, we cauterized a patch of posterodorsal tissue at the onset of gastrulation to mechanically attach it to the vitelline envelope ({@fig:live-experiments}c).
@@ -237,9 +239,13 @@ This data corroborates the idea that the initial formation of the cephalic furro
 We then performed the cauterization experiment in *btd* and *eve* embryos.
 When the germ band is blocked in the mutants, no ectopic folds appear at the head--trunk interface ({@fig:live-experiments}c,d, {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}), and their epithelium undergoes less deformation and buckling events compared to non-cauterized mutant embryos ({@fig:live-experiments}d,g).
 The expansion of cell apices in mitotic domains still compress the neighboring, non-dividing cells, but no buckling occurs ({@fig:live-experiments}c).
-These experiments reveal that the germ band extension is necessary for the appearance of ectopic folds in cephalic furrow mutants and, conversely, that mitotic expansions alone are insufficient to cause epithelial buckling at the head--trunk interface.
+These experiments reveal that the germ band extension is necessary for the appearance of ectopic folds in cephalic furrow mutants.
 
 Overall, we conclude that neither mitotic expansions nor the germ band extension can induce ectopic folds individually, but when both events happen concomitantly, the epithelial monolayer becomes unstable and buckles.
+
+<!--Conversely, the experiment reveals the compression exerted by the germ band extension alone is insufficient to induce ectopic folding.-->
+
+<!--and, conversely, that mitotic expansions alone are insufficient to cause epithelial buckling at the head--trunk interface.-->
 
 <!--Mitotic activity and germ band elongation contributes to the depth of the cephalic furrow [@Campos-Ortega1997-rd].-->
 
