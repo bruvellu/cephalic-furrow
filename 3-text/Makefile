@@ -97,32 +97,28 @@ vids:
 	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.mp4 ${FIGOUT}/Vid5.mp4
 	ln -sf ${FIGSRC}/mitotic-strain/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGHIR}/Vid6.avi
 	ln -sf ${FIGSRC}/mitotic-strain/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.mp4 ${FIGOUT}/Vid6.mp4
-	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.mp4 ${FIGOUT}/Vid7.avi
+	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.mp4 ${FIGHIR}/Vid7.avi
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.mp4 ${FIGOUT}/Vid7.mp4
-	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.mp4 ${FIGOUT}/Vid8.avi
+	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.mp4 ${FIGHIR}/Vid8.avi
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.mp4 ${FIGOUT}/Vid8.mp4
-	# TODO: Continue updating the videos below
-	ln -sf ${ANASRC}/strain-rate/1-movies/Strain_btd_E10_E14_label_loop.avi ${FIGHIR}/Vid7.avi
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGHIR}/Vid7.avi
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGHIR}/Vid8.avi
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGHIR}/Vid9.avi
-	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.avi ${FIGHIR}/Vid10.avi
-	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.avi ${FIGHIR}/Vid11.avi
-	ln -sf ${ANASRC}/slp-mutants/3-snaps/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.avi ${FIGHIR}/Vid12.avi
-	# Supplementary AVIs
-	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.avi ${FIGHIR}/VidS4.avi
-	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.avi ${FIGHIR}/VidS5.avi
-	# Main
-	ln -sf ${FIGSRC}/strain-rate/videos/Strain_btd_E10_E14_label_loop.mp4 ${FIGOUT}/Vid7.mp4
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.mp4 ${FIGOUT}/Vid7.mp4
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.mp4 ${FIGOUT}/Vid8.mp4
-	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.mp4 ${FIGOUT}/Vid9.mp4
-	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.mp4 ${FIGOUT}/Vid10.mp4
-	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.mp4 ${FIGOUT}/Vid11.mp4
-	ln -sf ${ANASRC}/slp-mutants/3-snaps/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.mp4 ${FIGOUT}/Vid12.mp4
-	# Supplementary
-	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.mp4 ${FIGOUT}/VidS4.mp4
-	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.mp4 ${FIGOUT}/VidS5.mp4
+	ln -sf ${FIGSRC}/strain-rate/videos/Strain_btd_E10_E14_label_loop.avi ${FIGHIR}/Vid9.avi
+	ln -sf ${FIGSRC}/strain-rate/videos/Strain_btd_E10_E14_label_loop.mp4 ${FIGOUT}/Vid9.mp4
+	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.avi ${FIGHIR}/Vid10.avi
+	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_COMBINE_3D_Gap,stg[2]_2_z3_t50s_E4_E9.mp4 ${FIGOUT}/Vid10.mp4
+	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.avi ${FIGHIR}/Vid11.avi
+	ln -sf ${FIGSRC}/stg-mutants/2-movies/LABEL_CROP_COMBINE_Gap,stg[2]_dorsal_1_z3_t60_E1_s3_E17_s5.mp4 ${FIGOUT}/Vid11.mp4
+	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.avi ${FIGHIR}/Vid12.avi
+	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_3D_btd-hisgap1_E8_btd-gap-stg_7_z3_60s_E3.mp4 ${FIGOUT}/Vid12.mp4
+	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.avi ${FIGHIR}/Vid13.avi
+	ln -sf ${FIGSRC}/double-mutants/2-combine/LABEL_COMBINE_btd-gap_dorsal_1_z1.5_t51s_E2_s4_right_btd-gap-stg_dorsal_1_z3_t50s_E1_s4_right.mp4 ${FIGOUT}/Vid13.mp4
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.avi ${FIGHIR}/Vid14.avi
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_eve_E12_C5_t60s_label.mp4 ${FIGOUT}/Vid14.mp4
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.avi ${FIGHIR}/Vid15.avi
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_angle90_rotated_dorsal_label.mp4 ${FIGOUT}/Vid15.mp4
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.avi ${FIGHIR}/Vid16.avi
+	ln -sf ${FIGSRC}/mutant-cauterizations/videos/COMBINE_CROP_btd_22E2_16E2_label.mp4 ${FIGOUT}/Vid16.mp4
+	ln -sf ${FIGSRC}/slp-analyses/videos/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.avi ${FIGHIR}/Vid17.avi
+	ln -sf ${FIGSRC}/slp-analyses/videos/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.mp4 ${FIGOUT}/Vid17.mp4
 	# Create JPG snapshot for visualization
 	for i in ${FIGHIR}/*.avi; do ffmpeg -y -loglevel quiet -ss 1 -i $${i} -frames:v 1 -update 1 ${FIGHIR}/`basename $${i} .avi`.png; done
 	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/Vid*.png
