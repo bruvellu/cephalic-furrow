@@ -367,7 +367,7 @@ Altogether, the data suggests that *slp1* activity contributes to restricting th
 At the onset of gastrulation, the expression of *btd*, *eve*, *slp*, and *prd* at the head--trunk boundary of *Drosophila*, forms a unique combinatorial code that coincides with the different portions of the cephalic furrow ({@fig:genetic-patterning}g, {!@fig:genetic-features}f).
 The central row of *eve*-expressing initiator cells are surrounded by *slp1*-expressing adjacent cells, with *prd* expression offset by a single row of cells relative to the inner *slp1* stripes ({@fig:genetic-patterning}g,l, {!@fig:genetic-features}f).
 Moreover, *slp1*-expressing cells also demarcate the outer edges of the invagination ({@fig:genetic-patterning}i,l).
-This arrangement is disrupted in *btd*, *eve*, and *prd* mutants, embryos that exhibit cephalic furrow defects ({!@fig:genetic-features}g,h,i, Supplementary Note 3).
+This molecular arrangement is disrupted in mutants that exhibit cephalic furrow defects (*btd*, *eve*, and *prd*) ({!@fig:genetic-features}g,h,i).
 The combinatorial expression suggests that each row has a unique transcriptional identity and that this specific molecular profile is important for the patterning and morphogenesis of the invagination in *Drosophila*.
 
 <!--provide a template for the comparison to other species-->
@@ -1210,15 +1210,15 @@ Because the cephalic furrow is transient and leaves no trace, the live-imaging a
 From about 50 genes, we only detected three showing abnormal cephalic furrow formation to different degrees besides the previously described genes (see @tbl:screen).
 The strongest cephalic furrow phenotype was present in flies mutant for the *sloppy paired* (*slp*) genes.
 
-## Supplementary Note 3
+<!--## Supplementary Note 3-->
 
-### Genetic interactions at the head--trunk boundary
+<!--### Genetic interactions at the head--trunk boundary-->
 
-- btd also regulates slp stripe 2
-- slp positions btd/eve, then btd positions slp stripe 2
-- late *slp* expression demarcates cephalic furrow edges
-- early slp activity represses eve at the anterior end
-- *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d)
+<!--- btd also regulates slp stripe 2-->
+<!--- slp positions btd/eve, then btd positions slp stripe 2-->
+<!--- late *slp* expression demarcates cephalic furrow edges-->
+<!--- early slp activity represses eve at the anterior end-->
+<!--- *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d)-->
 
 <!--TODO: Write proper findings regarding genetic interactions.-->
 
