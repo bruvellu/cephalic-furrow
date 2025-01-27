@@ -202,18 +202,18 @@ ggsave("4-plots/total-area-per-embryo.svg", width = 12, height = 4)
 ```{r individual-area-per-ectopic-fold}
 ggplot(area[area$Type == "EF",], aes(Genotype, AreaCorr, fill = Genotype)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
+  geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
   scale_y_continuous(labels = function(x) x / 1000) +
-  labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
+  labs(x = "stocks", y = expression(paste("area ", x~10^3~(µm^2)))) +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text =  element_text(size = 35),
+  theme(text =  element_text(size = 40),
         strip.background = element_blank(),
         panel.background = element_rect(colour = "black", linewidth = 1)
         )
-ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 12, height = 6)
-ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 12, height = 6)
+ggsave("4-plots/individual-area-per-ectopic-fold.png", width = 7, height = 6)
+ggsave("4-plots/individual-area-per-ectopic-fold.svg", width = 7, height = 6)
 ```
 
 
@@ -247,17 +247,18 @@ ggplot(area, aes(Type, AreaCorr, fill = Genotype)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   scale_y_continuous(labels = function(x) x / 1000) +
-  labs(x = "stocks", y = expression(paste("area ", (µm^2)~x~10^3))) +
+  labs(x = "fold type", y = expression(paste("area ", x~10^3~(µm^2)))) +
   facet_grid(cols = vars(Stock), scales = "free_x") +
   scale_fill_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#cc79a7", "#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text =  element_text(size = 35),
         strip.background = element_blank(),
+        strip.text.x = element_text(face = "italic"),
         panel.background = element_rect(colour = "black", linewidth = 1),
         )
-ggsave("4-plots/individual-area-per-type.png", width = 12, height = 4)
-ggsave("4-plots/individual-area-per-type.svg", width = 12, height = 4)
+ggsave("4-plots/individual-area-per-type.png", width = 13, height = 4)
+ggsave("4-plots/individual-area-per-type.svg", width = 13, height = 4)
 ```
 
 # Statistics

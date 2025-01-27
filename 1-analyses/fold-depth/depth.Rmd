@@ -163,14 +163,14 @@ stats_position
 ```{r plot-mean-total-depth}
 # Plot stocks separately
 ggplot(depth_total, aes(Genotype, Length.mean, fill = Genotype, shape = Type)) +
-  geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  geom_boxplot(aes(color = Genotype), show.legend = TRUE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 5, show.legend = TRUE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
   labs(x = "mutants", y = "depth") +
   facet_wrap(~Stock, strip.position = "top") +
   scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text =  element_text(size = 30),
+  theme(text =  element_text(size = 40),
         strip.background = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
@@ -186,13 +186,13 @@ ggsave("3-plots/total_depth_facet.svg", width = 12, height = 6)
 # Plot stocks separately
 ggplot(depth, aes(Genotype, Length, fill = Genotype, shape = Type)) +
   geom_boxplot(aes(color = Genotype), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
+  geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2.5)) +
   labs(x = "mutants", y = "depth") +
   facet_wrap(~Stock, strip.position = "top") +
   scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
   scale_color_manual(values=c("#56b4e9", "#e69f03")) +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text =  element_text(size = 30),
+  theme(text =  element_text(size = 40),
         strip.background = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(face = "italic"),
