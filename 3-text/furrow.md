@@ -697,16 +697,18 @@ All the data and analyses pipelines were deposited in a Zenodo repository [@Vell
 We thank all current and former LoPaTs for the discussions and support during this project.
 Akanksha Jain and Vladimir Ulman for initial help with cartographic projections, Giulia Serafini for help with fly crosses, Anaïs Bailles for constructive feedback, and Michaela Burkon and Pavel Mejstrik for technical support.
 Jan Brugués and Keisuke Ishihara for the laser ablation setup, the MPI-CBG Light Microscopy Facility and Computer Services Facility for the ample support, and Sven Ssykor and Cornelia Maas for help with fly stocks.
-Steffen Lemke and Yu-Chiun Wang for the cephalic furrow discussions and sharing unpublished data.
+Radim Zidek for essential help in construct design.
+Steffen Lemke and Yu-Chiun Wang for cephalic furrow discussions and sharing unpublished data.
 The Lemke Lab for the generous help in setting up the *Clogmia* cultures.
+Freddy Frischknecht and Miriam Reinig for enabling and supporting the collection of *Anopheles* embryos.
+Konstantinos Bourtzis for kindly providing us with *Ceratitis* pupae.
 Carles Blanch-Mercader for feedback on simulations.
-Juliana Roscito for text revisions.
+Juliana Roscito for the text revisions.
+Michelle Marass for crucial editorial input.
 Michael Akam for drawing BCV’s attention to the cephalic furrow in the first place. 
 AS was supported by funding from the European Union's Horizon 2020 Research and Innovation Programme under grant agreement no. 829010 (PRIME).
 BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018)
 This work was supported by the MPI-CBG core funding to CDM and PT, and by an European Research Council Advanced Grant (ERC-AdG 885504 GHOSTINTHESHELL) awarded to PT.
-
-<!--TODO: Add remaining thanks for Ceratitis, Anopheles, transgenesis, etc-->
 
 # Author contributions
 
