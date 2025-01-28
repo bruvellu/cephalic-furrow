@@ -613,8 +613,8 @@ We cauterized the embryos sequentially using a near infrared 800nm laser (Chamel
 We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38min two different planes of the blastoderm, (i) the surface to monitor the germ band extension, and (ii) 40µm deep in the equatorial region to monitor the occurrence of ectopic folding.
 The stacks had 0.21µm XY-resolution and one minute time resolution.
 To obtain a quantitative measure of ectopic folding, we analyzed the degree by which the tissues deform between non-cauterized and cauterized mutants using as a proxy the tortuosity of the epithelium outline.
-For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({@fig:tortuosity}a).
-We then cropped a 200×25µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50min after gastrulation ({@fig:tortuosity}a,b).
+For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({!@fig:tortuosity}a).
+We then cropped a 200×25µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50min after gastrulation ({!@fig:tortuosity}a,b).
 We extracted measurements from the epithelium outlines using the ImageJ plugin *Analyze Skeleton* [@Arganda-Carreras2010-la] ([imagej.net/plugins/analyze-skeleton](https://imagej.net/plugins/analyze-skeleton/)), and generated the color-coded temporal projections as described above.
 
 <!--TODO: Temperature in MuVi and Zeiss?-->
@@ -627,8 +627,8 @@ The laser power measured before the microscope port was 6 mW and the pixel dwell
 To ensure the cut, we repeated the scan ten consecutive times along a single cell acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18µm XY-resolution and 200ms time-steps.
 We ablated each embryo just once.
 The temperature was maintained at 28°C.
-To analyze the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the *Multi Kymograph* Fiji plugin ({@fig:ablation}).
-We then binarized the kymographs, measured the distance between cell edges over the first 30s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({@fig:ablation}).
+To analyze the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the *Multi Kymograph* Fiji plugin ({!@fig:ablation}).
+We then binarized the kymographs, measured the distance between cell edges over the first 30s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({!@fig:ablation}).
 
 <!--TODO: What is the brand of the objective?-->
 <!--TODO: Does a higher temperature affects the quantifications?-->
@@ -638,8 +638,8 @@ We then binarized the kymographs, measured the distance between cell edges over 
 To estimate the strain rates, we first performed particle image velocimetry on cartographic projections using the ImageJ plugin *iterativePIV* [@Tseng2012-ni] ([sites.google.com/site/qingzongtseng/piv](https://sites.google.com/site/qingzongtseng/piv)).
 Then, we used the equation $$E = \left| \frac{1}{2} \left( \vec \nabla . \vec v \right) + \frac{1}{2} \left( \partial_x v_y + \partial_y v_x \right) \right|$$ to define and calculate the magnitude of the strain rate, where $v$ is the displacement obtained in the PIV divided by the time in minutes.
 The measurements combine isotropic and anisotropic strain rate.
-We used these values to create a color-coded overlay for the strain rate ({@fig:apical-strain}b).
-To generate the line plots, we averaged the strain rate along the dorsoventral axis in two pre-defined regions, the head--trunk (canonical cephalic furrow position) and the trunk--germ (posterior to the Mitotic Domain 6) ({@fig:apical-strain}b).
+We used these values to create a color-coded overlay for the strain rate ({!@fig:apical-strain}b).
+To generate the line plots, we averaged the strain rate along the dorsoventral axis in two pre-defined regions, the head--trunk (canonical cephalic furrow position) and the trunk--germ (posterior to the Mitotic Domain 6) ({!@fig:apical-strain}b).
 
 ## Model and simulations
 
@@ -1044,7 +1044,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 **a**, We acquired a single slice in profile view of the head--trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos.
 **b**, Then, we applied a gaussian blur which allows to capture the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing.
 **c**, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ.
-](figures/FigS2.jpg){#fig:tortuosity tag="Supplementary Figure 2" width=100%}
+](figures/FigS2.jpg){#fig:tortuosity tag="Supplementary Fig. 2" width=100%}
 
 \newpage
 
@@ -1053,7 +1053,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 ![Image processing pipeline for the ablation analysis.
 **a**, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increase over time.
 **b**, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time.
-](figures/FigS3.jpg){#fig:ablation tag="Supplementary Figure 3" width=100%}
+](figures/FigS3.jpg){#fig:ablation tag="Supplementary Fig. 3" width=100%}
 
 \newpage
 
@@ -1123,7 +1123,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Supplementary Video 9
 
-![Epithelial strain rate during ectopic folding in *btd* mutant. Video from @fig:vid-mitotic-fold overlayed with the estimated strain rate across the tissues (color-coded from purple to yellow). Increase in strain rates are associated with tissue infolding and mitotic expansions. The video is looped. Frame rate = 10fps.
+![Epithelial strain rate during ectopic folding in *btd* mutant. Video from !@fig:vid-mitotic-fold overlayed with the estimated strain rate across the tissues (color-coded from purple to yellow). Increase in strain rates are associated with tissue infolding and mitotic expansions. The video is looped. Frame rate = 10fps.
 ](figures/Vid9.jpg){#fig:vid-strain-rate tag="Supplementary Video 9" width=50%}
 
 \newpage
@@ -1160,7 +1160,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Supplementary Video 14
 
-![Lateral views of germ band cauterization in *eve* embryos. Non-cauterized *eve* embryo showing the formation of ectopic folds (top, same embryo from @fig:vid-lateral-eve) and a cauterized *eve* embryo where no ectopic folds appear at the head--trunk interface (bottom). The germ band extension is mechanically blocked by cauterizing the tissue to the vitelline envelope. Mitotic domains form normally but no folding of the surface occurs. Frame rate = 10fps. Scale bar = 50µm.
+![Lateral views of germ band cauterization in *eve* embryos. Non-cauterized *eve* embryo showing the formation of ectopic folds (top, same embryo from !@fig:vid-lateral-eve) and a cauterized *eve* embryo where no ectopic folds appear at the head--trunk interface (bottom). The germ band extension is mechanically blocked by cauterizing the tissue to the vitelline envelope. Mitotic domains form normally but no folding of the surface occurs. Frame rate = 10fps. Scale bar = 50µm.
 ](figures/Vid14.jpg){#fig:vid-cautlat-eve tag="Supplementary Video 14" width=50%}
 
 <!--TODO: Replace eve embryo so that it is not the same used in a previous video?-->
@@ -1169,7 +1169,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Supplementary Video 15
 
-![Profile views of germ band cauterization in *eve* mutant. Same embryo from @fig:vid-cautlat-eve, but showing a surface and a profile view. The cauterization prevents the extension of the germ band. The mitotic domains compress non-dividing cells but these do not buckle. Frame rate = 10fps. Scale bar = 50µm.
+![Profile views of germ band cauterization in *eve* mutant. Same embryo from !@fig:vid-cautlat-eve, but showing a surface and a profile view. The cauterization prevents the extension of the germ band. The mitotic domains compress non-dividing cells but these do not buckle. Frame rate = 10fps. Scale bar = 50µm.
 ](figures/Vid15.jpg){#fig:vid-cautdor-eve tag="Supplementary Video 15" width=50%}
 
 \newpage
