@@ -157,33 +157,21 @@ Therefore, to understand the mechanisms causing these epithelial folds, we chara
 
 These ectopic folds, as they will be referred to from hereon, appear around the head--trunk boundary of *btd* and *eve* embryos, about 20 min after gastrulation when the germ band is already extended 35% of the egg length ({@fig:ectopic-folding}a--e, {!@fig:vid-lateral-btd}, {!@fig:vid-lateral-eve}, {@tbl:gbtime}).
 Ectopic folds can superficially resemble a cephalic furrow, but they lack the typical symmetric morphology of the wildtype invagination [@Spencer2015-td].
-Instead, ectopic folds in *btd* and *eve* mutants have a loose, often asymmetric cleft without wedge- or arched-shaped cells ({@fig:ectopic-folding}b, {!@fig:vid-profile-btd}, {!@fig:vid-profile-eve}), and occupy $1/4$ of the area  and $1/5$ of the depth of the cephalic furrow ({@fig:ectopic-folding}g,h, {!@fig:ectopic-features}b,f, {@tbl:area}, {@tbl:depth}).
-Moreover, ectopic folds fold and unfold faster, lacking the typical kinetics of cephalic furrow formation ({@fig:ectopic-folding}a,b, {!@fig:initiator}a, {!@fig:ectopic-features}c--e, {!@fig:vid-mitotic-fold}).
-These differences in timing of formation, morphological features, and shape dynamics, suggest that ectopic folds and cephalic furrow form via distinct mechanisms.
+Instead, ectopic folds in *btd* and *eve* mutants have a loose, often asymmetric cleft without wedge- or arched-shaped cells ({@fig:ectopic-folding}b, {!@fig:vid-profile-btd}, {!@fig:vid-profile-eve}), and occupy $1/4$ of the area and $1/5$ of the depth of the cephalic furrow ({@fig:ectopic-folding}g,h, {!@fig:ectopic-features}b,f, {@tbl:area}, {@tbl:depth}).
+Ectopic folds also fold and unfold faster, lacking the typical kinetics of cephalic furrow formation ({@fig:ectopic-folding}a,b, {!@fig:initiator}a, {!@fig:ectopic-features}c--e, {!@fig:vid-mitotic-fold}).
+Finally, the formation of ectopic folds is more variable than that of the cephalic furrow, as their position along the head--trunk boundary differs between individual mutant embryos ({@fig:ectopic-folding}f, {!@fig:ectopic-features}a, {!@fig:ectopic-variability}, {!@fig:vid-dynamics-btd}, {!@fig:vid-variability-btd}).
+Altogether, these differences in morphology, kinetics, timing, position, and variability, suggest that ectopic folds and cephalic furrow form via distinct mechanisms.
 
-We also find that the formation of ectopic folding is more variable than that of the cephalic furrow.
-Ectopic folds can form at different positions along the head--trunk boundary and these positions differ between individual mutant embryos ({@fig:ectopic-folding}f, {!@fig:ectopic-features}a, {!@fig:ectopic-variability}, {!@fig:vid-dynamics-btd}, {!@fig:vid-variability-btd}).
-Nearly every *btd* and *eve* homozygote embryos (>92%) show one or more ectopic fold per side (2.2±0.4 and 1.8±0.6, respectively) ({!@fig:ectopic-features}h, {!@fig:vid-variability-btd}).
+<!--TODO: Revise this paragraph-->
 
-<!--TODO: join wildtype with het sentence-->
-<!--TODO: when applying the method to wildtype and hete we found buckling-->
-<!--TODO: However, they are a lot smaller than mutant buckles-->
-
-, while the frequency and fold number in heterozygote embryos is lower (18--27% and 1.0±0.0) and more frequent at the posterior region ({!@fig:ectopic-features}i,j, {@tbl:freq}).
-
-When applying our ectopic folding scoring to wildtype embryos, we 
-
-Surprisingly, the frequency of ectopic folding in wildtype embryos (78%) is higher than in mutant heterozygotes, which could be due to differences in their genetic backgrounds ({!@fig:ectopic-features}i, {@tbl:freq}).
-
-Nevertheless, the area of ectopic folds in wildtype and heterozygotes is significantly smaller (about 4x) compared to the area of ectopic folds in *btd* and *eve* embryos ({!@fig:ectopic-features}g,k--n, {@tbl:area}), indicating that ectopic folding is more prominent in cephalic furrow mutants.
-
-<!--TODO: Conclude that head-trunk is prone to buckling-->
-<!--TODO: but magnitude is greater in mutants-->
-
-This data provides evidence that the absence of the cephalic furrow is linked to an increase in the magnitude of ectopic folding during *Drosophila* gastrulation.
+When applying our ectopic folding scoring pipeline, we noted that heterozygote and wildtype embryos can also form ectopic folds located anterior or posterior to the cephalic furrow.
+The frequency of ectopic folding in these embryos is lower than in homozygotes, but not negligible.
+While nearly every *btd* and *eve* homozygote embryos (>92%) show one or more ectopic fold per side (2.2±0.4 and 1.8±0.6, respectively) ({!@fig:ectopic-features}h, {!@fig:vid-variability-btd}), between 18--27% of heterozygotes and about 78% of wildtype embryos have one ectopic fold in addition to the cephalic furrow ({!@fig:ectopic-features}i,j, {@tbl:freq}).
+However, we find a fundamental difference.
+The area of the ectopic folds in heterozygote and wildtype embryos is significantly smaller (about 4x) compared to the area of ectopic folds in *btd* and *eve* embryos ({!@fig:ectopic-features}g,k--n, {@tbl:area}).
+This data shows the head--trunk interface of *Drosophila* during gastrulation is a region prone for the formation of ectopic folds and provides evidence that the absence of the cephalic furrow leads to an increase in the magnitude of these folding events.
 
 <!--while *prd* homozygotes have a relatively lower frequency (71.4%) with 1.9±0.8 ectopic folds per embryo side-->
-
 
 <!--TODO:AB: Quantify the variability of ectopic folds in some way (plot it)-->
 
@@ -945,11 +933,11 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 |          |    |          |    | EF   | 28 | 77.8%     | 42.9% | 0%   | 71.4% | 1.1±0.3 |
 | *btd*    | 46 | +/−      | 33 | CF   | 33 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
 |          |    |          |    | EF   | 6  | 18.2%     | 0%    | 0%   | 100%  | 1.0±0.0 |
-|          |    | −/−      | 13 | CF   | 0  | 0%        | 0%    | 0%   | 0%    | 0       |
+|          |    | −/−      | 13 | CF   | 0  | 0%        | 0%    | 0%   | 0%    | -       |
 |          |    |          |    | EF   | 12 | 92.3%     | 50%   | 100% | 75%   | 2.2±0.4 |
 | *eve*    | 36 | +/−      | 26 | CF   | 26 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
 |          |    |          |    | EF   | 7  | 26.9%     | 14.3% | 0%   | 85.7% | 1.0±0.0 |
-|          |    | −/−      | 10 | CF   | 0  | 0%        | 0%    | 0%   | 0%    | 0       |
+|          |    | −/−      | 10 | CF   | 0  | 0%        | 0%    | 0%   | 0%    | -       |
 |          |    |          |    | EF   | 10 | 100%      | 40%   | 70%  | 90%   | 1.8±0.6 |
 | *prd*    | 40 | +/−      | 26 | CF   | 26 | 100%      | 0%    | 100% | 0%    | 1.0±0.0 |
 |          |    |          |    | EF   | 7  | 26.9%     | 71.4% | 0%   | 57.1% | 1.3±0.5 |
