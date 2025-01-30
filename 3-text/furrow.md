@@ -368,9 +368,7 @@ Moreover, *slp1*-expressing cells also demarcate the outer edges of the invagina
 This molecular arrangement is disrupted in mutants that exhibit cephalic furrow defects (*btd*, *eve*, and *prd*) ({!@fig:genetic-features}g,h,i).
 The combinatorial expression suggests that each row has a unique transcriptional identity and that this specific molecular profile is important for the patterning and morphogenesis of the invagination in *Drosophila*.
 
-<!--provide a template for the comparison to other species-->
 <!--Since *slp* is crucial to maintain parasegment polarity by activating *wingless* and repressing *engrailed* [@Cadigan1994-hz], the expression of *slp* may also be important for establishing the individual cell identities around the cephalic furrow.-->
-<!--TODO: Describe narrowing of btd--eve overlap to a single row-->
 
 ## Association of *buttonhead* with cephalic furrow evolution
 
@@ -516,35 +514,42 @@ To guarantee the embryos are at a similar developmental stage, we exchanged the 
 After filling the plate with water, we used a brush to release the eggs from the agar and transferred them to a cell strainer with 100µm nylon mesh (VWR).
 To remove the chorion, we immersed the embryos in 20% bleach (sodium hypochlorite solution, Merck 1.05614.2500) for 90s, washed abundantly with water, and proceeded to mounting for live imaging.
 
-We maintained *Clogmia* flies in plastic petri dishes with a layer of wet cotton at 25°C and fed weekly with powder parsley.
+We maintained *Clogmia* flies in 9cm-wide plastic petri dishes with a layer of wet cotton at room temperature and fed weekly with powder parsley.
 To obtain embryos for fixation, we collected the adult flies in a 200mL hard plastic vial with wet cotton, and let them mate for 2--3 days.
 Then, we anesthetized the flies with CO~2~, dissected the ovaries from ripe females, and released the eggs using tweezers in deionized water, which activates embryonic development [@Sander1985-sg; @Garcia-Solache2010-lz].
 We let embryos develop in deionized water at room temperature until the desired stage.
 To remove the chorion, we transferred the embryos to a glass vial with 0.5x PBS using a fine brush, exchanged the medium for 5% bleach in 0.5x PBS for 2min, and washed abundantly with 0.5x PBS.
 Using the diluted PBS solution instead of water prevents the embryos from bursting after dechorionation.
 
-<!--TODO: Add width of petri dish-->
-<!--TODO: Add Ceratitis culture and collection-->
-<!--TODO: Add Anopheles collection-->
+We obtained pupae of the EgyptII wild type strain of *Ceratitis* from the Insect Pest Control Laboratory of the International Atomic Energy Agency (IAEA).
+Adult flies were kept at 25°C, 65% humidity, and 12:12h light cycle, inside 49x30x30cm plexiglass cages with the front and back ends covered by a nylon mesh.
+We provided water through a soaked towel and food as a 3:1 sugar:yeast mixture.
+As ripe females lay the eggs through the nylon mesh, we placed a plastic container with water at the back end of the cage for several hours to collect eggs.
+We dechorionated *Ceratitis* embryos using the *Drosophila* protocol.
+
+We performed the collection of *Anopheles* embryos at the Center for Integrative Infectious Diseases Research (CIID) at Heidelberg University.
+To collect embryos, we placed a glass container with water and filter paper inside a cage with 300 mated females, which were fed a blood meal 72h before, and put the cage in the dark for 2h at 29°C.
+We then removed the container from the cage and let the embryos develop until the desired stage.
+To dechorionate, we collected the embryos on a cell strainer, incubated in 5% bleach for 75s, and washed them thoroughly with deionized water.
 
 ## Embryo fixation and *in situ* hybridization
 
-For *Drosophila*, we transferred dechorionated embryos to a glass vial containing equal volumes of 4% paraformaldehyde in PBS and n-Heptane, and let the vial shaking at 215rpm for 45min.
+For *Drosophila* and *Ceratitis*, we transferred dechorionated embryos to a glass vial containing equal volumes of 4% paraformaldehyde in PBS and n-Heptane, and let the vial shaking at 215rpm for 45min.
+For *Clogmia*, we diluted the fixative in 0.5x PBS.
 After removing the fixative (lower phase) using a glass pipet, we added an equal volume of 100% methanol, and shook the vial vigorously by hand for 1min.
 We then removed the n-Heptane (upper phase) and collected the embryos on the bottom to an eppendorf tube and washed several times with 100% methanol.
-Samples were stored at -20°C.
-For Clogmia, we used the same protocol, but diluted the fixative in 0.5x PBS.
+For *Anopheles*, we followed a similar protocol that includes a longer 30min wash in water after fixation, a 30s boiling water step followed by 15min in ice-cold water, until the final methanol washes [@Cheatle-Jarvela2020-go].
+All the samples were stored in 100% methanol at -20°C.
 
-We performed the *in situ* hybridization of *btd*, *eve*, *prd*, and *slp* genes in *Drosophila* and *Clogmia* using the Hybridization Chain Reaction v3.0 (HCR^TM^) [@Choi2018-fg] reagents, except for the probe sets, which we designed using a custom script.
+We performed the *in situ* hybridization of *btd*, *eve*, *prd*, and *slp* genes using the Hybridization Chain Reaction v3.0 (HCR^TM^) [@Choi2018-fg] reagents, except for the probe sets, which we designed using a custom script.
 The oligos were obtained from Sigma-Aldrich.
 We selected the HCR^TM^ amplifiers to allow for triple (multiplexed) *in situ* combinations of *btd*+*eve*+*slp* or *prd*+*eve*+*slp*.
-Before starting, we rehydrated the embryos in 100% methanol with a series of washes to 100% PBT.
-We permeabilized *Clogmia* embryos with 1:5000 dilution of ProteinaseK (20 mg/mL) for 5min, but not *Drosophila* embryos.
+Before starting, we manually devitenillized *Anopheles* embryos using fine tweezers.
+Then, we rehydrated the embryos in 100% methanol with a series of washes to 100% PBT.
+We permeabilized the embryos with 1:5000 dilution of ProteinaseK (20 mg/mL) for 5min, except for *Drosophila*.
 All samples were re-fixed in 4% paraformaldehyde for 40min and washed thoroughly with PBT.
 We then followed the *In situ HCR v3.0 protocol for whole-mount fruit fly embryos Revision 4 (2019-02-21)* from Molecular Instruments [molecularinstruments.com/hcr-rnafish-protocols](https://www.molecularinstruments.com/hcr-rnafish-protocols).
 After the protocol, we stained the embryos with 1:1000 DAPI in 5x SSCT solution for 2h and mounted the embryos in 80% glycerol in 5x SSCT for imaging.
-
-<!--TODO: Add Ceratitis and Anopheles-->
 
 ## Sample mounting for microscopy
 
