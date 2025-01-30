@@ -383,19 +383,11 @@ Moreover, the late pattern of abutting *slp* and *eve* stripes is nearly identic
 Only the expression of *prd* in *Clogmia* differs from *Drosophila*, since the prd-expressing cells are not offset from *slp* and *eve* ({!@fig:genetic-comparative}d,e)
 These observations suggest that the genetic interactions that establish the head--trunk boundary position in *Drosophila*, and much of the late patterning, might be conserved in other dipteran species.
 
-However, we identified a key difference between species with and without the cephalic furrow in the expression of *btd*.
-In *Drosophila* and *Ceratitis*, the head--trunk domain of *btd* overlaps with *eve* stripe 1 ({@fig:genetic-patterning}k,l).
-*Anopheles* and *Clogmia* do not exhibit this pattern.
-Their head--trunk domain of *btd* either does not overlap with *eve* or is entirely absent ({@fig:genetic-patterning}k).
-In species without a cephalic furrow, *eve* stripe 1 cells do not express *btd* ({@fig:genetic-patterning}m).
-The absence of a *btd*--*eve* overlap in species without cephalic furrow has also been corroborated in other dipteran species [@Dey2023-mo], suggesting the positioning of *btd* expression at the head--trunk boundary may have been associated with the evolution of the cephalic furrow.
-
-<!--TODO: Connect patterning with mechanics findings-->
-<!--TODO: Changes in genetic patterning and establishment of the CF lead to the absorbtion of compressive stresses at the head--trunk boundary-->
-<!--The establishment of such genetic signaling lead to the -->
-
-
-
+However, we identified a key difference in the expression of *btd* between species with and without the cephalic furrow.
+While the head--trunk domain of *btd* overlaps with *eve* stripe 1 in *Drosophila* and *Ceratitis*, it does not overlap with *eve* in *Anopheles* and is entirely absent in *Clogmia* ({@fig:genetic-patterning}k,l,m).
+Moreover, the *btd*--*eve* overlap is absent in *Chironomus*, another dipteran that lacks a cephalic furrow [@Dey2023-mo].
+This comparative expression data suggests the evolution of the cephalic furrow may have been associated with changes in the localization of *btd* along the head--trunk boundary and emergence of a *btd*--*eve* overlap in this region.
+The establishment of this regulatory framework may have been essential to stabilize the cephalic furrow as a patterned morphogenetic process, and thus enable its mechanical role in absorbing compressive stresses and preventing epithelial instabilities during dipteran gastrulation.
 
 
 <!--from early stages and a more anterior domain localized in the acron is activated at the onset of gastrulation ({@fig:genetic-patterning}f).-->
