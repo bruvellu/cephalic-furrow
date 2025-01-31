@@ -781,6 +781,8 @@ Staging based on a standard developmental table [@Ashburner2005-ym].
 **k**, Tortuosity of the epithelial traces in non-cauterized (*btd*=2, *eve*=3) and cauterized (*btd*=3, *eve*=4) embryos from **h**. We measured left and right sides of each embryo.
 ](figures/Fig3.jpg){#fig:live-experiments width=100%}
 
+<!--TODO: Update values of t-test-->
+
 \newpage
 
 ## Figure 4
@@ -833,7 +835,7 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg:
 
 ## Table 1
 
-Table: Relative timing differences between developmental events. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the moment of formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EFs) in different mutant backgrounds. For a more general comparison, we also aggregated the data for mutants where the cephalic furrow is absent (*btd*+*eve*). {#tbl:gbtime}
+Table: Relative timing differences between developmental events in cephalic furrow mutants. We measured the time after gastrulation (TAG) and the percentage of germ band extension (GBE) at the moment of formation of the cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EFs). For a more general comparison, we also pooled the data for mutants where the cephalic furrow is absent (*btd*+*eve*). {#tbl:gbtime}
 
 | Stock       | n  | Zygosity | n  | Event | TAG (min) | GBE (%)   |
 | :----       | -: | -------- | -: | ----- | --------- | -------   |
@@ -894,7 +896,7 @@ Table: Maximum depth of ectopic folds in cephalic furrow mutants. Values in µm.
 
 ## Table 4
 
-Table: Folding statistics in cephalic furrow mutants. We calculated the percentage of embryos exhibiting a cephalic furrow (CF) or ectopic folds (EF) for each stock and genotype (Frequency), and for each position relative to the head--trunk boundary (Ant=anterior, Mid=middle, Post=posterior). In addition, we calculated the average number of folds per embryo side. For example, 28 out of 36 wildtype embryos show ectopic folds (77.8%); 42.9% of these embryos form ectopic folds anterior to the head--trunk boundary, while 71.4% form them at the posterior position; and each embryo forms 1.1±0.3 ectopic fold on each of its side, on average. The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:freq}
+Table: Folding statistics in cephalic furrow mutants. We calculated the percentage of embryos having a cephalic furrow (CF) or ectopic folds (EF) for each stock and genotype (Frequency), including the position of folding along the head--trunk boundary (Ant=anterior, Mid=middle, Post=posterior). In addition, we calculated the average number of folds per embryo side (Folds). For example, 28 out of 36 wildtype embryos show ectopic folds (77.8%); 42.9% of these embryos have folds at the anterior region and 71.4% form them at posterior to the head--trunk boundary; each embryo forms 1.1±0.3 folds on each side. The *n* includes datasets imaged from the lateral and dorsal sides. {#tbl:freq}
 
 | Stock    | n  | Zygosity | n  | Type | n  | Frequency | Ant   | Mid  | Post  | Folds   |
 | :----    | -: | :------: | -: | :--: | -: | --------: | --:   | --:  | ---:  | ----:   |
@@ -921,10 +923,6 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 # Extended data
 
-<!--TODO: Limit to 10 extended data (only figures and tables)-->
-<!--TODO: Add on PDF for supplementary methods, tables, discussion, equations, and notes-->
-<!--TODO: Convert videos to supplementary standalone files-->
-
 \newpage
 
 ## Extended Data Fig. 1
@@ -934,31 +932,33 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 **b**, Surface view view of cartographic projections showing the head--trunk interface. In wildtype, the anisotropic apical constriction is localized to a narrow stripe adjacent to the initiator row. In *prd* embryos, the apical constriction occurs but it does not form a clear line of infolding cells preceding the invagination as in wildtype embryos. In *btd* embryos, there is a similar degree of anisotropic apical constriction occurring but not all embryos form ectopic folds at this region. In *eve* embryos, the mitotic domain 2 (MD) begins expanding and there is no apical constriction behavior. Time betwee frames is about 4min. Scale bars = 20µm (approximate value).
 ](figures/FigED1.jpg){#fig:initiator tag="Extended Data Fig. 1" width=100%}
 
-<!--TODO: Annotate ectopic folds on btd and eve panel a-->
-
 \newpage
 
 ## Extended Data Fig. 2
 
 ![Differences between ectopic folding and cephalic furrow formation.
-**a**, Profile view of a *btd* mutant embryo showing the presence of two ectopic folds (arrows) forming next to dividing cells (asterisks). Scale bar = 20µm.
-**b**, Distribution of ectopic folds in *eve* homozygotes (right) and sibling controls (left). Scale bar = 50µm.
-**c**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in *eve* embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control *eve* heterozygote (left) and of a *eve* homozygote (right). The numbers indicate the average folded area for the sample type in µm^2^×10^3^.
-**d**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.
-**e**, Dynamics, angle directionality, and tortuosity measurements comparing the cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, the invagination begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no obvious trend in angular direction tortuosity values over time. For both angle and tortuosity analysis, n=6.
-**f**, Maximum folding depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. Ectopic folds are shallower than the cephalic furrow in both genetic backgrounds (*btd* p=1.278e-09 and *eve* p=9.728e-05 in a Welch Two Sample t-test). Each dot corresponds to a single fold; each embryo can have multiple folds. The number of embryos analyzed for *btd* is 22 heterozygotes and 6 homozygotes, and for *eve* is 14 heterozygotes and 4 homozygotes.
-**g**, Folded area of ectopic folds in wildtype and mutant embryos (*btd*, *eve*, and *prd*). Ectopic folds in wildtype occupy a smaller area than ectopic folds in cephalic furrow mutants (p=9.107e-06 in a Wilcoxon rank sum exact test).
-**h**, Lateral views of a wildtype (top) and a *prd* mutant (bottom) exhibiting ectopic folds. Scale bar = 50µm.
-**i**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in the wildtype (top) and *prd* mutant (bottom) shown in **h**. The folded region is outlined in yellow on a cartographic projection. The numbers indicate the average folded area in µm^2^×10^3^ for the CFs and EFs separately.
-**j**, Comparison of the folded area between the cephalic furrow and the ectopic folds in different genetic backgrounds.
-**k**, Developmental sequence of the wildtype embryo ectopic fold annotated in **i**. Four cells are temporarily infolded during the mitotic expansion of adjacent cells. Scale bar = 10µm.
+
+**a**, Distribution of ectopic folds in *eve* homozygotes (right) and sibling controls (left). Scale bar = 50µm.
+**b**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in *eve* embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control *eve* heterozygote (left) and of a *eve* homozygote (right). The numbers indicate the average folded area for the sample type in µm^2^×10^3^.
+**c**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.
+**d**, Dynamics of cephalic furrow and ectopic fold formation in *btd* mutants.
+**e**, Angle directionality, and tortuosity measurements comparing the cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, the invagination begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no obvious trend in angular direction tortuosity values over time. For both angle and tortuosity analysis, n=6.
+**f**, Maximum depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. Ectopic folds are shallower than the cephalic furrow in both genetic backgrounds (*btd* p=6.0e-09 and *eve* p=1.1×10-4 in a Mann-Whitney test). Each point corresponds to a single fold; each embryo can have multiple folds. The number of embryos analyzed for *btd* is 22 heterozygotes and 6 homozygotes, and for *eve* is 14 heterozygotes and 4 homozygotes.
+**g**, Folded area of ectopic folds in wildtype and mutant embryos (*btd*, *eve*, and *prd*). Ectopic folds in wildtype occupy a smaller area than ectopic folds in cephalic furrow mutants (p=1.6×10e-4 in a Mann-Whitney test).
+**h**, Profile view of a *btd* mutant embryo showing the presence of two ectopic folds (arrows) forming next to dividing cells (asterisks). Scale bar = 20µm.
+**i**, Proportion of folding types in different genetic backgrounds.
+**j**, Proportion of folding positions in different genetic backgrounds.
+**k**, Lateral views of a wildtype (left) and a *prd* mutant (right) exhibiting ectopic folds. Scale bar = 50µm.
+**l**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in the wildtype (left) and *prd* mutant (right) shown in **k**. The folded region is outlined in yellow on a cartographic projection. The numbers indicate the average folded area in µm^2^×10^3^ for the CFs and EFs separately.
+**m**, Developmental sequence of the wildtype embryo ectopic fold annotated in **l**. Four cells are temporarily infolded during the mitotic expansion of adjacent cells. Scale bar = 10µm.
+**n**, Comparison of the folded area between the cephalic furrow and the ectopic folds in different genetic backgrounds.
 ](figures/FigED2.jpg){#fig:ectopic-features tag="Extended Data Fig. 2" width=100%}
 
 \newpage
 
 ## Extended Data Fig. 3
 
-![Complementary analyses of mitotic expansions, strain rate, and tissue compression.
+![Complementary analyses of mitotic expansions and strain rate.
 **a**, Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell.
 **b**, Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {@fig:mitotic-strain}f.
 ](figures/FigED3.jpg){#fig:apical-strain tag="Extended Data Fig. 3" width=100%}
@@ -974,9 +974,9 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 <!--TODO: Add more contents to this figure-->
 
-![Additional *in vivo* experiments in cephalic furrow mutants.
-**a**, Lateral 3D renderings of *stg* mutant embryos. *stg* homozygotes show no cell divisions after gastrulation but the early morphogenetic movements of gastrulation occur normally. Asterisks indicate mitotic domains. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. Scale bar = 50µm.
-**b**, Optical slice of profile views. The initiator cell behaviors are not perturbed in *stg* mutants and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos. Scale bar = 20µm.
+![Developmental sequence of *stg* mutants.
+**a**, Lateral 3D renderings of *stg* homozygotes. They show no cell divisions after gastrulation, but the early morphogenetic movements of gastrulation occur normally. Asterisks indicate mitotic domains in controls. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. Scale bar = 50µm.
+**b**, Optical slice of profile views in *stg* homozygotes. The initiator cell behaviors are not perturbed and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos. Scale bar = 20µm.
 ](figures/FigED4.jpg){#fig:live-details tag="Extended Data Fig. 4" width=100%}
 
 \newpage
