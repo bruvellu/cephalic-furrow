@@ -983,14 +983,15 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Extended Data Fig. 5
 
-![Characterization of the model features.
+![Model general properties and parameter sweeps.
 **a**, Embryonic proportions in wildtype and cephalic furrow mutants. Approximate relative sizes and positions between embryonic features such as mitotic domains, folds, and the germ band. All values are relative to the embryo length. We used these dimensions as a reference for creating the model.
 **b**, Representative simulation using $K_{b}^{\text{*}}=7 \times 10^{-5}$ and $g=0.3$ showing the shape of the tissue at $t=19$ (blue) and $t=1000$ (pink). The respective timepoints are marked in dashed lines in the descriptive plots below. They show the variation in total energy, bending energy, number of folds, and fold depth over the iterations. $t=1$ corresponds to $10^{5}$ computational steps and the X axis is in $log_{10}$ scale to improve the visualization.
 **c--e**, Parameter sweep without mitotic domains. Plots show (**c**) the number of folds by bending rigidity $K_{b}^{\text{*}}$ using $g=0.3$, (**d**) the number of folds by germ band extension ($g$) using $K_{b}^{\text{*}}=1.0 \times 10^{-4}$, and (**e**) the timing of folding by germ band extension ($g$) using $K_{b}^{\text{*}}=1.0 \times 10^{-4}$ (right).
 **f--h**, Parameter sweep with mitotic domains and same plots as above.
 **i**, Parameter sweep for cephalic furrow simulations. Bending rigidity and cephalic furrow depth at different values of $\kappa_o^{CF}$ and germ band extension. Values above 0.2 exhibit a clear peak in bending energy for most conditions and the depth reaches a plateau across iterations. The cephalic furrow depth at the peak of bending energy (max bend) and at the final iteration is similar for simulations with 0% of germ band extension. At higher percentages of germ band extension the folds (both cephalic furrow and ectopic folds) exhibit a greater depth at the last iteration.
-**j**, Finer-grained parameter sweep of ectopic folding without ($t_{MD}=0$) and with ($t_{MD}=5$) a delay in cephalic furrow formation. With simultaneous formation, only higher values of $\kappa_o^{CF}$ are effective in buffering the formation of ectopic folds around the cephalic furrow region. This is also limited to low percentages of germ band extension since at higher percentages there is an increase in the frequency of ectopic folding. When a delay in mitotic formation is present, even low values of $\kappa_o^{CF}$ are effective in preventing the formation of ectopic folds. In this condition, the extension of the germ band increases the formation of ectopic folds, but only at the posterior regions close to the germ band tip. This suggests that the initiation of the cephalic furrow is crucial to its ability to buffer the ectopic folding. Values of $\kappa_o^{CF}$ are shown in units of $1/L$. $t_{MD}=1$ corresponds to 10^5^ computational timesteps.
-**k**, Representative simulations in **g** at 0 and 20% germ band extension.
+**j**, Fine-grained parameter sweep of ectopic folding without a delay in the formation of mitotic domains ($t_{MD}=0$). With simultaneous formation, only higher values of $\kappa_o^{CF}$ are effective in buffering the formation of ectopic folds around the cephalic furrow region. This is also limited to low percentages of germ band extension since at higher percentages there is an increase in the frequency of ectopic folding.
+**k**, Fine-grained parameter sweep of ectopic folding with a delay in the formation of mitotic domains ($t_{MD}=5$). When a delay in mitotic formation is present, even low values of $\kappa_o^{CF}$ are effective in preventing the formation of ectopic folds. In this condition, the extension of the germ band increases the formation of ectopic folds, but only at the posterior regions close to the germ band tip. This suggests that the initiation of the cephalic furrow is crucial to its ability to buffer the ectopic folding. Values of $\kappa_o^{CF}$ are shown in units of $1/L$. $t_{MD}=1$ corresponds to 10^5^ computational timesteps.
+**l**, Representative simulations from {@fig:fold-model}g at 0 and 20% of germ band extension.
 ](figures/FigED5.jpg){#fig:model-features tag="Extended Data Fig. 5" width=100%}
 
 \newpage
@@ -998,32 +999,32 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 ## Extended Data Fig. 6
 
 ![Genetic patterning of the head--trunk boundary in *Drosophila*.
-**a**, Expression of *slp1*, *eve*, and *btd* in wildtype from nuclear cycle (NC) 11 to gastrulation.
+**a**, Expression of *slp1*, *eve*, and *btd* in wildtype from nuclear cycle (nc) 11 to gastrulation.
 **b**, Expression of *btd* and *eve* in *slp* mutants.
 **c**, Initiator cell behavior in *slp* mutants.
 **d**, Asymmetric cephalic furrow in *slp* mutants.
 **e**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos in lateral view.
 **f**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos with head and profile views.
 **g**, Disruption of *btd*, *eve*, and *slp1* expression patterns in the head of *btd*, *eve*, and *prd* mutant embryos.
-**h**, Profile view of **g** showing the expression in the cells around the head--trunk boundary.
-**i**, Lateral view of *btd*, *eve*, and *slp1* expression patterns in *btd*, *eve*, and *prd* mutants after gastrulation.
+**h**, Profile views of **g** showing the gene expression at the head--trunk boundary cells.
+**i**, Lateral views of *btd*, *eve*, and *slp1* expression patterns in *btd*, *eve*, and *prd* mutants after gastrulation.
 ](figures/FigED6.jpg){#fig:genetic-features tag="Extended Data Fig. 6" width=100%}
 
-<!--TODO: Finish figure panels and add proper figure legends.-->
+<!--TODO: Finish proper figure legends.-->
 
 \newpage
 
 ## Extended Data Fig. 7
 
 ![Genetic patterning of the head--trunk boundary in other dipteran species.
-**a**, Expression of *slp1*, *eve*, and *btd* in *Ceratitis capitata* developmental stages.
-**b**, Expression of *slp1*, *eve*, and *btd* in *Anopheles stephensi* developmental stages.
-**c**, Expression of *slp1*, *eve*, and *btd* in *Clogmia albipunctata* developmental stages.
-**d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia albipunctata*, lateral view.
-**e**, Expression of *slp1*, *eve*, and *prd* in *Clogmia albipunctata*, profile view at the head--trunk boundary.
+**a**, Expression of *slp1*, *eve*, and *btd* in *Ceratitis* developmental stages.
+**b**, Expression of *slp2*, *eve*, and *btd* in *Anopheles* developmental stages.
+**c**, Expression of *slp1*, *eve*, and *btd* in *Clogmia* developmental stages.
+**d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* lateral views.
+**e**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* at the head--trunk boundary in profile views.
 ](figures/FigED7.jpg){#fig:genetic-comparative tag="Extended Data Fig. 7" width=100%}
 
-<!--TODO: Finish figure panels and add proper figure legends.-->
+<!--TODO: Finish proper figure legends.-->
 
 \newpage
 
@@ -1033,7 +1034,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Supplementary Figure 1
 
-![Variability of ectopic folding in *btd* and *eve* mutants.
+![Individual variability of ectopic folding in *btd* and *eve* mutants. Cephalic furrow and ectopic folds are traced in white lines. The combined views illustrate the position of folding overlaid over a single embryo after embryo registration.
 ](figures/FigS1.jpg){#fig:ectopic-variability tag="Supplementary Fig. 1" width=100%}
 
 \newpage
@@ -1074,14 +1075,14 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Supplementary Video 2
 
-![Lateral view of ectopic fold formation in *btd* mutant. The cephalic furrow forms normally in sibling controls (top) but it is absent in *btd* mutants (bottom). In the mutant, no fold is present at the head--trunk interface until about 20min, when a large ectopic fold appears and quickly unfolds at about 45min. In the sibling control, the cephalic furrow remains partially invaginated  for the period shown in the recording (about 110min). Frame rate = 15fps. Scale bars = 50µm.
+![Lateral view of ectopic fold formation in *btd* mutant. The cephalic furrow forms normally in sibling controls (top) but is absent in *btd* mutants (bottom). In the mutant, no fold is present at the head--trunk interface until about 20min, when a large ectopic fold appears and quickly unfolds at about 45min. In the sibling control, the cephalic furrow remains partially invaginated  for the period shown in the recording (about 110min). Frame rate = 15fps. Scale bars = 50µm.
 ](figures/Vid2.jpg){#fig:vid-lateral-btd tag="Supplementary Video 2" width=50%}
 
 \newpage
 
 ## Supplementary Video 3
 
-![Lateral view of ectopic fold formation in *eve* mutant. The cephalic furrow forms normally in sibling controls (top) but it is absent in *eve* mutants (bottom). There is no invagination at the head--trunk boundary at the onset of gastrulation, but an ectopic fold starts forming near the dorsal region as soon as the mitotic domains begin expanding around 24min. The ectopic folds unfolds almost entirely by the end of the recording (about 85min). Additional ectopic folds appear in the trunk region. Frame rate = 10fps. Scale bars = 50µm.
+![Lateral view of ectopic fold formation in *eve* mutant. The cephalic furrow forms normally in sibling controls (top) but is absent in *eve* mutants (bottom). There is no invagination at the head--trunk boundary at the onset of gastrulation, but an ectopic fold starts forming near the dorsal region as soon as the mitotic domains begin expanding around 24min. The ectopic folds unfold almost entirely by the end of the recording (about 85min). Additional ectopic folds appear in the trunk region. Frame rate = 10fps. Scale bars = 50µm.
 ](figures/Vid3.jpg){#fig:vid-lateral-eve tag="Supplementary Video 3" width=50%}
 
 \newpage
@@ -1192,9 +1193,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ### Comparing our reference bending rigidity to direct measurements
 
-<!--TODO: Revise this text-->
-
-The goal is to compare the reference bending rigidity that we estimate for the *Drosophila* blastoderm with a direct measurement from the literature.
+Here we compare the reference bending rigidity established for the *Drosophila* blastoderm with our experiments to direct measurements from the literature.
 Trushko et al. [@Trushko2020-gf] reports that in a MDCK monolayer $K_b = 5\times10^{-13} Nm$ and $K_s = 0.15 Nm^{-1}$.
 With these values we can compute the dimensionless bending rigidity $K_b^*$.
 However, the thickness of the MDCK monolayer and the *Drosophila* blastoderm are very different, and hence we need to correct for this before computing $K_b^*$ for MDCK monolayer. 
@@ -1202,7 +1201,7 @@ The bending rigidity scales with square of the thickness of the tissue.
 Hence the corrected $K_b$ can be computed as $K_b^{'} = K_b^*(h_{blastoderm}/h_{MDCK})^2$.
 This gives us $K_b^{'} =2\times10^{-12} Nm$.
 Now we can compute $K_b^* = K_b^{'}/K_s L^2$ where we put $L = 255\mu m$.
-Here we scale $K_b^{'}/K_s$ by the relevant lengthscale which is the semi-major axis of the Drosophila embryo.
+Here we scale $K_b^{'}/K_s$ by the relevant lengthscale which is the semi-major axis of the *Drosophila* embryo.
 This gives us $K_b^* = 2.05\times 10^{-4}$.
 This is the estimated $K_b^*$ for the MDCK monolayer that has the same thickness as the *Drosophila* blastoderm (referring to the height correction) and has been put in the same geometrical conditions as the *Drosophila* blastoderm (referring to the $L$ used in the calculation).
 
