@@ -313,15 +313,14 @@ Using our reference bending rigidity value ($K_{b}^{\text{*}} = 1.0 \times 10^{�
 
 We first evaluated how the strength of the cephalic furrow impacts the frequency and placement of ectopic folding.
 In conditions without the germ band (*g*=0), we find that an active invagination reduces the spread and frequency of ectopic folding at the head--trunk boundary ({@fig:fold-model}g, {!@fig:model-features}l) and that this reduction in variability correlates with the strength of the pull ({!@fig:model-features}j).
-In conditions with an extended germ band, however, this buffering effect was diminished.
-Embryos with $\kappa_o^{CF} \leq 1$ and $g \geq 0.2$ fail to form the cephalic furrow and variable ectopic folding dominates the landscape ({!@fig:model-features}j).
-These simulations show that higher values of $\kappa_o^{CF}$ are more effective at preventing ectopic folds.
+In conditions with an extended germ band, however, this buffering effect was diminished due to an increase in ectopic folding at the posterior region, which dominates the landscape and even inhibits the formation of the cephalic furrow in embryos with $\kappa_o^{CF} \leq 1$ and $g \geq 0.2$ ({!@fig:model-features}j).
+Nevertheless, in general, these simulations show that higher values of $\kappa_o^{CF}$ are more effective at preventing ectopic folds.
 
 Since the cephalic furrow forms around 15 min before mitotic domains in wildtype embryos, we asked whether their relative timing of formation may influence the effectiveness of the cephalic furrow.
 In contrast to the simulations above where the cephalic furrow and mitotic domains form at the same time, we added a delay to the formation of mitotic domains to match the *in vivo* characteristics.
 In this condition, the cephalic furrow is more effective in preventing ectopic folding, even for lower $\kappa_o^{CF}$ values ({@fig:fold-model}g, {!@fig:model-features}j,k,l).
 Similar to our *in vivo* observations of ectopic folding in wildtype embryos ({!@fig:ectopic-features}i--m, {@tbl:freq}), we also observe some ectopic folding in these simulations, especially at greater percentages of germ band extension ({!@fig:model-features}k).
-Nevertheless, these experiments reveal that relative timing, rather than force, is more important at preventing ectopic folding.
+These experiments reveal that relative timing, rather than force, is more important at preventing ectopic folding.
 
 Finally, we tested how the position of the cephalic furrow impacts its ability to prevent ectopic folding.
 When the germ band is not extended ($g=0.0$), a cephalic furrow positioned anteriorly (>70% embryo length) effectively prevents ectopic folding in the head ({@fig:fold-model}h), similar to the simulations at the wildtype position.
@@ -937,7 +936,6 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 ## Extended Data Fig. 2
 
 ![Differences between ectopic folding and cephalic furrow formation.
-
 **a**, Distribution of ectopic folds in *eve* homozygotes (right) and sibling controls (left). Scale bar = 50µm.
 **b**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in *eve* embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control *eve* heterozygote (left) and of a *eve* homozygote (right). The numbers indicate the average folded area for the sample type in µm^2^×10^3^.
 **c**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.
