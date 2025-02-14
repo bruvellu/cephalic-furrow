@@ -58,12 +58,16 @@ Our findings uncover empirical evidence for how mechanical forces can influence 
 
 # Main
 
-Morphogenesis is a physical process [@Keller2012-ca; @Heisenberg2013-pl].
-Embryonic cells drive this processes by generating force that makes tissues bend.
-When tissues extend or invaginate, they also push and pull on their neighboring tissues.
-These mechanical interactions provide essential information to embryonic cells throughout development and ultimately shape the final morphology of tissues and organs [@Collinet2021-qa].
+Morphogenesis is a physical process that shapes embryonic tissues through cell-generated mechanical forces [@Keller2012-ca; @Heisenberg2013-pl].
+These forces drive tissues to bend, extend, and invaginate---movements that also push and pull on their neighboring regions.
+Such physical interactions provide essential information to embryonic cells throughout development and ultimately shape the final morphology of tissues and organs [@Collinet2021-qa].
 However, how mechanical forces influence the evolution of morphogenesis in early embryonic development remains unclear.
 To investigate the interplay between genetics and mechanics during the evolution of morphogenesis, we studied a prominent but enigmatic epithelial fold that forms at the head--trunk boundary of flies during gastrulation---the cephalic furrow [@Hartenstein1985-zs; @Spencer2015-td].
+
+<!--Morphogenesis is a physical process [@Keller2012-ca; @Heisenberg2013-pl].-->
+<!--Embryonic cells drive this processes by generating force that makes tissues bend.-->
+<!--When tissues extend or invaginate, they also push and pull on their neighboring tissues.-->
+<!--These mechanical interactions provide essential information to embryonic cells throughout development and ultimately shape the final morphology of tissues and organs [@Collinet2021-qa].-->
 
 <!--TODO: Revise drafts below, incorporate?-->
 
