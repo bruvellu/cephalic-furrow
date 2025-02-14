@@ -91,7 +91,7 @@ ggplot(ablations, aes(Stage, Velocity)) +
   scale_y_continuous(limits = c(0, 0.25)) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 30),
-        panel.background = element_rect(colour = "black", size=1))
+        panel.background = element_rect(colour = "black", linewidth = 1))
 ggsave("3-plots/recoil-stage.png", width = 14, height = 7)
 ggsave("3-plots/recoil-stage.svg", width = 14, height = 7)
 ```
@@ -100,19 +100,19 @@ ggsave("3-plots/recoil-stage.svg", width = 14, height = 7)
 
 ```{r recoil-stage-position}
 ggplot(ablations, aes(Position, Velocity, fill = Position)) +
-  geom_boxplot(aes(color = Position), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.9, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
-  labs(x = "stage", y = "velocity (µm/s)") +
-  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
-  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
-  facet_wrap(~Stage) +
+  geom_boxplot(aes(color = Position), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  labs(x = "position", y = "velocity (µm/s)") +
+  scale_fill_manual(values=c("#009966", "#cc79a7")) +
+  scale_color_manual(values=c("#009966", "#cc79a7")) +
+  facet_grid(cols = vars(Stage), scales = "free") +
   scale_y_continuous(limits = c(0, 0.25)) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 45),
         strip.background = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(size = 55),
-        panel.background = element_rect(colour = "black", size=1))
+        panel.background = element_rect(colour = "black", linewidth = 1))
 ggsave("3-plots/recoil-stage-position.png", width = 14, height = 7)
 ggsave("3-plots/recoil-stage-position.svg", width = 14, height = 7)
 ```
@@ -181,7 +181,7 @@ ggplot(means, aes(Distance, Velocity, group = Distance, fill = Position)) +
   geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
   scale_y_continuous(limits = c(-0.008, 0.25)) +
   facet_wrap(~Stage) +
-  labs(x = "stage", y = "velocity (µm/s)") +
+  labs(x = "distance (µm)", y = "velocity (µm/s)") +
   scale_fill_manual(values=c("#009966", "#cc79a7")) +
   scale_color_manual(values=c("#009966", "#cc79a7")) +
   theme_classic(base_family = "DejaVu Sans") +
@@ -189,7 +189,7 @@ ggplot(means, aes(Distance, Velocity, group = Distance, fill = Position)) +
         strip.background = element_blank(),
         strip.placement = "outside",
         strip.text.x = element_text(size = 55),
-        panel.background = element_rect(colour = "black", size=1))
+        panel.background = element_rect(colour = "black", linewidth = 1))
 ggsave("3-plots/recoil-stage-distance.png", width = 14, height = 7)
 ggsave("3-plots/recoil-stage-distance.svg", width = 14, height = 7)
 ```
