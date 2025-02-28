@@ -422,7 +422,7 @@ This is the case for the tracheal placode of flies [@Kondo2013-gy] and intestina
 Interestingly, the folding in these tissues only occur when the epithelium is under compression, similar to our findings that only the combined action of mitotic expansions and germ band extension can induce ectopic folds ({@fig:live-experiments}j).
 Moreover, complementary experiments performed in an independent study corroborate the role of mitotic domains and the germ band as sources of mechanical stress [@Dey2023-mo].
 The consolidated data, therefore, indicates that the head--trunk tissues of flies are under increased compressive stress during gastrulation.
-We provide evidence the cephalic furrow counteracts these stresses.
+We provide evidence that the cephalic furrow counteracts these stresses.
 An early invagination effectively reduces the appearance of ectopic folds *in vivo* and in simulations, supporting the hypothesis that the cephalic furrow prevents the build up of compressive stresses at the head--trunk boundary, and thus, accomplishes a mechanical role during *Drosophila* gastrulation.
 
 <!--The fact that *eve* mutants have no cell intercalation [@Collinet2015-af] suggests that the formation of ectopic folds depends on the rapid phase of germ band extension [@Campos-Ortega1985-ma], driven mainly by the posterior midgut invagination.-->
@@ -810,7 +810,7 @@ Staging based on a standard developmental table [@Ashburner2005-ym].
 *btd* transcripts are localized at the head--trunk interface.
 **g**, Lateral view of the expression at the head--trunk boundary in *Drosophila*. *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines).
 **h**, Profile view of the gene expression in initiator cells of *Drosophila*. The *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping *slp1* stripes. *btd* and *eve* overlap by 1-cell row. *prd* expression is offset with *slp1*. Dashed lines mark the future edges of the cephalic furrow.
-**i**, Profile view of the gene expression after cephalic furrow invagination in *Drosophila*.The *eve*-expressing initiator cells are located deep into the yolk, while the *slp* head domain (sh) and stripe 3 demarcate the outer edges of the invagination.
+**i**, Profile view of the gene expression after cephalic furrow invagination in *Drosophila*. The *eve*-expressing initiator cells are located deep into the yolk, while the *slp* head domain (sh) and stripe 3 demarcate the outer edges of the invagination.
 **j**, Expression domains during nuclear cycles 13 and 14 in *Ceratitis*, *Anopheles*, and *Clogmia*.
 **k**, Comparison of expression patterns at the head--trunk boundary before gastrulation between species. The expression of *slp* and *eve* are similar across all species. Both *Drosophila* and *Ceratitis*, species with a cephalic furrow, show a head--trunk domain of *btd* that overlaps with *eve* stripe 1. In *Anopheles*, the head--trunk *btd* domain does not overlap with *eve* stripe 1, and in *Clogmia* this *btd* domain is absent.
 **l**, Schematic drawings showing the combinatorial molecular arrangement at the head--trunk boundary of *Drosophila*.
@@ -1192,15 +1192,15 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 Here we compare the reference bending rigidity established for the *Drosophila* blastoderm with our experiments to direct measurements from the literature.
 Trushko et al. [@Trushko2020-gf] reports that in a MDCK monolayer $K_b = 5\times10^{-13} Nm$ and $K_s = 0.15 Nm^{-1}$.
-With these values, we can compute the dimensionless bending rigidity $K_b^*$.
-However, the thickness of the MDCK monolayer and the *Drosophila* blastoderm are very different, and hence we need to correct for this before computing $K_b^*$ for MDCK monolayer. 
+With these values, we can compute the dimensionless bending rigidity $K_{b}^{\text{*}}$.
+However, the thickness of the MDCK monolayer and the *Drosophila* blastoderm are very different, and hence we need to correct for this before computing $K_{b}^{\text{*}}$ for MDCK monolayer. 
 The bending rigidity scales with the square of the thickness of the tissue.
-Hence, the corrected $K_b$ can be computed as $K_b^{'} = K_b^*(h_{blastoderm}/h_{MDCK})^2$.
+Hence, the corrected $K_b$ can be computed as $K_b^{'} = K_{b}^{\text{*}}(h_{blastoderm}/h_{MDCK})^2$.
 This gives us $K_b^{'} =2\times10^{-12} Nm$.
-Now we can compute $K_b^* = K_b^{'}/K_s L^2$ where we put $L = 255\mu m$.
+Now we can compute $K_{b}^{\text{*}} = K_b^{'}/K_s L^2$ where we put $L = 255\mu m$.
 Here we scale $K_b^{'}/K_s$ by the relevant lengthscale which is the semi-major axis of the *Drosophila* embryo.
-This gives us $K_b^* = 2.05\times 10^{-4}$.
-This is the estimated $K_b^*$ for the MDCK monolayer that has the same thickness as the *Drosophila* blastoderm (referring to the height correction) and has been put in the same geometrical conditions as the *Drosophila* blastoderm (referring to the $L$ used in the calculation).
+This gives us $K_{b}^{\text{*}} = 2.05\times 10^{-4}$.
+This is the estimated $K_{b}^{\text{*}}$ for the MDCK monolayer that has the same thickness as the *Drosophila* blastoderm (referring to the height correction) and has been put in the same geometrical conditions as the *Drosophila* blastoderm (referring to the $L$ used in the calculation).
 
 ## Supplementary Note 2
 
