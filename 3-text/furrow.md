@@ -273,7 +273,7 @@ We begin to observe folds in the simulations with higher progression of germ ban
 Folding events are stochastic and happen at distinct iterations for each simulation.
 When a fold begins to form, the bending energy increases releasing a larger amount of stretching energy, which, in turn, decreases the total energy of the system over each iteration ({@fig:fold-model}d).
 The increase in bending energy coincides with a rapid deepening of the fold.
-Once the bending energy reaches a peak, we find that the fold continues to deepen more gradually but the total number of folds rarely change afterward ({@fig:fold-model}d, {!@fig:model-features}b).
+Once the bending energy reaches a peak, we find that the fold continues to deepen more gradually, but the number of folds rarely changes afterward ({@fig:fold-model}d, {!@fig:model-features}b).
 Therefore, this peak of bending energy provides an informative reference point, which we used to standardize the comparison across simulations.
 
 ## Bending rigidity sweep in mutant conditions
@@ -295,7 +295,7 @@ These simulations reveal that, depending on the bending rigidity, the germ band 
 To determine where our embryo lies in this parameter space, we considered the insight from our experimental data that neither mitotic domain nor germ band can promote ectopic folding by themselves.
 With this information, we identified the bending rigidity value that recapitulates these biological behaviors in the simulations.
 For that, we determined at which bending rigidity the average number of folds falls below 1 in mitotic-domains-only and germ-band-only conditions ({!@fig:model-features}c,f).
-The criteria is fulfilled when the bending rigidity is $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.
+The criterion is fulfilled when the bending rigidity is $K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$.
 
 To compare this value with existing direct measurements, we calculated $K_{b}^{\text{*}}$ for the bending rigidity estimates in cultured cells ($K_{b} \approx 5 \times 10^{-13} Nm$ and $K_{s} \approx 0.2 Nm^{-1}$) [@Trushko2020-gf; @Fouchard2020-km] (Supplementary Note 1).
 Given that in elastic sheets the bending and stretching rigidity ratio is proportional to the square of the height ($K_{b}/K_{s} \propto h^2$) [@Efrati2009-ve], we adjusted the calculation to the thickness of the epithelial monolayer in culture (~18\ µm) [@Fouchard2020-km].
@@ -376,7 +376,7 @@ The combinatorial expression suggests that each row has a unique transcriptional
 ## Association of *buttonhead* with cephalic furrow evolution
 
 To uncover the differences in the head--trunk genetic patterning associated with the evolution of the cephalic furrow, we compared the expression patterns in *Drosophila* to three other dipteran species.
-One species, the mediterranean fruit fly *Ceratitis capitata* (Tephritidae) [@Strobl2022-og; @Strobl2024-kh], belongs to a family known to form a cephalic furrow.
+One species, the Mediterranean fruit fly *Ceratitis capitata* (Tephritidae) [@Strobl2022-og; @Strobl2024-kh], belongs to a family known to form a cephalic furrow.
 The other two species, the malaria mosquito *Anopheles stephensi* (Culicidae) [@Cheatle-Jarvela2020-go; @Cheatle-Jarvela2023-gd] and the drain fly *Clogmia albipunctata* (Psychodidae) [@Jimenez-Guri2014-zs; @Dey2023-mo], belong to families where the cephalic furrow has not been observed [@Dey2023-mo].
 
 The three species show early, juxtaposing domains of *slp* and *eve* demarcating the head and trunk regions in a pattern highly similar to that of *Drosophila* ({@fig:genetic-patterning}f,j, {!@fig:genetic-comparative}a,b,c).
@@ -517,7 +517,7 @@ To guarantee the embryos are at a similar developmental stage, we exchanged the 
 After filling the plate with water, we used a brush to release the eggs from the agar and transferred them to a cell strainer with 100\ µm nylon mesh (VWR).
 To remove the chorion, we immersed the embryos in 20% bleach (sodium hypochlorite solution, Merck 1.05614.2500) for 90\ s, washed abundantly with water, and proceeded to mounting for live imaging.
 
-We maintained *Clogmia* flies in 9cm-wide plastic petri dishes with a layer of wet cotton at room temperature and fed weekly with powder parsley.
+We maintained *Clogmia* flies in 9cm-wide plastic Petri dishes with a layer of wet cotton at room temperature and fed weekly with powder parsley.
 To obtain embryos for fixation, we collected the adult flies in a 200\ mL hard plastic vial with wet cotton, and let them mate for 2--3 days.
 Then, we anesthetized the flies with CO~2~, dissected the ovaries from ripe females, and released the eggs using tweezers in deionized water, which activates embryonic development [@Sander1985-sg; @Garcia-Solache2010-lz].
 We let embryos develop in deionized water at room temperature until the desired stage.
@@ -537,9 +537,9 @@ To dechorionate, we collected the embryos on a cell strainer, incubated in 5% bl
 
 ## Embryo fixation and *in situ* hybridization
 
-For *Drosophila* and *Ceratitis*, we transferred dechorionated embryos to a glass vial containing equal volumes of 4% paraformaldehyde in PBS and n-Heptane, and let the vial shaking at 215\ rpm for 45\ min.
+For *Drosophila* and *Ceratitis*, we transferred dechorionated embryos to a glass vial containing equal volumes of 4% formaldehyde in PBS and n-Heptane, and let the vial shaking at 215\ rpm for 45\ min.
 For *Clogmia*, we diluted the fixative in 0.5x PBS.
-After removing the fixative (lower phase) using a glass pipette, we added an equal volume of 100% methanol, and shook the vial vigorously by hand for 1min.
+After removing the fixative (lower phase) using a glass pipette, we added an equal volume of 100% methanol, and shook the vial vigorously by hand for 1\ min.
 We then removed the n-Heptane (upper phase) and collected the embryos on the bottom of an Eppendorf tube and washed several times with 100% methanol.
 For *Anopheles*, we followed a similar protocol that includes a longer 30\ min wash in water after fixation, a 30\ s boiling water step followed by 15\ min in ice-cold water, until the final methanol washes [@Cheatle-Jarvela2020-go].
 All the samples were stored in 100% methanol at -20°\ C.
@@ -550,7 +550,7 @@ We selected the HCR^TM^ amplifiers to allow for triple (multiplexed) *in situ* c
 Before starting, we manually devitenillized *Anopheles* embryos using fine tweezers.
 Then, we rehydrated the embryos in 100% methanol with a series of washes to 100% PBT.
 We permeabilized the embryos with 1:5000 dilution of ProteinaseK (20\ mg/mL) for 5min, except for *Drosophila*.
-All samples were re-fixed in 4% paraformaldehyde for 40\ min and washed thoroughly with PBT.
+All samples were re-fixed in 4% formaldehyde for 40\ min and washed thoroughly with PBT.
 We then followed the *“In situ HCR v3.0 protocol for whole-mount fruit fly embryos Revision 4 (2019-02-21)”* from Molecular Instruments [molecularinstruments.com/hcr-rnafish-protocols](https://www.molecularinstruments.com/hcr-rnafish-protocols).
 After the protocol, we stained the embryos with 1:1000 DAPI in 5x SSCT solution for 2\ h and mounted the embryos in 80% glycerol in 5x SSCT for imaging.
 
@@ -566,7 +566,7 @@ To attach the embryos to the coverslip, we carefully lowered the sample holder o
 We placed the sample holder into the microscope chamber filled with water, and rotated it so that the samples are facing the detection objective directly, and the coverslip is orthogonal to the detection objective; this is important to prevent the lightsheet from hitting the glass edges.
 With the embryos oriented vertically along the coverslip, the lightsheet generated from the illumination objectives coming from the sides only needs to pass through the width of the embryo (about 200\ µm).
 This approach gives the best results for recording lateral and dorsal views and is ideal for live imaging homozygote embryos since they are only about one fourth of the total number of imaged embryos.
-For fixed imaging of *in situ* samples we used an inverted Zeiss LSM 700 Confocal microscope.
+For fixed imaging of *in situ* samples, we used an inverted Zeiss LSM 700 Confocal microscope.
 We mounted the samples immersed in 80% glycerol between a slide and a glass coverslip supported by tape.
 
 ## Microscopy acquisition parameters
@@ -614,7 +614,7 @@ We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to
 The stacks had 0.21\ µm XY-resolution and one minute time resolution.
 To obtain a quantitative measure of ectopic folding, we analyzed the degree by which the tissues deform between non-cauterized and cauterized mutants, using as a proxy the tortuosity of the epithelium outline.
 For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({!@fig:tortuosity}a).
-We then cropped a 200×25\ µm region along the head--trunk interface and applied gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50\ min after gastrulation ({!@fig:tortuosity}a,b).
+We then cropped a 200×25\ µm region along the head--trunk interface and applied Gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50\ min after gastrulation ({!@fig:tortuosity}a,b).
 We extracted measurements from the epithelium outlines using the ImageJ plugin *Analyze Skeleton* [@Arganda-Carreras2010-la] ([imagej.net/plugins/analyze-skeleton](https://imagej.net/plugins/analyze-skeleton/)), and generated the color-coded temporal projections as described above.
 
 <!--TODO: Temperature in MuVi and Zeiss?-->
@@ -654,7 +654,7 @@ $$W_T^{\text{*}} = \frac{1}{2} K_s \sum_{i = 2}^{N-3} \left( \frac{\Delta r_i}{\
 The first and last two points of the curve are fixed in space.
 To obtain a physically meaningful dimensionless bending rigidity, we divide the bending rigidity by the factor $K_sL^2$ as $$K_{b}^{\text{*}} = \frac{K_b}{K_sL^2}$$ where $L$ is the semi-major axis of the embryo.
 To minimize the total energy, we add a ground level of noise to the particles and let the particles move in the direction of the forces.
-The motion of the particles are governed by $$\frac{\Delta\underline{r}_i}{\Delta t} = - \frac{L}{K_s\tau}\frac{\partial W^{\text{*}}}{\partial \underline{r}_i} + \underline{\zeta}_i$$ where $\underline{r}_i$ is the current position of the $i$th particle; $\tau$ represents an arbitrary timescale introduced here to balance dimensions (set to 1); $\Delta t$ are the timesteps (set to $10^{-5} \times \tau K_s/L$); and $\underline{\zeta}_i$ is the noise, chosen from a gaussian distribution with mean 0 and standard distribution $10^{-5}\times L$.
+The motion of the particles is governed by $$\frac{\Delta\underline{r}_i}{\Delta t} = - \frac{L}{K_s\tau}\frac{\partial W^{\text{*}}}{\partial \underline{r}_i} + \underline{\zeta}_i$$ where $\underline{r}_i$ is the current position of the $i$th particle; $\tau$ represents an arbitrary timescale introduced here to balance dimensions (set to 1); $\Delta t$ are the timesteps (set to $10^{-5} \times \tau K_s/L$); and $\underline{\zeta}_i$ is the noise, chosen from a Gaussian distribution with mean 0 and standard distribution $10^{-5}\times L$.
 In our model, the position of the germ band corresponds to the position of the last particle in the curve on the semi-ellipse that represents the embryonic blastoderm.
 The extent of the germ band is given by $g$, which is the projection of the germ band arclength onto the mid-axis of the embryo normalized by the embryo length ($2L$).
 When $g=0$ the tissue is free of stretching stress, but at any other $0<g<1$, the blastoderm will be compressed.
@@ -704,7 +704,7 @@ Freddy Frischknecht and Miriam Reinig for enabling and supporting the collection
 Konstantinos Bourtzis for kindly providing us with *Ceratitis* pupae.
 Carles Blanch-Mercader for feedback on simulations.
 Juliana Roscito for the text revisions.
-Michelle Marass for crucial editorial input.
+Michele Marass for crucial editorial input.
 Michael Akam for drawing BCV’s attention to the cephalic furrow.
 
 # Funding
@@ -716,7 +716,7 @@ BCV was supported by an EMBO Long Term Fellowship (ALTF 74-2018).
 # Author contributions
 
 BCV and PT conceived the study.
-BCV designed experiments, generated fly stocks, acquired microscopy data, performed *in situ* hybridizations, and processed and analyzed the *in vivo* data.
+BCV designed experiments, generated fly stocks, acquired microscopy data, performed *in situ* hybridization, and processed and analyzed the *in vivo* data.
 MBC conceived and conducted the laser ablation and cauterization experiments, and analyzed the laser ablation and strain rate data.
 CDM, AK, and AS designed the model.
 AK and AS programmed the model, performed the simulations, and analyzed the *in silico* data.
@@ -1040,7 +1040,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ![Image processing pipeline for the tortuosity analysis in cauterized mutants.
 **a**, We acquired a single slice in profile view of the head--trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos.
-**b**, Then, we applied a gaussian blur which allows capturing the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing.
+**b**, Then, we applied a Gaussian blur which allows capturing the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing.
 **c**, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ.
 ](figures/FigS2.jpg){#fig:tortuosity tag="Supplementary Fig. 2" width=100%}
 
