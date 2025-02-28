@@ -80,7 +80,8 @@ figs:
 	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIR}/FigS2.png
 	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIR}/FigS3.png
 	# Make JPGs smaller for compilation and sharing
-	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
+	#mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
+	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 
 # Link video files to figure directory
 vids:
@@ -121,7 +122,8 @@ vids:
 	ln -sf ${FIGSRC}/slp-analyses/videos/COMBINE_3D_slp-HisGap_1_t35s_E2_E4_label_short.mp4 ${FIGOUT}/Vid17.mp4
 	# Create JPG snapshot for visualization
 	for i in ${FIGHIR}/*.avi; do ffmpeg -y -loglevel quiet -ss 1 -i $${i} -frames:v 1 -update 1 ${FIGHIR}/`basename $${i} .avi`.png; done
-	mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/Vid*.png
+	#mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/Vid*.png
+	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/Vid*.png
 
 text:
 	# Compile documents and copy timestamped files to versions directory 
