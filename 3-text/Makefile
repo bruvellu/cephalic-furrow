@@ -83,6 +83,28 @@ figs:
 	#mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 
+# Copy high-resolution PDF files to source directory
+pdfs:
+	# Main figures
+	ln -sf ${FIGSRC}/ectopic-folding/figure.pdf ${FIGHIR}/Fig1.pdf
+	ln -sf ${FIGSRC}/mitotic-strain/figure.pdf ${FIGHIR}/Fig2.pdf
+	ln -sf ${FIGSRC}/live-experiments/figure.pdf ${FIGHIR}/Fig3.pdf
+	ln -sf ${FIGSRC}/fold-model/figure.pdf ${FIGHIR}/Fig4.pdf
+	ln -sf ${FIGSRC}/genetic-patterning/figure.pdf ${FIGHIR}/Fig5.pdf
+	ln -sf ${FIGSRC}/summary/figure.pdf ${FIGHIR}/Fig6.pdf
+	# Extended data figures
+	ln -sf ${FIGSRC}/initiator-behavior/figure.pdf ${FIGHIR}/FigED1.pdf
+	ln -sf ${FIGSRC}/ectopic-features/figure.pdf ${FIGHIR}/FigED2.pdf
+	ln -sf ${FIGSRC}/apical-strain/figure.pdf ${FIGHIR}/FigED3.pdf
+	ln -sf ${FIGSRC}/live-details/figure.pdf ${FIGHIR}/FigED4.pdf
+	ln -sf ${FIGSRC}/model-features/figure.pdf ${FIGHIR}/FigED5.pdf
+	ln -sf ${FIGSRC}/genetic-features/figure.pdf ${FIGHIR}/FigED6.pdf
+	ln -sf ${FIGSRC}/genetic-comparative/figure.pdf ${FIGHIR}/FigED7.pdf
+	# Supplementary information
+	ln -sf ${FIGSRC}/ectopic-variability/figure.pdf ${FIGHIR}/FigS1.pdf
+	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.pdf ${FIGHIR}/FigS2.pdf
+	ln -sf ${FIGSRC}/ablation-analysis/figure.pdf ${FIGHIR}/FigS3.pdf
+
 # Link video files to figure directory
 vids:
 	# Create AVI and MP4 links to source videos
