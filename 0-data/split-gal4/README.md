@@ -1,6 +1,6 @@
 # Split-GAL4 experiments
 
-The goal of the split-GAL4 experiments is to block cephalic furrow formation by inhibiting myosin activity specifically in the initiator cells.
+Goal: block cephalic furrow formation by inhibiting myosin activity in initiator cells.
 
 ## Experiments
 
