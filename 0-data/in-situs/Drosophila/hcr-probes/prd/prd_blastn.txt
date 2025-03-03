@@ -1,0 +1,769 @@
+RID: PSX86ECY016	
+Job Title:20 sequences (01)				
+Program: BLASTN 
+Database: refseq_rna NCBI Transcript Reference Sequences
+Query #1: 01 Query ID: lcl|Query_25808 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 201 to 252
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GTCGTAAATCAAGTGACACGCGCTC--CTCTACCTAACATGAACAGCGGCCA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  201  GTCGTAAATCAAGTGACACGCGCTCCGCTCTACCTAACATGAACAGCGGCCA  252
+
+
+
+
+
+Query #2: 02 Query ID: lcl|Query_25809 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 460 to 511
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GATGGCCGCCGATGGCATTCGGCCC--TGTGATCTCCAGACAGCTACGTGTG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  460  GATGGCCGCCGATGGCATTCGGCCCTGTGTGATCTCCAGACAGCTACGTGTG  511
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 331 to 382
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GATGGCCGCCGATGGCATTCGGCCC--TGTGATCTCCAGACAGCTACGTGTG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  331  GATGGCCGCCGATGGCATTCGGCCCTGTGTGATCTCCAGACAGCTACGTGTG  382
+
+
+
+
+
+Query #3: 03 Query ID: lcl|Query_25810 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+Drosophila melanogaster gooseberry-neuro (gsb-n), mRNA            47.3   47.3  100%  4e-05 80.77  NM_079138.2      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 532 to 583
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GATCCTGAATCGCTACCAGGAGACT--CTCCATTAGACCAGGCGTAATTGGT  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  532  GATCCTGAATCGCTACCAGGAGACTGGCTCCATTAGACCAGGCGTAATTGGT  583
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 403 to 454
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GATCCTGAATCGCTACCAGGAGACT--CTCCATTAGACCAGGCGTAATTGGT  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  403  GATCCTGAATCGCTACCAGGAGACTGGCTCCATTAGACCAGGCGTAATTGGT  454
+
+
+
+>Drosophila melanogaster gooseberry-neuro (gsb-n), mRNA
+Sequence ID: NM_079138.2 Length: 2237 
+Range 1: 536 to 587
+
+Score:47.3 bits(51), Expect:4e-05, 
+Identities:42/52(81%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GATCCTGAATCGCTACCAGGAGAC--TCTCCATTAGACCAGGCGTAATTGGT  50
+            ||| ||||| || |||||||||||    || |||||||| |||||||| |||
+Sbjct  536  GATTCTGAACCGATACCAGGAGACGGGTTCTATTAGACCGGGCGTAATAGGT  587
+
+
+
+
+
+Query #4: 04 Query ID: lcl|Query_25811 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 604 to 655
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CACGCCCGAAATCGAGAACCGAATT--GGAGTACAAGCGCAGTAGCCCGGGC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  604  CACGCCCGAAATCGAGAACCGAATTGAGGAGTACAAGCGCAGTAGCCCGGGC  655
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 475 to 526
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CACGCCCGAAATCGAGAACCGAATT--GGAGTACAAGCGCAGTAGCCCGGGC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  475  CACGCCCGAAATCGAGAACCGAATTGAGGAGTACAAGCGCAGTAGCCCGGGC  526
+
+
+
+
+
+Query #5: 05 Query ID: lcl|Query_25812 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 676 to 727
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GGAGAAGCTGATCCGCGAGGGTGTC--CGACAGGAGCACAGCACCATCTGTG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  676  GGAGAAGCTGATCCGCGAGGGTGTCTGCGACAGGAGCACAGCACCATCTGTG  727
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 547 to 598
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GGAGAAGCTGATCCGCGAGGGTGTC--CGACAGGAGCACAGCACCATCTGTG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  547  GGAGAAGCTGATCCGCGAGGGTGTCTGCGACAGGAGCACAGCACCATCTGTG  598
+
+
+
+
+
+Query #6: 06 Query ID: lcl|Query_25813 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 748 to 799
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GCGCGGCCGAGATGCTCCATTGGAC--TGATATGTCTTCTGCCTCTGGATCT  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  748  GCGCGGCCGAGATGCTCCATTGGACAATGATATGTCTTCTGCCTCTGGATCT  799
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 619 to 670
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GCGCGGCCGAGATGCTCCATTGGAC--TGATATGTCTTCTGCCTCTGGATCT  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  619  GCGCGGCCGAGATGCTCCATTGGACAATGATATGTCTTCTGCCTCTGGATCT  670
+
+
+
+
+
+Query #7: 07 Query ID: lcl|Query_25814 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 820 to 871
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    AGCATCGAGTTCCTGCGGCTCCGAT--CTCAGGTGGCCATCACAACAACGGC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  820  AGCATCGAGTTCCTGCGGCTCCGATGTCTCAGGTGGCCATCACAACAACGGC  871
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 691 to 742
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    AGCATCGAGTTCCTGCGGCTCCGAT--CTCAGGTGGCCATCACAACAACGGC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  691  AGCATCGAGTTCCTGCGGCTCCGATGTCTCAGGTGGCCATCACAACAACGGC  742
+
+
+
+
+
+Query #8: 08 Query ID: lcl|Query_25815 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 892 to 943
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CTCTGACTGTGAAAGTGAGCCGGGA--CGCCTTGAAGCGCAAACAGCGCCGC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  892  CTCTGACTGTGAAAGTGAGCCGGGAATCGCCTTGAAGCGCAAACAGCGCCGC  943
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 763 to 814
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CTCTGACTGTGAAAGTGAGCCGGGA--CGCCTTGAAGCGCAAACAGCGCCGC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  763  CTCTGACTGTGAAAGTGAGCCGGGAATCGCCTTGAAGCGCAAACAGCGCCGC  814
+
+
+
+
+
+Query #9: 09 Query ID: lcl|Query_25816 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 964 to 1015
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     TTCCCAGTTGGACGAACTGGAACGC--CTTCGAGCGCACCCAATACCCTGAT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  964   TTCCCAGTTGGACGAACTGGAACGCGCCTTCGAGCGCACCCAATACCCTGAT  1015
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 835 to 886
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    TTCCCAGTTGGACGAACTGGAACGC--CTTCGAGCGCACCCAATACCCTGAT  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  835  TTCCCAGTTGGACGAACTGGAACGCGCCTTCGAGCGCACCCAATACCCTGAT  886
+
+
+
+
+
+Query #10: 00 Query ID: lcl|Query_25817 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1036 to 1087
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GGCCCAGCGCACCAATCTCACGGAG--ACGCATTCAGGTGTGGTTCAGCAAT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1036  GGCCCAGCGCACCAATCTCACGGAGGCACGCATTCAGGTGTGGTTCAGCAAT  1087
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 907 to 958
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GGCCCAGCGCACCAATCTCACGGAG--ACGCATTCAGGTGTGGTTCAGCAAT  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  907  GGCCCAGCGCACCAATCTCACGGAGGCACGCATTCAGGTGTGGTTCAGCAAT  958
+
+
+
+
+
+Query #11: 11 Query ID: lcl|Query_25818 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1108 to 1159
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GCAGCACACCTCGGTCTCGGGCGGA--ACCTGGCGGAGCAGCTGCCTCAGTG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1108  GCAGCACACCTCGGTCTCGGGCGGAGCACCTGGCGGAGCAGCTGCCTCAGTG  1159
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 979 to 1030
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GCAGCACACCTCGGTCTCGGGCGGA--ACCTGGCGGAGCAGCTGCCTCAGTG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  979   GCAGCACACCTCGGTCTCGGGCGGAGCACCTGGCGGAGCAGCTGCCTCAGTG  1030
+
+
+
+
+
+Query #12: 12 Query ID: lcl|Query_25819 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1180 to 1231
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CTCTTTGCCCAGTGTGGTATCAAGTG--CCCAGCATGGCTCCGCTGGCCATG  50
+             ||||||||||||||||||||||||||  ||||||||||||||||||||||||
+Sbjct  1180  CTCTTTGCCCAGTGTGGTATCAAGTGTGCCCAGCATGGCTCCGCTGGCCATG  1231
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1051 to 1102
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CTCTTTGCCCAGTGTGGTATCAAGTG--CCCAGCATGGCTCCGCTGGCCATG  50
+             ||||||||||||||||||||||||||  ||||||||||||||||||||||||
+Sbjct  1051  CTCTTTGCCCAGTGTGGTATCAAGTGTGCCCAGCATGGCTCCGCTGGCCATG  1102
+
+
+
+
+
+Query #13: 13 Query ID: lcl|Query_25820 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1252 to 1303
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     AGCCACTGTGTACCAGCAGCAATAC--TTTCTACGGCAGTCACGCCAACATT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1252  AGCCACTGTGTACCAGCAGCAATACGATTTCTACGGCAGTCACGCCAACATT  1303
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1123 to 1174
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     AGCCACTGTGTACCAGCAGCAATAC--TTTCTACGGCAGTCACGCCAACATT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1123  AGCCACTGTGTACCAGCAGCAATACGATTTCTACGGCAGTCACGCCAACATT  1174
+
+
+
+
+
+Query #14: 14 Query ID: lcl|Query_25821 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1324 to 1375
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     AATGGCCAGTAGTAATCTATCGCCC--AATTACAACCACGCCACCGCACCAC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1324  AATGGCCAGTAGTAATCTATCGCCCGGAATTACAACCACGCCACCGCACCAC  1375
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1195 to 1246
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     AATGGCCAGTAGTAATCTATCGCCC--AATTACAACCACGCCACCGCACCAC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1195  AATGGCCAGTAGTAATCTATCGCCCGGAATTACAACCACGCCACCGCACCAC  1246
+
+
+
+
+
+Query #15: 15 Query ID: lcl|Query_25822 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1396 to 1447
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CGCTAACACAGCCAGCTACATAATG--GGGTGAGAATGGCAACACCACACCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1396  CGCTAACACAGCCAGCTACATAATGCCGGGTGAGAATGGCAACACCACACCC  1447
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1267 to 1318
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CGCTAACACAGCCAGCTACATAATG--GGGTGAGAATGGCAACACCACACCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1267  CGCTAACACAGCCAGCTACATAATGCCGGGTGAGAATGGCAACACCACACCC  1318
+
+
+
+
+
+Query #16: 16 Query ID: lcl|Query_25823 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1468 to 1519
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CAGCTATGAGACTCAGTTGGGTTCA--TTACGGCACCGAAACGGAAACCCAC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1468  CAGCTATGAGACTCAGTTGGGTTCAGTTTACGGCACCGAAACGGAAACCCAC  1519
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1339 to 1390
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CAGCTATGAGACTCAGTTGGGTTCA--TTACGGCACCGAAACGGAAACCCAC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1339  CAGCTATGAGACTCAGTTGGGTTCAGTTTACGGCACCGAAACGGAAACCCAC  1390
+
+
+
+
+
+Query #17: 17 Query ID: lcl|Query_25824 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1540 to 1591
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GAGCCCCAACGAGTCCGTGTCCTCC--CTTCGGGCAACTGCCACCCACACCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1540  GAGCCCCAACGAGTCCGTGTCCTCCGCCTTCGGGCAACTGCCACCCACACCC  1591
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1411 to 1462
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GAGCCCCAACGAGTCCGTGTCCTCC--CTTCGGGCAACTGCCACCCACACCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1411  GAGCCCCAACGAGTCCGTGTCCTCCGCCTTCGGGCAACTGCCACCCACACCC  1462
+
+
+
+
+
+Query #18: 18 Query ID: lcl|Query_25825 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1612 to 1663
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GAGTGGAGCTGGTGTGACCTCCTCC--TGGGGCCAACTCGGGAGCCGATCCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1612  GAGTGGAGCTGGTGTGACCTCCTCCAGTGGGGCCAACTCGGGAGCCGATCCC  1663
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1483 to 1534
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GAGTGGAGCTGGTGTGACCTCCTCC--TGGGGCCAACTCGGGAGCCGATCCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1483  GAGTGGAGCTGGTGTGACCTCCTCCAGTGGGGCCAACTCGGGAGCCGATCCC  1534
+
+
+
+
+
+Query #19: 19 Query ID: lcl|Query_25826 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1684 to 1735
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CAGTGCTGGAAGTGAGGAGCTATCG--TGCCCTGAAAGTGGAATCGGTGGAC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1684  CAGTGCTGGAAGTGAGGAGCTATCGGCTGCCCTGAAAGTGGAATCGGTGGAC  1735
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1555 to 1606
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CAGTGCTGGAAGTGAGGAGCTATCG--TGCCCTGAAAGTGGAATCGGTGGAC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1555  CAGTGCTGGAAGTGAGGAGCTATCGGCTGCCCTGAAAGTGGAATCGGTGGAC  1606
+
+
+
+
+
+Query #20: 20 Query ID: lcl|Query_25827 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster paired (prd), transcript variant B, mRNA  83.3   83.3  100%  6e-16 96.15  NM_164990.3      
+Drosophila melanogaster paired (prd), transcript variant A, mRNA  83.3   83.3  100%  6e-16 96.15  NM_078832.3      
+
+
+Alignments:
+>Drosophila melanogaster paired (prd), transcript variant B, mRNA
+Sequence ID: NM_164990.3 Length: 2459 
+Range 1: 1756 to 1807
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GCAGTTGTACGGCGGATGGAGCTCC--GCAGGCACTGCGCCCCAATGCGCCA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1756  GCAGTTGTACGGCGGATGGAGCTCCATGCAGGCACTGCGCCCCAATGCGCCA  1807
+
+
+
+>Drosophila melanogaster paired (prd), transcript variant A, mRNA
+Sequence ID: NM_078832.3 Length: 2330 
+Range 1: 1627 to 1678
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GCAGTTGTACGGCGGATGGAGCTCC--GCAGGCACTGCGCCCCAATGCGCCA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1627  GCAGTTGTACGGCGGATGGAGCTCCATGCAGGCACTGCGCCCCAATGCGCCA  1678
+
+
+
+
+
+
+
+		
+
+

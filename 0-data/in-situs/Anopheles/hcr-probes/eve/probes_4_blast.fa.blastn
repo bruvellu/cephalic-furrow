@@ -1,0 +1,684 @@
+BLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: ../../../0-Resources/transcriptome/anopheles_transcriptome.fa
+           32,974 sequences; 141,780,436 total letters
+
+
+
+Query= Aste_eve_01
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1   CCCAGCCAATGTGCGTGTTTGTTCG--GTAGGAAATTATCACACTTTCACGG  50
+           |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  14  CCCAGCCAATGTGCGTGTTTGTTCGGTGTAGGAAATTATCACACTTTCACGG  65
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_02
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    GTTTGTGCTTTATGAATTAGGAGCG--CGCCGATACCAACCGTTTAGCGTCG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  99   GTTTGTGCTTTATGAATTAGGAGCGAACGCCGATACCAACCGTTTAGCGTCG  150
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_03
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    GTTGAGCAACTTCTGCAAAATCAGA--ATTGTGACGAACGGATATTGAAGTG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  195  GTTGAGCAACTTCTGCAAAATCAGATAATTGTGACGAACGGATATTGAAGTG  246
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_04
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    GGCATGGATGCACTGCAGCATCGCG--TCAAGCGTAGGATTAGCCGTCGACC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  272  GGCATGGATGCACTGCAGCATCGCGACTCAAGCGTAGGATTAGCCGTCGACC  323
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_05
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    GGCGTCGCCTCCATTATCTCCACTA--CGACTGCAACAGTCCACCTTCCTCG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  349  GGCGTCGCCTCCATTATCTCCACTAAGCGACTGCAACAGTCCACCTTCCTCG  400
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_06
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    CGCCCCTGGACCCATCTGTCCGGCG--ACCGAACCGCCTTTACCCGCGACCA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  426  CGCCCCTGGACCCATCTGTCCGGCGCTACCGAACCGCCTTTACCCGCGACCA  477
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_07
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    TACAAGGAAAACTACGTCTCGCGA--CCGTCGCTGCGAGCTGGCCGCACAGC  50
+            ||||||||||||||||||||||||  ||||||||||||||||||||||||||
+Sbjct  503  TACAAGGAAAACTACGTCTCGCGACCCCGTCGCTGCGAGCTGGCCGCACAGC  554
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_08
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    GGTTTGGTTTCAGAATCGCCGCATG--GGACAAACGGCAACGGATAGCGGTG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  580  GGTTTGGTTTCAGAATCGCCGCATGAAGGACAAACGGCAACGGATAGCGGTG  631
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_09
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    CGGATCCGGCGTTTGCCGCCTCGAT--TGCAGGCAGCTGCCAACTCGGTCGG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  657  CGGATCCGGCGTTTGCCGCCTCGATCCTGCAGGCAGCTGCCAACTCGGTCGG  708
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_10
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    CCCATGCTCACCCAGATGCCAGTTA--CCGCCGCCGGTAGTGCCGGGTGCGA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  734  CCCATGCTCACCCAGATGCCAGTTATTCCGCCGCCGGTAGTGCCGGGTGCGA  785
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_11
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    CTTCACCGCTTACGGCTACCCCCGC--CACACCGTATCCGCTCCCGCAGCGC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  811  CTTCACCGCTTACGGCTACCCCCGCTACACACCGTATCCGCTCCCGCAGCGC  862
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_12
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    CACCCGTCACCGGACCGACGGCTCC--GAGTGTATCCAGCGGCGAACTCCAT  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  888  CACCCGTCACCGGACCGACGGCTCCCGGAGTGTATCCAGCGGCGAACTCCAT  939
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_13
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     TCGCAGTACGCACCACTCAGCATGC--AAGGCTCAAACACCACCGCAGGACA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  965   TCGCAGTACGCACCACTCAGCATGCCAAAGGCTCAAACACCACCGCAGGACA  1016
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_14
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     TCTTCACCACCAAGGCCGAAGCCCT--TGCATCGCCCCATTCGGCACTCTCG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1042  TCTTCACCACCAAGGCCGAAGCCCTGTTGCATCGCCCCATTCGGCACTCTCG  1093
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_15
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     TTGACACTTCCGCATCGACCTCAAA--CGAGCAACGCCAGCGTCAGTCCGGT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1119  TTGACACTTCCGCATCGACCTCAAACTCGAGCAACGCCAGCGTCAGTCCGGT  1170
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_16
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     GGACTGTTGCTAGCGGCCGCCGCCG--GCCGTCGTCAACCAGTCAGTTAGCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1196  GGACTGTTGCTAGCGGCCGCCGCCGCTGCCGTCGTCAACCAGTCAGTTAGCC  1247
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_17
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     CCGGAAAAACCGAAACTGTTCAAGC--TACAAGTGCGAAGCGTAATCAAATC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1274  CCGGAAAAACCGAAACTGTTCAAGCCTTACAAGTGCGAAGCGTAATCAAATC  1325
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_18
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     CGGGTTGACGTGTTGTAACGCACGG--TTCGCGTTTGTATCAAACGCATAGC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1351  CGGGTTGACGTGTTGTAACGCACGGATTTCGCGTTTGTATCAAACGCATAGC  1402
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_19
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     TTTACCATGTACCCTGTAAGAACTC--GACAAACGGATGTAAAAGGCAACGT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1500  TTTACCATGTACCCTGTAAGAACTCGTGACAAACGGATGTAAAAGGCAACGT  1551
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_eve_20
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protei...  81.8    1e-15
+
+
+>XM_036053459.1 PREDICTED: Anopheles stephensi segmentation protein even-skipped 
+(LOC118510968), mRNA
+Length=1681
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     AAAATTAATCGAACTTGCCAGGTCG--CTACTACGAAAGAGTAAAACCAACC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1592  AAAATTAATCGAACTTGCCAGGTCGATCTACTACGAAAGAGTAAAACCAACC  1643
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+  Database: ../../../0-Resources/transcriptome/anopheles_transcriptome.fa
+    Posted date:  Feb 29, 2024  3:49 PM
+  Number of letters in database: 141,780,436
+  Number of sequences in database:  32,974
+
+
+
+Matrix: blastn matrix 1 -3
+Gap Penalties: Existence: 5, Extension: 2

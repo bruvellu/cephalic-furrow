@@ -1,0 +1,300 @@
+---
+title: "Probe set design for HCR v3.0"
+author: "Bruno C. Vellutini (adapted from a script by Andrea Attardi and Tim Fulton)"
+date: "December 02, 2018"
+modified: "Feb 29, 2024"
+---
+
+```{r setup, echo=FALSE, cache=FALSE}
+options(width=80)
+knitr::opts_chunk$set(comment = "", warning = FALSE, message = FALSE, echo = TRUE, tidy = TRUE, size="small")
+knitr::opts_knit$set(root.dir = getwd())
+library(plyr)
+library(stringr)
+library(Biostrings) # https://bioconductor.org/packages/Biostrings
+```
+
+Create in situ hybridization probes for HCR v3.0 technology from Molecular Instruments, Inc.
+
+## Outline
+
+1. Import mRNA sequence (sense strand!) for the gene of interest.
+2. Extract all possible 25 bp sequences from mRNA.
+3. Compute GC content and Tm for each.
+4. Filter out sequences out of optimal range.
+5. Select sequence pairs 2 bp apart (20 in total).
+6. Reverse complement sequence pairs.
+7. Select HCR amplifier (B1-B5).
+8. Combine initiator sequences and spacers.
+9. Probe set is ready to order.
+
+## Define variables
+
+```{r define-variables}
+# Input names
+# Species name or abbreviation
+species_name <- "Ccap"
+# Gene name or abbreviation
+gene_name <- "btd"
+# File name with transcript sequence in the sense orientation (fasta format)
+name_fasta_file <- "Ccap_btd.fa"
+# File name with transcriptome in fasta format
+probes_blast_db <- "../../../0-Resources/transcriptome/ceratitis_transcriptome.fa"
+
+# Output names
+# File with all possible probes
+name_probes_possible <- "probes_1_possible.fa"
+# File with probes filtered by GC and Tm
+name_probes_filtered <- "probes_2_filtered.fa"
+# File with selected probes (excluded regions)
+name_probes_selected <- "probes_3_selected.fa"
+# File with selected probes formatted for BLASTing
+name_probes_blast <- "probes_4_blast.fa"
+# File with reverse complement of selected probes (antisense)
+name_probes_revcomp <- "probes_5_revcomp.fa"
+
+```
+
+## Import gene sequence
+
+```{r import-gene}
+# Fasta file with a single mRNA sequence in the sense strand
+fasta <- readDNAStringSet(name_fasta_file)
+gene_seq <- str_trim(fasta[1])
+gene_length <- nchar(gene_seq)
+fasta
+```
+
+## Generate candidate probes
+
+Now we continue onto generating all the continuous 25 bp-long sequences possible from the mRNA sequence. As we extract them from the sequence string, we'll store them in a dataframe:
+
+```{r probe-candidates}
+probes_possible <- data.frame(sequence=NA, start=NA, end=NA, length=NA, GC=NA, Tm=NA)
+probe_length <- 25
+loop_end <- gene_length - probe_length + 1
+
+for (i in 1:loop_end) {
+  start <- 0 + i
+  end <- 24 + i
+  sequence <- substr(gene_seq, start, end)
+  length <- nchar(sequence)
+  probes_possible[i, 1] <- sequence
+  probes_possible[i, 2] <- start
+  probes_possible[i, 3] <- end
+  probes_possible[i, 4] <- length
+}
+```
+
+Now we can compute GC content and Tm for each sequence: 
+
+```{r annotate-probes}
+for (i in 1:loop_end) {
+  g_count <- str_count(probes_possible$sequence[i], "G")  # Counts guanines in each sequence
+  c_count <- str_count(probes_possible$sequence[i], "C")  # Counts citosines in each sequence
+  probes_possible$GC[i] <- (g_count + c_count) * 4   # Assigns GC content to each sequence
+  probes_possible$Tm[i] <- 64.9 + 41 * (g_count + c_count - 16.4) / 50 # Tm calculation for each sequence
+}
+probes_possible
+```
+
+This will export the individual probes to a fasta file for inspection.
+
+```{r export-possible}
+probes_possible_set <- DNAStringSet(probes_possible$sequence)
+names(probes_possible_set) <- row.names(probes_possible)
+writeXStringSet(probes_possible_set, name_probes_possible)
+```
+
+Load it as an annotation in your favorite sequence editor software to check the localization of the probe pairs along the mRNA sequence.
+
+## Filter probes
+
+Now that our dataframe is fully annotated, we can subset it to the sequences that show GC content between 37 and 85, and Tm between 55 and 77 (as learned from characterising the published sequences in the HCR manuscripts):
+
+```{r filter-probes}
+probes_filtered <- subset(probes_possible, GC > 37 & GC < 85 & Tm > 55 & Tm < 77)
+probes_filtered
+```
+
+Export the filtered probes to file.
+
+```{r export-filtered}
+probes_filtered_set <- DNAStringSet(probes_filtered$sequence)
+names(probes_filtered_set) <- row.names(probes_filtered)
+writeXStringSet(probes_filtered_set, name_probes_filtered)
+```
+
+Load them on your sequence software for visualization.
+
+# Select probes
+
+This will automatically select odd and even probe pairs positioned 2 bp apart from each other. The distance between probe pairs can be set as well, it is usually 10 bp, but can be adjusted in the variable `between_pairs_bp`. Aim for 20 pairs (40 in total) distributed along the transcript, if possible.
+
+```{r select-probes}
+#TODO: Limit number of probes
+#TODO: Calculate spacing based on length
+#TODO: Restrict to CDS
+probes_selected <- data.frame(sequence=NA, start=NA, end=NA, length=NA, pair=NA, side=NA, name=NA)
+# Adjust the distance between probe pairs
+between_pairs_bp <- 150
+# Don't change the variables below
+within_pair_bp <- 2
+probe_pair_count <- 1
+sequence_count <- 1
+last_position <- 0
+first <- TRUE
+# If desired, add regions of the transcript to exclude
+exclude <- c(1:10, # Too close to 5' end
+             #11:200, # UTR
+             #2981:3006, # BLAST hit
+             (gene_length-10):gene_length # Too close to 3' end
+             )
+
+for (i in probes_filtered$start) {
+  
+  # Skip if too close to last position and between distance
+  if (first == TRUE) {
+    if (i < last_position+1) { next }
+  } else {
+    if (i < last_position+1+between_pairs_bp) { next }
+  }
+  
+  odd <- probes_filtered[probes_filtered$start == i,]
+  even <- probes_filtered[probes_filtered$start == odd$end+1+within_pair_bp,]
+  
+  # Skip if even probe does not exist
+  if (length(even$sequence) == 0 || nchar(even$sequence) != 25) { next }
+  
+  # Skip probes falling under the exclude ranges
+  range_probe <- c(odd$start:even$end)
+  range_overlap <- range_probe %in% exclude
+  if (TRUE %in% range_overlap) { next }
+  
+  probes_selected[sequence_count, 1] <- odd$sequence
+  probes_selected[sequence_count, 2] <- odd$start
+  probes_selected[sequence_count, 3] <- odd$end
+  probes_selected[sequence_count, 4] <- odd$length
+  probes_selected[sequence_count, 5] <- probe_pair_count
+  probes_selected[sequence_count, 6] <- "odd"
+  
+  probes_selected[sequence_count+1, 1] <- even$sequence
+  probes_selected[sequence_count+1, 2] <- even$start
+  probes_selected[sequence_count+1, 3] <- even$end
+  probes_selected[sequence_count+1, 4] <- even$length
+  probes_selected[sequence_count+1, 5] <- probe_pair_count
+  probes_selected[sequence_count+1, 6] <- "even"
+  
+  probe_pair_count = probe_pair_count+1
+  sequence_count = sequence_count+2
+  last_position = even$end
+  first = FALSE
+}
+pad_width <- nchar(length(probes_selected$sequence))
+probes_selected$name <- paste0(substr(probes_selected$side, 1, 1), str_pad(probes_selected$pair, pad_width, pad = "0"))
+probes_selected
+```
+
+This will export the individual probes to a fasta file for inspection.
+
+```{r export-selected}
+probes_selected_set <- DNAStringSet(probes_selected$sequence)
+names(probes_selected_set) <- probes_selected$name
+writeXStringSet(probes_selected_set, name_probes_selected)
+```
+
+Load it as an annotation in your favorite sequence editor software to check the localization of the probe pairs along the mRNA sequence.
+
+## BLAST sequences
+
+BLAST probe pairs against the transcriptome of your species to see if any of the probe pairs have a high similarity with genes other than your target gene.
+
+If you find some, go back to probe selection, exclude this region, and generate the probes again. Then run BLAST to check for hits for the updated probe sequences.
+
+```{r blast-sequences}
+#TODO Export or parse the blastn results into a simpler format for inspection.
+
+# Generate BLAST database if it doesn't exist yet
+if (!(file.exists(paste0(probes_blast_db, ".ndb")))) {
+  # makeblastdb -in transcriptome.fa -dbtype nucl -parse_seqids
+  system(paste0("makeblastdb -in ", probes_blast_db,
+              " -dbtype nucl -parse_seqids"))
+}
+
+# Join odd and even sequences for BLAST
+probes_blast_set <- DNAStringSet(paste0(probes_selected[probes_selected$side == "odd",]$sequence,
+                                        probes_selected[probes_selected$side == "even",]$sequence))
+names(probes_blast_set) <- paste0(species_name, "_", gene_name, "_", str_pad(c(1:length(probes_blast_set)), pad_width, pad = "0"))
+writeXStringSet(probes_blast_set, name_probes_blast)
+
+# Make sure you have BLAST installed on your system
+system(paste0("blastn -task blastn-short -query ", name_probes_blast,
+              " -db ", probes_blast_db,
+              " -out ", name_probes_blast, ".blastn"
+              ))
+```
+
+## Reverse complement
+
+The sequences for HCR probes should be antisense and need to be reverse complemented.
+
+```{r reverse-complement}
+probes_selected_revcomp_set <- reverseComplement(probes_selected_set)
+writeXStringSet(probes_selected_revcomp_set, name_probes_revcomp)
+```
+
+You can now import these revcomp sequences back to the UGENE to check if they align correctly with the selected pairs. They will match the reverse strand.
+
+## Setup amplifiers
+
+Now that the sequences are chosen, we need to add the initiators and spacers to the final sequences. These sequences must be added in the following position for odd and even probes:
+
+```
+5' - INITIATOR + SPACER + REVCOMP-ODD-PROBE - 3'
+5' - REVCOMP-EVEN-PROBE + SPACE + INITIATOR - 3'
+```
+
+These are the initiator and spacer sequences for the different amplifiers.
+
+```{r define-variables}
+B1 <- setNames(c("B1","gaggagggcagcaaacgg", "gaagagtcttcctttacg", "aa", "ta"),
+               c("name","initiator_odd", "initiator_even", "spacer_odd", "spacer_even"))
+B2 <- setNames(c("B2","cctcgtaaatcctcatca", "atcatccagtaaaccgcc", "aa", "aa"),
+               c("name","initiator_odd", "initiator_even", "spacer_odd", "spacer_even"))
+B3 <- setNames(c("B3","gtccctgcctctatatct", "ccactcaactttaacccg", "tt", "tt"),
+               c("name","initiator_odd", "initiator_even", "spacer_odd", "spacer_even"))
+B4 <- setNames(c("B4","cctcaacctacctccaac", "tctcaccatattcgcttc", "aa", "at"),
+               c("name","initiator_odd", "initiator_even", "spacer_odd", "spacer_even"))
+B5 <- setNames(c("B5","ctcactcccaatctctat", "ctaccctacaaatccaat", "aa", "aa"),
+               c("name","initiator_odd", "initiator_even", "spacer_odd", "spacer_even"))
+```
+
+Load the function to generate probes. You'll generate them in the next section.
+
+```{r probe-function}
+generate_probes <- function(probes_revcomp, amplifier, gene_name=gene_name, species_name=species_name) {
+  odd_probes <- paste0(amplifier["initiator_odd"],
+                       amplifier["spacer_odd"],
+                       probes_revcomp[startsWith(names(probes_revcomp), "o"),])
+  even_probes <- paste0(probes_revcomp[startsWith(names(probes_revcomp), "e"),],
+                        amplifier["initiator_even"],
+                        amplifier["spacer_even"])
+  probe_seqs <- c(rbind(odd_probes, even_probes))
+  probe_names <- paste0(species_name, "_", gene_name, "_", amplifier["name"], "_", names(probes_revcomp))
+  all_probes <- data.frame(probe_name = probe_names,
+                           probe_seq = probe_seqs)
+  all_probes_name <- paste0(species_name, "_", gene_name, "_probes_", amplifier["name"], ".txt")
+  write.table(all_probes, all_probes_name, sep = "\t", quote = FALSE, row.names = FALSE, col.names = FALSE)
+}
+```
+
+## Generate probes
+
+```{r generate-probes}
+generate_probes(probes_selected_revcomp_set, B1, gene_name, species_name)
+generate_probes(probes_selected_revcomp_set, B2, gene_name, species_name)
+generate_probes(probes_selected_revcomp_set, B3, gene_name, species_name)
+generate_probes(probes_selected_revcomp_set, B4, gene_name, species_name)
+generate_probes(probes_selected_revcomp_set, B5, gene_name, species_name)
+```
+

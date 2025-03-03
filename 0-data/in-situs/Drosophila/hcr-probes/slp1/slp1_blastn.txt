@@ -1,0 +1,1839 @@
+RID: PSPTX9EM016	
+Job Title:20 sequences (01)				
+Program: BLASTN 
+Database: refseq_rna NCBI Transcript Reference Sequences
+Query #1: 01 Query ID: lcl|Query_47010 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 10 to 61
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1   AGCTAGCATCTCAAGAGCAAACATC--AAGCGATCCCAAGTCGTGTGTGAGA  50
+           |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  10  AGCTAGCATCTCAAGAGCAAACATCTCAAGCGATCCCAAGTCGTGTGTGAGA  61
+
+
+
+
+
+Query #2: 02 Query ID: lcl|Query_47011 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 124 to 175
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    AATGGAATTCAAGAGCAACTTCTCC--CGATGCCATCTTGGCCAAGAAACCC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  124  AATGGAATTCAAGAGCAACTTCTCCATCGATGCCATCTTGGCCAAGAAACCC  175
+
+
+
+
+
+Query #3: 03 Query ID: lcl|Query_47012 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+Drosophila melanogaster long non-coding RNA:CR43451...            41.0   41.0  54%   0.002 92.59  NR_048425.1      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 186 to 237
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CAACTCAACCCATCAAAACCGAACC--TGCATCATCATCATCAGTACGTTCA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  186  CAACTCAACCCATCAAAACCGAACCGGTGCATCATCATCATCAGTACGTTCA  237
+
+
+
+>Drosophila melanogaster long non-coding RNA:CR43451 (lncRNA:CR43451), lncRNA
+Sequence ID: NR_048425.1 Length: 940 
+Range 1: 516 to 542
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:25/27(93%),  Gaps:0/27(0%), Strand: Plus/Plus
+
+Query  15   AAAACCGAACCTGCATCATCATCATCA  41
+            ||||| ||||| |||||||||||||||
+Sbjct  516  AAAACGGAACCCGCATCATCATCATCA  542
+
+
+
+
+
+Query #4: 04 Query ID: lcl|Query_47013 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 248 to 299
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    AATTCCGATGGCGAACTCTCGGCTT--GAGGATTTCGACAGCCCCAGCAGGA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  248  AATTCCGATGGCGAACTCTCGGCTTCGGAGGATTTCGACAGCCCCAGCAGGA  299
+
+
+
+
+
+Query #5: 05 Query ID: lcl|Query_47014 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 310 to 361
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CATGAGCAGTGCCGCCGAGAGTCTA--GTCGCAAAACAATGACAAGCTCGAC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  310  CATGAGCAGTGCCGCCGAGAGTCTATCGTCGCAAAACAATGACAAGCTCGAC  361
+
+
+
+
+
+Query #6: 06 Query ID: lcl|Query_47015 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001300046.1   
+Drosophila melanogaster uncharacterized protein, transcript...    37.4   37.4  52%   0.021 92.59  NM_001259417.2   
+Drosophila melanogaster uncharacterized protein, transcript...    37.4   37.4  52%   0.021 92.59  NM_001169689.2   
+Drosophila melanogaster uncharacterized protein, transcript...    37.4   37.4  52%   0.021 92.59  NM_001299536.1   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001274624.1   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001274623.1   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001274622.1   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001274621.1   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001274620.1   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001274619.1   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001169902.2   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_079913.3      
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_001169903.1   
+Drosophila melanogaster sunday driver (syd), transcript varian... 37.4   37.4  64%   0.021 85.29  NM_168245.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 372 to 423
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    ACGATGAGCTGGAGGATCAGCTGGA--AGGACCAGGAGAGCGAGGATGGCAA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  372  ACGATGAGCTGGAGGATCAGCTGGACGAGGACCAGGAGAGCGAGGATGGCAA  423
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant K, mRNA
+Sequence ID: NM_001300046.1 Length: 5252 
+Range 1: 1871 to 1904
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1871  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1904
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant B (CG42524), mRNA
+Sequence ID: NM_001259417.2 Length: 1881 
+Range 1: 1613 to 1639
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:25/27(93%),  Gaps:1/27(3%), Strand: Plus/Minus
+
+Query  11    GGAGGATC-AGCTGGAAGGACCAGGAG  36
+             |||||||| |||||| |||||||||||
+Sbjct  1639  GGAGGATCCAGCTGGCAGGACCAGGAG  1613
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant A (CG42524), mRNA
+Sequence ID: NM_001169689.2 Length: 1984 
+Range 1: 1613 to 1639
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:25/27(93%),  Gaps:1/27(3%), Strand: Plus/Minus
+
+Query  11    GGAGGATC-AGCTGGAAGGACCAGGAG  36
+             |||||||| |||||| |||||||||||
+Sbjct  1639  GGAGGATCCAGCTGGCAGGACCAGGAG  1613
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant C (CG42524), mRNA
+Sequence ID: NM_001299536.1 Length: 2167 
+Range 1: 1613 to 1639
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:25/27(93%),  Gaps:1/27(3%), Strand: Plus/Minus
+
+Query  11    GGAGGATC-AGCTGGAAGGACCAGGAG  36
+             |||||||| |||||| |||||||||||
+Sbjct  1639  GGAGGATCCAGCTGGCAGGACCAGGAG  1613
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant J, mRNA
+Sequence ID: NM_001274624.1 Length: 5166 
+Range 1: 1889 to 1922
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1889  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1922
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant I, mRNA
+Sequence ID: NM_001274623.1 Length: 5013 
+Range 1: 1889 to 1922
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1889  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1922
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant H, mRNA
+Sequence ID: NM_001274622.1 Length: 5074 
+Range 1: 1889 to 1922
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1889  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1922
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant G, mRNA
+Sequence ID: NM_001274621.1 Length: 5148 
+Range 1: 1871 to 1904
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1871  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1904
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant F, mRNA
+Sequence ID: NM_001274620.1 Length: 4995 
+Range 1: 1871 to 1904
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1871  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1904
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant E, mRNA
+Sequence ID: NM_001274619.1 Length: 5056 
+Range 1: 1871 to 1904
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1871  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1904
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant C, mRNA
+Sequence ID: NM_001169902.2 Length: 5095 
+Range 1: 1910 to 1943
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1910  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1943
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant A, mRNA
+Sequence ID: NM_079913.3 Length: 4467 
+Range 1: 1910 to 1943
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1910  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1943
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant D, mRNA
+Sequence ID: NM_001169903.1 Length: 4441 
+Range 1: 1317 to 1350
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1317  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1350
+
+
+
+>Drosophila melanogaster sunday driver (syd), transcript variant B, mRNA
+Sequence ID: NM_168245.3 Length: 4459 
+Range 1: 1335 to 1368
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:29/34(85%),  Gaps:2/34(5%), Strand: Plus/Plus
+
+Query  5     TGAGCTGGAGGATCAGCTG--GAAGGACCAGGAG  36
+             ||||||||||||| |||||  ||||| | |||||
+Sbjct  1335  TGAGCTGGAGGATGAGCTGAAGAAGGCCAAGGAG  1368
+
+
+
+
+
+Query #7: 07 Query ID: lcl|Query_47016 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 434 to 485
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    AAACAGAAAATGACCGCCGGCAGCG--ACCAAGAAACCGCCATACAGCTACA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  434  AAACAGAAAATGACCGCCGGCAGCGATACCAAGAAACCGCCATACAGCTACA  485
+
+
+
+
+
+Query #8: 08 Query ID: lcl|Query_47017 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 496 to 547
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CATGATGGCCATCCAGGATAGTCCC--GCAGCGGTTGACTTTGAATGGCATC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  496  CATGATGGCCATCCAGGATAGTCCCGAGCAGCGGTTGACTTTGAATGGCATC  547
+
+
+
+
+
+Query #9: 09 Query ID: lcl|Query_47018 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+Drosophila melanogaster crocodile (croc), mRNA                    46.4   46.4  84%   4e-05 86.36  NM_079478.4      
+Drosophila melanogaster forkhead box L1, transcript variant B...  42.8   42.8  90%   5e-04 80.85  NM_001259680.2   
+Drosophila melanogaster forkhead box L1, transcript variant A...  42.8   42.8  90%   5e-04 80.85  NM_079188.3      
+Drosophila melanogaster sloppy paired 2 (slp2), mRNA              37.4   37.4  50%   0.021 92.00  NM_057486.4      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 559 to 610
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GATCAATAGATTCCCCTACTTCAAG--CAACAAGCGGGGCTGGCAGAACTCC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  559  GATCAATAGATTCCCCTACTTCAAGGCCAACAAGCGGGGCTGGCAGAACTCC  610
+
+
+
+>Drosophila melanogaster crocodile (croc), mRNA
+Sequence ID: NM_079478.4 Length: 2347 
+Range 1: 593 to 636
+
+Score:46.4 bits(50), Expect:4e-05, 
+Identities:38/44(86%),  Gaps:2/44(4%), Strand: Plus/Plus
+
+Query  9    GATTCCCCTACT-TCAAG-CAACAAGCGGGGCTGGCAGAACTCC  50
+            |||| ||||||| ||  | |||||||| ||||||||||||||||
+Sbjct  593  GATTTCCCTACTATCGCGACAACAAGCAGGGCTGGCAGAACTCC  636
+
+
+
+>Drosophila melanogaster forkhead box L1, transcript variant B (FoxL1), mRNA
+Sequence ID: NM_001259680.2 Length: 1414 
+Range 1: 584 to 630
+
+Score:42.8 bits(46), Expect:5e-04, 
+Identities:38/47(81%),  Gaps:2/47(4%), Strand: Plus/Plus
+
+Query  6    ATAGATTCCCCTACTTCAAGCA--ACAAGCGGGGCTGGCAGAACTCC  50
+            ||| |||||| || | || | |  |||||| ||||||||||||||||
+Sbjct  584  ATAAATTCCCATATTACAGGGAGAACAAGCAGGGCTGGCAGAACTCC  630
+
+
+
+>Drosophila melanogaster forkhead box L1, transcript variant A (FoxL1), mRNA
+Sequence ID: NM_079188.3 Length: 1372 
+Range 1: 542 to 588
+
+Score:42.8 bits(46), Expect:5e-04, 
+Identities:38/47(81%),  Gaps:2/47(4%), Strand: Plus/Plus
+
+Query  6    ATAGATTCCCCTACTTCAAGCA--ACAAGCGGGGCTGGCAGAACTCC  50
+            ||| |||||| || | || | |  |||||| ||||||||||||||||
+Sbjct  542  ATAAATTCCCATATTACAGGGAGAACAAGCAGGGCTGGCAGAACTCC  588
+
+
+
+>Drosophila melanogaster sloppy paired 2 (slp2), mRNA
+Sequence ID: NM_057486.4 Length: 2346 
+Range 1: 1015 to 1039
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:23/25(92%),  Gaps:0/25(0%), Strand: Plus/Plus
+
+Query  26    CAACAAGCGGGGCTGGCAGAACTCC  50
+             |||||| | ||||||||||||||||
+Sbjct  1015  CAACAAACAGGGCTGGCAGAACTCC  1039
+
+
+
+
+
+Query #10: 10 Query ID: lcl|Query_47019 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 621 to 672
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    ATCTGAGCCTGAACAAGTGCTTCAC--AGATTCCCCGCAGCTACGATGATCC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  621  ATCTGAGCCTGAACAAGTGCTTCACGAAGATTCCCCGCAGCTACGATGATCC  672
+
+
+
+
+
+Query #11: 11 Query ID: lcl|Query_47020 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+Drosophila melanogaster sloppy paired 2 (slp2), mRNA              50.0   50.0  88%   3e-06 84.78  NM_057486.4      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 683 to 734
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    AACTACTGGATCCTGGACCCCTCGG--GAGGAGGTATTCATTGGCGAGACCA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  683  AACTACTGGATCCTGGACCCCTCGGCCGAGGAGGTATTCATTGGCGAGACCA  734
+
+
+
+>Drosophila melanogaster sloppy paired 2 (slp2), mRNA
+Sequence ID: NM_057486.4 Length: 2346 
+Range 1: 1112 to 1157
+
+Score:50.0 bits(54), Expect:3e-06, 
+Identities:39/46(85%),  Gaps:2/46(4%), Strand: Plus/Plus
+
+Query  1     AACTACTGGATCCTGGACCCCTCG--GGAGGAGGTATTCATTGGCG  44
+             |||||||||||  |||| ||||||  ||| || |||||||||||||
+Sbjct  1112  AACTACTGGATGTTGGATCCCTCGGCGGAAGACGTATTCATTGGCG  1157
+
+
+
+
+
+Query #12: 12 Query ID: lcl|Query_47021 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 745 to 796
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GAGGCGCAAGAATCCCGGCGCCAGT--CACTCGCCTGGCCGCCTATCGTCAG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  745  GAGGCGCAAGAATCCCGGCGCCAGTCGCACTCGCCTGGCCGCCTATCGTCAG  796
+
+
+
+
+
+Query #13: 13 Query ID: lcl|Query_47022 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+Drosophila melanogaster vitelline membrane 26Aa, transcript...    37.4   37.4  50%   0.021 92.00  NM_001273186.1   
+Drosophila melanogaster vitelline membrane 26Aa, transcript...    37.4   37.4  50%   0.021 92.00  NM_057435.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 807 to 858
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CGCCGATGATGGCTGCTTCACCATA--GAGCTCCAGCTTCCAGCTACGGATA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  807  CGCCGATGATGGCTGCTTCACCATACGGAGCTCCAGCTTCCAGCTACGGATA  858
+
+
+
+>Drosophila melanogaster vitelline membrane 26Aa, transcript variant B (Vm26Aa), mRNA
+Sequence ID: NM_001273186.1 Length: 745 
+Range 1: 364 to 388
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:23/25(92%),  Gaps:0/25(0%), Strand: Plus/Plus
+
+Query  25   AGAGCTCCAGCTTCCAGCTACGGAT  49
+            || ||||||||| ||||||||||||
+Sbjct  364  AGCGCTCCAGCTCCCAGCTACGGAT  388
+
+
+
+>Drosophila melanogaster vitelline membrane 26Aa, transcript variant A (Vm26Aa), mRNA
+Sequence ID: NM_057435.3 Length: 641 
+Range 1: 364 to 388
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:23/25(92%),  Gaps:0/25(0%), Strand: Plus/Plus
+
+Query  25   AGAGCTCCAGCTTCCAGCTACGGAT  49
+            || ||||||||| ||||||||||||
+Sbjct  364  AGCGCTCCAGCTCCCAGCTACGGAT  388
+
+
+
+
+
+Query #14: 14 Query ID: lcl|Query_47023 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+Drosophila melanogaster castor (cas), transcript variant C, mRNA  47.3   47.3  56%   4e-05 96.43  NM_001275371.1   
+Drosophila melanogaster castor (cas), transcript variant A, mRNA  47.3   47.3  56%   4e-05 96.43  NM_079938.4      
+Drosophila melanogaster serpent (srp), transcript variant H, mRNA 44.6   44.6  48%   1e-04 100.00 NM_001382083.1   
+Drosophila melanogaster serpent (srp), transcript variant G, mRNA 44.6   44.6  48%   1e-04 100.00 NM_001275690.1   
+Drosophila melanogaster serpent (srp), transcript variant F, mRNA 44.6   44.6  48%   1e-04 100.00 NM_001275689.1   
+Drosophila melanogaster serpent (srp), transcript variant E, mRNA 44.6   44.6  48%   1e-04 100.00 NM_001260199.2   
+Drosophila melanogaster serpent (srp), transcript variant D, mRNA 44.6   44.6  48%   1e-04 100.00 NM_001032019.3   
+Drosophila melanogaster serpent (srp), transcript variant A, mRNA 44.6   44.6  48%   1e-04 100.00 NM_169696.3      
+Drosophila melanogaster serpent (srp), transcript variant B, mRNA 44.6   44.6  48%   1e-04 100.00 NM_169694.3      
+Drosophila melanogaster teyrha-meyrha (tey), transcript varian... 41.0   41.0  44%   0.002 100.00 NM_001275130.2   
+Drosophila melanogaster teyrha-meyrha (tey), transcript varian... 41.0   41.0  44%   0.002 100.00 NM_001144509.3   
+Drosophila melanogaster silver (svr), transcript variant G, mRNA  41.0   41.0  56%   0.002 93.10  NM_206596.2      
+Drosophila melanogaster silver (svr), transcript variant F, mRNA  41.0   41.0  56%   0.002 93.10  NM_206597.2      
+Drosophila melanogaster silver (svr), transcript variant B, mRNA  41.0   41.0  56%   0.002 93.10  NM_080293.4      
+Drosophila melanogaster teyrha-meyrha (tey), transcript varian... 41.0   41.0  44%   0.002 100.00 NM_001275131.1   
+Drosophila melanogaster teyrha-meyrha (tey), transcript varian... 41.0   41.0  44%   0.002 100.00 NM_140883.2      
+Drosophila melanogaster bacchus, transcript variant D (Bacc),...  40.1   40.1  78%   0.006 82.05  NM_001273031.2   
+Drosophila melanogaster bacchus, transcript variant C (Bacc),...  40.1   40.1  78%   0.006 82.05  NM_001258921.3   
+Drosophila melanogaster bacchus, transcript variant A (Bacc),...  40.1   40.1  78%   0.006 82.05  NM_164498.3      
+Drosophila melanogaster bacchus, transcript variant B (Bacc),...  40.1   40.1  78%   0.006 82.05  NM_134862.4      
+Drosophila melanogaster elbow B (elB), transcript variant D, mRNA 39.2   39.2  52%   0.006 92.31  NM_078842.5      
+Drosophila melanogaster elbow B (elB), transcript variant C, mRNA 39.2   39.2  52%   0.006 92.31  NM_205990.2      
+Drosophila melanogaster hemipterous (hep), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_001382111.1   
+Drosophila melanogaster hemipterous (hep), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_001382110.1   
+Drosophila melanogaster long non-coding RNA:CR44357...            38.3   38.3  46%   0.021 95.65  NR_123819.1      
+Drosophila melanogaster long non-coding RNA:CR44357...            38.3   38.3  46%   0.021 95.65  NR_123818.1      
+Drosophila melanogaster hemipterous (hep), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_001272572.2   
+Drosophila melanogaster hemipterous (hep), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_001298253.1   
+Drosophila melanogaster hemipterous (hep), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_167346.2      
+Drosophila melanogaster muscleblind (mbl), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_001259466.2   
+Drosophila melanogaster muscleblind (mbl), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_001259462.2   
+Drosophila melanogaster muscleblind (mbl), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_176211.2      
+Drosophila melanogaster muscleblind (mbl), transcript variant ... 38.3   38.3  46%   0.021 95.65  NM_001274115.1   
+Drosophila melanogaster additional sex combs, transcript varia... 38.3   38.3  46%   0.021 95.65  NM_001274041.1   
+Drosophila melanogaster additional sex combs, transcript varia... 38.3   38.3  46%   0.021 95.65  NM_001274040.1   
+Drosophila melanogaster additional sex combs, transcript varia... 38.3   38.3  46%   0.021 95.65  NM_001014527.2   
+Drosophila melanogaster additional sex combs, transcript varia... 38.3   38.3  46%   0.021 95.65  NM_166057.2      
+Drosophila melanogaster even skipped (eve), mRNA                  38.3   38.3  46%   0.021 95.65  NM_078946.4      
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_001272519.1   
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_001272518.1   
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_001258694.2   
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_001169248.2   
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_167282.4      
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_078565.5      
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_206684.4      
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_206682.4      
+Drosophila melanogaster discs large 1 (dlg1), transcript varia... 38.3   38.3  46%   0.021 95.65  NM_001258693.1   
+Drosophila melanogaster spinophilin, transcript variant T (Spn... 37.4   37.4  40%   0.021 100.00 NM_001299992.1   
+Drosophila melanogaster spinophilin, transcript variant S (Spn... 37.4   37.4  40%   0.021 100.00 NM_080516.3      
+Drosophila melanogaster H15, transcript variant B (H15), mRNA     37.4   37.4  40%   0.021 100.00 NM_001298698.1   
+Drosophila melanogaster H15, transcript variant A (H15), mRNA     37.4   37.4  40%   0.021 100.00 NM_135082.3      
+Drosophila melanogaster retained (retn), transcript variant E,... 37.4   37.4  40%   0.021 100.00 NM_001299846.1   
+Drosophila melanogaster retained (retn), transcript variant D,... 37.4   37.4  40%   0.021 100.00 NM_001299845.1   
+Drosophila melanogaster retained (retn), transcript variant C,... 37.4   37.4  40%   0.021 100.00 NM_001299844.1   
+Drosophila melanogaster retained (retn), transcript variant B,... 37.4   37.4  40%   0.021 100.00 NM_176254.2      
+Drosophila melanogaster retained (retn), transcript variant A,... 37.4   37.4  40%   0.021 100.00 NM_057516.4      
+Drosophila melanogaster rotund (rn), transcript variant E, mRNA   37.4   37.4  40%   0.021 100.00 NM_141458.3      
+Drosophila melanogaster rotund (rn), transcript variant F, mRNA   37.4   37.4  40%   0.021 100.00 NM_001144549.2   
+Drosophila melanogaster encore (enc), transcript variant H, mRNA  37.4   37.4  40%   0.021 100.00 NM_001274449.1   
+Drosophila melanogaster encore (enc), transcript variant G, mRNA  37.4   37.4  40%   0.021 100.00 NM_001274448.1   
+Drosophila melanogaster encore (enc), transcript variant F, mRNA  37.4   37.4  40%   0.021 100.00 NM_001274447.1   
+Drosophila melanogaster encore (enc), transcript variant E, mRNA  37.4   37.4  40%   0.021 100.00 NM_001104027.2   
+Drosophila melanogaster encore (enc), transcript variant D, mRNA  37.4   37.4  40%   0.021 100.00 NM_001104026.2   
+Drosophila melanogaster encore (enc), transcript variant A, mRNA  37.4   37.4  40%   0.021 100.00 NM_206270.2      
+Drosophila melanogaster encore (enc), transcript variant B, mRNA  37.4   37.4  40%   0.021 100.00 NM_080026.3      
+Drosophila melanogaster spinophilin, transcript variant J (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259649.1   
+Drosophila melanogaster spinophilin, transcript variant I (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259648.1   
+Drosophila melanogaster spinophilin, transcript variant H (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259647.1   
+Drosophila melanogaster spinophilin, transcript variant G (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259646.1   
+Drosophila melanogaster spinophilin, transcript variant F (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259645.1   
+Drosophila melanogaster spinophilin, transcript variant E (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259644.1   
+Drosophila melanogaster spinophilin, transcript variant D (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259643.1   
+Drosophila melanogaster spinophilin, transcript variant C (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259642.1   
+Drosophila melanogaster spinophilin, transcript variant B (Spn... 37.4   37.4  40%   0.021 100.00 NM_001259641.1   
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 869 to 920
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CCATTCGCCGCCGCTGCCGCCGCCG--CTGTACCAGCGCATGAATCCCGCTG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  869  CCATTCGCCGCCGCTGCCGCCGCCGCCCTGTACCAGCGCATGAATCCCGCTG  920
+
+
+
+>Drosophila melanogaster castor (cas), transcript variant C, mRNA
+Sequence ID: NM_001275371.1 Length: 2845 
+Range 1: 2184 to 2211
+
+Score:47.3 bits(51), Expect:4e-05, 
+Identities:27/28(96%),  Gaps:0/28(0%), Strand: Plus/Minus
+
+Query  1     CCATTCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||| ||||||||||||||||||||||
+Sbjct  2211  CCATTTGCCGCCGCTGCCGCCGCCGCTG  2184
+
+
+
+>Drosophila melanogaster castor (cas), transcript variant A, mRNA
+Sequence ID: NM_079938.4 Length: 3151 
+Range 1: 2490 to 2517
+
+Score:47.3 bits(51), Expect:4e-05, 
+Identities:27/28(96%),  Gaps:0/28(0%), Strand: Plus/Minus
+
+Query  1     CCATTCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||| ||||||||||||||||||||||
+Sbjct  2517  CCATTTGCCGCCGCTGCCGCCGCCGCTG  2490
+
+
+
+>Drosophila melanogaster serpent (srp), transcript variant H, mRNA
+Sequence ID: NM_001382083.1 Length: 3037 
+Range 1: 1935 to 1958
+
+Score:44.6 bits(48), Expect:1e-04, 
+Identities:24/24(100%),  Gaps:0/24(0%), Strand: Plus/Minus
+
+Query  5     TCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||||||||||||||||||||||
+Sbjct  1958  TCGCCGCCGCTGCCGCCGCCGCTG  1935
+
+
+
+>Drosophila melanogaster serpent (srp), transcript variant G, mRNA
+Sequence ID: NM_001275690.1 Length: 3377 
+Range 1: 2279 to 2302
+
+Score:44.6 bits(48), Expect:1e-04, 
+Identities:24/24(100%),  Gaps:0/24(0%), Strand: Plus/Minus
+
+Query  5     TCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||||||||||||||||||||||
+Sbjct  2302  TCGCCGCCGCTGCCGCCGCCGCTG  2279
+
+
+
+>Drosophila melanogaster serpent (srp), transcript variant F, mRNA
+Sequence ID: NM_001275689.1 Length: 3274 
+Range 1: 2176 to 2199
+
+Score:44.6 bits(48), Expect:1e-04, 
+Identities:24/24(100%),  Gaps:0/24(0%), Strand: Plus/Minus
+
+Query  5     TCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||||||||||||||||||||||
+Sbjct  2199  TCGCCGCCGCTGCCGCCGCCGCTG  2176
+
+
+
+>Drosophila melanogaster serpent (srp), transcript variant E, mRNA
+Sequence ID: NM_001260199.2 Length: 3796 
+Range 1: 2698 to 2721
+
+Score:44.6 bits(48), Expect:1e-04, 
+Identities:24/24(100%),  Gaps:0/24(0%), Strand: Plus/Minus
+
+Query  5     TCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||||||||||||||||||||||
+Sbjct  2721  TCGCCGCCGCTGCCGCCGCCGCTG  2698
+
+
+
+>Drosophila melanogaster serpent (srp), transcript variant D, mRNA
+Sequence ID: NM_001032019.3 Length: 3841 
+Range 1: 2743 to 2766
+
+Score:44.6 bits(48), Expect:1e-04, 
+Identities:24/24(100%),  Gaps:0/24(0%), Strand: Plus/Minus
+
+Query  5     TCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||||||||||||||||||||||
+Sbjct  2766  TCGCCGCCGCTGCCGCCGCCGCTG  2743
+
+
+
+>Drosophila melanogaster serpent (srp), transcript variant A, mRNA
+Sequence ID: NM_169696.3 Length: 4459 
+Range 1: 3361 to 3384
+
+Score:44.6 bits(48), Expect:1e-04, 
+Identities:24/24(100%),  Gaps:0/24(0%), Strand: Plus/Minus
+
+Query  5     TCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||||||||||||||||||||||
+Sbjct  3384  TCGCCGCCGCTGCCGCCGCCGCTG  3361
+
+
+
+>Drosophila melanogaster serpent (srp), transcript variant B, mRNA
+Sequence ID: NM_169694.3 Length: 4414 
+Range 1: 3316 to 3339
+
+Score:44.6 bits(48), Expect:1e-04, 
+Identities:24/24(100%),  Gaps:0/24(0%), Strand: Plus/Minus
+
+Query  5     TCGCCGCCGCTGCCGCCGCCGCTG  28
+             ||||||||||||||||||||||||
+Sbjct  3339  TCGCCGCCGCTGCCGCCGCCGCTG  3316
+
+
+
+>Drosophila melanogaster teyrha-meyrha (tey), transcript variant C, mRNA
+Sequence ID: NM_001275130.2 Length: 3113 
+Range 1: 482 to 503
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:22/22(100%),  Gaps:0/22(0%), Strand: Plus/Minus
+
+Query  6    CGCCGCCGCTGCCGCCGCCGCT  27
+            ||||||||||||||||||||||
+Sbjct  503  CGCCGCCGCTGCCGCCGCCGCT  482
+
+
+
+>Drosophila melanogaster teyrha-meyrha (tey), transcript variant B, mRNA
+Sequence ID: NM_001144509.3 Length: 3200 
+Range 1: 512 to 533
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:22/22(100%),  Gaps:0/22(0%), Strand: Plus/Minus
+
+Query  6    CGCCGCCGCTGCCGCCGCCGCT  27
+            ||||||||||||||||||||||
+Sbjct  533  CGCCGCCGCTGCCGCCGCCGCT  512
+
+
+
+>Drosophila melanogaster silver (svr), transcript variant G, mRNA
+Sequence ID: NM_206596.2 Length: 5828 
+Range 1: 221 to 249
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:27/29(93%),  Gaps:1/29(3%), Strand: Plus/Minus
+
+Query  1    CCATTCGCC-GCCGCTGCCGCCGCCGCTG  28
+            ||||||||| ||| |||||||||||||||
+Sbjct  249  CCATTCGCCCGCCTCTGCCGCCGCCGCTG  221
+
+
+
+>Drosophila melanogaster silver (svr), transcript variant F, mRNA
+Sequence ID: NM_206597.2 Length: 3130 
+Range 1: 221 to 249
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:27/29(93%),  Gaps:1/29(3%), Strand: Plus/Minus
+
+Query  1    CCATTCGCC-GCCGCTGCCGCCGCCGCTG  28
+            ||||||||| ||| |||||||||||||||
+Sbjct  249  CCATTCGCCCGCCTCTGCCGCCGCCGCTG  221
+
+
+
+>Drosophila melanogaster silver (svr), transcript variant B, mRNA
+Sequence ID: NM_080293.4 Length: 5890 
+Range 1: 221 to 249
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:27/29(93%),  Gaps:1/29(3%), Strand: Plus/Minus
+
+Query  1    CCATTCGCC-GCCGCTGCCGCCGCCGCTG  28
+            ||||||||| ||| |||||||||||||||
+Sbjct  249  CCATTCGCCCGCCTCTGCCGCCGCCGCTG  221
+
+
+
+>Drosophila melanogaster teyrha-meyrha (tey), transcript variant D, mRNA
+Sequence ID: NM_001275131.1 Length: 2646 
+Range 1: 327 to 348
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:22/22(100%),  Gaps:0/22(0%), Strand: Plus/Minus
+
+Query  6    CGCCGCCGCTGCCGCCGCCGCT  27
+            ||||||||||||||||||||||
+Sbjct  348  CGCCGCCGCTGCCGCCGCCGCT  327
+
+
+
+>Drosophila melanogaster teyrha-meyrha (tey), transcript variant A, mRNA
+Sequence ID: NM_140883.2 Length: 2827 
+Range 1: 512 to 533
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:22/22(100%),  Gaps:0/22(0%), Strand: Plus/Minus
+
+Query  6    CGCCGCCGCTGCCGCCGCCGCT  27
+            ||||||||||||||||||||||
+Sbjct  533  CGCCGCCGCTGCCGCCGCCGCT  512
+
+
+
+>Drosophila melanogaster bacchus, transcript variant D (Bacc), mRNA
+Sequence ID: NM_001273031.2 Length: 2524 
+Range 1: 620 to 658
+
+Score:40.1 bits(43), Expect:0.006, 
+Identities:32/39(82%),  Gaps:0/39(0%), Strand: Plus/Plus
+
+Query  7    GCCGCCGCTGCCGCCGCCGCTGTACCAGCGCATGAATCC  45
+            ||||||| ||||||||||||||  || ||  | ||||||
+Sbjct  620  GCCGCCGATGCCGCCGCCGCTGCCCCCGCAAAGGAATCC  658
+
+
+
+>Drosophila melanogaster bacchus, transcript variant C (Bacc), mRNA
+Sequence ID: NM_001258921.3 Length: 2221 
+Range 1: 262 to 300
+
+Score:40.1 bits(43), Expect:0.006, 
+Identities:32/39(82%),  Gaps:0/39(0%), Strand: Plus/Plus
+
+Query  7    GCCGCCGCTGCCGCCGCCGCTGTACCAGCGCATGAATCC  45
+            ||||||| ||||||||||||||  || ||  | ||||||
+Sbjct  262  GCCGCCGATGCCGCCGCCGCTGCCCCCGCAAAGGAATCC  300
+
+
+
+>Drosophila melanogaster bacchus, transcript variant A (Bacc), mRNA
+Sequence ID: NM_164498.3 Length: 1010 
+Range 1: 363 to 401
+
+Score:40.1 bits(43), Expect:0.006, 
+Identities:32/39(82%),  Gaps:0/39(0%), Strand: Plus/Plus
+
+Query  7    GCCGCCGCTGCCGCCGCCGCTGTACCAGCGCATGAATCC  45
+            ||||||| ||||||||||||||  || ||  | ||||||
+Sbjct  363  GCCGCCGATGCCGCCGCCGCTGCCCCCGCAAAGGAATCC  401
+
+
+
+>Drosophila melanogaster bacchus, transcript variant B (Bacc), mRNA
+Sequence ID: NM_134862.4 Length: 912 
+Range 1: 265 to 303
+
+Score:40.1 bits(43), Expect:0.006, 
+Identities:32/39(82%),  Gaps:0/39(0%), Strand: Plus/Plus
+
+Query  7    GCCGCCGCTGCCGCCGCCGCTGTACCAGCGCATGAATCC  45
+            ||||||| ||||||||||||||  || ||  | ||||||
+Sbjct  265  GCCGCCGATGCCGCCGCCGCTGCCCCCGCAAAGGAATCC  303
+
+
+
+>Drosophila melanogaster elbow B (elB), transcript variant D, mRNA
+Sequence ID: NM_078842.5 Length: 3326 
+Range 1: 1844 to 1869
+
+Score:39.2 bits(42), Expect:0.006, 
+Identities:24/26(92%),  Gaps:0/26(0%), Strand: Plus/Minus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTGTAC  31
+             ||||||||||||||| ||||||| ||
+Sbjct  1869  CGCCGCCGCTGCCGCTGCCGCTGCAC  1844
+
+
+
+>Drosophila melanogaster elbow B (elB), transcript variant C, mRNA
+Sequence ID: NM_205990.2 Length: 3323 
+Range 1: 1841 to 1866
+
+Score:39.2 bits(42), Expect:0.006, 
+Identities:24/26(92%),  Gaps:0/26(0%), Strand: Plus/Minus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTGTAC  31
+             ||||||||||||||| ||||||| ||
+Sbjct  1866  CGCCGCCGCTGCCGCTGCCGCTGCAC  1841
+
+
+
+>Drosophila melanogaster hemipterous (hep), transcript variant H, mRNA
+Sequence ID: NM_001382111.1 Length: 4893 
+Range 1: 4069 to 4091
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  4     TTCGCCGCCGCTGCCGCCGCCGC  26
+             |||||||||||||||||| ||||
+Sbjct  4069  TTCGCCGCCGCTGCCGCCACCGC  4091
+
+
+
+>Drosophila melanogaster hemipterous (hep), transcript variant G, mRNA
+Sequence ID: NM_001382110.1 Length: 4893 
+Range 1: 4069 to 4091
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  4     TTCGCCGCCGCTGCCGCCGCCGC  26
+             |||||||||||||||||| ||||
+Sbjct  4069  TTCGCCGCCGCTGCCGCCACCGC  4091
+
+
+
+>Drosophila melanogaster long non-coding RNA:CR44357 (lncRNA:CR44357), lncRNA
+Sequence ID: NR_123819.1 Length: 2428 
+Range 1: 2101 to 2123
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTG  28
+             |||||| ||||||||||||||||
+Sbjct  2101  CGCCGCTGCTGCCGCCGCCGCTG  2123
+
+
+
+>Drosophila melanogaster long non-coding RNA:CR44357 (lncRNA:CR44357), lncRNA
+Sequence ID: NR_123818.1 Length: 2133 
+Range 1: 1806 to 1828
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTG  28
+             |||||| ||||||||||||||||
+Sbjct  1806  CGCCGCTGCTGCCGCCGCCGCTG  1828
+
+
+
+>Drosophila melanogaster hemipterous (hep), transcript variant E, mRNA
+Sequence ID: NM_001272572.2 Length: 5689 
+Range 1: 4865 to 4887
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  4     TTCGCCGCCGCTGCCGCCGCCGC  26
+             |||||||||||||||||| ||||
+Sbjct  4865  TTCGCCGCCGCTGCCGCCACCGC  4887
+
+
+
+>Drosophila melanogaster hemipterous (hep), transcript variant F, mRNA
+Sequence ID: NM_001298253.1 Length: 5344 
+>Drosophila melanogaster hemipterous (hep), transcript variant D, mRNA
+Sequence ID: NM_001272571.2 Length: 5344  
+Range 1: 3994 to 4016
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  4     TTCGCCGCCGCTGCCGCCGCCGC  26
+             |||||||||||||||||| ||||
+Sbjct  3994  TTCGCCGCCGCTGCCGCCACCGC  4016
+
+
+
+>Drosophila melanogaster hemipterous (hep), transcript variant A, mRNA
+Sequence ID: NM_167346.2 Length: 4893 
+Range 1: 4069 to 4091
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  4     TTCGCCGCCGCTGCCGCCGCCGC  26
+             |||||||||||||||||| ||||
+Sbjct  4069  TTCGCCGCCGCTGCCGCCACCGC  4091
+
+
+
+>Drosophila melanogaster muscleblind (mbl), transcript variant M, mRNA
+Sequence ID: NM_001259466.2 Length: 5023 
+Range 1: 1691 to 1713
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTG  28
+             |||||| ||||||||||||||||
+Sbjct  1691  CGCCGCTGCTGCCGCCGCCGCTG  1713
+
+
+
+>Drosophila melanogaster muscleblind (mbl), transcript variant H, mRNA
+Sequence ID: NM_001259462.2 Length: 5257 
+Range 1: 1925 to 1947
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTG  28
+             |||||| ||||||||||||||||
+Sbjct  1925  CGCCGCTGCTGCCGCCGCCGCTG  1947
+
+
+
+>Drosophila melanogaster muscleblind (mbl), transcript variant B, mRNA
+Sequence ID: NM_176211.2 Length: 3877 
+Range 1: 1849 to 1871
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTG  28
+             |||||| ||||||||||||||||
+Sbjct  1849  CGCCGCTGCTGCCGCCGCCGCTG  1871
+
+
+
+>Drosophila melanogaster muscleblind (mbl), transcript variant P, mRNA
+Sequence ID: NM_001274115.1 Length: 7651 
+Range 1: 1731 to 1753
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTG  28
+             |||||| ||||||||||||||||
+Sbjct  1731  CGCCGCTGCTGCCGCCGCCGCTG  1753
+
+
+
+>Drosophila melanogaster additional sex combs, transcript variant D (Asx), mRNA
+Sequence ID: NM_001274041.1 Length: 6809 
+Range 1: 1087 to 1109
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  6     CGCCGCCGCTGCCGCCGCCGCTG  28
+             |||||| ||||||||||||||||
+Sbjct  1109  CGCCGCTGCTGCCGCCGCCGCTG  1087
+
+
+
+>Drosophila melanogaster additional sex combs, transcript variant C (Asx), mRNA
+Sequence ID: NM_001274040.1 Length: 6377 
+Range 1: 617 to 639
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  6    CGCCGCCGCTGCCGCCGCCGCTG  28
+            |||||| ||||||||||||||||
+Sbjct  639  CGCCGCTGCTGCCGCCGCCGCTG  617
+
+
+
+>Drosophila melanogaster additional sex combs, transcript variant B (Asx), mRNA
+Sequence ID: NM_001014527.2 Length: 5062 
+Range 1: 557 to 579
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  6    CGCCGCCGCTGCCGCCGCCGCTG  28
+            |||||| ||||||||||||||||
+Sbjct  579  CGCCGCTGCTGCCGCCGCCGCTG  557
+
+
+
+>Drosophila melanogaster additional sex combs, transcript variant A (Asx), mRNA
+Sequence ID: NM_166057.2 Length: 6643 
+Range 1: 886 to 908
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  6    CGCCGCCGCTGCCGCCGCCGCTG  28
+            |||||| ||||||||||||||||
+Sbjct  908  CGCCGCTGCTGCCGCCGCCGCTG  886
+
+
+
+>Drosophila melanogaster even skipped (eve), mRNA
+Sequence ID: NM_078946.4 Length: 1406 
+Range 1: 603 to 625
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  6    CGCCGCCGCTGCCGCCGCCGCTG  28
+            |||||| ||||||||||||||||
+Sbjct  603  CGCCGCTGCTGCCGCCGCCGCTG  625
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant T, mRNA
+Sequence ID: NM_001272519.1 Length: 6815 
+Range 1: 412 to 434
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  434  ATCCGCCGCCGCTGCCGCCGCCG  412
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant S, mRNA
+Sequence ID: NM_001272518.1 Length: 5380 
+Range 1: 364 to 386
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  386  ATCCGCCGCCGCTGCCGCCGCCG  364
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant Q, mRNA
+Sequence ID: NM_001258694.2 Length: 5341 
+Range 1: 280 to 302
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  302  ATCCGCCGCCGCTGCCGCCGCCG  280
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant N, mRNA
+Sequence ID: NM_001169248.2 Length: 4841 
+Range 1: 412 to 434
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  434  ATCCGCCGCCGCTGCCGCCGCCG  412
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant A, mRNA
+Sequence ID: NM_167282.4 Length: 4865 
+Range 1: 412 to 434
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  434  ATCCGCCGCCGCTGCCGCCGCCG  412
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant D, mRNA
+Sequence ID: NM_078565.5 Length: 4848 
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant R, mRNA
+Sequence ID: NM_001272517.1 Length: 4848  
+Range 1: 419 to 441
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  441  ATCCGCCGCCGCTGCCGCCGCCG  419
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant E, mRNA
+Sequence ID: NM_206684.4 Length: 4709 
+Range 1: 280 to 302
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  302  ATCCGCCGCCGCTGCCGCCGCCG  280
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant G, mRNA
+Sequence ID: NM_206682.4 Length: 4893 
+Range 1: 419 to 441
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  441  ATCCGCCGCCGCTGCCGCCGCCG  419
+
+
+
+>Drosophila melanogaster discs large 1 (dlg1), transcript variant P, mRNA
+Sequence ID: NM_001258693.1 Length: 4841 
+Range 1: 109 to 131
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  3    ATTCGCCGCCGCTGCCGCCGCCG  25
+            || ||||||||||||||||||||
+Sbjct  131  ATCCGCCGCCGCTGCCGCCGCCG  109
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant T (Spn), mRNA
+Sequence ID: NM_001299992.1 Length: 6425 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant S (Spn), mRNA
+Sequence ID: NM_080516.3 Length: 7289 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster H15, transcript variant B (H15), mRNA
+Sequence ID: NM_001298698.1 Length: 2926 
+Range 1: 351 to 370
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Minus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  370  CGCCGCTGCCGCCGCCGCTG  351
+
+
+
+>Drosophila melanogaster H15, transcript variant A (H15), mRNA
+Sequence ID: NM_135082.3 Length: 2617 
+Range 1: 704 to 723
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Minus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  723  CGCCGCTGCCGCCGCCGCTG  704
+
+
+
+>Drosophila melanogaster retained (retn), transcript variant E, mRNA
+Sequence ID: NM_001299846.1 Length: 3535 
+Range 1: 1160 to 1179
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  1160  GCCGCCGCTGCCGCCGCCGC  1179
+
+
+
+>Drosophila melanogaster retained (retn), transcript variant D, mRNA
+Sequence ID: NM_001299845.1 Length: 3051 
+Range 1: 676 to 695
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7    GCCGCCGCTGCCGCCGCCGC  26
+            ||||||||||||||||||||
+Sbjct  676  GCCGCCGCTGCCGCCGCCGC  695
+
+
+
+>Drosophila melanogaster retained (retn), transcript variant C, mRNA
+Sequence ID: NM_001299844.1 Length: 4142 
+Range 1: 1910 to 1929
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  1910  GCCGCCGCTGCCGCCGCCGC  1929
+
+
+
+>Drosophila melanogaster retained (retn), transcript variant B, mRNA
+Sequence ID: NM_176254.2 Length: 4306 
+Range 1: 1931 to 1950
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  1931  GCCGCCGCTGCCGCCGCCGC  1950
+
+
+
+>Drosophila melanogaster retained (retn), transcript variant A, mRNA
+Sequence ID: NM_057516.4 Length: 4291 
+Range 1: 1916 to 1935
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  1916  GCCGCCGCTGCCGCCGCCGC  1935
+
+
+
+>Drosophila melanogaster rotund (rn), transcript variant E, mRNA
+Sequence ID: NM_141458.3 Length: 5014 
+>Drosophila melanogaster rotund (rn), transcript variant G, mRNA
+Sequence ID: NM_001275414.2 Length: 5014  
+Range 1: 1580 to 1599
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  1580  GCCGCCGCTGCCGCCGCCGC  1599
+
+
+
+>Drosophila melanogaster rotund (rn), transcript variant F, mRNA
+Sequence ID: NM_001144549.2 Length: 4270 
+Range 1: 836 to 855
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7    GCCGCCGCTGCCGCCGCCGC  26
+            ||||||||||||||||||||
+Sbjct  836  GCCGCCGCTGCCGCCGCCGC  855
+
+
+
+>Drosophila melanogaster encore (enc), transcript variant H, mRNA
+Sequence ID: NM_001274449.1 Length: 7293 
+Range 1: 5417 to 5436
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  5417  GCCGCCGCTGCCGCCGCCGC  5436
+
+
+
+>Drosophila melanogaster encore (enc), transcript variant G, mRNA
+Sequence ID: NM_001274448.1 Length: 7180 
+Range 1: 5331 to 5350
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  5331  GCCGCCGCTGCCGCCGCCGC  5350
+
+
+
+>Drosophila melanogaster encore (enc), transcript variant F, mRNA
+Sequence ID: NM_001274447.1 Length: 7638 
+Range 1: 5789 to 5808
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  5789  GCCGCCGCTGCCGCCGCCGC  5808
+
+
+
+>Drosophila melanogaster encore (enc), transcript variant E, mRNA
+Sequence ID: NM_001104027.2 Length: 7623 
+Range 1: 5774 to 5793
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  5774  GCCGCCGCTGCCGCCGCCGC  5793
+
+
+
+>Drosophila melanogaster encore (enc), transcript variant D, mRNA
+Sequence ID: NM_001104026.2 Length: 7323 
+Range 1: 5474 to 5493
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  5474  GCCGCCGCTGCCGCCGCCGC  5493
+
+
+
+>Drosophila melanogaster encore (enc), transcript variant A, mRNA
+Sequence ID: NM_206270.2 Length: 8375 
+Range 1: 5432 to 5451
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  5432  GCCGCCGCTGCCGCCGCCGC  5451
+
+
+
+>Drosophila melanogaster encore (enc), transcript variant B, mRNA
+Sequence ID: NM_080026.3 Length: 7266 
+Range 1: 5417 to 5436
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  7     GCCGCCGCTGCCGCCGCCGC  26
+             ||||||||||||||||||||
+Sbjct  5417  GCCGCCGCTGCCGCCGCCGC  5436
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant J (Spn), mRNA
+Sequence ID: NM_001259649.1 Length: 7376 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant I (Spn), mRNA
+Sequence ID: NM_001259648.1 Length: 8756 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant H (Spn), mRNA
+Sequence ID: NM_001259647.1 Length: 9544 
+Range 1: 203 to 222
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  203  CGCCGCTGCCGCCGCCGCTG  222
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant G (Spn), mRNA
+Sequence ID: NM_001259646.1 Length: 7295 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant F (Spn), mRNA
+Sequence ID: NM_001259645.1 Length: 6520 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant E (Spn), mRNA
+Sequence ID: NM_001259644.1 Length: 6383 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant D (Spn), mRNA
+Sequence ID: NM_001259643.1 Length: 7343 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant C (Spn), mRNA
+Sequence ID: NM_001259642.1 Length: 10136 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+>Drosophila melanogaster spinophilin, transcript variant B (Spn), mRNA
+Sequence ID: NM_001259641.1 Length: 7334 
+Range 1: 795 to 814
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Plus
+
+Query  9    CGCCGCTGCCGCCGCCGCTG  28
+            ||||||||||||||||||||
+Sbjct  795  CGCCGCTGCCGCCGCCGCTG  814
+
+
+
+
+
+Query #15: 15 Query ID: lcl|Query_47024 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 931 to 982
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    TGCCTATCAGCAGATGCAGTACCAG--GGCTCCTCAGGCCCACCATCATCAG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  931  TGCCTATCAGCAGATGCAGTACCAGCAGGCTCCTCAGGCCCACCATCATCAG  982
+
+
+
+
+
+Query #16: 16 Query ID: lcl|Query_47025 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 993 to 1044
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CCGCCCAGATGCAGGGCTATCCACA--AATTGAACGCCGAGTTGTTTCAGCG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  993   CCGCCCAGATGCAGGGCTATCCACAACAATTGAACGCCGAGTTGTTTCAGCG  1044
+
+
+
+
+
+Query #17: 17 Query ID: lcl|Query_47026 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 1055 to 1106
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     TTTGGCAAGTTTCCATCCAGCTAAA--TTGGCAGTCGGCGCAGAACCAAGCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1055  TTTGGCAAGTTTCCATCCAGCTAAATCTTGGCAGTCGGCGCAGAACCAAGCC  1106
+
+
+
+
+
+Query #18: 18 Query ID: lcl|Query_47027 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 1117 to 1168
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GATCGaaaaaaaaaaCCCAGGGAC--AAGGGTCGCTTGGGGAAGAGCTAGGA  50
+             ||||||||||||||||||||||||  ||||||||||||||||||||||||||
+Sbjct  1117  GATCGAAAAAAAAAACCCAGGGACAAAAGGGTCGCTTGGGGAAGAGCTAGGA  1168
+
+
+
+
+
+Query #19: 19 Query ID: lcl|Query_47028 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 1179 to 1230
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     TTCCTGCTCGCTTGCCCCGTGGAAA--CCCGTGACGTCTAAATGCTGCATTT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1179  TTCCTGCTCGCTTGCCCCGTGGAAAAACCCGTGACGTCTAAATGCTGCATTT  1230
+
+
+
+
+
+Query #20: 20 Query ID: lcl|Query_47029 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster sloppy paired 1 (slp1), mRNA              83.3   83.3  100%  6e-16 96.15  NM_057382.3      
+
+
+Alignments:
+>Drosophila melanogaster sloppy paired 1 (slp1), mRNA
+Sequence ID: NM_057382.3 Length: 1425 
+Range 1: 1241 to 1292
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     TTTGGTCATCATCGCATTGACCGCT--GCTTCTTCAGCGGCTCCTCCGAATC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1241  TTTGGTCATCATCGCATTGACCGCTTCGCTTCTTCAGCGGCTCCTCCGAATC  1292
+
+
+
+
+
+
+
+		
+
+

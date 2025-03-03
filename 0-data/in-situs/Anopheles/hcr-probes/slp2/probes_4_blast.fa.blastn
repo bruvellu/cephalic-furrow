@@ -1,0 +1,684 @@
+BLASTN 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+
+Database: ../../../0-Resources/transcriptome/anopheles_transcriptome.fa
+           32,974 sequences; 141,780,436 total letters
+
+
+
+Query= Aste_slp2_01
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1   CTCAGAACAACTTCAGCTCGCTAAC--TAAACACAGACACGCCGTCCGCACC  50
+           |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  11  CTCAGAACAACTTCAGCTCGCTAACGATAAACACAGACACGCCGTCCGCACC  62
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_02
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    CTCGCAAGCAAACGCGTTATGATCT--CGTCCGTTACGATTATTACCAGTGC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  113  CTCGCAAGCAAACGCGTTATGATCTTACGTCCGTTACGATTATTACCAGTGC  164
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_03
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    TTGGATTGCTCAGCAAGCAATTGCA--CTGATCGACGAAGCGATCATCCGTG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  215  TTGGATTGCTCAGCAAGCAATTGCAAACTGATCGACGAAGCGATCATCCGTG  266
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_04
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    TTGAACAAAGACGATCGAAGTGAAGA--TTCGTTTCCCGTTTCCGTGTGTAG  50
+            ||||||||||||||||||||||||||  ||||||||||||||||||||||||
+Sbjct  334  TTGAACAAAGACGATCGAAGTGAAGAGATTCGTTTCCCGTTTCCGTGTGTAG  385
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_05
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    ATCGAGCCCACCATGATGAACGGTC--ACGATGTTCGGCGTGGCGCGGGCAC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  436  ATCGAGCCCACCATGATGAACGGTCAGACGATGTTCGGCGTGGCGCGGGCAC  487
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_06
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    TCGTCACCGTCGCCGACGCCCTCCC--ACGCTCCAGTCCTGCCCGTCACCGA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  538  TCGTCACCGTCGCCGACGCCCTCCCCGACGCTCCAGTCCTGCCCGTCACCGA  589
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_07
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    GACGTGACCGGCACACCGCCACCGA--GATTGCAGCAGCAAGGACAAGTCGG  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  640  GACGTGACCGGCACACCGCCACCGATGGATTGCAGCAGCAAGGACAAGTCGG  691
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_08
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1    CCCGCCAAGGATGGGGAGAAGAAGG--AACGAGAAACCCCCATACAGCTACA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  742  CCCGCCAAGGATGGGGAGAAGAAGGGCAACGAGAAACCCCCATACAGCTACA  793
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_09
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     TTCCGCGGCATTACGACGACCCCGG--AGGGTAACTACTGGATGCTGGACCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  959   TTCCGCGGCATTACGACGACCCCGGCAAGGGTAACTACTGGATGCTGGACCC  1010
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_10
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     GTTCGACTGCCGCCTCTCGCAGTCG--TAGCCGCCTTCAAGCGTTCGCTCGT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1061  GTTCGACTGCCGCCTCTCGCAGTCGGTTAGCCGCCTTCAAGCGTTCGCTCGT  1112
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_11
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     ATCCCTCACACGCGGCCCAAGCCCA--CGGCACTGCTAGCCGCCCAGATGTA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1163  ATCCCTCACACGCGGCCCAAGCCCAGACGGCACTGCTAGCCGCCCAGATGTA  1214
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_12
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     CACTCCCGCTTCCGCTCGGTGCCGT--GATCCGGGTTCGGTATGGATCGGCT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1265  CACTCCCGCTTCCGCTCGGTGCCGTCGGATCCGGGTTCGGTATGGATCGGCT  1316
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_13
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     AGTCCCCGATGGGCAACAGTCCTCA--CACAGCAGGCCGAAATCTACCAAAG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1367  AGTCCCCGATGGGCAACAGTCCTCAAGCACAGCAGGCCGAAATCTACCAAAG  1418
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_14
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     CCGCCGCAGCCGCCCAAGCTCATCA--AAGCGGCGGCCGCAGCACATCATCA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1469  CCGCCGCAGCCGCCCAAGCTCATCATCAAGCGGCGGCCGCAGCACATCATCA  1520
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_15
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     CCACCGCCAGCGAAGGAACGCATCC--GTTCGCCGCACCATCCTCACCAGCA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1571  CCACCGCCAGCGAAGGAACGCATCCCGGTTCGCCGCACCATCCTCACCAGCA  1622
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_16
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     GACACGGGTCACCGACGGGCCCCGG--CAATGATCTTCAAACCGATCACGCT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1673  GACACGGGTCACCGACGGGCCCCGGGCCAATGATCTTCAAACCGATCACGCT  1724
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_17
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     GTGCAACACAAACTCAACGGTGGCA--CGCCCGACCAGTGATAGTAGCAATT  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1775  GTGCAACACAAACTCAACGGTGGCAAACGCCCGACCAGTGATAGTAGCAATT  1826
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_18
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     GCAACAAGCACCAAGCTTAGGGGAA--TACTCTTTACCAAAAGTGTTGTGCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1938  GCAACAAGCACCAAGCTTAGGGGAAATTACTCTTTACCAAAAGTGTTGTGCC  1989
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_19
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     TATATCGGTTAGGTTTTTCCCAccc--ccccGGAAACATAGCGCCACAAGTG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  2040  TATATCGGTTAGGTTTTTCCCACCCCGCCCCGGAAACATAGCGCCACAAGTG  2091
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+Query= Aste_slp2_20
+
+Length=50
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain tr...  81.8    1e-15
+
+
+>XM_036061542.1 PREDICTED: Anopheles stephensi fork head domain transcription 
+factor slp2-like (LOC118514551), mRNA
+Length=2301
+
+ Score = 81.8 bits (41),  Expect = 1e-15
+ Identities = 50/52 (96%), Gaps = 2/52 (4%)
+ Strand=Plus/Plus
+
+Query  1     CATATAGCGCGATAGGGAAGATAAA--ATAAAAGAATGCGGATCGTGTCGAA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  2142  CATATAGCGCGATAGGGAAGATAAATTATAAAAGAATGCGGATCGTGTCGAA  2193
+
+
+
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Gapped
+Lambda      K        H
+    1.37    0.711     1.31 
+
+Effective search space used: 4802596968
+
+
+  Database: ../../../0-Resources/transcriptome/anopheles_transcriptome.fa
+    Posted date:  Feb 29, 2024  3:49 PM
+  Number of letters in database: 141,780,436
+  Number of sequences in database:  32,974
+
+
+
+Matrix: blastn matrix 1 -3
+Gap Penalties: Existence: 5, Extension: 2

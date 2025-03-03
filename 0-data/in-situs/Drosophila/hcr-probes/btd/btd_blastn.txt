@@ -1,0 +1,883 @@
+RID: PSNWK2YZ01R	
+Job Title:20 sequences (01)				
+Program: BLASTN 
+Database: refseq_rna NCBI Transcript Reference Sequences
+Query #1: 01 Query ID: lcl|Query_51224 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 219 to 270
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    TTTTCGGCCGCCTTTAATTTGTT--TGTTTTTTCCGTGTTCTCCTCCGCGTG  50
+            |||||||||||||||||||||||  |||||||||||||||||||||||||||
+Sbjct  219  TTTTCGGCCGCCTTTAATTTGTTTGTGTTTTTTCCGTGTTCTCCTCCGCGTG  270
+
+
+
+
+
+Query #2: 02 Query ID: lcl|Query_51225 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 749 to 800
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GCAGCAACATGACTTCCTCAGCGCC--CGCCCTGCTGTCCGCCCCACCATCC  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  749  GCAGCAACATGACTTCCTCAGCGCCGCCGCCCTGCTGTCCGCCCCACCATCC  800
+
+
+
+
+
+Query #3: 03 Query ID: lcl|Query_51226 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_001347810.1   
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_001347809.1   
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_001347811.1   
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_001103513.3   
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_001258746.2   
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_001272631.1   
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_001272630.1   
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_001258747.1   
+Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF... 38.3   38.3  46%   0.021 95.65  NM_132773.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 811 to 862
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CGAGTTCCGGCTCCAGCTCCGGCAG--CTCCGCTATATGGAAAGCCGCCAAT  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  811  CGAGTTCCGGCTCCAGCTCCGGCAGTTCTCCGCTATATGGAAAGCCGCCAAT  862
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant K, mRNA
+Sequence ID: NM_001347810.1 Length: 8459 
+Range 1: 3167 to 3189
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3167  AGTTCCGGCTCCAGCTCCAGCAG  3189
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant J, mRNA
+Sequence ID: NM_001347809.1 Length: 8363 
+Range 1: 3167 to 3189
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3167  AGTTCCGGCTCCAGCTCCAGCAG  3189
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant L, mRNA
+Sequence ID: NM_001347811.1 Length: 6000 
+Range 1: 3167 to 3189
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3167  AGTTCCGGCTCCAGCTCCAGCAG  3189
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant E, mRNA
+Sequence ID: NM_001103513.3 Length: 8372 
+Range 1: 3158 to 3180
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3158  AGTTCCGGCTCCAGCTCCAGCAG  3180
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant D, mRNA
+Sequence ID: NM_001258746.2 Length: 8390 
+Range 1: 3125 to 3147
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3125  AGTTCCGGCTCCAGCTCCAGCAG  3147
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant H, mRNA
+Sequence ID: NM_001272631.1 Length: 8285 
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant I, mRNA
+Sequence ID: NM_001316635.1 Length: 8285  
+Range 1: 3167 to 3189
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3167  AGTTCCGGCTCCAGCTCCAGCAG  3189
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant G, mRNA
+Sequence ID: NM_001272630.1 Length: 8459 
+Range 1: 3134 to 3156
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3134  AGTTCCGGCTCCAGCTCCAGCAG  3156
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant F, mRNA
+Sequence ID: NM_001258747.1 Length: 5820 
+Range 1: 3134 to 3156
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3134  AGTTCCGGCTCCAGCTCCAGCAG  3156
+
+
+
+>Drosophila melanogaster Rab3 GDP-GTP exchange factor (Rab3-GEF), transcript variant C, mRNA
+Sequence ID: NM_132773.3 Length: 8252 
+Range 1: 3134 to 3156
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  3     AGTTCCGGCTCCAGCTCCGGCAG  25
+             |||||||||||||||||| ||||
+Sbjct  3134  AGTTCCGGCTCCAGCTCCAGCAG  3156
+
+
+
+
+
+Query #4: 04 Query ID: lcl|Query_51227 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 873 to 924
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    CTGCCGTATCCACAGGCCTCATCCA--GGCACCGCATCGCCCAACTCCAGCA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  873  CTGCCGTATCCACAGGCCTCATCCACGGGCACCGCATCGCCCAACTCCAGCA  924
+
+
+
+
+
+Query #5: 05 Query ID: lcl|Query_51228 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 935 to 986
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1    GCCATCATCGGCCTCCGTGTCGCCC--CATCTTCCCATCACCTGCCCAGTCA  50
+            |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  935  GCCATCATCGGCCTCCGTGTCGCCCAGCATCTTCCCATCACCTGCCCAGTCA  986
+
+
+
+
+
+Query #6: 06 Query ID: lcl|Query_51229 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 997 to 1048
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     TTTCGGCTAGTCCATCCACGCCCAC--CGACCTTGGCGCCACCAACAACGGC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  997   TTTCGGCTAGTCCATCCACGCCCACCACGACCTTGGCGCCACCAACAACGGC  1048
+
+
+
+
+
+Query #7: 07 Query ID: lcl|Query_51230 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+Drosophila melanogaster helicase with zinc finger, transcript...  41.0   41.0  64%   0.002 87.50  NM_001274919.2   
+Drosophila melanogaster helicase with zinc finger, transcript...  41.0   41.0  64%   0.002 87.50  NM_140468.3      
+Drosophila melanogaster helicase with zinc finger, transcript...  41.0   41.0  64%   0.002 87.50  NM_206362.2      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1156 to 1207
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GAGCAGCGGCGGTCGCCAGTGCCGC--ACGGCTGGAATACCGCCTACTCCGG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1156  GAGCAGCGGCGGTCGCCAGTGCCGCCTACGGCTGGAATACCGCCTACTCCGG  1207
+
+
+
+>Drosophila melanogaster helicase with zinc finger, transcript variant C (Helz), mRNA
+Sequence ID: NM_001274919.2 Length: 7272 
+Range 1: 4546 to 4577
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:28/32(88%),  Gaps:0/32(0%), Strand: Plus/Minus
+
+Query  3     GCAGCGGCGGTCGCCAGTGCCGCACGGCTGGA  34
+             || |||| |||||||||||| ||| |||||||
+Sbjct  4577  GCTGCGGTGGTCGCCAGTGCTGCATGGCTGGA  4546
+
+
+
+>Drosophila melanogaster helicase with zinc finger, transcript variant D (Helz), mRNA
+Sequence ID: NM_140468.3 Length: 6734 
+Range 1: 4606 to 4637
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:28/32(88%),  Gaps:0/32(0%), Strand: Plus/Minus
+
+Query  3     GCAGCGGCGGTCGCCAGTGCCGCACGGCTGGA  34
+             || |||| |||||||||||| ||| |||||||
+Sbjct  4637  GCTGCGGTGGTCGCCAGTGCTGCATGGCTGGA  4606
+
+
+
+>Drosophila melanogaster helicase with zinc finger, transcript variant B (Helz), mRNA
+Sequence ID: NM_206362.2 Length: 8497 
+Range 1: 4630 to 4661
+
+Score:41.0 bits(44), Expect:0.002, 
+Identities:28/32(88%),  Gaps:0/32(0%), Strand: Plus/Minus
+
+Query  3     GCAGCGGCGGTCGCCAGTGCCGCACGGCTGGA  34
+             || |||| |||||||||||| ||| |||||||
+Sbjct  4661  GCTGCGGTGGTCGCCAGTGCTGCATGGCTGGA  4630
+
+
+
+
+
+Query #8: 08 Query ID: lcl|Query_51231 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1218 to 1269
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GCGAGAAGTCAGTTTCCATATGCCC--TACGCCTCCGATTATTACGGCAATG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1218  GCGAGAAGTCAGTTTCCATATGCCCAGTACGCCTCCGATTATTACGGCAATG  1269
+
+
+
+
+
+Query #9: 09 Query ID: lcl|Query_51232 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1280 to 1331
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GTCCTCCTCGGCCGCTTGGTTCTCG--TCAGGAGCGCCTCTATCAGCCATGG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1280  GTCCTCCTCGGCCGCTTGGTTCTCGCATCAGGAGCGCCTCTATCAGCCATGG  1331
+
+
+
+
+
+Query #10: 10 Query ID: lcl|Query_51233 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1342 to 1393
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GCTATCCGGGCTTCAATTTCGACGA--TCGCCTTCCAGACGCAATTGCAACG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1342  GCTATCCGGGCTTCAATTTCGACGACATCGCCTTCCAGACGCAATTGCAACG  1393
+
+
+
+
+
+Query #11: 11 Query ID: lcl|Query_51234 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1404 to 1455
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CGCTGCACGTGTCCCAATTGCACCA--GAGATGAGCGGCCTGCCACCGATTG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1404  CGCTGCACGTGTCCCAATTGCACCAACGAGATGAGCGGCCTGCCACCGATTG  1455
+
+
+
+
+
+Query #12: 12 Query ID: lcl|Query_51235 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1466 to 1517
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     TGAGCGCGGACGCAAGCAGCATATC--CCACATTCCGGGCTGCGAACGGCTA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1466  TGAGCGCGGACGCAAGCAGCATATCTGCCACATTCCGGGCTGCGAACGGCTA  1517
+
+
+
+
+
+Query #13: 13 Query ID: lcl|Query_51236 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1728 to 1779
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     TTCAAGGACAAGAAGAGCAAGAAGG--TTGGCCGCCGAGGCCAAGGAGCAGG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1728  TTCAAGGACAAGAAGAGCAAGAAGGTATTGGCCGCCGAGGCCAAGGAGCAGG  1779
+
+
+
+
+
+Query #14: 14 Query ID: lcl|Query_51237 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1790 to 1841
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GATAAAGCTGGAAAAGAAGGAGAAG--GTCGGGTAAGCCACTGACGCCACCC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1790  GATAAAGCTGGAAAAGAAGGAGAAGAAGTCGGGTAAGCCACTGACGCCACCC  1841
+
+
+
+
+
+Query #15: 15 Query ID: lcl|Query_51238 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+Drosophila melanogaster uncharacterized protein, transcript...    37.4   37.4  50%   0.021 92.00  NM_001272799.1   
+Drosophila melanogaster uncharacterized protein, transcript...    37.4   37.4  50%   0.021 92.00  NM_134506.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1852 to 1903
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     AGCAGGAGCAGCCGGATACGACACC--TGGTCAACTATGCGCCCTATGCCAA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1852  AGCAGGAGCAGCCGGATACGACACCGCTGGTCAACTATGCGCCCTATGCCAA  1903
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant B (CG12531), mRNA
+Sequence ID: NM_001272799.1 Length: 6761 
+Range 1: 47 to 71
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:23/25(92%),  Gaps:0/25(0%), Strand: Plus/Minus
+
+Query  24  CCTGGTCAACTATGCGCCCTATGCC  48
+           |||||||| ||||||||||| ||||
+Sbjct  71  CCTGGTCAGCTATGCGCCCTGTGCC  47
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant A (CG12531), mRNA
+Sequence ID: NM_134506.3 Length: 6764 
+Range 1: 47 to 71
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:23/25(92%),  Gaps:0/25(0%), Strand: Plus/Minus
+
+Query  24  CCTGGTCAACTATGCGCCCTATGCC  48
+           |||||||| ||||||||||| ||||
+Sbjct  71  CCTGGTCAGCTATGCGCCCTGTGCC  47
+
+
+
+
+
+Query #16: 16 Query ID: lcl|Query_51239 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+Drosophila melanogaster crocodile (croc), mRNA                    40.1   40.1  48%   0.006 95.83  NM_079478.4      
+Drosophila melanogaster uncharacterized protein, transcript...    39.2   39.2  42%   0.006 100.00 NM_001201982.2   
+Drosophila melanogaster uncharacterized protein, transcript...    39.2   39.2  42%   0.006 100.00 NM_136936.5      
+Drosophila melanogaster twin, transcript variant D (twin), mRNA   38.3   38.3  56%   0.021 89.29  NM_170132.3      
+Drosophila melanogaster uncharacterized protein, transcript...    38.3   38.3  46%   0.021 95.65  NM_001272753.2   
+Drosophila melanogaster uncharacterized protein, transcript...    38.3   38.3  46%   0.021 95.65  NM_167622.3      
+Drosophila melanogaster twin, transcript variant F (twin), mRNA   38.3   38.3  56%   0.021 89.29  NM_176555.2      
+Drosophila melanogaster twin, transcript variant C (twin), mRNA   38.3   38.3  56%   0.021 89.29  NM_170128.2      
+Drosophila melanogaster twin, transcript variant E (twin), mRNA   38.3   38.3  56%   0.021 89.29  NM_170130.3      
+Drosophila melanogaster twin, transcript variant B (twin), mRNA   38.3   38.3  56%   0.021 89.29  NM_170131.3      
+Drosophila melanogaster twin, transcript variant A (twin), mRNA   38.3   38.3  56%   0.021 89.29  NM_170129.3      
+Drosophila melanogaster antisense RNA:CR43842 (asRNA:CR43842),... 38.3   38.3  46%   0.021 95.65  NR_073664.1      
+Drosophila melanogaster female sterile (1) homeotic (fs(1)h),...  37.4   37.4  40%   0.021 100.00 NM_001272392.2   
+Drosophila melanogaster female sterile (1) homeotic (fs(1)h),...  37.4   37.4  40%   0.021 100.00 NM_078523.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1914 to 1965
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     CATTCCACATCCGCCGGATCGAGTG--AATCCTCCGCCGCCACCGCCGCCGC  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1914  CATTCCACATCCGCCGGATCGAGTGTGAATCCTCCGCCGCCACCGCCGCCGC  1965
+
+
+
+>Drosophila melanogaster crocodile (croc), mRNA
+Sequence ID: NM_079478.4 Length: 2347 
+Range 1: 1472 to 1495
+
+Score:40.1 bits(43), Expect:0.006, 
+Identities:23/24(96%),  Gaps:0/24(0%), Strand: Plus/Minus
+
+Query  27    ATCCTCCGCCGCCACCGCCGCCGC  50
+             ||||||| ||||||||||||||||
+Sbjct  1495  ATCCTCCACCGCCACCGCCGCCGC  1472
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant B (CG8520), mRNA
+Sequence ID: NM_001201982.2 Length: 1734 
+Range 1: 372 to 392
+
+Score:39.2 bits(42), Expect:0.006, 
+Identities:21/21(100%),  Gaps:0/21(0%), Strand: Plus/Minus
+
+Query  25   GAATCCTCCGCCGCCACCGCC  45
+            |||||||||||||||||||||
+Sbjct  392  GAATCCTCCGCCGCCACCGCC  372
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant A (CG8520), mRNA
+Sequence ID: NM_136936.5 Length: 2134 
+Range 1: 772 to 792
+
+Score:39.2 bits(42), Expect:0.006, 
+Identities:21/21(100%),  Gaps:0/21(0%), Strand: Plus/Minus
+
+Query  25   GAATCCTCCGCCGCCACCGCC  45
+            |||||||||||||||||||||
+Sbjct  792  GAATCCTCCGCCGCCACCGCC  772
+
+
+
+>Drosophila melanogaster twin, transcript variant D (twin), mRNA
+Sequence ID: NM_170132.3 Length: 2950 
+Range 1: 2375 to 2402
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:25/28(89%),  Gaps:0/28(0%), Strand: Plus/Plus
+
+Query  22    AGTGAATCCTCCGCCGCCACCGCCGCCG  49
+             |||||||||||| ||||| |||||| ||
+Sbjct  2375  AGTGAATCCTCCCCCGCCGCCGCCGGCG  2402
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant D (CG32547), mRNA
+Sequence ID: NM_001272753.2 Length: 4570 
+Range 1: 430 to 452
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  28   TCCTCCGCCGCCACCGCCGCCGC  50
+            |||||||||||| ||||||||||
+Sbjct  452  TCCTCCGCCGCCGCCGCCGCCGC  430
+
+
+
+>Drosophila melanogaster uncharacterized protein, transcript variant C (CG32547), mRNA
+Sequence ID: NM_167622.3 Length: 3785 
+Range 1: 430 to 452
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Minus
+
+Query  28   TCCTCCGCCGCCACCGCCGCCGC  50
+            |||||||||||| ||||||||||
+Sbjct  452  TCCTCCGCCGCCGCCGCCGCCGC  430
+
+
+
+>Drosophila melanogaster twin, transcript variant F (twin), mRNA
+Sequence ID: NM_176555.2 Length: 2690 
+Range 1: 2115 to 2142
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:25/28(89%),  Gaps:0/28(0%), Strand: Plus/Plus
+
+Query  22    AGTGAATCCTCCGCCGCCACCGCCGCCG  49
+             |||||||||||| ||||| |||||| ||
+Sbjct  2115  AGTGAATCCTCCCCCGCCGCCGCCGGCG  2142
+
+
+
+>Drosophila melanogaster twin, transcript variant C (twin), mRNA
+Sequence ID: NM_170128.2 Length: 2586 
+Range 1: 2011 to 2038
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:25/28(89%),  Gaps:0/28(0%), Strand: Plus/Plus
+
+Query  22    AGTGAATCCTCCGCCGCCACCGCCGCCG  49
+             |||||||||||| ||||| |||||| ||
+Sbjct  2011  AGTGAATCCTCCCCCGCCGCCGCCGGCG  2038
+
+
+
+>Drosophila melanogaster twin, transcript variant E (twin), mRNA
+Sequence ID: NM_170130.3 Length: 3548 
+Range 1: 2275 to 2302
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:25/28(89%),  Gaps:0/28(0%), Strand: Plus/Plus
+
+Query  22    AGTGAATCCTCCGCCGCCACCGCCGCCG  49
+             |||||||||||| ||||| |||||| ||
+Sbjct  2275  AGTGAATCCTCCCCCGCCGCCGCCGGCG  2302
+
+
+
+>Drosophila melanogaster twin, transcript variant B (twin), mRNA
+Sequence ID: NM_170131.3 Length: 2621 
+Range 1: 2243 to 2270
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:25/28(89%),  Gaps:0/28(0%), Strand: Plus/Plus
+
+Query  22    AGTGAATCCTCCGCCGCCACCGCCGCCG  49
+             |||||||||||| ||||| |||||| ||
+Sbjct  2243  AGTGAATCCTCCCCCGCCGCCGCCGGCG  2270
+
+
+
+>Drosophila melanogaster twin, transcript variant A (twin), mRNA
+Sequence ID: NM_170129.3 Length: 2702 
+Range 1: 2127 to 2154
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:25/28(89%),  Gaps:0/28(0%), Strand: Plus/Plus
+
+Query  22    AGTGAATCCTCCGCCGCCACCGCCGCCG  49
+             |||||||||||| ||||| |||||| ||
+Sbjct  2127  AGTGAATCCTCCCCCGCCGCCGCCGGCG  2154
+
+
+
+>Drosophila melanogaster antisense RNA:CR43842 (asRNA:CR43842), antisense_RNA
+Sequence ID: NR_073664.1 Length: 1866 
+Range 1: 1451 to 1473
+
+Score:38.3 bits(41), Expect:0.021, 
+Identities:22/23(96%),  Gaps:0/23(0%), Strand: Plus/Plus
+
+Query  28    TCCTCCGCCGCCACCGCCGCCGC  50
+             |||||||||||| ||||||||||
+Sbjct  1451  TCCTCCGCCGCCGCCGCCGCCGC  1473
+
+
+
+>Drosophila melanogaster female sterile (1) homeotic (fs(1)h), transcript variant G, mRNA
+Sequence ID: NM_001272392.2 Length: 9949 
+Range 1: 6207 to 6226
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Minus
+
+Query  31    TCCGCCGCCACCGCCGCCGC  50
+             ||||||||||||||||||||
+Sbjct  6226  TCCGCCGCCACCGCCGCCGC  6207
+
+
+
+>Drosophila melanogaster female sterile (1) homeotic (fs(1)h), transcript variant B, mRNA
+Sequence ID: NM_078523.3 Length: 8942 
+Range 1: 6183 to 6202
+
+Score:37.4 bits(40), Expect:0.021, 
+Identities:20/20(100%),  Gaps:0/20(0%), Strand: Plus/Minus
+
+Query  31    TCCGCCGCCACCGCCGCCGC  50
+             ||||||||||||||||||||
+Sbjct  6202  TCCGCCGCCACCGCCGCCGC  6183
+
+
+
+
+
+Query #17: 17 Query ID: lcl|Query_51240 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 1976 to 2027
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GCAGATGACGACGACAACATCATCG--GGCGGCCAGCTTTGTGGAGCAGCCG  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  1976  GCAGATGACGACGACAACATCATCGGCGGCGGCCAGCTTTGTGGAGCAGCCG  2027
+
+
+
+
+
+Query #18: 18 Query ID: lcl|Query_51241 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 2179 to 2230
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     ATCATTATGCCGCACTTGCCATGCA--GTGAGTCCCAGCTGGCGGCGGAATA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  2179  ATCATTATGCCGCACTTGCCATGCAAAGTGAGTCCCAGCTGGCGGCGGAATA  2230
+
+
+
+
+
+Query #19: 19 Query ID: lcl|Query_51242 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 2241 to 2292
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     ATGAGCGGATTGGCCAGCGGAGCTA--CAGGATTCCAGCTCCAGTTGCCACA  50
+             |||||||||||||||||||||||||  |||||||||||||||||||||||||
+Sbjct  2241  ATGAGCGGATTGGCCAGCGGAGCTAGCCAGGATTCCAGCTCCAGTTGCCACA  2292
+
+
+
+
+
+Query #20: 20 Query ID: lcl|Query_51243 Length: 50
+
+Sequences producing significant alignments:
+                                                                  Max    Total Query   E   Per.                  
+Description                                                       Score  Score cover Value Ident  Accession        
+Drosophila melanogaster buttonhead (btd), mRNA                    83.3   83.3  100%  6e-16 96.15  NM_078545.3      
+
+
+Alignments:
+>Drosophila melanogaster buttonhead (btd), mRNA
+Sequence ID: NM_078545.3 Length: 2934 
+Range 1: 2303 to 2354
+
+Score:83.3 bits(91), Expect:6e-16, 
+Identities:50/52(96%),  Gaps:2/52(3%), Strand: Plus/Plus
+
+Query  1     GTATGCGGCCAGTTATCCGGCTGA--TTGGTGCGGGAACAGCCAGTTACGGT  50
+             ||||||||||||||||||||||||  ||||||||||||||||||||||||||
+Sbjct  2303  GTATGCGGCCAGTTATCCGGCTGATTTTGGTGCGGGAACAGCCAGTTACGGT  2354
+
+
+
+
+
+
+
+		
+
+
