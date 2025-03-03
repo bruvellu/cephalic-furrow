@@ -1,6 +1,6 @@
 # :fly: Cephalic furrow function and evolution :fly:
 
-This repository contains the data, analyses, and source files associated with our cephalic furrow project.
+This repository contains the data, analyses, and source files associated with our cephalic furrow project, except for the model and simulations which are maitained in a separate repository: [github.com/abhijeetkrishna/cephalic-furrow-theory](https://github.com/abhijeetkrishna/cephalic-furrow-theory).
 
 ## Directories
 
@@ -12,4 +12,10 @@ This repository contains the data, analyses, and source files associated with ou
 ## Citation
 
 Vellutini BC, Cuenca MB, Krishna A, Szałapak A, Modes CD, Tomančák P. **Patterned embryonic invagination evolved in response to mechanical instability**. bioRxiv (2023) doi:[10.1101/2023.03.30.534554](https://doi.org/10.1101/2023.03.30.534554)
+
+## Repositories
+
+- Main repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781947.svg)](https://doi.org/10.5281/zenodo.7781947)
+- Theory and simulations: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7784906.svg)](https://doi.org/10.5281/zenodo.7784906)
+- Figures and videos: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781916.svg)](https://doi.org/10.5281/zenodo.7781916)
 
