@@ -18,12 +18,15 @@ The constructs were synthesized by Twist Bioscience.
 
 Sven Ssykor injected the plasmids in VK33 flies containing the attP landing site for PhiC31-mediated integration.
 Post-injection lethality was high for direct constructs (I-EOD and IV-ECD).
-We obtained transgenic flies for the III-ECF plasmid and generated a stable, homozygous line.
+We obtained transgenic flies only for the III-ECF plasmid and generated a stable, homozygous line.
 
-As expected, embryos carrying the non-flipped III-ECF show nuclear GFP in cells located at the head--trunk boundary at the canonical position of eve stripe 1.
+When imaging embryos carrying the non-flipped III-ECF construct, we detected nuclear GFP in cells located at the head--trunk boundary at the canonical position of eve stripe 1, suggesting that the construct is able to drive the control marker with the expected spatiotemporal control.
 
-To drive the DN-Rho1 we crossed the homozygous III-ECF males to virgin females of a FLP line that expresses the flippase recombinase only in the testis.
-Then, we crossed males from the progeny, where the FLP/FRT recombination is expected to occur, to a wildtype virgin female and analyzed the progeny carrying one copy of the flipped-out construct under DIC microscopy.
+To drive the DN-Rho1, we crossed the homozygous III-ECF males to virgin females of a FLP line that expresses the flippase recombinase in the testis.
+We then crossed the F1 male progeny, where the FLP/FRT recombination should occur, to a wildtype virgin female.
+Finally, we imaged the F2 progeny carrying one copy of the flipped-out construct under DIC microscopy to check for cephalic furrow defects.
+We observed no differences in cephalic furrow formation.
+This suggests the expression of DN-Rho1 under the control of III-ECF is insufficient to prevent the shortening of initiator cells.
 
 ## Data
 
