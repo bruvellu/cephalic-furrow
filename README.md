@@ -1,6 +1,9 @@
-# :fly: Cephalic furrow function and evolution :fly:
+# :fly: Cephalic furrow function and evolution
 
-This repository contains the data, analyses, and source files associated with our cephalic furrow project, except for the model and simulations which are maitained in a separate repository: [github.com/abhijeetkrishna/cephalic-furrow-theory](https://github.com/abhijeetkrishna/cephalic-furrow-theory).
+This repository contains the main data, analyses, and source files associated with our cephalic furrow project.
+Here, we only track text files, but the image data and high-resolution figures and videos are available in the Zenodo snapshots (see below).
+
+The model and simulations are maintained in a separate repository: [@abhijeetkrishna/cephalic-furrow-theory](https://github.com/abhijeetkrishna/cephalic-furrow-theory).
 
 ## Directories
 
@@ -15,7 +18,9 @@ Vellutini BC, Cuenca MB, Krishna A, Szałapak A, Modes CD, Tomančák P. **Patte
 
 ## Repositories
 
-- Main repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781947.svg)](https://doi.org/10.5281/zenodo.7781947)
-- Theory and simulations: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7784906.svg)](https://doi.org/10.5281/zenodo.7784906)
-- Figures and videos: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781916.svg)](https://doi.org/10.5281/zenodo.7781916)
+Here are the persistent, citable respositories associated with the manuscript.
+
+- **Main repository:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781947.svg)](https://doi.org/10.5281/zenodo.7781947)
+- **Theory and simulations:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7784906.svg)](https://doi.org/10.5281/zenodo.7784906)
+- **Figures and videos:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781916.svg)](https://doi.org/10.5281/zenodo.7781916)
 
