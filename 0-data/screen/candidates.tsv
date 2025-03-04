@@ -1,0 +1,120 @@
+priority	gene name	gene id	expression	type	mutant	interactions	flybase	image link	fosmid	gfp	antibody	EST	probe	btd -/-	eve -/-	screen
+1	buttonhead	btd		anterior border	no invagination		http://flybase.org/reports/FBgn0000233.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_75/insitu75731.jpe	https://transgeneome.mpi-cbg.de/transgeneomics/public/clone.html?wellId=59886749	yes	no	no	yes	no change	no change	
+1	even skipped	eve		boundary	delayed, no invagination, abnormal fold		http://flybase.org/reports/FBgn0000606.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_114/insitu114445.jpe	-	http://flystocks.bio.indiana.edu/Reports/30871.html	yes	yes	no	stripe 1 gone	?	
+1	paired	prd		anterior border	delayed, wider ininitiator row, disrupted invagination, abnormal fold		http://flybase.org/reports/FBgn0003145	http://insitu.fruitfly.org/insitu_image_storage/img_dir_14/insitu14495.jpe	no	no		yes		?	?	
+1	sloppy paired 1	slp1		anterior border	slightly delayed, anterior shift		http://flybase.org/reports/FBgn0003430.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_60/insitu60277.jpe	https://transgeneome.mpi-cbg.de/transgeneomics/public/clone.html?wellId=59880947	no / voted	yes	yes	yes	anterior stripe smaller and fused anteriorly, stripe 2 thicker, and distance between stripe 2-3 wider than wild type	simply wider stripes	
+1	sloppy paired 2	slp2		anterior border	slightly delayed, anterior shift		http://flybase.org/reports/FBgn0004567.html	http://www.flyexpress.net/fx_images/BDGP/standardized/insitu26929_s.bmp	-	https://cbglist.mpi-cbg.de/itemFly.html?labCode=tomancak&id=8a8182da515e57110151684e98690727	no	yes	yes	?	simply wider stripes	
+1	cap-n-collar	cnc		anterior	affected		http://flybase.org/reports/FBgn0262975	http://insitu.fruitfly.org/insitu_image_storage/img_dir_20/insitu20974.jpe				yes		?	?	
+1	giant	gt		anterior border	disrupted invagination		http://flybase.org/reports/FBgn0001150.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_106/insitu106083.jpe				yes		?	?	
+1	roadkill	rdx		anterior	affected		http://flybase.org/reports/FBgn0264493	http://insitu.fruitfly.org/insitu_image_storage/img_dir_20/insitu20681.jpe				yes		?	?	
+1	runt	run		posterior border	increased number of initiator cells (Eritano et al. 2020)		http://flybase.org/reports/FBgn0003300.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_16/insitu16315.jpe	-	http://flystocks.bio.indiana.edu/Reports/64827.html	yes	yes	no	?	?	
+2	knirps	kni		anterior border	ventral does not move forward		http://flybase.org/reports/FBgn0001320.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_101/insitu101331.jpe	-	http://flystocks.bio.indiana.edu/Reports/66588.html	yes	yes	yes	?	?	
+2	knirps-like	knrl		anterior border	ventral does not move forward		http://flybase.org/reports/FBgn0001323.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_69/insitu69957.jpe	-	https://cbglist.mpi-cbg.de/itemFly.html?labCode=tomancak&id=8a8182da515e57110151684dfec9040d	no	yes	yes	anterior stripe gone?	anterior stripe gone; before or after expected CF formation?	
+2	Delta	Dl		anterior	perhaps minor defects	eve	http://flybase.org/reports/FBgn0000463.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_18/insitu18879.jpe						?	?	
+2	twisted gastrulation	tsg			abnormally deep CF and ectopic posterior furrows		http://flybase.org/reports/FBgn0003865.html					no	yes	?	?	
+2	rau	rau		boundary	perhaps minor defects		http://flybase.org/reports/FBgn0031745.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_65/insitu65093.jpe						?	?	
+2	Epidermal growth factor receptor	Egfr		boundary	perhaps minor defects		http://flybase.org/reports/FBgn0003731	https://insitu.fruitfly.org/insitu_image_storage/img_dir_14/insitu14145.jpe								
+3	phyllopod	phyl					http://flybase.org/reports/FBgn0013725.html	https://insitu.fruitfly.org/insitu_image_storage/img_dir_40/insitu40432.jpe								
+3	Notch	N		boundary			http://flybase.org/reports/FBgn0004647	https://insitu.fruitfly.org/insitu_image_storage/img_dir_100/insitu100381.jpe								
+3	Suppressor of Hairless	Su(H)		peryphery			http://flybase.org/reports/FBgn0004837	http://insitu.fruitfly.org/insitu_image_storage/img_dir_71/insitu71141.jpe						?	?	
+3	Drop	Dr		peryphery			http://flybase.org/reports/FBgn0000492	https://insitu.fruitfly.org/insitu_image_storage/img_dir_20/insitu20793.jpe								
+3	retained	retn		anterior border	ectopic CF (maternal+zygotic null)		http://flybase.org/reports/FBgn0004795.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_101/insitu101666.jpe	https://transgeneome.mpi-cbg.de/transgeneomics/public/clone.html?wellId=59881155	no / voted	yes	yes	no	?	?	
+3	distal antenna-related	danr		posterior border			http://flybase.org/reports/FBgn0039283.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_49/insitu49178.jpe				yes		?	?	
+3	grindelwald	grnd		posterior border			http://flybase.org/reports/FBgn0032682.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_32/insitu32268.jpe				yes		?	?	
+3	toucan	toc		boundary			http://flybase.org/reports/FBgn0015600.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_63/insitu63254.jpe	-	http://flystocks.bio.indiana.edu/Reports/64465.html	yes	yes	yes	no change?	no change	
+3	CG43394	CG43394					http://flybase.org/reports/FBgn0263256	http://insitu.fruitfly.org/insitu_image_storage/img_dir_32/insitu32073.jpe						?	?	
+3	prospero	pros					http://flybase.org/reports/FBgn0004595	http://insitu.fruitfly.org/insitu_image_storage/img_dir_115/insitu115295.jpe						?	?	
+3	Partner of paired	Ppa					http://flybase.org/reports/FBgn0020257	http://insitu.fruitfly.org/insitu_image_storage/img_dir_24/insitu24390.jpe						?	?	
+3	string	stg		anterior border			http://flybase.org/reports/FBgn0003525.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_62/insitu62002.jpe	-	http://flystocks.bio.indiana.edu/Reports/50879.html	no	yes	yes	?	?	
+3	CG10479	CG10479		boundary			http://flybase.org/reports/FBgn0035656.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_62/insitu62428.jpe		no	no	yes	yes	anterior stripe gone?	no change	
+3	jitterbug	jbug		boundary			http://flybase.org/reports/FBgn0028371.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_47/insitu47379.jpe						?	?	
+3	apontic	apt		anterior border			http://flybase.org/reports/FBgn0015903.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_62/insitu62978.jpe						?	?	
+3	CG14427	CG14427		peryphery			http://flybase.org/reports/FBgn0029931	http://insitu.fruitfly.org/insitu_image_storage/img_dir_69/insitu69081.jpe						?	?	
+3	Netrin-B	NetB		boundary			http://flybase.org/reports/FBgn0015774.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_11/insitu11648.jpe						?	?	
+3	CG17724	CG17724					http://flybase.org/reports/FBgn0033802	http://insitu.fruitfly.org/insitu_image_storage/img_dir_38/insitu38117.jpe						?	?	
+3	Myc	Myc					http://flybase.org/reports/FBgn0262656	http://insitu.fruitfly.org/insitu_image_storage/img_dir_65/insitu65763.jpe						?	?	
+3	CG12420	CG12420					http://flybase.org/reports/FBgn0037797	http://insitu.fruitfly.org/insitu_image_storage/img_dir_75/insitu75165.jpe						?	?	
+3	Glycerophosphate oxidase-1	Gpo-1		boundary			http://flybase.org/reports/FBgn0022160.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_60/insitu60586.jpe						?	?	
+3	Major Facilitator Superfamily Transporter 14	MFS14					http://flybase.org/reports/FBgn0010651	http://insitu.fruitfly.org/insitu_image_storage/img_dir_71/insitu71330.jpe						?	?	
+3	Nek2	Nek2		boundary			http://flybase.org/reports/FBgn0029970	http://insitu.fruitfly.org/insitu_image_storage/img_dir_52/insitu52890.jpe						?	?	
+3	CG30431	CG30431		anterior			http://flybase.org/reports/FBgn0050431.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_102/insitu102818.jpe	https://transgeneome.mpi-cbg.de/transgeneomics/public/clone.html?wellId=59886837	http://flystocks.bio.indiana.edu/Reports/59981.html	no	yes	no	?	?	
+3	CG8654	CG8654		boundary			http://flybase.org/reports/FBgn0034479.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_54/insitu54766.jpe		no	no	yes	yes	?	?	
+3	Shroom	Shroom		posterior			http://flybase.org/reports/FBgn0085408.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_68/insitu68116.jpe				yes	yes	?	not clear	
+3	argos	aos		peryphery			http://flybase.org/reports/FBgn0004569	http://insitu.fruitfly.org/insitu_image_storage/img_dir_30/insitu30858.jpe			http://dshb.biology.uiowa.edu/argos-gene-product			?	?	
+3	off-track	otk					http://flybase.org/reports/FBgn0004839	https://insitu.fruitfly.org/insitu_image_storage/img_dir_170/insitu170244.jpe								
+3	Star	S					http://flybase.org/reports/FBgn0003310	https://insitu.fruitfly.org/insitu_image_storage/img_dir_71/insitu71771.jpe								
+3	escargot	esg					http://flybase.org/reports/FBgn0001981	https://insitu.fruitfly.org/insitu_image_storage/img_dir_126/insitu126820.jpe								
+3	abrupt	ab					http://flybase.org/reports/FBgn0264442	https://insitu.fruitfly.org/insitu_image_storage/img_dir_124/insitu124743.jpe								
+3	Six4	Six4					http://flybase.org/reports/FBgn0027364	https://insitu.fruitfly.org/insitu_image_storage/img_dir_162/insitu162136.jpe								
+3	Grip75	Grip75					http://flybase.org/reports/FBgn0026431	https://insitu.fruitfly.org/insitu_image_storage/img_dir_44/insitu44554.jpe								
+3	Cytochrome b5	Cyt-b5					http://flybase.org/reports/FBgn0264294	https://insitu.fruitfly.org/insitu_image_storage/img_dir_38/insitu38760.jpe								
+3	CG11208	CG11208					http://flybase.org/reports/FBgn0034488	https://insitu.fruitfly.org/insitu_image_storage/img_dir_61/insitu61603.jpe								
+3	nuclear fallout	nuf					http://flybase.org/reports/FBgn0013718	https://insitu.fruitfly.org/insitu_image_storage/img_dir_59/insitu59405.jpe								
+3	Heat shock protein 83	Hsp83					http://flybase.org/reports/FBgn0001233	https://insitu.fruitfly.org/insitu_image_storage/img_dir_74/insitu74920.jpe								
+3	CG3097	CG3097		boundary			http://flybase.org/reports/FBgn0029804	https://insitu.fruitfly.org/insitu_image_storage/img_dir_36/insitu36666.jpe								
+3	Distal-less	Dll		anterior border		btd	http://flybase.org/reports/FBgn0000157.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_119/insitu119221.jpe						?	?	
+3	teashirt	tsh		posterior			http://flybase.org/reports/FBgn0003866	http://insitu.fruitfly.org/insitu_image_storage/img_dir_38/insitu38847.jpe								
+3	Adenylyl cyclase 78C	Ac78C		boundary			http://flybase.org/reports/FBgn0024150.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_73/insitu73788.jpe						?	?	
+3	CG14657	CG14657					http://flybase.org/reports/FBgn0037282	http://insitu.fruitfly.org/insitu_image_storage/img_dir_68/insitu68661.jpe						?	?	
+3	homothorax	hth		posterior border			http://flybase.org/reports/FBgn0001235.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_111/insitu111840.jpe						?	?	
+3	spalt-adjacent	sala		posterior border			http://flybase.org/reports/FBgn0003313.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_34/insitu34924.jpe	https://transgeneome.mpi-cbg.de/transgeneomics/public/clone.html?wellId=58962954	no / voted	no	yes	no	no change	anterior expansion?	
+3	Diabetes and obesity regulated	DOR					http://flybase.org/reports/FBgn0035542	http://insitu.fruitfly.org/insitu_image_storage/img_dir_68/insitu68227.jpe						?	?	
+3	bangles and beads	bnb		peryphery			http://flybase.org/reports/FBgn0001090.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_56/insitu56587.jpe						?	?	
+3	Deformed	Dfd		boundary			http://flybase.org/reports/FBgn0000439.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_103/insitu103496.jpe				no		?	?	
+3	Rho guanine nucleotide exchange factor 3	RhoGEF3					http://flybase.org/reports/FBgn0264707	http://insitu.fruitfly.org/insitu_image_storage/img_dir_37/insitu37627.jpe						?	?	
+3	yellow-e3	yellow-e3					http://flybase.org/reports/FBgn0038150	http://insitu.fruitfly.org/insitu_image_storage/img_dir_27/insitu27649.jpe						?	?	
+3	Sec61 beta subunit	Sec61 beta					http://flybase.org/reports/FBgn0010638	http://insitu.fruitfly.org/insitu_image_storage/img_dir_43/insitu43524.jpe						?	?	
+3	disconnected	disco		boundary			http://flybase.org/reports/FBgn0000459	http://insitu.fruitfly.org/insitu_image_storage/img_dir_71/insitu71590.jpe						?	?	
+3	Corepressor of Pangolin	Coop					http://flybase.org/reports/FBgn0263240	https://insitu.fruitfly.org/insitu_image_storage/img_dir_23/insitu23916.jpe								
+3	Btk family kinase at 29A	Btk29A					http://flybase.org/reports/FBgn0003502	https://insitu.fruitfly.org/insitu_image_storage/img_dir_37/insitu37845.jpe								
+3	Diphthamide biosynthesis 1	Dph1					http://flybase.org/reports/FBgn0036194	https://insitu.fruitfly.org/insitu_image_storage/img_dir_51/insitu51255.jpe								
+3	Imaginal disc growth factor 6	Idgf6		boundary			http://flybase.org/reports/FBgn0013763.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_55/insitu55236.jpe						?	?	
+3	CG1416	CG1416					http://flybase.org/reports/FBgn0032961	http://insitu.fruitfly.org/insitu_image_storage/img_dir_7/insitu7621.jpe						?	?	
+3	gooseberry	gsb		boundary		btd	http://flybase.org/reports/FBgn0001148.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_76/insitu76900.jpe						?	?	
+3	brain tumor	brat		ubiquitous		btd	http://flybase.org/reports/FBgn0010300.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_21/insitu21063.jpe						?	?	
+3	CG5059	CG5059					http://flybase.org/reports/FBgn0037007	http://insitu.fruitfly.org/insitu_image_storage/img_dir_36/insitu36108.jpe						?	?	
+3	CG14317	CG14317					http://flybase.org/reports/FBgn0038566	http://insitu.fruitfly.org/insitu_image_storage/img_dir_75/insitu75319.jpe						?	?	
+3	fushi tarazu	ftz		anterior border		eve	http://flybase.org/reports/FBgn0001077.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_164/insitu164407.jpe	-	https://cbglist.mpi-cbg.de/itemFly.html?labCode=tomancak&id=8a8182da515e57110151684dfdc903f2	yes	yes		?	?	
+i	Phosphatidylinositol glycan anchor biosynthesis class B	PIG-B		boundary	inconclusive		http://flybase.org/reports/FBgn0035464.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_62/insitu62130.jpe				yes	yes	?	?	
+i	engrailed	en		boundary	inconclusive		http://flybase.org/reports/FBgn0000577.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_52/insitu52585.jpe	https://transgeneome.mpi-cbg.de/transgeneomics/public/clone.html?wellId=59880282	no / voted	yes	yes	yes	disrupted?	only mandibular or maxilar stripe remains during gastrulation	
+i	thickveins	tkv			inconclusive		http://flybase.org/reports/FBgn0003716	http://insitu.fruitfly.org/insitu_image_storage/img_dir_69/insitu69054.jpe				yes		?	?	
+i	numb	numb		peryphery	inconclusive		http://flybase.org/reports/FBgn0002973.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_58/insitu58355.jpe	-	https://cbglist.mpi-cbg.de/itemFly.html?labCode=tomancak&id=8a8182da515e57110151684dfd6d03e6	yes	yes	yes	no change?	no change (trunk expression weakens)	
+i	odd paired	opa		posterior border	inconclusive		http://flybase.org/reports/FBgn0003002.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_115/insitu115165.jpe				yes	no	?	?	
+x	tropomodulin	tmod		boundary	no CF defects		http://flybase.org/reports/FBgn0082582.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_53/insitu53640.jpe	-	http://flystocks.bio.indiana.edu/Reports/59303.html	no	yes	yes	?	not clear	
+x	reaper	rpr		boundary	no CF defects		http://flybase.org/reports/FBgn0011706.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_110/insitu110664.jpe						?	?	
+x	sister of odd and bowl	sob			no CF defects		http://flybase.org/reports/FBgn0004892	http://insitu.fruitfly.org/insitu_image_storage/img_dir_31/insitu31024.jpe				yes		?	?	
+x	Twin of m4	Tom		posterior	no CF defects	sala	http://flybase.org/reports/FBgn0026320	http://fly-fish.ccbr.utoronto.ca/insitu_image_storage/img_dir_99/insitu99787.jpeg						?	?	
+x	tarsal-less	tal			no CF defects		http://flybase.org/reports/FBgn0087003	https://insitu.fruitfly.org/insitu_image_storage/img_dir_29/insitu29186.jpe								
+x	sanpodo	spdo			no CF defects		http://flybase.org/reports/FBgn0260440									
+x	ovo	ovo			no CF defects		http://flybase.org/reports/FBgn0003028	https://insitu.fruitfly.org/insitu_image_storage/img_dir_174/insitu174254.jpe								
+x	pxb	pxb		anterior	no CF defects		http://flybase.org/reports/FBgn0053207	http://insitu.fruitfly.org/insitu_image_storage/img_dir_33/insitu33814.jpe				yes		?	?	
+x	brother of odd with entrails limited	bowl		anterior	no CF defects		http://flybase.org/reports/FBgn0004893	https://insitu.fruitfly.org/insitu_image_storage/img_dir_21/insitu21019.jpe				yes		?	?	
+x	Blimp-1	Blimp-1			no CF defects		http://flybase.org/reports/FBgn0035625	http://insitu.fruitfly.org/insitu_image_storage/img_dir_31/insitu31738.jpe				yes		?	?	
+x	pathetic	path		boundary	no CF defects		http://flybase.org/reports/FBgn0036007.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_41/insitu41546.jpe	https://transgeneome.mpi-cbg.de/transgeneomics/public/clone.html?wellId=59037910	no / order	yes	yes	yes	no change?	no change	
+x	brummer	bmm		boundary	no CF defects		http://flybase.org/reports/FBgn0036449.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_55/insitu55332.jpe				yes	yes	anterior expansion?	maybe down, but still there	
+x	crumbs	crb		boundary	no CF defects		http://flybase.org/reports/FBgn0259685.html	http://fly-fish.ccbr.utoronto.ca/insitu_image_storage/img_dir_68/insitu68464.jpeg								
+x	tartan	trn		peryphery, complementary to eve?	no CF defects		http://flybase.org/reports/FBgn0010452	http://insitu.fruitfly.org/insitu_image_storage/img_dir_56/insitu56368.jpe				yes		?	?	
+x	deadpan	dpn			no CF defects		http://flybase.org/reports/FBgn0010109	http://insitu.fruitfly.org/insitu_image_storage/img_dir_20/insitu20056.jpe								
+x	CG13894	CG13894		anterior border	no CF defects		http://flybase.org/reports/FBgn0035157.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_36/insitu36424.jpe	https://transgeneome.mpi-cbg.de/transgeneomics/public/clone.html?wellId=59077731	http://flystocks.bio.indiana.edu/Reports/66459.html	no	yes	yes	?	not clear	
+x	knot	kn		anterior border	no CF defects	eve	http://flybase.org/reports/FBgn0001319.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_103/insitu103894.jpe	-	http://flystocks.bio.indiana.edu/Reports/38658.html	yes	no	yes	no change?	expression persists but more posterior during gastrulation in the absence of the furrow, also ventral expansion	
+x	spalt	salm		boundary	no CF defects		http://flybase.org/reports/FBgn0261648.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_101/insitu101285.jpe	-	https://cbglist.mpi-cbg.de/itemFly.html?labCode=tomancak&id=8a8182da515e57110151684e0121043b	yes	no	no	?	?	
+x	hairy	h		anterior border	no CF defects		http://flybase.org/reports/FBgn0001168.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_106/insitu106234.jpe	-	http://flystocks.bio.indiana.edu/Reports/30876.html	yes	yes		?	?	
+x	wingless	wg		boundary	no CF defects		http://flybase.org/reports/FBgn0284084.html	http://www.flyexpress.net/fx_images/BDGP/standardized/insitu24847_s.bmp				no	yes	stripe 1 and 2 fused	stripe 1 and 2 fused	
+x	astray	aay		posterior border	no CF defects		http://flybase.org/reports/FBgn0023129.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_64/insitu64672.jpe						?	?	
+x	hedgehog	hh			no CF defects		http://flybase.org/reports/FBgn0004644.html		-			no	no	?	?	
+x	no ocelli	noc		peryphery	no CF defects		http://flybase.org/reports/FBgn0005771	http://insitu.fruitfly.org/insitu_image_storage/img_dir_58/insitu58566.jpe						?	?	
+x	unpaired 1	upd1			no CF defects		http://flybase.org/reports/FBgn0004956	http://fly-fish.ccbr.utoronto.ca/insitu_image_storage/img_dir_75/insitu75196.jpeg						?	?	
+x	odd skipped	odd		posterior border	no CF defects		http://flybase.org/reports/FBgn0002985.html	http://www.flyexpress.net/fx_images/BDGP/standardized/insitu36048_s.bmp				yes	yes	?	not enough embryos	
+x	midline	mid		posterior border	ectopic posterior folds, germ band extension is impaired		http://flybase.org/reports/FBgn0261963.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_106/insitu106772.jpe		https://cbglist.mpi-cbg.de/itemFly.html?labCode=tomancak&id=8a8182da515e57110151684e0f9d04dc	yes	yes	yes	?	not clear	
+	goosecoid	gsc		anterior			http://flybase.org/reports/FBgn0010323	http://insitu.fruitfly.org/insitu_image_storage/img_dir_120/insitu120199.jpe						?	?	
+	skittles	sktl		not in CF			http://flybase.org/reports/FBgn0016984.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_62/insitu62304.jpe								
+	ocelliless	oc		anterior			http://flybase.org/reports/FBgn0004102.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_124/insitu124697.jpe								
+	CG3502	CG3502		anterior			http://flybase.org/reports/FBgn0046253.html	http://fly-fish.ccbr.utoronto.ca/insitu_image_storage/img_dir_39/insitu39292.jpeg								
+	empty spiracles	ems		anterior border			http://flybase.org/reports/FBgn0000576.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_104/insitu104043.jpe								
+	Sex combs reduced	Scr		posterior border		eve	http://flybase.org/reports/FBgn0003339.html	http://insitu.fruitfly.org/insitu_image_storage/img_dir_118/insitu118228.jpe								
+	fd19B	fd19B					http://flybase.org/reports/FBgn0031086.html	https://insitu.fruitfly.org/insitu_image_storage/img_dir_124/insitu124237.jpe								
+	asrij	asrij					https://flybase.org/reports/FBgn0034793	http://fly-fish.ccbr.utoronto.ca/insitu_image_storage/img_dir_70/insitu70214.jpeg								
+	POU domain protein 2	pdm2					https://flybase.org/reports/FBgn0004394	http://www.flyexpress.net/fx_images/BDGP/standardized/insitu36247_s.bmp								
+	CG4702	CG4702					https://flybase.org/reports/FBgn0037992	http://www.flyexpress.net/fx_images/BDGP/standardized/insitu63937_s.bmp								
+	ETS-domain lacking	edl					https://flybase.org/reports/FBgn0023214	http://www.flyexpress.net/fx_images/BDGP/standardized/insitu24160_s.bmp								
+	Dorsocross1	Doc1					https://flybase.org/reports/FBgn0028789	https://insitu.fruitfly.org/insitu_image_storage/img_dir_19/insitu19631.jpe								
