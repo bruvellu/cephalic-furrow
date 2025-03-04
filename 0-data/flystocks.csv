@@ -19,4 +19,5 @@ slp[delta34b] HisGap,,slp green balancer with nuclei and membrane,"w; Df(2L)ed1/
 "btd[XA] Gap,stg[2]",,btd-stg double mutant with membrane,"btd[XA]/FM7c, Kr-GFP;; Gap43-mCherry, stg[2]/TM3, Sb",this study,BCV104,
 RGap43,,Gap recombined with wildtype chr,Gap43-mCherry,this study,BCV101,Gap homozygotes don’t die
 moe-GFP,,Membrane (actin) fluorescent marker,w; moe-GFP,CBG Knust Lab,EK0477,
-Oregon-R,FBsn0000276,wildtype flies,,,BCV106,
+Oregon-R,FBsn0000276,wildtype flies,,CBG stock,BCV106,
+III-ECF,,III-ECF (FA) homozygous,;;III-ECF,this study,BCV107,
