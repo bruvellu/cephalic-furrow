@@ -1,0 +1,117 @@
+---
+title: "Ectopic folding quantification"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: May 18, 2021
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+library(ggplot2)
+library(BBmisc)
+```
+
+
+## Load measurements
+
+```{r load}
+# Load raw ROI measurements from ImageJ
+results_control <- read.delim("BLUR_SYNC_STR_DUP_btd_dorsal_control_homozygous_2021-04-22_E2_equator.txt")
+results_cauterized <- read.delim("BLUR_SYNC_STR_DUP_btd_dorsal_cauterized_homozygous_2021-02-16_E2_equator.txt")
+
+# Normalize control by standardize (center and scale) per timepoint
+control_standardize <- stack(tapply(results_control$value, results_control$timepoint, normalize, method = "standardize"))
+results_control <- cbind(results_control, standardize=(control_standardize$values))
+
+# Normalize control by center per timepoint
+control_center <- stack(tapply(results_control$value, results_control$timepoint, normalize, method = "center"))
+results_control <- cbind(results_control, center=(control_center$values))
+
+# Normalize control by range (scale) per timepoint
+control_range <- stack(tapply(results_control$value, results_control$timepoint, normalize, method = "range"))
+results_control <- cbind(results_control, range=(control_range$values))
+
+# Normalize cauterized by standardize (center and scale) per timepoint
+cauterized_standardize <- stack(tapply(results_cauterized$value, results_cauterized$timepoint, normalize, method = "standardize"))
+results_cauterized <- cbind(results_cauterized, standardize=(cauterized_standardize$values))
+
+# Normalize cauterized by center per timepoint
+cauterized_center <- stack(tapply(results_cauterized$value, results_cauterized$timepoint, normalize, method = "center"))
+results_cauterized <- cbind(results_cauterized, center=(cauterized_center$values))
+
+# Normalize cauterized by range (scale) per timepoint
+cauterized_range <- stack(tapply(results_cauterized$value, results_cauterized$timepoint, normalize, method = "range"))
+results_cauterized <- cbind(results_cauterized, range=(cauterized_range$values))
+```
+
+```{r length}
+# Load raw length measurements from ImageJ
+length_control <- read.delim("MONTAGE_EDGE_BIN_BLUR_SYNC_STR_DUP_btd_dorsal_control_homozygous_2021-04-22_E2_equator.txt")
+length_cauterized <- read.delim("MONTAGE_EDGE_BIN_BLUR_SYNC_STR_DUP_btd_dorsal_cauterized_homozygous_2021-02-16_E2_equator.txt")
+
+ggplot(length_control, aes(Skeleton.ID, Branch.length, color = Skeleton.ID)) + geom_point()
+ggplot(length_cauterized, aes(Skeleton.ID, Branch.length, color = Skeleton.ID)) + geom_point()
+
+#length <- data.frame(control=(normalize(length_control$Branch.length, method = "range")), cauterized=(normalize(length_cauterized$Branch.length, method = "range")))
+lenraw <- data.frame(
+  cont=(length_control$Branch.length),
+  caut=(length_cauterized$Branch.length)
+  )
+
+lendel <- data.frame(
+  cont=(length_control$Branch.length - length_control$Branch.length[1]),
+  caut=(length_cauterized$Branch.length - length_cauterized$Branch.length[1])
+  )
+
+lentor <- data.frame(
+  cont=(length_control$Branch.length / length_control$Euclidean.distance),
+  caut=(length_cauterized$Branch.length / length_cauterized$Euclidean.distance)
+  )
+
+lenrawstk <- stack(lenraw)
+lenrawstk$frame <- c(seq(1, 30), seq(1, 30))
+ggplot(lenrawstk, aes(frame, values, color = ind)) + geom_smooth(span = 0.2)
+
+lendelstk <- stack(lendel)
+lendelstk$frame <- c(seq(1, 30), seq(1, 30))
+ggplot(lendelstk, aes(frame, values, color = ind)) + geom_smooth(span = 0.2)
+
+lentorstk <- stack(lentor)
+lentorstk$frame <- c(seq(1, 30), seq(1, 30))
+ggplot(lentorstk, aes(frame, values, color = ind)) + geom_smooth(span = 0.2)
+
+
+```
+
+```{r area}
+# Plot control data by timepoint
+ggplot(results_control, aes(timepoint, value)) + geom_violin()
+ggplot(results_control, aes(timepoint, center)) + geom_violin()
+ggplot(results_control, aes(timepoint, standardize)) + geom_violin()
+ggplot(results_control, aes(timepoint, range)) + geom_violin()
+
+
+# Plot cauterized data by timepoint
+ggplot(results_cauterized, aes(timepoint, value)) + geom_violin()
+ggplot(results_cauterized, aes(timepoint, center)) + geom_violin()
+ggplot(results_cauterized, aes(timepoint, standardize)) + geom_violin()
+ggplot(results_cauterized, aes(timepoint, range)) + geom_violin()
+
+# Plot raw data by position
+ggplot(results_control, aes(microns, value)) + geom_point(aes(color = minutes))
+ggplot(results_control, aes(microns, standardize)) + geom_point(aes(color = minutes))
+ggplot(results_control, aes(microns, range)) + geom_point(aes(color = minutes))
+
+ggplot(results_control[(results_control$minutes >= 15.78 & results_control$minutes <= 65.75), ], aes(microns, range)) + geom_smooth()
+ggplot(results_cauterized[(results_cauterized$minutes >= 15.78 & results_cauterized$minutes <= 65.75), ], aes(microns, range)) + geom_smooth()
+
+ggplot(results_cauterized, aes(microns, value)) + geom_point(aes(color = minutes))
+ggplot(results_cauterized, aes(microns, standardize)) + geom_point(aes(color = minutes))
+ggplot(results_cauterized, aes(microns, range)) + geom_point(aes(color = minutes))
+
+
+
+#+ stat_smooth(method="lm")
+#+ geom_smooth(stat = "identity")
+#+  geom_violin() + geom_jitter(alpha = 0.8, width = 0.15)
+```
