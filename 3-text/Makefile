@@ -118,8 +118,8 @@ vids:
 	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11/COMBINE_btd-gap_dorsal_1_z3_t45s_E2_s7_E14_s11_crop_label.mp4 ${FIGOUT}/Vid4.mp4
 	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.avi ${FIGHIR}/Vid5.avi
 	ln -sf ${FIGSRC}/ectopic-folding/3-dorsal/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8/COMBINE_eve-gap_dorsal_2_z3_t53s_E5_s5_E14_s8_oneside_label.mp4 ${FIGOUT}/Vid5.mp4
-	ln -sf ${FIGSRC}/mitotic-strain/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGHIR}/Vid6.avi
-	ln -sf ${FIGSRC}/mitotic-strain/combined/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.mp4 ${FIGOUT}/Vid6.mp4
+	ln -sf ${FIGSRC}/mitotic-strain/4-combine/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.avi ${FIGHIR}/Vid6.avi
+	ln -sf ${FIGSRC}/mitotic-strain/4-combine/COMBINE_CROP_btd-gap_E3_s20_E14_s24_label.mp4 ${FIGOUT}/Vid6.mp4
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.mp4 ${FIGHIR}/Vid7.avi
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_TRACE_3D_btd-gap_z3_t55s_E3_E6_label.mp4 ${FIGOUT}/Vid7.mp4
 	ln -sf ${FIGSRC}/ectopic-features/combined/COMBINE_E7_E14_E8_E6_folding_label_loop.mp4 ${FIGHIR}/Vid8.avi
