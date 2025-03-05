@@ -1,0 +1,22 @@
+Number of rows invaginated in the cephalic furrow at the lateral side in RGap
+
+10
+13
+11
+13
+10
+11
+10
+10
+11
+10
+10
+12
+12
+13
+12
+13
+
+avg: 11.3125
+std: 1.25
+
