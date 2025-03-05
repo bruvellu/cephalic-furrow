@@ -7,4 +7,6 @@
 .sync*
 *.tif
 *.avi
+*.mp4
+*.m4v
 *.png
