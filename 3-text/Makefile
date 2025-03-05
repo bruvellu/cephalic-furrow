@@ -54,8 +54,9 @@ all: clean figs vids refs text cloud
 
 # Cleanup figure directory before compiling
 clean:
-	touch ${FIGOUT}/touch.txt
+	touch ${FIGOUT}/README.md
 	rm -r ${FIGOUT}/*
+	touch ${FIGOUT}/README.md
 	mkdir ${FIGHIR}
 
 # Copy figure files to source directory
