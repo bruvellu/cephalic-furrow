@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <semantics>
+  <mrow>
+   <msub>
+    <mi>W</mi>
+    <mi>T</mi>
+   </msub>
+   <mo stretchy="false">=</mo>
+   <mrow>
+    <msub>
+     <mi>W</mi>
+     <mi>s</mi>
+    </msub>
+    <mo stretchy="false">+</mo>
+    <msub>
+     <mi>W</mi>
+     <mi>b</mi>
+    </msub>
+   </mrow>
+  </mrow>
+  <annotation encoding="StarMath 5.0">W_T=W_s+W_b</annotation>
+ </semantics>
+</math>
