@@ -24,8 +24,3 @@ Overview of the different analyses we performed.
 - [`transgenesis`](transgenesis): Scoring of experiments to block cephalic furrow formation using FLP/FRT recombination.
 - [`trunk-germ`](trunk-germ): Analysis of the tissue compression in the trunk--germ interface of cephalic furrow mutants.
 
-Remove:
-apical-area/
-cell-area-pre-mitosis/
-leftright-difference/
-tissue-flows/
