@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="810"
+   height="320"
+   viewBox="0 0 214.3125 84.666676"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="placeholder.svg"
+   inkscape:export-filename="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/placeholder.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1034">
+      <rect
+         style="opacity:0.5;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.291592;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.583184, 0.583184"
+         id="rect1036"
+         width="140.22914"
+         height="58.208336"
+         x="2.6458333"
+         y="235.47916" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1560">
+      <rect
+         style="display:inline;opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.0104585;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.020917, 0.020917"
+         id="rect1562"
+         width="7.9375038"
+         height="1.3229144"
+         x="63.499992"
+         y="61.471531" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1674">
+      <rect
+         style="display:inline;opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.0110744;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.0221487, 0.0221487"
+         id="rect1676"
+         width="7.937499"
+         height="1.4833114"
+         x="133.61459"
+         y="62.177086" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1772">
+      <rect
+         style="display:inline;opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.0120216;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.0240431, 0.0240431"
+         id="rect1774"
+         width="7.9374995"
+         height="1.7479014"
+         x="203.72917"
+         y="60.854168" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1783">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1785"
+         width="68.791672"
+         height="26.458334"
+         x="142.875"
+         y="64.822922" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1787">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1789"
+         width="68.791672"
+         height="26.458334"
+         x="72.760422"
+         y="64.822922" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1791">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1793"
+         width="68.791672"
+         height="26.458334"
+         x="2.6458335"
+         y="64.822922" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1798">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1800"
+         width="68.791672"
+         height="26.458334"
+         x="142.875"
+         y="35.042248" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1802">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1804"
+         width="68.791672"
+         height="26.458334"
+         x="72.760422"
+         y="35.042248" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1806">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1808"
+         width="68.791672"
+         height="26.458334"
+         x="2.6458335"
+         y="35.042248" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1813">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1815"
+         width="68.791672"
+         height="26.458334"
+         x="2.6458302"
+         y="10.054167" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1817">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1819"
+         width="68.791672"
+         height="26.458334"
+         x="72.760422"
+         y="10.054168" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1821">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1823"
+         width="68.791672"
+         height="26.458334"
+         x="142.875"
+         y="10.054167" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1828">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1830"
+         width="68.791672"
+         height="26.458334"
+         x="142.875"
+         y="-15.228587" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1832">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1834"
+         width="68.791672"
+         height="26.458334"
+         x="72.760422"
+         y="-15.228587" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1836">
+      <rect
+         style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.137693;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.275386, 0.275386"
+         id="rect1838"
+         width="68.791672"
+         height="26.458334"
+         x="2.6458302"
+         y="-15.228587" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2698021"
+     inkscape:cx="344.84428"
+     inkscape:cy="274.46562"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-others="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-global="true"
+     inkscape:snap-page="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid835" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Panels"
+     style="display:inline">
+    <rect
+       style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.461199;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6;opacity:1"
+       id="rect205"
+       width="209.02083"
+       height="79.375"
+       x="2.6458535"
+       y="2.6458335" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192089;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.384178, 0.384178"
+       id="rect1292-9-5-5-3"
+       width="68.791672"
+       height="27.781254"
+       x="142.87503"
+       y="-125.67706" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192089;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.384178, 0.384178"
+       id="rect1292-9-5-3-6"
+       width="68.791672"
+       height="27.781254"
+       x="72.760406"
+       y="-125.67706" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.192089;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.384178, 0.384178"
+       id="rect1292-9-5-7"
+       width="68.791672"
+       height="27.781254"
+       x="2.6458302"
+       y="-125.67706" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.126947;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.253894, 0.253894"
+       id="rect1292-9-9-5"
+       width="68.791672"
+       height="22.489586"
+       x="142.87503"
+       y="-120.38538" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.126947;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.253894, 0.253894"
+       id="rect1292-9-2-3"
+       width="68.791672"
+       height="22.489586"
+       x="72.760406"
+       y="-120.38538" />
+    <rect
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.126947;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.253895, 0.253895"
+       id="rect1292-9-6-5"
+       width="68.791672"
+       height="22.489586"
+       x="2.6458302"
+       y="-120.38538" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_eve-Gap1_t60s_z3_E12_f34.png"
+       xlink:href="ectopic-folding/1-snaps/3D_eve-Gap1_t60s_z3_E12_f34.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663193"
+       preserveAspectRatio="none"
+       id="image1054-9-6"
+       x="142.87503"
+       y="-155.66322"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_eve-Gap1_t60s_z3_E12_f27.png"
+       xlink:href="ectopic-folding/1-snaps/3D_eve-Gap1_t60s_z3_E12_f27.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663193"
+       preserveAspectRatio="none"
+       id="image1040-2-2"
+       x="142.87503"
+       y="-183.88548"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E14_f44.png"
+       xlink:href="ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E14_f44.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663195"
+       preserveAspectRatio="none"
+       id="image970-5-9"
+       x="72.760437"
+       y="-155.66322"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E14_f40.png"
+       xlink:href="ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E14_f40.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663195"
+       preserveAspectRatio="none"
+       id="image956-3-1"
+       x="72.760437"
+       y="-183.88548"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E3_f69.png"
+       xlink:href="ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E3_f69.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663195"
+       preserveAspectRatio="none"
+       id="image928-7-2"
+       x="2.6458454"
+       y="-155.66322"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E3_f64.png"
+       xlink:href="ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E3_f64.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663195"
+       preserveAspectRatio="none"
+       id="image914-6-7"
+       x="2.6458454"
+       y="-183.88548"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E3_f58.png"
+       xlink:href="ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E3_f58.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663197"
+       preserveAspectRatio="none"
+       id="image900-3-0"
+       x="2.6458454"
+       y="-211.66672"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E14_f31.png"
+       xlink:href="ectopic-folding/1-snaps/3D_btd-gap_z3_t55s_E14_f31.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663195"
+       preserveAspectRatio="none"
+       id="image942-5-9"
+       x="72.760437"
+       y="-211.66672"
+       style="display:inline" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/1-snaps/3D_eve-Gap1_t60s_z3_E12_f22.png"
+       xlink:href="ectopic-folding/1-snaps/3D_eve-Gap1_t60s_z3_E12_f22.png"
+       inkscape:export-ydpi="300"
+       inkscape:export-xdpi="300"
+       width="68.791664"
+       height="28.663193"
+       preserveAspectRatio="none"
+       id="image1026-6-3"
+       x="142.87503"
+       y="-211.66672"
+       style="display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="3.924654"
+       y="-206.37505"
+       id="text958-1-6"
+       inkscape:transform-center-x="6.0730737"
+       inkscape:transform-center-y="-0.96154391"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan956-2-0"
+         x="3.924654"
+         y="-206.37505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="73.401886"
+       y="-206.52322"
+       id="text958-4-7-6"
+       inkscape:transform-center-x="6.0730737"
+       inkscape:transform-center-y="-0.96154391"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan956-6-0-2"
+         x="73.401886"
+         y="-206.52322"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="143.51648"
+       y="-206.37505"
+       id="text958-4-7-9-6"
+       inkscape:transform-center-x="6.0730737"
+       inkscape:transform-center-y="-0.96154391"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan956-6-0-3-1"
+         x="143.51648"
+         y="-206.37505"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">C</tspan></text>
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/3-dorsal/SLICE_btd-gap_dorsal_1_z3_t45s_E2_s7_oneside_f50_scale.png"
+       xlink:href="ectopic-folding/3-dorsal/SLICE_btd-gap_dorsal_1_z3_t45s_E2_s7_oneside_f50_scale.png"
+       style="display:inline"
+       y="-120.20661"
+       x="2.6458302"
+       id="image1206-8"
+       preserveAspectRatio="none"
+       height="22.310812"
+       width="68.791664" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/3-dorsal/SLICE_btd-gap_dorsal_1_z3_t45s_E14_s11_oneside_f92_scale.png"
+       xlink:href="ectopic-folding/3-dorsal/SLICE_btd-gap_dorsal_1_z3_t45s_E14_s11_oneside_f92_scale.png"
+       style="display:inline"
+       y="-120.20661"
+       x="72.760406"
+       id="image1220-7"
+       preserveAspectRatio="none"
+       height="22.310812"
+       width="68.791664" />
+    <image
+       sodipodi:absref="/home/nelas/Dropbox/Projects/Cephalic_furrow/7-Paper/2-figures/ectopic-folding/3-dorsal/SLICE_eve-gap_dorsal_1_z3_t52s_E9_s6_oneside_f80_scale.png"
+       xlink:href="ectopic-folding/3-dorsal/SLICE_eve-gap_dorsal_1_z3_t52s_E9_s6_oneside_f80_scale.png"
+       style="display:inline"
+       y="-120.20661"
+       x="142.87503"
+       id="image1234-9"
+       preserveAspectRatio="none"
+       height="22.310812"
+       width="68.791664" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="3.924654"
+       y="-120.64997"
+       id="text958-1-1-2"
+       inkscape:transform-center-x="6.0730737"
+       inkscape:transform-center-y="-0.96154391"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan956-2-2-0"
+         x="3.924654"
+         y="-120.64997"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">D</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="73.401886"
+       y="-120.79811"
+       id="text958-4-7-7-2"
+       inkscape:transform-center-x="6.0730737"
+       inkscape:transform-center-y="-0.96154391"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan956-6-0-0-3"
+         x="73.401886"
+         y="-120.79811"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">E</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="143.51648"
+       y="-120.64997"
+       id="text958-4-7-9-9-7"
+       inkscape:transform-center-x="6.0730737"
+       inkscape:transform-center-y="-0.96154391"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan956-6-0-3-3-5"
+         x="143.51648"
+         y="-120.64997"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">F</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Oblique';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;stroke-width:0.264583"
+       x="37.214111"
+       y="-212.83821"
+       id="text1210-9"><tspan
+         sodipodi:role="line"
+         id="tspan1208-2"
+         x="37.214111"
+         y="-212.83821"
+         style="font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Oblique';text-align:center;text-anchor:middle;stroke-width:0.264583">btd/+</tspan></text>
+    <text
+       inkscape:export-ydpi="36"
+       inkscape:export-xdpi="36"
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0467313"
+       x="107.32867"
+       y="-212.64407"
+       id="text5703-2-9-6-1-5-6-0-6-9-6-2"><tspan
+         sodipodi:role="line"
+         x="107.32867"
+         y="-212.64407"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.0467313"
+         id="tspan3594-8-6-8">btd<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';text-align:center;baseline-shift:super;text-anchor:middle;fill:#000000;fill-opacity:1"
+   id="tspan3626-4-9">−</tspan></tspan></text>
+    <text
+       inkscape:export-ydpi="36"
+       inkscape:export-xdpi="36"
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0467313"
+       x="177.24191"
+       y="-212.65593"
+       id="text5703-2-9-6-1-5-6-0-6-9-6-3-7"><tspan
+         sodipodi:role="line"
+         x="177.24191"
+         y="-212.65593"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke-width:0.0467313"
+         id="tspan3594-8-6-6-3">eve<tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';text-align:center;baseline-shift:super;text-anchor:middle;fill:#000000;fill-opacity:1"
+   id="tspan3626-4-7-6">−</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:label="Labels"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.25;fill:#f2f2d8;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-dasharray:0.529167, 0.529167"
+       id="rect833"
+       width="105.83333"
+       height="63.5"
+       x="-169.33333"
+       y="-1.7763568e-15" />
+  </g>
+</svg>
