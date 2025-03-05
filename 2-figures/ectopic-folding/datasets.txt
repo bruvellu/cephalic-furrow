@@ -1,0 +1,17 @@
+Embryo pairs with most similar orientation:
+
+Perfect lateral:
+
+- 3D_btd-gap_z3_t55s_E3.tif
+- 3D_btd-gap_z3_t55s_E14.tif
+
+- 3D_eve-Gap1_t60s_z3_E11.tif
+- 3D_eve-Gap1_t60s_z3_E12.tif
+
+Slightly dorsal:
+
+- 3D_btd-gap_z3_t55s_E10.tif
+- 3D_btd-gap_z3_t55s_E6.tif
+
+- 3D_btd-hisgap1_E8.tif
+- 3D_btd-hisgap1_E7.tif
