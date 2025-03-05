@@ -58,6 +58,7 @@ clean:
 	rm -r ${FIGOUT}/*
 	touch ${FIGOUT}/README.md
 	mkdir ${FIGHIR}
+	touch ${FIGHIR}/README.md
 
 # Copy figure files to source directory
 figs:
