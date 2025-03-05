@@ -1,0 +1,51 @@
+########################################################
+### PLOT GENE EXPRESSION PROFILE ACROSS DROSO EMBRYO ###
+########################################################
+
+# PROFILE == PIXEL INTENSITY
+
+
+wc -l *txt
+    1450 wt_cycle13_mid2_btd.txt
+    1450 wt_cycle13_mid2_eve.txt
+    1450 wt_cycle13_mid2_slp.txt
+     321 wt_cycle14_early_btd.txt
+     321 wt_cycle14_early_eve.txt
+     321 wt_cycle14_early_slp.txt
+     363 wt_cycle14_late_btd.txt
+     363 wt_cycle14_late_eve.txt
+     363 wt_cycle14_late_slp.txt
+     344 wt_cycle14_mid_btd.txt
+     344 wt_cycle14_mid_eve.txt
+     344 wt_cycle14_mid_slp.txt
+
+#files with 2cols, X/Y.
+# X = position along AP axis
+# Y = pixel/signal intensity
+
+#col1 (pos) is the same in all three files from the same cycle/stage
+
+
+#combine files:
+printf "pos\tbtd\teve\tslp\n" > wt_cycle14_early_all.txt
+paste wt_cycle14_early_btd.txt wt_cycle14_early_eve.txt wt_cycle14_early_slp.txt | awk 'OFS="\t" {print $1,$2,$4,$6}' >> wt_cycle14_early_all.txt
+
+printf "pos\tbtd\teve\tslp\n" > wt_cycle14_mid_all.txt
+paste wt_cycle14_mid_btd.txt wt_cycle14_mid_eve.txt wt_cycle14_mid_slp.txt | awk 'OFS="\t" {print $1,$2,$4,$6}' >> wt_cycle14_mid_all.txt
+
+printf "pos\tbtd\teve\tslp\n" > wt_cycle14_late_all.txt
+paste wt_cycle14_late_btd.txt wt_cycle14_late_eve.txt wt_cycle14_late_slp.txt | awk 'OFS="\t" {print $1,$2,$4,$6}' >> wt_cycle14_late_all.txt
+
+printf "pos\tbtd\teve\tslp\n" > wt_cycle13_mid2_all.txt
+paste wt_cycle13_mid2_btd.txt wt_cycle13_mid2_eve.txt wt_cycle13_mid2_slp.txt | awk 'OFS="\t" {print $1,$2,$4,$6}' >> wt_cycle13_mid2_all.txt
+
+#remove original header in 2nd line
+
+
+#plot:
+#Rscript plotProfile.R $file $output.pdf
+
+for f in `ls *all.txt` ; do 
+  fbase=${f%.txt}
+  Rscript plotProfile.R $f ${fbase}.pdf
+done
