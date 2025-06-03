@@ -1,6 +1,5 @@
 ---
-title: Patterned embryonic invagination evolved in response to mechanical instability
-#alt: Patterned invagination prevents mechanical instability during gastrulation
+title: Patterned invagination prevents mechanical instability during gastrulation
 author:
 - Bruno C. Vellutini:
     institute: [mpicbg]
