@@ -172,5 +172,5 @@ cloud:
 	cp ${FILE}.pdf ${CLOUD}/${FILEOUT}.pdf
 	cp ${FILE}.docx ${CLOUD}/${FILEOUT}.docx
 	# Copy latest response to shared cloud
-	cp ${REVISION}/response.docx ${CLOUD}/${DATE}_response.docx
+	#cp ${REVISION}/response.docx ${CLOUD}/${DATE}_response.docx
 
