@@ -111,8 +111,9 @@ To understand the physical consequences of perturbing the formation of the cepha
 
 ## Disruption of initiator cell behavior
 
-<!--TODO: This can be summmarized more.-->
+<!--TODO: This can be summmarized more-->
 <!--TODO: Move paragraph to supplementary notes or merge below?-->
+<!--TODO: Move to supplementary information? 160 words-->
 
 We first analyzed how the behavior of initiator cells is perturbed in the three mutant backgrounds. In wildtype embryos, the initiator cells shorten and undergo anisotropic apical constriction minutes before the end of cellularization [@Spencer2015-td] ({!@fig:initiator}a,b). In *prd* mutants, both behaviors are delayed in initiator cells, and the adjacent cells lack the typical arched profile present in the wildtype invagination [@Spencer2015-td] ({!@fig:initiator}a,b). Moreover, the tissue only invaginates after gastrulation and the resulting fold is abnormal compared to a wildtype invagination. In *btd* and *eve* mutants, the cephalic furrow phenotypes are stronger. Initiator cells in *btd* embryos exhibit a reduced degree of apical constriction but do not shorten ({!@fig:initiator}a,b, {!@fig:vid-initiator}). In contrast, *eve* mutants show neither apical constriction nor cell shortening; the epithelium remains flat for several minutes after gastrulation ({!@fig:initiator}a,b). These observations reveal that initiator cell behavior in *prd* mutants is not only delayed but also perturbed, and that the cellular mechanism that drives cephalic furrow formation is severely disrupted in *btd* and *eve* mutants.
 
@@ -177,6 +178,8 @@ To determine the relative contribution of mitotic domains and germ band as sourc
 
 ## Model and simulation design
 
+<!--TODO: Move model description to supplementary information? 280 words-->
+
 Our model represents an epithelial monolayer confined inside a rigid shell. It embodies one side of a frontal slice between the midline and the dorsal apex of a *Drosophila* embryo with its typical morphological proportions ({@fig:fold-model}a, {@fig:model-features}a). The blastoderm is modeled by an elliptical arc of equidistant particles connected by springs and enclosed on one side by a rigid barrier representing the vitelline envelope ({@fig:fold-model}b). The total energy per unit length of this tissue ($W_T$) is a sum of a stretching energy component ($W_s$) and a bending energy component ($W_b$) ({@fig:fold-model}c). Each of these components has a rigidity associated with them. $K_s$ is the stretching rigidity and $K_b$ is the bending rigidity. These two parameters can be combined into a single dimensionless bending rigidity, $K_{b}^{\text{*}}$ ({@fig:fold-model}c).
 
 To simulate the physical interactions between mitotic domains, germ band, and cephalic furrow, we defined the mitotic domains as compressed regions which tend to expand (they contain more particles compared to the surrounding regions), and the cephalic furrow as a narrow region having an intrinsic negative curvature predisposing the tissue to invaginate ({@fig:fold-model}b). The germ band is defined by the position of the posterior end of the tissue ($g$), which is fixed at different fractions of egg length for each simulation ({@fig:fold-model}a,b). Thus, the effect of germ band extension appears as a global compression in the blastoderm. To run the simulations, we defined a ground level of random noise and iterated towards equilibrium of the total energy in the system (see Methods). We then set several simulations with different bending rigidity values and combinations of presence/absence of mitotic domains, cephalic furrow, and percentages of germ band extension to quantify the position, frequency, and depth of ectopic folding in the epithelium.
@@ -228,6 +231,8 @@ As described above, our analyses suggest that the effectiveness of the cephalic 
 
 ## Role of *sloppy paired* in cephalic furrow patterning
 
+<!--TODO: Move slp to supplementary information? 800 words-->
+
 To identify other cephalic furrow genes, we performed a live-imaging screen using loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 2). We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a strong phenotype where the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control = 67.6±1.4%, n=26; *slp* = 73.2±0.7%, n=7) ({@fig:genetic-patterning}a,b, {!@fig:vid-slp-lateral}). With this anterior shift, *slp* mutants exhibit a more prominent posterior dorsal fold and an early ectopic fold within MD6 appearing before cell divisions ({@fig:genetic-patterning}a, {!@fig:vid-slp-lateral}). These observations are congruent with the increase in posterior mechanical instability present in our simulations where the cephalic furrow is shifted forward ({@fig:fold-model}h).
 
 Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary. We find that the expression patterns and typical overlap between the two genes remains almost unaltered, except for the small ectopic expression *btd* in the head and for the wider gap between *eve* stripe 1 and 2 ({@fig:genetic-patterning}c,d, {!@fig:genetic-features}b). The anterior shift in cells expressing *btd* and *eve* corresponds to a few rows of blastoderm cells (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:genetic-patterning}e). Despite the displacement, most *slp* embryos exhibit initiator cell behaviors, suggesting that the patterning is not entirely perturbed ({!@fig:genetic-features}c). However, the symmetry of the resulting fold is altered ({!@fig:genetic-features}d), indicating that *slp1* may contribute not only to the positioning but also to the patterning of individual cells that give rise to the cephalic furrow.
@@ -267,6 +272,8 @@ However, we identified a key difference in the expression of *btd* between speci
 <!--Compare the dorsoventral patterning between Clogmia and Drosophila [@Wotton2017]. Apparently, Clogmia is ventralized while Drosophila dorsalized. The origin of this head--trunk btd domain could be that it expanded dorsally with the dorsalization.-->
 
 # Discussion
+
+<!--TODO: Reduce discussion a lot-->
 
 Our work investigates the developmental function and patterning evolution of the cephalic furrow---an epithelial invagination that forms at the head--trunk boundary of dipteran flies. We find that without the cephalic furrow, the head--trunk tissues become unstable during gastrulation and buckle due to compressive stresses exerted by the expansion of mitotic domains and the germ band extension.
 
