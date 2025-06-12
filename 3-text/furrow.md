@@ -500,7 +500,7 @@ Staging based on a standard developmental table [@Ashburner2005-ym].
 **d**, Dorsal view showing the ectopic expression of *btd* (asterisks) and anterior shift of *btd*--*eve* overlap in *slp* mutants. Scale bars = 20\ µm.
 **e**, Profile view showing the increased number of cell rows between *eve* stripe 1 and 2 in *slp* mutants. Scale bars = 20\ µm.
 **f**, Progression of the early expression of *btd*, *eve*, and *slp1* around the nuclear cycle 14 in *Drosophila*. *slp1* and *eve* initially demarcate the head--trunk boundary in broad domains which become segmented, narrow and resolve into sharp, non-overlapping stripes.
-*btd* transcripts are localized at the head--trunk interface.
+*btd* transcripts are localized at the head--trunk interface. Scale bars = 50\ µm.
 **g**, Lateral view of the expression at the head--trunk boundary in *Drosophila*. *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines).
 **h**, Profile view of the gene expression in initiator cells of *Drosophila*. The *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping *slp1* stripes. *btd* and *eve* overlap by 1-cell row. *prd* expression is offset with *slp1*. Dashed lines mark the future edges of the cephalic furrow.
 **i**, Profile view of the gene expression after cephalic furrow invagination in *Drosophila*. The *eve*-expressing initiator cells are located deep into the yolk, while the *slp* head domain (sh) and stripe 3 demarcate the outer edges of the invagination.
