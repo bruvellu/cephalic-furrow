@@ -507,7 +507,7 @@ Staging based on a standard developmental table [@Ashburner2005-ym].
 **j**, Expression domains during nuclear cycles 13 and 14 in *Ceratitis*, *Anopheles*, and *Clogmia*. Scale bars = 100\ µm.
 **k**, Comparison of expression patterns at the head--trunk boundary before gastrulation between species. The expression of *slp* and *eve* are similar across all species. Both *Drosophila* and *Ceratitis*, species with a cephalic furrow, show a head--trunk domain of *btd* that overlaps with *eve* stripe 1. In *Anopheles*, the head--trunk *btd* domain does not overlap with *eve* stripe 1, and in *Clogmia* this *btd* domain is absent. Scale bars = 50\ µm.
 **l**, Schematic drawings showing the combinatorial molecular arrangement at the head--trunk boundary of *Drosophila*.
-**m**, Profile view of the gene expression at the head--trunk boundary cells in *Ceratitis*, *Anopheles*, and *Clogmia*.
+**m**, Profile view of the gene expression at the head--trunk boundary cells in *Ceratitis*, *Anopheles*, and *Clogmia*. Scale bars = 20\ µm.
 ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg: *btd* foregut domain.
 ](figures/Fig5.jpg){#fig:genetic-patterning width=100%}
 
