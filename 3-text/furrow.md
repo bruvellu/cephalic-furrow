@@ -693,11 +693,11 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 **b**, Expression of *btd* and *eve* in *slp* mutants. Scale bars = 50\ µm.
 **c**, Initiator cell behavior in *slp* mutants. Scale bar = 20\ µm.
 **d**, Asymmetric cephalic furrow in *slp* mutants. Scale bar = 20\ µm.
-**e**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos in lateral view.
-**f**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos with head and profile views.
-**g**, Disruption of *btd*, *eve*, and *slp1* expression patterns in the head of *btd*, *eve*, and *prd* mutant embryos.
-**h**, Profile views of **g** showing the gene expression at the head--trunk boundary cells.
-**i**, Lateral views of *btd*, *eve*, and *slp1* expression patterns in *btd*, *eve*, and *prd* mutants after gastrulation.
+**e**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos in lateral view. Scale bars = 50\ µm.
+**f**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos with head and profile views. Scale bars = 20\ µm.
+**g**, Disruption of *btd*, *eve*, and *slp1* expression patterns in the head of *btd*, *eve*, and *prd* mutant embryos. Scale bars = 50\ µm.
+**h**, Profile views of **g** showing the gene expression at the head--trunk boundary cells. Scale bars = 20\ µm.
+**i**, Lateral views of *btd*, *eve*, and *slp1* expression patterns in *btd*, *eve*, and *prd* mutants after gastrulation. Scale bars = 50\ µm.
 ](figures/FigED6.jpg){#fig:genetic-features tag="Extended Data Fig. 6" width=100%}
 
 <!--TODO: Finish proper figure legends.-->
