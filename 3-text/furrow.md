@@ -689,7 +689,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 ## Extended Data Fig. 6
 
 ![Genetic patterning of the head--trunk boundary in *Drosophila*.
-**a**, Expression of *slp1*, *eve*, and *btd* in wildtype from nuclear cycle (nc) 11 to gastrulation.
+**a**, Expression of *slp1*, *eve*, and *btd* in wildtype from nuclear cycle (nc) 11 to gastrulation. Scale bars = 50\ µm.
 **b**, Expression of *btd* and *eve* in *slp* mutants.
 **c**, Initiator cell behavior in *slp* mutants.
 **d**, Asymmetric cephalic furrow in *slp* mutants.
