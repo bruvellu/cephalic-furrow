@@ -756,10 +756,8 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 <!--TODO: Merge Vid7+8-->
 <!--TODO: Lower speed Vid9-->
 
-![Reduced apical constriction in *btd* mutants. Lateral view (left) and cartographic projection (right) of the head--trunk interface in four individual *btd* mutants. Putative initiator cells (center) exhibit a reduced degree of apical constriction. The video is looped to highlight the changes in apical cell area. Frame rate = 10fps.
+![Reduced apical constriction in *btd* mutants. Lateral view (left) and cartographic projection (right) of the head--trunk interface in four individual *btd* mutants. Putative initiator cells (center) exhibit a reduced degree of apical constriction. The video is looped to highlight the changes in apical cell area. Frame rate = 10\ fps. Scale bar = 50\ µm.
 ](figures/Vid1.jpg){#fig:vid-initiator tag="Supplementary Video 1" width=50%}
-
-<!--TODO: Add scale bars-->
 
 \newpage
 
