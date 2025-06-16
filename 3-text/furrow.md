@@ -428,16 +428,16 @@ BCV and PT conceived the study. BCV designed experiments, generated fly stocks, 
 ## Figure 1
 
 ![Formation of ectopic folds in cephalic furrow mutants.
-**a**, Overview of key developmental events in the different genetic backgrounds. Cephalic furrow formation is delayed in *prd* mutants and absent in *btd* and *eve* mutants. Ectopic folds form around the head--trunk boundary, appearing later and unfolding quicker than the cephalic furrow. Their formation coincides with the appearance of mitotic domains and rapid phase of germ band extension [@Campos-Ortega1985-ma].
+**a**, Overview of key developmental events in the different genetic backgrounds. Cephalic furrow formation is delayed in *prd* mutants and absent in *btd* and *eve* mutants. Ectopic folds form around the head--trunk boundary, appearing later and unfolding quicker than the cephalic furrow. Their formation coincides with the appearance of mitotic domains and rapid phase of germ band extension.
 **b**, Profile views of wildtype and *prd* embryos at early stage 8 and *btd* and *eve* embryos at late stage 8, showing the divergent morphologies of the cephalic furrow and ectopic folds. Scale bars = 20\ µm.
 **c**, Lateral view of sibling controls (heterozygotes) and mutant embryos (*btd* or *eve* homozygotes). Arrows indicate epithelial folds. Asterisks indicate the position of mitotic domains. Percentages indicate the extent of germ band extension relative to egg length. Scale bars = 50\ µm.
-**d**, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about 7 minutes after gastrulation in wildtype and *btd* heterozygotes and is delayed in *eve* and *prd* heterozygotes and in *prd* homozygotes. Ectopic folds form about 20\ min after gastrulation in *btd* and *eve* homozygotes. Each point represents one embryo.
-**e**, Percentage of germ band extension at the time of cephalic furrow and ectopic fold formation. The cephalic furrow appears at 10% germ band extension. Ectopic folds form at 30--35% germ band extension.
-**f**, Variability in the positioning of the cephalic furrow in sibling controls (*btd* heterozygotes) and ectopic folds in *btd* mutants. Scale bars = 50\ µm.
-**g**, Folded area (yellow outline) of the cephalic furrow (CF) in a *btd* heterozygote (left) and of ectopic folds (EF) in a *btd* homozygote (right). The numbers indicate the average folded area in µm^2^×10^3^ for each condition. Cartographic projections of lateral view datasets. Scale bars = 50\ µm (approximated value since pixel sizes vary across the projection).
-**h**, Quantification of the total folded area in cephalic furrow mutants.
+**d**, Timing of formation of cephalic furrow and ectopic folds in different genetic backgrounds. The cephalic furrow forms about 7 minutes after gastrulation in wildtype (n = 16) and *btd* heterozygotes (n = 6) and is delayed in *eve* (n = 7) and *prd* heterozygotes (n = 10), and in *prd* homozygotes (n = 5). Ectopic folds form about 20\ min after gastrulation in *btd* (n = 5) and *eve* homozygotes (n = 5). Each point represents one embryo. 
+**e**, Percentage of germ band extension at the time of cephalic furrow and ectopic fold formation. The cephalic furrow appears at 10% germ band extension. Ectopic folds form at 30--35% germ band extension. n numbers are the same as in **d**.
+**f**, Variability in the positioning of the cephalic furrow in *btd* heterozygotes (n = 6) and ectopic folds in *btd* mutants (n = 5). Scale bars = 50\ µm.
+**g**, Folded area (yellow outline) of the cephalic furrow (CF) in a *btd* heterozygote (left, n = 6) and of ectopic folds (EF) in a *btd* homozygote (right, n = 5). The numbers indicate the average folded area in µm^2^ for each condition. Cartographic projections of lateral view datasets. Scale bars = 50\ µm (approximated value since pixel sizes vary across the projection).
+**h**, Quantification of the total folded area of the cephalic furrow in wildtype (n = 16), *btd* (n = 6), *eve* (n = 7), and *prd* (n = 9) heterozygotes, and of the ectopic folds in *btd* (n = 5), *eve* (n = 4), and *prd* (n = 5) homozygotes.
 The membrane marker in panels **b**, **c**, **f**, and **g** is Gap43-mCherry.
-Staging based on a standard developmental table [@Ashburner2005-ym].
+Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma; @Ashburner2005-ym].
 ](figures/Fig1.jpg){#fig:ectopic-folding width=100%}
 
 \newpage
