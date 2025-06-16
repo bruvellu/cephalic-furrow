@@ -709,9 +709,9 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 ![Genetic patterning of the head--trunk boundary in other dipteran species.
 **a**, Expression of *slp1*, *eve*, and *btd* in *Ceratitis* developmental stages. Scale bars = 100\ µm.
 **b**, Expression of *slp2*, *eve*, and *btd* in *Anopheles* developmental stages. Scale bars = 50\ µm.
-**c**, Expression of *slp1*, *eve*, and *btd* in *Clogmia* developmental stages.
-**d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* lateral views.
-**e**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* at the head--trunk boundary in profile views.
+**c**, Expression of *slp1*, *eve*, and *btd* in *Clogmia* developmental stages. Scale bars = 50\ µm.
+**d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* lateral views. Scale bars = 50\ µm.
+**e**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* at the head--trunk boundary in profile views. Scale bars = 20\ µm.
 ](figures/FigED7.jpg){#fig:genetic-comparative tag="Extended Data Fig. 7" width=100%}
 
 <!--TODO: Finish proper figure legends.-->
