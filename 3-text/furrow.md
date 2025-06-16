@@ -812,7 +812,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Supplementary Video 9
 
-![Epithelial strain rate during ectopic folding in *btd* mutant. Video from !@fig:vid-mitotic-fold overlaid with the estimated strain rate across the tissues (color-coded from purple to yellow). Increase in strain rates are associated with tissue infolding and mitotic expansions. The video is looped. Frame rate = 10\ fps.
+![Epithelial strain rate during ectopic folding in *btd* mutant. Video from !@fig:vid-mitotic-fold overlaid with the estimated strain rate across the tissues (color-coded from purple to yellow). Increase in strain rates are associated with tissue infolding and mitotic expansions. The video is looped. Frame rate = 10\ fps. Scale bars = 20\ µm.
 ](figures/Vid9.jpg){#fig:vid-strain-rate tag="Supplementary Video 9" width=50%}
 
 \newpage
