@@ -478,6 +478,11 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 
 ## Figure 4
 
+<!--TODO: Add n = 20 for simulations-->
+<!--TODO: Copy dfs folders to local github repo-->
+<!--TODO: Structure directories for github repo-->
+<!--TODO: Copy modeslab/data_version_5 to cephalic furrow fileserver-->
+
 ![Model and simulations of the tissue mechanics at the head--trunk boundary.
 **a**, Region of interest of the model. From a frontal slice across a dorsal plane, we select one side of the blastoderm, following the embryo’s shape, proportions, and relative position of mitotic domains, cephalic furrow, and germ band.
 **b**, Characteristics of the model components which is based on particles connected by springs. Drawings exemplify the initial and final states for each component.
@@ -634,7 +639,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 **d**, Dynamics of cephalic furrow and ectopic fold formation in *btd* mutants.
 **e**, Angle directionality, and tortuosity measurements comparing the cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, the invagination begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no obvious trend in angular direction tortuosity values over time. For both angle and tortuosity analysis, n=6.
 **f**, Maximum depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. Ectopic folds are shallower than the cephalic furrow in both genetic backgrounds (*btd* p=6.0e-09 and *eve* p=1.1×10-4 in a Mann-Whitney test). Each point corresponds to a single fold. Each embryo can have multiple folds. The number of embryos analyzed for *btd* is 32 heterozygotes (52 CFs and 6 EFs measured in total) and 7 homozygotes (28 EFs), and for *eve* is 20 heterozygotes (34 CFs and 4 EFs) and 4 homozygotes (15 EFs).
-**g**, Folded area of ectopic folds in wildtype and mutant embryos (*btd*, *eve*, and *prd*). Ectopic folds in wildtype occupy a smaller area than ectopic folds in cephalic furrow mutants (p=1.6×10e-4 in a Mann-Whitney test).
+**g**, Folded area of ectopic folds in wildtype and mutant embryos (*btd*, *eve*, and *prd*). Ectopic folds in wildtype occupy a smaller area than ectopic folds in cephalic furrow mutants (p=1.6×10e-4 in a Mann-Whitney test). The number of embryos analyzed for wildtype is 16 (14 EFs in total), for heterozygotes is 9 (7 EFs), and for homozygotes is 14 (28 EFs).
 **h**, Profile view of a *btd* mutant embryo, showing the presence of two ectopic folds (arrows) forming next to dividing cells (asterisks). Scale bar = 20\ µm.
 **i**, Proportion of folding types in different genetic backgrounds.
 **j**, Proportion of folding positions in different genetic backgrounds.
