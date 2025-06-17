@@ -632,6 +632,8 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Extended Data Fig. 2
 
+<!--TODO: Reduce figure legend-->
+
 <!--**e**, Angle directionality and tortuosity during cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, the invagination begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no obvious trend in angular direction tortuosity values over time. For both angle and tortuosity analysis, n = 6.-->
 
 ![Differences between ectopic folding and cephalic furrow formation.
