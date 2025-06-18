@@ -436,6 +436,7 @@ BCV and PT conceived the study. BCV designed experiments, generated fly stocks, 
 **f**, Variability in the positioning of the cephalic furrow in *btd* heterozygotes (n = 6) and ectopic folds in *btd* mutants (n = 5). Scale bars = 50\ µm.
 **g**, Folded area (yellow outline) of the cephalic furrow (CF) in a *btd* heterozygote (left, n = 6) and of ectopic folds (EF) in a *btd* homozygote (right, n = 5). The numbers indicate the average folded area in µm^2^ for each condition. Cartographic projections of lateral view datasets. Scale bars = 50\ µm (approximated value since pixel sizes vary across the projection).
 **h**, Quantification of the total folded area of the cephalic furrow in wildtype (n = 16), *btd* (n = 6), *eve* (n = 7), and *prd* (n = 9) heterozygotes, and of the ectopic folds in *btd* (n = 5), *eve* (n = 4), and *prd* (n = 5) homozygotes.
+In all box plots, the center depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.
 The membrane marker in panels **b**, **c**, **f**, and **g** is Gap43-mCherry.
 Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma; @Ashburner2005-ym].
 ](figures/Fig1.jpg){#fig:ectopic-folding width=100%}
