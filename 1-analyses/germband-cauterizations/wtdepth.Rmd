@@ -112,8 +112,8 @@ ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length, 
         strip.placement = "outside",
         strip.text.x = element_text(size = 45, face = "italic"),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("4-plots/wt-length-condition.png", width = 7, height = 4)
-ggsave("4-plots/wt-length-condition.svg", width = 7, height = 4)
+ggsave("4-plots/wt-length-condition.png", width = 4, height = 4)
+ggsave("4-plots/wt-length-condition.svg", width = 4, height = 4)
 ```
 
 ## Mean furrow length by embryo
