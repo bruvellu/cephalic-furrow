@@ -96,7 +96,25 @@ ggsave("4-plots/wt-length.png", width = 7, height = 4)
 ggsave("4-plots/wt-length.svg", width = 7, height = 4)
 ```
 
+## Maximum depth of individual folds, faceted by condition
 
+```{r depth-ind-condition}
+# Plot mean length of cephalic furrow per embryo (right/left sides)
+ggplot(results, aes(factor(Sample, level = c("control", "cauterized")), Length, fill = Sample)) +
+  geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
+  labs(x = "sample", y = "depth (µm)") +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
+  scale_color_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 45, face = "italic"),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("4-plots/wt-length-condition.png", width = 7, height = 4)
+ggsave("4-plots/wt-length-condition.svg", width = 7, height = 4)
+```
 
 ## Mean furrow length by embryo
 
