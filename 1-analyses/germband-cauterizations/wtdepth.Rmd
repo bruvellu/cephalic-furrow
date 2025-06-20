@@ -217,6 +217,32 @@ delta <- mean_ctrl - mean_caut
 
 test_row <- c(contrast = contrast,
               data = "means",
+              sample = "pooled",
+              mean_ctrl = mean_ctrl,
+              mean_caut = mean_caut,
+              delta = sprintf("%.1f", delta),
+              significant = pvalue < 0.05,
+              pvalue = sprintf("%.9f", pvalue),
+              statistic = sprintf("%s=%s", names(statistic), statistic),
+              paired = FALSE)
+tests <- rbind(tests, as.data.frame(t(test_row)))
+
+# Compare means between combined conditions in wildtype only
+ctrl <- means[(means$Sample == "control" & means$Stock == "wt"), "Mean"]
+caut <- means[(means$Sample == "cauterized" & means$Stock == "wt"), "Mean"]
+
+# Control vs Cauterized
+contrast <- "ctrl vs caut"
+test <- wilcox.test(caut, ctrl, alternative = "less", paired = FALSE)
+pvalue <- test$p.value
+statistic <- test$statistic
+mean_ctrl <- mean(ctrl)
+mean_caut <- mean(caut)
+delta <- mean_ctrl - mean_caut
+
+test_row <- c(contrast = contrast,
+              data = "means",
+              sample = "wildtype",
               mean_ctrl = mean_ctrl,
               mean_caut = mean_caut,
               delta = sprintf("%.1f", delta),
