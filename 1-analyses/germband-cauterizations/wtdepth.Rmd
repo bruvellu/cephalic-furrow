@@ -7,7 +7,7 @@ creation: April 06, 2021
   
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/germband-cauterizations")
 library(ggplot2)
 library(ggbeeswarm)
 ```
@@ -164,8 +164,6 @@ conclusive.
 ggplot(means, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
   geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
-  #geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), alpha = 0.8, size = 0.5, show.legend = FALSE, position = position_quasirandom(dodge.width = 0.75)) +
-  #facet_wrap(~Stock) +
   labs(x = "condition", y = "depth (µm)") +
   scale_fill_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
   scale_color_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
@@ -180,7 +178,6 @@ ggsave("4-plots/wt-mean-length.svg", width = 4, height = 4)
 # Plot mean length of cephalic furrow per embryo (right/left sides)
 ggplot(means[means$Stock != "eve",], aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
   geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
-  #geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
   geom_pointrange(aes(ymin=Mean-SD, ymax=Mean+SD), alpha = 0.8, size = 0.5, show.legend = FALSE, position = position_quasirandom(width = 0.1)) +
   facet_wrap(~Stock) +
   labs(x = "condition", y = "depth (µm)") +
@@ -232,59 +229,6 @@ tests <- rbind(tests, as.data.frame(t(test_row)))
 write.csv(tests, file = "wt-tests.csv", row.names = FALSE)
 ```
 
-
-The distribution is normal. Using t-test to compare the means.
-
-```{r stats}
-sink('tests.txt')
-print("Calculating difference between non-cauterized and cauterized groups")
-# Statistical testing
-diff_micron <- mean(means[means$Sample == "control",]$Mean) - mean(means[means$Sample == "cauterized",]$Mean)
-diff_pct <- diff_micron / mean(means[means$Sample == "cauterized",]$Mean) * 100
-print(sprintf("%s microns or %s percent shallower", diff_micron, diff_pct))
-
-print("Testing normality and means difference per fold")
-# Test if distribution is normal per measure (yes)
-shapiro.test(results[results$Sample == "control",]$Length)
-shapiro.test(results[results$Sample == "cauterized",]$Length)
-# Test if means are different
-t.test(results[results$Sample == "control",]$Length,
-       results[results$Sample == "cauterized",]$Length,
-       var.equal = FALSE)
-
-print("Testing normality and means difference per embryo")
-# Test if distribution is normal per embryo (yes)
-shapiro.test(means[means$Sample == "control",]$Mean)
-shapiro.test(means[means$Sample == "cauterized",]$Mean)
-t.test(means[means$Sample == "control",]$Mean,
-       means[means$Sample == "cauterized",]$Mean,
-       var.equal = FALSE)
-sink()
-```
-
-```{r tmp-stats}
-
-# Test if control is greater than cauterized (for comparing distributions)
-wilcox.test(results[results$Sample == "control",]$Length,
-            results[results$Sample == "cauterized",]$Length,
-            alternative = "g")
-wilcox.test(means[means$Sample == "control",]$Mean,
-            means[means$Sample == "cauterized",]$Mean,
-            alternative = "g")
-
-# Test if control is greater than cauterized (for comparing distributions)
-wilcox.test(results[results$Sample == "control",]$Length,
-            results[results$Sample == "cauterized",]$Length)
-wilcox.test(means[means$Sample == "control",]$Mean,
-            means[means$Sample == "cauterized",]$Mean)
-
-# Test if control and cauterized have the same variance
-var.test(results[results$Sample == "control",]$Length,
-         results[results$Sample == "cauterized",]$Length)
-var.test(means[means$Sample == "control",]$Mean,
-         means[means$Sample == "cauterized",]$Mean)
-
-```
 
 
 
