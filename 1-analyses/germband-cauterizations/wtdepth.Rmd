@@ -97,6 +97,7 @@ ggsave("4-plots/wt-length.svg", width = 7, height = 4)
 ```
 
 
+
 ## Mean furrow length by embryo
 
 To attempt to normalize the furrow length per embryo, since their length does not
@@ -120,8 +121,18 @@ means <- merge(means, embryo_cf_sd, by = "Embryo", all.x = TRUE)
 
 # Summary by sample
 by(means[means$Sample == "control", c("Mean", "SD")], means[means$Sample == "control",]$Stock, summary)
-print("------------------------------------------------------------------------------------")
+print("---")
 by(means[means$Sample == "cauterized", c("Mean", "SD")], means[means$Sample == "cauterized",]$Stock, summary)
+print("---")
+# Summary by condition
+by(means[, c("Mean", "SD")], means$Sample, summary)
+print("---")
+print("Calculating difference between non-cauterized and cauterized groups")
+# Statistical testing
+diff_micron <- mean(means[means$Sample == "control",]$Mean) - mean(means[means$Sample == "cauterized",]$Mean)
+diff_pct <- diff_micron / mean(means[means$Sample == "cauterized",]$Mean) * 100
+print(sprintf("%s microns shallower", diff_micron))
+print(sprintf("%s percent shallower", diff_pct))
 ```
 
 ## Maximum depth of mean length by embryo
@@ -168,7 +179,41 @@ ggsave("4-plots/wt-mean-length-facet.svg", width = 4, height = 4)
 ```
 
 
-## Statistics
+## Statistical tests
+
+Sample size is small for normality test, defaulting to Mann-Whitney. Using the embryo mean length as measurements of left and right side might not be independent. Choosing one-sided to test if cauterized is smaller than control.
+
+```{r statistical-tests}
+# Create data frame for tests
+tests <- data.frame()
+
+# Compare means between combined conditions as in the main plot
+ctrl <- means[means$Sample == "control", "Mean"]
+caut <- means[means$Sample == "cauterized", "Mean"]
+
+# Control vs Cauterized
+contrast <- "ctrl vs caut"
+test <- wilcox.test(caut, ctrl, alternative = "less", paired = FALSE)
+pvalue <- test$p.value
+statistic <- test$statistic
+mean_ctrl <- mean(ctrl)
+mean_caut <- mean(caut)
+delta <- mean_ctrl - mean_caut
+
+test_row <- c(contrast = contrast,
+              data = "means",
+              mean_ctrl = mean_ctrl,
+              mean_caut = mean_caut,
+              delta = sprintf("%.1f", delta),
+              significant = pvalue < 0.05,
+              pvalue = sprintf("%.9f", pvalue),
+              statistic = sprintf("%s=%s", names(statistic), statistic),
+              paired = FALSE)
+tests <- rbind(tests, as.data.frame(t(test_row)))
+
+write.csv(tests, file = "wt-tests.csv", row.names = FALSE)
+```
+
 
 The distribution is normal. Using t-test to compare the means.
 
