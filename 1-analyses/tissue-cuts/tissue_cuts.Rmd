@@ -272,3 +272,21 @@ ggsave("2-plots/delta_vs_time_by_condition_smooth.png", width = 10, height = 6)
 ggsave("2-plots/delta_vs_time_by_condition_smooth.svg", width = 10, height = 6)
 ```
 
+## Statistical tests
+
+Attempt to test differences in time series trajectories.
+
+```{r statistical-tests}
+library(nlme)
+model <- lme(data = distances,
+             fixed = percentage ~ condition * time_min,
+             random = ~ 1 | sample)
+summary(model)
+plot(model, resid(.) ~ fitted(.) | condition)
+qqnorm(residuals(model))
+
+# control = time_min: value=0.88, p=0.045, suggests slightly ascending trajectory
+# ablated = conditionablated:time_min: value=-4.04, p<0.001, suggests descending trajectory
+
+# overall indicates the trajectories differ between control and ablated
+```
