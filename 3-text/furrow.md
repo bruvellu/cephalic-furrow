@@ -143,7 +143,7 @@ Taken together, these analyses suggest the mitotic expansions and germ band exte
 <!--TODO: Include cell shape analyses with density et al. around here-->
 <!--TODO: Quantify compression of trunk-germ cells in btd mutants-->
 
-## Contribution of mitotic domains and germ band
+## Mitotic domains and germ band
 
 To test the individual role of mitotic domains and germ band to the mechanical stability of the blastoderm, we performed a series of perturbation experiments *in vivo*.
 
