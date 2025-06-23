@@ -64,23 +64,23 @@ clean:
 figs:
 	# Main figures
 	ln -sf ${FIGSRC}/ectopic-folding/figure.png ${FIGHIR}/Fig1.png
-	ln -sf ${FIGSRC}/mitotic-strain/figure.png ${FIGHIR}/Fig2.png
-	ln -sf ${FIGSRC}/live-experiments/figure.png ${FIGHIR}/Fig3.png
-	ln -sf ${FIGSRC}/fold-model/figure.png ${FIGHIR}/Fig4.png
-	ln -sf ${FIGSRC}/genetic-patterning/figure.png ${FIGHIR}/Fig5.png
-	ln -sf ${FIGSRC}/summary/figure.png ${FIGHIR}/Fig6.png
+	ln -sf ${FIGSRC}/live-experiments/figure.png ${FIGHIR}/Fig2.png
+	ln -sf ${FIGSRC}/fold-model/figure.png ${FIGHIR}/Fig3.png
+	ln -sf ${FIGSRC}/genetic-patterning/figure.png ${FIGHIR}/Fig4.png
+	ln -sf ${FIGSRC}/summary/figure.png ${FIGHIR}/Fig5.png
 	# Extended data figures
 	ln -sf ${FIGSRC}/initiator-behavior/figure.png ${FIGHIR}/FigED1.png
 	ln -sf ${FIGSRC}/ectopic-features/figure.png ${FIGHIR}/FigED2.png
-	ln -sf ${FIGSRC}/apical-strain/figure.png ${FIGHIR}/FigED3.png
+	ln -sf ${FIGSRC}/mitotic-strain/figure.png ${FIGHIR}/FigED3.png
 	ln -sf ${FIGSRC}/live-details/figure.png ${FIGHIR}/FigED4.png
 	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIR}/FigED5.png
 	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIR}/FigED6.png
 	ln -sf ${FIGSRC}/genetic-comparative/figure.png ${FIGHIR}/FigED7.png
 	# Supplementary information
 	ln -sf ${FIGSRC}/ectopic-variability/figure.png ${FIGHIR}/FigS1.png
-	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIR}/FigS2.png
-	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIR}/FigS3.png
+	ln -sf ${FIGSRC}/apical-strain/figure.png ${FIGHIR}/FigS2.png
+	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIR}/FigS3.png
+	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIR}/FigS4.png
 	# Make JPGs smaller for compilation and sharing
 	#mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
