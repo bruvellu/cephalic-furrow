@@ -7620,8 +7620,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142135"
-     inkscape:cx="287.08536"
-     inkscape:cy="197.9899"
+     inkscape:cx="282.13561"
+     inkscape:cy="243.95184"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -8702,7 +8702,7 @@
          id="tspan2335-5-6-3-28"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.264583"
          x="1.667199"
-         y="46.257717">j</tspan></text><text
+         y="46.257717">f</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round"
        x="44.00053"
@@ -8712,7 +8712,7 @@
          id="tspan2335-5-6-3-28-2"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.264583"
          x="44.00053"
-         y="46.257717">k</tspan></text><text
+         y="46.257717">g</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round"
        x="132.37132"
@@ -8732,7 +8732,7 @@
          id="tspan2335-5-6-3-28-2-9-3"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.264583"
          x="131.84216"
-         y="66.366028">m</tspan></text><text
+         y="66.366028">h</tspan></text><text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:2.82222px;line-height:1;font-family:Arial;-inkscape-font-specification:'Arial Bold';display:inline;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:round"
        x="77.338028"
@@ -12768,15 +12768,15 @@
          y="70.956902">3</tspan></text><text
        xml:space="preserve"
        style="font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Oblique';text-align:center;text-anchor:middle;display:inline;stroke-width:0.311482;stroke-linecap:butt;stroke-linejoin:round"
-       x="-54.042557"
-       y="137.99284"
+       x="-54.594826"
+       y="139.00002"
        id="text9375-2-3-0-1-0-2"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan9373-0-3-4-2-6-9"
          style="font-style:oblique;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Oblique';text-align:center;text-anchor:middle;stroke-width:0.311482"
-         x="-54.042557"
-         y="137.99284">Drosophila</tspan></text><path
+         x="-54.594826"
+         y="139.00002">Drosophila</tspan></text><path
        style="display:inline;fill:none;fill-opacity:0.558508;stroke:#ffffff;stroke-width:0.137886;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
        d="m 53.799336,69.456241 1.342727,1.736647"
        id="path1-5-5-9-0-6"
