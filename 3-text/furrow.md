@@ -539,18 +539,27 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 
 ## Figure 4
 
-<!--**a**, Lateral view of *slp* heterozygote (control) and mutant embryo at the onset of initiator cell behavior. In *slp* mutants, the cephalic furrow formation is delayed; it happens when the germ band is extended about 18% of egg length. The position of initiator cells is shifted forward in mutants to about 73% of egg length. The asterisk indicates mitotic cells. The forward-shifted phenotype was consistent on 6 independent experiments in *slp* mutants (39 embryos). Scale bars = 50\ µm.-->
-<!--**b**, Plots showing the position of the cephalic furrow (CF) and germ band (GB) at the onset of initiator cell behavior in *slp* mutants. The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.-->
+<!--TODO: Remove or move this long legend-->
+<!--Genetic patterning of the head--trunk boundary in *Drosophila*, *Ceratitis*, *Anopheles*, and *Clogmia*.-->
+<!--**a**, Progression of the early expression of *btd*, *eve*, and *slp1* around the nuclear cycle 14 in *Drosophila*. *slp1* and *eve* initially demarcate the head--trunk boundary in broad domains which become segmented, narrow and resolve into sharp, non-overlapping stripes. *btd* transcripts are localized at the head--trunk interface. The expression pattern was repeatable across 3 experiments in wildtype samples (26 embryos). Scale bars = 50\ µm.-->
+<!--**b**, Lateral view of the expression at the head--trunk boundary in *Drosophila*. *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines). Scale bar = 50\ µm.-->
+<!--**c**, Profile view of the gene expression in initiator cells of *Drosophila*. The *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping *slp1* stripes. *btd* and *eve* overlap by 1-cell row. *prd* expression is offset with *slp1*. Dashed lines mark the future edges of the cephalic furrow. Scale bar = 20\ µm.-->
+<!--**d**, Profile view of the gene expression after cephalic furrow invagination in *Drosophila*. The *eve*-expressing initiator cells are located deep into the yolk, while the *slp* head domain (sh) and stripe 3 demarcate the outer edges of the invagination. Scale bar = 20\ µm.-->
+<!--**e**, Schematic drawings showing the combinatorial molecular arrangement at the head--trunk boundary of *Drosophila*.-->
+<!--**f**, Gene expression domains of *btd*, *eve* and *slp* during nuclear cycles 13 and 14 in *Ceratitis*, *Anopheles*, and *Clogmia*. The patterns were consistent across 3 experiments in *Ceratitis* (38 embryos), 4 experiments in *Anopheles* (43 embryos), and 4 experiments in *Clogmia* (44 embryos). Scale bars = 100\ µm.-->
+<!--**g**, Comparison of expression patterns at the head--trunk boundary before gastrulation between species. The expression of *slp* and *eve* are similar across all species. Both *Drosophila* and *Ceratitis*, species with a cephalic furrow, show a head--trunk domain of *btd* that overlaps with *eve* stripe 1. In *Anopheles*, the head--trunk *btd* domain does not overlap with *eve* stripe 1, and in *Clogmia* this *btd* domain is absent. Scale bars = 50\ µm.-->
+<!--**h**, Profile view of the gene expression at the head--trunk boundary cells in *Ceratitis*, *Anopheles*, and *Clogmia*. Scale bars = 20\ µm.-->
+<!--ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg: *btd* foregut domain.-->
 
 ![Genetic patterning of the head--trunk boundary in *Drosophila*, *Ceratitis*, *Anopheles*, and *Clogmia*.
-**a**, Progression of the early expression of *btd*, *eve*, and *slp1* around the nuclear cycle 14 in *Drosophila*. *slp1* and *eve* initially demarcate the head--trunk boundary in broad domains which become segmented, narrow and resolve into sharp, non-overlapping stripes. *btd* transcripts are localized at the head--trunk interface. The expression pattern was repeatable across 3 experiments in wildtype samples (26 embryos). Scale bars = 50\ µm.
-**b**, Lateral view of the expression at the head--trunk boundary in *Drosophila*. *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines). Scale bar = 50\ µm.
-**c**, Profile view of the gene expression in initiator cells of *Drosophila*. The *eve*-expressing row is abutted anteriorly and posteriorly by non-overlapping *slp1* stripes. *btd* and *eve* overlap by 1-cell row. *prd* expression is offset with *slp1*. Dashed lines mark the future edges of the cephalic furrow. Scale bar = 20\ µm.
-**d**, Profile view of the gene expression after cephalic furrow invagination in *Drosophila*. The *eve*-expressing initiator cells are located deep into the yolk, while the *slp* head domain (sh) and stripe 3 demarcate the outer edges of the invagination. Scale bar = 20\ µm.
-**e**, Schematic drawings showing the combinatorial molecular arrangement at the head--trunk boundary of *Drosophila*.
-**f**, Gene expression domains of *btd*, *eve* and *slp* during nuclear cycles 13 and 14 in *Ceratitis*, *Anopheles*, and *Clogmia*. The patterns were consistent across 3 experiments in *Ceratitis* (38 embryos), 4 experiments in *Anopheles* (43 embryos), and 4 experiments in *Clogmia* (44 embryos). Scale bars = 100\ µm.
-**g**, Comparison of expression patterns at the head--trunk boundary before gastrulation between species. The expression of *slp* and *eve* are similar across all species. Both *Drosophila* and *Ceratitis*, species with a cephalic furrow, show a head--trunk domain of *btd* that overlaps with *eve* stripe 1. In *Anopheles*, the head--trunk *btd* domain does not overlap with *eve* stripe 1, and in *Clogmia* this *btd* domain is absent. Scale bars = 50\ µm.
-**h**, Profile view of the gene expression at the head--trunk boundary cells in *Ceratitis*, *Anopheles*, and *Clogmia*. Scale bars = 20\ µm.
+**a**, Expression of *btd*, *eve*, and *slp1* before gastrulation in *Drosophila*. Early *slp1* and *eve* transcripts demarcate the head--trunk boundary and resolve to sharp stripes with *btd* transcripts at the interface. The expression pattern was repeatable across 3 experiments in wildtype samples (26 embryos). Scale bars = 50\ µm.
+**b**, Expression patterns at the onset of gastrulation in *Drosophila* (lateral view). *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines). Scale bar = 50\ µm.
+**c**, Expression patterns at the onset of gastrulation in *Drosophila* (profile view). *eve*-expressing initiator cells also express *btd* and are abutted by *slp1* stripes. *prd* is offset from *slp1* by 1-cell row. Dashed lines demarcate the outer edges of the cephalic furrow. Scale bar = 20\ µm.
+**d**, Expression patterns of the invaginated cephalic furrow in *Drosophila*. Scale bar = 20\ µm.
+**e**, Schematic drawing of the combinatorial expression at the head--trunk boundary of *Drosophila*.
+**f**, Expression of *btd*, *eve*, and *slp* during nuclear cycles 13 (left) and 14 (right) in *Ceratitis*, *Anopheles*, and *Clogmia* embryos. The patterns were consistent across 3 experiments in *Ceratitis* (38 embryos), 4 experiments in *Anopheles* (43 embryos), and 4 experiments in *Clogmia* (44 embryos). Scale bars = 100\ µm.
+**g**, btd--eve* overlap at the head--trunk boundary of different dipterans. It is present in species with a cephalic furrow (*Drosophila* and *Ceratitis*), and absent in species without (*Anopheles* and *Clogmia*). Scale bars = 50\ µm.
+**h**, Expression patterns at the onset of gastrulation in *Ceratitis*, *Anopheles*, and *Clogmia* (profile view). Scale bars = 20\ µm.
 ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg: *btd* foregut domain.
 ](figures/Fig4.jpg){#fig:genetic-patterning width=100%}
 
@@ -735,6 +744,9 @@ In all box plots, the center depicts the median, the lower and upper hinges corr
 \newpage
 
 ## Extended Data Fig. 6
+
+<!--**a**, Lateral view of *slp* heterozygote (control) and mutant embryo at the onset of initiator cell behavior. In *slp* mutants, the cephalic furrow formation is delayed; it happens when the germ band is extended about 18% of egg length. The position of initiator cells is shifted forward in mutants to about 73% of egg length. The asterisk indicates mitotic cells. The forward-shifted phenotype was consistent on 6 independent experiments in *slp* mutants (39 embryos). Scale bars = 50\ µm.-->
+<!--**b**, Plots showing the position of the cephalic furrow (CF) and germ band (GB) at the onset of initiator cell behavior in *slp* mutants. The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.-->
 
 ![Analyses of *slp* mutants in *Drosophila*.
 **a**, Lateral view of *slp* heterozygote (control) and mutant embryo at the onset of initiator cell behavior. In *slp* mutants, the formation of the cephalic furrow is delayed and shifted forward. The phenotype was consistent in 6 independent experiments with *slp* mutants (39 embryos). Scale bars = 50\ µm.
