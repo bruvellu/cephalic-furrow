@@ -454,6 +454,8 @@ BCV and PT conceived the study. BCV designed experiments, generated fly stocks, 
 <!--The membrane marker in panels **b**, **c**, **f**, and **g** is Gap43-mCherry.-->
 <!--Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma; @Ashburner2005-ym].-->
 
+<!--TODO: Reduce from 472 to 300 words-->
+
 ![Formation of ectopic folds in cephalic furrow mutants.
 **a**, Timing of developmental events in wildtype compared to *prd*, *btd*, and *eve* mutants.
 **b**, Profile view of the cephalic furrow in wildtype and *prd* mutants at early stage 8 and of ectopic folds in *btd* and *eve* mutants at late stage 8. Arrows indicate epithelial folds and asterisks indicate mitotic domains. Scale bars = 20\ µm.
@@ -461,7 +463,7 @@ BCV and PT conceived the study. BCV designed experiments, generated fly stocks, 
 **d**, Differences in the timing of cephalic furrow formation between wildtype (n = 16) and heterozygote embryos of *btd* (n = 6, p = 0.283), *eve* (n = 7, p < 0.001), and *prd* (n = 10); and between the wildtype cephalic furrow and the ectopic folds in homozygote embryos of *btd* (n = 5, p = 0.001), *eve* (n = 5, p = 0.001), and *prd* (n = 5, p = 0.003).
 **e**, Differences in the percentage of germ band extension at the time of cephalic furrow in wildtype and ectopic fold formation in *btd*, *eve*, and *prd* homozygotes (p < 0.001). n numbers are the same as in **d**.
 **f**, Variability in the position of the cephalic furrow and ectopic folds in *btd* heterozygotes (n = 6) and homozygotes (n = 5), respectively. Scale bars = 50\ µm.
-**g**, Cartographic projections of lateral views showing the folded area (yellow outline) of the cephalic furrow (CF) in a *btd* heterozygote (n = 6) and of ectopic folds (EF) in a *btd* homozygote (n = 5). Numbers indicate the average and standard deviation for each condition. Scale bars ≈ 50\ µm (pixel size varies across the projection).
+**g**, Folded area (yellow outline) of the cephalic furrow (CF) in a *btd* heterozygote (n = 6) and ectopic folds (EF) in a *btd* homozygote (n = 5). Numbers indicate the average and standard deviation for each condition. Cartographic projections on lateral views. Scale bars ≈ 50\ µm (pixel size varies across the projection).
 **h**, Differences in the total folded area of the cephalic furrow between wildtype (n = 16) and heterozygote embryos of *btd* (n = 6, p = 0.133) *eve* (n = 7, p < 0.001), and *prd* (n = 9, p < 0.001); and between the wildtype cephalic furrow and the ectopic folds in homozygote embryos of *btd* (n = 5), *eve* (n = 4), and *prd* (n = 5) (p < 0.001 for each).
 In box plots, the center depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.
 Each data point represents one embryo.
@@ -474,7 +476,6 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 \newpage
 
 ## Figure 2
-
 
 <!--TODO: Remove or move old long figure legend-->
 <!--Perturbation experiments *in vivo* using cephalic furrow mutants and wildtype embryos.-->
@@ -489,6 +490,8 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 <!--**i**, Recoil velocity of laser ablations around the cephalic furrow at stage 6. The average recoil of anterior cuts increases with time for early (n = 11), mid (n = 13), and late (n = 12) stages. In posterior cuts, it increases between early (n = 7) and mid (n = 14) stages and decreases in the late stage (n = 10). The average recoil velocity is higher closer to the initiator cells (20\ µm). The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.-->
 <!--**j**, Maximum depth of the cephalic furrow in cauterized embryos. We pooled wildtype and heterozygote embryos for non-cauterized (n = 7 total from wt = 3, *btd* = 1, and *eve* = 3) and cauterized (n = 3 total from wt = 2 and *btd* = 1) samples. The cephalic furrow in cauterized embryos is 15% shallower (p = 0.058 in a one-sided Mann--Whitney *U* test). The box plot representation is the same as in **i**.-->
 <!--**k**, Tortuosity of the epithelial traces in non-cauterized (n = 2) and cauterized (n = 3) *btd* embryos, and non-cauterized (n = 3) and cauterized (n = 4) *eve* embryos from **h**. We measured both the left and right sides of each embryo. The plots show the mean predicted values from the regression of each condition with a shaded band indicating the 95% confidence interval for the mean trend.-->
+
+<!--TODO: Reduce from 390 to 300 words-->
 
 ![Experiments in cephalic furrow mutants *in vivo*.
 **a**, *stg* mutants. The phenotype was highly repeatable in 3 independent experiments (46 embryos). Scale bars = 50\ µm.
@@ -519,7 +522,6 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 <!--**g**, Quantification of ectopic folding to evaluate the effectiveness of the cephalic furrow. A mutant condition with mitotic domains and germ band extension show extensive ectopic folding (top row). With the presence of the cephalic furrow, ectopic folding decreases around the head--trunk region, especially in lower percentage of germ band extension (middle row). Adding a delay of $t_{MD}=5$ to mitotic domain formation to mimic the *in vivo* condition results in less frequent ectopic folding throughout the blastoderm and germ band extension (bottom row). $t_{MD}=1$ corresponds to 10^5^ computational timesteps. The black line represents the mean values and the gray shaded area the standard deviation of the data across simulations (n = 20).-->
 <!--**h**, Quantification of ectopic folding with the cephalic furrow at different positions along the anteroposterior axis. Displacing the cephalic furrow more anteriorly results in ectopic folding at the posterior end (top row) while displacing it more posteriorly results in more ectopic folding at the anterior region (bottom row). Placing the cephalic furrow around the central region prevents ectopic folding more broadly. The black line represents the mean values and the gray shaded area the standard deviation of the data across simulations (n = 20).-->
 
-<!--TODO: Add n = 20 for simulations-->
 <!--TODO: Copy dfs folders to local github repo-->
 <!--TODO: Structure directories for github repo-->
 <!--TODO: Copy modeslab/data_version_5 to cephalic furrow fileserver-->
@@ -694,22 +696,42 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 <!--**e**, Angle directionality and tortuosity during cephalic furrow and ectopic fold formation. Within the first fifteen minutes after gastrulation, the cephalic furrow exhibits a typical posterior shift on the dorsal side which declines the initial angle of the invagination from 80° to about 60° in relation to the anteroposterior axis. During this period, the invagination begins as a straight line and bends showing a correspondent increase in the measured tortuosity values of the furrow outline. In contrast, ectopic folds show no obvious trend in angular direction tortuosity values over time. For both angle and tortuosity analysis, n = 6.-->
 
-![Differences between ectopic folding and cephalic furrow formation.
-**a**, Distribution of ectopic folds in *eve* homozygotes (right) and sibling controls (left). Scale bars = 50\ µm.
-**b**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in *eve* embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control *eve* heterozygote (left) and of a *eve* homozygote (right). The numbers indicate the average folded area for the sample type in µm^2^×10^3^. Scale bars = 50\ µm (approximated value since pixel sizes vary across the projection).
-**c**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.
-**d**, Dynamics of cephalic furrow and ectopic fold formation in *btd* mutants.
-**e**, Angle directionality and tortuosity during cephalic furrow and ectopic fold formation. The cephalic furrow angle declines from 80° to about 60° and bends, increasing its tortuosity within the first 15\ min, while the ectopic folds show no obvious trend (n = 6).
-**f**, Maximum depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. Ectopic folds are shallower than the cephalic furrow in both genetic backgrounds (p < 0.001). Asterisks indicate p < 0.05 in a two-sided Mann--Whitney *U* test. Each point corresponds to a single fold; one embryo can have multiple folds. The number of embryos analyzed for *btd* is 32 heterozygotes (52 CFs and 6 EFs measured in total) and 7 homozygotes (28 EFs), and for *eve* is 20 heterozygotes (34 CFs and 4 EFs) and 4 homozygotes (15 EFs).
-**g**, Folded area of ectopic folds in wildtype and mutant embryos (*btd*, *eve*, and *prd*). Ectopic folds in wildtype occupy a smaller area than ectopic folds in cephalic furrow mutants (p < 0.001). Asterisks indicate p < 0.05 in a two-sided Mann--Whitney *U* test. The number of embryos analyzed for wildtype is 16 (14 EFs in total), for heterozygotes is 9 (7 EFs), and for homozygotes is 14 (28 EFs).
-**h**, Profile view of a *btd* mutant embryo, showing the presence of two ectopic folds (arrows) forming next to dividing cells (asterisks). Scale bar = 20\ µm.
-**i**, Proportion of embryos showing different fold types (CF and EF) in wildtype (n = 36), *btd* heterozygotes (n = 33), *btd* homozygotes (n = 13), *eve* heterozygotes (n = 26), *eve* homozygotes (n = 10), *prd* heterozygotes (n = 26), *prd* homozygotes (n = 14), *stg* heterozygotes (n = 33), and *stg* homozygotes (n = 13).
-**j**, Proportion of ectopic folding (EF) at different positions of the head--trunk boundary (anterior, mid, posterior) in wildtype (n = 28), *btd* heterozygotes (n = 6), *btd* homozygotes (n = 12), *eve* heterozygotes (n = 7), *eve* homozygotes (n = 10), *prd* heterozygotes (n = 7), *prd* homozygotes (n = 10), *stg* heterozygotes (n = 12), and *stg* homozygotes (n = 3).
-**k**, Lateral views of a wildtype (left) and a *prd* mutant (right) exhibiting ectopic folds. Scale bar = 50\ µm.
-**l**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in the wildtype (left) and *prd* mutant (right) shown in **k**. The folded region is outlined in yellow on a cartographic projection. The numbers indicate the average folded area in µm^2^×10^3^ for the CFs and EFs separately. Scale bars = 50\ µm (approximated value since pixel sizes vary across the projection).
-**m**, Developmental sequence of the wildtype embryo ectopic fold annotated in **l**. Four cells are temporarily infolded during the mitotic expansion of adjacent cells. Scale bar = 10\ µm.
-**n**, Folded area distinguishing between cephalic furrow and ectopic folds in different genetic backgrounds. For wildtype embryos n = 16 (16 CFs and 14 EFs), *btd* heterozygotes n = 6 (6 CFs), *btd* homozygotes n = 5 (12 EFs), *eve* heterozygotes n = 7 (7 CFs), *eve* homozygotes n = 4 (7 EFs), *prd* heterozygotes n = 9 (9 CFs and 7 EFs), and *prd* homozygotes n = 5 (1 CF and 9 EFs).
-In all box plots, the center depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.
+<!--TODO: Move or remove long figure legend-->
+<!--Differences between ectopic folding and cephalic furrow formation.-->
+<!--**a**, Distribution of ectopic folds in *eve* homozygotes (right) and sibling controls (left). Scale bars = 50\ µm.-->
+<!--**b**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in *eve* embryos. The folded region is outlined in yellow on cartographic projections of a representative sibling control *eve* heterozygote (left) and of a *eve* homozygote (right). The numbers indicate the average folded area for the sample type in µm^2^×10^3^. Scale bars = 50\ µm (approximated value since pixel sizes vary across the projection).-->
+<!--**c**, Dynamics of cephalic furrow and ectopic fold formation in *eve* mutants.-->
+<!--**d**, Dynamics of cephalic furrow and ectopic fold formation in *btd* mutants.-->
+<!--**e**, Angle directionality and tortuosity during cephalic furrow and ectopic fold formation. The cephalic furrow angle declines from 80° to about 60° and bends, increasing its tortuosity within the first 15\ min, while the ectopic folds show no obvious trend (n = 6).-->
+<!--**f**, Maximum depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. Ectopic folds are shallower than the cephalic furrow in both genetic backgrounds (p < 0.001). Asterisks indicate p < 0.05 in a two-sided Mann--Whitney *U* test. Each point corresponds to a single fold; one embryo can have multiple folds. The number of embryos analyzed for *btd* is 32 heterozygotes (52 CFs and 6 EFs measured in total) and 7 homozygotes (28 EFs), and for *eve* is 20 heterozygotes (34 CFs and 4 EFs) and 4 homozygotes (15 EFs).-->
+<!--**g**, Folded area of ectopic folds in wildtype and mutant embryos (*btd*, *eve*, and *prd*). Ectopic folds in wildtype occupy a smaller area than ectopic folds in cephalic furrow mutants (p < 0.001). Asterisks indicate p < 0.05 in a two-sided Mann--Whitney *U* test. The number of embryos analyzed for wildtype is 16 (14 EFs in total), for heterozygotes is 9 (7 EFs), and for homozygotes is 14 (28 EFs).-->
+<!--**h**, Profile view of a *btd* mutant embryo, showing the presence of two ectopic folds (arrows) forming next to dividing cells (asterisks). Scale bar = 20\ µm.-->
+<!--**i**, Proportion of embryos showing different fold types (CF and EF) in wildtype (n = 36), *btd* heterozygotes (n = 33), *btd* homozygotes (n = 13), *eve* heterozygotes (n = 26), *eve* homozygotes (n = 10), *prd* heterozygotes (n = 26), *prd* homozygotes (n = 14), *stg* heterozygotes (n = 33), and *stg* homozygotes (n = 13).-->
+<!--**j**, Proportion of ectopic folding (EF) at different positions of the head--trunk boundary (anterior, mid, posterior) in wildtype (n = 28), *btd* heterozygotes (n = 6), *btd* homozygotes (n = 12), *eve* heterozygotes (n = 7), *eve* homozygotes (n = 10), *prd* heterozygotes (n = 7), *prd* homozygotes (n = 10), *stg* heterozygotes (n = 12), and *stg* homozygotes (n = 3).-->
+<!--**k**, Lateral views of a wildtype (left) and a *prd* mutant (right) exhibiting ectopic folds. Scale bar = 50\ µm.-->
+<!--**l**, Folded area of the cephalic furrow (CF) and ectopic folds (EF) in the wildtype (left) and *prd* mutant (right) shown in **k**. The folded region is outlined in yellow on a cartographic projection. The numbers indicate the average folded area in µm^2^×10^3^ for the CFs and EFs separately. Scale bars = 50\ µm (approximated value since pixel sizes vary across the projection).-->
+<!--**m**, Developmental sequence of the wildtype embryo ectopic fold annotated in **l**. Four cells are temporarily infolded during the mitotic expansion of adjacent cells. Scale bar = 10\ µm.-->
+<!--**n**, Folded area distinguishing between cephalic furrow and ectopic folds in different genetic backgrounds. For wildtype embryos n = 16 (16 CFs and 14 EFs), *btd* heterozygotes n = 6 (6 CFs), *btd* homozygotes n = 5 (12 EFs), *eve* heterozygotes n = 7 (7 CFs), *eve* homozygotes n = 4 (7 EFs), *prd* heterozygotes n = 9 (9 CFs and 7 EFs), and *prd* homozygotes n = 5 (1 CF and 9 EFs).-->
+<!--In all box plots, the center depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.-->
+
+<!--TODO: Reduce from 563 to 300 words-->
+
+![Differences between cephalic furrow formation and ectopic folding.
+**a**, Variability in the position of the cephalic furrow and ectopic folds in *eve* heterozygotes (n = 6) and homozygotes (n = 5). Scale bars = 50\ µm.
+**b**, Folded area (yellow outline) of the cephalic furrow (CF) and ectopic folds (EF) in *eve* heterozygotes (n = 7) and homozygotes (n = 4). Numbers indicate average and standard deviation for each condition. Cartographic projections of lateral views. Scale bars ≈ 50\ µm (pixel size varies across the projection).
+**c**, Dynamics of cephalic furrow and ectopic folds in *eve* mutants.
+**d**, Dynamics of cephalic furrow and ectopic folds in *btd* mutants.
+**e**, Dynamics of angle directionality and tortuosity of cephalic furrow and ectopic folds in *btd* mutants (n = 6).
+**f**, Maximum depth of the cephalic furrow and ectopic folds in *btd* and *eve* mutants. Ectopic folds are shallower than the cephalic furrow in both (p < 0.001). Asterisks indicate p < 0.05 in a two-sided Mann--Whitney *U* test. Samples: *btd* heterozygotes (32 embryos, 52 CFs and 6 EFs) and homozygotes (7 embryos, 28 EFs), and *eve* heterozygotes (20 embryos, 34 CFs and 4 EFs) and homozygotes (4 embryos, 15 EFs). Data points correspond to individual folds.
+**g**, Folded area of ectopic folds in wildtype and mutant embryos (pooled *btd*, *eve*, and *prd*). Ectopic folds in wildtype occupy a smaller area than mutants (p < 0.001). Asterisks indicate p < 0.05 in a two-sided Mann--Whitney *U* test. Samples: wildtype (16 embryos, 14 EFs), heterozygotes (9 embryos, 7 EFs), and homozygotes (14 embryos, 28 EFs).
+**h**, Formation of multiple ectopic folds (arrows) in *btd* mutants next to dividing cells (asterisks). Scale bar = 20\ µm.
+**i**, Proportion of embryos exhibiting different fold types in wildtype (n = 36), *btd* heterozygotes (n = 33) and homozygotes (n = 13), *eve* heterozygotes (n = 26) and homozygotes (n = 10), *prd* heterozygotes (n = 26) and homozygotes (n = 14), *stg* heterozygotes (n = 33) and homozygotes (n = 13).
+**j**, Proportion of ectopic folding (EF) along the head--trunk boundary (anterior, middle, posterior positions) in wildtype (n = 28), *btd* heterozygotes (n = 6) and homozygotes (n = 12), *eve* heterozygotes (n = 7) and homozygotes (n = 10), *prd* heterozygotes (n = 7) and homozygotes (n = 10), *stg* heterozygotes (n = 12) and homozygotes (n = 3).
+**k**, Lateral views of wildtype embryo (left) and *prd* mutant (right). Scale bar = 50\ µm.
+**l**, Folded area (yellow outline) of cephalic furrow (CF) and ectopic folds (EF) in wildtype embryo (n = 16) and *prd* mutant (n=14) shown in **k**. Cartographic projections of lateral views. Numbers indicate average and standard deviation for each fold type. Scale bars ≈ 50\ µm (pixel size varies across the projection).
+**m**, Ectopic folding in wildtype embryo (from **l**). Scale bar = 10\ µm.
+**n**, Folded area of cephalic furrow and ectopic folds in wildtype (16 embryos, 16 CFs and 14 EFs), *btd* heterozygotes (6 embryos, 6 CFs) and homozygotes (5 embryos, 12 EFs), *eve* heterozygotes (7 embryos, 7 CFs) and homozygotes (4 embryos, 7 EFs), *prd* heterozygotes (9 embryos, 9 CFs and 7 EFs) and homozygotes (5 embryos, 1 CF and 9 EFs).
+Box plot center depicts the median, lower and upper hinges correspond to first and third quartiles (25 and 75th percentiles), and whiskers extend to 1.5 times the inter-quartile range.
 ](figures/FigED2.jpg){#fig:ectopic-features tag="Extended Data Fig. 2" width=100%}
 
 \newpage
