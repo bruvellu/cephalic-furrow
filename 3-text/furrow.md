@@ -805,14 +805,14 @@ Box plot center depicts the median, lower and upper hinges correspond to first a
 <!--**b**, Plots showing the position of the cephalic furrow (CF) and germ band (GB) at the onset of initiator cell behavior in *slp* mutants. The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.-->
 
 ![Analyses of *slp* mutants in *Drosophila*.
-**a**, Lateral view of *slp* heterozygote (control) and mutant embryo at the onset of initiator cell behavior. In *slp* mutants, the formation of the cephalic furrow is delayed and shifted forward. The phenotype was consistent in 6 independent experiments with *slp* mutants (39 embryos). Scale bars = 50\ µm.
-**b**, Position of the cephalic furrow (CF) and germ band (GB) in *slp* mutants. The CF is displaced anteriorly and the GB is further extended (p < 0.001) when comparing heterozygotes (n = 26) and homozygotes (n = 7). Asterisks indicate p < 0.05 in a two-sided Mann--Whitney *U* test. The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.
-**c**, Expression of *btd* and *eve* in *slp* mutants. Scale bars = 50\ µm.
-**d**, Lateral view of *slp* mutants in *Drosophila* embryos showing the expression of *btd* and *eve*. The distance between *eve* stripe 1 and 2 is larger in *slp* embryos. The asterisk indicates a region between the acron (ac) and head--trunk (ht) domains of *btd* where its expression is activated (or de-repressed) in the absence of the *slp* head domain (sh). The pattern was consistent across 4 independent experiments in *slp* mutants (30 embryos). Scale bars = 50\ µm.
-**e**, Dorsal view showing the ectopic expression of *btd* (asterisks) and anterior shift of *btd*--*eve* overlap in *slp* mutants. Scale bars = 20\ µm.
+**a**, Lateral view of *slp* mutants at the onset of initiator cell behavior. Cephalic furrow formation is delayed and shifted forward. The phenotype was consistent in 6 independent experiments (39 embryos). Scale bars = 50\ µm.
+**b**, Position of the cephalic furrow (CF) and germ band (GB) in *slp* mutants. CF is displaced anteriorly and GB is further extended (p < 0.001) between heterozygotes (n = 26) and homozygotes (n = 7). Asterisks indicate p < 0.05 in a two-sided Mann--Whitney *U* test. Box plot center depicts the median, lower and upper hinges correspond to first and third quartiles, and whiskers extend until 1.5 times the inter-quartile range.
+**c**, Expression of *btd* and *eve* in *slp* mutants before gastrulation. Scale bars = 50\ µm.
+**d**, Expression of *btd* and *eve* in the head--trunk boundary of *slp* mutants. Distance between *eve* stripe 1 and 2 (dashed lines) is larger in *slp* embryos. Asterisk indicates ectopic expression of *btd* between acron (ac) and head--trunk (ht) domains. The pattern was consistent across 4 independent experiments (30 embryos). Scale bars = 50\ µm.
+**e**, Dorsal view of expression domains in *slp* mutants. Asterisks indicate ectopic expression of *btd*. Scale bars = 20\ µm.
 **f**, Profile view showing the increased number of cell rows between *eve* stripe 1 and 2 in *slp* mutants. Scale bars = 20\ µm.
-**g**, Initiator cell behavior in *slp* mutants. Scale bar = 20\ µm.
-**h**, Asymmetric cephalic furrow in *slp* mutants. Scale bar = 20\ µm.
+**g**, Behavior of initiator (orange) and dividing (blue) cells in *slp* mutants. Scale bar = 20\ µm.
+**h**, Profile view showing the asymmetric cephalic furrow in *slp* mutants. Scale bar = 20\ µm.
 ](figures/FigED6.jpg){#fig:slp-analyses tag="Extended Data Fig. 6" width=100%}
 
 <!--TODO: Finish proper figure legends.-->
