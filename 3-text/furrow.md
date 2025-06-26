@@ -815,45 +815,37 @@ Box plot center depicts the median, lower and upper hinges correspond to first a
 **h**, Profile view showing the asymmetric cephalic furrow in *slp* mutants. Scale bar = 20\ µm.
 ](figures/FigED6.jpg){#fig:slp-analyses tag="Extended Data Fig. 6" width=100%}
 
-<!--TODO: Finish proper figure legends.-->
-
 \newpage
 
 ## Extended Data Fig. 7
 
 ![Genetic patterning of the head--trunk boundary in *Drosophila*.
-**a**, Expression of *slp1*, *eve*, and *btd* in wildtype from nuclear cycle (nc) 11 to gastrulation. The patterns were highly consistent across experiment as indicated in {fig:genetic-patterning}f. Scale bars = 50\ µm.
-**b**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos in lateral view. The patterns were consistent across 4 experiments in wildtype samples (10 embryos). Scale bars = 50\ µm.
-**c**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos with head and profile views. Scale bars = 20\ µm.
+**a**, Expression of *slp1*, *eve*, and *btd* in wildtype from nuclear cycle (nc) 11 to gastrulation. The patterns were highly consistent across experiment as indicated in {@fig:genetic-patterning}f. Scale bars = 50\ µm.
+**b**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos. The patterns were consistent across 4 experiments (10 embryos). Scale bars = 50\ µm.
+**c**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos in a lateral view of the head and a profile view of the head--trunk epithelium. Scale bars = 20\ µm.
 ](figures/FigED7.jpg){#fig:genetic-features tag="Extended Data Fig. 7" width=100%}
-
-<!--TODO: Finish proper figure legends.-->
 
 \newpage
 
 ## Extended Data Fig. 8
 
-![Gene expression at the head--trunk boundary of cephalic furrow mutants in *Drosophila*.
-**a**, Disruption of *btd*, *eve*, and *slp1* expression in the head of *btd*, *eve*, and *prd* mutant embryos. The patterns were consistent across 5 experiment in *btd* mutants (20 embryos), 2 experiments in *eve* mutants (12 embryos), and 2 experiments in *prd* mutants (12 embryos). Scale bars = 50\ µm.
-**b**, Profile views of **g** showing the gene expression at the head--trunk boundary cells. Scale bars = 20\ µm.
-**c**, Lateral views of *btd*, *eve*, and *slp1* expression patterns in *btd*, *eve*, and *prd* mutants after gastrulation. Scale bars = 50\ µm.
+![Disruption of gene expression patterns at the head--trunk boundary of cephalic furrow mutants in *Drosophila*.
+**a**, Expression of *btd*, *eve*, *slp1*, and *prd* in *btd*, *eve*, and *prd* mutants. Asterisks indicate altered expression patterns. The phenotypes were consistent across 5 experiment in *btd* mutants (20 embryos), 2 experiments in *eve* mutants (12 embryos), and 2 experiments in *prd* mutants (12 embryos). Scale bars = 50\ µm.
+**b**, Profile views of **g** showing the altered gene expression patterns (asterisks) of epithelial cells at the head--trunk boundary of cephalic furrow mutants. Scale bars = 20\ µm.
+**c**, Lateral views of *btd*, *eve*, and *slp1* expression in *btd*, *eve*, and *prd* mutants after gastrulation. Scale bars = 50\ µm.
 ](figures/FigED8.jpg){#fig:mutant-expression tag="Extended Data Fig. 8" width=100%}
-
-<!--TODO: Finish proper figure legends.-->
 
 \newpage
 
 ## Extended Data Fig. 9
 
-![Genetic patterning of the head--trunk boundary in other dipteran species. The patterns were highly consistent across experiments as indicated in {fig:genetic-patterning}j.
-**a**, Expression of *slp1*, *eve*, and *btd* in *Ceratitis* developmental stages. Scale bars = 100\ µm.
-**b**, Expression of *slp2*, *eve*, and *btd* in *Anopheles* developmental stages. Scale bars = 50\ µm.
-**c**, Expression of *slp1*, *eve*, and *btd* in *Clogmia* developmental stages. Scale bars = 50\ µm.
-**d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* lateral views. The patterns were consistent among the 20 embryos analyzed (1 experiment). Scale bars = 50\ µm.
-**e**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* at the head--trunk boundary in profile views. Scale bars = 20\ µm.
+![Genetic patterning of the head--trunk boundary in other dipteran species. The patterns were highly consistent across experiments as indicated in {@fig:genetic-patterning}j.
+**a**, Expression of *slp1*, *eve*, and *btd* in *Ceratitis* developmental stages before gastrulation. Scale bars = 100\ µm.
+**b**, Expression of *slp2*, *eve*, and *btd* in *Anopheles* developmental stages before gastrulation. Scale bars = 50\ µm.
+**c**, Expression of *slp1*, *eve*, and *btd* in *Clogmia* developmental stages before gastrulation. Scale bars = 50\ µm.
+**d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* before gastrulation. The patterns were consistent among the 20 embryos analyzed (1 experiment). Scale bars = 50\ µm.
+**e**, Expression of *slp1*, *eve*, and *prd* at the head--trunk boundary of *Clogmia* showing a lateral and profile views of the epithelium. Scale bars = 20\ µm.
 ](figures/FigED9.jpg){#fig:genetic-comparative tag="Extended Data Fig. 9" width=100%}
-
-<!--TODO: Finish proper figure legends.-->
 
 \newpage
 
@@ -1079,9 +1071,11 @@ To identify other cephalic furrow genes, we performed a live-imaging screen usin
 
 Since *slp1* is a known anterior repressor that positions anterior pair rule stripes [@Andrioli2004-qi; @Andrioli2012-fv], we wondered if the shift in the position of the cephalic furrow in *slp* mutants coincided with a shift in typical overlap between *btd* and *eve* stripe 1 at the head--trunk boundary. We find that the expression patterns and typical overlap between the two genes remains almost unaltered, except for the small ectopic expression *btd* in the head and for the wider gap between *eve* stripe 1 and 2 ({@fig:slp-analyses}c--e). The anterior shift in cells expressing *btd* and *eve* corresponds to a few rows of blastoderm cells (control = 4.7±0.5 rows, n=4; *slp* = 7.3±0.7 rows, n=5) ({@fig:slp-analyses}f). Despite the displacement, most *slp* embryos exhibit initiator cell behaviors, suggesting that the patterning is not entirely perturbed ({!@fig:slp-analyses}g). However, the symmetry of the resulting fold is altered ({!@fig:slp-analyses}h), indicating that *slp1* may contribute not only to the positioning but also to the patterning of individual cells that give rise to the cephalic furrow.
 
-<!--## Supplementary Note-->
+<!--## Supplementary Note 6-->
 
 <!--### Genetic interactions at the head--trunk boundary-->
+
+<!--TODO: Write proper findings regarding genetic interactions.-->
 
 <!--- btd also regulates slp stripe 2-->
 <!--- slp positions btd/eve, then btd positions slp stripe 2-->
@@ -1089,7 +1083,6 @@ Since *slp1* is a known anterior repressor that positions anterior pair rule str
 <!--- early slp activity represses eve at the anterior end-->
 <!--- *btd* is de-repressed between the acron and head--trunk boundary ({@fig:genetic-patterning}c--d)-->
 
-<!--TODO: Write proper findings regarding genetic interactions.-->
 
 \newpage
 
