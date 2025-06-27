@@ -150,6 +150,7 @@ experiment,author,stock,genotype,embryo,view,xres,yres,zres,slices,timestep,fram
 2020-11-03_eve-gap_dorsal,bruno,eve,"eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS",eve-gap_dorsal_1_z3_t52s_E11,dorsal,0.1426848,0.1426848,3.0000000,15,52,174,heterozygote
 2020-11-03_eve-gap_dorsal,bruno,eve,"eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS",eve-gap_dorsal_1_z3_t52s_E12,dorsal,0.1426848,0.1426848,3.0000000,15,52,174,heterozygote
 2020-11-03_eve-gap_dorsal,bruno,eve,"eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS",eve-gap_dorsal_1_z3_t52s_E13,dorsal,0.1426848,0.1426848,3.0000000,15,52,174,homozygote
+2020-11-03_eve-gap_dorsal,bruno,eve,"eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS",eve-gap_dorsal_1_z3_t52s_E15,dorsal,0.1426848,0.1426848,3.0000000,15,52,174,heterozygote
 2020-11-03_eve-gap_dorsal,bruno,eve,"eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS",eve-gap_dorsal_1_z3_t52s_E17,dorsal,0.1426848,0.1426848,3.0000000,15,52,174,heterozygote
 2020-11-03_eve-gap_dorsal,bruno,eve,"eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS",eve-gap_dorsal_1_z3_t52s_E19,dorsal,0.1426848,0.1426848,3.0000000,15,52,174,homozygote
 2020-11-04_eve-gap_dorsal,bruno,eve,"eve[3]/CyO,twi-GFP;Gap43-mCherry/MKRS",eve-gap_dorsal_2_z3_t53s_E2,dorsal,0.1426848,0.1426848,3.0000000,15,53,175,heterozygote
