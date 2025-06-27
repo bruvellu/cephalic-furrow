@@ -403,7 +403,36 @@ In all box plots, the center represents the median, the lower and upper hinges c
 
 The phenotypes we report in this work were reproducible across multiple experiments. For the live imaging, we performed 7 independent experiments in *btd* mutants (total of 50 embryos), 5 independent experiments in *eve* mutants (total of 36 embryos), 3 independent experiments in *prd* mutants (total of 41 embryos), 6 independent experiments in *slp* mutants (total of 39 embryos), 3 independent experiments in *stg* mutants (total of 46 embryos), 6 independent experiments in *btd--eve* double mutants (total of 35 embryos), and 2 independent experiments in wildtype embryos (total of 36 embryos). For the germ band cauterization, we performed 6 independent experiments in *btd* mutants (total of 10 embryos), 4 independent experiments in *eve* mutants (total of 9 embryos), and 7 independent experiments in wildtype embryos (total of 11 embryos).
 
-<!--TODO: Add remaining experiments here, perhaps by figure panel-->
+<!--TODO: Add gene expression experiments above-->
+
+<!--TODO: Add remaining experiments here-->
+
+<!--TODO: Add experiments by figure panel-->
+
+<!--{@fig:ectopic-folding}b lateral btd eve-->
+<!--{@fig:ectopic-folding}c dorsal wt prd btd eve-->
+<!--{@fig:live-experiments}a lateral dorsal stg-->
+<!--{@fig:live-experiments}b lateral dorsal btd-->
+<!--{@fig:live-experiments}c lateral dorsal btd--stg-->
+<!--{@fig:live-experiments}d lightsheet cauterization wt-->
+<!--{@fig:live-experiments}e lightsheet cauterization eve-->
+<!--{@fig:live-experiments}h confocal cauterization btd eve-->
+<!--{@fig:initiator}a dorsal wt prd btd eve-->
+<!--{@fig:initiator}b lateral wt prd btd eve-->
+<!--{@fig:ectopic-features}a,b,k,l lateral wt prd btd eve-->
+<!--{@fig:ectopic-features}h dorsal btd-->
+<!--{@fig:mitotic-strain}a lateral wt btd eve-->
+<!--{@fig:mitotic-strain}b lateral wt btd eve-->
+<!--{@fig:mitotic-strain}e lateral btd -->
+<!--{@fig:mitotic-strain}g tissue cuts wt -->
+<!--{@fig:stg} lateral dorsal stg-->
+<!--{@fig:slp-analyses}a lateral slp-->
+<!--{@fig:slp-analyses}b--h hcr slp-->
+<!--{@fig:genetic-features}a hcr wt-->
+<!--{@fig:genetic-features}b hcr prd on wt -->
+<!--{@fig:mutant-expression} hcr btd eve prd-->
+<!--{@fig:genetic-comparative} hcr same as before-->
+
 
 ## Data availability
 
