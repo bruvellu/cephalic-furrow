@@ -401,37 +401,20 @@ We created illustrations and assembled the final figure plates using Inkscape v1
 
 In all box plots, the center represents the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range. Asterisks indicate p<0.05 in a two-sided Mann--Whitney *U* test contrasting the condition against wildtype, unless otherwise noted in the correspondent figure legend. We report p values rounded to three decimal places and show values lower than 0.001 as p<0.001; the exact values with full decimal places for each contrast are available in the data repository [@Vellutini2023-ng].
 
-The phenotypes we report in this work were reproducible across multiple independent experiments. For the live imaging, we performed 7 experiments in *btd* mutants (total of 50 embryos), 5 experiments in *eve* mutants (total of 36 embryos), 3 experiments in *prd* mutants (total of 41 embryos), 6 experiments in *slp* mutants (total of 39 embryos), 3 experiments in *stg* mutants (total of 46 embryos), 6 experiments in *btd--eve* double mutants (total of 35 embryos), and 2 experiments in wildtype embryos (total of 36 embryos). For the germ band cauterization, we performed 6 experiments in *btd* mutants (total of 10 embryos), 4 experiments in *eve* mutants (total of 9 embryos), and 7 experiments in wildtype embryos (total of 11 embryos). For the gene expression, the wildtype patterns of *btd*, *eve*, and *slp* were highly consistent across 3 experiments in *Drosophila* (total of 26 embryos), 3 experiments in *Ceratitis* (total of 38 embryos), 4 experiments in *Anopheles* (total of 43 embryos), and 4 experiments in *Clogmia* (total of 44 embryos). We also obtained consistent patterns of *prd* expression among 4 experiments in *Drosophila* (total of 10 embryos) and 1 experiment in *Clogmia* (total of 20 embryos). The expression patterns in mutant embryos were repeatable across 4 independent experiments in *slp* mutants (total of 30 embryos), 5 experiment in *btd* mutants (total of 20 embryos), 2 experiments in *eve* mutants (total of 12 embryos), and 2 experiments in *prd* mutants (total of 12 embryos).
+The phenotypes we report in this work were reproducible across multiple independent experiments. For the live imaging, we performed 7 experiments in *btd* mutants (total of 50 embryos), 5 experiments in *eve* mutants (total of 36 embryos), 3 experiments in *prd* mutants (total of 41 embryos) ({@fig:ectopic-folding}b,c,f,g, {@fig:live-experiments}b, {!@fig:initiator}a,b, {!@fig:ectopic-features}a,b,h,k,l, {!@fig:mitotic-strain}a--c,e). The phenotypes were also consistent across 6 experiments in *slp* mutants (total of 39 embryos) ({!@fig:slp-analyses}a,g), 3 experiments in *stg* mutants (total of 46 embryos) ({@fig:live-experiments}a, {!@fig:live-details}a,b), 6 experiments in *btd--eve* double mutants (total of 35 embryos) ({@fig:live-experiments}c), and 2 experiments in wildtype embryos (total of 36 embryos) ({@fig:ectopic-folding}c, {!@fig:ectopic-features}k,l,m, {!@fig:mitotic-strain}a). For the germ band cauterization, we performed 6 experiments in *btd* mutants (total of 10 embryos) ({@fig:live-experiments}h), 5 experiments in *eve* mutants (total of 10 embryos) ({@fig:live-experiments}f--h), and 8 experiments in wildtype embryos (total of 12 embryos) ({@fig:live-experiments}d,e). For the gene expression, the wildtype patterns of *btd*, *eve*, and *slp* were highly consistent across 3 experiments in *Drosophila* (total of 26 embryos) ({@fig:genetic-patterning}a--d,g, {!@fig:genetic-features}a), 3 experiments in *Ceratitis* (total of 38 embryos), 4 experiments in *Anopheles* (total of 43 embryos), and 4 experiments in *Clogmia* (total of 44 embryos) ({@fig:genetic-patterning}f--h, {!@fig:genetic-comparative}a--c). We also obtained consistent patterns of *prd* expression among 4 experiments in *Drosophila* (total of 10 embryos) ({@fig:genetic-patterning}c, {!@fig:genetic-features}b,c) and 1 experiment in *Clogmia* (total of 20 embryos) ({!@fig:genetic-comparative}d,e). The expression patterns in mutant embryos were repeatable across 4 independent experiments in *slp* mutants (total of 30 embryos) ({!@fig:slp-analyses}c--f,h), 5 experiment in *btd* mutants (total of 20 embryos), 2 experiments in *eve* mutants (total of 12 embryos), and 2 experiments in *prd* mutants (total of 12 embryos) ({!@fig:mutant-expression}a--c).
 
-<!--TODO: Add gene expression experiments above-->
+<!--NOTE: +1 experiment/embryo to eve cauterization for lightsheet-->
+<!--NOTE: +1 experiment/embryo to wt cauterization for lightsheet-->
 
-<!--TODO: Add remaining experiments here-->
 
 <!--TODO: Add experiments by figure panel-->
 
-<!--{@fig:ectopic-folding}b lateral btd eve-->
 <!--{@fig:ectopic-folding}c dorsal wt prd btd eve-->
-<!--{@fig:live-experiments}a lateral dorsal stg-->
-<!--{@fig:live-experiments}b lateral dorsal btd-->
-<!--{@fig:live-experiments}c lateral dorsal btd--stg-->
-<!--{@fig:live-experiments}d lightsheet cauterization wt-->
-<!--{@fig:live-experiments}e lightsheet cauterization eve-->
-<!--{@fig:live-experiments}h confocal cauterization btd eve-->
-<!--{@fig:initiator}a dorsal wt prd btd eve-->
-<!--{@fig:initiator}b lateral wt prd btd eve-->
-<!--{@fig:ectopic-features}a,b,k,l lateral wt prd btd eve-->
-<!--{@fig:ectopic-features}h dorsal btd-->
+
 <!--{@fig:mitotic-strain}a lateral wt btd eve-->
 <!--{@fig:mitotic-strain}b lateral wt btd eve-->
 <!--{@fig:mitotic-strain}e lateral btd -->
 <!--{@fig:mitotic-strain}g tissue cuts wt -->
-<!--{@fig:stg} lateral dorsal stg-->
-<!--{@fig:slp-analyses}a lateral slp-->
-<!--{@fig:slp-analyses}b--h hcr slp-->
-<!--{@fig:genetic-features}a hcr wt-->
-<!--{@fig:genetic-features}b hcr prd on wt -->
-<!--{@fig:mutant-expression} hcr btd eve prd-->
-<!--{@fig:genetic-comparative} hcr same as before-->
 
 
 ## Data availability
