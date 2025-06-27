@@ -98,7 +98,10 @@ experiment,author,stock,genotype,embryo,view,xres,yres,zres,slices,timestep,fram
 2020-10-13_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z1.5_t51s_E6,dorsal,0.1426848,0.1426848,1.5000000,,51,185,homozygote
 2020-10-13_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z1.5_t51s_E8,dorsal,0.1426848,0.1426848,1.5000000,,51,185,heterozygote
 2020-10-13_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z1.5_t51s_E10,dorsal,0.1426848,0.1426848,1.5000000,,51,185,homozygote
+2020-10-13_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z1.5_t51s_E11,dorsal,0.1426848,0.1426848,1.5000000,,51,185,heterozygote
 2020-10-13_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z1.5_t51s_E13,dorsal,0.1426848,0.1426848,1.5000000,,51,185,heterozygote
+2020-10-13_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z1.5_t51s_E14,dorsal,0.1426848,0.1426848,1.5000000,,51,185,heterozygote
+2020-10-13_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z1.5_t51s_E15,dorsal,0.1426848,0.1426848,1.5000000,,51,185,heterozygote
 2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E1,dorsal,0.1426848,0.1426848,3.0000000,,45,220,heterozygote
 2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E2,dorsal,0.1426848,0.1426848,3.0000000,,45,220,heterozygote
 2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E3,dorsal,0.1426848,0.1426848,3.0000000,,45,220,heterozygote
@@ -109,7 +112,9 @@ experiment,author,stock,genotype,embryo,view,xres,yres,zres,slices,timestep,fram
 2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E8,dorsal,0.1426848,0.1426848,3.0000000,,45,220,heterozygote
 2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E10,dorsal,0.1426848,0.1426848,3.0000000,,45,220,heterozygote
 2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E12,dorsal,0.1426848,0.1426848,3.0000000,,45,220,heterozygote
+2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E13,dorsal,0.1426848,0.1426848,3.0000000,,45,220,heterozygote
 2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E14,dorsal,0.1426848,0.1426848,3.0000000,,45,220,homozygote
+2020-10-14_btd-gap_dorsal,bruno,btd,"btd[XA]/FM7c,Kr-GFP;;Gap43-mCherry/MKRS",btd-gap_dorsal_1_z3_t45s_E15,dorsal,0.1426848,0.1426848,3.0000000,,45,220,heterozygote
 2020-10-19_prd-gap_dorsal,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",prd-gap_dorsal_1_z3_t41s_E3,dorsal,0.1426848,0.1426848,3.0000000,15,41,205,heterozygote
 2020-10-19_prd-gap_dorsal,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",prd-gap_dorsal_1_z3_t41s_E4,dorsal,0.1426848,0.1426848,3.0000000,15,41,205,homozygote
 2020-10-19_prd-gap_dorsal,bruno,prd,"prd[4]/CyO,twi-GFP;Gap43-mCherry/MKRS",prd-gap_dorsal_1_z3_t41s_E5,dorsal,0.1426848,0.1426848,3.0000000,15,41,205,homozygote
