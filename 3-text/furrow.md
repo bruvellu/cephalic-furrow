@@ -709,7 +709,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ![Disruption of initiator cell behavior in cephalic furrow mutants.
 **a**, Profile view of the head--trunk boundary epithelium in wildtype embryos and *prd*, *btd*, and *eve* mutants. Samples synchronized by the end of cellularization (0.0\ min). Arrow indicates the first infolding of the tissue. Initiator cells (IC) in wildtype embryos are tightly connected to adjacent cells, which become arched in the early invagination of the cephalic furrow (CF). This arrangement is perturbed in mutants. In *prd*, adjacent cells do not arch over the initiator row (6.1\ min) and the invagination is delayed. In *btd*, there is no initiator shortening, only a partial apical constriction bulging the epithelium (6.0\ min). In *eve*, there is no shortening or apical constriction. Both *btd* and *eve* form ectopic folds (EF) about ten minutes after the end of cellularization. The phenotypes were highly consistent for wildtype (1 experiment, 20 embryos), *btd* (3 experiments, 29 embryos) and *eve* (2 experiments, 23 embryos), and more variable for *prd* mutants (2 experiments, 26 embryos). Scale bars = 20\ µm.
-**b**, Surface view of the head--trunk boundary epithelium on 2D cartographic projections showing abnormal apical constriction in *prd* and *btd* mutants and absence of this behavior in *eve* mutants. The phenotypes were highly consistent for wildtype (1 experiment, 16 embryos), *btd* (3 experiments, 14 embryos) and *eve* (3 experiments, 12 embryos), and more variable for *prd* mutants (1 experiment, 14 embryos). Scale bars ≈ 20\ µm (pixel size varies across the projection).
+**b**, Surface view of the head--trunk boundary epithelium on 2D cartographic projections showing abnormal apical constriction in *prd* and *btd* mutants and absence of this behavior in *eve* mutants. The phenotypes were highly consistent for wildtype (1 experiment, 16 embryos), *btd* (3 experiments, 14 embryos) and *eve* (3 experiments, 12 embryos), and more variable for *prd* mutants (1 experiment, 14 embryos). Scale bars ≈ 20\ µm.
 ](figures/FigED1.jpg){#fig:initiator tag="Extended Data Fig. 1" width=100%}
 
 \newpage
@@ -743,7 +743,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ![Differences between cephalic furrow formation and ectopic folding.
 **a**, Position variability of the cephalic furrow and ectopic folds in *eve* heterozygotes (n=6) and homozygotes (n=5). Scale bars = 50\ µm.
-**b**, Folded area (yellow outline) of the cephalic furrow (CF) and ectopic folds (EF) in *eve* heterozygotes (n=7) and homozygotes (n=4). Numbers indicate average and standard deviation for each condition. Cartographic projections of lateral views. Scale bars ≈ 50\ µm (pixel size varies across the projection).
+**b**, Folded area (yellow outline) of the cephalic furrow (CF) and ectopic folds (EF) in *eve* heterozygotes (n=7) and homozygotes (n=4). Numbers indicate average and standard deviation for each condition. Cartographic projections of lateral views. Scale bars ≈ 50\ µm.
 **c**, Formation dynamics of cephalic furrow and ectopic folds in *eve* mutants.
 **d**, Formation dynamics of cephalic furrow and ectopic folds in *btd* mutants.
 **e**, Angle and tortuosity dynamics of cephalic furrow and ectopic folds in *btd* mutants (n=6).
@@ -753,7 +753,7 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 **i**, Proportion of embryos exhibiting different fold types in wildtype (n=36), *btd* heterozygotes (n=33) and homozygotes (n=13), *eve* heterozygotes (n=26) and homozygotes (n=10), *prd* heterozygotes (n=26) and homozygotes (n=14), *stg* heterozygotes (n=33) and homozygotes (n=13).
 **j**, Proportion of ectopic folds (EF) at different positions (anterior, middle, or posterior along the head--trunk boundary) in wildtype (n=28), *btd* heterozygotes (n=6) and homozygotes (n=12), *eve* heterozygotes (n=7) and homozygotes (n=10), *prd* heterozygotes (n=7) and homozygotes (n=10), *stg* heterozygotes (n=12) and homozygotes (n=3).
 **k**, Lateral view of wildtype (left) and *prd* (right) embryos. Scale bar = 50\ µm.
-**l**, Folded area (yellow outline) of cephalic furrow (CF) and ectopic folds (EF) in wildtype (n=16) and *prd* (n=14) embryos shown in **k**. Numbers indicate average and standard deviation for each fold type. Cartographic projections of lateral views. Scale bars ≈ 50\ µm (pixel size varies across the projection).
+**l**, Folded area (yellow outline) of cephalic furrow (CF) and ectopic folds (EF) in wildtype (n=16) and *prd* (n=14) embryos shown in **k**. Numbers indicate average and standard deviation for each fold type. Cartographic projections of lateral views. Scale bars ≈ 50\ µm.
 **m**, Ectopic folding in wildtype embryo (from **l**). Scale bar = 10\ µm.
 **n**, Area of cephalic furrow and ectopic folds in wildtype (16 embryos, 16 CFs, 14 EFs), *btd* heterozygotes (6 embryos, 6 CFs) and homozygotes (5 embryos, 12 EFs), *eve* heterozygotes (7 embryos, 7 CFs) and homozygotes (4 embryos, 7 EFs), *prd* heterozygotes (9 embryos, 9 CFs, 7 EFs) and homozygotes (5 embryos, 1 CF, 9 EFs).
 Box plot center represents the median, lower and upper hinges correspond to first and third quartiles, and whiskers extend to 1.5 times the inter-quartile range.
@@ -777,7 +777,7 @@ Box plot center represents the median, lower and upper hinges correspond to firs
 
 ![Ectopic folding relative to mitotic domains and germ band extension.
 **a**, Representative positions of folding (black lines) relative to mitotic domains (colored areas) in wildtype embryos and *btd* and *eve* mutants. Ectopic fold position varies between embryos. The MD2 phenotype was consistent in 4 and 3 independent experiments for *btd* (16 embryos) and *eve* (12 embryos), respectively. Scale bars = 50\ µm.
-**b**, Apical cell area during ectopic folding. The same subset of cells is annotated in the top panel (white outline) and in the bottom panel as non-dividing cells (orange) and dividing cells (blue). Expansion of apical area was consistent in embryos with mitotic domains. Scale bars ≈ 20\ µm (pixel size varies across the projection).
+**b**, Apical cell area during ectopic folding. The same subset of cells is annotated in the top panel (white outline) and in the bottom panel as non-dividing cells (orange) and dividing cells (blue). Expansion of apical area was consistent in embryos with mitotic domains. Scale bars ≈ 20\ µm.
 **c**, Mitotic expansion (double arrow) preceding ectopic folding (arrow) in a *btd* mutant. Quantified in **d**. Scale bar = 20\ µm.
 **d**, Timing of cephalic furrow (CF) and ectopic fold (EF) formation relative to mitotic expansion (MD). CF forms before mitotic domains (p<0.001 and p=0.002, respectively) in wildtype (n=16) and heterozygote embryos (n=13, *btd* and *eve* combined). Ectopic folds form after mitotic domains (p=0.002) in homozygote embryos (n=10). Asterisks indicate p<0.05 in a two-sided Mann--Whitney *U* test. Box plot center shows the median, lower and upper hinges correspond to first and third quartiles, and whiskers extend until 1.5 times the inter-quartile range.
 **e**, Tissue compression in *btd* mutants. The head--trunk (HT) and trunk--germ (TG) regions are outlined. The extent of the phenotype depends on the timing and position of ectopic folds. Scale bars = 50\ µm.
@@ -892,7 +892,7 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ![Complementary analyses of mitotic expansions and strain rate.
 **a**, Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell. Scale bar = 10\ µm. Data from 9 tracked cells on a single *btd* heterozygote embryo. The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.
-**b**, Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {!@fig:mitotic-strain}f. Scale bar = 20\ µm (approximated value since pixel sizes vary across the projection).
+**b**, Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {!@fig:mitotic-strain}f. Scale bar ≈ 20\ µm.
 ](figures/FigS2.jpg){#fig:apical-strain tag="Supplementary Fig. 2" width=100%}
 
 <!--TODO: Re-plot apical area expansion using manuscript style-->
@@ -964,7 +964,7 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ## Supplementary Video 6
 
-![Ectopic folding between mitotic domains in *btd* mutant. Detailed view of cartographic projections of *btd* embryos, showing the formation of the cephalic furrow (left) and of an ectopic fold (right). In sibling controls, the cephalic furrow initiates from a narrow row of cells and invaginates in a progressive manner before the appearance of mitotic domains. In *btd* mutants, the ectopic folds only appear after the apical expansion of dividing cells within mitotic domains, quickly buckling and unfolding shortly after. Frame rate = 10\ fps. Scale bar = 20\ µm (approximated value since pixel sizes vary across the projection).
+![Ectopic folding between mitotic domains in *btd* mutant. Detailed view of cartographic projections of *btd* embryos, showing the formation of the cephalic furrow (left) and of an ectopic fold (right). In sibling controls, the cephalic furrow initiates from a narrow row of cells and invaginates in a progressive manner before the appearance of mitotic domains. In *btd* mutants, the ectopic folds only appear after the apical expansion of dividing cells within mitotic domains, quickly buckling and unfolding shortly after. Frame rate = 10\ fps. Scale bar ≈ 20\ µm.
 ](figures/Vid6.jpg){#fig:vid-mitotic-fold tag="Supplementary Video 6" width=50%}
 
 \newpage
@@ -985,7 +985,7 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ## Supplementary Video 9
 
-![Epithelial strain rate during ectopic folding in *btd* mutant. Video from !@fig:vid-mitotic-fold overlaid with the estimated strain rate across the tissues (color-coded from purple to yellow). Increase in strain rates are associated with tissue infolding and mitotic expansions. The video is looped. Frame rate = 10\ fps. Scale bar = 20\ µm (approximated value since pixel sizes vary across the projection).
+![Epithelial strain rate during ectopic folding in *btd* mutant. Video from !@fig:vid-mitotic-fold overlaid with the estimated strain rate across the tissues (color-coded from purple to yellow). Increase in strain rates are associated with tissue infolding and mitotic expansions. The video is looped. Frame rate = 10\ fps. Scale bar ≈ 20\ µm.
 ](figures/Vid9.jpg){#fig:vid-strain-rate tag="Supplementary Video 9" width=50%}
 
 \newpage
