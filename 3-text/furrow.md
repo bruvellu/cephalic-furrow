@@ -488,19 +488,17 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 <!--**j**, Maximum depth of the cephalic furrow in cauterized embryos. We pooled wildtype and heterozygote embryos for non-cauterized (n = 7 total from wt = 3, *btd* = 1, and *eve* = 3) and cauterized (n = 3 total from wt = 2 and *btd* = 1) samples. The cephalic furrow in cauterized embryos is 15% shallower (p = 0.058 in a one-sided Mann--Whitney *U* test). The box plot representation is the same as in **i**.-->
 <!--**k**, Tortuosity of the epithelial traces in non-cauterized (n = 2) and cauterized (n = 3) *btd* embryos, and non-cauterized (n = 3) and cauterized (n = 4) *eve* embryos from **h**. We measured both the left and right sides of each embryo. The plots show the mean predicted values from the regression of each condition with a shaded band indicating the 95% confidence interval for the mean trend.-->
 
-<!--TODO: Reduce from 390 to 300 words-->
-
 ![Experiments in cephalic furrow mutants *in vivo*.
-**a**, *stg* mutants. The phenotype was highly repeatable in 3 independent experiments (46 embryos). Scale bars = 50\ µm.
-**b**, *btd* mutants. Samples described in {@fig:ectopic-folding}c,b. Scale bars = 50\ µm.
-**c**, *btd--stg* double mutants. The phenotype was consistent in 5 double homozygote embryos from 6 independent experiments (35 embryos). Scale bar = 50\ µm.
+**a**, *stg* mutants. Scale bars = 50\ µm.
+**b**, *btd* mutants. Scale bars = 50\ µm.
+**c**, *btd--stg* double mutants. Scale bar = 50\ µm.
 **d**, Germ band cauterization (orange) in wildtype embryo under multiview lightsheet microscopy. We quantified and corroborated the phenotype under confocal microscopy (see **h**). Scale bar = 50\ µm.
 **e**, Cephalic furrow in non-cauterized and cauterized wildtype embryos. See **j** for quantification. Scale bar = 20\ µm.
 **f**, Germ band cauterization (orange) in *eve* mutant under multiview lightsheet microscopy. We quantified and corroborated the phenotype under confocal microscopy (**h**). Scale bar = 50\ µm.
 **g**, Inset from **f** showing compressed non-dividing cells between mitotic domains. Scale bar = 50\ µm.
-**h** Germ band cauterizations in *btd* and *eve* mutants under confocal microscopy showing a trace with the epithelial deformations over time. The phenotype was was consistent across 6 and 4 independent experiments in *btd* (6 embryos) and *eve* (7 embryos), respectively. Scale bars = 20\ µm.
-**i**, Cell membrane recoil velocity from laser ablations around the cephalic furrow in gastrulating wildtype embryos. Anterior cuts (green) for early (n=11), mid (n=13), and late (n=12) stage 6, and posterior cuts (magenta) for early (n=7), mid (n=14), and late (n=10) stage 6. The box plot center shows the median, the lower/upper hinges correspond to the first/third quartiles, and the whiskers extend 1.5 times the inter-quartile range.
-**j**, Maximum depth of the cephalic furrow with germ band cauterization (pooled wildtype and heterozygote embryos). Non-cauterized (n=7, from wt=3, *btd*=1, *eve*=3) and cauterized (n=3, from wt=2 and *btd*=1). Fold in cauterized embryos is 15% shallower, but the difference is not statistically significant (p=0.058, one-sided Mann--Whitney *U* test). Box plot as in **i**.
+**h** Germ band cauterizations in *btd* and *eve* mutants under confocal microscopy showing the traces of epithelial deformations over time. Scale bars = 20\ µm.
+**i**, Cell membrane recoil velocity after laser ablation around the cephalic furrow in gastrulating wildtype embryos. Anterior cuts (green) for early (n=11), mid (n=13), and late (n=12) stage 6, and posterior cuts (magenta) for early (n=7), mid (n=14), and late (n=10) stage 6.
+**j**, Maximum depth of the cephalic furrow with germ band cauterization (pooled wildtype and heterozygote embryos). Non-cauterized (n=7, from wt=3, *btd*=1, *eve*=3) and cauterized (n=3, from wt=2 and *btd*=1). Fold in cauterized embryos is 15% shallower, but the difference is not statistically significant (p=0.058, one-sided Mann--Whitney *U* test).
 **k**, Tortuosity of epithelial traces in cauterized mutants from **h**. *btd* non-cauterized (n=2) and cauterized (n=3), and *eve* non-cauterized (n=3) and cauterized (n=4). Plots show mean predicted values from regression with a 95% confidence interval shaded band.
 ](figures/Fig2.jpg){#fig:live-experiments width=100%}
 
