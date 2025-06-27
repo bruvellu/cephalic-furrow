@@ -401,7 +401,9 @@ We created illustrations and assembled the final figure plates using Inkscape v1
 
 In all box plots, the center represents the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range. Asterisks indicate p<0.05 in a two-sided Mann--Whitney *U* test contrasting the condition against wildtype, unless otherwise noted in the correspondent figure legend. We report p values rounded to three decimal places and show values lower than 0.001 as p<0.001; the exact values with full decimal places for each contrast are available in the data repository [@Vellutini2023-ng].
 
-The phenotypes we report in this work were reproducible across multiple experiments as detailed below. The ectopic folding phenotype described in {@fig:ectopic-folding} was highly repeatable across 7 independent experiments in *btd* mutants (total of 46 embryos) and 5 independent experiments in *eve* mutants (total of 36 embryos).
+The phenotypes we report in this work were reproducible across multiple experiments. For the live imaging, we performed 7 independent experiments in *btd* mutants (total of 50 embryos), 5 independent experiments in *eve* mutants (total of 36 embryos), 3 independent experiments in *prd* mutants (total of 41 embryos), 6 independent experiments in *slp* mutants (total of 39 embryos), 3 independent experiments in *stg* mutants (total of 46 embryos), 6 independent experiments in *btd--eve* double mutants (total of 35 embryos), and 2 independent experiments in wildtype embryos (total of 36 embryos). For the germ band cauterization, we performed 6 independent experiments in *btd* mutants (total of 10 embryos), 4 independent experiments in *eve* mutants (total of 9 embryos), and 7 independent experiments in wildtype embryos (total of 11 embryos).
+
+<!--TODO: Add remaining experiments here, perhaps by figure panel-->
 
 ## Data availability
 
@@ -453,8 +455,6 @@ BCV and PT conceived the study. BCV designed experiments, generated fly stocks, 
 <!--The presence of ectopic folds in the absence of the cephalic furrow was highly repeatable across 7 independent experiments in *btd* mutants (total of 46 embryos) and 5 independent experiments in *eve* mutants (total of 36 embryos).-->
 <!--The membrane marker in panels **b**, **c**, **f**, and **g** is Gap43-mCherry.-->
 <!--Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma; @Ashburner2005-ym].-->
-
-<!--TODO: Reduce from 472 to 300 words-->
 
 ![Formation of ectopic folds in cephalic furrow mutants.
 **a**, Timing of developmental events in wildtype and *prd*, *btd*, and *eve* mutants.
