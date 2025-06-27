@@ -401,7 +401,7 @@ We created illustrations and assembled the final figure plates using Inkscape v1
 
 In all box plots, the center represents the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range. Asterisks indicate p<0.05 in a two-sided Mann--Whitney *U* test contrasting the condition against wildtype, unless otherwise noted in the correspondent figure legend. We report p values rounded to three decimal places and show values lower than 0.001 as p<0.001; the exact values with full decimal places for each contrast are available in the data repository [@Vellutini2023-ng].
 
-The phenotypes we report in this work were reproducible across multiple experiments. For the live imaging, we performed 7 independent experiments in *btd* mutants (total of 50 embryos), 5 independent experiments in *eve* mutants (total of 36 embryos), 3 independent experiments in *prd* mutants (total of 41 embryos), 6 independent experiments in *slp* mutants (total of 39 embryos), 3 independent experiments in *stg* mutants (total of 46 embryos), 6 independent experiments in *btd--eve* double mutants (total of 35 embryos), and 2 independent experiments in wildtype embryos (total of 36 embryos). For the germ band cauterization, we performed 6 independent experiments in *btd* mutants (total of 10 embryos), 4 independent experiments in *eve* mutants (total of 9 embryos), and 7 independent experiments in wildtype embryos (total of 11 embryos).
+The phenotypes we report in this work were reproducible across multiple independent experiments. For the live imaging, we performed 7 experiments in *btd* mutants (total of 50 embryos), 5 experiments in *eve* mutants (total of 36 embryos), 3 experiments in *prd* mutants (total of 41 embryos), 6 experiments in *slp* mutants (total of 39 embryos), 3 experiments in *stg* mutants (total of 46 embryos), 6 experiments in *btd--eve* double mutants (total of 35 embryos), and 2 experiments in wildtype embryos (total of 36 embryos). For the germ band cauterization, we performed 6 experiments in *btd* mutants (total of 10 embryos), 4 experiments in *eve* mutants (total of 9 embryos), and 7 experiments in wildtype embryos (total of 11 embryos). For the gene expression, the wildtype patterns of *btd*, *eve*, and *slp* were highly consistent across 3 experiments in *Drosophila* (total of 26 embryos), 3 experiments in *Ceratitis* (total of 38 embryos), 4 experiments in *Anopheles* (total of 43 embryos), and 4 experiments in *Clogmia* (total of 44 embryos). We also obtained consistent patterns of *prd* expression among 4 experiments in *Drosophila* (total of 10 embryos) and 1 experiment in *Clogmia* (total of 20 embryos). The expression patterns in mutant embryos were repeatable across 4 independent experiments in *slp* mutants (total of 30 embryos), 5 experiment in *btd* mutants (total of 20 embryos), 2 experiments in *eve* mutants (total of 12 embryos), and 2 experiments in *prd* mutants (total of 12 embryos).
 
 <!--TODO: Add gene expression experiments above-->
 
@@ -579,12 +579,12 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 <!--ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg: *btd* foregut domain.-->
 
 ![Genetic patterning of the head--trunk boundary in *Drosophila*, *Ceratitis*, *Anopheles*, and *Clogmia*.
-**a**, Expression of *btd*, *eve*, and *slp1* before gastrulation in *Drosophila*. Early *slp1* and *eve* transcripts demarcate the head--trunk boundary and resolve to sharp stripes with *btd* transcripts at the interface. The expression pattern was repeatable across 3 experiments in wildtype samples (26 embryos). Scale bars = 50\ µm.
+**a**, Expression of *btd*, *eve*, and *slp1* before gastrulation in *Drosophila*. Early *slp1* and *eve* transcripts demarcate the head--trunk boundary and resolve to sharp stripes with *btd* transcripts at the interface. Scale bars = 50\ µm.
 **b**, Expression patterns at the onset of gastrulation in *Drosophila* (lateral view). *slp1* stripes demarcate the outer edges of the cephalic furrow (dashed lines). Scale bar = 50\ µm.
 **c**, Expression patterns at the onset of gastrulation in *Drosophila* (profile view). *eve*-expressing initiator cells also express *btd* and are abutted by *slp1* stripes. *prd* is offset from *slp1* by 1-cell row. Dashed lines demarcate the outer edges of the cephalic furrow. Scale bar = 20\ µm.
 **d**, Expression patterns of the invaginated cephalic furrow in *Drosophila*. Scale bar = 20\ µm.
 **e**, Schematic drawing of the combinatorial expression at the head--trunk boundary of *Drosophila*.
-**f**, Expression of *btd*, *eve*, and *slp* during nuclear cycles 13 (left) and 14 (right) in *Ceratitis*, *Anopheles*, and *Clogmia* embryos. The patterns were consistent across 3 experiments in *Ceratitis* (38 embryos), 4 experiments in *Anopheles* (43 embryos), and 4 experiments in *Clogmia* (44 embryos). Scale bars = 100\ µm.
+**f**, Expression of *btd*, *eve*, and *slp* during nuclear cycles 13 (left) and 14 (right) in *Ceratitis*, *Anopheles*, and *Clogmia* embryos. Scale bars = 100\ µm.
 **g**, *btd--eve* overlap at the head--trunk boundary of different dipterans. It is present in species with a cephalic furrow (*Drosophila* and *Ceratitis*), and absent in species without (*Anopheles* and *Clogmia*). Scale bars = 50\ µm.
 **h**, Expression patterns at the onset of gastrulation in *Ceratitis*, *Anopheles*, and *Clogmia* (profile view). Scale bars = 20\ µm.
 ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain, fg: *btd* foregut domain.
@@ -830,10 +830,10 @@ Box plot center represents the median, lower and upper hinges correspond to firs
 <!--**b**, Plots showing the position of the cephalic furrow (CF) and germ band (GB) at the onset of initiator cell behavior in *slp* mutants. The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.-->
 
 ![Analyses of *slp* mutants in *Drosophila*.
-**a**, Lateral view of *slp* mutants at the onset of initiator cell behavior. Cephalic furrow formation is delayed and shifted forward. The phenotype was consistent in 6 independent experiments (39 embryos). Scale bars = 50\ µm.
+**a**, Lateral view of *slp* mutants at the onset of initiator cell behavior. Cephalic furrow formation is delayed and shifted forward. Scale bars = 50\ µm.
 **b**, Position of the cephalic furrow (CF) and germ band (GB) in *slp* mutants. CF is displaced anteriorly and GB is further extended (p<0.001) between heterozygotes (n=26) and homozygotes (n=7). Asterisks indicate p<0.05 in a two-sided Mann--Whitney *U* test. Box plot center depicts the median, lower and upper hinges correspond to first and third quartiles, and whiskers extend until 1.5 times the inter-quartile range.
 **c**, Expression of *btd* and *eve* in *slp* mutants before gastrulation. Scale bars = 50\ µm.
-**d**, Expression of *btd* and *eve* in the head--trunk boundary of *slp* mutants. Distance between *eve* stripe 1 and 2 (dashed lines) is larger in *slp* embryos. Asterisk indicates ectopic expression of *btd* between acron (ac) and head--trunk (ht) domains. The pattern was consistent across 4 independent experiments (30 embryos). Scale bars = 50\ µm.
+**d**, Expression of *btd* and *eve* in the head--trunk boundary of *slp* mutants. Distance between *eve* stripe 1 and 2 (dashed lines) is larger in *slp* embryos. Asterisk indicates ectopic expression of *btd* between acron (ac) and head--trunk (ht) domains. Scale bars = 50\ µm.
 **e**, Dorsal view of expression domains in *slp* mutants. Asterisks indicate ectopic expression of *btd*. Scale bars = 20\ µm.
 **f**, Profile view showing the increased number of cell rows between *eve* stripe 1 and 2 in *slp* mutants. Scale bars = 20\ µm.
 **g**, Behavior of initiator (orange) and dividing (blue) cells in *slp* mutants. Scale bar = 20\ µm.
@@ -845,8 +845,8 @@ Box plot center represents the median, lower and upper hinges correspond to firs
 ## Extended Data Fig. 7
 
 ![Genetic patterning of the head--trunk boundary in *Drosophila*.
-**a**, Expression of *slp1*, *eve*, and *btd* in wildtype from nuclear cycle (nc) 11 to gastrulation. The patterns were highly consistent across experiment as indicated in {@fig:genetic-patterning}f. Scale bars = 50\ µm.
-**b**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos. The patterns were consistent across 4 experiments (10 embryos). Scale bars = 50\ µm.
+**a**, Expression of *slp1*, *eve*, and *btd* in wildtype from nuclear cycle (nc) 11 to gastrulation. Scale bars = 50\ µm.
+**b**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos. Scale bars = 50\ µm.
 **c**, Expression of *prd*, *slp1*, and *eve* in wildtype embryos in a lateral view of the head and a profile view of the head--trunk epithelium. Scale bars = 20\ µm.
 ](figures/FigED7.jpg){#fig:genetic-features tag="Extended Data Fig. 7" width=100%}
 
@@ -855,7 +855,7 @@ Box plot center represents the median, lower and upper hinges correspond to firs
 ## Extended Data Fig. 8
 
 ![Disruption of gene expression patterns at the head--trunk boundary of cephalic furrow mutants in *Drosophila*.
-**a**, Expression of *btd*, *eve*, *slp1*, and *prd* in *btd*, *eve*, and *prd* mutants. Asterisks indicate altered expression patterns. The phenotypes were consistent across 5 experiment in *btd* mutants (20 embryos), 2 experiments in *eve* mutants (12 embryos), and 2 experiments in *prd* mutants (12 embryos). Scale bars = 50\ µm.
+**a**, Expression of *btd*, *eve*, *slp1*, and *prd* in *btd*, *eve*, and *prd* mutants. Asterisks indicate altered expression patterns. Scale bars = 50\ µm.
 **b**, Profile views of **g** showing the altered gene expression patterns (asterisks) of epithelial cells at the head--trunk boundary of cephalic furrow mutants. Scale bars = 20\ µm.
 **c**, Lateral views of *btd*, *eve*, and *slp1* expression in *btd*, *eve*, and *prd* mutants after gastrulation. Scale bars = 50\ µm.
 ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
@@ -865,11 +865,11 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ## Extended Data Fig. 9
 
-![Genetic patterning of the head--trunk boundary in other dipteran species. The patterns were highly consistent across experiments as indicated in {@fig:genetic-patterning}j.
+![Genetic patterning of the head--trunk boundary in other dipteran species.
 **a**, Expression of *slp1*, *eve*, and *btd* in *Ceratitis* developmental stages before gastrulation. Scale bars = 100\ µm.
 **b**, Expression of *slp2*, *eve*, and *btd* in *Anopheles* developmental stages before gastrulation. Scale bars = 50\ µm.
 **c**, Expression of *slp1*, *eve*, and *btd* in *Clogmia* developmental stages before gastrulation. Scale bars = 50\ µm.
-**d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* before gastrulation. The patterns were consistent among the 20 embryos analyzed (1 experiment). Scale bars = 50\ µm.
+**d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* before gastrulation. Scale bars = 50\ µm.
 **e**, Expression of *slp1*, *eve*, and *prd* at the head--trunk boundary of *Clogmia* showing a lateral and profile views of the epithelium. Scale bars = 20\ µm.
 ](figures/FigED9.jpg){#fig:genetic-comparative tag="Extended Data Fig. 9" width=100%}
 
