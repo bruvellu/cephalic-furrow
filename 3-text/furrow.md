@@ -780,8 +780,8 @@ In **f** and **g** plots, the line and shaded area represent the mean predicted 
 <!--TODO: Add more contents to this figure-->
 
 ![Developmental sequence of *stg* mutants.
-**a**, Lateral 3D renderings of *stg* homozygotes. They show no cell divisions after gastrulation, but the early morphogenetic movements of gastrulation occur normally. Asterisks indicate mitotic domains in controls. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. The phenotype was highly consistent across 2 independent experiments in *stg* mutants (29 embryos). Scale bar = 50\ µm.
-**b**, Optical slice of profile views in *stg* homozygotes. The initiator cell behaviors are not perturbed and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos. The phenotype was highly consistent in *stg* samples (1 experiment, 29 embryos). Scale bar = 20\ µm.
+**a**, Lateral 3D renderings of *stg* homozygotes. Embryos show no cell divisions after gastrulation, but the early morphogenetic movements occur normally. Asterisks indicate mitotic domains in controls. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. Scale bar = 50\ µm.
+**b**, Optical slice of profile views in *stg* homozygotes. The initiator cell behaviors are not perturbed and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos. Scale bar = 20\ µm.
 ](figures/FigED4.jpg){#fig:live-details tag="Extended Data Fig. 4" width=100%}
 
 \newpage
@@ -819,7 +819,7 @@ In **f** and **g** plots, the line and shaded area represent the mean predicted 
 
 ![Analyses of *slp* mutants in *Drosophila*.
 **a**, Lateral view of *slp* mutants at the onset of initiator cell behavior. Cephalic furrow formation is delayed and shifted forward. Scale bars = 50\ µm.
-**b**, Position of the cephalic furrow (CF) and germ band (GB) in *slp* mutants. CF is displaced anteriorly and GB is further extended (p<0.001) between heterozygotes (n=26) and homozygotes (n=7). Asterisks indicate p<0.05 in a two-sided Mann--Whitney *U* test. Box plot center depicts the median, lower and upper hinges correspond to first and third quartiles, and whiskers extend until 1.5 times the inter-quartile range.
+**b**, Position of the cephalic furrow (CF) and germ band (GB) in *slp* mutants. CF is displaced anteriorly and GB is further extended (p<0.001) between heterozygotes (n=26) and homozygotes (n=7).
 **c**, Expression of *btd* and *eve* in *slp* mutants before gastrulation. Scale bars = 50\ µm.
 **d**, Expression of *btd* and *eve* in the head--trunk boundary of *slp* mutants. Distance between *eve* stripe 1 and 2 (dashed lines) is larger in *slp* embryos. Asterisk indicates ectopic expression of *btd* between acron (ac) and head--trunk (ht) domains. Scale bars = 50\ µm.
 **e**, Dorsal view of expression domains in *slp* mutants. Asterisks indicate ectopic expression of *btd*. Scale bars = 20\ µm.
@@ -879,7 +879,7 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 ## Supplementary Figure 2
 
 ![Complementary analyses of mitotic expansions and strain rate.
-**a**, Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell. Scale bar = 10\ µm. Data from 9 tracked cells on a single *btd* heterozygote embryo. The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.
+**a**, Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell. Scale bar = 10\ µm. Data from 9 tracked cells on a single *btd* heterozygote embryo.
 **b**, Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {!@fig:mitotic-strain}f. Scale bar ≈ 20\ µm.
 ](figures/FigS2.jpg){#fig:apical-strain tag="Supplementary Fig. 2" width=100%}
 
