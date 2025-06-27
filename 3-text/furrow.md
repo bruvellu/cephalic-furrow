@@ -406,17 +406,6 @@ The phenotypes we report in this work were reproducible across multiple independ
 <!--NOTE: +1 experiment/embryo to eve cauterization for lightsheet-->
 <!--NOTE: +1 experiment/embryo to wt cauterization for lightsheet-->
 
-
-<!--TODO: Add experiments by figure panel-->
-
-<!--{@fig:ectopic-folding}c dorsal wt prd btd eve-->
-
-<!--{@fig:mitotic-strain}a lateral wt btd eve-->
-<!--{@fig:mitotic-strain}b lateral wt btd eve-->
-<!--{@fig:mitotic-strain}e lateral btd -->
-<!--{@fig:mitotic-strain}g tissue cuts wt -->
-
-
 ## Data availability
 
 - Main repository with data, analyses, figures, and text source files: [zenodo.org/record/7781947](https://zenodo.org/record/7781947) [@Vellutini2023-ng].
