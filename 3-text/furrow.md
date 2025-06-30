@@ -741,24 +741,20 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 <!--**f**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions of *btd* heterozygotes (n = 3) and homozygotes (n = 3). Filled triangles indicate the beginning of cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EF) formation. MD~i~ shows the initial metaphase expansion and MD~ii~ the moment of cell division during telophase. Empty triangles indicate the peaks of strain rate. Letters A--D show the exact frames from {!@fig:apical-strain}b. The measurements combine isotropic and anisotropic strain rate. The line data shows the mean predicted values from the regression with the shaded area representing the 95% confidence interval of the mean.-->
 <!--**g**, Dynamics of trunk--germ tissues after laser cuts in wildtype embryos. We measured the distance between pairs of cell vertices over time in control (n = 3) and ablated embryos (n = 3). Tracks are color-coded for time. Solid white line represents the distance between vertices at one timepoint. Dashed white line shows the location of the cut. Performing the ablations consistently in different embryos was challenging; we only analyzed embryos where the vitelline envelope remained intact after the laser pulse. The plots show a smoothed local regression of the data with a shaded band indicating the 95% confidence interval for the mean trend. Scale bar = 20\ µm.-->
 
-<!--TODO: Reduce from 330 to 300 words-->
-
 ![Ectopic folding relative to mitotic domains and germ band extension.
-**a**, Representative folding positions (black lines) relative to mitotic domains (colored areas) in wildtype embryos and *btd* and *eve* mutants. Ectopic fold position varies between embryos. Scale bars = 50\ µm.
-**b**, Apical cell area during ectopic folding. White outlines in the top row mark a subset of central non-dividing cells (orange) and outer dividing cells (blue) in the bottom row. Scale bars ≈ 20\ µm.
+**a**, Representative folding positions (black lines) relative to mitotic domains (colored areas) in wildtype, *btd*, and *eve* embryos. Scale bars = 50\ µm.
+**b**, Apical cell area during ectopic folding. White outlines (top row) highlight a subset of non-dividing (orange) and dividing (blue) cells (bottom row). Scale bars ≈ 20\ µm.
 **c**, Mitotic expansion (double arrow) precedes ectopic folding (arrow) in a *btd* mutant. Quantified in **d**. Scale bar = 20\ µm.
-**d**, Timing of cephalic furrow (CF) and ectopic fold (EF) formation relative to mitotic expansion (MD). CF forms before mitotic domains in wildtype (n=16, p<0.001) and heterozygote embryos (n=13, p=0.002, pooled *btd* and *eve*). Ectopic folds form after mitotic domains in homozygote embryos (n=10, p=0.002).
-**e**, Tissue compression in *btd* mutants. The head--trunk (HT) and trunk--germ (TG) regions are outlined. The extent of the phenotype depends on the timing and position of ectopic folds. Scale bars = 50\ µm.
-**f**, Strain rate analysis at the head--trunk (top) and trunk--germ (bottom) regions of *btd* heterozygotes (n=3) and homozygotes (n=3). Filled triangles indicate the beginning of cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EF) formation. MD~i~ marks the initial metaphase expansion and MD~ii~ the moment of cell division during telophase. Empty triangles indicate peaks of strain rate. Letters A--D show the exact frames from {!@fig:apical-strain}b. Measurements combine isotropic and anisotropic strain rate.
-**g**, Dynamics of trunk--germ tissues after laser cuts in wildtype embryos. We measured the distance between pairs of cell vertices over time in control (n=3) and ablated embryos (n=3). Tracks are color-coded for time (rainbow). Solid white line represents distance between vertices at one timepoint. Dashed white line shows the cut location. Scale bar = 20\ µm.
+**d**, Time of cephalic furrow (CF) and ectopic fold (EF) formation relative to mitotic expansion (MD). Cephalic furrow forms before mitotic domains in wildtype (n=16, p<0.001) and heterozygote embryos (n=13, p=0.002, pooled *btd* and *eve*). Ectopic folds form after mitotic domains in homozygote embryos (n=10, p=0.002).
+**e**, Tissue compression around the head--trunk (HT) and trunk--germ (TG) regions (white outlines) in *btd* mutants. Scale bars = 50\ µm.
+**f**, Strain rate at head--trunk (top) and trunk--germ (bottom) regions in *btd* heterozygotes (n=3) and homozygotes (n=3). Filled triangles mark the start of cephalic furrow (CF), mitotic domain (MD), and ectopic fold (EF) formation. Metaphase expansion (MD~i~) precedes ectopic folding. Telophase (MD~ii~) coincides with strain rate peak (empty triangles) in homozygotes. Lines A--D represent exact frames from {!@fig:apical-strain}b. Measurements combine isotropic and anisotropic strain rate.
+**g**, Dynamics of trunk--germ tissues after laser cuts in wildtype embryos. Color-coded tracks (rainbow) show the distance between pairs of cell vertices (solid white line) in control (n=3) and ablated embryos (n=3). Dashed white line indicates the cut location. Plot values are relative to the initial distance. Scale bar = 20\ µm.
 In **f** and **g** plots, the line and shaded area represent the mean predicted values from the regression and a 95% confidence interval, respectively.
 ](figures/FigED3.jpg){#fig:mitotic-strain tag="Extended Data Fig. 3" width=100%}
 
 \newpage
 
 ## Extended Data Fig. 4
-
-<!--TODO: Add more contents to this figure-->
 
 ![Developmental sequence of *stg* mutants.
 **a**, Lateral 3D renderings of *stg* homozygotes. Embryos show no cell divisions after gastrulation, but the early morphogenetic movements occur normally. Asterisks indicate mitotic domains in controls. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. Scale bar = 50\ µm.
