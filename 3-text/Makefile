@@ -50,7 +50,7 @@ PDFVARS=-V fontfamily:libertine -V linestretch:1 -V geometry:bindingoffset=2mm -
 HTMLVARS=--standalone --mathml
 
 # Main rule
-all: clean figs vids refs text cloud
+all: clean figs vids data refs text cloud
 
 # Cleanup figure directory before compiling
 clean:
@@ -86,6 +86,11 @@ figs:
 	# Make JPGs smaller for compilation and sharing
 	#mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
+
+# Copy source data files to source directory
+data:
+	ln -sf ${FIGSRC}/ectopic-folding/source.xlsx ${FIGHIR}/Source_Fig1.xlsx
+	ln -sf ${FIGSRC}/live-experiments/source.xlsx ${FIGHIR}/Source_Fig2.xlsx
 
 # Copy high-resolution PDF files to source directory
 pdfs:
