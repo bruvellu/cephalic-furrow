@@ -7,7 +7,7 @@ creation: May 26, 2021
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/germband-cauterizations")
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/germband-cauterizations")
 library(ggplot2)
 library(ggbeeswarm)
 ```
@@ -63,7 +63,11 @@ for (d in 1:length(datafiles)) {
   datasets <- rbind(datasets, tmpdf)
 }
 
+# Write data frame to file
+write.csv(datasets, file = "tortuosity.csv", row.names = FALSE)
+
 ```
+
 ## Print summary
 
 ```{r summary}
@@ -98,7 +102,7 @@ colnames(stats) <- c("stock", "sample", "n_folds", "n_embryos")
 stats[, 3:4] <- apply(stats[, 3:4], 2, as.numeric)
 
 # Write table to file
-write.table(format(stats, digits=2), file = "tort-stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+write.csv(format(stats, digits=2), file = "tort-stats.csv", row.names = FALSE)
 print(stats)
 ```
 

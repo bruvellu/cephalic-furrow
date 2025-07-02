@@ -1,5 +1,0 @@
-stock	sample	n_folds	n_embryos
-btd	control	4	2
-btd	cauterized	7	4
-eve	control	6	3
-eve	cauterized	8	4
