@@ -934,7 +934,7 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ## Supplementary Figure 1
 
-![Individual variability of ectopic folding in *btd* and *eve* mutants. Cephalic furrow and ectopic folds are traced in white lines. The combined views illustrate the position of folding overlaid over a single embryo after embryo registration.
+![Individual variability of ectopic folding in *btd* and *eve* mutants. Cephalic furrow and ectopic folds are traced in white lines. The combined views illustrate the position of folding overlaid over a single embryo after embryo registration. Scale bars = 50\ µm.
 ](figures/FigS1.jpg){#fig:ectopic-variability tag="Supplementary Fig. 1" width=100%}
 
 \newpage
