@@ -1,0 +1,133 @@
+---
+title: "Angle/Tortuosity analysis of fold traces"
+author: "Bruno C. Vellutini"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+creation: July 21, 2021
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/ectopic-variability")
+library(ggplot2)
+library(ggbeeswarm)
+```
+
+## Load measurements
+
+```{r load}
+# Load raw ROI measurements from ImageJ
+results <- read.csv("7-plots/combined_source.csv")
+results <- results[, -c(1, 2)]
+colnames(results) <-  c("time", "angle", "tortuosity", "angle_diff", "type")
+results$type[results$type == "WT"] <- "control"
+results$type[results$type == "Btd"] <- "btd"
+results <- results[results$time <=30, ]
+
+# Factor
+results$type <- factor(results$type, levels = c("control", "btd"))
+# Write table to file
+write.csv(results, file = "angle_tortuosity.csv", row.names = FALSE)
+```
+
+## Print summary
+
+```{r summary}
+# Automatically aggregate data by columns
+stats <- aggregate(
+  cbind(angle, tortuosity, angle_diff) ~ type + time,
+  results,
+  function(x)
+    c(
+      count = length(x),
+      mean = mean(x),
+      sd = sd(x))
+  )
+
+# Makes column names nicer
+stats <- do.call(data.frame, stats)
+
+# Order rows by something meaningful (and re-index)
+stats <- stats[order(stats$type, stats$time),]
+rownames(stats) <- 1:nrow(stats)
+
+# Write table to file
+write.csv(format(stats, digits=2), file = "stats.csv", row.names = FALSE)
+print(stats)
+```
+
+
+## Plot angle faceted boxplot
+
+```{r angle-facet-boxplot}
+# Plot stocks separately using bars side by side
+ggplot(results, aes(time, angle, fill = type, group = interaction(time, type))) +
+  geom_boxplot(aes(color = type), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 1)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "minutes", y = "angle") +
+  facet_grid(cols = vars(type), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("7-plots/angle_facet_boxplot.png", width = 20, height = 5)
+ggsave("7-plots/angle_facet_boxplot.svg", width = 20, height = 5)
+```
+
+## Plot angle faceted smooth
+
+```{r angle-facet-smooth}
+# Plot stocks separately using lines vertically
+ggplot(results, aes(time, angle, color = type)) +
+  geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = type)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "minutes", y = "angle") +
+  facet_grid(cols = vars(type), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 40),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("7-plots/angle_facet_smooth.png", width = 18, height = 6)
+ggsave("7-plots/angle_facet_smooth.svg", width = 18, height = 6)
+```
+
+## Plot tortuosity faceted boxplot
+
+```{r tort-facet-boxplot}
+# Plot stocks separately using bars side by side
+ggplot(results, aes(time, tortuosity, fill = type, group = interaction(time, type))) +
+  geom_boxplot(aes(color = type), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 2, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 1)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "minutes", y = "tortuosity") +
+  facet_grid(cols = vars(type), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text =  element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("7-plots/tortuosity_facet_boxplot.png", width = 21, height = 5)
+ggsave("7-plots/tortuosity_facet_boxplot.svg", width = 21, height = 5)
+```
+
+## Plot tortuosity faceted smooth
+
+```{r tort-facet-smooth}
+# Plot stocks separately using lines vertically
+ggplot(results, aes(time, tortuosity, color = type)) +
+  geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = type)) +
+  scale_fill_manual(values=c("#56b4e9", "#e69f03")) +
+  scale_color_manual(values=c("#56b4e9", "#e69f03")) +
+  labs(x = "minutes", y = "tortuosity") +
+  facet_grid(cols = vars(type), scales = "free") +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 40),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("7-plots/tortuosity_facet_smooth.png", width = 18, height = 6)
+ggsave("7-plots/tortuosity_facet_smooth.svg", width = 18, height = 6)
+```
