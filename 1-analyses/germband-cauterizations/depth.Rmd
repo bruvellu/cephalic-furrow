@@ -1,5 +1,5 @@
 ---
-title: "Cephalic furrow depth in wildtype cauterizations"
+title: "Cephalic furrow depth in wildtype/heterozygote cauterizations"
 author: "Bruno C. Vellutini"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 creation: April 06, 2021
@@ -20,6 +20,9 @@ results <- read.csv("1-wt/Lengths.csv")
 
 # Discard cauterized embryo where the GB wasn't blocked from extending
 results <- results[results$Embryo != "2021-03-24_E5",]
+
+# Write data frame to file
+write.csv(results, file = "depth.csv", row.names = FALSE)
 ```
 
 ## Print summary
@@ -71,7 +74,7 @@ stats[, 3:5] <- apply(stats[, 3:5], 2, as.numeric)
 stats[, 3:4] <- round(stats[, 3:4], digits=1)
 
 # Write table to file
-write.table(format(stats, digits=2), file = "wt-stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+write.csv(format(stats, digits=2), file = "wt-stats.csv", row.names = FALSE)
 print(stats)
 ```
 
@@ -136,6 +139,9 @@ samples <- unique(results[, c("Stock", "Embryo", "Sample")])
 # Merge datasets
 means <- merge(samples, embryo_cf_mean, by = "Embryo", all.x = TRUE)
 means <- merge(means, embryo_cf_sd, by = "Embryo", all.x = TRUE)
+
+# Write to file
+write.csv(means, file = "means.csv", row.names = FALSE)
 
 # Summary by sample
 by(means[means$Sample == "control", c("Mean", "SD")], means[means$Sample == "control",]$Stock, summary)
@@ -254,9 +260,4 @@ tests <- rbind(tests, as.data.frame(t(test_row)))
 
 write.csv(tests, file = "wt-tests.csv", row.names = FALSE)
 ```
-
-
-
-
-
 

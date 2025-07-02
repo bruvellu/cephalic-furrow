@@ -55,5 +55,5 @@ We accessed the influence of the germ band to cephalic furrow formation by measu
 4. Measure the line and repeat the procedure for the left side.
 5. After annotating all stacks, save the ROIs as a RoiSet.
 6. Compile measurements to [Lengths.csv](1-wt/Lengths.csv).
-7. Process and plot in R using [wtdepth.Rmd](wtdepth.Rmd).
+7. Process and plot in R using [depth.Rmd](depth.Rmd).
 
