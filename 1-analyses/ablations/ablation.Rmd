@@ -7,7 +7,7 @@ creation: April 06, 2021
   
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/ablations")
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/ablations")
 library(ggplot2)
 library(ggbeeswarm)
 ```
@@ -18,6 +18,8 @@ library(ggbeeswarm)
 # Load raw ROI measurements from ImageJ
 ablations <- read.csv("ablation-data.csv", stringsAsFactors = TRUE)
 levels(ablations$Stage) <- c("early", "mid", "late")
+# Save long data frame to file
+write.csv(ablations, file = "ablations.csv", row.names = FALSE)
 ```
 
 ## Summarize by stage and position
@@ -75,7 +77,7 @@ stats[, 4:7] <- apply(stats[, 4:7], 2, as.numeric)
 stats[, 4:5] <- round(stats[, 4:5], digits=10)
 
 # Write table to file
-write.table(format(stats, digits=10), file = "stats.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+write.csv(format(stats, digits=10), file = "stats.csv", row.names = FALSE)
 print(stats)
 ```
 
@@ -142,6 +144,9 @@ means[means$Distance >= -20 & means$Distance < 0,]$Distance <- -20
 means[means$Distance >= -40 & means$Distance < -20,]$Distance <- -40
 means$Distance <- as.factor(means$Distance)
 
+# Save data frame to file
+write.csv(means, file = "means.csv", row.names = FALSE)
+
 # Save stats to data frame
 dists <- data.frame()
 
@@ -169,7 +174,7 @@ dists[, 4:7] <- apply(dists[, 4:7], 2, as.numeric)
 dists[, 4:5] <- round(dists[, 4:5], digits=10)
 
 # Write table to file
-write.table(format(dists, digits=10), file = "means.txt", quote = FALSE, row.names = FALSE, sep = "\t")
+write.csv(format(dists, digits=10), file = "dists.csv", row.names = FALSE)
 print(dists)
 ```
 
