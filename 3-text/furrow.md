@@ -993,18 +993,11 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ## Supplementary Figure 3
 
-<!--TODO: Re-plot ablation plots-->
-<!--TODO: Fix the legend of ablations-->
-
-![Laser ablations around the cephalic furrow in wildtype embryos.
-**a**, 
-**b**, 
-**c**, 
-
-**i**, Cell membrane recoil velocity after laser ablation around the cephalic furrow in gastrulating wildtype embryos. Anterior cuts (green) for early (n=11), mid (n=13), and late (n=12) stage 6, and posterior cuts (magenta) for early (n=7), mid (n=14), and late (n=10) stage 6.
-
-**i**, Recoil velocity of laser ablations around the cephalic furrow at stage 6. The average recoil of anterior cuts increases with time for early (n = 11), mid (n = 13), and late (n = 12) stages. In posterior cuts, it increases between early (n = 7) and mid (n = 14) stages and decreases in the late stage (n = 10). The average recoil velocity is higher closer to the initiator cells (20\ µm). The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.
-
+![Laser ablations around initiator cells in wildtype embryos.
+The plots show the recoil velocity of cell membranes after laser ablation.
+**a**, Recoil velocity aggregated by early (n=20), mid (n=34), and late (n=24) stage 6.
+**b**, Recoil velocity split into cuts anterior and posterior to the initiator cells in early (n=12, n=9), mid (n=15, n=18), and late (n=14, n=10) stage 6.
+**c**, Average recoil velocity by 20\ µm distance classes for early anterior (n=3, n=8) and posterior (n=7, n=0), mid anterior (n=4, n=8) and posterior (n=10, n=4), and late anterior (n=4, n=7) and posterior (n=6, n=3) stage 6.
 ](figures/FigS3.jpg){#fig:ablations tag="Supplementary Fig. 3" width=100%}
 
 \newpage

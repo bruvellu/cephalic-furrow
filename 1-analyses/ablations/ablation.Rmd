@@ -86,16 +86,16 @@ print(stats)
 ```{r recoil-stage}
 ggplot(ablations, aes(Stage, Velocity)) +
   geom_boxplot(aes(color = "#e69f03", fill = "#e69f03"), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.9, position = position_dodge(width = 1.0)) +
-  geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 2)) +
+  geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 3)) +
   labs(x = "stage", y = "velocity (µm/s)") +
   scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
   scale_color_manual(values=c("#e69f03", "#56b4e9")) +
-  scale_y_continuous(limits = c(0, 0.25)) +
+  scale_y_continuous(limits = c(-0.01, 0.25)) +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 30),
+  theme(text = element_text(size = 45),
         panel.background = element_rect(colour = "black", linewidth = 1))
-ggsave("3-plots/recoil-stage.png", width = 14, height = 7)
-ggsave("3-plots/recoil-stage.svg", width = 14, height = 7)
+ggsave("3-plots/recoil-stage.png", width = 10, height = 7)
+ggsave("3-plots/recoil-stage.svg", width = 10, height = 7)
 ```
 
 ## Plot velocity by stage
@@ -108,15 +108,15 @@ ggplot(ablations, aes(Position, Velocity, fill = Position)) +
   scale_fill_manual(values=c("#009966", "#cc79a7")) +
   scale_color_manual(values=c("#009966", "#cc79a7")) +
   facet_grid(cols = vars(Stage), scales = "free") +
-  scale_y_continuous(limits = c(0, 0.25)) +
+  scale_y_continuous(limits = c(-0.01, 0.25)) +
   theme_classic(base_family = "DejaVu Sans") +
   theme(text = element_text(size = 45),
         strip.background = element_blank(),
         strip.placement = "outside",
-        strip.text.x = element_text(size = 55),
+        strip.text.x = element_text(size = 45),
         panel.background = element_rect(colour = "black", linewidth = 1))
-ggsave("3-plots/recoil-stage-position.png", width = 14, height = 7)
-ggsave("3-plots/recoil-stage-position.svg", width = 14, height = 7)
+ggsave("3-plots/recoil-stage-position.png", width = 17, height = 7)
+ggsave("3-plots/recoil-stage-position.svg", width = 17, height = 7)
 ```
 
 ## Calculate means and distance classes
@@ -184,7 +184,7 @@ print(dists)
 ggplot(means, aes(Distance, Velocity, group = Distance, fill = Position)) +
   geom_boxplot(aes(color = Position), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.8, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 4)) +
-  scale_y_continuous(limits = c(-0.008, 0.25)) +
+  scale_y_continuous(limits = c(-0.01, 0.25)) +
   facet_wrap(~Stage) +
   labs(x = "distance (µm)", y = "velocity (µm/s)") +
   scale_fill_manual(values=c("#009966", "#cc79a7")) +
@@ -193,9 +193,9 @@ ggplot(means, aes(Distance, Velocity, group = Distance, fill = Position)) +
   theme(text = element_text(size = 45),
         strip.background = element_blank(),
         strip.placement = "outside",
-        strip.text.x = element_text(size = 55),
+        strip.text.x = element_text(size = 45),
         panel.background = element_rect(colour = "black", linewidth = 1))
-ggsave("3-plots/recoil-stage-distance.png", width = 14, height = 7)
-ggsave("3-plots/recoil-stage-distance.svg", width = 14, height = 7)
+ggsave("3-plots/recoil-stage-distance.png", width = 18, height = 7)
+ggsave("3-plots/recoil-stage-distance.svg", width = 18, height = 7)
 ```
 
