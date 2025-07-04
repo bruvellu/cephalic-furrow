@@ -146,7 +146,7 @@ To estimate the forces acting on the buckling tissue, we measured the rate of ti
 
 <!--TODO: Move trunk--germ strain rate panel to extended data-->
 
-At the trunk--germ interface, the cells between MD6 and the extending germ band become increasingly anisotropic ({@fig:mitogerm-experiments}f). We find that the strain rate in this region steadily increases over time ({!@fig:mitotic-strain}f), suggesting that the tissue is under compression. To test this hypothesis, we performed laser cuts at the trunk--germ interface in wildtype embryos. We ablated the apical membrane of multiple cells (3--4) with cuts oriented orthogonal to the direction of the germ band extension, and then tracked the distance between non-ablated cells on each side of the cut ({@fig:mitogerm-experiments}h). This distance remains constant in uncut control embryos, but decreases over the first five minutes after the cut ({!@fig:mitogerm-experiments}h). This is evidence that the tissue may be “collapsing on itself” after the ablation, which supports the hypothesis that the trunk--germ interface is under compression from the extending germ band.
+At the trunk--germ interface, the cells between MD6 and the extending germ band become increasingly anisotropic ({@fig:mitogerm-experiments}f). We find that the strain rate in this region steadily increases over time ({!@fig:apical-strain}c), suggesting that the tissue is under compression. To test this hypothesis, we performed laser cuts at the trunk--germ interface in wildtype embryos. We ablated the apical membrane of multiple cells (3--4) with cuts oriented orthogonal to the direction of the germ band extension, and then tracked the distance between non-ablated cells on each side of the cut ({@fig:mitogerm-experiments}h). This distance remains constant in uncut control embryos, but decreases over the first five minutes after the cut ({!@fig:mitogerm-experiments}h). This is evidence that the tissue may be “collapsing on itself” after the ablation, which supports the hypothesis that the trunk--germ interface is under compression from the extending germ band.
 
 Taken together, these analyses suggest the mitotic expansions and germ band extension are potential sources of compressive stress capable of inducing tissue buckling, and thus could contribute to the formation of ectopic folds at the head--trunk boundary during gastrulation.
 
@@ -473,7 +473,7 @@ We created illustrations and assembled the final figure plates using Inkscape v1
 
 In all box plots, the center represents the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range. Asterisks in plots indicate p<0.05 in a two-sided Mann--Whitney *U* test contrasting the condition against wildtype; exceptions are described in figure legends. We report p values rounded to three decimal places and show values lower than 0.001 as p<0.001; the exact values with full decimal places for each contrast are available in the data repository [@Vellutini2023-ng].
 
-The phenotypes we report in this work were reproducible across multiple independent experiments. For the live imaging, we performed 7 experiments in *btd* mutants (total of 50 embryos), 5 experiments in *eve* mutants (total of 36 embryos), 3 experiments in *prd* mutants (total of 41 embryos) ({@fig:ectopic-folding}b,c,f,g, {@fig:live-experiments}b, {!@fig:initiator}a,b, {!@fig:ectopic-features}a,b,h,k,l, {!@fig:mitotic-strain}a--c,e). The phenotypes were also consistent across 6 experiments in *slp* mutants (total of 39 embryos) ({!@fig:slp-analyses}a,g), 3 experiments in *stg* mutants (total of 46 embryos) ({@fig:live-experiments}a, {!@fig:live-features}a,b), 6 experiments in *btd--eve* double mutants (total of 35 embryos) ({@fig:live-experiments}c), and 2 experiments in wildtype embryos (total of 36 embryos) ({@fig:ectopic-folding}c, {!@fig:ectopic-features}k,l,m, {!@fig:mitotic-strain}a). For the germ band cauterization, we performed 6 experiments in *btd* mutants (total of 10 embryos) ({@fig:live-experiments}h), 5 experiments in *eve* mutants (total of 10 embryos) ({@fig:live-experiments}f--h), and 8 experiments in wildtype embryos (total of 12 embryos) ({@fig:live-experiments}d,e). For the gene expression, the wildtype patterns of *btd*, *eve*, and *slp* were highly consistent across 3 experiments in *Drosophila* (total of 26 embryos) ({@fig:genetic-patterning}a--d,g, {!@fig:genetic-features}a), 3 experiments in *Ceratitis* (total of 38 embryos), 4 experiments in *Anopheles* (total of 43 embryos), and 4 experiments in *Clogmia* (total of 44 embryos) ({@fig:genetic-patterning}f--h, {!@fig:genetic-comparative}a--c). We also obtained consistent patterns of *prd* expression among 4 experiments in *Drosophila* (total of 10 embryos) ({@fig:genetic-patterning}c, {!@fig:genetic-features}b,c) and 1 experiment in *Clogmia* (total of 20 embryos) ({!@fig:genetic-comparative}d,e). The expression patterns in mutant embryos were repeatable across 4 independent experiments in *slp* mutants (total of 30 embryos) ({!@fig:slp-analyses}c--f,h), 5 experiment in *btd* mutants (total of 20 embryos), 2 experiments in *eve* mutants (total of 12 embryos), and 2 experiments in *prd* mutants (total of 12 embryos) ({!@fig:mutant-expression}a--c).
+The phenotypes we report in this work were reproducible across multiple independent experiments. For the live imaging, we performed 7 experiments in *btd* mutants (total of 50 embryos), 5 experiments in *eve* mutants (total of 36 embryos), 3 experiments in *prd* mutants (total of 41 embryos) ({@fig:ectopic-folding}b,c,f,g, {@fig:live-experiments}b, {!@fig:initiator}a,b, {!@fig:ectopic-features}a,b,h,k,l, {@fig:mitogerm-experiments}a--c,f). The phenotypes were also consistent across 6 experiments in *slp* mutants (total of 39 embryos) ({!@fig:slp-analyses}a,g), 3 experiments in *stg* mutants (total of 46 embryos) ({@fig:live-experiments}a, {!@fig:live-features}a,b), 6 experiments in *btd--eve* double mutants (total of 35 embryos) ({@fig:live-experiments}c), and 2 experiments in wildtype embryos (total of 36 embryos) ({@fig:ectopic-folding}c, {!@fig:ectopic-features}k,l,m, {!@fig:mitogerm-experiments}a). For the germ band cauterization, we performed 6 experiments in *btd* mutants (total of 10 embryos) ({@fig:live-experiments}h), 5 experiments in *eve* mutants (total of 10 embryos) ({@fig:live-experiments}f--h), and 8 experiments in wildtype embryos (total of 12 embryos) ({@fig:live-experiments}d,e). For the gene expression, the wildtype patterns of *btd*, *eve*, and *slp* were highly consistent across 3 experiments in *Drosophila* (total of 26 embryos) ({@fig:genetic-patterning}a--d,g, {!@fig:genetic-features}a), 3 experiments in *Ceratitis* (total of 38 embryos), 4 experiments in *Anopheles* (total of 43 embryos), and 4 experiments in *Clogmia* (total of 44 embryos) ({@fig:genetic-patterning}f--h, {!@fig:genetic-comparative}a--c). We also obtained consistent patterns of *prd* expression among 4 experiments in *Drosophila* (total of 10 embryos) ({@fig:genetic-patterning}c, {!@fig:genetic-features}b,c) and 1 experiment in *Clogmia* (total of 20 embryos) ({!@fig:genetic-comparative}d,e). The expression patterns in mutant embryos were repeatable across 4 independent experiments in *slp* mutants (total of 30 embryos) ({!@fig:slp-analyses}c--f,h), 5 experiment in *btd* mutants (total of 20 embryos), 2 experiments in *eve* mutants (total of 12 embryos), and 2 experiments in *prd* mutants (total of 12 embryos) ({!@fig:mutant-expression}a--c).
 
 <!--NOTE: +1 experiment/embryo to eve cauterization for lightsheet-->
 <!--NOTE: +1 experiment/embryo to wt cauterization for lightsheet-->
@@ -582,19 +582,6 @@ In **g**, **h**, and **g** panels, the line and shaded area represent the mean p
 <!--TODO: Move the trunk--germ legend to extended data-->
 <!--**f**, Strain rate at head--trunk (top) and trunk--germ (bottom) regions in *btd* heterozygotes (n=3) and homozygotes (n=3). Filled triangles mark the start of cephalic furrow (CF), mitotic domain (MD), and ectopic fold (EF) formation. Metaphase expansion (MD~i~) precedes ectopic folding. Telophase (MD~ii~) coincides with strain rate peak (empty triangles) in homozygotes. Lines A--D represent exact frames from {!@fig:apical-strain}b. Measurements combine isotropic and anisotropic strain rate.-->
 
-![Experiments in cephalic furrow mutants *in vivo*.
-**a**, Lateral and profile views of *stg* mutants. Scale bars = 50\ µm.
-**b**, Lateral and profile views of *btd* mutants. Scale bars = 50\ µm.
-**c**, Lateral and profile views of *btd--stg* double mutants. Scale bar = 50\ µm.
-**d**, Germ band cauterization (orange) in wildtype embryo under multiview lightsheet microscopy. We quantified and corroborated the phenotype under confocal microscopy (see **h**). Scale bar = 50\ µm.
-**e**, Cephalic furrow in non-cauterized and cauterized wildtype embryos. See **j** for quantification. Scale bar = 20\ µm.
-**f**, Germ band cauterization (orange) in *eve* mutant under multiview lightsheet microscopy. We quantified and corroborated the phenotype under confocal microscopy (**h**). Scale bar = 50\ µm.
-**g**, Inset from **f** showing compressed non-dividing cells between mitotic domains. Scale bar = 50\ µm.
-**h** Germ band cauterizations in *btd* and *eve* mutants under confocal microscopy showing the traces of epithelial deformations over time. Scale bars = 20\ µm.
-**i**, Cell membrane recoil velocity after laser ablation around the cephalic furrow in gastrulating wildtype embryos. Anterior cuts (green) for early (n=11), mid (n=13), and late (n=12) stage 6, and posterior cuts (magenta) for early (n=7), mid (n=14), and late (n=10) stage 6.
-**j**, Maximum depth of the cephalic furrow with germ band cauterization (pooled wildtype and heterozygote embryos). Non-cauterized (n=7, from wt=3, *btd*=1, *eve*=3) and cauterized (n=3, from wt=2 and *btd*=1). Fold in cauterized embryos is 15% shallower, but the difference is not statistically significant (p=0.058, one-sided Mann--Whitney *U* test).
-**k**, Tortuosity of epithelial traces in cauterized mutants from **h**. *btd* non-cauterized (n=2) and cauterized (n=3), and *eve* non-cauterized (n=3) and cauterized (n=4). Plots show mean predicted values from regression with a 95% confidence interval shaded band.
-](figures/Fig2.jpg){#fig:live-experiments width=100%}
 
 \newpage
 
@@ -872,6 +859,20 @@ In **f** and **g** plots, the line and shaded area represent the mean predicted 
 **b**, Optical slice of profile views in *stg* homozygotes. The initiator cell behaviors are not perturbed and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos. Scale bar = 20\ µm.
 ](figures/FigED4.jpg){#fig:live-features tag="Extended Data Fig. 4" width=100%}
 
+![Experiments in cephalic furrow mutants *in vivo*.
+**a**, Lateral and profile views of *stg* mutants. Scale bars = 50\ µm.
+**b**, Lateral and profile views of *btd* mutants. Scale bars = 50\ µm.
+**c**, Lateral and profile views of *btd--stg* double mutants. Scale bar = 50\ µm.
+**d**, Germ band cauterization (orange) in wildtype embryo under multiview lightsheet microscopy. We quantified and corroborated the phenotype under confocal microscopy (see **h**). Scale bar = 50\ µm.
+**e**, Cephalic furrow in non-cauterized and cauterized wildtype embryos. See **j** for quantification. Scale bar = 20\ µm.
+**f**, Germ band cauterization (orange) in *eve* mutant under multiview lightsheet microscopy. We quantified and corroborated the phenotype under confocal microscopy (**h**). Scale bar = 50\ µm.
+**g**, Inset from **f** showing compressed non-dividing cells between mitotic domains. Scale bar = 50\ µm.
+**h** Germ band cauterizations in *btd* and *eve* mutants under confocal microscopy showing the traces of epithelial deformations over time. Scale bars = 20\ µm.
+**i**, Cell membrane recoil velocity after laser ablation around the cephalic furrow in gastrulating wildtype embryos. Anterior cuts (green) for early (n=11), mid (n=13), and late (n=12) stage 6, and posterior cuts (magenta) for early (n=7), mid (n=14), and late (n=10) stage 6.
+**j**, Maximum depth of the cephalic furrow with germ band cauterization (pooled wildtype and heterozygote embryos). Non-cauterized (n=7, from wt=3, *btd*=1, *eve*=3) and cauterized (n=3, from wt=2 and *btd*=1). Fold in cauterized embryos is 15% shallower, but the difference is not statistically significant (p=0.058, one-sided Mann--Whitney *U* test).
+**k**, Tortuosity of epithelial traces in cauterized mutants from **h**. *btd* non-cauterized (n=2) and cauterized (n=3), and *eve* non-cauterized (n=3) and cauterized (n=4). Plots show mean predicted values from regression with a 95% confidence interval shaded band.
+](figures/Fig2.jpg){#fig:live-experiments width=100%}
+
 \newpage
 
 ## Extended Data Fig. 5
@@ -968,17 +969,18 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ## Supplementary Figure 2
 
-<!--TODO: Move strain rate visualization to extended data?-->
-
-![Complementary analyses of mitotic expansions and strain rate.
-**a**, Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell. Scale bar = 10\ µm. Data from 9 tracked cells on a single *btd* heterozygote embryo.
-**b**, Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {!@fig:mitotic-strain}f. Scale bar ≈ 20\ µm.
-](figures/FigS2.jpg){#fig:apical-strain tag="Supplementary Fig. 2" width=100%}
-
+<!--TODO: Fix panel arrangement-->
 <!--TODO: Re-plot apical area expansion using manuscript style-->
 <!--TODO: Convert area from px to µm-->
 <!--TODO: Add values to plot to be more informative-->
 <!--TODO: Add scale bar-->
+
+![Complementary analyses of mitotic expansions and strain rate.
+**a**, Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell. Scale bar = 10\ µm. Data from 9 tracked cells on a single *btd* heterozygote embryo.
+**b**, Strain rate analysis in *btd* mutants. Cropped region of cartographic projections of *btd* sibling controls (top, n=3) and homozygote embryos (bottom, n=3). The membrane marker (Gap43-mCherry) is overlayed with a heatmap indicating the regions of increased strain rate in the tissue. The value is the sum of isotropic and anisotropic strain rates obtained through a particle image velocimetry analysis. We used the strain rates in the regions outlined as head--trunk and trunk--germ to generate the plot in {!@fig:mitogerm-experiments}g. Scale bar ≈ 20\ µm.
+**c**, Strain rate at the trunk--germ region in *btd* heterozygotes (n=3) and homozygotes (n=3). Lines A--D represent exact frames from **b**. Measurements combine isotropic and anisotropic strain rate.
+](figures/FigS2.jpg){#fig:apical-strain tag="Supplementary Fig. 2" width=100%}
+
 
 \newpage
 
