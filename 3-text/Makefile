@@ -64,7 +64,7 @@ clean:
 figs:
 	# Main figures
 	ln -sf ${FIGSRC}/ectopic-folding/figure.png ${FIGHIR}/Fig1.png
-	ln -sf ${FIGSRC}/live-experiments/figure.png ${FIGHIR}/Fig2.png
+	ln -sf ${FIGSRC}/mitogerm-experiments/figure.png ${FIGHIR}/Fig2.png
 	ln -sf ${FIGSRC}/fold-model/figure.png ${FIGHIR}/Fig3.png
 	ln -sf ${FIGSRC}/genetic-patterning/figure.png ${FIGHIR}/Fig4.png
 	ln -sf ${FIGSRC}/summary/figure.png ${FIGHIR}/Fig5.png
