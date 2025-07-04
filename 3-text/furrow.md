@@ -560,23 +560,21 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 <!--**j**, Maximum depth of the cephalic furrow in cauterized embryos. We pooled wildtype and heterozygote embryos for non-cauterized (n = 7 total from wt = 3, *btd* = 1, and *eve* = 3) and cauterized (n = 3 total from wt = 2 and *btd* = 1) samples. The cephalic furrow in cauterized embryos is 15% shallower (p = 0.058 in a one-sided Mann--Whitney *U* test). The box plot representation is the same as in **i**.-->
 <!--**k**, Tortuosity of the epithelial traces in non-cauterized (n = 2) and cauterized (n = 3) *btd* embryos, and non-cauterized (n = 3) and cauterized (n = 4) *eve* embryos from **h**. We measured both the left and right sides of each embryo. The plots show the mean predicted values from the regression of each condition with a shaded band indicating the 95% confidence interval for the mean trend.-->
 
-<!--TODO: Reduce legend from 363 to 300 words-->
-
 ![Role of mitotic domains and germ band in ectopic folding.
-**a**, Representative folding positions (black lines) relative to mitotic domains (colored areas) in wildtype, *btd*, and *eve* embryos. Scale bars = 50\ µm.
-**b**, Apical cell area during ectopic folding. White outlines (top row) highlight a subset of non-dividing (orange) and dividing (blue) cells (bottom row). Scale bars ≈ 20\ µm.
-**c**, Mitotic expansion (double arrow) precedes ectopic folding (arrow) in a *btd* mutant. Quantified in **d**. Scale bar = 20\ µm.
+**a**, Folding positions (black lines) relative to mitotic domains in wildtype, *btd*, and *eve* embryos. Scale bars = 50\ µm.
+**b**, Apical cell area during ectopic folding. White outlines highlight a subset of non-dividing (orange) and dividing (blue) cells. Scale bars ≈ 20\ µm.
+**c**, Mitotic expansion preceding ectopic folding (arrow) in *btd* mutant. Scale bar = 20\ µm.
 **d**, Time of cephalic furrow (CF) and ectopic fold (EF) formation relative to mitotic expansion (MD) in wildtype (n=16, p<0.001), heterozygote (n=13, p=0.002), and homozygote (n=10, p=0.002) embryos.
 **e**, Lateral and profile views of *btd--stg* double mutants. Scale bar = 50\ µm.
-**f**, Tissue compression around the head--trunk (HT) and trunk--germ (TG) regions (white outlines) in *btd* mutants. Scale bars = 50\ µm.
-**g**, Strain rate at the head--trunk region in *btd* heterozygotes (n=3) and homozygotes (n=3). Filled triangles = formation of cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EF). MD~i~ = metaphase expansion, MD~ii~ = telophase. Empty triangles = strain rate peaks. A--D = frames from {!@fig:apical-strain}b. Combined isotropic and anisotropic strain rate.
-**h**, Dynamics of trunk--germ tissues after laser cuts in wildtype embryos. Color-coded tracks (rainbow) show the distance between pairs of cell vertices (solid white line) in control (n=3) and ablated embryos (n=3). Dashed white line indicates the cut location. Plot values are relative to the initial distance. Scale bar = 20\ µm.
-**i**, Germ band cauterization (orange) in *eve* mutant under multiview lightsheet microscopy. We quantified and corroborated the phenotype under confocal microscopy (**k**). Scale bar = 50\ µm.
-**j**, Inset from **i** showing compressed non-dividing cells between mitotic domains. Scale bar = 50\ µm.
-**k** Germ band cauterizations *eve* mutants under confocal microscopy showing the traces of epithelial deformations over time. Scale bars = 20\ µm.
-**l**, Tortuosity of epithelial traces in cauterized *eve* mutants non-cauterized (n=3) and cauterized (n=4).
+**f**, Tissue compression around head--trunk (HT) and trunk--germ (TG) regions (white outlines) in *btd* mutant. Scale bars = 50\ µm.
+**g**, Strain rate at head--trunk region in *btd* heterozygotes (n=3) and homozygotes (n=3) (combined isotropic and anisotropic). Filled triangles = formation of CF, MD, and EFs. MD~i~ = metaphase, MD~ii~ = telophase. Empty triangles = strain rate peaks. A--D = frames from {!@fig:apical-strain}b.
+**h**, Dynamics after trunk--germ laser cuts in wildtype embryos. Tracks (rainbow) show distance between cell vertices (solid white line) in control (n=3) and ablated embryos (n=3). Dashed white line indicates cut location. Scale bar = 20\ µm.
+**i**, Germ band cauterization (orange) in *eve* mutant under lightsheet microscopy. Scale bar = 50\ µm.
+**j**, Compressed non-dividing cells between mitotic domains (from **i**). Scale bar = 50\ µm.
+**k** Germ band cauterizations in *eve* mutants with traces of epithelial deformations over time. Scale bars = 20\ µm.
+**l**, Tortuosity of epithelial traces in *eve* mutants non-cauterized (n=3) and cauterized (n=4).
 **m**, Summary of live experiments in cephalic furrow mutants. 
-In **g**, **h**, and **g** panels, the line and shaded area represent the mean predicted values from the regression and a 95% confidence interval, respectively.
+Line and shaded area represent mean and 95% confidence interval, respectively (panels **g**, **h**, and **g**).
 ](figures/Fig2.jpg){#fig:mitogerm-experiments width=100%}
 
 <!--TODO: Move the trunk--germ legend to extended data-->
@@ -979,11 +977,7 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ## Supplementary Figure 2
 
-<!--TODO: Fix panel arrangement-->
-<!--TODO: Re-plot apical area expansion using manuscript style-->
 <!--TODO: Convert area from px to µm-->
-<!--TODO: Add values to plot to be more informative-->
-<!--TODO: Add scale bar-->
 
 ![Complementary analyses of mitotic expansions and strain rate.
 **a**, Increase in the apical area of individual cells within mitotic domains. A dividing cell increases its apical area 2.4 times during mitotic rounding. The individual daughter cells retain 66% of the parent apical area. When summed, the apical area of the two daughter cells occupy 1.3 times the original apical area of their parent cell. Scale bar = 10\ µm. Data from 9 tracked cells on a single *btd* heterozygote embryo.
