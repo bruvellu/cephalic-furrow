@@ -170,14 +170,16 @@ conclusive.
 ggplot(means, aes(factor(Sample, level = c("control", "cauterized")), Mean, fill = Sample)) +
   geom_boxplot(aes(color = Sample), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
   geom_point(alpha = 0.8, size = 3, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 6)) +
-  labs(x = "condition", y = "depth (µm)") +
+  labs(x = "", y = "depth (µm)") +
   scale_fill_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
   scale_color_manual(values=c("#e69f03", "#56b4e9", "#cc79a7")) +
+  scale_x_discrete(labels = c("control" = "ctrl", "cauterized" = "caut")) +
+  ylim(30, 80) +
   theme_classic(base_family = "DejaVu Sans") +
-  theme(text = element_text(size = 25),
+  theme(text = element_text(size = 35),
         panel.background = element_rect(colour = "black", size=1))
-ggsave("4-plots/wt-mean-length.png", width = 4, height = 4)
-ggsave("4-plots/wt-mean-length.svg", width = 4, height = 4)
+ggsave("4-plots/wt-mean-length.png", width = 4, height = 6)
+ggsave("4-plots/wt-mean-length.svg", width = 4, height = 6)
 ```
 
 ```{r depth-mean-facet}

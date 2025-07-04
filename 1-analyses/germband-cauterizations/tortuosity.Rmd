@@ -149,6 +149,52 @@ ggsave("4-plots/tortuosity_facet_smooth.png", width = 18, height = 6)
 ggsave("4-plots/tortuosity_facet_smooth.svg", width = 18, height = 6)
 ```
 
+## Plot tortuosity smooth btd
+
+```{r facet-smooth}
+# Plot stocks separately using lines vertically
+ggplot(datasets[datasets$stock == "btd",], aes(minute, tortuosity, color = sample)) +
+  geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = sample)) +
+  #facet_wrap(~stock, ncol = 2, strip.position = "top") +
+  #facet_grid(rows = vars(stock), scales = "free") +
+  labs(x = "minutes", y = "tortuosity") +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 40),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 45, face = "italic"),
+        panel.background = element_rect(colour = "black", size=1),
+        panel.spacing = unit(2, "lines")
+        )
+ggsave("4-plots/tortuosity_facet_smooth_btd.png", width = 12, height = 6)
+ggsave("4-plots/tortuosity_facet_smooth_btd.svg", width = 12, height = 6)
+```
+
+## Plot tortuosity smooth eve
+
+```{r facet-smooth}
+# Plot stocks separately using lines vertically
+ggplot(datasets[datasets$stock == "eve",], aes(minute, tortuosity, color = sample)) +
+  geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = sample)) +
+  #facet_wrap(~stock, ncol = 2, strip.position = "top") +
+  #facet_grid(rows = vars(stock), scales = "free") +
+  labs(x = "minutes", y = "tortuosity") +
+  scale_color_manual(values=c("#e69f03", "#56b4e9")) +
+  scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 40),
+        strip.background = element_blank(),
+        strip.placement = "outside",
+        strip.text.x = element_text(size = 45, face = "italic"),
+        panel.background = element_rect(colour = "black", size=1),
+        panel.spacing = unit(2, "lines")
+        )
+ggsave("4-plots/tortuosity_facet_smooth_eve.png", width = 9, height = 6)
+ggsave("4-plots/tortuosity_facet_smooth_eve.svg", width = 9, height = 6)
+```
+
 ## Plot combined tortuosity
 
 ```{r all-boxplot}

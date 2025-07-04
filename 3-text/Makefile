@@ -71,13 +71,12 @@ figs:
 	# Extended data figures
 	ln -sf ${FIGSRC}/initiator-behavior/figure.png ${FIGHIR}/FigED1.png
 	ln -sf ${FIGSRC}/ectopic-features/figure.png ${FIGHIR}/FigED2.png
-	ln -sf ${FIGSRC}/mitotic-strain/figure.png ${FIGHIR}/FigED3.png
-	ln -sf ${FIGSRC}/live-features/figure.png ${FIGHIR}/FigED4.png
-	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIR}/FigED5.png
-	ln -sf ${FIGSRC}/slp-analyses/figure.png ${FIGHIR}/FigED6.png
-	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIR}/FigED7.png
-	ln -sf ${FIGSRC}/mutant-expression/figure.png ${FIGHIR}/FigED8.png
-	ln -sf ${FIGSRC}/genetic-comparative/figure.png ${FIGHIR}/FigED9.png
+	ln -sf ${FIGSRC}/live-features/figure.png ${FIGHIR}/FigED3.png
+	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIR}/FigED4.png
+	ln -sf ${FIGSRC}/slp-analyses/figure.png ${FIGHIR}/FigED5.png
+	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIR}/FigED6.png
+	ln -sf ${FIGSRC}/mutant-expression/figure.png ${FIGHIR}/FigED7.png
+	ln -sf ${FIGSRC}/genetic-comparative/figure.png ${FIGHIR}/FigED8.png
 	# Supplementary information
 	ln -sf ${FIGSRC}/ectopic-variability/figure.png ${FIGHIR}/FigS1.png
 	ln -sf ${FIGSRC}/apical-strain/figure.png ${FIGHIR}/FigS2.png
