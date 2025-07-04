@@ -159,7 +159,7 @@ To test the individual role of mitotic domains and germ band to the mechanical s
 
 We first asked if mitotic expansions are required for the formation of ectopic folds. To that end, we generated a double-mutant line lacking both cephalic furrow and mitotic domains, using the loss-of-function alleles of *btd* and *string* (*stg*)---the *cdc25* phosphatase ortholog that regulates the formation of mitotic domains in *Drosophila* [@Edgar1989-hv]. The absence of mitotic domains in *stg* mutants does not affect the formation of the cephalic furrow or other morphogenetic movements of gastrulation [@Edgar1989-hv] ({@fig:live-experiments}a, {!@fig:live-features}a,b, {!@fig:vid-stg-lateral}, {!@fig:vid-stg-dorsal}). However, the absence of mitotic domains suppresses the formation of ectopic folds in *btd--stg* double-mutants; these embryos show no ectopic folds at their head--trunk interface ({@fig:mitogerm-experiments}e, {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}). This indicates that mitotic expansions are necessary for the appearance of ectopic folds in cephalic furrow mutants.
 
-Next, we asked if the extension of the germ band is required for the formation of ectopic folds. To prevent the germ band from extending, we cauterized a patch of posterodorsal tissue at the onset of gastrulation to mechanically attach it to the vitelline envelope ({@fig:live-experiments}d,f). Blocking the germ band in wildtype embryos does not prevent the formation of the cephalic furrow ({@fig:live-experiments}d,e), as the shortening of the initiator cells occurs normally and correlates with an increase in tension around the head--trunk boundary ({@fig:live-experiments}i). We only detect a mild influence of the germ band on the final depth of the invagination, since the cephalic furrow in cauterized embryos is about 15% shallower than in control embryos ({@fig:live-experiments}e,j). This data corroborates the understanding that the initial formation of the cephalic furrow is an active process independent of other morphogenetic movements
+Next, we asked if the extension of the germ band is required for the formation of ectopic folds. To prevent the germ band from extending, we cauterized a patch of posterodorsal tissue at the onset of gastrulation to mechanically attach it to the vitelline envelope ({@fig:live-experiments}d,f). Blocking the germ band in wildtype embryos does not prevent the formation of the cephalic furrow ({@fig:live-experiments}d,e), as the shortening of the initiator cells occurs normally and correlates with an increase in tension around the head--trunk boundary ({!@fig:ablations}). We only detect a mild influence of the germ band on the final depth of the invagination, since the cephalic furrow in cauterized embryos is about 15% shallower than in control embryos ({@fig:live-experiments}e,j). This data corroborates the understanding that the initial formation of the cephalic furrow is an active process independent of other morphogenetic movements
 
 We then performed the cauterization experiment in *btd* and *eve* embryos. When the germ band extension is blocked in these mutants, no ectopic folds appear at the head--trunk interface ({@fig:mitogerm-experiments}i, {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}), and their epithelium undergoes less deformation and buckling events compared to non-cauterized mutant embryos ({@fig:mitogerm-experiments}k,l). The expansion of cell apices in mitotic domains still compress the neighboring, non-dividing cells, but no buckling occurs ({@fig:mitogerm-experiments}j). These experiments reveal that the germ band extension is necessary for the appearance of ectopic folds in cephalic furrow mutants.
 
@@ -450,7 +450,7 @@ We performed laser cauterization experiments in two microscope setups, a Luxendo
 
 ## Laser ablation experiments
 
-We performed laser ablations in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), and the software AndorIQ for image acquisition. We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800\ nm tuned down from 80\ MHz to 20\ kHz with a pulse-picker. The laser power measured before the microscope port was 6\ mW and the pixel dwell time for scanning was 2\ µs. To ensure the cut, we repeated the scan ten consecutive times along a single cell, acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18\ µm XY-resolution and 200\ ms time-steps. We ablated each embryo just once. The temperature was maintained at 28°\ C. To analyze the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the *Multi Kymograph* Fiji plugin ({!@fig:ablation}). We then binarized the kymographs, measured the distance between cell edges over the first 30\ s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({!@fig:ablation}).
+We performed laser ablations in a Yokogawa CSU-X1 confocal spinning disk, an EMCCD camera (Andor iXon DU-888), and the software AndorIQ for image acquisition. We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water, and performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800\ nm tuned down from 80\ MHz to 20\ kHz with a pulse-picker. The laser power measured before the microscope port was 6\ mW and the pixel dwell time for scanning was 2\ µs. To ensure the cut, we repeated the scan ten consecutive times along a single cell, acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18\ µm XY-resolution and 200\ ms time-steps. We ablated each embryo just once. The temperature was maintained at 28°\ C. To analyze the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the *Multi Kymograph* Fiji plugin ({!@fig:ablation-analysis}). We then binarized the kymographs, measured the distance between cell edges over the first 30\ s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({!@fig:ablation-analysis}).
 
 <!--TODO: Add methods describing tissue cuts on SD3!!!-->
 
@@ -854,12 +854,15 @@ In **f** and **g** plots, the line and shaded area represent the mean predicted 
 <!--TODO: Add full sequence of stg mutants, btd?, and btd--stg double mutants-->
 <!--TODO: Add wt cauterizations and plots-->
 
-![Developmental sequence of *stg* mutants.
+![Additional *in vivo* experiments in cephalic furrow mutants.
+
 **a**, Lateral 3D renderings of *stg* homozygotes. Embryos show no cell divisions after gastrulation, but the early morphogenetic movements occur normally. Asterisks indicate mitotic domains in controls. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. Scale bar = 50\ µm.
+
 **b**, Optical slice of profile views in *stg* homozygotes. The initiator cell behaviors are not perturbed and the morphology of the invagination is intact. In fact, because of the lack of cell divisions, the epithelium remains more uniform during gastrulation when compared to sibling controls or wildtype embryos. Scale bar = 20\ µm.
+
 ](figures/FigED4.jpg){#fig:live-features tag="Extended Data Fig. 4" width=100%}
 
-![Experiments in cephalic furrow mutants *in vivo*.
+![
 **a**, Lateral and profile views of *stg* mutants. Scale bars = 50\ µm.
 **b**, Lateral and profile views of *btd* mutants. Scale bars = 50\ µm.
 **c**, Lateral and profile views of *btd--stg* double mutants. Scale bar = 50\ µm.
@@ -981,25 +984,37 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 **c**, Strain rate at the trunk--germ region in *btd* heterozygotes (n=3) and homozygotes (n=3). Lines A--D represent exact frames from **b**. Measurements combine isotropic and anisotropic strain rate.
 ](figures/FigS2.jpg){#fig:apical-strain tag="Supplementary Fig. 2" width=100%}
 
-
-\newpage
-
 ## Supplementary Figure 3
 
-![Image processing pipeline for the tortuosity analysis in cauterized mutants.
-**a**, We acquired a single slice in profile view of the head--trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos.
-**b**, Then, we applied a Gaussian blur which allows capturing the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing.
-**c**, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ.
-](figures/FigS3.jpg){#fig:tortuosity tag="Supplementary Fig. 3" width=100%}
+![Laser ablations around the cephalic furrow in wildtype embryos.
+**a**, 
+**b**, 
+**c**, 
+
+**i**, Cell membrane recoil velocity after laser ablation around the cephalic furrow in gastrulating wildtype embryos. Anterior cuts (green) for early (n=11), mid (n=13), and late (n=12) stage 6, and posterior cuts (magenta) for early (n=7), mid (n=14), and late (n=10) stage 6.
+
+**i**, Recoil velocity of laser ablations around the cephalic furrow at stage 6. The average recoil of anterior cuts increases with time for early (n = 11), mid (n = 13), and late (n = 12) stages. In posterior cuts, it increases between early (n = 7) and mid (n = 14) stages and decreases in the late stage (n = 10). The average recoil velocity is higher closer to the initiator cells (20\ µm). The center of the box plot depicts the median, the lower and upper hinges correspond to the first and third quartiles (25 and 75th percentiles), and the whiskers extend from the hinges until 1.5 times the inter-quartile range.
+
+](figures/FigS3.jpg){#fig:ablations tag="Supplementary Fig. 3" width=100%}
 
 \newpage
 
 ## Supplementary Figure 4
 
+![Image processing pipeline for the tortuosity analysis in cauterized mutants.
+**a**, We acquired a single slice in profile view of the head--trunk epithelium. First, we straightened the epithelial monolayer along the curvature of the vitelline envelope using the Straighten tool in ImageJ. We then cropped a window to standardize the size of the analyzed area for all embryos.
+**b**, Then, we applied a Gaussian blur which allows capturing the deformations in the epithelium caused by the ectopic folds after thresholding. We create a mask and detect edges and invert to retain a single pixel line corresponding to the outline of the epithelium. The image is inverted for downstream processing.
+**c**, We applied a temporal color-coded projections to visualize the epithelial dynamics over time, and created a montage with all timepoints to extract the length of the outline using the skeletonize plugin in ImageJ.
+](figures/FigS4.jpg){#fig:tortuosity tag="Supplementary Fig. 4" width=100%}
+
+\newpage
+
+## Supplementary Figure 5
+
 ![Image processing pipeline for the ablation analysis.
 **a**, Example of laser ablation near the cephalic furrow with the membrane signal (top left), the generated kymograph (right), and the linear fit over the distance between edges extracted from the kymograph (bottom left). The position of the laser cut is annotated in a vermilion line, the cell edges are marked in black circles, and the edge distances in a blue line. The distance between edges increases over time.
 **b**, Example of a laser ablation far from the cephalic furrow where the distance between edges does not increase over time.
-](figures/FigS4.jpg){#fig:ablation tag="Supplementary Fig. 4" width=100%}
+](figures/FigS5.jpg){#fig:ablation-analysis tag="Supplementary Fig. 5" width=100%}
 
 \newpage
 

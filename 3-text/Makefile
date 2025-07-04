@@ -81,8 +81,9 @@ figs:
 	# Supplementary information
 	ln -sf ${FIGSRC}/ectopic-variability/figure.png ${FIGHIR}/FigS1.png
 	ln -sf ${FIGSRC}/apical-strain/figure.png ${FIGHIR}/FigS2.png
-	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIR}/FigS3.png
-	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIR}/FigS4.png
+	ln -sf ${FIGSRC}/ablations/figure.png ${FIGHIR}/FigS3.png
+	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIR}/FigS4.png
+	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIR}/FigS5.png
 	# Make JPGs smaller for compilation and sharing
 	#mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
