@@ -72,7 +72,7 @@ figs:
 	ln -sf ${FIGSRC}/initiator-behavior/figure.png ${FIGHIR}/FigED1.png
 	ln -sf ${FIGSRC}/ectopic-features/figure.png ${FIGHIR}/FigED2.png
 	ln -sf ${FIGSRC}/mitotic-strain/figure.png ${FIGHIR}/FigED3.png
-	ln -sf ${FIGSRC}/live-details/figure.png ${FIGHIR}/FigED4.png
+	ln -sf ${FIGSRC}/live-features/figure.png ${FIGHIR}/FigED4.png
 	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIR}/FigED5.png
 	ln -sf ${FIGSRC}/slp-analyses/figure.png ${FIGHIR}/FigED6.png
 	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIR}/FigED7.png
@@ -94,6 +94,7 @@ data:
 
 # Copy high-resolution PDF files to source directory
 pdfs:
+	#TODO: Update links to PDFs!
 	# Main figures
 	ln -sf ${FIGSRC}/ectopic-folding/figure.pdf ${FIGHIR}/Fig1.pdf
 	ln -sf ${FIGSRC}/mitotic-strain/figure.pdf ${FIGHIR}/Fig2.pdf
@@ -105,7 +106,7 @@ pdfs:
 	ln -sf ${FIGSRC}/initiator-behavior/figure.pdf ${FIGHIR}/FigED1.pdf
 	ln -sf ${FIGSRC}/ectopic-features/figure.pdf ${FIGHIR}/FigED2.pdf
 	ln -sf ${FIGSRC}/apical-strain/figure.pdf ${FIGHIR}/FigED3.pdf
-	ln -sf ${FIGSRC}/live-details/figure.pdf ${FIGHIR}/FigED4.pdf
+	ln -sf ${FIGSRC}/live-features/figure.pdf ${FIGHIR}/FigED4.pdf
 	ln -sf ${FIGSRC}/model-features/figure.pdf ${FIGHIR}/FigED5.pdf
 	ln -sf ${FIGSRC}/genetic-features/figure.pdf ${FIGHIR}/FigED6.pdf
 	ln -sf ${FIGSRC}/genetic-comparative/figure.pdf ${FIGHIR}/FigED7.pdf
