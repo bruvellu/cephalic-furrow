@@ -7,7 +7,7 @@ creation: February 11, 2021
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = FALSE)
-knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Paper/1-analyses/cell-area-post-mitosis")
+knitr::opts_knit$set(root.dir = "~/Dropbox/Projects/Cephalic_furrow/7-Manuscript/1-analyses/cell-area-post-mitosis")
 library(knitr)
 library(ggplot2)
 library(ggbeeswarm)
@@ -39,6 +39,23 @@ ggplot(results, aes(Time, Area)) +
         panel.background = element_rect(colour = "black", size=1))
 ggsave("3-plots/apical-area-per-cell.png", width = 12, height = 6)
 ggsave("3-plots/apical-area-per-cell.svg", width = 12, height = 6)
+```
+
+### Percentage of germ band extension at buckling/infolding by stock (cols)
+
+```{r cellarea-time}
+ggplot(results, aes(Time, Area)) +
+  geom_boxplot(aes(color = "#e69f03", fill = "#e69f03"), show.legend = FALSE, alpha = 0.5, outlier.shape = NA, width = 0.7, position = position_dodge(width = 1.0)) +
+  geom_point(alpha = 0.8, size = 5, show.legend = FALSE, position = position_beeswarm(priority = "descending", dodge.width = 1.0, cex = 3)) +
+  scale_y_continuous(labels = function(x) x / 1000) +
+  labs(x = "time", y = expression(paste("area x ", 10^3))) +
+  #labs(x = "time", y = expression(paste("area x ", 10^3, " ", "(", px^2, ")"))) +
+  theme_classic(base_family = "DejaVu Sans") +
+  theme(text = element_text(size = 35),
+        strip.background = element_blank(),
+        panel.background = element_rect(colour = "black", size=1))
+ggsave("3-plots/apical-area-per-time.png", width = 13, height = 4)
+ggsave("3-plots/apical-area-per-time.svg", width = 13, height = 4)
 ```
 
 ## Summary
