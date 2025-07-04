@@ -157,13 +157,13 @@ Taken together, these analyses suggest the mitotic expansions and germ band exte
 
 To test the individual role of mitotic domains and germ band to the mechanical stability of the blastoderm, we performed a series of perturbation experiments *in vivo*.
 
-We first asked if mitotic expansions are required for the formation of ectopic folds. To that end, we generated a double-mutant line lacking both cephalic furrow and mitotic domains, using the loss-of-function alleles of *btd* and *string* (*stg*)---the *cdc25* phosphatase ortholog that regulates the formation of mitotic domains in *Drosophila* [@Edgar1989-hv]. The absence of mitotic domains in *stg* mutants does not affect the formation of the cephalic furrow or other morphogenetic movements of gastrulation [@Edgar1989-hv] ({@fig:live-experiments}a, {!@fig:live-details}a,b, {!@fig:vid-stg-lateral}, {!@fig:vid-stg-dorsal}). However, the absence of mitotic domains suppresses the formation of ectopic folds in *btd--stg* double-mutants; these embryos show no ectopic folds at their head--trunk interface ({@fig:live-experiments}b,c, {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}). This indicates that mitotic expansions are necessary for the appearance of ectopic folds in cephalic furrow mutants.
+We first asked if mitotic expansions are required for the formation of ectopic folds. To that end, we generated a double-mutant line lacking both cephalic furrow and mitotic domains, using the loss-of-function alleles of *btd* and *string* (*stg*)---the *cdc25* phosphatase ortholog that regulates the formation of mitotic domains in *Drosophila* [@Edgar1989-hv]. The absence of mitotic domains in *stg* mutants does not affect the formation of the cephalic furrow or other morphogenetic movements of gastrulation [@Edgar1989-hv] ({@fig:live-experiments}a, {!@fig:live-details}a,b, {!@fig:vid-stg-lateral}, {!@fig:vid-stg-dorsal}). However, the absence of mitotic domains suppresses the formation of ectopic folds in *btd--stg* double-mutants; these embryos show no ectopic folds at their head--trunk interface ({@fig:mitogerm-experiments}e, {!@fig:vid-double-lateral}, {!@fig:vid-double-dorsal}). This indicates that mitotic expansions are necessary for the appearance of ectopic folds in cephalic furrow mutants.
 
 Next, we asked if the extension of the germ band is required for the formation of ectopic folds. To prevent the germ band from extending, we cauterized a patch of posterodorsal tissue at the onset of gastrulation to mechanically attach it to the vitelline envelope ({@fig:live-experiments}d,f). Blocking the germ band in wildtype embryos does not prevent the formation of the cephalic furrow ({@fig:live-experiments}d,e), as the shortening of the initiator cells occurs normally and correlates with an increase in tension around the head--trunk boundary ({@fig:live-experiments}i). We only detect a mild influence of the germ band on the final depth of the invagination, since the cephalic furrow in cauterized embryos is about 15% shallower than in control embryos ({@fig:live-experiments}e,j). This data corroborates the understanding that the initial formation of the cephalic furrow is an active process independent of other morphogenetic movements
 
-We then performed the cauterization experiment in *btd* and *eve* embryos. When the germ band extension is blocked in these mutants, no ectopic folds appear at the head--trunk interface ({@fig:live-experiments}f, {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}), and their epithelium undergoes less deformation and buckling events compared to non-cauterized mutant embryos ({@fig:live-experiments}h,k). The expansion of cell apices in mitotic domains still compress the neighboring, non-dividing cells, but no buckling occurs ({@fig:live-experiments}g). These experiments reveal that the germ band extension is necessary for the appearance of ectopic folds in cephalic furrow mutants.
+We then performed the cauterization experiment in *btd* and *eve* embryos. When the germ band extension is blocked in these mutants, no ectopic folds appear at the head--trunk interface ({@fig:mitogerm-experiments}i, {!@fig:vid-cautlat-eve}, {!@fig:vid-cautdor-eve}, {!@fig:vid-cautdor-btd}), and their epithelium undergoes less deformation and buckling events compared to non-cauterized mutant embryos ({@fig:mitogerm-experiments}k,l). The expansion of cell apices in mitotic domains still compress the neighboring, non-dividing cells, but no buckling occurs ({@fig:mitogerm-experiments}j). These experiments reveal that the germ band extension is necessary for the appearance of ectopic folds in cephalic furrow mutants.
 
-Overall, we conclude that neither mitotic expansions nor the germ band extension can induce ectopic folds individually, but when both events happen concomitantly, the epithelial monolayer becomes unstable and buckles.
+Overall, we conclude that neither mitotic expansions nor the germ band extension can induce ectopic folds individually, but when both events happen concomitantly, the epithelial monolayer becomes unstable and buckles ({@fig:mitogerm-experiments}m).
 
 <!--Conversely, the experiment reveals the compression exerted by the germ band extension alone is insufficient to induce ectopic folding.-->
 
@@ -567,21 +567,16 @@ Embryonic staging based on standard developmental tables [@Campos-Ortega1985-ma;
 **b**, Apical cell area during ectopic folding. White outlines (top row) highlight a subset of non-dividing (orange) and dividing (blue) cells (bottom row). Scale bars ≈ 20\ µm.
 **c**, Mitotic expansion (double arrow) precedes ectopic folding (arrow) in a *btd* mutant. Quantified in **d**. Scale bar = 20\ µm.
 **d**, Time of cephalic furrow (CF) and ectopic fold (EF) formation relative to mitotic expansion (MD) in wildtype (n=16, p<0.001), heterozygote (n=13, p=0.002), and homozygote (n=10, p=0.002) embryos.
-
-**e**, Double-mutant...
-
+**e**, Lateral and profile views of *btd--stg* double mutants. Scale bar = 50\ µm.
 **f**, Tissue compression around the head--trunk (HT) and trunk--germ (TG) regions (white outlines) in *btd* mutants. Scale bars = 50\ µm.
 **g**, Strain rate at the head--trunk region in *btd* heterozygotes (n=3) and homozygotes (n=3). Filled triangles = formation of cephalic furrow (CF), mitotic domains (MD), and ectopic folds (EF). MD~i~ = metaphase expansion, MD~ii~ = telophase. Empty triangles = strain rate peaks. A--D = frames from {!@fig:apical-strain}b. Combined isotropic and anisotropic strain rate.
-
 **h**, Dynamics of trunk--germ tissues after laser cuts in wildtype embryos. Color-coded tracks (rainbow) show the distance between pairs of cell vertices (solid white line) in control (n=3) and ablated embryos (n=3). Dashed white line indicates the cut location. Plot values are relative to the initial distance. Scale bar = 20\ µm.
-
-**i**, Cauterization
-**j**, Cauterization inset
-**k**, Cauterization tortuosity panel
-**l**, Cauterization tortuosity plot
-**m**, Summary of experiments
-
-In **f** and **g** plots, the line and shaded area represent the mean predicted values from the regression and a 95% confidence interval, respectively.
+**i**, Germ band cauterization (orange) in *eve* mutant under multiview lightsheet microscopy. We quantified and corroborated the phenotype under confocal microscopy (**k**). Scale bar = 50\ µm.
+**j**, Inset from **i** showing compressed non-dividing cells between mitotic domains. Scale bar = 50\ µm.
+**k** Germ band cauterizations *eve* mutants under confocal microscopy showing the traces of epithelial deformations over time. Scale bars = 20\ µm.
+**l**, Tortuosity of epithelial traces in cauterized *eve* mutants non-cauterized (n=3) and cauterized (n=4).
+**m**, Summary of live experiments in cephalic furrow mutants. 
+In **g**, **h**, and **g** panels, the line and shaded area represent the mean predicted values from the regression and a 95% confidence interval, respectively.
 ](figures/Fig2.jpg){#fig:mitogerm-experiments width=100%}
 
 <!--TODO: Move the trunk--germ legend to extended data-->
@@ -868,6 +863,9 @@ In **f** and **g** plots, the line and shaded area represent the mean predicted 
 \newpage
 
 ## Extended Data Fig. 4
+
+<!--TODO: Add full sequence of stg mutants, btd?, and btd--stg double mutants-->
+<!--TODO: Add wt cauterizations and plots-->
 
 ![Developmental sequence of *stg* mutants.
 **a**, Lateral 3D renderings of *stg* homozygotes. Embryos show no cell divisions after gastrulation, but the early morphogenetic movements occur normally. Asterisks indicate mitotic domains in controls. The cephalic furrow forms without delays and exhibits a similar dynamics of invagination compared to wildtype embryos. The only noticeable difference is that the dorsal portion does not shift as posteriorly as in sibling controls, which could be due to the absence of mitotic domains in the head. Scale bar = 50\ µm.
