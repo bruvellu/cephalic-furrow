@@ -90,7 +90,12 @@ figs:
 # Copy source data files to source directory
 data:
 	ln -sf ${FIGSRC}/ectopic-folding/source.xlsx ${FIGHIR}/Source_Fig1.xlsx
-	ln -sf ${FIGSRC}/live-experiments/source.xlsx ${FIGHIR}/Source_Fig2.xlsx
+	ln -sf ${FIGSRC}/mitogerm-experiments/source.xlsx ${FIGHIR}/Source_Fig2.xlsx
+	ln -sf ${FIGSRC}/ectopic-features/source.xlsx ${FIGHIR}/Source_FigED2.xlsx
+	ln -sf ${FIGSRC}/live-features/source.xlsx ${FIGHIR}/Source_FigED3.xlsx
+	ln -sf ${FIGSRC}/slp-analyses/source.xlsx ${FIGHIR}/Source_FigED5.xlsx
+	ln -sf ${FIGSRC}/apical-strain/source.xlsx ${FIGHIR}/Source_FigS2.xlsx
+	ln -sf ${FIGSRC}/ablations/source.xlsx ${FIGHIR}/Source_FigS3.xlsx
 
 # Copy high-resolution PDF files to source directory
 pdfs:
