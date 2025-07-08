@@ -241,71 +241,11 @@ The three species show early, juxtaposing domains of *slp* and *eve* demarcating
 <!--TODO: Streamline text for discussion-->
 <!--TODO: Migrate removed paragraphs as supplementary notes-->
 
-Our work provides evidence that the cephalic furrow counteracts the compressive stresses caused by the mitotic domains and germ band extension, supporting the hypothesis that the cephalic furrow has a mechanical role during *Drosophila* gastrulation.
+Our results suggest that tissues at the head--trunk boundary of *Drosophila* are under increased compressive stress due to the concomitant formation of mitotic domains and germ band extension during gastrulation. Without the cephalic furrow, these stresses build up, and the tissue buckles as a result of the outward forces exerted by cell divisions in a compressed epithelial monolayer (Supplementary Note 7). Our work provides evidence that the cephalic furrow prevents the build up of compressive stresses at the head--trunk boundary, and thus, counteracts this mechanical instability. Therefore, we propose the cephalic furrow plays a mechanical role during *Drosophila* gastrulation.
 
 This physical role raises the intriguing idea that the cephalic furrow evolved as a response to mechanical instability. The distribution of cephalic-furrow-related traits onto the dipteran phylogeny is consistent with the hypothesis of mechanical instability as a selective pressure for the evolution of morphogenesis ({@fig:summary}a). Mitotic domains and the germ band extension are ancestral traits, common to Diptera, while the cephalic furrow is a derived trait---an evolutionary novelty of cyclorraphan flies [@Dey2023-mo] ({@fig:summary}a). Since these sources of stress were probably present at the dawn of dipterans, their head--trunk interface may have endured mechanical instabilities long before the evolution of the cephalic furrow. Remarkably, flies without a cephalic furrow (e.g., *Clogmia* and *Chironomus*) exhibit out-of-plane cell divisions at the head--trunk boundary, suggesting that they evolved an alternative solution to mitigate the effect of tissue compression during gastrulation [@Dey2023-mo] ({@fig:summary}a). Moreover, neither *Clogmia*, *Anopheles*, nor *Chironomus* exhibit the *btd--eve* expression overlap at the head--trunk boundary [@Dey2023-mo] ({@fig:genetic-patterning}), a trait essential to specify the initiator cells in species with cephalic furrow like *Drosophila*. Therefore, the establishment of a *btd--eve* overlap was probably a key event associated with the origin of the cephalic furrow and that might explain the divergent morphogenetic solutions to a similar selective pressure of mechanical instability ({@fig:summary}b). Demonstrating that this evolutionary scenario is plausible is challenging. Our efforts to prevent cephalic furrow formation without affecting other developmental processes have failed so far. However, there is evidence that inhibiting the invagination via optogenetics increases the frequency of a distorted ventral midline [@Dey2023-mo], suggesting that mechanical instability can impact the robustness of morphogenetic processes.
 
 Our study on the cephalic furrow function and evolution uncovers a potentially general mechanism for how tissue mechanics can influence developmental evolution. Classical theoretical work by Newman and Müller raised the hypothesis that self-organized morphogenesis was critical to generate morphogenetic innovations at the dawn of animal evolution [@Newman2000-oz]. Our work provides initial empirical evidence supporting this hypothesis, showing that mechanical forces might have had a critical role in generating morphogenetic innovations not only at the transition to multicellularity, but also after the establishment of developmental patterning systems. We propose that the genetic resolution of mechanical conflicts between distinct embryonic processes may be a broadly occurring mechanism that contributes to generating the remarkable morphogenetic diversity of early animal embryogenesis.
-
-<!--TODO: Rewrite discussion’s first paragraph-->
-
-<!--head--trunk tissues under compression-->
-<!--caused by mitotic domains and germ band-->
-<!--formation of ectopic folds by buckling-->
-<!--mechanical instability as a result-->
-<!--cephalic furrow counteracts-->
-<!--mechanical role-->
-
-<!--Our work provides evidence that the concomitant formation of mitotic domains and germ band extension leads to increased compressive stresses and mechanical instability around the head--trunk boundary of *Drosophila* embryos during gastrulation.-->
-
-<!--Our work provides evidence that tissues at the head--trunk boundary of *Drosophila* are under increased compressive stresses during gastrulation.-->
-<!--Without the cephalic furrow, they become unstable and buckle due to the concomitant formation of mitotic domains and germ band extension which destabilizes the epithelium (Supplementary Note 7).-->
-<!--We provide evidence that the cephalic furrow counteracts these stresses. An early invagination effectively reduces the appearance of ectopic folds *in vivo* and in simulations, supporting the hypothesis that the cephalic furrow prevents the build up of compressive stresses at the head--trunk boundary, and thus, accomplishes a mechanical role during *Drosophila* gastrulation.-->
-
-
-<!--Our work provides evidence that tissues at the head--trunk boundary of *Drosophila* are under increased compressive stresses during gastrulation.-->
-<!--This is due to the concomitant formation of mitotic domains and germ band extension.-->
-
-<!--which destabilizes the epithelial , as cell division .-->
-
-<!--Our work provides evidence that tissues at the head--trunk boundary of *Drosophila* are under increased compressive stresses during gastrulation due to the concomitant formation of mitotic domains and germ band extension.-->
-<!--Without the cephalic furrow, the epithelium becomes unstable and buckles to form ectopic folds, as dividing cells can destabilize epithelial monolayers under compression (Supplementary Note 7).-->
-<!--Our data demonstrates the cephalic furrow counteracts these stresses. An early invagination effectively reduces the appearance of ectopic folds *in vivo* and in simulations, supporting the hypothesis that the cephalic furrow prevents the build up of compressive stresses at the head--trunk boundary, and thus, accomplishes a mechanical role during *Drosophila* gastrulation.-->
-
-<!--In epithelia under compression, cell divisions -->
-
-<!--The division of epithelial cells under compression -->
-
-<!--Cell divisions in epithelia under compression often results in tissue buckling (Supplementary Note 7)-->
-
-<!--Our work provides evidence that tissues at the head--trunk boundary of *Drosophila* are under increased compressive stresses during gastrulation.-->
-<!--The concomitant formation of mitotic domains and germ band extension leads to mechanical instability, as the .-->
-
-<!--The combined mitotic rounding in a compressed epithelium is a common mechanism of buckling (Supplementary Note 7).-->
-
-<!--Cells dividing in a compressed epithelium often leads to passive buckling (Supplementary Note 7).-->
-
-<!--combined local and global stresses caused by -->
-
-
-<!--These stresses lead to buckling and mechanical instability.-->
-<!--The cephalic furrow counteracts this instability.-->
-
-
-<!--We find that without the cephalic furrow, the head--trunk tissues become unstable during gastrulation and buckle due to compressive stresses exerted by the expansion of mitotic domains and the germ band extension.-->
-
-<!--The consolidated data, therefore, indicates that the head--trunk tissues of flies are under increased compressive stress during gastrulation.-->
-
-<!--We provide evidence that the cephalic furrow counteracts these stresses.-->
-
-<!--An early invagination effectively reduces the appearance of ectopic folds *in vivo* and in simulations, supporting the hypothesis that the cephalic furrow prevents the build up of compressive stresses at the head--trunk boundary, and thus, accomplishes a mechanical role during *Drosophila* gastrulation.-->
-
-<!--Compression is a key mechanism driving the formation of epithelial folds in development [@Nelson2016-gz; @Collinet2021-qa], particularly when tissues are under confinement [@Trushko2020-gf].-->
-<!--Cell divisions can increase epithelial instability due to the in-plane, outward forces generated during the elongation phase [@Gupta2021-oo] and to the imbalance caused by the basal detachment of dividing cells [@Ko2020-wk].-->
-<!--This is the case for the tracheal placode of flies [@Kondo2013-gy] and intestinal villi of mice [@Freddo2016-et], where mitotic rounding induces the formation of epithelial folds.-->
-<!--Interestingly, the folding in these tissues only occur when the epithelium is under compression, similar to our findings that only the combined action of mitotic expansions and germ band extension can induce ectopic folds ({@fig:live-experiments}).-->
-<!--Moreover, complementary experiments performed in an independent study corroborate the role of mitotic domains and the germ band as sources of mechanical stress [@Dey2023-mo].-->
-
 
 <!--TODO: Original discussion below, repurpose it somewhere?-->
 
@@ -1160,9 +1100,11 @@ Since *slp1* is a known anterior repressor that positions anterior pair rule str
 
 To better understand the genetic interactions at the head--trunk boundary of *Drosophila*, we analyzed the expression of *btd*, *eve*, *prd*, and *slp1* transcripts in cephalic furrow mutants ({!@fig:mutant-expression}). Our analysis of *slp* mutants reveals that its early activity represses *eve* expression at the anterior end and ultimately determines the position of the head--trunk *btd* domain and *eve* stripe 1 without disrupting the *btd--eve* overlap ({!@fig:slp-analyses}, Supplementary Note 5). In *btd* mutants, we observe *slp1* transcripts between *slp1* anterior head domain and *slp1* stripe 1 ({!@fig:mutant-expression}a,b), suggesting that *btd* may repress *slp1* in this region in wildtype embryos. The expression of *eve* stripe 1 is diminished, as previously reported [@Vincent1997-fa], and the expression of *prd* stripe 1 is disrupted in *btd* mutants. This indicates that *btd* activity may be important to activate or maintain stripe 1 expression of *eve* and *prd*. These changes disrupt the typical molecular arrangement of *slp1*, *eve*, and *prd* in the head--trunk epithelium which could explain the faulty initiator cell behavior in *btd* mutants. Moreover, in *btd* mutants, *eve* stripe 2 and the adjacent *slp1* and *prd* stripes are shifted forward and the head--trunk domain of *btd* itself is expanded posteriorly. Therefore, while *slp* activity positions stripe 1 upstream, *btd* activity controls the positioning of stripe 2 further downstream. In *eve* mutants, *slp1* and *prd* expression at the head--trunk boundary are de-repressed, but to a lessen degree than in the trunk where the transcripts become ubiquitous ({!@fig:mutant-expression}a,b,c). The expression of *eve* stripe 1 is weaker. Unlike *btd* mutants, the positioning of domains is not affected in *eve* mutants. In *prd* mutants, *slp1* stripe 1 and 2 are fused and *eve* stripes are wider and less sharp compared to wildtype embryos ({!@fig:mutant-expression}a,b,c). This suggests that *prd* activity is important to sharpen the expression domains around the initiator cells to single-row resolution during the patterning of the cephalic furrow.
 
-<!--## Supplementary Note 7-->
+## Supplementary Note 7
 
-<!--### Compression as a key mechanism of ectopic folding-->
+### Role of tissue compression and cell divisions in buckling
+
+Compression is a key mechanism driving the formation of epithelial folds in development [@Nelson2016-gz; @Collinet2021-qa], particularly when tissues are under confinement [@Trushko2020-gf]. Cell divisions can increase epithelial instability due to the in-plane, outward forces generated during the elongation phase [@Gupta2021-oo] and to the imbalance caused by the basal detachment of dividing cells [@Ko2020-wk]. This is the case for the tracheal placode of flies [@Kondo2013-gy] and intestinal villi of mice [@Freddo2016-et], where mitotic rounding induces the formation of epithelial folds. Interestingly, the folding in these tissues only occur when the epithelium is under compression, which is similar to our findings that only the combined action of mitotic expansions and germ band extension can induce ectopic folds in the *Drosophila* blastoderm.
 
 <!--## Supplementary Note 8-->
 
