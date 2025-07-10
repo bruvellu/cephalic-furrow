@@ -44,7 +44,7 @@ FILEOUT=${DATE}_${BRANCH}_${FILE}
 # Filters for running Pandoc
 FILTERS=--lua-filter=${RESOURCES}/pagebreak.lua --lua-filter=${RESOURCES}/scholarly-metadata.lua --lua-filter=${RESOURCES}/author-info-blocks.lua --filter pandoc-fignos --filter pandoc-tablenos --citeproc --mathml
 
-#--lua-filter=${RESOURCES}/multi-refs.lua 
+#--lua-filter=${RESOURCES}/multi-refs.lua
 #--lua-filter=${RESOURCES}/section-bibliographies.lua 
 
 # Pandoc variables for PDF

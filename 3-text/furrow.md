@@ -36,12 +36,12 @@ bibliography: furrow.bib
 csl: resources/nature-no-et-al.csl
 header-includes:
 - \usepackage[font={small}]{caption}
-link-citations: True
-colorlinks: True
+link-citations: true
+colorlinks: true
 fignos-warning-level: 0
-fignos-cleveref: True
+fignos-cleveref: true
 fignos-plus-name: Fig.
-tablenos-cleveref: True
+tablenos-cleveref: true
 tablenos-plus-name: Table
 
 ---
