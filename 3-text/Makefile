@@ -68,28 +68,46 @@ clean:
 figs:
 	# Main figures
 	ln -sf ${FIGSRC}/ectopic-folding/figure.png ${FIGHIR}/Fig1.png
+	ln -sf ${FIGSRC}/ectopic-folding/figure.pdf ${FIGHIR}/Fig1.pdf
 	ln -sf ${FIGSRC}/mitogerm-experiments/figure.png ${FIGHIR}/Fig2.png
+	ln -sf ${FIGSRC}/mitogerm-experiments/figure.pdf ${FIGHIR}/Fig2.pdf
 	ln -sf ${FIGSRC}/fold-model/figure.png ${FIGHIR}/Fig3.png
+	ln -sf ${FIGSRC}/fold-model/figure.pdf ${FIGHIR}/Fig3.pdf
 	ln -sf ${FIGSRC}/genetic-patterning/figure.png ${FIGHIR}/Fig4.png
+	ln -sf ${FIGSRC}/genetic-patterning/figure.pdf ${FIGHIR}/Fig4.pdf
 	ln -sf ${FIGSRC}/summary/figure.png ${FIGHIR}/Fig5.png
+	ln -sf ${FIGSRC}/summary/figure.pdf ${FIGHIR}/Fig5.pdf
 	# Extended data figures
 	ln -sf ${FIGSRC}/initiator-behavior/figure.png ${FIGHIR}/FigED1.png
+	ln -sf ${FIGSRC}/initiator-behavior/figure.pdf ${FIGHIR}/FigED1.pdf
 	ln -sf ${FIGSRC}/ectopic-features/figure.png ${FIGHIR}/FigED2.png
+	ln -sf ${FIGSRC}/ectopic-features/figure.pdf ${FIGHIR}/FigED2.pdf
 	ln -sf ${FIGSRC}/live-features/figure.png ${FIGHIR}/FigED3.png
+	ln -sf ${FIGSRC}/live-features/figure.pdf ${FIGHIR}/FigED3.pdf
 	ln -sf ${FIGSRC}/model-features/figure.png ${FIGHIR}/FigED4.png
+	ln -sf ${FIGSRC}/model-features/figure.pdf ${FIGHIR}/FigED4.pdf
 	ln -sf ${FIGSRC}/slp-analyses/figure.png ${FIGHIR}/FigED5.png
+	ln -sf ${FIGSRC}/slp-analyses/figure.pdf ${FIGHIR}/FigED5.pdf
 	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIR}/FigED6.png
+	ln -sf ${FIGSRC}/genetic-features/figure.pdf ${FIGHIR}/FigED6.pdf
 	ln -sf ${FIGSRC}/mutant-expression/figure.png ${FIGHIR}/FigED7.png
+	ln -sf ${FIGSRC}/mutant-expression/figure.pdf ${FIGHIR}/FigED7.pdf
 	ln -sf ${FIGSRC}/genetic-comparative/figure.png ${FIGHIR}/FigED8.png
+	ln -sf ${FIGSRC}/genetic-comparative/figure.pdf ${FIGHIR}/FigED8.pdf
 	ln -sf ${FIGSRC}/summary-extended/figure.png ${FIGHIR}/FigED9.png
+	ln -sf ${FIGSRC}/summary-extended/figure.pdf ${FIGHIR}/FigED9.pdf
 	# Supplementary information
 	ln -sf ${FIGSRC}/ectopic-variability/figure.png ${FIGHIR}/FigS1.png
+	ln -sf ${FIGSRC}/ectopic-variability/figure.pdf ${FIGHIR}/FigS1.pdf
 	ln -sf ${FIGSRC}/apical-strain/figure.png ${FIGHIR}/FigS2.png
+	ln -sf ${FIGSRC}/apical-strain/figure.pdf ${FIGHIR}/FigS2.pdf
 	ln -sf ${FIGSRC}/ablations/figure.png ${FIGHIR}/FigS3.png
+	ln -sf ${FIGSRC}/ablations/figure.pdf ${FIGHIR}/FigS3.pdf
 	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.png ${FIGHIR}/FigS4.png
+	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.pdf ${FIGHIR}/FigS4.pdf
 	ln -sf ${FIGSRC}/ablation-analysis/figure.png ${FIGHIR}/FigS5.png
+	ln -sf ${FIGSRC}/ablation-analysis/figure.pdf ${FIGHIR}/FigS5.pdf
 	# Make JPGs smaller for compilation and sharing
-	#mogrify -format jpg -quality 50 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 
 # Copy source data files to source directory
