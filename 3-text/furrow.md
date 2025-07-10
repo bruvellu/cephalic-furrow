@@ -472,6 +472,24 @@ BCV and PT conceived the study. BCV designed experiments, generated fly stocks, 
 
 The authors declare no competing interests.
 
+# Additional information
+
+## Supplementary Information
+
+Supplementary Information is available for this paper.
+
+## Correspondence and requests for materials
+
+Correspondence and requests for materials should be addressed to Bruno C. Vellutini or Pavel Tomancak.
+
+## Peer review information
+
+Nature thanks...
+
+## Reprints and permissions information
+
+Reprints and permissions information is available at [https://www.nature.com/reprints](https://www.nature.com/reprints).
+
 \newpage
 
 # Figures
