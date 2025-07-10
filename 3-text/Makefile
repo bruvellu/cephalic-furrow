@@ -77,6 +77,7 @@ figs:
 	ln -sf ${FIGSRC}/genetic-features/figure.png ${FIGHIR}/FigED6.png
 	ln -sf ${FIGSRC}/mutant-expression/figure.png ${FIGHIR}/FigED7.png
 	ln -sf ${FIGSRC}/genetic-comparative/figure.png ${FIGHIR}/FigED8.png
+	ln -sf ${FIGSRC}/summary-extended/figure.png ${FIGHIR}/FigED9.png
 	# Supplementary information
 	ln -sf ${FIGSRC}/ectopic-variability/figure.png ${FIGHIR}/FigS1.png
 	ln -sf ${FIGSRC}/apical-strain/figure.png ${FIGHIR}/FigS2.png

@@ -261,7 +261,7 @@ Our work investigates the developmental role and evolution of the cephalic furro
 
 This physical role is intriguing and raises the idea that the cephalic furrow may have evolved in response to the mechanical challenges of dipteran gastrulation with mechanical instability acting as a selective pressure. To be the case, we expect mechanical instability to be detrimental to embryogenesis and the fitness of individuals. While mechanical compression can trigger ATP release [@Bao2004-dx], calcium signaling [@Locovei2006-qe], and DNA damage [@Shah2021-gh], and ectopic folding can potentially disrupt short-range signaling and cell-to-cell interactions, investigating these effects *in vivo* is challenging. There is evidence, however, that inhibiting the cephalic furrow via optogenetics increases the frequency of distorted ventral midlines [@Dey2023-mo], suggesting that mechanical instability may affect the robustness of developmental processes.
 
-The distribution of cephalic furrow traits onto the dipteran phylogeny is consistent with the hypothesis of mechanical instability as a selective pressure ({@fig:summary}a). Mitotic domains and germ band extension---the sources of stress---are ancestral and evolved before the cephalic furrow, a derived trait and evolutionary novelty of cyclorrhaphan flies [@Dey2023-mo] ({@fig:summary}a). Remarkably, species without cephalic furrow show out-of-plane cell divisions at the head--trunk boundary [@Dey2023-mo], an alternative strategy for mitigating compressive stresses ({@fig:summary}b). Since the establishment of a *btd--eve* overlap is associated with the presence of the cephalic furrow [@Dey2023-mo] ({@fig:genetic-patterning}, {@fig:summary}a), differences in the genetic patterning of the dipteran head--trunk boundary might have contributed to the origin of distinct morphogenetic solutions in response to a similar mechanical selective pressure ({@fig:summary}b).
+The distribution of cephalic furrow traits onto the dipteran phylogeny is consistent with the hypothesis of mechanical instability as a selective pressure ({@fig:summary}, {!@fig:summary-extended}). Mitotic domains and germ band extension---the sources of stress---are ancestral and evolved before the cephalic furrow, a derived trait and evolutionary novelty of cyclorrhaphan flies [@Dey2023-mo] ({@fig:summary}a). Remarkably, species without cephalic furrow show out-of-plane cell divisions at the head--trunk boundary [@Dey2023-mo], an alternative strategy for mitigating compressive stresses ({@fig:summary}b). Since the establishment of a *btd--eve* overlap is associated with the presence of the cephalic furrow [@Dey2023-mo] ({@fig:genetic-patterning}, {@fig:summary}a), differences in the genetic patterning of the dipteran head--trunk boundary might have contributed to the origin of distinct morphogenetic solutions in response to a similar mechanical selective pressure ({@fig:summary}b).
 
 Classical theoretical works have raised the hypothesis that physical processes were essential drivers of morphological innovation before the emergence of genetic programs [@Newman2000-oz; @Newman2006-ns]. Our findings provide supporting empirical evidence that mechanical forces play a role in the origin of morphogenetic innovations and that the genetic stabilization of mechanical conflicts may be a more broadly occurring mechanism generating morphogenetic diversity in embryonic development.
 
@@ -919,6 +919,14 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 **d**, Expression of *slp1*, *eve*, and *prd* in *Clogmia* before gastrulation. Scale bars = 50\ µm.
 **e**, Expression of *slp1*, *eve*, and *prd* at the head--trunk boundary of *Clogmia* showing a lateral and profile views of the epithelium. Scale bars = 20\ µm.
 ](figures/FigED8.jpg){#fig:genetic-comparative tag="Extended Data Fig. 8" width=100%}
+
+\newpage
+
+## Extended Data Fig. 9
+
+![Extended summary figure of cephalic furrow evolution including data from *Anopheles* and *Ceratitis*. Please refer to the legend of {@fig:summary} for the full details.
+**a**, Cephalic furrow traits mapped onto a simplified dipteran phylogeny.
+**b**, Evolutionary scenario for the origin of morphogenetic innovations in Diptera.](figures/FigED9.jpg){#fig:summary-extended tag="Extended Data Fig. 9" width=100%}
 
 \newpage
 
