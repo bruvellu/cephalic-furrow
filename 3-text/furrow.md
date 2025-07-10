@@ -448,9 +448,22 @@ The phenotypes we report in this work were reproducible across multiple independ
 
 ## Data availability
 
-- Main repository with data, analyses, figures, and text source files: [zenodo.org/record/7781947](https://zenodo.org/record/7781947) [@Vellutini2023-ng].
-- Theory repository with model code and simulation outputs: [zenodo.org/record/7784906](https://zenodo.org/record/7784906) [@Krishna2023-hu].
-- Media repository with high-resolution figures and videos: [zenodo.org/record/7781916](https://zenodo.org/record/7781916) [@Vellutini2023-ix].
+All the data supporting the findings of this study have been deposited on Zenodo. The main repository containing the raw data, analyses pipelines, and source files for figures and text is available under the identifier doi:[10.5281/zenodo.7781947](https://doi.org/10.5281/zenodo.7781947) [@Vellutini2023-ng]. The theory repository containing the code and scripts of the model, the output data of simulations, and notebooks of analyses and plotting is available under the identifier doi:[10.5281/zenodo.7784906](https://doi.org/10.5281/zenodo.7784906) [@Krishna2023-hu]. The media repository containing the high-resolution figures and videos is available under the identifier doi:[10.5281/zenodo.7781916](https://doi.org/10.5281/zenodo.7781916) [@Vellutini2023-ix].
+
+<!--TODO: Deposit raw image data to Zenodo-->
+ <!--16G ablation-->
+ <!--11G care-->
+ <!--12G cauterization-confocal-->
+ <!--14G cauterization-spim-->
+<!--6.7G dorsal-->
+ <!--14G imsane-->
+<!--2.8G in-situs-->
+<!--142G lateral-->
+ <!--18G tissue-cuts-->
+
+## Code availability
+
+All the code necessary to reproduce the data processing and downstream analyses in this study is available as documented scripts and computational notebooks in the main (doi:[10.5281/zenodo.7781947](https://doi.org/10.5281/zenodo.7781947)) [@Vellutini2023-ng] and theory (doi:[10.5281/zenodo.7784906](https://doi.org/10.5281/zenodo.7784906)) [@Krishna2023-hu] repositories on Zenodo.
 
 ## References
 
