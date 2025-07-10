@@ -155,8 +155,6 @@ ggsave("4-plots/tortuosity_facet_smooth.svg", width = 18, height = 6)
 # Plot stocks separately using lines vertically
 ggplot(datasets[datasets$stock == "btd",], aes(minute, tortuosity, color = sample)) +
   geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = sample)) +
-  #facet_wrap(~stock, ncol = 2, strip.position = "top") +
-  #facet_grid(rows = vars(stock), scales = "free") +
   labs(x = "minutes", y = "tortuosity") +
   scale_color_manual(values=c("#e69f03", "#56b4e9")) +
   scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
@@ -178,8 +176,6 @@ ggsave("4-plots/tortuosity_facet_smooth_btd.svg", width = 12, height = 6)
 # Plot stocks separately using lines vertically
 ggplot(datasets[datasets$stock == "eve",], aes(minute, tortuosity, color = sample)) +
   geom_smooth(span = 0.3, show.legend = FALSE, aes(fill = sample)) +
-  #facet_wrap(~stock, ncol = 2, strip.position = "top") +
-  #facet_grid(rows = vars(stock), scales = "free") +
   labs(x = "minutes", y = "tortuosity") +
   scale_color_manual(values=c("#e69f03", "#56b4e9")) +
   scale_fill_manual(values=c("#e69f03", "#56b4e9")) +
