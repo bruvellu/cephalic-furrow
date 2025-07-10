@@ -265,6 +265,14 @@ The distribution of cephalic furrow traits onto the dipteran phylogeny is consis
 
 Classical theoretical works have raised the hypothesis that physical processes were essential drivers of morphological innovation before the emergence of genetic programs [@Newman1994-sk; @Newman2000-oz; @Newman2006-ns]. Our findings provide supporting empirical evidence that mechanical forces play a role in the origin of morphogenetic innovations and that the genetic stabilization of mechanical conflicts may be a more broadly occurring mechanism generating morphogenetic diversity in embryonic development.
 
+# References
+
+<!--TODO: Ensure limit and split reference lists-->
+<!--REFERENCES: As a guideline, most papers should include no more than 50 main text references; all additional references can be cited in (and listed after) the Methods section, as detailed below.-->
+
+::: {#refs}
+:::
+
 <!--TODO: Keep these passages as alternatives for now-->
 <!--This physical role for a patterned invagination is intriguing and raises the idea that the cephalic furrow may have evolved in response to the mechanical challenges of dipteran gastrulation.-->
 
@@ -444,6 +452,14 @@ The phenotypes we report in this work were reproducible across multiple independ
 - Theory repository with model code and simulation outputs: [zenodo.org/record/7784906](https://zenodo.org/record/7784906) [@Krishna2023-hu].
 - Media repository with high-resolution figures and videos: [zenodo.org/record/7781916](https://zenodo.org/record/7781916) [@Vellutini2023-ix].
 
+## References
+
+<!--TODO: Ensure limit and split reference lists-->
+<!--REFERENCES: As a guideline, most papers should include no more than 50 main text references; all additional references can be cited in (and listed after) the Methods section, as detailed below.-->
+
+::: {#refs}
+:::
+
 # Acknowledgments
 
 We thank all current and former LoPaTs for discussions and support during this project. Akanksha Jain and Vladimir Ulman for the initial assistance with cartographic projections. Giulia Serafini for the help with fly crosses. Anaïs Bailles for the constructive feedback on the physics. Michaela Burkon and Pavel Mejstrik for technical support. Jan Brugués and Keisuke Ishihara for the laser ablation setup. MPI-CBG’s Light Microscopy Facility and Computer Services Facility for the assistance with data acquisition and processing. Sven Ssykor and Cornelia Maas for the support with fly stocks. Radim Žídek for the essential help in construct design. Steffen Lemke and Yu-Chiun Wang for the cephalic furrow discussions and sharing of unpublished data. Lemke Lab for the generous help in setting up *Clogmia* cultures. Freddy Frischknecht and Miriam Reinig for enabling and supporting the collection of *Anopheles* embryos. Konstantinos Bourtzis for kindly providing *Ceratitis* pupae. Carles Blanch-Mercader for feedback on simulations. Juliana Roscito for the text revisions. Michele Marass for crucial editorial input. Michael Akam for drawing BCV’s attention to the cephalic furrow. Alfonso Martinez Arias and two anonymous reviewers for the constructive feedback.
@@ -456,13 +472,6 @@ This work was supported by the MPI-CBG core funding from CDM and PT laboratories
 
 BCV and PT conceived the study. BCV designed experiments, generated fly stocks, acquired microscopy data, performed *in situ* hybridization, and processed and analyzed the *in vivo* data. MBC conceived and conducted the laser ablation and cauterization experiments and analyzed the laser ablation and strain rate data. CDM, AK, and AS designed the model. AK and AS programmed the model, performed the simulations, and analyzed the *in silico* data. BCV wrote the initial versions of the manuscript. All authors revised and contributed to the text. BCV and PT polished the final version.
 
-# References
-
-<!--TODO: Ensure limit and split reference lists-->
-<!--REFERENCES: As a guideline, most papers should include no more than 50 main text references; all additional references can be cited in (and listed after) the Methods section, as detailed below.-->
-
-::: {#refs}
-:::
 
 \newpage
 
