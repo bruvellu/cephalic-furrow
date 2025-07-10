@@ -110,6 +110,50 @@ figs:
 	# Make JPGs smaller for compilation and sharing
 	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 
+# Export figures to PDF and PNG
+exportfigs:
+	# Main figures
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ectopic-folding/ectopic-folding.svg --export-filename=${FIGSRC}/ectopic-folding/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ectopic-folding/ectopic-folding.svg --export-filename=${FIGSRC}/ectopic-folding/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/mitogerm-experiments/mitogerm-experiments.svg --export-filename=${FIGSRC}/mitogerm-experiments/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/mitogerm-experiments/mitogerm-experiments.svg --export-filename=${FIGSRC}/mitogerm-experiments/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/fold-model/fold-model.svg --export-filename=${FIGSRC}/fold-model/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/fold-model/fold-model.svg --export-filename=${FIGSRC}/fold-model/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/genetic-patterning/genetic-patterning.svg --export-filename=${FIGSRC}/genetic-patterning/figure.png 
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/genetic-patterning/genetic-patterning.svg --export-filename=${FIGSRC}/genetic-patterning/figure.pdf 
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/summary/summary.svg --export-filename=${FIGSRC}/summary/figure.png 
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/summary/summary.svg --export-filename=${FIGSRC}/summary/figure.pdf 
+	# Extended data figures
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/initiator-behavior/initiator-behavior.svg --export-filename=${FIGSRC}/initiator-behavior/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/initiator-behavior/initiator-behavior.svg --export-filename=${FIGSRC}/initiator-behavior/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ectopic-features/ectopic-features.svg --export-filename=${FIGSRC}/ectopic-features/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ectopic-features/ectopic-features.svg --export-filename=${FIGSRC}/ectopic-features/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/live-features/live-features.svg --export-filename=${FIGSRC}/live-features/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/live-features/live-features.svg --export-filename=${FIGSRC}/live-features/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/model-features/model-features.svg --export-filename=${FIGSRC}/model-features/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/model-features/model-features.svg --export-filename=${FIGSRC}/model-features/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/slp-analyses/slp-analyses.svg --export-filename=${FIGSRC}/slp-analyses/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/slp-analyses/slp-analyses.svg --export-filename=${FIGSRC}/slp-analyses/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/genetic-features/genetic-features.svg --export-filename=${FIGSRC}/genetic-features/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/genetic-features/genetic-features.svg --export-filename=${FIGSRC}/genetic-features/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/mutant-expression/mutant-expression.svg --export-filename=${FIGSRC}/mutant-expression/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/mutant-expression/mutant-expression.svg --export-filename=${FIGSRC}/mutant-expression/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/genetic-comparative/genetic-comparative.svg --export-filename=${FIGSRC}/genetic-comparative/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/genetic-comparative/genetic-comparative.svg --export-filename=${FIGSRC}/genetic-comparative/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/summary-extended/summary-extended.svg --export-filename=${FIGSRC}/summary-extended/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/summary-extended/summary-extended.svg --export-filename=${FIGSRC}/summary-extended/figure.pdf
+	# Supplementary information
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ectopic-variability/ectopic-variability.svg --export-filename=${FIGSRC}/ectopic-variability/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ectopic-variability/ectopic-variability.svg --export-filename=${FIGSRC}/ectopic-variability/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/apical-strain/apical-strain.svg --export-filename=${FIGSRC}/apical-strain/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/apical-strain/apical-strain.svg --export-filename=${FIGSRC}/apical-strain/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ablations/ablations.svg --export-filename=${FIGSRC}/ablations/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ablations/ablations.svg --export-filename=${FIGSRC}/ablations/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/tortuosity-pipeline/tortuosity-pipeline.svg --export-filename=${FIGSRC}/tortuosity-pipeline/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/tortuosity-pipeline/tortuosity-pipeline.svg --export-filename=${FIGSRC}/tortuosity-pipeline/figure.pdf
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ablation-analysis/ablation-analysis.svg --export-filename=${FIGSRC}/ablation-analysis/figure.png
+	flatpak run org.inkscape.Inkscape --export-dpi=300 ${FIGSRC}/ablation-analysis/ablation-analysis.svg --export-filename=${FIGSRC}/ablation-analysis/figure.pdf
+
 # Copy source data files to source directory
 data:
 	ln -sf ${FIGSRC}/ectopic-folding/source.xlsx ${FIGHIR}/Source_Fig1.xlsx
@@ -119,29 +163,6 @@ data:
 	ln -sf ${FIGSRC}/slp-analyses/source.xlsx ${FIGHIR}/Source_FigED5.xlsx
 	ln -sf ${FIGSRC}/apical-strain/source.xlsx ${FIGHIR}/Source_FigS2.xlsx
 	ln -sf ${FIGSRC}/ablations/source.xlsx ${FIGHIR}/Source_FigS3.xlsx
-
-# Copy high-resolution PDF files to source directory
-pdfs:
-	#TODO: Update links to PDFs!
-	# Main figures
-	ln -sf ${FIGSRC}/ectopic-folding/figure.pdf ${FIGHIR}/Fig1.pdf
-	ln -sf ${FIGSRC}/mitotic-strain/figure.pdf ${FIGHIR}/Fig2.pdf
-	ln -sf ${FIGSRC}/live-experiments/figure.pdf ${FIGHIR}/Fig3.pdf
-	ln -sf ${FIGSRC}/fold-model/figure.pdf ${FIGHIR}/Fig4.pdf
-	ln -sf ${FIGSRC}/genetic-patterning/figure.pdf ${FIGHIR}/Fig5.pdf
-	ln -sf ${FIGSRC}/summary/figure.pdf ${FIGHIR}/Fig6.pdf
-	# Extended data figures
-	ln -sf ${FIGSRC}/initiator-behavior/figure.pdf ${FIGHIR}/FigED1.pdf
-	ln -sf ${FIGSRC}/ectopic-features/figure.pdf ${FIGHIR}/FigED2.pdf
-	ln -sf ${FIGSRC}/apical-strain/figure.pdf ${FIGHIR}/FigED3.pdf
-	ln -sf ${FIGSRC}/live-features/figure.pdf ${FIGHIR}/FigED4.pdf
-	ln -sf ${FIGSRC}/model-features/figure.pdf ${FIGHIR}/FigED5.pdf
-	ln -sf ${FIGSRC}/genetic-features/figure.pdf ${FIGHIR}/FigED6.pdf
-	ln -sf ${FIGSRC}/genetic-comparative/figure.pdf ${FIGHIR}/FigED7.pdf
-	# Supplementary information
-	ln -sf ${FIGSRC}/ectopic-variability/figure.pdf ${FIGHIR}/FigS1.pdf
-	ln -sf ${FIGSRC}/tortuosity-pipeline/figure.pdf ${FIGHIR}/FigS2.pdf
-	ln -sf ${FIGSRC}/ablation-analysis/figure.pdf ${FIGHIR}/FigS3.pdf
 
 # Link video files to figure directory
 vids:
