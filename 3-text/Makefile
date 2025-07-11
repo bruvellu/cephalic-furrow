@@ -110,6 +110,10 @@ figs:
 	# Make JPGs smaller for compilation and sharing
 	mogrify -format jpg -quality 90 -density 300 -units PixelsPerInch -path ${FIGOUT}/ ${FIGHIR}/*.png
 
+# Convert PNGs to TIFs for submission
+tifs:
+	mogrify -format tif -compress lzw -density 300 -units PixelsPerInch -path ${FIGHIR}/ ${FIGHIR}/*.png
+
 # Export figures to PDF and PNG
 exportfigs:
 	# Main figures
