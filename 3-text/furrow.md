@@ -647,38 +647,38 @@ ac: *btd* acron domain, sh: *slp* head domain, ht: *btd* head--trunk domain.
 
 ## Supplementary information guide
 
-| Type                   | Description                                                                  |
-| -                      | -                                                                            |
-| Supplementary Figure 1 | Individual variability of ectopic folding in *btd* and *eve* mutants.        |
-| Supplementary Figure 2 | Complementary analyses of mitotic expansions and strain rate.                |
-| Supplementary Figure 3 | Laser ablations around initiator cells in wildtype embryos.                  |
-| Supplementary Figure 4 | Image processing pipeline for the tortuosity analysis in cauterized mutants. |
-| Supplementary Figure 5 | Image processing pipeline for the ablation analysis.                         |
-| Supplementary Video 1  | Reduced apical constriction in *btd* mutants.                                |
-| Supplementary Video 2  | Lateral view of ectopic fold formation in *btd* mutant.                      |
-| Supplementary Video 3  | Lateral view of ectopic fold formation in *eve* mutant.                      |
-| Supplementary Video 4  | Profile view of ectopic fold formation in *btd* mutant.                      |
-| Supplementary Video 5  | Profile view of ectopic fold formation in *eve* mutant.                      |
-| Supplementary Video 6  | Ectopic folding between mitotic domains in *btd* mutant.                     |
-| Supplementary Video 7  | Dynamics of ectopic folding in *btd* mutant.                                 |
-| Supplementary Video 8  | Variability of ectopic folding in *btd* mutants.                             |
-| Supplementary Video 9  | Epithelial strain rate during ectopic folding in *btd* mutant.               |
-| Supplementary Video 10 | Lateral view of cephalic furrow formation in *stg* mutants.                  |
-| Supplementary Video 11 | Dorsal view of cephalic furrow formation in *stg* mutants.                   |
-| Supplementary Video 12 | Lateral view of *btd--stg* double mutant.                                    |
-| Supplementary Video 13 | Dorsal view of *btd--stg* double mutant.                                     |
-| Supplementary Video 14 | Lateral views of germ band cauterization in *eve* embryos.                   |
-| Supplementary Video 15 | Profile views of germ band cauterization in *eve* mutant.                    |
-| Supplementary Video 16 | Profile views of germ band cauterizations in *btd* embryos.                  |
-| Supplementary Video 17 | Lateral view of *slp* mutant.                                                |
-| Supplementary Note 1   | Disruption of initiator cell behavior in cephalic furrow mutants             |
-| Supplementary Note 2   | Design of physical model and simulations                                     |
-| Supplementary Note 3   | Comparing our reference bending rigidity to direct measurements              |
-| Supplementary Note 4   | Live-imaging screen for cephalic furrow genes                                |
-| Supplementary Note 5   | Role of *sloppy paired* in cephalic furrow patterning                        |
-| Supplementary Note 6   | Genetic interactions at the head--trunk boundary                             |
-| Supplementary Note 7   | Role of tissue compression and cell divisions in buckling                    |
-| Supplementary Table 1  | Summary of live-imaging screening results for cephalic furrow genes.         |
+| Title                  | Description                                                   |
+| -                      | -                                                             |
+| Supplementary Figure 1 | Variability of ectopic folding in *btd* and *eve* mutants.    |
+| Supplementary Figure 2 | Complementary analyses of mitotic expansions and strain rate. |
+| Supplementary Figure 3 | Laser ablations around initiator cells in wildtype embryos.   |
+| Supplementary Figure 4 | Image processing for tortuosity analysis.                     |
+| Supplementary Figure 5 | Image processing for ablation analysis.                       |
+| Supplementary Video 1  | Reduced apical constriction in *btd* mutants.                 |
+| Supplementary Video 2  | Lateral view of ectopic fold formation in *btd* mutant.       |
+| Supplementary Video 3  | Lateral view of ectopic fold formation in *eve* mutant.       |
+| Supplementary Video 4  | Profile view of ectopic fold formation in *btd* mutant.       |
+| Supplementary Video 5  | Profile view of ectopic fold formation in *eve* mutant.       |
+| Supplementary Video 6  | Ectopic folding between mitotic domains in *btd* mutant.      |
+| Supplementary Video 7  | Dynamics of ectopic folding in *btd* mutant.                  |
+| Supplementary Video 8  | Variability of ectopic folding in *btd* mutants.              |
+| Supplementary Video 9  | Strain rate during ectopic folding in *btd* mutant.           |
+| Supplementary Video 10 | Lateral view of cephalic furrow formation in *stg* mutants.   |
+| Supplementary Video 11 | Dorsal view of cephalic furrow formation in *stg* mutants.    |
+| Supplementary Video 12 | Lateral view of *btd--stg* double mutant.                     |
+| Supplementary Video 13 | Dorsal view of *btd--stg* double mutant.                      |
+| Supplementary Video 14 | Lateral views of germ band cauterization in *eve* embryos.    |
+| Supplementary Video 15 | Profile views of germ band cauterization in *eve* mutant.     |
+| Supplementary Video 16 | Profile views of germ band cauterizations in *btd* embryos.   |
+| Supplementary Video 17 | Lateral view of *slp* mutant.                                 |
+| Supplementary Note 1   | Disruption of initiator cell behavior in mutants.             |
+| Supplementary Note 2   | Design of physical model and simulations.                     |
+| Supplementary Note 3   | Comparison of reference bending rigidity to measurements.     |
+| Supplementary Note 4   | Live-imaging screen for cephalic furrow genes.                |
+| Supplementary Note 5   | Role of *sloppy paired* in cephalic furrow formation.         |
+| Supplementary Note 6   | Genetic interactions at the head--trunk boundary.             |
+| Supplementary Note 7   | Role of tissue compression and cell divisions in buckling.    |
+| Supplementary Table 1  | Results of live-imaging screen for cephalic furrow genes.     |
 
 \newpage
 
@@ -897,7 +897,7 @@ To characterize the model properties and energy dynamics, we ran simulations usi
 
 ## Supplementary Note 3
 
-### Comparing our reference bending rigidity to direct measurements
+### Comparison of reference bending rigidity to direct measurements
 
 To compare the reference bending rigidity that we established for the *Drosophila* blastoderm based on our experimental data ($K_{b}^{\text{*}} \approx 1.0 \times 10^{−4}$) with direct measurements of the bending rigidity, we calculated the $K_{b}^{\text{*}}$ of 3D-cultured epithelial monolayers described in the literature. Trushko et al. [@Trushko2020-gf] reports that in a MDCK monolayer $K_b = 5\times10^{-13} Nm$ and $K_s = 0.15 Nm^{-1}$. With these values, we can compute the dimensionless bending rigidity $K_{b}^{\text{*}}$. However, the thickness of the MDCK monolayer (20\ µm) and the *Drosophila* blastoderm (40\ µm) are different, and hence we need to correct for this before computing $K_{b}^{\text{*}}$ for the MDCK monolayer. Given that, in elastic sheets, the bending rigidity scales with the square of the thickness of the tissue ($K_{b}/K_{s} \propto h^2$) [@Efrati2009-ve], we can compute the corrected $K_b$ as $K_b^{'} = K_{b}^{\text{*}}(h_{blastoderm}/h_{MDCK})^2$. This gives us $K_b^{'} =2\times10^{-12} Nm$. Now, we can calculate $K_{b}^{\text{*}} = K_b^{'}/K_s L^2$ by adjusting $K_b^{'}/K_s$ to the relevant length scale, the semi-major axis of the embryo. As the average *Drosophila* egg length is 510\ µm [@Markow2009-xc], we used $L = 255\mu m$. The final value we obtain is $K_{b}^{\text{*}} = 2.05\times 10^{-4}$. This is the estimated $K_{b}^{\text{*}}$ for the MDCK monolayer with the same thickness (height-corrected) and geometrical conditions (length-corrected) as the *Drosophila* blastoderm.
 
@@ -914,7 +914,7 @@ To uncover other genes directly involved in cephalic furrow formation in additio
 
 ## Supplementary Note 5
 
-### Role of *sloppy paired* in cephalic furrow patterning
+### Role of *sloppy paired* in cephalic furrow formation
 
 To identify other cephalic furrow genes, we performed a live-imaging screen using loss-of-function alleles of several candidates expressed at the head--trunk interface (Supplementary Note 4). We found that null mutants for the *sloppy paired* (*slp*) transcription factors, *slp1* and *slp2*, show a strong phenotype where the cephalic furrow is delayed and shifted towards the anterior end by ~6% of the egg length (control=67.6±1.4%, n=26; *slp*=73.2±0.7%, n=7) ({!@fig:slp-analyses}a,b, {!@fig:vid-slp-lateral}). With this anterior shift, *slp* mutants exhibit a more prominent posterior dorsal fold and an early ectopic fold within MD6 appearing before cell divisions ({!@fig:slp-analyses}a, {!@fig:vid-slp-lateral}). These observations are congruent with the increase in posterior mechanical instability present in our simulations where the cephalic furrow is shifted forward ({@fig:fold-model}h).
 
@@ -936,7 +936,7 @@ Mechanical compression is a key mechanism that drives the formation of epithelia
 
 ## Supplementary Table 1
 
-Table: Summary of live-imaging screening results for cephalic furrow genes. {#tbl:screen tag="Supplementary Table 1" }
+Table: Summary of the results of the live-imaging screen for cephalic furrow genes. {#tbl:screen tag="Supplementary Table 1" }
 
 | gene name                 | gene symbol    | allele/deficiency | phenotype                                  |
 | ---------                 | -----------    | ---------------   | ---------                                  |
