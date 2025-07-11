@@ -146,10 +146,6 @@ Finally, we tested how the position of the cephalic furrow impacts its ability t
 
 Taken together, our physical model provides a theoretical basis that an epithelial fold such as the cephalic furrow---when forming before other morphogenetic movements around the middle of the anteroposterior axis---can absorb compressive stresses and prevent, to a substantial degree, mechanical instabilities in embryonic tissues during gastrulation.
 
-<!--TODO: Add full parameter sweeps as supplementary notes-->
-<!--TODO: Timing effectiveness is not exemplified in the last panel-->
-<!--TODO: Add evolutionary question here or after genes?-->
-
 # Evolution of gene expression
 
 As described above, our analyses suggest that the effectiveness of the cephalic furrow in preventing epithelial instabilities depends on the position and time of the invagination. In *Drosophila*, this spatiotemporal control is determined genetically by the combinatorial expression of *btd*, *eve*, and *prd* at the head--trunk boundary [@Vincent1997-fa; @Blankenship2001-tm]. However, the specific genetic traits associated with the evolution of the cephalic furrow patterning cascade remain unclear. To address this question, we identified additional cephalic furrow genes and analyzed their expression in dipteran species with and without the cephalic furrow.
@@ -174,13 +170,9 @@ This physical role is intriguing and raises the idea that the cephalic furrow ma
 
 The distribution of cephalic furrow traits onto the dipteran phylogeny is consistent with the hypothesis of mechanical instability as a selective pressure ({@fig:summary}, {!@fig:summary-extended}). Mitotic domains and germ band extension---the sources of stress---are ancestral and evolved before the cephalic furrow, a derived trait and evolutionary novelty of cyclorrhaphan flies [@Dey2023-mo] ({@fig:summary}a). Remarkably, species without cephalic furrow show out-of-plane cell divisions at the head--trunk boundary [@Dey2023-mo], an alternative strategy for mitigating compressive stresses ({@fig:summary}b). Since the establishment of a *btd--eve* overlap is associated with the presence of the cephalic furrow [@Dey2023-mo] ({@fig:genetic-patterning}, {@fig:summary}a), differences in the genetic patterning of the dipteran head--trunk boundary might have contributed to the origin of distinct morphogenetic solutions in response to a similar mechanical selective pressure ({@fig:summary}b).
 
-Classical theoretical works have raised the hypothesis that physical processes were essential drivers of morphological innovation before the emergence of genetic programs [@Newman1994-sk; @Newman2000-oz; @Newman2006-ns]. Our findings provide supporting empirical evidence that mechanical forces play a role in the origin of morphogenetic innovations and that the genetic stabilization of mechanical conflicts may be a more broadly occurring mechanism generating morphogenetic diversity in embryonic development.
-
-<!--TODO: Add citation to Dey et al. here?-->
+Classical theoretical works have raised the hypothesis that physical processes were essential drivers of morphological innovation before the emergence of genetic programs [@Newman1994-sk; @Newman2000-oz; @Newman2006-ns]. The findings described here and in Dey, Kaul, Kale et al. [@Dey2023-mo] provide supporting empirical evidence that mechanical forces play a role in the origin of morphogenetic innovations and that the genetic stabilization of mechanical conflicts may be a more broadly occurring mechanism generating morphogenetic diversity in embryonic development.
 
 # References
-
-<!--TODO: Remove references from methods-->
 
 ::: {#refs}
 :::
@@ -247,13 +239,9 @@ We converted the raw lightsheet imaging datasets into individual TIFF stacks for
 
 ## Ectopic fold analyses
 
-<!--TODO: Add version numbers to all software-->
-
 To characterize the relative timing of ectopic folding, we annotated the germ band position and the number of frames after the onset of gastrulation at the initial buckling, when the first cells disappear from the surface in the lateral 3D renderings. We defined the onset of gastrulation (T=0) as the moment immediately after the end of cellularization and immediately before the beginning of the ventral furrow invagination. To visualize the variability of ectopic folding, we manually traced the fold outlines in lateral recordings using Fiji. Because embryos have different sizes, we first used the plugin *bUnwarpJ* v2.6.13 [@Arganda-Carreras2006-im] ([https://imagej.net/plugins/bunwarpj](https://imagej.net/plugins/bunwarpj/)) to register individual frames and then applied the same transformation to the fold traces for a standardized comparison. We analyzed the dynamics of ectopic folds by measuring the relative angle and tortuosity of the segmented line traces over time, and to visualize the kinetics, we generated color-coded temporal projections using the script *Temporal Color Code* v101122 ([https://imagej.net/plugins/temporal-color-code](https://imagej.net/plugins/temporal-color-code)) with the perceptually uniform *mpl-viridis* color map ([https://bids.github.io/colormap](https://bids.github.io/colormap/)) bundled in Fiji.
 
 To estimate the folded area in the cephalic furrow and ectopic folds, we annotated the region of the blastoderm before gastrulation that infolded in the cartographic projections using Fiji and calculated the area, correcting the pixel dimensions according to the coordinates in the projection. For the fold depth, we measured the distance between the vitelline envelope to the tip of the fold at the moment of maximum depth in the dorsal recordings. For the analysis of the epithelial surface, we used the plugin *MorphoLibJ* v1.6.0 [@Legland2016-cp] ([https://imagej.net/plugins/morpholibj](https://imagej.net/plugins/morpholibj)) to segment, measure, and color-code the cell apical areas, and the plugin *Linear Stack Alignment with SIFT* v1.5.0 [@Saalfeld2008-ae] ([https://imagej.net/plugins/linear-stack-alignment-with-sift](https://imagej.net/plugins/linear-stack-alignment-with-sift)) to register cells between timepoints.
-
-<!--TODO: Convert all software links to a reference?-->
 
 ## Laser cauterization experiments
 
@@ -293,24 +281,11 @@ We performed no prior estimation for sample size and no randomization or blindin
 
 All the data supporting the findings of this study have been deposited on Zenodo. The main repository containing the raw data, analyses pipelines, and source files for figures and text is available under the identifier doi:[10.5281/zenodo.7781947](https://doi.org/10.5281/zenodo.7781947) [@Vellutini2023-ng]. The theory repository containing the code and scripts of the model, the output data of simulations, and notebooks of analyses and plotting is available under the identifier doi:[10.5281/zenodo.7784906](https://doi.org/10.5281/zenodo.7784906) [@Krishna2023-hu]. The media repository containing the high-resolution figures and videos is available under the identifier doi:[10.5281/zenodo.7781916](https://doi.org/10.5281/zenodo.7781916) [@Vellutini2023-ix].
 
-<!--TODO: Deposit raw image data to Zenodo-->
- <!--16G ablation-->
- <!--11G care-->
- <!--12G cauterization-confocal-->
- <!--14G cauterization-spim-->
-<!--6.7G dorsal-->
- <!--14G imsane-->
-<!--2.8G in-situs-->
-<!--142G lateral-->
- <!--18G tissue-cuts-->
-
 ## Code availability
 
 All the code necessary to reproduce the data processing and downstream analyses in this study is available as documented scripts and computational notebooks in the main (doi:[10.5281/zenodo.7781947](https://doi.org/10.5281/zenodo.7781947)) [@Vellutini2023-ng] and theory (doi:[10.5281/zenodo.7784906](https://doi.org/10.5281/zenodo.7784906)) [@Krishna2023-hu] repositories on Zenodo.
 
 ## References
-
-<!--TODO: Remove references from main text-->
 
 ::: {#refs}
 :::
@@ -818,11 +793,11 @@ Sibling control (top) and *stg* mutant (bottom) during gastrulation. The formati
 
 ## Supplementary Video 11
 
+<!--TODO: Fix the time to show countdown to gastrulation-->
+
 ![Dorsal view of cephalic furrow formation in *stg* mutants.
 Sibling control (top) and *stg* mutant (bottom) during gastrulation. The cephalic furrow in *stg* mutants initiates without delay and shows identical morphology to the control until cell divisions begin in the latter. The cells dividing within the cephalic furrow of control embryos alter its morphology; it becomes curved and lengthier. In contrast, the cephalic furrow in the *stg* mutant retains its initial morphology until it unfolds. Frame rate = 10\ fps. Scale bar = 20\ µm.
 ](figures/Vid11.jpg){#fig:vid-stg-dorsal tag="Supplementary Video 11" width=50%}
-
-<!--TODO: Fix the time to show countdown to gastrulation-->
 
 \newpage
 
@@ -844,11 +819,11 @@ A *btd* homozygote shows the formation of an ectopic fold (top). The *btd--stg* 
 
 ## Supplementary Video 14
 
+<!--TODO: Replace eve embryo so that it is not the same used in a previous video?-->
+
 ![Lateral views of germ band cauterization in *eve* embryos.
 Non-cauterized *eve* embryo showing the formation of ectopic folds (top, same embryo from !@fig:vid-lateral-eve) and a cauterized *eve* embryo where no ectopic folds appear at the head--trunk interface (bottom). The germ band extension is mechanically blocked by cauterizing the tissue to the vitelline envelope. Mitotic domains form normally, but no folding of the surface occurs. Frame rate = 10\ fps. Scale bar = 50\ µm.
 ](figures/Vid14.jpg){#fig:vid-cautlat-eve tag="Supplementary Video 14" width=50%}
-
-<!--TODO: Replace eve embryo so that it is not the same used in a previous video?-->
 
 \newpage
 
