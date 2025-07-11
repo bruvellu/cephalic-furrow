@@ -54,7 +54,7 @@ PDFVARS=-V fontfamily:libertine -V linestretch:1 -V geometry:bindingoffset=2mm -
 HTMLVARS=--standalone --mathml
 
 # Main rule
-all: clean figs vids data refs text cloud
+all: clean figs tifs vids data refs text cloud
 
 # Cleanup figure directory before compiling
 clean:
