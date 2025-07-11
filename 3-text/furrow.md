@@ -179,26 +179,16 @@ Classical theoretical works have raised the hypothesis that physical processes w
 
 <!--TODO: Revise sentences below-->
 
-<!--Altogether, the genetic patterning and tissue mechanics data obtained in our study and in the study by Dey et al. raises the following evolutionary scenario for the cephalic furrow ({@fig:summary}b).-->
-
 <!--The fact that *eve* mutants have no cell intercalation [@Collinet2015-af] suggests that the formation of ectopic folds depends on the rapid phase of germ band extension [@Campos-Ortega1985-ma], driven mainly by the posterior midgut invagination.-->
 
 <!--Facilitated by this novel transcriptional background-->
 <!--the signaling pathway regulating lateral myosin activation-->
 <!--coopted to control the behavior of initiator cells-->
 <!--and genetically stabilized by natural selection.-->
-<!--Broader implications for the interplay between mechanics and patterned morphogenesis-->
 <!--Genetic stabilization of self-organized morphogenesis by natural selection-->
-<!--Empirical support for this mechanism of generating morphogenetic innovations-->
-
 <!--Physical interaction of embryonic tissues with the egg shell are important for morphogenesis [@Bailles2019-qs; @Munster2019-ww]-->
-
 <!--Our simulations also revealed the buckling events are influenced by the roundness of the vitelline envelope. Buckling occurs more easily on straighter shells. This might explain why buckling at the tips is less frequent. Friction plays a role in the shape of the fold [Trushko]. Recent works show how interactions of the embryonic tissues with the shell [@Munster;@Bailles] and between gastrulation movements [@Guo2021] are important to embryonic development. Insect eggs have an outstanding diversity [@Church]. This observation might have implications to how egg shape might have influenced the evolution of development. And reveal a glimpse of the complex mechanical underpinnings of gastrulation dynamics around the head--trunk boundary of bilaterians.-->
-
-<!--Mechanical instability perturbs patterning and causes the loss of ATP, which may lead to developmental delays-->
-
 <!--Our findings also explain why so few cephalic furrow mutants have been identified. Because even though the cephalic furrow is disrupted, the tissue compression from other gastrulation movements will still make the epithelium fold, making the cephalic furrow phenotypes less obvious-->
-
 <!--Dividing cells can’t do morphogenesis. That’s why mitotic domains occur in patches. Otherwise, gastrulation movements would fail.-->
 
 # Methods
@@ -245,16 +235,16 @@ To estimate the folded area in the cephalic furrow and ectopic folds, we annotat
 
 ## Laser cauterization experiments
 
-We performed laser cauterization experiments in two microscope setups, a lightsheet Luxendo MuVi SPIM with a photomanipulation module and a confocal Zeiss LSM 780 NLO with multiphoton excitation running ZEN Black v14.024.201. For the MuVi SPIM, we embedded dechorionated embryos in 2% low-melting agarose and mounted the samples in glass capillaries to obtain *in toto* recordings. We used a pulsed infrared laser at 1030--1040\ nm with 200\ fs pulse duration and 1.5\ W power to cauterize the posterior region of the dorsal embryonic surface, attaching the blastoderm to the vitelline envelope. Using an Olympus 20x/1.0NA water immersion objective, we acquired stacks with 0.29\ µm XY resolution and 1\ µm Z-resolution of four different angles every one minute. For the Zeiss microscope, we attached the embryos with the dorsal side down onto coverslips using heptane glue and immersed them in halocarbon oil. We cauterized the embryos sequentially using a near-infrared 800\ nm laser (Chameleon Vision II) through a single pixel line (210\ nm/px and 100\ µs/px) around the same dorsal region to block the germ band extension. We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38\ min two different planes of the blastoderm: (i) the surface to monitor the germ band extension and (ii) 40\ µm deep in the equatorial region to monitor the occurrence of ectopic folding. The stacks had 0.21\ µm XY resolution and one minute time resolution. To obtain a quantitative measure of ectopic folding, we analyzed the degree to which the tissues deform between non-cauterized and cauterized mutants, using as a proxy the tortuosity of the epithelium outline. For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({!@fig:tortuosity}a). We then cropped a 200×25\ µm region along the head--trunk interface and applied Gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50\ min after gastrulation ({!@fig:tortuosity}a,b). We extracted measurements from the epithelium outlines using the ImageJ plugin *Analyze Skeleton* v3.4.2 [@Arganda-Carreras2010-la] ([https://imagej.net/plugins/analyze-skeleton](https://imagej.net/plugins/analyze-skeleton/)), and generated the color-coded temporal projections as described above.
-
 <!--TODO: Temperature in MuVi and Zeiss?-->
+
+We performed laser cauterization experiments in two microscope setups, a lightsheet Luxendo MuVi SPIM with a photomanipulation module and a confocal Zeiss LSM 780 NLO with multiphoton excitation running ZEN Black v14.024.201. For the MuVi SPIM, we embedded dechorionated embryos in 2% low-melting agarose and mounted the samples in glass capillaries to obtain *in toto* recordings. We used a pulsed infrared laser at 1030--1040\ nm with 200\ fs pulse duration and 1.5\ W power to cauterize the posterior region of the dorsal embryonic surface, attaching the blastoderm to the vitelline envelope. Using an Olympus 20x/1.0NA water immersion objective, we acquired stacks with 0.29\ µm XY resolution and 1\ µm Z-resolution of four different angles every one minute. For the Zeiss microscope, we attached the embryos with the dorsal side down onto coverslips using heptane glue and immersed them in halocarbon oil. We cauterized the embryos sequentially using a near-infrared 800\ nm laser (Chameleon Vision II) through a single pixel line (210\ nm/px and 100\ µs/px) around the same dorsal region to block the germ band extension. We used a Zeiss 25x/0.8NA LD LCI Plan-Apochromat glycerol immersion objective to acquire every 2:38\ min two different planes of the blastoderm: (i) the surface to monitor the germ band extension and (ii) 40\ µm deep in the equatorial region to monitor the occurrence of ectopic folding. The stacks had 0.21\ µm XY resolution and one minute time resolution. To obtain a quantitative measure of ectopic folding, we analyzed the degree to which the tissues deform between non-cauterized and cauterized mutants, using as a proxy the tortuosity of the epithelium outline. For that, we took the profile slices from dorsal recordings and transformed the curved vitelline envelope into a straight line using the *Straighten* tool of ImageJ ({!@fig:tortuosity}a). We then cropped a 200×25\ µm region along the head--trunk interface and applied Gaussian blur, thresholding, and edge detection to obtain the epithelium outline for individual timepoints covering about 50\ min after gastrulation ({!@fig:tortuosity}a,b). We extracted measurements from the epithelium outlines using the ImageJ plugin *Analyze Skeleton* v3.4.2 [@Arganda-Carreras2010-la] ([https://imagej.net/plugins/analyze-skeleton](https://imagej.net/plugins/analyze-skeleton/)), and generated the color-coded temporal projections as described above.
 
 ## Laser ablation experiments
 
-We performed laser ablations in a Yokogawa CSU-X1 spinning disk confocal with an EMCCD camera (Andor iXon DU-888) and the software AndorIQ for image acquisition. We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water. Then, we performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800\ nm tuned down from 80\ MHz to 20\ kHz with a pulse-picker. The laser power measured before the microscope port was 6\ mW, and the pixel dwell time for scanning was 2\ µs. To ensure the cut, we repeated the scan ten consecutive times along a single cell, acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18\ µm XY resolution and 200\ ms time-steps. We ablated each embryo just once. The temperature was maintained at 28°\ C. To analyze the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the Fiji plugin *Multi Kymograph* v3.0.1 ({!@fig:ablation-analysis}). We then binarized the kymographs, measured the distance between cell edges over the first 30\ s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({!@fig:ablation-analysis}). We performed additional laser ablations in an inverted Zeiss Axio Observer.Z1 spinning disk confocal microscope running ZEN Blue v3.2 with a Rapp OptoElectronic setup for photo-manipulation running SysCon2.
-
 <!--TODO: What is the brand of the objective?-->
 <!--TODO: Does a higher temperature affects the quantifications?-->
+
+We performed laser ablations in a Yokogawa CSU-X1 spinning disk confocal with an EMCCD camera (Andor iXon DU-888) and the software AndorIQ for image acquisition. We attached dechorionated embryos laterally to a MatTek glass-bottom petri dish and covered the samples with water. Then, we performed the ablations using a Titanium Sapphire Chameleon Ultra II (Coherent) laser at 800\ nm tuned down from 80\ MHz to 20\ kHz with a pulse-picker. The laser power measured before the microscope port was 6\ mW, and the pixel dwell time for scanning was 2\ µs. To ensure the cut, we repeated the scan ten consecutive times along a single cell, acquiring a single slice with a 60x/1.2NA water immersion objective with 0.18\ µm XY resolution and 200\ ms time-steps. We ablated each embryo just once. The temperature was maintained at 28°\ C. To analyze the ablation data, we created a line crossing the edges of the ablated cell perpendicular to the cut and generated a kymograph using the Fiji plugin *Multi Kymograph* v3.0.1 ({!@fig:ablation-analysis}). We then binarized the kymographs, measured the distance between cell edges over the first 30\ s after the cut, and performed a linear fit of the data to obtain the recoil velocity ({!@fig:ablation-analysis}). We performed additional laser ablations in an inverted Zeiss Axio Observer.Z1 spinning disk confocal microscope running ZEN Blue v3.2 with a Rapp OptoElectronic setup for photo-manipulation running SysCon2.
 
 ## Strain rate analysis
 
@@ -283,7 +273,7 @@ All the data supporting the findings of this study have been deposited on Zenodo
 
 ## Code availability
 
-All the code necessary to reproduce the data processing and downstream analyses in this study is available as documented scripts and computational notebooks in the main (doi:[10.5281/zenodo.7781947](https://doi.org/10.5281/zenodo.7781947)) [@Vellutini2023-ng] and theory (doi:[10.5281/zenodo.7784906](https://doi.org/10.5281/zenodo.7784906)) [@Krishna2023-hu] repositories on Zenodo.
+All the code necessary to reproduce the data processing and downstream analyses in this study is available as documented scripts and computational notebooks in the main repository (doi:[10.5281/zenodo.7781947](https://doi.org/10.5281/zenodo.7781947)) [@Vellutini2023-ng] and theory repository (doi:[10.5281/zenodo.7784906](https://doi.org/10.5281/zenodo.7784906)) [@Krishna2023-hu] on Zenodo.
 
 ## References
 
@@ -363,10 +353,6 @@ Line and shaded area represent mean and 95% confidence interval, respectively (p
 \newpage
 
 ## Figure 3
-
-<!--TODO: Copy dfs folders to local github repo-->
-<!--TODO: Structure directories for github repo-->
-<!--TODO: Copy modeslab/data_version_5 to cephalic furrow fileserver-->
 
 ![Model and simulations of folding mechanics.
 **a**, Region of interest of the model.
@@ -547,6 +533,8 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 
 ## Extended Data Fig. 4
 
+<!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
+
 ![Model properties and parameter sweeps.
 **a**, Reference embryonic proportions in wildtype and cephalic furrow mutants used for the model. Sizes and positions of embryonic traits are relative to embryo length.
 **b**, Example simulation ($K_{b}^{\text{*}}=7 \times 10^{-5}$ and $g=0.3$) showing the tissue shape at $t=19$ (blue) and $t=1000$ (pink). These timepoints are marked as dashed lines in the descriptive plots below. $t=1$ corresponds to $10^{5}$ computational steps. The X axis is in $log_{10}$ scale to improve the visualization.
@@ -557,8 +545,6 @@ Table: Folding statistics in cephalic furrow mutants. We calculated the percenta
 **k**, Fine-grained parameter sweep of ectopic folding at different $\kappa_o^{CF}$ values with a relative delay between cephalic furrow and mitotic domain formation ($t_{MD}=5$). Values of $\kappa_o^{CF}$ are shown in units of $1/L$. $t_{MD}=1$ corresponds to 10^5^ computational timesteps.
 **l**, Representative simulations from {@fig:fold-model}g at 0 and 20% of germ band extension.
 ](figures/FigED4.jpg){#fig:model-features tag="Extended Data Fig. 4" width=100%}
-
-<!--TODO:AB: Describe overfolding events. Mark them on phase diagram. Discuss as limitation-->
 
 \newpage
 
@@ -855,10 +841,10 @@ A *slp* heterozygote (top) shows a normal cephalic furrow formation. The *slp* h
 
 ### Disruption of initiator cell behavior in cephalic furrow mutants
 
-We analyzed how the behavior of initiator cells is perturbed in the *btd*, *eve*, and *prd* mutant backgrounds using lightsheet microscopy. In wildtype embryos, the initiator cells shorten and undergo anisotropic apical constriction minutes before the end of cellularization [@Spencer2015-td] ({!@fig:initiator}a,b). In *prd* mutants, both behaviors are delayed in initiator cells, and the adjacent cells lack the typical arched profile present in the wildtype invagination [@Spencer2015-td] ({!@fig:initiator}a,b). Moreover, the tissue only invaginates after gastrulation and the resulting fold is abnormal compared to a wildtype invagination. In *btd* and *eve* mutants, the cephalic furrow phenotypes are stronger. Initiator cells in *btd* embryos exhibit a reduced degree of apical constriction but do not shorten ({!@fig:initiator}a,b, {!@fig:vid-initiator}). In contrast, *eve* mutants show neither apical constriction nor cell shortening; the epithelium remains flat for several minutes after gastrulation ({!@fig:initiator}a,b). These observations reveal that initiator cell behavior in *prd* mutants is not only delayed but also perturbed and that the cellular mechanism that drives cephalic furrow formation is severely disrupted in *btd* and *eve* mutants.
-
 <!--TODO: Create video for btd initiator cells {!@fig:vid-initiator-btd}-->
 <!--TODO: Create video for prd initiator cells {!@fig:vid-initiator-prd}-->
+
+We analyzed how the behavior of initiator cells is perturbed in the *btd*, *eve*, and *prd* mutant backgrounds using lightsheet microscopy. In wildtype embryos, the initiator cells shorten and undergo anisotropic apical constriction minutes before the end of cellularization [@Spencer2015-td] ({!@fig:initiator}a,b). In *prd* mutants, both behaviors are delayed in initiator cells, and the adjacent cells lack the typical arched profile present in the wildtype invagination [@Spencer2015-td] ({!@fig:initiator}a,b). Moreover, the tissue only invaginates after gastrulation and the resulting fold is abnormal compared to a wildtype invagination. In *btd* and *eve* mutants, the cephalic furrow phenotypes are stronger. Initiator cells in *btd* embryos exhibit a reduced degree of apical constriction but do not shorten ({!@fig:initiator}a,b, {!@fig:vid-initiator}). In contrast, *eve* mutants show neither apical constriction nor cell shortening; the epithelium remains flat for several minutes after gastrulation ({!@fig:initiator}a,b). These observations reveal that initiator cell behavior in *prd* mutants is not only delayed but also perturbed and that the cellular mechanism that drives cephalic furrow formation is severely disrupted in *btd* and *eve* mutants.
 
 ## Supplementary Note 2
 
