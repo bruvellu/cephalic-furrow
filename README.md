@@ -20,7 +20,9 @@ Vellutini BC, Cuenca MB, Krishna A, Szałapak A, Modes CD, Tomančák P. **Patte
 
 Here are the persistent, citable repositories associated with the manuscript.
 
-- **Main repository:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781947.svg)](https://doi.org/10.5281/zenodo.7781947)
-- **Theory and simulations:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7784906.svg)](https://doi.org/10.5281/zenodo.7784906)
-- **Figures and videos:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781916.svg)](https://doi.org/10.5281/zenodo.7781916)
+- **Main repository (code and data):** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781947.svg)](https://doi.org/10.5281/zenodo.7781947)
+- **Model and simulations (code and data):** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7784906.svg)](https://doi.org/10.5281/zenodo.7784906)
+- **Lightsheet and in situ experiments (imaging data):** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15876638.svg)](https://doi.org/10.5281/zenodo.15876638)
+- **Laser perturbation experiments (imaging data):** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15876646.svg)](https://doi.org/10.5281/zenodo.15876646)
+- **Figures and videos (media files):** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7781916.svg)](https://doi.org/10.5281/zenodo.7781916)
 
