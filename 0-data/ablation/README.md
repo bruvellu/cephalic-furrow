@@ -1,5 +1,7 @@
 # Ablation datasets
 
+The imaging data for the laser ablation experiments is available on Zenodo at doi:[10.5281/zenodo.15876646](https://doi.org/10.5281/zenodo.15876646).
+
 ## Acquisition
 
 | key            | value                                           |
