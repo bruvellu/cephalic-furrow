@@ -1,5 +1,7 @@
 # ImSAnE datasets
 
+The imaging data for the lightsheet imsane datasets is available on Zenodo at doi:[10.5281/zenodo.15876638](https://doi.org/10.5281/zenodo.15876638).
+
 ## CARE training
 
 We opted to subsample the Z-resolution during acquisition (=faster temporal resolution) and restore it during image processing using the upsampling model of [CARE](https://csbdeep.bioimagecomputing.com/tools/care/).

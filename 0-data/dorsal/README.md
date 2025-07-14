@@ -1,5 +1,7 @@
 # Dorsal datasets
 
+The imaging data for the lightsheet dorsal datasets is available on Zenodo at doi:[10.5281/zenodo.15876638](https://doi.org/10.5281/zenodo.15876638).
+
 ## Acquisition
 
 | key          | value                            |
