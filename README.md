@@ -11,7 +11,7 @@ This repository contains the main data, analyses, and source files associated wi
 
 ## Citation
 
-Vellutini BC, Cuenca MB, Krishna A, Szałapak A, Modes CD, Tomančák P. **Patterned embryonic invagination evolved in response to mechanical instability**. bioRxiv (2023) doi:[10.1101/2023.03.30.534554](https://doi.org/10.1101/2023.03.30.534554)
+Vellutini, B. C., Cuenca, M. B., Krishna, A., Szałapak, A., Modes, C. D. & Tomancak, P. **Patterned invagination prevents mechanical instability during gastrulation**. Nature (2025). doi:[10.1038/s41586-025-09480-3](https://doi.org/10.1038/s41586-025-09480-3)
 
 ## Repositories
 
